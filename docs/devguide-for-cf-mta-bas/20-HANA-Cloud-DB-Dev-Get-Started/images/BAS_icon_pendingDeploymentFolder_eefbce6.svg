@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-folder_filter_color">
+      <rect width="16" height="16"/>
+    </clipPath>
+  </defs>
+  <g id="folder_filter_color" clip-path="url(#clip-folder_filter_color)">
+    <g id="Group_3658" data-name="Group 3658" transform="translate(0 -1)">
+      <g id="folder_white_" data-name="folder_white " transform="translate(0 1)">
+        <path id="Path_1550" data-name="Path 1550" d="M-252.623,428.534l-.017,7.132a.89.89,0,0,1-.889.891h-12.048a.891.891,0,0,1-.889-.891v-8.339a.89.89,0,0,1,.889-.89h2.121l1.853,1.853h2.148a3.954,3.954,0,0,1-.083-1h-1.651l-1.853-1.853h-2.535a1.891,1.891,0,0,0-1.889,1.89v8.339a1.892,1.892,0,0,0,1.889,1.891h12.048a1.892,1.892,0,0,0,1.889-1.891l.017-8.316A12.539,12.539,0,0,1-252.623,428.534Z" transform="translate(267.466 -422.437)" fill="#707070"/>
+      </g>
+      <g id="filter_icon" transform="translate(6 1)">
+        <rect id="Rectangle_460" data-name="Rectangle 460" width="10" height="10" fill="rgba(244,198,83,0)"/>
+        <path id="Icon_feather-filter" data-name="Icon feather-filter" d="M12.028,4.5H3L6.611,8.455v2.734l1.806.836V8.455Z" transform="translate(-2.5 -3.413)" fill="#f4c653" stroke="#f4c653" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

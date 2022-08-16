@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="grey_16x16" transform="translate(-174 -11)">
+    <g id="Grey" transform="translate(174 12.002)">
+      <path id="Rounded_Rectangle_5" data-name="Rounded Rectangle 5" d="M7.136,13.174v-.847A4.9,4.9,0,0,1,3,7.546V3.6H5.245V.825A.861.861,0,0,1,6.136,0a.861.861,0,0,1,.891.826V3.6H8.972V.825a.894.894,0,0,1,1.783,0V3.6H13V7.546a4.9,4.9,0,0,1-4.082,4.772v.856a.894.894,0,0,1-1.783,0Z" transform="translate(0 0)" fill="#8f8f8f"/>
+    </g>
+    <g id="P" transform="translate(54)">
+      <rect id="Rectangle_147" data-name="Rectangle 147" width="16" height="16" transform="translate(120 11)" fill="none"/>
+    </g>
+  </g>
+</svg>
