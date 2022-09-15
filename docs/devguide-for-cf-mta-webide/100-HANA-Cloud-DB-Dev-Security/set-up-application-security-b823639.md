@@ -242,15 +242,15 @@ The following steps provides useful tips and tricks to help you understand what 
 
 [Application Security Tools and Components](application-security-tools-and-components-a004e4f.md "Setting up security for multitarget applications involves multiple tasks and multiple tools and components.")
 
-[Application Router Configuration Syntax](../90-HANA-Cloud-DB-Dev-MTA-Routes/application-router-configuration-syntax-5f77e58.md "The application description defined in the xs-app.json file contains the configuration information used by the application router.")
+[Application Router Configuration Syntax](../090-HANA-Cloud-DB-Dev-MTA-Routes/application-router-configuration-syntax-5f77e58.md "The application description defined in the xs-app.json file contains the configuration information used by the application router.")
 
-[Application Router Environment Variables](../90-HANA-Cloud-DB-Dev-MTA-Routes/application-router-environment-variables-0aac697.md "A list of environment variables that can be used to configure the application router.")
+[Application Router Environment Variables](../090-HANA-Cloud-DB-Dev-MTA-Routes/application-router-environment-variables-0aac697.md "A list of environment variables that can be used to configure the application router.")
 
-[Standard SAP Node.js Packages](../60-HANA-Cloud-DB-Dev-App-Code/standard-sap-node-js-packages-5451327.md "A collection of Node.js packages developed by SAP is provided to help you develop Node.js applications for Cloud Foundry and SAP HANA Cloud.")
+[Standard SAP Node.js Packages](../060-HANA-Cloud-DB-Dev-App-Code/standard-sap-node-js-packages-5451327.md "A collection of Node.js packages developed by SAP is provided to help you develop Node.js applications for Cloud Foundry and SAP HANA Cloud.")
 
-[Standard SAP Java Client Libraries for Cloud Foundry](../60-HANA-Cloud-DB-Dev-App-Code/standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md "A collection of Java client libraries developed by SAP is provided to help you develop Java applications for Cloud Foundry.")
+[Standard SAP Java Client Libraries for Cloud Foundry](../060-HANA-Cloud-DB-Dev-App-Code/standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md "A collection of Java client libraries developed by SAP is provided to help you develop Java applications for Cloud Foundry.")
 
-[Standard Python Packages for Cloud Foundry](../60-HANA-Cloud-DB-Dev-App-Code/standard-python-packages-for-cloud-foundry-8732609.md "A list of Python packages developed by SAP, which are available for download and use.")
+[Standard Python Packages for Cloud Foundry](../060-HANA-Cloud-DB-Dev-App-Code/standard-python-packages-for-cloud-foundry-8732609.md "A list of Python packages developed by SAP, which are available for download and use.")
 
 [SAP CP Java Security Library \(GitHub\)](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/java-security)
 

@@ -630,17 +630,17 @@ Developer
 
 [The Security Descriptor \(xs-security.json\)](the-application-security-descriptor-3bfb120.md "A file that defines the details of the authentication methods and authorization types to use for access to your application.")
 
-[Application Router Environment Variables](../90-HANA-Cloud-DB-Dev-MTA-Routes/application-router-environment-variables-0aac697.md "A list of environment variables that can be used to configure the application router.")
+[Application Router Environment Variables](../090-HANA-Cloud-DB-Dev-MTA-Routes/application-router-environment-variables-0aac697.md "A list of environment variables that can be used to configure the application router.")
 
-[The Application Descriptor \(xs-app.json\)](../90-HANA-Cloud-DB-Dev-MTA-Routes/the-application-descriptor-96c7545.md "Understand the contents of the file used to configure the multitarget application router.")
+[The Application Descriptor \(xs-app.json\)](../090-HANA-Cloud-DB-Dev-MTA-Routes/the-application-descriptor-96c7545.md "Understand the contents of the file used to configure the multitarget application router.")
 
-[Consume SAP Node.js Packages](../60-HANA-Cloud-DB-Dev-App-Code/consume-sap-node-js-packages-ddcff14.md "A selection of SAP-specific and ready-to-use Node.js packages is available on the public NPM registry.")
+[Consume SAP Node.js Packages](../060-HANA-Cloud-DB-Dev-App-Code/consume-sap-node-js-packages-ddcff14.md "A selection of SAP-specific and ready-to-use Node.js packages is available on the public NPM registry.")
 
-[Download and Consume Java Libraries](../60-HANA-Cloud-DB-Dev-App-Code/download-and-consume-java-libraries-8783c06.md "A selection of SAP-specific and ready-to-use Java client libraries is available for download from the Maven Central Repository.")
+[Download and Consume Java Libraries](../060-HANA-Cloud-DB-Dev-App-Code/download-and-consume-java-libraries-8783c06.md "A selection of SAP-specific and ready-to-use Java client libraries is available for download from the Maven Central Repository.")
 
-[Download and Consume Python Libraries](../60-HANA-Cloud-DB-Dev-App-Code/download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
+[Download and Consume Python Libraries](../060-HANA-Cloud-DB-Dev-App-Code/download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
 
-[SAP HANA Cloud Deployment-Infrastructure Services](../70-HANA-Cloud-DB-Dev-App-Services/sap-hana-cloud-deployment-infrastructure-services-ebf0aa2.md "The SAP HANA Cloud Deployment Infrastructure service (HDI) is the central infrastructure component for application-container management.")
+[SAP HANA Cloud Deployment-Infrastructure Services](../070-HANA-Cloud-DB-Dev-App-Services/sap-hana-cloud-deployment-infrastructure-services-ebf0aa2.md "The SAP HANA Cloud Deployment Infrastructure service (HDI) is the central infrastructure component for application-container management.")
 
 [Maintain Values in the SAP HANA Secure Store](maintain-values-in-the-sap-hana-secure-store-8a82c9e.md "Insert entries into (and retrieve and remove entries from) the SAP HANA Secure Store.")
 

@@ -175,13 +175,13 @@ In multitarget applications, the Node.js application router \(`approuter`\) is u
 **Related Information**  
 
 
-[The NPM Registry](../60-HANA-Cloud-DB-Dev-App-Code/the-npm-registry-726e5d4.md "The public NPM registry includes SAP Node.js modules for use by application developers.")
+[The NPM Registry](../060-HANA-Cloud-DB-Dev-App-Code/the-npm-registry-726e5d4.md "The public NPM registry includes SAP Node.js modules for use by application developers.")
 
-[Application Router Configuration Syntax](../90-HANA-Cloud-DB-Dev-MTA-Routes/application-router-configuration-syntax-5f77e58.md "The application description defined in the xs-app.json file contains the configuration information used by the application router.")
+[Application Router Configuration Syntax](../090-HANA-Cloud-DB-Dev-MTA-Routes/application-router-configuration-syntax-5f77e58.md "The application description defined in the xs-app.json file contains the configuration information used by the application router.")
 
-[Set up Authentication for your JavaScript Multitarget Application](../60-HANA-Cloud-DB-Dev-App-Code/set-up-authentication-for-your-javascript-multitarget-application-1c16bb3.md "Instructions to help you set up user authentication for your JavaScript multitarget application in Cloud Foundry.")
+[Set up Authentication for your JavaScript Multitarget Application](../060-HANA-Cloud-DB-Dev-App-Code/set-up-authentication-for-your-javascript-multitarget-application-1c16bb3.md "Instructions to help you set up user authentication for your JavaScript multitarget application in Cloud Foundry.")
 
-[Configure Authentication and Authorization](../60-HANA-Cloud-DB-Dev-App-Code/configure-authentication-and-authorization-cc45f18.md "You configure authentication and authorization by using the integrated container authentication provided with the Java build pack or the Spring security library.")
+[Configure Authentication and Authorization](../060-HANA-Cloud-DB-Dev-App-Code/configure-authentication-and-authorization-cc45f18.md "You configure authentication and authorization by using the integrated container authentication provided with the Java build pack or the Spring security library.")
 
 [Set up Generic Authorization for a Multitarget Application](set-up-generic-authorization-for-a-multitarget-application-c8c578e.md "Define an authorization model for your multitarget application and configure generic authorization for any application end point (route path).")
 

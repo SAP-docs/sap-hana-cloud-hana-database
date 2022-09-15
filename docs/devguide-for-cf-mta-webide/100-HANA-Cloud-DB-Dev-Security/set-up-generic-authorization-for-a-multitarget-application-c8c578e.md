@@ -144,7 +144,7 @@ To set up authorization for your multitarget application, perform the following 
 
 [Application Security Descriptor Configuration Syntax](application-security-descriptor-configuration-syntax-6d3ed64.md "The syntax required to set the properties and values defined in the xs-security.json application-security description file.")
 
-[Application Router Configuration Syntax](../90-HANA-Cloud-DB-Dev-MTA-Routes/application-router-configuration-syntax-5f77e58.md "The application description defined in the xs-app.json file contains the configuration information used by the application router.")
+[Application Router Configuration Syntax](../090-HANA-Cloud-DB-Dev-MTA-Routes/application-router-configuration-syntax-5f77e58.md "The application description defined in the xs-app.json file contains the configuration information used by the application router.")
 
-[Set up Authorization for your JavaScript Multitarget Application](../60-HANA-Cloud-DB-Dev-App-Code/set-up-authorization-for-your-javascript-multitarget-application-7eedc1d.md "Set up user authorization for your JavaScript multitarget application in Cloud Foundry on SAP Business Technology Platform.")
+[Set up Authorization for your JavaScript Multitarget Application](../060-HANA-Cloud-DB-Dev-App-Code/set-up-authorization-for-your-javascript-multitarget-application-7eedc1d.md "Set up user authorization for your JavaScript multitarget application in Cloud Foundry on SAP Business Technology Platform.")
 

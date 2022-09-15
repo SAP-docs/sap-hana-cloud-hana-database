@@ -27,7 +27,7 @@ You must bind the service instance that acts as OAuth 2.0 client to your multita
 **Related Information**  
 
 
-[Create a Service Instance](../70-HANA-Cloud-DB-Dev-App-Services/create-a-service-instance-355f3b1.md "Make a service instance available to applications.")
+[Create a Service Instance](../070-HANA-Cloud-DB-Dev-App-Services/create-a-service-instance-355f3b1.md "Make a service instance available to applications.")
 
-[Application Routes and Destinations](../90-HANA-Cloud-DB-Dev-MTA-Routes/application-routes-and-destinations-875809c.md "The application router is the single point of entry for an application.")
+[Application Routes and Destinations](../090-HANA-Cloud-DB-Dev-MTA-Routes/application-routes-and-destinations-875809c.md "The application router is the single point of entry for an application.")
 

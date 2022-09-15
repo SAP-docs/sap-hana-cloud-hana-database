@@ -26,7 +26,7 @@ The *SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multita
 **Related Information**  
 
 
-[Getting Started with Multitarget Application Development in Cloud Foundry on SAP BTP](20-HANA-Cloud-DB-Dev-Get-Started/getting-started-with-multitarget-application-development-in-cloud-foundry-on-sap-7f681c3.md "Multitarget applications running in Cloud Foundry on SAP Business Technology Platform (SAP BTP) must include a number of mandatory files that are used for configuration and deployment.")
+[Getting Started with Multitarget Application Development in Cloud Foundry on SAP BTP](020-HANA-Cloud-DB-Dev-Get-Started/getting-started-with-multitarget-application-development-in-cloud-foundry-on-sa-7f681c3.md "Multitarget applications running in Cloud Foundry on SAP Business Technology Platform (SAP BTP) must include a number of mandatory files that are used for configuration and deployment.")
 
 [HDI Artifact and Build Plug-in Configuration](110-HANA-Cloud-DB-Dev-HDI-Plugins/hdi-artifact-and-build-plug-in-configuration-a86453d.md "In SAP HANA Cloud HDI, design-time artifacts are distinguished by means of a unique file suffix that must be mapped to an HDI build plug-in.")
 

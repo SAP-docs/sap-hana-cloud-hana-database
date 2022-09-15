@@ -490,5 +490,5 @@ The key to be deleted within the target secure store \(`STORE_NAME`\)
 
 [Maintain Values in the SAP HANA Secure Store](maintain-values-in-the-sap-hana-secure-store-8a82c9e.md "Insert entries into (and retrieve and remove entries from) the SAP HANA Secure Store.")
 
-[SAP HANA Cloud Deployment-Infrastructure Services](../70-HANA-Cloud-DB-Dev-App-Services/sap-hana-cloud-deployment-infrastructure-services-ebf0aa2.md "The SAP HANA Cloud Deployment Infrastructure service (HDI) is the central infrastructure component for application-container management.")
+[SAP HANA Cloud Deployment-Infrastructure Services](../070-HANA-Cloud-DB-Dev-App-Services/sap-hana-cloud-deployment-infrastructure-services-ebf0aa2.md "The SAP HANA Cloud Deployment Infrastructure service (HDI) is the central infrastructure component for application-container management.")
 

@@ -1129,9 +1129,9 @@ Array listing the allowed identity providers \(IdP\) to use for authentication p
 
 [Create the Security Descriptor for a Multitarget Application](create-the-security-descriptor-for-a-multitarget-application-df31a08.md "The security descriptor defines details of an application's security-related dependencies.")
 
-[Application Router Configuration Syntax](../90-HANA-Cloud-DB-Dev-MTA-Routes/application-router-configuration-syntax-5f77e58.md "The application description defined in the xs-app.json file contains the configuration information used by the application router.")
+[Application Router Configuration Syntax](../090-HANA-Cloud-DB-Dev-MTA-Routes/application-router-configuration-syntax-5f77e58.md "The application description defined in the xs-app.json file contains the configuration information used by the application router.")
 
-[Service Plans and Resources](../70-HANA-Cloud-DB-Dev-App-Services/service-plans-and-resources-0393ce3.md "A service plan is a particular type of service (for example, a database configuration) that is available for use.")
+[Service Plans and Resources](../070-HANA-Cloud-DB-Dev-App-Services/service-plans-and-resources-0393ce3.md "A service plan is a particular type of service (for example, a database configuration) that is available for use.")
 
-[User Account and Authentication Services](../70-HANA-Cloud-DB-Dev-App-Services/user-account-and-authentication-services-c6f36d5.md "The SAP HANA XS User Account and Authentication service (UAA) is the central infrastructure component for user authentication and trust manageement.")
+[User Account and Authentication Services](../070-HANA-Cloud-DB-Dev-App-Services/user-account-and-authentication-services-c6f36d5.md "The SAP HANA XS User Account and Authentication service (UAA) is the central infrastructure component for user authentication and trust manageement.")
 

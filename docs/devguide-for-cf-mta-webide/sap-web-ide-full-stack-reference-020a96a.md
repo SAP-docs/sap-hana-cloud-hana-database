@@ -58,5 +58,5 @@ SAP Web IDE Full-Stack \(SAP Web IDE\) streamlines the end-to-end application li
 
 [SAP Web IDE Full-stack \(Product Page\)](https://help.sap.com/viewer/825270ffffe74d9f988a0f0066ad59f0/CF/en-US/0221845d73ad403ab2852142f3179177.html)
 
-[Working with SAP Web IDE Full-Stack](20-HANA-Cloud-DB-Dev-Get-Started/working-with-sap-web-ide-full-stack-254fe0b.md "SAP Web IDE Full-Stack is a browser-based integrated development environment (IDE) that can be used for the development of complex SAP HANA applications.")
+[Working with SAP Web IDE Full-Stack](020-HANA-Cloud-DB-Dev-Get-Started/working-with-sap-web-ide-full-stack-254fe0b.md "SAP Web IDE Full-Stack is a browser-based integrated development environment (IDE) that can be used for the development of complex SAP HANA applications.")
 

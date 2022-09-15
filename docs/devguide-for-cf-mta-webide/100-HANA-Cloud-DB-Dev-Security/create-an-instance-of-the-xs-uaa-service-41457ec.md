@@ -69,7 +69,7 @@ If you want to grant users access to an application, you must create an instance
 **Related Information**  
 
 
-[Create a Service Instance](../70-HANA-Cloud-DB-Dev-App-Services/create-a-service-instance-355f3b1.md "Make a service instance available to applications.")
+[Create a Service Instance](../070-HANA-Cloud-DB-Dev-App-Services/create-a-service-instance-355f3b1.md "Make a service instance available to applications.")
 
 [Modifications and Restrictions for XSUAA Service Updates](modifications-and-restrictions-for-xsuaa-service-updates-ca1ac42.md "Restrictions apply to which parts of the application's security description you can change and apply when updating an instance of the XSUAA service.")
 
