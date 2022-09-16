@@ -2,7 +2,7 @@
 
 # Introducing SAP HANA Cloud
 
-A short overview of SAP HANA Cloud
+A short overview of SAP HANA Cloud 
 
 
 
