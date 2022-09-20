@@ -12,7 +12,7 @@ The *SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multita
 
 -   Getting started
 
-    A collection of tutorials which are designed to demonstrate how to build and deploy a simple SAP HANA Cloud application for deployment to Cloud Foundry quickly and easily
+    A collection of tutorials which are designed to demonstrate how to build and deploy a simple SAP HANA Cloud application for deployment to Cloud Foundry quickly and easily.
 
 -   The end-to-end development process
 
