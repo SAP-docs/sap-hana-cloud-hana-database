@@ -8,7 +8,7 @@ To set up your SAP HANA Cloud application as a multi-target application, you nee
 
 The following high-level rules need to be followed when setting up your SAP HANA Cloud application:
 
--   Separate all database content \(design-time representations of tables, views, procedures, etc.\)
+-   Separate all database content \(design-time representations of tables, views, procedures, etc.\).
 -   Isolate all static content \(HTML, images, other UI related files\) in its own folder.
 -   Place language-specific application source files in their own folder.
 
