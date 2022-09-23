@@ -122,9 +122,9 @@ To integrate services with applications, the service credentials must be deliver
 
 <a name="loio33e3c5926feb4098a32edcaa7290c3d1__section_esc_1zv_gnb"/>
 
-## User-provided Services
+## User-Provided Services
 
-The Cloud Foundry environment also allows you to work with user-provided service instances. User-provided service instances enable developers to provide services that are not available in the marketplace with their applications running in the Cloud Foundry environment. You can use the Cloud Foundry CLI to create a user-provided service, for example, with the the `cf create-user-provided-service` command. After creation, an instance of a user-provided service behaves in exactly the same way as a service instance that is created through the market place. For more information about creating user-defined services including how to ensure the correct forwarding of requests to any routes that are bound to the service, see the help provided by the Cloud Foundry CLI, for example, using the command `cf help create-user-provided-service`.
+The Cloud Foundry environment also allows you to work with user-provided service instances. User-provided service instances enable developers to provide services that are not available in the marketplace with their applications running in the Cloud Foundry environment. You can use the Cloud Foundry CLI to create a user-provided service, for example, with the `cf create-user-provided-service` command. After creation, an instance of a user-provided service behaves in exactly the same way as a service instance that is created through the market place. For more information about creating user-defined services including how to ensure the correct forwarding of requests to any routes that are bound to the service, see the help provided by the Cloud Foundry CLI, for example, using the command `cf help create-user-provided-service`.
 
 **Related Information**  
 
