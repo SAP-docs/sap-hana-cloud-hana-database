@@ -39,39 +39,19 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
 
 2.  Open the SQL console for SAP HANA.
 
-    In the *DATABASE LIST* pane, locate the database that you want to explore, and choose <span class="FPA-icons"></span> \(Open SQL Console\) to connect to the selected database and open the SQL console for SAP HANA. If you want access to the HDI container-admin API\(s\), choose <span class="FPA-icons"></span> \(Open SQL Console as HDI Admin\). If you cannot find your database in the list, hover the mouse cursor over the database list and choose <span class="FPA-icons"></span> \(Refresh Database List\).
+    In the *DATABASE LIST* pane, locate the database that you want to explore, and choose <span class="FPA-icons"></span> \(Open SAP HANA SQL Console\) to connect to the selected database and open the SQL console for SAP HANA. If you want access to the HDI container-admin API\(s\), choose <span class="FPA-icons"></span> \(Open SAP HANA SQL Console as HDI Admin\). If you cannot find your database in the list, hover the mouse cursor over the database list and choose <span class="FPA-icons"></span> \(Refresh Database List\).
 
     > ### Tip:  
     > After the SQL Console opens, choose <span class="SAP-icons"></span> \(View connection settings\)and enable *Auto-commit* if you want to ensure that any changes to the database required by the SQL code you run in the SQL console are performed immediately, for example, when inserting or updating data in tables. Auto-commit is useful if you are running multiple SQL commands which contain dependencies. If auto-commit is disabled, you will have to `COMMIT` or `ROLLBACK` any changes manually.
 
-    If the connection succeeds, the tool bar SQL console for SAP HANA indicates the name of the database it is connected to and \(in brackets\) the name of the Cloud Foundry space to which the database is assigned, for example, *FlightReservation-hdidb-ws-ab1cd \(WDF\)*.
+    If the connection succeeds, the tool bar in the SQL console for SAP HANA indicates the name of the database it is connected to and \(in brackets\) the name of the Cloud Foundry space to which the database is assigned, for example, *FlightReservation-hdidb-ws-ab1cd \(WDF\)*.
 
 3.  Check the details of the connected database.
 
-    The tool bar of the SQL Console for SAP HANA displays the following information and tools:
+    The tool bar in the SQL Console for SAP HANA displays the following information and tools:
 
     ```
-    RemoteAccess-hdidb-ws-ab1cd (WDF)     [/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-size
-         {""})  (sap-icon-font-size][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-color
-         {""})  (sap-icon-font-color][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-background-color
-         {""})  (sap-icon-background-color][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-character
-         {""})  (sap-icon-font-character][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-description
-         {""})  (sap-icon-font-description]     [/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-size
-         {""})  (sap-icon-font-size][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-color
-         {""})  (sap-icon-font-color][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-background-color
-         {""})  (sap-icon-background-color][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-character
-         {""})  (sap-icon-font-character][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-description
-         {""})  (sap-icon-font-description]     [/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-size
-         {""})  (sap-icon-font-size][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-color
-         {""})  (sap-icon-font-color][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-background-color
-         {""})  (sap-icon-background-color][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-character
-         {""})  (sap-icon-font-character][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-description
-         {""})  (sap-icon-font-description]     [/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-size
-         {""})  (sap-icon-font-size][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-color
-         {""})  (sap-icon-font-color][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-background-color
-         {""})  (sap-icon-background-color][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-character
-         {""})  (sap-icon-font-character][/pandoc/div/div/horizontalrule/orderedlist/li/codeblock/sap-icon-font/sap-icon-font-description
-         {""})  (sap-icon-font-description]     SAP HANA Cloud
+    RemoteAccess-hdidb-ws-ab1cd (WDF)                         SAP HANA Cloud
     ```
 
     The following table explains the meaning of the information provided:
@@ -96,15 +76,15 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *RemoteAccess-hdidb-ws-ab1cd* 
+    
+         *RemoteAccess-hdidb-ws-ab1cd* 
 
 
     
     </td>
     <td valign="top">
-
-    The name of the database that the SQL console for SAP HANA is currently connected to. By default, this name comprises the following elements:
+    
+        The name of the database that the SQL console for SAP HANA is currently connected to. By default, this name comprises the following elements:
 
     <code><i class="varname">&lt;Project Name&gt;</i>-<i class="varname">&lt;MTA resource name&gt;</i>-<i class="varname">&lt;Workspace-Name&gt;</i></code>
 
@@ -114,15 +94,15 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *\(WDF\)* 
+    
+         *\(WDF\)* 
 
 
     
     </td>
     <td valign="top">
-
-    The name \(in brackets\) of the Cloud Foundry space to which the database instance is assigned.
+    
+        The name \(in brackets\) of the Cloud Foundry space to which the database instance is assigned.
 
 
     
@@ -130,15 +110,15 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     <span class="SAP-icons-watt"></span> \(Connect\) 
+    
+         <span class="SAP-icons-watt"></span> \(Connect\) 
 
 
     
     </td>
     <td valign="top">
-
-    Connect the SQL console for SAP HANA to the currently selected database.
+    
+        Connect the SQL console for SAP HANA to the currently selected database.
 
     While the SQL console for SAP HANA is connected to a database, the connect icon is inactive. When you hover the mouse cursor over the connect icon, <span style="color:#BB0000;"><span class="FPA-icons"></span></span> indicates that another connection is not currently possible.
 
@@ -148,15 +128,15 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     <span class="SAP-icons-watt"></span> \(Disconnect\) 
+    
+         <span class="SAP-icons-watt"></span> \(Disconnect\) 
 
 
     
     </td>
     <td valign="top">
-
-    Disconnect the SQL console for SAP HANA from the currently selected database.
+    
+        Disconnect the SQL console for SAP HANA from the currently selected database.
 
     While the SQL console for SAP HANA remains connected to the selected database, the disconnect icon is active.
 
@@ -166,31 +146,15 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     <span class="FPA-icons"></span> \(Different database\) 
+    
+         <span class="FPA-icons"></span> \(Different database\) 
 
 
     
     </td>
     <td valign="top">
-
-    Connect the SQL console to a different database. For more information about how to perform this action, see step *Connect to a different database* below.
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    <span class="SAP-icons"></span> \(View connection settings\)
-
-
-    
-    </td>
-    <td valign="top">
-
-    Enable or disable auto-commit for any database changes required by SQL statements running in the SQL console
+        Connect the SQL console to a different database. For more information about how to perform this action, see step *Connect to a different database* below.
 
 
     
@@ -198,15 +162,31 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     [SAP HANA Cloud\] 
+    
+        <span class="SAP-icons"></span> \(View connection settings\)
 
 
     
     </td>
     <td valign="top">
+    
+        Enable or disable auto-commit for any database changes required by SQL statements running in the SQL console
 
-    The database type, for example, *SAP HANA* or *SAP HANA Cloud* 
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+         [SAP HANA Cloud\] 
+
+
+    
+    </td>
+    <td valign="top">
+    
+        The database type, for example, *SAP HANA* or *SAP HANA Cloud* 
 
 
     
@@ -216,7 +196,7 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     
 4.  Run an SQL statement to perform a database query.
 
-    Paste the following SQL statement into the SQL console for SAP HANA and choose <span style="color:#2B7D2B;"><span class="FPA-icons"></span></span> \(Run\) :
+    Paste the following SQL statement into the SQL console for SAP HANA and choose <span style="color:#2B7D2B;"><span class="FPA-icons"></span></span> \(Run\):
 
     > ### Sample Code:  
     > Sample SQL Command
@@ -227,6 +207,9 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     > ```
 
     To cancel a running SQL statement, choose <span style="color:#BB0000;"><span class="FPA-icons"></span></span> \(Cancel Statement\).
+
+    > ### Tip:  
+    > Choose <span class="BusinessSuiteInAppSymbols"></span> \(Statement Syntax Help\)to reveal \(or hide\) a side panel in the SQL console, which displays syntax suggestions for SQL statements and provides access to information about metadata SQL objects. The side panel also displays details of the objects referenced in the current console \(for example, tables, views, procedures, and built-in functions\) and provides links to the corresponding SQL reference documentation. For more details, see *SQL Statement Syntax Help* in *Related Information* below.
 
     The SQL console for SAP HANA permits the following *Run* options:
 
@@ -257,45 +240,22 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *Run* 
+    
+         *Run* 
 
 
     
     </td>
     <td valign="top">
-
-     [F8\] 
+    
+         [F8\] 
 
 
     
     </td>
     <td valign="top">
-
-    Executes all SQL statements
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     *Run Statement* 
-
-
-    
-    </td>
-    <td valign="top">
-
-     [F9\] 
-
-
-    
-    </td>
-    <td valign="top">
-
-    Executes individual SQL statements
+        Executes all SQL statements
 
 
     
@@ -303,22 +263,22 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *Run Line* 
+    
+         *Run Statement* 
 
 
     
     </td>
     <td valign="top">
-
-      [Ctrl\] + [F8\]  
+    
+         [F9\] 
 
 
     
     </td>
     <td valign="top">
-
-    Executes the contents of the currently selected line of SQL code
+    
+        Executes individual SQL statements
 
 
     
@@ -326,15 +286,38 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-     *Run with parameters* 
+    
+         *Run Line* 
 
 
     
     </td>
     <td valign="top">
+    
+          [Ctrl\] + [F8\]  
 
-    N/A
+
+    
+    </td>
+    <td valign="top">
+    
+        Executes the contents of the currently selected line of SQL code
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+         *Run with parameters* 
+
+
+    
+    </td>
+    <td valign="top">
+    
+        N/A
 
     > ### Tip:  
     > The run-with-parameters option is only available in the *Parameters* tab.
@@ -343,8 +326,8 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     
     </td>
     <td valign="top">
-
-    Executes the contents of the currently selected line of SQL code with the parameters provided
+    
+        Executes the contents of the currently selected line of SQL code with the parameters provided
 
 
     
@@ -364,7 +347,7 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
 
     1.  Run SQL stored in a file.
 
-        To open an SQL file from a file system, choose :open_file_folder: , locate and select the file in the file explorer, and choose *Open*. The name of the open file is displayed in the tab title, and the contents of the open file are displayed in the SQL console.
+        To open an SQL file from a file system, choose :open_file_folder:, locate and select the file in the file explorer, and choose *Open*. The name of the open file is displayed in the tab title, and the contents of the open file are displayed in the SQL console.
 
     2.  Save changes to the currently open SQL file.
 
@@ -394,6 +377,8 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
 
 
 [Querying the Database \(SAP HANA Database Explorer Guide\)](https://help.sap.com/viewer/a2cea64fa3ac4f90a52405d07600047b/cloud/en-US/beec2b0b56d6498ea9fb3706dbfc9688.html)
+
+[SQL Statement Syntax Help \(SAP HANA Database Explorer Guide\)](https://help.sap.com/docs/HANA_CLOUD/a2cea64fa3ac4f90a52405d07600047b/2f39e4fdd67545cf805b557357c5a7b3.html#statement-syntax-help)
 
 [SAP HANA Database Explorer for VS Code \(Visual Studio Marketplace\)](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer)
 

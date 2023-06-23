@@ -73,7 +73,7 @@ To create a multi-target application, perform the following steps:
 
     The following restrictions apply to the MTA **Deployment** Descriptor \(`mtad.yaml`\):
 
-    <a name="loioebb42efc880c4276a5f2294063fae0c3__table_gnw_lgv_ccb"/>MTA Descriptor File Size Restrictions
+    **MTA Descriptor File Size Restrictions**
 
 
     <table>
@@ -95,31 +95,15 @@ To create a multi-target application, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-    MTA archive
+    
+        MTA archive
 
 
     
     </td>
     <td valign="top">
-
-    4 GB
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    MTA **module** content
-
-
-    
-    </td>
-    <td valign="top">
-
-    4 GB
+        4 GB
 
 
     
@@ -127,31 +111,15 @@ To create a multi-target application, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-    MTA **resource** content
+    
+        MTA modules/resources content
 
 
     
     </td>
     <td valign="top">
-
-    1 GB
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    MTA deployment descriptor \(`mtad.yaml`\)
-
-
-    
-    </td>
-    <td valign="top">
-
-    1 MB
+        2 GB
 
 
     
@@ -159,15 +127,31 @@ To create a multi-target application, perform the following steps:
     </tr>
     <tr>
     <td valign="top">
-
-    MTA manifest \(`MANIFEST.MF`\)
+    
+        MTA deployment descriptor \(`mtad.yaml`\)
 
 
     
     </td>
     <td valign="top">
+    
+        1 MB
 
-    1 MB
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+        MTA manifest \(`MANIFEST.MF`\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+        1 MB
 
 
     
@@ -192,4 +176,6 @@ To create a multi-target application, perform the following steps:
 [MTA Deployment Descriptor Syntax](mta-deployment-descriptor-syntax-4050fee.md "Description of an MTA's deployment-related prerequisites and dependencies.")
 
 [The Cloud MTA Build Tool \(MBT\)](the-cloud-mta-build-tool-mbt-1412120.md "A new tool for building deployment archives for multitarget applications (MTA).")
+
+[The MTA Deployment Extension Descriptor](the-mta-deployment-extension-descriptor-51ac525.md "Provide system-specific details that are not known until deployment time.")
 

@@ -11,7 +11,7 @@ SAP HANA Cloud includes a selection of standard Java libraries, which are availa
 > ### Tip:  
 > For more detailed information, see the `README` file in the corresponding package or, where available, the JavaDoc reference guide.
 
-<a name="loio6511bc054b0e48369a625a8019fefd53__table_d4f_cw4_dz"/>SAP JAVA Libraries
+**SAP JAVA Libraries**
 
 
 <table>
@@ -582,7 +582,7 @@ The `sap-java-hdi` \(`hdi`\) client library enables Java applications to access 
 
 Version 2.\* of the SAP HANA DI \(HDI\) client library for Java applications wraps the HDI SQL APIs in Java classes and methods. The following main classes are available:
 
-<a name="loio6511bc054b0e48369a625a8019fefd53__table_ehb_txl_h1b"/>HDI JAVA Classes
+**HDI JAVA Classes**
 
 
 <table>

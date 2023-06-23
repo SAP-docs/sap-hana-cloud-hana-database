@@ -8,7 +8,7 @@ A list of Python packages developed by SAP, which are available for download and
 
 SAP provides a selection of Python packages for use by customers and partners. The packages are available for download and use from the SAP Service Marketplace \(SMP\) for anyone with the appropriate access authorization. For more information about how to download and use Python packages from the SAP Service Marketplace, log on to the SMP and search for the software component `XS_PYTHON`, which is an archive that contains the SAP packages. The following table lists the SAP Python packages that are currently available. For more details about the contents of each Python package as well as any configuration tips, see the `README` file in the corresponding package.
 
-<a name="loio8732609bd5314b51a17d6a3cc09110c3__table_gbs_snc_wcb"/>Python Packages
+**Python Packages**
 
 
 <table>
@@ -147,7 +147,7 @@ The create and delete operations are executed asynchronously on server side. To 
 
 Since operations involve network activity \(thus, can be considered relatively slower\) the package also caches the created instances. Cache options can also be provided by developers.
 
-<a name="loio8732609bd5314b51a17d6a3cc09110c3__table_ifk_wxj_ycb"/>Instance Manager Configuration Options
+**Instance Manager Configuration Options**
 
 
 <table>
@@ -495,7 +495,7 @@ Number of seconds after which a cache entry expires. Defaults to 600 seconds. Mi
 
 The following table lists the methods available with the instance-manager API:
 
-<a name="loio8732609bd5314b51a17d6a3cc09110c3__table_bkw_dnk_xz"/>Instance-Manager API Methods
+**Instance-Manager API Methods**
 
 
 <table>
@@ -644,7 +644,7 @@ The creation function `xssec.create_security_context` is used for an end-user to
 
 The complete details of the application-container security API including all parameters and options are available in the README file included in the `sap_xssec` package.
 
-<a name="loio8732609bd5314b51a17d6a3cc09110c3__table_ukv_l1n_wt"/>Container Security API
+**Container Security API**
 
 
 <table>

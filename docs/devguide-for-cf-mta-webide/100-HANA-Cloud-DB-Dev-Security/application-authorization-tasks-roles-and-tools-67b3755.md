@@ -10,7 +10,7 @@ Developers store authorization information as design-time role templates in the 
 
 The tasks required to set up authorization artifacts in Cloud Foundry on SAP Business Technology Platform are performed by two distinct user roles: the application developer and the SAP HANA administrator. After the deployment of the authorization artifacts as role templates, the administrator of the multitarget application uses the role templates provided by the developers to build role collections and assign them to business users, for example, using in the *SAP Cockpit* section of the *SAP HANA Cloud Administration Guide*.
 
-<a name="loio67b375554f434ddfa4444f007ace4b4b__table_n2p_jdw_zl"/>Setting Up Authorization Artifacts
+**Setting Up Authorization Artifacts**
 
 
 <table>

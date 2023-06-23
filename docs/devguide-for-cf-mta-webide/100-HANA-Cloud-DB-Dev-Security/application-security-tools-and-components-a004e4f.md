@@ -11,7 +11,7 @@ The following table lists the tasks you need to perform to set up security for y
 > ### Note:  
 > The tasks and tools listed in the following table are not exhaustive; some tools are not included. The aim of the table is to provide guidance concerning where to find information about the more typical areas of concern for application security. For more information about the individual tools mentioned in this topic, see *Related Information*.
 
-<a name="loioa004e4fb650c480f9beee556295f21af__table_qhw_bwp_3bb"/>Security-Related Tasks and Tools for Multitarget Applications
+**Security-Related Tasks and Tools for Multitarget Applications**
 
 
 <table>

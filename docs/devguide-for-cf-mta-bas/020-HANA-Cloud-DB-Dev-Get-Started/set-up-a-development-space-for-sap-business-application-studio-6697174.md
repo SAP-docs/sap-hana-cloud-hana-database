@@ -67,7 +67,7 @@ This tutorial shows how to create and set up a dev space in SAP Business Applica
     By default, SAP Business Application Studio logs on to the most recently used Cloud Foundry target and displays the connection details in the status bar, for example, *Targeting Cloud Foundry MyOrg/MySpace*. If no target has yet been set, the status bar displays the message *The Organization and space in CF have not been set*.
 
     > ### Note:  
-    > If no information about the connection to Cloud Foundry is available in the status bar, click <span style="font-size:16px;"><span class="SAP-icons"></span></span> \(Settings\) and choose *Open Preferences* \> *Cloud Foundry Tools* \> *Show Target Information* and enable *Display the current Cloud Foundry target information in the status bar*.
+    > If no information about the connection to Cloud Foundry is available in the status bar, click <span style="font-size:16px;"><span class="SAP-icons"></span></span> \(Manage\) and choose *Settings* \> *Extensions* \> *Cloud Foundry Tools* \> *Show Target Information* and enable *Display the current Cloud Foundry target information in the status bar*.
 
     To set the organization and space for your dev space, you need to log on to Cloud Foundry and specify the target to use, as described in the following steps:
 

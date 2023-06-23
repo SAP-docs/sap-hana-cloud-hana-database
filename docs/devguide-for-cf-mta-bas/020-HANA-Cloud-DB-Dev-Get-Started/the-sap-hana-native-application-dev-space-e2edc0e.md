@@ -27,7 +27,7 @@ The tools and editors are packaged in SAP extensions, which are split into the f
 
 The following table lists all the extensions that are enabled by default when you create an *SAP HANA Native Application* dev space:
 
-<a name="loioe2edc0e80c09443fa8db47f235b7d060__table_cq2_1p5_nnb"/>Predefined Extension Packs for the SAP HANA Native Application Dev Space
+**Predefined Extension Packs for the SAP HANA Native Application Dev Space**
 
 
 <table>
@@ -137,26 +137,6 @@ For more information about the individual tools, see *Related Information* below
 <tr>
 <td valign="top">
 
- *Basic SAP version of Theia IDE* 
-
-
-
-</td>
-<td valign="top">
-
-Use basic IDE functionality such as: code editors, split view, dynamic layout, file management and search, preferences, Git integration, Outline view, and Problems view. It enables you to execute commands using the command palette and the terminal. The following tool will be installed as part of the extension:
-
--   Eclipse
--   Theia
--   Git
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
  *SAP HANA Smart Data Integration Tools* 
 
 
@@ -180,7 +160,7 @@ Perform SDI tasks such as data federation, data replication, and data transforma
 
 The following table lists the extensions that you can choose to add to your *SAP HANA Native Application* dev space:
 
-<a name="loioe2edc0e80c09443fa8db47f235b7d060__table_ngj_4q5_nnb"/>Additional Extension Packs for the SAP HANA Native Application Dev Space
+**Additional Extension Packs for the SAP HANA Native Application Dev Space**
 
 
 <table>
@@ -219,6 +199,22 @@ Extend SAPUI5 applications using Adaptation Project and Visual Editor
 <tr>
 <td valign="top">
 
+ *Basic Tools Next* 
+
+
+
+</td>
+<td valign="top">
+
+Basic Tools Next version for testing and validations
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
  *CDS Graphical Modeler* 
 
 
@@ -235,6 +231,86 @@ Design SAP core data services models in SAP cloud business application developme
 <tr>
 <td valign="top">
 
+ *CAP Tools* 
+
+
+
+</td>
+<td valign="top">
+
+Develop CAP applications using the CDS command-line and tools.Includes enhanced code and graphical editors, database-management capabilities, and tools for running your application.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *Chromium Browser Tools* 
+
+
+
+</td>
+<td valign="top">
+
+Use Chromium tools.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *Low-code Tools* 
+
+
+
+</td>
+<td valign="top">
+
+A collection of low-code tools enabling developers to easily build full-stack applications for desktop and mobile use.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *Mobile Services App Development Tools* 
+
+
+
+</td>
+<td valign="top">
+
+A collection of tools that enable developers to build end-to-end mobile applications - from modeling and generating OData services, and creating mobile native applications from metadata with MDK to building content for SAP Mobile Cards.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *Fiori Freestyle Tools* 
+
+
+
+</td>
+<td valign="top">
+
+Optimize your Fiori-based development. This extension provides Fiori templates with the following tools: UI5 CLI, Grunt CLI, abap-deploy CLI
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
  *SAP HANA Performance Tools* 
 
 
@@ -242,7 +318,65 @@ Design SAP core data services models in SAP cloud business application developme
 </td>
 <td valign="top">
 
-Analyze SAP HANA performance traces. The extension includes the SAP HANA SQL Analyzer.
+Analyze SAP HANA performance traces. The extension includes the *SQL analyzer tool for SAP HANA*.
+
+> ### Tip:  
+> For more information about the *SQL analyzer tool for SAP HANA*, which you can download from the Visual Studio marketplace, see *Related Information* below.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *HTML5 Runner* 
+
+
+
+</td>
+<td valign="top">
+
+Run HTML5 applications locally. The extension includes the HTML5 application runner and run configurations.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *HTML5 Application Template* 
+
+
+
+</td>
+<td valign="top">
+
+Create an HTML5 application using a template wizard.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *Java Tools* 
+
+
+
+</td>
+<td valign="top">
+
+Develop and run Java applications. It includes debugging capabilities, enhanced code editors, and spring-boot tools. The following tools are installed as part of the extension:
+
+-   Redhat Java
+-   Java Debug
+-   Springboot Tools
+-   Wing Java Run
+-   Java Test Runner
+-   Project Manager for Java
 
 
 
@@ -259,6 +393,27 @@ Analyze SAP HANA performance traces. The extension includes the SAP HANA SQL Ana
 <td valign="top">
 
 Add a launchpad to your multitarget application.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *MTA Tools cf-v3* 
+
+
+
+</td>
+<td valign="top">
+
+Perform operations such as build, deployment, and validation on multitarget applications \(MTA\). The following tools are installed as part of the extension:
+
+-   Cloud Foundry environment CLI
+-   Cloud Foundry environment deployment plugin
+-   Cloud MTA Build Tool
+-   MTA module runner \(VSCode extension\)
 
 
 
@@ -322,6 +477,25 @@ Visualize and develop your XML view graphically.
 <tr>
 <td valign="top">
 
+ *SAP Business Application Studio Extension Development* 
+
+
+
+</td>
+<td valign="top">
+
+Use create, deploy, and manage your own SAP Business Application Studio extensions.You can then include these extensions in your SAP Business Application Studio environment.
+
+> ### Note:  
+> The *SAP Business Application Studio Extension Management CLI* tool is installed as part of the extension.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
  *Workflow Management* 
 
 
@@ -365,4 +539,6 @@ Create and deploy extensions in a serverless environment.
 [The Cloud MTA Build Tool \(MBT\)](../030-HANA-Cloud-DB-Dev-Deployment/the-cloud-mta-build-tool-mbt-1412120.md "A new tool for building deployment archives for multitarget applications (MTA).")
 
 [Download and Install the Cloud Foundry CLI client](download-and-install-the-cloud-foundry-cli-client-c9f777d.md "Set up the Cloud Foundry Command Line Interface (CLI)")
+
+[SQL analyzer tool for SAP HANA \(VS Marketplace\)](https://marketplace.visualstudio.com/items?itemName=SAPSE.vsc-extension-sa)
 

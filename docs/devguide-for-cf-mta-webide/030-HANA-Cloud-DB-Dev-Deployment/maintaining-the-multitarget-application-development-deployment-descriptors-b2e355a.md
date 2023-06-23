@@ -6,7 +6,7 @@ Development descriptors are used to generate deployment descriptors, which defin
 
 The deployment description is contained in the application deployment “descriptor”, which specifies what you want to build \(and how\) as well as where \(and how\) to deploy it, as follows:
 
-<a name="loiob2e355a5137c4799932f776716b292c9__table_smp_nnn_wnb"/>MTA Development and Deployment Descriptors
+**MTA Development and Deployment Descriptors**
 
 
 <table>

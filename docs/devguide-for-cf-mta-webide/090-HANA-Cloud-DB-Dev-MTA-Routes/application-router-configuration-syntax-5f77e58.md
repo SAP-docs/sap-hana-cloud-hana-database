@@ -77,7 +77,7 @@ The following example of an `xs-app.json` application descriptor shows the JSON-
 
 The Web page served by default if the HTTP request does not include a specific path, for example, `index.html`.
 
-<a name="loio5f77e58ec01b46f6b64ee1e2afe3ead7__table_xh1_p2r_xs"/>Application-Router Parameters
+**Application-Router Parameters**
 
 
 <table>
@@ -249,7 +249,7 @@ The following authentication methods are allowed:
 
 Defines all route objects, for example: `source`, `target`, and, `destination`.
 
-<a name="loio5f77e58ec01b46f6b64ee1e2afe3ead7__table_mlp_p2r_xs"/>Application Router: Routes Properties
+**Application Router: Routes Properties**
 
 
 <table>
@@ -698,7 +698,7 @@ The `replace` object configures the placeholder replacement in static text resou
 
 The `replace` keyword requires the following properties:
 
-<a name="loio5f77e58ec01b46f6b64ee1e2afe3ead7__table_qgd_34y_lv"/>Replacement Properties for Static Resource URLs
+**Replacement Properties for Static Resource URLs**
 
 
 <table>
@@ -824,7 +824,7 @@ The content type returned by a request is based on the file extension specified 
 
 The following table illustrates some examples of the `pathSuffixes` properties:
 
-<a name="loio5f77e58ec01b46f6b64ee1e2afe3ead7__table_hgz_3ry_lv"/>Examples of the pathSuffixes Property
+**Examples of the pathSuffixes Property**
 
 
 <table>
@@ -1031,7 +1031,7 @@ Specify any additional options for your destinations. The destinations section i
 
 The following syntax rules apply:
 
-<a name="loio5f77e58ec01b46f6b64ee1e2afe3ead7__table_ddv_cnn_tt"/>Application Router: Destination Properties
+**Application Router: Destination Properties**
 
 
 <table>
@@ -1159,7 +1159,7 @@ You can disable compression in the following ways:
     The application sends a header “`Cache-Control`” with the “`no-transform`” directive.
 
 
-<a name="loio5f77e58ec01b46f6b64ee1e2afe3ead7__table_ikc_z2n_tx"/>Application Router: Compression Properties
+**Application Router: Compression Properties**
 
 
 <table>
@@ -1301,7 +1301,7 @@ If the allow-list service is enabled in the application router, each time an HTM
 
 The allow-list service reads a list of allowed host names and domains defined in the environment variable *<CJ\_PROTECT\_WHITELIST\>*; the content is a JSON list of objects with the following properties:
 
-<a name="loio5f77e58ec01b46f6b64ee1e2afe3ead7__table_dhz_41z_lv"/>Allowed Host and Domain Names
+**Allowed Host and Domain Names**
 
 
 <table>
@@ -1505,7 +1505,7 @@ Errors originating in the application router show the HTTP status code of the er
 
 The property is an array of objects, each object can have the following properties:
 
-<a name="loio5f77e58ec01b46f6b64ee1e2afe3ead7__table_h5m_nvf_2z"/>Application Router: errorPage Properties
+**Application Router: errorPage Properties**
 
 
 <table>

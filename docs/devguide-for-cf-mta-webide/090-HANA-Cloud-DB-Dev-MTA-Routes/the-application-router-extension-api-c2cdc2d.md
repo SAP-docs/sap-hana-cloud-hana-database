@@ -21,7 +21,7 @@ The application router extension API enables you to create new instances of the 
 
 Manage the insertion of middleware slots with the application router.
 
-<a name="loioc2cdc2d2237e4c7ba47dc2a9d54645eb__table_prc_lv1_tx"/>Middleware Slot Management
+**Middleware Slot Management**
 
 
 <table>

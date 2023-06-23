@@ -28,7 +28,7 @@ In the SAP HANA deployment infrastructure \(HDI\), design-time artifacts are dis
 
 The following table lists in alphabetical order the design-time artifacts you can develop and deploy with the SAP HANA Deployment Infrastructure \(HDI\) and describes the artifact's scope. The table also indicates which build plug-in is required to ensure successful deployment of the artifact. For more information about the individual artifact types and the configuration of the corresponding build plug-in, see *Related Information* below.
 
-<a name="loio7ce8ca4a12d54f7a91d8daaad909126b__table_pvn_hp2_1t"/>Mappings Default File-Suffix to HDI Build Plug-ins
+**Mappings Default File-Suffix to HDI Build Plug-ins**
 
 
 <table>
@@ -1028,7 +1028,7 @@ Properties file for a table-import operation
 **Related Information**  
 
 
-[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
+[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
 
 [The SAP HDI Container Configuration File](the-sap-hdi-container-configuration-file-6400400.md "Bind design-time file types to the corresponding build plug-in required in the SAP HANA Deployment Infrastructure (HDI).")
 

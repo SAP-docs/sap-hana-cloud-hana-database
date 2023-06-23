@@ -37,7 +37,7 @@ An overview of the steps required to set up and deploy a multitarget application
 
 The end-to-end process of developing an application that you want to deploy on SAP HANA Cloud is illustrated in the steps described in this high-level overview.
 
-<a name="loio424a70b12c3d42809e777591813e3703__table_y4c_kk2_vt"/>Application Development Overview
+**Application Development Overview**
 
 
 <table>

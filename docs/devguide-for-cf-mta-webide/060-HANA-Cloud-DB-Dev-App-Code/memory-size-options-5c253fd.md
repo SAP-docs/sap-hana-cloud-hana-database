@@ -62,8 +62,7 @@ You can set custom values in the manifest file before the application is staged 
 > 
 > ```
 >   env:
->     JBP_CONFIG_SAPJVM:  "[memory_calculator: {memory_heuristics: {heap: 85, stack: 10}}]"
-> 
+>     JBP_CONFIG_SAPJVM:  '{ "memory_calculator": { "memory_heuristics": { "heap": 85, "stack": 10 } } }'
 > ```
 
 Furthermore, you can change the sizes during the application run time with the `cf set-env` command, as follows:
@@ -72,21 +71,21 @@ Furthermore, you can change the sizes during the application run time with the `
 
     > ### Sample Code:  
     > ```
-    > xs set-env myapp JBP_CONFIG_SAPJVM_MEMORY_WEIGHTS "heap:5,stack:1,metaspace:3,native:1"
+    > cf set-env myapp JBP_CONFIG_SAPJVM_MEMORY_WEIGHTS "heap:5,stack:1,metaspace:3,native:1"
     > ```
 
 -   To set custom sizes, use the JBP\_CONFIG\_SAPJVM\_MEMORY\_SIZES environment variable.
 
     > ### Sample Code:  
     > ```
-    > xs set-env myapp JBP_CONFIG_SAPJVM_MEMORY_SIZES "heap: 30m..400m, stack: 2m.., metaspace: 10m..12m"
+    > cf set-env myapp JBP_CONFIG_SAPJVM_MEMORY_SIZES "heap: 30m..400m, stack: 2m.., metaspace: 10m..12m"
     > ```
 
 -   To set custom initials, use the JBP\_CONFIG\_SAPJVM\_MEMORY\_INITIALS environment variable.
 
     > ### Sample Code:  
     > ```
-    > xs set-env myapp JBP_CONFIG_SAPJVM_MEMORY_INITIALS "heap: 50%, metaspace: 50%"
+    > cf set-env myapp JBP_CONFIG_SAPJVM_MEMORY_INITIALS "heap: 50%, metaspace: 50%"
     > ```
 
 

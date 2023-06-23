@@ -1,5 +1,7 @@
 <!-- loiof42acff48e164acbb01b1ee969b1282b -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Create a New Business Application Project
 
 Set up a new project for your application in SAP Business Application Studio.
@@ -20,7 +22,7 @@ Set up a new project for your application in SAP Business Application Studio.
 This tutorial shows how to use the templates provided by SAP Business Application Studio to set up a project for your new SAP HANA database application.
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Find Command...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. Choose ![](images/BAS_icon_GuidedDevCenter_b7736b4.svg) \(*Guided Development Center*\) in SAP Business Application Studio's *Views* pane or open the command palette \(*View* \> *Command Palette...*\) and search for *Guided Development Center*. In the list of guided development tutorials, choose *Create SAP HANA Database Applications & Artifacts* \> *Get Started with SAP HANA*.
 
 
 
@@ -32,7 +34,10 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
 
         Either press  [Crtl\] + [Shift\] + [P\]  
 
-        Or choose *View* \> *Find Command...*
+        Or choose *View* \> *Command Palette...*
+
+        > ### Tip:  
+        > By default, SAP Business Application Studio provides "compact" menus and options, which are displayed when you choose <span class="SAP-icons"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the dev. space, choose :gear:in the Views pane, choose *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* to "*classic*" in the drop-down list provided.
 
         Or just press [F1\]
 

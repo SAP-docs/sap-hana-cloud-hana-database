@@ -245,7 +245,7 @@ You can enable a multitarget application to access objects in a remote schema; t
 
     4.  Check that the new user-defined service is running in the target space.
 
-        Use the command `xs services` to display a list of services available in the current space; the following service should be visible:
+        Use the command `cf services` to display a list of services available in the current space; the following service should be visible:
 
         > ### Output Code:  
         > ```
@@ -330,7 +330,7 @@ You can enable a multitarget application to access objects in a remote schema; t
 
 [Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
 
-[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
+[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
 
 [Enable Access to Objects in Another HDI Container](enable-access-to-objects-in-another-hdi-container-4adba34.md "Use a synonym to enable access to another HDI container.")
 

@@ -43,6 +43,22 @@ The following diagram illustrates the binding-specific application users, the ro
 > ### Note:  
 > The “`default_access_role`” is assumed to be an “umbrella” role which aggregates other roles.
 
+
+
+<a name="loio9235c9dd8dbf410f915ffe305296a032__section_rqn_r4v_23b"/>
+
+## The Development Debug Role
+
+Similarly to the `default_access_role`, a `development_debug_role` can be used to grant additional privileges to the default access role.
+
+> ### Note:  
+> This development debug role is only intended for HDI development and debugging; it is not intended \(or recommended\) for use in a productive environment.
+
+If a role-definition file exists at the path `src/defaults/development_debug_role.hdbrole`, and this file defines a role named `development_debug_role`, and this file is explicitly included in the deployment by means of the `--deploy` option, then the HDI Deployer grants the deployed `development_debug_role` role to the service instance's global access role \(for example, `FOO::access_role`\). In order to remove the privileges granted this way, the design-time, role-definition file has to be undeployed.
+
+> ### Note:  
+> For more information about defining design-time roles, for example, in `.hdbrole` artifacts, see *HDI Artifact Types and Build Plug-ins* in *Related Information* below.
+
 **Related Information**  
 
 
@@ -53,4 +69,6 @@ The following diagram illustrates the binding-specific application users, the ro
 [File Structure of the Multitarget Application Database Module](file-structure-of-the-multitarget-application-database-module-18ac9fd.md "The structure and hierarchy required in the database module of a multitarget application.")
 
 [HDI Delta Deployment and Undeploy Allow List](hdi-delta-deployment-and-undeploy-allow-list-ebb0a1d.md "The HDI Deployer implements a delta-based deployment strategy including an optional allow list.")
+
+[HDI Artifact Type and Build Plug-ins](../110-HANA-Cloud-DB-Dev-HDI-Plugins/hdi-artifact-type-and-build-plug-ins-f8618f7.md "The SAP HANA Cloud, design-time database artifact types, for example, tables and views, are mapped to an SAP HDI build plug-in.")
 

@@ -12,13 +12,18 @@ The `.hdbgrants` configuration file enables you to assign privileges to the owne
 > For information about configuring a corresponding `.hdbrevokes` file that you can use to revoke granted privileges, see *Permissions for Objects in HDI Containers* in *Related Information* below. If both files exist, the `.hdbrevokes` file is processed before the `.hdbgrants` file. Since neither the `.hdbgrants` file nor the `.hdbrevokes` file is an HDI artifact, no HDI plug-in configuration is required.
 
 > ### Sample Code:  
-> `external-access.hdbgrants`
+> `external-access.hdbgrants` 
 > 
 > ```
 > {
 >   "external-access": {
 >     "object_owner": {
->       "system_privileges" : [ "SYSTEM PRIVILEGE 1", "SYSTEM PRIVILEGE 2" ]
+>       "system_privileges" : [ 
+>         {
+>          "privileges" : [ "SYSTEM_PRIVILEGE_1" ],
+>          "privileges_with_admin_option" : [ "SYSTEM_PRIVILEGE_2", "SYSTEM_PRIVILEGE_3" ]
+>         }
+>       ]
 >       "global_roles" : [
 >         {
 >           "roles" : [ "GLOBAL_ROLE_1", "GLOBAL_ROLE_2" ]
@@ -27,18 +32,21 @@ The `.hdbgrants` configuration file enables you to assign privileges to the owne
 >       ],
 >       "schema_privileges" : [
 >         {
+>           "schema" : "<schema_name>"   // optional; override schema defined in grantor service
 >           "privileges" : [ "INSERT", "UPDATE" ],
 >           "privileges_with_grant_option" : [ "SELECT" ]
 >         }
 >       ],
 >       "schema_roles" : [
 >         {
+>           "schema" : "<schema_name>"   // optional; override schema defined in grantor service
 >           "roles" : [ "SCHEMA_ROLE_1", "SCHEMA_ROLE_2" ],
 >           "roles_with_admin_option" : [ "SCHEMA_ROLE_3", "SCHEMA_ROLE_4" ]
 >         }
 >       ],
 >       "object_privileges" : [
 >         {
+>           "schema" : "<schema_name>"   // optional; override schema defined in grantor service
 >           "name": "AN_OBJECT",
 >           "privileges": [ "INSERT", "UPDATE" ],
 >           "privileges_with_grant_option" : [ "SELECT" ]
@@ -125,8 +133,12 @@ You can use the <code>“system_privileges”</code> parameter to assign one or 
 > {
 >   "external_access": {
 >     "object_owner" : {
->       "system_privileges" : ["System Privilege 1, System Privilege 2],
->       ...
+>       "system_privileges" : [
+>         {
+>          "privileges" : [ "SYSTEM_PRIVILEGE_1" ],
+>          "privileges_with_admin_option" : [ "SYSTEM_PRIVILEGE_2", "SYSTEM_PRIVILEGE_3" ]
+>         }
+>       ]
 >     }
 >   }
 > }
@@ -196,6 +208,11 @@ The roles specified in the `hdbgrants` file must already exist as objects in the
 
 You can use the <code>“schema_privileges”</code> parameter to assign permissions for the object owner in the target schema, for example, `INSERT` or `UPDATE` for <code>“privileges”</code>. You can also add the grant option to the system privilege, for example, `privileges_with_grant_option` on `SELECT`.
 
+> ### Tip:  
+> For `schema_privileges`, you can specify a fixed schema name by using the optional `schema` property in the privilege\(s\) defined in the `.hdbgrants` file.
+
+The `schema` defined in the `schema_privileges` property overrides the schema defined in the grantor service. If no `schema` is defined in `schema_privileges` in the `.hdbgrants` file, then the schema defined in the grantor **service** is used instead.
+
 > ### Sample Code:  
 > Schema Privileges for the Object Owner in the `hdbgrants` File
 > 
@@ -205,6 +222,7 @@ You can use the <code>“schema_privileges”</code> parameter to assign permiss
 >     "object_owner" : {
 >       "schema_privileges" : [
 >         {
+>           "schema" : "<schema_name>"          // optional
 >           "privileges" : [ "INSERT", "UPDATE" ],
 >           "privileges_with_grant_option" : [ "SELECT" ]
 >         }
@@ -237,6 +255,7 @@ If the grantor service is bound to a normal database user, you can assign roles 
 >    "object_owner": { 
 >       "schema_roles": [
 >         {
+>           "schema" : "<schema_name>"          // optional
 >           "roles" : ["Schema_RoleR1", "Schema_RoleR2"],
 >           "roles_with_admin_option" : ["Schema_RoleR3", "Schema_RoleR4"]
 >         }
@@ -246,6 +265,8 @@ If the grantor service is bound to a normal database user, you can assign roles 
 > }
 > 
 > ```
+
+For `schema_roles`, you can specify a fixed schema name by using the optional `schema` property in the privilege\(s\) defined in the `.hdbgrants` file. The `schema` defined in the `schema_roles` property overrides the schema defined in the grantor service. If no `schema` is defined in `schema_roles` in the `.hdbgrants` file, then the schema defined in the grantor service is used instead.
 
 > ### Restriction:  
 > For container roles, the `roles-with-admin-option` is not supported.
@@ -290,6 +311,7 @@ For each individual object, you can assign privileges to the object owner: eithe
 >     "object_owner" : {
 >       "object_privileges" : [
 >         {
+>           "schema" : "<schema_name>"          // optional
 >           "name": "AN_OBJECT",
 >           "privileges": [ "INSERT", "UPDATE" ],
 >           "privileges_with_grant_option" : [ "SELECT" ]
@@ -382,9 +404,9 @@ Defines the roles and permissions to be assigned to the user of the multitarget 
 
 [Database Synonyms in SAP HANA Cloud](database-synonyms-in-sap-hana-cloud-556452c.md "You can use synonyms in SAP HANA Cloud to enable access to objects that are not in the same schema or application container.")
 
-[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
+[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
 
 [Permissions for Objects in HDI Containers](permissions-for-objects-in-hdi-containers-79e8664.md "The owner of a container object needs additional privileges to the ones assigned by default.")
 
-[SAP HDI Security in the Context of Cloud Foundry (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/4457f759107d4985bd80532c9e023227.html "An overview of the security considerations to bear in mind when enabling SAP HDI for use in the context of Cloud Foundry.") :arrow_upper_right:
+[SAP HDI Security in the Context of Cloud Foundry (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/4457f759107d4985bd80532c9e023227.html "An overview of the security considerations to bear in mind when enabling SAP HDI for use in the context of Cloud Foundry.") :arrow_upper_right:
 

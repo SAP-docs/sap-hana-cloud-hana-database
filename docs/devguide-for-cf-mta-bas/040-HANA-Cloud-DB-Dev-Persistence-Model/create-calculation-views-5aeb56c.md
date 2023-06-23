@@ -2,19 +2,19 @@
 
 # Create Calculation Views
 
-Use a graphical editor to create calculation views that depict a complex business scenario.
+Use a graphical editor to create calculation views that depict complex business scenarios.
 
 
 
 ## Context
 
-Calculation views can be used to combine data from various sources. You can combine multiple transaction tables in a calculation view. You can also create calculation views to include layers of calculation logic.
+Calculation views combine data from various sources. You can combine multiple transaction tables in a calculation view. You can also create calculation views to include layers of calculation logic.
 
 
 
 ## Procedure
 
-1.  To create a calculation view:
+1.  Create a calculation view.
 2.  Start SAP Business Application Studio.
 
 3.  To create a new project for the calculation view, do the following:
@@ -47,7 +47,7 @@ Calculation views can be used to combine data from various sources. You can comb
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press  [F1\]  or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Locate and run the command *SAP HANA: Create SAP HANA Database Artifact*.
 
@@ -67,7 +67,7 @@ Calculation views can be used to combine data from various sources. You can comb
         The file suffix \(`.hdbcalculationview`\) is automatically appended to the name.
 
         > ### Tip:  
-        > The file extension is mandatory; it is used to determine which HDI plug-in to call when creating the corresponding run-time object during application build or deployment. Calculation-view artifacts have the file extension `.hdbcalculationview`, for example, `myCalcView.hdbcalculationview`.
+        > The file extension is mandatory. It is used to determine which HDI plug-in to call when creating the corresponding run-time object during application build or deployment. Calculation-view artifacts have the file extension `.hdbcalculationview`, for example, `myCalcView.hdbcalculationview`.
 
 
 5.  Specify a data category.
@@ -92,15 +92,15 @@ Calculation views can be used to combine data from various sources. You can comb
     </tr>
     <tr>
     <td valign="top">
-
-    CUBE
+    
+        CUBE
 
 
     
     </td>
     <td valign="top">
-
-    Specify whether to use a star join.
+    
+        Specify whether to use a star join.
 
 
     
@@ -108,15 +108,15 @@ Calculation views can be used to combine data from various sources. You can comb
     </tr>
     <tr>
     <td valign="top">
-
-    DIMENSION
+    
+        DIMENSION
 
 
     
     </td>
     <td valign="top">
-
-    Specify the dimension type STANDARD or TIME.
+    
+        Specify the dimension type STANDARD or TIME.
 
 
     
@@ -132,9 +132,7 @@ Calculation views can be used to combine data from various sources. You can comb
 
     Connect the nodes to model the data processing at runtime. To switch between any of the inner aggregation or projection nodes, right-click the node and select an option.
 
-8.  Add data sources.
-
-    To add data sources to a view node:
+8.  Add data sources to a view node.
 
     1.  Select a view node.
 
@@ -144,7 +142,7 @@ Calculation views can be used to combine data from various sources. You can comb
 
     4.  Enter a search string or the name of the data source, then select it from the list.
 
-        Depending on the selected view node, you can add one or more data sources.
+        Depending on the view node, you can add one or more data sources.
 
     5.  Choose *Finish*.
 
@@ -198,15 +196,15 @@ Calculation views can be used to combine data from various sources. You can comb
         </tr>
         <tr>
         <td valign="top">
-
-        *Object Owner Role*
+        
+                *Object Owner Role*
 
 
         
         </td>
         <td valign="top">
-
-        The name of the role to assign to the object owner \(ending in ***OO***\).
+        
+                The name of the role to assign to the object owner \(ending in ***OO***\).
 
 
         
@@ -214,15 +212,15 @@ Calculation views can be used to combine data from various sources. You can comb
         </tr>
         <tr>
         <td valign="top">
-
-        *Application User Role*
+        
+                *Application User Role*
 
 
         
         </td>
         <td valign="top">
-
-        The name of the role to assign to the users that are running.
+        
+                The name of the role to assign to the users that are running.
 
         For example, data previews from Business Application Studio.
 
@@ -273,11 +271,11 @@ Calculation views can be used to combine data from various sources. You can comb
 
     To successfully activate a calculation view with data category CUBE, you must specify at least one column as a measure.
 
-    1.  Select the *Semantics* view node.
+    1.  Select the *Semantics* node.
 
     2.  On the *Columns* tab, select a column value.
 
-    3.  In the *Type* drop-down list, select *Measure* or *Attribute*.
+    3.  In *Type*, select *Measure* or *Attribute*.
 
         If the data category is set to CUBE, an additional aggregation column is available to specify the aggregation type for measures.
 
@@ -295,7 +293,7 @@ Calculation views can be used to combine data from various sources. You can comb
 
 After creating a calculation view, you can modify the output to your needs. The following table shows how you can modify the calculation view.
 
-<a name="loio5aeb56cba39e4df4ae62b43a0dc2fad4__table_agw_wxc_xp"/>Working With View Nodes
+**Working With View Nodes**
 
 
 <table>
@@ -405,7 +403,7 @@ Model calculation views with SAP HANA hierarchy functions.
 </td>
 <td valign="top">
 
-Use Hierarchy Functions
+Hierarchy Functions
 
 
 
@@ -437,7 +435,7 @@ Filter the output of view nodes.
 </td>
 <td valign="top">
 
-Filter Output of View Nodes.
+Filter Output
 
 
 
@@ -445,7 +443,7 @@ Filter Output of View Nodes.
 </tr>
 </table>
 
-<a name="loio5aeb56cba39e4df4ae62b43a0dc2fad4__table_fkj_12f_fs"/>Working With Columns
+**Working With Columns**
 
 
 <table>
@@ -659,7 +657,7 @@ Group Related Measures and Attributes
 </tr>
 </table>
 
-<a name="loio5aeb56cba39e4df4ae62b43a0dc2fad4__table_zql_12f_fs"/>Working With Calculation View Properties
+**Working With Calculation View Properties**
 
 
 <table>
@@ -707,6 +705,8 @@ Discourage use of a calculation view.
 
 Deprecate Calculation Views
 
+For more information, see *Quick Reference: Calculation View Properties*.
+
 
 
 </td>
@@ -716,21 +716,27 @@ Deprecate Calculation Views
 **Related Information**  
 
 
-[Working With View Nodes](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2022_3_QRC/en-US/20ad4018a0ab4f2f84968beb8ab521e2.html "View nodes are the building blocks of calculation views.") :arrow_upper_right:
+[Working With View Nodes](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/20ad4018a0ab4f2f84968beb8ab521e2.html "View nodes are the building blocks of calculation views.") :arrow_upper_right:
 
-[Preview Calculation View Output](preview-calculation-view-output-903eff8.md "After modeling calculation views based on your requirements, you can deploy them and preview their output.")
+[Preview Calculation View Output](preview-calculation-view-output-903eff8.md "After you have modeled a calculation view, you can deploy it and preview its output.")
 
-[Working With Attributes and Measures](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2022_3_QRC/en-US/8493c7f54a3b4b728821ecee972e2963.html "Attributes and measures form content data that you use for data modeling. Attributes represent the descriptive data, such as product or a region, and measures represent quantifiable data, such as revenue or quantity sold.") :arrow_upper_right:
+[Working With Attributes and Measures](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/8493c7f54a3b4b728821ecee972e2963.html "Attributes and measures form content data that you can use for data modeling.") :arrow_upper_right:
 
-[Working With Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2022_3_QRC/en-US/9774a676c8fe46c79c5b197051fa9743.html "While modeling calculation views, you can define certain properties for the calculation views so that the tool can refer to those values and run the view respectively.") :arrow_upper_right:
+[Working With Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/9774a676c8fe46c79c5b197051fa9743.html "When you model calculation views, you can define certain properties that can be referenced at runtime.") :arrow_upper_right:
 
-[Additional Functionality for Calculation Views](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2022_3_QRC/en-US/a19aa4797aea4eb0b402aef360a4e14f.html "After modeling a calculation view or during design time, you can use additional functions to better understand the performance of the view at runtime and to more efficiently model calculation views.") :arrow_upper_right:
+[Additional Functionality for Calculation Views](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/a19aa4797aea4eb0b402aef360a4e14f.html "After modeling a calculation view or during design time, you can use additional functions to better understand the performance of the view at runtime and to more efficiently model calculation views.") :arrow_upper_right:
 
-[Create Calculation Views with Star Joins](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2022_3_QRC/en-US/988f5a9bd87c4492ad5c1e6f7936f0b5.html "Star joins connect a central data entity to multiple entities that are logically related. You can create a calculation view with star joins that join multiple dimensions to a single fact table.") :arrow_upper_right:
+[Create Calculation Views with Star Joins](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/988f5a9bd87c4492ad5c1e6f7936f0b5.html "Star joins connect a central data entity to multiple entities that are logically related. You can create a calculation view with star joins that join multiple dimensions to a single fact table.") :arrow_upper_right:
 
-[Create Calculation Views with Time Dimension](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2022_3_QRC/en-US/5a787289ee7e4f7fad10f0f5dfd54646.html "You can add time dimensions to a calculation view by using the standard time-related tables as data sources in the calculation view.") :arrow_upper_right:
+[Create Calculation Views with Time Dimension](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/5a787289ee7e4f7fad10f0f5dfd54646.html "You can add time dimensions to a calculation view by using the standard time-related tables as data sources in the calculation view.") :arrow_upper_right:
 
-[Example: Using Keep Flag](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2022_3_QRC/en-US/f0e101a7641340708f0b098206210d9c.html "The Keep Flag option for attribute columns influences the result set of a calculation view.") :arrow_upper_right:
+[Example: Using Keep Flag](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/f0e101a7641340708f0b098206210d9c.html "The Keep Flag option for attribute columns influences the result set of a calculation view.") :arrow_upper_right:
 
-[Consume Objects That are not Included in Your Development Project](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2022_3_QRC/en-US/9c5e5d49af274281b74062a87d5cb34e.html "To consume objects that are not included in your project (or in your HDI container), you need to define synonyms that point to the objects to be consumed.") :arrow_upper_right:
+[Consume Objects That are not Included in Your Development Project](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/9c5e5d49af274281b74062a87d5cb34e.html "To consume objects that are not included in your project (or in your HDI container), you need to define synonyms that point to the objects to be consumed.") :arrow_upper_right:
+
+[Quick Reference: Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/8a5d5228e41d4083b06e94d60756429b.html "Configure calculation view properties. The configured values determine the behavior of a calculation view at runtime.") :arrow_upper_right:
+
+[Filter Data for Specific Clients](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/2175374c28a84f69ab125feb71a78ef7.html "Obtain data for all client values, or filter the calculation view data, either with a fixed client value or with the session client value of the query user.") :arrow_upper_right:
+
+[Filter Output](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_2_QRC/en-US/d00c142746904c80a5730614f567a0a3.html "Apply filters on columns of nodes to filter their output.") :arrow_upper_right:
 

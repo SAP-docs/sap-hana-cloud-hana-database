@@ -14,15 +14,14 @@ You must bind the service instance that acts as OAuth 2.0 client to your multita
 
 ## Procedure
 
-1.  Bind an application to a service instance:
+Bind an application to a service instance:
 
-    <code>cf bind-service <i class="varname">&lt;APP_NAME&gt;</i> <i class="varname">&lt;SERVICE_INSTANCE&gt;</i></code>
+<code>cf bind-service <i class="varname">&lt;APP_NAME&gt;</i> <i class="varname">&lt;SERVICE_INSTANCE&gt;</i></code>
 
-    > ### Example:  
-    > `cf bind-service hello-world xsuaa`
+> ### Example:  
+> `cf bind-service hello-world xsuaa`
 
-    You can now deploy your application with the authorization artifacts that were created earlier.
-
+You can now deploy your application with the authorization artifacts that were created earlier.
 
 **Related Information**  
 

@@ -16,7 +16,7 @@ A dedicated application-programing interface \(API\) is provided to enable acces
 
 [Create a Service Instance](create-a-service-instance-355f3b1.md "Make a service instance available to applications.")
 
-[The Service-Broker API](the-service-broker-api-c1fb23c.md "Maintain and manage Cloud Foundry services and service brokers, for example: list, create, delete, bind, and update.")
+[The Service-Broker CLI](the-service-broker-cli-c1fb23c.md "Maintain and manage Cloud Foundry services and service brokers, for example: list, create, delete, bind, and update.")
 
 [Maintaining Multitarget Application Services in Cloud Foundry](maintaining-multitarget-application-services-in-cloud-foundry-33e3c59.md "In Cloud Foundry, applications can make use of services managed by a service broker.")
 

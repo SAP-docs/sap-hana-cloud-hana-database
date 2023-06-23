@@ -19,7 +19,7 @@ The CF command-line tools enable you to perform all the steps in the development
 4.  Deploy the complete multi-target application to the Cloud Foundry run-time environment.
 
     > ### Note:  
-    > You will need to install the Cloud Foundry plug-ins for SAP Multitarget Applications \(MTA\). For more information, see *Get Started with the Cloud Foundry Command-line Interface* in *Related Information* below.
+    > If you need to install the Cloud Foundry plug-ins for SAP Multitarget Applications \(MTA\), see *Get Started with the Cloud Foundry Command-line Interface* in *Related Information* below for more information.
 
 
 **Related Information**  

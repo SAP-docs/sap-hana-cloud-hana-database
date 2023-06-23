@@ -159,7 +159,7 @@ During the binding of the `xsuaa` service, the service broker writes the specifi
 
 The following tenant modes are available:
 
-<a name="loio6d3ed64092f748cbac691abc5fe52985__table_q2m_2v4_kz"/>Tenant Modes
+**Tenant Modes**
 
 
 <table>
@@ -269,7 +269,7 @@ In the `xs-security.json` file, “local” scopes must be prefixed with the var
 
 The following table lists the parameters and values that can be used with the `scopes` property:
 
-<a name="loio6d3ed64092f748cbac691abc5fe52985__table_sjn_lvn_qcb"/>Parameters and Values for "scopes"
+**Parameters and Values for "scopes"**
 
 
 <table>
@@ -528,7 +528,7 @@ The `"attributes"` property is only relevant for user scenarios. Each element of
 
 The `attributes` key can take the following parameters and values:
 
-<a name="loio6d3ed64092f748cbac691abc5fe52985__table_nt5_ph5_wt"/>Parameters and Values for Authorization-Scope "attributes"
+**Parameters and Values for Authorization-Scope "attributes"**
 
 
 <table>
@@ -674,7 +674,7 @@ A role template must be instantiated. This is especially true with regards to an
 > ### Note:  
 > The resulting \(application-specific\) role instances need to be assigned to the appropriate user groups.
 
-<a name="loio6d3ed64092f748cbac691abc5fe52985__table_qzc_4rr_xs"/>Role-Template Parameters
+**Role-Template Parameters**
 
 
 <table>
@@ -903,7 +903,7 @@ The following code illustrates a simple example of the OAuth 2.0 client configur
 
 The following configuration keys are available:
 
-<a name="loio6d3ed64092f748cbac691abc5fe52985__table_ntb_nk3_rz"/>`oauth2-configuration` Parameters
+**oauth2-configuration Parameters**
 
 
 <table>

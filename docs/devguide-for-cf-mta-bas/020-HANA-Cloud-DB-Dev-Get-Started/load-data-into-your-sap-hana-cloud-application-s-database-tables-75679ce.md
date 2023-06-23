@@ -26,7 +26,7 @@ Use the tools provided with SAP Business Application Studio to populate the new 
 This tutorial shows how to use `hdbtabledata` artifacts to populate database tables with data stored in CSV files that are part of application's database module.
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Find Command...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. Choose ![](images/BAS_icon_GuidedDevCenter_b7736b4.svg) \(*Guided Development Center*\) in SAP Business Application Studio's *Views* pane or open the command palette \(*View* \> *Command Palette...*\) and search for *Guided Development Center*. In the list of guided development tutorials, choose *Create SAP HANA Database Applications & Artifacts* \> *Get Started with SAP HANA*.
 
 
 
@@ -44,7 +44,7 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
@@ -66,10 +66,10 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 
     6.  Name the file *BookingDemo*.
 
-        The appropriate file suffix \(`.hdbtabledata`\) is appended to the name by the Wizard.
+        The appropriate file suffix \(`.hdbtabledata`
 
         > ### Tip:  
-        > The file extension is mandatory; it is used to determine which HDI plug-in to call when creating the corresponding run-time object during application build or deployment. SQL DDL table-data-definition artifacts have the file extension `.hdbtabledata`, for example, `MyTableDataDefinition.hdbtabledata`
+        > The file extension is mandatory; it is used to determine which HDI plug-in to call when creating the corresponding run-time object during application build or deployment. SQL DDL table-data-definition artifacts have the file extension \) is appended to the name by the Wizard. `.hdbtabledata`, for example, `MyTableDataDefinition.hdbtabledata`
 
     7.  Save the changes and create the new database table-data artifact; choose *Create*.
 
@@ -77,7 +77,7 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 3.  Open the new database table artifact for editing.
 
     > ### Tip:  
-    > SAP Business Application Studio provides a wide variety of dedicated editors that correspond to the database artifact types supported by the SAP HANA Deployment Infrastructure \(HDI\). The artifact type, for example, `hdbtable` or `hdbtabledata`, is used by SAP Business Application Studio to determine which editor to open by default to enable editing. Some editors also provide a default template for the artifact type, which you can either adapt, delete, or replace as required.
+    > \) isSAP Business Application Studio provides a wide variety of dedicated editors that correspond to the database artifact types supported by the SAP HANA Deployment Infrastructure \(HDI\). The artifact type, for example, `hdbtable` or `hdbtabledata`, is used by SAP Business Application Studio to determine which editor to open by default to enable editing. Some editors also provide a default template for the artifact type, which you can either adapt, delete, or replace as required.
 
     Add the following code to the new table data artifact `BookingDemo.hdbtabledata`.
 
@@ -88,8 +88,8 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
     > { 
     >   "format_version": 1, 
     >   "imports": [{ 
-    >      "target_table": "PASSENGERS", 
-    >      "source_data": { 
+    >         "target_table": "PASSENGERS", 
+    >         "source_data": { 
     >         "data_type": "CSV", 
     >         "file_name": "passengers.csv", 
     >         "has_header": false, 

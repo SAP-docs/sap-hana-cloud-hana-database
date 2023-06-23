@@ -19,7 +19,7 @@ This work flow includes the following agents:
 
 The example used here to explain the different authorizations required for the different people in a leave-request scenario assumes the following work-flow:
 
-<a name="loio4b110625a46d4df290009813c309ccfb__table_uq2_x4g_mw"/>Leave-Request Work Flow
+**Leave-Request Work Flow**
 
 
 <table>
@@ -123,7 +123,7 @@ Payroll Administrator
 
 The employee John Doe needs the authorizations to enable him to create, edit, view, and delete his own requests for leave. He also needs to be able to delete an approved leave requests, for example, if due to a change of plans he decided to go to work on that day after all.
 
-<a name="loio4b110625a46d4df290009813c309ccfb__table_ymn_fcr_st"/>Employee Authorizations
+**Employee Authorizations**
 
 
 <table>
@@ -243,7 +243,7 @@ Own
 
 John Doe's manager, Julia Moore, needs the authorizations that enable her to approve John’s leave requests and edit them; she cannot, however, delete them. In addition, she needs the authorization that allows her \(as a manager\) to view, approve, and edit the leave requests of all employees in her department. Since she is also an employee, she needs to be able to create, view, edit, and delete her own leave requests.
 
-<a name="loio4b110625a46d4df290009813c309ccfb__table_w4c_zdr_st"/>Manager \(Approver\) Authorizations
+**Manager \(Approver\) Authorizations**
 
 
 <table>
@@ -418,7 +418,7 @@ Managed employees
 
 A payroll administrators of the human resources department is only interested in viewing all approved leave requests. He needs the total number of approved leave request and of days off so that he can feed them into the payroll system, which will calculate the leave reserve. He is not involved in any way in the approval process. Since the payroll administrator, Mark Smith, is an employee as well, he also needs the authorization to create, view, edit, and delete his own leave requests.
 
-<a name="loio4b110625a46d4df290009813c309ccfb__table_fs1_3pw_st"/>Payroll Administrator Authorizations
+**Payroll Administrator Authorizations**
 
 
 <table>

@@ -8,7 +8,7 @@ A selection of essential application services are available with the run-time pl
 
 The services that are available in Cloud Foundry are listed in the Service Marketplace, and service brokers are used to manage instances of the listed services. The following core services are available when enabling an application's access to SAP HANA Cloud:
 
-<a name="loiob0200e9f58b8482fa9c197ca9653d615__table_i24_stw_bz"/>Default SAP Service Brokers on Cloud Foundry
+**Default SAP Service Brokers on Cloud Foundry**
 
 
 <table>

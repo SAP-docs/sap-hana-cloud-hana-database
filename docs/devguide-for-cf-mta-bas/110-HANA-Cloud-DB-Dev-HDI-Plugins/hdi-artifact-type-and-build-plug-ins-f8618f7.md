@@ -13,7 +13,7 @@ Not all plug-in libraries are available by default. The list of plug-in librarie
 > ### Note:  
 > Some of the HDI plug-ins available for database development in SAP HANA on-premise are not available in SAP HANA Cloud, for example, SAP HANA CDS \(`.hdbcds`\). For more information about which plug-ins are not available for use in SAP HANA Cloud, see *Design-time Content Compatibility* in *Related Information* below.
 
-<a name="loiof8618f7e753943b096e1d17da40c1e89__table_b4r_3gw_ydb"/>HDI Design-Time Artifact Types and Run-Time Plug-Ins
+**HDI Design-Time Artifact Types and Run-Time Plug-Ins**
 
 
 <table>
@@ -1085,9 +1085,9 @@ Virtual Table Configuration
 **Related Information**  
 
 
-[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
+[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA Database Deployment Infrastructure Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/4077972509f5437c85d6a03e01509417.html "Set up and maintain the deployment infrastructure for the SAP HANA Cloud, SAP HANA database service.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Deployment Infrastructure Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/4077972509f5437c85d6a03e01509417.html "Set up and maintain the deployment infrastructure for the SAP HANA Cloud, SAP HANA database service.") :arrow_upper_right:
 
 [Design-time Content Compatibility \(SAP HANA Cloud Migration Guide\)](https://help.sap.com/viewer/3c53bc7b58934a9795b6dd8c7e28cf05/hanacloud/en-US/9c8656d9c1a34c829fab426cb77b4639.html)
 

@@ -16,10 +16,10 @@ The resource configurations needed for the database connection are not applicabl
 
 ## Context
 
-The SAP Java buildpack provides an Apache Tomcat, Apache TomEE or an Apache TomEE 7 run time. However, you can create a Java Main application to use other frameworks and Java run times such as *Spring Boot*, *Jetty*, *Undertow*, or *Netty*.
+The SAP Java buildpack provides an Apache Tomcat or an Apache TomEE 7 run time. However, you can create a Java Main application to use other frameworks and Java run times such as *Spring Boot*, *Jetty*, *Undertow*, or *Netty*.
 
 > ### Caution:  
-> The Tomcat, TomEE and TomEE 7 run times provided by the SAP Java buildpack have the following functionality:
+> The Tomcat and TomEE 7 run times provided by the SAP Java buildpack have the following functionality:
 > 
 > -   Solution manager end-to-end tracing
 > 

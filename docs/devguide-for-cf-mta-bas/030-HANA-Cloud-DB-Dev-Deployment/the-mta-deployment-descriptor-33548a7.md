@@ -1198,7 +1198,7 @@ It is possible to deploy an MTA directly from directory, provided that directory
     To enable the deploy service to create a valid `MANIFEST.MF` entry for each MTA element with the associated content, you must ensure that the conditions listed in the following table are met:
 
 
-<a name="loio33548a721e6548688605049792d55295__table_elm_c52_qv"/>Required Entries in the MANIFEST.MF File for Directory Deployment
+**Required Entries in the MANIFEST.MF File for Directory Deployment**
 
 
 <table>
@@ -1376,7 +1376,7 @@ Content-Type:
 
 The following table lists the restrictions that apply to the size of MTA **deployment** components that are handled by the SAP HANA deploy service during application deployment to Cloud Foundry:
 
-<a name="loio33548a721e6548688605049792d55295__table_gnw_lgv_ccb"/>MTA Descriptor File Size Restrictions
+**MTA Descriptor File Size Restrictions**
 
 
 <table>
@@ -1415,30 +1415,14 @@ MTA archive
 <tr>
 <td valign="top">
 
-MTA **module** content
+MTA modules/resources content
 
 
 
 </td>
 <td valign="top">
 
-4 GB
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-MTA **resource** content
-
-
-
-</td>
-<td valign="top">
-
-1 GB
+2 GB
 
 
 

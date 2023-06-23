@@ -10,7 +10,10 @@ Customize the SAP HANA Native Application project workspace by setting or modify
 
 You can set user preferences to customize the way you start and use selected tools and features provided by the SAP HANA Native Application extension for SAP Business Application Studio.
 
-To open the *Preferences* pane in SAP Business Application Studio, start the development workspace, choose :gear:and then choose *Open Preferences*.
+To open the *Settings* tab in SAP Business Application Studio, start the development workspace, choose :gear: in the *Views* pane, and then choose *Settings*.
+
+> ### Tip:  
+> By default, SAP Business Application Studio only provides "compact" menus and options, which are displayed when you choose <span class="SAP-icons"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the dev. space, open *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* from "compact" to "classic" in the drop-down list provided.
 
 In the SAP HANA Native Application extension, you can set user preferences for the following components:
 
@@ -26,11 +29,11 @@ In the SAP HANA Native Application extension, you can set user preferences for t
 
 ## SAP HANA Database Artifacts
 
-To display the user preferences that you can set for the creation and management of SAP HANA database artifacts, open the *Preferences* tab, enter ***SAP HANA*** in the filter box, and select the extension *SAP HANA Database Artifacts* in the list of results displayed.
+To display the user preferences that you can set for the creation and management of SAP HANA database artifacts, open the *Settings* tab, enter ***SAP HANA*** in the filter box, and select the extension *SAP HANA Database Artifacts* in the list of results displayed.
 
 The following table lists the user preferences you can set to customize the tools used in the creation of SAP HANA database artifacts:
 
-<a name="loio57e2fe608bb042d48b799d41a8d121a7__table_kfq_4t4_nsb"/>SAP HANA Database Artifacts: User Preferences
+**SAP HANA Database Artifacts: User Preferences**
 
 
 <table>
@@ -109,11 +112,11 @@ If selected, the design-time artifacts-creation Wizard for SAP HANA remembers \(
 
 ## SAP HANA Database Explorer
 
-To display the user preferences that you can set for the *SAP HANA Database Explorer* in the *SAP HANA Native Application* extension, open the *Preferences* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA Database Explorer* in the list of results displayed.
+To display the user preferences that you can set for the *SAP HANA Database Explorer* in the *SAP HANA Native Application* extension, open the *Settings* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA Database Explorer* in the list of results displayed.
 
 The following table lists the user preferences you can set to customize the embedded *SAP HANA Database Explorer*:
 
-<a name="loio57e2fe608bb042d48b799d41a8d121a7__table_r1d_dr4_nsb"/>SAP HANA Database Explorer: User Preferences
+**SAP HANA Database Explorer: User Preferences**
 
 
 <table>
@@ -271,11 +274,11 @@ You need to replace <code><i class="varname">&lt;region&gt;</i></code> with the 
 
 ## SAP HANA Project Explorer
 
-To display the user preferences that you can set for the *SAP HANA Project* explorer in the *SAP HANA Native Application* extension, open the *Preferences* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA Project Explorer* in the list displayed.
+To display the user preferences that you can set for the *SAP HANA Project* explorer in the *SAP HANA Native Application* extension, open the *Settings* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA Project Explorer* in the list displayed.
 
 The following table lists the user preferences you can set to customize the *SAP HANA Project Explorer*:
 
-<a name="loio57e2fe608bb042d48b799d41a8d121a7__table_rzq_gv4_nsb"/>SAP HANA Project Explorer: User Preferences
+**SAP HANA Project Explorer: User Preferences**
 
 
 <table>
@@ -378,6 +381,22 @@ Clear the deployment log before starting a new deployment.
 <tr>
 <td valign="top">
 
+ *Deploy: Enable deployment tracing* 
+
+
+
+</td>
+<td valign="top">
+
+Choose whether to extend the HDI deployment log with trace information and display it in the SAP Business Application Studio's terminal during deployment.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
  *Deploy: Keep default-env file* 
 
 
@@ -389,6 +408,27 @@ Retain the `default-env.json` file in the workspace after deployment.
 
 > ### Caution:  
 > This file might contain sensitive information. We recommend you use this option only for debugging.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ *Deploy: Confirm migration-table development mode* 
+
+
+
+</td>
+<td valign="top">
+
+Choose whether or not to display a dialog window that asks for confirmation to enable "development mode" when adding a migration table artfiact to an application's database module. You can enable "development mode" for individual artifacts or the entire dev. space.
+
+Development mode enables the use of specific development versions of a table with different definitions. For more information about migration tables, see *Related Information* below.
+
+> ### Caution:  
+> In development mode all data stored in the table is lost.
 
 
 
@@ -453,11 +493,11 @@ Enable this option, if you want all services of all database modules to be autom
 
 ## SAP HANA SQLScript LSP
 
-To display the user preferences that you can set for SAP HANA SQLScript language services \(LSP\) in the *SAP HANA Native Application* extension, open the *Preferences* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA SQLScript LSP* in the list of results displayed.
+To display the user preferences that you can set for SAP HANA SQLScript language services \(LSP\) in the *SAP HANA Native Application* extension, open the *Settings* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA SQLScript LSP* in the list of results displayed.
 
 The following table lists the user preferences you can set to customize the use of SAP HANA SQLScript LSP:
 
-<a name="loio57e2fe608bb042d48b799d41a8d121a7__table_jqv_cw4_nsb"/>SAP HANA SQLScript LSP: User Preferences
+**SAP HANA SQLScript LSP: User Preferences**
 
 
 <table>
@@ -537,11 +577,11 @@ This configuration is intended for internal purpose. Please do not change this.
 
 ## Calculation View Editor
 
-To display the user preferences that you can set for the calculation-view editor in the *SAP HANA Native Application* extension, open the *Preferences* tab, enter ***calculation view*** in the filter box, and select *Extensions* \> *Watt Feature* in the list of results displayed.
+To display the user preferences that you can set for the calculation-view editor in the *SAP HANA Native Application* extension, open the *Settings* tab, enter ***calculation view*** in the filter box, and select *Extensions* \> *Watt Feature* in the list of results displayed.
 
 The following table lists the user preferences you can set to customize the use of the calculation-view editor:
 
-<a name="loio57e2fe608bb042d48b799d41a8d121a7__table_fmv_x1p_nsb"/>SAP HANA Calculation Views: User Preferences
+**SAP HANA Calculation Views: User Preferences**
 
 
 <table>
@@ -644,4 +684,6 @@ In SAP Business Application Studio, keyboard shortcuts for calculation views use
 [Keyboard Shortcuts for the Calculation View Editor \(SAP HANA Cloud, SAP HANA Database Modeling Guide for SAP Business App Studio\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/d625b46ef0b445abb2c2fd9ba008c265/0972b5a1002944c5aae9a1f242f1a3c3.html)
 
 [View Database Objects with the Database Explorer](view-database-objects-with-the-database-explorer-0e5ac0b.md "Check the contents of your database with SAP HANA Database Explorer.")
+
+[Migration Tables \(SAP HANA Cloud HDI Reference\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/52d1f5acfa754a7887e21226641eb261.html)
 

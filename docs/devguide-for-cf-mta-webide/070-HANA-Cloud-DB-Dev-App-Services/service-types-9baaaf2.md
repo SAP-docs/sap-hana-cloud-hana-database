@@ -8,7 +8,7 @@ The services provided in Cloud Foundry are available in different types.
 
 Multitarget applications running in Cloud Foundry can make use of services that are either created by a user or available for general use in the service market place. Services available in the Service Marketplace are managed by a service broker. The following table lists and explains the types of service to which you can bind your multitarget applications:
 
-<a name="loio9baaaf2399f2499a90c58a85b204cd17__table_m5b_wnc_sz"/>Cloud Foundry Service Types
+**Cloud Foundry Service Types**
 
 
 <table>

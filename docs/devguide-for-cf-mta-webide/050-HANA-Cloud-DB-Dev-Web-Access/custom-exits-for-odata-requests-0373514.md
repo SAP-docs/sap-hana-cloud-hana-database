@@ -39,7 +39,7 @@ The following type of write exits are supported for OData write requests in SAP 
     Modification exits enable you to define custom logic that can be used to create, update, or delete an entry in an entity set. If defined, a modification exit is is executed instead of the generic actions provided by the OData infrastructure. You use the `using` keyword to register the exit.
 
 
-<a name="loio03735142bfd647c2a016fcd9359f3348__table_fcs_pn3_5z"/>XS OData Validation Exits
+**XS OData Validation Exits**
 
 
 <table>
@@ -235,7 +235,7 @@ Prohibits the deletion of the entity
 
 The following table lists the types of modification exits you can define with XS Odata:
 
-<a name="loio03735142bfd647c2a016fcd9359f3348__table_zmm_s43_5z"/>XS OData Modification Exits
+**XS OData Modification Exits**
 
 
 <table>
@@ -348,7 +348,7 @@ XS Odata also allows you to combine both validation exits and modification exits
 
 For **single** OData requests, the following execution order applies for the custom exit:
 
-<a name="loio03735142bfd647c2a016fcd9359f3348__table_txc_b5s_vz"/>Exit Execution Order for Single OData Requests
+**Exit Execution Order for Single OData Requests**
 
 
 <table>
@@ -416,7 +416,7 @@ The following table shows the execution order applied to custom exits for **batc
 > ### Note:  
 > This example assumes that there are two \(2\) requests and the batch request also includes a change set with 2 requests.
 
-<a name="loio03735142bfd647c2a016fcd9359f3348__table_z5w_4qs_vz"/>Exit Execution Order for OData Batch Requests
+**Exit Execution Order for OData Batch Requests**
 
 
 <table>
@@ -694,7 +694,7 @@ If you register a custom exit for an OData write request in the form of an SQLSc
 
 For **entity** write operations, the methods registered for the CREATE operation are passed a table containing the new entry that must be inserted into the target table; the UPDATE operation receives the entity both before and after the modification; the DELETE operation receives the entry that must be deleted. The table type of the parameters \(specified with the *EntityType* keyword in the table below\) corresponds to the types of the exposed entity.
 
-<a name="loio03735142bfd647c2a016fcd9359f3348__table_ghl_ffr_mk"/>Entity Write Operations
+**Entity Write Operations**
 
 
 <table>
@@ -792,7 +792,7 @@ IN old EntityType
 
 For **link** write operations, all exits that are executed before the commit operation take two table-typed input parameters and one table-typed output parameter. The first parameter must correspond to the structure of the entity type at the **principal** end of the association; the second parameter must correspond to the **dependent** entity type.
 
-<a name="loio03735142bfd647c2a016fcd9359f3348__table_xcz_vhr_mk"/>Link Write Operations
+**Link Write Operations**
 
 
 <table>
@@ -851,7 +851,7 @@ IN principal PrincipalEntityType, IN dependent DependentEntityType
 
 The `OUT` parameter enables you to return error information. The first row in the OUT table is then serialized as `inner error` in the error message. If no error occurs, the OUT table must remain empty. The structure of the table type `ErrorType` is not restricted. Any columns with special names `HTTP_STATUS_CODE` and `ERROR_MESSAGE` are mapped to common information in the OData error response. Content of columns with other names are serialized into the `inner error` part of the error message that allows the return of custom error information.
 
-<a name="loio03735142bfd647c2a016fcd9359f3348__table_zsy_w3r_mk"/>Error Message Content
+**Error Message Content**
 
 
 <table>

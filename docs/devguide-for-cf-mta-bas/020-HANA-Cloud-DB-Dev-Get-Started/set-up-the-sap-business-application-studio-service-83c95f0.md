@@ -29,7 +29,7 @@ SAP Business Application Studio is a new SAP service in Cloud Foundry which offe
 This tutorial shows how to set up and use an instance of the SAP Business Application Studio service, which you can then use to develop and deploy SAP HANA database applications.
 
 > ### Note:  
-> This tutorial describes how to enable a service in a SAP BTP **enterprise** account; if you have a **trial** account, the initial steps might differ from those described here. For example, in a trial account you might have to navigate to the subaccount where you want to enable a service.
+> This tutorial describes how to enable a service in an SAP BTP **enterprise** account; if you have a **trial** account, the initial steps might differ from those described here. For example, in a trial account you might have to navigate to the subaccount where you want to enable a service.
 
 
 

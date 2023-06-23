@@ -87,5 +87,5 @@ To update the configuration of an existing service plan in the Cloud Foundry app
 
 [Create a Service Instance](create-a-service-instance-355f3b1.md "Make a service instance available to applications.")
 
-[Set up Application Security](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2022_3_QRC/en-US/b8236393290048dda17b4545d17eac66.html "Help ensure a multitarget application is protected from Web-based attacks.") :arrow_upper_right:
+[Set up Application Security](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_2_QRC/en-US/b8236393290048dda17b4545d17eac66.html "Help ensure a multitarget application is protected from Web-based attacks.") :arrow_upper_right:
 

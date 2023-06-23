@@ -27,7 +27,7 @@ The easiest way to define the required data source is to declare the keys for th
 > 
 > ```
 > 
-> For the TomEE run time, you can create a `resources.xml` file in the `WEB-INF/` directory with the following content:
+> For the TomEE 7 run time, you can create a `resources.xml` file in the `WEB-INF/` directory with the following content:
 > 
 > ```
 > <?xml version='1.0' encoding='utf-8'?> 

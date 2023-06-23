@@ -13,7 +13,7 @@ The following table lists the SAP Node.js packages that are currently available 
 > ### Note:  
 > Some packages are available for download but are neither listed nor documented here, for example, packages that are included in the registry only because they are required by other packages.
 
-<a name="loio54513272339246049bf438a03a8095e4__table_hpz_1gt_vt"/>SAP Node.js Packages and Contents
+**SAP Node.js Packages and Contents**
 
 
 <table>
@@ -596,7 +596,7 @@ CDS entities are imported by name. The import function takes a callback that is 
 
 This package includes a Node.js client for SAP HANA Datawarehousing Foundation \(HANA DWF\). The following table describes the file-system layout required by the `HANA DWF Client` application:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_jgt_43n_cz"/>`HANA DWF Client` File System Layout
+**HANA DWF Client File System Layout**
 
 
 <table>
@@ -705,7 +705,7 @@ Additional deployment subdirectories ...
 
 This package includes a Node.js client for SAP HANA Datawarehousing Foundation 2.0 \(HANA DWF 2.0\) to generate designtime artifacts. The following table describes the file-system layout required by the`HANA DWF Client` application:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_t1n_jbs_k1b"/>`HANA DWF Client`File System Layout
+**HANA DWF Client File System Layout**
 
 
 <table>
@@ -1089,7 +1089,7 @@ Alternatively, you can close the client connection, as illustrated below:
 
 `@sap/hdi-deploy` is the Node.js deploy application \(known as “`DeployApp`”\) for the SAP HANA Deployment Infrastructure \(HDI\), which is based on the HDI's SQL interface. The following table describes the file-system layout required by the `DeployApp` application:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_qd5_cxf_k5"/>HI Deployer File System Layout
+**HI Deployer File System Layout**
 
 
 <table>
@@ -1198,7 +1198,7 @@ For more information about setting up and using the Node.js-based SAP HANA Deplo
 
 The following table lists the environment variables that can be used with the \) to boot and start the application.`DeployApp` application:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_xqr_wxf_k5"/>HDI Deployer Environment Variables for Multitarget Applications
+**HDI Deployer Environment Variables for Multitarget Applications**
 
 
 <table>
@@ -1842,7 +1842,7 @@ You can also pass a custom file from which you load a default service configurat
 
 Both `getServices` and `filterCFServices` use the same service query values.
 
-<a name="loio54513272339246049bf438a03a8095e4__table_wqn_knt_vt"/>Query Values for getServices and filterCFservices
+**Query Values for getServices and filterCFservices**
 
 
 <table>
@@ -1914,7 +1914,7 @@ A function that takes a service object as argument and returns true only if it i
 
 If an object is given as a query value, it may have the following properties:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_xbv_snt_vt"/>Object Properties for Query Values
+**Object Properties for Query Values**
 
 
 <table>
@@ -2074,7 +2074,7 @@ The package enables SAP HANA XS Classic applications to run in the compatibility
 
 The starting function takes an object that contains service credentials and application options.
 
-<a name="loio54513272339246049bf438a03a8095e4__table_y1m_ppt_vt"/>Property Options
+**Property Options**
 
 
 <table>
@@ -2505,7 +2505,7 @@ SAP HANA XS advanced applications connect to SAP HANA with a fixed technical use
 
 The `hana` object has the following properties:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_vnt_lrt_vt"/>Property Options
+**Property Options**
 
 
 <table>
@@ -2736,7 +2736,7 @@ To use it in your XS JavaScript code:
 
 The `secureStore` object has the following properties:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_wcn_1tt_vt"/>Property Options
+**Property Options**
 
 
 <table>
@@ -2884,7 +2884,7 @@ If provided, sets current schema for database connections
 
 The `formData` object has the following properties:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_wjd_dtt_vt"/>Property Options
+**Property Options**
 
 
 <table>
@@ -2942,7 +2942,7 @@ restricts the total size of all the uploaded files.
 
 The `mail` object has the following properties:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_x4g_3tt_vt"/>Property Options
+**Property Options**
 
 
 <table>
@@ -3138,7 +3138,7 @@ If your application requires different mechanisms for destination configuration,
 > }
 > ```
 
-<a name="loio54513272339246049bf438a03a8095e4__table_xtw_n5t_vt"/>Parameter Options
+**Parameter Options**
 
 
 <table>
@@ -3376,7 +3376,7 @@ The name of the OAuth 2.0 client has the prefix “`sb-`”; the corresponding c
 
 The complete details of the container security API including all parameters and options are available in the README file included in the `@sap/xssec` package.
 
-<a name="loio54513272339246049bf438a03a8095e4__table_ukv_l1n_wt"/>Container Security API
+**Container Security API**
 
 
 <table>
@@ -3785,7 +3785,7 @@ To see how to update the SAP Passport before forwarding it to the next applicati
 
 This method takes an object with the following **mandatory** properties:
 
-<a name="loio54513272339246049bf438a03a8095e4__table_vf4_pxl_mv"/>Mandatory SAP Passport Properties
+**Mandatory SAP Passport Properties**
 
 
 <table>

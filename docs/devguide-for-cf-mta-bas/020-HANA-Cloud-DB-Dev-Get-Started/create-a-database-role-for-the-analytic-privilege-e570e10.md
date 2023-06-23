@@ -25,7 +25,7 @@ Create the role "development\_debug\_role" required for your analytic privileges
 In this tutorial, you define the `development_debug_role` role required by the two analytic privileges you defined to restrict access to the calculation view called *FlightReservation*.
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Find Command...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. Choose ![](images/BAS_icon_GuidedDevCenter_b7736b4.svg) \(*Guided Development Center*\) in SAP Business Application Studio's *Views* pane or open the command palette \(*View* \> *Command Palette...*\) and search for *Guided Development Center*. In the list of guided development tutorials, choose *Create SAP HANA Database Applications & Artifacts* \> *Get Started with SAP HANA*.
 
 
 
@@ -43,7 +43,7 @@ In this tutorial, you define the `development_debug_role` role required by the t
 
         -   Press either  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
@@ -110,11 +110,9 @@ In this tutorial, you define the `development_debug_role` role required by the t
     In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose ![](images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
     > ### Note:  
-    > A mismatch between the installed SAP HANA version and the SAP HANA version specified in the `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
+    > A mismatch between the installed SAP HANA version and the SAP HANA version specified in the `.hdiconfig` file \(with the optional parameter `"minimum_feature_version"`\) can cause problems with the deployment operation.
 
-6.  Use the `development_debug_role` to assign analytic privileges to the user that runs a data preview in SAP Business Application Studio.
-
-    Similar to the established `default_access_role`, the new `development_debug_role` can be used to add additional privileges to the application user, for example, to enable access to data preview features in SAP Business Application Studio's calculation-view editor.
+6.  Similar to the established `default_access_role`, the new `development_debug_role` can be used to add additional privileges to the application user, for example, to enable access to data preview features in SAP Business Application Studio's calculation-view editor.
 
     > ### Caution:  
     > This `development_debug_role` is intended for development and debugging only; it is not intended for use in productive scenarios.

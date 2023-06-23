@@ -35,7 +35,7 @@ Before a service can be used by an application, it is necessary to create a serv
 
    
   
-<a name="loiodf19a03dc07e4ba19db4e0006c1da429__fig_gch_4zs_qv"/>Basic Cloud Foundry Concepts
+**Basic Cloud Foundry Concepts**
 
  ![](images/Application_and_Services_in_Cloud_Foundry_f4e7909.png "Basic Cloud Foundry Concepts") 
 

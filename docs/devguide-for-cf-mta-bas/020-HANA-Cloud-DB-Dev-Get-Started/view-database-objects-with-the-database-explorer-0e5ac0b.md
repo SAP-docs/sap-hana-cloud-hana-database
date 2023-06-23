@@ -27,7 +27,7 @@ Check the contents of your database with SAP HANA Database Explorer.
 The SAP HANA Database Explorer enables you to view the run-time contents of your database module after the corresponding design-time artifacts have been deployed to the HDI container that is created and assigned to the module during deployment.
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Find Command...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Command Palette...* \> *Guided Development*\).
 
 
 
@@ -41,9 +41,9 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
 
     The database explorer enables you to view the run-time objects deployed to the SAP HDI container that is assigned to your SAP HANA database application. You can start the database explorer in the following ways:
 
-    1.  Start the standalone database explorer from the *command palette* .
+    1.  Start the standalone database explorer from the *Command palette*.
 
-        Open the command palette by choosing *View* \> *Find Command...* \(or with the keyboard shortcuu  [Ctrl\] + [Shift\] + [P\] \), type ***data***, and choose *SAP HANA: Open Database Explorer* in the list of commands displayed.
+        Open the command palette by choosing *View* \> *Command Palette...* \(or with the keyboard shortcut  [Ctrl\] + [Shift\] + [P\] \), type ***data***, and choose *SAP HANA: Open Database Explorer* in the list of commands displayed.
 
         > ### Note:  
         > With this method, you need to locate and select the database \(HDI container\) manually.
@@ -59,20 +59,26 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
         Since the databases are associated with a Cloud Foundry development space, you must be logged on to Cloud Foundry to see the database list. If you are not already logged on to Cloud Foundry, *SAP HANA Database Explorer* prompts you to provide logon credentials.
 
         > ### Tip:  
-        > To reduce the number of databases displayed, you can filter the list of databases connections by name or part of a name. To highlight the names of all databases that contain a particular string of characters, start typing any part of the database name, for example ***Flight*** or ***12345***. Press [Enter\] to display the contents of the database that contain the string you have typed.
+        > To reduce the number of databases displayed, you can filter the list of databases connections by name or part of a name. To highlight the names of all databases that contain a particular string of characters, start typing any part of the database name, for example ***Flight*** or ***12345***. Press [Enter\] to display the contents of the database whose name contains the string you typed.
 
 
     The selected database is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Tables*, *Views*, *Column Views*, etc.
 
 3.  Browse the different categories of objects in the database catalog.
 
-    > ### Tip:  
+    You can filter the objects displayed by choosing an object category and select individual catalog objects from the list displayed to view the contents in the details pane.
 
     1.  Expand the selected database in the *DATABASE LIST* pane to display a list of all the different categories of objects the database contains, for example: *Column Views*, *Tables*, *Procedures*, *Views*, etc.
 
+        > ### Tip:  
+        > To locate a specific database name more quickly you can filter the list of databases displayed according to a defined string. For example, in the *DATABASE LIST* choose <span class="SAP-icons"></span> \(Select Database\)and type the desired string in the text box. Select one or more databases from the filtered list and choose *OK*. The list of selected databases is displayed, and the filter icon remains "active" to indicate that the list of databases is incomplete. To remove the filter, choose <span class="SAP-icons"></span> \(Select Database\), uncheck the selected databases in the filter list, and choose *OK*.
+
     2.  Select a category, for example, *Tables* or *Column Views* to display all deployed objects of the selected category in the *CATALOG BROWSER*.
 
-    3.  Right click a database object in the *CATALOG BROWSER* to display a context-sensitive menu that you can use to perform the following actions:
+        > ### Tip:  
+        > To reduce the number of database objects displayed in the *CATALOG BROWSER* and find the object you are looking for more quickly, you can filter the list of database objects by name or part of a name. For example, in the *CATALOG BROWSER* choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Cancel\].
+
+    3.  Right-click a database object in the *CATALOG BROWSER* to display a context-sensitive menu that you can use to perform the following actions:
 
         > ### Note:  
         > The context-sensitive menu is only displayed if the selected database object is supported, and the list of menu options displayed changes according to the type of object selected, for example, table, user, procedure, etc.
@@ -96,7 +102,7 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
         </th>
         <th valign="top">
 
-        Notes
+        Note!
 
 
         
@@ -104,45 +110,28 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
         </tr>
         <tr>
         <td valign="top">
-
-        *Copy Name*
+        
+                *Open Data*
 
 
         
         </td>
         <td valign="top">
-
-        Copy the object name of the selected database object to the clipboard
+        
+                Open the SQL console, and display the results of the data-preview SQL query that is run on the selected database artifact.
 
 
         
         </td>
         <td valign="top">
-
-         
-
-
         
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
+                The option is only available with:
 
-        *Copy Full Name*
-
-
-        
-        </td>
-        <td valign="top">
-
-        Copy the schema name and the object name of the selected database object to the clipboard.
-
-
-        
-        </td>
-        <td valign="top">
-
-        If the object is a global object without a schema, only the object name is copied.
+        -   Tables
+        -   Views
+        -   Column views
+        -   Synonyms \(except synonyms of procedures\)
+        -   Public synonyms \(except synonyms of procedures\)
 
 
         
@@ -150,22 +139,22 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
         </tr>
         <tr>
         <td valign="top">
-
-        *Generate CREATE Statement*
+        
+                *Copy Name*
 
 
         
         </td>
         <td valign="top">
-
-        Display the SQL statement used to **create** the selected database object in a new SQL console.
+        
+                Copy the object name of the selected database object to the clipboard
 
 
         
         </td>
         <td valign="top">
-
-        This operation is only available on schema-local objects.
+        
+                 
 
 
         
@@ -173,22 +162,153 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
         </tr>
         <tr>
         <td valign="top">
-
-        *Copy CREATE Statement*
+        
+                *Copy Full Name*
 
 
         
         </td>
         <td valign="top">
-
-        Copy to the clipboard the SQL statement used to create the selected database.
+        
+                Copy the schema name and the object name of the selected database object to the clipboard.
 
 
         
         </td>
         <td valign="top">
+        
+                If the object is a global object without a schema, only the object name is copied.
 
-        This operation is only available on schema-local objects.
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Generate CREATE Statement*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Display the SQL statement used to **create** the selected database object in a new SQL console.
+
+
+        
+        </td>
+        <td valign="top">
+        
+                This operation is only available on schema-local objects.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Copy CREATE Statement*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Copy to the clipboard the SQL statement used to create the selected database.
+
+
+        
+        </td>
+        <td valign="top">
+        
+                This operation is only available on schema-local objects.
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Generate SELECT Statement*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Copy the SQL statement used to **select** the database object and display it in a new SQL console, where you can run the `SELECT` statement and view the results.
+
+
+        
+        </td>
+        <td valign="top">
+        
+                The option is only available with:
+
+        -   Tables
+        -   Views
+        -   Column views
+        -   Synonyms \(except synonyms of procedures\)
+        -   Public synonyms \(except synonyms of procedures\)
+        -   Functions
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Generate CALL Statement*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Display the SQL statement used to **call** the selected database object in a new SQL console, where you can run the `CALL` statement on the chosen database artifact \(for example, a procedure\) and view the results.
+
+
+        
+        </td>
+        <td valign="top">
+        
+                The option is only available with:
+
+        -   Procedures
+        -   Synonyms of procedures
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+                *Generate CALL Statement with UI*
+
+
+        
+        </td>
+        <td valign="top">
+        
+                Display the SQL statement used to **call** the selected database object in the graphical user interface \(GUI\), where you can run the `CALL` statement on the chosen database object \(for example, a procedure\) and view the results.
+
+
+        
+        </td>
+        <td valign="top">
+        
+                The option is available with:
+
+        -   Procedures
+        -   Synonyms of procedures
+
+        > ### Tip:  
+        > Some types of procedure cannot be called with the GUI, for example, procedures with parameters that reference user-defined types \(`TABLE_TYPE`\). You must run the procedure without the GUI.
 
 
         
@@ -231,7 +351,7 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
 
     2.  Expand the *FlightReservation/db* and *Database Connections* nodes.
 
-        A SAP HANA Cloud application project is bound to an HDI container in the SAP HANA database. The name of the bound container is displayed in *Database Connections* along with the current binding status, for example: bound \(green\), and unbound \(grey\).
+        An SAP HANA application project is bound to an HDI container in the SAP HANA database. The name of the bound container is displayed in *Database Connections* along with the current binding status, for example: bound \(green\), and unbound \(grey\).
 
     3.  Add an HDI container to the SAP HANA Database Explorer \(optional\).
 
@@ -295,7 +415,7 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
 
 [HDI Delta Deployment and Undeploy Allow List](../040-HANA-Cloud-DB-Dev-Persistence-Model/hdi-delta-deployment-and-undeploy-allow-list-ebb0a1d.md "The HDI Deployer implements a delta-based deployment strategy including an optional allow list.")
 
-[Deploy Artifacts and Set up Database Connections with SAP HANA Projects Explorer](deploy-artifacts-and-set-up-database-connections-with-sap-hana-projects-explore-4bbbaae.md "Use the SAP HANA Projects explorer to deploy and manage your application's database artifacts and connections.")
+[Deploy Artifacts with SAP HANA Projects Explorer](deploy-artifacts-with-sap-hana-projects-explorer-4bbbaae.md "Use the SAP HANA Projects explorer to deploy and view your application's design- and run-time database artifacts.")
 
 [User Preferences for SAP HANA Native Application Development Tools](user-preferences-for-sap-hana-native-application-development-tools-57e2fe6.md "Customize the SAP HANA Native Application project workspace by setting or modifying user preferences.")
 

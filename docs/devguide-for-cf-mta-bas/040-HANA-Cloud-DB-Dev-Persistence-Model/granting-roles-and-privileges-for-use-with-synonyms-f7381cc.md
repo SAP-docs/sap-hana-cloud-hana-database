@@ -11,7 +11,7 @@ You can use the `.hdbgrants` configuration file to assign privileges to the owne
 > 
 > ```
 > {
->   "EPM_XXX-table-grantor": {
+>   "granting_service": {
 >    "object_owner": { 
 >       "schema_roles": [
 >         {

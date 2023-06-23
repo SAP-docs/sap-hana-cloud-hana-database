@@ -61,7 +61,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
     > The following code example is provided for illustration purposes only.
 
     > ### Sample Code:  
-    > `db/src/data/PurchaseDemo.hdbtabledata`
+    > <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/data/PurchaseDemo.hdbtabledata</code>
     > 
     > ```json
     > {
@@ -165,7 +165,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
     5.  Add data to the new CSV file `header.csv` in the `data/loads` folder of the database module in your local project workspace.
 
         > ### Sample Code:  
-        > `db/src/data/loads/header.csv`
+        > <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/data/loads/header.csv</code>
         > 
         > ```json
         > 0500000000,0000000033,20120101,0000000033,20120101,9000000001,0100000000,EUR,13224.47,11113,2111.47,N,I,I,I,I
@@ -179,7 +179,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
     7.  Add data to the new CSV file `item.csv` in the `data/loads` folder of the database module in your local project workspace.
 
         > ### Sample Code:  
-        > `db/src/data/loads/item.csv`
+        > <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/data/loads/item.csv</code>
         > 
         > ```json
         > 0500000000,0000000010,HT-1000,,EUR,1137.64,956,181.64,1,EA,20121204
@@ -236,7 +236,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 **Related Information**  
 
 
-[Table Data Syntax (.hdbtabledata in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
+[Table Data Syntax (.hdbtabledata in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
 
 [Create a Database Table with SQL Data Definition Language](create-a-database-table-with-sql-data-definition-language-879ce23.md "Define a design-time database table using the SQL Data Definition Language (DDL) syntax.")
 

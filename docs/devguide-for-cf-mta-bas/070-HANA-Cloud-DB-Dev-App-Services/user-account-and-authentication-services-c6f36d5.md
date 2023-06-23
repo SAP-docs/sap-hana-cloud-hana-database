@@ -55,7 +55,7 @@ The XSUAA service plan you use determines the impact on the `xsappname` that is 
 > SAP HANA Managed Service \(SAP BTP/Cloud Foundry\)
 > 
 > ```
-> cf marketplace -s xsuaa
+> cf marketplace -e xsuaa
 >  
 > Getting services from marketplace...
 > Getting plans for service "xsuaa"...
@@ -105,7 +105,7 @@ The service plan `apiaccess` creates an OAuth Client during creation of the serv
 The prerequisite for the service-instance creation is that the corresponding platform user also owns the scopes listed above. This is the case if the platform user is administrator in the corresponding subaccount where the service instance is to be created.
 
 > ### Tip:  
-> An administrator has the role User & Role Administrator assigned. You may check this via the subaccount view in the SAP BTP cockpit \(*Security* \> *Administrators*\).
+> An administrator is assigned the role User & Role Administrator, and you can check this in the subaccount view in the SAP BTP cockpit \(*Security* \> *Administrators*\).
 
 It is not possible to pass any parameters \(for example, in the security descriptor `xs-security.json`\) during creation of the service instance \(indeed, any input is ignored\). And after the service instance is created, the OAuth client's credentials can be retrieved by means of the service key. It is also important to bear in mind that it is not possible to subscribe to any services instances created with the `apiaccess` service plan. The advantage of this plan is that the V2 authorization and SCIM endpoints of the XSUAA can be used by a technical user and do not require a space developer or admin user.
 
@@ -117,8 +117,4 @@ It is not possible to pass any parameters \(for example, in the security descrip
 [Core Application Services](core-application-services-b0200e9.md "A selection of essential application services are available with the run-time platform.")
 
 [Maintaining Multitarget Application Services in Cloud Foundry](maintaining-multitarget-application-services-in-cloud-foundry-33e3c59.md "In Cloud Foundry, applications can make use of services managed by a service broker.")
-
-[Maintaining Application Security in Cloud Foundry on SAP BTP](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2022_3_QRC/en-US/35d910ee7c7a445a950b6aad989a5a26.html "Set up the security components required in the context of multitarget applications on SAP BTP .") :arrow_upper_right:
-
-[Application Security Descriptor Configuration Syntax](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2022_3_QRC/en-US/6d3ed64092f748cbac691abc5fe52985.html "The syntax required to set the properties and values defined in the xs-security.json application-security description file.") :arrow_upper_right:
 

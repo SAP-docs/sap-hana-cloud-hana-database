@@ -1,17 +1,19 @@
 <!-- loioebb0a1d1d41e4ab0a06ea951717e7d3d -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # HDI Delta Deployment and Undeploy Allow List
 
 The HDI Deployer implements a delta-based deployment strategy including an optional allow list.
 
 On start up, the HDI Deployer recursively scans the local `src/` and `cfg/` folders, processes configuration templates, checks the HDI container on the server-side, and calculates the set of added, modified, and deleted files based on the difference between the local file system state and the state of the deployed file system of the server-side HDI container.
 
-In normal operation, the HDI Deployer will schedule only the set of added and modified files for deployment. The set of unmatched or deleted files is not scheduled for automatic undeployment.
+In normal operation, when performing a full build of the database module, the HDI Deployer schedules for deployment only the set of added and modified files. The set of unmatched or deleted files is not scheduled for automatic undeployment. For **selective** deployment, however, where you want to deploy selected, individual files, deleted files are neither detected nor undeployed.
 
 > ### Tip:  
 > In SAP Business Application Studio, this behavior is reversed; auto-undeployment is enabled by default. However, to prevent artifacts being deployed, you can configure SAP Business Application Studio to require confirmation of the auto-undeployment of unmatched artifacts, as follows:
 > 
-> *Preferences* \> *Workspace* \> *SAP HANA Project Explorer* \> *Bind: confirm automatic undeployment*.
+> Choose :gear: then *Settings* \> *Workspace* \> *Extensions* \> *SAP HANA Project Explorer* \> *Bind: confirm automatic undeployment*.
 
 If auto-undeployment is disabled, then to undeploy deleted or unmatched files, an application must include an undeploy “allow list”, for example, by creating an `undeploy.json` file in the root directory of the `db/` module \(alongside the `src/` and `cfg/` folders\). The undeploy allow list `undeploy.json` file is a JSON document with a top-level array of file names that can be undeployed, as illustrated in the following example:
 

@@ -51,7 +51,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     3.  Create a new SAP HANA database artifact.
 
@@ -89,7 +89,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
     > The following code example is provided for illustration purposes only.
 
     > ### Sample Code:  
-    > `db/src/data/PurchaseDemo.hdbtabledata`
+    > <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/data/PurchaseDemo.hdbtabledata</code>
     > 
     > ```json
     > {
@@ -183,7 +183,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
         In the `db` module, right-click the `src/data` folder, create a new folder named "`loads`".
 
-    2.  Add a CSV file named `header.csv` to the `db/src/data/loads` folder.
+    2.  Add a CSV file named `header.csv` to the `/src/data/loads` folder.
 
         In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *db/src/data/loads* folder in the database module, choose the database version *HANA Cloud* and the artifact type *csv*, and name the new file "***header***".
 
@@ -192,14 +192,14 @@ You can use the `hdbtabledata` development object to enable the loading of data 
         Paste the following code into the new `header.csv` file:
 
         > ### Code Syntax:  
-        > `db/src/data/loads/header.csv`
+        > <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/data/loads/header.csv</code>
         > 
         > ```json
         > 0500000000,0000000033,20120101,0000000033,20120101,9000000001,0100000000,EUR,13224.47,11113,2111.47,N,I,I,I,I
         > 0500000001,0000000033,20120102,0000000033,20120102,9000000001,0100000002,EUR,12493.73,10498.94,1994.79,N,I,I,I,I
         > ```
 
-    4.  Add another CSV file named `item.csv` to the `db/src/data/loads` folder.
+    4.  Add another CSV file named `item.csv` to the <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/data/loads</code> folder.
 
         In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *db/src/data/loads* folder in the database module, choose the database version *HANA Cloud* and the artifact type *csv*, and name the new file ***item***.
 
@@ -208,7 +208,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
         Paste the following code into the new `item.csv` file:
 
         > ### Code Syntax:  
-        > `db/src/data/loads/item.csv`
+        > <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/data/loads/item.csv</code>
         > 
         > ```json
         > 0500000000,0000000010,HT-1000,,EUR,1137.64,956,181.64,1,EA,20121204
@@ -258,7 +258,11 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
+        You can filter by name the databases displayed in the *DATABASE LIST*. For example, choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and choose *OK* press or [Enter\]. To reset the filter, press [Escape\].
+
     2.  In the SAP HANA Database Explorer, expand the HDI container that contains the new database artifacts.
+
+        You can filter by name the database objects displayed in the *CATALOG BROWSER*. Choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Escape\].
 
     3.  Choose *Tables*.
 
@@ -271,7 +275,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 **Related Information**  
 
 
-[Table Data Syntax (.hdbtabledata in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
+[Table Data Syntax (.hdbtabledata in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
 
 [Create a Database Table with SQL Data Definition Language](create-a-database-table-with-sql-data-definition-language-879ce23.md "Define a design-time database table using the SQL Data Definition Language (DDL) syntax.")
 

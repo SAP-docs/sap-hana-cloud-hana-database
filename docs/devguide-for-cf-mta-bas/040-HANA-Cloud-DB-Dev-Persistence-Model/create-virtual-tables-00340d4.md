@@ -31,7 +31,7 @@ SAP Business Application Studio supports the creation of virtual tables using ei
     1.  Open the command palette.
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Start the database-artifact creation Wizard.
 
@@ -59,18 +59,58 @@ SAP Business Application Studio supports the creation of virtual tables using ei
 
     The creation Wizard starts the *Virtual Table Editor*.
 
-5.  Define the virtual table.
+5.  Grant the privileges required to locate and select objects on the remote source.
+
+    The object owner and the application \(run-time\) user require the global object privilege `CREATE VIRTUAL TABLE` on the remote source to be able to use the *Virtual Table Editor* to locate and select objects in the remote database.
+
+    > ### Tip:  
+    > You can use an `hdbgrants` file to grant the required privileges, for example, with the `"global_object_privileges": [...]` key in the `"object_owner"` and `"application_user"` sections as shown in the following example. For more information about syntax requirements in the `hdbgrants` file, see *Related Information* below.
+
+    > ### Code Syntax:  
+    > My `db/src/.hdbgrants` File
+    > 
+    > ```
+    > 
+    > {
+    >  "grantor-service": {
+    >    "object_owner": { 
+    >      "global_object_privileges": [ 
+    >       { 
+    >        "name": "MyRemoteSource",  
+    >        "type": "REMOTE SOURCE",  
+    >        "privileges": [  
+    >          "CREATE VIRTUAL TABLE"  
+    >        ] 
+    >       } 
+    >      ]  
+    >    }, 
+    >    "application_user": { 
+    >      "global_object_privileges": [ 
+    >       { 
+    >        "name": "MyRemoteSource",  
+    >        "type": "REMOTE SOURCE",  
+    >        "privileges": [  
+    >          "CREATE VIRTUAL TABLE"  
+    >        ] 
+    >       } 
+    >      ]  
+    >    }
+    >  }
+    > }
+    > ```
+
+6.  Define the virtual table.
 
     Use the *Virtual Table Editor* to configure the new virtual table.
 
-    > ### Tip:  
-    > The object owner and the application \(run-time\) user require the global object privilege `CREATE VIRTUAL TABLE` on the remote source to be able to use the *Virtual Table Editor* to locate and select objects in the remote databases. You can use an `hdbgrants` file to grant privileges, for example, with the `"global_object_privileges": [...]` key in the `"object_owner"` and `"application_user"` sections \(`"type": "REMOTE SOURCE"` and `"privileges": [ "CREATE VIRTUAL TABLE" ]`\). For more information about syntax requirements in the `hdbgrants` file, see *Related Information* below.
-
-    The following details are mandatory:
+    The following details are mandatory \* :
 
     -   *Virtual table name \**
 
         The editor displays the name that you specified when creating the new virtual table in the previous step.
+
+        > ### Tip:  
+        > If you modify the name here, on deployment, the modified name is used for the run-time object.
 
     -   *Remote source name \**
 
@@ -78,12 +118,15 @@ SAP Business Application Studio supports the creation of virtual tables using ei
 
     -   *Object name \**
 
-        Choose *\[…\]* to display a list of known objects in the database schema on the specified remote source and choose the object you want to use.
+        Choose *\[…\]* to display a list of known objects in the selected database schema on the specified remote source and choose the object you want to use.
+
+        > ### Tip:  
+        > You can use the *Database name* and *Schema name* fields to filter the list of objects to choose from.
 
 
-6.  Choose *Save* in the menu bar or  [CTRL\] + [S\]  to save your file \(virtual table\).
+7.  Choose *Save* in the menu bar or  [CTRL\] + [S\]  to save your file \(virtual table\).
 
-7.  Buildand deploy the SAP HANA database module.
+8.  Buildand deploy the SAP HANA database module.
 
     The build process uses the design-time database artifacts to generate the corresponding actual objects \(run-time objects\) in the HDI container.
 
@@ -94,4 +137,6 @@ SAP Business Application Studio supports the creation of virtual tables using ei
 
 
 [Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
+
+[File Format Options \(SDI & SDA Installation and Configuration Guide\)](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/7952ef28a6914997abc01745fef1b607/ae74d5b5e01c4393bc2c2ade0b3826bd.html)
 

@@ -110,7 +110,7 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 **Related Information**  
 
 
-[Database Constraint Syntax (.hdbconstraint in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/bda54706fbda4910908871743b675ad1.html "Transform a design-time constraint into a constraint on database tables.") :arrow_upper_right:
+[Database Constraint Syntax (.hdbconstraint in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/bda54706fbda4910908871743b675ad1.html "Transform a design-time constraint into a constraint on database tables.") :arrow_upper_right:
 
 [Create an Index with SQL Data Definition Language](create-an-index-with-sql-data-definition-language-90de80c.md "Define a design-time database index using the SQL Data Definition Language (DDL) syntax.")
 

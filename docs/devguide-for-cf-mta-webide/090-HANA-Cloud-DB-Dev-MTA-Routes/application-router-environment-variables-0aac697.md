@@ -8,7 +8,7 @@ A list of environment variables that can be used to configure the application ro
 
 The following table lists the environment variables that you can use to configure the application router. The table also provides a short description of each variable and, where appropriate, an example of the configuration data.
 
-<a name="loio0aac697f0cf7444193ed5eb0fc6e5bd0__table_n1r_mfn_mv"/>Application Router Configuration Variables
+**Application Router Configuration Variables**
 
 
 <table>
@@ -284,7 +284,7 @@ The content-security-policy mechanism allows the client to detect and block any 
 
 The destinations configuration is an array of objects that is defined in the `destinations` environment variable. A destination is required for every application \(microservice\) that is part of the business application. The following table lists the properties that can be used to describe the destination:
 
-<a name="loio0aac697f0cf7444193ed5eb0fc6e5bd0__table_gz1_23r_s1b"/>Destination Environment Variable Properties
+**Destination Environment Variable Properties**
 
 
 <table>
@@ -616,7 +616,7 @@ It is also possible to read a “destination” configuration from the `destinat
 > 
 > If a destination with the same name is defined in both an environment destination **and** a destination service, the environment destination configuration takes precedence and will be loaded and used.
 
-<a name="loio0aac697f0cf7444193ed5eb0fc6e5bd0__table_opx_fkh_mbb"/>AppRouter Limitations for the Destination Service in Cloud Foundry
+**AppRouter Limitations for the Destination Service in Cloud Foundry**
 
 
 <table>
@@ -833,7 +833,7 @@ The following example shows how to add a host name to the click-jacking protecti
 
 The content is a JSON list of objects with the properties listed in the following table:
 
-<a name="loio0aac697f0cf7444193ed5eb0fc6e5bd0__table_dhz_41z_lv"/>Allowed Host and Domain Names
+**Allowed Host and Domain Names**
 
 
 <table>
@@ -1104,7 +1104,7 @@ Cross-origin resource sharing \(CORS\) is a mechanism that allows restricted res
 
 The CORS configuration includes an array of objects with the following properties, some of which are mandatory:
 
-<a name="loio0aac697f0cf7444193ed5eb0fc6e5bd0__table_mdp_rmj_qn"/>Available Settings for CORS Options
+**Available Settings for CORS Options**
 
 
 <table>

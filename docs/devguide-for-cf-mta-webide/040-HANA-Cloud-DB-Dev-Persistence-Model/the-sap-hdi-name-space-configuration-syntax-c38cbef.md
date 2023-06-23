@@ -54,7 +54,7 @@ For those sub-folders without a name-space configuration file, the name space de
 
     The sub-folder inherits the name-space information from the parent folder. In this case, all sub-folders use the same run-time name space.
 
-    <a name="loioc38cbef504b24a90a2a99c9d97633a85__table_yfc_cbf_1t"/>Design-Time Folder Names Ignored in Run-Time Name Space
+    **Design-Time Folder Names Ignored in Run-Time Name Space**
 
 
     <table>
@@ -76,31 +76,15 @@ For those sub-folders without a name-space configuration file, the name space de
     </tr>
     <tr>
     <td valign="top">
-
-     `/src/` 
+    
+         `/src/` 
 
 
     
     </td>
     <td valign="top">
-
-     <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     `/src/db` 
-
-
-    
-    </td>
-    <td valign="top">
-
-     <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
+         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 
     
@@ -108,31 +92,15 @@ For those sub-folders without a name-space configuration file, the name space de
     </tr>
     <tr>
     <td valign="top">
-
-     `/src/db/proc` 
+    
+         `/src/db` 
 
 
     
     </td>
     <td valign="top">
-
-     <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     `/src/data` 
-
-
-    
-    </td>
-    <td valign="top">
-
-     <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
+         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 
     
@@ -140,15 +108,47 @@ For those sub-folders without a name-space configuration file, the name space de
     </tr>
     <tr>
     <td valign="top">
-
-     `/src/data/import` 
+    
+         `/src/db/proc` 
 
 
     
     </td>
     <td valign="top">
+    
+         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
-     <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+         `/src/data` 
+
+
+    
+    </td>
+    <td valign="top">
+    
+         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+         `/src/data/import` 
+
+
+    
+    </td>
+    <td valign="top">
+    
+         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 
     
@@ -160,7 +160,7 @@ For those sub-folders without a name-space configuration file, the name space de
 
     The run-time name-space for a sub-folder is derived by appending the sub-folder name to the name-space name of the parent folder.
 
-    <a name="loioc38cbef504b24a90a2a99c9d97633a85__table_j4j_jbf_1t"/>Design-Time Folder Names Appended to Run-time Name Space
+    **Design-Time Folder Names Appended to Run-time Name Space**
 
 
     <table>
@@ -182,31 +182,15 @@ For those sub-folders without a name-space configuration file, the name space de
     </tr>
     <tr>
     <td valign="top">
-
-     `/src/` 
+    
+         `/src/` 
 
 
     
     </td>
     <td valign="top">
-
-     <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     `/src/db` 
-
-
-    
-    </td>
-    <td valign="top">
-
-     <code>com.sap.hana.example.db::<i class="varname">&lt;Object_Name&gt;</i></code> 
+         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 
     
@@ -214,31 +198,15 @@ For those sub-folders without a name-space configuration file, the name space de
     </tr>
     <tr>
     <td valign="top">
-
-     `/src/db/proc` 
+    
+         `/src/db` 
 
 
     
     </td>
     <td valign="top">
-
-     <code>com.sap.hana.example.db.proc::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     `/src/data` 
-
-
-    
-    </td>
-    <td valign="top">
-
-     <code>com.sap.hana.example.data::<i class="varname">&lt;Object_Name&gt;</i></code> 
+         <code>com.sap.hana.example.db::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 
     
@@ -246,15 +214,47 @@ For those sub-folders without a name-space configuration file, the name space de
     </tr>
     <tr>
     <td valign="top">
-
-     `/src/data/import` 
+    
+         `/src/db/proc` 
 
 
     
     </td>
     <td valign="top">
+    
+         <code>com.sap.hana.example.db.proc::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
-     <code>com.sap.hana.example.data.import::<i class="varname">&lt;Object_Name&gt;</i></code> 
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+         `/src/data` 
+
+
+    
+    </td>
+    <td valign="top">
+    
+         <code>com.sap.hana.example.data::<i class="varname">&lt;Object_Name&gt;</i></code> 
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+         `/src/data/import` 
+
+
+    
+    </td>
+    <td valign="top">
+    
+         <code>com.sap.hana.example.data.import::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 
     

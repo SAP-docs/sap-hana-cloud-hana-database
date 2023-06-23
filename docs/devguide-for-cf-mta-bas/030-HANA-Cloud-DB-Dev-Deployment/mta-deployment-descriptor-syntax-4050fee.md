@@ -164,7 +164,7 @@ You can specify all the information used to define the MTA version, for example:
 
 Use the following attributes to define each new dependent module:
 
-<a name="loio4050fee4c469498ebc31b10f2ae15ff2__table_ikk_y3x_xs"/>MTA Deployment Descriptor Modules Keys
+**MTA Deployment Descriptor Modules Keys**
 
 
 <table>
@@ -404,7 +404,7 @@ The following table shows how the modules `type` defined in the MTA deployment d
 > ### Restriction:  
 > In the following table, “platform” is either XS \(XS advanced on-premise\) or CF \(Cloud Foundry\). For details of individual parameters, see [MTA Development and Deployment Parameters](mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__table_h3d_jp5_pt) below.
 
-<a name="loio4050fee4c469498ebc31b10f2ae15ff2__table_sj5_vdb_kv"/>MTA Default Modules Types \(XS Advanced/Cloud Foundry\)
+**MTA Default Modules Types \(XS Advanced/Cloud Foundry\)**
 
 
 <table>
@@ -795,14 +795,17 @@ None
 </td>
 <td valign="top" rowspan="2">
 
- `TARGET_RUNTIME` \(tomee\)
+ `TARGET_RUNTIME` \(tomee7\)
 
 
 
 </td>
 <td valign="top" rowspan="2">
 
-TomEE run timeof `sap_java_buildpack` 
+TomEE 7 run time in the `sap_java_buildpack`.
+
+> ### Note:  
+> The outdated TomEE 1.7 version is no longer included in the SAP Java Buildpack. Although TomEE 1.7 will continue to be supported until the end of the deprecation period, it is recommended to migrate to TomEE 7 as soon as possible, as described in the *TomEE Migration Guide* listed in *Related Information* below.
 
 
 
@@ -1495,7 +1498,7 @@ A resource is something which is required by the MTA at run time but not provide
 
 In the `resources` section of the MTA deployment descriptor, the following attributes are used to define each resource:
 
-<a name="loio4050fee4c469498ebc31b10f2ae15ff2__table_otw_2jx_xs"/>MTA Deployment Descriptor Resources Keys
+**MTA Deployment Descriptor Resources Keys**
 
 
 <table>
@@ -1731,7 +1734,7 @@ The following table shows how the **resource type** defined in the MTA deploymen
 > ### Restriction:  
 > In the following table, “platform” is either XS \(XS advanced on-premise\) or CF \(Cloud Foundry\).
 
-<a name="loio4050fee4c469498ebc31b10f2ae15ff2__table_t1k_bdb_kv"/>MTA Default Resource Types and Mapped Services
+**MTA Default Resource Types and Mapped Services**
 
 
 <table>
@@ -2435,7 +2438,7 @@ The `shared` parameter can only be used with resource types that are interpreted
 
 The deployment service also supports a number of “special” resource types, as illustrated in the following table:
 
-<a name="loio4050fee4c469498ebc31b10f2ae15ff2__table_cbl_bk2_qv"/>Additional Special MTA Resource Types: Service Mapping
+**Additional Special MTA Resource Types: Service Mapping**
 
 
 <table>
@@ -2686,7 +2689,7 @@ Module, resource, and dependency parameters have special, platform-specific sema
 
 The following parameters are supported:
 
-<a name="loio4050fee4c469498ebc31b10f2ae15ff2__table_h3d_jp5_pt"/>MTA Development and Deployment Parameters
+**MTA Development and Deployment Parameters**
 
 
 <table>
@@ -4149,6 +4152,50 @@ modules:
 <tr>
 <td valign="top">
 
+`makeUniqueName`
+
+
+
+</td>
+<td valign="top">
+
+resources
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+Generate a unique schema name by appending a numeric identifier to the schema name, for example: MY\_SCHEMA\_1, MY\_SCHEMA\_2, etc. In SAP Business Application Studio, this parameter is set to "true" by default.
+
+
+
+</td>
+<td valign="top">
+
+```
+resources:
+  - name: hdi_db
+    parameters:
+      config:
+        makeUniqueName: true
+
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
  `memory` 
 
 
@@ -4551,6 +4598,50 @@ modules:
     - route: host.my.domain/eg
     - route: host.his.domain/eg2
     - route: host.her.domain2/eg3
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`schema`
+
+
+
+</td>
+<td valign="top">
+
+resources
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+The schema name or HDI container name. If no schema name is set, the schema name will be a generated GUID.
+
+
+
+</td>
+<td valign="top">
+
+```
+resources:
+  - name: hdi_db
+    parameters:
+      config:
+        schema: MY_SCHEMA
+
 ```
 
 
@@ -5580,4 +5671,6 @@ The `sensitive` keyword enables you to hide sensitive information from public vi
 [The MTA Deployment Descriptor](the-mta-deployment-descriptor-33548a7.md "Description of the deployment options for a multitarget application.")
 
 [Maintaining Multitarget Application Services in Cloud Foundry](../070-HANA-Cloud-DB-Dev-App-Services/maintaining-multitarget-application-services-in-cloud-foundry-33e3c59.md "In Cloud Foundry, applications can make use of services managed by a service broker.")
+
+[TomEE Migration Guide \(Apache\)](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Ftomee.apache.org%2Fdeveloper%2Fmigration%2Ftomee-1-to-7.html)
 

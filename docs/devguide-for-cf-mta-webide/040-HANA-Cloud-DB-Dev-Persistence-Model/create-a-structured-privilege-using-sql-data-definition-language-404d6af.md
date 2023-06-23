@@ -46,11 +46,9 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 
 1.  Start SAP Web IDE Full-Stack.
 
-2.  Open the application project to which you want to add your SQL DDL structured privilege.
+2.  3.  Create the structured-privilege definition file.
 
-3.  Create the structured-privilege definition file.
-
-    Browse to the folder in the database module in your application's project workspace, for example, <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/</code> where you want to create the new SQL DDL structured-privilege definition file and perform the following steps:
+    Browse to the folder in the database module in your application's project workspace, for example, Open the application project to which you want to add your SQL DDL structured privilege.<code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/</code> where you want to create the new SQL DDL structured-privilege definition file and perform the following steps:
 
     1.  Right-click the folder where you want to add a new folder to store the SQL DDL structured-privilege definition file and choose *New* \> *Folder* in the context-sensitive pop-up menu. Add a folder called `roles`.
 
@@ -61,7 +59,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
         You can specify the corresponding file extension from the drop-down list in the *File Type* text box.
 
         > ### Tip:  
-        > The file extension is mandatory; it is used to determine which plug-in to call when creating the corresponding run-time object during application build or deployment. SQL DDL structured-privilege definition artifacts have the file extension `.hdbstructuredprivilege`, for example, `PurchaseOrder.hdbstructuredprivilege`.
+        > The file extension is mandatory; it is used to determine which plug-in to call when creating the corresponding run-time object during application build or deployment. SQL DDL structured-privilege definition artifacts have the file extension `.hdbstructuredprivilege`Open the application project to w, for example, `PurchaseOrder.hdbstructuredprivilege`.
 
     4.  Choose *Finish* to save the new SQL DDL structured-privilege definition file in the `roles` folder of the database module of your local project workspace.
 
@@ -118,7 +116,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 **Related Information**  
 
 
-[Structured Privilege Syntax (.hdbstructuredprivilege in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/c3827df3a9dc4c45b5b4e2f7b1070b08.html "Transforms a design-time DDL-based structured privilege resource into a structured privilege object.") :arrow_upper_right:
+[Structured Privilege Syntax (.hdbstructuredprivilege in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/c3827df3a9dc4c45b5b4e2f7b1070b08.html "Transforms a design-time DDL-based structured privilege resource into a structured privilege object.") :arrow_upper_right:
 
 [Create a Database View with SQL Data Definition Language](create-a-database-view-with-sql-data-definition-language-4920a3a.md "Define a design-time database view using the SQL Data Definition Language (DDL) syntax.")
 

@@ -15,7 +15,7 @@ Use an HDI container-group configuration parameter to enable access between HDI 
 To complete the steps described in this task, the following prerequisites apply:
 
 -   You have access to the Cloud Foundry run-time environment
--   You have access to *SAP Web IDE Full Stack*
+-   You have access to SAP Web IDE Full Stack
 -   You have access to an SQL console that is connected to SAP HANA
 -   You have the privileges of an HDI container-group administrator
 
@@ -27,7 +27,7 @@ The HDI container-group administrator can use a function to set the container-gr
 
 -   Creating HDI containers
 
-    When a new HDI container is created, if the HDI container group to which the new container is assigned has the configuration parameter SAP Business Application Studio`enable_cross_container_access` set, then all other containers in the HDI container group are given DML access to the new container's schema, and the new container has the same access to all other containers in the container group.
+    When a new HDI container is created, if the HDI container group to which the new container is assigned has the configuration parameter `enable_cross_container_access` set, then all other containers in the HDI container group are given DML access to the new container's schema, and the new container has the same access to all other containers in the container group.
 
 -   Moving HDI containers
 

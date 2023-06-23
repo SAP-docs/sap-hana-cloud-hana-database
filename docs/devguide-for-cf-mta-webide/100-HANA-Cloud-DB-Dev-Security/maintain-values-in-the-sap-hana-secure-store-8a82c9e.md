@@ -23,7 +23,7 @@ To maintain content in the SAP HANA Secure Store, bear in mind the following con
 
 In the context of the application run time, the SAP HANA Secure Store is used to maintain sensitive information such as user credentials. The stored procedures listed in the following table enable you to insert, retrieve, and delete entries in the Secure Store. Any application that is bound to an instance of the `hana` service with the service plan `securestore` has access to these stored procedures and can use them to maintain content stored in the Secure Store:
 
-<a name="loio8a82c9e9e22a4b67a51ff22097038aab__table_sq5_5gb_fcb"/>Stored Procedures for Secure Store Maintenance
+**Stored Procedures for Secure Store Maintenance**
 
 
 <table>

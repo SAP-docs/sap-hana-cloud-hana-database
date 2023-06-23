@@ -24,7 +24,7 @@ Use analytic privileges to restrict access to your calculation view's data.
 In this tutorial, you create two analytic privileges for a calculation view called *FlightReservation*. The analytic privileges are used to restrict access to the calculation view's data based on the `CARRID` attribute, which defines the identity of the airline, for example, *LH* \(Lufthansa\) or *SG* \(Singapore Airlines\).
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Find Command...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. Choose ![](images/BAS_icon_GuidedDevCenter_b7736b4.svg) \(*Guided Development Center*\) in SAP Business Application Studio's *Views* pane or open the command palette \(*View* \> *Command Palette...*\) and search for *Guided Development Center*. In the list of guided development tutorials, choose *Create SAP HANA Database Applications & Artifacts* \> *Get Started with SAP HANA*.
 
 
 
@@ -36,7 +36,7 @@ In this tutorial, you create two analytic privileges for a calculation view call
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
@@ -56,7 +56,7 @@ In this tutorial, you create two analytic privileges for a calculation view call
 
         In the *Artifact Type* box, type ***hdba***, and choose *Analytic Privilege \(hdbanalyticprivilege\)* from the list that appears.
 
-    6.  Name the file ***API***.
+    6.  Name the file ***AP1***.
 
         The Wizard appends the appropriate file suffix \(`.hdbanalyticprivilege`\) to the name.
 
@@ -88,7 +88,7 @@ In this tutorial, you create two analytic privileges for a calculation view call
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 

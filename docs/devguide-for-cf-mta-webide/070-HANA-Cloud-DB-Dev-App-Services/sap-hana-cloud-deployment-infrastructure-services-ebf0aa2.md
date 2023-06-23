@@ -20,9 +20,14 @@ An SAP HANA service instance corresponds to an HDI container or a plain schema o
 
 In the application run time, SAP HANA is exposed as a managed service with the service name “`hana`”. If an application is bound to an instance of the HANA service, the credentials required to access SAP HANA are defined in the application's *<VCAP\_SERVICES\>* environment variable. A tenant database of an SAP HANA instance can be mapped to an Organization or Space in the application run time, and all SAP HANA service instances created within such an Organization or Space relate to a schema in the mapped tenant database.
 
+The following example shows the service plans assosiciated with the `hana` service.
+
+> ### Note:  
+> In SAP BTP Cockpit, the "`hana`" service is also known as *SAP HANA Schemas & HDI Containers*. For more information about managing services in SAP BTP cockpit, see *Related Information* below.
+
 > ### Output Code:  
 > ```
-> $ cf marketplace -s hana
+> $ cf marketplace -e hana
 >   
 > Getting services from marketplace...
 > Getting plans for service "hana"...
@@ -261,4 +266,6 @@ In the Java example above, the `KEY` parameter for the retrieved entry expects a
 [Maintaining Multitarget Application Services in Cloud Foundry](maintaining-multitarget-application-services-in-cloud-foundry-33e3c59.md "In Cloud Foundry, applications can make use of services managed by a service broker.")
 
 [SAP HANA Secure-Store Interface Procedures and Parameters](../100-HANA-Cloud-DB-Dev-Security/sap-hana-secure-store-interface-procedures-and-parameters-a847b4d.md "A list of the parameters available for interaction with the SAP HANA Secure Store using the dedicated stored procedures.")
+
+[Managing Services Using the SAP BTP Cockpit \(SAP Service Manager\)](https://help.sap.com/docs/SERVICEMANAGEMENT/09cc82baadc542a688176dce601398de/cdce096d411242bcbfb9644d0860fd0f.html?version=Cloud)
 

@@ -50,7 +50,7 @@ The various roles illustrated in the diagram are described in the following list
 
 The following table provides more detailed information concerning the process of setting up and using synonyms:
 
-<a name="loioa260b05631a24a759bba932aa6d81b64__table_pvs_sr2_hy"/>Synonym Users and Privileges for DEFINER-Mode Access
+**Synonym Users and Privileges for DEFINER-Mode Access**
 
 
 <table>
@@ -313,7 +313,7 @@ The various roles illustrated in the diagram for “INVOKER”-mode access are d
 
 The following table provides more detailed information concerning the process of setting up and using multiple synonyms to enable access to INVOKER-mode database objects:
 
-<a name="loioa260b05631a24a759bba932aa6d81b64__table_mdk_vkd_2y"/>Synonym Users and Privileges for INVOKER-Mode Access
+**Synonym Users and Privileges for INVOKER-Mode Access**
 
 
 <table>
@@ -638,5 +638,5 @@ Access privileges are defined in `Role R3`.
 
 [Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
 
-[SAP HANA Security Guide (Authorization, Object Privileges)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c//en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Security Guide (Authorization, Object Privileges)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_2_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

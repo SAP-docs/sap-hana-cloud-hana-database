@@ -55,7 +55,7 @@ The XSUAA service plan you use determines the impact on the `xsappname` that is 
 > SAP HANA Managed Service \(SAP BTP/Cloud Foundry\)
 > 
 > ```
-> cf marketplace -s xsuaa
+> cf marketplace -e xsuaa
 >  
 > Getting services from marketplace...
 > Getting plans for service "xsuaa"...
@@ -105,7 +105,7 @@ The service plan `apiaccess` creates an OAuth Client during creation of the serv
 The prerequisite for the service-instance creation is that the corresponding platform user also owns the scopes listed above. This is the case if the platform user is administrator in the corresponding subaccount where the service instance is to be created.
 
 > ### Tip:  
-> An administrator has the role User & Role Administrator assigned. You may check this via the subaccount view in the SAP BTP cockpit \(*Security* \> *Administrators*\).
+> An administrator is assigned the role User & Role Administrator, and you can check this in the subaccount view in the SAP BTP cockpit \(*Security* \> *Administrators*\).
 
 It is not possible to pass any parameters \(for example, in the security descriptor `xs-security.json`\) during creation of the service instance \(indeed, any input is ignored\). And after the service instance is created, the OAuth client's credentials can be retrieved by means of the service key. It is also important to bear in mind that it is not possible to subscribe to any services instances created with the `apiaccess` service plan. The advantage of this plan is that the V2 authorization and SCIM endpoints of the XSUAA can be used by a technical user and do not require a space developer or admin user.
 

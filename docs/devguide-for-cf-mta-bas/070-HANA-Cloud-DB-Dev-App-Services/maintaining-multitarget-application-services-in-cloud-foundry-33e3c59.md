@@ -23,6 +23,9 @@ To browse the contents of the service catalog, you can use the following tools:
 
         Requires a logon to SAP BTP cockpit
 
+        > ### Tip:  
+        > For more information about consuming services in SAP BTP see *Related Information* below.
+
 
 -   SAP Discovery Center
 
@@ -47,6 +50,9 @@ For more information about services in the SAP Discovery Center, see *Related In
 ## Service Marketplace
 
 Services brokers are advertised in the Cloud Foundry marketplace, whose contents you can list with the `cf marketplace` command, which is included in the CF command-line client, as illustrated in the following example:
+
+> ### Note:  
+> The list of services displayed in the Service Marketplace is determined by the `Entitlements` \(services you are **entitled** to use\) configured for the corresponding SAP BTP subaccount. If you are not entitled to use a service, you will not see it listed in the Service Marketplace, and the SAP BTP administrator will have to add the new \(or missing\) service to the list of entitlements manually, for example, in the SAP BTP cockpit.
 
 > ### Sample Code:  
 > Services in the Service Marketplace
@@ -77,10 +83,7 @@ Services brokers are advertised in the Cloud Foundry marketplace, whose contents
 
 To make a service available to your multitarget application, you must create an instance of the chosen service, for example, with the `cf create-service` command. The service instance can then be bound to any application that requires the service, for example, using the `cf bind-service` command.
 
-> ### Tip:  
-> The SAP BTP cockpit also provides access to the Service Marketplace with a graphical user interface.
-
-To view services in the SAP BTP cockpit, navigate to the Cloud Foundry space where you want to use the service and choose *Services* \> *Service Marketplace*. Here you can find a detailed overview of each service along with information about any service plans, how you can subscribe, along with the tools needed to create a service instance and bind it to an application. You can also display a list of the current bindings between applications and service instances.
+To view services in the SAP BTP cockpit, navigate to the Cloud Foundry space where you want to use the service and choose *Services* \> *Service Marketplace*. The Service Marketplace provides a detailed overview of each service along with information about any service plans, how you can subscribe, along with the tools needed to create a service instance and bind it to an application. You can also display a list of the current bindings between applications and service instances.
 
 
 
@@ -94,7 +97,7 @@ For more details of an individual service, including a description of any servic
 > Services in the Service Marketplace
 > 
 > ```
-> $ cf marketplace -s hana
+> $ cf marketplace -e hana
 > Getting service plan information for service hana as admin...
 > OK
 > 
@@ -129,8 +132,6 @@ The Cloud Foundry environment also allows you to work with user-provided service
 **Related Information**  
 
 
-[Browse Services in the SAP Discovery Center](https://discovery-center.cloud.sap/viewServices)
-
 [Create a Service Instance](create-a-service-instance-355f3b1.md "Make a service instance available to applications.")
 
 [Service Plans and Resources](service-plans-and-resources-0393ce3.md "A service plan is a particular type of service (for example, a database configuration) that is available for use.")
@@ -138,4 +139,8 @@ The Cloud Foundry environment also allows you to work with user-provided service
 [Core Application Services](core-application-services-b0200e9.md "A selection of essential application services are available with the run-time platform.")
 
 [Create a Service Key](create-a-service-key-26c3446.md "A service key generates credentials to that enable direct communication with a service instance.")
+
+[Browse Services in the SAP Discovery Center](https://discovery-center.cloud.sap/viewServices)
+
+[Managing Services Using the SAP BTP Cockpit \(SAP Service Manager\)](https://help.sap.com/docs/SERVICEMANAGEMENT/09cc82baadc542a688176dce601398de/cdce096d411242bcbfb9644d0860fd0f.html?version=Cloud)
 

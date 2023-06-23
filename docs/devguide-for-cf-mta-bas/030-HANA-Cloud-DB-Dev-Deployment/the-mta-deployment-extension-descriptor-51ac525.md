@@ -65,6 +65,58 @@ You can use the MTA deployment extension descriptor to add the following informa
 > ### Note:  
 > It is not possible to use the MTA deployment extension descriptor to add new `modules` or `resources`, or to add new `requires` or `provides` nodes.
 
+
+
+<a name="loio51ac525c78244282919029d8f5e2e35d__section_lwp_dj5_hwb"/>
+
+## The `dev.mtaext` File
+
+If your application project includes an MTA extension file with the name `dev.mtaext` in the MTA project root, and the extension file contains properties that extend the configuration defined in the application's MTA deployment descriptor \(`mta.yaml`\), then the contents of `dev.mtaext` will be merged with the configuration defined in the `mta.yaml` file when you build or run the database module.
+
+> ### Tip:  
+> By default, the HDI deployer removes any object from the HDI container that does not exist in the the design-time database module. To prevent the HDI deployer from deleting a container artifact that is not in the developer's database module, set the `auto_undeploy` property to `false` in the `mta.yaml` file.
+
+For development purposes, you can use the MTA extension file `dev.mtaext` to set the `auto_undeploy` property \(to `false`\), as shown in the following code sample. Since the settings in the `dev.mtaext` are automatically merged with the configuration defined in the central MTA deployment descriptor \(`mta.yaml`\) before the build of an HDB module, you avoid the need to make any changes to the `mta.yaml` file.
+
+> ### Sample Code:  
+> Editing the `dev.mtaext` file
+> 
+> ```
+>  
+> ID: anyname
+> _schema-version: '2.1'
+> extends: mtaname
+>  
+> resources:
+> - name: hdi_db
+>   properties:
+>     hdi-container-name: ${service-name}
+>     HDI_DEPLOY_OPTIONS:
+>        auto_undeploy: false
+>    type: com.sap.xs.hdi-container
+>    parameters:
+>      service-name: my-service-name 
+>  
+> 
+> ```
+
+For building and deploying to the target environment, set the `auto_undeploy` property to `false` in the application's MTA deployment descriptor, `mta.yaml`, as illustrated in the following example:
+
+> ### Sample Code:  
+> Editing the `mta.yaml` file
+> 
+> ```
+> modules:
+> - name: db
+>    type: hdb
+>    path: db
+>    requires:
+>     - name: hdi_db
+>       properties:
+>         HDI_DEPLOY_OPTIONS:
+>        	 auto_undeploy: false
+> ```
+
 **Related Information**  
 
 

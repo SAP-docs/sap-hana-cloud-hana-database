@@ -25,7 +25,7 @@ Use the tools provided with SAP Business Application Studio to create a database
 This tutorial shows you how to create a procedure that you can use to display the bookings made by a passenger, based on the passenger's ID, for example: ID = 1.
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Find Command...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. Choose ![](images/BAS_icon_GuidedDevCenter_b7736b4.svg) \(*Guided Development Center*\) in SAP Business Application Studio's *Views* pane or open the command palette \(*View* \> *Command Palette...*\) and search for *Guided Development Center*. In the list of guided development tutorials, choose *Create SAP HANA Database Applications & Artifacts* \> *Get Started with SAP HANA*.
 
 
 
@@ -37,11 +37,11 @@ This tutorial shows you how to create a procedure that you can use to display th
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type ***hana****SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -110,11 +110,11 @@ This tutorial shows you how to create a procedure that you can use to display th
     In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose <span class="FPA-icons"></span> \(Deploy\) \(*Deploy*\).
 
     > ### Note:  
-    > A mismatch between the installed SAP HANA version and the SAP HANA version specified in the `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
+    > A mismatch between the installed SAP HANA version and the SAP HANA version specified in the in the command palette and choose `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
 
 5.  Check that the procedure has been deployed.
 
-    1.  Display the contents of the HDI container bound to the deployed application.
+    1.  in the command palette and chooseDisplay the contents of the HDI container bound to the deployed application.
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 

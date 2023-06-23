@@ -46,17 +46,57 @@ The SAP Web IDE supports the creation of virtual tables using either a code edit
 
 4.  Browse to the *src* folder, right-click it and choose *New* \> *Virtual Table*.
 
-5.  In the *Create Virtual Object* wizard, select a remote source and click *Next*.
+5.  Grant the privileges required to locate and select objects on the remote source.
 
-6.  Use the filter parameters to search for one or more remote objects you want to create a virtual table from and click *Next*.
+    The object owner and the application \(run-time\) user require the global object privilege `CREATE VIRTUAL TABLE` on the remote source to be able to use the *Virtual Table Editor* to locate and select objects in the remote database.
 
-7.  Enter a name for the virtual object and click *Finish*.
+    > ### Tip:  
+    > You can use an `hdbgrants` file to grant the required privileges, for example, with the `"global_object_privileges": [...]` key in the `"object_owner"` and `"application_user"` sections as shown in the following example. For more information about syntax requirements in the `hdbgrants` file, see *Related Information* below.
+
+    > ### Code Syntax:  
+    > My `db/src/.hdbgrants` File
+    > 
+    > ```
+    > 
+    > {
+    >  "grantor-service": {
+    >    "object_owner": { 
+    >      "global_object_privileges": [ 
+    >       { 
+    >        "name": "MyRemoteSource",  
+    >        "type": "REMOTE SOURCE",  
+    >        "privileges": [  
+    >          "CREATE VIRTUAL TABLE"  
+    >        ] 
+    >       } 
+    >      ]  
+    >    }, 
+    >    "application_user": { 
+    >      "global_object_privileges": [ 
+    >       { 
+    >        "name": "MyRemoteSource",  
+    >        "type": "REMOTE SOURCE",  
+    >        "privileges": [  
+    >          "CREATE VIRTUAL TABLE"  
+    >        ] 
+    >       } 
+    >      ]  
+    >    }
+    >  }
+    > }
+    > ```
+
+6.  In the *Create Virtual Object* wizard, select a remote source and click *Next*.
+
+7.  Use the filter parameters to search for one or more remote objects you want to create a virtual table from and click *Next*.
+
+8.  Enter a name for the virtual object and click *Finish*.
 
     Use the naming format ***namespace::virtual\_table\_name***.
 
-8.  Choose *Save* in the menu bar or  [CTRL\] + [S\]  to save your file \(virtual table\).
+9.  Choose *Save* in the menu bar or  [CTRL\] + [S\]  to save your file \(virtual table\).
 
-9.  Build the SAP HANA database module.
+10. Build the SAP HANA database module.
 
     The build process uses the design-time database artifacts to generate the corresponding actual objects \(run-time objects\) in the HDI container.
 
@@ -67,4 +107,6 @@ The SAP Web IDE supports the creation of virtual tables using either a code edit
 
 
 [Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
+
+[File Format Options \(SDI & SDA Installation and Configuration Guide\)](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/7952ef28a6914997abc01745fef1b607/ae74d5b5e01c4393bc2c2ade0b3826bd.html)
 

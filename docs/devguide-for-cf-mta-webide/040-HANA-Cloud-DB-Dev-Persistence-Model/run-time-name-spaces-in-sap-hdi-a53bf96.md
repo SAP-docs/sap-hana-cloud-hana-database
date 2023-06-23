@@ -17,14 +17,12 @@ In SAP HANA, name-space rules for run-time objects are defined in one or more fi
 > Run-Time Name Space with Appended Folder Name
 > 
 > ```
-> com.acme.hana.example.[/pandoc/div/div/note/codeblock/code/varname
->      {"varname"}) <Design-Time_Folder_Name> (varname]::[/pandoc/div/div/note/codeblock/code/varname
->      {"varname"}) <Run-Time_Object_Name> (varname]
+> com.acme.hana.example.<Design-Time_Folder_Name>::<Run-Time_Object_Name>
 > ```
 
 The following table illustrates how the rules specified in the name-space configuration file influence the way run-time objects are named. If the name-space rules specify that the name of the design-time sub-folder should be **appended** to the run-time name-space prefix, for example, `com.acme.hana.example`:
 
-<a name="loioa53bf9619bdd44e1bc20fba3d21dc2c7__table_j4j_jbf_1t"/>Folder Names Appended to the Run-Time Name Space
+**Folder Names Appended to the Run-Time Name Space**
 
 
 <table>

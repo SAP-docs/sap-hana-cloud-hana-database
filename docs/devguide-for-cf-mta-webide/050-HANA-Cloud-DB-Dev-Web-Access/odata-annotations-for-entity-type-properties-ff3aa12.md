@@ -67,7 +67,7 @@ The following table shows how the semantic type values of calculated attributes 
 > ### Restriction:  
 > Only those values listed in the following table are supported.
 
-<a name="loioff3aa12ba90247c8b7c326199d53978a__table_ds1_jl4_pw"/>Mapping Between Attribute Values and Annotation
+**Mapping Between Attribute Values and Annotation**
 
 
 <table>
@@ -217,7 +217,7 @@ The annotation is added only to the properties representing input parameters of 
 
 The following table shows how the value of the “`mandatory`” attribute value is mapped to the value of the “`sap:parameter`” annotation:
 
-<a name="loioff3aa12ba90247c8b7c326199d53978a__table_ytt_lk4_pw"/>Mapping Between Attribute Values and Annotation
+**Mapping Between Attribute Values and Annotation**
 
 
 <table>
@@ -433,7 +433,7 @@ The following table below shows the mapping between the “`multiLine`” and �
 > ### Restriction:  
 > Only those values specified in the following table are supported.
 
-<a name="loioff3aa12ba90247c8b7c326199d53978a__table_qlb_5h4_pw"/>Mapping Between Attribute Values and Annotation
+**Mapping Between Attribute Values and Annotation**
 
 
 <table>

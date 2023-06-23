@@ -11,7 +11,7 @@ The following mapping table lists how SAP HANA SQL types are mapped to OData EDM
 > ### Note:  
 > The OData implementation in SAP HANA XSOData supports only those SQL types listed in the following table.
 
-<a name="loiodb41333d80e7490087224e9d6a0ca9b5__table_mdm_bs4_xh"/>SAP HANA SQL to OData EDM Type Mapping
+**SAP HANA SQL to OData EDM Type Mapping**
 
 
 <table>

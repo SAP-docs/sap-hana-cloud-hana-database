@@ -35,5 +35,5 @@ The *SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multita
 
 [Multitarget Application Development Tools](multitarget-application-development-tools-f7268f1.md "SAP HANA provides a selection of development and administration tools.")
 
-[Security Considerations](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2022_3_QRC/en-US/0e96265f0e6a453896bcd4d9038f3661.html "An overview of the best practices that need to be implemented for secure development.") :arrow_upper_right:
+[Security Considerations](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2023_2_QRC/en-US/0e96265f0e6a453896bcd4d9038f3661.html "An overview of the best practices that need to be implemented for secure development.") :arrow_upper_right:
 

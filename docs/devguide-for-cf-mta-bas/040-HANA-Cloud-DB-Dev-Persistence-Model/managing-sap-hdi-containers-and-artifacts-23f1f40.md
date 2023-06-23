@@ -59,5 +59,5 @@ The configuration of HDI containers involves the creation and configuration of t
 
 [SAP HDI Containers](sap-hdi-containers-e28abca.md "An SAP HANA HDI container consists of a design-time container and a corresponding run-time container.")
 
-[SAP HDI Container Content Development with the HDI API](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/bea716c9ad68444ca63485e3f92d6589.html "SAP HDI includes an SQL API for the development of content in SAP HDI containers.") :arrow_upper_right:
+[SAP HDI Container Content Development with the HDI API](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/bea716c9ad68444ca63485e3f92d6589.html "SAP HDI includes an SQL API for the development of content in SAP HDI containers.") :arrow_upper_right:
 

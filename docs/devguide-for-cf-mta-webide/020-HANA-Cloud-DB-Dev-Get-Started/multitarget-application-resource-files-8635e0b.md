@@ -6,7 +6,7 @@ SAP HANA Cloud multitarget applications require some mandatory configuration art
 
 In SAP HANA Cloud, multitarget applications require a number of mandatory configuration and deployment files. Which files are required depends on the language you are using to develop the application, for example, JavaScript \(including node.js\) or Java, and the deployment options you need. The following table provides an overview of the artifacts required by each application. There are rules and requirements concerning where to store these artifacts in the application folder hierarchy.
 
-<a name="loio8635e0b43f6744d6b40ba247b11b352e__table_m5q_m2q_xs"/>Application Artifacts Overview
+**Application Artifacts Overview**
 
 
 <table>

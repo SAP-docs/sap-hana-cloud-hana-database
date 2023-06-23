@@ -5,8 +5,10 @@
 Found a mistake in our documentation? Always wanted to add a step in one of our procedures that could save many others much time? Then you're at the right place! All contributions made to the Markdown files in the [docs](docs) directory are reviewed, and if deemed valuable are added to our [official documentation on SAP Help Portal](https://help.sap.com/docs/HANA_CLOUD_DATABASE). The easiest way is to start there, and choose _Edit_ to find the right Markdown file to contribute to.
 
 You can currently make contributions to the following guides in this repository:
+* [SAP HANA Cloud, SAP HANA Database Deployment Infrastructure Reference](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/4077972509f5437c85d6a03e01509417.html)
 * [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications (SAP Business App Studio)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html)
 * [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications (SAP Web IDE Full-Stack)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/b9902c314aef4afb8f7a29bf8c5b37b3/1547c14105be409ebfc3a9e9634a7188.html)
+* [SAP HANA Cloud, SAP HANA Database SQL Reference Guide](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c1d3f60099654ecfb3fe36ac93c121bb/b4b0eec1968f41a099c828a4a6c8ca0f.html)
 
 ## Requirements
 

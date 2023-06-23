@@ -52,7 +52,7 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
@@ -123,7 +123,11 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
+        You can filter by name the databases displayed in the *DATABASE LIST*. For example, choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and choose *OK* press or [Enter\]. To reset the filter, press [Escape\].
+
     2.  In the SAP HANA Database Explorer, expand the HDI container that contains the new database artifacts.
+
+        You can filter by name the database objects displayed in the *CATALOG BROWSER*. Choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Escape\].
 
     3.  Choose *Tables* from the list; a list of activated tables is displayed in the *Catalog* pane.
 
@@ -142,7 +146,7 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 **Related Information**  
 
 
-[Database Constraint Syntax (.hdbconstraint in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2022_3_QRC/en-US/bda54706fbda4910908871743b675ad1.html "Transform a design-time constraint into a constraint on database tables.") :arrow_upper_right:
+[Database Constraint Syntax (.hdbconstraint in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/bda54706fbda4910908871743b675ad1.html "Transform a design-time constraint into a constraint on database tables.") :arrow_upper_right:
 
 [Create an Index with SQL Data Definition Language](create-an-index-with-sql-data-definition-language-90de80c.md "Define a design-time database index using the SQL Data Definition Language (DDL) syntax.")
 

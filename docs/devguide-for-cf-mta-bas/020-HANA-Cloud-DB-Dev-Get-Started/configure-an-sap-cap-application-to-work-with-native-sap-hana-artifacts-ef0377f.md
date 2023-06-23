@@ -60,9 +60,6 @@ To enable the use of native SAP HANA database artifacts in your SAP CAP applicat
             > 
             > ```
             > {
-            >    "build": { 
-            >        "target": "." 
-            >    }, 
             >    "requires": { 
             >        "db": { 
             >            "kind": "sql" 
@@ -79,18 +76,28 @@ To enable the use of native SAP HANA database artifacts in your SAP CAP applicat
             This option adds a deployment descriptor file \(`mta.yaml`\) to the root folder of your application project, which contains the configuration required for the building and deploying the application to the target \(SAP HANA\) container.
 
             > ### Sample Code:  
-            > Excerpt from the `mta.yaml` File
+            > Example CAP Application Resources in the `mta.yaml` File
             > 
             > ```
             > resources: 
             > 
-            >  - name: sapcapapp1-db 
-            >    type: com.sap.xs.hdi-container 
+            >  - name: hdi_db 
+            >    type: org.cloudfoundry.managed-service 
             >    parameters: 
-            >      service: hana           # or 'hanatrial' on trial landscapes 
+            >      service: hana 
             >      service-plan: hdi-shared 
-            >    properties: hdi-service-name: 
-            >      ${service-name}
+            > ```
+
+            > ### Sample Code:  
+            > Example CAP Application Resources in the `mta.yaml` File
+            > 
+            > ```
+            > resources: 
+            > 
+            >  - name: hdi_db 
+            >    type: org.cloudfoundry.managed-service 
+            >    parameters: 
+            >      service: hanatrial
             > ```
 
         -   *Basic Sample Files*
@@ -109,7 +116,7 @@ To enable the use of native SAP HANA database artifacts in your SAP CAP applicat
 
         Use the database-artifact creation Wizard to add SAP HANA database artifacts to your project, as follows:
 
-        *View* \> *Find Command...* \> *SAP HANA: Create SAP HANA Database Artifact*.
+        *View* \> *Command Palette...* \> *SAP HANA: Create SAP HANA Database Artifact*.
 
         When adding native SAP HANA design-time artifacts to your SAP CAP application project \(for example, `.hdbtable`, `.hdbview`, or `.hdbsynonym` files\), make sure you save them in the `db/src` folder of your SAP CAP CDS application project. During the build process, this folder stays untouched; the contents are simply copied to the `gen/db/src` folder.
 
@@ -201,7 +208,7 @@ To enable the use of native SAP HANA database artifacts in your SAP CAP applicat
 
     -   Graphical User Interface:
 
-        In SAP Business Application Studio, open the *SAP HANA Projects* pane, select the project you want to deploy, for example, `sapcapjava1`, and choose:<span class="FPA-icons"></span> \(Deploy\). The progress of the deployment is displayed in the *Terminal*.
+        In SAP Business Application Studio, open the *SAP HANA Projects* pane, select the project you want to deploy, for example, `sapcapjava1`, and choose: <span class="FPA-icons"></span> \(Deploy\). The progress of the deployment is displayed in the *Terminal*.
 
     -   Command-line Interface:
 

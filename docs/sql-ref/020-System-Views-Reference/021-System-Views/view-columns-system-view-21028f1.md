@@ -1,0 +1,888 @@
+<!-- loio21028f17751910149faef9996f9e43ea -->
+
+# VIEW\_COLUMNS System View
+
+Lists available view columns.
+
+
+
+<a name="loio21028f17751910149faef9996f9e43ea___v_i_e_w__c_o_l_u_m_n_s_1struct_VIEW_COLUMNS"/>
+
+## Structure
+
+
+<table>
+<tr>
+<th valign="top">
+
+Column name
+
+
+
+</th>
+<th valign="top">
+
+Data type
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+SCHEMA\_NAME
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the schema name.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+VIEW\_NAME
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the view name.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+VIEW\_OID
+
+
+
+</td>
+<td valign="top">
+
+BIGINT
+
+
+
+</td>
+<td valign="top">
+
+Displays the object ID of the view.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+COLUMN\_NAME
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the view column name.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+POSITION
+
+
+
+</td>
+<td valign="top">
+
+INTEGER
+
+
+
+</td>
+<td valign="top">
+
+Displays the ordinal position of the view column.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DATA\_TYPE\_ID
+
+
+
+</td>
+<td valign="top">
+
+SMALLINT
+
+
+
+</td>
+<td valign="top">
+
+Displays the data type ID.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DATA\_TYPE\_NAME
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the data type name.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OFFSET
+
+
+
+</td>
+<td valign="top">
+
+SMALLINT
+
+
+
+</td>
+<td valign="top">
+
+Displays the offset of the column in a record.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LENGTH
+
+
+
+</td>
+<td valign="top">
+
+INTEGER
+
+
+
+</td>
+<td valign="top">
+
+Displays the number of chars for character types; max number of digits for numeric types; number of chars for datetime types; and number of bytes for LOB types.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SCALE
+
+
+
+</td>
+<td valign="top">
+
+INTEGER
+
+
+
+</td>
+<td valign="top">
+
+Numeric types: Displays the maximum number of digits to the right of the decimal point.
+
+Time, TIMESTAMP: defines the decimal digits as the number of digits to the right of the decimal point in the seconds component of the data.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_NULLABLE
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+
+
+</td>
+<td valign="top">
+
+Displays whether the column is allowed to accept a NULL value: TRUE/FALSE.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DEFAULT\_VALUE
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5000\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the default value.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+COMMENTS
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5000\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the description for this column.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DDIC\_DATA\_TYPE\_ID
+
+
+
+</td>
+<td valign="top">
+
+INTEGER
+
+
+
+</td>
+<td valign="top">
+
+Displays the DDIC data type ID.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DDIC\_DATA\_TYPE\_NAME
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(7\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the DDIC data type name.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+COMPRESSION\_TYPE
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(9\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the type of compression: NONE, DEFAULT, PREFIXED, SPARSE, CLUSTERED, INDIRECT or RLE.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INDEX\_TYPE
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(4\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the type of index: NONE/FULL.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+COLUMN\_ID
+
+
+
+</td>
+<td valign="top">
+
+BIGINT
+
+
+
+</td>
+<td valign="top">
+
+Displays the ID of the column.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PRELOAD
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+
+
+</td>
+<td valign="top">
+
+Displays if the column is preloaded: TRUE/FALSE.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GENERATED\_ALWAYS\_AS
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(1000\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the expression of the column created by GENERATED... AS.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FUZZY\_SEARCH\_INDEX
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+
+
+</td>
+<td valign="top">
+
+Displays if the column has a fuzzy search index: TRUE/FALSE.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FUZZY\_SEARCH\_MODE
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the fuzzy search mode.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MEMORY\_THRESHOLD
+
+
+
+</td>
+<td valign="top">
+
+INTEGER
+
+
+
+</td>
+<td valign="top">
+
+Displays the memory threshold in bytes for LOB types.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LOAD\_UNIT
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(1\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the unit of column data loading: TABLE, COLUMN, or PAGE.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GENERATION\_TYPE
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(1\)
+
+
+
+</td>
+<td valign="top">
+
+Displays ALWAYS AS if the column is a generated column, ALWAYS AS IDENTITY or BY DEFAULT AS IDENTITY if the column is an identity column whose values are always generated or generated by default, and NULL otherwise
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_CACHABLE
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+
+
+</td>
+<td valign="top">
+
+Displays whether the column is part of cached data: TRUE/FALSE
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_CACHE\_KEY
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+
+
+</td>
+<td valign="top">
+
+Displays whether the column is part of the cache key: TRUE/FALSE
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ROW\_ORDER\_POSITION
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(1\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the row order position
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_HIDDEN
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+
+
+</td>
+<td valign="top">
+
+Displays whether the specified column is hidden: TRUE/FALSE.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_MASKED
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+
+
+</td>
+<td valign="top">
+
+Displays whether the column is masked: TRUE/FALSE
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MASK\_EXPRESSION
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5000\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the mask expression \(only visible to users with the CATALOG READ or the SELECT METADATA privilege on the schema, or who own the view or schema\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CLIENTSIDE\_ENCRYPTION\_STATUS
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CLIENTSIDE\_ENCRYPTION\_COLUMN\_KEY\_ID
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CLIENTSIDE\_ENCRYPTION\_MODE
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+Displays the encryption mode. Possible values are RANDOM, DETERMINISTIC, or NULL \(not encrypted\).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PERSISTENT\_MEMORY
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(1\)
+
+
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+NUMA\_NODE\_INDEXES
+
+
+
+</td>
+<td valign="top">
+
+NVARCHAR\(1\)
+
+
+
+</td>
+<td valign="top">
+
+Displays the comma-separated list of ranges of user-specified logical NUMA node indexes.
+
+
+
+</td>
+</tr>
+</table>
+
+**Related Information**  
+
+
+[VIEWS System View](views-system-view-2102bf2.md "Lists available views.")
+
+[VIEW\_EXPRESSION\_MACROS System View](view-expression-macros-system-view-d163421.md "Describes the expression macros defined for views.")
+
+[VIEW\_PARAMETERS System View](view-parameters-system-view-45b86e8.md "Provides information about view parameters.")
+
+[CS\_VIEW\_COLUMNS System View](cs-view-columns-system-view-20a1288.md "Provides information about the columns defined for column store join views.")
+
+[M\_TEMPORARY\_VIEW\_COLUMNS System View](../022-Monitoring-Views/m-temporary-view-columns-system-view-20c7e97.md "Provides information about temporary view columns.")
+
+[M\_MONITOR\_COLUMNS System View](../022-Monitoring-Views/m-monitor-columns-system-view-20b54f6.md "All the columns in the monitoring views.")
+
+[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
+

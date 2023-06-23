@@ -8,7 +8,7 @@ Restrictions apply to which parts of the application's security description you 
 
 The service broker allows you to update the configuration of an existing service, for example, to change the service plan associated with a service. You can also use a service update to modify the XSUAA service's security configuration, for example, by adding, deleting, or changing the artifacts defined in the `xs-security.json` security descriptor. If you want to use a service-update operation to make changes to the XSUAA service's security configuration, bear in mind that certain restrictions apply, as illustrated in the following table:
 
-<a name="loioca1ac4204b1c4a6d8b1cf85c7b4488a9__table_y45_p3b_z5"/>Permitted Changes to `xs-security.json` when Updating the XSUAA Service
+**Permitted Changes to xs-security.json when Updating the XSUAA Service**
 
 
 <table>

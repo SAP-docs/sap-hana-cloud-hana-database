@@ -65,7 +65,7 @@ Allow the creation of new entities in the specified entity set.
 
 The following table shows the additional values that are supported for the attribute `sap:creatable` in the `edm:EntitySet` element and the corresponding requirements.
 
-<a name="loio1b8ebecb14594203bd50fa227797c890__table_izg_zd4_pw"/>Additional Supported Values
+**Additional Supported Values**
 
 
 <table>
@@ -150,7 +150,7 @@ Allow changes and updates to existing entities in the specified entity set.
 
 The following table shows the additional values that are supported for the attribute `sap:updatable` in the `edm:EntitySet` element and the corresponding requirements.
 
-<a name="loio1b8ebecb14594203bd50fa227797c890__table_lyt_xd4_pw"/>Additional Supported Values
+**Additional Supported Values**
 
 
 <table>
@@ -244,7 +244,7 @@ Allow the deletion of entities from the specified entity set.
 
 The following table shows the additional values that are supported for the attribute `sap:deletable` in the `edm:EntitySet` element and the corresponding requirements.
 
-<a name="loio1b8ebecb14594203bd50fa227797c890__table_n3q_nd4_pw"/>Additional Supported Values
+**Additional Supported Values**
 
 
 <table>

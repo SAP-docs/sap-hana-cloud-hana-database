@@ -29,7 +29,7 @@ The tools and editors are packaged in SAP extensions, which are split into the f
 
 The following table lists all the extensions that are enabled by default when you create an *Full Stack Cloud Application* dev space:
 
-<a name="loiod2971300efb84380a00dc6e41a4b1ff4__table_cq2_1p5_nnb"/>Predefined Extension Packs for the SAP Full Stack Cloud Application Dev Space
+**Predefined Extension Packs for the SAP Full Stack Cloud Application Dev Space**
 
 
 <table>
@@ -312,7 +312,7 @@ Visually develop an XML view
 
 The following table lists the extensions that you can choose to add to your *Full Stack Cloud Application* dev space:
 
-<a name="loiod2971300efb84380a00dc6e41a4b1ff4__table_ngj_4q5_nnb"/>Additional Extension Packs for the SAP Full Stack Cloud Application Dev Space
+**Additional Extension Packs for the SAP Full Stack Cloud Application Dev Space**
 
 
 <table>

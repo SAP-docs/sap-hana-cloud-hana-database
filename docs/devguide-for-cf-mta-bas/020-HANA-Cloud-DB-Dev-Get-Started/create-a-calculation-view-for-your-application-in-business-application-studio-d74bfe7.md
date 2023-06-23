@@ -25,7 +25,7 @@ Use the tools provided with Business Application Studio to create a calculation 
 In this tutorial, you create a calculation view to combine information from the `PASSENGERS` and `FLIGHTRESERVATION` tables into a single view and then extend the view with a calculated column.
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Find Command...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. Choose ![](images/BAS_icon_GuidedDevCenter_b7736b4.svg) \(*Guided Development Center*\) in SAP Business Application Studio's *Views* pane or open the command palette \(*View* \> *Command Palette...*\) and search for *Guided Development Center*. In the list of guided development tutorials, choose *Create SAP HANA Database Applications & Artifacts* \> *Get Started with SAP HANA*.
 
 
 
@@ -39,7 +39,7 @@ In this tutorial, you create a calculation view to combine information from the 
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...* or
+        -   Choose *View* \> *Command Palette...* or
 
 
     1.  Create a new SAP HANA database artifact.

@@ -16,7 +16,7 @@ Analytic models or views use various combinations of content data \(that is, non
 **Related Information**  
 
 
-[Create Calculation Views](create-calculation-views-5aeb56c.md "Use a graphical editor to create calculation views that depict a complex business scenario.")
+[Create Calculation Views](create-calculation-views-5aeb56c.md "Use a graphical editor to create calculation views that depict complex business scenarios.")
 
-[Preview Calculation View Output](preview-calculation-view-output-903eff8.md "After modeling calculation views based on your requirements, you can deploy them and preview their output.")
+[Preview Calculation View Output](preview-calculation-view-output-903eff8.md "After you have modeled a calculation view, you can deploy it and preview its output.")
 

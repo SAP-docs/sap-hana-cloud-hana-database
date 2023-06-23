@@ -23,7 +23,7 @@ Add the underlying design-time database objects to your SAP HANA application.
 This tutorial shows how to use SAP Business Application Studio to add database artifacts \(for example, tables, views, etc.\) to an SAP HANA Cloud business application.
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Find Command...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. Choose ![](images/BAS_icon_GuidedDevCenter_b7736b4.svg) \(*Guided Development Center*\) in SAP Business Application Studio's *Views* pane or open the command palette \(*View* \> *Command Palette...*\) and search for *Guided Development Center*. In the list of guided development tutorials, choose *Create SAP HANA Database Applications & Artifacts* \> *Get Started with SAP HANA*.
 
 
 
@@ -35,7 +35,7 @@ This tutorial shows how to use SAP Business Application Studio to add database a
 
         -   Press  [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
-        -   Choose *View* \> *Find Command...*
+        -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
@@ -65,7 +65,7 @@ This tutorial shows how to use SAP Business Application Studio to add database a
     7.  Save the changes and create the new database artifact; choose *Create*.
 
         > ### Tip:  
-        > When you create a database artifact, the location of the created artifact is saved as a user-specific workspace preference. The saved path is used by default the next time you create a database artifact. You can view and change the saved path or disable the setting in SAP Business Application Studio by choosing :gear:and then *Open Preferences* \> *SAP HANA Database Artifacts* \> *\[Remember\] Last Selected Target Path*.
+        > When you create a database artifact, the location of the created artifact is saved as a user-specific workspace preference. The saved path is used by default the next time you create a database artifact. You can view and change the saved path or disable the setting in SAP Business Application Studio by choosing :gear:and then *Settings* \> *SAP HANA Database Artifacts* \> *\[Remember\] Last Selected Target Path*.
 
     8.  Open the new database table artifact for editing.
 
@@ -94,6 +94,9 @@ This tutorial shows how to use SAP Business Application Studio to add database a
         > ON "PASSENGERID" = "PASSENGERID" 
         > )
         > ```
+
+        > ### Tip:  
+        > For more information about the syntax requirements for the HDI artifact you are defining, choose <span class="SAP-icons"></span> \(Open the artifact documentation...\) in the editor's title bar.
 
 
 2.  Add another database table to your SAP HANA Cloud database application
@@ -139,7 +142,7 @@ This tutorial shows how to use SAP Business Application Studio to add database a
     In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose <span class="FPA-icons"></span> \(Deploy\).
 
     > ### Tip:  
-    > Details of each deployment operation are written to a dedicated log file. To ensure that the log file does not retain any information about previous deployments, enable the option *Clear the deployment log before starting a new deployment*, which you can find in :gear:. Choose *Open Settings* \> *SAP HANA Project Explorer* \> *Deploy: Auto clean deployment log*.
+    > Details of each deployment operation are written to a dedicated log file displayed in the *Terminal* pane at the bottom of the SAP Business Application Studio's development space. The contents of this log file can be extended to include trace information from the HDI deployer, for example, with the user setting *Enable deployment tracing*. To ensure that the log file does not retain any information about previous deployments, enable the option *Clear the deployment log before starting a new deployment*, which you can find in :gear:. Choose *Settings* \> *SAP HANA Project Explorer* \> *Deploy: Auto clean deployment log*.
 
     Bear in mind that a mismatch between the installed SAP HANA version and the SAP HANA version specified at the start of the `.hdbconfig` file \(with the optional parameter `"minimum_feature_version"`\) can cause problems with the deployment operation.
 

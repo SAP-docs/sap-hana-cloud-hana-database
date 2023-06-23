@@ -4,14 +4,18 @@
 
  SAP Business Technology Platform provides a Cloud Foundry Java run time to which you can deploy your Java applications.
 
-The Java run time for Cloud Foundry on SAP Business Technology Platform provides the Tomcat, TomEE, TomEE 7, and Java Main run times to deploy your Java code. During application deployment, the build pack ensures that the correct SAP Java Virtual Machine \(JVM\) is provided and that the appropriate data sources for the SAP HDI container are bound to the corresponding application container.
+The Java run time for Cloud Foundry on SAP Business Technology Platform provides the Tomcat, TomEE 7, and Java Main run times to deploy your Java code. During application deployment, the build pack ensures that the correct SAP Java Virtual Machine \(JVM\) is provided and that the appropriate data sources for the SAP HDI container are bound to the corresponding application container.
 
 > ### Note:  
 > The Cloud Foundry run-time platform on SAP Business Technology Platform makes no assumptions about which frameworks and libraries to use to implement the Java micro service.
 
 Cloud Foundry on SAP Business Technology Platform provides the following components to help build a Java micro service:
 
--   Tomcat, TomEE, TomEE 7, and Java Main run times
+-   Tomcat, TomEE 7, and Java Main run times
+
+    > ### Note:  
+    > The outdated TomEE 1.7 version is no longer included in the SAP Java Buildpack. Although TomEE 1.7 will continue to be supported until the end of the deprecation period, it is recommended to migrate to TomEE 7 as soon as possible, as described in the *TomEE Migration Guide* listed in *Related Information* below. TomEE 7 is already included in previous versions of the SAP Java Buildpack.
+
 -   Setup of SAP HANA data sources
 -   Java library to support authentication with JSON Web Tokens \(JWT\)
 
@@ -31,7 +35,7 @@ To use Tomcat on SAP JVM 8, specify the `java-buildpack` in your multitarget app
 > 
 > ```
 
-When you use the Tomcat, TomEE or TomEE 7 run time, you can rely on certain standard APIs:
+When you use the Tomcat or TomEE 7 run time, you can rely on certain standard APIs:
 
 
 <table>
@@ -45,7 +49,7 @@ Run time
 </th>
 <th valign="top">
 
-Tomcat/TomEE
+Tomcat
 
 
 
@@ -84,59 +88,6 @@ Expression Language \(EL\) 3.0
 Debugging Support for Other Languages 1.0
 
 Java API for WebSocket 1.1
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-TomEE
-
-
-
-</td>
-<td valign="top">
-
-Apache TomEE JAX-RS \(Java EE 6\)
-
-
-
-</td>
-<td valign="top">
-
-Java Servlets 3.0
-
-Java ServerPages \(JSP\) 2.2
-
-Expression Language \(EL\) 2.2
-
-Debugging Support for Other Languages 1.0
-
-Standard Tag Library for JavaServer Pages \(JSTL\) 1.2
-
-Java API for WebSocket 1.1
-
-Java ServerFaces \(JSF\) 2.0
-
-Java Transaction API \(JTA\) 1.1
-
-Java Persistence API \(JPA\) 2.0
-
-Java Contexts and Dependency Injection \(CDI\) 1.0
-
-Java Authentication and Authorization Service \(JAAS\)
-
-Java Authorization Contract for Containers \(JACC\) 1.3
-
-JavaMail API 1.4
-
-Bean Validation 1.0
-
-Enterprise JavaBeans 3.1
-
-Java API for RESTful Web Services \(JAX-RS\) 1.1
 
 
 
@@ -198,4 +149,9 @@ Contexts and Dependency Injection for Java EE platform 1.1
 </td>
 </tr>
 </table>
+
+**Related Information**  
+
+
+[TomEE Migration Guide](http://help.sap.com/disclaimer?site=https://tomee.apache.org/developer/migration/tomee-1-to-7.html)
 
