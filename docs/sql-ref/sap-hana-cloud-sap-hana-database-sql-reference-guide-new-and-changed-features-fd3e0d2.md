@@ -63,7 +63,7 @@ FIRST\_VALUE Function \(Aggregate\) \(Changed\)
 </b></dt>
 <dd>
 
-The FIRST\_VALUE function has been extended to supported spatial data types \(ST\_Geometry, ST\_Point\). [FIRST\_VALUE Function \(Aggregate\)](010-SQL-Reference/011-SQL-Functions/first-value-function-aggregate-034b175.md)
+This function now returns spatial data types \(ST\_Geometry, ST\_Point\) when it is executed with spatial types as input parameter. [FIRST\_VALUE Function \(Aggregate\)](010-SQL-Reference/011-SQL-Functions/first-value-function-aggregate-034b175.md)
 
 
 
@@ -74,7 +74,7 @@ LAST\_VALUE Function \(Aggregate\) \(Changed\)
 </b></dt>
 <dd>
 
-The LAST\_VALUE function has been extended to supported spatial data types \(ST\_Geometry, ST\_Point\). [LAST\_VALUE Function \(Aggregate\)](010-SQL-Reference/011-SQL-Functions/last-value-function-aggregate-32e95b7.md)
+This function now returns spatial data types \(ST\_Geometry, ST\_Point\) when it is executed with spatial types as input parameter. [LAST\_VALUE Function \(Aggregate\)](010-SQL-Reference/011-SQL-Functions/last-value-function-aggregate-32e95b7.md)
 
 
 
@@ -85,7 +85,7 @@ NTH\_VALUE Function \(Aggregate\) \(Changed\)
 </b></dt>
 <dd>
 
-The NTH\_VALUE function has been extended to supported spatial data types \(ST\_Geometry, ST\_Point\). [NTH\_VALUE Function \(Aggregate\)](010-SQL-Reference/011-SQL-Functions/nth-value-function-aggregate-6522df9.md)
+This function now returns spatial data types \(ST\_Geometry, ST\_Point\) when it is executed with spatial types as input parameter. [NTH\_VALUE Function \(Aggregate\)](010-SQL-Reference/011-SQL-Functions/nth-value-function-aggregate-6522df9.md)
 
 
 
