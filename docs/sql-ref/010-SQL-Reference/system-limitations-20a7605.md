@@ -93,7 +93,7 @@ Number of simultaneous connections to the SAP HANA database
 </td>
 <td valign="top">
 
-1,000
+500 \* number of vCPUs, to a maximum of 30,000
 
 
 
