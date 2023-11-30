@@ -44,7 +44,7 @@ Once you have created an OAuth 2.0 client using the service broker, you specify 
 
 2.  Assign the `xs-security.json` file to the multitarget application for which you defined the authorization scopes.
 
-    You can use the following command to :
+    You can use the following command:
 
     <code>cf create-service <i class="varname">&lt;service_name&gt;</i> <i class="varname">&lt;service_plan&gt;</i> -c <i class="varname">&lt;security_descriptor_file&gt;</i></code>
 
