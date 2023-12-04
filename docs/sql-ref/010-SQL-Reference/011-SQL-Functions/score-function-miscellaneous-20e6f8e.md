@@ -409,21 +409,21 @@ A value greater than 0.0 and less than or equal to 1.0.
 
 ## Syntax 1
 
-The following example creates a table that contains two strings and then inserts values into the table.
+The following example creates a table that contains a string and adds a fuzzy text index to it.
 
 ```
-CREATE TABLE T1 (CONTENT TEXT FAST PREPROCESS OFF);
+CREATE TABLE T1 (CONTENT NCLOB);
+CREATE FUZZY SEARCH INDEX IDX1 ON T1(CONTENT) SEARCH MODE TEXT;
 ```
 
 ```
 INSERT INTO T1 VALUES('This is a test.');
-INSERT INTO T1 VALUES('This was a test.');
 ```
 
 Use the SCORE function to check the table contents for relevance against the search string 'is':
 
 ```
-SELECT SCORE(), CONTENT FROM T1 WHERE CONTAINS(CONTENT, 'is', LINGUISTIC); 
+SELECT SCORE(), CONTENT FROM T1 WHERE CONTAINS(CONTENT, 'is', EXACT('searchMode=text')); 
 ```
 
 
@@ -447,7 +447,7 @@ CONTENT
 <tr>
 <td valign="top">
 
-0.8700000047683716
+1
 
 
 
@@ -482,13 +482,13 @@ Still using TABLE T1, the following example adds additional values to the table.
 
 ```
 INSERT INTO T1 VALUES('example');
-INSERT INTO T1 VALUES('example');
+INSERT INTO T1 VALUES('examples');
 ```
 
 Use the SCORE function to check the table contents for similarity to the string 'example':
 
 ```
-SELECT SCORE(), CONTENT FROM T1 WHERE CONTAINS(CONTENT, 'example',Fuzzy(0.8));
+SELECT SCORE(), CONTENT FROM T1 WHERE CONTAINS(CONTENT, 'example',FUZZY(0.8, 'searchMode=text'));
 ```
 
 
@@ -528,14 +528,14 @@ example
 <tr>
 <td valign="top">
 
-1
+0.9527000188827515
 
 
 
 </td>
 <td valign="top">
 
-example
+examples
 
 
 
@@ -549,21 +549,21 @@ example
 
 ## Syntax 2
 
-The following example creates a table that contains two strings:
+The following example creates a table that contains a string and adds a fuzzy text index to it:
 
 ```
-CREATE TABLE T2 (CONTENT TEXT FAST PREPROCESS OFF);
+CREATE TABLE T2 (CONTENT NCLOB);
+CREATE FUZZY SEARCH INDEX IDX2 ON T2(CONTENT) SEARCH MODE TEXT;
 ```
 
 ```
 INSERT INTO T2 VALUES('This is a test.');
-INSERT INTO T2 VALUES('This was a test.');
 ```
 
 Use the SCORE function to check the table contents for relevance against the search string 'is':
 
 ```
-SELECT SCORE('is' IN CONTENT) FROM T2 WHERE SCORE('is' IN CONTENT) > 0.2;
+SELECT SCORE('is' IN CONTENT EXACT SEARCH MODE 'text') AS SCORE, CONTENT FROM T2 WHERE SCORE('is' IN CONTENT EXACT SEARCH MODE 'text') > 0.2;
 ```
 
 
@@ -587,8 +587,7 @@ CONTENT
 <tr>
 <td valign="top">
 
-0.8700000047683716
-
+1
 
 
 </td>
@@ -600,37 +599,20 @@ This is a test.
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-0.40833336114883423
-
-
-
-</td>
-<td valign="top">
-
-This was a test.
-
-
-
-</td>
-</tr>
 </table>
 
 Still using TABLE T2, the following example adds additional values to the table.
 
 ```
 INSERT INTO T2 VALUES('example');
-INSERT INTO T2 VALUES('example');
+INSERT INTO T1 VALUES('examples');
 ```
 
 Use the SCORE function to check the table contents for similarity to the string 'example':
 
 ```
-SELECT SCORE('example' IN CONTENT, FUZZY MINIMAL TOKEN SCORE 0.8) FROM T2
-WHERE SCORE('example' IN CONTENT, FUZZY MINIMAL TOKEN SCORE 0.8) > 0.8;
-
+SELECT SCORE('example' IN CONTENT FUZZY MINIMAL SCORE 0.8 MINIMAL TOKEN SCORE 0.8 SEARCH MODE 'text') AS SCORE, CONTENT FROM T2
+WHERE SCORE('example' IN CONTENT FUZZY MINIMAL SCORE 0.8 MINIMAL TOKEN SCORE 0.8 SEARCH MODE 'text') > 0.8;
 ```
 
 
@@ -670,14 +652,14 @@ example
 <tr>
 <td valign="top">
 
-1
+0.9527000188827515
 
 
 
 </td>
 <td valign="top">
 
-example
+examples
 
 
 
