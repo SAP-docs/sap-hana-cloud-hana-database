@@ -412,7 +412,7 @@ A value greater than 0.0 and less than or equal to 1.0.
 The following example creates a table that contains a string and adds a fuzzy text index to it.
 
 ```
-CREATE TABLE T1 (CONTENT NCLOB);
+CREATE TABLE T1 (CONTENT NCLOB MEMORY THRESHOLD NULL);
 CREATE FUZZY SEARCH INDEX IDX1 ON T1(CONTENT) SEARCH MODE TEXT;
 ```
 
@@ -552,7 +552,7 @@ examples
 The following example creates a table that contains a string and adds a fuzzy text index to it:
 
 ```
-CREATE TABLE T2 (CONTENT NCLOB);
+CREATE TABLE T2 (CONTENT NCLOB MEMORY THRESHOLD NULL);
 CREATE FUZZY SEARCH INDEX IDX2 ON T2(CONTENT) SEARCH MODE TEXT;
 ```
 
