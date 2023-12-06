@@ -605,7 +605,7 @@ Still using TABLE T2, the following example adds additional values to the table.
 
 ```
 INSERT INTO T2 VALUES('example');
-INSERT INTO T1 VALUES('examples');
+INSERT INTO T2 VALUES('examples');
 ```
 
 Use the SCORE function to check the table contents for similarity to the string 'example':
