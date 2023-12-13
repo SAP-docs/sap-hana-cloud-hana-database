@@ -15,21 +15,15 @@ Provides application function execution information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 AREA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the area of the function.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the area of the function.
 
 FUNCTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the function.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the name of the function.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the internal port.
 
 EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of executions.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the number of executions.
 
 LAST\_EXECUTION\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp of the last execution.
-
-
 
 </td>
 </tr>

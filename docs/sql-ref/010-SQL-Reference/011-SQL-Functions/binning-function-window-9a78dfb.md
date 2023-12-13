@@ -93,28 +93,20 @@ SELECT *, BINNING(VALUE => temperature, BIN_COUNT => 4) OVER () AS bin_num FROM 
 
 STATION
 
-
-
 </th>
 <th valign="top">
 
 TS
-
-
 
 </th>
 <th valign="top">
 
 TEMPERATURE
 
-
-
 </th>
 <th valign="top">
 
 BIN\_NUM
-
-
 
 </th>
 </tr>
@@ -123,28 +115,20 @@ BIN\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 01.01.2014
-
-
 
 </td>
 <td valign="top">
 
 0.0
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -153,28 +137,20 @@ BIN\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 02.01.2014
-
-
 
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -183,28 +159,20 @@ BIN\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 03.01.2014
-
-
 
 </td>
 <td valign="top">
 
 4.5
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -213,28 +181,20 @@ BIN\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 04.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.0
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -243,28 +203,20 @@ BIN\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 05.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.3
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -273,28 +225,20 @@ BIN\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 06.01.2014
-
-
 
 </td>
 <td valign="top">
 
 5.9
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -302,29 +246,21 @@ BIN\_NUM
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 01.01.2014
 
-
-
 </td>
 <td valign="top">
 
 1.0
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -332,59 +268,43 @@ BIN\_NUM
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 02.01.2014
 
-
-
 </td>
 <td valign="top">
 
 3.4
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 03.01.2014
 
-
-
 </td>
 <td valign="top">
 
 5.0
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -392,29 +312,21 @@ BIN\_NUM
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 04.01.2014
 
-
-
 </td>
 <td valign="top">
 
 6.7
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -422,29 +334,21 @@ BIN\_NUM
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 05.01.2014
 
-
-
 </td>
 <td valign="top">
 
 4.6
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -453,28 +357,20 @@ BIN\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 06.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.9
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>

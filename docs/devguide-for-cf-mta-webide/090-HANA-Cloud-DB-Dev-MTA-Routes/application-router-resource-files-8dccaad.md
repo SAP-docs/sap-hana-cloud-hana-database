@@ -17,76 +17,56 @@ The application router is used to serve static content, authenticate users, rewr
 
 File
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `package.json` 
-
-
+`package.json` 
 
 </td>
 <td valign="top">
 
 The package descriptor is used by the node.js package manager \(`npm`\) to start the application router; in the <code>“dependencies”: {} section</code> 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `xs-app.json` 
-
-
+`xs-app.json` 
 
 </td>
 <td valign="top">
 
 The application descriptor contains the configuration used by the application router \(for example, destinations for request forwarding\)
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `resources/` 
-
-
+`resources/` 
 
 </td>
 <td valign="top">
@@ -103,30 +83,22 @@ A folder that contains all static resources which should be served by the applic
 
 No
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `default-services.json` 
-
-
+`default-services.json` 
 
 </td>
 <td valign="top">
 
 Defines the configuration for one or more special User Account and Authentication \(UAA\) services for local development; this is typically used for testing in local environments.
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>

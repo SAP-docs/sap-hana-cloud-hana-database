@@ -114,14 +114,10 @@ For example:
 
 Path Expression Type
 
-
-
 </th>
 <th valign="top">
 
 Example Syntax
-
-
 
 </th>
 </tr>
@@ -130,14 +126,10 @@ Example Syntax
 
 Row pattern path expression
 
-
-
 </td>
 <td valign="top">
 
 'lax $'
-
-
 
 </td>
 </tr>
@@ -145,8 +137,6 @@ Row pattern path expression
 <td valign="top">
 
 Column pattern path expression
-
-
 
 </td>
 <td valign="top">
@@ -157,8 +147,6 @@ Column pattern path expression
 
 'lax $.number'
 
-
-
 </td>
 </tr>
 <tr>
@@ -166,14 +154,10 @@ Column pattern path expression
 
 Nested pattern path expression
 
-
-
 </td>
 <td valign="top">
 
 'lax $.phoneNumber\[\*\]'
-
-
 
 </td>
 </tr>
@@ -275,7 +259,7 @@ Defines the regular columns. Each result \(row\) of a regular JSON table column 
 ```
 <JSON_table_regular_column_definition> ::= <column_name> <data_type>
  PATH <JSON_table_column_path_specification> 
- [ JSON <table_column_empty_behavior> ON EMPTY ]
+ [ <JSON_table_column_empty_behavior> ON EMPTY ]
  [ <JSON_table_column_error_behavior> ON ERROR ]
 
 <JSON_table_column_path_specification> ::= <JSON_path_specification>
@@ -599,21 +583,15 @@ The following tokens are supported in *<JSON\_API\_common\_syntax\>*:
 
 Token
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -622,21 +600,15 @@ Example
 
 $
 
-
-
 </td>
 <td valign="top">
 
 The current context item.
 
-
-
 </td>
 <td valign="top">
 
- `'$'` 
-
-
+`'$'` 
 
 </td>
 </tr>
@@ -645,21 +617,15 @@ The current context item.
 
 .
 
-
-
 </td>
 <td valign="top">
 
 The member of an object.
 
-
-
 </td>
 <td valign="top">
 
- `'$.item.description'` 
-
-
+`'$.item.description'` 
 
 </td>
 </tr>
@@ -668,14 +634,10 @@ The member of an object.
 
 \[
 
-
-
 </td>
 <td valign="top">
 
 The array index specifier \(open\).
-
-
 
 </td>
 <td valign="top">
@@ -689,14 +651,10 @@ The array index specifier \(open\).
 
 \]
 
-
-
 </td>
 <td valign="top">
 
 The array index specifier \(closed\).
-
-
 
 </td>
 <td valign="top">
@@ -705,8 +663,6 @@ The array index specifier \(closed\).
 
 `'$.item.list[1]'`
 
-
-
 </td>
 </tr>
 <tr>
@@ -714,14 +670,10 @@ The array index specifier \(closed\).
 
 to
 
-
-
 </td>
 <td valign="top">
 
 The array index range.
-
-
 
 </td>
 <td valign="top">
@@ -730,8 +682,6 @@ The array index range.
 
 `= '$[3,4,5]'`
 
-
-
 </td>
 </tr>
 <tr>
@@ -739,14 +689,10 @@ The array index range.
 
 \*
 
-
-
 </td>
 <td valign="top">
 
 The wild card.
-
-
 
 </td>
 <td valign="top">
@@ -754,8 +700,6 @@ The wild card.
 `'$.*.description'`
 
 `'$.item.list[*]'`
-
-
 
 </td>
 </tr>
@@ -824,22 +768,16 @@ COLUMNS
 
 RN
 
-
-
 </th>
 <th valign="top">
 
 ITEM\_NUMBER
-
-
 
 </th>
 <th valign="top">
 
 UPC\_CODE
 
-
-
 </th>
 </tr>
 <tr>
@@ -847,22 +785,16 @@ UPC\_CODE
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 73649587162
 
-
-
 </td>
 </tr>
 <tr>
@@ -870,22 +802,16 @@ UPC\_CODE
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 83600229374
 
-
-
 </td>
 </tr>
 <tr>
@@ -893,22 +819,16 @@ UPC\_CODE
 
 3
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 33298003521
 
-
-
 </td>
 </tr>
 <tr>
@@ -916,22 +836,16 @@ UPC\_CODE
 
 4
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 91827739856
 
-
-
 </td>
 </tr>
 <tr>
@@ -939,21 +853,15 @@ UPC\_CODE
 
 5
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 22983303876
-
-
 
 </td>
 </tr>
@@ -978,16 +886,12 @@ COLUMNS
 
 PHONE
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 \[\{"number":"519-555-6310","type":"Office"\}\]
-
-
 
 </td>
 </tr>
@@ -1017,14 +921,10 @@ COLUMNS
 
 STREET
 
-
-
 </th>
 <th valign="top">
 
 CITY
-
-
 
 </th>
 </tr>
@@ -1033,14 +933,10 @@ CITY
 
 100 Fairchild Ave
 
-
-
 </td>
 <td valign="top">
 
 San Diego
-
-
 
 </td>
 </tr>
@@ -1073,36 +969,26 @@ FROM JSON_TABLE(T1.B, '$'
 
 RN
 
-
-
 </th>
 <th valign="top">
 
 USER\_NAME
-
-
 
 </th>
 <th valign="top">
 
 ORDER\_NUMBER
 
-
-
 </th>
 <th valign="top">
 
 ITEM\_NUMBER
-
-
 
 </th>
 <th valign="top">
 
 QUANTITY
 
-
-
 </th>
 </tr>
 <tr>
@@ -1110,35 +996,25 @@ QUANTITY
 
 1
 
-
-
 </td>
 <td valign="top">
 
 BSMITH
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -1147,35 +1023,25 @@ BSMITH
 
 1
 
-
-
 </td>
 <td valign="top">
 
 BSMITH
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 </tr>
@@ -1196,14 +1062,10 @@ INSERT INTO r1 VALUES (1, '{"menu": {"header": "SVG Viewer","items": [{"id": "Op
 
 SELECT statement
 
-
-
 </th>
 <th valign="top">
 
 Value returned
-
-
 
 </th>
 </tr>

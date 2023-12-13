@@ -17,21 +17,15 @@ Provides join conditions for column store join views.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join view name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the join view name.
 
 JOIN\_CONDITION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join condition name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the join condition name.
 
 JOIN\_ORDER
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the join order number.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the join order number.
 
 TABLE\_SCHEMA\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of column 1.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema name of column 1.
 
 TABLE\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of COLUMN\_NAME1.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the table name of COLUMN\_NAME1.
 
 COLUMN\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of COLUMN\_NAME1.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the name of COLUMN\_NAME1.
 
 ALIAS\_NUMBER1
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the alias number of TABLE\_NAME1.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the alias number of TABLE\_NAME1.
 
 TABLE\_SCHEMA\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of TABEL\_NAME2.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the schema name of TABEL\_NAME2.
 
 TABLE\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of COLUMN\_NAME2.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the table name of COLUMN\_NAME2.
 
 COLUMN\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of COLUMN\_NAME2.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the name of COLUMN\_NAME2.
 
 ALIAS\_NUMBER2
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the alias number of TABLE\_NAME2.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the alias number of TABLE\_NAME2.
 
 CONSTRAINTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join constraint name.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the join constraint name.
 
 JOIN\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join type: INNER, LEFT, RIGHT, FULL.
-
-
 
 </td>
 </tr>
@@ -362,25 +272,27 @@ Displays the join type: INNER, LEFT, RIGHT, FULL.
 
 CARDINALITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(3\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the join cardinality: 1:1, 1:n, n:1, n:n.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20a034d2751910148b6ab955080c7127__section_vlk_ccq_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -413,7 +325,7 @@ Displays the join cardinality: 1:1, 1:n, n:1, n:n.
 
 [CS\_VIEW\_PARAMETERS System View](cs-view-parameters-system-view-3abb271.md "Provides a list of parameters of the objects in the SAP HANA database. Only calculation views are considered. The parameters of a view are parsed from the definition of the underlying scenario.")
 
-[Memory Management in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/bd6e6be8bb5710149e34e14608e07b76.html "The column store is the part of the SAP HANA database that manages data organized in columns in memory. Tables created as column tables are stored here.") :arrow_upper_right:
+[Memory Management in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bd6e6be8bb5710149e34e14608e07b76.html "The column store is the part of the SAP HANA database that manages data organized in columns in memory. Tables created as column tables are stored here.") :arrow_upper_right:
 
 [SELECT Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/select-statement-data-manipulation-20fcf24.md "Queries data from the database.")
 

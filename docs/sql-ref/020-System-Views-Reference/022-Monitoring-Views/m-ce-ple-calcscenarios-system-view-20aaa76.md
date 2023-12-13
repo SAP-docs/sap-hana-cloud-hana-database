@@ -17,21 +17,15 @@ Provides all available calculation scenarios created by the PlanningEngine.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of calculation scenario.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name of calculation scenario.
 
 SCENARIO\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the calculation scenario name.
-
-
 
 </td>
 </tr>

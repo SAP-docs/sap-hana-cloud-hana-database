@@ -17,21 +17,15 @@ Provides information regarding table tasks.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 TASK\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier for the task.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the unique identifier for the task.
 
 TASK\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the task.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the task.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema that the task was created in.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema that the task was created in.
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the owner of the task.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the owner of the task.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the creation time.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the creation time.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory size of loaded task in bytes.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the memory size of loaded task in bytes.
 
 TASK\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of task derived from the task plan.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the type of task derived from the task plan.
 
 PLAN\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the version of the task plan.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the version of the task plan.
 
 PLAN
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the task plan used to define the task. This value is NULL if the task was created using a procedure.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the task plan used to define the task. This value is NULL if the task w
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description of the task from the task plan.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the description of the task from the task plan.
 
 HAS\_TABLE\_TYPE\_INPUT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the task is modeled with a table type as input: TRUE/FALSE. If TRUE, this means that data would need to be pushed at execution time.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays whether or not the task is modeled with a table type as input: TRUE/FAL
 
 HAS\_SDQ
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the task contains SDQ \(Smart Data Quality\) functionality: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays whether or not the task contains SDQ \(Smart Data Quality\) functionali
 
 IS\_REALTIME\_TASK
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the specified task is a realtime task.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays whether or not the specified task is a realtime task.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the task is in a valid state: TRUE/FALSE. FALSE indicates that the task has been invalidated by a dependency.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays whether or not the task is in a valid state: TRUE/FALSE. FALSE indicate
 
 IS\_READ\_ONLY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the task is read only, meaning it has only table type outputs: TRUE/FALSE. FALSE indicates that the task writes to non-table-type outputs.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays whether or not the task is read only, meaning it has only table type ou
 
 PROCEDURE\_SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 If the task was created with a procedure instead of a plan, contains the schema name of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ If the task was created with a procedure instead of a plan, contains the schema 
 
 PROCEDURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 If the task was created with a procedure instead of a plan, contains the name of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ If the task was created with a procedure instead of a plan, contains the name of
 
 INPUT\_PARAMETER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of input \(tableType\) parameters.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the number of input \(tableType\) parameters.
 
 OUTPUT\_PARAMETER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of output \(tableType\) parameters.
-
-
 
 </td>
 </tr>
@@ -477,25 +357,27 @@ Displays the number of output \(tableType\) parameters.
 
 SQL\_SECURITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the security model for the task: DEFINER/INVOKER.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio0bbbcb8a7ed54b7fb0efb875dd7e26f1__section_h5x_pyz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

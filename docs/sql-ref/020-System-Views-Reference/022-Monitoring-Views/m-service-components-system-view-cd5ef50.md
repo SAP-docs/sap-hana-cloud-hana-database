@@ -17,28 +17,20 @@ Displays all known components and their current status within an SAP HANA servic
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
-
-
 
 </th>
 <th valign="top">
 
 Unit
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +39,10 @@ Description
 
 SERVICE\_COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
@@ -66,8 +54,6 @@ VARCHAR\(64\)
 
 Displays the service component name.
 
-
-
 </td>
 </tr>
 <tr>
@@ -75,14 +61,10 @@ Displays the service component name.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -94,8 +76,6 @@ VARCHAR\(32\)
 
 Displays the service name. See M\_SERVICE\_TYPES for all known service names.
 
-
-
 </td>
 </tr>
 <tr>
@@ -103,14 +83,10 @@ Displays the service name. See M\_SERVICE\_TYPES for all known service names.
 
 IS\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
@@ -122,8 +98,6 @@ VARCHAR\(5\)
 
 Displays whether the component is enabled or not: TRUE/FALSE.
 
-
-
 </td>
 </tr>
 <tr>
@@ -131,14 +105,10 @@ Displays whether the component is enabled or not: TRUE/FALSE.
 
 LIFECYCLE\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -150,8 +120,6 @@ VARCHAR\(32\)
 
 Displays the lifecycle phase of the component.
 
-
-
 </td>
 </tr>
 <tr>
@@ -159,14 +127,10 @@ Displays the lifecycle phase of the component.
 
 START\_THREAD\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -178,8 +142,6 @@ BIGINT
 
 Displays the ID of the thread that started the component.
 
-
-
 </td>
 </tr>
 <tr>
@@ -187,14 +149,10 @@ Displays the ID of the thread that started the component.
 
 START\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
@@ -206,8 +164,6 @@ TIMESTAMP
 
 Displays the timestamp when the component started.
 
-
-
 </td>
 </tr>
 <tr>
@@ -215,28 +171,20 @@ Displays the timestamp when the component started.
 
 START\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Microsecond
 
-
-
 </td>
 <td valign="top">
 
 Displays the component start duration.
-
-
 
 </td>
 </tr>
@@ -245,14 +193,10 @@ Displays the component start duration.
 
 ASSIGN\_THREAD\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -264,8 +208,6 @@ BIGINT
 
 Displays the ID of the thread of the ASSIGN component.
 
-
-
 </td>
 </tr>
 <tr>
@@ -273,14 +215,10 @@ Displays the ID of the thread of the ASSIGN component.
 
 ASSIGN\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
@@ -292,8 +230,6 @@ TIMESTAMP
 
 Displays the timestamp of the beginning of the component ASSIGN.
 
-
-
 </td>
 </tr>
 <tr>
@@ -301,28 +237,20 @@ Displays the timestamp of the beginning of the component ASSIGN.
 
 ASSIGN\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Microsecond
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration of the ASSIGN component.
-
-
 
 </td>
 </tr>
@@ -331,14 +259,10 @@ Displays the duration of the ASSIGN component.
 
 POST\_ASSIGN\_THREAD\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -350,8 +274,6 @@ BIGINT
 
 Displays the POST\_ASSIGN thread ID of the component.
 
-
-
 </td>
 </tr>
 <tr>
@@ -359,14 +281,10 @@ Displays the POST\_ASSIGN thread ID of the component.
 
 POST\_ASSIGN\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
@@ -378,8 +296,6 @@ TIMESTAMP
 
 Displays the timestamp of the start of the POST\_ASSIGN component.
 
-
-
 </td>
 </tr>
 <tr>
@@ -387,28 +303,20 @@ Displays the timestamp of the start of the POST\_ASSIGN component.
 
 POST\_ASSIGN\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Microsecond
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration of the POST\_ASSIGN component.
-
-
 
 </td>
 </tr>
@@ -417,14 +325,10 @@ Displays the duration of the POST\_ASSIGN component.
 
 SHUTDOWN\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
@@ -436,8 +340,6 @@ TIMESTAMP
 
 Displays the timestamp of the start of the component shutdown.
 
-
-
 </td>
 </tr>
 <tr>
@@ -445,28 +347,20 @@ Displays the timestamp of the start of the component shutdown.
 
 SHUTDOWN\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Microsecond
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration of the component shutdown.
-
-
 
 </td>
 </tr>
@@ -475,14 +369,10 @@ Displays the duration of the component shutdown.
 
 LAST\_RECONFIG\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
@@ -494,8 +384,6 @@ TIMESTAMP
 
 Displays the timestamp of the start of the last component reconfiguration.
 
-
-
 </td>
 </tr>
 <tr>
@@ -503,28 +391,20 @@ Displays the timestamp of the start of the last component reconfiguration.
 
 RECONFIG\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Microsecond
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration of the last component reconfiguration.
-
-
 
 </td>
 </tr>
@@ -533,14 +413,10 @@ Displays the duration of the last component reconfiguration.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
@@ -552,8 +428,6 @@ VARCHAR\(64\)
 
 Displays the host name.
 
-
-
 </td>
 </tr>
 <tr>
@@ -561,14 +435,10 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -579,8 +449,6 @@ INTEGER
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>

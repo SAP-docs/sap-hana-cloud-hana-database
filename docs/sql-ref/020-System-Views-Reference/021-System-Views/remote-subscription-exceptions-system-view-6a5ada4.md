@@ -17,21 +17,15 @@ Provides remote subscription exception information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 EXCEPTION\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the exception ID.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the exception ID.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(19\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type: REMOTE\_SOURCE/REMOTE\_SUBSCRIPTION.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the object type: REMOTE\_SOURCE/REMOTE\_SUBSCRIPTION.
 
 OBJECT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the remote source or the remote subscription, based on the OBJECT\_TYPE.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name of the remote source or the remote subscription, based 
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name of the remote source or remote subscription, based on the OBJECT\_TYPE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the object name of the remote source or remote subscription, based on t
 
 EXCEPTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
-Displays the time at whoch the exception was raised.
-
-
+Displays the time at which the exception was raised.
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the time at whoch the exception was raised.
 
 ERROR\_NUMBER
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error number.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the error number.
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error message.
-
-
 
 </td>
 </tr>
@@ -201,25 +153,27 @@ Displays the error message.
 
 COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(11\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the component that raised the exception.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio6a5ada48bd1e46f4849ce9c90a09d84b__section_atm_py4_dzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

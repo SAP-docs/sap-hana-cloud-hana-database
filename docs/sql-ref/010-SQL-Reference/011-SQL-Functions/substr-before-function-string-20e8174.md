@@ -63,7 +63,7 @@ Returns a substring from the specified string before the first occurrence of the
 
 ## Example
 
-The following example returns ***Hello***, the part of the given string that is to the left of the first occurrence of ***My***:
+The following example returns ***Hello***, the part of the given string that is to the left of the first occurrence of `My`:
 
 ```
 SELECT SUBSTR_BEFORE ('Hello My Friend','My') "substr before" FROM DUMMY;

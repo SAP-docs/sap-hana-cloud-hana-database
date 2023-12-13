@@ -14,7 +14,7 @@ Enables or disables hints from a target query or statement hash.
 ALTER SYSTEM { ENABLE | DISABLE } STATEMENT HINT 
    { [ ON { PROCEDURE | FUNCTION } <proc_func_name> ] FOR <target_query> 
    | FOR STATEMENT HASH <statement_hash> 
-   | FOR ALL };
+   | ALL };
 ```
 
 
@@ -64,12 +64,23 @@ Specifies the statement hash.
 
 </dd><dt><b>
 
-ALL
+ALTER SYSTEM ENABLE STATEMENT HINT FOR \{ <target\_query\> | STATEMENT HASH <statement\_hash\> \}
 
 </b></dt>
 <dd>
 
-Applies the action to both user-defined hints and system hints that are associated with the specified statement. If ALL is not specified, then the action is only applied on the user-defined hints.
+Enables the statement hint specified by target\_query or statement \_hash only.
+
+
+
+</dd><dt><b>
+
+ALTER SYSTEM ENABLE STATEMENT HINT ALL
+
+</b></dt>
+<dd>
+
+Enables all statement hints.
 
 
 
@@ -93,7 +104,7 @@ Both statements \(ENABLE, DISABLE\) evict all cached plans for the target SQL st
 This example enables all statement hints.
 
 ```
-ALTER SYSTEM ENABLE STATEMENT HINT FOR ALL;
+ALTER SYSTEM ENABLE STATEMENT HINT ALL;
 ```
 
 This example disables statement hints for the SELECT query.

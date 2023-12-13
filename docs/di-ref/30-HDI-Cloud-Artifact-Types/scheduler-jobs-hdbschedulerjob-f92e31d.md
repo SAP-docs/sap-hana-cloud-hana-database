@@ -2,11 +2,16 @@
 
 # Scheduler Jobs \(.hdbschedulerjob\)
 
-Transforms a design-time scheduler-job resource into a scheduler job on a database table.
+Transforms a design-time scheduler-job resource into a scheduler job on a database procedure.
 
 
 
-The scheduler-job plug-in transforms a design-time scheduler-job resource \(defined in a `.hdbschedulerjob` artifact\) into a scheduler job on a database table. The file format required for the `.hdbschedulerjob` artifact uses a DDL-style syntax that is equivalent to the syntax of the corresponding SQL command `CREATE SCHEDULER JOB`, but without the leading `CREATE`.
+The scheduler-job plug-in transforms a design-time scheduler-job resource \(defined in a `.hdbschedulerjob` artifact\) into a scheduler job on a database procedure.
+
+> ### Note:  
+> It is not possible to define multiple job schedules in a single `.hdbschedulerjob` artifact.
+
+The file format required for the `.hdbschedulerjob` artifact uses a DDL-style syntax that is equivalent to the syntax of the corresponding SQL command `CREATE SCHEDULER JOB`, but without the leading `CREATE`.
 
 
 
@@ -14,7 +19,7 @@ The scheduler-job plug-in transforms a design-time scheduler-job resource \(defi
 
 ## Example Artifact Code
 
-The following code shows a simple example of a scheduler-job definition of a sequence for SAP HDI:
+The following code shows a simple example of a scheduler-job definition for SAP HDI:
 
 > ### Code Syntax:  
 > `/src/SCHEDULER_JOB_A.hdbschedulerjob`
@@ -46,4 +51,6 @@ In the configuration file for the HDI container \(`.hdiconfig`\), the plug-in co
 
 
 [SAP HDI Artifact Types and Build Plug-ins Reference](sap-hdi-artifact-types-and-build-plug-ins-reference-9789224.md "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.")
+
+[CREATE SCHEDULER JOB Statement \(SAP HANA SQL Reference Guide for SAP HANA Platform\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c1d3f60099654ecfb3fe36ac93c121bb/d7d43d818366460dae1328aab5d5df4f.html)
 

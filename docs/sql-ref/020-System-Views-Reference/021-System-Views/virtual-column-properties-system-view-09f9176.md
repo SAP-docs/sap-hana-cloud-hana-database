@@ -15,21 +15,15 @@ Provides the properties set on virtual table columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the virtual table.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name of the virtual table.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the virtual table name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the virtual table name.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the virtual table column name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the virtual table column name.
 
 PROPERTY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the property name.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the property name.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the property value.
-
-
 
 </td>
 </tr>
@@ -153,25 +117,27 @@ Displays the property value.
 
 IS\_READ\_ONLY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
 
 Displays whether or not the property is read-only: TRUE/FALSE.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio09f9176a592c442d82830e4a51833e57__section_t5t_v11_fzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

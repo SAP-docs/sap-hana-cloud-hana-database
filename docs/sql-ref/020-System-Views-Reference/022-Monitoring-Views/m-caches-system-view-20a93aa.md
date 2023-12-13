@@ -19,21 +19,15 @@ Provides aggregated information on caches.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ Displays the persistence volume ID.
 
 CACHE\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier for the cache.
-
-
 
 </td>
 </tr>
@@ -134,21 +104,15 @@ Displays the unique identifier for the cache.
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum available memory budget in bytes available for the cache instance.
-
-
 
 </td>
 </tr>
@@ -157,21 +121,15 @@ Displays the maximum available memory budget in bytes available for the cache in
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory in bytes used by the cache instance.
-
-
 
 </td>
 </tr>
@@ -180,21 +138,15 @@ Displays the memory in bytes used by the cache instance.
 
 ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of entries in the cache instance.
-
-
 
 </td>
 </tr>
@@ -203,21 +155,15 @@ Displays the number of entries in the cache instance.
 
 INSERT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of insertions into the cache instance.
-
-
 
 </td>
 </tr>
@@ -226,21 +172,15 @@ Displays the number of insertions into the cache instance.
 
 INVALIDATE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of invalidations in the cache instance.
-
-
 
 </td>
 </tr>
@@ -249,21 +189,15 @@ Displays the number of invalidations in the cache instance.
 
 HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of cache hits for the cache instance.
-
-
 
 </td>
 </tr>
@@ -272,21 +206,15 @@ Displays the number of cache hits for the cache instance.
 
 MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of cache misses for the cache instance.
-
-
 
 </td>
 </tr>
@@ -295,21 +223,15 @@ Displays the number of cache misses for the cache instance.
 
 LAST\_ACCESS\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time of the last access of the cache instance.
-
-
 
 </td>
 </tr>

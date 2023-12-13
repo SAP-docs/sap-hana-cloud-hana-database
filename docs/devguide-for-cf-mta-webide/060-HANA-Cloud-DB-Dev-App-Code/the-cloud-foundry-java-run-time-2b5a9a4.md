@@ -2,7 +2,7 @@
 
 # The Cloud Foundry Java Run Time
 
- SAP Business Technology Platform provides a Cloud Foundry Java run time to which you can deploy your Java applications.
+SAP Business Technology Platform provides a Cloud Foundry Java run time to which you can deploy your Java applications.
 
 The Java run time for Cloud Foundry on SAP Business Technology Platform provides the Tomcat, TomEE 7, and Java Main run times to deploy your Java code. During application deployment, the build pack ensures that the correct SAP Java Virtual Machine \(JVM\) is provided and that the appropriate data sources for the SAP HDI container are bound to the corresponding application container.
 
@@ -44,21 +44,15 @@ When you use the Tomcat or TomEE 7 run time, you can rely on certain standard AP
 
 Run time
 
-
-
 </th>
 <th valign="top">
 
 Tomcat
 
-
-
 </th>
 <th valign="top">
 
 Supported specification version
-
-
 
 </th>
 </tr>
@@ -67,14 +61,10 @@ Supported specification version
 
 Tomcat
 
-
-
 </td>
 <td valign="top">
 
 Apache Tomcat 8
-
-
 
 </td>
 <td valign="top">
@@ -89,8 +79,6 @@ Debugging Support for Other Languages 1.0
 
 Java API for WebSocket 1.1
 
-
-
 </td>
 </tr>
 <tr>
@@ -98,14 +86,10 @@ Java API for WebSocket 1.1
 
 TomEE 7
 
-
-
 </td>
 <td valign="top">
 
 Apache TomEE 7 \(Java EE 7 Web Profile\)
-
-
 
 </td>
 <td valign="top">
@@ -143,8 +127,6 @@ Common Annotations for Java Platform 1.2
 Dependency Injection for Java 1.0
 
 Contexts and Dependency Injection for Java EE platform 1.1
-
-
 
 </td>
 </tr>

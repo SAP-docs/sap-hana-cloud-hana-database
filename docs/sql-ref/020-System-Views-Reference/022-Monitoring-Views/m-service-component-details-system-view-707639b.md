@@ -17,28 +17,20 @@ Allows closer monitoring of service components.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
-
-
 
 </th>
 <th valign="top">
 
 Unit
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +39,10 @@ Description
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
@@ -66,8 +54,6 @@ VARCHAR\(256\)
 
 Displays the database name.
 
-
-
 </td>
 </tr>
 <tr>
@@ -75,14 +61,10 @@ Displays the database name.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
@@ -94,8 +76,6 @@ VARCHAR\(64\)
 
 Displays the host name.
 
-
-
 </td>
 </tr>
 <tr>
@@ -103,14 +83,10 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -122,8 +98,6 @@ INTEGER
 
 Displays the internal port.
 
-
-
 </td>
 </tr>
 <tr>
@@ -131,14 +105,10 @@ Displays the internal port.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -150,8 +120,6 @@ VARCHAR\(32\)
 
 Displays the service name. See M\_SERVICE\_TYPES for all known service names.
 
-
-
 </td>
 </tr>
 <tr>
@@ -159,14 +127,10 @@ Displays the service name. See M\_SERVICE\_TYPES for all known service names.
 
 SERVICE\_COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
@@ -178,8 +142,6 @@ VARCHAR\(64\)
 
 Displays the component name. See See M\_SERVICE\_COMPONENTS for all known component names.
 
-
-
 </td>
 </tr>
 <tr>
@@ -187,14 +149,10 @@ Displays the component name. See See M\_SERVICE\_COMPONENTS for all known compon
 
 SERVICE\_COMPONENT\_ACTION
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
@@ -206,8 +164,6 @@ VARCHAR\(64\)
 
 Displays the name of the component action.
 
-
-
 </td>
 </tr>
 <tr>
@@ -215,14 +171,10 @@ Displays the name of the component action.
 
 PROGRESS\_DETAILS
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(128\)
-
-
 
 </td>
 <td valign="top">
@@ -234,8 +186,6 @@ VARCHAR\(128\)
 
 Displays the status details and progress information.
 
-
-
 </td>
 </tr>
 <tr>
@@ -243,14 +193,10 @@ Displays the status details and progress information.
 
 START\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
@@ -262,8 +208,6 @@ TIMESTAMP
 
 Displays the timestamp of the start of the component action or lifecycle phase.
 
-
-
 </td>
 </tr>
 <tr>
@@ -271,28 +215,20 @@ Displays the timestamp of the start of the component action or lifecycle phase.
 
 DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Microsecond
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration of the component action or lifecycle phase. The value is -1 as long as progress is ongoing.
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ Provides task parameter information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema that the task was created in.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema that the task was created in.
 
 TASK\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the task.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the task.
 
 PARAMETER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the parameter.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the name of the parameter.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the position of the parameter.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the position of the parameter.
 
 TABLE\_TYPE\_SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema that the table type was created in.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema that the table type was created in.
 
 TABLE\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the table type.
-
-
 
 </td>
 </tr>
@@ -178,25 +136,27 @@ Displays the name of the table type.
 
 PARAMETER\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the parameter type: IN/OUT.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio0853c4b8745e46e29e078f96de713844__section_hzx_ryz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

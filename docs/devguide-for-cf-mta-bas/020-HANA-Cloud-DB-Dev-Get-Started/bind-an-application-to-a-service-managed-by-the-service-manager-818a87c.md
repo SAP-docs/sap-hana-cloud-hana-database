@@ -39,7 +39,7 @@ To use the *SAP HANA PROJECTS* explorer in SAP Business Application Studio to bi
 
 2.  Add a new database connection. \(*Optional*\)
 
-    The list of existing services is displayed in *Database Connections* along with the current binding status, for example: ![](images/BAS_icon_dependencyBound_e45e7a9.svg) \(*bound service*\) or ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) \(*unbound service*\). If your application is already bound to a service, the name of the bound service is included \(in brackets\), for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_db \(MyApp-hdidb-ws-123\)* for "target" HDI container services or ![](images/BAS_icon_dependencyBound_e45e7a9.svg) *cross-container-service-1 \(MySchemaService\)* for "non-target" container services, for example, a schema service.
+    The list of existing services is displayed in *Database Connections* along with the current binding status, for example: ![](images/BAS_icon_dependencyBound_e45e7a9.svg) \(*bound service*\) or ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) \(*unbound service*\). If your application is already bound to a service, the name of the bound service is included \(in brackets\), for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_db \(MyApp-hdidb-ws-123\)* for "target" HDI container services or ![](images/BAS_icon_dependencyBound_e45e7a9.svg)*cross-container-service-1 \(MySchemaService\)* for "non-target" container services, for example, a schema service.
 
     If the service to which you want to bind your application is not included in the list of available services displayed in *Database Connections*, you need to add it, as follows:
 
@@ -52,7 +52,7 @@ To use the *SAP HANA PROJECTS* explorer in SAP Business Application Studio to bi
         Use the <span class="SAP-icons"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard, choose the connection type *Existing schema service instance*, and select the managed service instance listed in the drop-down list of options, for example, *MySchema managed-hana \(schema\)*.
 
 
-    The new connection is displayed in the list of database connections under the *Database Connections* node in the *SAP HANA PROJECTS* pane, for example, ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) *hdi\_db* or ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *cross-container-service-1*.
+    The new connection is displayed in the list of database connections under the *Database Connections* node in the *SAP HANA PROJECTS* pane, for example, ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg)*hdi\_db* or ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1*.
 
 3.  Bind a database application to an application-managed service instance.
 
@@ -62,16 +62,16 @@ To use the *SAP HANA PROJECTS* explorer in SAP Business Application Studio to bi
 
         -   Unbound "target" HDI container services:
 
-            ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) *hdb\_db* 
+            ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg)*hdb\_db* 
 
         -   Unbound "non-target" container services, for example, a schema service:
 
-            ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *cross-container-service-1* 
+            ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1* 
 
 
     2.  Select a binding option.
 
-        You can choose either of the following options:
+        Choose one of the following options:
 
         -   *Bind to an HDI container*
         -   *Bind to an application-managed HDI container* \(target containers\)
@@ -99,11 +99,11 @@ To use the *SAP HANA PROJECTS* explorer in SAP Business Application Studio to bi
 
         -   Bound "target" HDI container services:
 
-            ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_db \(MyApp-hdidb-ws-123\)*
+            ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_db \(MyApp-hdidb-ws-123\)*
 
         -   Bound "non-target" container services, for example, a schema service:
 
-            ![](images/BAS_icon_dependencyBound_e45e7a9.svg) *cross-container-service-1 \(MySchemaService\)* 
+            ![](images/BAS_icon_dependencyBound_e45e7a9.svg)*cross-container-service-1 \(MySchemaService\)* 
 
 
 
@@ -115,11 +115,11 @@ To use the *SAP HANA PROJECTS* explorer in SAP Business Application Studio to bi
 
         -   Bound "target" HDI container services:
 
-            ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_db \(MyApp-hdidb-ws-123\)*
+            ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_db \(MyApp-hdidb-ws-123\)*
 
         -   Bound "non-target" container services, for example, a schema service:
 
-            ![](images/BAS_icon_dependencyBound_e45e7a9.svg) *cross-container-service-1 \(MySchemaService\)* 
+            ![](images/BAS_icon_dependencyBound_e45e7a9.svg)*cross-container-service-1 \(MySchemaService\)* 
 
 
     2.  Check the status of the application-managed HDI container or schema service.
@@ -128,11 +128,11 @@ To use the *SAP HANA PROJECTS* explorer in SAP Business Application Studio to bi
 
         -   Unbound "target" HDI container services:
 
-            ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) *hdb\_db* 
+            ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg)*hdb\_db* 
 
         -   Unbound "non-target" container services, for example, a schema service:
 
-            ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *cross-container-service-1* 
+            ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1* 
 
 
 

@@ -17,21 +17,15 @@ Provides resource availability information on each NUMA node in the hardware top
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 NUMA\_NODE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the physical NUMA node ID as shown by the operating system.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the physical NUMA node ID as shown by the operating system.
 
 NUMA\_NODE\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical NUMA node index. Indexes are in the range of 0 to MAX\_NUMA\_NODE\_COUNT.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the logical NUMA node index. Indexes are in the range of 0 to MAX\_NUMA
 
 ACTIVE\_LOGICAL\_CORE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the total active logical core count in the NUMA node.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the total active logical core count in the NUMA node.
 
 LOGICAL\_CORE\_IDS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the range-separated list of logical core IDs in the NUMA node, for example, \(0-3,10-13\).
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the range-separated list of logical core IDs in the NUMA node, for exam
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total memory size, in bytes, present in the NUMA node.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the total memory size, in bytes, present in the NUMA node.
 
 NUMA\_NODE\_DISTANCES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the distances from this node to all other nodes. Indexes in this list are NUMA\_NODE\_INDEX and the number of entries are as many as MAX\_NUMA\_NODE\_COUNT.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the distances from this node to all other nodes. Indexes in this list a
 
 NEIGHBOUR\_NUMA\_NODE\_IDS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the physical NUMA node ID of the neighboring nodes.
-
-
 
 </td>
 </tr>

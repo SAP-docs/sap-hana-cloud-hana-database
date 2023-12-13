@@ -15,21 +15,15 @@ Displays statistical information on reclamation operations on a data volume.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the database.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the name of the database.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the Host.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the name of the Host.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the persistence volume ID.
 
 STATISTICS\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistics object unique ID.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the statistics object unique ID.
 
 RECLAIM\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reclaim status.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the reclaim status.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the reclaim.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the start time of the reclaim.
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the end time of the reclaim.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the end time of the reclaim.
 
 DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration of the reclaim.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the duration of the reclaim.
 
 RECLAIM\_THRESHOLD
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Specifies the desired percentage of the payload to which the data volume should be reduced.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Specifies the desired percentage of the payload to which the data volume should 
 
 STEP\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of reclaimed steps already performed.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the number of reclaimed steps already performed.
 
 RECLAIMED\_PARTITION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of successfully reclaimed or currently reclaiming partitions.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the number of successfully reclaimed or currently reclaiming partitions
 
 FAILED\_RECLAIM\_PARTITION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of partitions on which reclaim operation failed.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the number of partitions on which reclaim operation failed.
 
 PARTITION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of data volume partitions.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the total number of data volume partitions.
 
 INITIAL\_USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used size in bytes before the reclaim.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the used size in bytes before the reclaim.
 
 INITIAL\_TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes before the reclaim.
-
-
 
 </td>
 </tr>
@@ -406,21 +304,15 @@ Displays the total size in bytes before the reclaim.
 
 INITIAL\_FILE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the file's size in bytes before the reclaim.
-
-
 
 </td>
 </tr>
@@ -429,21 +321,15 @@ Displays the file's size in bytes before the reclaim.
 
 INITIAL\_FILL\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the fill ratio before reclaim.
-
-
 
 </td>
 </tr>
@@ -452,21 +338,15 @@ Displays the fill ratio before reclaim.
 
 RECLAIM\_USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used size in bytes during the reclaim or right after it.
-
-
 
 </td>
 </tr>
@@ -475,21 +355,15 @@ Displays the used size in bytes during the reclaim or right after it.
 
 RECLAIM\_TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes during the reclaim or right after it.
-
-
 
 </td>
 </tr>
@@ -498,21 +372,15 @@ Displays the total size in bytes during the reclaim or right after it.
 
 RECLAIM\_FILE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the file's size during reclaim or right after it
-
-
 
 </td>
 </tr>
@@ -521,21 +389,15 @@ Displays the file's size during reclaim or right after it
 
 RECLAIM\_FILL\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the fill ratio during the reclaim or right after it.
-
-
 
 </td>
 </tr>
@@ -544,21 +406,15 @@ Displays the fill ratio during the reclaim or right after it.
 
 TOTAL\_MOVED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes of moved data.
-
-
 
 </td>
 </tr>
@@ -567,21 +423,15 @@ Displays the total size in bytes of moved data.
 
 TOTAL\_MOVED\_PAGES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of moved pages.
-
-
 
 </td>
 </tr>
@@ -590,21 +440,15 @@ Displays the total number of moved pages.
 
 TOTAL\_MOVE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time in seconds for moving pages.
-
-
 
 </td>
 </tr>
@@ -613,21 +457,15 @@ Displays the total time in seconds for moving pages.
 
 TOTAL\_TRUNCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes of truncated data.
-
-
 
 </td>
 </tr>
@@ -636,21 +474,15 @@ Displays the total size in bytes of truncated data.
 
 TOTAL\_TRUNCATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time in seconds for truncating data.
-
-
 
 </td>
 </tr>
@@ -659,21 +491,15 @@ Displays the total time in seconds for truncating data.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -682,21 +508,15 @@ Displays the connection ID.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user.
-
-
 
 </td>
 </tr>
@@ -705,21 +525,15 @@ Displays the name of the user.
 
 APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user name.
-
-
 
 </td>
 </tr>

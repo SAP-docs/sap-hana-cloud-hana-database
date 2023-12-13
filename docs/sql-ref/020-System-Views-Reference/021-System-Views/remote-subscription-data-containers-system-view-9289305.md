@@ -17,21 +17,15 @@ Provides information regarding remote subscription data.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name.
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ Displays the remote source name.
 
 CONTENT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(40\)
-
-
 
 </td>
 <td valign="top">
@@ -94,21 +78,15 @@ Displays the category of data containers:
 
 SUBSCRIPTION\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the remote subscription.
-
-
 
 </td>
 </tr>
@@ -117,21 +95,15 @@ Displays the schema name of the remote subscription.
 
 SUBSCRIPTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the remote subscription.
-
-
 
 </td>
 </tr>
@@ -140,21 +112,15 @@ Displays the name of the remote subscription.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the transaction being replicated.
-
-
 
 </td>
 </tr>
@@ -163,25 +129,27 @@ Displays the ID of the transaction being replicated.
 
 CONTAINER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Displays the ID of the data container. Depending on the content type, a container can be searched by REMOTE\_SOURCE\_ID and CONTENT\_TYPE or with additional information such as SUBSCRIPTION\_OID or TRANSACTION\_ID.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio9289305ea87d4984bcdd2453b678e5e4__section_ztg_4y4_dzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

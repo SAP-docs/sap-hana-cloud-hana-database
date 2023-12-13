@@ -31,7 +31,7 @@ For more information about the undeploy allow list \(`undeploy.json`\), see *Rel
 
 ## Migrations
 
-The migration-table file format uses a syntax that is similar in style to the Data Definition Language \(DDL\); the migration combines the most recent definition of the table and the migration statements required per table version to transform the table from the previous version to the new \(migrated\) version. Versions with the same definition as the previous version can be omitted. Only `ALTER TABLE`, `RENAME COLUMN`, `UPDATE` and `COMMENT ON [TABLE|COLUMN]` statements are supported for the migrations. The migration-table plug-in does not support statements written in the Data Manipulation Language \(DML\), nor any of the following statements:
+The migration-table file format uses a syntax that is similar in style to the Data Definition Language \(DDL\); the file combines the most recent definition of the table and the migration statements required per table version to transform the table from the previous version to the new \(migrated\) version. Versions with the same definition as the previous version can be omitted. Only `ALTER TABLE`, `RENAME COLUMN`, `INSERT`, `DELETE`, `UPDATE`, `UPSERT`, and `COMMENT ON [TABLE|COLUMN]` statements are supported for the migrations. The migration-table plug-in does not support any of the following statements:
 
 -   `ALTER TABLE ... [PARTITION ] ... LOADABLE`
 
@@ -41,6 +41,11 @@ The migration-table file format uses a syntax that is similar in style to the Da
 
 -   `ALTER TABLE ... ENABLE|DISABLE TRIGGER` 
 
+
+> ### Restriction:  
+> Changes to partitioning must be placed before any DML statements in the `.hdbmigrationtable` file. This is also the case for different migrations of one table when the partitioning and DML statements are performed in the same deployment.
+
+The initial deployment of a migration-table file creates the table in the most recent version but does not perform any migration. When deploying a new version of an existing file, the migration steps are performed to update the table to the most recent version.
 
 After finishing the migrations, the migration-table plug-in checks whether the migrated table matches the new definition.
 
@@ -97,7 +102,7 @@ The following options are available concerning the management of table partition
     In this case, alterations to the partition are not allowed in the run-time object. Users must put partition change statements in the design-time version of the artifact, instead.
 
 
-For security reasons, it is not possible to use the HDI API to grant the `ALTER` privilege to a database user. However, you can use a role-definition that specifies the `ALTER` privilege as an object privilege of `"type":"TABLE"` for any user to whom the role is assigned. The user can then execute the `ALTER TABLE` statements required to do the partitioning. For more information about the syntax requirements for HDI role definitions, see *Roles \(.hdbrole\)* in *Related Information* below.
+For security reasons, it is not possible to use the HDI API to grant the `ALTER` privilege to a database user. However, you can use a role-definition that specifies the `ALTER` privilege as an object privilege of `"type":"TABLE"` for any user to whom the role is assigned. The user can then run the `ALTER TABLE` statements required to do the partitioning. For more information about the syntax requirements for HDI role definitions, see *Roles \(.hdbrole\)* in *Related Information* below.
 
 > ### Note:  
 > If you want to assign the `ALTER` privilege directly to the HDI container's run-time access user \(`*_RT`\), you can customize the `default_access_role`. For more information about the `default_access_role`, see *SAP HDI Security in the Context of Cloud Foundry* in *Related Information* below.

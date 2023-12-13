@@ -17,21 +17,15 @@ Provides an overview of Calcscenarios without JSON representation.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCENARIO\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the scenario name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the scenario name.
 
 IS\_PERSISTENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates if the calculation scenario is persistent or transient: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Indicates if the calculation scenario is persistent or transient: TRUE/FALSE.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the creation time.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the creation time.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory size of the loaded calculation scenario model in bytes.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the memory size of the loaded calculation scenario model in bytes.
 
 COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the component that create the calculation scenario.
-
-
 
 </td>
 </tr>

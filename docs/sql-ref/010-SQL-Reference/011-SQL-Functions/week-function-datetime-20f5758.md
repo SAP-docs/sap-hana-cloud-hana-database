@@ -22,7 +22,7 @@ WEEK(<date>)
 
 Returns the week number of the year as an integer. Weeks start Monday and end Sunday. The first days of the year up to the first Sunday are week 1; the seven days that begin with the day after the first Sunday are week 2, and so on.
 
-Both the WEEK and ISOWEEK functions return the week number for a specified date but the format of the result is quite different, and the two functions may handle the first week of the new year differently. For example, when supplied the date ***2017-01-01***, the WEEK function considers the date to be part of the *first week of 2017* and returns ***1***, whereas `ISOWEEK` considers the date to be part of the *last week of 2016* and returns ***2016-W52***.
+Both the WEEK and ISOWEEK functions return the week number for a specified date but the format of the result is quite different, and the two functions may handle the first week of the new year differently. For example, when supplied the date `2017-01-01`, the WEEK function considers the date to be part of the *first week of 2017* and returns ***1***, whereas `ISOWEEK` considers the date to be part of the *last week of 2016* and returns ***2016-W52***.
 
 
 

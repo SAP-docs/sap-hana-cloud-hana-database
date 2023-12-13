@@ -13,21 +13,15 @@ Lists all CommitSequece virtual files for a remote source, and the number of ent
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 REMOTE\_SOURCE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source OID.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the remote source OID.
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the remote source name.
 
 SUBSCRIPTION\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription OID
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the subscription OID
 
 SUBSCRIPTION\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription schema name.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the subscription schema name.
 
 SUBSCRIPTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription name.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the subscription name.
 
 CONTAINER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the container of the virtual file.
-
-
 
 </td>
 </tr>
@@ -174,21 +132,15 @@ Displays the ID of the container of the virtual file.
 
 COMMIT\_SEQUENCE\_CONTAINER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the container ID of the CommitSequence virtual file.
-
-
 
 </td>
 </tr>
@@ -197,21 +149,15 @@ Displays the container ID of the CommitSequence virtual file.
 
 MIN\_SEQUENCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum sequence ID of the CommitSequence virtual file.
-
-
 
 </td>
 </tr>
@@ -220,21 +166,15 @@ Displays the minimum sequence ID of the CommitSequence virtual file.
 
 MAX\_SEQUENCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum sequence ID of the CommitSequence virtual file.
-
-
 
 </td>
 </tr>
@@ -243,21 +183,15 @@ Displays the maximum sequence ID of the CommitSequence virtual file.
 
 ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of CommitSequence entries in the virtual file.
-
-
 
 </td>
 </tr>
@@ -266,21 +200,15 @@ Displays the number of CommitSequence entries in the virtual file.
 
 IS\_DELETED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates if the container identified by COMMIT\_SEQUENCE\_CONTAINER\_ID is deleted. Values are TRUE or FALSE.
-
-
 
 </td>
 </tr>
@@ -289,21 +217,15 @@ Indicates if the container identified by COMMIT\_SEQUENCE\_CONTAINER\_ID is dele
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -312,21 +234,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ Displays detailed information about threads created by services.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service name. See M\_SERVICE\_TYPES for all known service names.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the service name. See M\_SERVICE\_TYPES for all known service names.
 
 HIERARCHY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the thread grouping information. This column contains the connection ID, the update transaction ID, and the transaction ID. The column is empty if the threads are inactive.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the thread grouping information. This column contains the connection ID
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the connection ID.
 
 THREAD\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the thread ID.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the thread ID.
 
 THREAD\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the thread type.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the thread type.
 
 THREAD\_METHOD
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the thread method.
-
-
 
 </td>
 </tr>
@@ -224,14 +170,10 @@ Displays the thread method.
 
 THREAD\_DETAIL
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
-
-
 
 </td>
 <td valign="top">
@@ -240,8 +182,6 @@ Displays the thread detail.
 
 If you are connected to the tenant directly, then the content in this column is always shown. However, for security reasons, if you are connected to the system database then this column returns a value of "<undisclosed\>" if it contains any tenant-specific information.
 
-
-
 </td>
 </tr>
 <tr>
@@ -249,21 +189,15 @@ If you are connected to the tenant directly, then the content in this column is 
 
 THREAD\_STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the thread state.
-
-
 
 </td>
 </tr>
@@ -272,21 +206,15 @@ Displays the thread state.
 
 IS\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the thread is active \(starting, running, stopping, waiting, etc.\).
-
-
 
 </td>
 </tr>
@@ -295,21 +223,15 @@ Displays whether the thread is active \(starting, running, stopping, waiting, et
 
 DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the thread duration in milliseconds.
-
-
 
 </td>
 </tr>
@@ -318,21 +240,15 @@ Displays the thread duration in milliseconds.
 
 CALLER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service that called the thread.
-
-
 
 </td>
 </tr>
@@ -341,21 +257,15 @@ Displays the service that called the thread.
 
 CALLING
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service called by the thread.
-
-
 
 </td>
 </tr>
@@ -364,21 +274,15 @@ Displays the service called by the thread.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the statement being executed.
-
-
 
 </td>
 </tr>
@@ -387,21 +291,15 @@ Displays the ID of the statement being executed.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MD5 hash value for STATEMENT\_STRING.
-
-
 
 </td>
 </tr>
@@ -410,21 +308,15 @@ Displays the MD5 hash value for STATEMENT\_STRING.
 
 ROOT\_STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the root statement being executed.
-
-
 
 </td>
 </tr>
@@ -433,21 +325,15 @@ Displays the ID of the root statement being executed.
 
 ROOT\_STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MD5 hash value for the root statement string.
-
-
 
 </td>
 </tr>
@@ -456,14 +342,10 @@ Displays the MD5 hash value for the root statement string.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
@@ -472,8 +354,6 @@ Displays the SQL user name.
 
 If you are connected to the tenant directly, then the content in this column is always shown. However, for security reasons, if you are connected to the system database then this column returns a value of "<undisclosed\>" if it contains any tenant-specific information.
 
-
-
 </td>
 </tr>
 <tr>
@@ -481,21 +361,15 @@ If you are connected to the tenant directly, then the content in this column is 
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the application.
-
-
 
 </td>
 </tr>
@@ -504,14 +378,10 @@ Displays the name of the application.
 
 APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
@@ -520,8 +390,6 @@ Displays the application user name.
 
 If you are connected to the tenant directly, then the content in this column is always shown. However, for security reasons, if you are connected to the system database then this column returns a value of "<undisclosed\>" if it contains any tenant-specific information.
 
-
-
 </td>
 </tr>
 <tr>
@@ -529,21 +397,49 @@ If you are connected to the tenant directly, then the content in this column is 
 
 APPLICATION\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays that the application can define which source file SAP HANA is called from. This value is also displayed in the M\_PREPARED\_STATEMENTS.APPLICATION\_SOURCE system view.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+APPLICATION\_COMPONENT\_TYPE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Can be populated by the application to provide context for the statement execution: Displays which component type SAP HANA is called from.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+APPLICATION\_COMPONENT\_NAME
+
+</td>
+<td valign="top">
+
+NVARCHAR\(64\)
+
+</td>
+<td valign="top">
+
+Can be populated by the application to provide context for the statement execution: Displays which component name SAP HANA is called from.
 
 </td>
 </tr>
@@ -552,21 +448,15 @@ Displays that the application can define which source file SAP HANA is called fr
 
 CPU\_TIME\_SELF
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the active CPU time of the thread in microseconds.
-
-
 
 </td>
 </tr>
@@ -575,21 +465,15 @@ Displays the active CPU time of the thread in microseconds.
 
 CPU\_TIME\_CUMULATIVE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the active CPU time of the thread and its associated children in microseconds.
-
-
 
 </td>
 </tr>
@@ -598,14 +482,10 @@ Displays the active CPU time of the thread and its associated children in micros
 
 CLIENT\_IP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(45\)
-
-
 
 </td>
 <td valign="top">
@@ -614,8 +494,6 @@ Displays the IP of the client machine.
 
 If you are connected to the tenant directly, then the content in this column is always shown. However, for security reasons, if you are connected to the system database then this column returns a value of "<undisclosed\>" if it contains any tenant-specific information.
 
-
-
 </td>
 </tr>
 <tr>
@@ -623,21 +501,15 @@ If you are connected to the tenant directly, then the content in this column is 
 
 CLIENT\_PID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the client process ID.
-
-
 
 </td>
 </tr>
@@ -646,21 +518,15 @@ Displays the client process ID.
 
 STATEMENT\_EXECUTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement execution ID.
-
-
 
 </td>
 </tr>
@@ -669,21 +535,15 @@ Displays the statement execution ID.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction ID.
-
-
 
 </td>
 </tr>
@@ -692,21 +552,15 @@ Displays the transaction ID.
 
 UPDATE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the update transaction ID.
-
-
 
 </td>
 </tr>
@@ -715,21 +569,15 @@ Displays the update transaction ID.
 
 LOCK\_WAIT\_COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the component assigned to the lock.
-
-
 
 </td>
 </tr>
@@ -738,21 +586,15 @@ Displays the component assigned to the lock.
 
 LOCK\_WAIT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal name of the lock \(can be joined with the STATISTICS\_NAME column from, for example, M\_MUTEXES\).
-
-
 
 </td>
 </tr>
@@ -761,21 +603,15 @@ Displays the internal name of the lock \(can be joined with the STATISTICS\_NAME
 
 LOCK\_OWNER\_THREAD\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the thread that is holding the lock.
-
-
 
 </td>
 </tr>
@@ -784,21 +620,15 @@ Displays the ID of the thread that is holding the lock.
 
 LOCKS\_OWNED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the locks currently owned by the thread, including the lock type \(shared/exclusive\). This column does not show all locks that are monitored.
-
-
 
 </td>
 </tr>
@@ -807,21 +637,15 @@ Displays the locks currently owned by the thread, including the lock type \(shar
 
 PRIORITY
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement priority.
-
-
 
 </td>
 </tr>
@@ -830,21 +654,15 @@ Displays the statement priority.
 
 STATEMENT\_THREAD\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement thread limit.
-
-
 
 </td>
 </tr>
@@ -853,21 +671,15 @@ Displays the statement thread limit.
 
 STATEMENT\_MEMORY\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement memory limit.
-
-
 
 </td>
 </tr>
@@ -876,21 +688,15 @@ Displays the statement memory limit.
 
 PASSPORT\_ROOTCONTEXT\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY\(16\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the passport root context ID.
-
-
+Displays the extended passport \(EPP\) root context ID.
 
 </td>
 </tr>
@@ -899,21 +705,15 @@ Displays the passport root context ID.
 
 PASSPORT\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the passport transaction ID.
-
-
+Displays the extended passport \(EPP\) transaction ID.
 
 </td>
 </tr>
@@ -922,21 +722,15 @@ Displays the passport transaction ID.
 
 PASSPORT\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY\(16\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the passport connection ID.
-
-
+Displays the extended passport \(EPP\) connection ID.
 
 </td>
 </tr>
@@ -945,21 +739,15 @@ Displays the passport connection ID.
 
 PASSPORT\_CONNECTION\_COUNTER
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the passport connection counter.
-
-
+Displays the extended passport \(EPP\) connection counter.
 
 </td>
 </tr>
@@ -968,21 +756,32 @@ Displays the passport connection counter.
 
 PASSPORT\_COMPONENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
+</td>
+<td valign="top">
 
+Displays the extended passport \(EPP\) component name.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_COMPONENT\_TYPE
 
 </td>
 <td valign="top">
 
-Displays the passport component name.
+INTEGER
 
+</td>
+<td valign="top">
 
+Displays the extended passport \(EPP\) component type.
 
 </td>
 </tr>
@@ -991,21 +790,117 @@ Displays the passport component name.
 
 PASSPORT\_ACTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(40\)
 
+</td>
+<td valign="top">
 
+Displays the extended passport \(EPP\) action.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_ACTION\_TYPE
 
 </td>
 <td valign="top">
 
-Displays the passport action.
+INTEGER
 
+</td>
+<td valign="top">
 
+Displays the extended passport \(EPP\) component action type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_PREVIOUS\_COMPONENT\_NAME
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) passport component name of the previous context.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_SERVICE
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) service.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_USER\_ID
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) user ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_CLIENT
+
+</td>
+<td valign="top">
+
+NVARCHAR\(3\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) client.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_TRACE\_FLAGS
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) trace flags.
 
 </td>
 </tr>
@@ -1014,21 +909,15 @@ Displays the passport action.
 
 NUMA\_NODE\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last known NUMA node that the thread was executed on.
-
-
 
 </td>
 </tr>
@@ -1037,21 +926,15 @@ Displays the last known NUMA node that the thread was executed on.
 
 WORKLOAD\_CLASS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the workload class.
-
-
 
 </td>
 </tr>
@@ -1072,5 +955,5 @@ While this view is publicly visible, its contents can only be seen by users with
 
 [M\_SERVICE\_THREAD\_SAMPLES System View](m-service-thread-samples-system-view-d2176a6.md "Displays detailed information about locks held by threads.")
 
-[Analyzing System Performance](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/2f1b50583b214f8c8d64d5a8f65bd74b.html "You can use monitoring views to analyze how effectively your system is handling the current workload.") :arrow_upper_right:
+[Analyzing System Performance](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/2f1b50583b214f8c8d64d5a8f65bd74b.html "You can use monitoring views to analyze how effectively your system is handling the current workload.") :arrow_upper_right:
 

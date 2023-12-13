@@ -70,56 +70,40 @@ Defines a window on the data over which the function operates. For *<window\_spe
 
 **`TINYINT`**
 
-
-
 </th>
 <th valign="top">
 
 **`SMALLINT`**
-
-
 
 </th>
 <th valign="top">
 
 **`INTEGER`**
 
-
-
 </th>
 <th valign="top">
 
 **`BIGINT`**
-
-
 
 </th>
 <th valign="top">
 
 **`DECIMAL(p,s)`**
 
-
-
 </th>
 <th valign="top">
 
 **`DECIMAL`**
-
-
 
 </th>
 <th valign="top">
 
 **`REAL`**
 
-
-
 </th>
 <th valign="top">
 
 **`DOUBLE`**
-
-
 
 </th>
 </tr>
@@ -128,56 +112,40 @@ Defines a window on the data over which the function operates. For *<window\_spe
 
 `DECIMAL(9,6)`
 
-
-
 </td>
 <td valign="top">
 
 `DECIMAL(11,6)`
-
-
 
 </td>
 <td valign="top">
 
 `DECIMAL(16,6)`
 
-
-
 </td>
 <td valign="top">
 
 `DECIMAL(25,6)`
-
-
 
 </td>
 <td valign="top">
 
 `DECIMAL(p,s)`
 
-
-
 </td>
 <td valign="top">
 
 `DECIMAL`
-
-
 
 </td>
 <td valign="top">
 
 `REAL`
 
-
-
 </td>
 <td valign="top">
 
 `DOUBLE`
-
-
 
 </td>
 </tr>

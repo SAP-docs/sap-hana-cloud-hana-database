@@ -17,21 +17,15 @@ For internal use only. Provides a list dependency rule columns in the system.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 DEPENDENCY\_RULE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the dependency rule.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the dependency rule.
 
 DEPENDENCY\_RULE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the dependency rule.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the dependency rule.
 
 OBJECT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the table that contains the column.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name of the table that contains the column.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the name of the table that contains the column
-
-
+Displays the name of the table that contains the column.
 
 </td>
 </tr>
@@ -132,25 +102,27 @@ Displays the name of the table that contains the column
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the column name.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio8019111d0406419aa7016ba093a8f112__section_g22_5dq_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

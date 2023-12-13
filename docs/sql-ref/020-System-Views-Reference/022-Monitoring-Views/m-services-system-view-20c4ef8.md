@@ -17,21 +17,15 @@ Provides the status of all services.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service name. See M\_SERVICE\_TYPES for all known service names.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the service name. See M\_SERVICE\_TYPES for all known service names.
 
 PROCESS\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the process ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the process ID.
 
 DETAIL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Internal use only. Use COORDINATOR\_TYPE to test the service role.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Internal use only. Use COORDINATOR\_TYPE to test the service role.
 
 ACTIVE\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the active status: NO, YES, UNKNOWN, STARTING, or STOPPING.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the active status: NO, YES, UNKNOWN, STARTING, or STOPPING.
 
 SQL\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL port.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the SQL port.
 
 COORDINATOR\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the coordinator type in the distributed landscape: COORDINATOR, WORKER, STANDBY, or NONE.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the coordinator type in the distributed landscape: COORDINATOR, WORKER,
 
 VOLUME\_REPLICATION\_ROLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the current replication role in the context of System Managed Volume Replication \(SMVR\): NONE \(or empty\), SOURCE, or REPLICA.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the current replication role in the context of System Managed Volume Re
 
 IS\_DATABASE\_LOCAL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the service is local to the database.
-
-
 
 </td>
 </tr>
@@ -276,5 +210,5 @@ Displays whether or not the service is local to the database.
 
 [M\_SERVICE\_TYPES System View](m-service-types-system-view-20c4d1d.md "Provides information about service types.")
 
-[Data Storage Security](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/b30fda1483b34628802a8d62bd5d39df.html "Several mechanisms are used to protect security-relevant data used by the SAP HANA Cloud, SAP HANA database from unauthorized access.") :arrow_upper_right:
+[Data Storage Security](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/b30fda1483b34628802a8d62bd5d39df.html "Several mechanisms are used to protect security-relevant data used by the SAP HANA Cloud, SAP HANA database from unauthorized access.") :arrow_upper_right:
 

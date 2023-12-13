@@ -20,7 +20,7 @@ FLOOR(<number>)
 
 ## Description
 
-Returns the largest integer that is not greater than the numeric argument *<number\>*.
+Returns the largest decimal value that is not greater than the numeric argument *<number\>*.
 
 
 
@@ -28,7 +28,7 @@ Returns the largest integer that is not greater than the numeric argument *<numb
 
 ## Example
 
-The following example returns the value ***14*** for "floor":
+The following example returns the value ***14.0*** for "floor":
 
 ```
 SELECT FLOOR (14.5) "floor" FROM DUMMY;

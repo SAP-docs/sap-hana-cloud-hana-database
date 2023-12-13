@@ -15,21 +15,15 @@ Provides information on last values for statistics.
 
  
 
-
-
 </th>
 <th valign="top">
 
  
 
-
-
 </th>
 <th valign="top">
 
  
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Provides information on last values for statistics.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the port name.
 
 NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistic name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the statistic name.
 
 INDEX
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the index value.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the index value.
 
 REACHED\_AT
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays time when the last value was captured.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays time when the last value was captured.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last value for the statistic.
-
-
 
 </td>
 </tr>

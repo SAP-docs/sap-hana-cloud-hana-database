@@ -30,12 +30,12 @@ SAP Business Application Studio supports the creation of virtual tables using ei
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Choose *View* \> *Command Palette...*
 
     2.  Start the database-artifact creation Wizard.
 
-        In the command palette, type ***database*** and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        In the command palette, type `database` and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
 
 4.  Create a new virtual table.
@@ -47,9 +47,9 @@ SAP Business Application Studio supports the creation of virtual tables using ei
     -   Artifact type: *Virtual Table \(hdbvirtualtable\)*
 
         > ### Tip:  
-        > In the *Choose the artifact type* box, type ***table*** to display only those artifacts with the name "table" and select *Virtual Table \(hdbvirtualtable\)* from the list.
+        > In the *Choose the artifact type* box, type `table` to display only those artifacts with the name "table" and select *Virtual Table \(hdbvirtualtable\)* from the list.
 
-    -   Artifact Name: Use the following naming format: ****<namespace\>*::virtual\_table\_name***.
+    -   Artifact Name: Use the following naming format: <code><i class="varname">&lt;namespace&gt;</i>::virtual_table_name</code>.
 
         > ### Tip:  
         > You do not need to include the file suffix in the artifact name; the file suffix is added automatically according to the selection in the *Artifact type* box.
@@ -124,7 +124,7 @@ SAP Business Application Studio supports the creation of virtual tables using ei
         > You can use the *Database name* and *Schema name* fields to filter the list of objects to choose from.
 
 
-7.  Choose *Save* in the menu bar or  [CTRL\] + [S\]  to save your file \(virtual table\).
+7.  Choose *Save* in the menu bar or [CTRL\] + [S\]  to save your file \(virtual table\).
 
 8.  Buildand deploy the SAP HANA database module.
 

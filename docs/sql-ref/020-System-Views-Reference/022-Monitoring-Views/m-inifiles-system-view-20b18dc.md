@@ -17,21 +17,15 @@ Provides information about all configuration files.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration file name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the configuration file name.
 
 DEFAULT\_LAYER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not the file has configuration on the default layer. This value is always TRUE.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Indicates whether or not the file has configuration on the default layer. This v
 
 SYSTEM\_LAYER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not the file has configuration on the system layer: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Indicates whether or not the file has configuration on the system layer: TRUE/FA
 
 DATABASE\_LAYER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not the file has configuration on the database layer: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Indicates whether or not the file has configuration on the database layer: TRUE/
 
 HOST\_LAYER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not the file has configuration on the host layer: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -163,7 +127,7 @@ You can update configuration file settings using the ALTER SYSTEM ALTER CONFIGUR
 **Related Information**  
 
 
-[Configuring SAP HANA System Properties (INI Files)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/3f1a6a7dc31049409e1a9f9108d73d51.html "An SAP HANA database has several configuration (*.ini) files that contain properties for configuring the database and services.") :arrow_upper_right:
+[Configuring SAP HANA System Properties (INI Files)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/3f1a6a7dc31049409e1a9f9108d73d51.html "An SAP HANA database has several configuration (*.ini) files that contain properties for configuring the database and services.") :arrow_upper_right:
 
 [M\_INIFILE\_CONTENTS System View](m-inifile-contents-system-view-20b16a7.md "Provides configuration information from INI files.")
 

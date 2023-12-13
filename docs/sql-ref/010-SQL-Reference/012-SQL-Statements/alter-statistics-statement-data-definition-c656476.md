@@ -46,7 +46,7 @@ Specifies the name of the data statistics object.
 
 </dd><dt><b>
 
- *<data\_sources\>*
+*<data\_sources\>*
 
 </b></dt>
 <dd>
@@ -69,13 +69,13 @@ For RECORD COUNT data statistics objects, you cannot specify columns as part of 
 </b></dt>
 <dd>
 
-Specifies the table on which the data statistics are defined.
+Specifies the table name you want to create statistics on.
 
 ```
 <table_name> ::= [ [ <database_name>.]<schema_name>.]<identifier>
 ```
 
-For linked database, *<database\_name\>* is the name of the remote source. For all other cases, *<database\_name\>* is the name of the database where the table is located.
+For linked databases, *<database\_name\>* is the name of the remote source. For all other cases, *<database\_name\>* is the name of the database where the table is located.
 
 
 
@@ -124,21 +124,15 @@ Use this table to understand how matching is performed based on *<match\_type\>*
 
 Match type
 
-
-
 </th>
 <th valign="top">
 
 Example matches
 
-
-
 </th>
 <th valign="top">
 
 Example non-matches
-
-
 
 </th>
 </tr>
@@ -146,8 +140,6 @@ Example non-matches
 <td valign="top">
 
 \(not specified\)
-
-
 
 </td>
 <td valign="top">
@@ -158,14 +150,10 @@ T\(C\)
 
 T\(B,A\)
 
-
-
 </td>
 <td valign="top">
 
 T\(A,X\) - because T\(X\) is not a column in *<data\_sources\>*.
-
-
 
 </td>
 </tr>
@@ -174,14 +162,10 @@ T\(A,X\) - because T\(X\) is not a column in *<data\_sources\>*.
 
 EXACT
 
-
-
 </td>
 <td valign="top">
 
 T\(A,B,C\)
-
-
 
 </td>
 <td valign="top">
@@ -192,16 +176,12 @@ T\(A\)- because it does not contain the exact same columns and column order of *
 
 T\(X,A,B,C\) - because T.\(X\) is not a column in *<data\_sources\>*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CASCADE
-
-
 
 </td>
 <td valign="top">
@@ -222,14 +202,10 @@ T\(A\)
 
 T\(C,B,A,X\)
 
-
-
 </td>
 <td valign="top">
 
 T\(X\) - because it does not contain any columns that match the columns in *<data\_sources\>*.
-
-
 
 </td>
 </tr>
@@ -484,7 +460,7 @@ PREFIX BITS *<unsigned\_integer\>*
 </b></dt>
 <dd>
 
-Controls the number of bits the SKETCH algorithms use when constructing the SKETCH statistics. Specify this parameter when TYPE is SKETCH. Its value is an integer between 0 and 63. The default is 8.
+This parameter, ranging from 0 to 63, determines the number of bits used by SKETCH algorithms when constructing SKETCH statistics. While PREFIX BITS can be set within this range, increasing it significantly beyond the default value of 8 can greatly increase memory usage and risk memory allocation failures. Therefore, it is strongly advised to use the default value of 8 to ensure efficient memory use and stable performance.
 
 
 
@@ -516,7 +492,7 @@ KMINVAL
 
 </dd><dt><b>
 
- *<add\_drop\_data\_statistics\_properties\>*
+*<add\_drop\_data\_statistics\_properties\>*
 
 </b></dt>
 <dd>

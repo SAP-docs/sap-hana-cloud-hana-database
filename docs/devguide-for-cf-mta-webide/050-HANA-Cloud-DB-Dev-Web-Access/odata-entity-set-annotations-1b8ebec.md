@@ -74,30 +74,22 @@ The following table shows the additional values that are supported for the attri
 
 Parameter Value
 
-
-
 </th>
 <th valign="top">
 
 Requirement
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top" rowspan="4">
 
- “false” 
-
-
+“false” 
 
 </td>
 <td valign="top">
 
 The "`create forbidden`" setting is defined for the entity set in the OData service definition \(`.xsodata`\) file
-
-
 
 </td>
 </tr>
@@ -106,8 +98,6 @@ The "`create forbidden`" setting is defined for the entity set in the OData serv
 
 The entity set represents a database view, for example, a table or a calculation view.
 
-
-
 </td>
 </tr>
 <tr>
@@ -115,16 +105,12 @@ The entity set represents a database view, for example, a table or a calculation
 
 The entity set represents input parameters for a calculation view.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- “`aggregation`” is defined for the entity set, for example, using the “`aggregates always`” expression in the OData service definition \(`.xsodata`\) file.
-
-
+“`aggregation`” is defined for the entity set, for example, using the “`aggregates always`” expression in the OData service definition \(`.xsodata`\) file.
 
 </td>
 </tr>
@@ -159,30 +145,22 @@ The following table shows the additional values that are supported for the attri
 
 Parameter Value
 
-
-
 </th>
 <th valign="top">
 
 Requirement
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top" rowspan="5">
 
- “false” 
-
-
+“false” 
 
 </td>
 <td valign="top">
 
 The "`update forbidden`" setting is defined for the entity set in the OData service definition \(`.xsodata`\) file
-
-
 
 </td>
 </tr>
@@ -191,8 +169,6 @@ The "`update forbidden`" setting is defined for the entity set in the OData serv
 
 The entity set represents a database view, for example, a table or a calculation view.
 
-
-
 </td>
 </tr>
 <tr>
@@ -200,16 +176,12 @@ The entity set represents a database view, for example, a table or a calculation
 
 The entity set represents input parameters for a calculation view.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- “`aggregation`” is defined for the entity set, for example, using the “`aggregates always`” expression in the OData service definition \(`.xsodata`\) file.
-
-
+“`aggregation`” is defined for the entity set, for example, using the “`aggregates always`” expression in the OData service definition \(`.xsodata`\) file.
 
 </td>
 </tr>
@@ -217,8 +189,6 @@ The entity set represents input parameters for a calculation view.
 <td valign="top">
 
 A generated key is defined for the entity set.
-
-
 
 </td>
 </tr>
@@ -253,30 +223,22 @@ The following table shows the additional values that are supported for the attri
 
 Parameter Value
 
-
-
 </th>
 <th valign="top">
 
 Requirement
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top" rowspan="5">
 
- “false” 
-
-
+“false” 
 
 </td>
 <td valign="top">
 
 The "`delete forbidden`" setting is defined for the entity set in the OData service definition \(`.xsodata`\) file
-
-
 
 </td>
 </tr>
@@ -285,8 +247,6 @@ The "`delete forbidden`" setting is defined for the entity set in the OData serv
 
 The entity set represents a database view, for example, a table or a calculation view.
 
-
-
 </td>
 </tr>
 <tr>
@@ -294,16 +254,12 @@ The entity set represents a database view, for example, a table or a calculation
 
 The entity set represents input parameters for a calculation view.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- “`aggregation`” is defined for the entity set, for example, using the “`aggregates always`” expression in the OData service definition \(`.xsodata`\) file.
-
-
+“`aggregation`” is defined for the entity set, for example, using the “`aggregates always`” expression in the OData service definition \(`.xsodata`\) file.
 
 </td>
 </tr>
@@ -311,8 +267,6 @@ The entity set represents input parameters for a calculation view.
 <td valign="top">
 
 A generated key is defined for the entity set.
-
-
 
 </td>
 </tr>

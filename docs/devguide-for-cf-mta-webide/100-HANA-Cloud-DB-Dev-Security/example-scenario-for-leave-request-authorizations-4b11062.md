@@ -28,21 +28,15 @@ The example used here to explain the different authorizations required for the d
 
 Step
 
-
-
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Role
-
-
 
 </th>
 </tr>
@@ -51,21 +45,15 @@ Role
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Create a leave request
 
-
-
 </td>
 <td valign="top">
 
 Employee
-
-
 
 </td>
 </tr>
@@ -74,21 +62,15 @@ Employee
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Approve a leave request
 
-
-
 </td>
 <td valign="top">
 
 Manager
-
-
 
 </td>
 </tr>
@@ -97,21 +79,15 @@ Manager
 
 3
 
-
-
 </td>
 <td valign="top">
 
 Calculate available leave reserves
 
-
-
 </td>
 <td valign="top">
 
 Payroll Administrator
-
-
 
 </td>
 </tr>
@@ -132,28 +108,20 @@ The employee John Doe needs the authorizations to enable him to create, edit, vi
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Role
-
-
 
 </th>
 <th valign="top">
 
 Authorization
 
-
-
 </th>
 <th valign="top">
 
 Attribute
-
-
 
 </th>
 </tr>
@@ -162,28 +130,20 @@ Attribute
 
 John Doe
 
-
-
 </td>
 <td valign="top" rowspan="4">
 
 Employee
-
-
 
 </td>
 <td valign="top">
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -192,14 +152,10 @@ Own
 
 Edit
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -208,14 +164,10 @@ Own
 
 View
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -224,14 +176,10 @@ Own
 
 Delete
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -252,28 +200,20 @@ John Doe's manager, Julia Moore, needs the authorizations that enable her to app
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Role
-
-
 
 </th>
 <th valign="top">
 
 Authorization
 
-
-
 </th>
 <th valign="top">
 
 Attribute
-
-
 
 </th>
 </tr>
@@ -282,28 +222,20 @@ Attribute
 
 Julia Moore
 
-
-
 </td>
 <td valign="top" rowspan="4">
 
 Employee
-
-
 
 </td>
 <td valign="top">
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -312,14 +244,10 @@ Own
 
 Edit
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -328,14 +256,10 @@ Own
 
 View
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -344,14 +268,10 @@ Own
 
 Delete
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -360,21 +280,15 @@ Own
 
 Manager
 
-
-
 </td>
 <td valign="top">
 
 Approve
 
-
-
 </td>
 <td valign="top">
 
 Managed employees
-
-
 
 </td>
 </tr>
@@ -383,14 +297,10 @@ Managed employees
 
 Edit
 
-
-
 </td>
 <td valign="top">
 
 Managed employees
-
-
 
 </td>
 </tr>
@@ -399,14 +309,10 @@ Managed employees
 
 View
 
-
-
 </td>
 <td valign="top">
 
 Managed employees
-
-
 
 </td>
 </tr>
@@ -427,28 +333,20 @@ A payroll administrators of the human resources department is only interested in
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Role
-
-
 
 </th>
 <th valign="top">
 
 Authorization
 
-
-
 </th>
 <th valign="top">
 
 Attribute
-
-
 
 </th>
 </tr>
@@ -457,28 +355,20 @@ Attribute
 
 Mark Smith
 
-
-
 </td>
 <td valign="top" rowspan="4">
 
 Employee
-
-
 
 </td>
 <td valign="top">
 
 Create
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -487,14 +377,10 @@ Own
 
 Edit
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -503,14 +389,10 @@ Own
 
 View
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -519,14 +401,10 @@ Own
 
 Delete
 
-
-
 </td>
 <td valign="top">
 
 Own
-
-
 
 </td>
 </tr>
@@ -535,21 +413,15 @@ Own
 
 Payroll Administrator
 
-
-
 </td>
 <td valign="top">
 
 View
 
-
-
 </td>
 <td valign="top">
 
 All employees
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ Provides information about row tables, including detailed table sizes and record
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the table name.
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of records in this table.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of records in this table.
 
 ALLOCATED\_FIXED\_PART\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory size in bytes for the fixed-size part.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the allocated memory size in bytes for the fixed-size part.
 
 FIXED\_PAGE\_HEADER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated and used memory size in bytes for the page headers of the fixed-size part.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the allocated and used memory size in bytes for the page headers of the
 
 FIXED\_PAGE\_FRAGMENT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the fragmented memory size in bytes of the fixed-size part.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the fragmented memory size in bytes of the fixed-size part.
 
 USED\_FIXED\_PART\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used memory size in bytes for the fixed-size part.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the used memory size in bytes for the fixed-size part.
 
 FIXED\_PART\_FRAGMENT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the fragmented memory size in bytes of the used fixed-size part.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the fragmented memory size in bytes of the used fixed-size part.
 
 FIXED\_PART\_FREE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the free memory size in bytes in the pages of the fixed-size part.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the free memory size in bytes in the pages of the fixed-size part.
 
 ALLOCATED\_VARIABLE\_PART\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory size in bytes for the variable-size part.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the allocated memory size in bytes for the variable-size part.
 
 USED\_VARIABLE\_PART\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used memory size in bytes for the variable-size part.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the used memory size in bytes for the variable-size part.
 
 VARIABLE\_PART\_FRAGMENT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the fragmented memory size in bytes of the used variable-size part.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the fragmented memory size in bytes of the used variable-size part.
 
 LOAD\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the loading state of the table: LOADED, NOW\_LOADING, PREPARING\_UNLOAD, NOW\_UNLOADING, UNLOADED, or NOT\_SUPPORTED
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the loading state of the table: LOADED, NOW\_LOADING, PREPARING\_UNLOAD
 
 IS\_REPLICA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the flag to indicate a replica.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the flag to indicate a replica.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the create time of the table.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the create time of the table.
 
 CONTAINER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of containers for the table.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the number of containers for the table.
 
 SCAN\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of table scans.
-
-
 
 </td>
 </tr>
@@ -491,5 +371,5 @@ Displays the number of table scans.
 
 [DROP TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-table-statement-data-definition-20d7fd2.md "Removes a physical or virtual table from the database.")
 
-[Managing Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/68554490aee94885ba31611489a04992.html "The SAP HANA database stores data in memory in tables, organized in columns, and partitions, distributed among multiple servers.") :arrow_upper_right:
+[Managing Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/68554490aee94885ba31611489a04992.html "The SAP HANA database stores data in memory in tables, organized in columns, and partitions, distributed among multiple servers.") :arrow_upper_right:
 

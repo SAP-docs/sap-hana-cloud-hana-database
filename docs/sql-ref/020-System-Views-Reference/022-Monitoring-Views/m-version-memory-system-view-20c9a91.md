@@ -17,21 +17,15 @@ Provides information about memory use of the row-store Multiversion Concurrency 
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 ALLOCATED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of memory allocated for row-store version space in bytes.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the size of memory allocated for row-store version space in bytes.
 
 USED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of memory actually used by row-store versions in bytes.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the size of memory actually used by row-store versions in bytes.
 
 RECLAIMED\_VERSION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of memory reclaimed by row-store version garbage collection in bytes.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the size of memory reclaimed by row-store version garbage collection in
 
 FREE\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of memory freed and reusable in row-store version space in bytes.
-
-
 
 </td>
 </tr>

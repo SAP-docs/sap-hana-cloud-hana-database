@@ -37,964 +37,712 @@ The following table lists in alphabetical order the design-time artifacts you ca
 
 Artifact Suffix
 
-
-
 </th>
 <th valign="top">
 
 Description/Content
-
-
 
 </th>
 <th valign="top">
 
 Build Plug-in
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `csv` 
-
-
+`csv` 
 
 </td>
 <td valign="top">
 
 Source data for a table-import operation \(also `hdbtabledata`\)
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.tabledata.source` 
-
-
+`com.sap.hana.di.tabledata.source` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `.? (txt, copy only)` 
-
-
+`.? (txt, copy only)` 
 
 </td>
 <td valign="top">
 
 An arbitrary design-time resource
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.copyonly` 
-
-
+`com.sap.hana.di.copyonly` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbafllangprocedure` 
-
-
+`hdbafllangprocedure` 
 
 </td>
 <td valign="top">
 
 Definition of a language procedure for an application function library \(AFL\)
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.afllangprocedure` 
-
-
+`com.sap.hana.di.afllangprocedure` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbanalyticprivilege` 
-
-
+`hdbanalyticprivilege` 
 
 </td>
 <td valign="top">
 
 Definition of an XML-based analytic privilege
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.analyticprivilege` 
-
-
+`com.sap.hana.di.analyticprivilege` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbcalculationview` 
-
-
+`hdbcalculationview` 
 
 </td>
 <td valign="top">
 
 Definition of a calculation view
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.calculationview` 
-
-
+`com.sap.hana.di.calculationview` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbconstraint` 
-
-
+`hdbconstraint` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time constraint into a constraint on database tables
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.constraint` 
-
-
+`com.sap.hana.di.constraint` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbdropcreatetable` 
-
-
+`hdbdropcreatetable` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time table resource into a table database object
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.dropcreatetable` 
-
-
+`com.sap.hana.di.dropcreatetable` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbflowgraph` 
-
-
+`hdbflowgraph` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time flow-graph description into a corresponding set of database procedure or task objects
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.flowgraph` 
-
-
+`com.sap.hana.di.flowgraph` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbfunction` 
-
-
+`hdbfunction` 
 
 </td>
 <td valign="top">
 
 Database function definition
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.function` 
-
-
+`com.sap.hana.di.function` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbgraphworkspace` 
-
-
+`hdbgraphworkspace` 
 
 </td>
 <td valign="top">
 
 Definition of a graph work space resource
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.graphworkspace` 
-
-
+`com.sap.hana.di.graphworkspace` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbindex` 
-
-
+`hdbindex` 
 
 </td>
 <td valign="top">
 
 Table index definition
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.index` 
-
-
+`com.sap.hana.di.index` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `jar` 
-
-
+`jar` 
 
 </td>
 <td valign="top">
 
 Optional mapping, if you want direct access to Hadoop files
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.virtualfunctionpackage.hadoop` 
-
-
+`com.sap.hana.di.virtualfunctionpackage.hadoop` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdblibrary` 
-
-
+`hdblibrary` 
 
 </td>
 <td valign="top">
 
 A design-time library resource
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.library` 
-
-
+`com.sap.hana.di.library` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdblogicalschema` 
-
-
+`hdblogicalschema` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time logical-schema definition into database objects that can be consumed by synonyms etc.
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.logicalschema` 
-
-
+`com.sap.hana.di.logicalschema` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbprocedure` 
-
-
+`hdbprocedure` 
 
 </td>
 <td valign="top">
 
 Definition of a database procedure
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.procedure` 
-
-
+`com.sap.hana.di.procedure` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbprojectionview` 
-
-
+`hdbprojectionview` 
 
 </td>
 <td valign="top">
 
 Definition of a projection view
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.projectionview` 
-
-
+`com.sap.hana.di.projectionview` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbprojectionviewconfig` 
-
-
+`hdbprojectionviewconfig` 
 
 </td>
 <td valign="top">
 
 Configuration file for a projection view
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.projectionview.config` 
-
-
+`com.sap.hana.di.projectionview.config` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbpublicsynonym` 
-
-
+`hdbpublicsynonym` 
 
 </td>
 <td valign="top">
 
 Definition of a public database synonym
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.publicsynonym` 
-
-
+`com.sap.hana.di.publicsynonym` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbreptask` 
-
-
+`hdbreptask` 
 
 </td>
 <td valign="top">
 
 Transform a design-time replication task description into a corresponding set of database procedure or task operations
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.reptask` 
-
-
+`com.sap.hana.di.reptask` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbresultcache` 
-
-
+`hdbresultcache` 
 
 </td>
 <td valign="top">
 
 Definition of a result cache
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.resultcache` 
-
-
+`com.sap.hana.di.resultcache` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbrole` 
-
-
+`hdbrole` 
 
 </td>
 <td valign="top">
 
 Definition of a database roles
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.role` 
-
-
+`com.sap.hana.di.role` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbroleconfig` 
-
-
+`hdbroleconfig` 
 
 </td>
 <td valign="top">
 
 Configuration of database privileges \(and other roles\) to be included in a database role
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.roleconfig` 
-
-
+`com.sap.hana.di.roleconfig` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbsearchruleset` 
-
-
+`hdbsearchruleset` 
 
 </td>
 <td valign="top">
 
 Definition of search configurations for built-in search procedure
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.searchruleset` 
-
-
+`com.sap.hana.di.searchruleset` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbsequence` 
-
-
+`hdbsequence` 
 
 </td>
 <td valign="top">
 
 Definition of a database sequence
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.sequence` 
-
-
+`com.sap.hana.di.sequence` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbsynonym` 
-
-
+`hdbsynonym` 
 
 </td>
 <td valign="top">
 
 Database synonym definition
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.synonym` 
-
-
+`com.sap.hana.di.synonym` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbsynonymconfig` 
-
-
+`hdbsynonymconfig` 
 
 </td>
 <td valign="top">
 
 Configuration file for a database synonym
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.synonym.config` 
-
-
+`com.sap.hana.di.synonym.config` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbstatistics` 
-
-
+`hdbstatistics` 
 
 </td>
 <td valign="top">
 
 Statistics definition file
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.statistics` 
-
-
+`com.sap.hana.di.statistics` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbstructuredprivilege` 
-
-
+`hdbstructuredprivilege` 
 
 </td>
 <td valign="top">
 
 Definition of analytic or structured privileges
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.structuredprivilege` 
-
-
+`com.sap.hana.di.structuredprivilege` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbsystemversioning` 
-
-
+`hdbsystemversioning` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time, system-versioned table that refers to a current and history table into a system-versioned table database object
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.systemversioning` 
-
-
+`com.sap.hana.di.systemversioning` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbtable` 
-
-
+`hdbtable` 
 
 </td>
 <td valign="top">
 
 Table operations
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.table` 
-
-
+`com.sap.hana.di.table` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbtabledata` 
-
-
+`hdbtabledata` 
 
 </td>
 <td valign="top">
 
 Definition of a data-import operation for a database table \(also `csv`\)
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.tabledata` 
-
-
+`com.sap.hana.di.tabledata` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbtabletype` 
-
-
+`hdbtabletype` 
 
 </td>
 <td valign="top">
 
 Definition of a table type
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.tabletype` 
-
-
+`com.sap.hana.di.tabletype` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbtrigger` 
-
-
+`hdbtrigger` 
 
 </td>
 <td valign="top">
 
 Database trigger definition
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.trigger` 
-
-
+`com.sap.hana.di.trigger` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbview` 
-
-
+`hdbview` 
 
 </td>
 <td valign="top">
 
 View definition file
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.view` 
-
-
+`com.sap.hana.di.view` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbvirtualfunction` 
-
-
+`hdbvirtualfunction` 
 
 </td>
 <td valign="top">
 
 Definition of a virtual database function
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.virtualfunction` 
-
-
+`com.sap.hana.di.virtualfunction` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbvirtualfunctionconfig` 
-
-
+`hdbvirtualfunctionconfig` 
 
 </td>
 <td valign="top">
 
 Configuration file for a virtual function
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.virtualfunction.config` 
-
-
+`com.sap.hana.di.virtualfunction.config` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbvirtualpackage` 
-
-
+`hdbvirtualpackage` 
 
 </td>
 <td valign="top">
 
 Transform a design-time Hadoop Map Reduce Job or SparkSQL resource into a virtual-package database object
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.virtualpackage.hadoop` 
-
-
+`com.sap.hana.di.virtualpackage.hadoop` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbvirtualprocedure` 
-
-
+`hdbvirtualprocedure` 
 
 </td>
 <td valign="top">
 
 Definition of a virtual database procedure
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.virtualprocedure` 
-
-
+`com.sap.hana.di.virtualprocedure` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbvirtualprocedureconfig` 
-
-
+`hdbvirtualprocedureconfig` 
 
 </td>
 <td valign="top">
 
 Configuration file for the virtual database procedure definition
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.virtualprocedure.config` 
-
-
+`com.sap.hana.di.virtualprocedure.config` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbvirtualtable` 
-
-
+`hdbvirtualtable` 
 
 </td>
 <td valign="top">
 
 Definition of a virtual table
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.virtualtable` 
-
-
+`com.sap.hana.di.virtualtable` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hdbvirtualtableconfig` 
-
-
+`hdbvirtualtableconfig` 
 
 </td>
 <td valign="top">
 
 Virtual table configuration file
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.virtualtable.config` 
-
-
+`com.sap.hana.di.virtualtable.config` 
 
 </td>
 </tr>
@@ -1005,21 +753,15 @@ Virtual table configuration file
 
 `tags`
 
-
-
 </td>
 <td valign="top">
 
 Properties file for a table-import operation
 
-
-
 </td>
 <td valign="top">
 
- `com.sap.hana.di.tabledata.properties` 
-
-
+`com.sap.hana.di.tabledata.properties` 
 
 </td>
 </tr>
@@ -1028,7 +770,7 @@ Properties file for a table-import operation
 **Related Information**  
 
 
-[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
+[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
 
 [The SAP HDI Container Configuration File](the-sap-hdi-container-configuration-file-6400400.md "Bind design-time file types to the corresponding build plug-in required in the SAP HANA Deployment Infrastructure (HDI).")
 

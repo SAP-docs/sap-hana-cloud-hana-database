@@ -15,21 +15,15 @@ Provides information on concat columns in the database.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the table.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name of the table.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the table name.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the object ID of the table.
 
 CONCAT\_COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the concat column name.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the concat column name.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the position of the column.
-
-
 
 </td>
 </tr>
@@ -153,25 +117,27 @@ Displays the position of the column.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the column name.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio02fb9caf72a44272b311b5508165617a__section_urf_rbq_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -204,9 +170,9 @@ Displays the column name.
 
 [CS\_VIEW\_PARAMETERS System View](cs-view-parameters-system-view-3abb271.md "Provides a list of parameters of the objects in the SAP HANA database. Only calculation views are considered. The parameters of a view are parsed from the definition of the underlying scenario.")
 
-[Memory Management in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/bd6e6be8bb5710149e34e14608e07b76.html "The column store is the part of the SAP HANA database that manages data organized in columns in memory. Tables created as column tables are stored here.") :arrow_upper_right:
+[Memory Management in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bd6e6be8bb5710149e34e14608e07b76.html "The column store is the part of the SAP HANA database that manages data organized in columns in memory. Tables created as column tables are stored here.") :arrow_upper_right:
 
 [CONCAT Function \(String\)](../../010-SQL-Reference/011-SQL-Functions/concat-function-string-20dd51f.md "Returns a combined string consisting of two specified strings.")
 
-[Concatenate Two Arrays](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/efc8eca4c00b454784eafb625af416d3.html "") :arrow_upper_right:
+[Concatenate Two Arrays](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/efc8eca4c00b454784eafb625af416d3.html "") :arrow_upper_right:
 

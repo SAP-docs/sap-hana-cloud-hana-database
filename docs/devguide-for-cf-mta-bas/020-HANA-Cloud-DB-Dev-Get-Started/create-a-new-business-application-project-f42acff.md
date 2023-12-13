@@ -32,7 +32,7 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
 
     -   Open the command palette:
 
-        Either press  [Crtl\] + [Shift\] + [P\]  
+        Either press [Crtl\] + [Shift\] + [P\]  
 
         Or choose *View* \> *Command Palette...*
 
@@ -41,7 +41,7 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
 
         Or just press [F1\]
 
-    -   In the command palette, type ***Project*** and choose *Create Project from Template*.
+    -   In the command palette, type `Project` and choose *Create Project from Template*.
 
     > ### Tip:  
     > Alternatively, in the *Welcome* tab, choose *Start from Template* \> *Create a new project*.
@@ -50,7 +50,7 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
 
     1.  In the *New Project from Template* Wizard, choose *SAP HANA Database Project* and then choose *Start*.
 
-    2.  In the *Add Basic Information* pane, type the name of the new project \(***FlightReservation*** \) and choose *Next*.
+    2.  In the *Add Basic Information* pane, type the name of the new project \(`FlightReservation` \) and choose *Next*.
 
     3.  In the *Set Basic Properties* pane, accept the default settings and choose *Next*.
 
@@ -62,7 +62,7 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
 
         -   *Schema Name* \(empty\)
 
-        -   *SAP HANA Database Version \** \(HANA Cloud\)
+        -   *SAP HANA Database Version \** \(SAP HANA Cloud\)
 
         -   *Bind the database module to a Cloud Foundry service instance?* \(Yes\)
 
@@ -124,7 +124,7 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
         > Since the `.env` file can contain sensitive information, for example, in the form of user credentials, the *SAP HANA Projects* explorer checks if an application project's `.gitignore` file includes an entry for the application's `.env` file. If no entry for `.env` exists, a warning is displayed with a recommendation to add the `.env` file manually to the list of files for Git to ignore. For more information, see *Security Considerations* in *Related Information* below.
 
     3.  In the *SAP HANA Project Explorer,* the UI element *Database Connections* contains the entry *hdi\_db*.
-    4.  The UI elements ![](images/BAS_icon_dataConnections_e11cd70.svg) *Database Connections* and ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdi\_db* are both green \(bound/enabled\).
+    4.  The UI elements ![](images/BAS_icon_dataConnections_e11cd70.svg)*Database Connections* and ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdi\_db* are both green \(bound/enabled\).
 
         > ### Tip:  
         > If the application's database module is **bound** to a deploy service, the assigned SAP HDI container is used to store both the application's design-time and deployed run-time artifacts.
@@ -132,19 +132,22 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
 
 5.  Set up the SAP HANA Database Explorer.
 
-    The SAP HANA Database Explorer enables you to view the run-time objects that are deployed to the SAP HDI container assigned to the SAP HANA database application.
+    The SAP HANA Database Explorer enables you to view the run-time objects that are deployed to the SAP HDI container assigned to the SAP HANA database application. You can use either the standalone *SAP HANA Database Explorer* or the database explorer provided by the *SAP HANA Native Application* extension for SAP Business Application Studio.
 
-    1.  Open the command palette.
+    1.  Open the standalone database explorer.
 
-    2.  Locate and run *SAP HANA: Open Database Explorer*
-
-        Depending on the security setup, you might need to provide user credentials to log in and, if required, an additional access token.
-
-    3.  Add the application project's HDI container to the SAP HANA Database Explorer.
+        Open the command palette by choosing *View* \> *Command Palette...* \(or with the keyboard shortcut [Ctrl\] + [Shift\] + [P\] \), type `data`, and choose *SAP HANA: Open Database Explorer* in the list of commands displayed.
 
         > ### Tip:  
-        > For more information about viewing the contents of HDI containers in Database Explorer, see *View Database Objects with the Database Explorer* in *Related Information* below.
+        > You can also use the *SAP HANA PROJECTS* explorer to open the standalone database explorer. Locate the application project containing the database artifacts that you want to explore, for example, *FlightReservation/db*, and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
+    2.  Open the database explorer provided by the *SAP HANA Native Application* extension for SAP Business Application Studio.
+
+        In the views pane on the left-hand side of SAP Business Application Studio, choose <span class="FPA-icons"></span> \(SAP HANA Database Explorer\) to display a list of connections to SAP HANA databases.
+
+
+    > ### Tip:  
+    > For more information about viewing the contents of HDI containers in Database Explorer, see *View Database Objects with the Database Explorer* in *Related Information* below.
 
 
 **Related Information**  

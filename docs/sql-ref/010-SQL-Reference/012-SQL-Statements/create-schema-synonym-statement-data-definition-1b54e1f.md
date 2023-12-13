@@ -70,7 +70,7 @@ Schema synonyms have the following restrictions:
     ```
 
 -   Synonyms cannot be created for the PUBLIC, SYS, or \_SYS\* schemas
--   Synonyms cannot be created for the DEFAULT SCHEMA of procedures
+-   Synonyms cannot be used for the DEFAULT SCHEMA of procedures
 -   Synonyms cannot be used to update the current schema in SET SCHEMA:
 
     ```

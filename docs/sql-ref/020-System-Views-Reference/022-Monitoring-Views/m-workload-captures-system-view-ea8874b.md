@@ -15,21 +15,15 @@ Provides information about workload captures.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 CAPTURE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of the captured workload.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the unique ID of the captured workload.
 
 CAPTURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user-specified name of the captured workload.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the user-specified name of the captured workload.
 
 CAPTURE\_DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user-specified description of the captured workload.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the user-specified description of the captured workload.
 
 CAPTURE\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the version number of the structure format for the captured workloads or capturing workload.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the version number of the structure format for the captured workloads o
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start timestamp of the capture.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the start timestamp of the capture.
 
 UTC\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the UTC start timestamp of the capture.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the UTC start timestamp of the capture.
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the end timestamp of the captured workload
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the end timestamp of the captured workload
 
 UTC\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the UTC end timestamp of the captured workload.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the UTC end timestamp of the captured workload.
 
 IS\_FILTER\_APPLIED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the flag that is set to FALSE if the user Displays any non-default value to any filter parameters.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the flag that is set to FALSE if the user Displays any non-default valu
 
 SYSTEM\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(3\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system ID in which the capture has been done.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the system ID in which the capture has been done.
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database name in which the capture has been done.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the database name in which the capture has been done.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of the workload captures.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the status of the workload captures.
 
 IS\_LOADED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the flag that is set to TRUE if the captured data is loaded into the database.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the flag that is set to TRUE if the captured data is loaded into the da
 
 PROGRESS
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the current progress of the load.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the current progress of the load.
 
 LEVEL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the level of workload captures.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the level of workload captures.
 
 PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the applied parameter's key/value pairs.
-
-
 
 </td>
 </tr>
@@ -406,21 +304,15 @@ Displays the applied parameter's key/value pairs.
 
 STATEMENT\_DURATION\_THRESHOLD
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the threshold value for the workloads to be captured.
-
-
 
 </td>
 </tr>
@@ -429,21 +321,15 @@ Displays the threshold value for the workloads to be captured.
 
 FLUSH\_INTERVAL
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the interval of flushing out the file output stream.
-
-
 
 </td>
 </tr>
@@ -452,21 +338,15 @@ Displays the interval of flushing out the file output stream.
 
 CAPTURE\_FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file name of the captured workload.
-
-
 
 </td>
 </tr>
@@ -475,21 +355,15 @@ Displays the file name of the captured workload.
 
 CAPTURE\_SESSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current or captured logical sessions.
-
-
 
 </td>
 </tr>
@@ -498,21 +372,15 @@ Displays the number of current or captured logical sessions.
 
 CAPTURE\_STATEMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current or captured statements.
-
-
 
 </td>
 </tr>
@@ -521,21 +389,15 @@ Displays the number of current or captured statements.
 
 CAPTURE\_FETCH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number current or captured fetch operations.
-
-
 
 </td>
 </tr>
@@ -544,21 +406,15 @@ Displays the number current or captured fetch operations.
 
 CAPTURE\_COMMITTED\_TRANSACTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current or captured committed transactions.
-
-
 
 </td>
 </tr>
@@ -567,21 +423,15 @@ Displays the number of current or captured committed transactions.
 
 CAPTURE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the captured workload file.
-
-
 
 </td>
 </tr>
@@ -590,21 +440,15 @@ Displays the size of the captured workload file.
 
 CAPTURE\_FAILED\_STATEMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of failed current or capture statements.
-
-
 
 </td>
 </tr>
@@ -613,21 +457,15 @@ Displays the number of failed current or capture statements.
 
 CAPTURE\_FAILED\_FETCH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of failed current or capture fetch operations.
-
-
 
 </td>
 </tr>
@@ -636,21 +474,15 @@ Displays the number of failed current or capture fetch operations.
 
 ERROR\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code generated by the system during capturing.
-
-
 
 </td>
 </tr>
@@ -659,21 +491,15 @@ Displays the error code generated by the system during capturing.
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error message generated by system during capturing.
-
-
 
 </td>
 </tr>
@@ -694,5 +520,5 @@ Displays the error message generated by system during capturing.
 
 [DROP WORKLOAD MAPPING Statement \(Workload Management\)](../../010-SQL-Reference/012-SQL-Statements/drop-workload-mapping-statement-workload-management-8d90e94.md "Drops a workload mapping.")
 
-[Workload Management](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/30f2e9cb92aa4f358dda4ac58e062d83.html "The load on an SAP HANA system can be managed by selectively applying limitations and priorities to how resources are used. Settings can be applied globally or at the level of individual user sessions by using workload classes.") :arrow_upper_right:
+[Workload Management](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/30f2e9cb92aa4f358dda4ac58e062d83.html "The load on an SAP HANA system can be managed by selectively applying limitations and priorities to how resources are used. Settings can be applied globally or at the level of individual user sessions by using workload classes.") :arrow_upper_right:
 

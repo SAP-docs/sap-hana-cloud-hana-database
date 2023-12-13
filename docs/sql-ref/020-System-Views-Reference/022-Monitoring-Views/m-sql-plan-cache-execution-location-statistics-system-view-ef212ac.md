@@ -19,21 +19,15 @@ Provides statistics for hosts where plans were executed.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ Displays the internal port.
 
 PLAN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical plan ID as a non-negative value.
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ Displays the logical plan ID as a non-negative value.
 
 EXECUTION\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host where the plan was executed.
-
-
 
 </td>
 </tr>
@@ -134,21 +104,15 @@ Displays the host where the plan was executed.
 
 EXECUTION\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port where the plan was executed.
-
-
 
 </td>
 </tr>
@@ -157,21 +121,15 @@ Displays the port where the plan was executed.
 
 TOTAL\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the tracked memory consumption in bytes.
-
-
 
 </td>
 </tr>
@@ -180,21 +138,15 @@ Displays the total size of the tracked memory consumption in bytes.
 
 AVG\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of the tracked memory consumption in bytes.
-
-
 
 </td>
 </tr>
@@ -203,21 +155,15 @@ Displays the average size of the tracked memory consumption in bytes.
 
 MIN\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum size of the tracked memory consumption in bytes.
-
-
 
 </td>
 </tr>
@@ -226,21 +172,15 @@ Displays the minimum size of the tracked memory consumption in bytes.
 
 MAX\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of the tracked memory consumption in bytes.
-
-
 
 </td>
 </tr>

@@ -117,7 +117,7 @@ You must have the ALTER object privilege on the X.509 provider.
 Change the issuer of the MyProvider X.509 provider.
 
 ```
-ALTER X509 PROVIDER MyProvider SET ISSUER 'CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US'
+ALTER X509 PROVIDER MyProvider SET ISSUER 'CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US'
 ```
 
 Remove the matching rules of the MyProvider X.509 provider.
@@ -129,7 +129,7 @@ ALTER X509 PROVIDER MyProvider UNSET MATCHING RULES
 **Related Information**  
 
 
-[X.509 Certificate-Based User Authentication](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/2b335f7eec6a450095f110ea961d77cc.html "SAP HANA supports X.509 client certificates for user authentication in single sign-on environments. In particular, X.509 certificate-based authentication can be used for technical users to secure system-to-system integration.") :arrow_upper_right:
+[X.509 Certificate-Based User Authentication](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/2b335f7eec6a450095f110ea961d77cc.html "SAP HANA supports X.509 client certificates for user authentication in single sign-on environments. In particular, X.509 certificate-based authentication can be used for technical users to secure system-to-system integration.") :arrow_upper_right:
 
 [CREATE X509 PROVIDER Statement \(Access Control\)](create-x509-provider-statement-access-control-3b3163d.md "Defines an X.509 provider in the SAP HANA database.")
 

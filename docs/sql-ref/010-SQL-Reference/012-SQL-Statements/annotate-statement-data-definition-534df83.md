@@ -149,13 +149,13 @@ ANNOTATE PARAMETER add_shipping_func.price SET 'currency'='USD';
 ANNOTATE PARAMETER add_shipping_func.shipping SET 'currency'='USD';
 ```
 
-The following statements replaces the value for the ***currency*** annotations on the ***price*** parameter:
+The following statements replaces the value for the `currency` annotations on the `price` parameter:
 
 ```
 ANNOTATE PARAMETER add_shipping_func.price SET 'currency'='CAD';
 ```
 
-The following statement removes the ***currency*** annotation on the ***shipping*** parameter:
+The following statement removes the `currency` annotation on the `shipping` parameter:
 
 ```
 ANNOTATE PARAMETER add_shipping_func.shipping UNSET 'currency';

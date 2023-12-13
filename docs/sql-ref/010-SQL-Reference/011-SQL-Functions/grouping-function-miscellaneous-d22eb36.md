@@ -67,57 +67,41 @@ GROUP BY GROUPING SETS (
 
 cust\_name
 
-
-
 </th>
 <th valign="top">
 
 cust\_id
-
-
 
 </th>
 <th valign="top">
 
 region
 
-
-
 </th>
 <th valign="top">
 
 sales\_tier
-
-
 
 </th>
 <th valign="top">
 
 num\_emp
 
-
-
 </th>
 <th valign="top">
 
 gr\_reg
-
-
 
 </th>
 <th valign="top">
 
 gr\_tier
 
-
-
 </th>
 <th valign="top">
 
 gr\_num
 
-
-
 </th>
 </tr>
 <tr>
@@ -125,56 +109,40 @@ gr\_num
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthEast
 
-
-
 </td>
 <td valign="top">
 
 gold
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -183,56 +151,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthWest
 
-
-
 </td>
 <td valign="top">
 
 gold
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -241,56 +193,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 SouthEast
 
-
-
 </td>
 <td valign="top">
 
 gold
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -299,56 +235,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthEast
 
-
-
 </td>
 <td valign="top">
 
 platinum
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -357,56 +277,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthWest
 
-
-
 </td>
 <td valign="top">
 
 platinum
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -415,56 +319,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 SouthEast
 
-
-
 </td>
 <td valign="top">
 
 platinum
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -473,56 +361,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthEast
 
-
-
 </td>
 <td valign="top">
 
 silver
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -531,56 +403,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 SouthEast
 
-
-
 </td>
 <td valign="top">
 
 silver
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -589,56 +445,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 SouthWest
 
-
-
 </td>
 <td valign="top">
 
 silver
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -647,56 +487,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthEast
 
-
-
 </td>
 <td valign="top">
 
 gold
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -705,56 +529,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthWest
 
-
-
 </td>
 <td valign="top">
 
 gold
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -763,56 +571,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 SouthEast
 
-
-
 </td>
 <td valign="top">
 
 gold
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -821,56 +613,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthEast
 
-
-
 </td>
 <td valign="top">
 
 platinum
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -879,56 +655,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthWest
 
-
-
 </td>
 <td valign="top">
 
 platinum
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -937,56 +697,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 SouthEast
 
-
-
 </td>
 <td valign="top">
 
 platinum
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -995,56 +739,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 NorthEast
 
-
-
 </td>
 <td valign="top">
 
 silver
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -1053,56 +781,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 SouthEast
 
-
-
 </td>
 <td valign="top">
 
 silver
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -1111,56 +823,40 @@ NULL
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 SouthWest
 
-
-
 </td>
 <td valign="top">
 
 silver
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -1169,56 +865,40 @@ NULL
 
 CustA
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1227,56 +907,40 @@ NULL
 
 CustI
 
-
-
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 6
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1285,56 +949,40 @@ NULL
 
 CustG
 
-
-
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 15
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1343,56 +991,40 @@ NULL
 
 CustB
 
-
-
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 26
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1401,56 +1033,40 @@ NULL
 
 CustE
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 32
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1459,56 +1075,40 @@ NULL
 
 CustF
 
-
-
 </td>
 <td valign="top">
 
 6
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 45
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1517,56 +1117,40 @@ NULL
 
 CustH
 
-
-
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 99
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1575,56 +1159,40 @@ NULL
 
 CustJ
 
-
-
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 101
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1633,56 +1201,40 @@ NULL
 
 CustK
 
-
-
 </td>
 <td valign="top">
 
 11
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 108
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1691,56 +1243,40 @@ NULL
 
 CustD
 
-
-
 </td>
 <td valign="top">
 
 4
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 180
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -1749,56 +1285,40 @@ NULL
 
 CustC
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 250
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>

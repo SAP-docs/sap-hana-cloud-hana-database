@@ -236,7 +236,7 @@ You can use a synonym in one application to enable access to database objects in
 
 9.  Bind the table-grantor service to your application project.
 
-    In the *SAP HANA PROJECTS* tab, expand the project's *Database Connections* node, select the service to which you want to bind your application \(for example, ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *EPM\_XXX-table-grantor*\), and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
+    In the *SAP HANA PROJECTS* tab, expand the project's *Database Connections* node, select the service to which you want to bind your application \(for example, ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*EPM\_XXX-table-grantor*\), and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
 
 10. Consume the synonym you created.
 

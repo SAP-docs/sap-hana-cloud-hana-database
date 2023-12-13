@@ -17,21 +17,15 @@ Displays current and historical savepoint statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the savepoint start time.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the savepoint start time.
 
 INITIATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(24\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason why the savepoint was executed.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the reason why the savepoint was executed.
 
 PURPOSE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(24\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the purpose of the savepoint.
-
-
 
 </td>
 </tr>
@@ -178,14 +136,10 @@ Displays the purpose of the savepoint.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -194,25 +148,25 @@ Displays the savepoint state. A savepoint is triggered periodically, but it can 
 
 -   ***INITIAL*** - Displays the empty statistics record \(just allocated\); immediately goes to the ***PREPARE*** state.
 
--    ***PREPARE*** - Displays that the savepoint is preparing to run.
+-   ***PREPARE*** - Displays that the savepoint is preparing to run.
 
--    ***PAGEFLUSH*** - flushes dirty pages asynchronously. ***PAGES*** and ***SIZE*** counters are updated to reflect the savepoint progress.
+-   ***PAGEFLUSH*** - flushes dirty pages asynchronously. ***PAGES*** and ***SIZE*** counters are updated to reflect the savepoint progress.
 
--    ***PRECRITICAL*** - runs any pre-critical-phase callbacks and waits for I/O of the rest of the flushed pages.
+-   ***PRECRITICAL*** - runs any pre-critical-phase callbacks and waits for I/O of the rest of the flushed pages.
 
--    ***ENTERCRITICAL*** - entering critical phase: stops updaters and waits for the critical phase lock.
+-   ***ENTERCRITICAL*** - entering critical phase: stops updaters and waits for the critical phase lock.
 
--    ***CRITICAL*** - critical phase: copies and triggers the write of any pages that are still dirty, records various information in the restart record \(log position, transaction manager state, and so on\), and increments the savepoint version. ***PAGES\_IN\_CRITICAL\_PHASE*** and ***SIZE\_IN\_CRITICAL\_PHASE*** counters are updated appropriately.
+-   ***CRITICAL*** - critical phase: copies and triggers the write of any pages that are still dirty, records various information in the restart record \(log position, transaction manager state, and so on\), and increments the savepoint version. ***PAGES\_IN\_CRITICAL\_PHASE*** and ***SIZE\_IN\_CRITICAL\_PHASE*** counters are updated appropriately.
 
--    ***EXITCRITICAL*** - exit critical phase: releases critical phase locks and restarts updaters.
+-   ***EXITCRITICAL*** - exit critical phase: releases critical phase locks and restarts updaters.
 
--    ***POSTCRITICAL*** - calls any post-critical phase callbacks, finalizes the savepoint record, and cleans up unneeded RTT entries.
+-   ***POSTCRITICAL*** - calls any post-critical phase callbacks, finalizes the savepoint record, and cleans up unneeded RTT entries.
 
--    ***FINISHING*** - waits for the flush of pages written in the critical phase and writes out the restart record and anchor page.
+-   ***FINISHING*** - waits for the flush of pages written in the critical phase and writes out the restart record and anchor page.
 
--    ***DONE*** - Displays that the savepoint has been completed successfully.
+-   ***DONE*** - Displays that the savepoint has been completed successfully.
 
--    ***ABORTED*** - Displays that the savepoint has been aborted \(for example, due to a timeout during the synchronization of the global savepoint\).
+-   ***ABORTED*** - Displays that the savepoint has been aborted \(for example, due to a timeout during the synchronization of the global savepoint\).
 
 
 
@@ -224,21 +178,15 @@ Displays the savepoint state. A savepoint is triggered periodically, but it can 
 
 VERSION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the savepoint version.
-
-
 
 </td>
 </tr>
@@ -247,21 +195,15 @@ Displays the savepoint version.
 
 REQUESTED\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the frequency of the savepoint.
-
-
 
 </td>
 </tr>
@@ -270,21 +212,15 @@ Displays the frequency of the savepoint.
 
 TIME\_SINCE\_PREVIOUS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time in seconds between the current and previous current savepoints.
-
-
 
 </td>
 </tr>
@@ -293,21 +229,15 @@ Displays the time in seconds between the current and previous current savepoints
 
 DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time in microseconds to create the savepoint.
-
-
 
 </td>
 </tr>
@@ -316,21 +246,15 @@ Displays the total time in microseconds to create the savepoint.
 
 PREPARE\_FLUSH\_RETRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times the pages were flushed in the non-critical phase before entering the critical phase.
-
-
 
 </td>
 </tr>
@@ -339,21 +263,15 @@ Displays the number of times the pages were flushed in the non-critical phase be
 
 BLOCKING\_PHASE\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the last blocking phase.
-
-
 
 </td>
 </tr>
@@ -362,21 +280,15 @@ Displays the start time of the last blocking phase.
 
 BLOCKING\_PHASE\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the phase duration in microseconds.
-
-
 
 </td>
 </tr>
@@ -385,21 +297,15 @@ Displays the phase duration in microseconds.
 
 CRITICAL\_PHASE\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the last critical phase.
-
-
 
 </td>
 </tr>
@@ -408,21 +314,15 @@ Displays the start time of the last critical phase.
 
 CRITICAL\_PHASE\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time in microseconds spent in the critical phase, during which updates are blocked.
-
-
 
 </td>
 </tr>
@@ -431,21 +331,15 @@ Displays the time in microseconds spent in the critical phase, during which upda
 
 CRITICAL\_PHASE\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the wait time in microseconds for the critical phase.
-
-
 
 </td>
 </tr>
@@ -454,21 +348,15 @@ Displays the wait time in microseconds for the critical phase.
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of bytes that have been prompted to be written to the disk.
-
-
 
 </td>
 </tr>
@@ -477,21 +365,15 @@ Displays the number of bytes that have been prompted to be written to the disk.
 
 FLUSHED\_PAGES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of asynchronously flushed pages.
-
-
 
 </td>
 </tr>
@@ -500,21 +382,15 @@ Displays the number of asynchronously flushed pages.
 
 FLUSHED\_PAGES\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -523,21 +399,15 @@ Displays the number of pages flushed in the critical phase.
 
 FLUSHED\_ROWSTORE\_PAGES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of asynchronously flushed row store pages.
-
-
 
 </td>
 </tr>
@@ -546,21 +416,15 @@ Displays the number of asynchronously flushed row store pages.
 
 FLUSHED\_ROWSTORE\_PAGES\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of row store pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -569,21 +433,15 @@ Displays the number of row store pages flushed in the critical phase.
 
 FLUSHED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of asynchronously flushed pages in bytes.
-
-
 
 </td>
 </tr>
@@ -592,21 +450,15 @@ Displays the size of asynchronously flushed pages in bytes.
 
 FLUSHED\_SIZE\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -615,21 +467,15 @@ Displays the size in bytes of pages flushed in the critical phase.
 
 FLUSHED\_ROWSTORE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the asynchronously flushed row store pages.
-
-
 
 </td>
 </tr>
@@ -638,21 +484,15 @@ Displays the size in bytes of the asynchronously flushed row store pages.
 
 FLUSHED\_ROWSTORE\_SIZE\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the row store pages flushed in the critical phase .
-
-
 
 </td>
 </tr>
@@ -661,21 +501,15 @@ Displays the size of the row store pages flushed in the critical phase .
 
 RTT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes of the rollback transaction table at the savepoint.
-
-
 
 </td>
 </tr>
@@ -696,11 +530,11 @@ This view is associated with the ALTER SYSTEM SAVEPOINT statement.
 
 The following information can be extracted from the numbers in this view:
 
--    ***CRITICAL\_PHASE\_DURATION*** shows the period of time during which the updaters were blocked in a savepoint. Normally, this should be in the millisecond range, except for global savepoints for data backup, which may take longer due to global synchronization across all nodes. If the critical phase duration is too long, there may be a problem \(for example, the I/O load is too high\).
+-   ***CRITICAL\_PHASE\_DURATION*** shows the period of time during which the updaters were blocked in a savepoint. Normally, this should be in the millisecond range, except for global savepoints for data backup, which may take longer due to global synchronization across all nodes. If the critical phase duration is too long, there may be a problem \(for example, the I/O load is too high\).
 
--    ***DURATION*** shows the total time taken by a savepoint. This should be significantly less than the configured savepoint frequency ***REQUESTED\_FREQUENCY*** \(in the range 0-10%, depending on the load\). Higher ratios indicate an I/O overload.
+-   ***DURATION*** shows the total time taken by a savepoint. This should be significantly less than the configured savepoint frequency ***REQUESTED\_FREQUENCY*** \(in the range 0-10%, depending on the load\). Higher ratios indicate an I/O overload.
 
--    ***TIME\_SINCE\_PREVIOUS*** should be close to ***REQUESTED\_FREQUENCY***. If it is significantly higher, this indicates that the savepoint is encountering a block, such as a very long column merge operation.
+-   ***TIME\_SINCE\_PREVIOUS*** should be close to ***REQUESTED\_FREQUENCY***. If it is significantly higher, this indicates that the savepoint is encountering a block, such as a very long column merge operation.
 
 -   A ratio of ***FLUSHED\_PAGES\**** vs. ***FLUSHED\_ROWSTORE\_PAGES\**** or a ratio of ***FLUSHED\_SIZE\**** vs. ***FLUSHED\_ROWSTORE\_SIZE\**** shows the respective load of column store vs. row store. The row store is only flushed during the savepoint, and the column store also flushes the data between savepoints to balance the load.
 
@@ -724,5 +558,5 @@ Aggregated values for individual counters can be queried from the M\_SAVEPOINT\_
 
 [RELEASE SAVEPOINT Statement \(Transaction Management\)](../../010-SQL-Reference/012-SQL-Statements/release-savepoint-statement-transaction-management-445eb4d.md "Releases a specified savepoint name.")
 
-[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
+[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
 

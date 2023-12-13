@@ -15,21 +15,15 @@ Provides access to a history of HSR takeover executions.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 TAKEOVER\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the takeover command. This value matches akeovers that are executed within the same system takeover process.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the start time of the takeover command. This value matches akeovers tha
 
 TAKEOVER\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the end time of the takeover command.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the end time of the takeover command.
 
 EXECUTION\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution start time for takeover of the transaction domain.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the execution start time for takeover of the transaction domain.
 
 EXECUTION\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution end time for takeover of the transaction domain.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the execution end time for takeover of the transaction domain.
 
 SITE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the generated ID of the secondary site at takeover time.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the generated ID of the secondary site at takeover time.
 
 SITE \_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical name provided by the site administrator at takeover time.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the logical name provided by the site administrator at takeover time.
 
 COORDINATOR\_NAMESERVER\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the coordinator nameserver host at takeover time.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the coordinator nameserver host at takeover time.
 
 VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SAP HANA version for the site that is executing the takeover.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the SAP HANA version for the site that is executing the takeover.
 
 SOURCE\_SITE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the generated ID of the source site at takeover time.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the generated ID of the source site at takeover time.
 
 SOURCE\_SITE \_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical name for the source site provided by the site administrator at takeover time.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the logical name for the source site provided by the site administrator
 
 SOURCE\_COORDINATOR\_NAMESERVER\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the source site coordinator nameserver host at takeover time.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the source site coordinator nameserver host at takeover time.
 
 SOURCE\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the source site SAP HANA version.
-
-
 
 </td>
 </tr>
@@ -314,14 +236,10 @@ Displays the source site SAP HANA version.
 
 TAKEOVER\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
-
-
 
 </td>
 <td valign="top">
@@ -341,21 +259,15 @@ Displays how the system went online:
 
 REPLICATION\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replication mode at takeover time.
-
-
 
 </td>
 </tr>
@@ -364,21 +276,15 @@ Displays the replication mode at takeover time.
 
 OPERATION\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the operation mode at takeover time.
-
-
 
 </td>
 </tr>
@@ -387,21 +293,15 @@ Displays the operation mode at takeover time.
 
 REPLICATION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replication status at takeover time.
-
-
 
 </td>
 </tr>
@@ -410,21 +310,15 @@ Displays the replication status at takeover time.
 
 LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the log position that has been reached by takeover.
-
-
 
 </td>
 </tr>
@@ -433,21 +327,15 @@ Displays the log position that has been reached by takeover.
 
 LOG\_POSITION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time reached by the takeover.
-
-
 
 </td>
 </tr>
@@ -456,21 +344,15 @@ Displays the time reached by the takeover.
 
 SHIPPED\_LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the highest log position that has been shipped before executing takeover.
-
-
 
 </td>
 </tr>
@@ -479,21 +361,15 @@ Displays the highest log position that has been shipped before executing takeove
 
 SHIPPED\_LOG\_POSITION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time of the last shipped log buffer before executing takeover.
-
-
 
 </td>
 </tr>
@@ -502,21 +378,15 @@ Displays the time of the last shipped log buffer before executing takeover.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a comment for the remote subscription.
-
-
 
 </td>
 </tr>

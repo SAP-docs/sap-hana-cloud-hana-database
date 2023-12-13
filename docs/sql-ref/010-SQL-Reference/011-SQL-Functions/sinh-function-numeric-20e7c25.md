@@ -28,7 +28,7 @@ Returns the hyperbolic sine of *<number\>*, where the argument is an angle expre
 
 ## Example
 
-The following example returns the value ***0*** for ***"sinh"***:
+The following example returns the value ***0*** for `"sinh"`:
 
 ```
 SELECT SINH (0.0) "sinh" FROM DUMMY;

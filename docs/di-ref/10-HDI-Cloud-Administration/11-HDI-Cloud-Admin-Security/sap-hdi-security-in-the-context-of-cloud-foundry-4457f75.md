@@ -177,7 +177,7 @@ The following diagram illustrates the binding-specific application users and the
 > ### Note:  
 > For the sake of simplicity, the HDI API users and the bindings for the HDI Deployer are not shown in this diagram.
 
- ![](images/HDI_Default_Access_Role_1_5642d77.png) 
+![](images/HDI_Default_Access_Role_1_5642d77.png)
 
 To assign roles from the HDI content to the application-binding-specific users \(the users specified in <code>“user”:</code>\), the HDI Deployer implements an automatic assignment of the “`default_access_role`” role if it is present in the deployed content.
 
@@ -188,7 +188,7 @@ If a role definition file exists at the path `src/defaults/default_access_role.h
 
 The following diagram illustrates the binding-specific application users, the role of the global access role, and the container-specific default access role:
 
- ![](images/HDI_Default_Access_Role_2_1c6dcd8.png) 
+![](images/HDI_Default_Access_Role_2_1c6dcd8.png)
 
 > ### Note:  
 > The “`default_access_role`” is assumed to be an “umbrella” role which aggregates other roles.
@@ -227,81 +227,59 @@ The technical users listed in the following table are used in the context of Clo
 
 User ID
 
-
-
 </th>
 <th valign="top">
 
 Service
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `BROKER_USER` 
-
-
+`BROKER_USER` 
 
 </td>
 <td valign="top">
 
 SAP HANA Broker
 
-
-
 </td>
 <td valign="top">
 
 Technical database user
-
-
 
 </td>
 <td valign="top">
 
 Used by the broker to connect to SAP HANA and trigger any operations required to broker schemas or HDI containers
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `BROKER_PO_USER` 
-
-
+`BROKER_PO_USER` 
 
 </td>
 <td valign="top">
 
 SAP HANA Broker
 
-
-
 </td>
 <td valign="top">
 
 Technical database user
-
-
 
 </td>
 <td valign="top">
@@ -325,11 +303,11 @@ Used by the broker to manage users and user-roles, by means of stored procedures
 
 In a Cloud Foundry environment, role developers use the SAP Web IDE for SAP HANA to create the design-time version of roles within a project stored in the GIT repository. When the developer deploys the project, a run-time version of the roles is created in an HDI container \(schema\) within the SAP HANA database.
 
-   
+  
   
 **Role Development in the SAP HANA Deployment Infrastructure \(HDI\)**
 
- ![Role Development in the SAP HANA Deployment Infrastructure (HDI)](images/HDI_Role_Development_1467df1.png "Role Development in the SAP HANA Deployment Infrastructure (HDI)") 
+![Role Development in the SAP HANA Deployment Infrastructure (HDI)](images/HDI_Role_Development_1467df1.png "Role Development in the SAP HANA Deployment Infrastructure (HDI)")
 
 
 
@@ -420,17 +398,17 @@ $> cf bind-service my-app my-hdi-container -c {"roles": "sap.myapp.roles::read_a
 **Related Information**  
 
 
-[The SAP HDI Deployer](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2023_2_QRC/en-US/1b567b05e53c4cb9b130026cb2e7302d.html "SAP HDI provides dedicated tools to enable the deployment of design-time database artifacts to the SAP HANA database.") :arrow_upper_right:
+[The SAP HDI Deployer](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/1b567b05e53c4cb9b130026cb2e7302d.html "SAP HDI provides dedicated tools to enable the deployment of design-time database artifacts to the SAP HANA database.") :arrow_upper_right:
 
 [Maintaining SAP HDI Containers](../15-HDI-Cloud-Admin-Maintain-Containers/maintaining-sap-hdi-containers-bcd6e27.md "An HDI container administrator configures and controls access to a SAP HDI container.")
 
 [SAP HDI Users](sap-hdi-users-40faae2.md "A list of the predefined users which SAP HDI relies on and a description of their respective role.")
 
-[SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications (SAP Business App Studio)](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2023_2_QRC/en-US/f8e431e3cdc14516b4ba8c9932afd1f4.html "Build applications on SAP HANA Cloud and deploy them to Cloud Foundry using SAP Business Application Studio.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications (SAP Business App Studio)](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2023_4_QRC/en-US/f8e431e3cdc14516b4ba8c9932afd1f4.html "Build applications on SAP HANA Cloud and deploy them to Cloud Foundry using SAP Business Application Studio.") :arrow_upper_right:
 
 [Best Practices and Recommendations for Developing Roles in SAP HANA](https://www.sap.com/documents/2018/04/fe086f0d-fa7c-0010-87a3-c30de2ffd8ff.html)
 
 [Roles \(.hdbrole and .hdbroleconfig\)](../../30-HDI-Cloud-Artifact-Types/roles-hdbrole-and-hdbroleconfig-625d773.md "Transform a design-time role resource (.hdbrole) into a run-time role object.")
 
-[Syntax Options in the hdbgrants File (SAP HANA Cloud Database Developer Guide for SAP Business App Studio)](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2023_2_QRC/en-US/f49c1f5c72ee453788bf79f113d83bf9.html "Assign the privileges required by users to access objects in the target schema.") :arrow_upper_right:
+[Syntax Options in the hdbgrants File (SAP HANA Cloud Database Developer Guide for SAP Business App Studio)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/f49c1f5c72ee453788bf79f113d83bf9.html "Assign the privileges required by users to access objects in the target schema.") :arrow_upper_right:
 

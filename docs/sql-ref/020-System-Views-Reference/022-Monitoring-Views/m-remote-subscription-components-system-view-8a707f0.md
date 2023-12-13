@@ -15,21 +15,15 @@ Provides remote subscription component information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 SUBSCRIPTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the subscription name.
 
 COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the component: DPSERVER, ADAPTER, RECEIVER, or APPLIER.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the component: DPSERVER, ADAPTER, RECEIVER, or APPLIER.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the component status.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the component status.
 
 MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays an error or warning message.
-
-
 
 </td>
 </tr>

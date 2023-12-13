@@ -30,23 +30,17 @@ Manage the insertion of middleware slots with the application router.
 
 Function
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `use(path, handler)` 
-
-
+`use(path, handler)` 
 
 </td>
 <td valign="top">
@@ -63,8 +57,6 @@ Inserts a request handling middleware in the current slot.
 
 
 Returns `this` for chaining.
-
-
 
 </td>
 </tr>

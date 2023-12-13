@@ -15,21 +15,15 @@ When configuring, maintaining, and using the SAP HANA deployment infrastructure 
 
 Component Area
 
-
-
 </th>
 <th valign="top">
 
 Limitation
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,14 +32,10 @@ Description
 
 Maximum number of objects per HDI container
 
-
-
 </td>
 <td valign="top">
 
 Approximately 2 billion
-
-
 
 </td>
 <td valign="top">
@@ -64,21 +54,15 @@ HDI stores file information in a table, which limits the number of files that ca
 
 Maximum number of HDI containers
 
-
-
 </td>
 <td valign="top">
 
 Application run-time: maximum number of Cloud Foundry services
 
-
-
 </td>
 <td valign="top">
 
 In the application run-time, an HDI container corresponds to a service, so the maximum number of containers is closely related to the maximum number of services. The maximum number of containers is less than \(or equal to\) the maximum number of services, depending on whether there are other types of services.
-
-
 
 </td>
 </tr>
@@ -87,14 +71,10 @@ In the application run-time, an HDI container corresponds to a service, so the m
 
 Database: maximum number of table rows
 
-
-
 </td>
 <td valign="top">
 
 In the database, the limit for HDI containers is approximately 80 million, due to the limits for table rows in SAP HANA.
-
-
 
 </td>
 </tr>
@@ -103,14 +83,10 @@ In the database, the limit for HDI containers is approximately 80 million, due t
 
 Max number of services
 
-
-
 </td>
 <td valign="top">
 
 Defined space quotas, account entitlements, etc.
-
-
 
 </td>
 <td valign="top">
@@ -119,8 +95,6 @@ For Cloud Foundry, the maximum number of services depends on the account entitle
 
 For more details, see *Related Information* below.
 
-
-
 </td>
 </tr>
 <tr>
@@ -128,21 +102,15 @@ For more details, see *Related Information* below.
 
 HDI container size
 
-
-
 </td>
 <td valign="top">
 
 Schema sizing
 
-
-
 </td>
 <td valign="top">
 
 You can evaluate the size of an HDI container in the same way as you evaluate any SAP HANA schema. The standard SAP HANA monitoring views should contain all information that is needed. It is also possible to use the built-in statements from the Database Explorer’s statement library to display details of the size of HDI containers. For more details, see *Related Information* below.
-
-
 
 </td>
 </tr>
@@ -151,14 +119,10 @@ You can evaluate the size of an HDI container in the same way as you evaluate an
 
 Memory requirements for HDI operations
 
-
-
 </td>
 <td valign="top">
 
 Business scenario
-
-
 
 </td>
 <td valign="top">
@@ -177,8 +141,6 @@ Peak memory usage of 122.5 MB/container can be expected during a `Make` operatio
 
 For more details about sizing HDI containers, see *Related Information* below.
 
-
-
 </td>
 </tr>
 </table>
@@ -190,5 +152,5 @@ For more details about sizing HDI containers, see *Related Information* below.
 
 [Managing Entitlements and Quotas Using SAP BTP Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/c8248745dde24afb91479361de336111.html)
 
-[System Views (SAP HANA SQL Reference Guide)](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2023_2_QRC/en-US/3859e48180bb4cf8a207e15cf25a7e57.html "System views allow you to query for various information about the system state using SQL commands. The results appear as tables.") :arrow_upper_right:
+[System Views (SAP HANA SQL Reference Guide)](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2023_4_QRC/en-US/3859e48180bb4cf8a207e15cf25a7e57.html "System views allow you to query for various information about the system state using SQL commands. The results appear as tables.") :arrow_upper_right:
 

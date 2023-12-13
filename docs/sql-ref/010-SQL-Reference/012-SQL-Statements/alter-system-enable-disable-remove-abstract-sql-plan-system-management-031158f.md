@@ -103,14 +103,10 @@ Specifies the plans to which the action applies.
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Behavior
-
-
 
 </th>
 </tr>
@@ -119,14 +115,10 @@ Behavior
 
 ENABLE
 
-
-
 </td>
 <td valign="top">
 
 Enable the abstract SQL plan entries specified in the *<id\_list\>*. If multiple abstract SQL plan entries of the same query are specified in the *<id\_list\>*, then the last entry of the same query in the list is enabled.
-
-
 
 </td>
 </tr>
@@ -135,14 +127,10 @@ Enable the abstract SQL plan entries specified in the *<id\_list\>*. If multiple
 
 DISABLE
 
-
-
 </td>
 <td valign="top">
 
 Disable the abstract SQL plan entries specified in the *<id\_list\>*.
-
-
 
 </td>
 </tr>
@@ -151,14 +139,10 @@ Disable the abstract SQL plan entries specified in the *<id\_list\>*.
 
 REMOVE
 
-
-
 </td>
 <td valign="top">
 
 Remove the abstract SQL plan entries specified in the *<id\_list\>*.
-
-
 
 </td>
 </tr>
@@ -187,14 +171,10 @@ ALL applies the action to all abstract SQL plans.
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Behavior
-
-
 
 </th>
 </tr>
@@ -203,14 +183,10 @@ Behavior
 
 ENABLE
 
-
-
 </td>
 <td valign="top">
 
 For each abstract SQL plan query that does not have any enabled entry, enable the first captured entry.
-
-
 
 </td>
 </tr>
@@ -219,14 +195,10 @@ For each abstract SQL plan query that does not have any enabled entry, enable th
 
 DISABLE
 
-
-
 </td>
 <td valign="top">
 
 Disable all enabled abstract SQL plan entries.
-
-
 
 </td>
 </tr>
@@ -235,14 +207,10 @@ Disable all enabled abstract SQL plan entries.
 
 REMOVE
 
-
-
 </td>
 <td valign="top">
 
 Remove all abstract SQL plan entries.
-
-
 
 </td>
 </tr>
@@ -295,7 +263,7 @@ ALTER SYSTEM REMOVE ABSTRACT SQL PLAN RELATED OBJECT DEFINITION ALL;
 **Related Information**  
 
 
-[SQL Plan Stability](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/deab4aee414e4b00a3df5666a44adfff.html "SQL Plan Stability can be used to guarantee the consistent optimal performance of select statements by capturing query execution plans so that exactly the same plan can be reused when the query is executed again.") :arrow_upper_right:
+[SQL Plan Stability](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/deab4aee414e4b00a3df5666a44adfff.html "SQL Plan Stability can be used to guarantee the consistent optimal performance of select statements by capturing query execution plans so that exactly the same plan can be reused when the query is executed again.") :arrow_upper_right:
 
 [ALTER SYSTEM \{ADD | REMOVE\} ABSTRACT SQL PLAN FILTER \(System Management\)](alter-system-add-remove-abstract-sql-plan-filter-system-management-9c6ac16.md "Starts or stops capturing abstract SQL plans for queries that match the specified filters.")
 

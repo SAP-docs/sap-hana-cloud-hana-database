@@ -84,7 +84,7 @@ Sets *<num\_to\_unset\>* bits to 0 in *<target\_num\>* from the *<start\_bit\>* 
 
 ## Example
 
-The following example returns the value ***1FFF*** for ***"bitunset"***:
+The following example returns the value ***1FFF*** for `"bitunset"`:
 
 ```
 SELECT BITUNSET ('ffff', 1, 3) "bitunset" FROM DUMMY;

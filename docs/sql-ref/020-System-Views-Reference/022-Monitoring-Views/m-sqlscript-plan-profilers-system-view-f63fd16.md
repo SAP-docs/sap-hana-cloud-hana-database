@@ -17,21 +17,15 @@ Lists the sessions and procedures that are currently being profiled by the SQLSc
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the user name.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp that the ALTER SYSTEM ... SQLSCRIPT PLAN PROFILER statement was executed.Displays the ID of the user who executed the ALTER SYSTEM ... SQLSCRIPT PLAN PROFILER statement
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the timestamp that the ALTER SYSTEM ... SQLSCRIPT PLAN PROFILER stateme
 
 PROCEDURE\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID if a FOR SESSION filter is specified, otherwise NULL.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the connection ID if a FOR SESSION filter is specified, otherwise NULL.
 
 PROCEDURE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the procedure schema name if a FOR PROCEDURE filter is specified, otherwise, NULL.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the procedure schema name if a FOR PROCEDURE filter is specified, other
 
 PROCEDURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the procedure name if a FOR PROCEDURE filter is specified.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the procedure name if a FOR PROCEDURE filter is specified.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name where profiler is executed.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the host name where profiler is executed.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port where profiler is executed.
-
-
 
 </td>
 </tr>
@@ -231,7 +183,7 @@ To see all entries in the M\_SQLSCRIPT\_PLAN\_PROFILERS system view, you must ha
 **Related Information**  
 
 
-[SQLScript Plan Profiler](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/ba8396bcc4344c5988fb78749a6d02c2.html "") :arrow_upper_right:
+[SQLScript Plan Profiler](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/ba8396bcc4344c5988fb78749a6d02c2.html "") :arrow_upper_right:
 
 [ALTER SYSTEM \{START | STOP | CLEAR\} SQLSCRIPT PLAN PROFILER Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-start-stop-clear-sqlscript-plan-profiler-statement-system-manag-f518753.md "Starts, stops, and clears the SQLScript Plan Profiling feature.")
 

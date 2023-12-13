@@ -45,7 +45,7 @@ This tutorial shows how to create and set up a dev space in SAP Business Applica
         > ### Tip:  
         > If you are not sure which extensions you need, bear in mind that you can add extensions later after creating a dev space, for example, using the *\[Edit\]* tool in the list of dev spaces as described in the next steps.
 
-    5.  Provide a name for the new space, for example, "***HANADEV***"
+    5.  Provide a name for the new space, for example, "`HANADEV`"
 
         > ### Tip:  
         > The name must contain only alphanumeric characters; special characters are not permitted.
@@ -73,7 +73,7 @@ This tutorial shows how to create and set up a dev space in SAP Business Applica
 
     1.  Log in to Cloud Foundry.
 
-        Click the message *The Organization and space in CF have not been set* in the status bar to open the command palette, where the *CF: Log in to cloud foundry* Wizard prompts you for the information required to log on to Cloud Foundry. Alternatively, you can use the *Cloud Foundry: Targets* tool in the tool-selection pane to display a list of known Cloud Foundry targets; create a new target; or set the default target organization and space to use for your dev space.
+        Click the message *The Organization and space in CF have not been set* in the status bar to open the *Cloud Foundry Sign In and Targets* Wizard. Alternatively, choose *View* \> *Command Palette...*, type `CF`, and select the *CF: Log in to cloud foundry* command to open a Wizard that prompts you for the information required to log on to Cloud Foundry. The *Cloud Foundry: Targets* tool in the tool-selection pane to display a list of known Cloud Foundry targets; create a new target; or set the default target organization and space to use for your dev space.
 
         > ### Note:  
         > To log on to Cloud Foundry, you need to know the Cloud Foundry API end point, for example, <code>https://api.cf.sap.hana.<i class="varname">&lt;etc...&gt;</i></code>. You will also need to provide a CF user name \(or e-mail address\) and a corresponding password. If two-factor authentication is active, bear in mind that an additional one-time authentication token is required.

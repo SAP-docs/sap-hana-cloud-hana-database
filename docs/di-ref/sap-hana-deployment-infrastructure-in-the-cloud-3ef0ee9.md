@@ -9,7 +9,7 @@ The SAP HANA Deployment Infrastructure, or HDI for short, provides a service tha
 > ### Restriction:  
 > The HDI focuses strictly on deployment; HDI does not include any version-control tools, nor does it provide any tools for life-cycle management.
 
-HDI provides its services using a separate database process named `diserver`. If not already running, the `diserver` process must be enabled before HDI services can be used, for example, by the database administrator. If required by the usage scenario, other database processes may also need to be started as well.
+HDI provides its services using a separate database process named `diserver`, which in the context of SAP HANA Cloud is enabled by default. On systems where HDI is not already enabled, the `diserver` process must usually be enabled by the database administrator before HDI can be used. If required by the usage scenario, other database process may also need to be started as well.
 
 > ### Restriction:  
 > HDI enables you to deploy database objects only; it is not possible \(or necessary\) to use HDI to deploy application-layer artifacts such as JavaScript programs or OData objects.

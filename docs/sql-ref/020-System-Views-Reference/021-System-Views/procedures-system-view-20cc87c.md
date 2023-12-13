@@ -17,21 +17,15 @@ Provides information about available stored procedures.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the stored procedure.
 
 PROCEDURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the stored procedure.
 
 PROCEDURE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object ID of the stored procedure.
 
 SQL\_SECURITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL security setting of the stored procedure: DEFINER/INVOKER
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the SQL security setting of the stored procedure: DEFINER/INVOKER
 
 DEFAULT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the unqualified objects in the procedure.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema name of the unqualified objects in the procedure.
 
 INPUT\_PARAMETER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the input type parameter count.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the input type parameter count.
 
 OUTPUT\_PARAMETER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the output type parameter count.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the output type parameter count.
 
 INOUT\_PARAMETER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the in/out type parameter count.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the in/out type parameter count.
 
 RESULT\_SET\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the result set count.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the result set count.
 
 IS\_ENCRYPTED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the stored procedure is encrypted: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays whether the stored procedure is encrypted: TRUE/FALSE.
 
 DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the query string of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the query string of the stored procedure.
 
 PROCEDURE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the type of the stored procedure.
 
 READ\_ONLY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
-Displays whether the procedure is read-only: TRUE/FALSE
-
-
+Displays whether the procedure is read-only: TRUE/FALSE.
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays whether the procedure is read-only: TRUE/FALSE
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
-Displays whether the procedure is valid: TRUE/FALSE. A procedure become invalid when its base objects are changed or dropped.
-
-
+Displays whether the procedure is valid: TRUE/FALSE. A procedure becomes invalid when its base objects are changed or dropped.
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays whether the procedure is valid: TRUE/FALSE. A procedure become invalid 
 
 IS\_HEADER\_ONLY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the procedure is a header only procedure: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays whether the procedure is a header only procedure: TRUE/FALSE.
 
 IS\_DETERMINISTIC
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the stored procedure is deterministic: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays whether the stored procedure is deterministic: TRUE/FALSE.
 
 HAS\_TRANSACTION\_CONTROL\_STATEMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the procedure has transaction control statements: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays whether the procedure has transaction control statements: TRUE/FALSE.
 
 AUTO\_COMMIT\_DDL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the stored procedure runs with autocommit DDL enabled: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays whether the stored procedure runs with autocommit DDL enabled: TRUE/FAL
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the owner of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -477,25 +357,27 @@ Displays the name of the owner of the stored procedure.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
 
 Displays the creation time of the procedure.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20cc87c275191014bfc3a174bfc15c51__section_dzg_tr4_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -516,21 +398,21 @@ Displays the creation time of the procedure.
 
 [PROCEDURE\_ROUTES System View](procedure-routes-system-view-61d897c.md "Provides information about the procedure being routed. This view is for internal use only.")
 
-[Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/d43d91578c3b42b3bacfd89aacf0d62f.html "") :arrow_upper_right:
+[Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/d43d91578c3b42b3bacfd89aacf0d62f.html "") :arrow_upper_right:
 
-[CREATE PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/7a2da744ce544db1814a5fff250e99f6.html "You use this SQL statement to create a procedure.") :arrow_upper_right:
+[CREATE PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/7a2da744ce544db1814a5fff250e99f6.html "You use this SQL statement to create a procedure.") :arrow_upper_right:
 
-[ALTER PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/042ab4636cf34a9cb88dd61c808861a8.html "") :arrow_upper_right:
+[ALTER PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/042ab4636cf34a9cb88dd61c808861a8.html "") :arrow_upper_right:
 
-[DROP PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/5f244d38d5984899ae8263539badf306.html "") :arrow_upper_right:
+[DROP PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/5f244d38d5984899ae8263539badf306.html "") :arrow_upper_right:
 
-[Deterministic Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/dae6fae315c546ba9dc8665c0ca51cb9.html "") :arrow_upper_right:
+[Deterministic Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/dae6fae315c546ba9dc8665c0ca51cb9.html "") :arrow_upper_right:
 
-[Procedure Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/8c59aace1caf472ebe71e6592a06b27a.html "") :arrow_upper_right:
+[Procedure Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8c59aace1caf472ebe71e6592a06b27a.html "") :arrow_upper_right:
 
-[Procedure Calls](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/461da7cfaaff4d89b518b8ae48121263.html "") :arrow_upper_right:
+[Procedure Calls](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/461da7cfaaff4d89b518b8ae48121263.html "") :arrow_upper_right:
 
-[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
+[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
 
-[SYS.PROCEDURES](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/a7b1261516ae4166883e6bc373733de5.html "Available stored procedures") :arrow_upper_right:
+[SYS.PROCEDURES](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/a7b1261516ae4166883e6bc373733de5.html "Available stored procedures") :arrow_upper_right:
 

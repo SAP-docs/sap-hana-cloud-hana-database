@@ -17,21 +17,15 @@ The following table describes the scope of the various SAP HDI administrator rol
 
 SAP HDI Role
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Common Tasks
-
-
 
 </th>
 </tr>
@@ -39,8 +33,6 @@ Common Tasks
 <td valign="top">
 
 Database administrator
-
-
 
 </td>
 <td valign="top">
@@ -59,8 +51,6 @@ Create an HDI administrator
 
 Grant and revoke HDI administrator privileges
 
-
-
 </td>
 </tr>
 <tr>
@@ -68,14 +58,10 @@ Grant and revoke HDI administrator privileges
 
 HDI administrator
 
-
-
 </td>
 <td valign="top">
 
 Configures general SAP HDI parameters, container groups, and manages container group administrator privileges.
-
-
 
 </td>
 <td valign="top">
@@ -90,8 +76,6 @@ Maintain container groups
 
 Move containers between container groups
 
-
-
 </td>
 </tr>
 <tr>
@@ -99,14 +83,10 @@ Move containers between container groups
 
 HDI container-group administrator
 
-
-
 </td>
 <td valign="top">
 
 Manages the container groups assigned by the SAP HDI administrator. The APIs of a container group “G” are in the `_SYS_DI#G` schema.
-
-
 
 </td>
 <td valign="top">
@@ -119,8 +99,6 @@ Grant and revoke container **user** access privileges \(for support purposes\)
 
 Maintain container groups
 
-
-
 </td>
 </tr>
 <tr>
@@ -128,14 +106,10 @@ Maintain container groups
 
 HDI container administrator
 
-
-
 </td>
 <td valign="top">
 
 Configures and controls access to a container and manages run-time objects in the assigned containers. The APIs of a container “C” are in the `C#DI` schema.
-
-
 
 </td>
 <td valign="top">
@@ -149,8 +123,6 @@ Grant and revoke roles from schemas to users
 Grant and revoke user access to container schemas
 
 Cancel an asynchronous make operation
-
-
 
 </td>
 </tr>

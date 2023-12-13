@@ -85,21 +85,15 @@ Specifies an identifier for the component that uses the credential.
 
 Component
 
-
-
 </th>
 <th valign="top">
 
 *<purpose\_def\>*
 
-
-
 </th>
 <th valign="top">
 
 *<type\_def\>*
-
-
 
 </th>
 </tr>
@@ -108,14 +102,10 @@ Component
 
 SAPHANAFEDERATION
 
-
-
 </td>
 <td valign="top">
 
 *<remote\_source\_name\>*
-
-
 
 </td>
 <td valign="top">
@@ -136,21 +126,15 @@ Valid values are:
 
 DATABASE\_REPLICATION
 
-
-
 </td>
 <td valign="top">
 
 *<source\_location\>*
 
-
-
 </td>
 <td valign="top">
 
 PASSWORD
-
-
 
 </td>
 </tr>
@@ -159,14 +143,10 @@ PASSWORD
 
 SAPHANAIMPORTEXPORT
 
-
-
 </td>
 <td valign="top">
 
 *<string\_literal\>*
-
-
 
 </td>
 <td valign="top">
@@ -183,21 +163,15 @@ SAPHANAIMPORTEXPORT
 
 DATAINTELLIGENCE
 
-
-
 </td>
 <td valign="top">
 
 n/a
 
-
-
 </td>
 <td valign="top">
 
 n/a
-
-
 
 </td>
 </tr>
@@ -206,21 +180,15 @@ n/a
 
 *<string\_literal\>*
 
-
-
 </td>
 <td valign="top">
 
 *<string\_literal\>*
 
-
-
 </td>
 <td valign="top">
 
 *<string\_literal\>*
-
-
 
 </td>
 </tr>
@@ -356,7 +324,7 @@ CREATE CREDENTIAL FOR USER myDBUser COMPONENT 'SAPHANAIMPORTEXPORT' PURPOSE 'Acc
 
 [CREDENTIALS System View](../../020-System-Views-Reference/021-System-Views/credentials-system-view-209fabf.md "Provides information about credentials for users and components.")
 
-[Secure Internal Credential Store](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/282f9db1598d41aa81b49d871a5b0f51.html "The credentials required by SAP HANA applications for outbound connections can be securely stored in a database-internal credential store. For example, in an SAP HANA smart data access scenario, credentials required to access a remote source are protected using the internal application encryption service.") :arrow_upper_right:
+[Secure Internal Credential Store](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/282f9db1598d41aa81b49d871a5b0f51.html "The credentials required by SAP HANA applications for outbound connections can be securely stored in a database-internal credential store. For example, in an SAP HANA smart data access scenario, credentials required to access a remote source are protected using the internal application encryption service.") :arrow_upper_right:
 
 [Importing and Exporting Data](https://help.sap.com/viewer/DRAFT/f9c5015e72e04fffa14d7d4f7267d897/2021_3_QRC/en-US/261937915fa5438ca545b8278b2979b7.html)
 

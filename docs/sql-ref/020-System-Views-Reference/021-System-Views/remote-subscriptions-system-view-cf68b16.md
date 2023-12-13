@@ -13,21 +13,15 @@ Lists all the remote subscriptions created for a remote source.
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 SUBSCRIPTION\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription OID.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the remote subscription OID.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription schema name.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the remote subscription schema name.
 
 SUBSCRIPTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription name.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the remote subscription name.
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the owner's name.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the owner's name.
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the remote source name.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the remote subscription is valid or not: TRUE/FALSE. This value is FALSE when its source or target objects are changed or dropped.
-
-
 
 </td>
 </tr>
@@ -174,21 +132,15 @@ Displays whether the remote subscription is valid or not: TRUE/FALSE. This value
 
 SUBSCRIPTION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(13\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription type.
-
-
 
 </td>
 </tr>
@@ -197,21 +149,15 @@ Displays the remote subscription type.
 
 VIRTUAL\_TABLE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the virtual table schema name.
-
-
 
 </td>
 </tr>
@@ -220,21 +166,15 @@ Displays the virtual table schema name.
 
 VIRTUAL\_TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the virtual table name.
-
-
 
 </td>
 </tr>
@@ -243,21 +183,15 @@ Displays the virtual table name.
 
 SUBSCRIPTION\_QUERY\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the SELECT statement specified in the subscription when subscription type is SQL.
-
-
 
 </td>
 </tr>
@@ -266,21 +200,15 @@ Displays the SELECT statement specified in the subscription when subscription ty
 
 TARGET\_OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription target object type: TABLE, PROCEDURE, or TASK.
-
-
 
 </td>
 </tr>
@@ -289,21 +217,15 @@ Displays the remote subscription target object type: TABLE, PROCEDURE, or TASK.
 
 TARGET\_OBJECT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the target object schema name.
-
-
 
 </td>
 </tr>
@@ -312,21 +234,15 @@ Displays the target object schema name.
 
 TARGET\_OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the target object name.
-
-
 
 </td>
 </tr>
@@ -335,19 +251,13 @@ Displays the target object name.
 
 TARGET\_OTHER\_PARAM\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4000\)
 
-
-
 </td>
 <td valign="top">
-
-Displays the constant parameter string to pass during execution when the target object type is PROCEDURE or TASK.
 
 
 
@@ -358,21 +268,15 @@ Displays the constant parameter string to pass during execution when the target 
 
 CHANGE\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(6\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the remote subscription change mode: NULL, NORMAL, UPSERT, or INSERT.
-
-
+Displays the remote subscription change mode: NULL, NORMAL, UPSERT, or INSERT.Displays the constant parameter string to pass during execution when the target object type is PROCEDURE or TASK.
 
 </td>
 </tr>
@@ -381,21 +285,15 @@ Displays the remote subscription change mode: NULL, NORMAL, UPSERT, or INSERT.
 
 CHANGE\_TYPE\_COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription change type column name in the target table: I \(INSERT\), D \(DELETE\), and so on.
-
-
 
 </td>
 </tr>
@@ -404,21 +302,15 @@ Displays the remote subscription change type column name in the target table: I 
 
 CHANGE\_TIME\_COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the remote subscription change time column name in the target table. Supported data types are TIMESTAMP, CHAR, and NVARCHAR with a minimum length of 27.
-
-
+Displays the constant parameter string to pass during executionDisplays the remote subscription change time column name in the target table. Supported data types are TIMESTAMP, CHAR, and NVARCHAR with a minimum length of 27.
 
 </td>
 </tr>
@@ -427,21 +319,15 @@ Displays the remote subscription change time column name in the target table. Su
 
 CHANGE\_SEQUENCE\_COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription change sequence column name in the target table.
-
-
 
 </td>
 </tr>
@@ -450,21 +336,15 @@ Displays the remote subscription change sequence column name in the target table
 
 SCHEMA\_CHANGES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the remote subscription propagates schema changes: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -473,25 +353,27 @@ Displays whether or not the remote subscription propagates schema changes: TRUE/
 
 TASK\_PROCEDURE\_PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the comma-separated list of task parameters.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiocf68b16bdfce47edad38adef7a71fe64__section_bry_my4_dzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

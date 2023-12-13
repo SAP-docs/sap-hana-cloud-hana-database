@@ -57,7 +57,7 @@ The BITOR function returns a result along the argument's type.
 
 ## Example
 
-The following example performs a bitwise OR operation for the arguments ***255*** and ***123***, and returns the value ***255*** for ***"bitor"***:
+The following example performs a bitwise OR operation for the arguments `255` and `123`, and returns the value ***255*** for `"bitor"`:
 
 ```
 SELECT BITOR (255, 123) "bitor" FROM DUMMY;

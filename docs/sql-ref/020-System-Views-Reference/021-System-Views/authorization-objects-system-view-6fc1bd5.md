@@ -2,7 +2,7 @@
 
 # AUTHORIZATION\_OBJECTS System View
 
-Provides information regarding authorization objects.
+Provides information about authorization objects.
 
 
 
@@ -17,21 +17,15 @@ Provides information regarding authorization objects.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the authorization object.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the ID of the authorization object.
 
 SUBTYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the authorization object subtype.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the ID of the authorization object subtype.
 
 OBJECT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the object.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the ID of the object.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the name of the schema.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the object.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the object.
 
 OWNER\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the owner of the object ID.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the owner of the object ID.
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the object owner.
-
-
 
 </td>
 </tr>
@@ -201,25 +153,27 @@ Displays the name of the object owner.
 
 READONLY
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
 
 Displays whether or not the object is read only.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio6fc1bd5e57e04983a61396c37d0362c9__section_uqy_2lc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -228,5 +182,5 @@ Displays whether or not the object is read only.
 
 [AUTHORIZATION\_TYPES System View](authorization-types-system-view-3b7990e.md "Provides information about object types and subtypes used by authorization object IDs.")
 
-[Object Privileges](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/d6311b15a7e74e01b3f660f7d175b318.html "Object privileges are SQL privileges that are used to allow access to and modification of database objects.") :arrow_upper_right:
+[Object Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/d6311b15a7e74e01b3f660f7d175b318.html "Object privileges are SQL privileges that are used to allow access to and modification of database objects.") :arrow_upper_right:
 

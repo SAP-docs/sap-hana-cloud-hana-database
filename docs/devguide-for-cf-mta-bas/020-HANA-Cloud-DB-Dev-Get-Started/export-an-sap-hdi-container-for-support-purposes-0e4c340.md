@@ -47,45 +47,35 @@ To export a container for support purposes, perform the following steps:
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        *Select artifacts*
-
-
+    *Select artifacts*
     
     </td>
     <td valign="top">
     
-        Click <span style="font-size:24px;line-height: 28px;"><span class="SAP-icons"></span></span> \(Add artifacts\)to select the database artifacts you want to include in the export package.
-
-
+    Click <span style="font-size:24px;line-height: 28px;"><span class="SAP-icons"></span></span> \(Add artifacts\)to select the database artifacts you want to include in the export package.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        *Include container data* \(optional\)
-
-
+    *Include container data* \(optional\)
     
     </td>
     <td valign="top">
     
-        -   *Yes*
+    -   *Yes*
 
         Include the content of the objects selected for export, for example, tables.
 
@@ -104,14 +94,12 @@ To export a container for support purposes, perform the following steps:
     <tr>
     <td valign="top">
     
-        *Include external dependency options* \(optional\)
-
-
+    *Include external dependency options* \(optional\)
     
     </td>
     <td valign="top">
     
-        -   *Yes* \(default\)
+    -   *Yes* \(default\)
 
         Include in the export package any references to objects that are outside the HDI container in which the objects selected for export are located.
 
@@ -143,5 +131,5 @@ To export a container for support purposes, perform the following steps:
 **Related Information**  
 
 
-[Export an SAP HDI Container for Copy Purposes (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/c25ee286cee5496cb96fdf5875f444a2.html "An HDI container administrator can export an HDI container to a table, which can then be used to import the container into a database.") :arrow_upper_right:
+[Export an SAP HDI Container for Copy Purposes (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/c25ee286cee5496cb96fdf5875f444a2.html "An HDI container administrator can export an HDI container to a table, which can then be used to import the container into a database.") :arrow_upper_right:
 

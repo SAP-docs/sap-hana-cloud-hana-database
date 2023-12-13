@@ -17,21 +17,15 @@ Provides information about service types.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the service name.
 
 INIFILE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(36\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration file name of service.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the configuration file name of service.
 
 HAS\_DETAIL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the service shows details in M\_SERVICE\_STATISTICS: TRUE/FALSE.
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ Provides debug information after the execution of a calculation scenario.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 SCENARIO\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the scenario name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the scenario name.
 
 NODE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the calculation node name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the calculation node name.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the statement ID.
 
 DEBUG\_TYPE\_MASK
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bit mask indicating the type of debug information.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the bit mask indicating the type of debug information.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name \(temporary intermediate result table\).
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the table name \(temporary intermediate result table\).
 
 COLUMN\_NAMES
 
-
-
 </td>
 <td valign="top">
 
 CLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the column names.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the column names.
 
 TABLE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the table size in bytes \(temporary intermediate result table\).
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the table size in bytes \(temporary intermediate result table\).
 
 EXECUTION\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution timestamp.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the execution timestamp.
 
 APPLICATION\_QUERY\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application query ID.
-
-
 
 </td>
 </tr>
@@ -301,5 +229,5 @@ Displays the application query ID.
 
 [M\_DEBUG\_CONNECTIONS System View](m-debug-connections-system-view-20ae867.md "Provides an overview of connections used per debug session.")
 
-[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
+[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
 

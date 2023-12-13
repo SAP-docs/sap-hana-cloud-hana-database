@@ -46,7 +46,7 @@ The BITNOT function returns a result along the argument's type.
 
 ## Example
 
-The following example performs a BITNOT operation on ***255***, and returns the value ***\-256*** for ***"bitnot"***:
+The following example performs a BITNOT operation on `255`, and returns the value ***\-256*** for `"bitnot"`:
 
 ```
 SELECT BITNOT (255) "bitnot" FROM DUMMY;

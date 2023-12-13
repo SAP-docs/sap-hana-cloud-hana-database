@@ -28,7 +28,7 @@ Returns 1 if *<number\>* is a positive value, -1 if *<number\>* is a negative va
 
 ## Example
 
-The following example returns the value ***\-1*** for ***"sign"***:
+The following example returns the value ***\-1*** for `"sign"`:
 
 ```
 SELECT SIGN (-15) "sign" FROM DUMMY;

@@ -17,21 +17,15 @@ Provides an overview of data statistics objects.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 DATA\_STATISTICS\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the data statistics object ID.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the data statistics object ID.
 
 DATA\_STATISTICS\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data statistics type.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the data statistics type.
 
 DATA\_STATISTICS\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data statistics object schema.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the data statistics object schema.
 
 DATA\_STATISTICS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data statistics name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the data statistics name.
 
 DATA\_SOURCE\_OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data source object type, for example, TABLE.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the data source object type, for example, TABLE.
 
 DATA\_SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the data source.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the schema name of the data source.
 
 DATA\_SOURCE\_OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name of the data source.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the object name of the data source.
 
 DATA\_SOURCE\_COLUMN\_NAMES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column names of the data source.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the column names of the data source.
 
 DATA\_SOURCE\_STORAGE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the storage type of the data source.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the storage type of the data source.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the data statistics object was created.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the time when the data statistics object was created.
 
 CONSTRAINT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the constraint for the build algorithm for the data statistics object.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the constraint for the build algorithm for the data statistics object.
 
 IS\_PERSISTENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the content of the data statistics object is persistent or not: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays whether the content of the data statistics object is persistent or not:
 
 IS\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the data statistics object is enabled: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays whether the data statistics object is enabled: TRUE/FALSE.
 
 CREATE\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory size that the data statistics object uses in bytes. This value is set in the CREATE STATISTICS statement.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the memory size that the data statistics object uses in bytes. This val
 
 CREATE\_MEMORY\_PERCENT
 
-
-
 </td>
 <td valign="top">
 
 REAL
 
-
-
 </td>
 <td valign="top">
 
-Displays the memory size, as a percentage of the data source size, to be used by the data statistics object specified in the CREATE STATISTICS statement
-
-
+Displays the memory size, as a percentage of the data source size, to be used by the data statistics object specified in the CREATE STATISTICS statement.
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the memory size, as a percentage of the data source size, to be used by
 
 CREATE\_BUCKETS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the number of buckets specified in the CREATE STATISTICS statement
-
-
+Displays the number of buckets specified in the CREATE STATISTICS statement.
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of buckets specified in the CREATE STATISTICS statement
 
 CREATE\_QERROR
 
-
-
 </td>
 <td valign="top">
 
 REAL
 
-
-
 </td>
 <td valign="top">
 
-Displays the parameter qerror for the data statistics object of type HISTOGRAM as specified in the CREATE STATISTICS statement
-
-
+Displays the parameter qerror for the data statistics object of type HISTOGRAM as specified in the CREATE STATISTICS statement.
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the parameter qerror for the data statistics object of type HISTOGRAM a
 
 CREATE\_QTHETA
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
-Displays the parameter qtheta for the data statistics object of type HISTOGRAM as specified at the CREATE STATISTICS statement
-
-
+Displays the parameter qtheta for the data statistics object of type HISTOGRAM as specified at the CREATE STATISTICS statement.
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the parameter qtheta for the data statistics object of type HISTOGRAM a
 
 CREATE\_ACCURACY
 
-
-
 </td>
 <td valign="top">
 
 REAL
 
-
-
 </td>
 <td valign="top">
 
-Displays the parameter accuracy for the data statistics object of type SKETCH as specified in the CREATE STATISTICS statement
-
-
+Displays the parameter accuracy for the data statistics object of type SKETCH as specified in the CREATE STATISTICS statement.
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the parameter accuracy for the data statistics object of type SKETCH as
 
 CREATE\_PREFIX\_BITS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameter prefix bits for the data statistics object of type SKETCH as specified at the CREATE STATISTICS statement.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the parameter prefix bits for the data statistics object of type SKETCH
 
 CREATE\_SAMPLE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sample size, in bytes, to be used by the data statistics object of type SAMPLE specified in the CREATE STATISTICS statement.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the sample size, in bytes, to be used by the data statistics object of 
 
 CREATE\_SAMPLE\_SIZE\_PERCENT
 
-
-
 </td>
 <td valign="top">
 
 REAL
 
-
-
 </td>
 <td valign="top">
 
 Displays the sample size, as a percentage of the data source size, to be used by the data statistics object of type SAMPLE specified in the CREATE STATISTICS statement.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the sample size, as a percentage of the data source size, to be used by
 
 VALID\_FOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays how the data statistics object may be used: ESTIMATION/DATA DEPENDENCY.
-
-
 
 </td>
 </tr>
@@ -569,14 +425,10 @@ Displays how the data statistics object may be used: ESTIMATION/DATA DEPENDENCY.
 
 INVALIDATION\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -637,6 +489,14 @@ The data statistics object is disabled because the data type of the underlying c
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20a1f10a7519101487fcaa1bddb4f7c3__section_jxp_gdq_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

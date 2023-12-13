@@ -61,13 +61,13 @@ Computes the specified TIMESTAMP value plus the specified number of microseconds
 
 ## Example
 
-The following example increments the TIMESTAMP value by ***864000000000*** microseconds and returns ***1000-01-02 10:00:00.0000000***:
+The following example increments the TIMESTAMP value by `864000000000` microseconds and returns ***1000-01-02 10:00:00.0000000***:
 
 ```
 SELECT ADD_NANO100(TO_TIMESTAMP('1000-01-01 10:00:00.0000000'), 864000000000) FROM DUMMY;
 ```
 
-The following example increments the TIMESTAMP value by ***1*** microsecond and returns `1000-01-01 10:00:00.0000001`:
+The following example increments the TIMESTAMP value by `1` microsecond and returns `1000-01-01 10:00:00.0000001`:
 
 ```
 SELECT ADD_NANO100(TO_TIMESTAMP('1000-01-01 10:00:00.0000000'), 1) FROM DUMMY;

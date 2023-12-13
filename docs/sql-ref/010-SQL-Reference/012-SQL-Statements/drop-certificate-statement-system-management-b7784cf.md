@@ -80,5 +80,5 @@ DROP CERTIFICATE SAP_CERT;
 **Related Information**  
 
 
-[CERTIFICATES System View](../../020-System-Views-Reference/021-System-Views/certificates-system-view-d076e2b.md "Provides information about certificates useable in PSEs.")
+[CERTIFICATES System View](../../020-System-Views-Reference/021-System-Views/certificates-system-view-d076e2b.md "Provides information about certificates usable in PSEs.")
 

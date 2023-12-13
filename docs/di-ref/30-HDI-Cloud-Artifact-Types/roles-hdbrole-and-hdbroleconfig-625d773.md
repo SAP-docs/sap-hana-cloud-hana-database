@@ -116,67 +116,49 @@ The following table lists the properties that must be defined in a design-time r
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- [`"role"`](roles-hdbrole-and-hdbroleconfig-625d773.md#loio625d7733c30b4666b4a522d7fa68a550__section_xqy_kpk_bhb) 
-
-
+[`"role"`](roles-hdbrole-and-hdbroleconfig-625d773.md#loio625d7733c30b4666b4a522d7fa68a550__section_xqy_kpk_bhb) 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 The root of the JSON data structure and an object with a single key role
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`"name"`](roles-hdbrole-and-hdbroleconfig-625d773.md#loio625d7733c30b4666b4a522d7fa68a550__section_qpz_xwz_zgb) 
-
-
+[`"name"`](roles-hdbrole-and-hdbroleconfig-625d773.md#loio625d7733c30b4666b4a522d7fa68a550__section_qpz_xwz_zgb) 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The name of the role. The name is used as the name of the run-time role created in the database. Each role definition must have a valid name, which is a non-empty string that contains only permitted characters.
-
-
 
 </td>
 </tr>
@@ -337,7 +319,7 @@ A valid entry for schema privileges consists of:
 > ### Note:  
 > The <code>“reference”</code> entry is optional. If it is omitted, the specified privileges will refer to the schema of the object owner used in the deployment.
 
-For any schema managed by HDI, only the following privileges can be specified: `ALTER, CREATE ANY, CREATE TEMPORARY TABLE, EXECUTE, SELECT, SELECT CDS METADATA, SELECT METADATA, ATTACH DEBUGGER, INSERT, UPDATE, DELETE, DEBUG, UNMASKED`.
+For any schema managed by HDI, only the following privileges can be specified: `ALTER, CREATE ANY, CREATE TEMPORARY TABLE, EXECUTE, SELECT, SELECT CDS METADATA, SELECT METADATA, INSERT, UPDATE, DELETE, DEBUG, UNMASKED`.
 
 
 
@@ -424,7 +406,7 @@ You can specify objects with wildcard object identifiers to “include” or “
     > The "`%`" character is also the character used to escape wildcard characters.
 
 
-For any object managed by HDI, only the following privileges can be specified: `ALTER, CREATE ANY, CREATE TEMPORARY TABLE, EXECUTE, SELECT, SELECT CDS METADATA, SELECT METADATA, ATTACH DEBUGGER, INSERT, UPDATE, DELETE, DEBUG, UNMASKED`.
+For any object managed by HDI, only the following privileges can be specified: `ALTER, CREATE ANY, CREATE TEMPORARY TABLE, EXECUTE, SELECT, SELECT CDS METADATA, SELECT METADATA, INSERT, UPDATE, DELETE, DEBUG, UNMASKED`.
 
 
 

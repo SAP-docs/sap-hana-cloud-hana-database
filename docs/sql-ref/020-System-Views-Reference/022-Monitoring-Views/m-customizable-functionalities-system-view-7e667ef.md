@@ -15,21 +15,15 @@ Provides information about the enablement status of restricted features in datab
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the customizable functionality name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the customizable functionality name.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the customizable functionality description.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the customizable functionality description.
 
 IS\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the customizable functionality is enabled: TRUE/FALSE.
-
-
 
 </td>
 </tr>

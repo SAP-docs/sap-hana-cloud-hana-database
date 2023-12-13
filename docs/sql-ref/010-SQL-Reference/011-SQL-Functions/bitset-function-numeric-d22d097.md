@@ -84,7 +84,7 @@ Sets *<num\_to\_set\>* bits to 1 in *<target\_num\>* from the *<start\_bit\>* po
 
 ## Example
 
-The following example returns the value ***E000*** for ***"bitset"***:
+The following example returns the value ***E000*** for `"bitset"`:
 
 ```
 SELECT BITSET ('0000', 1, 3) "bitset" FROM DUMMY;

@@ -98,8 +98,6 @@ SELECT TABLE_NAME FROM TABLES WHERE SCHEMA_NAME = CURRENT_SCHEMA ORDER BY TABLE_
 
 TABLE\_NAME
 
-
-
 </th>
 </tr>
 <tr>
@@ -107,16 +105,12 @@ TABLE\_NAME
 
 A
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ...
-
-
 
 </td>
 </tr>
@@ -141,8 +135,6 @@ SELECT TABLE_NAME FROM TABLES WHERE SCHEMA_NAME = CURRENT_SCHEMA ORDER BY TABLE_
 
 TABLE\_NAME
 
-
-
 </th>
 </tr>
 <tr>
@@ -150,16 +142,12 @@ TABLE\_NAME
 
 B
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 ...
-
-
 
 </td>
 </tr>
@@ -187,16 +175,12 @@ SELECT TABLE_NAME FROM TABLES WHERE SCHEMA_NAME = 'MYSCHEMA' ORDER BY TABLE_NAME
 
 TABLE\_NAME
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 A
-
-
 
 </td>
 </tr>
@@ -221,16 +205,12 @@ SELECT TABLE_NAME FROM TABLES WHERE SCHEMA_NAME = 'MYSCHEMA' ORDER BY TABLE_NAME
 
 TABLE\_NAME
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 B
-
-
 
 </td>
 </tr>
@@ -263,16 +243,12 @@ SELECT TABLE_NAME FROM TABLES WHERE SCHEMA_NAME = 'MYSCHEMA2' ORDER BY TABLE_NAM
 
 TABLE\_NAME
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 B
-
-
 
 </td>
 </tr>

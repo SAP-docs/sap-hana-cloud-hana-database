@@ -15,21 +15,15 @@ Load history KPI description.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view name where the KPI can be found.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the view name where the KPI can be found.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name where the KPI can be found.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the column name where the KPI can be found.
 
 IS\_CUMULATIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the cumulative KPIs that return a relative value since the previous sample. Noncumulative KPIs return an absolute value for the current point in time.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the cumulative KPIs that return a relative value since the previous sam
 
 SQL\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the equivalent SQL statement.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the equivalent SQL statement.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the KPI description.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the KPI description.
 
 SAMPLE\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the sample unit.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the sample unit.
 
 DISPLAY\_HIERARCHY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the recommended display hierarchy/sorting criteria.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the recommended display hierarchy/sorting criteria.
 
 DISPLAY\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the recommended display name.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the recommended display name.
 
 DISPLAY\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the recommended display unit.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the recommended display unit.
 
 DISPLAY\_LINE\_COLOR
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the recommended display line color as RGB.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the recommended display line color as RGB.
 
 DISPLAY\_LINE\_STYLE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the recommended display line style: 1=solid, 2=dotted, or 3=dashed.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the recommended display line style: 1=solid, 2=dotted, or 3=dashed.
 
 DISPLAY\_DIVIDER
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the divider to convert SAMPLE\_UNIT in DISPLAY\_UNIT.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the divider to convert SAMPLE\_UNIT in DISPLAY\_UNIT.
 
 DISPLAY\_Y\_SCALE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Indicates that the KPIs with the same value should be shown with the same Y scale in a chart. Special value 1 is used for CPU KPIs with a fixed Y scale of 100.
-
-
 
 </td>
 </tr>

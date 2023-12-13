@@ -54,7 +54,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
@@ -64,7 +64,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -74,11 +74,11 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
     5.  Select the database artifact type, for example, table.
 
-        In the *Artifact Type* box, type ***hdbt***, and choose *Table \(hdbtable\)* from the list that appears.
+        In the *Artifact Type* box, type `hdbt`, and choose *Table \(hdbtable\)* from the list that appears.
 
     6.  Name the file *PurchaseOrderHeader*.
 
@@ -143,9 +143,9 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 
     3.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
-    4.  Select the database artifact **type**. In the selection box, type ***hdbt*** and choose *hdbtable* in the list that appears.
+    4.  Select the database artifact **type**. In the selection box, type `hdbt` and choose *hdbtable* in the list that appears.
 
     5.  Name the file *PurchaseOrderItem*.
 
@@ -161,7 +161,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
         > ### Note:  
         > The following code example is provided for illustration purposes only.
 
-         `db/src/PurchaseOrderItem.hdbtable`
+        `db/src/PurchaseOrderItem.hdbtable`
 
         ```sql
         COLUMN TABLE "PurchaseOrder.Item" (
@@ -191,7 +191,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 
     1.  In the *SAP HANA PROJECTS* explorer, locate the application project you want to deploy.
 
-    2.  Choose <span class="FPA-icons"></span> \(Deploy\).
+    2.  Choose ![](../020-HANA-Cloud-DB-Dev-Get-Started/images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
         Bear in mind that a mismatch between the installed SAP HANA version and the SAP HANA version specified in the `.hdbconfig` file \(for example, with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
 
@@ -207,7 +207,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
@@ -228,7 +228,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 **Related Information**  
 
 
-[Table Syntax (.hdbtable in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/453d48e28f6747799546236b4b432e58.html "Transforms a design-time table resource into a table database object.") :arrow_upper_right:
+[Table Syntax (.hdbtable in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/453d48e28f6747799546236b4b432e58.html "Transforms a design-time table resource into a table database object.") :arrow_upper_right:
 
 [Creating Data Persistence Artifacts with SQL DDL](creating-data-persistence-artifacts-with-sql-ddl-a216fd8.md "You can use SQL DDL to define the underlying database objects that store and provide data for your application, for example, tables and views.")
 

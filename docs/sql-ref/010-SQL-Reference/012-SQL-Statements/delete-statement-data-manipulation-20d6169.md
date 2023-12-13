@@ -152,15 +152,11 @@ After executing the above query, the contents of table T are as follows, showing
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL
 
-
-
 </td>
 </tr>
 <tr>
@@ -168,14 +164,10 @@ VAL
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -184,14 +176,10 @@ VAL
 
 3
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>

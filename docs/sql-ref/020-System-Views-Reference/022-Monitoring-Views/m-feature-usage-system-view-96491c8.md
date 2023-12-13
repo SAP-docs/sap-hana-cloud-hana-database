@@ -15,21 +15,15 @@ Provides detailed feature usage statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 COMPONENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the component name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the component name.
 
 FEATURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the feature name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the feature name.
 
 IS\_DEPRECATED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not a feature is deprecated: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Indicates whether or not a feature is deprecated: TRUE/FALSE.
 
 OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the counter tracking the number of artifacts that belong to the feature, for example, the number of existing history tables.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the counter tracking the number of artifacts that belong to the feature
 
 CALL\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the counter tracking the number of times that the feature has been used since the last start of the indexserver, for example, the number of accesses to any history table.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the counter tracking the number of times that the feature has been used
 
 LAST\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP\(27\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last point in time when the feature was used. By default, the value is deprecated if this configuration has not changed.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the last point in time when the feature was used. By default, the value
 
 LAST\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID of the last feature usage. By default, the value is deprecated if this configuration has not changed.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the connection ID of the last feature usage. By default, the value is d
 
 LAST\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database user of the last feature usage, for example, SAP *<SID\>*. By default, the value is deprecated if this configuration has not changed.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the database user of the last feature usage, for example, SAP *<SID\>*.
 
 LAST\_APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user of the last feature usage, for example, *<D-User\>*. By default, the value is deprecated if this configuration has not changed.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the application user of the last feature usage, for example, *<D-User\>
 
 LAST\_APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application name of the last feature usage. By default, the value is deprecated if this configuration has not changed.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the application name of the last feature usage. By default, the value i
 
 LAST\_APPLICATION\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application source name and location of the last feature usage. By default, the value is deprecated if this configuration has not changed.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the application source name and location of the last feature usage. By 
 
 LAST\_STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement ID of the last feature usage. By default, the value is deprecated if this configuration has not changed.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the statement ID of the last feature usage. By default, the value is de
 
 LAST\_STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement hash of the last feature usage. By default, the value is deprecated if this configuration has not changed.
-
-
 
 </td>
 </tr>
@@ -360,35 +276,25 @@ Under the component name NSE, object count for table, column , partition and ind
 
 COMPONENT\_NAME
 
-
-
 </th>
 <th valign="top">
 
 FEATURE\_NAME
-
-
 
 </th>
 <th valign="top">
 
 IS\_DEPRECATED
 
-
-
 </th>
 <th valign="top">
 
 OBJECT\_COUNT
 
-
-
 </th>
 <th valign="top">
 
 OTHER COLUMNS
-
-
 
 </th>
 </tr>
@@ -397,35 +303,25 @@ OTHER COLUMNS
 
 NSE
 
-
-
 </td>
 <td valign="top">
 
 TABLE
-
-
 
 </td>
 <td valign="top">
 
 FALSE
 
-
-
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 ?
-
-
 
 </td>
 </tr>
@@ -440,35 +336,25 @@ FALSE
 
 COMPONENT\_NAME
 
-
-
 </th>
 <th valign="top">
 
 FEATURE\_NAME
-
-
 
 </th>
 <th valign="top">
 
 IS\_DEPRECATED
 
-
-
 </th>
 <th valign="top">
 
 OBJECT\_COUNT
 
-
-
 </th>
 <th valign="top">
 
 OTHER COLUMNS
-
-
 
 </th>
 </tr>
@@ -477,35 +363,25 @@ OTHER COLUMNS
 
 NSE
 
-
-
 </td>
 <td valign="top">
 
 COLUMN
-
-
 
 </td>
 <td valign="top">
 
 FALSE
 
-
-
 </td>
 <td valign="top">
 
 12
 
-
-
 </td>
 <td valign="top">
 
 ?
-
-
 
 </td>
 </tr>
@@ -520,35 +396,25 @@ FALSE
 
 COMPONENT\_NAME
 
-
-
 </th>
 <th valign="top">
 
 FEATURE\_NAME
-
-
 
 </th>
 <th valign="top">
 
 IS\_DEPRECATED
 
-
-
 </th>
 <th valign="top">
 
 OBJECT\_COUNT
 
-
-
 </th>
 <th valign="top">
 
 OTHER COLUMNS
-
-
 
 </th>
 </tr>
@@ -557,35 +423,25 @@ OTHER COLUMNS
 
 NSE
 
-
-
 </td>
 <td valign="top">
 
 PARTITION
-
-
 
 </td>
 <td valign="top">
 
 FALSE
 
-
-
 </td>
 <td valign="top">
 
 15
 
-
-
 </td>
 <td valign="top">
 
 ?
-
-
 
 </td>
 </tr>
@@ -600,35 +456,25 @@ FALSE
 
 COMPONENT\_NAME
 
-
-
 </th>
 <th valign="top">
 
 FEATURE\_NAME
-
-
 
 </th>
 <th valign="top">
 
 IS\_DEPRECATED
 
-
-
 </th>
 <th valign="top">
 
 OBJECT\_COUNT
 
-
-
 </th>
 <th valign="top">
 
 OTHER COLUMNS
-
-
 
 </th>
 </tr>
@@ -637,35 +483,25 @@ OTHER COLUMNS
 
 NSE
 
-
-
 </td>
 <td valign="top">
 
 INDEX
-
-
 
 </td>
 <td valign="top">
 
 FALSE
 
-
-
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 ?
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ Provides SAP HANA information from trace files.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the file name.
 
 OFFSET
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the file offset in bytes.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the file offset in bytes.
 
 CONTENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file content at the offset.
-
-
 
 </td>
 </tr>

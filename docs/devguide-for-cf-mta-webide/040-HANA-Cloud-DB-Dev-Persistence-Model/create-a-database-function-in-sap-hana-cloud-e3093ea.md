@@ -44,7 +44,7 @@ To create and deploy a procedure using the SAP Web IDE Full-Stack, perform the f
 
         Currently, there is only one type of project template available, namely: *Multi-Target Application Project*. Select *Multi-Target Application Project* and choose *Next*.
 
-    3.  Type the name ***MyApp*** for the new MTA project and choose *Next* to confirm.
+    3.  Type the name `MyApp` for the new MTA project and choose *Next* to confirm.
 
     4.  Specify details of the new MTA project and choose *Next* to confirm.
 
@@ -66,7 +66,7 @@ To create and deploy a procedure using the SAP Web IDE Full-Stack, perform the f
 
     2.  Create a new `.hdbfunction` file for your scalar user-defined function.
 
-        Right-click the application's database-module folder `db/src/functions`, choose *New* \> *Function* from the context menu, and name the new stored scalar function ***apply\_discount***.
+        Right-click the application's database-module folder `db/src/functions`, choose *New* \> *Function* from the context menu, and name the new stored scalar function `apply_discount`.
 
         The new scalar function opens in SAP Web IDE Full-Stack.
 

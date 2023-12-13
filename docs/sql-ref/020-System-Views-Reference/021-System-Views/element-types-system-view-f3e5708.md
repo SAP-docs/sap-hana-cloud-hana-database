@@ -17,21 +17,15 @@ Provides information about available multivalued types.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the name of the schema containing the object defining or using the collection type.
-
-
+Displays the name of the schema containing the object that defines or uses the collection type.
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the schema containing the object defining or using the coll
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the table, view, or procedure that defines or uses the collection type.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the table, view, or procedure that defines or uses the coll
 
 OBJECT\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the identifier of the table, view, or procedure that defines or uses the collection type.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the identifier of the table, view, or procedure that defines or uses th
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type: TABLE, VIEW, or FUNCTION.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the object type: TABLE, VIEW, or FUNCTION.
 
 ELEMENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the table or view column or procedure parameter.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the table or view column or procedure parameter.
 
 DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the identifier of the element type.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the identifier of the element type.
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the element type.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the name of the element type.
 
 LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the length for a character string type or the precision for a numeric type in bytes.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the length for a character string type or the precision for a numeric t
 
 SCALE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the scale for a numeric type.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the scale for a numeric type.
 
 MIN\_CARDINALITY
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the lower bound of the array.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the lower bound of the array.
 
 MAX\_CARDINALITY
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the upper bound of the array.
-
-
 
 </td>
 </tr>
@@ -293,25 +221,27 @@ Displays the upper bound of the array.
 
 ALLOW\_DUPLICATES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
 
 Indicates if duplicates are allowed within one column: TRUE/FALSE.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiof3e5708b6f5b1014a1289f6ed0d907b6__section_c5t_mhr_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

@@ -17,21 +17,15 @@ Provides information about volume sizes used by SAP HANA servers.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,32 @@ Description
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
 
 Displays the volume ID. See M\_VOLUMES.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+VOLUME\_REPLICA\_ID
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the volume replica ID. See M\_VOLUMES.
 
 </td>
 </tr>
@@ -63,21 +68,15 @@ Displays the volume ID. See M\_VOLUMES.
 
 DISK\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the disk ID. See M\_DISKS.
-
-
 
 </td>
 </tr>
@@ -86,21 +85,15 @@ Displays the disk ID. See M\_DISKS.
 
 DATA\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the data area size in bytes.
-
-
+Displays the total size of files in the data directory, in bytes. For non-aggregated size, see M\_VOLUME\_FILES.
 
 </td>
 </tr>
@@ -109,21 +102,49 @@ Displays the data area size in bytes.
 
 LOG\_SIZE
 
+</td>
+<td valign="top">
 
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the total size of files in the log directory, in bytes. For non-aggregated size, see M\_VOLUME\_FILES.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DATA\_USED\_SIZE
 
 </td>
 <td valign="top">
 
 BIGINT
 
+</td>
+<td valign="top">
 
+Displays the total used disk space in the data directory, in bytes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LOG\_USED\_SIZE
 
 </td>
 <td valign="top">
 
-Displays the log area size in bytes.
+BIGINT
 
+</td>
+<td valign="top">
 
+Displays the total used disk space in the log directory, in bytes.
 
 </td>
 </tr>

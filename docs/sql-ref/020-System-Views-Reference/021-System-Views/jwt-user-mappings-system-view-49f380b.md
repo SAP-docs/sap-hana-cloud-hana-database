@@ -15,21 +15,15 @@ Lists all of the user-JWT mappings configured in the SAP HANA database.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SAP HANA user name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the SAP HANA user name.
 
 JWT\_PROVIDER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the JWT provider.
-
-
 
 </td>
 </tr>
@@ -84,25 +66,27 @@ Displays the name of the JWT provider.
 
 EXTERNAL\_IDENTITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the name of the user known to the JWT provider.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio49f380b049a243f48873d52707504f57__section_kyj_zrb_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

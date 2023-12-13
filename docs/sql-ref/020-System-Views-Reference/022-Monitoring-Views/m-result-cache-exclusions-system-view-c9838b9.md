@@ -15,21 +15,15 @@ Provides information about result cache exclusions.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 CACHE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the results cache.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the name of the results cache.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the object name.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the object type.
 
 REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason why the object cannot use result cache.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the reason why the object cannot use result cache.
 
 EXCLUDE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when disabling the result cache was decided.
-
-
 
 </td>
 </tr>
@@ -190,9 +148,9 @@ Displays the timestamp when disabling the result cache was decided.
 
 [ALTER SYSTEM CLEAR RESULT CACHE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-result-cache-statement-system-management-97dca93.md "Removes all result cache entries from the system.")
 
-[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
+[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
 
-[Deterministic Procedure Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/8809a2a02e1b49d9a3fc68bb135f430d.html "") :arrow_upper_right:
+[Deterministic Procedure Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8809a2a02e1b49d9a3fc68bb135f430d.html "") :arrow_upper_right:
 
 [M\_RESULT\_CACHE\_RESET System View](m-result-cache-reset-system-view-7a3e046.md "Provides information about result cache statistics.")
 

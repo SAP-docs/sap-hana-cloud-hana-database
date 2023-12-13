@@ -119,8 +119,6 @@ The returned result is:
 
 WF1
 
-
-
 </th>
 </tr>
 <tr>
@@ -128,7 +126,12 @@ WF1
 
 2.5
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+2.5
 
 </td>
 </tr>
@@ -137,8 +140,6 @@ WF1
 
 2.5
 
-
-
 </td>
 </tr>
 <tr>
@@ -146,31 +147,18 @@ WF1
 
 2.5
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2.5
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-2.5
-
-
 
 </td>
 </tr>
 </table>
 
- **Median of sliding window \(GROUPS BETWEEN\)** Both of the SELECT statements in the following example produce identical results.
+**Median of sliding window \(GROUPS BETWEEN\)** Both of the SELECT statements in the following example produce identical results.
 
 ```
 CREATE TABLE T (TS_ID NVARCHAR(10), date DAYDATE, val DOUBLE);
@@ -193,8 +181,6 @@ The returned result is:
 
 WF2B
 
-
-
 </th>
 </tr>
 <tr>
@@ -202,8 +188,6 @@ WF2B
 
 1
 
-
-
 </td>
 </tr>
 <tr>
@@ -211,7 +195,12 @@ WF2B
 
 1
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+2
 
 </td>
 </tr>
@@ -220,7 +209,12 @@ WF2B
 
 2
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+2
 
 </td>
 </tr>
@@ -229,25 +223,12 @@ WF2B
 
 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-2
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-2
-
-
+2.5
 
 </td>
 </tr>
@@ -256,8 +237,6 @@ WF2B
 
 2.5
 
-
-
 </td>
 </tr>
 <tr>
@@ -265,25 +244,12 @@ WF2B
 
 2.5
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2.5
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-2.5
-
-
 
 </td>
 </tr>
@@ -311,8 +277,6 @@ The returned result is:
 
 WF3
 
-
-
 </th>
 </tr>
 <tr>
@@ -320,7 +284,12 @@ WF3
 
 1
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+1
 
 </td>
 </tr>
@@ -329,7 +298,12 @@ WF3
 
 1
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+1
 
 </td>
 </tr>
@@ -338,25 +312,12 @@ WF3
 
 1
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-1
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-1
-
-
+2
 
 </td>
 </tr>
@@ -365,7 +326,12 @@ WF3
 
 2
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+2
 
 </td>
 </tr>
@@ -374,34 +340,12 @@ WF3
 
 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-2
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-2
-
-
 
 </td>
 </tr>
@@ -410,16 +354,12 @@ WF3
 
 2.5
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -428,8 +368,6 @@ WF3
 
 2.5
 
-
-
 </td>
 </tr>
 <tr>
@@ -437,16 +375,12 @@ WF3
 
 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2.5
-
-
 
 </td>
 </tr>

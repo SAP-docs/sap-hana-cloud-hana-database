@@ -951,7 +951,7 @@ For information on *<replace\_stmt\>* and *<upsert\_stmt\>*, see the REPLACE | U
 </b></dt>
 <dd>
 
- 
+
 
 ```
 <select_into_stmt> ::=
@@ -1120,7 +1120,22 @@ The following notes apply to triggers:
 
 ## Permissions
 
-Only database users with the TRIGGER privilege for the given *<subject\_table\_name\>* are allowed to create a trigger for that table or view.
+To create or replace a trigger requires one of the following:
+
+-   To create a trigger, you need one of the following:
+    -   You own the trigger.
+    -   TRIGGER object-level privilege granted on the *<subject\_table\_name\>*
+    -   TRIGGER schema level privilege granted on the schema of the trigger.
+    -   CREATE ANY schema level privilege granted on the schema of the trigger.
+
+-   To replace an existing trigger, you need one of the following:
+    -   You own the trigger.
+    -   TRIGGER object-level privilege granted on the *<subject\_table\_name\>*
+    -   TRIGGER schema level privilege granted on the schema of the trigger.
+    -   CREATE ANY and DROP schema level privilege granted on the schema of the trigger.
+
+
+Regardless of trigger ownership, you require the proper privilege on the base objects referenced by the trigger.
 
 
 
@@ -1519,7 +1534,7 @@ SELECT FROM V1 ORDER BY A, B, C, D;
 
 [TRIGGERS System View](../../020-System-Views-Reference/021-System-Views/triggers-system-view-2101f6d.md "Provides information about triggers that are defined for tables.")
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 
 [Introduction to SQL](../introduction-to-sql-209f502.md "This chapter describes the SAP HANA database implementation of Structured Query Language (SQL).")
 

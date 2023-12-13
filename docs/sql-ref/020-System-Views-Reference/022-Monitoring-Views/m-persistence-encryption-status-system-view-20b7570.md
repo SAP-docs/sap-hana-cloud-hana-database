@@ -17,21 +17,15 @@ Provides information about persistence encryption.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 ENCRYPTION\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the encryption is currently active for writing into persistence: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays whether or not the encryption is currently active for writing into pers
 
 ENCRYPTION\_ACTIVE\_AFTER\_NEXT\_SAVEPOINT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the encryption is active for writing into persistence after the next savepoint: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays whether or not the encryption is active for writing into persistence af
 
 KEY\_CHANGE\_WITH\_NEXT\_SAVEPOINT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the next savepoint activates a new key: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays whether or not the next savepoint activates a new key: TRUE/FALSE.
 
 ROOT\_KEY\_CHANGE\_WITH\_NEXT\_SAVEPOINT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the next savepoint activates a new root key: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays whether or not the next savepoint activates a new root key: TRUE/FALSE.
 
 IS\_LATEST\_ROOT\_KEY\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the used root key version is the newest one: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays whether or not the used root key version is the newest one: TRUE/FALSE.
 
 DATA\_CONVERSION\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the conversion of data to the latest encryption status or key is active: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays whether or not the conversion of data to the latest encryption status o
 
 KEY\_PAGE\_ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of entries within the key page.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the number of entries within the key page.
 
 USED\_ROOT\_KEY\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the hash of the root key that this service is using.
-
-
 
 </td>
 </tr>
@@ -272,5 +206,5 @@ Displays the hash of the root key that this service is using.
 
 [M\_PERSISTENCE\_ENCRYPTION\_KEYS System View](m-persistence-encryption-keys-system-view-20b732b.md "Provides information about encryption page keys.")
 
-[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
+[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
 

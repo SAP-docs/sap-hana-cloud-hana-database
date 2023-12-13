@@ -17,21 +17,15 @@ Provides information about log buffer statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 LOG\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the log mode.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the log mode.
 
 BUFFER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of one log buffer in memory in kilobytes.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the size of one log buffer in memory in kilobytes.
 
 BUFFER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of log buffers in memory.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the count of log buffers in memory.
 
 SEGMENT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of one log segment in megabytes.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the maximum size of one log segment in megabytes.
 
 BACKUP\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the log segment backup is enabled: TRUE, FALSE \(FALSE on log backup history broken\).
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays whether the log segment backup is enabled: TRUE, FALSE \(FALSE on log b
 
 BACKUP\_TIMEOUT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the log segment backup timeout in seconds.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the log segment backup timeout in seconds.
 
 SWITCH\_NOWAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of buffer switches without blocking on buffer semaphore.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the count of buffer switches without blocking on buffer semaphore.
 
 SWITCH\_WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of buffer switches with blocking on buffer semaphore.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the count of buffer switches with blocking on buffer semaphore.
 
 SWITCH\_OPEN\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of ignored still-open buffer switches \(resolved races\).
-
-
 
 </td>
 </tr>

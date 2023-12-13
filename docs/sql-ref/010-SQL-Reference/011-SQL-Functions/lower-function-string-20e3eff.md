@@ -30,7 +30,7 @@ The LOWER function is identical to the LCASE function.
 
 ## Example
 
-This example converts the given string ***AnT*** to lowercase, and returns the value ***ant***:
+This example converts the given string `AnT` to lowercase, and returns the value ***ant***:
 
 ```
 SELECT LOWER ('AnT') "lower" FROM DUMMY;

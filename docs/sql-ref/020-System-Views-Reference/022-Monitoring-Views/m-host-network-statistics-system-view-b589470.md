@@ -15,21 +15,15 @@ Provides information about the network statistics of a host.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name the network statistics refer to.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name the network statistics refer to.
 
 TCP\_SEGMENTS\_RECEIVED
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of TCP segments received.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the total number of TCP segments received.
 
 TCP\_SEGMENTS\_SENT\_OUT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of TCP segments sent out.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the total number of TCP segments sent out.
 
 TCP\_SEGMENTS\_RETRANSMITTED
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of TCP segments that had to be retransmitted.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the number of TCP segments that had to be retransmitted.
 
 TCP\_BAD\_SEGMENTS\_RECEIVED
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of TCP segments that were broken upon receiving.
-
-
 
 </td>
 </tr>

@@ -15,21 +15,15 @@ Provides information about who was granted \(explicitly or implicitly via roles\
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 GRANTEE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of role that has the privilege.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name of role that has the privilege.
 
 GRANTEE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user or role that has the privilege.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the user or role that has the privilege.
 
 GRANTEE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the grantee type: USER/ROLE.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the grantee type: USER/ROLE.
 
 GRANTOR\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of role that provided the privilege.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the schema name of role that provided the privilege.
 
 GRANTOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user or role that provided the privilege.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the user or role that provided the privilege.
 
 GRANTOR\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the grantor type: USER, ROLE or ROLEGROUP.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the grantor type: USER, ROLE or ROLEGROUP.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of the granted object, for example, TABLE, SCHEMA, and so on.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the type of the granted object, for example, TABLE, SCHEMA, and so on.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name the object belongs to.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the schema name the object belongs to.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name of granted object.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the object name of granted object.
 
 PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the privilege granted.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the privilege granted.
 
 IS\_GRANTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the privilege was granted with WITH GRANT OPTION or WITH ADMIN OPTION: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -292,9 +220,11 @@ Displays whether the privilege was granted with WITH GRANT OPTION or WITH ADMIN 
 
 <a name="loio2a8987c66cdf4baeb299de52eedf88c9__section_jyc_vdk_h2b"/>
 
-## Additional Information
+## Permissions
 
-This view requires an equals \(=\) predicate on PRIVILEGE and OBJECT\_TYPE.
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
+This view also requires an equal \(=\) predicate on PRIVILEGE and OBJECT\_TYPE.
 
 **Related Information**  
 
@@ -303,7 +233,7 @@ This view requires an equals \(=\) predicate on PRIVILEGE and OBJECT\_TYPE.
 
 [PRIVILEGES System View](privileges-system-view-20cc29b.md "Provides information about available privileges.")
 
-[System Views for Verifying Users&apos; Authorization](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/ddae823e3b27477ea4c949607eebc435.html "You can query several system views to get detailed information about exactly which privileges and roles users have and how they come to have them. This can help you to understand why a user is authorized to perform particular actions, access particular data, or not.") :arrow_upper_right:
+[System Views for Verifying Users' Authorization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/ddae823e3b27477ea4c949607eebc435.html "You can query several system views to get detailed information about exactly which privileges and roles users have and how they come to have them. This can help you to understand why a user is authorized to perform particular actions, access particular data, or not.") :arrow_upper_right:
 
 [ROLEGROUPS System Views](rolegroups-system-views-5e2b4b9.md "Shows available role groups.")
 

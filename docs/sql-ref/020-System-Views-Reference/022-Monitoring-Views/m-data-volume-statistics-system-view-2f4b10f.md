@@ -17,21 +17,15 @@ Provides information on data volume statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 PARTITION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of partitions.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the number of partitions.
 
 PATH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of partition paths.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of partition paths.
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used size of the data volume in bytes.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the used size of the data volume in bytes.
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the data volume in bytes.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the total size of the data volume in bytes.
 
 FILL\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the fill ratio of the data volume.
-
-
 
 </td>
 </tr>

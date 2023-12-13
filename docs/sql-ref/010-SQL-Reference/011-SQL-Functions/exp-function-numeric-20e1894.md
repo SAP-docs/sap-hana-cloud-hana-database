@@ -28,7 +28,7 @@ Returns the result of the base of the natural logarithms e raised to the power o
 
 ## Example
 
-The following example returns the value ***2.718281828459045*** for ***"exp"***:
+The following example returns the value ***2.718281828459045*** for `"exp"`:
 
 ```
 SELECT EXP (1.0) "exp" FROM DUMMY;

@@ -15,21 +15,15 @@ Provides information about available projection view columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the view name.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view column name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the view column name.
 
 SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the source table schema name.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the source table schema name.
 
 SOURCE\_TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the source table name.
-
-
 
 </td>
 </tr>
@@ -153,25 +117,27 @@ Displays the source table name.
 
 SOURCE\_COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the source column name.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio292fdc0e26e84b9ea62b488a2863f914__section_gqs_1x4_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

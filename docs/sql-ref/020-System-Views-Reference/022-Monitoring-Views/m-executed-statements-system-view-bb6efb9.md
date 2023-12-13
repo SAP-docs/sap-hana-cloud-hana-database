@@ -17,21 +17,15 @@ Provides all statement executions that belong to a specified category.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the connection ID.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction object ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the transaction object ID.
 
 UPDATE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the write transaction ID. This number is ever increasing.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the write transaction ID. This number is ever increasing.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement ID.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the statement ID.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier for an SQL string.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the unique identifier for an SQL string.
 
 DB\_USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the user name.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema in whose context the statement is executed.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the name of the schema in whose context the statement is executed.
 
 APP\_USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user name.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the application user name.
 
 CLIENT\_IP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(45\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the IP address of the client machine.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the IP address of the client machine.
 
 CLIENT\_PID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the client process ID.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the client process ID.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement start time.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the statement start time.
 
 DURATION\_MICROSEC
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement duration in microseconds.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the statement duration in microseconds.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the related object.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the name of the related object.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement string.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the statement string.
 
 ERROR\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code.
-
-
 
 </td>
 </tr>
@@ -431,44 +323,32 @@ Displays the error code.
 
 ERROR\_TEXT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the error message.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-PASSPORT\_ROOT\_CONTEXT\_ID
-
-
+PASSPORT\_ROOTCONTEXT\_ID
 
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the SAP EPP Passport GUID that identifies the source of the request.
-
-
+Displays the extended passport \(EPP\) GUID that identifies the source of the request.
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the SAP EPP Passport GUID that identifies the source of the request.
 
 PASSPORT\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the SAP EPP Passport GUID that identifies the business transaction.
-
-
+Displays the extended passport \(EPP\) GUID that identifies the business transaction.
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the SAP EPP Passport GUID that identifies the business transaction.
 
 PASSPORT\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the SAP EPP Passport GUID that identifies the connection.
-
-
+Displays the extended passport \(EPP\) GUID that identifies the connection.
 
 </td>
 </tr>
@@ -523,21 +391,168 @@ Displays the SAP EPP Passport GUID that identifies the connection.
 
 PASSPORT\_CONNECTION\_COUNTER
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
+</td>
+<td valign="top">
 
+Displays the extended passport \(EPP\) connection counter.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_COMPONENT\_NAME
 
 </td>
 <td valign="top">
 
-Displays the SAP EPP Passport connection counter.
+NVARCHAR\(32\)
 
+</td>
+<td valign="top">
 
+Displays the extended passport \(EPP\) component name.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_COMPONENT\_TYPE
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) component type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_ACTION
+
+</td>
+<td valign="top">
+
+NVARCHAR\(40\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) component action.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_ACTION\_TYPE
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) component action type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_PREVIOUS\_COMPONENT\_NAME
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) passport component name of the previous context.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_SERVICE
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) service.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_USER\_ID
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) user ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_CLIENT
+
+</td>
+<td valign="top">
+
+NVARCHAR\(3\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) client.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_TRACE\_FLAGS
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) trace flags.
 
 </td>
 </tr>
@@ -546,21 +561,15 @@ Displays the SAP EPP Passport connection counter.
 
 APPLICATION\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application that defines from which source file SAP HANA is called. The usage is up to the application. This value is also displayed in M\_PREPARED\_STATEMENTS.APPLICATION\_SOURCE.
-
-
 
 </td>
 </tr>
@@ -569,21 +578,15 @@ Displays the application that defines from which source file SAP HANA is called.
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the application.
-
-
 
 </td>
 </tr>
@@ -619,13 +622,13 @@ Setting the value of the APPLICATION\_SOURCE is only available via internal APIs
 **Related Information**  
 
 
-[SAP Note 2873396](https://launchpad.support.sap.com/#/notes/2873396)
+[SAP Note 2873396](https://me.sap.com/notes/2873396)
 
-[Controlling Parallel Execution of SQL Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/5c012ca1def64bceb5f29028325193bd.html "Job management takes place in the HANA worker framework and is handled by the JobExecutor which is a job queueing and dispatching subsystem.") :arrow_upper_right:
+[Controlling Parallel Execution of SQL Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/5c012ca1def64bceb5f29028325193bd.html "Job management takes place in the HANA worker framework and is handled by the JobExecutor which is a job queueing and dispatching subsystem.") :arrow_upper_right:
 
 [SQL Statements](../../010-SQL-Reference/012-SQL-Statements/sql-statements-20a6791.md "SAP HANA supports many SQL statements to allow you to perform such tasks as create database objects, administer your system, and manipulate data.")
 
-[EXECUTE IMMEDIATE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/093c4fd307064f838cb582555c187b9e.html "") :arrow_upper_right:
+[EXECUTE IMMEDIATE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/093c4fd307064f838cb582555c187b9e.html "") :arrow_upper_right:
 
-[Explicit Parallel Execution](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/8db200a4f585490c81c4930689ec1a5c.html "") :arrow_upper_right:
+[Explicit Parallel Execution](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8db200a4f585490c81c4930689ec1a5c.html "") :arrow_upper_right:
 

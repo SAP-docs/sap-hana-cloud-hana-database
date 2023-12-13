@@ -17,21 +17,15 @@ Provides information about undo files and cleanup files.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file type: UNDO, CLEANUP, or FREE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the file type: UNDO, CLEANUP, or FREE.
 
 TID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the transaction ID.
 
 PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the page count.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the page count.
 
 RAW\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the raw size in bytes.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the raw size in bytes.
 
 CLEANUP\_MARK
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the cleanup position mark.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the cleanup position mark.
 
 NESTED\_SESSION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the nested session ID.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the nested session ID.
 
 NESTED\_SESSION\_PARENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the nested session parent ID.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the nested session parent ID.
 
 DEPENDENT\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the dependent index during redo.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the dependent index during redo.
 
 INDOUBT\_FLAG
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the indoubt flag for distributed transaction: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the indoubt flag for distributed transaction: TRUE/FALSE.
 
 TENTATIVE\_PRECOMMIT\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the tentative precommit position.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the tentative precommit position.
 
 COMMIT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the commit ID. This value is -1 for non-committed transactions.
-
-
 
 </td>
 </tr>

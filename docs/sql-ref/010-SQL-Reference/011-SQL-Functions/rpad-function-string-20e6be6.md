@@ -74,7 +74,7 @@ RPAD returns an empty string value if *<number\>* is less than 1.
 
 ## Example
 
-The following example right-pads the end of string ***end*** with the pattern ***12345*** to make a string of ***15*** characters in length and returns the value ***end123451234512***:
+The following example right-pads the end of string `end` with the pattern `12345` to make a string of `15` characters in length and returns the value ***end123451234512***:
 
 ```
 SELECT RPAD ('end', 15, '12345') "right padded" FROM DUMMY;

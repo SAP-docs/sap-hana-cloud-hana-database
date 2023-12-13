@@ -68,389 +68,287 @@ The following table lists in alphabetical order the design-time artifacts you ca
 
 A - L
 
-
-
 </th>
 <th valign="top">
 
 M - S
-
-
 
 </th>
 <th valign="top">
 
 S - Z
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- [CSV](table-data-hdbtabledata-35c4dd8.md) \*
-
-
+[CSV](table-data-hdbtabledata-35c4dd8.md) \*
 
 </td>
 <td valign="top">
 
- [Migration Table](migration-tables-hdbmigrationtable-52d1f5a.md) 
-
-
+[Migration Table](migration-tables-hdbmigrationtable-52d1f5a.md) 
 
 </td>
 <td valign="top">
 
- [Scheduler Job](scheduler-jobs-hdbschedulerjob-f92e31d.md) 
-
-
+[System Versioning Table](system-versioning-tables-hdbsystemversioning-5794b34.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [.? \(txt, copy only\)](copy-only-txt-64459f1.md) 
-
-
+[.? \(txt, copy only\)](copy-only-txt-64459f1.md) 
 
 </td>
 <td valign="top">
 
- [Procedure](procedures-hdbprocedure-93de88b.md) 
-
-
+[Procedure](procedures-hdbprocedure-93de88b.md) 
 
 </td>
 <td valign="top">
 
- [Table](tables-hdbtable-and-hdbdropcreatetable-453d48e.md) 
-
-
+[Scheduler Job](scheduler-jobs-hdbschedulerjob-f92e31d.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Analytic Privilege](analytic-privileges-hdbanalyticprivilege-2d30563.md) 
-
-
+[Analytic Privilege](analytic-privileges-hdbanalyticprivilege-2d30563.md) 
 
 </td>
 <td valign="top">
 
- [Projection View](projection-views-hdbprojectionview-and-hdbprojectionviewconfig-d8a3392.md) 
-
-
+[Projection View](projection-views-hdbprojectionview-and-hdbprojectionviewconfig-d8a3392.md) 
 
 </td>
 <td valign="top">
 
- [Table Data](table-data-hdbtabledata-35c4dd8.md) 
-
-
+[Table](tables-hdbtable-and-hdbdropcreatetable-453d48e.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [App. Time-Period Table](application-time-period-tables-hdbapplicationtime-73c7b80.md) 
-
-
+[App. Time-Period Table](application-time-period-tables-hdbapplicationtime-73c7b80.md) 
 
 </td>
 <td valign="top">
 
- [Projection View Configuration](projection-views-hdbprojectionview-and-hdbprojectionviewconfig-d8a3392.md) 
-
-
+[Projection View Configuration](projection-views-hdbprojectionview-and-hdbprojectionviewconfig-d8a3392.md) 
 
 </td>
 <td valign="top">
 
- [Table Data Properties](table-data-properties-properties-f4da218.md) 
-
-
+[Table Data](table-data-hdbtabledata-35c4dd8.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Calculation View](calculation-views-hdbcalculationview-3db2a35.md) 
-
-
+[Calculation View](calculation-views-hdbcalculationview-3db2a35.md) 
 
 </td>
 <td valign="top">
 
- [Public Synonym](public-synonyms-hdbpublicsynonym-d131415.md) 
-
-
+[Public Synonym](public-synonyms-hdbpublicsynonym-d131415.md) 
 
 </td>
 <td valign="top">
 
- [Table Data Tags](table-data-properties-properties-f4da218.md) 
-
-
+[Table Data Properties](table-data-properties-properties-f4da218.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Constraint](constraints-hdbconstraint-bda5470.md) 
-
-
+[Constraint](constraints-hdbconstraint-bda5470.md) 
 
 </td>
 <td valign="top">
 
- [Replication Task](replication-tasks-hdbreptask-0194ba9.md) 
-
-
+[Remote Table Replications](remote-table-replications-hdbremotetablereplica-f1dae33.md) 
 
 </td>
 <td valign="top">
 
- [Table Type](table-types-hdbtabletype-83275bd.md) 
-
-
+[Table Data Tags](table-data-properties-properties-f4da218.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Document Store Collection](document-store-collections-hdbcollection-fe16b63.md) 
-
-
+[Document Store Collection](document-store-collections-hdbcollection-fe16b63.md) 
 
 </td>
 <td valign="top">
 
- [Result Cache](result-caches-hdbresultcache-a3e2b70.md) 
-
-
+[Replication Task](replication-tasks-hdbreptask-0194ba9.md) 
 
 </td>
 <td valign="top">
 
- [Trigger](triggers-hdbtrigger-bbd06f5.md) 
-
-
+[Table Type](table-types-hdbtabletype-83275bd.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Document Store Collection Index](document-store-collection-indexes-hdbcollectionindex-b4b1b5c.md) 
-
-
+[Document Store Collection Index](document-store-collection-indexes-hdbcollectionindex-b4b1b5c.md) 
 
 </td>
 <td valign="top">
 
- [Role](roles-hdbrole-and-hdbroleconfig-625d773.md) 
-
-
+[Result Cache](result-caches-hdbresultcache-a3e2b70.md) 
 
 </td>
 <td valign="top">
 
- [View](sql-views-hdbview-2bf9a6f.md) 
-
-
+[Trigger](triggers-hdbtrigger-bbd06f5.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Drop/Create Table](tables-hdbtable-and-hdbdropcreatetable-453d48e.md) 
-
-
+[Drop/Create Table](tables-hdbtable-and-hdbdropcreatetable-453d48e.md) 
 
 </td>
 <td valign="top">
 
- [Role Configuration](roles-hdbrole-and-hdbroleconfig-625d773.md) 
-
-
+[Role](roles-hdbrole-and-hdbroleconfig-625d773.md) 
 
 </td>
 <td valign="top">
 
- [Virtual Function](virtual-functions-hdbvirtualfunction-and-hdbvirtualfunctionconfig-73669eb.md) 
-
-
+[View](sql-views-hdbview-2bf9a6f.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Enterprise Search Configuration](enterprise-search-configurations-hdbeshconfig-eb019bb.md) 
-
-
+[Enterprise Search Configuration](enterprise-search-configurations-hdbeshconfig-eb019bb.md) 
 
 </td>
 <td valign="top">
 
- [Search Rule Set](search-rule-sets-hdbsearchruleset-e9d52ba.md) 
-
-
+[Role Configuration](roles-hdbrole-and-hdbroleconfig-625d773.md) 
 
 </td>
 <td valign="top">
 
- [Virtual Function Configuration](virtual-functions-hdbvirtualfunction-and-hdbvirtualfunctionconfig-73669eb.md) 
-
-
+[Virtual Table](virtual-tables-hdbvirtualtable-and-hdbvirtualtableconfig-0819114.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Flowgraph](flowgraphs-hdbflowgraph-6d4fc4a.md) 
-
-
+[Flowgraph](flowgraphs-hdbflowgraph-6d4fc4a.md) 
 
 </td>
 <td valign="top">
 
- [Sequence](sequences-hdbsequence-b295c2e.md) 
-
-
+[Search Rule Set](search-rule-sets-hdbsearchruleset-e9d52ba.md) 
 
 </td>
 <td valign="top">
 
- [Virtual Package](virtual-packages-hdbvirtualpackage-28fe43b.md) 
-
-
+[Virtual Table Configuration](virtual-tables-hdbvirtualtable-and-hdbvirtualtableconfig-0819114.md) 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [Function](functions-hdbfunction-cbf1369.md) 
-
-
+[Function](functions-hdbfunction-cbf1369.md) 
 
 </td>
 <td valign="top">
 
- [Synonym](synonyms-hdbsynonym-and-hdbsynonymconfig-aad1653.md) 
-
-
-
-</td>
-<td valign="top">
-
- [Virtual Procedure](virtual-procedures-hdbvirtualprocedure-and-hdbvirtualprocedureconfig-6c8e6c1.md) 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- [Graph Workspace](graph-workspaces-hdbgraphworkspace-ff89373.md) 
-
-
-
-</td>
-<td valign="top">
-
- [Synonym Configuration](synonyms-hdbsynonym-and-hdbsynonymconfig-aad1653.md) 
-
-
-
-</td>
-<td valign="top">
-
- [Virtual Procedure Configuration](virtual-procedures-hdbvirtualprocedure-and-hdbvirtualprocedureconfig-6c8e6c1.md) 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- [Index](indexes-hdbindex-58fdf2d.md) 
-
-
-
-</td>
-<td valign="top">
-
- [Statistics](statistics-hdbstatistics-435423d.md) 
-
-
-
-</td>
-<td valign="top">
-
- [Virtual Table](virtual-tables-hdbvirtualtable-and-hdbvirtualtableconfig-0819114.md) 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- [Library](libraries-hdblibrary-7475cf4.md) 
-
-
-
-</td>
-<td valign="top">
-
- [Structured Privilege](structured-privileges-hdbstructuredprivilege-c3827df.md) 
-
-
-
-</td>
-<td valign="top">
-
- [Virtual Table Configuration](virtual-tables-hdbvirtualtable-and-hdbvirtualtableconfig-0819114.md) 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- [Logical Schema Definition](logical-schemas-hdblogicalschema-and-hdblogicalschemaconfig-fa9cda8.md) 
-
-
-
-</td>
-<td valign="top">
-
- [System Versioning Table](system-versioning-tables-hdbsystemversioning-5794b34.md) 
-
-
+[Sequence](sequences-hdbsequence-b295c2e.md) 
 
 </td>
 <td valign="top">
 
 \-
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+[Graph Workspace](graph-workspaces-hdbgraphworkspace-ff89373.md) 
+
+</td>
+<td valign="top">
+
+[Synonym](synonyms-hdbsynonym-and-hdbsynonymconfig-aad1653.md) 
+
+</td>
+<td valign="top">
+
+\-
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Index](indexes-hdbindex-58fdf2d.md) 
+
+</td>
+<td valign="top">
+
+[Synonym Configuration](synonyms-hdbsynonym-and-hdbsynonymconfig-aad1653.md) 
+
+</td>
+<td valign="top">
+
+\-
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Library](libraries-hdblibrary-7475cf4.md) 
+
+</td>
+<td valign="top">
+
+[Statistics](statistics-hdbstatistics-435423d.md) 
+
+</td>
+<td valign="top">
+
+\-
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[Logical Schema Definition](logical-schemas-hdblogicalschema-and-hdblogicalschemaconfig-fa9cda8.md) 
+
+</td>
+<td valign="top">
+
+[Structured Privilege](structured-privileges-hdbstructuredprivilege-c3827df.md) 
+
+</td>
+<td valign="top">
+
+\-
 
 </td>
 </tr>

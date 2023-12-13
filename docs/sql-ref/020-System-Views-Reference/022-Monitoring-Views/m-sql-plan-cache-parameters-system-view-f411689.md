@@ -17,21 +17,15 @@ Provides bind parameters for statements cached in SQL Plan Cache. It saves a par
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 PLAN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical plan ID which is a non-negative value, same with the one in M\_SQL\_PLAN\_CACHE.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the logical plan ID which is a non-negative value, same with the one in
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type of the parameter.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the data type of the parameter.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the position of the parameter in SQL statement.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the position of the parameter in SQL statement.
 
 PARAMETER\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the value of the captured parameter.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the value of the captured parameter.
 
 BATCH\_EXECUTION\_ORDER
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution order in a batch processing.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the execution order in a batch processing.
 
 EXECUTION\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the parameter value is captured.
-
-
 
 </td>
 </tr>

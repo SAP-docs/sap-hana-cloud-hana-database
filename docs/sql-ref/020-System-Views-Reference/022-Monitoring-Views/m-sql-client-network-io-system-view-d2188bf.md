@@ -17,21 +17,15 @@ Provides the client and server elapsed time as well as message sizes for client 
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 CLIENT\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host of the client machine, also found in M\_CONNECTIONS.CLIENT\_HOST.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the host of the client machine, also found in M\_CONNECTIONS.CLIENT\_HO
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID of the physical server connection.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the connection ID of the physical server connection.
 
 MESSAGE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the client message ID on the physical server connection.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the client message ID on the physical server connection.
 
 CLIENT\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the elapsed time on the client side including send, server execution, and receive.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the elapsed time on the client side including send, server execution, a
 
 SERVER\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution time on the server side. Transport time is the delta between CLIENT\_DURATION and SERVER\_DURATION.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the execution time on the server side. Transport time is the delta betw
 
 SERVER\_RECEIVED\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the message was received on the server side and begin of execution.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the time when the message was received on the server side and begin of 
 
 RECEIVED\_MESSAGE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of messages received on the server side in bytes.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the size of messages received on the server side in bytes.
 
 SEND\_MESSAGE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the messages sent to the client side in bytes.
-
-
 
 </td>
 </tr>

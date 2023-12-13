@@ -17,21 +17,15 @@ Provides memory allocator statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 STATISTICS\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistics object unique ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the statistics object unique ID.
 
 CATEGORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocator name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the allocator name.
 
 DEPTH
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the depth.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the depth.
 
 INCLUSIVE\_SIZE\_IN\_USE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current size of this allocator, including suballocators in bytes.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the current size of this allocator, including suballocators in bytes.
 
 INCLUSIVE\_COUNT\_IN\_USE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocks currently in use, including suballocators.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the number of blocks currently in use, including suballocators.
 
 INCLUSIVE\_ALLOCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the stotal allocated size in this allocator and suballocators in bytes.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the stotal allocated size in this allocator and suballocators in bytes.
 
 INCLUSIVE\_DEALLOCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total deallocated size in this allocator and suballocators in bytes.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the total deallocated size in this allocator and suballocators in bytes
 
 INCLUSIVE\_ALLOCATED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of allocations, including suballocators.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the number of allocations, including suballocators.
 
 INCLUSIVE\_DEALLOCATED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of deallocations, including suballocators.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the number of deallocations, including suballocators.
 
 INCLUSIVE\_MAX\_SINGLE\_ALLOCATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the largest block size in bytes ever alllocated in this allocator and suballocators.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the largest block size in bytes ever alllocated in this allocator and s
 
 INCLUSIVE\_PEAK\_ALLOCATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the largest size in bytes of this allocator and suballocators \(estimate\).
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the largest size in bytes of this allocator and suballocators \(estimat
 
 INCLUSIVE\_IN\_USE\_INTEGRAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average allocated memory in bytes by this allocator and its suballocators, multiplied by the time since the start of measurement \(sample based rough estimate\). Deactivated by default this value should only be activated upon request by SAP support. UOM is 1 byte times 1 second.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the average allocated memory in bytes by this allocator and its suballo
 
 EXCLUSIVE\_SIZE\_IN\_USE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current size of this allocator in bytes.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the current size of this allocator in bytes.
 
 EXCLUSIVE\_COUNT\_IN\_USE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocks currently in use.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the number of blocks currently in use.
 
 EXCLUSIVE\_ALLOCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total allocated size in this allocator in bytes.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the total allocated size in this allocator in bytes.
 
 EXCLUSIVE\_DEALLOCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total deallocated size in this allocator in bytes.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the total deallocated size in this allocator in bytes.
 
 EXCLUSIVE\_ALLOCATED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of allocations.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the number of allocations.
 
 EXCLUSIVE\_DEALLOCATED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of deallocations.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the number of deallocations.
 
 EXCLUSIVE\_MAX\_SINGLE\_ALLOCATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the largest block size in bytes ever allocated in this allocator.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the largest block size in bytes ever allocated in this allocator.
 
 EXCLUSIVE\_PEAK\_ALLOCATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the largest size of this allocator \(estimate\) in bytes.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the largest size of this allocator \(estimate\) in bytes.
 
 EXCLUSIVE\_ALLOC\_ERRORS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of allocation errors.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the number of allocation errors.
 
 EXCLUSIVE\_IN\_USE\_INTEGRAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average allocated memory in bytes by this allocator, multiplied by time since start of measurement \(sample based rough estimate\). Deactivaetd by decault, this value should only be activated upon request by SAP support. UOM is 1 byte times 1 second.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the average allocated memory in bytes by this allocator, multiplied by 
 
 FLAGS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocator flags.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the allocator flags.
 
 COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of SAP HANA component of this allocator.
-
-
 
 </td>
 </tr>

@@ -28,7 +28,7 @@ Returns the Unicode character with the specified code number *<number\>*.
 
 ## Example
 
-This example returns the Unicode character \(***A***\) with the code number ***65***:
+This example returns the Unicode character \(***A***\) with the code number `65`:
 
 ```
 SELECT NCHAR (65) "nchar" FROM DUMMY;

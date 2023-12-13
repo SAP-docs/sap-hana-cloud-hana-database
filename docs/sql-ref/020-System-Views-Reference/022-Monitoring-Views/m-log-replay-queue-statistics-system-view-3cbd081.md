@@ -17,21 +17,15 @@ Provides information about log replay queue statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the host.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the host.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 LOG\_REPLAY\_QUEUE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the log replay queue.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the ID of the log replay queue.
 
 LOG\_RECORD\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(40\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of redo log record.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the type of redo log record.
 
 TOTAL\_LOG\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of replayed log entries.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the total number of replayed log entries.
 
 TOTAL\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated execute time to replay log entries in microseconds.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the accumulated execute time to replay log entries in microseconds.
 
 TOTAL\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated local wait time during replay of log entries in microseconds.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the accumulated local wait time during replay of log entries in microse
 
 TOTAL\_LOG\_RECORD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated log size of replayed log entries.
-
-
 
 </td>
 </tr>
@@ -249,5 +189,5 @@ Displays the accumulated log size of replayed log entries.
 
 [M\_LOG\_REPLAY\_QUEUE\_STATISTICS\_RESET System View](m-log-replay-queue-statistics-reset-system-view-2382dd1.md "Provides information about log replay queue statistics.")
 
-[HOST_SERVICE_REPLICATION View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_2_QRC/en-US/7df5ea067be947e7b0b09a13234f1d80.html "Specifies the service replication statistics per host.") :arrow_upper_right:
+[HOST_SERVICE_REPLICATION View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/7df5ea067be947e7b0b09a13234f1d80.html "Specifies the service replication statistics per host.") :arrow_upper_right:
 

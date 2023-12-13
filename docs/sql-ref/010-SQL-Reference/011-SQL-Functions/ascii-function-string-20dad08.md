@@ -48,7 +48,7 @@ Returns the integer ASCII value of the first character in a string *<string\>*.
 
 ## Example
 
-This example converts the first character of the string ***Ant*** into a numeric ASCII value and returns the value ***65***:
+This example converts the first character of the string `Ant` into a numeric ASCII value and returns the value ***65***:
 
 ```
 SELECT ASCII('Ant') "ascii" FROM DUMMY;

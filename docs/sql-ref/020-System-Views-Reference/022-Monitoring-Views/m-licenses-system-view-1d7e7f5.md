@@ -15,21 +15,15 @@ Provides information on all of the licenses \(if any\) that are installed on thi
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HARDWARE\_KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(11\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the hardware key of the SAP HANA installation.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the hardware key of the SAP HANA installation.
 
 SYSTEM\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(3\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system identifier \(SID\).
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the system identifier \(SID\).
 
 INSTALL\_NO
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the installation number.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the installation number.
 
 SYSTEM\_NO
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(18\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system number.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the system number.
 
 GLAS\_APPLICATION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(6\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the license ID for the software product.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the license ID for the software product.
 
 PRODUCT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the licensed software product, for example, SAP HANA.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the name of the licensed software product, for example, SAP HANA.
 
 PRODUCT\_DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description of the licensed software product.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the description of the licensed software product.
 
 FIRST\_INSTALLATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the date of the first installation of the license.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the date of the first installation of the license.
 
 START\_DATE
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start date of the validity period of the license.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the start date of the validity period of the license.
 
 EXPIRATION\_DATE
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the expiration date of the validity period of the license.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the expiration date of the validity period of the license.
 
 LAST\_SUCCESSFUL\_CHECK
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the latest date on which the license was successfully checked and found valid.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the latest date on which the license was successfully checked and found
 
 PERMANENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays TRUE if the license is permanent and FALSE if the license is temporary.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays TRUE if the license is permanent and FALSE if the license is temporary.
 
 VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the license is valid or not: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Indicates whether the license is valid or not: TRUE/FALSE.
 
 LOCKED\_DOWN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the system is locked down due to license status: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Indicates whether the system is locked down due to license status: TRUE/FALSE.
 
 IS\_DATABASE\_LOCAL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the license is a local database local license: TRUE/FALSE.
-
-
 
 </td>
 </tr>

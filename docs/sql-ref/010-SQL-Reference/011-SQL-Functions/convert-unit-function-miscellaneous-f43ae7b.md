@@ -65,28 +65,20 @@ Named value of field reference, or constant string, parameters.
 
 Field Reference Parameter Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Default Value
-
-
 
 </th>
 </tr>
@@ -95,28 +87,20 @@ Default Value
 
 QUANTITY
 
-
-
 </td>
 <td valign="top">
 
 The column to be converted.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -125,28 +109,20 @@ None
 
 SOURCE\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 The column identifier describing the input unit. A constant string is also accepted using single quotations.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -155,28 +131,20 @@ None
 
 TARGET\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 The column identifier describing the target unit. A constant string is also accepted using single quotations.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -185,28 +153,20 @@ None
 
 CLIENT
 
-
-
 </td>
 <td valign="top">
 
 Defines a three character string that is used to separate tenants within ERP system tables. This is used in the conversion tables to select the correct rows for each user. A column identifier is also accepted using double quotations. This parameter is mandatory, as the CLIENT session context variable is not used by this command.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -215,28 +175,20 @@ None
 
 SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 Defines the schema that contains the conversion tables used for the conversion.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -245,28 +197,20 @@ None
 
 DATABASE
 
-
-
 </td>
 <td valign="top">
 
 Defines the tenant where the conversion tables are located. If not specified, the conversion uses the current database.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -274,8 +218,6 @@ None
 <td valign="top">
 
 ERROR\_HANDLING
-
-
 
 </td>
 <td valign="top">
@@ -289,14 +231,10 @@ Defines how the system handles a situation where a row cannot be converted.
 
 Value
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -305,14 +243,10 @@ Purpose
 
 fail on error
 
-
-
 </td>
 <td valign="top">
 
 The conversion fails with an error.
-
-
 
 </td>
 </tr>
@@ -321,14 +255,10 @@ The conversion fails with an error.
 
 set to null
 
-
-
 </td>
 <td valign="top">
 
 The output from the row that caused the error is set to NULL.
-
-
 
 </td>
 </tr>
@@ -337,14 +267,10 @@ The output from the row that caused the error is set to NULL.
 
 keep unconverted
 
-
-
 </td>
 <td valign="top">
 
 The input value is returned.
-
-
 
 </td>
 </tr>
@@ -357,14 +283,10 @@ The input value is returned.
 
 No
 
-
-
 </td>
 <td valign="top">
 
 fail on error
-
-
 
 </td>
 </tr>
@@ -373,28 +295,20 @@ fail on error
 
 RATES\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 Defines a table that stores the conversion rates. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 T006
-
-
 
 </td>
 </tr>
@@ -403,28 +317,20 @@ T006
 
 DIMENSION\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 Defines a table that stores the conversion dimensions. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 no
 
-
-
 </td>
 <td valign="top">
 
 T006D
-
-
 
 </td>
 </tr>

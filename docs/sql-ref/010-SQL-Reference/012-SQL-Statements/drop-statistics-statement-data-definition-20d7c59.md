@@ -63,13 +63,13 @@ Specifies the data source\(s\) of the data statistics objects.
 </b></dt>
 <dd>
 
-Specifies the table on which the data statistics are defined.
+Specifies the table name you want to create statistics on.
 
 ```
 <table_name> ::= [ [ <database_name>.]<schema_name>.]<identifier>
 ```
 
-For linked database, *<database\_name\>* is the name of the remote source. For all other cases, *<database\_name\>* is the name of the database where the table is located.
+For linked databases, *<database\_name\>* is the name of the remote source. For all other cases, *<database\_name\>* is the name of the database where the table is located.
 
 
 
@@ -118,21 +118,15 @@ Use this table to understand how matching is performed based on *<match\_type\>*
 
 Match type
 
-
-
 </th>
 <th valign="top">
 
 Example matches
 
-
-
 </th>
 <th valign="top">
 
 Example non-matches
-
-
 
 </th>
 </tr>
@@ -140,8 +134,6 @@ Example non-matches
 <td valign="top">
 
 \(not specified\)
-
-
 
 </td>
 <td valign="top">
@@ -152,14 +144,10 @@ T\(C\)
 
 T\(B,A\)
 
-
-
 </td>
 <td valign="top">
 
 T\(A,X\) - because T\(X\) is not a column in *<data\_sources\>*.
-
-
 
 </td>
 </tr>
@@ -168,14 +156,10 @@ T\(A,X\) - because T\(X\) is not a column in *<data\_sources\>*.
 
 EXACT
 
-
-
 </td>
 <td valign="top">
 
 T\(A,B,C\)
-
-
 
 </td>
 <td valign="top">
@@ -186,16 +170,12 @@ T\(A\)- because it does not contain the exact same columns and column order of *
 
 T\(X,A,B,C\) - because T.\(X\) is not a column in *<data\_sources\>*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CASCADE
-
-
 
 </td>
 <td valign="top">
@@ -216,14 +196,10 @@ T\(A\)
 
 T\(C,B,A,X\)
 
-
-
 </td>
 <td valign="top">
 
 T\(X\) - because it does not contain any columns that match the columns in *<data\_sources\>*.
-
-
 
 </td>
 </tr>

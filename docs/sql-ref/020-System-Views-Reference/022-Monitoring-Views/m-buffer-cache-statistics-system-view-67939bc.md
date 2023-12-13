@@ -15,21 +15,15 @@ Provides a cache level overview of the configuration, cache status, and memory u
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume identifier for the index server.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the volume identifier for the index server.
 
 CACHE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache name: C/S or R/S.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the cache name: C/S or R/S.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache state: ENABLED, DISABLING, DISABLED, or SHRINKING.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the cache state: ENABLED, DISABLING, DISABLED, or SHRINKING.
 
 REPLACEMENT\_POLICY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of replacement policy used by the cache.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the type of replacement policy used by the cache.
 
 IO\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the disk I/O reads size by the cache in bytes.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the disk I/O reads size by the cache in bytes.
 
 MAX\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum buffer cache memory capacity in bytes.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the maximum buffer cache memory capacity in bytes.
 
 MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache miss count of the cache group.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the cache miss count of the cache group.
 
 ALLOCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory for the buffer cache in bytes.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the allocated memory for the buffer cache in bytes.
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used memory in buffer cache in bytes.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the used memory in buffer cache in bytes.
 
 BUFFER\_REUSE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times that a buffer is released for reuse by the cache.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the number of times that a buffer is released for reuse by the cache.
 
 HIT\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 FLOAT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ratio of pages found in the buffer cache to pages requested from the buffer cache.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the ratio of pages found in the buffer cache to pages requested from th
 
 PINNED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of pinned memory in the buffer cache in bytes.
-
-
 
 </td>
 </tr>
@@ -368,5 +278,5 @@ Displays the size of pinned memory in the buffer cache in bytes.
 
 [M\_LOG\_BUFFERS System View](m-log-buffers-system-view-20b3e49.md "Provides information about log buffer statistics.")
 
-[SAP HANA NSE Buffer Cache](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/8a35ce565c594c11bb785bea607213d8.html "The SAP HANA Native Storage Extension (NSE) buffer cache replaces the SAP HANA default page replacement and memory limit mechanism for the memory pages.") :arrow_upper_right:
+[SAP HANA NSE Buffer Cache](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/8a35ce565c594c11bb785bea607213d8.html "The SAP HANA Native Storage Extension (NSE) buffer cache replaces the SAP HANA default page replacement and memory limit mechanism for the memory pages.") :arrow_upper_right:
 

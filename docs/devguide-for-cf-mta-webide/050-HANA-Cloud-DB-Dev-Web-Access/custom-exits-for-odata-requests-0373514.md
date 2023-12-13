@@ -48,21 +48,15 @@ The following type of write exits are supported for OData write requests in SAP 
 
 Write Request
 
-
-
 </th>
 <th valign="top">
 
 Code Example
 
-
-
 </th>
 <th valign="top">
 
 Explanation
-
-
 
 </th>
 </tr>
@@ -71,53 +65,39 @@ Explanation
 
 Create
 
-
-
 </td>
 <td valign="top">
 
- <code>create events (before "<i class="varname">&lt;custom exit 1&gt;</i>", after "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
-
-
+<code>create events (before "<i class="varname">&lt;custom exit 1&gt;</i>", after "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit custom exit 1 before creating the entity, and the exit custom exit 2 after creating the entity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>create events (precommit "<i class="varname">&lt;custom exit 1&gt;</i>", postcommit "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
-
-
+<code>create events (precommit "<i class="varname">&lt;custom exit 1&gt;</i>", postcommit "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit custom exit 1 before committing the data, and the exit custom exit 2 after committing
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `create forbidden` 
-
-
+`create forbidden` 
 
 </td>
 <td valign="top">
 
 Prohibits any create operation on the entity set
-
-
 
 </td>
 </tr>
@@ -126,53 +106,39 @@ Prohibits any create operation on the entity set
 
 Update
 
-
-
 </td>
 <td valign="top">
 
- <code>update events (before "<i class="varname">&lt;custom exit 1&gt;</i>", after "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
-
-
+<code>update events (before "<i class="varname">&lt;custom exit 1&gt;</i>", after "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit custom exit 1 before creating the entity, and the exit custom exit 2 after updating the entity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>update events (precommit "<i class="varname">&lt;custom exit 1&gt;</i>", postcommit "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
-
-
+<code>update events (precommit "<i class="varname">&lt;custom exit 1&gt;</i>", postcommit "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit custom exit 1 before committing the data, and the exit custom exit 2 after committing
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `update forbidden` 
-
-
+`update forbidden` 
 
 </td>
 <td valign="top">
 
 Prohibits any update operation on the entity set
-
-
 
 </td>
 </tr>
@@ -181,53 +147,39 @@ Prohibits any update operation on the entity set
 
 Delete
 
-
-
 </td>
 <td valign="top">
 
- <code>delete events (before "<i class="varname">&lt;custom exit 1&gt;</i>", after "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
-
-
+<code>delete events (before "<i class="varname">&lt;custom exit 1&gt;</i>", after "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit custom exit 1 before creating the entity, and the exit custom exit 2 after deleting the entity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>delete events (precommit "<i class="varname">&lt;custom exit 1&gt;</i>", postcommit "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
-
-
+<code>delete events (precommit "<i class="varname">&lt;custom exit 1&gt;</i>", postcommit "<i class="varname">&lt;custom exit 2&gt;</i>", ...)</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit custom exit 1 before committing the data, and the exit custom exit 2 after committing
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `delete forbidden` 
-
-
+`delete forbidden` 
 
 </td>
 <td valign="top">
 
 Prohibits the deletion of the entity
-
-
 
 </td>
 </tr>
@@ -244,21 +196,15 @@ The following table lists the types of modification exits you can define with XS
 
 Write Request
 
-
-
 </th>
 <th valign="top">
 
 Code Example
 
-
-
 </th>
 <th valign="top">
 
 Explanation
-
-
 
 </th>
 </tr>
@@ -267,21 +213,15 @@ Explanation
 
 Create
 
-
-
 </td>
 <td valign="top">
 
- <code>create using "<i class="varname">&lt;custom exit&gt;</i>"</code> 
-
-
+<code>create using "<i class="varname">&lt;custom exit&gt;</i>"</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit *<custom exit\>* instead of creating the entity directly
-
-
 
 </td>
 </tr>
@@ -290,21 +230,15 @@ The xsodata library calls the exit *<custom exit\>* instead of creating the enti
 
 Update
 
-
-
 </td>
 <td valign="top">
 
- <code>update using "<i class="varname">&lt;custom exit&gt;</i>"</code> 
-
-
+<code>update using "<i class="varname">&lt;custom exit&gt;</i>"</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit *<custom exit\>* instead of updating the entity directly
-
-
 
 </td>
 </tr>
@@ -313,21 +247,15 @@ The xsodata library calls the exit *<custom exit\>* instead of updating the enti
 
 Delete
 
-
-
 </td>
 <td valign="top">
 
- <code>delete using "<i class="varname">&lt;custom exit&gt;</i>"</code> 
-
-
+<code>delete using "<i class="varname">&lt;custom exit&gt;</i>"</code> 
 
 </td>
 <td valign="top">
 
 The xsodata library calls the exit *<custom exit\>* instead of deleting the entity directly
-
-
 
 </td>
 </tr>
@@ -357,21 +285,15 @@ For **single** OData requests, the following execution order applies for the cus
 
 Odata Request Element
 
-
-
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Exit Execution Order
-
-
 
 </th>
 </tr>
@@ -380,14 +302,10 @@ Exit Execution Order
 
 Request \#
 
-
-
 </td>
 <td valign="top">
 
 Process the request
-
-
 
 </td>
 <td valign="top">
@@ -425,21 +343,15 @@ The following table shows the execution order applied to custom exits for **batc
 
 OData Batch-Request Element
 
-
-
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Exit Execution Order
-
-
 
 </th>
 </tr>
@@ -448,21 +360,15 @@ Exit Execution Order
 
 Request 1
 
-
-
 </td>
 <td valign="top">
 
 Process the request
 
-
-
 </td>
 <td valign="top">
 
 Single OData request execution order
-
-
 
 </td>
 </tr>
@@ -471,14 +377,10 @@ Single OData request execution order
 
 Change set
 
-
-
 </td>
 <td valign="top">
 
 Process request 1 in the change set
-
-
 
 </td>
 <td valign="top">
@@ -499,8 +401,6 @@ Process request 1 in the change set
 
 Process request 2 in the change set
 
-
-
 </td>
 <td valign="top">
 
@@ -519,8 +419,6 @@ Process request 2 in the change set
 <td valign="top">
 
 Process the commit operation
-
-
 
 </td>
 <td valign="top">
@@ -545,21 +443,15 @@ Process the commit operation
 
 Request 2
 
-
-
 </td>
 <td valign="top">
 
 Process request 2
 
-
-
 </td>
 <td valign="top">
 
 Single OData request execution order
-
-
 
 </td>
 </tr>
@@ -703,28 +595,20 @@ For **entity** write operations, the methods registered for the CREATE operation
 
 Script Type
 
-
-
 </th>
 <th valign="top">
 
 Create
-
-
 
 </th>
 <th valign="top">
 
 Update
 
-
-
 </th>
 <th valign="top">
 
 Delete
-
-
 
 </th>
 </tr>
@@ -733,28 +617,20 @@ Delete
 
 before, after, precommit, using
 
-
-
 </td>
 <td valign="top">
 
 IN new EntityType, OUT error ErrorType
-
-
 
 </td>
 <td valign="top">
 
 IN new EntityType, IN old EntityType, OUT error ErrorType
 
-
-
 </td>
 <td valign="top">
 
 IN old EntityType, OUT error ErrorType
-
-
 
 </td>
 </tr>
@@ -763,28 +639,20 @@ IN old EntityType, OUT error ErrorType
 
 postcommit
 
-
-
 </td>
 <td valign="top">
 
 IN new EntityType
-
-
 
 </td>
 <td valign="top">
 
 IN new EntityType, IN old EntityType
 
-
-
 </td>
 <td valign="top">
 
 IN old EntityType
-
-
 
 </td>
 </tr>
@@ -801,14 +669,10 @@ For **link** write operations, all exits that are executed before the commit ope
 
 Script Type
 
-
-
 </th>
 <th valign="top">
 
 Create, Update, Delete
-
-
 
 </th>
 </tr>
@@ -817,14 +681,10 @@ Create, Update, Delete
 
 before, after, precommit, using
 
-
-
 </td>
 <td valign="top">
 
 IN principal PrincipalEntityType, IN dependent DependentEntityType, OUT error ErrorType
-
-
 
 </td>
 </tr>
@@ -833,14 +693,10 @@ IN principal PrincipalEntityType, IN dependent DependentEntityType, OUT error Er
 
 postcommit
 
-
-
 </td>
 <td valign="top">
 
 IN principal PrincipalEntityType, IN dependent DependentEntityType
-
-
 
 </td>
 </tr>
@@ -860,28 +716,20 @@ The `OUT` parameter enables you to return error information. The first row in th
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Value Range
 
-
-
 </th>
 <th valign="top">
 
 Error Response Information
-
-
 
 </th>
 </tr>
@@ -890,28 +738,20 @@ Error Response Information
 
 HTTP\_STATUS\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
 
 400-417 \(default: 400\)
 
-
-
 </td>
 <td valign="top">
 
 The HTTP response status code
-
-
 
 </td>
 </tr>
@@ -920,28 +760,20 @@ The HTTP response status code
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 The error message \(*<message\>*\)
-
-
 
 </td>
 </tr>

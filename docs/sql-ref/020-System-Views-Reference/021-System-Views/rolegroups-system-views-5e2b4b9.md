@@ -17,21 +17,15 @@ Shows available role groups.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 ROLEGROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the role group.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the role group.
 
 ROLEGROUP\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the role group.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the ID of the role group.
 
 CREATOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of user who created the role group.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the name of user who created the role group.
 
 IS\_ROLE\_ADMIN\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether a user granted the ROLE ADMIN system privilege can manage this role group. Valid values are: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays whether a user granted the ROLE ADMIN system privilege can manage this 
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a description of the role group.
-
-
 
 </td>
 </tr>
@@ -158,7 +122,7 @@ Displays a description of the role group.
 
 ## Additional Information
 
-Users with CATALOG READ or CREATE ROLEGROUP system privileges will see all role groups in the view.
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 Users with GRANTOR, DROP or OPERATOR object privileges granted on specific role groups will only see those role groups in the view.
 

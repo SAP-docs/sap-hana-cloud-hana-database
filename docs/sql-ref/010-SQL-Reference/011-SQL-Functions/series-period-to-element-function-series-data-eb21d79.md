@@ -113,14 +113,10 @@ The supported rounding modes are:
 
 **Rounding mode**
 
-
-
 </td>
 <td valign="top">
 
 **Description**
-
-
 
 </td>
 </tr>
@@ -129,16 +125,12 @@ The supported rounding modes are:
 
 ROUND\_HALF\_UP
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the value is rounded to the nearest series value. Values that fall halfway between two series values are rounded up away from zero.
 
 This is the default value.
-
-
 
 </td>
 </tr>
@@ -147,14 +139,10 @@ This is the default value.
 
 ROUND\_HALF\_DOWN
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the value is rounded to the nearest series value. Values that fall halfway between two round values are rounded down toward zero.
-
-
 
 </td>
 </tr>
@@ -163,14 +151,10 @@ Specifies that the value is rounded to the nearest series value. Values that fal
 
 ROUND\_HALF\_EVEN
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the value is rounded to the nearest series value. Values that fall halfway between two rounded values are rounded to the even series value based on element number.
-
-
 
 </td>
 </tr>
@@ -179,14 +163,10 @@ Specifies that the value is rounded to the nearest series value. Values that fal
 
 ROUND\_UP
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the value is always rounded away from zero to the larger series value.
-
-
 
 </td>
 </tr>
@@ -195,14 +175,10 @@ Specifies that the value is always rounded away from zero to the larger series v
 
 ROUND\_DOWN
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the value is always rounded towards zero to the smaller series value.
-
-
 
 </td>
 </tr>
@@ -211,14 +187,10 @@ Specifies that the value is always rounded towards zero to the smaller series va
 
 ROUND\_CEILING
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the value is always rounded in a positive direction to the larger series value.
-
-
 
 </td>
 </tr>
@@ -227,14 +199,10 @@ Specifies that the value is always rounded in a positive direction to the larger
 
 ROUND\_FLOOR
 
-
-
 </td>
 <td valign="top">
 
 Specifies that the value is always rounded in a negative direction to the smaller series value.
-
-
 
 </td>
 </tr>

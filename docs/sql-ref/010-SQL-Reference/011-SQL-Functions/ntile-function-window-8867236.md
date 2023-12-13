@@ -87,43 +87,31 @@ SELECT class, val,
 
 CLASS
 
-
-
 </th>
 <th valign="top">
 
 VAL
-
-
 
 </th>
 <th valign="top">
 
 NTILE
 
-
-
 </th>
 <th valign="top">
 
 FIRST
-
-
 
 </th>
 <th valign="top">
 
 LAST
 
-
-
 </th>
 <th valign="top">
 
 NTH
 
-
-
 </th>
 </tr>
 <tr>
@@ -131,43 +119,31 @@ NTH
 
 A
 
+</td>
+<td valign="top">
 
+1
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 </tr>
 <tr>
@@ -175,43 +151,31 @@ null
 
 A
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 </tr>
 <tr>
@@ -219,42 +183,30 @@ null
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 </tr>
@@ -263,42 +215,30 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 </tr>
@@ -306,43 +246,31 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 </tr>
@@ -351,43 +279,31 @@ A
 
 B
 
+</td>
+<td valign="top">
 
+1
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 </tr>
 <tr>
@@ -395,42 +311,30 @@ null
 
 B
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 null
-
-
 
 </td>
 </tr>
@@ -439,42 +343,30 @@ null
 
 B
 
-
-
 </td>
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 null
-
-
 
 </td>
 </tr>

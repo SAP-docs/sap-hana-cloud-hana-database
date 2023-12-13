@@ -109,7 +109,7 @@ For an SAP HANA service instance remote source:
      | ' { webhdfs.url=http://<host_name>:50070/;webhcat.url=http://<host_name>:50111 
          | Driver=<ODBC_library>; ServerNode=<tenant_endpoint> }
        [,<failover_tenant_endpoint> ]
-       [ ;sslTrustStore="<digi_certificate_string>";encrypt=TRUE; ]
+       [ ;sslTrustStore="<certificate_string>";encrypt=TRUE; ]
        [ ;sessionVariable:<session_variable_name>=? ]
        [ ;linkeddatabase_mode=optimized ] } '
    } 
@@ -220,7 +220,7 @@ This example create a HANA remote source name HOSTC. Failover on the remote sour
 
 ```
 CREATE REMOTE SOURCE HOSTC ADAPTER hanaodbc
-    CONFIGURATION 'Driver=livodbcHDB.so;ServerNode=my_hanaserver:30115,my_failover_hanaserver:30215;
+    CONFIGURATION 'Driver=libodbcHDB.so;ServerNode=my_hanaserver:30115,my_failover_hanaserver:30215;
     sessionVariable:APPLICATIONUSER=?;linkeddatabase_mode=optimized]'
     WITH CREDENTIAL TYPE 'PASSWORD' USING 'user=dbuser;password=DBtest123';
 ```
@@ -228,7 +228,7 @@ CREATE REMOTE SOURCE HOSTC ADAPTER hanaodbc
 **Related Information**  
 
 
-[Creating Remote Sources (Smart Data Access)](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/e8274a1cf62b4aa5b58f261bc904a4af.html "Create a smart data access remote source using SQL syntax or the SAP HANA database explorer.") :arrow_upper_right:
+[Creating Remote Sources (Smart Data Access)](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/e8274a1cf62b4aa5b58f261bc904a4af.html "Create a smart data access remote source using SQL syntax or the SAP HANA database explorer.") :arrow_upper_right:
 
 [ALTER REMOTE SOURCE Statement \(Access Control\)](alter-remote-source-statement-access-control-f423eb4.md "Modifies the configuration of an external data source that is connected to an SAP HANA database.")
 

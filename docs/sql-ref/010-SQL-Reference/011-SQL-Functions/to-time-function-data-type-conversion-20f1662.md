@@ -30,7 +30,7 @@ If the *<format\>* specifier is omitted, then the conversion is performed using 
 
 ## Example
 
-The following example converts the value ***08:30 AM*** to a TIME value with format ***HH:MI AM*** and returns the value ***08:30:00***:
+The following example converts the value `08:30 AM` to a TIME value with format `HH:MI AM` and returns the value ***08:30:00***:
 
 ```
 SELECT TO_TIME ('08:30 AM', 'HH:MI AM') "to time" FROM DUMMY;

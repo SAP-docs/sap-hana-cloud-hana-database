@@ -13,21 +13,15 @@ Exposes all hints that are defined in a calculation scenario.
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the schema name.
 
 SCENARIO\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the scenario name.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the scenario name.
 
 HINT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the hint name. For example, qo\_pop\_hints.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the hint name. For example, qo\_pop\_hints.
 
 HINT\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the hint value. For example, USE\_OLAP\_PLAN.
-
-
 
 </td>
 </tr>

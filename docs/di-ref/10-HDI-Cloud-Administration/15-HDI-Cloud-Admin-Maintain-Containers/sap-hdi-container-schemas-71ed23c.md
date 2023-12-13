@@ -20,14 +20,10 @@ Maintaining HDI containers involves the configuration and use of the schemas lis
 
 HDI Container Schema Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,14 +32,10 @@ Description
 
 C
 
-
-
 </td>
 <td valign="top">
 
 Contains generated database objects that belong to a special object-owner user called `C#OO`. The database objects are generated from design-time objects in container C.
-
-
 
 </td>
 </tr>
@@ -52,14 +44,10 @@ Contains generated database objects that belong to a special object-owner user c
 
 C\#DI
 
-
-
 </td>
 <td valign="top">
 
 Contains the API procedures and HDI-internal data required for the container management
-
-
 
 </td>
 </tr>
@@ -68,14 +56,10 @@ Contains the API procedures and HDI-internal data required for the container man
 
 C\#OO
 
-
-
 </td>
 <td valign="top">
 
 The schema for the user to whom the artifacts in the base container “C” belong. The user schema C\#00 is empty.
-
-
 
 </td>
 </tr>

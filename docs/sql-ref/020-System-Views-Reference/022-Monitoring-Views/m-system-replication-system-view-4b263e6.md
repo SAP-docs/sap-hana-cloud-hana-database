@@ -15,21 +15,15 @@ Monitors system replication information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SITE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the generated site ID.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the generated site ID.
 
 SITE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the site name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the site name.
 
 SECONDARY\_SITE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the generated site ID of the secondary site.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the generated site ID of the secondary site.
 
 SECONDARY\_SITE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the secondary logical site name.
-
-
 
 </td>
 </tr>
@@ -130,14 +100,10 @@ Displays the secondary logical site name.
 
 REPLICATION\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
-
-
 
 </td>
 <td valign="top">
@@ -158,21 +124,15 @@ Displays the configured replication mode:
 
 REPLICATION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replication status.
-
-
 
 </td>
 </tr>
@@ -181,21 +141,15 @@ Displays the replication status.
 
 OPERATION\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the operation mode.
-
-
 
 </td>
 </tr>
@@ -204,14 +158,10 @@ Displays the operation mode.
 
 SECONDARY\_READ\_ACCESS\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -233,21 +183,15 @@ Indicates whether the secondary system is read-enabled and if read access is act
 
 TIER
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the tier on which the source site is located.
-
-
 
 </td>
 </tr>

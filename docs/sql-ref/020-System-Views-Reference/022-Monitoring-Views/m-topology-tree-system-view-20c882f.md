@@ -17,21 +17,15 @@ Provides information about SAP HANA nameserver topology content.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the path to the key.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the path to the key.
 
 NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the key name.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key value.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the key value.
 
 LEAF
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the leaf flag: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -148,5 +118,5 @@ To delete values use ALTER SYSTEM ALTER CONFIGURATION \('topology.ini','system'\
 **Related Information**  
 
 
-[Partitioning Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/7b1e7a1577cc4e05bb4c05b4189c5b2f.html "A number of table consistency checks are available to check the validity of partitioned tables.") :arrow_upper_right:
+[Partitioning Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/7b1e7a1577cc4e05bb4c05b4189c5b2f.html "A number of table consistency checks are available to check the validity of partitioned tables.") :arrow_upper_right:
 

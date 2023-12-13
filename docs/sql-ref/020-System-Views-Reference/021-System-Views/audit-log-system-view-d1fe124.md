@@ -2,7 +2,7 @@
 
 # AUDIT\_LOG System View
 
-Provides information about audit records, with the exception of XSA-auditing. You must have the AUDIT ADMIN, AUDIT OPERATOR, or AUDIT READ system privilege to access this view.
+Provides information about audit records, with the exception of XSA-auditing.
 
 
 
@@ -17,21 +17,15 @@ Provides information about audit records, with the exception of XSA-auditing. Yo
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that the event occurred.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the time that the event occurred.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the host where the event occurred.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the host where the event occurred.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port number.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the port number.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the service.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the name of the service.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the connection ID.
 
 CLIENT\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the IP of the client host.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the IP of the client host.
 
 CLIENT\_IP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(45\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the IP of the client application.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the IP of the client application.
 
 CLIENT\_PID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the PID of the client process.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the PID of the client process.
 
 CLIENT\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port of the client process.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the port of the client process.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user that is connected to the database.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the name of the user that is connected to the database.
 
 STATEMENT\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user who executed the statement.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the name of the user who executed the statement.
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the application.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the name of the application.
 
 APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the application user.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the name of the application user.
 
 XS\_APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the XS application user.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the name of the XS application user.
 
 AUDIT\_POLICY\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the Audit Policy hit.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the name of the Audit Policy hit.
 
 AUTHENTICATION\_METHOD
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(48\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the authentication method used to authenticate the audit log.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the name of the authentication method used to authenticate the audit lo
 
 EVENT\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the event was successful or not.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays whether the event was successful or not.
 
 EVENT\_LEVEL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the severity level of the event.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the severity level of the event.
 
 EVENT\_ACTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the action performed by the audit event.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the action performed by the audit event.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of schema.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the name of schema.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of object.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the name of object.
 
 PRIVILEGE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the granted privilege.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the name of the granted privilege.
 
 ROLE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the granted role.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the schema name of the granted role.
 
 ROLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the granted role.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the name of the granted role.
 
 GRANTEE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the grantee in GRANT/REVOKE statements.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the schema name of the grantee in GRANT/REVOKE statements.
 
 GRANTEE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the grantee in GRANT/REVOKE statements.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the grantee in GRANT/REVOKE statements.
 
 GRANTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the privilege/role being granted is grantable or not.
-
-
 
 </td>
 </tr>
@@ -661,21 +493,15 @@ Displays whether the privilege/role being granted is grantable or not.
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration file that was changed.
-
-
 
 </td>
 </tr>
@@ -684,21 +510,15 @@ Displays the configuration file that was changed.
 
 SECTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration that was changed.
-
-
 
 </td>
 </tr>
@@ -707,21 +527,15 @@ Displays the configuration that was changed.
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the attribute that was changed.
-
-
 
 </td>
 </tr>
@@ -730,21 +544,15 @@ Displays the attribute that was changed.
 
 PREV\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the old value of the attribute.
-
-
 
 </td>
 </tr>
@@ -753,21 +561,15 @@ Displays the old value of the attribute.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the new value of the attribute.
-
-
 
 </td>
 </tr>
@@ -776,21 +578,15 @@ Displays the new value of the attribute.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL statement that caused the event.
-
-
 
 </td>
 </tr>
@@ -799,21 +595,15 @@ Displays the SQL statement that caused the event.
 
 COMMENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays extra information about the event.
-
-
 
 </td>
 </tr>
@@ -822,21 +612,15 @@ Displays extra information about the event.
 
 ORIGIN\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the original database name on cross-database queries.
-
-
 
 </td>
 </tr>
@@ -845,21 +629,15 @@ Displays the original database name on cross-database queries.
 
 ORIGIN\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the original user name on cross-database queries.
-
-
 
 </td>
 </tr>
@@ -868,21 +646,15 @@ Displays the original user name on cross-database queries.
 
 PASSPORT\_ROOTCONTEXT\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the passport root context ID.
-
-
 
 </td>
 </tr>
@@ -891,21 +663,15 @@ Displays the passport root context ID.
 
 PASSPORT\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the passport transaction ID.
-
-
 
 </td>
 </tr>
@@ -914,21 +680,15 @@ Displays the passport transaction ID.
 
 PASSPORT\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the passport connection ID.
-
-
 
 </td>
 </tr>
@@ -938,9 +698,11 @@ Displays the passport connection ID.
 
 <a name="loiod1fe1244d29510148f69be8b0e060dcc__section_jxz_5fc_qhb"/>
 
-## Additional Information
+## Permissions
 
-Database users with the AUDIT ADMIN, AUDIT OPERATOR, or AUDIT READ system privilege can view information in this system view. For all other database users, this view is empty.
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
+This view also requires the AUDIT ADMIN, AUDIT OPERATOR, or AUDIT READ system privilege.
 
 **Related Information**  
 

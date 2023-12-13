@@ -15,21 +15,15 @@ Lists statistics for the dynamic result cache.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 CACHE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID for each dynamic result cache entry.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the unique ID for each dynamic result cache entry.
 
 CACHE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the results cache.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the name of the results cache.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name that the dynamic result cache entry belongs to.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the schema name that the dynamic result cache entry belongs to.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name that the dynamic result cache entry belongs to.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the object name that the dynamic result cache entry belongs to.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type that the dynamic result cache entry belongs to.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the object type that the dynamic result cache entry belongs to.
 
 DETAILS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the details of all of the constituents of the cache key.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the details of all of the constituents of the cache key.
 
 LAST\_MVCC\_SNAPSHOT\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last cached MVCC snapshot timestamp.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the last cached MVCC snapshot timestamp.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size, in bytes, of the memory occupied by the dynamic result cache entry.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the size, in bytes, of the memory occupied by the dynamic result cache 
 
 MEMORY\_SIZE\_IN\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size, in bytes, of the memory occupied by the dynamic result cache entry's indexes.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the size, in bytes, of the memory occupied by the dynamic result cache 
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of records in the cache entry.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the number of records in the cache entry.
 
 DELTA\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of records in the cache entry created by a delta refresh.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the number of records in the cache entry created by a delta refresh.
 
 IS\_REFRESHING
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of the asynchronous cache entry refresh job. The result is TRUE if the refresh job is currently running and FALSE otherwise.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the status of the asynchronous cache entry refresh job. The result is T
 
 CURRENT\_REFRESH\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration, in milliseconds, of the currently running cache entry refresh job. The value is 1 when IS\_REFRESHING is FALSE.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the duration, in milliseconds, of the currently running cache entry ref
 
 CURRENT\_REFRESH\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason why the refresh job was triggered. The value is empty when IS\_REFRESHING is FALSE.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the reason why the refresh job was triggered. The value is empty when I
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the dynamic result cache entry was created.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the timestamp when the dynamic result cache entry was created.
 
 LAST\_REFRESH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the last cache entry refresh job finished.
-
-
 
 </td>
 </tr>
@@ -406,21 +304,15 @@ Displays the timestamp when the last cache entry refresh job finished.
 
 LAST\_REFRESH\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration, in milliseconds, of the last cache entry refresh job.
-
-
 
 </td>
 </tr>
@@ -429,21 +321,15 @@ Displays the duration, in milliseconds, of the last cache entry refresh job.
 
 LAST\_REFRESH\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason why the last refresh job was triggered.
-
-
 
 </td>
 </tr>
@@ -452,21 +338,15 @@ Displays the reason why the last refresh job was triggered.
 
 LAST\_DELTA\_REFRESH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the last delta refresh on the cache entry finished.
-
-
 
 </td>
 </tr>
@@ -475,21 +355,15 @@ Displays the timestamp when the last delta refresh on the cache entry finished.
 
 LAST\_ACCESS\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp of the last cache entry access.
-
-
 
 </td>
 </tr>
@@ -498,21 +372,15 @@ Displays the timestamp of the last cache entry access.
 
 REFRESH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of refreshes on the cache entry.
-
-
 
 </td>
 </tr>
@@ -521,21 +389,15 @@ Displays the number of refreshes on the cache entry.
 
 DELTA\_REFRESH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of delta refreshes on the cache entry.
-
-
 
 </td>
 </tr>
@@ -544,21 +406,15 @@ Displays the number of delta refreshes on the cache entry.
 
 ACCESS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of read accesses on the cache entry.
-
-
 
 </td>
 </tr>
@@ -567,21 +423,15 @@ Displays the number of read accesses on the cache entry.
 
 MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of cache miss read accesses on the cache entry.
-
-
 
 </td>
 </tr>
@@ -590,21 +440,15 @@ Displays the number of cache miss read accesses on the cache entry.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -613,21 +457,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -642,5 +480,5 @@ Displays the internal port.
 
 [DYNAMIC\_RESULT\_CACHE\_INDEX\_COLUMNS System View](../021-System-Views/dynamic-result-cache-index-columns-system-view-4790ff8.md "Provides information about the indexes of dynamic result caches.")
 
-[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
+[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
 

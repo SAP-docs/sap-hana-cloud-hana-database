@@ -17,21 +17,15 @@ Provides runtime information about anonymized views.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the anonymized view.
-
-
 
 </td>
 </tr>
@@ -86,14 +68,10 @@ Displays the name of the anonymized view.
 
 ANONYMIZATION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -104,8 +82,6 @@ Possible values for views anonymized using the DIFFERENTIAL\_PRIVACY algorithm a
 
 Possible values for views anonymized using the K-ANONYMITY and L-DIVERSITY algorithm are CREATED, REFRESHING, READY, or INVALID.
 
-
-
 </td>
 </tr>
 <tr>
@@ -113,21 +89,15 @@ Possible values for views anonymized using the K-ANONYMITY and L-DIVERSITY algor
 
 REFRESH\_RECOMMENDED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether a refresh is recommended: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -136,21 +106,15 @@ Displays whether a refresh is recommended: TRUE/FALSE.
 
 LAST\_REFRESH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the finish time of the latest refresh.
-
-
 
 </td>
 </tr>
@@ -159,21 +123,15 @@ Displays the finish time of the latest refresh.
 
 LAST\_REFRESH\_PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameters specified during the last REFRESH VIEW command on the view, in JSON format
-
-
 
 </td>
 </tr>

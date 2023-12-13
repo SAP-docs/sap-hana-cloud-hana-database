@@ -63,9 +63,9 @@ The HDI Deployer also supports old-style `.hdbsynonymtemplate` template files. I
 
 [Integrate the HDI Deployer into a Mutlitarget Application's Database Module](integrate-the-hdi-deployer-into-a-mutlitarget-application-s-database-modu-0194390.md "Install the HDI Deployer for use by a Multi-Target Application (MTA).")
 
-[Logical Schemas (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/fa9cda8b540a486dacd12e06f9a60330.html "Transforms a design-time logical-schema definition into run-time database objects that can be used by synonyms and so on.") :arrow_upper_right:
+[Logical Schemas (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/fa9cda8b540a486dacd12e06f9a60330.html "Transforms a design-time logical-schema definition into run-time database objects that can be used by synonyms and so on.") :arrow_upper_right:
 
-[Projection Views (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/d8a3392c1287420ca82ac3090cd5049b.html "Transforms a design-time projection-view definition into a database object.") :arrow_upper_right:
+[Projection Views (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/d8a3392c1287420ca82ac3090cd5049b.html "Transforms a design-time projection-view definition into a database object.") :arrow_upper_right:
 
-[Synonyms (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/aad1653a9b95422089fec53f48c2899e.html "Transforms a design-time synonym definition into a database synonym object.") :arrow_upper_right:
+[Synonyms (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/aad1653a9b95422089fec53f48c2899e.html "Transforms a design-time synonym definition into a database synonym object.") :arrow_upper_right:
 

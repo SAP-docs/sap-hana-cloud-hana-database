@@ -17,21 +17,15 @@ Provides information about tables and their logical location. Physical locations
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host where table data is located. This value is empty for views.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host where table data is located. This value is empty for views.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port where the table data is located. This value is 0 for views.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the port where the table data is located. This value is 0 for views.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,14 +102,10 @@ Displays the table name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -160,21 +126,15 @@ Returns the table partition ID:
 
 LOCATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(75\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host and port where the table data is located.
-
-
 
 </td>
 </tr>
@@ -187,7 +147,7 @@ Displays the host and port where the table data is located.
 
 [ALTER TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Set an Explicit Table Location](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/d4a2e245a0f74edaa98e47599facf1a4.html "You can set an explicit table location with SQL commands.") :arrow_upper_right:
+[Set an Explicit Table Location](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/d4a2e245a0f74edaa98e47599facf1a4.html "You can set an explicit table location with SQL commands.") :arrow_upper_right:
 
 [M\_TABLE\_PERSISTENCE\_LOCATIONS System View](m-table-persistence-locations-system-view-20c67e7.md "Provides information about column store tables and their physical data locations.")
 

@@ -24,7 +24,7 @@ NUMTOHEX(<integer> [, <integer>])
 <dl>
 <dt><b>
 
- *<integer\>*
+*<integer\>*
 
 </b></dt>
 <dd>
@@ -52,7 +52,7 @@ Converts a numeric value to a hexadecimal value as an NVARCHAR data type. The in
 
 ## Example
 
-The following example converts the numeric value ***c1*** to a hexadecimal NVARCHAR value, ***3039***:
+The following example converts the numeric value `c1` to a hexadecimal NVARCHAR value, ***3039***:
 
 ```
 CREATE TABLE t1 (c1 BIGINT);

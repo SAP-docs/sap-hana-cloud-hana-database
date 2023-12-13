@@ -17,21 +17,15 @@ Displays temporary views.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the view name.
 
 VIEW\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the view.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the object ID of the view.
 
 IS\_READ\_ONLY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether this view is a read-only or an updatable view: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays whether this view is a read-only or an updatable view: TRUE/FALSE.
 
 HAS\_CHECK\_OPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether this view has an updatable view condition: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays whether this view has an updatable view condition: TRUE/FALSE.
 
 HAS\_COLUMN\_ALIASES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the view has a columns alias: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays whether the view has a columns alias: TRUE/FALSE.
 
 DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the definition of the view.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the definition of the view.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description on the view.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the description on the view.
 
 IS\_COLUMN\_VIEW
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not this view is a column view: TRUE/FALSE
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays whether or not this view is a column view: TRUE/FALSE
 
 VIEW\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of view: ROW, OLAP, JOIN, HIERARCHY, or CALC.
-
-
 
 </td>
 </tr>

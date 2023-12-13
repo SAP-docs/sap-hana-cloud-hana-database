@@ -30,7 +30,7 @@ Returns string *<string\>*, trimmed of all leading spaces. If *<remove\_set\>* i
 
 ## Example
 
-This example removes all leading ***a*** and ***b*** characters from the given string and returns the value Aabend:
+This example removes all leading `a` and `b` characters from the given string and returns the value Aabend:
 
 ```
 SELECT LTRIM ('babababAabend','ab') "ltrim" FROM DUMMY;

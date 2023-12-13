@@ -27,7 +27,7 @@ The resulting `EntityType` then contains only the properties derived from the sp
 > ### Note:  
 > Examples and graphics are provided for illustration purposes only; some URLs may differ from the ones shown.
 
- `http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata`
+`http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata`
 
 ![XS_examples_proj_with](images/XS_examples_proj_with_037a483.png)
 
@@ -49,7 +49,7 @@ Service definition `sample.odata:without.xsodata`
 
 The generated `EntityType` then does NOT contain the properties derived from the specified columns:
 
- `http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
+`http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
 
 ![XS_examples_proj_without](images/XS_examples_proj_without_62f807b.png)
 

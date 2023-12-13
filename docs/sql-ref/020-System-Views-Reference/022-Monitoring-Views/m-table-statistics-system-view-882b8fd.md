@@ -15,21 +15,15 @@ Returns the table runtime statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name to which the table belongs.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name to which the table belongs.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name to be counted.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the table name to be counted.
 
 INSERT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of INSERT statements for the table.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the count of INSERT statements for the table.
 
 DELETE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of DELETE statements for the table.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the count of DELETE statements for the table.
 
 UPDATE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of UPDATE statements for the table.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the count of UPDATE statements for the table.
 
 REPLACE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of REPLACE statements for the table.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the count of REPLACE statements for the table.
 
 MERGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of MERGE INTO statements for the table.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the count of MERGE INTO statements for the table.
 
 SELECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of SELECT statements for the table.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the count of SELECT statements for the table.
 
 LAST\_MODIFY\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the last INSERT, UPDATE, DELETE, or REPLACE statement was executed.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the timestamp when the last INSERT, UPDATE, DELETE, or REPLACE statemen
 
 LAST\_SELECT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the last SELECT statement was executed.
-
-
 
 </td>
 </tr>
@@ -295,11 +229,11 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [DROP STATISTICS Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-statistics-statement-data-definition-20d7c59.md "Drops user-defined data statistic objects that the query optimizer uses to make decisions for query plans.")
 
-[Create Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/3992fa5a5f4f471a9f5f51d103beaa75.html "Create data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
+[Create Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/3992fa5a5f4f471a9f5f51d103beaa75.html "Create data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
 
-[Alter Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/518d7e0ff36b4b88adb555ac368df408.html "Alter the properties of a data statistic object for virtual tables or linked database.") :arrow_upper_right:
+[Alter Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/518d7e0ff36b4b88adb555ac368df408.html "Alter the properties of a data statistic object for virtual tables or linked database.") :arrow_upper_right:
 
-[Refresh Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/bf5f385dcb684adbb122fd7e474cd438.html "Refreshes data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
+[Refresh Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/bf5f385dcb684adbb122fd7e474cd438.html "Refreshes data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
 
-[Drop Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/7c432b9a34ec4f7bbf2a1624a6b2076c.html "Drop data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
+[Drop Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/7c432b9a34ec4f7bbf2a1624a6b2076c.html "Drop data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
 

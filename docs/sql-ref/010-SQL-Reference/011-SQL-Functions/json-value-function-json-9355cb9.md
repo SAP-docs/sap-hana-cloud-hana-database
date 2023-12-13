@@ -169,21 +169,15 @@ The following tokens are supported in *<JSON\_API\_common\_syntax\>*:
 
 Token
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -192,21 +186,15 @@ Example
 
 $
 
-
-
 </td>
 <td valign="top">
 
 The context item \(the first argument of the function\).
 
-
-
 </td>
 <td valign="top">
 
- `'$'` 
-
-
+`'$'` 
 
 </td>
 </tr>
@@ -215,21 +203,15 @@ The context item \(the first argument of the function\).
 
 .
 
-
-
 </td>
 <td valign="top">
 
 The member of an object.
 
-
-
 </td>
 <td valign="top">
 
- `'$.item.description'` 
-
-
+`'$.item.description'` 
 
 </td>
 </tr>
@@ -238,14 +220,10 @@ The member of an object.
 
 \[
 
-
-
 </td>
 <td valign="top">
 
 The array index specifier \(open\).
-
-
 
 </td>
 <td valign="top">
@@ -259,14 +237,10 @@ The array index specifier \(open\).
 
 \]
 
-
-
 </td>
 <td valign="top">
 
 Array index specifier \(closed\).
-
-
 
 </td>
 <td valign="top">
@@ -275,8 +249,6 @@ Array index specifier \(closed\).
 
 `'$.item.list[1]'`
 
-
-
 </td>
 </tr>
 <tr>
@@ -284,14 +256,10 @@ Array index specifier \(closed\).
 
 to
 
-
-
 </td>
 <td valign="top">
 
 The array index range.
-
-
 
 </td>
 <td valign="top">
@@ -300,8 +268,6 @@ The array index range.
 
 `= '$[3,4,5]'`
 
-
-
 </td>
 </tr>
 <tr>
@@ -309,14 +275,10 @@ The array index range.
 
 \*
 
-
-
 </td>
 <td valign="top">
 
 The wild card.
-
-
 
 </td>
 <td valign="top">
@@ -324,8 +286,6 @@ The wild card.
 `'$.*.description'`
 
 `'$.item.list[*]'`
-
-
 
 </td>
 </tr>

@@ -28,7 +28,7 @@ When creating a view, use the CURRENT\_OBJECT\_SCHEMA function where a schema na
 
 ## Example
 
-The following example replaces CURRENT\_OBJECT\_SCHEMA with the name of the current schema \(in this case, ***SCHEMA1***\):
+The following example replaces CURRENT\_OBJECT\_SCHEMA with the name of the current schema \(in this case, `SCHEMA1`\):
 
 ```
 CREATE VIEW SCHEMA1.VIEW1 AS SELECT WORKDAYS_BETWEEN('01', '2014-01-09', '2014-01-10', CURRENT_OBJECT_SCHEMA()) FROM DUMMY;

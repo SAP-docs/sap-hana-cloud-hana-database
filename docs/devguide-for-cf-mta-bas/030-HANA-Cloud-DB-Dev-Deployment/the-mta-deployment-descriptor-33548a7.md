@@ -1207,28 +1207,20 @@ It is possible to deploy an MTA directly from directory, provided that directory
 
 Element with Associated Content
 
-
-
 </th>
 <th valign="top">
 
 Element/Parameter
-
-
 
 </th>
 <th valign="top">
 
 Example mtad.yaml
 
-
-
 </th>
 <th valign="top">
 
 Manifest Entry
-
-
 
 </th>
 </tr>
@@ -1237,14 +1229,10 @@ Manifest Entry
 
 MTA module
 
-
-
 </td>
 <td valign="top">
 
 Element: `path` 
-
-
 
 </td>
 <td valign="top">
@@ -1278,14 +1266,10 @@ MTA-Module:
 
 MTA resource that requires creation configuration specified in an external file
 
-
-
 </td>
 <td valign="top">
 
 Parameter: `config-path` 
-
-
 
 </td>
 <td valign="top">
@@ -1322,14 +1306,10 @@ Content-Type:
 
 Module required dependency, pointing to the resource that needs binding configuration specified in an external file
 
-
-
 </td>
 <td valign="top">
 
 Parameter: `config-path` 
-
-
 
 </td>
 <td valign="top">
@@ -1385,14 +1365,10 @@ The following table lists the restrictions that apply to the size of MTA **deplo
 
 MTA Component
 
-
-
 </th>
 <th valign="top">
 
 Maximum Size
-
-
 
 </th>
 </tr>
@@ -1401,14 +1377,10 @@ Maximum Size
 
 MTA archive
 
-
-
 </td>
 <td valign="top">
 
 4 GB
-
-
 
 </td>
 </tr>
@@ -1417,14 +1389,10 @@ MTA archive
 
 MTA modules/resources content
 
-
-
 </td>
 <td valign="top">
 
 2 GB
-
-
 
 </td>
 </tr>
@@ -1433,14 +1401,10 @@ MTA modules/resources content
 
 MTA deployment descriptor \(`mtad.yaml`\)
 
-
-
 </td>
 <td valign="top">
 
 1 MB
-
-
 
 </td>
 </tr>
@@ -1449,14 +1413,10 @@ MTA deployment descriptor \(`mtad.yaml`\)
 
 MTA manifest \(`MANIFEST.MF`\)
 
-
-
 </td>
 <td valign="top">
 
 1 MB
-
-
 
 </td>
 </tr>

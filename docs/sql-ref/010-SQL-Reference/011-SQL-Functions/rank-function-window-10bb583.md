@@ -78,28 +78,20 @@ ORDER BY ProdName, Type;
 
 PRODNAME
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 SALES
 
-
-
 </th>
 <th valign="top">
 
 RANK
-
-
 
 </th>
 </tr>
@@ -107,29 +99,21 @@ RANK
 <td valign="top">
 
 Ballcap
-
-
 
 </td>
 <td valign="top">
 
 Lettered
 
-
-
 </td>
 <td valign="top">
 
 40
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -138,28 +122,20 @@ Lettered
 
 Ballcap
 
-
-
 </td>
 <td valign="top">
 
 Plain
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -168,28 +144,20 @@ Plain
 
 Ballcap
 
-
-
 </td>
 <td valign="top">
 
 Team logo
-
-
 
 </td>
 <td valign="top">
 
 40
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -198,28 +166,20 @@ Team logo
 
 Ballcap
 
-
-
 </td>
 <td valign="top">
 
 Vintage
-
-
 
 </td>
 <td valign="top">
 
 60
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -228,28 +188,20 @@ Vintage
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Lettered
-
-
 
 </td>
 <td valign="top">
 
 65
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -258,28 +210,20 @@ Lettered
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Plain
-
-
 
 </td>
 <td valign="top">
 
 60
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -288,28 +232,20 @@ Plain
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Team logo
-
-
 
 </td>
 <td valign="top">
 
 80
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -317,59 +253,43 @@ Team logo
 <td valign="top">
 
 Tee Shirt
-
-
 
 </td>
 <td valign="top">
 
 Lettered
 
-
-
 </td>
 <td valign="top">
 
 22
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Tee Shirt
-
-
 
 </td>
 <td valign="top">
 
 Plain
 
-
-
 </td>
 <td valign="top">
 
 21
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -378,28 +298,20 @@ Plain
 
 Tee Shirt
 
-
-
 </td>
 <td valign="top">
 
 Team logo
-
-
 
 </td>
 <td valign="top">
 
 30
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>

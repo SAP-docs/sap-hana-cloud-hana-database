@@ -118,21 +118,15 @@ This function returns a table with the following columns:
 
 **Column Name**
 
-
-
 </td>
 <td valign="top">
 
 **Column Type**
 
-
-
 </td>
 <td valign="top">
 
 **Description**
-
-
 
 </td>
 </tr>
@@ -141,21 +135,15 @@ This function returns a table with the following columns:
 
 SOURCE\_PERIOD\_START
 
-
-
 </td>
 <td valign="top">
 
 PERIOD\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 Specifies the start of the source period that generated this row.
-
-
 
 </td>
 </tr>
@@ -164,21 +152,15 @@ Specifies the start of the source period that generated this row.
 
 SOURCE\_PERIOD\_END
 
-
-
 </td>
 <td valign="top">
 
 PERIOD\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 Specifies the end of the source period that generated this row.
-
-
 
 </td>
 </tr>
@@ -187,21 +169,15 @@ Specifies the end of the source period that generated this row.
 
 GENERATED\_PERIOD\_START
 
-
-
 </td>
 <td valign="top">
 
 PERIOD\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 Displays the start of the period represented by this row, including the period\_start. This value is a closed interval at the start.
-
-
 
 </td>
 </tr>
@@ -210,21 +186,15 @@ Displays the start of the period represented by this row, including the period\_
 
 GENERATED\_PERIOD\_END
 
-
-
 </td>
 <td valign="top">
 
 PERIOD\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 Displays the end of the period represented by this row as an open interval. The period represented by this row consists of all times that are greater than or equal to the start and less than the end.
-
-
 
 </td>
 </tr>
@@ -233,21 +203,15 @@ Displays the end of the period represented by this row as an open interval. The 
 
 ELEMENT\_NUMBER\_IN\_SOURCE\_PERIOD
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Specifies the element number of this period within its source interval.
-
-
 
 </td>
 </tr>
@@ -256,21 +220,15 @@ Specifies the element number of this period within its source interval.
 
 ELEMENT\_NUMBER\_IN\_GENERATED\_SERIES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Specifies the element number within the whole result set.
-
-
 
 </td>
 </tr>
@@ -279,21 +237,15 @@ Specifies the element number within the whole result set.
 
 FRACTION\_OF\_SOURCE\_PERIOD
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Specifies the fraction of the length of the source period that this generated period covers.
-
-
 
 </td>
 </tr>
@@ -302,21 +254,15 @@ Specifies the fraction of the length of the source period that this generated pe
 
 FRACTION\_OF\_MIN\_MAX\_RANGE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Specifies the fraction of the length of all generated periods that this generated period covers.
-
-
 
 </td>
 </tr>
@@ -342,56 +288,40 @@ The following result is returned by the example above:
 
 SOURCE\_PERIOD\_START
 
-
-
 </th>
 <th valign="top">
 
 SOURCE\_PERIOD\_END
-
-
 
 </th>
 <th valign="top">
 
 GENERATED\_PERIOD\_START
 
-
-
 </th>
 <th valign="top">
 
 GENERATED\_PERIOD\_END
-
-
 
 </th>
 <th valign="top">
 
 ELEMENT\_NUMBER\_IN\_SOURCE\_PERIOD
 
-
-
 </th>
 <th valign="top">
 
 ELEMENT\_NUMBER\_IN\_GENERATED\_SERIES
-
-
 
 </th>
 <th valign="top">
 
 FRACTION\_OF\_SOURCE\_PERIOD
 
-
-
 </th>
 <th valign="top">
 
 FRACTION\_OF\_MIN\_MAX\_RANGE
-
-
 
 </th>
 </tr>
@@ -400,56 +330,40 @@ FRACTION\_OF\_MIN\_MAX\_RANGE
 
 Jan 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2000
-
-
 
 </td>
 <td valign="top">
 
 Jan 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 Apr 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0.2465753424657534
 
-
-
 </td>
 <td valign="top">
 
 0.12311901504787962
-
-
 
 </td>
 </tr>
@@ -458,56 +372,40 @@ Apr 1, 1999
 
 Jan 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2000
-
-
 
 </td>
 <td valign="top">
 
 Apr 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 Jul 1, 1999
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 0.2493150684931507
 
-
-
 </td>
 <td valign="top">
 
 0.12448700410396717
-
-
 
 </td>
 </tr>
@@ -516,56 +414,40 @@ Jul 1, 1999
 
 Jan 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2000
-
-
 
 </td>
 <td valign="top">
 
 Jul 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 Oct 1, 1999
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 0.25205479452054796
 
-
-
 </td>
 <td valign="top">
 
 0.12585499316005472
-
-
 
 </td>
 </tr>
@@ -574,56 +456,40 @@ Oct 1, 1999
 
 Jan 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2000
-
-
 
 </td>
 <td valign="top">
 
 Oct 1, 1999
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2000
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 0.25205479452054796
 
-
-
 </td>
 <td valign="top">
 
 0.12585499316005472
-
-
 
 </td>
 </tr>
@@ -632,56 +498,40 @@ Jan 1, 2000
 
 Jan 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2001
-
-
 
 </td>
 <td valign="top">
 
 Jan 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 Apr 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 0.24863387978142076
 
-
-
 </td>
 <td valign="top">
 
 0.12448700410396717
-
-
 
 </td>
 </tr>
@@ -690,57 +540,41 @@ Apr 1, 2000
 
 Jan 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2001
-
-
 
 </td>
 <td valign="top">
 
 Apr 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 Jul 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 6
 
-
-
 </td>
 <td valign="top">
 
 0.24863387978142076
-
-
 
 </td>
 <td valign="top">
 
 0.12448700410396717
 
-
-
 </td>
 </tr>
 <tr>
@@ -748,56 +582,40 @@ Jul 1, 2000
 
 Jan 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2001
-
-
 
 </td>
 <td valign="top">
 
 Jul 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 Oct 1, 2000
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
 
 0.25136612021857924
 
-
-
 </td>
 <td valign="top">
 
 0.12585499316005472
-
-
 
 </td>
 </tr>
@@ -806,56 +624,40 @@ Oct 1, 2000
 
 Jan 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2001
-
-
 
 </td>
 <td valign="top">
 
 Oct 1, 2000
 
-
-
 </td>
 <td valign="top">
 
 Jan 1, 2001
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 <td valign="top">
 
 0.25136612021857924
 
-
-
 </td>
 <td valign="top">
 
 0.12585499316005472
-
-
 
 </td>
 </tr>
@@ -870,29 +672,21 @@ The example above returns a result similar to the following:
 
 ELEMENT\_NUMBER
 
-
-
 </th>
 <th valign="top">
 
 VAL
-
-
 
 </th>
 <th valign="top">
 
 ELEMENT\_NUMBER\_IN\_GENERATED\_SERIES
 
-
-
 </th>
 <th valign="top">
 
 DA
 
-
-
 </th>
 </tr>
 <tr>
@@ -900,28 +694,20 @@ DA
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2.21
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1.105
-
-
 
 </td>
 </tr>
@@ -930,28 +716,20 @@ DA
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2.21
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1.105
-
-
 
 </td>
 </tr>
@@ -959,29 +737,21 @@ DA
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 5.52
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 2.76
-
-
 
 </td>
 </tr>
@@ -990,28 +760,20 @@ DA
 
 2
 
-
-
 </td>
 <td valign="top">
 
 5.52
-
-
 
 </td>
 <td valign="top">
 
 4
 
-
-
 </td>
 <td valign="top">
 
 2.76
-
-
 
 </td>
 </tr>
@@ -1020,28 +782,20 @@ DA
 
 3
 
-
-
 </td>
 <td valign="top">
 
 2.35
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 1.175
-
-
 
 </td>
 </tr>
@@ -1050,28 +804,20 @@ DA
 
 3
 
-
-
 </td>
 <td valign="top">
 
 2.35
-
-
 
 </td>
 <td valign="top">
 
 6
 
-
-
 </td>
 <td valign="top">
 
 1.175
-
-
 
 </td>
 </tr>
@@ -1079,8 +825,6 @@ DA
 <td valign="top">
 
 ...
-
-
 
 </td>
 <td valign="top">

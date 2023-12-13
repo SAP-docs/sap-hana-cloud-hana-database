@@ -44,7 +44,7 @@ The BITCOUNT function returns an INTEGER value.
 
 ## Example
 
-The following example counts the bits for ***255***, and returns the value ***8***:
+The following example counts the bits for `255`, and returns the value ***8***:
 
 ```
 SELECT BITCOUNT (255) "bitcount" FROM DUMMY;

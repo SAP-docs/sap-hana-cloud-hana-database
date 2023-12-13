@@ -17,21 +17,15 @@ Provides system limit information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 CATEGORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the category of the system limit is adaptable.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays whether the category of the system limit is adaptable.
 
 NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the system limit.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the system limit.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the value of the system limit.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the value of the system limit.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of value.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type of value.
 
 UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unit of value.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the unit of value.
 
 COMMENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays any additional comments for system limits.
-
-
 
 </td>
 </tr>
@@ -180,5 +138,5 @@ Displays any additional comments for system limits.
 
 [System Limitations](../../010-SQL-Reference/system-limitations-20a7605.md "Limitations to take into consideration when administering an SAP HANA Cloud database.")
 
-[Analyzing System Performance](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/2f1b50583b214f8c8d64d5a8f65bd74b.html "You can use monitoring views to analyze how effectively your system is handling the current workload.") :arrow_upper_right:
+[Analyzing System Performance](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/2f1b50583b214f8c8d64d5a8f65bd74b.html "You can use monitoring views to analyze how effectively your system is handling the current workload.") :arrow_upper_right:
 

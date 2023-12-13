@@ -60,7 +60,7 @@ The SAP HANA Cloud, SAP HANA database deployment infrastructure \(HDI\) supports
 
 [HDI Artifact Type and Build Plug-ins](hdi-artifact-type-and-build-plug-ins-f8618f7.md "The SAP HANA Cloud, design-time database artifact types, for example, tables and views, are mapped to an SAP HDI build plug-in.")
 
-[SAP HANA Cloud, SAP HANA Database Deployment Infrastructure Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/4077972509f5437c85d6a03e01509417.html "Set up and maintain the deployment infrastructure for the SAP HANA Cloud, SAP HANA database service.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Deployment Infrastructure Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/4077972509f5437c85d6a03e01509417.html "Set up and maintain the deployment infrastructure for the SAP HANA Cloud, SAP HANA database service.") :arrow_upper_right:
 
 [Design-time Content Compatibility \(SAP HANA Cloud Migration Guide\)](https://help.sap.com/viewer/3c53bc7b58934a9795b6dd8c7e28cf05/hanacloud/en-US/9c8656d9c1a34c829fab426cb77b4639.html)
 

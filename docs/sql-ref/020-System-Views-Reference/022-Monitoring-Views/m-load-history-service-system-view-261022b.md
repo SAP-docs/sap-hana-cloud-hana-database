@@ -15,21 +15,15 @@ Lists service-specific load history KPIs.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port number.
 
 TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the KPI collection timestamp.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the KPI collection timestamp.
 
 CPU
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the percent of CPU used by the service.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the percent of CPU used by the service.
 
 SYSTEM\_CPU
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the percent of OS Kernel/System CPU used by the service.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the percent of OS Kernel/System CPU used by the service.
 
 MEMORY\_USED
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory used by the service in bytes.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the memory used by the service in bytes.
 
 MEMORY\_ALLOCATION\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory allocation limit for the service in bytes.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the memory allocation limit for the service in bytes.
 
 HANDLE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open handles.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the number of open handles.
 
 PING\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration, in microseconds, of the service ping request \(THREAD\_METHOD=\_\_nsWatchdog\). This request includes the time it takes to measure the values shown in this view.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the duration, in microseconds, of the service ping request \(THREAD\_ME
 
 SWAP\_IN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bytes read from the swap by the service \(column 12\(majflt\) in /proc/*<pid\>*/stat \* sysconf\(\_SC\_PAGESIZE\)\).
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the bytes read from the swap by the service \(column 12\(majflt\) in /p
 
 CONNECTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open SQL connections.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the number of open SQL connections.
 
 INTERNAL\_CONNECTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open SQL internal connections.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the number of open SQL internal connections.
 
 EXTERNAL\_CONNECTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open SQL external connections.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the number of open SQL external connections.
 
 IDLE\_CONNECTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open SQL idle connections.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the number of open SQL idle connections.
 
 TRANSACTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open SQL transactions.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the number of open SQL transactions.
 
 INTERNAL\_TRANSACTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of internal transactions.
-
-
 
 </td>
 </tr>
@@ -406,21 +304,15 @@ Displays the number of internal transactions.
 
 EXTERNAL\_TRANSACTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of external transactions.
-
-
 
 </td>
 </tr>
@@ -429,21 +321,15 @@ Displays the number of external transactions.
 
 USER\_TRANSACTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of user transactions.
-
-
 
 </td>
 </tr>
@@ -452,21 +338,15 @@ Displays the number of user transactions.
 
 BLOCKED\_TRANSACTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocked SQL transactions.
-
-
 
 </td>
 </tr>
@@ -475,21 +355,15 @@ Displays the number of blocked SQL transactions.
 
 STATEMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of finished SQL statements.
-
-
 
 </td>
 </tr>
@@ -498,21 +372,15 @@ Displays the number of finished SQL statements.
 
 COMMIT\_ID\_RANGE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the range between the newest and oldest active commit IDs.
-
-
 
 </td>
 </tr>
@@ -521,21 +389,15 @@ Displays the range between the newest and oldest active commit IDs.
 
 MVCC\_VERSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active MVCC versions.
-
-
 
 </td>
 </tr>
@@ -544,21 +406,15 @@ Displays the number of active MVCC versions.
 
 PENDING\_SESSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of pending requests.
-
-
 
 </td>
 </tr>
@@ -567,21 +423,15 @@ Displays the number of pending requests.
 
 RECORD\_LOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of acquired record locks.
-
-
 
 </td>
 </tr>
@@ -590,21 +440,15 @@ Displays the number of acquired record locks.
 
 CS\_READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of read requests \(SELECT\).
-
-
 
 </td>
 </tr>
@@ -613,21 +457,15 @@ Displays the number of read requests \(SELECT\).
 
 CS\_WRITE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of write requests \(INSERT, UPDATE, DELETE\).
-
-
 
 </td>
 </tr>
@@ -636,21 +474,15 @@ Displays the number of write requests \(INSERT, UPDATE, DELETE\).
 
 CS\_MERGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of merge requests.
-
-
 
 </td>
 </tr>
@@ -659,21 +491,15 @@ Displays the number of merge requests.
 
 CS\_UNLOAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of column unloads.
-
-
 
 </td>
 </tr>
@@ -682,21 +508,15 @@ Displays the number of column unloads.
 
 ACTIVE\_THREAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active threads.
-
-
 
 </td>
 </tr>
@@ -705,21 +525,15 @@ Displays the number of active threads.
 
 WAITING\_THREAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of waiting threads.
-
-
 
 </td>
 </tr>
@@ -728,21 +542,15 @@ Displays the number of waiting threads.
 
 TOTAL\_THREAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of threads.
-
-
 
 </td>
 </tr>
@@ -751,21 +559,15 @@ Displays the total number of threads.
 
 ACTIVE\_SQL\_EXECUTOR\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active SQLExecutors.
-
-
 
 </td>
 </tr>
@@ -774,21 +576,15 @@ Displays the number of active SQLExecutors.
 
 WAITING\_SQL\_EXECUTOR\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of waiting SQLExecutors.
-
-
 
 </td>
 </tr>
@@ -797,21 +593,15 @@ Displays the number of waiting SQLExecutors.
 
 TOTAL\_SQL\_EXECUTOR\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of SQLExecutors.
-
-
 
 </td>
 </tr>
@@ -820,21 +610,15 @@ Displays the total number of SQLExecutors.
 
 DATA\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bytes written to the data area.
-
-
 
 </td>
 </tr>
@@ -843,21 +627,15 @@ Displays the bytes written to the data area.
 
 DATA\_WRITE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time used for writing to the data area in microseconds.
-
-
 
 </td>
 </tr>
@@ -866,21 +644,15 @@ Displays the time used for writing to the data area in microseconds.
 
 LOG\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bytes written to the log area.
-
-
 
 </td>
 </tr>
@@ -889,21 +661,15 @@ Displays the bytes written to the log area.
 
 LOG\_WRITE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time used for writing to the log area in microseconds.
-
-
 
 </td>
 </tr>
@@ -912,21 +678,15 @@ Displays the time used for writing to the log area in microseconds.
 
 DATA\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bytes read from the data area.
-
-
 
 </td>
 </tr>
@@ -935,21 +695,15 @@ Displays the bytes read from the data area.
 
 DATA\_READ\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time used for reading from the data area in microseconds.
-
-
 
 </td>
 </tr>
@@ -958,21 +712,15 @@ Displays the time used for reading from the data area in microseconds.
 
 LOG\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bytes read from the log area.
-
-
 
 </td>
 </tr>
@@ -981,21 +729,15 @@ Displays the bytes read from the log area.
 
 LOG\_READ\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time used for reading from the log area in microseconds.
-
-
 
 </td>
 </tr>
@@ -1004,21 +746,15 @@ Displays the time used for reading from the log area in microseconds.
 
 DATA\_BACKUP\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bytes written to the data backup.
-
-
 
 </td>
 </tr>
@@ -1027,21 +763,15 @@ Displays the bytes written to the data backup.
 
 DATA\_BACKUP\_WRITE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time used for writing to the data backup in microseconds.
-
-
 
 </td>
 </tr>
@@ -1050,21 +780,15 @@ Displays the time used for writing to the data backup in microseconds.
 
 LOG\_BACKUP\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bytes written to the log backup.
-
-
 
 </td>
 </tr>
@@ -1073,21 +797,15 @@ Displays the bytes written to the log backup.
 
 LOG\_BACKUP\_WRITE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The time used for writing to the log backup.
-
-
 
 </td>
 </tr>
@@ -1096,21 +814,15 @@ The time used for writing to the log backup.
 
 MUTEX\_COLLISION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of collisions on mutexes.
-
-
 
 </td>
 </tr>
@@ -1119,21 +831,15 @@ Displays the number of collisions on mutexes.
 
 READ\_WRITE\_LOCK\_COLLISION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of collisions on read/write locks.
-
-
 
 </td>
 </tr>
@@ -1142,21 +848,15 @@ Displays the number of collisions on read/write locks.
 
 ADMISSION\_CONTROL\_ADMIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of admission requests admitted by admission control.
-
-
 
 </td>
 </tr>
@@ -1165,21 +865,15 @@ Displays the number of admission requests admitted by admission control.
 
 ADMISSION\_CONTROL\_REJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of session requests rejected by admission control.
-
-
 
 </td>
 </tr>
@@ -1188,21 +882,15 @@ Displays the number of session requests rejected by admission control.
 
 ADMISSION\_CONTROL\_QUEUE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of session requests waiting in the admission control queue.
-
-
 
 </td>
 </tr>
@@ -1211,21 +899,15 @@ Displays the number of session requests waiting in the admission control queue.
 
 ADMISSION\_CONTROL\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total wait time of the session requests queued in the admission control queue in microseconds.
-
-
 
 </td>
 </tr>
@@ -1234,21 +916,15 @@ Displays the total wait time of the session requests queued in the admission con
 
 ADMISSION\_CONTROL\_ENQUEUE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of session requests queued by admission control.
-
-
 
 </td>
 </tr>
@@ -1257,21 +933,15 @@ Displays the number of session requests queued by admission control.
 
 ADMISSION\_CONTROL\_DEQUEUE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of session requests dequeued for deferred execution by admission control.
-
-
 
 </td>
 </tr>
@@ -1280,21 +950,15 @@ Displays the number of session requests dequeued for deferred execution by admis
 
 ADMISSION\_CONTROL\_TIMEOUT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of session requests dequeued for timed out by admission control.
-
-
 
 </td>
 </tr>

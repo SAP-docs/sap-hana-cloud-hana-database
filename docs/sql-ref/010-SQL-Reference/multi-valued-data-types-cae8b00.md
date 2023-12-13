@@ -34,11 +34,11 @@ Arrays are immutable: adding, removing, or changing elements is not possible. Al
 **Related Information**  
 
 
-[Array Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/cba8ef91ba944e37beb26eb8bd995c2f.html "") :arrow_upper_right:
+[Array Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/cba8ef91ba944e37beb26eb8bd995c2f.html "") :arrow_upper_right:
 
 [TRIM\_ARRAY Function \(Array\)](011-SQL-Functions/trim-array-function-array-565f8f6.md "Removes the specified number of elements from the end of an array.")
 
-[UNNEST Function](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/4f12887c7941410d802a36c3f1a87a59.html "") :arrow_upper_right:
+[UNNEST Function](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/4f12887c7941410d802a36c3f1a87a59.html "") :arrow_upper_right:
 
 [SUBARRAY Function \(Array\)](011-SQL-Functions/subarray-function-array-49d7752.md "Returns a subset of values from the specified array beginning from the specified start position.")
 
@@ -48,5 +48,5 @@ Arrays are immutable: adding, removing, or changing elements is not possible. Al
 
 [CARDINALITY Function \(Array\)](011-SQL-Functions/cardinality-function-array-21c6746.md "Returns the number of elements in a specified array.")
 
-[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
 

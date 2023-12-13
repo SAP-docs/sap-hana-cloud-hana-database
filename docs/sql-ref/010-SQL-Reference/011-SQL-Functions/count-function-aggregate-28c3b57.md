@@ -52,7 +52,7 @@ ALL
 </b></dt>
 <dd>
 
-Optional keyword reflecting the default behavior. That is, ***COUNT\(ALL *<expression\>*\)*** and ***COUNT\(*<expression\>*\)*** return the same result.
+Optional keyword reflecting the default behavior. That is, <code>COUNT(ALL <i class="varname">&lt;expression&gt;</i>)</code> and <code>COUNT(<i class="varname">&lt;expression&gt;</i>)</code> return the same result.
 
 
 
@@ -122,56 +122,40 @@ Defines a window on the data over which the function operates. For syntax, see [
 
 **`TINYINT`**
 
-
-
 </th>
 <th valign="top">
 
 **`SMALLINT`**
-
-
 
 </th>
 <th valign="top">
 
 **`INTEGER`**
 
-
-
 </th>
 <th valign="top">
 
 **`BIGINT`**
-
-
 
 </th>
 <th valign="top">
 
 **`DECIMAL(p,s)`**
 
-
-
 </th>
 <th valign="top">
 
 **`DECIMAL`**
-
-
 
 </th>
 <th valign="top">
 
 **`REAL`**
 
-
-
 </th>
 <th valign="top">
 
 **`DOUBLE`**
-
-
 
 </th>
 </tr>
@@ -180,56 +164,40 @@ Defines a window on the data over which the function operates. For syntax, see [
 
 `BIGINT`
 
+</td>
+<td valign="top">
 
+`BIGINT`
 
 </td>
 <td valign="top">
 
 `BIGINT`
 
+</td>
+<td valign="top">
 
+`BIGINT`
 
 </td>
 <td valign="top">
 
 `BIGINT`
 
+</td>
+<td valign="top">
 
+`BIGINT`
 
 </td>
 <td valign="top">
 
 `BIGINT`
 
-
-
 </td>
 <td valign="top">
 
 `BIGINT`
-
-
-
-</td>
-<td valign="top">
-
-`BIGINT`
-
-
-
-</td>
-<td valign="top">
-
-`BIGINT`
-
-
-
-</td>
-<td valign="top">
-
-`BIGINT`
-
-
 
 </td>
 </tr>

@@ -46,14 +46,10 @@ The end-to-end process of developing an application that you want to deploy on S
 
 Step
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -62,14 +58,10 @@ Description
 
 1
 
-
-
 </td>
 <td valign="top">
 
- [Create the design-time folder infrastructure for your application source files](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_e45_fk2_vt) 
-
-
+[Create the design-time folder infrastructure for your application source files](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_e45_fk2_vt) 
 
 </td>
 </tr>
@@ -78,14 +70,10 @@ Description
 
 2
 
-
-
 </td>
 <td valign="top">
 
- [Create the deployment descriptor files for your application](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_zsx_zk2_vt) 
-
-
+[Create the deployment descriptor files for your application](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_zsx_zk2_vt) 
 
 </td>
 </tr>
@@ -94,14 +82,10 @@ Description
 
 3
 
-
-
 </td>
 <td valign="top">
 
- [Add database artifacts and content](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_t1k_1l2_vt) 
-
-
+[Add database artifacts and content](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_t1k_1l2_vt) 
 
 </td>
 </tr>
@@ -110,14 +94,10 @@ Description
 
 4
 
-
-
 </td>
 <td valign="top">
 
- [Add application business logic to work with the database artifacts](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_b4p_1l2_vt) 
-
-
+[Add application business logic to work with the database artifacts](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_b4p_1l2_vt) 
 
 </td>
 </tr>
@@ -126,14 +106,10 @@ Description
 
 5
 
-
-
 </td>
 <td valign="top">
 
- [Create any required OData service definitions](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_ljz_1l2_vt) 
-
-
+[Create any required OData service definitions](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_ljz_1l2_vt) 
 
 </td>
 </tr>
@@ -142,14 +118,10 @@ Description
 
 6
 
-
-
 </td>
 <td valign="top">
 
- [Create the user interface in which to display the database content](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_fbf_bl2_vt) 
-
-
+[Create the user interface in which to display the database content](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_fbf_bl2_vt) 
 
 </td>
 </tr>
@@ -158,14 +130,10 @@ Description
 
 7
 
-
-
 </td>
 <td valign="top">
 
- [Add security to protect what you have built](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_anm_bl2_vt) 
-
-
+[Add security to protect what you have built](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_anm_bl2_vt) 
 
 </td>
 </tr>
@@ -174,14 +142,10 @@ Description
 
 8
 
-
-
 </td>
 <td valign="top">
 
- [Define application routes \(and destinations\)](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_szx_bl2_vt) 
-
-
+[Define application routes \(and destinations\)](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_szx_bl2_vt) 
 
 </td>
 </tr>
@@ -190,14 +154,10 @@ Description
 
 9
 
-
-
 </td>
 <td valign="top">
 
- [Create any service instances needed by your application](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_tvj_qwn_wt) 
-
-
+[Create any service instances needed by your application](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_tvj_qwn_wt) 
 
 </td>
 </tr>
@@ -206,14 +166,10 @@ Description
 
 10
 
-
-
 </td>
 <td valign="top">
 
- [Deploy your project](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_wss_cl2_vt) 
-
-
+[Deploy your project](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_wss_cl2_vt) 
 
 </td>
 </tr>
@@ -222,14 +178,10 @@ Description
 
 11
 
-
-
 </td>
 <td valign="top">
 
- [Test your project in the user interface](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_kvg_dl2_vt) 
-
-
+[Test your project in the user interface](set-up-a-multitarget-application-project-424a70b.md#loio424a70b12c3d42809e777591813e3703__step_kvg_dl2_vt) 
 
 </td>
 </tr>

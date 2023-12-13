@@ -48,7 +48,7 @@ Converts a binary value to a hexadecimal value as an NVARCHAR data type. If the 
 
 ## Example
 
-The following example converts the binary value ***AB*** to a hexadecimal NVARCHAR value ***4142***:
+The following example converts the binary value `AB` to a hexadecimal NVARCHAR value ***4142***:
 
 ```
 SELECT BINTOHEX('AB') "bintohex" FROM DUMMY;

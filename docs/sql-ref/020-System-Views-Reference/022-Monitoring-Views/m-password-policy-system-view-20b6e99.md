@@ -17,21 +17,15 @@ Defines effective password policy settings.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,14 +34,10 @@ Description
 
 PROPERTY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
-
-
 
 </td>
 <td valign="top">
@@ -192,21 +182,15 @@ Displays the number of minutes the user is locked out after too many invalid con
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the value.
-
-
 
 </td>
 </tr>
@@ -215,7 +199,7 @@ Displays the value.
 **Related Information**  
 
 
-[Password Policy Configuration Options](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
+[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
 
 [CREATE USERGROUP Statement \(Access Control\)](../../010-SQL-Reference/012-SQL-Statements/create-usergroup-statement-access-control-9869125.md "Creates a usergroup.")
 

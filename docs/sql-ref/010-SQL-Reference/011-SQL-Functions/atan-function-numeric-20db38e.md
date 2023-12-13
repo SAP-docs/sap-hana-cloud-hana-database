@@ -48,7 +48,7 @@ Returns the arc-tangent, in radians, of the numeric argument *<number\>*. The ra
 
 ## Example
 
-The following example returns the value ***0.4636476090008061*** for ***"atan"***:
+The following example returns the value ***0.4636476090008061*** for `"atan"`:
 
 ```
 SELECT ATAN (0.5) "atan" FROM DUMMY;

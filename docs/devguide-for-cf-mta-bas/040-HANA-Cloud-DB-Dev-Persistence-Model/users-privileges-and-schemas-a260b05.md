@@ -59,21 +59,15 @@ The following table provides more detailed information concerning the process of
 
 Step
 
-
-
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Comments
-
-
 
 </th>
 </tr>
@@ -82,14 +76,10 @@ Comments
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Create base target objects “`Table T1`” and role “`Role R1#`”.
-
-
 
 </td>
 <td valign="top">
@@ -98,8 +88,6 @@ Synonyms can be created for other database objects, too, for example: tables, vi
 
 `Role R1#` assigns the `SELECT` privilege on `Table T1` with `GRANT OPTION`
 
-
-
 </td>
 </tr>
 <tr>
@@ -107,14 +95,10 @@ Synonyms can be created for other database objects, too, for example: tables, vi
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Grant privileges to “`Schema2`” owner.
-
-
 
 </td>
 <td valign="top">
@@ -133,21 +117,15 @@ Use `RoleR1#.hdbrole` to assign the required privileges.
 
 3
 
-
-
 </td>
 <td valign="top">
 
 Ensure the owner of “`Schema2`” has access to “`Table T1`” 
 
-
-
 </td>
 <td valign="top">
 
 The owner requires `SELECT` privilege on `Table T1` with `GRANT OPTION` which is defined in `Role R1#`.
-
-
 
 </td>
 </tr>
@@ -156,14 +134,10 @@ The owner requires `SELECT` privilege on `Table T1` with `GRANT OPTION` which is
 
 4
 
-
-
 </td>
 <td valign="top">
 
 Create “`Synonym S1`” \(and role “`Role R2`”\).
-
-
 
 </td>
 <td valign="top">
@@ -172,8 +146,6 @@ When creating a synonym, the `SELECT` privilege is required for the DEFINER-mode
 
 `Role R2` defines the privileges required by an application user to access the `View V1`.
 
-
-
 </td>
 </tr>
 <tr>
@@ -181,21 +153,15 @@ When creating a synonym, the `SELECT` privilege is required for the DEFINER-mode
 
 5
 
-
-
 </td>
 <td valign="top">
 
 Use “`Synonym S1`” to access “`Table T1`”.
 
-
-
 </td>
 <td valign="top">
 
 To access objects within an HDI-container, only private \(i.e. schema-local\) synonyms can be used.
-
-
 
 </td>
 </tr>
@@ -204,21 +170,15 @@ To access objects within an HDI-container, only private \(i.e. schema-local\) sy
 
 6
 
-
-
 </td>
 <td valign="top">
 
 Create a view to access “`Synonym S1`”.
 
-
-
 </td>
 <td valign="top">
 
- “`View V1`” references “`Synonym S1`”.
-
-
+“`View V1`” references “`Synonym S1`”.
 
 </td>
 </tr>
@@ -227,14 +187,10 @@ Create a view to access “`Synonym S1`”.
 
 7
 
-
-
 </td>
 <td valign="top">
 
 Application users can access “`Table T1`” in “`Schema 1`” via “`View V1`” in “`Schema 2`” 
-
-
 
 </td>
 <td valign="top">
@@ -322,21 +278,15 @@ The following table provides more detailed information concerning the process of
 
 Step
 
-
-
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 Comments
-
-
 
 </th>
 </tr>
@@ -345,14 +295,10 @@ Comments
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Create base target objects “`Table T1`” as well as “`Role R1`” and “`Role R1#`”.
-
-
 
 </td>
 <td valign="top">
@@ -363,8 +309,6 @@ Synonyms can be created for other database objects, too, for example: tables, vi
 
 `Role R1#` assigns the `SELECT` privilege on `Table T1` with `GRANT OPTION`
 
-
-
 </td>
 </tr>
 <tr>
@@ -372,14 +316,10 @@ Synonyms can be created for other database objects, too, for example: tables, vi
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Assign access privileges to the owner of “`Schema2`”.
-
-
 
 </td>
 <td valign="top">
@@ -398,21 +338,15 @@ Use `RoleR1#.hdbrole` to assign the required privileges.
 
 3
 
-
-
 </td>
 <td valign="top">
 
 Ensure the owner of “`Schema2`” has access to “`Table T1`” 
 
-
-
 </td>
 <td valign="top">
 
- `Role R1#` includes the `SELECT` privilege `WITH GRANT OPTION` on `Table T1`.
-
-
+`Role R1#` includes the `SELECT` privilege `WITH GRANT OPTION` on `Table T1`.
 
 </td>
 </tr>
@@ -421,14 +355,10 @@ Ensure the owner of “`Schema2`” has access to “`Table T1`”
 
 4
 
-
-
 </td>
 <td valign="top">
 
 Create “`Synonym S1`”, “`Role R2`”, and “`Role R2#`”.
-
-
 
 </td>
 <td valign="top">
@@ -437,8 +367,6 @@ Create “`Synonym S1`”, “`Role R2`”, and “`Role R2#`”.
 
 “`Role R2#`” defines the `EXECUTE` privilege `with GRANT OPTION` on `Procedure P1`and also includes a reference to the privileges defined in `Role R1#` \(INVOKER mode only\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -446,14 +374,10 @@ Create “`Synonym S1`”, “`Role R2`”, and “`Role R2#`”.
 
 5
 
-
-
 </td>
 <td valign="top">
 
 Use “`Synonym S1`” to access “`Table T1`”.
-
-
 
 </td>
 <td valign="top">
@@ -472,21 +396,15 @@ When creating a synonym, the `SELECT` privilege is required for the table, view,
 
 6
 
-
-
 </td>
 <td valign="top">
 
 Create an INVOKER-mode procedure “`Procedure P1`” to access “`Synonym S1`”.
 
-
-
 </td>
 <td valign="top">
 
- “`Procedure P1`” references “`Synonym S1`” 
-
-
+“`Procedure P1`” references “`Synonym S1`” 
 
 </td>
 </tr>
@@ -494,8 +412,6 @@ Create an INVOKER-mode procedure “`Procedure P1`” to access “`Synonym S1`�
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
@@ -524,14 +440,10 @@ Use a database role object, for example, role `RoleR2.hdbrole`.
 
 8
 
-
-
 </td>
 <td valign="top">
 
 Create “`Synonym S2`” and “`Role R3`”.
-
-
 
 </td>
 <td valign="top">
@@ -540,8 +452,6 @@ Create “`Synonym S2`” and “`Role R3`”.
 
 `Role R3` defines the privileges required for `INVOKER` mode access to `Procedure P2`. `Role R3` must also include a reference to `Role R2`, which in turn includes `Role R1`.
 
-
-
 </td>
 </tr>
 <tr>
@@ -549,21 +459,15 @@ Create “`Synonym S2`” and “`Role R3`”.
 
 9
 
-
-
 </td>
 <td valign="top">
 
 Create an INVOKER-mode procedure “`Procedure P2`” to access “`Synonym S2`”.
 
-
-
 </td>
 <td valign="top">
 
 As explained in a previous step, a synonym cannot be used as the base object for another synonym.
-
-
 
 </td>
 </tr>
@@ -572,14 +476,10 @@ As explained in a previous step, a synonym cannot be used as the base object for
 
 10
 
-
-
 </td>
 <td valign="top">
 
 Enable access to base object `Table T1` from Schema 3.
-
-
 
 </td>
 <td valign="top">
@@ -606,14 +506,10 @@ Requires the following privileges:
 
 11
 
-
-
 </td>
 <td valign="top">
 
 Assign access privileges to the application users.
-
-
 
 </td>
 <td valign="top">
@@ -638,5 +534,5 @@ Access privileges are defined in `Role R3`.
 
 [Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
 
-[SAP HANA Security Guide (Authorization, Object Privileges)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_2_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Security Guide (Authorization, Object Privileges)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

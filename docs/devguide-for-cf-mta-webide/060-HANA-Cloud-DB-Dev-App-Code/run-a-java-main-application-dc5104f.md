@@ -137,6 +137,8 @@ The SAP Java buildpack provides an Apache Tomcat or an Apache TomEE 7 run time. 
 
 
 
+## Example
+
 To create a Java Main application that uses its own run time, perform the following steps:
 
 1.  Download the *sample\_main* application from the company's server and extract it into a local folder.

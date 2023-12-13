@@ -318,7 +318,7 @@ You must have the CREATE ANY privilege on the schema in which the sequence is cr
 
 ## Example
 
-The following example creates a sequence, ***mySequence***, starting it at 1000, and then queries the NEXTVAL value for the sequence. Note that after you create a sequence, you cannot query the value of CURRVAL until the value is populated by querying the NEXTVAL value.
+The following example creates a sequence, `mySequence`, starting it at 1000, and then queries the NEXTVAL value for the sequence. Note that after you create a sequence, you cannot query the value of CURRVAL until the value is populated by querying the NEXTVAL value.
 
 ```
 CREATE SEQUENCE mySequence START WITH 1000 INCREMENT BY 1;
@@ -332,16 +332,12 @@ SELECT mySequence.NEXTVAL FROM DUMMY;
 
 MYSEQUENCE.NEXTVAL
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 1,000
-
-
 
 </td>
 </tr>
@@ -360,8 +356,6 @@ SELECT mySequence.CURRVAL FROM DUMMY;
 
 MYSEQUENCE.CURRVAL
 
-
-
 </th>
 </tr>
 <tr>
@@ -369,13 +363,11 @@ MYSEQUENCE.CURRVAL
 
 1,000
 
-
-
 </td>
 </tr>
 </table>
 
-Now create a table, ***myTable*** with a column definition that references ***mySequence.NEXTVAL***, and then query the contents of the table:
+Now create a table, `myTable` with a column definition that references `mySequence.NEXTVAL`, and then query the contents of the table:
 
 ```
 CREATE ROW TABLE myTable (a INT); 
@@ -390,8 +382,6 @@ SELECT * FROM myTable;
 
 A
 
-
-
 </th>
 </tr>
 <tr>
@@ -399,13 +389,11 @@ A
 
 1,001
 
-
-
 </td>
 </tr>
 </table>
 
-Now insert another row into ***myTable*** and query the contents of the table again:
+Now insert another row into `myTable` and query the contents of the table again:
 
 ```
 INSERT INTO myTable VALUES (mySequence.NEXTVAL);
@@ -419,8 +407,6 @@ SELECT * FROM myTable;
 
 A
 
-
-
 </th>
 </tr>
 <tr>
@@ -428,16 +414,12 @@ A
 
 1,001
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1,002
-
-
 
 </td>
 </tr>

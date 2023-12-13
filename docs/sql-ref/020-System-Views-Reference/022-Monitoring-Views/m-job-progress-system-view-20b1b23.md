@@ -17,21 +17,15 @@ Provides information about current long running system operations.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema of the object.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema of the object.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the object.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the name of the object.
 
 JOB\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of operation. See the table below for more detail.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the type of operation. See the table below for more detail.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection that triggered the operation.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the connection that triggered the operation.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the operation.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the start time of the operation.
 
 CURRENT\_PROGRESS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the steps of the operation that are already finished.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the steps of the operation that are already finished.
 
 MAX\_PROGRESS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum operation progress.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the maximum operation progress.
 
 PROGRESS\_DETAIL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the detailed information about the operation.
-
-
 
 </td>
 </tr>
@@ -282,14 +216,10 @@ The below table lists the possible types of job operations:
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -297,8 +227,6 @@ Description
 <td valign="top">
 
 JOB\_NAME
-
-
 
 </td>
 <td valign="top">

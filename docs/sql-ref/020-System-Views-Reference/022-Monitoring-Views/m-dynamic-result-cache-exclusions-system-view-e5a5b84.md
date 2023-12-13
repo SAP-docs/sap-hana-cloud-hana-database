@@ -15,21 +15,15 @@ Lists cache exclusions of the dynamic result cache.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name that the dynamic result cache entry belongs to.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name that the dynamic result cache entry belongs to.
 
 CACHE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the results cache.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the name of the results cache.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name that the dynamic result cache entry belongs to.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the object name that the dynamic result cache entry belongs to.
 
 DETAILS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Lists all constituents of the excluded cache key.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Lists all constituents of the excluded cache key.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size, in bytes, of the memory occupied by the excluded cache entry.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the size, in bytes, of the memory occupied by the excluded cache entry.
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of records in the excluded cache entry.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the number of records in the excluded cache entry.
 
 EXCLUDE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the dynamic result cache entry was decided.
-
-
 
 </td>
 </tr>
@@ -215,5 +167,5 @@ Cache entries that exceed configurable size \(defined in the `.ini` file\) are a
 
 [ALTER SYSTEM REMOVE RESULT CACHE ENTRY Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-remove-result-cache-entry-statement-system-management-2124566.md "Removes the result cache entry for the specified cache ID.")
 
-[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
+[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
 

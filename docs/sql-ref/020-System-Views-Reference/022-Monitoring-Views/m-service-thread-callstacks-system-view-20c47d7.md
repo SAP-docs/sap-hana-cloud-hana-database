@@ -17,21 +17,15 @@ Provides stack frame information for service threads.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service name. See M\_SERVICE\_TYPES for all known service names.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the service name. See M\_SERVICE\_TYPES for all known service names.
 
 THREAD\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the thread ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the thread ID.
 
 IS\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the thread is active.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays whether the thread is active.
 
 FRAME\_LEVEL
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the level of the stack frame.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the level of the stack frame.
 
 FRAME\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of stack frame \(function, file, library, and so on\).
-
-
 
 </td>
 </tr>

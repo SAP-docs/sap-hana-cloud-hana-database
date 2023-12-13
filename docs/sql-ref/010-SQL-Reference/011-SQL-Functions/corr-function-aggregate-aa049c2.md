@@ -87,7 +87,7 @@ INSERT INTO correlationTable VALUES ('B', '2014-10-11', 2, 2);
 INSERT INTO correlationTable VALUES ('B', '2014-10-21', 3, 1);
 ```
 
-1.  The following aggregate function example returns the correlation between the ***ts\_id*** column and the columns ***value1*** and ***value2***.
+1.  The following aggregate function example returns the correlation between the `ts_id` column and the columns `value1` and `value2`.
 
     ```
     SELECT ts_id, CORR(value1, value2) FROM correlationTable GROUP BY ts_id;
@@ -101,53 +101,41 @@ INSERT INTO correlationTable VALUES ('B', '2014-10-21', 3, 1);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\(VALUE1, VALUE2\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        1
-
-
+    1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     </table>
     
-2.  The following WHERE clause example returns the correlation between the ***ts\_id*** column and the columns ***value1*** and ***value2*** only for rows where ***ts\_id*** equals ***A***.
+2.  The following WHERE clause example returns the correlation between the `ts_id` column and the columns `value1` and `value2` only for rows where `ts_id` equals `A`.
 
     ```
     SELECT ts_id, CORR(value1, value2) FROM correlationTable
@@ -162,31 +150,23 @@ INSERT INTO correlationTable VALUES ('B', '2014-10-21', 3, 1);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\(VALUE1, VALUE2\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        1
-
-
+    1
     
     </td>
     </tr>
@@ -206,31 +186,23 @@ INSERT INTO correlationTable VALUES ('B', '2014-10-21', 3, 1);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\(VALUE1, VALUE2\)OVER\(PARTITIONBYTS\_ID\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        1
-
-
+    1
     
     </td>
     </tr>
@@ -251,111 +223,83 @@ INSERT INTO correlationTable VALUES ('B', '2014-10-21', 3, 1);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\(VALUE1, VALUE2\)OVER\(PARTITIONBYTS\_IDORDERBYDATE\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        ?
-
-
+    ?
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.9999999999999998
-
-
+    0.9999999999999998
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.9999999999999998
-
-
+    0.9999999999999998
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        ?
-
-
+    ?
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-0.9999999999999998
-
-
+    \-0.9999999999999998
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-0.9999999999999998
-
-
+    \-0.9999999999999998
     
     </td>
     </tr>
@@ -376,111 +320,83 @@ INSERT INTO correlationTable VALUES ('B', '2014-10-21', 3, 1);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\(VALUE1, VALUE2\)OVER\(PARTITIONBYTS\_IDORDERBYDATEROWS\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        ?
-
-
+    ?
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.9999999999999998
-
-
+    0.9999999999999998
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.9999999999999998
-
-
+    0.9999999999999998
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        ?
-
-
+    ?
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-0.9999999999999998
-
-
+    \-0.9999999999999998
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-0.9999999999999998
-
-
+    \-0.9999999999999998
     
     </td>
     </tr>

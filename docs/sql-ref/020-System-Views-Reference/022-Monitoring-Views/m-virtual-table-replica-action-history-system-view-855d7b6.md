@@ -17,21 +17,15 @@ Provides replica action information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the replica table.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name of the replica table.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replica table name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the replica table name.
 
 REPLICA\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replica type: ASYNCHRONOUS, SYNCHRONOUS.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the replica type: ASYNCHRONOUS, SYNCHRONOUS.
 
 SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the virtual table.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the schema name of the virtual table.
 
 SOURCE\_TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the virtual table name.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the virtual table name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the partition ID \(0 for non-partitioned tables\).
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the partition ID \(0 for non-partitioned tables\).
 
 PARENT\_STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement ID which triggered the action.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the statement ID which triggered the action.
 
 IS\_ASYNC
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not an asynchronous job is created for the action: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays whether or not an asynchronous job is created for the action: TRUE/FALS
 
 ACTION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the action type: ADD, ENABLE, DISABLE, ALTER, DROP, REFRESH, CANCEL.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the action type: ADD, ENABLE, DISABLE, ALTER, DROP, REFRESH, CANCEL.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the replica action start time.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the replica action start time.
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the replica action end time.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the replica action end time.
 
 ERROR\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the error time.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the error time.
 
 ERROR\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the error code.
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error message.
-
-
 
 </td>
 </tr>

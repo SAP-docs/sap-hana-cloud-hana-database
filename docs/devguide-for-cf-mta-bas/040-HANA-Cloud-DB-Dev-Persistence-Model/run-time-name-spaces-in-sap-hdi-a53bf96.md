@@ -31,62 +31,46 @@ The following table illustrates how the rules specified in the name-space config
 
 Design-time Resource Path
 
-
-
 </th>
 <th valign="top">
 
 Name of Run-Time Object \(append\)
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `/src/` 
-
-
+`/src/` 
 
 </td>
 <td valign="top">
 
- <code>com.acme.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+<code>com.acme.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `/src/db` 
-
-
+`/src/db` 
 
 </td>
 <td valign="top">
 
- <code>com.acme.hana.example.db::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+<code>com.acme.hana.example.db::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `/src/data` 
-
-
+`/src/data` 
 
 </td>
 <td valign="top">
 
- <code>com.acme.hana.example.data::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+<code>com.acme.hana.example.data::<i class="varname">&lt;Object_Name&gt;</i></code> 
 
 </td>
 </tr>

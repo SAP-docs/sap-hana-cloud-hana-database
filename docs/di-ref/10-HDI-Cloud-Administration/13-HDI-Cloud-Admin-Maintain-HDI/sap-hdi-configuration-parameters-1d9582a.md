@@ -33,37 +33,27 @@ The following table describes the regular configuration parameters for SAP HDI a
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Possible Values
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `api.permit_self_granting` 
-
-
+`api.permit_self_granting` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -72,23 +62,17 @@ Specifies whether granting of privileges to the user calling a grant procedure i
 
 The default is “true”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `api.severity_for_invalid_parameter` 
-
-
+`api.severity_for_invalid_parameter` 
 
 </td>
 <td valign="top">
 
 ERROR, WARNING, INFO
-
-
 
 </td>
 <td valign="top">
@@ -97,23 +81,17 @@ Specifies the severity of the corresponding log message when an invalid paramete
 
 The default value is ERROR.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `connection.container_default_transaction_lock_wait_timeout` 
-
-
+`connection.container_default_transaction_lock_wait_timeout` 
 
 </td>
 <td valign="top">
 
 0 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -122,23 +100,17 @@ Specifies the default time \(in milliseconds\) a container operation waits for a
 
 The default value is 900000.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `connection.global_transaction_lock_wait_timeout` 
-
-
+`connection.global_transaction_lock_wait_timeout` 
 
 </td>
 <td valign="top">
 
 0 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -147,23 +119,17 @@ Specifies the time \(in milliseconds\) an SAP HANA DI operation waits for a lock
 
 The default value is 900000.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `make.default_max_parallel_jobs` 
-
-
+`make.default_max_parallel_jobs` 
 
 </td>
 <td valign="top">
 
 0 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -172,23 +138,17 @@ Specifies the default maximum number of parallel jobs to be spawned during a mak
 
 The default value is 0.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `messages.container_default_days_to_keep` 
-
-
+`messages.container_default_days_to_keep` 
 
 </td>
 <td valign="top">
 
 \-2,147,483,648 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -197,23 +157,17 @@ Specifies the default number of days to keep container-specific log messages. A 
 
 The default value is 90
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `messages.container_default_requests_to_keep` 
-
-
+`messages.container_default_requests_to_keep` 
 
 </td>
 <td valign="top">
 
 \-2,147,483,648 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -222,23 +176,17 @@ Specifies the default number of requests to keep container-specific log messages
 
 The default value is 100000
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `messages.global_days_to_keep` 
-
-
+`messages.global_days_to_keep` 
 
 </td>
 <td valign="top">
 
 \-2,147,483,648 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -247,23 +195,17 @@ Specifies the number of days to keep global SAP HANA DI log messages. A value of
 
 The default value is 90.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `messages.global_requests_to_keep` 
-
-
+`messages.global_requests_to_keep` 
 
 </td>
 <td valign="top">
 
 \-2,147,483,648 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -271,8 +213,6 @@ The default value is 90.
 Specifies the number of requests to keep global SAP HANA DI log messages. A value of 0 means all entries are deleted. A negative value means all entries are kept.
 
 The default value is 100000.
-
-
 
 </td>
 </tr>
@@ -317,37 +257,27 @@ The following table describes the container-specific configuration parameters an
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Possible Values
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `api.enable_flowgraph_access` 
-
-
+`api.enable_flowgraph_access` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
@@ -356,23 +286,17 @@ Indicates if access to flow graphs is allowed.
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `blobs.days_to_keep` 
-
-
+`blobs.days_to_keep` 
 
 </td>
 <td valign="top">
 
 \-2,147,483,648 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -381,92 +305,68 @@ Specifies the number of days to keep data entries in the blob store. A value of 
 
 The default value is 10 days.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `connection.transaction_lock_wait_timeout` 
-
-
+`connection.transaction_lock_wait_timeout` 
 
 </td>
 <td valign="top">
 
 0 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
 
 Specifies the time \(in milliseconds\) a container operation waits for a locking conflict to clear. The default value is the value of the corresponding SAP HANA DI configuration parameter `connection.container_default_transaction_lock_wait_timeout`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `global.usage` 
-
-
+`global.usage` 
 
 </td>
 <td valign="top">
 
 production, test, development, custom
 
-
-
 </td>
 <td valign="top">
 
 Indicates the intended usage of the container for which the make operation is run. Depending on the usage, different restrictions might apply. If this configuration parameter is not set, then the value is taken from the `system information` section in `global.ini` configuration file.
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `make.force_logical_schema_targets` 
-
-
+`make.force_logical_schema_targets` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
 
 Indicates if the usage of logical schemas in design-time artifacts should be forced. The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `make.max_parallel_jobs` 
-
-
+`make.max_parallel_jobs` 
 
 </td>
 <td valign="top">
 
 0 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -475,23 +375,17 @@ Specifies the maximum number of parallel jobs to be spawned during a make.
 
 The default value is the value of the corresponding SAP HANA DI configuration parameter `make.default_max_parallel_jobs`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `make.prohibit_config_file` 
-
-
+`make.prohibit_config_file` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
@@ -500,46 +394,34 @@ Indicates if the deployment of configuration files \(`.hdiconfig`\) should be di
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `make.prohibit_definer_mode` 
-
-
+`make.prohibit_definer_mode` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
 
 Indicates if the creation of “definer-mode” procedures is disabled. The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `make.prohibit_namespace_file` 
-
-
+`make.prohibit_namespace_file` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
@@ -548,46 +430,34 @@ Indicates if the deployment of namespace files \(`.hdinamespace`\) should be dis
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `make.prohibit_table_creation` 
-
-
+`make.prohibit_table_creation` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
 
 Indicates if the creation of tables is disabled. The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `make.validate_external_dependencies` 
-
-
+`make.validate_external_dependencies` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
@@ -596,23 +466,17 @@ Indicates that during a make, all deployed synonyms, projection views, and virtu
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `messages.days_to_keep` 
-
-
+`messages.days_to_keep` 
 
 </td>
 <td valign="top">
 
 \-2,147,483,648 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -621,23 +485,17 @@ Specifies the number of days to keep log messages. A value of 0 means all entrie
 
 The default value is 90 days.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `messages.requests_to_keep` 
-
-
+`messages.requests_to_keep` 
 
 </td>
 <td valign="top">
 
 \-2,147,483,648 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -646,30 +504,22 @@ Specifies the number of requests to keep log messages. A value of 0 means all en
 
 The default value is 100000 requests.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `build.plugin.name/disabled` 
-
-
+`build.plugin.name/disabled` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
 
 Indicates if the build plug-in specified by the parameter is disabled. By default, there is no such parameter set; no build plug-in is disabled by default.
-
-
 
 </td>
 </tr>
@@ -714,44 +564,32 @@ The following table describes the parameters that can be used to configure conta
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Possible Values
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `enable_cross_container_access` 
-
-
+`enable_cross_container_access` 
 
 </td>
 <td valign="top">
 
- “true” or “false” 
-
-
+“true” or “false” 
 
 </td>
 <td valign="top">
 
 Enables or disables access in terms of DML privileges between containers in the same container group.
-
- 
 
 
 

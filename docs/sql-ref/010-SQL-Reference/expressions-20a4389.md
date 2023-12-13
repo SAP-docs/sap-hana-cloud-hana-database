@@ -33,7 +33,7 @@ An expression is a clause that can be evaluated to return values.
 
 A case expression allows the user to use IF - THEN - ELSE logic without using SQLScript in SQL statements.
 
- **Syntax** 
+**Syntax** 
 
 ```
 <case_expression> ::= <simple_case_expression> | <search_case_expression>
@@ -85,7 +85,7 @@ Either of these orders and outcomes are possible in SAP HANA, and this is true f
 
 SQL built-in functions can be used as expressions.
 
- **Syntax** 
+**Syntax** 
 
 ```
  <function_expression> ::= <function_name> ( <expression> [{, <expression>}...] )
@@ -125,14 +125,10 @@ You can specify to sort the aggregate using the *<aggregate\_order\_by\_clause\>
 
 Aggregate name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -141,14 +137,10 @@ Description
 
 CORR
 
-
-
 </td>
 <td valign="top">
 
 Computes the Pearson product momentum correlation coefficient between two columns. See the CORR function for more details.
-
-
 
 </td>
 </tr>
@@ -157,14 +149,10 @@ Computes the Pearson product momentum correlation coefficient between two column
 
 CORR\_SPEARMAN
 
-
-
 </td>
 <td valign="top">
 
 Returns the Spearman's rank correlation coefficient of the values found in the corresponding rows of two columns. See the CORR\_SPEARMAN function for more details.
-
-
 
 </td>
 </tr>
@@ -173,14 +161,10 @@ Returns the Spearman's rank correlation coefficient of the values found in the c
 
 COUNT
 
-
-
 </td>
 <td valign="top">
 
 Counts the number of rows returned by a query. COUNT\(\*\) returns the number of rows, regardless of the value of those rows and including duplicate values. COUNT\(*<expression\>*\) returns the number of non-NULL values for that expression returned by the query. COUNT\(DISTINCT *<expression\_list\>*\) returns the number of distinct values for that expressions returned by the query, excluding rows with all NULL values for that expression.
-
-
 
 </td>
 </tr>
@@ -189,14 +173,10 @@ Counts the number of rows returned by a query. COUNT\(\*\) returns the number of
 
 MIN
 
-
-
 </td>
 <td valign="top">
 
 Returns the minimum value of the expression.
-
-
 
 </td>
 </tr>
@@ -205,14 +185,10 @@ Returns the minimum value of the expression.
 
 MEDIAN
 
-
-
 </td>
 <td valign="top">
 
 Finds the statistical median of an input column with a numeric data type. See the MEDIAN function for more information.
-
-
 
 </td>
 </tr>
@@ -221,14 +197,10 @@ Finds the statistical median of an input column with a numeric data type. See th
 
 MAX
 
-
-
 </td>
 <td valign="top">
 
 Returns the maximum value of the expression.
-
-
 
 </td>
 </tr>
@@ -237,14 +209,10 @@ Returns the maximum value of the expression.
 
 SUM
 
-
-
 </td>
 <td valign="top">
 
 Returns the sum of the expression.
-
-
 
 </td>
 </tr>
@@ -253,14 +221,10 @@ Returns the sum of the expression.
 
 AVG
 
-
-
 </td>
 <td valign="top">
 
 Returns the arithmetical mean of the expression.
-
-
 
 </td>
 </tr>
@@ -269,14 +233,10 @@ Returns the arithmetical mean of the expression.
 
 STDDEV
 
-
-
 </td>
 <td valign="top">
 
 Returns the standard deviation of the given expression as the square root of the VAR function.
-
-
 
 </td>
 </tr>
@@ -285,14 +245,10 @@ Returns the standard deviation of the given expression as the square root of the
 
 STDDEV\_POP
 
-
-
 </td>
 <td valign="top">
 
 Returns the standard deviation of the given expression as the square root of the VAR\_POP function.
-
-
 
 </td>
 </tr>
@@ -301,14 +257,10 @@ Returns the standard deviation of the given expression as the square root of the
 
 STDDEV\_SAMP
 
-
-
 </td>
 <td valign="top">
 
 Returns the standard deviation of the given expression as the square root of the VAR\_SAMP function.
-
-
 
 </td>
 </tr>
@@ -317,14 +269,10 @@ Returns the standard deviation of the given expression as the square root of the
 
 VAR
 
-
-
 </td>
 <td valign="top">
 
 Returns the variance of the given expression as the square of the standard deviation.
-
-
 
 </td>
 </tr>
@@ -333,14 +281,10 @@ Returns the variance of the given expression as the square of the standard devia
 
 VAR\_POP
 
-
-
 </td>
 <td valign="top">
 
 Returns the population variance of expression as the sum of squares of the difference of *<expression\>* from the mean of *<expression\>*, divided by the number of rows remaining.
-
-
 
 </td>
 </tr>
@@ -349,14 +293,10 @@ Returns the population variance of expression as the sum of squares of the diffe
 
 VAR\_SAMP
 
-
-
 </td>
 <td valign="top">
 
 Returns the sample variance of expression as the sum of squares of the difference of *<expression\>* from the mean of *<expression\>*, divided by the number of rows remaining minus 1 \(one\).This function is similar to VAR, the only difference is that it returns NULL when the number of rows is 1.
-
-
 
 </td>
 </tr>
@@ -365,14 +305,10 @@ Returns the sample variance of expression as the sum of squares of the differenc
 
 STRING\_AGG
 
-
-
 </td>
 <td valign="top">
 
 Returns the concatenated string.
-
-
 
 </td>
 </tr>
@@ -387,63 +323,45 @@ Returns the concatenated string.
 
 **`aggregate name`**
 
-
-
 </th>
 <th valign="top">
 
 **`tinyint`**
-
-
 
 </th>
 <th valign="top">
 
 **`smallint`**
 
-
-
 </th>
 <th valign="top">
 
 **`integer`**
-
-
 
 </th>
 <th valign="top">
 
 **`bigint`**
 
-
-
 </th>
 <th valign="top">
 
 **`decimal(p,s)`**
-
-
 
 </th>
 <th valign="top">
 
 **`decimal`**
 
-
-
 </th>
 <th valign="top">
 
 **`real`**
 
-
-
 </th>
 <th valign="top">
 
 **`double`**
-
-
 
 </th>
 </tr>
@@ -452,63 +370,45 @@ Returns the concatenated string.
 
 **`COUNT`**
 
+</td>
+<td valign="top">
 
+`bigint`
 
 </td>
 <td valign="top">
 
 `bigint`
 
+</td>
+<td valign="top">
 
+`bigint`
 
 </td>
 <td valign="top">
 
 `bigint`
 
+</td>
+<td valign="top">
 
+`bigint`
 
 </td>
 <td valign="top">
 
 `bigint`
 
-
-
 </td>
 <td valign="top">
 
 `bigint`
 
-
-
 </td>
 <td valign="top">
 
 `bigint`
-
-
-
-</td>
-<td valign="top">
-
-`bigint`
-
-
-
-</td>
-<td valign="top">
-
-`bigint`
-
-
-
-</td>
-<td valign="top">
-
-`bigint`
-
-
 
 </td>
 </tr>
@@ -517,63 +417,45 @@ Returns the concatenated string.
 
 **`MIN`**
 
-
-
 </td>
 <td valign="top">
 
 `tinyint`
-
-
 
 </td>
 <td valign="top">
 
 `smallint`
 
-
-
 </td>
 <td valign="top">
 
 `integer`
-
-
 
 </td>
 <td valign="top">
 
 `bigint`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(p,s)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal`
 
-
-
 </td>
 <td valign="top">
 
 `real`
 
-
-
 </td>
 <td valign="top">
 
 `double`
-
-
 
 </td>
 </tr>
@@ -582,63 +464,45 @@ Returns the concatenated string.
 
 **`MAX`**
 
-
-
 </td>
 <td valign="top">
 
 `tinyint`
-
-
 
 </td>
 <td valign="top">
 
 `smallint`
 
-
-
 </td>
 <td valign="top">
 
 `integer`
-
-
 
 </td>
 <td valign="top">
 
 `bigint`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(p,s)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal`
 
-
-
 </td>
 <td valign="top">
 
 `real`
 
-
-
 </td>
 <td valign="top">
 
 `double`
-
-
 
 </td>
 </tr>
@@ -647,63 +511,45 @@ Returns the concatenated string.
 
 **`SUM`**
 
+</td>
+<td valign="top">
 
+`integer`
 
 </td>
 <td valign="top">
 
 `integer`
 
-
-
 </td>
 <td valign="top">
 
 `integer`
-
-
-
-</td>
-<td valign="top">
-
-`integer`
-
-
 
 </td>
 <td valign="top">
 
 `bigint`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(p',s)` \*
-
-
 
 </td>
 <td valign="top">
 
 `decimal`
 
-
-
 </td>
 <td valign="top">
 
 `real`
 
-
-
 </td>
 <td valign="top">
 
 `double`
-
-
 
 </td>
 </tr>
@@ -712,63 +558,45 @@ Returns the concatenated string.
 
 **`AVG`**
 
-
-
 </td>
 <td valign="top">
 
 `decimal(9,6)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal(11,6)`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(16,6)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal(25,6)`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(p,s)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal`
 
-
-
 </td>
 <td valign="top">
 
 `real`
 
-
-
 </td>
 <td valign="top">
 
 `double`
-
-
 
 </td>
 </tr>
@@ -777,63 +605,45 @@ Returns the concatenated string.
 
 **`STDDEV`**
 
-
-
 </td>
 <td valign="top">
 
 `decimal(9,6)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal(11,6)`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(16,6)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal(25,6)`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(p,s)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal`
 
-
-
 </td>
 <td valign="top">
 
 `real`
 
-
-
 </td>
 <td valign="top">
 
 `double`
-
-
 
 </td>
 </tr>
@@ -842,63 +652,45 @@ Returns the concatenated string.
 
 **`VAR`**
 
-
-
 </td>
 <td valign="top">
 
 `decimal(9,6)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal(11,6)`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(16,6)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal(25,6)`
 
-
-
 </td>
 <td valign="top">
 
 `decimal(p,s)`
-
-
 
 </td>
 <td valign="top">
 
 `decimal`
 
-
-
 </td>
 <td valign="top">
 
 `real`
 
-
-
 </td>
 <td valign="top">
 
 `double`
-
-
 
 </td>
 </tr>
@@ -982,7 +774,7 @@ The following examples are valid JSON objects:
 
 A subquery is a SELECT statement enclosed in parentheses. The SELECT statement can contain no more than one select list item. When used as an expression, a scalar subquery can only return a zero or a single value.
 
- **Syntax** 
+**Syntax** 
 
 ```
 <scalar_subquery_expression> ::= (<subquery>)

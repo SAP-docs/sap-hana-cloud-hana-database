@@ -86,58 +86,42 @@ The Web page served by default if the HTTP request does not include a specific p
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `welcomeFile` 
-
-
+`welcomeFile` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 HTML page, for example, `index.html`
-
-
 
 </td>
 </tr>
@@ -172,51 +156,37 @@ The method used to authenticate user requests, for example: “route” or “no
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `authenticationMethod` 
-
-
+`authenticationMethod` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -258,51 +228,37 @@ Defines all route objects, for example: `source`, `target`, and, `destination`.
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `source` 
-
-
+`source` 
 
 </td>
 <td valign="top">
 
 RegEx
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -319,23 +275,17 @@ Regular expression that matches an incoming request path. To ensure the RegEx ma
 <tr>
 <td valign="top">
 
- `httpMethods` 
-
-
+`httpMethods` 
 
 </td>
 <td valign="top">
 
 Array of uppercase HTTP methods
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -352,233 +302,171 @@ HTTP methods that will be served by this route; the supported methods are: `DELE
 <tr>
 <td valign="top">
 
- `target` 
-
-
+`target` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The incoming request path is rewritten to this target
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `destination` 
-
-
+`destination` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The destination to which the incoming request should be forwarded. This must match one of the `name` properties defined in the destinations environment variable..
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `scope` 
-
-
+`scope` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The authorization scope required to access the target path. The scope itself is defined in the application's security descriptor \(`xs-security.json`\), for example, <code>“$XSAPPNAME.Display”</code> or <code>“$XSAPPNAME.Create”</code>.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `localDir` 
-
-
+`localDir` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The directory from which application router serves static content \(for example, from the application's `web/` module\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `replace` 
-
-
+`replace` 
 
 </td>
 <td valign="top">
 
 Object
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 An object that contains the configuration for replacing placeholders with values from the environment. It is only relevant for static resources.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `csrfProtection` 
-
-
+`csrfProtection` 
 
 </td>
 <td valign="top">
 
 Boolean
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Toggle whether this route needs CSRF token protection. The default value is “true”. The application router enforces CSRF protection for any HTTP request that changes state on the server side, for example: PUT, POST, or DELETE.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `authenticationType` 
-
-
+`authenticationType` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The value can be “`xsuaa`”, “`basic`” or “`none`”. The default value is “`xsuaa`”. When “`xsuaa`” is used the specified UAA server will handle the authentication \(the user is redirected to the UAA's login form\). The basic mechanism works with SAP HANA users. If “`none`” is used then no authentication is needed for this route.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `cacheControl` 
-
-
+`cacheControl` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -707,67 +595,49 @@ The `replace` keyword requires the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `pathSuffixes` 
-
-
+`pathSuffixes` 
 
 </td>
 <td valign="top">
 
 Array
-
-
 
 </td>
 <td valign="top">
 
 An array defining the path suffixes that are relative to `localDir`. Only files with a path ending with any of these suffixes will be processed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `vars` 
-
-
+`vars` 
 
 </td>
 <td valign="top">
 
 Array
 
-
-
 </td>
 <td valign="top">
 
 An allow list with the environment variables that will be replaced in the files matching the suffix specified in `pathSuffixes`.
-
-
 
 </td>
 </tr>
@@ -833,39 +703,29 @@ The following table illustrates some examples of the `pathSuffixes` properties:
 
 Example
 
-
-
 </th>
 <th valign="top">
 
 Result
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `{ "pathSuffixes": [".html"] }` 
-
-
+`{ "pathSuffixes": [".html"] }` 
 
 </td>
 <td valign="top">
 
 All files with the extension `.html` under `localDir` and its subfolders will be processed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `{ "pathSuffixes": ["/abc/main.html", "some.html"] }` 
-
-
+`{ "pathSuffixes": ["/abc/main.html", "some.html"] }` 
 
 </td>
 <td valign="top">
@@ -874,23 +734,17 @@ For the suffix `/abc/main.html`, all files named main.html which are inside a fo
 
 For the suffix `some.html`, all files with a name that ends with “`some.html`” will be processed, for example:`some.html`, `awesome.html`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `{ "pathSuffixes": [".html"] }` 
-
-
+`{ "pathSuffixes": [".html"] }` 
 
 </td>
 <td valign="top">
 
 All files with the name “`some.html`” will be processed. For example: `some.html` , `/abc/some.html`.
-
-
 
 </td>
 </tr>
@@ -974,7 +828,7 @@ You can use the `logoutPage` property to specify the Web page in one of the foll
     The UAA service redirects the user back to the application router, and the path is interpreted according to the configured routes.
 
     > ### Note:  
-    > The resource that matches the URL path specified in the property `logoutPage` should not require authentication; for this route, the property `authenticationType` must be set to “`none`”. If your application enables user logon with single sign-on authentication, a custom logout page is needed to prevent a login-logout loop. For more information see SAP Note [2699214](https://launchpad.support.sap.com/#/notes/2699214).
+    > The resource that matches the URL path specified in the property `logoutPage` should not require authentication; for this route, the property `authenticationType` must be set to “`none`”. If your application enables user logon with single sign-on authentication, a custom logout page is needed to prevent a login-logout loop. For more information see SAP Note [2699214](https://me.sap.com/notes/2699214).
 
     In the following example, `my-static-resources` is a folder in the working directory of the application router; the folder contains the file `logout-page.html` along with other static resources.
 
@@ -1040,88 +894,64 @@ The following syntax rules apply:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `logoutPath` 
-
-
+`logoutPath` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The log out end point for your destination. The `logoutPath` will be called when central log out is triggered or a session is deleted due to a time out. The request to `logoutPath` contains additional headers, including the JWT token.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `logoutMethod` 
-
-
+`logoutMethod` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 The `logoutMethod` property specifies the HTTP method with which the `logoutPath` will be requested, for example, POST, PUT, GET; the default value is POST
-
-
 
 </td>
 </tr>
@@ -1168,88 +998,64 @@ You can disable compression in the following ways:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `minSize` 
-
-
+`minSize` 
 
 </td>
 <td valign="top">
 
 Number
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Text resources larger than this size will be compressed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `enabled` 
-
-
+`enabled` 
 
 </td>
 <td valign="top">
 
 Boolean
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Globally disables or enables compression. The default value is true.
-
-
 
 </td>
 </tr>
@@ -1310,118 +1116,86 @@ The allow-list service reads a list of allowed host names and domains defined in
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `protocol` 
-
-
+`protocol` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 URI scheme, for example “HTTP”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `host` 
-
-
+`host` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 A valid host name, for example, `acme.com.hostname`, or a domain name defined with an asterisk \(\*\) `*.acme.com`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `port` 
-
-
+`port` 
 
 </td>
 <td valign="top">
 
 String/Number
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Port string or number containing a valid port.
-
-
 
 </td>
 </tr>
@@ -1514,88 +1288,64 @@ The property is an array of objects, each object can have the following properti
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `status` 
-
-
+`status` 
 
 </td>
 <td valign="top">
 
 Number/Array
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 HTTP status code.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `file` 
-
-
+`file` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 File path relative to the working directory of the application router.
-
-
 
 </td>
 </tr>

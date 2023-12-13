@@ -10,8 +10,6 @@ Provides details on connection restrictions for all user groups.
 
 ## Structure
 
-****
-
 
 <table>
 <tr>
@@ -19,21 +17,15 @@ Provides details on connection restrictions for all user groups.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,21 +34,15 @@ Description
 
 USERGROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\) NOT NULL
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user group.
-
-
 
 </td>
 </tr>
@@ -65,21 +51,15 @@ Displays the name of the user group.
 
 RESTRICTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\) NOT NULL
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the connect restriction.
-
-
 
 </td>
 </tr>
@@ -88,21 +68,15 @@ Displays the name of the connect restriction.
 
 IS\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\) NOT NULL
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the connect restriction is enabled or not. Possible values are: TRUE / FALSE.
-
-
 
 </td>
 </tr>
@@ -111,21 +85,15 @@ Displays whether the connect restriction is enabled or not. Possible values are:
 
 RESTRICTION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(14\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the type of the restriction. Possible values are: IP.
-
-
+Displays the type of the restriction. Possible values are: IP, APPLICATION, or APPLICATION DENY.
 
 </td>
 </tr>
@@ -134,21 +102,15 @@ Displays the type of the restriction. Possible values are: IP.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(50\)
 
-
-
 </td>
 <td valign="top">
 
-Displays a network address.
-
-
+Displays a network address or application name, depending on the RESTRICTION\_TYPE.
 
 </td>
 </tr>
@@ -157,21 +119,15 @@ Displays a network address.
 
 TIME\_FROM
 
-
-
 </td>
 <td valign="top">
 
 TIME
 
-
-
 </td>
 <td valign="top">
 
 For internal use.
-
-
 
 </td>
 </tr>
@@ -180,21 +136,15 @@ For internal use.
 
 TIME\_UNTIL
 
-
-
 </td>
 <td valign="top">
 
 TIME
 
-
-
 </td>
 <td valign="top">
 
 For internal use.
-
-
 
 </td>
 </tr>
@@ -203,21 +153,15 @@ For internal use.
 
 VALID\_FROM
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 For internal use.
-
-
 
 </td>
 </tr>
@@ -226,21 +170,15 @@ For internal use.
 
 VALID\_UNTIL
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 For internal use.
-
-
 
 </td>
 </tr>
@@ -251,6 +189,8 @@ For internal use.
 <a name="loio57d3364557d140c291e6cc5fb09eef7c__section_oly_g3s_3xb"/>
 
 ## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 Users see different values in this view depending on their privileges, as follows:
 

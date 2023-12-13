@@ -30,7 +30,7 @@ The UPPER function is identical to the UCASE function.
 
 ## Example
 
-This example converts the given string ***Ant*** to uppercase and returns the value ***ANT***:
+This example converts the given string `Ant` to uppercase and returns the value ***ANT***:
 
 ```
 SELECT UPPER ('Ant') "uppercase" FROM DUMMY;

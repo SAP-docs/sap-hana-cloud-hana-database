@@ -34,13 +34,13 @@ In this tutorial, you create two analytic privileges for a calculation view call
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -50,13 +50,13 @@ In this tutorial, you create two analytic privileges for a calculation view call
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the analytic privilege.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the analytic privilege.
 
     5.  Select the database artifact type, for example, analytic privilege.
 
-        In the *Artifact Type* box, type ***hdba***, and choose *Analytic Privilege \(hdbanalyticprivilege\)* from the list that appears.
+        In the *Artifact Type* box, type `hdba`, and choose *Analytic Privilege \(hdbanalyticprivilege\)* from the list that appears.
 
-    6.  Name the file ***AP1***.
+    6.  Name the file `AP1`.
 
         The Wizard appends the appropriate file suffix \(`.hdbanalyticprivilege`\) to the name.
 
@@ -86,13 +86,13 @@ In this tutorial, you create two analytic privileges for a calculation view call
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -102,13 +102,13 @@ In this tutorial, you create two analytic privileges for a calculation view call
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the analytic privilege.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the analytic privilege.
 
     5.  Select the database artifact type, for example, analytic privilege.
 
-        In the *Artifact Type* box, type ***hdba***, and choose *Analytic Privilege \(hdbanalyticprivilege\)* from the list that appears.
+        In the *Artifact Type* box, type `hdba`, and choose *Analytic Privilege \(hdbanalyticprivilege\)* from the list that appears.
 
-    6.  Name the file ***APX***.
+    6.  Name the file `APX`.
 
         The appropriate file suffix \(`.hdbanalyticprivilege`\) is appended to the name by the Wizard.
 
@@ -124,7 +124,7 @@ In this tutorial, you create two analytic privileges for a calculation view call
 
     2.  Add the calculation view *FlightReservation* to the list of *Secured Models*.
 
-        In the *Secured Models* pane, choose *\[+\]* to display the *Find Data Sources* Wizard, which you can use to search for ***FlightReservation***. In the *Results* pane, check *FlightReservation* and choose *Finish* to add it to the list of secured models.
+        In the *Secured Models* pane, choose *\[+\]* to display the *Find Data Sources* Wizard, which you can use to search for `FlightReservation`. In the *Results* pane, check *FlightReservation* and choose *Finish* to add it to the list of secured models.
 
     3.  Define the privilege restrictions for the calculation view's `CARRID` attribute.
 

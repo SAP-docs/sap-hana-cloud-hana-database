@@ -286,32 +286,32 @@ The following statement forces all tables of the schema SAPKIT to be stored on t
 ALTER SYSTEM ALTER TABLE PLACEMENT (SCHEMA_NAME => 'SAPKIT') SET (LOCATION => 'coordinator');
 ```
 
-The following statement forces all tables of the schema SAPKIT and the GROUP\_TYPE ***sap.bw.dso*** to be stored on the secondary host with the specified properties.
+The following statement forces all tables of the schema SAPKIT and the GROUP\_TYPE `sap.bw.dso` to be stored on the secondary host with the specified properties.
 
 ```
 ALTER SYSTEM ALTER TABLE PLACEMENT (SCHEMA_NAME => 'SAPKIT', GROUP_TYPE => 'sap.bw.dso') 
  SET (LOCATION => 'worker', MIN_ROWS_FOR_PARTITIONING => 40000000, REPARTITIONING_THRESHOLD => 40000000, INITIAL_PARTITIONS => 3);
 ```
 
-The following example demonstrates how to unset the schema entry SAPKIT and GROUP\_TYPE ***sap.bw.dso***.
+The following example demonstrates how to unset the schema entry SAPKIT and GROUP\_TYPE `sap.bw.dso`.
 
 ```
 ALTER SYSTEM ALTER TABLE PLACEMENT (SCHEMA_NAME => 'SAPKIT', GROUP_TYPE => 'sap.bw.dso') UNSET;
 ```
 
-The following example demonstrates how to remove the LOCATION entry for schema SAPKIT and GROUP\_TYPE ***sap.bw.dso***.
+The following example demonstrates how to remove the LOCATION entry for schema SAPKIT and GROUP\_TYPE `sap.bw.dso`.
 
 ```
 ALTER SYSTEM ALTER TABLE PLACEMENT (SCHEMA_NAME => 'SAPKIT', GROUP_TYPE => 'sap.bw.dso') UNSET (LOCATION);
 ```
 
-The following example demonstrates how to set the SAME\_PARTITION\_COUNT table placement property for schema ***SYSTEM*** to ***'TRUE'***.
+The following example demonstrates how to set the SAME\_PARTITION\_COUNT table placement property for schema `SYSTEM` to `'TRUE'`.
 
 ```
 ALTER SYSTEM ALTER TABLE PLACEMENT (SCHEMA_NAME=>'SYSTEM') SET (SAME_PARTITION_COUNT => 'TRUE');
 ```
 
-The following example demonstrates how to unset the SAME\_PARTITION\_COUNT table placement property for schema ***SYSTEM***.
+The following example demonstrates how to unset the SAME\_PARTITION\_COUNT table placement property for schema `SYSTEM`.
 
 ```
 ALTER SYSTEM ALTER TABLE PLACEMENT (SCHEMA_NAME=>'SYSTEM') UNSET (SAME_PARTITION_COUNT);
@@ -333,7 +333,7 @@ ALTER SYSTEM ALTER TABLE PLACEMENT LOCATION MyLocation UNSET;
 **Related Information**  
 
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [TABLE\_PLACEMENT System View](../../020-System-Views-Reference/021-System-Views/table-placement-system-view-522cc8e.md "Provides table placement information.")
 

@@ -17,21 +17,15 @@ Provides all available JSONS \(original, instantiated, or optimized\) of a scena
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCENARIO\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the scenario name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the scenario name.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the statement ID.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the JSON type: original, instantiated, optimized, or extrace.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the JSON type: original, instantiated, optimized, or extrace.
 
 MODEL\_JSON
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the JSON string representing the calculation scenario.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the JSON string representing the calculation scenario.
 
 EXECUTION\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution timestamp.
-
-
 
 </td>
 </tr>
@@ -209,5 +161,5 @@ Displays the execution timestamp.
 
 [M\_DEBUG\_CONNECTIONS System View](m-debug-connections-system-view-20ae867.md "Provides an overview of connections used per debug session.")
 
-[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
+[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
 

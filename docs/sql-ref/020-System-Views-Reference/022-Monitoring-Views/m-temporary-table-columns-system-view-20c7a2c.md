@@ -17,21 +17,15 @@ Provides information about temporary table columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the table name.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the object ID of the table.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the column.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the name of the column.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ordinal position of the table column.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the ordinal position of the table column.
 
 DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type ID of the column.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the SQL data type ID of the column.
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type name of the column.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the SQL data type name of the column.
 
 OFFSET
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the offset of the column in the record in bytes.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the offset of the column in the record in bytes.
 
 LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of characters for character types. This value is the number of max digits for numeric types, the number of characters for datetime types, or the number of bytes for LOB types.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the number of characters for character types. This value is the number 
 
 SCALE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum number of digits to the right of the decimal point: TIME or TIMESTAMP. The decimal digits are defined as the number of digits to the right of the decimal point in the second's component of the data.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the maximum number of digits to the right of the decimal point: TIME or
 
 IS\_NULLABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column is allowed to accept a null value: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays whether the column is allowed to accept a null value: TRUE/FALSE.
 
 DEFAULT\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default value of the column in bytes.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the default value of the column in bytes.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the comments on the column.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the comments on the column.
 
 DDIC\_DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the DDIC data type ID.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the DDIC data type ID.
 
 DDIC\_DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the DDIC data type name.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the DDIC data type name.
 
 COMPRESSION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of compression: DEFAULT, PREFIXED, SPARSE, CLUSTERED, INDIRECT, or RLE.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the type of compression: DEFAULT, PREFIXED, SPARSE, CLUSTERED, INDIRECT
 
 INDEX\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of index: NONE/FULL.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the type of index: NONE/FULL.
 
 COLUMN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the column.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the ID of the column.
 
 PRELOAD
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays if a column is preloaded: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -531,5 +399,5 @@ Displays if a column is preloaded: TRUE/FALSE.
 
 [TRUNCATE TABLE Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/truncate-table-statement-data-manipulation-20fe29f.md "Deletes all rows from a table or projection view.")
 
-[Handling Temporary Data](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/cffa9243511a4858882de2aa398a4899.html "") :arrow_upper_right:
+[Handling Temporary Data](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/cffa9243511a4858882de2aa398a4899.html "") :arrow_upper_right:
 

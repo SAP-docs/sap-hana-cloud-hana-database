@@ -35,13 +35,13 @@ This tutorial shows you how to create a procedure that you can use to display th
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana****SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana`*SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -51,13 +51,13 @@ This tutorial shows you how to create a procedure that you can use to display th
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new database procedure.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new database procedure.
 
     5.  Select the database artifact type, for example, procedure.
 
-        In the *Artifact Type* box, type ***hdbp***, and choose *Procedure \(hdbprocedure\)* from the list that appears.
+        In the *Artifact Type* box, type `hdbp`, and choose *Procedure \(hdbprocedure\)* from the list that appears.
 
-    6.  Name the file ***BookingCount***.
+    6.  Name the file `BookingCount`.
 
         The appropriate file suffix \(`.hdbprocedure`\) is appended to the name by the Wizard.
 
@@ -107,7 +107,7 @@ This tutorial shows you how to create a procedure that you can use to display th
 
 4.  Deploy the new procedure.
 
-    In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose <span class="FPA-icons"></span> \(Deploy\) \(*Deploy*\).
+    In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose ![](images/BAS_icon_deploy_4423157.svg) \(*Deploy*\) \(*Deploy*\).
 
     > ### Note:  
     > A mismatch between the installed SAP HANA version and the SAP HANA version specified in the in the command palette and choose `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
@@ -118,7 +118,7 @@ This tutorial shows you how to create a procedure that you can use to display th
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 

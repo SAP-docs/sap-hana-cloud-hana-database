@@ -17,21 +17,15 @@ Provides information about effective placement of tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the table.
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the record count.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the record count.
 
 TABLE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type.
 
 GROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the group name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the group name.
 
 GROUP\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the group type.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the group type.
 
 SUBTYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the sub type.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the sub type.
 
 LOCATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(75\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the location.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the location.
 
 POSSIBLE\_LOCATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the possible location.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the possible location.
 
 LOCATION\_MATCH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(41\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a string representing the matching rule for the possible location.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays a string representing the matching rule for the possible location.
 
 MIN\_ROWS\_FOR\_PARTITIONING
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum row count for partitioning.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the minimum row count for partitioning.
 
 MIN\_ROWS\_FOR\_PARTITIONING\_MATCH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(41\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a string representing the matching rule for the minimum row count for partitioning.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays a string representing the matching rule for the minimum row count for p
 
 PARTITIONING\_THRESHOLD
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the repartitioning threshold.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the repartitioning threshold.
 
 PARTITIONING\_THRESHOLD\_MATCH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(41\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a string representing the matching rule for the repartitioning threshold.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays a string representing the matching rule for the repartitioning threshol
 
 INITIAL\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the initial partitions.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the initial partitions.
 
 INITIAL\_PARTITION\_MATCH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(41\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a string representing the matching rule for the initial partitions.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays a string representing the matching rule for the initial partitions.
 
 DYNAMIC\_RANGE\_THRESHOLD
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the dynamic range threshold.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the dynamic range threshold.
 
 DYNAMIC\_RANGE\_THRESHOLD\_MATCH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(41\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a string representing the matching rule for the dynamic range threshold.
-
-
 
 </td>
 </tr>
@@ -454,7 +340,7 @@ Displays a string representing the matching rule for the dynamic range threshold
 **Related Information**  
 
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [ALTER SYSTEM ALTER TABLE PLACEMENT Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-alter-table-placement-statement-system-management-0715b97.md "Changes table classification and placement settings for table groups.")
 

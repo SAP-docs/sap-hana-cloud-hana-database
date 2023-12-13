@@ -48,7 +48,7 @@ Returns the arc-sine, in radians, of the numeric argument *<number\>* between -1
 
 ## Example
 
-The following example returns the value ***0.5235987755982989*** for ***"asin"***:
+The following example returns the value ***0.5235987755982989*** for `"asin"`:
 
 ```
 SELECT ASIN (0.5) "asin" FROM DUMMY;

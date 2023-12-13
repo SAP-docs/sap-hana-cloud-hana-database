@@ -17,21 +17,15 @@ Provides information about audit policies.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 AUDIT\_POLICY\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the audit policy name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the audit policy name.
 
 AUDIT\_POLICY\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the audit policy.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the object ID of the audit policy.
 
 EVENT\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of events to be audited: SUCCESSFUL EVENTS, UNSUCCESSFUL EVENTS, ALL EVENTS.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the status of events to be audited: SUCCESSFUL EVENTS, UNSUCCESSFUL EVE
 
 EVENT\_LEVEL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the level of events to be audited: EMERGENCY, CRITICAL, ALERT, WARNING, INFO.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the level of events to be audited: EMERGENCY, CRITICAL, ALERT, WARNING,
 
 IS\_AUDIT\_POLICY\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the audit policy is active: TRUE/ FALSE.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays whether the audit policy is active: TRUE/ FALSE.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether an audit policy is valid. An audit policy can be invalid if the referenced user or object does not exist or an invalid combination of action and object is specified \(for example, EXECUTE on a table\). Possible values are TRUE/ FALSE.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays whether an audit policy is valid. An audit policy can be invalid if the
 
 IS\_DATABASE\_LOCAL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the policy was created locally on the current database and can be changed from within this database:TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays whether the policy was created locally on the current database and can 
 
 EVENT\_ACTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the action to be audited, such as SELECT or GRANT PRIVILEGE.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the action to be audited, such as SELECT or GRANT PRIVILEGE.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user whose actions are to be audited.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the user whose actions are to be audited.
 
 EXCEPT\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user whose actions are not to be audited.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the user whose actions are not to be audited.
 
 PRINCIPAL\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the principal whose actions or whose members’ actions are to be audited.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the name of the principal whose actions or whose members’ actions are
 
 EXCEPT\_PRINCIPAL\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the principal whose actions or whose members’ actions are not to be audited.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the name of the principal whose actions or whose members’ actions are
 
 PRINCIPAL\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the principal or except principal is USER or USERGROUP. When if the value of PRINCIPAL\_TYPE is USER, the columns PRINCIPAL\_NAME and EXCEPT\_PRINCIPAL\_NAME display the same values as the columns USER\_NAME and EXCEPT\_USER\_NAME, respectively.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays whether the principal or except principal is USER or USERGROUP. When if
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of object to be audited, or INVALID if the object type was changed after the audit policy was created.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the type of object to be audited, or INVALID if the object type was cha
 
 OBJECT\_SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema of object to be audited.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the schema of object to be audited.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of object to be audited.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the name of object to be audited.
 
 TRAIL\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(6\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the audit trail where the audit entry is written.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the name of the audit trail where the audit entry is written.
 
 RETENTION\_PERIOD
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of days the corresponding audit entries are retained.
-
-
 
 </td>
 </tr>
@@ -455,14 +341,16 @@ Displays the number of days the corresponding audit entries are retained.
 
 <a name="loio209e4d3d75191014b419a2dc6e6a202a__section_jxz_5fc_qhb"/>
 
-## Additional Information
+## Permissions
 
-Database users with the CATALOG READ or AUDIT ADMIN system privilege can view information in this system view. For all other database users, this view is empty.
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
+This view also requires the CATALOG READ or AUDIT ADMIN system privilege.
 
 **Related Information**  
 
 
-[AUDIT\_LOG System View](audit-log-system-view-d1fe124.md "Provides information about audit records, with the exception of XSA-auditing. You must have the AUDIT ADMIN, AUDIT OPERATOR, or AUDIT READ system privilege to access this view.")
+[AUDIT\_LOG System View](audit-log-system-view-d1fe124.md "Provides information about audit records, with the exception of XSA-auditing.")
 
 [CREATE AUDIT POLICY Statement \(Access Control\)](../../010-SQL-Reference/012-SQL-Statements/create-audit-policy-statement-access-control-20d3d56.md "Creates an audit policy.")
 
@@ -470,5 +358,5 @@ Database users with the CATALOG READ or AUDIT ADMIN system privilege can view in
 
 [DROP AUDIT POLICY Statement \(Access Control\)](../../010-SQL-Reference/012-SQL-Statements/drop-audit-policy-statement-access-control-20d6324.md "Drops an audit policy.")
 
-[Best Practices and Recommendations for Creating Audit Policies](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/35eb4e567d53456088755b8131b7ed1d.html "Best practices and recommendations to help you create audit policies") :arrow_upper_right:
+[Best Practices and Recommendations for Creating Audit Policies](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/35eb4e567d53456088755b8131b7ed1d.html "Best practices and recommendations to help you create audit policies") :arrow_upper_right:
 

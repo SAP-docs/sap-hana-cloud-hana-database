@@ -12,7 +12,7 @@ The index plug-in transforms a design-time index resource \(`.hdbindex`\) into a
 
 ### Fuzzy Search Indexes
 
-The HDI index plug-in can be reused to create fuzzy-search indexes if fach `*.hdbindex` file contains a single `CREATE FUZZY SEARCH INDEX` statement, as illustrated in the code samples included in the *Example Artifact Code* section below.
+The HDI index plug-in can be reused to create fuzzy-search indexes if the `*.hdbindex` file contains a single `CREATE FUZZY SEARCH INDEX` statement, as illustrated in the code samples included in the *Example Artifact Code* section below.
 
 > ### Tip:  
 > The plug-in can be used to create fuzzy search indexes for **all** search modes.

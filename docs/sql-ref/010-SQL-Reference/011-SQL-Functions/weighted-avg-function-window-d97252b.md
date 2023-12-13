@@ -94,22 +94,16 @@ SELECT ts, temperature, WEIGHTED_AVG(temperature) OVER (ORDER BY ts ROWS BETWEEN
 
 ts
 
-
-
 </th>
 <th valign="top">
 
 TEMPERATURE
-
-
 
 </th>
 <th valign="top">
 
 WEIGHTED\_AVG\(temperature\) OVER \(ORDER BY ts ROWS BETWEEN 1 PRECEDING AND CURRENT ROW\) FROM weather ORDER BY ts
 
-
-
 </th>
 </tr>
 <tr>
@@ -117,21 +111,15 @@ WEIGHTED\_AVG\(temperature\) OVER \(ORDER BY ts ROWS BETWEEN 1 PRECEDING AND CUR
 
 01.01.2014
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -140,44 +128,32 @@ WEIGHTED\_AVG\(temperature\) OVER \(ORDER BY ts ROWS BETWEEN 1 PRECEDING AND CUR
 
 01.01.2014
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 0.6666666666666666
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 02.01.2014
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 2.3333333333333335
-
-
 
 </td>
 </tr>
@@ -186,44 +162,32 @@ WEIGHTED\_AVG\(temperature\) OVER \(ORDER BY ts ROWS BETWEEN 1 PRECEDING AND CUR
 
 02.01.2014
 
-
-
 </td>
 <td valign="top">
 
 3.4
-
-
 
 </td>
 <td valign="top">
 
 3.2666666666666666
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 03.01.2014
-
-
 
 </td>
 <td valign="top">
 
 4.5
 
-
-
 </td>
 <td valign="top">
 
 4.133333333333333
-
-
 
 </td>
 </tr>
@@ -232,44 +196,32 @@ WEIGHTED\_AVG\(temperature\) OVER \(ORDER BY ts ROWS BETWEEN 1 PRECEDING AND CUR
 
 03.01.2014
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 4.833333333333333
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 04.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6
 
-
-
 </td>
 <td valign="top">
 
 5.666666666666666
-
-
 
 </td>
 </tr>
@@ -278,44 +230,32 @@ WEIGHTED\_AVG\(temperature\) OVER \(ORDER BY ts ROWS BETWEEN 1 PRECEDING AND CUR
 
 04.01.2014
 
-
-
 </td>
 <td valign="top">
 
 6.7
-
-
 
 </td>
 <td valign="top">
 
 6.466666666666667
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 05.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.3
 
-
-
 </td>
 <td valign="top">
 
 6.433333333333333
-
-
 
 </td>
 </tr>
@@ -324,44 +264,32 @@ WEIGHTED\_AVG\(temperature\) OVER \(ORDER BY ts ROWS BETWEEN 1 PRECEDING AND CUR
 
 05.01.2014
 
-
-
 </td>
 <td valign="top">
 
 4.6
-
-
 
 </td>
 <td valign="top">
 
 5.166666666666666
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 06.01.2014
-
-
 
 </td>
 <td valign="top">
 
 5.9
 
-
-
 </td>
 <td valign="top">
 
 5.466666666666667
-
-
 
 </td>
 </tr>
@@ -370,21 +298,15 @@ WEIGHTED\_AVG\(temperature\) OVER \(ORDER BY ts ROWS BETWEEN 1 PRECEDING AND CUR
 
 06.01.2014
 
-
-
 </td>
 <td valign="top">
 
 6.9
 
-
-
 </td>
 <td valign="top">
 
 6.566666666666666
-
-
 
 </td>
 </tr>

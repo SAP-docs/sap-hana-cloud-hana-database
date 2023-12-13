@@ -13,21 +13,15 @@ Provides information regarding partition-specific memory and disk usage for part
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the internal port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the table name.
 
 NODE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the partition node.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the ID of the partition node.
 
 PARENT\_NODE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the parent node.
-
-
 
 </td>
 </tr>
@@ -174,14 +132,10 @@ Displays the ID of the parent node.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -202,21 +156,15 @@ Displays the table partition ID:
 
 LOAD\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective load unit. Valid values are PAGE \(when the partition uses page loadable storage\) and COLUMN \(when the partition uses column loadable storage\).
-
-
 
 </td>
 </tr>
@@ -225,21 +173,15 @@ Displays the effective load unit. Valid values are PAGE \(when the partition use
 
 MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total paged memory size in bytes, which is the sum of the memory in the main, delta, and history parts.
-
-
 
 </td>
 </tr>
@@ -248,21 +190,15 @@ Displays the total paged memory size in bytes, which is the sum of the memory in
 
 MEMORY\_SIZE\_IN\_MAIN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current paged memory consumption in main in bytes. This value varies depending on the number of loaded attributes and includes data for open transactions.
-
-
 
 </td>
 </tr>
@@ -271,21 +207,15 @@ Displays the current paged memory consumption in main in bytes. This value varie
 
 MEMORY\_SIZE\_IN\_PAGE\_LOADABLE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total resident paged memory size, in bytes, of the partition.
-
-
 
 </td>
 </tr>
@@ -294,21 +224,15 @@ Displays the total resident paged memory size, in bytes, of the partition.
 
 MEMORY\_SIZE\_IN\_DELTA
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current memory consumption in delta in bytes.
-
-
 
 </td>
 </tr>
@@ -317,21 +241,15 @@ Displays the current memory consumption in delta in bytes.
 
 PERSISTENT\_MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current pure persistent memory consumption \(in bytes\) for every column store table
-
-
 
 </td>
 </tr>
@@ -340,21 +258,15 @@ Displays the current pure persistent memory consumption \(in bytes\) for every c
 
 DISK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of a table partition on a disk in bytes.
-
-
 
 </td>
 </tr>
@@ -363,21 +275,15 @@ Displays the total size of a table partition on a disk in bytes.
 
 DISK\_SIZE\_IN\_PAGE\_LOADABLE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total disk size, in bytes, of page-loadable storage for this partition.
-
-
 
 </td>
 </tr>
@@ -386,21 +292,15 @@ Displays the total disk size, in bytes, of page-loadable storage for this partit
 
 ESTIMATED\_MAX\_MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total estimated maximum memory consumption in bytes for fully loaded partitions. This value does not include data for open transactions.
-
-
 
 </td>
 </tr>
@@ -409,21 +309,15 @@ Displays the total estimated maximum memory consumption in bytes for fully loade
 
 LAST\_ESTIMATED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last estimated memory consumption in bytes of a fully loaded partition.
-
-
 
 </td>
 </tr>
@@ -432,14 +326,10 @@ Displays the last estimated memory consumption in bytes of a fully loaded partit
 
 LAST\_ESTIMATED\_MEMORY\_SIZE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
@@ -453,21 +343,15 @@ TIMESTAMP
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the record count.
-
-
 
 </td>
 </tr>
@@ -476,21 +360,15 @@ Displays the record count.
 
 RAW\_RECORD\_COUNT\_IN\_MAIN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current number of entries in the main part. This value differs from the number of visible main rows because there are entries for modified rows that are marked as invalidated.Displays the last time that the last-estimated memory consumption was calculated.
-
-
 
 </td>
 </tr>
@@ -499,21 +377,15 @@ Displays the current number of entries in the main part. This value differs from
 
 RAW\_RECORD\_COUNT\_IN\_DELTA
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current number of entries in the delta part. This value differs from the number of visible delta rows because there are additional entries, such as deleted rows or updated rows. This value can contain deleted records.
-
-
 
 </td>
 </tr>
@@ -522,21 +394,15 @@ Displays the current number of entries in the delta part. This value differs fro
 
 LOADED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time that the last-estimated memory consumptionDisplays how many columns in the table are loaded in memory. Valuse are: NO, PARTIALLY, or FULL. For a description of each column, see M\_CS\_COLUMNS.
-
-
 
 </td>
 </tr>
@@ -545,21 +411,15 @@ Displays the last time that the last-estimated memory consumptionDisplays how ma
 
 IS\_REPLICA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the part is a replica \(TRUE/FALSE\).
-
-
 
 </td>
 </tr>
@@ -568,21 +428,15 @@ Displays whether the part is a replica \(TRUE/FALSE\).
 
 GROUP\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective group type.
-
-
 
 </td>
 </tr>
@@ -591,21 +445,15 @@ Displays the effective group type.
 
 SUBTYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective group subtype.
-
-
 
 </td>
 </tr>
@@ -614,21 +462,15 @@ Displays the effective group subtype.
 
 GROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective group name.
-
-
 
 </td>
 </tr>
@@ -637,7 +479,7 @@ Displays the effective group name.
 **Related Information**  
 
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
 [TABLE\_PARTITIONS System View](../021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 

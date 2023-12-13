@@ -57,7 +57,7 @@ The BITXOR function returns a result along the argument's type.
 
 ## Example
 
-The following example performs a bitwise XOR operation for the arguments ***255*** and ***123***, and returns the value ***132*** for ***"bitxor"***:
+The following example performs a bitwise XOR operation for the arguments `255` and `123`, and returns the value ***132*** for `"bitxor"`:
 
 ```
 SELECT BITXOR (255, 123) "bitxor" FROM DUMMY;

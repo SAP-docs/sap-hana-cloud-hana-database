@@ -93,50 +93,36 @@ SELECT class,
 
 CLASS
 
-
-
 </th>
 <th valign="top">
 
 VAL
-
-
 
 </th>
 <th valign="top">
 
 OFFSET
 
-
-
 </th>
 <th valign="top">
 
 LEAD
-
-
 
 </th>
 <th valign="top">
 
 LEAD2
 
-
-
 </th>
 <th valign="top">
 
 LAG
-
-
 
 </th>
 <th valign="top">
 
 LAG2
 
-
-
 </th>
 </tr>
 <tr>
@@ -144,49 +130,35 @@ LAG2
 
 A
 
+</td>
+<td valign="top">
 
+1
 
 </td>
 <td valign="top">
 
 1
 
-
-
-</td>
-<td valign="top">
-
-1
-
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 \-1
-
-
 
 </td>
 </tr>
@@ -195,50 +167,36 @@ null
 
 A
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 \-3
 
-
-
 </td>
 </tr>
 <tr>
@@ -246,49 +204,35 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 \-5
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 \-5
-
-
 
 </td>
 </tr>
@@ -297,49 +241,35 @@ null
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">
 
 \-5
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -348,49 +278,35 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>
@@ -399,49 +315,35 @@ null
 
 B
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 \-1
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 \-1
-
-
 
 </td>
 </tr>
@@ -450,49 +352,35 @@ null
 
 B
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -501,49 +389,35 @@ B
 
 B
 
-
-
 </td>
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 null
-
-
 
 </td>
 <td valign="top">
 
 \-7
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>

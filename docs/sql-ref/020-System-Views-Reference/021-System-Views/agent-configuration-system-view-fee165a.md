@@ -17,21 +17,15 @@ Provides agent configuration information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 AGENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the agent name.
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent property key.
-
-
 
 </td>
 </tr>
@@ -86,25 +68,27 @@ Displays the agent property key.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
-
-
 
 </td>
 <td valign="top">
 
 Displays the agent property value.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiofee165a6ad61402d879d129b00b7d881__section_sfn_xhc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

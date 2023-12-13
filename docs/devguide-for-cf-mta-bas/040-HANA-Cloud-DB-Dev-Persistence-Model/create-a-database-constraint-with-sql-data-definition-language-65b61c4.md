@@ -50,13 +50,13 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -66,11 +66,11 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
     5.  Select the database artifact type, for example, database constraint.
 
-        In the command palette, type ***hdbc*** and choose *Constraint \(hdbconstraint\)* in the list that appears.
+        In the command palette, type `hdbc` and choose *Constraint \(hdbconstraint\)* in the list that appears.
 
     6.  Name the file *PurchaseOrderConstraint*.
 
@@ -105,7 +105,7 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 
     1.  In the *SAP HANA PROJECTS* explorer, locate the application project you want to deploy.
 
-    2.  Choose <span class="FPA-icons"></span> \(Deploy\).
+    2.  Choose ![](../020-HANA-Cloud-DB-Dev-Get-Started/images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
         > ### Note:  
         > A mismatch between the installed SAP HANA version and the version specified in the `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
@@ -119,7 +119,7 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
@@ -146,7 +146,7 @@ You can use the HDI `.hdbconstraint` artifact to define constraints on foreign k
 **Related Information**  
 
 
-[Database Constraint Syntax (.hdbconstraint in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/bda54706fbda4910908871743b675ad1.html "Transform a design-time constraint into a constraint on database tables.") :arrow_upper_right:
+[Database Constraint Syntax (.hdbconstraint in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/bda54706fbda4910908871743b675ad1.html "Transform a design-time constraint into a constraint on database tables.") :arrow_upper_right:
 
 [Create an Index with SQL Data Definition Language](create-an-index-with-sql-data-definition-language-90de80c.md "Define a design-time database index using the SQL Data Definition Language (DDL) syntax.")
 

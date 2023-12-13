@@ -120,14 +120,10 @@ You must have the REFERENCES object privilege on the PSE or be the owner and the
 
 Purpose
 
-
-
 </th>
 <th valign="top">
 
 Privileges
-
-
 
 </th>
 </tr>
@@ -136,14 +132,10 @@ Privileges
 
 LDAP
 
-
-
 </td>
 <td valign="top">
 
 LDAP ADMIN system privilege
-
-
 
 </td>
 </tr>
@@ -152,14 +144,10 @@ LDAP ADMIN system privilege
 
 REMOTE SOURCE
 
-
-
 </td>
 <td valign="top">
 
 CREATE REMOTE SOURCE system privilege
-
-
 
 </td>
 </tr>
@@ -168,14 +156,10 @@ CREATE REMOTE SOURCE system privilege
 
 SAML, JWT, or X509
 
-
-
 </td>
 <td valign="top">
 
 ALTER object privilege on the providers
-
-
 
 </td>
 </tr>
@@ -226,7 +210,7 @@ SET PSE SAML_PSE PURPOSE SAML FOR PROVIDER MY_SAML_PROVIDER;
 
 [CREATE REMOTE SOURCE Statement \(Access Control\)](create-remote-source-statement-access-control-20d4834.md "Defines an external data source that can connect to the SAP HANA database.")
 
-[Certificate Collections](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
 
-[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
+[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
 

@@ -28,7 +28,7 @@ Converts a *<value\>* to a BINARY data type.
 
 ## Example
 
-The following example converts the value ***abc*** to the BINARY value ***616263***.
+The following example converts the value `abc` to the BINARY value ***616263***.
 
 ```
 SELECT TO_BINARY ('abc') "to binary" FROM DUMMY;

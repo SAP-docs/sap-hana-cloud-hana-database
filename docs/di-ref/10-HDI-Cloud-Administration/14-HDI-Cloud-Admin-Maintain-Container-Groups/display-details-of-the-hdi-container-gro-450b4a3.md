@@ -19,21 +19,15 @@ The SAP HANA Deployment Infrastructure \(HDI\) component includes a selection of
 
 \#
 
-
-
 </th>
 <th valign="top">
 
 HDI Container View
 
-
-
 </th>
 <th valign="top">
 
 Information Displayed
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Information Displayed
 
 1
 
-
-
 </td>
 <td valign="top">
 
 [`M_CONTAINERS`](../../20-HDI-Cloud-Content-Development/m-containers-dcf1c9e.md)
 
-
-
 </td>
 <td valign="top">
 
 The HDI containers assigned to a container group
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ The HDI containers assigned to a container group
 
 2
 
-
-
 </td>
 <td valign="top">
 
 [`M_CONTAINER_VERSIONS`](../../20-HDI-Cloud-Content-Development/m-container-versions-22320f7.md)
 
-
-
 </td>
 <td valign="top">
 
 The version history and status information of all HDI containers in a container group
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ The version history and status information of all HDI containers in a container 
 
 3
 
-
-
 </td>
 <td valign="top">
 
 [`M_MESSAGES`](../../20-HDI-Cloud-Content-Development/m-messages-1696923.md)
 
-
-
 </td>
 <td valign="top">
 
 The messages relating to HDI container groups
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ The messages relating to HDI container groups
 
 4
 
-
-
 </td>
 <td valign="top">
 
 [`M_JOBS`](../../20-HDI-Cloud-Content-Development/m-jobs-d114ced.md)
 
-
-
 </td>
 <td valign="top">
 
 Shows information about the progress of the individual jobs of a MAKE operation
-
-
 
 </td>
 </tr>
@@ -134,21 +104,15 @@ Shows information about the progress of the individual jobs of a MAKE operation
 
 5
 
-
-
 </td>
 <td valign="top">
 
 [`M_ROLES`](../../20-HDI-Cloud-Content-Development/m-roles-b7f3bee.md)
 
-
-
 </td>
 <td valign="top">
 
 The container roles for all HDI containers in a container group
-
-
 
 </td>
 </tr>
@@ -157,21 +121,15 @@ The container roles for all HDI containers in a container group
 
 6
 
-
-
 </td>
 <td valign="top">
 
 [`M_GRANTED_SCHEMA_PRIVILEGES`](../../20-HDI-Cloud-Content-Development/m-granted-schema-privileges-77bf987.md)
 
-
-
 </td>
 <td valign="top">
 
 The details of all granted schema privileges
-
-
 
 </td>
 </tr>
@@ -180,21 +138,15 @@ The details of all granted schema privileges
 
 7
 
-
-
 </td>
 <td valign="top">
 
 [`M_GRANTED_SCHEMA_ROLES`](../../20-HDI-Cloud-Content-Development/m-granted-schema-roles-6f832a6.md)
 
-
-
 </td>
 <td valign="top">
 
 The details of all granted schema roles
-
-
 
 </td>
 </tr>

@@ -15,7 +15,7 @@ INSERT INTO <table_name> [ PARTITION <num> ]
  [ [ AS ] <table_alias> ]
  [ ( <column_list_clause> ) ]
  { { <value_list_clause> | [ <overriding_clause> ] <subquery> } | <with_clause> }
- [ <hint_clause> ]
+ [ <hint_clause> ] [ { <hint_clause> | WITH NOWAIT } ]
 ```
 
 
@@ -172,6 +172,37 @@ For information on hints, see the HINT clause of the SELECT statement.
 
 
 
+</dd><dt><b>
+
+WITH NOWAIT
+
+</b></dt>
+<dd>
+
+Generates an immediate error if the INSERT statement writes a row that already exists and is locked.
+
+The WITH NOWAIT clause supports:
+
+-   column table
+-   partitioned column table
+-   projection view on column table
+-   system versioned table
+-   INSERT operator
+
+.
+
+WITH NOWAIT does not support:
+
+-   row table
+-   application-app-time table
+-   temp table
+-   virtual table
+-   UPDATE, DELETE, REPLACE, or MERGE-INTO operators
+-   INSERT inside a trigger or foreign key in a cascaded manner
+-   Cascade to a trigger or foreign key
+
+
+
 </dd>
 </dl>
 
@@ -194,7 +225,7 @@ Always define the *<column\_list\_clause\>*. This practice helps to protect your
 Create table T:
 
 ```
-CREATE ROW TABLE T (KEY INT PRIMARY KEY, VAL1 INT, VAL2 NVARCHAR(20));
+CREATE TABLE T (KEY INT PRIMARY KEY, VAL1 INT, VAL2 NVARCHAR(20));
 ```
 
 Insert a row into table T.
@@ -210,21 +241,15 @@ INSERT INTO T VALUES (1, 1, 'The first');
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL1
 
-
-
 </td>
 <td valign="top">
 
 VAL2
-
-
 
 </td>
 </tr>
@@ -233,21 +258,15 @@ VAL2
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 The first
-
-
 
 </td>
 </tr>
@@ -266,21 +285,15 @@ INSERT INTO T (KEY, VAL2) VALUES (2,3);
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL1
 
-
-
 </td>
 <td valign="top">
 
 VAL2
-
-
 
 </td>
 </tr>
@@ -289,21 +302,15 @@ VAL2
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 The first
-
-
 
 </td>
 </tr>
@@ -312,21 +319,15 @@ The first
 
 2
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 </tr>
@@ -345,21 +346,15 @@ INSERT INTO T SELECT 3, 3, 'The third' FROM DUMMY;
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL1
 
-
-
 </td>
 <td valign="top">
 
 VAL2
-
-
 
 </td>
 </tr>
@@ -368,21 +363,15 @@ VAL2
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 The first
-
-
 
 </td>
 </tr>
@@ -391,21 +380,15 @@ The first
 
 2
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -414,21 +397,15 @@ The first
 
 3
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 The third
-
-
 
 </td>
 </tr>
@@ -443,7 +420,7 @@ INSERT INTO T1 VALUES ( 1, ARRAY ( 1, 2, 3, 4 ) );
 Insert values into an array value construction by query.
 
 ```
-CREATE ROW TABLE T0 ( C1 INT )
+CREATE TABLE T0 ( C1 INT )
    INSERT INTO T0 VALUES ( 21 )
    INSERT INTO T0 VALUES ( 22 )
    INSERT INTO T0 VALUES ( 23 )
@@ -488,6 +465,29 @@ In the example below, the first statement inserts values into table T using the 
 INSERT INTO T (T.KEY, T.VAL2) VALUES(2,3);
 INSERT INTO T ALIAS_T (ALIAS_T.KEY, ALIAS_T.VAL2) VALUES(2,3);
 ```
+
+This example demonstrates the use of the WITH NOWAIT clause. create table A1 \(a int primary key, b int\);
+
+```
+INSERT INTO T1 VALUES (1,1);
+COMMIT;
+```
+
+Using connection1, with autocommit off, execute:
+
+```
+SELECT * FROM T1 WHEREB=1 FOR UPDATE;
+```
+
+This statement is held because of a rowlock from the \(1, 1\) insertion.
+
+Using connection2, execute:
+
+```
+INSERT INTO T1 VALUES (1, 10) WITH NOWAIT;
+```
+
+This statement immediately returns an error without waiting for the release of the rowlock for the \(1, 1\) insertion.
 
 **Related Information**  
 

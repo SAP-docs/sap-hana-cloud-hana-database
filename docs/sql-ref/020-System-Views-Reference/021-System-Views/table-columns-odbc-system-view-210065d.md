@@ -17,21 +17,15 @@ Provides information about available table columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the table name.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object ID of the table.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the column.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the name of the column.
 
 DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type ID of the column.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the SQL data type ID of the column.
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type name of the column.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the SQL data type name of the column.
 
 COLUMN\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of characters required to display the value when it is converted to characters.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the total number of characters required to display the value when it is
 
 BUFFER\_LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the length, in bytes, required to transfer the value.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the length, in bytes, required to transfer the value.
 
 DECIMAL\_DIGITS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of significant digits to the right of the decimal point.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the total number of significant digits to the right of the decimal poin
 
 NUM\_PREC\_RADIX
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays how to interpret columns COLUMN\_SIZE and DECIMAL\_DIGITS. For numeric data types either 10 or 2.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays how to interpret columns COLUMN\_SIZE and DECIMAL\_DIGITS. For numeric 
 
 NULLABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column is allowed to accept null value: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays whether the column is allowed to accept null value: TRUE/FALSE.
 
 COLUMN\_DEF
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default value of the column.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the default value of the column.
 
 SQL\_DATA\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type ID of the column.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the SQL data type ID of the column.
 
 SQL\_DATETIME\_SUB
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the subtype code for datetime data types.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the subtype code for datetime data types.
 
 CHAR\_OCTET\_LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum length, in bytes, of a character or binary data type column.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the maximum length, in bytes, of a character or binary data type column
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ordinal position of the column in a record.
-
-
 
 </td>
 </tr>
@@ -408,25 +306,27 @@ Displays the ordinal position of the column in a record.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the description for the column.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio210065d275191014b18ddc68a972679f__section_vsg_hxz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

@@ -30,6 +30,11 @@ The HDI container-group administrator can use a function to set the container-gr
     When an HDI container is moved to another container group, DML schema access to other containers in the source container group is revoked from the moved container, and in the target container group, the same procedure is performed on the moved container as would be performed during the creation of a new container.
 
 
+> ### Note:  
+> The cross-container access you configure in this task provides privileges for the container object owner; these privileges include the `GRANT OPTION` and allow the container object owner to create objects that depend on objects in another container even in situations when the `SELECT WITH GRANT` privilege is required, for example, when creating calculation views.
+> 
+> Cross-container access only provides the privileges required to access other containers; it does not provide direct access to objects in other containers. To work with objects from other HDI containers, you need to use synonyms.
+
 To enable access between containers in the same HDI container group, perform the following steps:
 
 

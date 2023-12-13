@@ -17,21 +17,15 @@ Provides runtime data for column tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,14 +102,10 @@ Displays the table name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -160,21 +126,15 @@ Returns the table partition ID:
 
 MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays that the total memory size, in bytes, is the sum of memory size in the main, delta, and history parts.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays that the total memory size, in bytes, is the sum of memory size in the 
 
 MEMORY\_SIZE\_IN\_MAIN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current memory consumption, in bytes, in main. This value varies depending on the number of attributes actually loaded and includes data for open transactions.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the current memory consumption, in bytes, in main. This value varies de
 
 MEMORY\_SIZE\_IN\_DELTA
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current memory consumption, in bytes, in delta.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the current memory consumption, in bytes, in delta.
 
 MEMORY\_SIZE\_IN\_PAGE\_LOADABLE\_MAIN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total paged memory size of the table.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the total paged memory size of the table.
 
 MEMORY\_SIZE\_IN\_MISC
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used memory size, in bytes, for the internal structures that are common to all columns in a table and that are not included in the MEMORY\_SIZE\_IN\_MAIN or MEMORY\_SIZE\_IN\_DELTA columns.
-
-
 
 </td>
 </tr>
@@ -275,21 +211,15 @@ Displays the used memory size, in bytes, for the internal structures that are co
 
 PERSISTENT\_MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 For columns stored in persistent memory, displays the total memory size in bytes.
-
-
 
 </td>
 </tr>
@@ -298,21 +228,15 @@ For columns stored in persistent memory, displays the total memory size in bytes
 
 ESTIMATED\_MAX\_MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the estimated maximum memory consumption, in bytes, in total, for the fully loaded table \(data for open transactions is not included\).
-
-
 
 </td>
 </tr>
@@ -321,21 +245,15 @@ Displays the estimated maximum memory consumption, in bytes, in total, for the f
 
 LAST\_ESTIMATED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last estimated memory consumption, in bytes, for the fully loaded table.
-
-
 
 </td>
 </tr>
@@ -344,21 +262,15 @@ Displays the last estimated memory consumption, in bytes, for the fully loaded t
 
 LAST\_ESTIMATED\_MEMORY\_SIZE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time the last estimated memory consumption was calculated.
-
-
 
 </td>
 </tr>
@@ -367,21 +279,15 @@ Displays the last time the last estimated memory consumption was calculated.
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the record count.
-
-
 
 </td>
 </tr>
@@ -390,21 +296,15 @@ Displays the record count.
 
 RAW\_RECORD\_COUNT\_IN\_MAIN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current number of entries in the main part of the table. This value differs from the number of visible table main rows because there are entries for modified rows that are marked as invalidated.
-
-
 
 </td>
 </tr>
@@ -413,21 +313,15 @@ Displays the current number of entries in the main part of the table. This value
 
 RAW\_RECORD\_COUNT\_IN\_DELTA
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current number of entries in the table delta part. This value differs from the number of visible table delta rows because there are additional entries, such as deleted rows or updated rows. This column can contain deleted records.
-
-
 
 </td>
 </tr>
@@ -436,21 +330,15 @@ Displays the current number of entries in the table delta part. This value diffe
 
 LAST\_COMPRESSED\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of entries in main during the last optimize compression run.
-
-
 
 </td>
 </tr>
@@ -459,21 +347,15 @@ Displays the number of entries in main during the last optimize compression run.
 
 MAX\_UDIV
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum table row number. This number is for internal use only.
-
-
 
 </td>
 </tr>
@@ -482,21 +364,15 @@ Displays the maximum table row number. This number is for internal use only.
 
 MAX\_MERGE\_CID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum commit-ID of transactions for which changes were already merged into the main table.
-
-
 
 </td>
 </tr>
@@ -505,21 +381,15 @@ Displays the maximum commit-ID of transactions for which changes were already me
 
 MAX\_ROWID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum row ID. This number is purely technical and only used internally.
-
-
 
 </td>
 </tr>
@@ -528,21 +398,15 @@ Displays the maximum row ID. This number is purely technical and only used inter
 
 IS\_DELTA2\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether a second delta is used: TRUE/FALSE. During a table delta merge, updates and inserts are stored to a second delta because the first delta is locked.
-
-
 
 </td>
 </tr>
@@ -551,21 +415,15 @@ Indicates whether a second delta is used: TRUE/FALSE. During a table delta merge
 
 IS\_DELTA\_LOADED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the delta part of the table is loaded: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -574,21 +432,15 @@ Indicates whether the delta part of the table is loaded: TRUE/FALSE.
 
 IS\_LOG\_DELTA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether that currently the redo log is currently being written: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -597,21 +449,15 @@ Indicates whether that currently the redo log is currently being written: TRUE/F
 
 PERSISTENT\_MERGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the new main part will be written to the disk during a table delta merge, unless requested differently: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -620,21 +466,15 @@ Indicates whether the new main part will be written to the disk during a table d
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the creation time.
-
-
 
 </td>
 </tr>
@@ -643,21 +483,15 @@ Displays the creation time.
 
 MODIFY\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the latest modify timestamp of any column store table run time data. This value is used to trigger invalidation of related translation tables used by the column store join operations.
-
-
 
 </td>
 </tr>
@@ -666,21 +500,15 @@ Displays the latest modify timestamp of any column store table run time data. Th
 
 LAST\_MERGE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the point in time, in UNIX time format, of the last time the table delta part was merged into the main part.
-
-
 
 </td>
 </tr>
@@ -689,21 +517,15 @@ Displays the point in time, in UNIX time format, of the last time the table delt
 
 LAST\_REPLAY\_LOG\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the point in time, in UNIX time format, of the last time the table log was replayed.
-
-
 
 </td>
 </tr>
@@ -712,21 +534,15 @@ Displays the point in time, in UNIX time format, of the last time the table log 
 
 LAST\_TRUNCATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time the table was truncated.
-
-
 
 </td>
 </tr>
@@ -735,21 +551,15 @@ Displays the last time the table was truncated.
 
 LAST\_CONSISTENCY\_CHECK\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time the table consistency was checked with the CHECK\_TABLE\_CONSISTENCY procedure.
-
-
 
 </td>
 </tr>
@@ -758,21 +568,15 @@ Displays the last time the table consistency was checked with the CHECK\_TABLE\_
 
 LAST\_CONSISTENCY\_CHECK\_ERROR\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of errors found in the last table consistency check.
-
-
 
 </td>
 </tr>
@@ -781,21 +585,15 @@ Displays the number of errors found in the last table consistency check.
 
 LOADED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the flag to show how many columns of the table are loaded in memory: NO, PARTIALLY, and FULL. See M\_CS\_COLUMNS for each column.
-
-
 
 </td>
 </tr>
@@ -804,21 +602,15 @@ Displays the flag to show how many columns of the table are loaded in memory: NO
 
 LOAD\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the load unit for the table: PAGE, COLUMN, and UNKNOWN.
-
-
 
 </td>
 </tr>
@@ -827,14 +619,10 @@ Displays the load unit for the table: PAGE, COLUMN, and UNKNOWN.
 
 READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -843,8 +631,6 @@ Displays the number of read accesses on the table or partition.
 
 This is not the number of SELECT statements against this table. A SELECT statement may involve several read accesses.
 
-
-
 </td>
 </tr>
 <tr>
@@ -852,14 +638,10 @@ This is not the number of SELECT statements against this table. A SELECT stateme
 
 WRITE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -868,8 +650,6 @@ Displays the number of write accesses on the table or partition.
 
 This is not the number of DML and DDL statements against this table. A DML or DDL statement may involve several write accesses.
 
-
-
 </td>
 </tr>
 <tr>
@@ -877,21 +657,15 @@ This is not the number of DML and DDL statements against this table. A DML or DD
 
 MERGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of delta merges done on the table or partition.
-
-
 
 </td>
 </tr>
@@ -900,21 +674,15 @@ Displays the number of delta merges done on the table or partition.
 
 IS\_REPLICA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the flag to indicate that the part is a replica.
-
-
 
 </td>
 </tr>
@@ -923,21 +691,15 @@ Displays the flag to indicate that the part is a replica.
 
 UNUSED\_RETENTION\_PERIOD
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the unused retention period.
-
-
 
 </td>
 </tr>
@@ -946,21 +708,15 @@ Displays the unused retention period.
 
 HAS\_RECORD\_COMMIT\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the table is tracking commit timestamps: TRUE or FALSE.
-
-
 
 </td>
 </tr>
@@ -969,21 +725,15 @@ Displays whether the table is tracking commit timestamps: TRUE or FALSE.
 
 PERSISTENT\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistent memory preference inferred from user-specified preferences in bottom-up manner starting from this object: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -1016,5 +766,5 @@ While the counter MERGE\_COUNT counts merges of the table since the instance sta
 
 [DROP TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-table-statement-data-definition-20d7fd2.md "Removes a physical or virtual table from the database.")
 
-[Memory Management in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/bd6e6be8bb5710149e34e14608e07b76.html "The column store is the part of the SAP HANA database that manages data organized in columns in memory. Tables created as column tables are stored here.") :arrow_upper_right:
+[Memory Management in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bd6e6be8bb5710149e34e14608e07b76.html "The column store is the part of the SAP HANA database that manages data organized in columns in memory. Tables created as column tables are stored here.") :arrow_upper_right:
 

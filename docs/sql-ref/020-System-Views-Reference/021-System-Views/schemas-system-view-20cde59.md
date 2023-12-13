@@ -17,21 +17,15 @@ Shows available schemas.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 SCHEMA\_OWNER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema owner.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the schema owner.
 
 HAS\_PRIVILEGES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Shows if the user is the schema owner or has any privileges for the schema or any object within the schema: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -109,25 +85,27 @@ Shows if the user is the schema owner or has any privileges for the schema or an
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
 
 Displays the creation time of the schema.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20cde599751910149fc2954ef99edcd6__section_ywg_hsz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -146,5 +124,5 @@ Displays the creation time of the schema.
 
 [CURRENT\_OBJECT\_SCHEMA Function \(Miscellaneous\)](../../010-SQL-Reference/011-SQL-Functions/current-object-schema-function-miscellaneous-8feedda.md "Returns the current schema name when creating a view.")
 
-[List Virtual Tables By Schema](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/c9bb5442df154095ba106ec675c91c3f.html "Display the virtual tables of a remote source by schema using the SAP HANA database explorer.") :arrow_upper_right:
+[List Virtual Tables By Schema](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/c9bb5442df154095ba106ec675c91c3f.html "Display the virtual tables of a remote source by schema using the SAP HANA database explorer.") :arrow_upper_right:
 

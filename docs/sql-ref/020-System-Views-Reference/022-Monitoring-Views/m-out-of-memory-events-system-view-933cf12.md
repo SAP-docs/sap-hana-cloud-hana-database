@@ -15,21 +15,15 @@ Provides a list of the last 20 out-of-memory \(OOM\) events.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time of the OOM event.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the time of the OOM event.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the connection ID.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(20\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the statement ID.
-
-
+Displays the string of the SQL statement that triggered the OOM event.
 
 </td>
 </tr>
@@ -153,21 +117,32 @@ Displays the statement ID.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(32\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the identifier for an SQL string.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+STATEMENT\_STRING
+
+</td>
+<td valign="top">
+
+NCLOB
+
+</td>
+<td valign="top">
+
+Displays the SQL string.
 
 </td>
 </tr>
@@ -176,21 +151,15 @@ Displays the identifier for an SQL string.
 
 WORKLOAD\_CLASS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the effective workload class
-
-
 
 </td>
 </tr>
@@ -199,21 +168,15 @@ Displays the name of the effective workload class
 
 HEAP\_MEMORY\_CATEGORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocator name in case of a heap memory failure.
-
-
 
 </td>
 </tr>
@@ -222,21 +185,15 @@ Displays the allocator name in case of a heap memory failure.
 
 MEMORY\_REQUEST\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size, in bytes, of the failed memory allocation.
-
-
 
 </td>
 </tr>
@@ -245,21 +202,15 @@ Displays the size, in bytes, of the failed memory allocation.
 
 MEMORY\_USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size, in bytes, currently allocated. This value depends on the EVENT\_REASON.
-
-
 
 </td>
 </tr>
@@ -268,21 +219,15 @@ Displays the size, in bytes, currently allocated. This value depends on the EVEN
 
 EVENT\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason for the OOM event: GLOBAL ALLOCATION LIMIT, PROCESS ALLOCATION LIMIT, or STATEMENT MEMORY LIMIT.
-
-
 
 </td>
 </tr>
@@ -291,21 +236,15 @@ Displays the reason for the OOM event: GLOBAL ALLOCATION LIMIT, PROCESS ALLOCATI
 
 MEMORY\_LIMIT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the limit in bytes. This value depends on the EVENT\_REASON.
-
-
 
 </td>
 </tr>
@@ -314,21 +253,15 @@ Displays the size of the limit in bytes. This value depends on the EVENT\_REASON
 
 TRACEFILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the OOM trace file name.
-
-
 
 </td>
 </tr>
@@ -337,5 +270,5 @@ Displays the OOM trace file name.
 **Related Information**  
 
 
-[SAP HANA Used Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/8d277dcc98a94784a4375c029d19d088.html "The total amount of memory used by SAP HANA is referred to as used memory. It includes program code and stack, all data and system tables, and the memory required for temporary computations.") :arrow_upper_right:
+[SAP HANA Used Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/8d277dcc98a94784a4375c029d19d088.html "The total amount of memory used by SAP HANA is referred to as used memory. It includes program code and stack, all data and system tables, and the memory required for temporary computations.") :arrow_upper_right:
 

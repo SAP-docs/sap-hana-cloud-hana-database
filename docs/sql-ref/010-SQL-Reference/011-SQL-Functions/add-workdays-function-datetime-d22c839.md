@@ -177,22 +177,16 @@ The following examples use the Factory Calendar table for the month of January 2
 
 TFACS bitfield
 
-
-
 </th>
 <th valign="top">
 
 Day of the month
-
-
 
 </th>
 <th valign="top">
 
 Reason for not working
 
-
-
 </th>
 </tr>
 <tr>
@@ -200,21 +194,15 @@ Reason for not working
 
 0
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Public Holiday
-
-
 
 </td>
 </tr>
@@ -222,22 +210,16 @@ Public Holiday
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -245,22 +227,16 @@ Public Holiday
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -268,22 +244,16 @@ Public Holiday
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 4
 
-
-
 </td>
 <td valign="top">
 
 Weekend
-
-
 
 </td>
 </tr>
@@ -291,22 +261,16 @@ Weekend
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 Weekend
-
-
 
 </td>
 </tr>
@@ -314,22 +278,16 @@ Weekend
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 6
 
-
-
 </td>
 <td valign="top">
 
 Public Holiday
-
-
 
 </td>
 </tr>
@@ -337,22 +295,16 @@ Public Holiday
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -360,22 +312,16 @@ Public Holiday
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -383,22 +329,16 @@ Public Holiday
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -406,22 +346,16 @@ Public Holiday
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -429,22 +363,16 @@ Public Holiday
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 11
 
-
-
 </td>
 <td valign="top">
 
 Weekend
-
-
 
 </td>
 </tr>
@@ -452,22 +380,16 @@ Weekend
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 12
 
-
-
 </td>
 <td valign="top">
 
 Weekend
-
-
 
 </td>
 </tr>
@@ -475,22 +397,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 13
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -498,22 +414,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 14
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -521,22 +431,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 15
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -544,22 +448,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 16
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -567,22 +465,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 17
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -590,22 +482,16 @@ Weekend
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 18
 
-
-
 </td>
 <td valign="top">
 
 Weekend
-
-
 
 </td>
 </tr>
@@ -613,22 +499,16 @@ Weekend
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 19
 
-
-
 </td>
 <td valign="top">
 
 Weekend
-
-
 
 </td>
 </tr>
@@ -636,22 +516,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 20
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -659,22 +533,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 21
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -682,22 +550,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 22
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -705,22 +567,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 23
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -728,22 +584,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -751,22 +601,16 @@ Weekend
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 25
 
-
-
 </td>
 <td valign="top">
 
 Weekend
-
-
 
 </td>
 </tr>
@@ -775,44 +619,32 @@ Weekend
 
 0
 
-
-
 </td>
 <td valign="top">
 
 26
-
-
 
 </td>
 <td valign="top">
 
 Weekend
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 27
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -820,22 +652,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 28
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -843,22 +669,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 29
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -866,22 +686,16 @@ Weekend
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 30
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -890,21 +704,15 @@ Weekend
 
 1
 
-
-
 </td>
 <td valign="top">
 
 31
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

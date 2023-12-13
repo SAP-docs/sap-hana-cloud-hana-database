@@ -17,21 +17,15 @@ Provides statistics for reclaiming memory \(for example, defragmentation, unload
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 STATISTICS\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistics object unique ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the statistics object unique ID.
 
 MEMORY\_RECLAIM\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of memory reclaims.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of memory reclaims.
 
 LAST\_MEMORY\_RECLAIM\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time needed in milliseconds to reclaim memory for the last allocation.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the time needed in milliseconds to reclaim memory for the last allocati
 
 MAX\_MEMORY\_RECLAIM\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the longest time needed in milliseconds to reclaim memory for the allocation.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the longest time needed in milliseconds to reclaim memory for the alloc
 
 MIN\_MEMORY\_RECLAIM\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shortest time needed in milliseconds to reclaim memory for the allocation.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the shortest time needed in milliseconds to reclaim memory for the allo
 
 SUM\_MEMORY\_RECLAIM\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time needed in milliseconds to reclaim memory for all allocations.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the total time needed in milliseconds to reclaim memory for all allocat
 
 AVG\_MEMORY\_RECLAIM\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time needed in milliseconds to reclaim memory for the allocation.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the average time needed in milliseconds to reclaim memory for the alloc
 
 LAST\_SYNCHRONIZATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last wait time in milliseconds while other thread/process reclaims memory.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the last wait time in milliseconds while other thread/process reclaims 
 
 MAX\_SYNCHRONIZATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the longest wait time in milliseconds while other thread/process reclaims memory.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the longest wait time in milliseconds while other thread/process reclai
 
 MIN\_SYNCHRONIZATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shortest wait time in milliseconds while other thread/process reclaims memory.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the shortest wait time in milliseconds while other thread/process recla
 
 SUM\_SYNCHRONIZATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total wait time in milliseconds while other thread/process reclaims memory.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the total wait time in milliseconds while other thread/process reclaims
 
 AVG\_SYNCHRONIZATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average wait time in milliseconds while other thread/process reclaims memory.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the average wait time in milliseconds while other thread/process reclai
 
 LAST\_DEFRAGMENTATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration in milliseconds of the last defragmentation.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the duration in milliseconds of the last defragmentation.
 
 MAX\_DEFRAGMENTATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the longest duration in milliseconds of defragmentation.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the longest duration in milliseconds of defragmentation.
 
 MIN\_DEFRAGMENTATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shortest duration in milliseconds of defragmentation.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the shortest duration in milliseconds of defragmentation.
 
 SUM\_DEFRAGMENTATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total duration in milliseconds of defragmentation.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the total duration in milliseconds of defragmentation.
 
 AVG\_DEFRAGMENTATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average duration in milliseconds of defragmentation.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the average duration in milliseconds of defragmentation.
 
 LAST\_DEFRAGMENTATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes freed by the last defragmentation.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the size in bytes freed by the last defragmentation.
 
 MAX\_DEFRAGMENTATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the largest size in bytes freed by defragmentation.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the largest size in bytes freed by defragmentation.
 
 MIN\_DEFRAGMENTATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the smallest size in bytes freed by defragmentation.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the smallest size in bytes freed by defragmentation.
 
 SUM\_DEFRAGMENTATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size freed in bytes by defragmentation\).
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the total size freed in bytes by defragmentation\).
 
 AVG\_DEFRAGMENTATION\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size in bytes freed by defragmentation.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the average size in bytes freed by defragmentation.
 
 LAST\_MEMORY\_OBJECT\_UNLOAD\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration in milliseconds of the last unload. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the duration in milliseconds of the last unload. Also see view M\_MEMOR
 
 MAX\_MEMORY\_OBJECT\_UNLOAD\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the longest duration in milliseconds of all unloads. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -661,21 +493,15 @@ Displays the longest duration in milliseconds of all unloads. Also see view M\_M
 
 MIN\_MEMORY\_OBJECT\_UNLOAD\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shortest duration in milliseconds of all unloads. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -684,21 +510,15 @@ Displays the shortest duration in milliseconds of all unloads. Also see view M\_
 
 SUM\_MEMORY\_OBJECT\_UNLOAD\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total duration in milliseconds of all unloads. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -707,21 +527,15 @@ Displays the total duration in milliseconds of all unloads. Also see view M\_MEM
 
 AVG\_MEMORY\_OBJECT\_UNLOAD\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average duration in milliseconds of all unloads. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -730,21 +544,15 @@ Displays the average duration in milliseconds of all unloads. Also see view M\_M
 
 LAST\_MEMORY\_OBJECT\_UNLOAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes freed by the last unloading of memory objects. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -753,21 +561,15 @@ Displays the size in bytes freed by the last unloading of memory objects. Also s
 
 MAX\_MEMORY\_OBJECT\_UNLOAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the largest size in bytes freed by unloading memory objects. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -776,21 +578,15 @@ Displays the largest size in bytes freed by unloading memory objects. Also see v
 
 MIN\_MEMORY\_OBJECT\_UNLOAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the smallest size in bytes freed by unloading memory objects. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -799,21 +595,15 @@ Displays the smallest size in bytes freed by unloading memory objects. Also see 
 
 SUM\_MEMORY\_OBJECT\_UNLOAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes freed by unloading memory objects. Also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>
@@ -822,21 +612,15 @@ Displays the total size in bytes freed by unloading memory objects. Also see vie
 
 AVG\_MEMORY\_OBJECT\_UNLOAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size in bytes freed by unloading memory objects. also see view M\_MEMORY\_OBJECTS.
-
-
 
 </td>
 </tr>

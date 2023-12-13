@@ -22,13 +22,13 @@ Escapes single quotes \(apostrophes\) in the given string *<value\>*, ensuring a
 
 ## Examples
 
-The following query escapes the parameter content ***Str'ing*** to ***Str''ing***.
+The following query escapes the parameter content `Str'ing` to `Str''ing`.
 
 ```
 SELECT ESCAPE_SINGLE_QUOTES('Str''ing') "string_literal" FROM DUMMY;
 ```
 
-The following query example shows the strings retrieved from a table ***t***, both without and with ESCAPE\_SINGLE\_QUOTES applied. The column `col_txt` contains the two entries `Adam's` and `Eve`.
+The following query example shows the strings retrieved from a table `t`, both without and with ESCAPE\_SINGLE\_QUOTES applied. The column `col_txt` contains the two entries `Adam's` and `Eve`.
 
 ```
 CREATE COLUMN TABLE txt(
@@ -49,14 +49,10 @@ The results are as follows:
 
 COL\_TXT
 
-
-
 </th>
 <th valign="top">
 
 ESCAPE\_SINGLE\_QUOTES\(COL\_TXT\)
-
-
 
 </th>
 </tr>
@@ -65,14 +61,10 @@ ESCAPE\_SINGLE\_QUOTES\(COL\_TXT\)
 
 Adam's
 
-
-
 </td>
 <td valign="top">
 
 Adam''s
-
-
 
 </td>
 </tr>
@@ -81,14 +73,10 @@ Adam''s
 
 Eve
 
-
-
 </td>
 <td valign="top">
 
 Eve
-
-
 
 </td>
 </tr>

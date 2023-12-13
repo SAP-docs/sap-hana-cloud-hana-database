@@ -245,27 +245,27 @@ You must have the LDAP ADMIN system privilege to alter an LDAP provider. If auto
 
 ## Examples
 
-**Example 1:** Alter the USER LOOKUP URL for an LDAP provider called ***my\_ldap\_provider***:
+**Example 1:** Alter the USER LOOKUP URL for an LDAP provider called `my_ldap_provider`:
 
 ```
 ALTER LDAP PROVIDER my_ldap_provider
   USER LOOKUP URL 'ldap://myhostname:389/ou=Users,dc=largebank,dc=com??sub? (&(objectClass=user)(sAMAccountName=*))';
 ```
 
-**Example 2:** Make the LDAP provider ***my\_ldap\_provider*** the default and enable it:
+**Example 2:** Make the LDAP provider `my_ldap_provider` the default and enable it:
 
 ```
 ALTER LDAP PROVIDER my_ldap_provider DEFAULT ON ENABLE PROVIDER;
 ```
 
-**Example 3:** Change the NESTED GROUP LOOKUP URL for the LDAP provider ***my\_ldap\_provider***:
+**Example 3:** Change the NESTED GROUP LOOKUP URL for the LDAP provider `my_ldap_provider`:
 
 ```
 ALTER LDAP PROVIDER my_ldap_provider
  NESTED GROUP LOOKUP URL 'ldap://myhostname:389/ou=groupsOU,dc=x?sub?(member:1.2.840.113556.1.4.1941:=*)';
 ```
 
-**Example 4:** Remove the NESTED GROUP LOOKUP URL setting for the LDAP provider***my\_ldap\_provider***, and add the ATTRIBUTE MEMBER\_OF setting instead:
+**Example 4:** Remove the NESTED GROUP LOOKUP URL setting for the LDAP provider`my_ldap_provider`, and add the ATTRIBUTE MEMBER\_OF setting instead:
 
 ```
 ALTER LDAP PROVIDER my_ldap_provider
@@ -295,7 +295,7 @@ ALTER LDAP PROVIDER my_ldap_provider DISABLE USER CREATION FOR LDAP;
 **Related Information**  
 
 
-[Certificate Management](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
 
 [CREATE LDAP PROVIDER Statement \(Access Control\)](create-ldap-provider-statement-access-control-3b72203.md "Creates an LDAP provider for use with LDAP authorization and authentication.")
 
@@ -307,13 +307,13 @@ ALTER LDAP PROVIDER my_ldap_provider DISABLE USER CREATION FOR LDAP;
 
 [LDAP\_PROVIDERS System View](../../020-System-Views-Reference/021-System-Views/ldap-providers-system-view-5b54fe2.md "Lists all LDAP providers.")
 
-[LDAP\_USERS System View](../../020-System-Views-Reference/021-System-Views/ldap-users-system-view-704e5b6.md "Shows information about the users using LDAP authorization.")
+[LDAP\_USERS System View](../../020-System-Views-Reference/021-System-Views/ldap-users-system-view-704e5b6.md "Provides information about the users using LDAP authorization.")
 
-[LDAP User Authentication](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/868f8b988e2d42ccb89ccaf263cd9986.html "The Lightweight Directory Access Protocol (LDAP) is an application protocol for accessing directory services. If you use an LDAP-compliant directory server to manage users and their passwords, you can leverage LDAP-based authentication to access SAP HANA.") :arrow_upper_right:
+[LDAP User Authentication](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/868f8b988e2d42ccb89ccaf263cd9986.html "The Lightweight Directory Access Protocol (LDAP) is an application protocol for accessing directory services. If you use an LDAP-compliant directory server to manage users and their passwords, you can leverage LDAP-based authentication to access SAP HANA.") :arrow_upper_right:
 
-[LDAP Group Authorization](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/f494db9664ba45af9bcdd88c7b342405.html "The Lightweight Directory Access Protocol (LDAP) is an application protocol for accessing directory services. If you use an LDAP-compliant directory server to manage users and their access to resources, you can leverage LDAP group membership to authorize SAP HANA database users.") :arrow_upper_right:
+[LDAP Group Authorization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/f494db9664ba45af9bcdd88c7b342405.html "The Lightweight Directory Access Protocol (LDAP) is an application protocol for accessing directory services. If you use an LDAP-compliant directory server to manage users and their access to resources, you can leverage LDAP group membership to authorize SAP HANA database users.") :arrow_upper_right:
 
-[Secure Communication Between SAP HANA and an LDAP Directory Server](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/b9086809b9bb466cbd15542430f2ebe6.html "Communication between the SAP HANA Cloud, SAP HANA database and an LDAP directory server must be secured.") :arrow_upper_right:
+[Secure Communication Between SAP HANA and an LDAP Directory Server](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/b9086809b9bb466cbd15542430f2ebe6.html "Communication between the SAP HANA Cloud, SAP HANA database and an LDAP directory server must be secured.") :arrow_upper_right:
 
-[Configuring LDAP Integration](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/03c98f3aade14b2c955a054833d90426.html "The Lightweight Directory Access Protocol (LDAP) is an application protocol for accessing directory services. If you use an LDAP-compliant directory server to manage users and their access to resources, you can leverage LDAP-based authentication to access SAP HANA and LDAP group membership to authorize users.") :arrow_upper_right:
+[Configuring LDAP Integration](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/03c98f3aade14b2c955a054833d90426.html "The Lightweight Directory Access Protocol (LDAP) is an application protocol for accessing directory services. If you use an LDAP-compliant directory server to manage users and their access to resources, you can leverage LDAP-based authentication to access SAP HANA and LDAP group membership to authorize users.") :arrow_upper_right:
 

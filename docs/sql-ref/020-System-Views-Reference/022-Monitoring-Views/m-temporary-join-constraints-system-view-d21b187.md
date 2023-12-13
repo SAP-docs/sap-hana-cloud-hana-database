@@ -17,21 +17,15 @@ Provides information about temporary join constraints.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the view name.
 
 JOIN\_CONSTRAINT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join constraint name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the join constraint name.
 
 CONSTRAINT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the operator.
 
 LOCATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the constraint owner.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the constraint owner.
 
 TABLE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the column.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the schema name of the column.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of the column.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the table name of the column.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the column name.
 
 OPERATOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the operator.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the value.
-
-
 
 </td>
 </tr>

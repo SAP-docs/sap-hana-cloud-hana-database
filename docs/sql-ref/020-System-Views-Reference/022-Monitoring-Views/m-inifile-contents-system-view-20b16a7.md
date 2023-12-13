@@ -17,21 +17,15 @@ Provides configuration information from INI files.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration file name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the configuration file name.
 
 LAYER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration layer: DEFAULT, SYSTEM, HOST or DATABASE.
-
-
 
 </td>
 </tr>
@@ -86,14 +68,10 @@ Displays the configuration layer: DEFAULT, SYSTEM, HOST or DATABASE.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
@@ -107,21 +85,15 @@ NVARCHAR\(64\)
 
 SECTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration section name.
-
-
 
 </td>
 </tr>
@@ -130,21 +102,15 @@ Displays the configuration section name.
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration key name.
-
-
 
 </td>
 </tr>
@@ -153,21 +119,15 @@ Displays the configuration key name.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration value.
-
-
 
 </td>
 </tr>
@@ -176,7 +136,7 @@ Displays the configuration value.
 **Related Information**  
 
 
-[Configuring SAP HANA System Properties (INI Files)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/3f1a6a7dc31049409e1a9f9108d73d51.html "An SAP HANA database has several configuration (*.ini) files that contain properties for configuring the database and services.") :arrow_upper_right:
+[Configuring SAP HANA System Properties (INI Files)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/3f1a6a7dc31049409e1a9f9108d73d51.html "An SAP HANA database has several configuration (*.ini) files that contain properties for configuring the database and services.") :arrow_upper_right:
 
 [M\_INIFILES System View](m-inifiles-system-view-20b18dc.md "Provides information about all configuration files.")
 

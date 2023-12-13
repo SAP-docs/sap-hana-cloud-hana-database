@@ -17,21 +17,15 @@ Provides the list of parameter sets defined for usergroups.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 USERGROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the usergroup.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the usergroup.
 
 PARAMETER\_SET\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the parameter set the parameter belongs to.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the parameter set the parameter belongs to.
 
 IS\_PARAMETER\_SET\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays if the parameter set is enabled for the usergroup: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays if the parameter set is enabled for the usergroup: TRUE/FALSE.
 
 PARAMETER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the parameter.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the name of the parameter.
 
 PARAMETER\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the value of the parameter.
-
-
 
 </td>
 </tr>
@@ -157,6 +121,8 @@ Displays the value of the parameter.
 <a name="loio365bd214980f44bc91d39ca5f0135a2e__section_phz_dcb_x2b"/>
 
 ## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 Users see different values in this view depending on their privileges, as follows:
 
@@ -178,5 +144,5 @@ Users see different values in this view depending on their privileges, as follow
 
 [DROP USERGROUP Statement \(Access Control\)](../../010-SQL-Reference/012-SQL-Statements/drop-usergroup-statement-access-control-6dc0ada.md "Removes a user group from the database.")
 
-[SQL Statements and Authorization for User Group Administration (Reference)](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/bdc34546fcdf4d24b58b1235dda68ec8.html "Creating and configuring user groups requires different combinations of privileges.") :arrow_upper_right:
+[SQL Statements and Authorization for User Group Administration (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/bdc34546fcdf4d24b58b1235dda68ec8.html "Creating and configuring user groups requires different combinations of privileges.") :arrow_upper_right:
 

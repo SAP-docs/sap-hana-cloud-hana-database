@@ -17,21 +17,15 @@ Reports the capacity, usage and metadata of persistent memory volumes.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays an ID for the persistence volume.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays an ID for the persistence volume.
 
 NUMA\_NODE\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical NUMA node index as in the M\_NUMA\_NODES view.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,32 @@ Displays the logical NUMA node index as in the M\_NUMA\_NODES view.
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
+</td>
+<td valign="top">
 
+Displays the absolute directory base path of persistent memory volume configured for NUMA node.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+STORAGE\_MODE
 
 </td>
 <td valign="top">
 
-Displays the absolute directory base path of persistent memory volume configured for NUMA node
+NVARCHAR\(32\)
 
+</td>
+<td valign="top">
 
+For internal use only.
 
 </td>
 </tr>
@@ -155,21 +136,15 @@ Displays the absolute directory base path of persistent memory volume configured
 
 FILESYSTEM\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the filesystem type, for example, ext3, ext4, xfs.
-
-
 
 </td>
 </tr>
@@ -178,21 +153,15 @@ Displays the filesystem type, for example, ext3, ext4, xfs.
 
 IS\_DIRECT\_ACCESS\_SUPPORTED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether Direct Access semantics are supported by the volume.
-
-
 
 </td>
 </tr>
@@ -201,21 +170,15 @@ Displays whether Direct Access semantics are supported by the volume.
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total physical memory size, in bytes, of the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -224,21 +187,15 @@ Displays the total physical memory size, in bytes, of the persistent memory volu
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used physical memory size, in bytes, of persistent memory volume.
-
-
 
 </td>
 </tr>

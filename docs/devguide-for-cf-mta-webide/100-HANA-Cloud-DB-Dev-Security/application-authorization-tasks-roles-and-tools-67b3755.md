@@ -19,28 +19,20 @@ The tasks required to set up authorization artifacts in Cloud Foundry on SAP Bus
 
 Step
 
-
-
 </th>
 <th valign="top">
 
 Task
-
-
 
 </th>
 <th valign="top">
 
 User Role
 
-
-
 </th>
 <th valign="top">
 
 Tool
-
-
 
 </th>
 </tr>
@@ -49,28 +41,20 @@ Tool
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Specify the security descriptor file containing the functional authorization scopes for your application
-
-
 
 </td>
 <td valign="top">
 
 Application developer
 
-
-
 </td>
 <td valign="top">
 
 Text editor
-
-
 
 </td>
 </tr>
@@ -79,28 +63,20 @@ Text editor
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Create role templates for the multitarget application using the security descriptor file
-
-
 
 </td>
 <td valign="top">
 
 Application developer
 
-
-
 </td>
 <td valign="top">
 
 Text editor
-
-
 
 </td>
 </tr>
@@ -109,28 +85,20 @@ Text editor
 
 3
 
-
-
 </td>
 <td valign="top">
 
 Create a service instance from the `xsuaa` service in Cloud Foundry using the service broker
-
-
 
 </td>
 <td valign="top">
 
 Application developer
 
-
-
 </td>
 <td valign="top">
 
 CF CLI tool
-
-
 
 </td>
 </tr>
@@ -139,28 +107,20 @@ CF CLI tool
 
 4
 
-
-
 </td>
 <td valign="top">
 
 Bind the service instance to the multitarget application by including it into the manifest file
-
-
 
 </td>
 <td valign="top">
 
 Application developer
 
-
-
 </td>
 <td valign="top">
 
 Text editor
-
-
 
 </td>
 </tr>
@@ -169,28 +129,20 @@ Text editor
 
 5
 
-
-
 </td>
 <td valign="top">
 
 Deploy the multitarget application
-
-
 
 </td>
 <td valign="top">
 
 Application developer
 
-
-
 </td>
 <td valign="top">
 
 CF CLI tool
-
-
 
 </td>
 </tr>
@@ -199,28 +151,20 @@ CF CLI tool
 
 6
 
-
-
 </td>
 <td valign="top">
 
 If required, create a new role in the application role builder using role templates
-
-
 
 </td>
 <td valign="top">
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 Application role builder
-
-
 
 </td>
 </tr>
@@ -229,28 +173,20 @@ Application role builder
 
 7
 
-
-
 </td>
 <td valign="top">
 
 Create a role collection and assign roles to it
-
-
 
 </td>
 <td valign="top">
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 Application role builder
-
-
 
 </td>
 </tr>
@@ -259,28 +195,20 @@ Application role builder
 
 8
 
-
-
 </td>
 <td valign="top">
 
 Assign the role collection to a SAML 2.0 identity provider or to SAP HANA database users
-
-
 
 </td>
 <td valign="top">
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 Application role builder, and SAML IDP Tool
-
-
 
 </td>
 </tr>
@@ -289,28 +217,20 @@ Application role builder, and SAML IDP Tool
 
 9
 
-
-
 </td>
 <td valign="top">
 
 Assign the users to roles using the role collections
-
-
 
 </td>
 <td valign="top">
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 SAP BTP cockpit
-
-
 
 </td>
 </tr>

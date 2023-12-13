@@ -81,79 +81,59 @@ To create a multi-target application, perform the following steps:
     <th valign="top">
 
     MTA Component
-
-
     
     </th>
     <th valign="top">
 
     Maximum Size
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        MTA archive
-
-
+    MTA archive
     
     </td>
     <td valign="top">
     
-        4 GB
-
-
+    4 GB
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        MTA modules/resources content
-
-
+    MTA modules/resources content
     
     </td>
     <td valign="top">
     
-        2 GB
-
-
+    2 GB
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        MTA deployment descriptor \(`mtad.yaml`\)
-
-
+    MTA deployment descriptor \(`mtad.yaml`\)
     
     </td>
     <td valign="top">
     
-        1 MB
-
-
+    1 MB
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        MTA manifest \(`MANIFEST.MF`\)
-
-
+    MTA manifest \(`MANIFEST.MF`\)
     
     </td>
     <td valign="top">
     
-        1 MB
-
-
+    1 MB
     
     </td>
     </tr>

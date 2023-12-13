@@ -204,43 +204,31 @@ When making use of the fast-migration feature for hdbtable artifacts, bear in mi
         <th valign="top" align="right">
 
         Target type
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         TINYINT
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         SMALLINT
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         INTEGER
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         BIGINT
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         DECIMAL
-
-
         
         </th>
         <th valign="top" rowspan="2">
@@ -248,43 +236,31 @@ When making use of the fast-migration feature for hdbtable artifacts, bear in mi
         DECIMAL\(*<p\>*,*<s\>*\)
 
         P: 1~38, S: 0~p
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         SMALLDECIMAL
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         REAL
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         DOUBLE
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         Character string type, or binary type
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         LOB
-
-
         
         </th>
         </tr>
@@ -292,950 +268,688 @@ When making use of the fast-migration feature for hdbtable artifacts, bear in mi
         <th valign="top">
 
         Source type
-
-
         
         </th>
         </tr>
         <tr>
         <td valign="top">
         
-                TINYINT
-
-
+        TINYINT
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if p - s \>= 3
-
-
+        Column table: if p - s \>= 3
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 3
-
-
+        Column table: if length \>= 3
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                SMALLINT
-
-
+        SMALLINT
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if p - s \>= 5
-
-
+        Column table: if p - s \>= 5
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 6
-
-
+        Column table: if length \>= 6
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                INTEGER
-
-
+        INTEGER
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if p - s \>= 10
-
-
+        Column table: if p - s \>= 10
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 11
-
-
+        Column table: if length \>= 11
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                BIGINT
-
-
+        BIGINT
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if p - s \>= 19
-
-
+        Column table: if p - s \>= 19
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 20
-
-
+        Column table: if length \>= 20
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                DECIMAL
-
-
+        DECIMAL
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                DECIMAL\(*<p\>*,*<s\>*\)
-
-
+        DECIMAL\(*<p\>*,*<s\>*\)
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table: if p'-s' \>= p-s && p'\>=p && s'\>=s \(p,s: source, p',s': target\)
-
-
+        Column table: if p'-s' \>= p-s && p'\>=p && s'\>=s \(p,s: source, p',s': target\)
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 41
-
-
+        Column table: if length \>= 41
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                SMALLDECIMAL
-
-
+        SMALLDECIMAL
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 395
-
-
+        Column table: if length \>= 395
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                REAL
-
-
+        REAL
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 20
-
-
+        Column table: if length \>= 20
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                DOUBLE
-
-
+        DOUBLE
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 24
-
-
+        Column table: if length \>= 24
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                Character string type
-
-
+        Character string type
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                Binary type
-
+        Binary type
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
+        \-
+        
+        </td>
+        <td valign="top">
+        
 
         
         </td>
         <td valign="top">
         
-                \-
 
-
-        
-        </td>
-        <td valign="top">
-        
-                \-
-
-
-        
-        </td>
-        <td valign="top">
-        
-                \-
-
-
-        
-        </td>
-        <td valign="top">
-        
-                \-
-
-
-        
-        </td>
-        <td valign="top">
-        
-                \-
-
-
-        
-        </td>
-        <td valign="top">
-        
-                \-
-
-
-        
-        </td>
-        <td valign="top">
-        
-                \-
-
-
-        
-        </td>
-        <td valign="top">
-        
-                \-
-
-
-        
-        </td>
-        <td valign="top">
-        
-                \-
-
-
-        
-        </td>
-        <td valign="top">
-        
-        
-        
-        </td>
-        <td valign="top">
-        
-        
         
         </td>
         </tr>
@@ -1253,57 +967,41 @@ When making use of the fast-migration feature for hdbtable artifacts, bear in mi
         <th valign="top" align="right">
 
         Target type
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         TIME
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         DATE
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         SECONDDATE
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         SECONDTIME
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         TIMESTAMP
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         Character string type, or binary type
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         LOB
-
-
         
         </th>
         </tr>
@@ -1311,356 +1009,258 @@ When making use of the fast-migration feature for hdbtable artifacts, bear in mi
         <th valign="top">
 
         Source type
-
-
         
         </th>
         </tr>
         <tr>
         <td valign="top">
         
-                TIME
-
-
+        TIME
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 8
-
-
+        Column table: if length \>= 8
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                DATE
-
-
+        DATE
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 10
-
-
+        Column table: if length \>= 10
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                SECONDDATE
-
-
+        SECONDDATE
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 19
-
-
+        Column table: if length \>= 19
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                SECONDTIME
-
-
+        SECONDTIME
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 8
-
-
+        Column table: if length \>= 8
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                TIMESTAMP
-
-
+        TIMESTAMP
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table
-
-
+        Column table
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                Column table: if length \>= 27
-
-
+        Column table: if length \>= 27
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                Character string type, or binary type
-
-
+        Character string type, or binary type
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
@@ -1678,43 +1278,31 @@ When making use of the fast-migration feature for hdbtable artifacts, bear in mi
         <th valign="top" align="right">
 
         Target type
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         VARBINARY
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         CHAR or NCHAR
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         VARCHAR or NVARCHAR
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         NCLOB
-
-
         
         </th>
         <th valign="top" rowspan="2">
 
         BLOB
-
-
         
         </th>
         </tr>
@@ -1722,140 +1310,102 @@ When making use of the fast-migration feature for hdbtable artifacts, bear in mi
         <th valign="top">
 
         Source type
-
-
         
         </th>
         </tr>
         <tr>
         <td valign="top">
         
-                VARBINARY
-
-
+        VARBINARY
         
         </td>
         <td valign="top">
         
-                Column table: if target length \>= source length
-
-
+        Column table: if target length \>= source length
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                CHAR or NCHAR
-
-
+        CHAR or NCHAR
         
         </td>
         <td valign="top">
         
-                Column table: if target length \>= \(source length \* 3\)
-
-
+        Column table: if target length \>= \(source length \* 3\)
         
         </td>
         <td valign="top">
         
-                Column table: if target length \>= source length
-
-
+        Column table: if target length \>= source length
         
         </td>
         <td valign="top">
         
-                Column table: if target length \>= source length
-
-
+        Column table: if target length \>= source length
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-                VARCHAR or NVARCHAR
-
-
+        VARCHAR or NVARCHAR
         
         </td>
         <td valign="top">
         
-                Column table: if target length \>= \(source length \* 3\)
-
-
+        Column table: if target length \>= \(source length \* 3\)
         
         </td>
         <td valign="top">
         
-                Column table: if target length \>= source length
-
-
+        Column table: if target length \>= source length
         
         </td>
         <td valign="top">
         
-                if target\_length \>= source\_length
-
-
+        if target\_length \>= source\_length
         
         </td>
         <td valign="top">
         
-                Column table / Row table
-
-
+        Column table / Row table
         
         </td>
         <td valign="top">
         
-                \-
-
-
+        \-
         
         </td>
         </tr>

@@ -17,21 +17,15 @@ Provides error codes with descriptions.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the error code.
 
 CODE\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code string.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the error code string.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error description.
-
-
 
 </td>
 </tr>
@@ -111,5 +87,5 @@ Displays the error description.
 
 [SQL Error Codes](../../010-SQL-Reference/sql-error-codes-20a78d3.md "Each SAP HANA error has a numeric error code. The M_ERROR_CODES system view contains information about the error codes.")
 
-[Supported Error Codes](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/83686b04386e4c009f57418bccb7d9ee.html "The following is a list of the error codes supported by the exit handler.") :arrow_upper_right:
+[Supported Error Codes](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/83686b04386e4c009f57418bccb7d9ee.html "The following is a list of the error codes supported by the exit handler.") :arrow_upper_right:
 

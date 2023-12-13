@@ -56,7 +56,7 @@ You must have the DROP object privilege on the PSE.
 
 ## Examples
 
-Drop the PSE ***examplepse***.
+Drop the PSE `examplepse`.
 
 ```
 DROP PSE examplepse;
@@ -67,5 +67,5 @@ DROP PSE examplepse;
 
 [CREATE PSE Statement \(System Management\)](create-pse-statement-system-management-4d80bf6.md "Creates a personal security environment (PSE).")
 
-[Certificate Collections](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
 

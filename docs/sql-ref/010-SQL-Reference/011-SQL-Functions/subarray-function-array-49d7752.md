@@ -87,8 +87,6 @@ The statement above returns the following results:
 
 Subarray
 
-
-
 </th>
 </tr>
 <tr>
@@ -96,16 +94,12 @@ Subarray
 
 1, 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 10, 20
-
-
 
 </td>
 </tr>
@@ -114,16 +108,12 @@ Subarray
 
 1, 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 10, 20
-
-
 
 </td>
 </tr>
@@ -144,8 +134,6 @@ The statement above returns the following results:
 
 Subarray
 
-
-
 </th>
 </tr>
 <tr>
@@ -153,16 +141,12 @@ Subarray
 
 1, 2, 3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 10, 20, 30, 40
-
-
 
 </td>
 </tr>
@@ -171,16 +155,12 @@ Subarray
 
 1, 2, 3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 10, 20, 30, 40
-
-
 
 </td>
 </tr>
@@ -189,16 +169,12 @@ Subarray
 
 1, 2, 3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 10, 20, 30, 40
-
-
 
 </td>
 </tr>

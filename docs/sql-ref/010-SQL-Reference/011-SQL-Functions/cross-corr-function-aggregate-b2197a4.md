@@ -129,16 +129,12 @@ The results are as follows:
 
 CROSS\_CORR\(NUMBER1,NUMBER2,10ORDERBYTS\_ID\)
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 1.0, -1.0, 1.0
-
-
 
 </td>
 </tr>
@@ -169,16 +165,12 @@ The results are as follows:
 
 CROSS\_CORR\(VAL1,VAL2,10ORDERBYTS\)
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 \-1.0, -0.928571, -0.6, 0.5, -1.0
-
-
 
 </td>
 </tr>

@@ -282,44 +282,49 @@ Specifies a database object for the target audit action.
 
 ```
 <schema_audit_action_name> ::=
- { ALTER TABLE 
-   | CREATE TABLE 
-   | DROP TABLE 
-   | RENAME TABLE
-   | CREATE PROCEDURE 
-   | DROP PROCEDURE
-   | ALTER PROCEDURE
-   | CREATE FUNCTION
-   | DROP FUNCTION
-   | ALTER FUNCTION
-   | CREATE TRIGGER
-   | DROP TRIGGER
-   | CREATE VIEW
-   | DROP VIEW
-   | ALTER VIEW
-   | CREATE STRUCTURED PRIVILEGE
-   | DROP STRUCTURED PRIVILEGE
-   | ALTER STRUCTURED PRIVILEGE
-   | CREATE INDEX
-   | DROP INDEX
+ { ALTER FUNCTION
    | ALTER INDEX
-   | RENAME INDEX
-   | CREATE REMOTE SUBSCRIPTION
-   | ALTER REMOTE SUBSCRIPTION
-   | DROP REMOTE SUBSCRIPTION
-   | CREATE GRAPH WORKSPACE
-   | DROP GRAPH WORKSPACE
-   | CREATE REMOTE SOURCE
+   | ALTER PROCEDURE
    | ALTER REMOTE SOURCE
-   | DROP REMOTE SOURCE
-   | CREATE SEQUENCE
-   | DROP SEQUENCE
-   | ALTER SEQUENCE
-   | CREATE SYNONYM
-   | DROP SYNONYM 
-   | CREATE SCHEDULER JOB
+   | ALTER REMOTE SUBSCRIPTION
    | ALTER SCHEDULER JOB
-   | DROP SCHEDULER JOB }
+   | ALTER SEQUENCE
+   | ALTER STRUCTURED FILTER
+   | ALTER STRUCTURED PRIVILEGE
+   | ALTER TABLE
+   | ALTER VIEW
+   | CREATE FUNCTION
+   | CREATE GRAPH WORKSPACE
+   | CREATE INDEX
+   | CREATE PROCEDURE
+   | CREATE REMOTE SOURCE
+   | CREATE REMOTE SUBSCRIPTION
+   | CREATE SCHEDULER JOB
+   | CREATE SEQUENCE
+   | CREATE STRUCTURED FILTER
+   | CREATE STRUCTURED PRIVILEGE
+   | CREATE SYNONYM
+   | CREATE TABLE
+   | CREATE TRIGGER
+   | CREATE VIEW
+   | DROP FUNCTION
+   | DROP GRAPH WORKSPACE
+   | DROP INDEX
+   | DROP PROCEDURE
+   | DROP REMOTE SOURCE
+   | DROP REMOTE SUBSCRIPTION
+   | DROP SCHEDULER JOB
+   | DROP SEQUENCE
+   | DROP STRUCTURED FILTER
+   | DROP STRUCTURED PRIVILEGE
+   | DROP SYNONYM
+   | DROP TABLE
+   | DROP TRIGGER
+   | DROP VIEW
+   | EXPORT
+   | IMPORT
+   | RENAME INDEX
+   | RENAME TABLE }
 
 ```
 
@@ -439,21 +444,15 @@ SYSLOG: uses the system syslog.
 
 Audit Action Name
 
-
-
 </th>
 <th valign="top">
 
 Group Number
 
-
-
 </th>
 <th valign="top">
 
 Audit Operation
-
-
 
 </th>
 </tr>
@@ -462,21 +461,15 @@ Audit Operation
 
 CANCEL SESSION
 
-
-
 </td>
 <td valign="top">
 
 1 - Session Management and System Configuration
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM CANCEL SESSION statement to cancel a \(long\) running session
-
-
 
 </td>
 </tr>
@@ -485,21 +478,15 @@ Audits the use of ALTER SYSTEM CANCEL SESSION statement to cancel a \(long\) run
 
 CONNECT
 
-
-
 </td>
 <td valign="top">
 
 1 - Session Management and System Configuration
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of a user connection to the database.
-
-
 
 </td>
 </tr>
@@ -508,21 +495,15 @@ Audits the creation of a user connection to the database.
 
 DISCONNECT SESSION
 
-
-
 </td>
 <td valign="top">
 
 1 - Session Management and System Configuration
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM DISCONNECT SESSION to disconnect sessions.
-
-
 
 </td>
 </tr>
@@ -531,21 +512,15 @@ Audits the use of ALTER SYSTEM DISCONNECT SESSION to disconnect sessions.
 
 STOP SERVICE
 
-
-
 </td>
 <td valign="top">
 
 1 - Session Management and System Configuration
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM STOP SERVICE statement to stop a a particular database service process
-
-
 
 </td>
 </tr>
@@ -554,21 +529,15 @@ Audits the use of ALTER SYSTEM STOP SERVICE statement to stop a a particular dat
 
 SYSTEM CONFIGURATION CHANGE
 
-
-
 </td>
 <td valign="top">
 
 1 - Session Management and System Configuration
 
-
-
 </td>
 <td valign="top">
 
 Audits changes to the system configuration, such as the INIFILE.
-
-
 
 </td>
 </tr>
@@ -577,21 +546,15 @@ Audits changes to the system configuration, such as the INIFILE.
 
 VALIDATE USER
 
-
-
 </td>
 <td valign="top">
 
 1 - Session Management and System Configuration
 
-
-
 </td>
 <td valign="top">
 
 Audits the validation of a user's credentials.
-
-
 
 </td>
 </tr>
@@ -600,21 +563,15 @@ Audits the validation of a user's credentials.
 
 GRANT ANY
 
-
-
 </td>
 <td valign="top">
 
 2 - Granting and Revoking of Authorization
 
-
-
 </td>
 <td valign="top">
 
 Audits the granting of privileges and roles to users or roles.
-
-
 
 </td>
 </tr>
@@ -623,21 +580,15 @@ Audits the granting of privileges and roles to users or roles.
 
 GRANT PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 2 - Granting and Revoking of Authorization
 
-
-
 </td>
 <td valign="top">
 
 Audits the granting of privileges to users or roles.
-
-
 
 </td>
 </tr>
@@ -646,21 +597,15 @@ Audits the granting of privileges to users or roles.
 
 GRANT ROLE
 
-
-
 </td>
 <td valign="top">
 
 2 - Granting and Revoking of Authorization
 
-
-
 </td>
 <td valign="top">
 
 Audits the granting of roles to users or roles.
-
-
 
 </td>
 </tr>
@@ -669,21 +614,15 @@ Audits the granting of roles to users or roles.
 
 GRANT STRUCTURED PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 2 - Granting and Revoking of Authorization
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of GRANT STRUCTURED PRIVILEGE statement to grant a structured privilege to a user or role
-
-
 
 </td>
 </tr>
@@ -692,21 +631,15 @@ Audits the use of GRANT STRUCTURED PRIVILEGE statement to grant a structured pri
 
 REVOKE ANY
 
-
-
 </td>
 <td valign="top">
 
 2 - Granting and Revoking of Authorization
 
-
-
 </td>
 <td valign="top">
 
 Audits the revoking of privileges and roles from users or roles.
-
-
 
 </td>
 </tr>
@@ -715,21 +648,15 @@ Audits the revoking of privileges and roles from users or roles.
 
 REVOKE PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 2 - Granting and Revoking of Authorization
 
-
-
 </td>
 <td valign="top">
 
 Audits the revoking of privileges from users or roles.
-
-
 
 </td>
 </tr>
@@ -738,21 +665,15 @@ Audits the revoking of privileges from users or roles.
 
 REVOKE ROLE
 
-
-
 </td>
 <td valign="top">
 
 2 - Granting and Revoking of Authorization
 
-
-
 </td>
 <td valign="top">
 
 Audits the revoking of roles from users or roles.
-
-
 
 </td>
 </tr>
@@ -761,21 +682,15 @@ Audits the revoking of roles from users or roles.
 
 REVOKE STRUCTURED PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of REVOKE STRUCTURED PRIVILEGE statement to revoke a structured privilege from a user or role
-
-
 
 </td>
 </tr>
@@ -784,21 +699,15 @@ Audits the use of REVOKE STRUCTURED PRIVILEGE statement to revoke a structured p
 
 DELETE
 
-
-
 </td>
 <td valign="top">
 
 3 - Data Query and Manipulation
 
-
-
 </td>
 <td valign="top">
 
 Audits the deletion of rows from tables/views and the truncation of tables. Requires the specification of target objects.
-
-
 
 </td>
 </tr>
@@ -807,21 +716,15 @@ Audits the deletion of rows from tables/views and the truncation of tables. Requ
 
 EXECUTE
 
-
-
 </td>
 <td valign="top">
 
 3 - Data Query and Manipulation
 
-
-
 </td>
 <td valign="top">
 
 Audits the execution of procedure calls. Requires the specification of target objects.
-
-
 
 </td>
 </tr>
@@ -830,21 +733,15 @@ Audits the execution of procedure calls. Requires the specification of target ob
 
 INSERT
 
-
-
 </td>
 <td valign="top">
 
 3 - Data Query and Manipulation
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of INSERT/REPLACE/UPSERT statements on tables and views. Requires the specification of target objects.
-
-
 
 </td>
 </tr>
@@ -853,21 +750,15 @@ Audits the use of INSERT/REPLACE/UPSERT statements on tables and views. Requires
 
 SELECT
 
-
-
 </td>
 <td valign="top">
 
 3 - Data Query and Manipulation
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of SELECT statements on tables and views. Requires specification of target objects.
-
-
 
 </td>
 </tr>
@@ -876,21 +767,15 @@ Audits the use of SELECT statements on tables and views. Requires specification 
 
 UPDATE
 
-
-
 </td>
 <td valign="top">
 
 3 - Data Query and Manipulation
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of UPDATE/REPLACE/UPSERT statements on tables and views. Requires specification of target objects.
-
-
 
 </td>
 </tr>
@@ -899,21 +784,32 @@ Audits the use of UPDATE/REPLACE/UPSERT statements on tables and views. Requires
 
 ALTER ROLE
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
-
-
 
 </td>
 <td valign="top">
 
 Audits the alteration of roles.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+ALTER ROLEGROUP
+
+</td>
+<td valign="top">
+
+4 - User and Role Management
+
+</td>
+<td valign="top">
+
+Audits the alteration of role groups.
 
 </td>
 </tr>
@@ -922,21 +818,15 @@ Audits the alteration of roles.
 
 ALTER USER
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of users.
-
-
 
 </td>
 </tr>
@@ -945,21 +835,15 @@ Audits the alteration of users.
 
 ALTER USERGROUP
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of user groups.
-
-
 
 </td>
 </tr>
@@ -968,21 +852,15 @@ Audits the alteration of user groups.
 
 CREATE ROLE
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of roles.
-
-
 
 </td>
 </tr>
@@ -991,21 +869,15 @@ Audits the creation of roles.
 
 CREATE ROLEGROUP
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of CREATE ROLEGROUP statement to create a role group
-
-
 
 </td>
 </tr>
@@ -1014,21 +886,15 @@ Audits the use of CREATE ROLEGROUP statement to create a role group
 
 CREATE USER
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of users.
-
-
 
 </td>
 </tr>
@@ -1037,21 +903,15 @@ Audits the creation of users.
 
 CREATE USERGROUP
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of user groups.
-
-
 
 </td>
 </tr>
@@ -1060,21 +920,15 @@ Audits the creation of user groups.
 
 DROP ROLE
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of roles.
-
-
 
 </td>
 </tr>
@@ -1083,21 +937,15 @@ Audits the dropping of roles.
 
 DROP ROLEGROUP
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of DROP ROLEGROUP statement to drop an existing role group
-
-
 
 </td>
 </tr>
@@ -1106,21 +954,15 @@ Audits the use of DROP ROLEGROUP statement to drop an existing role group
 
 DROP USER
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of users.
-
-
 
 </td>
 </tr>
@@ -1129,21 +971,15 @@ Audits the dropping of users.
 
 DROP USERGROUP
 
-
-
 </td>
 <td valign="top">
 
 4 - User and Role Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of user groups.
-
-
 
 </td>
 </tr>
@@ -1152,21 +988,15 @@ Audits the dropping of user groups.
 
 ALTER STRUCTURED PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 7 - Structured Privilege Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER STRUCTURED PRIVILEGE statement to change the current definition of an existing structured privilege
-
-
 
 </td>
 </tr>
@@ -1175,21 +1005,15 @@ Audits the use of ALTER STRUCTURED PRIVILEGE statement to change the current def
 
 CREATE STRUCTURED PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 7 - Structured Privilege Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of CREATE STRUCTURED PRIVILEGE statement to create a new structured privilege
-
-
 
 </td>
 </tr>
@@ -1198,21 +1022,15 @@ Audits the use of CREATE STRUCTURED PRIVILEGE statement to create a new structur
 
 DROP STRUCTURED PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 7 - Structured Privilege Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of DROP STRUCTURED PRIVILEGE statement to drop an existing structured privilege
-
-
 
 </td>
 </tr>
@@ -1221,21 +1039,15 @@ Audits the use of DROP STRUCTURED PRIVILEGE statement to drop an existing struct
 
 SET SYSTEM LICENSE
 
-
-
 </td>
 <td valign="top">
 
 9 - License Deletion
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of SET SYSTEM LICENSE statement to install a new license key in the current database \(SYSTEMDB or Tenant DB\)
-
-
 
 </td>
 </tr>
@@ -1244,21 +1056,15 @@ Audits the use of SET SYSTEM LICENSE statement to install a new license key in t
 
 UNSET SYSTEM LICENSE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of UNSET SYSTEM LICENSE statement to delete all existing license keys in the current database \(SYSTEMDB or Tenant DB\)
-
-
 
 </td>
 </tr>
@@ -1267,21 +1073,15 @@ Audits the use of UNSET SYSTEM LICENSE statement to delete all existing license 
 
 ALTER FUNCTION
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of functions.
-
-
 
 </td>
 </tr>
@@ -1290,21 +1090,15 @@ Audits the alteration of functions.
 
 ALTER INDEX
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of indexes.
-
-
 
 </td>
 </tr>
@@ -1313,21 +1107,15 @@ Audits the alteration of indexes.
 
 ALTER PROCEDURE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of procedures.
-
-
 
 </td>
 </tr>
@@ -1336,21 +1124,15 @@ Audits the alteration of procedures.
 
 ALTER SCHEDULER JOB
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SCHEDULER JOB statement to change the definition of an existing scheduler job
-
-
 
 </td>
 </tr>
@@ -1359,21 +1141,15 @@ Audits the use of ALTER SCHEDULER JOB statement to change the definition of an e
 
 ALTER SEQUENCE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of sequences.
-
-
 
 </td>
 </tr>
@@ -1382,21 +1158,15 @@ Audits the alteration of sequences.
 
 ALTER STATISTICS
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of statistics.
-
-
 
 </td>
 </tr>
@@ -1405,21 +1175,15 @@ Audits the alteration of statistics.
 
 ALTER TABLE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of tables.
-
-
 
 </td>
 </tr>
@@ -1428,21 +1192,15 @@ Audits the alteration of tables.
 
 ALTER TENANT
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER TENANT statement to change the definition of an existing tenant
-
-
 
 </td>
 </tr>
@@ -1451,21 +1209,15 @@ Audits the use of ALTER TENANT statement to change the definition of an existing
 
 ALTER VIEW
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of views.
-
-
 
 </td>
 </tr>
@@ -1474,21 +1226,15 @@ Audits the alteration of views.
 
 ALTER WORKLOAD CLASS
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of workload classes.
-
-
 
 </td>
 </tr>
@@ -1497,21 +1243,15 @@ Audits the alteration of workload classes.
 
 ALTER WORKLOAD MAPPING
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of workload mappings.
-
-
 
 </td>
 </tr>
@@ -1520,21 +1260,15 @@ Audits the alteration of workload mappings.
 
 CREATE FUNCTION
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of functions.
-
-
 
 </td>
 </tr>
@@ -1543,21 +1277,15 @@ Audits the creation of functions.
 
 CREATE GRAPH WORKSPACE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of graph workspaces.
-
-
 
 </td>
 </tr>
@@ -1566,21 +1294,15 @@ Audits the creation of graph workspaces.
 
 CREATE INDEX
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of indexes.
-
-
 
 </td>
 </tr>
@@ -1589,21 +1311,15 @@ Audits the creation of indexes.
 
 CREATE PROCEDURE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of procedures.
-
-
 
 </td>
 </tr>
@@ -1612,21 +1328,15 @@ Audits the creation of procedures.
 
 CREATE SCHEDULER JOB
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of CREATE SCHEDULER JOB statement to create a new scheduler job
-
-
 
 </td>
 </tr>
@@ -1635,21 +1345,15 @@ Audits the use of CREATE SCHEDULER JOB statement to create a new scheduler job
 
 CREATE SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of schemas.
-
-
 
 </td>
 </tr>
@@ -1658,21 +1362,15 @@ Audits the creation of schemas.
 
 CREATE SEQUENCE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of sequences.
-
-
 
 </td>
 </tr>
@@ -1681,21 +1379,15 @@ Audits the creation of sequences.
 
 CREATE STATISTICS
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of statistics.
-
-
 
 </td>
 </tr>
@@ -1704,21 +1396,15 @@ Audits the creation of statistics.
 
 CREATE SYNONYM
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of synonyms.
-
-
 
 </td>
 </tr>
@@ -1727,21 +1413,15 @@ Audits the creation of synonyms.
 
 CREATE TABLE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of tables.
-
-
 
 </td>
 </tr>
@@ -1750,21 +1430,15 @@ Audits the creation of tables.
 
 CREATE TENANT
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of CREATE TENANT statement to create a new TENANT
-
-
 
 </td>
 </tr>
@@ -1773,21 +1447,15 @@ Audits the use of CREATE TENANT statement to create a new TENANT
 
 CREATE TRIGGER
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of triggers.
-
-
 
 </td>
 </tr>
@@ -1796,21 +1464,15 @@ Audits the creation of triggers.
 
 CREATE VIEW
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of views.
-
-
 
 </td>
 </tr>
@@ -1819,21 +1481,15 @@ Audits the creation of views.
 
 CREATE WORKLOAD CLASS
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of workload classes.
-
-
 
 </td>
 </tr>
@@ -1842,21 +1498,15 @@ Audits the creation of workload classes.
 
 CREATE WORKLOAD MAPPING
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of workload mappings.
-
-
 
 </td>
 </tr>
@@ -1865,21 +1515,15 @@ Audits the creation of workload mappings.
 
 DROP FUNCTION
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of functions.
-
-
 
 </td>
 </tr>
@@ -1888,21 +1532,15 @@ Audits the dropping of functions.
 
 DROP GRAPH WORKSPACE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of graph workspaces.
-
-
 
 </td>
 </tr>
@@ -1911,21 +1549,15 @@ Audits the dropping of graph workspaces.
 
 DROP INDEX
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of indexes.
-
-
 
 </td>
 </tr>
@@ -1934,21 +1566,15 @@ Audits the dropping of indexes.
 
 DROP PROCEDURE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of procedures.
-
-
 
 </td>
 </tr>
@@ -1957,21 +1583,15 @@ Audits the dropping of procedures.
 
 DROP SCHEDULER JOB
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of DROP SCHEDULER JOB statement to drop an existing scheduler job
-
-
 
 </td>
 </tr>
@@ -1980,21 +1600,15 @@ Audits the use of DROP SCHEDULER JOB statement to drop an existing scheduler job
 
 DROP SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of schemas.
-
-
 
 </td>
 </tr>
@@ -2003,21 +1617,15 @@ Audits the dropping of schemas.
 
 DROP SEQUENCE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of sequences.
-
-
 
 </td>
 </tr>
@@ -2026,21 +1634,15 @@ Audits the dropping of sequences.
 
 DROP STATISTICS
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of statistics.
-
-
 
 </td>
 </tr>
@@ -2049,21 +1651,15 @@ Audits the dropping of statistics.
 
 DROP SYNONYM
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of synonymns.
-
-
 
 </td>
 </tr>
@@ -2072,21 +1668,15 @@ Audits the dropping of synonymns.
 
 DROP TABLE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of tables.
-
-
 
 </td>
 </tr>
@@ -2095,21 +1685,15 @@ Audits the dropping of tables.
 
 DROP TENANT
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of DROP TENANT statement to drop an existing tenant
-
-
 
 </td>
 </tr>
@@ -2118,21 +1702,15 @@ Audits the use of DROP TENANT statement to drop an existing tenant
 
 DROP TRIGGER
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of triggers.
-
-
 
 </td>
 </tr>
@@ -2141,21 +1719,15 @@ Audits the dropping of triggers.
 
 DROP VIEW
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of views.
-
-
 
 </td>
 </tr>
@@ -2164,21 +1736,15 @@ Audits the dropping of views.
 
 DROP WORKLOAD CLASS
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of workload classes.
-
-
 
 </td>
 </tr>
@@ -2187,21 +1753,15 @@ Audits the dropping of workload classes.
 
 DROP WORKLOAD MAPPING
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of workload mappings.
-
-
 
 </td>
 </tr>
@@ -2210,21 +1770,15 @@ Audits the dropping of workload mappings.
 
 REFRESH STATISTICS
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the refreshing of statistics.
-
-
 
 </td>
 </tr>
@@ -2233,21 +1787,15 @@ Audits the refreshing of statistics.
 
 RENAME COLUMN
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the renaming of columns
-
-
 
 </td>
 </tr>
@@ -2256,21 +1804,15 @@ Audits the renaming of columns
 
 RENAME INDEX
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
 
-
-
 </td>
 <td valign="top">
 
 Audits the renaming of indexes
-
-
 
 </td>
 </tr>
@@ -2279,44 +1821,66 @@ Audits the renaming of indexes
 
 RENAME TABLE
 
-
-
 </td>
 <td valign="top">
 
 11 - Data Definition
-
-
 
 </td>
 <td valign="top">
 
 Audits the renaming of tables
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+BACKUP CATALOG DELETE
+
+</td>
+<td valign="top">
+
+13 - Backup and Recovery
+
+</td>
+<td valign="top">
+
+Audits the deletion of the backed up catalog
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-ACTIONS
-
-
+BACKUP DATA
 
 </td>
 <td valign="top">
 
-12 - All Actions
-
-
+13 - Backup and Recovery
 
 </td>
 <td valign="top">
 
-Audits all user-triggered database actions. Used for specific users.
+Audits the backup up of data
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+RECOVER DATA
+
+</td>
+<td valign="top">
+
+13 - Backup and Recovery
+
+</td>
+<td valign="top">
+
+Audits the recovery of data
 
 </td>
 </tr>
@@ -2325,21 +1889,15 @@ Audits all user-triggered database actions. Used for specific users.
 
 ACTIVATE KEY MANAGEMENT CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM ACTIVATE KEY MANAGEMENT CONFIGURATION to activate a configuration in external key management
-
-
 
 </td>
 </tr>
@@ -2348,21 +1906,15 @@ Audits the use of ALTER SYSTEM ACTIVATE KEY MANAGEMENT CONFIGURATION to activate
 
 ADD KEY MANAGEMENT CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM ADD KEY MANAGEMENT CONFIGURATION to add a new configuration to external key management
-
-
 
 </td>
 </tr>
@@ -2371,21 +1923,15 @@ Audits the use of ALTER SYSTEM ADD KEY MANAGEMENT CONFIGURATION to add a new con
 
 ALTER APPLICATION ENCRYPTION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of application encryption keys.
-
-
 
 </td>
 </tr>
@@ -2394,21 +1940,15 @@ Audits the alteration of application encryption keys.
 
 ALTER APPLICATION ENCRYPTION ROOT KEY
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of application encryption root keys.
-
-
 
 </td>
 </tr>
@@ -2417,21 +1957,15 @@ Audits the alteration of application encryption root keys.
 
 ALTER BACKUP ENCRYPTION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM BACKUP ENCRYPTION to specify backup encryption options
-
-
 
 </td>
 </tr>
@@ -2440,21 +1974,15 @@ Audits the use of ALTER SYSTEM BACKUP ENCRYPTION to specify backup encryption op
 
 ALTER BACKUP ENCRYPTION ROOT KEY
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM BACKUP ENCRYPTION CREATE NEW ROOT KEY statement to create a new root key for backup encryption
-
-
 
 </td>
 </tr>
@@ -2463,21 +1991,15 @@ Audits the use of ALTER SYSTEM BACKUP ENCRYPTION CREATE NEW ROOT KEY statement t
 
 ALTER KEY MANAGEMENT CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM ALTER KEY MANAGEMENT CONFIGURATION statement to change an existing configuration in external key management
-
-
 
 </td>
 </tr>
@@ -2486,21 +2008,15 @@ Audits the use of ALTER SYSTEM ALTER KEY MANAGEMENT CONFIGURATION statement to c
 
 ALTER LOG ENCRYPTION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of log encryption status.
-
-
 
 </td>
 </tr>
@@ -2509,21 +2025,15 @@ Audits the alteration of log encryption status.
 
 ALTER LOG ENCRYPTION ROOT KEY
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of log encryption root keys.
-
-
 
 </td>
 </tr>
@@ -2532,21 +2042,15 @@ Audits the alteration of log encryption root keys.
 
 ALTER PERSISTENCE ENCRYPTION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of database persistence encryption status and page encryption keys.
-
-
 
 </td>
 </tr>
@@ -2555,21 +2059,15 @@ Audits the alteration of database persistence encryption status and page encrypt
 
 ALTER PERSISTENCE ENCRYPTION ROOT KEY
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Altering database persistence encryption root keys.
-
-
 
 </td>
 </tr>
@@ -2578,21 +2076,15 @@ Altering database persistence encryption root keys.
 
 ALTER ROOT KEYS BACKUP PASSWORD
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of the backup password used to protect backup root keys.
-
-
 
 </td>
 </tr>
@@ -2601,21 +2093,15 @@ Audits the alteration of the backup password used to protect backup root keys.
 
 DROP KEY MANAGEMENT CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER SYSTEM DROP KEY MANAGEMENT CONFIGURATION statement to drop an existing configuration in external key management
-
-
 
 </td>
 </tr>
@@ -2624,21 +2110,15 @@ Audits the use of ALTER SYSTEM DROP KEY MANAGEMENT CONFIGURATION statement to dr
 
 ENCRYPTION CONFIG CONTROL
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of the database \(system or local tenant database\) controlling the encryption configuration.
-
-
 
 </td>
 </tr>
@@ -2647,21 +2127,15 @@ Audits the alteration of the database \(system or local tenant database\) contro
 
 TENANT BACKUP ENCRYPTION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER DATABASE BACKUP ENCRYPTION \[ON|OFF\] statements to switch backup encryption on or off for this database
-
-
 
 </td>
 </tr>
@@ -2670,21 +2144,15 @@ Audits the use of ALTER DATABASE BACKUP ENCRYPTION \[ON|OFF\] statements to swit
 
 TENANT LOG ENCRYPTION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the switching on or off of the log encryption for the tenant.
-
-
 
 </td>
 </tr>
@@ -2693,21 +2161,15 @@ Audits the switching on or off of the log encryption for the tenant.
 
 TENANT PERSISTENCE ENCRYPTION
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the switching on or off of the data volume encryption for the tenant.
-
-
 
 </td>
 </tr>
@@ -2716,21 +2178,15 @@ Audits the switching on or off of the data volume encryption for the tenant.
 
 TENANT ROOT KEYS BACKUP PASSWORD
 
-
-
 </td>
 <td valign="top">
 
 14 - Volume Encryption
 
-
-
 </td>
 <td valign="top">
 
 Audits the setting the root key backup password.
-
-
 
 </td>
 </tr>
@@ -2739,21 +2195,15 @@ Audits the setting the root key backup password.
 
 ALTER ADAPTER
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of adapters.
-
-
 
 </td>
 </tr>
@@ -2762,21 +2212,15 @@ Audits the alteration of adapters.
 
 ALTER AGENT
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of agents.
-
-
 
 </td>
 </tr>
@@ -2785,21 +2229,15 @@ Audits the alteration of agents.
 
 ALTER REMOTE SOURCE
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of remote sources.
-
-
 
 </td>
 </tr>
@@ -2808,21 +2246,15 @@ Audits the alteration of remote sources.
 
 ALTER REMOTE SUBSCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of remote subscriptions.
-
-
 
 </td>
 </tr>
@@ -2831,21 +2263,15 @@ Audits the alteration of remote subscriptions.
 
 CREATE ADAPTER
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of adapters.
-
-
 
 </td>
 </tr>
@@ -2854,21 +2280,15 @@ Audits the creation of adapters.
 
 CREATE AGENT
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of agents.
-
-
 
 </td>
 </tr>
@@ -2877,21 +2297,15 @@ Audits the creation of agents.
 
 CREATE AGENT GROUP
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of agent groups.
-
-
 
 </td>
 </tr>
@@ -2900,21 +2314,15 @@ Audits the creation of agent groups.
 
 CREATE REMOTE SOURCE
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of remote sources.
-
-
 
 </td>
 </tr>
@@ -2923,21 +2331,15 @@ Audits the creation of remote sources.
 
 CREATE REMOTE SUBSCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of remote subscriptions.
-
-
 
 </td>
 </tr>
@@ -2946,21 +2348,15 @@ Audits the creation of remote subscriptions.
 
 DROP ADAPTER
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of adapters.
-
-
 
 </td>
 </tr>
@@ -2969,21 +2365,15 @@ Audits the dropping of adapters.
 
 DROP AGENT
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of agents.
-
-
 
 </td>
 </tr>
@@ -2992,21 +2382,15 @@ Audits the dropping of agents.
 
 DROP AGENT GROUP
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of agent groups.
-
-
 
 </td>
 </tr>
@@ -3015,21 +2399,15 @@ Audits the dropping of agent groups.
 
 DROP REMOTE SOURCE
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of remote sources.
-
-
 
 </td>
 </tr>
@@ -3038,21 +2416,15 @@ Audits the dropping of remote sources.
 
 DROP REMOTE SUBSCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of remote subscriptions.
-
-
 
 </td>
 </tr>
@@ -3061,21 +2433,15 @@ Audits the dropping of remote subscriptions.
 
 PROCESS REMOTE SUBSCRIPTION EXCEPTION
 
-
-
 </td>
 <td valign="top">
 
 17 - Data Provisioning
 
-
-
 </td>
 <td valign="top">
 
 Audits the processing of remote subscription exceptions.
-
-
 
 </td>
 </tr>
@@ -3084,21 +2450,15 @@ Audits the processing of remote subscription exceptions.
 
 ALTER PSE
 
-
-
 </td>
 <td valign="top">
 
 19 - Certificates and PSE Store
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of PSEs.
-
-
 
 </td>
 </tr>
@@ -3107,21 +2467,15 @@ Audits the alteration of PSEs.
 
 CREATE CERTIFICATE
 
-
-
 </td>
 <td valign="top">
 
 19 - Certificates and PSE Store
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of certificates.
-
-
 
 </td>
 </tr>
@@ -3130,21 +2484,15 @@ Audits the creation of certificates.
 
 CREATE PSE
 
-
-
 </td>
 <td valign="top">
 
 19 - Certificates and PSE Store
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of PSEs.
-
-
 
 </td>
 </tr>
@@ -3153,21 +2501,15 @@ Audits the creation of PSEs.
 
 CREATE PUBLIC KEY
 
-
-
 </td>
 <td valign="top">
 
 19 - Certificates and PSE store
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of CREATE PUBLIC KEY statement to create a new public key
-
-
 
 </td>
 </tr>
@@ -3176,21 +2518,15 @@ Audits the use of CREATE PUBLIC KEY statement to create a new public key
 
 DROP CERTIFICATE
 
-
-
 </td>
 <td valign="top">
 
 19 - Certificates and PSE Store
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of certificates.
-
-
 
 </td>
 </tr>
@@ -3199,21 +2535,15 @@ Audits the dropping of certificates.
 
 DROP PSE
 
-
-
 </td>
 <td valign="top">
 
 19 - Certificates and PSE Store
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of PSEs.
-
-
 
 </td>
 </tr>
@@ -3222,21 +2552,15 @@ Audits the dropping of PSEs.
 
 DROP PUBLIC KEY
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of DROP PUBLIC KEY statement to drop an existing public key
-
-
 
 </td>
 </tr>
@@ -3245,21 +2569,15 @@ Audits the use of DROP PUBLIC KEY statement to drop an existing public key
 
 ALTER JWT PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of JWT providers.
-
-
 
 </td>
 </tr>
@@ -3268,21 +2586,15 @@ Audits the alteration of JWT providers.
 
 ALTER LDAP PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of LDAP providers.
-
-
 
 </td>
 </tr>
@@ -3291,21 +2603,15 @@ Audits the alteration of LDAP providers.
 
 ALTER SAML PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the alteration of SAML providers.
-
-
 
 </td>
 </tr>
@@ -3314,21 +2620,15 @@ Audits the alteration of SAML providers.
 
 ALTER X509 PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of ALTER X509 PROVIDER statement to change the definition of an existing X509 provider
-
-
 
 </td>
 </tr>
@@ -3337,21 +2637,15 @@ Audits the use of ALTER X509 PROVIDER statement to change the definition of an e
 
 CREATE JWT PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of JWT providers.
-
-
 
 </td>
 </tr>
@@ -3360,21 +2654,15 @@ Audits the creation of JWT providers.
 
 CREATE LDAP PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of LDAP providers.
-
-
 
 </td>
 </tr>
@@ -3383,21 +2671,15 @@ Audits the creation of LDAP providers.
 
 CREATE SAML PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the creation of SAML providers.
-
-
 
 </td>
 </tr>
@@ -3406,21 +2688,15 @@ Audits the creation of SAML providers.
 
 CREATE X509 PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of CREATE X509 PROVIDER statement to create a new X509 provider
-
-
 
 </td>
 </tr>
@@ -3429,21 +2705,15 @@ Audits the use of CREATE X509 PROVIDER statement to create a new X509 provider
 
 DROP JWT PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of JWT providers.
-
-
 
 </td>
 </tr>
@@ -3452,21 +2722,15 @@ Audits the dropping of JWT providers.
 
 DROP LDAP PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of LDAP providers.
-
-
 
 </td>
 </tr>
@@ -3475,21 +2739,15 @@ Audits the dropping of LDAP providers.
 
 DROP SAML PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the dropping of SAML providers.
-
-
 
 </td>
 </tr>
@@ -3498,21 +2756,15 @@ Audits the dropping of SAML providers.
 
 DROP X509 PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the use of DROP X509 PROVIDER statement to drop an existing X509 provider
-
-
 
 </td>
 </tr>
@@ -3521,21 +2773,15 @@ Audits the use of DROP X509 PROVIDER statement to drop an existing X509 provider
 
 VALIDATE LDAP PROVIDER
 
-
-
 </td>
 <td valign="top">
 
 20 - Authentication Provider Management
 
-
-
 </td>
 <td valign="top">
 
 Audits the refreshing of LDAP providers.
-
-
 
 </td>
 </tr>
@@ -3544,21 +2790,15 @@ Audits the refreshing of LDAP providers.
 
 DEBUGGER ATTACH PROCESS
 
-
-
 </td>
 <td valign="top">
 
 23 - Procedure Debugging
 
-
-
 </td>
 <td valign="top">
 
 Audits audit log debugger attachment process events.
-
-
 
 </td>
 </tr>
@@ -3567,67 +2807,66 @@ Audits audit log debugger attachment process events.
 
 DEBUGGER EXECUTION
 
-
-
 </td>
 <td valign="top">
 
 23 - Procedure Debugging
-
-
 
 </td>
 <td valign="top">
 
 Audits audit log debugger execution events.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+CREATE CREDENTIAL
+
+</td>
+<td valign="top">
+
+24 - Credential Management
+
+</td>
+<td valign="top">
+
+Audits the creation of a credential.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-IMPORT
-
-
+ALTER CREDENTIAL
 
 </td>
 <td valign="top">
 
-25 - Data Import Export
-
-
+24 - Credential Management
 
 </td>
 <td valign="top">
 
-Audits the import of data
-
-
+Audits the alteration of a credential.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-IMPORT SCAN
-
-
+DROP CREDENTIAL
 
 </td>
 <td valign="top">
 
-25 - Data Import Export
-
-
+24 - Credential Management
 
 </td>
 <td valign="top">
 
-Audits the scan of import data
-
-
+Audits the dropping of a credential.
 
 </td>
 </tr>
@@ -3636,21 +2875,100 @@ Audits the scan of import data
 
 EXPORT
 
-
-
 </td>
 <td valign="top">
 
 25 - Data Import Export
-
-
 
 </td>
 <td valign="top">
 
 Audits the export of data
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+IMPORT
+
+</td>
+<td valign="top">
+
+25 - Data Import Export
+
+</td>
+<td valign="top">
+
+Audits the import of data
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IMPORT SCAN
+
+</td>
+<td valign="top">
+
+25 - Data Import Export
+
+</td>
+<td valign="top">
+
+Audits the scan of import data
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+CREATE STRUCTURED FILTER
+
+</td>
+<td valign="top">
+
+26 - Structured Filter Management
+
+</td>
+<td valign="top">
+
+Audits the creation of a structured privilege
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ALTER STRUCTURED FILTER
+
+</td>
+<td valign="top">
+
+26 - Structured Filter Management
+
+</td>
+<td valign="top">
+
+Audits the alteration of a structured privilege
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DROP STRUCTURED FILTER
+
+</td>
+<td valign="top">
+
+26 - Structured Filter Management
+
+</td>
+<td valign="top">
+
+Audits the dropping of a structured privilege
 
 </td>
 </tr>
@@ -3711,7 +3029,7 @@ CREATE AUDIT POLICY MY_AUDIT_POLICY AUDITING ALL CREATE TABLE ON SCHEMA TEST_SCH
 
 [ALTER AUDIT POLICY Statement \(Access Control\)](alter-audit-policy-statement-access-control-20cfb7b.md "Enables or disables an audit policy, changes audit trail target types for an audit policy, and configures the retention period of the policy.")
 
-[Auditing](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[Auditing](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 
 [AUDIT\_ACTIONS System View](../../020-System-Views-Reference/021-System-Views/audit-actions-system-view-b856cdd.md "Provides information about all available audit actions.")
 

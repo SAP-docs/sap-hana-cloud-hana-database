@@ -17,21 +17,15 @@ Provides runtime information of fuzzy search indexes of column tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the table name.
 
 INDEX\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the index.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the index.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name.
-
-
 
 </td>
 </tr>
@@ -178,14 +136,10 @@ Displays the column name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -206,21 +160,15 @@ Displays the partition ID. Returns the following:
 
 FUZZY\_SEARCH\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the fuzzy index search mode.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the fuzzy index search mode.
 
 MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of MEMORY\_SIZE\_IN\_MAIN and MEMORY\_SIZE\_IN\_DELTA in bytes.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the sum of MEMORY\_SIZE\_IN\_MAIN and MEMORY\_SIZE\_IN\_DELTA in bytes.
 
 MEMORY\_SIZE\_IN\_MAIN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current size of the fuzzy search indexes in main in bytes. This value is 0 if not loaded.
-
-
 
 </td>
 </tr>
@@ -275,21 +211,15 @@ Displays the current size of the fuzzy search indexes in main in bytes. This val
 
 MEMORY\_SIZE\_IN\_DELTA
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current size of the fuzzy search indexes in delta, in bytes. This value is 0 if not loaded.
-
-
 
 </td>
 </tr>
@@ -298,21 +228,15 @@ Displays the current size of the fuzzy search indexes in delta, in bytes. This v
 
 LOADED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a flag to indicate that tge column is loaded into memory: TRUE/FALSE.
-
-
 
 </td>
 </tr>

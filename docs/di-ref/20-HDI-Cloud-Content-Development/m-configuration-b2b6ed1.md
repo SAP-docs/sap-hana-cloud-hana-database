@@ -19,21 +19,15 @@ The SAP HDI Container API includes the `M_CONFIGURATION` view, which shows the c
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Description
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the key
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ The name of the key
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The value for the specified KEY
-
-
 
 </td>
 </tr>

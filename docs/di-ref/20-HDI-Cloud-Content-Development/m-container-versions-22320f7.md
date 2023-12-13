@@ -17,21 +17,15 @@ The HDI-container-group-specific monitoring view `M_CONTAINER_VERSIONS` shows th
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 CONTAINER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the container
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ The name of the container
 
 VERSION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The container version number
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ The container version number
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 The current status of the container, for example: `CREATED`, `MIGRATED`, `MIGRATION FAILED`, `IMPORTING`, or `IMPORTED` 
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ The current status of the container, for example: `CREATED`, `MIGRATED`, `MIGRAT
 
 CREATE\_TIMESTAMP\_UTC
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 The time at which the container was created
-
-
 
 </td>
 </tr>

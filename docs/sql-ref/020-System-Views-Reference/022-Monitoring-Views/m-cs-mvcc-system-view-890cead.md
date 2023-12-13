@@ -15,21 +15,15 @@ Provides column store MVCC information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port number.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -130,14 +100,10 @@ Displays the table name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -158,21 +124,15 @@ Displays the partition ID. Returns the following:
 
 LOADED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates if the MVCC data is loaded into the memory.
-
-
 
 </td>
 </tr>
@@ -181,21 +141,15 @@ Indicates if the MVCC data is loaded into the memory.
 
 FRAGMENT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the fragment type: DELTA1, DELTA2, or MAIN.
-
-
 
 </td>
 </tr>
@@ -204,21 +158,15 @@ Displays the fragment type: DELTA1, DELTA2, or MAIN.
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of visible records in the table.
-
-
 
 </td>
 </tr>
@@ -227,21 +175,15 @@ Displays the number of visible records in the table.
 
 RAW\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of physical records in the table.
-
-
 
 </td>
 </tr>
@@ -250,21 +192,15 @@ Displays the number of physical records in the table.
 
 ROWSTATE\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active rowstate blocks.
-
-
 
 </td>
 </tr>
@@ -273,21 +209,15 @@ Displays the number of active rowstate blocks.
 
 CTS\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocks used to store creation timestamps \(CTS\).
-
-
 
 </td>
 </tr>
@@ -296,21 +226,15 @@ Displays the number of blocks used to store creation timestamps \(CTS\).
 
 DTS\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocks used to store deletion timestamps \(DTS\).
-
-
 
 </td>
 </tr>
@@ -319,21 +243,15 @@ Displays the number of blocks used to store deletion timestamps \(DTS\).
 
 ROWSTATE\_STUB\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of stub blocks, both visible and invisible, present in the MVCC layer associated with the fragment.
-
-
 
 </td>
 </tr>
@@ -342,21 +260,15 @@ Displays the total number of stub blocks, both visible and invisible, present in
 
 VISIBLE\_ROWSTATE\_STUB\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of visible stub blocks present in the MVCC layer associated with the fragment.
-
-
 
 </td>
 </tr>
@@ -365,21 +277,15 @@ Displays the number of visible stub blocks present in the MVCC layer associated 
 
 CTS\_STUB\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active CTS stub blocks.
-
-
 
 </td>
 </tr>
@@ -388,21 +294,15 @@ Displays the number of active CTS stub blocks.
 
 DTS\_STUB\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active DTS stub blocks.
-
-
 
 </td>
 </tr>
@@ -411,21 +311,15 @@ Displays the number of active DTS stub blocks.
 
 FREE\_ROWSTATE\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of free row-state blocks available for successive operations.
-
-
 
 </td>
 </tr>
@@ -434,21 +328,15 @@ Displays the number of free row-state blocks available for successive operations
 
 FREE\_TS\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of free CTS/DTS blocks.
-
-
 
 </td>
 </tr>
@@ -457,21 +345,15 @@ Displays the number of free CTS/DTS blocks.
 
 FREE\_TS\_STUB\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of free CTS/DTS stub blocks.
-
-
 
 </td>
 </tr>
@@ -480,21 +362,15 @@ Displays the number of free CTS/DTS stub blocks.
 
 PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of pages in the MVCC page chain.
-
-
 
 </td>
 </tr>
@@ -503,21 +379,15 @@ Displays the number of pages in the MVCC page chain.
 
 MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 If MVCC data is loaded, then it displays the total memory size of MVCC structures in bytes.
-
-
 
 </td>
 </tr>
@@ -526,21 +396,15 @@ If MVCC data is loaded, then it displays the total memory size of MVCC structure
 
 PAGE\_CHAIN\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 If MVCC data is loaded, then it displays the memory size of the pinned MVCC page chain in bytes.
-
-
 
 </td>
 </tr>
@@ -549,21 +413,15 @@ If MVCC data is loaded, then it displays the memory size of the pinned MVCC page
 
 PAGE\_CHAIN\_ACTIVE\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory size of the active part of the MVCC page chain in bytes.
-
-
 
 </td>
 </tr>
@@ -572,21 +430,15 @@ Displays the memory size of the active part of the MVCC page chain in bytes.
 
 ROWSTATE\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 If MVCC data is loaded, then it displays the memory size of transient rowstate structures in bytes.
-
-
 
 </td>
 </tr>
@@ -595,21 +447,15 @@ If MVCC data is loaded, then it displays the memory size of transient rowstate s
 
 CTS\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the amount of memory used to store CTS blocks in bytes.
-
-
 
 </td>
 </tr>
@@ -618,21 +464,15 @@ Displays the amount of memory used to store CTS blocks in bytes.
 
 DTS\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the amount of memory used to store DTS blocks in bytes.
-
-
 
 </td>
 </tr>
@@ -641,21 +481,15 @@ Displays the amount of memory used to store DTS blocks in bytes.
 
 MISC\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 If MVCC data is loaded, then it displays the memory size of miscellaneous MVCC related structures in bytes.
-
-
 
 </td>
 </tr>
@@ -664,21 +498,15 @@ If MVCC data is loaded, then it displays the memory size of miscellaneous MVCC r
 
 SPARSE\_DTS\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of DTS blocks that are sparse timestamp blocks.
-
-
 
 </td>
 </tr>
@@ -687,21 +515,15 @@ Displays the number of DTS blocks that are sparse timestamp blocks.
 
 SPARSE\_DTS\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory size of the sparse block in bytes.
-
-
 
 </td>
 </tr>
@@ -710,21 +532,15 @@ Displays the memory size of the sparse block in bytes.
 
 FREE\_SPARSE\_TS\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of available sparse timestamp blocks for successive operations.
-
-
 
 </td>
 </tr>
@@ -739,7 +555,7 @@ Displays the number of available sparse timestamp blocks for successive operatio
 
 [M\_MVCC\_OVERVIEW System View](m-mvcc-overview-system-view-f405b73.md "Provides an overview of the row-store Multiversion Concurrency Control (MVCC) manager.")
 
-[HOST_MVCC_OVERVIEW View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_2_QRC/en-US/4ea7cb57d6954278ab2eee175705d144.html "Specifies the MVCC overview per host.") :arrow_upper_right:
+[HOST_MVCC_OVERVIEW View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/4ea7cb57d6954278ab2eee175705d144.html "Specifies the MVCC overview per host.") :arrow_upper_right:
 
 [M\_MVCC\_TABLES System View](m-mvcc-tables-system-view-20b5e31.md "Provides statistics for the row-store Multiversion Concurrency Control (MVCC) manager.")
 

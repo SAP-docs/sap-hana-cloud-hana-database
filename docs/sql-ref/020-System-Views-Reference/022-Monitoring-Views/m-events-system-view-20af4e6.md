@@ -17,21 +17,15 @@ Provides information about internal events.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the port.
 
 SOURCE\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the original host if the event was created via another host.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the original host if the event was created via another host.
 
 SOURCE\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the original port if the event was created via another host.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the original port if the event was created via another host.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of event.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the type of event.
 
 ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the event.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the ID of the event.
 
 INFOTEXT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays additional information in free text.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays additional information in free text.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that the event was created.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the time that the event was created.
 
 UPDATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that the event was updated.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the time that the event was updated.
 
 HANDLE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that the event was handled.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the time that the event was handled.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the state of the event.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the state of the event.
 
 ACKNOWLEDGED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the event is acknowledged: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Indicates whether the event is acknowledged: TRUE/FALSE.
 
 FAILED\_HANDLES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of failed handle attempts.
-
-
 
 </td>
 </tr>
@@ -347,5 +263,5 @@ Important events \(for example, DiskFull\) reported by the database are shown in
 **Related Information**  
 
 
-[GLOBAL_INTERNAL_EVENTS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_2_QRC/en-US/449bb507ab944d5f8702e812e751bd28.html "Specifies global internal event information.") :arrow_upper_right:
+[GLOBAL_INTERNAL_EVENTS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/449bb507ab944d5f8702e812e751bd28.html "Specifies global internal event information.") :arrow_upper_right:
 

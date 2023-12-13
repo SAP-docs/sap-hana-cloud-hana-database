@@ -72,19 +72,19 @@ Unnecessary least significant digits in the mantissa of the input value are trun
 
 ## Example
 
-The following example converts the value ***7654321.888888*** to DECIMAL with ***10*** digits precision and a scale of ***3***, and returns the value ***7654321.888***:
+The following example converts the value `7654321.888888` to DECIMAL with `10` digits precision and a scale of `3`, and returns the value ***7654321.888***:
 
 ```
 SELECT TO_DECIMAL(7654321.888888, 10, 3) "to decimal" FROM DUMMY;
 ```
 
-The following example converts the value ***1234.789*** to DECIMAL with ***10*** for precision and ***0*** for scale, and returns the value ***1234*** \(scale is defined as 0, so everything is truncated after precision\).
+The following example converts the value `1234.789` to DECIMAL with `10` for precision and `0` for scale, and returns the value ***1234*** \(scale is defined as 0, so everything is truncated after precision\).
 
 ```
 SELECT TO_DECIMAL(1234.789,10,0) AS "to decimal" FROM DUMMY;
 ```
 
-The following example, converts the value ***1234567890123456789012345678901256.78*** to a DECIMAL data type, with 34 as precision \(the default\) and 0 as the scale \(the default\), and returns ***1234567890123456789012345678901256*** \(the last two digits are truncated because the default precision is 34\).
+The following example, converts the value `1234567890123456789012345678901256.78` to a DECIMAL data type, with 34 as precision \(the default\) and 0 as the scale \(the default\), and returns ***1234567890123456789012345678901256*** \(the last two digits are truncated because the default precision is 34\).
 
 ```
 SELECT TO_DECIMAL(1234567890123456789012345678901256.78) "to decimal" FROM DUMMY;

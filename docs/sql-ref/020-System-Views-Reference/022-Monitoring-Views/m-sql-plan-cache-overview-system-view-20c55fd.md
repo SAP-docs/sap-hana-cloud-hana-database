@@ -17,21 +17,15 @@ Provides overall statistics of evicted and cached plans.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,14 +68,10 @@ Displays the internal port number.
 
 PLAN\_CACHE\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -102,8 +80,6 @@ Displays whether the SQL Plan Cash is enabled \(TRUE/FALSE\).
 
 ALTER SYSTEM ALTER CONFIGURATION \('indexserver.ini','system'\) SET\('sql', 'plan\_cache\_enabled'\) = <'True' or 'False'\> WITH RECONFIGURE.
 
-
-
 </td>
 </tr>
 <tr>
@@ -111,14 +87,10 @@ ALTER SYSTEM ALTER CONFIGURATION \('indexserver.ini','system'\) SET\('sql', 'pla
 
 STATISTICS\_COLLECTION\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
@@ -127,8 +99,6 @@ Displays whether the runtime statistics are being collected \(TRUE/FALSE\).
 
 ALTER SYSTEM ALTER CONFIGURATION \('indexserver.ini','system'\) SET\('sql', 'plan\_cache\_statistics\_enabled'\) = <'True' or 'False'\> WITH RECONFIGURE.
 
-
-
 </td>
 </tr>
 <tr>
@@ -136,14 +106,10 @@ ALTER SYSTEM ALTER CONFIGURATION \('indexserver.ini','system'\) SET\('sql', 'pla
 
 PLAN\_CACHE\_CAPACITY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -152,8 +118,6 @@ Displays the maximum SQL Plan Cache size in bytes.
 
 ALTER SYSTEM ALTER CONFIGURATION \('indexserver.ini','system'\) SET\('sql', 'plan\_cache\_size'\) = '268435456' WITH RECONFIGURE.
 
-
-
 </td>
 </tr>
 <tr>
@@ -161,21 +125,15 @@ ALTER SYSTEM ALTER CONFIGURATION \('indexserver.ini','system'\) SET\('sql', 'pla
 
 CACHED\_PLAN\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of SQL Plan Cache in bytes.
-
-
 
 </td>
 </tr>
@@ -184,21 +142,15 @@ Displays the total size of SQL Plan Cache in bytes.
 
 PLAN\_CACHE\_HIT\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 REAL
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL Plan Cache hit ratio.
-
-
 
 </td>
 </tr>
@@ -207,21 +159,15 @@ Displays the SQL Plan Cache hit ratio.
 
 PLAN\_CACHE\_LOOKUP\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of plan lookup counts from SQL Plan Cache.
-
-
 
 </td>
 </tr>
@@ -230,21 +176,15 @@ Displays the number of plan lookup counts from SQL Plan Cache.
 
 PLAN\_CACHE\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of hit counts from SQL Plan Cache.
-
-
 
 </td>
 </tr>
@@ -253,21 +193,15 @@ Displays the number of hit counts from SQL Plan Cache.
 
 EVICTED\_PLAN\_AVG\_CACHE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average duration in microseconds between plan cache insertion and eviction.
-
-
 
 </td>
 </tr>
@@ -276,21 +210,15 @@ Displays the average duration in microseconds between plan cache insertion and e
 
 EVICTED\_PLAN\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of evicted plans from SQL Plan Cache.
-
-
 
 </td>
 </tr>
@@ -299,21 +227,15 @@ Displays the number of evicted plans from SQL Plan Cache.
 
 EVICTED\_PLAN\_PREPARATION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total plan preparation count for evicted plans.
-
-
 
 </td>
 </tr>
@@ -322,21 +244,15 @@ Displays the total plan preparation count for evicted plans.
 
 EVICTED\_PLAN\_EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total plan execution count for evicted plans.
-
-
 
 </td>
 </tr>
@@ -345,21 +261,15 @@ Displays the total plan execution count for evicted plans.
 
 EVICTED\_PLAN\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total duration in microseconds for plan preparation for all evicted plans. It is the sum of the evicted plan's TOTAL\_PREPARATION\_TIME.
-
-
 
 </td>
 </tr>
@@ -368,21 +278,15 @@ Displays the total duration in microseconds for plan preparation for all evicted
 
 EVICTED\_PLAN\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total cursor duration in microseconds for evicted plans. It is the sum of the evicted plan's TOTAL\_CURSOR\_DURATION.
-
-
 
 </td>
 </tr>
@@ -391,21 +295,15 @@ Displays the total cursor duration in microseconds for evicted plans. It is the 
 
 EVICTED\_PLAN\_TOTAL\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total execution time in microseconds for evicted plans. It is the sum of th evicted plan's TOTAL\_EXECUTION\_TIME.
-
-
 
 </td>
 </tr>
@@ -414,21 +312,15 @@ Displays the total execution time in microseconds for evicted plans. It is the s
 
 EVICTED\_PLAN\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated total size of evicted plans in bytes.
-
-
 
 </td>
 </tr>
@@ -437,21 +329,15 @@ Displays the accumulated total size of evicted plans in bytes.
 
 CACHED\_PLAN\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total cached plan count in SQL Plan Cache.
-
-
 
 </td>
 </tr>
@@ -460,21 +346,15 @@ Displays the total cached plan count in SQL Plan Cache.
 
 CACHED\_PLAN\_PREPARATION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the yotal plan preparation count for cached plans.
-
-
 
 </td>
 </tr>
@@ -483,21 +363,15 @@ Displays the yotal plan preparation count for cached plans.
 
 CACHED\_PLAN\_EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total execution count for cached plans.
-
-
 
 </td>
 </tr>
@@ -506,21 +380,15 @@ Displays the total execution count for cached plans.
 
 CACHED\_PLAN\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total plan preparation duration for cached plans in microseconds.
-
-
 
 </td>
 </tr>
@@ -529,21 +397,15 @@ Displays the total plan preparation duration for cached plans in microseconds.
 
 CACHED\_PLAN\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total cursor duration for cached plans in microseconds.
-
-
 
 </td>
 </tr>
@@ -552,21 +414,15 @@ Displays the total cursor duration for cached plans in microseconds.
 
 CACHED\_PLAN\_TOTAL\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total execution time for cached plans in microseconds.
-
-
 
 </td>
 </tr>
@@ -575,21 +431,15 @@ Displays the total execution time for cached plans in microseconds.
 
 CLEAR\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when SQL Plan Cache was cleared for the last time using ALTER SYSTEM CLEAR SQL PLAN CACHE.
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ Provides information on table delta merge statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,14 +68,10 @@ Displays the internal port number.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
-
-
 
 </td>
 <td valign="top">
@@ -169,21 +147,15 @@ The table delta garbage collection.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -192,21 +164,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -215,21 +181,15 @@ Displays the table name.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table.
-
-
 
 </td>
 </tr>
@@ -238,14 +198,10 @@ Displays the object ID of the table.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -266,21 +222,15 @@ Displays the partition ID. Returns the following:
 
 INTERNAL\_PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal partition ID.
-
-
 
 </td>
 </tr>
@@ -289,21 +239,15 @@ Displays the internal partition ID.
 
 MEMORY\_MERGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Deprecated. Use the TYPE column, which displays more detailed information.
-
-
 
 </td>
 </tr>
@@ -312,21 +256,15 @@ Deprecated. Use the TYPE column, which displays more detailed information.
 
 PASSPORT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the external identifier for the table merge called by an application.
-
-
 
 </td>
 </tr>
@@ -335,14 +273,10 @@ Displays the external identifier for the table merge called by an application.
 
 LOG\_REPLAY\_QUEUE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -351,8 +285,6 @@ Displays the ID of the log replay queue where the job was started. During log re
 
 During online operation, all TYPEs apply. -1 indicates that online merges and optimized compressions exist.
 
-
-
 </td>
 </tr>
 <tr>
@@ -360,21 +292,15 @@ During online operation, all TYPEs apply. -1 indicates that online merges and op
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution start time.
-
-
 
 </td>
 </tr>
@@ -383,21 +309,15 @@ Displays the execution start time.
 
 RESOURCE\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total wait time in milliseconds for memory and CPU resources when too many merges or optimized compressions have been started in parallel.
-
-
 
 </td>
 </tr>
@@ -406,21 +326,15 @@ Displays the total wait time in milliseconds for memory and CPU resources when t
 
 PHASE\_1\_HESITANT\_LOCK\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total wait time in milliseconds to acquire an exclusive lock in the first exclusive merge phase. The time includes configured timeout and subsequent retries.
-
-
 
 </td>
 </tr>
@@ -429,21 +343,15 @@ Displays the total wait time in milliseconds to acquire an exclusive lock in the
 
 PHASE\_1\_BLOCKING\_LOCK\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the wait time in milliseconds to acquire an exclusive lock in the first exclusive merge phase in the event the hesitant acquire was unsuccessful. New readers and writers are already blocked.
-
-
 
 </td>
 </tr>
@@ -452,21 +360,15 @@ Displays the wait time in milliseconds to acquire an exclusive lock in the first
 
 PHASE\_1\_LOCK\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time in milliseconds spent under exclusive lock in the first exclusive merge phase.
-
-
 
 </td>
 </tr>
@@ -475,21 +377,15 @@ Displays the time in milliseconds spent under exclusive lock in the first exclus
 
 PHASE\_2\_HESITANT\_LOCK\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total wait time in milliseconds to acquire an exclusive lock for the second exclusive merge phase or the exclusive optimize compression phase, respectively. The time includes configured timeout and subsequent retries."
-
-
 
 </td>
 </tr>
@@ -498,21 +394,15 @@ Displays the total wait time in milliseconds to acquire an exclusive lock for th
 
 PHASE\_2\_BLOCKING\_LOCK\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time in milliseconds to acquire an exclusive lock for the second exclusive merge phase or the exclusive optimize compression phase, respectively, in the event the hesitant acquire was unsuccessful. New readers and writers are already blocked.
-
-
 
 </td>
 </tr>
@@ -521,21 +411,15 @@ Displays the time in milliseconds to acquire an exclusive lock for the second ex
 
 PHASE\_2\_LOCK\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time in milliseconds spent under exclusive lock in the second exclusive merge phase or the exclusive optimize compression phase, respectively.
-
-
 
 </td>
 </tr>
@@ -544,21 +428,15 @@ Displays the time in milliseconds spent under exclusive lock in the second exclu
 
 EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution duration in milliseconds.
-
-
 
 </td>
 </tr>
@@ -567,14 +445,10 @@ Displays the execution duration in milliseconds.
 
 MOTIVATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
-
-
 
 </td>
 <td valign="top">
@@ -650,14 +524,10 @@ A merge triggered via SQL, circumventing resource availability checks, based on 
 
 SUCCESS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
@@ -700,21 +570,15 @@ Displays whether the delta merge/optimize compression was completed with or with
 
 OLD\_MAIN\_RECORDS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows in old main prior to the delta merge. -1 indicates other operation types.
-
-
 
 </td>
 </tr>
@@ -723,21 +587,15 @@ Displays the number of rows in old main prior to the delta merge. -1 indicates o
 
 MERGED\_MAIN\_RECORDS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows merged from old main to new main. -1 indicates other operation types.
-
-
 
 </td>
 </tr>
@@ -746,21 +604,15 @@ Displays the number of rows merged from old main to new main. -1 indicates other
 
 OLD\_DELTA\_RECORDS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows merged from old main to new main. -1 indicates other operation types.
-
-
 
 </td>
 </tr>
@@ -769,21 +621,15 @@ Displays the number of rows merged from old main to new main. -1 indicates other
 
 MERGED\_DELTA\_RECORDS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows merged from old delta1 to new main for MERGE operation or the number of rows evicted from delta during RECLAIM delta operation. -1 indicates other operation types.
-
-
 
 </td>
 </tr>
@@ -792,21 +638,15 @@ Displays the number of rows merged from old delta1 to new main for MERGE operati
 
 NEW\_MAIN\_RECORDS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of rows in new main after the merge. It is the sum of MERGED\_MAIN\_RECORDS and MERGED\_DELTA\_RECORDS. -1 indicates other operation types.
-
-
 
 </td>
 </tr>
@@ -815,21 +655,15 @@ Displays the total number of rows in new main after the merge. It is the sum of 
 
 OLD\_MAIN\_IN\_USE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays TRUE when old main is still in use by old readers once the merge or optimize compression is finished. Old main will only be deleted after the last reader has finished. FALSE indicates other operation types.
-
-
 
 </td>
 </tr>
@@ -838,21 +672,15 @@ Displays TRUE when old main is still in use by old readers once the merge or opt
 
 OLD\_DELTA\_IN\_USE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays TRUE when old delta1 is still in use by old readers once the merge is finished. It will only be deleted after the last reader has finished. FALSE indicates other operation types.
-
-
 
 </td>
 </tr>
@@ -861,21 +689,15 @@ Displays TRUE when old delta1 is still in use by old readers once the merge is f
 
 LAST\_ERROR
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code of the last error that occurred. This explains why a merge did not succeed. See ERROR\_DESCRIPTION for details.
-
-
 
 </td>
 </tr>
@@ -884,21 +706,15 @@ Displays the error code of the last error that occurred. This explains why a mer
 
 CS\_ERROR
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the column store specific error code. See ERROR\_DESCRIPTION for details.
-
-
 
 </td>
 </tr>
@@ -907,21 +723,15 @@ Displays the column store specific error code. See ERROR\_DESCRIPTION for detail
 
 ERROR\_DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description of the last error that occurred during the merge. A failing merge does not necessarily indicate a problem.
-
-
 
 </td>
 </tr>
@@ -942,5 +752,5 @@ Table delta merges, optimize compression runs, and application merge hints are l
 
 [MERGE INTO Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/merge-into-statement-data-manipulation-3226201.md "Merges data into an existing column store table.")
 
-[HOST_DELTA_MERGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_2_QRC/en-US/b1a754a52a484a85922a87a269592cfa.html "Specifies the table delta merge statistics per host.") :arrow_upper_right:
+[HOST_DELTA_MERGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/b1a754a52a484a85922a87a269592cfa.html "Specifies the table delta merge statistics per host.") :arrow_upper_right:
 

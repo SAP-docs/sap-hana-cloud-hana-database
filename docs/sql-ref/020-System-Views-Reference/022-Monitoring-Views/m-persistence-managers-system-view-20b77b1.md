@@ -17,21 +17,15 @@ Provides persistence manager statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 MAX\_TID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum known TID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the maximum known TID.
 
 CCH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of normal consistent changes in terminated sessions.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of normal consistent changes in terminated sessions.
 
 MASS\_CCH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of consistent changes for mass operations in terminated sessions.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the number of consistent changes for mass operations in terminated sess
 
 LAST\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time spent in normal consistent changes in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the last time spent in normal consistent changes in terminated sessions
 
 MAX\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time spent in normal consistent changes in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the maximum time spent in normal consistent changes in terminated sessi
 
 MIN\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time spent in normal consistent changes in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the minimum time spent in normal consistent changes in terminated sessi
 
 SUM\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time spent in normal consistent changes in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the total time spent in normal consistent changes in terminated session
 
 AVG\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time spent in normal consistent changes in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the average time spent in normal consistent changes in terminated sessi
 
 LAST\_MASS\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time spent in consistent changes for mass operations in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the last time spent in consistent changes for mass operations in termin
 
 MAX\_MASS\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time spent in consistent changes for mass operations in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the maximum time spent in consistent changes for mass operations in ter
 
 MIN\_MASS\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time spent in consistent changes for mass operations in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the minimum time spent in consistent changes for mass operations in ter
 
 SUM\_MASS\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time spent in consistent changes for mass operations in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the total time spent in consistent changes for mass operations in termi
 
 AVG\_MASS\_CCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time spent in consistent changes for mass operations in terminated sessions in microseconds.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the average time spent in consistent changes for mass operations in ter
 
 PREPARE\_COMMIT\_POS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the newest known log position of the prepare commit. This value is for the secondary node only.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the newest known log position of the prepare commit. This value is for 
 
 primary node\_COMMIT\_POS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the newest known log position of the commit record on the transaction primary node from the point of view of this node.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the newest known log position of the commit record on the transaction p
 
 INDOUBT\_WAITERS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of in-doubt waiters for the currently-running COMMIT. This value is for the primary node only.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the number of in-doubt waiters for the currently-running COMMIT. This v
 
 INDOUBT\_RESTART\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open in-doubt transactions before the restart. This value is for the primary node only.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the number of open in-doubt transactions before the restart. This value
 
 INDOUBT\_ONLINE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open in-doubt transactions since the last restart. This value is for the primary node only.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the number of open in-doubt transactions since the last restart. This v
 
 SAVEPOINT\_CONFIG\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the configured savepoint frequency in seconds.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the configured savepoint frequency in seconds.
 
 SAVEPOINT\_ACTIVE\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the currently active savepoint frequency in seconds.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the currently active savepoint frequency in seconds.
 
 CHECKSUM\_ALGORITHM
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the currently used checksum algorithm for the modified pages and log buffers.
-
-
 
 </td>
 </tr>

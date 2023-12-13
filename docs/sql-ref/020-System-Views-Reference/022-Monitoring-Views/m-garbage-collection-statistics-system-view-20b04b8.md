@@ -17,21 +17,15 @@ Provides garbage collection and history manager statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 STORE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of storage handled: COLUMN STORE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type of storage handled: COLUMN STORE.
 
 HISTORY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the current count of history files in the garbage collection.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the current count of history files in the garbage collection.
 
 WAITER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the current count of garbage collection waiters.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the current count of garbage collection waiters.
 
 MIN\_READ\_TID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last known minimum transaction ID \(TID\) of a reading transaction at end of transaction \(EOT\).
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the last known minimum transaction ID \(TID\) of a reading transaction 
 
 LAST\_STARTED\_TID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the TID of the last started cleanup job.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the TID of the last started cleanup job.
 
 LAST\_STARTED\_TID\_POSTCOMMIT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the TID of the last started postcommit job.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the TID of the last started postcommit job.
 
 FIRST\_WAITING\_TID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the TID of the first waiting cleanup job.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the TID of the first waiting cleanup job.
 
 FIRST\_WAITING\_TID\_POSTCOMMIT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the TID of the first waiting postcommit job.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the TID of the first waiting postcommit job.
 
 ENTERS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of history files that entered the queue for cleanup.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the number of history files that entered the queue for cleanup.
 
 ENTERS\_POSTCOMMIT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of history files that entered the queue for postcommit.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the number of history files that entered the queue for postcommit.
 
 STARTED\_JOBS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of started garbage collection cleanup jobs.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the number of started garbage collection cleanup jobs.
 
 STARTED\_JOBS\_POSTCOMMIT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of started postcommit jobs.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the number of started postcommit jobs.
 
 PROCESSED\_JOBS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of undo files processed for cleanup.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of undo files processed for cleanup.
 
 PROCESSED\_JOBS\_POSTCOMMIT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of undo files processed for postcommit.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the number of undo files processed for postcommit.
 
 QUEUE\_LOADS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of all garbage collection queue loads.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the number of all garbage collection queue loads.
 
 QUEUE\_LOADS\_NONEMPTY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of garbage collection queue loads which found elements.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the number of garbage collection queue loads which found elements.
 
 QUEUE\_EMPTY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of queue empty states after garbage collection finished.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the number of queue empty states after garbage collection finished.
 
 SAVEPOINTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of savepoints.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the number of savepoints.
 
 LAST\_HISTORY\_SIZE\_AT\_SVP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the lastest number of history files present at the savepoint.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the lastest number of history files present at the savepoint.
 
 MAX\_HISTORY\_SIZE\_AT\_SVP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum number of history files present at the savepoint.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the maximum number of history files present at the savepoint.
 
 MIN\_HISTORY\_SIZE\_AT\_SVP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum number of history files present at the savepoint.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the minimum number of history files present at the savepoint.
 
 SUM\_HISTORY\_SIZE\_AT\_SVP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of history files present at the savepoint.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the total number of history files present at the savepoint.
 
 AVG\_HISTORY\_SIZE\_AT\_SVP
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average number of history files present at the savepoint.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the average number of history files present at the savepoint.
 
 EMPTY\_HISTORY\_AT\_SVP\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of savepoints with an empty queue.
-
-
 
 </td>
 </tr>
@@ -681,5 +513,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [ALTER SYSTEM RESET MONITORING VIEW Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-reset-monitoring-view-statement-system-management-20d27aa.md "Resets statistics data for the specified monitoring view.")
 
-[Deterministic Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/dae6fae315c546ba9dc8665c0ca51cb9.html "") :arrow_upper_right:
+[Deterministic Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/dae6fae315c546ba9dc8665c0ca51cb9.html "") :arrow_upper_right:
 

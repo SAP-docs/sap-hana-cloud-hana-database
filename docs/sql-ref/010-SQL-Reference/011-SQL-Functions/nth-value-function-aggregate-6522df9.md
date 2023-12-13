@@ -101,7 +101,7 @@ The output of NTH\_VALUE function can be non-deterministic among tied values.
 
 ## Example
 
-The example below returns the second value in column ***COL1***: ***700***, when the table is ordered by ***COL2***.
+The example below returns the second value in column `COL1`: ***700***, when the table is ordered by `COL2`.
 
 ```
 CREATE ROW TABLE T (COL1 DOUBLE, COL2 DOUBLE);
@@ -147,5 +147,5 @@ SELECT NTH_VALUE(CAST(SHAPE AS NVARCHAR), 3 ORDER BY ID) FROM TAB;
 
 [Window Aggregate Functions](window-aggregate-functions-ee3c26a.md "Some aggregate functions can be used as window functions over a window specification.")
 
-[SAP HANA Cloud, SAP HANA Database Spatial Reference](https://help.sap.com/viewer/bc9e455fe75541b8a248b4c09b086cf5/2023_2_QRC/en-US/e1c934157bd14021a3b43b5822b2cbe9.html "This guide is the entry point for SAP HANA Spatial capabilities.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Spatial Reference](https://help.sap.com/viewer/bc9e455fe75541b8a248b4c09b086cf5/2023_4_QRC/en-US/e1c934157bd14021a3b43b5822b2cbe9.html "This guide is the entry point for SAP HANA Spatial capabilities.") :arrow_upper_right:
 

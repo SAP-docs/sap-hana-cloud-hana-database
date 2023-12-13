@@ -48,7 +48,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 
 1.  Start SAP Business Application Studio.
 
-2.  3.  Create the structured-privilege definition file.
+2.  Create the structured-privilege definition file.
 
     Browse to the folder in the database module in your application's project workspace, for example, Open the application project to which you want to add your SQL DDL structured privilege.<code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/</code> where you want to create the new SQL DDL structured-privilege definition file and perform the following steps:
 
@@ -58,13 +58,13 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 
     2.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     3.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -74,11 +74,11 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 
     5.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
     6.  Select the database artifact type, for example, a structured privilege.
 
-        In the command palette, type ***hdbst*** and choose *Structured Privilege \(hdbstructuredprivilege\)* in the list that appears.
+        In the command palette, type `hdbst` and choose *Structured Privilege \(hdbstructuredprivilege\)* in the list that appears.
 
     7.  Name the file *PurchaseOrder*.
 
@@ -90,7 +90,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
     8.  Save the changes and create the new database structured-privilege artifact; choose *Create*.
 
 
-4.  Define the structure of the SQL DDL structured privilege.
+3.  Define the structure of the SQL DDL structured privilege.
 
     Locate and double-click the structured-privilege definition file that you created in the previous step, for example, `PurchaseOrder.hdbstructuredprivilege`, and add the following SQL DDL code that defines the structured-privilege:
 
@@ -112,17 +112,17 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
     > ### Note:  
     > This example of a structured privilege is used in the SQL view `"PurchaseOrder.ItemView"`, which is created and defined in another task. For more information, see *Create a Database View with SQL Data Definition Language* in *Related Information* below.
 
-5.  Save all changes and rebuild \(or redeploy\) the database module.
+4.  Save all changes and rebuild \(or redeploy\) the database module.
 
     1.  In the *SAP HANA PROJECTS* explorer, locate the application project you want to deploy.
 
-    2.  Choose <span class="FPA-icons"></span> \(Deploy\).
+    2.  Choose ![](../020-HANA-Cloud-DB-Dev-Get-Started/images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
         > ### Note:  
         > A mismatch between the installed SAP HANA version and the version specified in the `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
 
 
-6.  Verify that the structured privilege is working and filtering access to the view data.
+5.  Verify that the structured privilege is working and filtering access to the view data.
 
     You can use the *Database Explorer* to display activated views in the run-time catalog and verify that the view contains the selected data.
 
@@ -130,7 +130,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
@@ -154,7 +154,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 **Related Information**  
 
 
-[Structured Privilege Syntax (.hdbstructuredprivilege in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/c3827df3a9dc4c45b5b4e2f7b1070b08.html "Transforms a design-time DDL-based structured privilege resource into a structured privilege object.") :arrow_upper_right:
+[Structured Privilege Syntax (.hdbstructuredprivilege in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/c3827df3a9dc4c45b5b4e2f7b1070b08.html "Transforms a design-time DDL-based structured privilege resource into a structured privilege object.") :arrow_upper_right:
 
 [Create a Database View with SQL Data Definition Language](create-a-database-view-with-sql-data-definition-language-4920a3a.md "Define a design-time database view using the SQL Data Definition Language (DDL) syntax.")
 

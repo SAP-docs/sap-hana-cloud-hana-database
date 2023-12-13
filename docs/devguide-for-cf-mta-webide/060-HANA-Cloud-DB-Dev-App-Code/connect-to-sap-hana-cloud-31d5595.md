@@ -36,9 +36,9 @@ SAP provides the package \(`@sap/hdbext`\) which Node.js applications can use to
 
     ```
       "dependencies": {
-        "express": "4.16.2",
-        "@sap/xsenv": "^1.2.9"
-        "@sap/hdbext": "^5.0.0"
+        "express": "4.18.2",
+        "@sap/xsenv": "^4.2.0"
+        "@sap/hdbext": "^8.0.2"
       },
     ```
 

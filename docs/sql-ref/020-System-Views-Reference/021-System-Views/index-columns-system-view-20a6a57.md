@@ -17,21 +17,15 @@ Provides information about index columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the table name.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object ID of the table.
 
 INDEX\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the index name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the index name.
 
 INDEX\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the index.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the object ID of the index.
 
 CONSTRAINT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of constraint on the index: UNIQUE, NOT\_NULL\_UNIQUE, PRIMARY\_KEY.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the type of constraint on the index: UNIQUE, NOT\_NULL\_UNIQUE, PRIMARY
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the indexed column.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the name of the indexed column.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ordinal position of the indexed column.
-
-
 
 </td>
 </tr>
@@ -224,25 +170,27 @@ Displays the ordinal position of the indexed column.
 
 ASCENDING\_ORDER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
 
 Displays whether the indexed column is in ascending order: TRUE/FALSE.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20a6a57e751910149887cbf423a0a16a__section_ur2_3rb_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

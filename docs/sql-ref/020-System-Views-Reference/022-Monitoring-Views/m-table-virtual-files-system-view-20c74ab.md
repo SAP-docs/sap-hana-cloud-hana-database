@@ -17,21 +17,15 @@ Provides information about all virtual files that belong to a table.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,14 +102,10 @@ Displays the table name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -160,21 +126,15 @@ Displays the table partition ID:
 
 CONTAINER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the container ID.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the container ID.
 
 NAMESPACE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the namespace address in the database storage system.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the namespace address in the database storage system.
 
 NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name in the database storage system.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the name in the database storage system.
 
 PHYSICAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the storage size used for the file in bytes.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the storage size used for the file in bytes.
 
 PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of storage pages used for the file.
-
-
 
 </td>
 </tr>

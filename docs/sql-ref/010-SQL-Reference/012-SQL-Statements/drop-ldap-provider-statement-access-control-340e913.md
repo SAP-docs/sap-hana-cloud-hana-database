@@ -65,7 +65,7 @@ You must have the LDAP ADMIN system privilege to drop an LDAP provider.
 
 ## Examples
 
-The following example drops an LDAP provider called ***my\_ldap\_provider***.
+The following example drops an LDAP provider called `my_ldap_provider`.
 
 ```
 DROP LDAP PROVIDER my_ldap_provider;
@@ -84,5 +84,5 @@ DROP LDAP PROVIDER my_ldap_provider;
 
 [LDAP\_PROVIDERS System View](../../020-System-Views-Reference/021-System-Views/ldap-providers-system-view-5b54fe2.md "Lists all LDAP providers.")
 
-[LDAP\_USERS System View](../../020-System-Views-Reference/021-System-Views/ldap-users-system-view-704e5b6.md "Shows information about the users using LDAP authorization.")
+[LDAP\_USERS System View](../../020-System-Views-Reference/021-System-Views/ldap-users-system-view-704e5b6.md "Provides information about the users using LDAP authorization.")
 

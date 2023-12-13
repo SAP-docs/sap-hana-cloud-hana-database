@@ -30,13 +30,13 @@ If the input value has a mantissa, then these digits are truncated during the co
 
 ## Examples
 
-The following example converts the value ***10*** to the TINYINT value ***10***:
+The following example converts the value `10` to the TINYINT value ***10***:
 
 ```
 SELECT TO_TINYINT ('10') "to tinyint" FROM DUMMY;
 ```
 
-The following example converts the value ***10.5*** to the TINYINT value ***10***, truncating the mantissa:
+The following example converts the value `10.5` to the TINYINT value ***10***, truncating the mantissa:
 
 ```
 SELECT TO_TINYINT(10.5) "to tinyint" FROM DUMMY;

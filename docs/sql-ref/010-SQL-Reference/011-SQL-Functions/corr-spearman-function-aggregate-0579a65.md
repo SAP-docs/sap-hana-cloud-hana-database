@@ -127,47 +127,35 @@ INSERT INTO correlationSpearmanTable VALUES ('B', '2014-10-05', 93.234, 13.132);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\_SPEARMAN\(VALUE1,VALUE2\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.542857
-
-
+    0.542857
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
@@ -187,207 +175,155 @@ INSERT INTO correlationSpearmanTable VALUES ('B', '2014-10-05', 93.234, 13.132);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\_SPEARMAN\(VALUE1,VALUE2\)OVER\(PARTITIONBYTS\_ID\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.542857
-
-
+    0.542857
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.542857
-
-
+    0.542857
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.542857
-
-
+    0.542857
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.542857
-
-
+    0.542857
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.542857
-
-
+    0.542857
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.542857
-
-
+    0.542857
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
@@ -407,207 +343,155 @@ INSERT INTO correlationSpearmanTable VALUES ('B', '2014-10-05', 93.234, 13.132);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\_SPEARMAN\(VALUE1,VALUE2\)OVER\(PARTITIONBYTS\_IDORDERBYDATE\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        ?
-
-
+    ?
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        \-0.5
-
-
+    \-0.5
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        \-0.5
-
-
+    \-0.5
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.5428571428571428
-
-
+    0.5428571428571428
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.5428571428571428
-
-
+    0.5428571428571428
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.5428571428571428
-
-
+    0.5428571428571428
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
@@ -628,207 +512,155 @@ INSERT INTO correlationSpearmanTable VALUES ('B', '2014-10-05', 93.234, 13.132);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\_SPEARMAN\(VALUE1,VALUE2\)OVER\(PARTITIONBYTS\_IDORDERBYDATEROWS\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        ?
-
-
+    ?
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        1
-
-
+    1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        \-0.5
-
-
+    \-0.5
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.4
-
-
+    0.4
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.7
-
-
+    0.7
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.5428571428571428
-
-
+    0.5428571428571428
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        ?
-
-
+    ?
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
@@ -848,207 +680,155 @@ INSERT INTO correlationSpearmanTable VALUES ('B', '2014-10-05', 93.234, 13.132);
     <th valign="top">
 
     TS\_ID
-
-
     
     </th>
     <th valign="top">
 
     CORR\_SPEARMAN\(VALUE1,VALUE2\)OVER\(PARTITIONBYTS\_IDORDERBYDATEGROUPS\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        ?
-
-
+    ?
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        \-0.5
-
-
+    \-0.5
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        \-0.5
-
-
+    \-0.5
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.5428571428571428
-
-
+    0.5428571428571428
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.5428571428571428
-
-
+    0.5428571428571428
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        A
-
-
+    A
     
     </td>
     <td valign="top">
     
-        0.5428571428571428
-
-
+    0.5428571428571428
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        B
-
-
+    B
     
     </td>
     <td valign="top">
     
-        \-1
-
-
+    \-1
     
     </td>
     </tr>

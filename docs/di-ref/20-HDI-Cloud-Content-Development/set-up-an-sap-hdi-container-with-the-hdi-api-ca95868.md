@@ -157,7 +157,7 @@ For backward compatibility with legacy applications, the deployed objects can al
 **Related Information**  
 
 
-[Set up an SAP HDI Container for a Multitarget Application](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2023_2_QRC/en-US/1ca64155ec5a465294e0d8b10383cea8.html "Set up the environment required for the deployment to the SAP HANA Deployment Infrastructure (HDI) of a multitarget application&apos;s database artifacts.") :arrow_upper_right:
+[Set up an SAP HDI Container for a Multitarget Application](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/1ca64155ec5a465294e0d8b10383cea8.html "Set up the environment required for the deployment to the SAP HANA Deployment Infrastructure (HDI) of a multitarget application's database artifacts.") :arrow_upper_right:
 
 [Maintaining SAP HDI Container Groups](../10-HDI-Cloud-Administration/14-HDI-Cloud-Admin-Maintain-Container-Groups/maintaining-sap-hdi-container-groups-4e9d597.md "The administrator of an SAP HDI container group is responsible for managing the SAP HDI containers that are organized into one or more HDI container groups.")
 

@@ -79,7 +79,7 @@ Similarly, the `sap-java-hdi` client library enables access to the SAP HANA Depl
 **Related Information**  
 
 
-[Standard SAP Node.js Packages (Developer Guide)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_2_QRC/en-US/54513272339246049bf438a03a8095e4.html "A collection of Node.js packages developed by SAP is provided to help you develop Node.js applications for Cloud Foundry and SAP HANA Cloud.") :arrow_upper_right:
+[Standard SAP Node.js Packages (Developer Guide)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/54513272339246049bf438a03a8095e4.html "A collection of Node.js packages developed by SAP is provided to help you develop Node.js applications for Cloud Foundry and SAP HANA Cloud.") :arrow_upper_right:
 
-[Standard SAP Java Packages (Developer Guide)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_2_QRC/en-US/6511bc054b0e48369a625a8019fefd53.html "A collection of Java client libraries developed by SAP is provided to help you develop Java applications for Cloud Foundry.") :arrow_upper_right:
+[Standard SAP Java Packages (Developer Guide)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/6511bc054b0e48369a625a8019fefd53.html "A collection of Java client libraries developed by SAP is provided to help you develop Java applications for Cloud Foundry.") :arrow_upper_right:
 

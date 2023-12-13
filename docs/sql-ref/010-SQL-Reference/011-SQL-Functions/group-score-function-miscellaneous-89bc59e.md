@@ -391,14 +391,10 @@ GROUP BY name;
 
 NAME
 
-
-
 </th>
 <th valign="top">
 
 group\_score\('Berlin Seattle Tokyo' IN \(name, location\)
-
-
 
 </th>
 </tr>
@@ -407,14 +403,10 @@ group\_score\('Berlin Seattle Tokyo' IN \(name, location\)
 
 Company One
 
-
-
 </td>
 <td valign="top">
 
 1.0
-
-
 
 </td>
 </tr>
@@ -423,14 +415,10 @@ Company One
 
 Company Two
 
-
-
 </td>
 <td valign="top">
 
 0.42264974
-
-
 
 </td>
 </tr>
@@ -439,14 +427,10 @@ Company Two
 
 Company Three
 
-
-
 </td>
 <td valign="top">
 
 0.0
-
-
 
 </td>
 </tr>

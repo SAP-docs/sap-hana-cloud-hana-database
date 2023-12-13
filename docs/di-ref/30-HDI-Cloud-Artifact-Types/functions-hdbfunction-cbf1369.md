@@ -6,7 +6,7 @@ Transform a design-time function resource into a function database object.
 
 
 
-The Function plug-in transforms a design-time function resource described in the `.hdbfunction` artifact into a function database object. The file format required for the `.hdbfunction` artifact uses a DDL-style syntax that is equivalent to the syntax of the corresponding SQL command `CREATE FUNCTION SQL`, without the leading “`CREATE`”.
+The Function plug-in transforms a design-time function resource described in the `.hdbfunction` artifact into a function database object. The file format required for the `.hdbfunction` artifact uses a DDL-style syntax that is equivalent to the syntax of the corresponding SQL command `CREATE FUNCTION`, without the leading “`CREATE`”.
 
 > ### Note:  
 > The Function plug-in handles scalar and table functions, too. Virtual functions, defined in `.hdbvirtualfunction` artifacts, are handled by the Virtual Function plug-in.

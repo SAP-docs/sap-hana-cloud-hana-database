@@ -2,7 +2,7 @@
 
 # Session Variables
 
- 
+
 
 
 
@@ -15,35 +15,25 @@ The following table lists predefined session variables and whether they can be s
 
 Predefined Variable \(M\_SESSION\_CONTEXT.KEY\)
 
-
-
 </th>
 <th valign="top">
 
 Value Constraint
-
-
 
 </th>
 <th valign="top">
 
 Set by
 
-
-
 </th>
 <th valign="top">
 
 In M\_SESSION\_CONTEXT
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -52,28 +42,20 @@ Description
 
 APPLICATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -82,8 +64,6 @@ Specifies the application name.
 
 **Server usage**: Traces, statistical data and trace filters
 
-
-
 </td>
 </tr>
 <tr>
@@ -91,28 +71,20 @@ Specifies the application name.
 
 APPLICATIONVERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -121,8 +93,6 @@ Specifies the application version information. Applications can use their "own" 
 
 **Server usage**: Traces, statistical data and trace filters
 
-
-
 </td>
 </tr>
 <tr>
@@ -130,28 +100,20 @@ Specifies the application version information. Applications can use their "own" 
 
 APPLICATIONUSER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -160,8 +122,6 @@ Specifies the application-defined user name.
 
 **Server usage**: Traces, statistical data and trace filters
 
-
-
 </td>
 </tr>
 <tr>
@@ -169,28 +129,20 @@ Specifies the application-defined user name.
 
 APPLICATIONACTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -199,8 +151,6 @@ Specifies that with APPLICATIONACTION the application can define which logical a
 
 **Server usage**: Traces, statistical data and trace filters
 
-
-
 </td>
 </tr>
 <tr>
@@ -208,28 +158,20 @@ Specifies that with APPLICATIONACTION the application can define which logical a
 
 APPLICATIONCOMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
 
 Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -238,8 +180,6 @@ Specifies the name of the application component.
 
 **Server usage**: Traces, statistical data and trace filters
 
-
-
 </td>
 </tr>
 <tr>
@@ -247,28 +187,20 @@ Specifies the name of the application component.
 
 APPLICATIONCOMPONENTTYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
 
 Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -277,8 +209,6 @@ Specifies the type of application component. For example, UPD.
 
 **Server usage**: Traces, statistical data and trace filters
 
-
-
 </td>
 </tr>
 <tr>
@@ -286,28 +216,20 @@ Specifies the type of application component. For example, UPD.
 
 APPLICATIONSOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -322,8 +244,6 @@ The usage is up to the application and could be something like one of the follow
 
 **Server usage**: Traces, statistical data and trace filters
 
-
-
 </td>
 </tr>
 <tr>
@@ -331,28 +251,20 @@ The usage is up to the application and could be something like one of the follow
 
 APPLICATIONTENANT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -361,8 +273,6 @@ Specifies a mapping of a connection to a workload class. Configure this session 
 
 **Server usage**: Traces, statistical data and trace filters
 
-
-
 </td>
 </tr>
 <tr>
@@ -370,28 +280,20 @@ Specifies a mapping of a connection to a workload class. Configure this session 
 
 CASE\_SENSITIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Only if set to FALSE
-
-
 
 </td>
 <td valign="top">
@@ -413,8 +315,6 @@ Also, CASE\_SENSITIVE is only supported for NVARCHAR values and only for these o
 
 **Server usage**: Defines the case-sensitivity during the search.
 
-
-
 </td>
 </tr>
 <tr>
@@ -422,28 +322,20 @@ Also, CASE\_SENSITIVE is only supported for NVARCHAR values and only for these o
 
 DATE\_FORMAT
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -452,8 +344,6 @@ Specifies the default DAYDATE format to apply for the session.
 
 **Server usage**: No
 
-
-
 </td>
 </tr>
 <tr>
@@ -461,28 +351,20 @@ Specifies the default DAYDATE format to apply for the session.
 
 DEBUG\_TOKEN
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -493,8 +375,6 @@ If you specify that the debugger is to only attach to connections where a certai
 
 **Server usage**: M\_DEBUG\_SESSIONS.ATTACH\_FILTER\_DEBUG\_TOKEN
 
-
-
 </td>
 </tr>
 <tr>
@@ -502,28 +382,20 @@ If you specify that the debugger is to only attach to connections where a certai
 
 ENABLE\_ABSTRACT\_SQL\_PLAN\_ENTRY
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -532,8 +404,6 @@ Specifies the ID of the SQL plan that is enabled in the current session.
 
 When the query for this plan is executed, a comment is appended to the statement so that it can be identified in the plan cache.
 
-
-
 </td>
 </tr>
 <tr>
@@ -541,28 +411,20 @@ When the query for this plan is executed, a comment is appended to the statement
 
 PROTOCOL\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Server
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -571,16 +433,12 @@ Specifies the protocol version of the client interface libraries, formatted as: 
 
 **Server usage**: Internal
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 SECONDDATE\_FORMAT
-
-
 
 </td>
 <td valign="top">
@@ -592,14 +450,10 @@ SECONDDATE\_FORMAT
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -608,8 +462,6 @@ Specifies the default SECONDDATE format to apply for the session.
 
 **Server usage**: No
 
-
-
 </td>
 </tr>
 <tr>
@@ -617,35 +469,25 @@ Specifies the default SECONDDATE format to apply for the session.
 
 SPATIAL\_OUTPUT\_REPRESENTATION
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Specifies the output format of ST\_Geometry and ST\_Point. Valid options are WKB, the default, and EWKB.
-
-
 
 </td>
 </tr>
@@ -654,28 +496,20 @@ Specifies the output format of ST\_Geometry and ST\_Point. Valid options are WKB
 
 TEMPORAL\_SYSTEM\_TIME\_AS\_OF
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -684,8 +518,6 @@ For use with system-versioned tables. Setting this session variable automaticall
 
 **Server usage**: No
 
-
-
 </td>
 </tr>
 <tr>
@@ -693,28 +525,20 @@ For use with system-versioned tables. Setting this session variable automaticall
 
 TEMPORAL\_APPLICATION\_TIME\_AS\_OF
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -723,8 +547,6 @@ For use with application-time period tables. Setting this session variable autom
 
 **Server usage**: No
 
-
-
 </td>
 </tr>
 <tr>
@@ -732,28 +554,20 @@ For use with application-time period tables. Setting this session variable autom
 
 TIME\_FORMAT
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -762,8 +576,6 @@ Specifies the default TIME format to apply for the session.
 
 **Server usage**: No
 
-
-
 </td>
 </tr>
 <tr>
@@ -771,28 +583,20 @@ Specifies the default TIME format to apply for the session.
 
 TIMESTAMP\_FORMAT
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -801,8 +605,6 @@ Specifies the default TIMESTAMP format to apply for the session.
 
 **Server usage**: No
 
-
-
 </td>
 </tr>
 <tr>
@@ -810,28 +612,20 @@ Specifies the default TIMESTAMP format to apply for the session.
 
 TOTAL\_ROWCOUNT
 
-
-
 </td>
 <td valign="top">
 
 Integer
-
-
 
 </td>
 <td valign="top">
 
 Server
 
-
-
 </td>
 <td valign="top">
 
 No, only accessible from: `SELECT session_context('TOTAL_ROWCOUNT') FROM DUMMY`.
-
-
 
 </td>
 <td valign="top">
@@ -842,8 +636,6 @@ This feature is only supported for column tables and column views. It can return
 
 **Server usage**: SELECT ... LIMIT x TOTAL ROWCOUNT
 
-
-
 </td>
 </tr>
 <tr>
@@ -851,28 +643,20 @@ This feature is only supported for column tables and column views. It can return
 
 TRACEPROFILE
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 User/Client
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -882,8 +666,6 @@ Specifies the name of the trace profile. This is used for manual activation of t
 The value can contain one traceprofile name or a comma separated list of traceprofile names.
 
 **Server usage**: Trace filter
-
-
 
 </td>
 </tr>

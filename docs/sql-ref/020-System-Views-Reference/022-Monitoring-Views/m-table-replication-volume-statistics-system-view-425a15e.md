@@ -13,21 +13,15 @@ Provides detailed information on table replication volume statistics.
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence Volume ID.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the persistence Volume ID.
 
 SOURCE\_REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name of source system.  If SOURCE\_REMOTE\_SOURCE\_NAME and REPLICA\_REMOTE\_SOURCE\_NAME are NULL, it means non-remote table replication \(RTR\).
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the remote source name of source system.  If SOURCE\_REMOTE\_SOURCE\
 
 SOURCE\_REMOTE\_SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source schema name of source system.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the remote source schema name of source system.
 
 REPLICA\_REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name of replica system.
-
-
 
 </td>
 </tr>
@@ -174,21 +132,15 @@ Displays the remote source name of replica system.
 
 REPLICA\_REMOTE\_SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source schema name of replica system.
-
-
 
 </td>
 </tr>
@@ -197,21 +149,15 @@ Displays the remote source schema name of replica system.
 
 LAST\_SOURCE\_COMMIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last commit time of source system. The value in this column cannot be reset using the ALTER SYSTEM RESET MONITORING View statement.
-
-
 
 </td>
 </tr>
@@ -220,21 +166,15 @@ Displays the last commit time of source system. The value in this column cannot 
 
 TRANSACTION\_LOG\_QUEUE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current transaction log queue size. This is the log count in the queue. The value in this column cannot be reset using the ALTER SYSTEM RESET MONITORING View statement.
-
-
 
 </td>
 </tr>
@@ -243,21 +183,15 @@ Displays the current transaction log queue size. This is the log count in the qu
 
 SHIPPED\_TRANSACTION\_LOG\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shipped transaction log count.
-
-
 
 </td>
 </tr>
@@ -266,21 +200,15 @@ Displays the shipped transaction log count.
 
 SHIPPED\_TRANSACTION\_LOG\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shipped transaction log size in bytes.
-
-
 
 </td>
 </tr>
@@ -289,21 +217,15 @@ Displays the shipped transaction log size in bytes.
 
 REPLAYED\_TRANSACTION\_LOG\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the replayed transaction log size in bytes.
-
-
 
 </td>
 </tr>
@@ -312,21 +234,15 @@ Displays the replayed transaction log size in bytes.
 
 REPLAYED\_PRECOMMIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the replayed precommit count.
-
-
 
 </td>
 </tr>
@@ -335,21 +251,15 @@ Displays the replayed precommit count.
 
 REPLAYED\_COMMIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the replayed commit count. The count includes the replayed DDL/DML commit count.
-
-
 
 </td>
 </tr>
@@ -358,21 +268,15 @@ Displays the replayed commit count. The count includes the replayed DDL/DML comm
 
 REPLAYED\_ROLLBACK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the replayed rollback count.
-
-
 
 </td>
 </tr>
@@ -381,21 +285,15 @@ Displays the replayed rollback count.
 
 REPLAYED\_DDL\_COMMIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the replayed DDL commit count. This is applicable to remote table replication only.
-
-
 
 </td>
 </tr>
@@ -404,21 +302,15 @@ Displays the replayed DDL commit count. This is applicable to remote table repli
 
 TRANSACTION\_REPLAY\_ERROR\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction replay error count.
-
-
 
 </td>
 </tr>
@@ -427,21 +319,15 @@ Displays the transaction replay error count.
 
 AVG\_PRECOMMIT\_PROPAGATION\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average precommit propagation latency time, in microseconds.
-
-
 
 </td>
 </tr>
@@ -450,21 +336,15 @@ Displays the average precommit propagation latency time, in microseconds.
 
 AVG\_PROPAGATION\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average commit propagation latency, in microseconds. Propagation latency is the sum of network latency, dispatch latency, and processing latency.
-
-
 
 </td>
 </tr>
@@ -473,21 +353,15 @@ Displays the average commit propagation latency, in microseconds. Propagation la
 
 AVG\_PROCESSING\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average processing latency, in microseconds, of the commit log.
-
-
 
 </td>
 </tr>
@@ -496,21 +370,15 @@ Displays the average processing latency, in microseconds, of the commit log.
 
 TOTAL\_DML\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated DML wait time, in microseconds.
-
-
 
 </td>
 </tr>

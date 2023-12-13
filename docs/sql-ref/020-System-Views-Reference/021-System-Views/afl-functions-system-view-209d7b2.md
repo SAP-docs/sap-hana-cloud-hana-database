@@ -17,21 +17,15 @@ Provides information about available AFL functions.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 FUNCTION\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the AFL function.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the object ID of the AFL function.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the AFL function.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the schema name of the AFL function.
 
 AREA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the AFL area that the AFL function belongs to.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the name of the AFL area that the AFL function belongs to.
 
 PACKAGE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the AFL package that the AFL function belongs to.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the name of the AFL package that the AFL function belongs to.
 
 FUNCTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the AFL function.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the AFL function.
 
 CREATE\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the AFL function was created.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the timestamp when the AFL function was created.
 
 INPUT\_PARAMETER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of the input parameters of the AFL function.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the number of the input parameters of the AFL function.
 
 RETURN\_VALUE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the umber of the out parameters of the AFL function.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the umber of the out parameters of the AFL function.
 
 FUNCTION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of the AFL function.
-
-
 
 </td>
 </tr>
@@ -247,25 +187,27 @@ Displays the type of the AFL function.
 
 TECHNICAL\_CATEGORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(11\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the technical category of the AFL function.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio209d7b297519101480ddcb980ff2a5d8__section_ykt_hgc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

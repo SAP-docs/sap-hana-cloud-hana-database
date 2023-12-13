@@ -253,28 +253,20 @@ An aggregated workload class must have all properties specified \(TOTAL STATEMEN
 
 global.ini
 
-
-
 </th>
 <th valign="top">
 
 User parameters
-
-
 
 </th>
 <th valign="top">
 
 Workload class
 
-
-
 </th>
 <th valign="top">
 
 Resulting effective values \(statement execution\)
-
-
 
 </th>
 </tr>
@@ -282,59 +274,43 @@ Resulting effective values \(statement execution\)
 <td valign="top">
 
 memory 50 GB
-
-
 
 </td>
 <td valign="top">
 
 priority 5, thread 5
 
-
-
 </td>
 <td valign="top">
 
 if not matched class found
-
-
 
 </td>
 <td valign="top">
 
 priority 5, thread limit 5, memory limit 50GB
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 memory 50 GB
-
-
 
 </td>
 <td valign="top">
 
 priority 5, thread 5, memory 5
 
-
-
 </td>
 <td valign="top">
 
 priority 7, thread limit 10, memory limit 30GB
 
-
-
 </td>
 <td valign="top">
 
 priority 7, thread limit 10, memory limit 30GB
-
-
 
 </td>
 </tr>
@@ -343,28 +319,42 @@ priority 7, thread limit 10, memory limit 30GB
 
 memory 50 GB
 
-
-
 </td>
 <td valign="top">
 
 priority 5, thread 5, memory 30GB
-
-
 
 </td>
 <td valign="top">
 
 priority 7, thread limit 10, memory limit undefined
 
-
-
 </td>
 <td valign="top">
 
 priority 7, thread limit 10, memory limit 30GB
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+memory 50 GB
+
+</td>
+<td valign="top">
+
+priority 5, thread 5, memory 30GB
+
+</td>
+<td valign="top">
+
+priority 7, total thread limit 10, total memory limit 30GB
+
+</td>
+<td valign="top">
+
+priority 7, total thread limit 10, total memory limit 30GB
 
 </td>
 </tr>
@@ -373,58 +363,20 @@ priority 7, thread limit 10, memory limit 30GB
 
 memory 50 GB
 
-
-
 </td>
 <td valign="top">
 
 priority 5, thread 5, memory 30GB
-
-
-
-</td>
-<td valign="top">
-
-priority 7, total thread limit 10, total memory limit 30GB
-
-
-
-</td>
-<td valign="top">
-
-priority 7, total thread limit 10, total memory limit 30GB
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-memory 50 GB
-
-
-
-</td>
-<td valign="top">
-
-priority 5, thread 5, memory 30GB
-
-
 
 </td>
 <td valign="top">
 
 priority 7, total thread limit undefined, total memory limit 50GB \(SQL error returned at CREATE/ALTER WORKLOAD CLASS\)
 
-
-
 </td>
 <td valign="top">
 
 priority 5, thread limit 5, memory limit 30GB
-
-
 
 </td>
 </tr>
@@ -433,28 +385,20 @@ priority 5, thread limit 5, memory limit 30GB
 
 memory 50 GB
 
-
-
 </td>
 <td valign="top">
 
 priority 5, thread 5, memory 30GB
-
-
 
 </td>
 <td valign="top">
 
 priority 7, total thread limit 10, total memory limit undefined \(SQL error returned at CREATE/ALTER WORKLOAD CLASS\)
 
-
-
 </td>
 <td valign="top">
 
 priority 5, thread limit 5, memory limit 30GB
-
-
 
 </td>
 </tr>
@@ -463,28 +407,20 @@ priority 5, thread limit 5, memory limit 30GB
 
 statement timeout 2 seconds
 
-
-
 </td>
 <td valign="top">
 
 N/A
-
-
 
 </td>
 <td valign="top">
 
 statement timeout 5 seconds
 
-
-
 </td>
 <td valign="top">
 
 statement time out is 5 unless the value was set more restrictively by the client. For example, if the client-side setting is 3, then 3 becomes the effective value.
-
-
 
 </td>
 </tr>

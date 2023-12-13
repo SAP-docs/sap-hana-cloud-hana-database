@@ -17,21 +17,15 @@ Provides an overview of connections used per debug session.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 DEBUG\_SESSION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the landscape-wide unique identifier for debug session.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the landscape-wide unique identifier for debug session.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection that is used for communication.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the connection that is used for communication.
 
 CONNECTION\_USAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether this connection is used for debugger communication or debugging.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Indicates whether this connection is used for debugger communication or debuggin
 
 OPERATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the operation that is currently running within this connection.
-
-
 
 </td>
 </tr>
@@ -138,5 +108,5 @@ Displays the operation that is currently running within this connection.
 
 [M\_CE\_DEBUG\_JSONS System View](m-ce-debug-jsons-system-view-20aa4be.md "Provides all available JSONS (original, instantiated, or optimized) of a scenario for a concrete query.")
 
-[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
+[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
 

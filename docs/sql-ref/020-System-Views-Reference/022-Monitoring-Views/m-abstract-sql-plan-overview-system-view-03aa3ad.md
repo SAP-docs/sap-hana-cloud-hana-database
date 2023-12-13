@@ -15,21 +15,15 @@ Provides the status of each Plan Stability Manager on every index server in SAP 
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,14 +66,10 @@ Displays the internal port.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -114,21 +92,15 @@ Displays the Plan Stability Manager state:
 
 TOTAL\_PLAN\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of enabled and disabled loaded plans.
-
-
 
 </td>
 </tr>
@@ -137,21 +109,15 @@ Displays the total number of enabled and disabled loaded plans.
 
 ENABLED\_PLAN\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of enabled plans.
-
-
 
 </td>
 </tr>
@@ -160,21 +126,15 @@ Displays the total number of enabled plans.
 
 DISABLED\_PLAN\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of disabled plans.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the total number of disabled plans.
 
 ALLOCATED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory size, in bytes, being used by plan stability.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the allocated memory size, in bytes, being used by plan stability.
 
 LAST\_APPLY\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last APPLY start time.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the last APPLY start time.
 
 LAST\_APPLY\_STOP\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last APPLY stop time.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the last APPLY stop time.
 
 LAST\_CAPTURE\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last CAPTURE start time.
-
-
 
 </td>
 </tr>
@@ -275,21 +211,15 @@ Displays the last CAPTURE start time.
 
 LAST\_CAPTURE\_STOP\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last CAPTURE stop time.
-
-
 
 </td>
 </tr>
@@ -298,21 +228,15 @@ Displays the last CAPTURE stop time.
 
 FILTERS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the application filters of the abstract SQL plan.
-
-
 
 </td>
 </tr>
@@ -321,21 +245,15 @@ Displays the application filters of the abstract SQL plan.
 
 TOTAL\_RELATED\_OBJECT\_DEFINITION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of related object definitions.
-
-
 
 </td>
 </tr>
@@ -344,21 +262,15 @@ Displays the total number of related object definitions.
 
 INVALID\_RELATED\_OBJECT\_DEFINITION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of invalid related object definitions.
-
-
 
 </td>
 </tr>
@@ -367,21 +279,15 @@ Displays the total number of invalid related object definitions.
 
 RELATED\_OBJECT\_TABLE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory size of the table, in bytes, being used for related object definitions.
-
-
 
 </td>
 </tr>
@@ -390,21 +296,15 @@ Displays the allocated memory size of the table, in bytes, being used for relate
 
 PLAN\_TABLE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory size of the table, in bytes, being used for plans.
-
-
 
 </td>
 </tr>

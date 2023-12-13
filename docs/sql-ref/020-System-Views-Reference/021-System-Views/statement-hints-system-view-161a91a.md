@@ -17,21 +17,15 @@ Provides information about statement hints, including when they were last enable
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement string.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the statement string.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MD5 hash value for the STATEMENT\_STRING column.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the MD5 hash value for the STATEMENT\_STRING column.
 
 HINT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the hint string.
-
-
 
 </td>
 </tr>
@@ -109,159 +85,15 @@ Displays the hint string.
 
 SYSTEM\_HINT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system hint string that conflicts with the existing user-defined hint string \(if a statement has both a user-defined hint and a system hint associated with it, then only the user-defined hint is effective\).
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-IS\_ENABLED
-
-
-
-</td>
-<td valign="top">
-
-NVARCHAR\(5\)
-
-
-
-</td>
-<td valign="top">
-
-Displays whether the hint is enabled. Possible values: TRUE/FALSE.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-LAST\_ENABLE\_TIME
-
-
-
-</td>
-<td valign="top">
-
-TIMESTAMP
-
-
-
-</td>
-<td valign="top">
-
-Displays the timestamp for when the hint was last enabled.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-LAST\_ENABLE\_USER
-
-
-
-</td>
-<td valign="top">
-
-NVARCHAR\(256\)
-
-
-
-</td>
-<td valign="top">
-
-Displays the user who enabled the hint.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-LAST\_DISABLE\_TIME
-
-
-
-</td>
-<td valign="top">
-
-TIMESTAMP
-
-
-
-</td>
-<td valign="top">
-
-Displays the timestamp for when the hint was last disabled.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-LAST\_DISABLE\_USER
-
-
-
-</td>
-<td valign="top">
-
-NVARCHAR\(256\)
-
-
-
-</td>
-<td valign="top">
-
-Displays the user who disabled the hint.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-IS\_OVERRIDE
-
-
-
-</td>
-<td valign="top">
-
-NVARFCHAR\(5\)
-
-
-
-</td>
-<td valign="top">
-
-Specifies TRUE if an override is specified for the target query \(e.g., ALTER SYSTEM ADD STATEMENT HINT.. OVERRIDE...\).
-
-
 
 </td>
 </tr>
@@ -270,25 +102,180 @@ Specifies TRUE if an override is specified for the target query \(e.g., ALTER SY
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
 
 Specifies comments configured for a statement hint \(e.g., ALTER SYSTEM ADD STATEMENT HINT.. COMMENT *<comment\>*..\)
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+IS\_ENABLED
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+</td>
+<td valign="top">
+
+Displays whether the hint is enabled. Possible values: TRUE/FALSE.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_OVERRIDE
+
+</td>
+<td valign="top">
+
+NVARFCHAR\(5\)
+
+</td>
+<td valign="top">
+
+Specifies TRUE if an override is specified for the target query \(e.g., ALTER SYSTEM ADD STATEMENT HINT.. OVERRIDE...\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LAST\_ENABLE\_TIME
+
+</td>
+<td valign="top">
+
+TIMESTAMP
+
+</td>
+<td valign="top">
+
+Displays the timestamp for when the hint was last enabled.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LAST\_ENABLE\_USER
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the user who enabled the hint.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LAST\_DISABLE\_TIME
+
+</td>
+<td valign="top">
+
+TIMESTAMP
+
+</td>
+<td valign="top">
+
+Displays the timestamp for when the hint was last disabled.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LAST\_DISABLE\_USER
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the user who disabled the hint.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OBJECT\_TYPE
+
+</td>
+<td valign="top">
+
+VARCHAR\(9\)
+
+</td>
+<td valign="top">
+
+Displays the type of the target object the hint is being applied to.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OBJECT\_SCHEMA
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the schema name of the target object the hint is being applied to.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+OBJECT\_NAME
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the name of the target object the hint is being applied to.
 
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio161a91a544a442a4b66da674a80d98e0__section_z4m_zvz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

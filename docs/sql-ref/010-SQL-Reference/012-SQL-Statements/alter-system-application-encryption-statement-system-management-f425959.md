@@ -124,7 +124,7 @@ ALTER SYSTEM APPLICATION ENCRYPTION CREATE NEW KEY;
 **Related Information**  
 
 
-[Internal Application Encryption Service](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/7a1a582f27404567828a737fc2c2b190.html "The internal encryption service is used internally by applications requiring data encryption.") :arrow_upper_right:
+[Internal Application Encryption Service](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/7a1a582f27404567828a737fc2c2b190.html "The internal encryption service is used internally by applications requiring data encryption.") :arrow_upper_right:
 
 [ENCRYPTION\_ROOT\_KEYS System View](../../020-System-Views-Reference/021-System-Views/encryption-root-keys-system-view-40c7f48.md "Provides information about root keys.")
 

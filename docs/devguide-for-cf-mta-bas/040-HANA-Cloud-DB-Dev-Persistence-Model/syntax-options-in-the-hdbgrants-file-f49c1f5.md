@@ -404,9 +404,9 @@ Defines the roles and permissions to be assigned to the user of the multitarget 
 
 [Database Synonyms in SAP HANA Cloud](database-synonyms-in-sap-hana-cloud-556452c.md "You can use synonyms in SAP HANA Cloud to enable access to objects that are not in the same schema or application container.")
 
-[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
+[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
 
 [Permissions for Objects in HDI Containers](permissions-for-objects-in-hdi-containers-79e8664.md "The owner of a container object needs additional privileges to the ones assigned by default.")
 
-[SAP HDI Security in the Context of Cloud Foundry (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/4457f759107d4985bd80532c9e023227.html "An overview of the security considerations to bear in mind when enabling SAP HDI for use in the context of Cloud Foundry.") :arrow_upper_right:
+[SAP HDI Security in the Context of Cloud Foundry (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/4457f759107d4985bd80532c9e023227.html "An overview of the security considerations to bear in mind when enabling SAP HDI for use in the context of Cloud Foundry.") :arrow_upper_right:
 

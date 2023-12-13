@@ -15,21 +15,15 @@ Provides information about broken backup history entries.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 BACKUP\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of the broken backup history entry.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the unique ID of the broken backup history entry.
 
 SYS\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time at which the broken backup history was detected. The time is provided in the system's local time.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the time at which the broken backup history was detected. The time is p
 
 UTC\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time at which the broken backup history was detected. The time is given in UTC time.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the time at which the broken backup history was detected. The time is g
 
 SOURCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the persistence volume ID.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the host name.
 
 SERVICE\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of database service.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the type of database service.
 
 REDO\_LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the redo log position of the broken backup history entry.
-
-
 
 </td>
 </tr>
@@ -199,14 +151,10 @@ Displays the redo log position of the broken backup history entry.
 
 REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
@@ -229,21 +177,15 @@ Displays the reason for the broken backup history:
 
 MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays any additional information.
-
-
 
 </td>
 </tr>

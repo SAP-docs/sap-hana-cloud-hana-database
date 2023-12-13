@@ -18,7 +18,7 @@ To download the SAP Python Client libraries, perform the following steps:
 
     The `XS_PYTHON` ZIP archive is available for download on SAP Service Marketplace at the following location for those people with the required S-User ID:
 
-     *Service Marketplace* \> *Products* \> *Software download* \> *SUPPORT PACKAGES & PATCHES* \> *Search* \> *XS PYTHON 1*
+    *Service Marketplace* \> *Products* \> *Software download* \> *SUPPORT PACKAGES & PATCHES* \> *Search* \> *XS PYTHON 1*
 
 2.  Extract the contents of the `XS_PYTHON` archive into a folder in your local file system, for example `sap_dependencies`.
 

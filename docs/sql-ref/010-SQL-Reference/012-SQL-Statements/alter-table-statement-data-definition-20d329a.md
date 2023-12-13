@@ -1296,14 +1296,10 @@ Specifies the behavior to perform when data in the column is updated.
 
 Action Name
 
-
-
 </th>
 <th valign="top">
 
 Update Action
-
-
 
 </th>
 </tr>
@@ -1312,14 +1308,10 @@ Update Action
 
 RESTRICT
 
-
-
 </td>
 <td valign="top">
 
 Any updates to a referenced table are prohibited if there are any matched records in the referencing table. This is the default action.
-
-
 
 </td>
 </tr>
@@ -1328,14 +1320,10 @@ Any updates to a referenced table are prohibited if there are any matched record
 
 CASCADE
 
-
-
 </td>
 <td valign="top">
 
 If a record is updated in the referenced table, then the corresponding records in the referencing table are also updated with the same values.
-
-
 
 </td>
 </tr>
@@ -1344,14 +1332,10 @@ If a record is updated in the referenced table, then the corresponding records i
 
 SET NULL
 
-
-
 </td>
 <td valign="top">
 
 If a record is updated in the referenced table, then the corresponding records in the referencing table are also updated with null values.
-
-
 
 </td>
 </tr>
@@ -1360,14 +1344,10 @@ If a record is updated in the referenced table, then the corresponding records i
 
 SET DEFAULT
 
-
-
 </td>
 <td valign="top">
 
 If a record is updated in the referenced table, then the corresponding records in the referencing table are also updated with their default values.
-
-
 
 </td>
 </tr>
@@ -1397,14 +1377,10 @@ The following DELETE referential actions are possible:
 
 Action Name
 
-
-
 </th>
 <th valign="top">
 
 Delete Action
-
-
 
 </th>
 </tr>
@@ -1413,14 +1389,10 @@ Delete Action
 
 RESTRICT
 
-
-
 </td>
 <td valign="top">
 
 Any deletions to a referenced table are prohibited if there are any matched records in the referencing table. This is the default action.
-
-
 
 </td>
 </tr>
@@ -1429,14 +1401,10 @@ Any deletions to a referenced table are prohibited if there are any matched reco
 
 CASCADE
 
-
-
 </td>
 <td valign="top">
 
 If a record in the referenced table is deleted, then the corresponding records in the referencing table are also deleted.
-
-
 
 </td>
 </tr>
@@ -1445,14 +1413,10 @@ If a record in the referenced table is deleted, then the corresponding records i
 
 SET NULL
 
-
-
 </td>
 <td valign="top">
 
 If a record in the referenced table is deleted, then the corresponding records in the referencing table are set to null.
-
-
 
 </td>
 </tr>
@@ -1461,14 +1425,10 @@ If a record in the referenced table is deleted, then the corresponding records i
 
 SET DEFAULT
 
-
-
 </td>
 <td valign="top">
 
 If a record in the referenced table is deleted, then the corresponding records in the referencing table are set to their default values.
-
-
 
 </td>
 </tr>
@@ -2996,14 +2956,10 @@ SELECT * FROM T_ALWAYS;
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 </tr>
@@ -3012,14 +2968,10 @@ B
 
 1
 
-
-
 </td>
 <td valign="top">
 
 100
-
-
 
 </td>
 </tr>
@@ -3028,14 +2980,10 @@ B
 
 2
 
-
-
 </td>
 <td valign="top">
 
 110
-
-
 
 </td>
 </tr>
@@ -3064,21 +3012,15 @@ In the results table below, the Description column isn't part of the results, it
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -3087,21 +3029,15 @@ Description
 
 1
 
-
-
 </td>
 <td valign="top">
 
 100
 
-
-
 </td>
 <td valign="top">
 
 The START WITH value
-
-
 
 </td>
 </tr>
@@ -3110,21 +3046,15 @@ The START WITH value
 
 2
 
-
-
 </td>
 <td valign="top">
 
 110
 
-
-
 </td>
 <td valign="top">
 
 The next INCREMENT value
-
-
 
 </td>
 </tr>
@@ -3133,21 +3063,15 @@ The next INCREMENT value
 
 3
 
-
-
 </td>
 <td valign="top">
 
 105
 
-
-
 </td>
 <td valign="top">
 
 A specified value that is lower than the current sequence
-
-
 
 </td>
 </tr>
@@ -3156,21 +3080,15 @@ A specified value that is lower than the current sequence
 
 4
 
-
-
 </td>
 <td valign="top">
 
 120
 
-
-
 </td>
 <td valign="top">
 
 The next INCREMENT value
-
-
 
 </td>
 </tr>
@@ -3179,21 +3097,15 @@ The next INCREMENT value
 
 5
 
-
-
 </td>
 <td valign="top">
 
 205
 
-
-
 </td>
 <td valign="top">
 
 The specified value that resets the internal sequence to 200
-
-
 
 </td>
 </tr>
@@ -3202,21 +3114,15 @@ The specified value that resets the internal sequence to 200
 
 6
 
-
-
 </td>
 <td valign="top">
 
 210
 
-
-
 </td>
 <td valign="top">
 
 The next INCREMENT value
-
-
 
 </td>
 </tr>
@@ -3902,7 +3808,7 @@ ALTER TABLE T ALTER (C1 INT DEFAULT LOADABLE);
 **Related Information**  
 
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
 [Non-Heterogeneous Alter Partition Clauses](non-heterogeneous-alter-partition-clauses-f7ae27c.md "Modifies the partitions of an existing table with a non-heterogeneous partitioning schema.")
 
@@ -3920,9 +3826,9 @@ ALTER TABLE T ALTER (C1 INT DEFAULT LOADABLE);
 
 [TABLE\_PARTITIONS System View](../../020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 
-[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
+[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [Predicates](../predicates-20a2ab2.md "")
 
@@ -3930,7 +3836,7 @@ ALTER TABLE T ALTER (C1 INT DEFAULT LOADABLE);
 
 [TABLE\_COLUMNS System View](../../020-System-Views-Reference/021-System-Views/table-columns-system-view-2100d33.md "Provides information about available table columns.")
 
-[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2023_2_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
+[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2023_4_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_2_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

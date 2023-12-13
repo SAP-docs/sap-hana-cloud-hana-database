@@ -17,21 +17,15 @@ Provides semaphore statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 STATISTICS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistics object name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the statistics object name.
 
 STATISTICS\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistics object unique ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the statistics object unique ID.
 
 WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of wait calls.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the number of wait calls.
 
 BLOCKING\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocking wait calls.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the number of blocking wait calls.
 
 TIMEOUT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of timeouts.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the number of timeouts.
 
 WAIT\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the wait rate percentage.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the wait rate percentage.
 
 LAST\_BLOCKING\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time of blocking wait calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the last time of blocking wait calls in microseconds.
 
 MAX\_BLOCKING\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time of blocking wait calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the maximum time of blocking wait calls in microseconds.
 
 MIN\_BLOCKING\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time of blocking wait calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the minimum time of blocking wait calls in microseconds.
 
 SUM\_BLOCKING\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time of blocking wait calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the total time of blocking wait calls in microseconds.
 
 AVG\_BLOCKING\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time of blocking wait calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the average time of blocking wait calls in microseconds.
 
 CREATE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of semaphore creations \(for shared statistics only\).
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the number of semaphore creations \(for shared statistics only\).
 
 DESTROY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of semaphore destructions \(for shared statistics only\).
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of semaphore destructions \(for shared statistics only\).
 
 COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the component.
-
-
 
 </td>
 </tr>

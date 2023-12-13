@@ -91,73 +91,73 @@ Privileges can be granted to a user or role by more than one grantor; revocation
 
 ## Example
 
-Create a new user named ***worker***.
+Create a new user named `worker`.
 
 ```
 CREATE USER worker PASSWORD His_Password_1;
 ```
 
-Create a new role named ***role\_for\_work\_on\_my\_schema***.
+Create a new role named `role_for_work_on_my_schema`.
 
 ```
 CREATE ROLE role_for_work_on_my_schema;
 ```
 
-Create a new schema named ***my\_schema***.
+Create a new schema named `my_schema`.
 
 ```
 CREATE SCHEMA my_schema OWNED BY system;
 ```
 
-Create a new table named ***work\_done*** in the schema.
+Create a new table named `work_done` in the schema.
 
 ```
 CREATE ROW TABLE my_schema.work_done (t TIMESTAMP, user NVARCHAR (256), work_done NVARCHAR (256));
 ```
 
-Grant the SELECT privilege on any object privilege in ***my\_schema*** to the role ***role\_for\_work\_on\_my\_schema***.
+Grant the SELECT privilege on any object privilege in `my_schema` to the role `role_for_work_on_my_schema`.
 
 ```
 GRANT SELECT ON SCHEMA my_schema TO role_for_work_on_my_schema;
 ```
 
-Grant the INSERT privilege for the ***work\_done*** table to the role ***role\_for\_work\_on\_my\_schema***.
+Grant the INSERT privilege for the `work_done` table to the role `role_for_work_on_my_schema`.
 
 ```
 GRANT INSERT ON my_schema.work_done TO role_for_work_on_my_schema;
 ```
 
-Grant the ***role\_for\_work\_on\_my\_schema*** role to the ***worker*** user.
+Grant the `role_for_work_on_my_schema` role to the `worker` user.
 
 ```
 GRANT role_for_work_on_my_schema TO worker;
 ```
 
-Grant TRACE ADMIN privilege for the ***worker*** user.
+Grant TRACE ADMIN privilege for the `worker` user.
 
 ```
 GRANT TRACE ADMIN TO worker WITH ADMIN OPTION;
 ```
 
-Grant the DELETE privilege from the ***work\_done*** table to the ***worker*** user.
+Grant the DELETE privilege from the `work_done` table to the `worker` user.
 
 ```
 GRANT DELETE ON my_schema.work_done TO worker WITH GRANT OPTION;
 ```
 
-Revoke from the role ***role\_for\_work\_on\_my\_schema*** the privilege to select from ***my\_schema***.
+Revoke from the role `role_for_work_on_my_schema` the privilege to select from `my_schema`.
 
 ```
 REVOKE SELECT ON SCHEMA my_schema FROM role_for_work_on_my_schema;
 ```
 
-Revoke TRACE ADMIN privilege from the ***worker*** user.
+Revoke TRACE ADMIN privilege from the `worker` user.
 
 ```
 REVOKE TRACE ADMIN FROM worker;
 ```
 
-Revoke the LINKED DATABASE privilege from user ***myuser1*** using remote source ***myremotesys***.
+Revoke the LINKED DATABASE privilege from user `myuser1` using remote source `myremotesys`.
 
 ```
 REVOKE LINKED DATABASE ON REMOTE SOURCE myremotesys FROM myuser1;
@@ -180,5 +180,5 @@ REVOKE LINKED DATABASE ON REMOTE SOURCE myremotesys FROM myuser1;
 
 [GRANTED\_PRIVILEGES System View](../../020-System-Views-Reference/021-System-Views/granted-privileges-system-view-20a5958.md "Provides information about privileges and roles granted to users.")
 
-[Granting and Revoking Privileges and Roles](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/c719b2e7d9761014b9d798770c3d0958.html "To be able to grant and revoke privileges and roles to and from users and roles, the granting or revoking user must meet a number of prerequisites.") :arrow_upper_right:
+[Granting and Revoking Privileges and Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c719b2e7d9761014b9d798770c3d0958.html "To be able to grant and revoke privileges and roles to and from users and roles, the granting or revoking user must meet a number of prerequisites.") :arrow_upper_right:
 

@@ -148,5 +148,5 @@ For Cloud versions of HANA DI \(HDI\) build plug-ins, the version number is opti
 
 [Set up an SAP HDI Container for a Multitarget Application](set-up-an-sap-hdi-container-for-a-multitarget-application-1ca6415.md "Set up the environment required for the deployment to the SAP HANA Deployment Infrastructure (HDI) of a multitarget application's database artifacts.")
 
-[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
+[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
 

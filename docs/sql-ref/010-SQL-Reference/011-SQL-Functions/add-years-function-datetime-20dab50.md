@@ -59,7 +59,7 @@ Computes the specified date plus the specified number of years.
 
 ## Example
 
-The following example increments the specified date value ***2009-12-05*** by ***1*** year, and returns the value ***2010-12-05***:
+The following example increments the specified date value `2009-12-05` by `1` year, and returns the value ***2010-12-05***:
 
 ```
 SELECT ADD_YEARS (TO_DATE ('2009-12-05', 'YYYY-MM-DD'), 1) "add years" FROM DUMMY;

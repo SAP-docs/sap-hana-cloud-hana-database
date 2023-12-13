@@ -17,21 +17,15 @@ Provides information about available EPM Models.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the EPM Model.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the EPM Model.
 
 MODEL\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the EPM Model.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the EPM Model.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description of the EPM Model.
-
-
 
 </td>
 </tr>
@@ -109,30 +85,32 @@ Displays the description of the EPM Model.
 
 CDATA
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
-
-
 
 </td>
 <td valign="top">
 
 Displays the definition of the EPM Model with JSON representation.
 
-
-
 </td>
 </tr>
 </table>
 
+
+
+<a name="loiof3e5ebce6f5b1014af7389a6aa764fb8__section_q5t_thr_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
-[EPM\_QUERY\_SOURCES System View](epm-query-sources-system-view-f3e6641.md "Provides information about available EPM query source.")
+[EPM\_QUERY\_SOURCES System View](epm-query-sources-system-view-f3e6641.md "Provides information about available EPM query sources.")
 
 [M\_EPM\_SESSIONS System View](../022-Monitoring-Views/m-epm-sessions-system-view-f3f7c78.md "Provides all EPM sessions with detailed information.")
 

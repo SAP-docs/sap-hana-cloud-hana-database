@@ -81,7 +81,7 @@ The returned bucket number is an integer between 0 and *<num\_buckets\>* +1. Thi
 
 ## Example
 
-The following example returns the bucket numbers for ***myTable***:
+The following example returns the bucket numbers for `myTable`:
 
 ```
 CREATE TABLE myTable (myValues INT);
@@ -101,14 +101,10 @@ SELECT myValues, WIDTH_BUCKET( myValues, 2, 5, 2 ) AS "BucketNo" FROM myTable;
 
 myValues
 
-
-
 </th>
 <th valign="top">
 
 BucketNo
-
-
 
 </th>
 </tr>
@@ -117,14 +113,10 @@ BucketNo
 
 1
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -133,14 +125,10 @@ BucketNo
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -149,14 +137,10 @@ BucketNo
 
 3
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -165,14 +149,10 @@ BucketNo
 
 4
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -181,14 +161,10 @@ BucketNo
 
 75
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>

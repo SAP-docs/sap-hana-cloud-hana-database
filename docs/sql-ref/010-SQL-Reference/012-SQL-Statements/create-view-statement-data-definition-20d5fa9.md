@@ -634,6 +634,27 @@ When WITH CHECK OPTION is specified, the WHERE clause cannot contain LOB data ty
 
 
 
+<a name="loio20d5fa9b75191014a33eee92692f1702__section_k25_zdh_qbb"/>
+
+## Permissions
+
+To create or replace a view requires one of the following:
+
+-   For views owned by self:
+    -   If you own all underlying objects of the view, no additional privilege is required.
+
+-   For views owned by others:
+    -   To create a view, you need one of the following:
+        -   CREATE ANY schema level privilege granted on the view.
+
+    -   To replace an existing view, you need one of the following:
+        -   CREATE ANY and DROP schema level privilege granted on the view.
+
+
+-   Regardless of view ownership, you require the proper privilege on its base objects referenced by the view.
+
+
+
 <a name="loio20d5fa9b75191014a33eee92692f1702__section_jj1_1nd_tfb"/>
 
 ## Examples
@@ -767,14 +788,10 @@ The query returns the following masked results:
 
 NAME
 
-
-
 </th>
 <th valign="top">
 
 CREDIT\_CARD
-
-
 
 </th>
 </tr>
@@ -783,14 +800,10 @@ CREDIT\_CARD
 
 John
 
-
-
 </td>
 <td valign="top">
 
 1111-XXXX-XXXX-1111
-
-
 
 </td>
 </tr>
@@ -799,14 +812,10 @@ John
 
 James
 
-
-
 </td>
 <td valign="top">
 
 2222-XXXX-XXXX-2222
-
-
 
 </td>
 </tr>
@@ -836,15 +845,11 @@ The query returns the following masked results:
 
 NAME
 
-
-
 </th>
 <th valign="top">
 
 CREDIT\_CARD
 
-
-
 </th>
 </tr>
 <tr>
@@ -852,14 +857,10 @@ CREDIT\_CARD
 
 AAAA
 
-
-
 </td>
 <td valign="top">
 
 XXXX
-
-
 
 </td>
 </tr>
@@ -868,14 +869,10 @@ XXXX
 
 AAAA
 
-
-
 </td>
 <td valign="top">
 
 XXXX
-
-
 
 </td>
 </tr>
@@ -904,14 +901,10 @@ Because data masking has been dropped, all data contained in the view is now vis
 
 NAME
 
-
-
 </th>
 <th valign="top">
 
 CREDIT\_CARD
-
-
 
 </th>
 </tr>
@@ -920,14 +913,10 @@ CREDIT\_CARD
 
 John
 
-
-
 </td>
 <td valign="top">
 
 1111-1111-1111-1111
-
-
 
 </td>
 </tr>
@@ -936,14 +925,10 @@ John
 
 James
 
-
-
 </td>
 <td valign="top">
 
 2222-2222-2222-2222
-
-
 
 </td>
 </tr>
@@ -972,14 +957,10 @@ The data in the credit\_card column is masked in the result set as follows:
 
 NAME
 
-
-
 </th>
 <th valign="top">
 
 CREDIT\_CARD
-
-
 
 </th>
 </tr>
@@ -988,14 +969,10 @@ CREDIT\_CARD
 
 John
 
-
-
 </td>
 <td valign="top">
 
 XXXX
-
-
 
 </td>
 </tr>
@@ -1004,14 +981,10 @@ XXXX
 
 James
 
-
-
 </td>
 <td valign="top">
 
 XXXX
-
-
 
 </td>
 </tr>
@@ -1040,14 +1013,10 @@ The data in the result set is once again masked by using the credit\_mask functi
 
 NAME
 
-
-
 </th>
 <th valign="top">
 
 CREDIT\_CARD
-
-
 
 </th>
 </tr>
@@ -1056,14 +1025,10 @@ CREDIT\_CARD
 
 John
 
-
-
 </td>
 <td valign="top">
 
 1111-XXXX-XXXX-1111
-
-
 
 </td>
 </tr>
@@ -1072,14 +1037,10 @@ John
 
 James
 
-
-
 </td>
 <td valign="top">
 
 2222-XXXX-XXXX-2222
-
-
 
 </td>
 </tr>
@@ -1087,7 +1048,7 @@ James
 
 **WITH EXPRESSION MACROS examples:**
 
-The following statements create a table, insert data, and create a view with two expression macros \(***sum\_a*** and ***count\_a***\) that calculate the sum and count of column ***t1.a***, respectively:
+The following statements create a table, insert data, and create a view with two expression macros \(`sum_a` and `count_a`\) that calculate the sum and count of column `t1.a`, respectively:
 
 ```
 CREATE TABLE t1(a INT);
@@ -1148,7 +1109,7 @@ CREATE VIEW v2 AS SELECT * FROM v1; -- you can select from the view
 
 **WITH ANONYMIZATION example:** 
 
-The following statements create a table called ***Illness*** with sensitive data in a column called ***Illness*** \(illness-related\), and populate the table with data:
+The following statements create a table called `Illness` with sensitive data in a column called `Illness` \(illness-related\), and populate the table with data:
 
 ```
 CREATE COLUMN TABLE Illness (
@@ -1201,28 +1162,20 @@ SELECT * FROM Illness_K_Anon;
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 GENDER
-
-
 
 </th>
 <th valign="top">
 
 LOCATION
 
-
-
 </th>
 <th valign="top">
 
 ILLNESS
-
-
 
 </th>
 </tr>
@@ -1231,28 +1184,20 @@ ILLNESS
 
 1
 
-
-
 </td>
 <td valign="top">
 
 \*
-
-
 
 </td>
 <td valign="top">
 
 France
 
-
-
 </td>
 <td valign="top">
 
 BRONCHITIS
-
-
 
 </td>
 </tr>
@@ -1261,28 +1206,20 @@ BRONCHITIS
 
 2
 
-
-
 </td>
 <td valign="top">
 
 \*
-
-
 
 </td>
 <td valign="top">
 
 Germany
 
-
-
 </td>
 <td valign="top">
 
 ANGINA
-
-
 
 </td>
 </tr>
@@ -1291,28 +1228,20 @@ ANGINA
 
 3
 
-
-
 </td>
 <td valign="top">
 
 \*
-
-
 
 </td>
 <td valign="top">
 
 France
 
-
-
 </td>
 <td valign="top">
 
 FLU
-
-
 
 </td>
 </tr>
@@ -1321,28 +1250,20 @@ FLU
 
 4
 
-
-
 </td>
 <td valign="top">
 
 \*
-
-
 
 </td>
 <td valign="top">
 
 Germany
 
-
-
 </td>
 <td valign="top">
 
 BROKEN LEG
-
-
 
 </td>
 </tr>
@@ -1365,5 +1286,5 @@ BROKEN LEG
 
 [VIEW\_COLUMNS System View](../../020-System-Views-Reference/021-System-Views/view-columns-system-view-21028f1.md "Lists available view columns.")
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_2_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

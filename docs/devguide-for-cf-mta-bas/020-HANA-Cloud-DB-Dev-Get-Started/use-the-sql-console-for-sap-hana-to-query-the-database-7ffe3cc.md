@@ -62,133 +62,101 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     <th valign="top">
 
     UI Text or Tool
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-         *RemoteAccess-hdidb-ws-ab1cd* 
-
-
+    *RemoteAccess-hdidb-ws-ab1cd* 
     
     </td>
     <td valign="top">
     
-        The name of the database that the SQL console for SAP HANA is currently connected to. By default, this name comprises the following elements:
+    The name of the database that the SQL console for SAP HANA is currently connected to. By default, this name comprises the following elements:
 
     <code><i class="varname">&lt;Project Name&gt;</i>-<i class="varname">&lt;MTA resource name&gt;</i>-<i class="varname">&lt;Workspace-Name&gt;</i></code>
-
-
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         *\(WDF\)* 
-
-
+    *\(WDF\)* 
     
     </td>
     <td valign="top">
     
-        The name \(in brackets\) of the Cloud Foundry space to which the database instance is assigned.
-
-
+    The name \(in brackets\) of the Cloud Foundry space to which the database instance is assigned.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         <span class="SAP-icons-watt"></span> \(Connect\) 
-
-
+    <span class="SAP-icons-watt"></span> \(Connect\) 
     
     </td>
     <td valign="top">
     
-        Connect the SQL console for SAP HANA to the currently selected database.
+    Connect the SQL console for SAP HANA to the currently selected database.
 
     While the SQL console for SAP HANA is connected to a database, the connect icon is inactive. When you hover the mouse cursor over the connect icon, <span style="color:#BB0000;"><span class="FPA-icons"></span></span> indicates that another connection is not currently possible.
-
-
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         <span class="SAP-icons-watt"></span> \(Disconnect\) 
-
-
+    <span class="SAP-icons-watt"></span> \(Disconnect\) 
     
     </td>
     <td valign="top">
     
-        Disconnect the SQL console for SAP HANA from the currently selected database.
+    Disconnect the SQL console for SAP HANA from the currently selected database.
 
     While the SQL console for SAP HANA remains connected to the selected database, the disconnect icon is active.
-
-
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         <span class="FPA-icons"></span> \(Different database\) 
-
-
+    <span class="FPA-icons"></span> \(Different database\) 
     
     </td>
     <td valign="top">
     
-        Connect the SQL console to a different database. For more information about how to perform this action, see step *Connect to a different database* below.
-
-
+    Connect the SQL console to a different database. For more information about how to perform this action, see step *Connect to a different database* below.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        <span class="SAP-icons"></span> \(View connection settings\)
-
-
+    <span class="SAP-icons"></span> \(View connection settings\)
     
     </td>
     <td valign="top">
     
-        Enable or disable auto-commit for any database changes required by SQL statements running in the SQL console
-
-
+    Enable or disable auto-commit for any database changes required by SQL statements running in the SQL console
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         [SAP HANA Cloud\] 
-
-
+    [SAP HANA Cloud\] 
     
     </td>
     <td valign="top">
     
-        The database type, for example, *SAP HANA* or *SAP HANA Cloud* 
-
-
+    The database type, for example, *SAP HANA* or *SAP HANA Cloud* 
     
     </td>
     </tr>
@@ -219,105 +187,79 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     <th valign="top">
 
     Run Menu Item
-
-
     
     </th>
     <th valign="top">
 
     Keyboard Combination
-
-
     
     </th>
     <th valign="top">
 
     Result
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-         *Run* 
-
-
+    *Run* 
     
     </td>
     <td valign="top">
     
-         [F8\] 
-
-
+    [F8\] 
     
     </td>
     <td valign="top">
     
-        Executes all SQL statements
-
-
+    Executes all SQL statements
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         *Run Statement* 
-
-
+    *Run Statement* 
     
     </td>
     <td valign="top">
     
-         [F9\] 
-
-
+    [F9\] 
     
     </td>
     <td valign="top">
     
-        Executes individual SQL statements
-
-
+    Executes individual SQL statements
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         *Run Line* 
-
-
+    *Run Line* 
     
     </td>
     <td valign="top">
     
-          [Ctrl\] + [F8\]  
-
-
+    [Ctrl\] + [F8\]  
     
     </td>
     <td valign="top">
     
-        Executes the contents of the currently selected line of SQL code
-
-
+    Executes the contents of the currently selected line of SQL code
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         *Run with parameters* 
-
-
+    *Run with parameters* 
     
     </td>
     <td valign="top">
     
-        N/A
+    N/A
 
     > ### Tip:  
     > The run-with-parameters option is only available in the *Parameters* tab.
@@ -327,9 +269,7 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
     </td>
     <td valign="top">
     
-        Executes the contents of the currently selected line of SQL code with the parameters provided
-
-
+    Executes the contents of the currently selected line of SQL code with the parameters provided
     
     </td>
     </tr>
@@ -355,7 +295,7 @@ To learn how to use the SQL console for SAP HANA, perform the following steps:
 
     3.  Save the current contents of the SQL console to a file.
 
-        To save the code that is currently displayed in the SQL console to a file in a local file system, choose ![](images/BAS_icon_SQLsaveToFile_f441257.svg) *\(Save SQL to file\)*, locate and select the target folder in the file explorer, specify a file name, and choose *Save*. The name of the specified file is displayed in the tab title of the SQL console.
+        To save the code that is currently displayed in the SQL console to a file in a local file system, choose ![](images/BAS_icon_SQLsaveToFile_f441257.svg)*\(Save SQL to file\)*, locate and select the target folder in the file explorer, specify a file name, and choose *Save*. The name of the specified file is displayed in the tab title of the SQL console.
 
 
 6.  Run an SQL query that uses parameters.

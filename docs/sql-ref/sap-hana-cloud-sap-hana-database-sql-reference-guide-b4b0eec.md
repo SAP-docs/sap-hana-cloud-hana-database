@@ -2,5 +2,5 @@
 
 # SAP HANA Cloud, SAP HANA Database SQL Reference Guide
 
-This reference guide describes the SQL data types, predicates, operators, expressions, functions, statements, error codes SYS schema system and monitoring views used by SAP HANA Cloud.
+This reference guide describes the SQL data types, predicates, operators, expressions, functions, statements, error codes, SYS schema, system and monitoring views used by SAP HANA Cloud.
 

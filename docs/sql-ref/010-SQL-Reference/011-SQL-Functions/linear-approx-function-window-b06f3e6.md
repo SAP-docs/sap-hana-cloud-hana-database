@@ -59,14 +59,10 @@ This parameter defines the applied extrapolation mode. The table below lists the
 
 **Mode**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -74,8 +70,6 @@ This parameter defines the applied extrapolation mode. The table below lists the
 <td valign="top">
 
 EXTRAPOLATION\_NONE
-
-
 
 </td>
 <td valign="top">
@@ -88,16 +82,12 @@ You do not need to specify the *<Value1Argument\>* and *<Value2Argument\>* param
 
 For example, an input of \[null, null, 1, 2, null, null, 5, null, null\] returns \[null, null, 1, 2, 3, 4, 5, null, null\].
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 EXTRAPOLATION\_LINEAR
-
-
 
 </td>
 <td valign="top">
@@ -108,8 +98,6 @@ During the extrapolation of leading and trailing nulls, this function checks tha
 
 An exception is thrown if *<Value1Argument\>* is greater than *<Value2Argument\>*.
 
-
-
 </td>
 </tr>
 <tr>
@@ -117,16 +105,12 @@ An exception is thrown if *<Value1Argument\>* is greater than *<Value2Argument\>
 
 EXTRAPOLATION\_CONSTANT
 
-
-
 </td>
 <td valign="top">
 
 Performs linear extrapolation where leading and trailing nulls values are replaced by the values specified by the *<Value1Argument\>* and *<Value2Argument\>* parameters, respectively.
 
 When *<Value1Argument\>* is not specified or null, the first non-null value is used to replace leading null values. When *<Value2Argument\>* is not specified or null, the last non-null is used to replace trailing null values.
-
-
 
 </td>
 </tr>
@@ -204,14 +188,10 @@ When using the SERIES syntax, this function uses the properties in the following
 
 **Property**
 
-
-
 </th>
 <th valign="top">
 
 **Description**
-
-
 
 </th>
 </tr>
@@ -220,14 +200,10 @@ When using the SERIES syntax, this function uses the properties in the following
 
 NON-EQUIDISTANT
 
-
-
 </td>
 <td valign="top">
 
 An error occurs if the series is non-equidistant.
-
-
 
 </td>
 </tr>
@@ -236,14 +212,10 @@ An error occurs if the series is non-equidistant.
 
 MISSING ELEMENTS ALLOWED
 
-
-
 </td>
 <td valign="top">
 
 When specified, there must be exactly one ORDER BY column that is compatible with the type of the series period column and the INCREMENT BY value.
-
-
 
 </td>
 </tr>
@@ -252,14 +224,10 @@ When specified, there must be exactly one ORDER BY column that is compatible wit
 
 PARTITION BY
 
-
-
 </td>
 <td valign="top">
 
 If not specified, the SERIES KEY property of the SERIES syntax is used to construct the default PARTITION BY.
-
-
 
 </td>
 </tr>
@@ -268,14 +236,10 @@ If not specified, the SERIES KEY property of the SERIES syntax is used to constr
 
 ORDER BY
 
-
-
 </td>
 <td valign="top">
 
 If not specified, the first PERIOD column is added as an ORDER BY.
-
-
 
 </td>
 </tr>
@@ -330,16 +294,12 @@ SELECT LINEAR_APPROX(val, 'EXTRAPOLATION_LINEAR') OVER (SERIES (
 
 APPROXIMATED\_VALUE
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 \-1
-
-
 
 </td>
 </tr>
@@ -348,16 +308,12 @@ APPROXIMATED\_VALUE
 
 1
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -366,16 +322,12 @@ APPROXIMATED\_VALUE
 
 3
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 5
-
-
 
 </td>
 </tr>
@@ -384,8 +336,6 @@ APPROXIMATED\_VALUE
 
 7
 
-
-
 </td>
 </tr>
 <tr>
@@ -393,16 +343,12 @@ APPROXIMATED\_VALUE
 
 9.666666666666666
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 11
-
-
 
 </td>
 </tr>
@@ -430,21 +376,15 @@ SELECT date,
 
 DATE
 
-
-
 </th>
 <th valign="top">
 
 VAL
 
-
-
 </th>
 <th valign="top">
 
 MYRESULT
-
-
 
 </th>
 </tr>
@@ -453,21 +393,15 @@ MYRESULT
 
 Sep 30, 2013
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -476,21 +410,15 @@ Sep 30, 2013
 
 Oct 1, 2013
 
-
-
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -499,21 +427,15 @@ Oct 1, 2013
 
 Oct 2, 2013
 
-
-
 </td>
 <td valign="top">
 
 ?
 
-
-
 </td>
 <td valign="top">
 
 6
-
-
 
 </td>
 </tr>
@@ -522,21 +444,15 @@ Oct 2, 2013
 
 Oct 3, 2013
 
-
-
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ Displays the disposition-specific memory object statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object statistic type.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the object statistic type.
 
 CATEGORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocator category, the corresponding allocator, and some of its sub-allocators that were used to allocate the memory objects.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the allocator category, the corresponding allocator, and some of its su
 
 TEMPORARY\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of temporary objects.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the number of temporary objects.
 
 PAGE\_LOADABLE\_COLUMNS\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of page loadable column objects.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the number of page loadable column objects.
 
 EARLY\_UNLOAD\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of early unload objects.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the number of early unload objects.
 
 INTERNAL\_SHORT\_TERM\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of internal short term objects.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the number of internal short term objects.
 
 SHORT\_TERM\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of short term objects.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the number of short term objects.
 
 MID\_TERM\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of mid term objects.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the number of mid term objects.
 
 LONG\_TERM\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of long term objects.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the number of long term objects.
 
 NON\_SWAPPABLE\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of non-swappable objects.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the number of non-swappable objects.
 
 TEMPORARY\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the temporary objects in bytes.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the size of the temporary objects in bytes.
 
 PAGE\_LOADABLE\_COLUMNS\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of page loadable column objects in bytes.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the size of page loadable column objects in bytes.
 
 EARLY\_UNLOAD\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the early unload objects in bytes.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the size of the early unload objects in bytes.
 
 INTERNAL\_SHORT\_TERM\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the internal short term objects in bytes.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the size of the internal short term objects in bytes.
 
 SHORT\_TERM\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the short term objects in bytes.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the size of the short term objects in bytes.
 
 MID\_TERM\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the mid term objects in bytes.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the size of the mid term objects in bytes.
 
 LONG\_TERM\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the long term objects in bytes.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the size of the long term objects in bytes.
 
 NON\_SWAPPABLE\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the non swappable objects in bytes.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the size of the non swappable objects in bytes.
 
 SHRINKABLE\_OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of shrinkable objects.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the number of shrinkable objects.
 
 SHRINKABLE\_OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the shrinkable objects in bytes.
-
-
 
 </td>
 </tr>
@@ -583,5 +439,5 @@ Reading this view may take some time as the entire resource container must be tr
 
 [M\_MEMORY\_OBJECTS\_RESET System View](m-memory-objects-reset-system-view-20b508b.md "Provides values accumulated since the last reset of the main view M_MEMORY_OBJECTS.")
 
-[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
+[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
 

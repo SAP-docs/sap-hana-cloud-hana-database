@@ -78,6 +78,8 @@ The default ordering is ASC NULLS FIRST. If DESC is specified, then the ORDER BY
 
 
 
+## Example
+
 The example below creates table r1 and populate it with data.
 
 ```
@@ -108,14 +110,10 @@ The statement above returns the following results.
 
 GRP
 
-
-
 </th>
 <th valign="top">
 
 AGG
-
-
 
 </th>
 </tr>
@@ -124,14 +122,10 @@ AGG
 
 0
 
-
-
 </td>
 <td valign="top">
 
 NULL,str1,str2,str3
-
-
 
 </td>
 </tr>
@@ -140,14 +134,10 @@ NULL,str1,str2,str3
 
 1
 
-
-
 </td>
 <td valign="top">
 
 NULL,val1,val3,val6
-
-
 
 </td>
 </tr>
@@ -168,14 +158,10 @@ The statement above returns the following results.
 
 GRP
 
-
-
 </th>
 <th valign="top">
 
 AGG
-
-
 
 </th>
 </tr>
@@ -184,14 +170,10 @@ AGG
 
 0
 
-
-
 </td>
 <td valign="top">
 
 str3,str2,str1,NULL
-
-
 
 </td>
 </tr>
@@ -200,14 +182,10 @@ str3,str2,str1,NULL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 val6,val3,val1,NULL
-
-
 
 </td>
 </tr>

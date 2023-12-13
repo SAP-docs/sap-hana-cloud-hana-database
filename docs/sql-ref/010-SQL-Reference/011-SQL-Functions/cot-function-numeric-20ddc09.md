@@ -28,7 +28,7 @@ Computes the cotangent of a number *<number\>*, where *<number\>* is an angle ex
 
 ## Example
 
-The following example returns the value ***\-0.8950829176379128*** for ***"cot"***:
+The following example returns the value ***\-0.8950829176379128*** for `"cot"`:
 
 ```
 SELECT COT (40) "cot" FROM DUMMY;

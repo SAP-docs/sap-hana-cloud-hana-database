@@ -209,7 +209,7 @@ UPDATE statement
 </b></dt>
 <dd>
 
--   UPDATE FROM \(updating columns by another result set\) is not supported. However, the MERGE INTO syntax added as of SAP HANA 2.0 \(on-premise\) can be used for any update scenario that was previously implemented using UPDATE FROM syntax. Helpful information about using MERGE INTO as a workaround can be found in the following SAP Note:[2241598 - Changed UPDATE FROM syntax can cause 'invalid table name' error](https://launchpad.support.sap.com/#/notes/2241598 - Changed UPDATE FROM syntax can cause 'invalid table name' error)
+-   UPDATE FROM \(updating columns by another result set\) is not supported. However, the MERGE INTO syntax added as of SAP HANA 2.0 \(on-premise\) can be used for any update scenario that was previously implemented using UPDATE FROM syntax. Helpful information about using MERGE INTO as a workaround can be found in the following SAP Note:[2241598 - Changed UPDATE FROM syntax can cause 'invalid table name' error](https://me.sap.com/notes/2241598 - Changed UPDATE FROM syntax can cause 'invalid table name' error)
 
 -   UPDATE *<table\_name\>* **MERGE DELTA INTO HISTORY INDEX**
 
@@ -408,7 +408,7 @@ Be sure to review the list of reserved words for SAP HANA Cloud found here: [Res
 
 [SQL Reference](../010-SQL-Reference/sql-reference-20ff532.md "")
 
-[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
 
-[SAP Note 2868742](https://launchpad.support.sap.com/#/notes/2868742 "Differences between SAP HANA Cloud and SAP HANA Platform for SQL, SQLScript and SAP HDI (SAP HANA Deployment Infrastructure")
+[SAP Note 2868742](https://me.sap.com/notes/2868742 "Differences between SAP HANA Cloud and SAP HANA Platform for SQL, SQLScript and SAP HDI (SAP HANA Deployment Infrastructure")
 

@@ -32,38 +32,28 @@ In the context of the application run time, the SAP HANA Secure Store is used to
 
 Stored Procedure
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Required Parameters
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `SYS.USER_SECURESTORE_INSERT` 
-
-
+`SYS.USER_SECURESTORE_INSERT` 
 
 </td>
 <td valign="top">
 
 Insert an encrypted entry into the SAP HANA Secure Store.
 
-
-
 </td>
 <td valign="top">
 
@@ -75,24 +65,18 @@ Insert an encrypted entry into the SAP HANA Secure Store.
 
 `VALUE`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `SYS.USER_SECURESTORE_RETRIEVE` 
-
-
+`SYS.USER_SECURESTORE_RETRIEVE` 
 
 </td>
 <td valign="top">
 
 Retrieve an encrypted entry from the SAP HANA Secure Store.
 
-
-
 </td>
 <td valign="top">
 
@@ -104,23 +88,17 @@ Retrieve an encrypted entry from the SAP HANA Secure Store.
 
 `VALUE`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `SYS.USER_SECURESTORE_DELETE` 
-
-
+`SYS.USER_SECURESTORE_DELETE` 
 
 </td>
 <td valign="top">
 
 Delete an encrypted entry from the SAP HANA Secure Store.
-
-
 
 </td>
 <td valign="top">
@@ -130,8 +108,6 @@ Delete an encrypted entry from the SAP HANA Secure Store.
 `FOR_XS_APPLICATIONUSER`
 
 `KEY`
-
-
 
 </td>
 </tr>

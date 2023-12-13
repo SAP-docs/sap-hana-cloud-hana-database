@@ -15,21 +15,15 @@ Provides information about all active transaction tokens.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 TRANS\_TOKEN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction token ID.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the transaction token ID.
 
 PRIMARY\_TRANS\_TOKEN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the primary transaction token ID for the shipped transaction token. If the transaction token is local-only, then this has the same value as TRANS\_TOKEN\_ID.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the primary transaction token ID for the shipped transaction token. If 
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the associated transaction object ID.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the associated transaction object ID.
 
 LOGICAL\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the associated logical connection ID.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the associated logical connection ID.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the associated logical statement ID.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the associated logical statement ID.
 
 MVCC\_SNAPSHOT\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the MVCC timestamp that is held by the transaction token.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the MVCC timestamp that is held by the transaction token.
 
 MVCC\_SNAPSHOT\_SCOPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MVCC snapshot scope: TABLE/GLOBAL.
-
-
 
 </td>
 </tr>

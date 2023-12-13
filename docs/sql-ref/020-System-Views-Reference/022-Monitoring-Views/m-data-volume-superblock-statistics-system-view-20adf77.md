@@ -17,21 +17,15 @@ Provides FreeBlockManager Superblock statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ Displays the persistence volume ID.
 
 PARTITION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -137,21 +109,15 @@ Displays the partition ID. Returns the following:
 
 DATA\_VOLUME\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data volume name.
-
-
 
 </td>
 </tr>
@@ -160,21 +126,15 @@ Displays the data volume name.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data volume state: ACTIVATING, ACTIVE, or DEACTIVATING.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the data volume state: ACTIVATING, ACTIVE, or DEACTIVATING.
 
 SUPERBLOCK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the superblock size in bytes.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the superblock size in bytes.
 
 USED\_SUPERBLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of used superblocks.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the number of used superblocks.
 
 SUPERBLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of superblocks.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the number of superblocks.
 
 FILL\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the fill ratio.
-
-
 
 </td>
 </tr>
@@ -295,5 +231,5 @@ This view shows information about the number and distribution of superblocks ins
 
 [M\_DATA\_VOLUME\_PARTITION\_STATISTICS System View](m-data-volume-partition-statistics-system-view-7ff90b1.md "Provides data volume partition statistics.")
 
-[HOST_DATA_VOLUME_SUPERBLOCK_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_2_QRC/en-US/54c8f4e486514185862d01fbc805fecf.html "Data volume superblock information per host.") :arrow_upper_right:
+[HOST_DATA_VOLUME_SUPERBLOCK_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/54c8f4e486514185862d01fbc805fecf.html "Data volume superblock information per host.") :arrow_upper_right:
 

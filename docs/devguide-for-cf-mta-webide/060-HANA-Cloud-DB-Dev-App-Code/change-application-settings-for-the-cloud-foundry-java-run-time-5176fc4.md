@@ -4,7 +4,7 @@
 
 You can change the run-time settings in your Java application's manifest file.
 
- <a name="task_fjt_m4x_k1b"/>
+<a name="task_fjt_m4x_k1b"/>
 
 <!-- task\_fjt\_m4x\_k1b -->
 
@@ -90,7 +90,7 @@ applications:
 
 Use the environment variable *<JBP\_CONFIG\_SAP\_MACHINE\_JDK\>* to configure the Java version. You can specify a strict version or use the '+' wildcard to define a major Java version in general, as shown in the example above. If you do not specify this property, the default is Java 11.
 
- <a name="task_ynm_3sy_lv"/>
+<a name="task_ynm_3sy_lv"/>
 
 <!-- task\_ynm\_3sy\_lv -->
 
@@ -114,7 +114,7 @@ The default Java run-time environment is “Tomcat”. However, you can change t
 > 
 > ```
 
- <a name="task_nwz_fhw_3v"/>
+<a name="task_nwz_fhw_3v"/>
 
 <!-- task\_nwz\_fhw\_3v -->
 
@@ -165,7 +165,7 @@ The HEAP, METASPACE and STACK memory types are configured with a corresponding d
 
 
 
- <a name="task_vq2_tlw_3v"/>
+<a name="task_vq2_tlw_3v"/>
 
 <!-- task\_vq2\_tlw\_3v -->
 
@@ -216,7 +216,7 @@ For more information about the Java run-time options, see *Related Links*.
     > When the Java options are specified on the command line with the `cf set-env` command, the string defining the new values must be enclosed in double quotes, for example, <code>“<i class="varname">&lt;New-config_values&gt;</i>”</code>.
 
 
- <a name="task_sbr_gp5_plb"/>
+<a name="task_sbr_gp5_plb"/>
 
 <!-- task\_sbr\_gp5\_plb -->
 
@@ -254,7 +254,7 @@ You can use any agent with the SAP Java Build pack. The agent must be included i
     ```
 
 
- <a name="task_sp5_4sb_3vb"/>
+<a name="task_sp5_4sb_3vb"/>
 
 <!-- task\_sp5\_4sb\_3vb -->
 

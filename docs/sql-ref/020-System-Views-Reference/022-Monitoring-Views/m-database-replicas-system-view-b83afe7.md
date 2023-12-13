@@ -15,21 +15,15 @@ Provides source and target information for databases involved in replication.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SOURCE\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the source database.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the name of the source database.
 
 SOURCE\_SYSTEMDB\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host of the source system database.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the host of the source system database.
 
 SOURCE\_SYSTEMDB\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the source system database port.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the source system database port.
 
 TARGET\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the target database.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the name of the target database.
 
 TARGET\_SYSTEMDB\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the target system database host.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the target system database host.
 
 TARGET\_SYSTEMDB\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the target system database port.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the target system database port.
 
 REPLICATION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the aggregated replication status of the database services.
-
-
 
 </td>
 </tr>

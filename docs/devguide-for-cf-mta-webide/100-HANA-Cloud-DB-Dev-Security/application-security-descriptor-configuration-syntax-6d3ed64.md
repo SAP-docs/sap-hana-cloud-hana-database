@@ -168,23 +168,17 @@ The following tenant modes are available:
 
 Value
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `dedicated` 
-
-
+`dedicated` 
 
 </td>
 <td valign="top">
@@ -193,16 +187,12 @@ The OAuth client receives a separate client secret for each subaccount. \(Defaul
 
 If no value is specified for `tenant-mode`, the default value is assumed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `shared` 
-
-
+`shared` 
 
 </td>
 <td valign="top">
@@ -219,16 +209,12 @@ The OAuth client uses the same client secret in all subaccounts that subscribe t
 <tr>
 <td valign="top">
 
- `external` 
-
-
+`external` 
 
 </td>
 <td valign="top">
 
 For tenants with multiple subscriptions to applications. For each subscription to an application the tenant receives an OAuth client with a client secret.
-
-
 
 </td>
 </tr>
@@ -278,81 +264,59 @@ The following table lists the parameters and values that can be used with the `s
 
 Key
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `name` 
-
-
+`name` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Name of the local scope, which must be prefixed with the name of the multitarget application defined in the property `"xsappname"`. It is highly recommended to prefix the scope name with the variable `$XSAPPNAME` in order to reference the element "xsappname" of the `xs-security.json` file. The `"name"` can contain up to 193 characters, must not start with a period '.' \(dot\), and cannot include any characters include in the so-called "denylist". Permitted characters include: 'a'-'z', 'A'-'Z', '0'-'9', '\_', '-', '\\', '/', ':', and '.'
 
-
-
 </td>
 <td valign="top">
 
- `"$XSAPPNAME.LRApprove"` 
-
-
+`"$XSAPPNAME.LRApprove"` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `description` 
-
-
+`description` 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 A short summary of the specified scope; `"description"` must not be longer than 1000 characters.
-
-
 
 </td>
 <td valign="top">
@@ -364,16 +328,12 @@ A short summary of the specified scope; `"description"` must not be longer than 
 <tr>
 <td valign="top">
 
- `granted-apps` 
-
-
+`granted-apps` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -392,23 +352,17 @@ Array of application-id values. It is highly recommended to use the `$XSAPPNAME`
 
 `["*"],`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `grant-as-authority-to-apps` 
-
-
+`grant-as-authority-to-apps` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -424,8 +378,6 @@ Array of application-id values. It is highly recommended to use the `$XSAPPNAME`
 <td valign="top">
 
 `["LR2","LR3"],`
-
-
 
 </td>
 </tr>
@@ -537,37 +489,27 @@ The `attributes` key can take the following parameters and values:
 
 Key
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Example
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `name` 
-
-
+`name` 
 
 </td>
 <td valign="top">
 
 The name of the attribute with a value to apply when building the role template
-
-
 
 </td>
 <td valign="top">
@@ -576,23 +518,17 @@ The name of the attribute with a value to apply when building the role template
 
 `Costcenter`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `description` 
-
-
+`description` 
 
 </td>
 <td valign="top">
 
 A short summary of the attribute defined
-
-
 
 </td>
 <td valign="top">
@@ -601,30 +537,22 @@ A short summary of the attribute defined
 
 `Cost Center ID`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `valueType` 
-
-
+`valueType` 
 
 </td>
 <td valign="top">
 
 The type of value expected for the defined attribute; possible values are: “`string`”, “`int`” \(integer\), or “`date`” 
 
-
-
 </td>
 <td valign="top">
 
- `int` 
-
-
+`int` 
 
 </td>
 </tr>
@@ -683,113 +611,83 @@ A role template must be instantiated. This is especially true with regards to an
 
 Key
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Example
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `name` 
-
-
+`name` 
 
 </td>
 <td valign="top">
 
 The name of the role to build from the role template
 
-
-
 </td>
 <td valign="top">
 
- <code>“Viewer”</code> 
-
-
+<code>“Viewer”</code> 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `description` 
-
-
+`description` 
 
 </td>
 <td valign="top">
 
 A short summary of the role to build
 
-
-
 </td>
 <td valign="top">
 
- <code>“View all books”</code> 
-
-
+<code>“View all books”</code> 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `scope-references` 
-
-
+`scope-references` 
 
 </td>
 <td valign="top">
 
 The security \(authorization\) **scope** to apply to the application-related role
 
-
-
 </td>
 <td valign="top">
 
- <code>“$XSAPPNAME.Display”</code> 
-
-
+<code>“$XSAPPNAME.Display”</code> 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `attribute-references` 
-
-
+`attribute-references` 
 
 </td>
 <td valign="top">
 
 One or more attributes to apply to the built role
 
-
-
 </td>
 <td valign="top">
 
- <code>[“Country”, “CostCenter”]</code> 
-
-
+<code>[“Country”, “CostCenter”]</code> 
 
 </td>
 </tr>
@@ -912,104 +810,76 @@ The following configuration keys are available:
 
 Key
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `token-validity` 
-
-
+`token-validity` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The amount of time \(in seconds\) for which the application's JSON Web Token \(JWT\) is valid. If no value is defined, the default value of 12 hours \(43,200 seconds\) is used.
 
-
-
 </td>
 <td valign="top">
 
- `900` \(15 minutes\)
-
-
+`900` \(15 minutes\)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `refresh-token-validity` 
-
-
+`refresh-token-validity` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The amount of time \(in seconds\) for which the application's refresh JSON Web Token \(JWT\) is valid. If no value is defined, the default value \(30 days\) is used.
 
-
-
 </td>
 <td valign="top">
 
- `1800` \(30 minutes\)
-
-
+`1800` \(30 minutes\)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `redirect-uris` 
-
-
+`redirect-uris` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -1018,60 +888,44 @@ Array defining a allow list of the allowed redirect URIs. This list overwrites t
 
 Default: localhost, `[xs | cf ] apps domain`
 
-
-
 </td>
 <td valign="top">
 
- <code>["https://<i class="varname">&lt;host_name1&gt;</i>","https://<i class="varname">&lt;host_name2&gt;</i>"]</code> 
-
-
+<code>["https://<i class="varname">&lt;host_name1&gt;</i>","https://<i class="varname">&lt;host_name2&gt;</i>"]</code> 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `autoapprove` 
-
-
+`autoapprove` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Determines whether the user has to approve the requested scopes \(“false”\) or if the scopes are assigned without approval \(“true”\) during the token retrieval. Allowed values are “true” \(default\) and “false” 
 
-
-
 </td>
 <td valign="top">
 
- <code>“false”</code> 
-
-
+<code>“false”</code> 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `system-attributes` 
-
-
+`system-attributes` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -1086,39 +940,29 @@ Array of system attributes to add to the JSON Web Token. Allowed values are: “
 </td>
 <td valign="top">
 
- `["groups", "rolecollections"]` 
-
-
+`["groups", "rolecollections"]` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `allowedproviders` 
-
-
+`allowedproviders` 
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Array listing the allowed identity providers \(IdP\) to use for authentication purposed. By default **all** providers are allowed.
 
-
-
 </td>
 <td valign="top">
 
- `["useridp1", "useridp2"]` 
-
-
+`["useridp1", "useridp2"]` 
 
 </td>
 </tr>

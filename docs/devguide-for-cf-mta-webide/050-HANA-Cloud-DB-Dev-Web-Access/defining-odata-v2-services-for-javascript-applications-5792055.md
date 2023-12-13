@@ -7,9 +7,11 @@ Create the OData service definitions consumed by your multitarget JavaScript app
 An OData v2 service definition for your multitarget JavaScript application is described in an “xsodata” artifact, for example, `myOdataService.xsodata`; the definition for your OData version 2 service should be placed in the `js/src/odata/services/` folder of your JavaScript project module. The following example shows two OData services \(`srv1.xsodata` and `srvN.xsodata`\) consumed by a JavaScript application.
 
 > ### Caution:  
-> The `XSODATA` infrastructure for OData services based on OData version 2 will no longer be extended or improved. Please also bear in mind that although the `XSODATA` solution supports SAP HANA as a Service, it does **not** support SAP HANA Cloud services, as described in SAP note: [3013788](https://launchpad.support.sap.com/#/notes/3013788). If you are developing a new OData service, it is recommended to use the SAP Cloud Application Programming Model \(CAP\). For more information, see the related links below.
+> The `XSODATA` infrastructure for OData services based on OData version 2 will no longer be extended or improved. Please also bear in mind that although the `XSODATA` solution supports SAP HANA as a Service, it does **not** support SAP HANA Cloud services, as described in SAP note: [3013788](https://me.sap.com/notes/3013788). If you are developing a new OData service, it is recommended to use the SAP Cloud Application Programming Model \(CAP\). For more information, see the related links below.
 
 
+
+## Example
 
 > ### Sample Code:  
 > ```
@@ -61,11 +63,11 @@ You can expose the database table `db/src/mytable.hdbtable` as `'My Entity Set'`
 
     You can call your OData service with: the following URI
 
-    ***http://*<myServer\>*:*<port\>*/odata/services/*<myService\>*.xsodata***
+    <code>http://<i class="varname">&lt;myServer&gt;</i>:<i class="varname">&lt;port&gt;</i>/odata/services/<i class="varname">&lt;myService&gt;</i>.xsodata</code>
 
     You can requests the metadata of the OData service using the following URI
 
-    ***http://*<myServer\>*:*<port\>*/odata/services/*<myService\>*.xsodata/$metadata***
+    <code>http://<i class="varname">&lt;myServer&gt;</i>:<i class="varname">&lt;port&gt;</i>/odata/services/<i class="varname">&lt;myService&gt;</i>.xsodata/$metadata</code>
 
 
 > ### Restriction:  
@@ -80,5 +82,5 @@ You can expose the database table `db/src/mytable.hdbtable` as `'My Entity Set'`
 
 [Working with the SAP Cloud Application Programming Model](../020-HANA-Cloud-DB-Dev-Get-Started/working-with-the-sap-cloud-application-programming-model-166f4fb.md "Create a business application using the SAP Cloud Application Programming model.")
 
-[SAP Note 3013788](https://launchpad.support.sap.com/#/notes/3013788 "XSODATA not supported in SAP HANA Cloud Service")
+[SAP Note 3013788](https://me.sap.com/notes/3013788 "XSODATA not supported in SAP HANA Cloud Service")
 

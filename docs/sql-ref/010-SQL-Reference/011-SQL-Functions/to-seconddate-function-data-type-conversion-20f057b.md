@@ -28,7 +28,7 @@ If the *<format\>* specifier is omitted, then the conversion is performed using 
 
 ## Example
 
-The following example converts the value ***2010-01-11 13:30:00*** to a SECONDDATE data type with format ***YYYY-MM-DD HH24:MI:SS*** and returns the value ***2010-01-11 13:30:00.0*** \(or another format like ***Jan 11, 2010 1:30:00.0 PM***, depending on your date display settings\):
+The following example converts the value `2010-01-11 13:30:00` to a SECONDDATE data type with format `YYYY-MM-DD HH24:MI:SS` and returns the value ***2010-01-11 13:30:00.0*** \(or another format like ***Jan 11, 2010 1:30:00.0 PM***, depending on your date display settings\):
 
 ```
 SELECT TO_SECONDDATE ('2010-01-11 13:30:00', 'YYYY-MM-DD HH24:MI:SS') "to seconddate" FROM DUMMY;

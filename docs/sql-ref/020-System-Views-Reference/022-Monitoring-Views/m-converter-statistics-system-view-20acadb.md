@@ -17,21 +17,15 @@ Provides converter statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of converter.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type of converter.
 
 MAX\_LEVEL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum level. For example, the root page level.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the maximum level. For example, the root page level.
 
 MAX\_PAGENUMBER
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum page number in HEXID.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the maximum page number in HEXID.
 
 ALLOCATED\_PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of currently allocated pages.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the number of currently allocated pages.
 
 ALLOCATED\_PAGE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size, in bytes, of the currently allocated pages.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the total size, in bytes, of the currently allocated pages.
 
 MAX\_ALLOCATED\_PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum number of allocated pages.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the maximum number of allocated pages.
 
 MAX\_ALLOCATED\_PAGE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size, in bytes, of the allocated pages.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the maximum size, in bytes, of the allocated pages.
 
 ALLOCATE\_PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of page allocations.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the number of page allocations.
 
 ALLOCATE\_OR\_GET\_STATIC\_PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of page allocations or retrievals during the static phase.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the number of page allocations or retrievals during the static phase.
 
 DEALLOCATE\_PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of page deallocations.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the number of page deallocations.
 
 ASSIGN\_PHYSICAL\_PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of physical page assignments.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the number of physical page assignments.
 
 UNASSIGN\_PHYSICAL\_PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of physical page unassignments.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the number of physical page unassignments.
 
 UNASSIGN\_PHYSICAL\_PAGE\_COUNT\_DURING\_DROP\_SNAPSHOT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of physical page unassignments during a drop snapshot.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of physical page unassignments during a drop snapshot.
 
 CREATE\_SNAPSHOT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of created snapshots.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the number of created snapshots.
 
 DROP\_SNAPSHOT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of dropped snapshots.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the number of dropped snapshots.
 
 WRITE\_CONVERTERPAGE\_LEVEL0\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of level 0 converter pages written to the disk.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the number of level 0 converter pages written to the disk.
 
 WRITE\_CONVERTERPAGE\_LEVEL1\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of level 1 converter pages written to the disk.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the number of level 1 converter pages written to the disk.
 
 WRITE\_CONVERTERPAGE\_LEVEL2\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of level 2 converter pages written to the disk.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the number of level 2 converter pages written to the disk.
 
 WRITE\_CONVERTERPAGE\_LEVEL3\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of level 3 converter pages written to the disk.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the number of level 3 converter pages written to the disk.
 
 WRITE\_CONVERTERPAGE\_LEVEL4\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of level 4 converter pages written to the disk.
-
-
 
 </td>
 </tr>
@@ -593,5 +449,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [DROP STATISTICS Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-statistics-statement-data-definition-20d7c59.md "Drops user-defined data statistic objects that the query optimizer uses to make decisions for query plans.")
 
-[Managing Statistics](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
+[Managing Statistics](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
 

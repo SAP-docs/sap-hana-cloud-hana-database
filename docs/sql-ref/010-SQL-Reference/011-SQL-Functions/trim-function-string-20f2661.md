@@ -52,13 +52,13 @@ Returns string *<string\>* after removing leading and trailing spaces. The trimm
 
 ## Example
 
-The following example removes the character ***a*** both at the beginning and at the end of the specified string, and returns the value ***123456789***:
+The following example removes the character `a` both at the beginning and at the end of the specified string, and returns the value ***123456789***:
 
 ```
 SELECT TRIM ('a' FROM 'aaa123456789aa') "trim both" FROM DUMMY;
 ```
 
-The following example removes the character ***a*** at the begin of the specified string, and returns the value ***123456789aa***:
+The following example removes the character `a` at the begin of the specified string, and returns the value ***123456789aa***:
 
 ```
 SELECT TRIM (LEADING 'a' FROM 'aaa123456789aa') "trim leading" FROM DUMMY;

@@ -15,109 +15,79 @@ The deployment description is contained in the application deployment “descrip
 
 File Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 SAP Business App Studio
 
-
-
 </th>
 <th valign="top">
 
 Cloud MTA Build Tool
-
-
 
 </th>
 <th valign="top">
 
 CF CLI
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `mta.yaml` 
-
-
+`mta.yaml` 
 
 </td>
 <td valign="top">
 
- **Development** descriptor for a multi-target application \(MTA\). The information in the `mta.yaml` file provides instructions for the MTA development and build process.
-
-
+**Development** descriptor for a multi-target application \(MTA\). The information in the `mta.yaml` file provides instructions for the MTA development and build process.
 
 </td>
 <td valign="top">
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
 ✔
-
-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `mtad.yaml` 
-
-
+`mtad.yaml` 
 
 </td>
 <td valign="top">
 
- **Deployment** descriptor for a multi-target application \(MTA\). The information in the `mtad.yaml` file provides instructions for the deploy service.
-
-
+**Deployment** descriptor for a multi-target application \(MTA\). The information in the `mtad.yaml` file provides instructions for the deploy service.
 
 </td>
 <td valign="top">
 
 \*
 
-
-
 </td>
 <td valign="top">
 
 \*
-
-
 
 </td>
 <td valign="top">
 
 ✔
-
-
 
 </td>
 </tr>
@@ -133,6 +103,8 @@ MTAs are transported in the form of a compressed and digitally signed archive ca
 The development and deployment descriptors for an multi-target application must be located in the root folder of the application project, as illustrated \(in **bold text**\) in the following example.
 
 
+
+## Example
 
 > ### Sample Code:  
 > ```

@@ -17,21 +17,15 @@ Provides a transaction list waiting for locks.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 BLOCKED\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction object ID of the transaction waiting for a lock.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the transaction object ID of the transaction waiting for a lock.
 
 BLOCKED\_UPDATE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the write transaction ID of the write transaction waiting for the lock.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the write transaction ID of the write transaction waiting for the lock.
 
 BLOCKED\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID associated with the blocked write transaction.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the connection ID associated with the blocked write transaction.
 
 LOCK\_OWNER\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction object ID of the transaction holding the lock.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the transaction object ID of the transaction holding the lock.
 
 LOCK\_OWNER\_UPDATE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the write transaction ID of the write transaction holding the lock.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the write transaction ID of the write transaction holding the lock.
 
 LOCK\_OWNER\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID associated with the write transaction holding the lock.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the connection ID associated with the write transaction holding the loc
 
 BLOCKED\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the blocked timestamp.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the blocked timestamp.
 
 WAITING\_RECORD\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the record on which the lock is currently placed.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the ID of the record on which the lock is currently placed.
 
 WAITING\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema on which the lock is currently placed.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the name of the schema on which the lock is currently placed.
 
 WAITING\_OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the object on which the lock is currently placed.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the name of the object on which the lock is currently placed.
 
 WAITING\_OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the object type.
 
 WAITING\_PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the locked partition, or 0 for a non-partition lock.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the ID of the locked partition, or 0 for a non-partition lock.
 
 LOCK\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the lock type: RECORD, TABLE, or METADATA.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the lock type: RECORD, TABLE, or METADATA.
 
 LOCK\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the lock mode: SHARED, EXCLUSIVE, or INTENTIONAL EXCLUSIVE.
-
-
 
 </td>
 </tr>
@@ -412,5 +310,5 @@ Displays the lock mode: SHARED, EXCLUSIVE, or INTENTIONAL EXCLUSIVE.
 
 [SET TRANSACTION AUTOCOMMIT DDL Statement \(Transaction Management\)](../../010-SQL-Reference/012-SQL-Statements/set-transaction-autocommit-ddl-statement-transaction-management-d538d11.md "Specifies the auto commit property for DDL statements specific to the session.")
 
-[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
+[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
 

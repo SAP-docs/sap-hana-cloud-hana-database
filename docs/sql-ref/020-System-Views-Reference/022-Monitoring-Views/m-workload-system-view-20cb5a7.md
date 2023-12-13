@@ -17,21 +17,15 @@ Provides information about the database workload collected every minute.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total count of all executed statements for data manipulation, data definition, and system control.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the total count of all executed statements for data manipulation, data 
 
 COMPILATION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of statement preparation.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the number of statement preparation.
 
 UPDATE\_TRANSACTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of update transactions.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of update transactions.
 
 COMMIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of transaction commits.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the number of transaction commits.
 
 ROLLBACK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of transaction rollbacks.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the number of transaction rollbacks.
 
 CURRENT\_EXECUTION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the current statement execution count per minute.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the current statement execution count per minute.
 
 PEAK\_EXECUTION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak statement execution count per minute.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the peak statement execution count per minute.
 
 CURRENT\_COMPILATION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the current statement preparation count per minute.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the current statement preparation count per minute.
 
 PEAK\_COMPILATION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak statement preparation count per minute.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the peak statement preparation count per minute.
 
 CURRENT\_UPDATE\_TRANSACTION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the current update transaction count per minute.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the current update transaction count per minute.
 
 PEAK\_UPDATE\_TRANSACTION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak update transaction count per minute.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the peak update transaction count per minute.
 
 CURRENT\_TRANSACTION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the current transaction count per minute.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the current transaction count per minute.
 
 PEAK\_TRANSACTION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak transaction count per minute.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the peak transaction count per minute.
 
 CURRENT\_COMMIT\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of commits per minute.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the total number of commits per minute.
 
 PEAK\_COMMIT\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak commit counts per minute.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the peak commit counts per minute.
 
 CURRENT\_ROLLBACK\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of rollbacks per minute.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the total number of rollbacks per minute.
 
 PEAK\_ROLLBACK\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak rollback count per minute.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the peak rollback count per minute.
 
 CURRENT\_MEMORY\_USAGE\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of used memory per minute in bytes.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the total size of used memory per minute in bytes.
 
 PEAK\_MEMORY\_USAGE\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak size of used memory per minute in bytes.
-
-
 
 </td>
 </tr>
@@ -541,5 +409,5 @@ Displays the peak size of used memory per minute in bytes.
 
 [DROP WORKLOAD MAPPING Statement \(Workload Management\)](../../010-SQL-Reference/012-SQL-Statements/drop-workload-mapping-statement-workload-management-8d90e94.md "Drops a workload mapping.")
 
-[Workload Management](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/30f2e9cb92aa4f358dda4ac58e062d83.html "The load on an SAP HANA system can be managed by selectively applying limitations and priorities to how resources are used. Settings can be applied globally or at the level of individual user sessions by using workload classes.") :arrow_upper_right:
+[Workload Management](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/30f2e9cb92aa4f358dda4ac58e062d83.html "The load on an SAP HANA system can be managed by selectively applying limitations and priorities to how resources are used. Settings can be applied globally or at the level of individual user sessions by using workload classes.") :arrow_upper_right:
 

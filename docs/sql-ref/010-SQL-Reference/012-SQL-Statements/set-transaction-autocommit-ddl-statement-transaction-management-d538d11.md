@@ -18,7 +18,7 @@ SET TRANSACTION AUTOCOMMIT DDL { ON | OFF }
 
 The default setting for this command is ON. A user can specify the `AUTOCOMMIT` property for DDL statements specific to the session. If the `AUTOCOMMIT` property is enabled, then the transaction automatically commits after executing each DDL statement. Conversely, the transaction commits only after executing a `COMMIT` statement, allowing for the rollback of DDL statements.
 
-Executing this command results in an implicit commit.
+Execution of this command executes an implicit commit when the auto commit property is toggled from ON to OFF or vice versa. This is mandatory as supporting both DDL auto commit ON and OFF in a single transaction is impossible.
 
 Certain DDL cases do not impact rollback behavior. For instance, failed DDL due to syntax checking errors or non-existent object references are deemed as 'DDL not executed'. These scenarios do not allow the transaction to fully roll back in the event of another failure within the transaction.
 

@@ -82,28 +82,20 @@ ORDER BY Sales DESC;
 
 PRODNAME
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 SALES
 
-
-
 </th>
 <th valign="top">
 
 PERCENT\_RANK
-
-
 
 </th>
 </tr>
@@ -112,28 +104,20 @@ PERCENT\_RANK
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Team logo
-
-
 
 </td>
 <td valign="top">
 
 80
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -141,30 +125,22 @@ Team logo
 <td valign="top">
 
 Hoodie
-
-
 
 </td>
 <td valign="top">
 
 Vintage
 
-
-
 </td>
 <td valign="top">
 
 67
-
-
 
 </td>
 <td valign="top">
 
 0.6666666666666666
 
-
-
 </td>
 </tr>
 <tr>
@@ -172,28 +148,20 @@ Vintage
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Lettered
-
-
 
 </td>
 <td valign="top">
 
 65
 
-
-
 </td>
 <td valign="top">
 
 0.3333333333333333
-
-
 
 </td>
 </tr>
@@ -202,28 +170,20 @@ Lettered
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Plain
-
-
 
 </td>
 <td valign="top">
 
 60
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -232,28 +192,20 @@ Plain
 
 Ballcap
 
-
-
 </td>
 <td valign="top">
 
 Lettered
-
-
 
 </td>
 <td valign="top">
 
 40
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -262,28 +214,20 @@ Lettered
 
 Tee Shirt
 
-
-
 </td>
 <td valign="top">
 
 Team logo
-
-
 
 </td>
 <td valign="top">
 
 30
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -291,29 +235,21 @@ Team logo
 <td valign="top">
 
 Ballcap
-
-
 
 </td>
 <td valign="top">
 
 Team logo
 
-
-
 </td>
 <td valign="top">
 
 27
 
-
-
 </td>
 <td valign="top">
 
 0.5
-
-
 
 </td>
 </tr>
@@ -321,29 +257,21 @@ Team logo
 <td valign="top">
 
 Tee Shirt
-
-
 
 </td>
 <td valign="top">
 
 Lettered
 
-
-
 </td>
 <td valign="top">
 
 22
 
-
-
 </td>
 <td valign="top">
 
 0.5
-
-
 
 </td>
 </tr>
@@ -352,28 +280,20 @@ Lettered
 
 Tee Shirt
 
-
-
 </td>
 <td valign="top">
 
 Plain
-
-
 
 </td>
 <td valign="top">
 
 21
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -382,28 +302,20 @@ Plain
 
 Ballcap
 
-
-
 </td>
 <td valign="top">
 
 Plain
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>

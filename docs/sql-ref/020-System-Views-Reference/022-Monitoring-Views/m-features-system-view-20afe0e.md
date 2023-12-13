@@ -17,21 +17,15 @@ Provides information about all supported features.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 COMPONENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the component owning the feature.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the component owning the feature.
 
 FEATURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the feature.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the feature.
 
 FEATURE\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the version of the feature.
-
-
 
 </td>
 </tr>

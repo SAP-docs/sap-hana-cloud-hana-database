@@ -201,21 +201,15 @@ SELECT * FROM myProjView;
 
 ITEM
 
-
-
 </th>
 <th valign="top">
 
 DESCRIPTION
 
-
-
 </th>
 <th valign="top">
 
 STATUS
-
-
 
 </th>
 </tr>
@@ -224,21 +218,15 @@ STATUS
 
 Bluish baseball cap
 
-
-
 </td>
 <td valign="top">
 
 Vintage
 
-
-
 </td>
 <td valign="top">
 
 Discontinued
-
-
 
 </td>
 </tr>
@@ -247,21 +235,15 @@ Discontinued
 
 Bluish sky
 
-
-
 </td>
 <td valign="top">
 
 Retro
 
-
-
 </td>
 <td valign="top">
 
 Discontinued
-
-
 
 </td>
 </tr>
@@ -289,14 +271,10 @@ SELECT C.A, C.B FROM V1;
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 </tr>
@@ -305,14 +283,10 @@ B
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -345,7 +319,7 @@ CREATE PROJECTION VIEW v2 AS SELECT * FROM v1; -- you can select from the view i
 **Related Information**  
 
 
-[Projection Views (.hdbprojectionview and .hdbprojectionviewconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/d8a3392c1287420ca82ac3090cd5049b.html "Transforms a design-time projection-view definition into a database object.") :arrow_upper_right:
+[Projection Views (.hdbprojectionview and .hdbprojectionviewconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/d8a3392c1287420ca82ac3090cd5049b.html "Transforms a design-time projection-view definition into a database object.") :arrow_upper_right:
 
 [DROP VIEW Statement \(Data Definition\)](drop-view-statement-data-definition-20d9c05.md "Removes a view from the database.")
 

@@ -17,21 +17,15 @@ Provides information about existing snapshots.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the snapshot ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the snapshot ID.
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the creation time.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the creation time.
 
 PURPOSE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(24\)
 
-
-
 </td>
 <td valign="top">
 
 Displays why the snapshot was executed.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays why the snapshot was executed.
 
 FOR\_BACKUP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays if the snapshot was created for backup: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays if the snapshot was created for backup: TRUE/FALSE.
 
 ANCHOR
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the anchor.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the anchor.
 
 REDO\_LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the redo log position corresponding to the snapshot.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the redo log position corresponding to the snapshot.
 
 LAST\_COMMIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp of the last commit of the snapshot.
-
-
 
 </td>
 </tr>
@@ -274,5 +208,5 @@ Displays the timestamp of the last commit of the snapshot.
 
 [M\_MVCC\_SNAPSHOTS System View](m-mvcc-snapshots-system-view-b41f6b2.md "Provides detailed snapshot information of the Multiversion Concurrency Control (MVCC) manager.")
 
-[Performance: Using Hints to Query Data Snapshots](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "Several features in SAP HANA use data snapshots to improve performance. You can use configurable hint classes as a standard way of controlling at run time how the data is selected, either from the snapshot or from the database.") :arrow_upper_right:
+[Performance: Using Hints to Query Data Snapshots](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "Several features in SAP HANA use data snapshots to improve performance. You can use configurable hint classes as a standard way of controlling at run time how the data is selected, either from the snapshot or from the database.") :arrow_upper_right:
 

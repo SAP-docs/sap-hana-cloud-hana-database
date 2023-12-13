@@ -35,28 +35,20 @@ The following table lists the parameters used to describe an entry inserted into
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Direction
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -65,28 +57,20 @@ Description
 
 STORE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 <td valign="top">
 
 NVARCHAR\(530\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the target secure store for the insert operation
-
-
 
 </td>
 </tr>
@@ -95,21 +79,15 @@ The name of the target secure store for the insert operation
 
 FOR\_XS\_APPLICATIONUSER
 
-
-
 </td>
 <td valign="top">
 
 IN
 
-
-
 </td>
 <td valign="top">
 
 BOOLEAN
-
-
 
 </td>
 <td valign="top">
@@ -128,28 +106,20 @@ Indicates if the inserted value is stored for the application user \(“true”\
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 The key to be inserted into the target secure store \(`STORE_NAME`\)
-
-
 
 </td>
 </tr>
@@ -158,28 +128,20 @@ The key to be inserted into the target secure store \(`STORE_NAME`\)
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 <td valign="top">
 
 VARBINARY\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 The binary value of the entry to be inserted into the secure store. Non-binary values \(numbers, dates, strings\) must be converted, for example, using `TO_BINARY` in the database or by using a JavaScript Buffer to maintain the request body content.
-
-
 
 </td>
 </tr>
@@ -200,28 +162,20 @@ The following table lists the parameters used to describe an entry retrieved fro
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Direction
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -230,28 +184,20 @@ Description
 
 STORE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 <td valign="top">
 
 NVARCHAR\(530\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the target secure store for the retrieve operation
-
-
 
 </td>
 </tr>
@@ -260,21 +206,15 @@ The name of the target secure store for the retrieve operation
 
 FOR\_XS\_APPLICATIONUSER
 
-
-
 </td>
 <td valign="top">
 
 IN
 
-
-
 </td>
 <td valign="top">
 
 BOOLEAN
-
-
 
 </td>
 <td valign="top">
@@ -293,28 +233,20 @@ Indicates if the retrieved value is stored for the application user \(“true”
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 The key to be retrieved from the target secure store \(`STORE_NAME`\)
-
-
 
 </td>
 </tr>
@@ -323,28 +255,20 @@ The key to be retrieved from the target secure store \(`STORE_NAME`\)
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 OUT
-
-
 
 </td>
 <td valign="top">
 
 VARBINARY\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 The binary value of the entry to be retrieved from the secure store. Binary values can be converted for further use, for example, with `TO_NVARCHAR` in the database or by using a JavaScript Buffer to maintain the request body content.
-
-
 
 </td>
 </tr>
@@ -365,28 +289,20 @@ The following table lists the parameters used to describe an entry removed from 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Direction
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -395,28 +311,20 @@ Description
 
 STORE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 <td valign="top">
 
 NVARCHAR\(530\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the target secure store for the delete operation
-
-
 
 </td>
 </tr>
@@ -425,21 +333,15 @@ The name of the target secure store for the delete operation
 
 FOR\_XS\_APPLICATIONUSER
 
-
-
 </td>
 <td valign="top">
 
 IN
 
-
-
 </td>
 <td valign="top">
 
 BOOLEAN
-
-
 
 </td>
 <td valign="top">
@@ -458,28 +360,20 @@ Indicates if the value to be deleted is stored for the application user \(“tru
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 IN
-
-
 
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 The key to be deleted within the target secure store \(`STORE_NAME`\)
-
-
 
 </td>
 </tr>

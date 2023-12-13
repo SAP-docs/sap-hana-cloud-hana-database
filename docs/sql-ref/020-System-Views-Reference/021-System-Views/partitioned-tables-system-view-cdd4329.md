@@ -15,21 +15,15 @@ Provides general partitioning information for all partitions of a table.
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the table name.
 
 LEVEL\_1\_EXPRESSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the partitioning expression for first-level partitions.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the partitioning expression for first-level partitions.
 
 LEVEL\_1\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of partitions at the first level.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the total number of partitions at the first level.
 
 LEVEL\_1\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the partitioning type at the first level: HASH, RANGE, ROUNDROBIN, REPLICATE, or RANGE HETEROGENEOUS.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the partitioning type at the first level: HASH, RANGE, ROUNDROBIN, REPL
 
 LEVEL\_2\_EXPRESSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the partitioning expression for second-level partitions.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the partitioning expression for second-level partitions.
 
 LEVEL\_2\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of partitions at the second level.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the total number of partitions at the second level.
 
 LEVEL\_2\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the partitioning type at the second level: HASH, RANGE, RANGE HETEROGENEOUS, or HASH HETEROGENEOUS. Heterogeneous indicates an unbalanced partitioning scheme.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the partitioning type at the second level: HASH, RANGE, RANGE HETEROGEN
 
 CROSS\_STORAGE\_UNIQUE\_CONSTRAINTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether constraint checking is done across stores: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays whether constraint checking is done across stores: TRUE/FALSE.
 
 PARTITIONING\_ON\_NON\_PRIMARY\_KEY\_COLUMNS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether partitioning is on a non-primary key: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays whether partitioning is on a non-primary key: TRUE/FALSE.
 
 PRIMARY\_KEY\_UPDATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether UPDATE statements are allowed on primary key columns: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays whether UPDATE statements are allowed on primary key columns: TRUE/FALS
 
 DYNAMIC\_RANGE\_THRESHOLD
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the threshold after which a new partition is created dynamically.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the threshold after which a new partition is created dynamically.
 
 PARTITION\_DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the PARTITION BY clause.
-
-
 
 </td>
 </tr>
@@ -338,11 +254,11 @@ Displays the PARTITION BY clause.
 
 <a name="loiocdd43294c8a74652b4b6246272db7939__section_fvk_dv1_x2b"/>
 
-## Additional Information
+## Permissions
 
-You must own the table or have SELECT permission on the table to see information about it in the view.
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
-To see information on a table owned by other users, you need the SELECT permission.
+This view also requires the SELECT privilege to see information in a table owned by another user.
 
 **Related Information**  
 
@@ -357,9 +273,9 @@ To see information on a table owned by other users, you need the SELECT permissi
 
 [M\_TABLES System View](../022-Monitoring-Views/m-tables-system-view-20c7689.md "Provides information on row and column tables.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
-[NSE-Enabled Partitioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/322bb45b63fd4d3c90ca4baf5e7558df.html "For SAP HANA NSE tables, partitioning can be heterogeneous or non-heterogenous. However, partition load unit can be set only for heterogeneous partitioning. This scenario describes a sequence of steps creating a page-loadable, partitioned table and then altering its load unit.") :arrow_upper_right:
+[NSE-Enabled Partitioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/322bb45b63fd4d3c90ca4baf5e7558df.html "For SAP HANA NSE tables, partitioning can be heterogeneous or non-heterogenous. However, partition load unit can be set only for heterogeneous partitioning. This scenario describes a sequence of steps creating a page-loadable, partitioned table and then altering its load unit.") :arrow_upper_right:
 
 [Heterogeneous Create Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/heterogeneous-create-partition-clauses-d496e58.md "Defines the various partitioning clauses available for heterogeneous partitions when creating a new table.")
 

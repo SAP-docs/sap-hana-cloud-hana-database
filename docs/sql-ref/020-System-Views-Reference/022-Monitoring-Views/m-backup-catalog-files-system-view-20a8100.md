@@ -17,21 +17,15 @@ Provides location information for all backup catalog entries.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 ENTRY\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of a backup catalog entry.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the unique ID of a backup catalog entry.
 
 BACKUP\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of a data backup and log backup respectively. All backup files of a single data backup share the same backup ID.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the unique ID of a data backup and log backup respectively. All backup 
 
 SOURCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 SOURCE\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of persistence to be backed up: volume or topology.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type of persistence to be backed up: volume or topology.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the host name.
 
 SERVICE\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of database service: indexserver, nameserver, or statisticsserver.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the type of database service: indexserver, nameserver, or statisticsser
 
 REDO\_LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 In the case of a data backup, this value displays the log position that must be processed next when a log recovery is requested after restoring the data backup.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ In the case of a data backup, this value displays the log position that must be 
 
 FIRST\_REDO\_LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 In the case of a log backup, this value displays the log position of the oldest log entry contained in the backup.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ In the case of a log backup, this value displays the log position of the oldest 
 
 LAST\_REDO\_LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 In the case of a log backup, this value displays the log position of the newest log entry contained in the backup.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ In the case of a log backup, this value displays the log position of the newest 
 
 BACKUP\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the backup in bytes.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the size of the backup in bytes.
 
 DESTINATION\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays that the data or log backup was written to this location.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays that the data or log backup was written to this location.
 
 DESTINATION\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of location: file or backint.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the type of location: file or backint.
 
 EXTERNAL\_BACKUP\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the identifier of the backup received from a backup tool.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the identifier of the backup received from a backup tool.
 
 LOG\_SEGMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 In the case of a log backup, this value displays the number of log segments contained in the backup. In the case of non-log backups, this column always contains the SQL NULL value.
-
-
 
 </td>
 </tr>

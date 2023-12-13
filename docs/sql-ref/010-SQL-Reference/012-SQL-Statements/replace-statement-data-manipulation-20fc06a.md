@@ -150,7 +150,7 @@ See the UPSERT statement for examples of how to update rows using the REPLACE/UP
 
 [SELECT Statement \(Data Manipulation\)](select-statement-data-manipulation-20fcf24.md "Queries data from the database.")
 
-[UPSERT Statement \(Data Manipulation\)](upsert-statement-data-manipulation-ea8b677.md "Updates rows in a table or inserts new rows. This UPSERT and REPLACE statements are synonymous and have similar syntax and purpose.")
+[UPSERT Statement \(Data Manipulation\)](upsert-statement-data-manipulation-ea8b677.md "Updates rows in a table or inserts new rows. This UPSERT and REPLACE statements are synonymous and have identical syntax and purpose.")
 
 [UPDATE Statement \(Data Manipulation\)](update-statement-data-manipulation-20ff268.md "Changes the values of the records of a table.")
 

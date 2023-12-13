@@ -28,7 +28,7 @@ Converts the date string *<date\>* into an ABAP DATE string with format 'YYYYMMD
 
 ## Example
 
-The following example converts the value ***2010-01-12*** to the ABAP DATE string ***20100112***.
+The following example converts the value `2010-01-12` to the ABAP DATE string ***20100112***.
 
 ```
 SELECT TO_DATS ('2010-01-12') "abap date" FROM DUMMY;

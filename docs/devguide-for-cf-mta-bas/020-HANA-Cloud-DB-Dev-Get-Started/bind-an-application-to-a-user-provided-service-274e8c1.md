@@ -59,7 +59,7 @@ The *SAP HANA PROJECTS* explorer includes tools that enable you to manage the bi
 
 3.  Bind a database application to a user-provided service.
 
-    In the list of services displayed in *Database Connections*, select the user-provided service to which you want to bind your application \(for example, ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *cross-container-service-1*\) and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
+    In the list of services displayed in *Database Connections*, select the user-provided service to which you want to bind your application \(for example, ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1*\) and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
 
 4.  Unbind a database application from a user-provided service.
 
@@ -69,7 +69,7 @@ The *SAP HANA PROJECTS* explorer includes tools that enable you to manage the bi
 
         -   Bound "non-target" container services, for example, a user-provided service:
 
-            ![](images/BAS_icon_dependencyBound_e45e7a9.svg) *cross-container-service-1 \(MyUserProvidedService\)* 
+            ![](images/BAS_icon_dependencyBound_e45e7a9.svg)*cross-container-service-1 \(MyUserProvidedService\)* 
 
 
     2.  Check the status of the user-provided service.
@@ -78,7 +78,7 @@ The *SAP HANA PROJECTS* explorer includes tools that enable you to manage the bi
 
         -   Unbound "non-target" container services, for example, a user-provided service:
 
-            ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *cross-container-service-1* 
+            ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1* 
 
 
 

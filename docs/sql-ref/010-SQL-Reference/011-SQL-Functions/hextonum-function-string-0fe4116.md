@@ -61,7 +61,7 @@ Converts a hexadecimal value to a string value as a BIGINT data type. The input 
 
 ## Example
 
-The following example converts the hexadecimal value ***c2*** to a BIGINT string value ***12,345***:
+The following example converts the hexadecimal value `c2` to a BIGINT string value ***12,345***:
 
 ```
 CREATE TABLE t2 (c2 NVARCHAR(16));

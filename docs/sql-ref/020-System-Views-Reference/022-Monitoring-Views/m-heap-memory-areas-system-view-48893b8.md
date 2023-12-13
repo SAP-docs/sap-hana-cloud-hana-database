@@ -15,21 +15,15 @@ Provides memory fragmentation details.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the persistence volume ID.
 
 AREA
 
-
-
 </td>
 <td valign="top">
 
 STRING
 
-
-
 </td>
 <td valign="top">
 
 Identifies the part of the memory management being used, for example, the PoolAllocator.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Identifies the part of the memory management being used, for example, the PoolAl
 
 USED\_SIZED
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the bytes in use.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the bytes in use.
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total bytes in the area.
-
-
 
 </td>
 </tr>

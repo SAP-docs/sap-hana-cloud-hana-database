@@ -19,21 +19,15 @@ The `_SYS_DI` monitoring view `M_ALL_MESSAGES` shows all HDI-container-group mes
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Description
 
 REQUEST\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The unique ID of the API call that produced this message. This ID is always the same for messages that originate from the same API call.
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ The unique ID of the API call that produced this message. This ID is always the 
 
 ROW\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 An increasing number representing the line number of the message log
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ An increasing number representing the line number of the message log
 
 LEVEL
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 The indentation level of the message \(used for better visual representation\)
-
-
 
 </td>
 </tr>
@@ -111,14 +87,10 @@ The indentation level of the message \(used for better visual representation\)
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -141,21 +113,15 @@ The type of message:
 
 LIBRARY\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 \(**optional**\) The ID of the library \(for messages from a plug-in\)
-
-
 
 </td>
 </tr>
@@ -164,21 +130,15 @@ NVARCHAR\(256\)
 
 PLUGIN\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 \(**optional**\) The ID of the plug-in \(for messages from a plug-in\)
-
-
 
 </td>
 </tr>
@@ -187,21 +147,15 @@ NVARCHAR\(256\)
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(511\)
 
-
-
 </td>
 <td valign="top">
 
 \(**optional**\) The path to the artifact that is being processed
-
-
 
 </td>
 </tr>
@@ -210,21 +164,15 @@ NVARCHAR\(511\)
 
 SEVERITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 The severity of the message \(INFO, WARNING, ERROR\)
-
-
 
 </td>
 </tr>
@@ -233,21 +181,15 @@ The severity of the message \(INFO, WARNING, ERROR\)
 
 MESSAGE\_CODE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 A unique code corresponding to the `MESSAGE` field
-
-
 
 </td>
 </tr>
@@ -256,21 +198,15 @@ A unique code corresponding to the `MESSAGE` field
 
 MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 The text of the message
-
-
 
 </td>
 </tr>
@@ -279,21 +215,15 @@ The text of the message
 
 LOCATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 \(**optional**\) The position \(line:column\) within the artifact that the message refers to
-
-
 
 </td>
 </tr>
@@ -302,21 +232,15 @@ NVARCHAR\(64\)
 
 LOCATION\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 \(**optional**\) XPath expression within the artifact that the message refers to
-
-
 
 </td>
 </tr>
@@ -325,21 +249,15 @@ NVARCHAR\(256\)
 
 TIMESTAMP\_UTC
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 The time when the message was created
-
-
 
 </td>
 </tr>

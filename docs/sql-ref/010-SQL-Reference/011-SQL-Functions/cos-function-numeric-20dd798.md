@@ -28,7 +28,7 @@ Returns the cosine of the angle *<number\>*, in radians.
 
 ## Example
 
-The following example returns the value ***1.0*** for ***"cos"***:
+The following example returns the value ***1.0*** for `"cos"`:
 
 ```
 SELECT COS (0.0) "cos" FROM DUMMY;

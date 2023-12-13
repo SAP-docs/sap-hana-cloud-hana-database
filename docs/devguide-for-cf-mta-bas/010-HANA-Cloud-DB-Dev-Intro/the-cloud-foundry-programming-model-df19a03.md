@@ -33,11 +33,11 @@ In the context of an organization, the platform users can be assigned special pe
 
 Before a service can be used by an application, it is necessary to create a service “instance” to which the application must be bound. For each type of service there is a “service broker”; the service broker executes the actions required to create and delete service instances and bind application to services. The UAA service broker, for example, implements the API for managing UAA service instances. What a service instance means technically may differ between services and service plans. A service instance can be just a configuration for a shared implementation and a separate login and data area on a shared server. In certain other cases, each service instance can have its own server.
 
-   
+  
   
 **Basic Cloud Foundry Concepts**
 
- ![](images/Application_and_Services_in_Cloud_Foundry_f4e7909.png "Basic Cloud Foundry Concepts") 
+![](images/Application_and_Services_in_Cloud_Foundry_f4e7909.png "Basic Cloud Foundry Concepts")
 
 Applications are deployed to the target platform by using the `push` operation of the platform API. For this reason, in Cloud Foundry parlance, applications are “pushed” to the platform. Pushing an application works as follows:
 

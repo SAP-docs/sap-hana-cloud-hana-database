@@ -17,21 +17,15 @@ Provides data volume partition statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ Displays the persistence volume ID.
 
 PARTITION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -137,21 +109,15 @@ Displays the partition ID. Returns the following:
 
 FILE\_NAME\_PATTERN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file name pattern for the data volume partition file.
-
-
 
 </td>
 </tr>
@@ -160,21 +126,15 @@ Displays the file name pattern for the data volume partition file.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data volume state. This can be specified as ACTIVATING or ACTIVE. When a data volume partition is added, it is in the ACTIVATING state and is not usable until the next savepoint, at which time it enters the ACTIVE state.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the data volume state. This can be specified as ACTIVATING or ACTIVE. W
 
 MAX\_FILE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum file size for the data volume files in bytes. A value of 0 means that there is no limitation for the file size.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the maximum file size for the data volume files in bytes. A value of 0 
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used size of the data volume partition in bytes.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the used size of the data volume partition in bytes.
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the data volume partition in bytes.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the total size of the data volume partition in bytes.
 
 FILES\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the data volume files on the disk in bytes.
-
-
 
 </td>
 </tr>
@@ -275,21 +211,15 @@ Displays the size of the data volume files on the disk in bytes.
 
 FILL\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the fill ratio of the data volume partition.
-
-
 
 </td>
 </tr>
@@ -306,5 +236,5 @@ Displays the fill ratio of the data volume partition.
 
 [M\_DATA\_VOLUME\_SUPERBLOCK\_STATISTICS System View](m-data-volume-superblock-statistics-system-view-20adf77.md "Provides FreeBlockManager Superblock statistics.")
 
-[Static and Dynamic Partition Pruning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/602e0dcb40364401a092329296405b84.html "An important partitioning strategy to improve performance is to match partitions wherever possible with the most frequently queried data so that data pruning is possible.") :arrow_upper_right:
+[Static and Dynamic Partition Pruning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/602e0dcb40364401a092329296405b84.html "An important partitioning strategy to improve performance is to match partitions wherever possible with the most frequently queried data so that data pruning is possible.") :arrow_upper_right:
 

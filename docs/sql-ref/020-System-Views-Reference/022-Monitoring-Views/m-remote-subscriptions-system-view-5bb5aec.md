@@ -13,21 +13,15 @@ Provides the status and run-time information of a remote subscription.
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription schema name.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the remote subscription schema name.
 
 SUBSCRIPTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote subscription name.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the remote subscription name.
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name.
-
-
 
 </td>
 </tr>
@@ -105,14 +81,10 @@ Displays the remote source name.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
@@ -136,21 +108,15 @@ Displays the event state:
 
 OPTIMIZED\_QUERY\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the optimized query string. If there are multiple subscriptions interested in the same query result, with the same internal distribution ID, each subscription can use the same result.
-
-
 
 </td>
 </tr>
@@ -159,21 +125,15 @@ Displays the optimized query string. If there are multiple subscriptions interes
 
 OPTIMIZED\_QUERY\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the hash of the optimized query string.
-
-
 
 </td>
 </tr>
@@ -182,21 +142,15 @@ Displays the hash of the optimized query string.
 
 INTERNAL\_DISTRIBUTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the generated integer that identifies if multiple target tables are interested in the changes from the same source SQL or virtual table.
-
-
 
 </td>
 </tr>
@@ -205,14 +159,10 @@ Displays the generated integer that identifies if multiple target tables are int
 
 OPTIMIZED\_QUERY\_RESULTSET\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
-
-
 
 </td>
 <td valign="top">
@@ -225,8 +175,6 @@ Displays the query result set type:
 
 2 - POOL
 
-
-
 </td>
 </tr>
 <tr>
@@ -234,21 +182,15 @@ Displays the query result set type:
 
 REMOTE\_SUBSCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays an optional subscription name registered by the adapter in the remote source system.
-
-
 
 </td>
 </tr>
@@ -257,21 +199,15 @@ Displays an optional subscription name registered by the adapter in the remote s
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -280,21 +216,15 @@ Displays the persistence volume ID.
 
 BEGIN\_MARKER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the generated begin marker when the QUEUE command is called. The begin marker must use the format: B*<remote\_source\_oid\>*\_*<remote\_subscription\_oid\>*\_*<YYYYMMDDHH24MMSSFF7\>*.
-
-
 
 </td>
 </tr>
@@ -303,21 +233,15 @@ Displays the generated begin marker when the QUEUE command is called. The begin 
 
 END\_MARKER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the generated end marker when the DISTRIBUTE command is called. The end marker must use the format: E*<remote\_source\_oid\>*\_*<remote\_subscription\_oid\>*\_*<YYYYMMDDHH24MMSSFF7\>*.
-
-
 
 </td>
 </tr>
@@ -326,21 +250,15 @@ Displays the generated end marker when the DISTRIBUTE command is called. The end
 
 BEGIN\_MARKER\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the QUEUE request is received.
-
-
 
 </td>
 </tr>
@@ -349,21 +267,15 @@ Displays the timestamp when the QUEUE request is received.
 
 END\_MARKER\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the DISTRIBUTE command is called.
-
-
 
 </td>
 </tr>
@@ -372,21 +284,15 @@ Displays the timestamp when the DISTRIBUTE command is called.
 
 LAST\_PROCESSED\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction ID of the last processed transaction.
-
-
 
 </td>
 </tr>
@@ -395,21 +301,15 @@ Displays the transaction ID of the last processed transaction.
 
 LAST\_PROCESSED\_TRANSACTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the last transaction was applied.
-
-
 
 </td>
 </tr>
@@ -418,21 +318,15 @@ Displays the time when the last transaction was applied.
 
 LAST\_PROCESSED\_BEGIN\_SEQUENCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY\(68\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the begin record sequence ID of the last processed transaction.
-
-
 
 </td>
 </tr>
@@ -441,21 +335,15 @@ Displays the begin record sequence ID of the last processed transaction.
 
 LAST\_PROCESSED\_COMMIT\_SEQUENCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY\(68\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the commit record sequence ID of the last processed transaction.
-
-
 
 </td>
 </tr>
@@ -464,21 +352,15 @@ Displays the commit record sequence ID of the last processed transaction.
 
 LAST\_RECEIVED\_SEQUENCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY\(68\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last received sequence ID.
-
-
 
 </td>
 </tr>
@@ -487,21 +369,15 @@ Displays the last received sequence ID.
 
 LAST\_RECEIVED\_CUSTOM\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last received custom ID. Custom IDs may be used by adapters with every changed-data row of a transaction.
-
-
 
 </td>
 </tr>
@@ -510,21 +386,15 @@ Displays the last received custom ID. Custom IDs may be used by adapters with ev
 
 LAST\_PROCESSED\_CUSTOM\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last processed custom ID. Custom IDs may be used by adapters with every changed-data row of a transaction.
-
-
 
 </td>
 </tr>

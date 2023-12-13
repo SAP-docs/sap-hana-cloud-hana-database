@@ -17,21 +17,15 @@ Lists available views.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the view name.
 
 VIEW\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the view.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object ID of the view.
 
 IS\_READ\_ONLY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether this view is read-only or updatable: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays whether this view is read-only or updatable: TRUE/FALSE.
 
 IS\_DDL\_ONLY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether users can query the view and modify the underlying table.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays whether users can query the view and modify the underlying table.
 
 HAS\_CHECK\_OPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether this view has an updatable view condition: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays whether this view has an updatable view condition: TRUE/FALSE.
 
 HAS\_COLUMN\_ALIASES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the view has a columns alias: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays whether the view has a columns alias: TRUE/FALSE.
 
 DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the view definition.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the view definition.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view description.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the view description.
 
 IS\_COLUMN\_VIEW
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether this view is a column view: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays whether this view is a column view: TRUE/FALSE.
 
 VIEW\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of view: ROW, OLAP, JOIN, HIERARCHY, or CALC.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the type of view: ROW, OLAP, JOIN, HIERARCHY, or CALC.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the view is valid or not. This value is FALSE when its base objects are changed or dropped: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays whether the view is valid or not. This value is FALSE when its base obj
 
 HAS\_MASKED\_COLUMNS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the view has a mask definition for at least one column: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays whether or not the view has a mask definition for at least one column: 
 
 MASK\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the mask mode to be applied if the view has masked columns: DEFAULT or SESSION USER; otherwise NULL.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the mask mode to be applied if the view has masked columns: DEFAULT or 
 
 HAS\_PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the view has parameters defined: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays whether or not the view has parameters defined: TRUE/FALSE.
 
 HAS\_ANONYMIZATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the view is defined as anonymized: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays whether the view is defined as anonymized: TRUE/FALSE.
 
 HAS\_CACHE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(36\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the result cache type for the view: STATIC or DYNAMIC.
-
-
 
 </td>
 </tr>
@@ -431,25 +323,27 @@ Displays the result cache type for the view: STATIC or DYNAMIC.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
 
 Displays the creation time.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio2102bf28751910149d0a817a65699956__section_arb_m11_fzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -468,5 +362,5 @@ Displays the creation time.
 
 [VIEW\_PARAMETERS System View](view-parameters-system-view-45b86e8.md "Provides information about view parameters.")
 
-[System Views for Monitoring Partitions](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/9d829883639d445884cc0d9210f14394.html "A number of system views allow you to monitor your partitions.") :arrow_upper_right:
+[System Views for Monitoring Partitions](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/9d829883639d445884cc0d9210f14394.html "A number of system views allow you to monitor your partitions.") :arrow_upper_right:
 

@@ -17,21 +17,15 @@ Provides information about spatial reference systems.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the owner name of the spatial reference system \(SRS\).
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the owner name of the spatial reference system \(SRS\).
 
 SRS\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the numeric identifier \(SRID\) of this spatial reference system.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the numeric identifier \(SRID\) of this spatial reference system.
 
 SRS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the spatial reference system.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the name of the spatial reference system.
 
 ROUND\_EARTH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the SRS type is ROUND EARTH \(TRUE\) or PLANAR \(FALSE\).
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Indicates whether the SRS type is ROUND EARTH \(TRUE\) or PLANAR \(FALSE\).
 
 AXIS\_ORDER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays how the database server interprets points with regards to latitude and longitude: x/y/z/m, long/lat/z/m, lat/long/z/m.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays how the database server interprets points with regards to latitude and 
 
 SNAP\_TO\_GRID
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Defines the granularity of the grid, in the LINEAR\_UNIT\_OF\_MEASURE, that geometries are snapped to on creation.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Defines the granularity of the grid, in the LINEAR\_UNIT\_OF\_MEASURE, that geom
 
 TOLERANCE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Defines the precision to use when comparing points.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Defines the precision to use when comparing points.
 
 SEMI\_MAJOR\_AXIS
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the distance from the center of the ellipsoid to the equator for a ROUND EARTH SRS.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the distance from the center of the ellipsoid to the equator for a ROUN
 
 SEMI\_MINOR\_AXIS
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the distance from the center of the ellipsoid to the poles for a ROUND EARTH SRS.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the distance from the center of the ellipsoid to the poles for a ROUND 
 
 INV\_FLATTENING
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the inverse flattening used for the ellipsoid in a ROUND EARTH SRS.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the inverse flattening used for the ellipsoid in a ROUND EARTH SRS.
 
 MIN\_X
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum x value allowed in coordinates.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the minimum x value allowed in coordinates.
 
 MAX\_X
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum x value allowed in coordinates.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the maximum x value allowed in coordinates.
 
 MIN\_Y
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum y value allowed in coordinates.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the minimum y value allowed in coordinates.
 
 MAX\_Y
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum y value allowed in coordinates.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the maximum y value allowed in coordinates.
 
 MIN\_Z
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum z value allowed in coordinates.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the minimum z value allowed in coordinates.
 
 MAX\_Z
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum z value allowed in coordinates.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the maximum z value allowed in coordinates.
 
 ORGANIZATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the organization that created the coordinate system used by this spatial reference system.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the name of the organization that created the coordinate system used by
 
 ORGANIZATION\_COORDSYS\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID given to the coordinate system by the organization that created it.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the ID given to the coordinate system by the organization that created 
 
 SRS\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(11\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of SRS as defined by the SQL/MM standard: GEOGRAPHIC, PROJECTED, or ENGINEERING.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the type of SRS as defined by the SQL/MM standard: GEOGRAPHIC, PROJECTE
 
 LINEAR\_UNIT\_OF\_MEASURE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the linear unit of measure used by this spatial reference system.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the linear unit of measure used by this spatial reference system.
 
 ANGULAR\_UNIT\_OF\_MEASURE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the angular unit of measure used by this spatial reference system.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the angular unit of measure used by this spatial reference system.
 
 POLYGON\_FORMAT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the orientation of the rings in a polygon: COUNTERCLOCKWISE, CLOCKWISE, or EVENODD.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the orientation of the rings in a polygon: COUNTERCLOCKWISE, CLOCKWISE,
 
 STORAGE\_FORMAT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the data is stored in normalized format \(INTERNAL\), unnormalized format \(ORIGINAL\), or both \(MIXED\).
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Indicates whether the data is stored in normalized format \(INTERNAL\), unnormal
 
 DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the WKT definition of the spatial reference system in the format defined by the OGC standard.
-
-
 
 </td>
 </tr>
@@ -592,25 +442,27 @@ Displays the WKT definition of the spatial reference system in the format define
 
 TRANSFORM\_DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the transform definition settings for use when transforming data from this SRS to another.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod23499bcd2951014ad38a3bd89faf03e__section_bdz_xvz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -621,5 +473,5 @@ Displays the transform definition settings for use when transforming data from t
 
 [Spatial Data Types](../../010-SQL-Reference/spatial-data-types-8efe5a4.md "Spatial data types are used to store values that contain spatial data, such as points, lines, or polygons.")
 
-[HANA Spatial Support](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/e4672cc39b584ea1a79a134ec0b7859b.html "") :arrow_upper_right:
+[HANA Spatial Support](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/e4672cc39b584ea1a79a134ec0b7859b.html "") :arrow_upper_right:
 

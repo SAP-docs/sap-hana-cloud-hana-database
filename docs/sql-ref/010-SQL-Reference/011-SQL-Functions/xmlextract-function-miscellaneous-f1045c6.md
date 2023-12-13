@@ -66,7 +66,7 @@ If an XML element is empty \(for example, `<name></name>`\), then an empty resul
 
 ## Example
 
-The following statement returns the ***<name\>*** element from item 2 \(the example returns ***<name\>Jar</name\>***\):
+The following statement returns the `<name>` element from item 2 \(the example returns ***<name\>Jar</name\>***\):
 
 ```
 SELECT XMLEXTRACT(

@@ -66,6 +66,8 @@ The following statements enable you to manage system configuration settings in y
 
 -   [ALTER SYSTEM RECONFIGURE SERVICE Statement \(System Management\)](alter-system-reconfigure-service-statement-system-management-20d23ea.md)
 
+-   [ALTER SYSTEM REMOVE CACHE Statement \(System Management\)](alter-system-remove-cache-statement-system-management-e4a2ad5.md)
+
 -   [ALTER SYSTEM REFRESH RESULT CACHE Statement \(System Management\)](alter-system-refresh-result-cache-statement-system-management-9d274fa.md)
 
 -   [ALTER SYSTEM REFRESH RESULT CACHE ENTRY Statement \(System Management\)](alter-system-refresh-result-cache-entry-statement-system-management-1ab0dbb.md)

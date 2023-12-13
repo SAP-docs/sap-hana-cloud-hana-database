@@ -40,20 +40,20 @@ In SAP HANA Cloud a database procedure has the file extension `.hdbprocedure`, f
 
         -   Open the command palette:
 
-            Either press  [Crtl\] + [Shift\] + [P\]  
+            Either press [Crtl\] + [Shift\] + [P\]  
 
             Or choose *View* \> *Command Palette...*
 
             Or just press [F1\]
 
-        -   In the command palette, type ***Project*** and choose *Create Project from Template*.
+        -   In the command palette, type `Project` and choose *Create Project from Template*.
 
         > ### Tip:  
         > Alternatively, in the *Welcome* tab, choose *Start from Template* \> *Create a new project*.
 
     2.  In the *New Project from Template* Wizard, choose *SAP HANA Database Project* and then choose *Start*.
 
-    3.  In the *Add Basic Information* pane, type the name of the new project \(***MyApp*** \) and choose *Next*.
+    3.  In the *Add Basic Information* pane, type the name of the new project \(`MyApp` \) and choose *Next*.
 
     4.  In the *Set Basic Properties* pane, accept the default settings and choose *Next*.
 
@@ -107,10 +107,10 @@ In SAP HANA Cloud a database procedure has the file extension `.hdbprocedure`, f
 
     2.  Create a new `.hdbprocedure` file for your stored procedure.
 
-        Right-click the database-module folder `db/src/procedures`, choose *New* \> *File* from the context menu, and name the new stored procedure ***OrderCount.hdbprocedure***.
+        Right-click the database-module folder `db/src/procedures`, choose *New* \> *File* from the context menu, and name the new stored procedure `OrderCount.hdbprocedure`.
 
         > ### Note:  
-        > To use the *Create SAP HANA Database Artifact* Wizard to guide you through the artifact-creation process, choose *View* \> *Command Palette*, type ***create***, and choose *SAP HANA: Create SAP HANA Database Artifact*. Choose *Procedure \(hdbprocedure\)* as the artifact type, provide a name for the new procedure and save it in the folder `db/src/procedures`.
+        > To use the *Create SAP HANA Database Artifact* Wizard to guide you through the artifact-creation process, choose *View* \> *Command Palette*, type `create`, and choose *SAP HANA: Create SAP HANA Database Artifact*. Choose *Procedure \(hdbprocedure\)* as the artifact type, provide a name for the new procedure and save it in the folder `db/src/procedures`.
 
         The new stored procedure opens in SAP Business Application Studio.
 
@@ -227,7 +227,7 @@ In SAP HANA Cloud a database procedure has the file extension `.hdbprocedure`, f
     4.  Enter a value in the *PURCHASEORDER\_ID* box.
 
         > ### Tip:  
-        > Since the `PURCHASEORDERID` is defined in the first column of the table `PurchaseOrderItem`, you can use the first values in each row of the file `item.csv` to run the tests, for example, ***0500000000*** or ***0500000001***.
+        > Since the `PURCHASEORDERID` is defined in the first column of the table `PurchaseOrderItem`, you can use the first values in each row of the file `item.csv` to run the tests, for example, `0500000000` or `0500000001`.
 
     5.  Run the procedure.
 

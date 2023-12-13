@@ -17,21 +17,15 @@ Provides detailed statistics about file access.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file system path.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the file system path.
 
 FILESYSTEM\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file system type.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the file system type.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of contained files.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the type of contained files.
 
 CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration parameters.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the configuration parameters.
 
 MAX\_IO\_BUFFER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum I/O buffer size in bytes.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the maximum I/O buffer size in bytes.
 
 APPEND\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of appends.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the number of appends.
 
 ACTIVE\_APPEND\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active appends.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the number of active appends.
 
 MIN\_APPEND\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum size of the appended data in bytes.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the minimum size of the appended data in bytes.
 
 AVG\_APPEND\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of the appended data in bytes.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the average size of the appended data in bytes.
 
 MAX\_APPEND\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of the appended data in bytes.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the maximum size of the appended data in bytes.
 
 SUM\_APPEND\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the appended data in bytes.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the total size of the appended data in bytes.
 
 WRITE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of writes.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the number of writes.
 
 ACTIVE\_WRITE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active writes.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of active writes.
 
 MIN\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum size of the written data in bytes.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the minimum size of the written data in bytes.
 
 AVG\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of the written data in bytes.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the average size of the written data in bytes.
 
 MAX\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of the written data in bytes.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the maximum size of the written data in bytes.
 
 SUM\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of written data.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the total size of written data.
 
 TRIGGER\_ASYNC\_WRITE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of trigger asynchronous writes.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the number of trigger asynchronous writes.
 
 ACTIVE\_TRIGGER\_ASYNC\_WRITE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active trigger asynchronous writes.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the number of active trigger asynchronous writes.
 
 MIN\_TRIGGER\_ASYNC\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum size of the trigger asynchronous write data in bytes.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the minimum size of the trigger asynchronous write data in bytes.
 
 AVG\_TRIGGER\_ASYNC\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of the trigger asynchronous write data in bytes.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the average size of the trigger asynchronous write data in bytes.
 
 MAX\_TRIGGER\_ASYNC\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of the trigger asynchronous write data in bytes.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the maximum size of the trigger asynchronous write data in bytes.
 
 SUM\_TRIGGER\_ASYNC\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the trigger asynchronous write data in bytes.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the total size of the trigger asynchronous write data in bytes.
 
 READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of reads.
-
-
 
 </td>
 </tr>
@@ -661,21 +493,15 @@ Displays the number of reads.
 
 ACTIVE\_READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active reads.
-
-
 
 </td>
 </tr>
@@ -684,21 +510,15 @@ Displays the number of active reads.
 
 MIN\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum size of the read data in bytes.
-
-
 
 </td>
 </tr>
@@ -707,21 +527,15 @@ Displays the minimum size of the read data in bytes.
 
 AVG\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of the read data in bytes.
-
-
 
 </td>
 </tr>
@@ -730,21 +544,15 @@ Displays the average size of the read data in bytes.
 
 MAX\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of the read data in bytes.
-
-
 
 </td>
 </tr>
@@ -753,21 +561,15 @@ Displays the maximum size of the read data in bytes.
 
 SUM\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the read data in bytes.
-
-
 
 </td>
 </tr>
@@ -776,21 +578,15 @@ Displays the total size of the read data in bytes.
 
 TRIGGER\_ASYNC\_READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of trigger asynchronous reads.
-
-
 
 </td>
 </tr>
@@ -799,21 +595,15 @@ Displays the number of trigger asynchronous reads.
 
 ACTIVE\_TRIGGER\_ASYNC\_READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active trigger asynchronous reads.
-
-
 
 </td>
 </tr>
@@ -822,21 +612,15 @@ Displays the number of active trigger asynchronous reads.
 
 MIN\_TRIGGER\_ASYNC\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum size of the trigger asynchronous read data.
-
-
 
 </td>
 </tr>
@@ -845,21 +629,15 @@ Displays the minimum size of the trigger asynchronous read data.
 
 AVG\_TRIGGER\_ASYNC\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of the trigger asynchronous read data.
-
-
 
 </td>
 </tr>
@@ -868,21 +646,15 @@ Displays the average size of the trigger asynchronous read data.
 
 MAX\_TRIGGER\_ASYNC\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of the trigger asynchronous read data.
-
-
 
 </td>
 </tr>
@@ -891,21 +663,15 @@ Displays the maximum size of the trigger asynchronous read data.
 
 SUM\_TRIGGER\_ASYNC\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the trigger asynchronous read data.
-
-
 
 </td>
 </tr>

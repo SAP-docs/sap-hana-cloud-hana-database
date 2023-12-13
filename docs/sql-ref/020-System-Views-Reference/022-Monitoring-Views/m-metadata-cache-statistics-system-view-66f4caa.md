@@ -15,21 +15,15 @@ Provides information regarding the efficiency and use of the metadata cache.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port number.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the port number.
 
 CACHE\_GROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the category name of the cache group.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the category name of the cache group.
 
 ORIGIN\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the original database that the cache group belongs to.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the name of the original database that the cache group belongs to.
 
 ACCESS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the access count of the cache group.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the access count of the cache group.
 
 HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache hit count of the cache group.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the cache hit count of the cache group.
 
 EMPTY\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the empty cache hit count of the cache group.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the empty cache hit count of the cache group.
 
 LATE\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duplicated metadata request count to the coordinator node. This count only occurs in the race conditions of the thread.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the duplicated metadata request count to the coordinator node. This cou
 
 NOT\_FOUND\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the empty result response count of the coordinator node.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the empty result response count of the coordinator node.
 
 REVALIDATION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the revalidation count of old cache items.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the revalidation count of old cache items.
 
 MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache miss count of the cache group.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the cache miss count of the cache group.
 
 ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of items in the cache group.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the total number of items in the cache group.
 
 INVALID\_ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of invalid cache items. These items are set to invalid and removed during the next garbage collection.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the number of invalid cache items. These items are set to invalid and r
 
 VALID\_ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of valid cache items.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the number of valid cache items.
 
 STALE\_ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of stale cache items. These are set as expired by default at the expiration time. These items can be revalidated later or removed at the next garbage collection.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the number of stale cache items. These are set as expired by default at
 
 USED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the memory occupied by the cache group in bytes.
-
-
 
 </td>
 </tr>
@@ -414,7 +312,7 @@ Displays the size of the memory occupied by the cache group in bytes.
 
 [ALTER SYSTEM REMOVE RESULT CACHE ENTRY Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-remove-result-cache-entry-statement-system-management-2124566.md "Removes the result cache entry for the specified cache ID.")
 
-[Function Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/98599d94ae4e440eaea23dfd740de41b.html "") :arrow_upper_right:
+[Function Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/98599d94ae4e440eaea23dfd740de41b.html "") :arrow_upper_right:
 
-[Procedure Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/8c59aace1caf472ebe71e6592a06b27a.html "") :arrow_upper_right:
+[Procedure Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8c59aace1caf472ebe71e6592a06b27a.html "") :arrow_upper_right:
 

@@ -52,7 +52,7 @@ This tutorial shows how to set up and use an instance of the SAP Business Applic
 
     1.  Search for the SAP Business Application Studio service.
 
-        Type ***studio*** in the search box and choose *Business Application Studio* or, alternatively, click the *Business Application Studio* tile in the list of services.
+        Type `studio` in the search box and choose *Business Application Studio* or, alternatively, click the *Business Application Studio* tile in the list of services.
 
     2.  Choose *Subscribe* and then *Go to Application*.
 

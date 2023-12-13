@@ -76,10 +76,10 @@ For RECORD COUNT data statistics objects, you cannot specify columns as part of 
 Specifies the table name you want to create statistics on.
 
 ```
-<table_name> ::= [ <database_name>.]<schema_name>.]<identifier>
+<table_name> ::= [ [ <database_name>.]<schema_name>.]<identifier>
 ```
 
-For linked database, *<database\_name\>* is the name of the remote source. For all other cases, *<database\_name\>* is the name of the database where the table is located.
+For linked databases, *<database\_name\>* is the name of the remote source. For all other cases, *<database\_name\>* is the name of the database where the table is located.
 
 
 
@@ -386,7 +386,7 @@ PREFIX BITS *<unsigned\_integer\>*
 </b></dt>
 <dd>
 
-Controls the number of bits the SKETCH algorithms use when constructing the SKETCH statistics. Specify this parameter when TYPE is SKETCH. Its value is an integer between 0 and 63. The default is 8.
+This parameter, ranging from 0 to 63, determines the number of bits used by SKETCH algorithms when constructing SKETCH statistics. While PREFIX BITS can be set within this range, increasing it significantly beyond the default value of 8 can greatly increase memory usage and risk memory allocation failures. Therefore, it is strongly advised to use the default value of 8 to ensure efficient memory use and stable performance.
 
 
 

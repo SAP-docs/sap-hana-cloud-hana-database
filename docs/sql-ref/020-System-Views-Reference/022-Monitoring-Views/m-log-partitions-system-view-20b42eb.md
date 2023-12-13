@@ -17,21 +17,15 @@ Provides log partition statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ Displays the persistence volume ID.
 
 PARTITION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -137,21 +109,15 @@ Displays the partition ID. Returns the following:
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the log partition root path.
-
-
 
 </td>
 </tr>
@@ -160,21 +126,15 @@ Displays the log partition root path.
 
 LAST\_BUFFER\_PREPARE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the last log buffer at prepare time \(actual log data size\).
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the size in bytes of the last log buffer at prepare time \(actual log d
 
 MAX\_BUFFER\_PREPARE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the largest log buffer in bytes at prepare time \(actual log data size\).
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the size of the largest log buffer in bytes at prepare time \(actual lo
 
 MIN\_BUFFER\_PREPARE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the smallest log buffer at prepare time \(actual log data size\).
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the size in bytes of the smallest log buffer at prepare time \(actual l
 
 SUM\_BUFFER\_PREPARE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes of the log buffer at prepare time \(actual log data size\).
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the total size in bytes of the log buffer at prepare time \(actual log 
 
 AVG\_BUFFER\_PREPARE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size in bytes of the log buffer at prepare time \(actual log data size\).
-
-
 
 </td>
 </tr>
@@ -275,21 +211,15 @@ Displays the average size in bytes of the log buffer at prepare time \(actual lo
 
 LAST\_BUFFER\_OVERHEAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the last log buffer alignment overhead at I/O time.
-
-
 
 </td>
 </tr>
@@ -298,21 +228,15 @@ Displays the size in bytes of the last log buffer alignment overhead at I/O time
 
 MAX\_BUFFER\_OVERHEAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the largest size in bytes of the log buffer alignment overhead at I/O time.
-
-
 
 </td>
 </tr>
@@ -321,21 +245,15 @@ Displays the largest size in bytes of the log buffer alignment overhead at I/O t
 
 MIN\_BUFFER\_OVERHEAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the smallest size in bytes of the log buffer alignment overhead at I/O time.
-
-
 
 </td>
 </tr>
@@ -344,21 +262,15 @@ Displays the smallest size in bytes of the log buffer alignment overhead at I/O 
 
 SUM\_BUFFER\_OVERHEAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes of the log buffer alignment overhead at I/O time \(total\).
-
-
 
 </td>
 </tr>
@@ -367,21 +279,15 @@ Displays the total size in bytes of the log buffer alignment overhead at I/O tim
 
 AVG\_BUFFER\_OVERHEAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size in bytes of the log buffer alignment overhead at I/O time.
-
-
 
 </td>
 </tr>
@@ -390,21 +296,15 @@ Displays the average size in bytes of the log buffer alignment overhead at I/O t
 
 LAST\_BUFFER\_IO\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the last log buffer at I/O time \(actual data plus alignment overhead\).
-
-
 
 </td>
 </tr>
@@ -413,21 +313,15 @@ Displays the size in bytes of the last log buffer at I/O time \(actual data plus
 
 MAX\_BUFFER\_IO\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the largest size in bytes of the log buffer at I/O time \(actual data plus alignment overhead\).
-
-
 
 </td>
 </tr>
@@ -436,21 +330,15 @@ Displays the largest size in bytes of the log buffer at I/O time \(actual data p
 
 MIN\_BUFFER\_IO\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the smallest size in bytes of the log buffer at I/O time \(actual data plus alignment overhead\).
-
-
 
 </td>
 </tr>
@@ -459,21 +347,15 @@ Displays the smallest size in bytes of the log buffer at I/O time \(actual data 
 
 SUM\_BUFFER\_IO\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes of log buffer at I/O time \(actual data plus alignment overhead\).
-
-
 
 </td>
 </tr>
@@ -482,21 +364,15 @@ Displays the total size in bytes of log buffer at I/O time \(actual data plus al
 
 AVG\_BUFFER\_IO\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size in bytes of log buffer at I/O time \(actual data plus alignment overhead\).
-
-
 
 </td>
 </tr>
@@ -505,21 +381,15 @@ Displays the average size in bytes of log buffer at I/O time \(actual data plus 
 
 LAST\_GROUP\_COMMIT\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of the last group commit frequency \(callback count per buffer with sync callback\).
-
-
 
 </td>
 </tr>
@@ -528,21 +398,15 @@ Displays the count of the last group commit frequency \(callback count per buffe
 
 MAX\_GROUP\_COMMIT\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of the largest group commit frequency \(callback count per buffer with sync callback\).
-
-
 
 </td>
 </tr>
@@ -551,21 +415,15 @@ Displays the count of the largest group commit frequency \(callback count per bu
 
 MIN\_GROUP\_COMMIT\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of the smallest group commit frequency \(callback count per buffer with sync callback\).
-
-
 
 </td>
 </tr>
@@ -574,21 +432,15 @@ Displays the count of the smallest group commit frequency \(callback count per b
 
 SUM\_GROUP\_COMMIT\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total count of the group commit frequency \(callback count per buffer with sync callback\).
-
-
 
 </td>
 </tr>
@@ -597,21 +449,15 @@ Displays the total count of the group commit frequency \(callback count per buff
 
 AVG\_GROUP\_COMMIT\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average count of the group commit frequency \(callback count per buffer with sync callback\).
-
-
 
 </td>
 </tr>
@@ -620,21 +466,15 @@ Displays the average count of the group commit frequency \(callback count per bu
 
 LAST\_CALLBACK\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last callback time per buffer with sync callback in microseconds.
-
-
 
 </td>
 </tr>
@@ -643,21 +483,15 @@ Displays the last callback time per buffer with sync callback in microseconds.
 
 MAX\_CALLBACK\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the longest callback time per buffer with sync callback in microseconds.
-
-
 
 </td>
 </tr>
@@ -666,21 +500,15 @@ Displays the longest callback time per buffer with sync callback in microseconds
 
 MIN\_CALLBACK\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shortest callback time per buffer with sync callback in microseconds.
-
-
 
 </td>
 </tr>
@@ -689,21 +517,15 @@ Displays the shortest callback time per buffer with sync callback in microsecond
 
 SUM\_CALLBACK\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total callback time per buffer with sync callback in microseconds.
-
-
 
 </td>
 </tr>
@@ -712,21 +534,15 @@ Displays the total callback time per buffer with sync callback in microseconds.
 
 AVG\_CALLBACK\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average callback time per buffer with sync callback in microseconds.
-
-
 
 </td>
 </tr>
@@ -735,21 +551,15 @@ Displays the average callback time per buffer with sync callback in microseconds
 
 PREPARED\_BUFFERS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of buffers prepared for I/O.
-
-
 
 </td>
 </tr>
@@ -758,21 +568,15 @@ Displays the number of buffers prepared for I/O.
 
 WRITTEN\_BUFFERS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of completed and written buffers.
-
-
 
 </td>
 </tr>
@@ -781,21 +585,15 @@ Displays the number of completed and written buffers.
 
 WRITTEN\_BUFFERS\_OOO
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of buffers written out-of-order.
-
-
 
 </td>
 </tr>
@@ -804,21 +602,15 @@ Displays the number of buffers written out-of-order.
 
 NEW\_SEGMENT\_REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of of new log segment requests.
-
-
 
 </td>
 </tr>
@@ -827,21 +619,15 @@ Displays the number of of new log segment requests.
 
 FREE\_SEGMENTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of log segments currently free.
-
-
 
 </td>
 </tr>
@@ -850,21 +636,15 @@ Displays the number of log segments currently free.
 
 IN\_BACKUP\_SEGMENTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current in-backup log segments.
-
-
 
 </td>
 </tr>
@@ -873,21 +653,15 @@ Displays the number of current in-backup log segments.
 
 IN\_BACKUP\_TRUNCATED\_SEGMENTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current in-backup truncated log segments.
-
-
 
 </td>
 </tr>
@@ -896,21 +670,15 @@ Displays the number of current in-backup truncated log segments.
 
 BACKED\_UP\_SEGMENTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of log segments backed up so far.
-
-
 
 </td>
 </tr>
@@ -919,21 +687,15 @@ Displays the number of log segments backed up so far.
 
 TOTAL\_SEGMENTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of log segment count in the partition.
-
-
 
 </td>
 </tr>
@@ -942,21 +704,15 @@ Displays the total number of log segment count in the partition.
 
 RECOVERY\_SEGMENTS\_IN\_LOAD
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of in-load segments during recovery.
-
-
 
 </td>
 </tr>
@@ -965,21 +721,15 @@ Displays the number of in-load segments during recovery.
 
 RECOVERY\_SEGMENTS\_WAITING\_FOR\_LOAD
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of segments waiting for load during recovery.
-
-
 
 </td>
 </tr>
@@ -988,21 +738,15 @@ Displays the number of segments waiting for load during recovery.
 
 RECOVERY\_SEGMENTS\_IN\_PROCESS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of segments in process during recovery.
-
-
 
 </td>
 </tr>
@@ -1011,21 +755,15 @@ Displays the number of segments in process during recovery.
 
 RECOVERY\_SEGMENTS\_PROCESSED
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Count of segments processed during recovery.
-
-
 
 </td>
 </tr>
@@ -1034,21 +772,15 @@ Count of segments processed during recovery.
 
 COMMIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of commits.
-
-
 
 </td>
 </tr>
@@ -1057,21 +789,15 @@ Displays the number of commits.
 
 LAST\_COMMIT\_IO\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time in microseconds needed to synchronize the flush of commit log.
-
-
 
 </td>
 </tr>
@@ -1080,21 +806,15 @@ Displays the last time in microseconds needed to synchronize the flush of commit
 
 MAX\_COMMIT\_IO\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the longest time in microseconds needed to synchronize the flush of commit log entries.
-
-
 
 </td>
 </tr>
@@ -1103,21 +823,15 @@ Displays the longest time in microseconds needed to synchronize the flush of com
 
 MIN\_COMMIT\_IO\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shortest time in microseconds needed in synchronize the flush of commit log entries.
-
-
 
 </td>
 </tr>
@@ -1126,21 +840,15 @@ Displays the shortest time in microseconds needed in synchronize the flush of co
 
 SUM\_COMMIT\_IO\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time in microseconds needed to synchronize the flush of commit log entries.
-
-
 
 </td>
 </tr>
@@ -1149,21 +857,15 @@ Displays the total time in microseconds needed to synchronize the flush of commi
 
 AVG\_COMMIT\_IO\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time in microseconds needed to synchronize the flush of commit log entries.
-
-
 
 </td>
 </tr>

@@ -11,7 +11,7 @@ Imports external data into an existing table.
 ## Syntax
 
 ```
-IMPORT FROM [ <file_type> ] { <storage_path> } 
+IMPORT FROM [ <file_type> ] [ IN <directory_type> ] { <cloud_provider_path> } 
  [ INTO <database_object_name> ] 
  [ WITH <import_from_option_list> ]
 ```
@@ -48,15 +48,32 @@ In the IMPORT FROM command, if the *<file\_type\>* is not explicitly specified, 
 
 </dd><dt><b>
 
-*<storage\_path\>*
+*<directory\_type\>*
 
 </b></dt>
 <dd>
 
-Specifies the cloud storage location for the import.
+Specifies the directory format. When *<directory\_type\>* is set, specify a directory in *<cloud\_provider\_path\>*.
 
 ```
-<storage_path> ::=
+<directory_type> ::= { HIVE PARTITION | DELTA LAKE }
+```
+
+HIVE PARTITION only supports default encodings. NULL value encoding = \_\_HIVE\_DEFAULT\_PARTITION\_\_.
+
+
+
+</dd><dt><b>
+
+*<cloud\_provider\_path\>*
+
+</b></dt>
+<dd>
+
+Specifies the cloud provider for the import.
+
+```
+<cloud_provider_path> ::=
    { <azure_path> 
    | <amazon_path>
    | <google_path>
@@ -76,7 +93,7 @@ Specifies the location for the Azure import file.
 
 ```
 <azure_path> ::= 
-'azure://[<azure_credentials>]<azure_container_name>/<azure_object_id>'
+'azure://[<azure_credentials_path>]<azure_container_name>/<azure_object_id>'
 ```
 
 
@@ -88,7 +105,7 @@ Specifies the location for the Azure import file.
 </b></dt>
 <dd>
 
-Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported when using the WITH CREDENTIAL parameter.
+Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported when using the CREDENTIAL clause.
 
 ```
 <azure_credentials> ::= 
@@ -158,7 +175,7 @@ Specifies the geographical region the bucket is located in. Refer to [Regions an
 </b></dt>
 <dd>
 
-Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the WITH CREDENTIAL parameter.
+Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the CREDENTIAL clause.
 
 ```
 <amazon_credentials> ::= 
@@ -217,7 +234,7 @@ Specifies the location for the Google Cloud storage import file.
 </b></dt>
 <dd>
 
-Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the WITH CREDENTIAL parameter.
+Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the CREDENTIAL clause.
 
 ```
 <google_credentials> ::=
@@ -629,7 +646,7 @@ CREDENTIAL *<purpose\_def\>*
 
 This option is not supported with the *<file\_type\>* JSON.
 
-Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of import statements. The WITH CREDENTIAL clause cannot be specified when *<cloud\_path\>* contains credentials. The WITH CREDENTIAL clause is required for imports from SAP HANA Cloud, Data Lake Files, but is optional for all other cloud platforms.
+Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of import statements. The CREDENTIAL clause cannot be specified when *<cloud\_provider\_path\>* contains credentials. The CREDENTIAL clause is required for imports from SAP HANA Cloud, Data Lake Files, but is optional for all other cloud platforms.
 
 
 
@@ -686,12 +703,28 @@ IMPORT FROM CSV FILE 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/DEMO_TBL1.c
 
 ```
 
+This example imports data using a HIVE directory in an Amazon bucket.
+
+```
+IMPORT FROM PARQUET FILE IN HIVE PARTITION ' s3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_hive_dir' 
+   INTO TEST.TARGET_TABLE;
+
+```
+
+This example imports data using a DELTA LAKE directory in an Amazon bucket.
+
+```
+IMPORT FROM PARQUET FILE IN DELTA LAKE' s3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_delta_dir' 
+   INTO TEST.TARGET_TABLE;
+
+```
+
 **Related Information**  
 
 
 [EXPORT Statement \(Data Import Export\)](export-statement-data-import-export-20da0be.md "Exports catalog objects.")
 
-[EXPORT INTO Statement \(Data Import Export\)](export-into-statement-data-import-export-6a6f59b.md "Exports a table or view into a single file.")
+[EXPORT INTO Statement \(Data Import Export\)](export-into-statement-data-import-export-6a6f59b.md "Exports a table or view into a single-file, multi-file, or directory.")
 
 [IMPORT Statement \(Data Import Export\)](import-statement-data-import-export-20f75ad.md "Imports catalog objects.")
 

@@ -28,7 +28,7 @@ Computes the hyperbolic cosine of the numeric argument *<number\>*.
 
 ## Example
 
-The following example returns the value ***1.1276259652063807*** for ***"cosh"***:
+The following example returns the value ***1.1276259652063807*** for `"cosh"`:
 
 ```
 SELECT COSH (0.5) "cosh" FROM DUMMY;

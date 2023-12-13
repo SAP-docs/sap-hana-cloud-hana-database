@@ -15,21 +15,15 @@ Lists all planning sessions on the system as well as their status and details.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 SESSION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the session name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the session name.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the session is valid: TRUE or FALSE.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays whether the session is valid: TRUE or FALSE.
 
 LAST\_ERROR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last error.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the last error.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the internal port.
 
 SITE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the site ID of the secondary site. This value is -1 on a single instance.
-
-
 
 </td>
 </tr>

@@ -28,13 +28,13 @@ If the input *<value\>* has a mantissa, then the mantissa is truncated during th
 
 ## Examples
 
-The following example converts the value ***10*** to the INT value ***10***:
+The following example converts the value `10` to the INT value ***10***:
 
 ```
 SELECT TO_INT('10') "to int" FROM DUMMY;
 ```
 
-The following example converts the value ***10.5*** to the INT value ***10***, truncating the mantissa:
+The following example converts the value `10.5` to the INT value ***10***, truncating the mantissa:
 
 ```
 SELECT TO_INT(10.5) "to int" FROM DUMMY;

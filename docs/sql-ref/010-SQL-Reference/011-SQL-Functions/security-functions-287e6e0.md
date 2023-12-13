@@ -16,4 +16,8 @@ Security functions provide special functionality for security purposes.
 
 -   [IS\_SQL\_INJECTION\_SAFE Function \(Security\)](is-sql-injection-safe-function-security-4496cc5.md)
 
+-   [VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION\_DETAILS Function \(Security\)](validate-usergroup-connect-restriction-details-function-security-508e173.md)
+
+-   [VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION Function \(Security\)](validate-usergroup-connect-restriction-function-security-c7a96e0.md)
+
 

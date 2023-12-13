@@ -17,21 +17,15 @@ Provides all statements with a duration longer than a specified threshold.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the connection ID.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction object ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the transaction object ID.
 
 UPDATE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the write transaction ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the write transaction ID.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement ID.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the statement ID.
 
 PARENT\_STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the parent statement ID.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the parent statement ID.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier for an SQL string.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the unique identifier for an SQL string.
 
 DB\_USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the user name.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema in whose context the statement is executed.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the name of the schema in whose context the statement is executed.
 
 APP\_USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user name.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the application user name.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement start time.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the statement start time.
 
 DURATION\_MICROSEC
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement duration in microseconds.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the statement duration in microseconds.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the related objects.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the related objects.
 
 OPERATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of operation \(prepare, execute, fetch, or close\).
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the type of operation \(prepare, execute, fetch, or close\).
 
 RECORDS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of records.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of records.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement string.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the statement string.
 
 PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement parameters.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the statement parameters.
 
 ERROR\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the error code.
 
 ERROR\_TEXT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error message.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the error message.
 
 LOCK\_WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated lock wait count.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the accumulated lock wait count.
 
 LOCK\_WAIT\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated lock wait duration in microseconds.
-
-
 
 </td>
 </tr>
@@ -546,14 +408,10 @@ Displays the accumulated lock wait duration in microseconds.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -562,8 +420,6 @@ Displays the peak memory usage in bytes during the execution of the statement.
 
 This value is kept for cache reasons or released after the statement execution.
 
-
-
 </td>
 </tr>
 <tr>
@@ -571,21 +427,15 @@ This value is kept for cache reasons or released after the statement execution.
 
 REUSED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory that is reused from cached data structures in bytes. The value is 0 if the cache is empty.
-
-
 
 </td>
 </tr>
@@ -594,21 +444,15 @@ Displays the memory that is reused from cached data structures in bytes. The val
 
 CPU\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU time, in microseconds, consumed to compute the statement.
-
-
 
 </td>
 </tr>
@@ -617,21 +461,15 @@ Displays the CPU time, in microseconds, consumed to compute the statement.
 
 PASSPORT\_ROOT\_CONTEXT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the SAP EPP Passport GUID that identifies the source of the request.
-
-
+Displays the extended passport \(EPP\) GUID that identifies the source of the request.
 
 </td>
 </tr>
@@ -640,21 +478,15 @@ Displays the SAP EPP Passport GUID that identifies the source of the request.
 
 PASSPORT\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the SAP EPP Passport GUID that identifies the business transaction.
-
-
+Displays the extended passport \(EPP\) GUID that identifies the business transaction.
 
 </td>
 </tr>
@@ -663,21 +495,15 @@ Displays the SAP EPP Passport GUID that identifies the business transaction.
 
 PASSPORT\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the SAP EPP Passport GUID that identifies the connection.
-
-
+Displays the extended passport \(EPP\) GUID that identifies the connection.
 
 </td>
 </tr>
@@ -686,21 +512,151 @@ Displays the SAP EPP Passport GUID that identifies the connection.
 
 PASSPORT\_CONNECTION\_COUNTER
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
+</td>
+<td valign="top">
 
+Displays the extended passport \(EPP\) connection counter.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_COMPONENT\_TYPE
 
 </td>
 <td valign="top">
 
-Displays the SAP EPP Passport connection counter.
+INTEGER
 
+</td>
+<td valign="top">
 
+Displays the extended passport \(EPP\) component type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_ACTION
+
+</td>
+<td valign="top">
+
+NVARCHAR\(40\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) component action.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_ACTION\_TYPE
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) component action type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_PREVIOUS\_COMPONENT\_NAME
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) passport component name of the previous context.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_SERVICE
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) service.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_USER\_ID
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) user ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_CLIENT
+
+</td>
+<td valign="top">
+
+NVARCHAR\(3\)
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) client.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PASSPORT\_TRACE\_FLAGS
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the extended passport \(EPP\) trace flags.
 
 </td>
 </tr>
@@ -709,21 +665,15 @@ Displays the SAP EPP Passport connection counter.
 
 STATEMENT\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the first operation of a statement execution starts. All operations of a statement execution \(prepare, execute, fetch, or close\) share the same statement start time.
-
-
 
 </td>
 </tr>
@@ -732,21 +682,15 @@ Displays the time when the first operation of a statement execution starts. All 
 
 APPLICATION\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application from which source file SAP HANA is called. Usage is determined by the application. The value is also displayed in M\_PREPARED\_STATEMENTS.APPLICATION\_SOURCE.
-
-
 
 </td>
 </tr>
@@ -755,21 +699,15 @@ Displays the application from which source file SAP HANA is called. Usage is det
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the application.
-
-
 
 </td>
 </tr>
@@ -778,21 +716,15 @@ Displays the name of the application.
 
 NETWORK\_MESSAGE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the client message ID on the physical server connection, also found in M\_SQL\_CLIENT\_NETWORK\_IO and MESSAGE\_ID.
-
-
 
 </td>
 </tr>
@@ -801,21 +733,15 @@ Displays the client message ID on the physical server connection, also found in 
 
 WORKLOAD\_CLASS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the effective workload class.
-
-
 
 </td>
 </tr>
@@ -824,21 +750,15 @@ Displays the name of the effective workload class.
 
 PRIORITY
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective statement priority.
-
-
 
 </td>
 </tr>
@@ -847,21 +767,15 @@ Displays the effective statement priority.
 
 STATEMENT\_THREAD\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective statement thread limit.
-
-
 
 </td>
 </tr>
@@ -870,21 +784,15 @@ Displays the effective statement thread limit.
 
 STATEMENT\_MEMORY\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective statement memory limit.
-
-
 
 </td>
 </tr>
@@ -893,21 +801,15 @@ Displays the effective statement memory limit.
 
 SESSION\_VARIABLES
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement's session variables.
-
-
 
 </td>
 </tr>
@@ -916,21 +818,15 @@ Displays the statement's session variables.
 
 TABLE\_TYPES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of tables referenced by the expensive statement, represented by a combination of values: ROW, COLUMN, VIRTUAL.
-
-
 
 </td>
 </tr>
@@ -939,21 +835,15 @@ Displays the type of tables referenced by the expensive statement, represented b
 
 TOTAL\_STATEMENT\_MEMORY\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective total statement memory limit.
-
-
 
 </td>
 </tr>
@@ -1039,9 +929,9 @@ Setting the value of the APPLICATION\_SOURCE is only available via internal APIs
 **Related Information**  
 
 
-[SAP Note 2873396](https://launchpad.support.sap.com/#/notes/2873396)
+[SAP Note 2873396](https://me.sap.com/notes/2873396)
 
 [M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS System View](m-expensive-statement-execution-location-statistics-system-view-80c32e9.md "Provides location statistics for expensive statements.")
 
-[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
+[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
 

@@ -15,21 +15,15 @@ Provides information about the timezones which are available together with their
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 TIMEZONE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the respective timezone that can be used as parameter to give the source respective destination timezone for UTCTOLOCAL and LOCALTOUTC.
-
-
 
 </td>
 </tr>
@@ -61,25 +49,27 @@ Displays the name of the respective timezone that can be used as parameter to gi
 
 TIMEZONE\_DATASET
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the data set in which the timezones definition is located. It can take the values sap or platform as they are allowed for the dataset parameter to UTCTOLOCAL/LOCALTOUTC. The value of this column can thus be directly used as an input for the respective UTCTOLOCAL/LOCALTOUTC parameter.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioadeba8e5b0c04b1880800f3e06b455b4__section_cmn_zyz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

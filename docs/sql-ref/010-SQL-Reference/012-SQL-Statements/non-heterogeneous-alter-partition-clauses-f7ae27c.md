@@ -12,15 +12,16 @@ Modifies the partitions of an existing table with a non-heterogeneous partitioni
 
 ```
 ALTER TABLE <table_name>
-   [<partition_table_clause>] 
-   [<add_range_clause>]
-   [<redefine_range_partition_clause>]
-   [<move_partition_clause>]
-   [<drop_range_partition_clause>]
-   [<merge_partition_clause>]
-   [<alter_dynamic_range_clauses>]
-   [<alter_dynamic_property_clause>]
-   [<alter_partition_numa_node_preference_clause>]
+   {| <partition_table_clause> 
+   | <add_range_clause>
+   | <redefine_range_partition_clause>
+   | <move_partition_clause>
+   | <drop_range_partition_clause>
+   | <merge_partition_clause>
+   | <alter_dynamic_range_clauses>
+   | <alter_dynamic_property_clause>
+   | <alter_partition_numa_node_preference_clause>
+   }
 ```
 
 
@@ -209,8 +210,6 @@ Specifies the precision of the date based partitioning column. When partitioning
 
 'YYYY-MM-DD HH'
 
-
-
 </td>
 <td valign="top">
 
@@ -225,16 +224,12 @@ Specifies the precision of the date based partitioning column. When partitioning
 
 '2010-01-01 23'
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 'YYYYMMDDHH'
-
-
 
 </td>
 <td valign="top">
@@ -250,16 +245,12 @@ Specifies the precision of the date based partitioning column. When partitioning
 
 '2010010123'
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 YYYYMMDDHH
-
-
 
 </td>
 <td valign="top">
@@ -274,8 +265,6 @@ YYYYMMDDHH
 <td valign="top">
 
 2010010123
-
-
 
 </td>
 </tr>
@@ -966,7 +955,7 @@ Change the applied property.
 Specifies the threshold to apply.
 
 ```
-<dynamic_property> ::= DYNAMIC [ THRESHOLD <threshold_count> ]
+<dynamic_threshold> ::= DYNAMIC [ THRESHOLD <threshold_count> ]
 ```
 
 
@@ -1303,9 +1292,9 @@ ALTER TABLE A1 PARTITION OTHERS NO DYNAMIC;
 
 [ALTER TABLE Statement \(Data Definition\)](alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
 [TABLE\_PARTITIONS System View](../../020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 
-[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "Dynamic Range Partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
+[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "Dynamic Range Partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
 

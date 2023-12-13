@@ -15,21 +15,15 @@ Provides table placement location monitoring information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 LOCATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the location.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the name of the location.
 
 SYSTEM\_DEFINED\_VOLUME\_IDS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume IDs, which are received from the topology.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the volume IDs, which are received from the topology.
 
 INCLUDE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the list of volume IDs or synonyms which are added to the location name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the list of volume IDs or synonyms which are added to the location name
 
 EXCLUDE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the list of volume IDs or synonyms which are removed from the location name.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the list of volume IDs or synonyms which are removed from the location 
 
 EFFECTIVE\_VOLUME\_IDS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the calculated volume IDs for the location name.
-
-
 
 </td>
 </tr>
@@ -167,7 +131,7 @@ Displays the calculated volume IDs for the location name.
 
 [ALTER TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Table Placement Rules for Replicas](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/266f9d2a727148f586d7bfb2a0cc4df8.html "The following SQL commands create table placement rules for replica schema, which can be used to create or add replica tables.") :arrow_upper_right:
+[Table Placement Rules for Replicas](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/266f9d2a727148f586d7bfb2a0cc4df8.html "The following SQL commands create table placement rules for replica schema, which can be used to create or add replica tables.") :arrow_upper_right:
 
 [M\_TABLE\_LOCATIONS System View](m-table-locations-system-view-20c65d5.md "Provides information about tables and their logical location. Physical locations are shown in M_TABLE_PERSISTENCE_LOCATIONS.")
 

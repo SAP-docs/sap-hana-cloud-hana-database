@@ -17,21 +17,15 @@ Lists all of the JWT providers configured in the SAP HANA database.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 JWT\_PROVIDER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the JWT provider.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the JWT provider.
 
 ISSUER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name in the iss claim of the JWT tokens provided by this provider.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name in the iss claim of the JWT tokens provided by this provider.
 
 EXTERNAL\_IDENTITY\_CLAIM
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the claim provided in the JWT tokens to use when mapping the SAP HANA user to an external user name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the claim provided in the JWT tokens to use when mapping the SAP HANA u
 
 IS\_CASE\_SENSITIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the user mapping is checked case sensitive: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays whether the user mapping is checked case sensitive: TRUE/FALSE.
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the owner of the provider.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the owner of the provider.
 
 PRIORITY
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the priority of the provider compared to other JWT providers with an identical issuer.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the priority of the provider compared to other JWT providers with an id
 
 IS\_USER\_CREATION\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the provider is allowed to create a user implicitly: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays whether the provider is allowed to create a user implicitly: TRUE/FALSE
 
 USER\_CREATION\_USER\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of user to create when user creation is enabled: STANDARD, RESTRICTED
-
-
 
 </td>
 </tr>
@@ -224,25 +170,27 @@ Displays the type of user to create when user creation is enabled: STANDARD, RES
 
 USER\_CREATION\_USERGROUP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the user group a created user will be a member of.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio3df748d60e4343cb9937bdc76107def7__section_snq_grb_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

@@ -69,7 +69,7 @@ The LIKE predicate performs string comparisons: *<source\_expression\>* is teste
 
 Wildcard characters \( % \) and \( \_ \) can be used in *<pattern\_expression\>*. The percentage sign \(%\) wildcard matches zero or more characters. The underscore \(\_\) wildcard matches exactly one character.
 
-To match a percentage sign or underscore with the LIKE predicate, an escape character must be placed in front of the wildcard character. Use ESCAPE *<escape\_expression\>* to specify the escape character you are using. For example, `LIKE 'data_%' ESCAPE '_'` matches the string ***data%***, and `LIKE 'data__%' ESCAPE '_'` \(that is, two underscores, followed by a percent sign\) matches a string that starts with ***'data\_'***
+To match a percentage sign or underscore with the LIKE predicate, an escape character must be placed in front of the wildcard character. Use ESCAPE *<escape\_expression\>* to specify the escape character you are using. For example, `LIKE 'data_%' ESCAPE '_'` matches the string `data%`, and `LIKE 'data__%' ESCAPE '_'` \(that is, two underscores, followed by a percent sign\) matches a string that starts with `'data_'`
 
 The underscore \( \_ \) and percentage sign \( % \) are ASCII characters.
 

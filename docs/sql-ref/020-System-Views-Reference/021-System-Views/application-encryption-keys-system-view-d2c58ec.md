@@ -15,21 +15,15 @@ Provides information about encryption keys used by applications.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the component that the key belongs to.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the component that the key belongs to.
 
 SUB\_COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subcomponent that the key belongs to.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the subcomponent that the key belongs to.
 
 CREATOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database user or the internal subcomponent that created the key.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the database user or the internal subcomponent that created the key.
 
 CREATE\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the key was created.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the timestamp when the key was created.
 
 IS\_CURRENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the key is used by the subcomponent for newly encrypted data: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -153,25 +117,27 @@ Displays whether the key is used by the subcomponent for newly encrypted data: T
 
 ENCRYPTION\_ALGORITHM
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the algorithm associated with this key.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod2c58ec7cb42470b976165d7df144291__section_ejx_pjc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

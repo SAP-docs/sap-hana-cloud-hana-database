@@ -17,21 +17,15 @@ Provides memory usage information by catalog manager.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 CATEGORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the category of the catalog data.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the category of the catalog data.
 
 ALLOCATION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of allocated entries.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the number of allocated entries.
 
 ALLOCATED\_FIXED\_PART\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory size in bytes for the fixed-size part.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the allocated memory size in bytes for the fixed-size part.
 
 USED\_FIXED\_PART\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used memory size in bytes for the fixed-size part.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the used memory size in bytes for the fixed-size part.
 
 ALLOCATED\_VARIABLE\_PART\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory size in bytes for the variable-size part.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the allocated memory size in bytes for the variable-size part.
 
 USED\_VARIABLE\_PART\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used memory size in bytes for the variable-size part.
-
-
 
 </td>
 </tr>
@@ -224,7 +170,7 @@ Displays the used memory size in bytes for the variable-size part.
 **Related Information**  
 
 
-[Memory Usage in the SAP HANA Database](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/bde79b28bb5710149d6eee5e75fe7f17.html "Memory is a fundamental resource of the SAP HANA database. Understanding how the SAP HANA database requests, uses, and manages this resource is crucial to the understanding of SAP HANA.") :arrow_upper_right:
+[Memory Usage in the SAP HANA Database](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bde79b28bb5710149d6eee5e75fe7f17.html "Memory is a fundamental resource of the SAP HANA database. Understanding how the SAP HANA database requests, uses, and manages this resource is crucial to the understanding of SAP HANA.") :arrow_upper_right:
 
-[Memory Sizing](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/bdf26308bb571014b7bcd3bcd586aecd.html "Memory sizing is the process of estimating in advance the amount of memory that will be required to run a certain workload on an SAP HANA database. To understand memory sizing, several questions need to be answered.") :arrow_upper_right:
+[Memory Sizing](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bdf26308bb571014b7bcd3bcd586aecd.html "Memory sizing is the process of estimating in advance the amount of memory that will be required to run a certain workload on an SAP HANA database. To understand memory sizing, several questions need to be answered.") :arrow_upper_right:
 

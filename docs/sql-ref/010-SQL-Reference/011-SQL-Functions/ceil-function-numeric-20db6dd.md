@@ -48,7 +48,7 @@ Returns the first integer that is greater than or equal to the value of *<n\>*.
 
 ## Example
 
-The following example returns the value ***15*** for ***"ceiling"***:
+The following example returns the value ***15*** for `"ceiling"`:
 
 ```
 SELECT CEIL (14.5) "ceiling" FROM DUMMY;

@@ -30,7 +30,7 @@ Returns a string trimmed of all trailing spaces. If *<remove\_set\>* is specifie
 
 ## Example
 
-This example removes all trailing ***a*** and ***b*** characters from the given string, and returns the value ***endabA***:
+This example removes all trailing `a` and `b` characters from the given string, and returns the value ***endabA***:
 
 ```
 SELECT RTRIM ('endabAabbabab','ab') "rtrim" FROM DUMMY;

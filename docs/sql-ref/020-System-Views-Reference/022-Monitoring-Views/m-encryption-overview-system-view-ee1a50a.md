@@ -17,21 +17,15 @@ Reports the encryption status for all data at rest where encryption is supported
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCOPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the scope includes PERSISTENCE \(data volumes\), LOG \(redo log\), or BACKUP.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays whether the scope includes PERSISTENCE \(data volumes\), LOG \(redo log
 
 IS\_ENCRYPTION\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates if the encryption for the scope is currently active: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Indicates if the encryption for the scope is currently active: TRUE/FALSE.
 
 LAST\_CHANGE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the latest timestamp, in the server's local time, when the status was changed
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the latest timestamp, in the server's local time, when the status was c
 
 CONFIGURATION\_CONTROL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether encryption configuration is controlled by the local database or the system database.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Indicates whether encryption configuration is controlled by the local database o
 
 ENCRYPTION\_CONTROL\_LAST\_CHANGE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time that the encryption control was changed.
-
-
 
 </td>
 </tr>
@@ -157,7 +121,7 @@ Displays the last time that the encryption control was changed.
 
 [ALTER SYSTEM APPLICATION ENCRYPTION Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-application-encryption-statement-system-management-f425959.md "Manages encryption keys for applications that use the internal data encryption service.")
 
-[Data Storage Security](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/b30fda1483b34628802a8d62bd5d39df.html "Several mechanisms are used to protect security-relevant data used by the SAP HANA Cloud, SAP HANA database from unauthorized access.") :arrow_upper_right:
+[Data Storage Security](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/b30fda1483b34628802a8d62bd5d39df.html "Several mechanisms are used to protect security-relevant data used by the SAP HANA Cloud, SAP HANA database from unauthorized access.") :arrow_upper_right:
 
-[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
+[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
 

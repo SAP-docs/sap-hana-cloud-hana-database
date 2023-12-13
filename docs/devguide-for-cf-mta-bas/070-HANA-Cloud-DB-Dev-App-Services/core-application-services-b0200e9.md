@@ -17,22 +17,16 @@ The services that are available in Cloud Foundry are listed in the Service Marke
 
 Service Broker
 
-
-
 </th>
 <th valign="top">
 
 Service
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
@@ -40,21 +34,15 @@ Description
 
 auditlog-api
 
-
-
 </td>
 <td valign="top">
 
 auditlog-api
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 The service brokers for retrieving and managing the audit logs for your loud Foundry environment account
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ The service brokers for retrieving and managing the audit logs for your loud Fou
 
 auditlog-management
 
-
-
 </td>
 <td valign="top">
 
 auditlog-management
-
-
 
 </td>
 </tr>
@@ -79,21 +63,15 @@ auditlog-management
 
 Schemas & HDI Containers
 
-
-
 </td>
 <td valign="top">
 
 hana
 
-
-
 </td>
 <td valign="top">
 
 The service broker for the SAP HANA database and deployment infrastructure \(HDI\) service component
-
-
 
 </td>
 </tr>
@@ -102,21 +80,15 @@ The service broker for the SAP HANA database and deployment infrastructure \(HDI
 
 Authorization and Trust Management
 
-
-
 </td>
 <td valign="top">
 
 xsuaa
 
-
-
 </td>
 <td valign="top">
 
 The XS UAA Service Broker for user account and authentication services in Cloud Foundry
-
-
 
 </td>
 </tr>

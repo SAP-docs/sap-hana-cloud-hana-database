@@ -43,21 +43,15 @@ SELECT CURRENT_TIME "Current Time", CURRENT_UTCTIME "Coordinated Universal Time"
 
  
 
-
-
 </th>
 <th valign="top">
 
 Current Time
 
-
-
 </th>
 <th valign="top">
 
 Coordinated Universal Time
-
-
 
 </th>
 </tr>
@@ -66,21 +60,15 @@ Coordinated Universal Time
 
 1
 
-
-
 </td>
 <td valign="top">
 
 7:56:51 AM
 
-
-
 </td>
 <td valign="top">
 
 2:56:51 PM
-
-
 
 </td>
 </tr>

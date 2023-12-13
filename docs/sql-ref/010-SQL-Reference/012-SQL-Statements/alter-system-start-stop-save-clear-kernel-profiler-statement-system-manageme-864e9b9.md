@@ -336,13 +336,13 @@ The following statement stops profiling, saves the data for the specified call s
 ALTER SYSTEM SAVE KERNEL PROFILER FOR CALLSTACK 'Execution::JobExecWatchdog::run','System::ProcessorInfo::getCurrentProcessorIndex' INTO CPU FILE 'cpu.dot' WAIT FILE 'wait.dot';
 ```
 
-The following statement starts profiling at host:port ***ab1234:30003*** and filters for the user-specific trace \(database trace\) profile ***MYTRACEPROFILE***.
+The following statement starts profiling at host:port `ab1234:30003` and filters for the user-specific trace \(database trace\) profile `MYTRACEPROFILE`.
 
 ```
 ALTER SYSTEM START KERNEL PROFILER AT 'ab1234:30003' TRACEPROFILE 'MYTRACEPROFILE';
 ```
 
-The following statement stops profiling and clears the profiling data for the specified location ***ab1234:30003***. In this case, because the Kernel Profiler is being stopped, and the data cleared, no data will be saved.
+The following statement stops profiling and clears the profiling data for the specified location `ab1234:30003`. In this case, because the Kernel Profiler is being stopped, and the data cleared, no data will be saved.
 
 ```
 ALTER SYSTEM CLEAR KERNEL PROFILER AT LOCATION 'ab1234:30003';
@@ -353,7 +353,7 @@ ALTER SYSTEM CLEAR KERNEL PROFILER AT LOCATION 'ab1234:30003';
 
 [M\_KERNEL\_PROFILER System View](../../020-System-Views-Reference/022-Monitoring-Views/m-kernel-profiler-system-view-d20e2e8.md "Displays the state and provides information about Kernel Profilers in the system. You must have the RESOURCE ADMIN or TRACE ADMIN system privileges to use this view.")
 
-[Kernel Profiler](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/bdd27500bb571014b7f7e61e7c4cda04.html "The kernel profiler is a sampling profiler built into the SAP HANA database. It can be used to analyze performance issues and it collects, for example, information about frequent and/or expensive execution paths during query processing. It is inactive by default.") :arrow_upper_right:
+[Kernel Profiler](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bdd27500bb571014b7f7e61e7c4cda04.html "The kernel profiler is a sampling profiler built into the SAP HANA database. It can be used to analyze performance issues and it collects, for example, information about frequent and/or expensive execution paths during query processing.") :arrow_upper_right:
 
-[Diagnostic Files and Logs](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/335e2374c20245e78c9c4c6ce5b0fec6.html "In the event of problems with the SAP HANA database, you can check diagnosis files for errors.") :arrow_upper_right:
+[Diagnostic Files and Logs](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/335e2374c20245e78c9c4c6ce5b0fec6.html "In the event of problems with the SAP HANA database, you can check diagnosis files for errors.") :arrow_upper_right:
 

@@ -28,7 +28,7 @@ Returns the natural logarithm of the specified number.
 
 ## Example
 
-This example returns the natural logarithm of the number ***9***, which is ***2.1972245773362196***:
+This example returns the natural logarithm of the number `9`, which is ***2.1972245773362196***:
 
 ```
 SELECT LN (9) "ln" FROM DUMMY;

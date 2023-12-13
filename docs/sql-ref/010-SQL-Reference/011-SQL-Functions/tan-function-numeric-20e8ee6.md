@@ -28,7 +28,7 @@ Returns the tangent of *<number\>*, where *<n\>* is an angle expressed in radian
 
 ## Example
 
-The following example returns the value ***0*** for ***"tan"***:
+The following example returns the value ***0*** for `"tan"`:
 
 ```
 SELECT TAN (0.0) "tan" FROM DUMMY;

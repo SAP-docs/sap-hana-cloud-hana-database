@@ -6,7 +6,7 @@ View all HDI container configurations in the database.
 
 
 
-The `_SYS_DI` monitoring view `M_ALL_CONTAINER_CONFIGURATIONS` shows all HDI container configuration keys in the database, which are visible to the user. This view includes the container configuration keys \(for example, container-specific configuration parameters such as `messages. days_to_keep` or `make.validate_external_dependencies`\) and their corresponding values, which are stored for each HDI container and listed in the related container-specific `M_CONFIGURATION` view.
+The `_SYS_DI` monitoring view `M_ALL_CONTAINER_CONFIGURATIONS` shows all HDI container configuration keys in the database, which are visible to the user. This view includes the container configuration keys \(for example, container-specific configuration parameters such as `messages.days_to_keep` or `make.validate_external_dependencies`\) and their corresponding values, which are stored for each HDI container and listed in the related container-specific `M_CONFIGURATION` view.
 
 > ### Note:  
 > The view is public
@@ -20,21 +20,15 @@ The `_SYS_DI` monitoring view `M_ALL_CONTAINER_CONFIGURATIONS` shows all HDI con
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,21 +37,15 @@ Description
 
 CONTAINER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the container
-
-
 
 </td>
 </tr>
@@ -66,21 +54,15 @@ The name of the container
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the container configuration key
-
-
 
 </td>
 </tr>
@@ -89,21 +71,15 @@ The name of the container configuration key
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 The value for the specified `KEY` 
-
-
 
 </td>
 </tr>

@@ -206,5 +206,5 @@ CREATE SAML PROVIDER ac_saml_provider
 
 [SAML\_PROVIDERS System View](../../020-System-Views-Reference/021-System-Views/saml-providers-system-view-20cda7b.md "Shows available SAML providers.")
 
-[Single Sign-On Using SAML 2.0](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/db6db355bb571014b56eb25057daec5f.html "SAP HANA supports the Security Assertion Markup Language (SAML) for user authentication in single sign-on environments. SAML is used for authentication purposes only and not for authorization.") :arrow_upper_right:
+[Single Sign-On Using SAML 2.0](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/db6db355bb571014b56eb25057daec5f.html "SAP HANA supports the Security Assertion Markup Language (SAML) for user authentication in single sign-on environments. SAML is used for authentication purposes only and not for authorization.") :arrow_upper_right:
 

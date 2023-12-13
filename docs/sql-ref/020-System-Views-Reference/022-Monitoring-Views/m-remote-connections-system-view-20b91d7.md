@@ -17,21 +17,15 @@ Provides detailed information on remote connections between databases and remote
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,32 @@ Description
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
+</td>
+<td valign="top">
 
+Connection ID
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+REMOTE\_SOURCE\_SCHEMA\_NAME
 
 </td>
 <td valign="top">
 
-Displays the connection ID.
+NVARCHAR\(256\)
 
+</td>
+<td valign="top">
 
+Displays the remote source schema name.
 
 </td>
 </tr>
@@ -63,21 +68,15 @@ Displays the connection ID.
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name.
-
-
 
 </td>
 </tr>
@@ -86,21 +85,32 @@ Displays the remote source name.
 
 ADAPTER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the adapter name.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+REMOTE\_SERVER\_VERSION
+
+</td>
+<td valign="top">
+
+NVARCHAR\(128\)
+
+</td>
+<td valign="top">
+
+Displays the remote server version.
 
 </td>
 </tr>
@@ -109,21 +119,15 @@ Displays the adapter name.
 
 REMOTE\_SOURCE\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source user name.
-
-
 
 </td>
 </tr>
@@ -132,21 +136,15 @@ Displays the remote source user name.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
-Displays the connected time.
-
-
+Connected time
 
 </td>
 </tr>
@@ -155,21 +153,15 @@ Displays the connected time.
 
 CONNECTION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the connection status: CONNECTED/DISCONNECTED.
-
-
+Displays the connection status. Valid values are CONNECTED or DISCONNECTED.
 
 </td>
 </tr>
@@ -178,21 +170,15 @@ Displays the connection status: CONNECTED/DISCONNECTED.
 
 DETAILS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the adapter properties.
-
-
 
 </td>
 </tr>
@@ -201,21 +187,15 @@ Displays the adapter properties.
 
 STATEMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of executed statements.
-
-
 
 </td>
 </tr>

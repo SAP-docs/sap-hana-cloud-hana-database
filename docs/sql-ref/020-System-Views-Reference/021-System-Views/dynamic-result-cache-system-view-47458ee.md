@@ -17,21 +17,15 @@ Provides information about metadata objects that are enabled for a dynamic resul
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 CACHE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the results cache.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the results cache.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object name.
 
 OBJECT\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the object ID.
 
 CACHE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(44\)
 
-
-
 </td>
 <td valign="top">
 
 Displays which type of cache is enabled for the object: FULL, PARTIAL \(SELECTED COLUMNS\), PARTIAL \(FILTERED\), PARTIAL \(SELECTED COLUMNS, FILTERED\).
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays which type of cache is enabled for the object: FULL, PARTIAL \(SELECTED
 
 CACHE\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the filter condition specified to reduce the cache size.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the filter condition specified to reduce the cache size.
 
 CACHE\_LOCATIONS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache entry locations.
-
-
 
 </td>
 </tr>
@@ -201,25 +153,27 @@ Displays the cache entry locations.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5\)
-
-
 
 </td>
 <td valign="top">
 
 Specifies whether the dynamic result cache is valid or not. A result cache becomes invalid \(FALSE\) when its base objects are changed or dropped.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio47458ee33b2548e1926de800935db464__section_alp_b2q_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

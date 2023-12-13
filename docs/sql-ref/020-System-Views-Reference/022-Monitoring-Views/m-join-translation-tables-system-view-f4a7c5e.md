@@ -15,21 +15,15 @@ Provides column store join engine translation tables statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 SCHEMA\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the first schema name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the first schema name.
 
 TABLE\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the first table name.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the first table name.
 
 COLUMN\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the first table's column name.
-
-
 
 </td>
 </tr>
@@ -153,14 +117,10 @@ Displays the first table's column name.
 
 PART\_ID1
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -181,21 +141,15 @@ Displays the first table partition ID. Returns the following:
 
 VERSION1
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the version information of the first table.
-
-
 
 </td>
 </tr>
@@ -204,21 +158,15 @@ Displays the version information of the first table.
 
 SCHEMA\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the second schema name.
-
-
 
 </td>
 </tr>
@@ -227,21 +175,15 @@ Displays the second schema name.
 
 TABLE\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the second table name.
-
-
 
 </td>
 </tr>
@@ -250,21 +192,15 @@ Displays the second table name.
 
 COLUMN\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the second table's column name.
-
-
 
 </td>
 </tr>
@@ -273,14 +209,10 @@ Displays the second table's column name.
 
 PART\_ID2
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -301,21 +233,15 @@ Displays the second table partition ID. Returns the following:
 
 VERSION2
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the version information of the second table.
-
-
 
 </td>
 </tr>
@@ -324,21 +250,15 @@ Displays the version information of the second table.
 
 IMPLEMENTATION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the implementation type.
-
-
 
 </td>
 </tr>
@@ -347,21 +267,15 @@ Displays the implementation type.
 
 IMPLEMENTATION\_TYPE\_CHANGE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time that the implementation type was changed.
-
-
 
 </td>
 </tr>
@@ -370,21 +284,15 @@ Displays the last time that the implementation type was changed.
 
 IMPLEMENTATION\_TYPE\_CHANGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of implementation type changes.
-
-
 
 </td>
 </tr>
@@ -393,21 +301,15 @@ Displays the number of implementation type changes.
 
 VALUE\_ID\_COUNT1
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of translated value IDs of the first table.
-
-
 
 </td>
 </tr>
@@ -416,21 +318,15 @@ Displays the number of translated value IDs of the first table.
 
 VALUE\_ID\_COUNT2
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of translated value IDs of the second table.
-
-
 
 </td>
 </tr>
@@ -439,21 +335,15 @@ Displays the number of translated value IDs of the second table.
 
 TRANSLATION\_TABLE\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory used by the translation table in bytes.
-
-
 
 </td>
 </tr>
@@ -462,21 +352,15 @@ Displays the memory used by the translation table in bytes.
 
 ESTIMATED\_HASHMAP\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the estimated memory used by the HASHMAP implementation in bytes.
-
-
 
 </td>
 </tr>
@@ -485,21 +369,15 @@ Displays the estimated memory used by the HASHMAP implementation in bytes.
 
 ESTIMATED\_VECTOR\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the estimated memory used by the vector implementation in bytes.
-
-
 
 </td>
 </tr>
@@ -508,21 +386,15 @@ Displays the estimated memory used by the vector implementation in bytes.
 
 LAST\_USED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the counter to support LRU cache replacement algorithm.
-
-
 
 </td>
 </tr>

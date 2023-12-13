@@ -17,21 +17,15 @@ Provides information about available AFL areas.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 AREA\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the AFL area.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the object ID of the AFL area.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the schema name of the AFL area
-
-
+Displays the schema name of the AFL area.
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the schema name of the AFL area
 
 AREA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the AFL area.
-
-
 
 </td>
 </tr>
@@ -109,25 +85,27 @@ Displays the name of the AFL area.
 
 CREATE\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
 
 Displays the timestamp when the AFL area was created.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio209d1d1f7519101481f48b2c41b38282__section_g5x_rfc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

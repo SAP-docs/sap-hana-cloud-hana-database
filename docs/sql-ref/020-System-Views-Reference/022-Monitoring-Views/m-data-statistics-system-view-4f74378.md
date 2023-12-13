@@ -17,21 +17,15 @@ Lists data statistics generated when you query column and row store object.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 DATA\_STATISTICS\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the data statistics object ID.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the data statistics object ID.
 
 DATA\_STATISTICS\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data statistics object type.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the data statistics object type.
 
 DATA\_STATISTICS\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data statistics object schema.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the data statistics object schema.
 
 DATA\_STATISTICS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data statistics object name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the data statistics object name.
 
 DATA\_SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the data source object.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema name of the data source object.
 
 DATA\_SOURCE\_OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the data source object.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the name of the data source object.
 
 DATA\_SOURCE\_COLUMN\_NAMES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Lists the column names of the data source.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Lists the column names of the data source.
 
 DATA\_SOURCE\_STORAGE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the source storage type of the data source.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the source storage type of the data source.
 
 DATA\_SOURCE\_PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the partition ID of the data source.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the partition ID of the data source.
 
 LAST\_REFRESH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time the data statistics on the object were last generated.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the time the data statistics on the object were last generated.
 
 LAST\_REFRESH\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(19\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the time the data statistics object was generated.
-
-
 
 </td>
 </tr>
@@ -293,14 +221,10 @@ Displays the time the data statistics object was generated.
 
 DATA\_STATISTICS\_CONTENT
 
-
-
 </td>
 <td valign="top">
 
 NCLOB \(max size 2Gb\)
-
-
 
 </td>
 <td valign="top">
@@ -511,5 +435,5 @@ Displays the sample size at build time, expressed as a percent of the data volum
 
 [DATA\_STATISTICS System View](../021-System-Views/data-statistics-system-view-20a1f10.md "Provides an overview of data statistics objects.")
 
-[Managing Statistics](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
+[Managing Statistics](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
 

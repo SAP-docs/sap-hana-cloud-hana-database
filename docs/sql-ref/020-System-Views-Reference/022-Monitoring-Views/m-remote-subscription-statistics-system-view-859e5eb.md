@@ -15,21 +15,15 @@ Provides remote subscription statistic information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 SUBSCRIPTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the subscription name.
 
 RECEIVED\_MESSAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the received message count.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the received message count.
 
 RECEIVED\_MESSAGE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the received message size in bytes.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the received message size in bytes.
 
 APPLIED\_MESSAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the received message count.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the received message count.
 
 APPLIED\_MESSAGE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the applied message size in bytes.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the applied message size in bytes.
 
 REJECTED\_MESSAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the rejected message count.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the rejected message count.
 
 LAST\_MESSAGE\_RECEIVED
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last received message.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the last received message.
 
 LAST\_MESSAGE\_APPLIED
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last applied message.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the last applied message.
 
 RECEIVER\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the receiver latency.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the receiver latency.
 
 APPLIER\_LATENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the applier latency.
-
-
 
 </td>
 </tr>

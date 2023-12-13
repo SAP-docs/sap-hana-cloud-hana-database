@@ -17,21 +17,15 @@ Provides information about available AFL function properties.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema of the AFL function properties.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema of the AFL function properties.
 
 AREA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the area name of the AFL function properties.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the area name of the AFL function properties.
 
 FUNCTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the function name of the AFL function properties.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the function name of the AFL function properties.
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key of the AFL function properties.
-
-
 
 </td>
 </tr>
@@ -132,25 +102,27 @@ Displays the key of the AFL function properties.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the value of the AFL function properties.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio209d4b7c7519101480b1fdd4883b5a3d__section_jbt_rgc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

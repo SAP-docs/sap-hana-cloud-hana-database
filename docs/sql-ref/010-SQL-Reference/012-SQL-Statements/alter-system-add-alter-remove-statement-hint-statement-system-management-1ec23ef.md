@@ -254,5 +254,5 @@ ALTER SYSTEM ADD STATEMENT HINT (NO_CS_JOIN, NO_CS_UNION_ALL) ON PROCEDURE MY_PR
 
 [STATEMENT\_HINTS System View](../../020-System-Views-Reference/021-System-Views/statement-hints-system-view-161a91a.md "Provides information about statement hints, including when they were last enabled and/or disabled and by whom.")
 
-[Managing and Monitoring SAP HANA](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/5c3891048fa44d6983801e0aeaf9af38.html "In addition to the administration tools in the SAP HANA cockpit, other resources are introduced here that are available to you to help improve the performance of your database.") :arrow_upper_right:
+[Managing and Monitoring SAP HANA](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/5c3891048fa44d6983801e0aeaf9af38.html "In addition to the administration tools in the SAP HANA cockpit, other resources are introduced here that are available to you to help improve the performance of your database.") :arrow_upper_right:
 

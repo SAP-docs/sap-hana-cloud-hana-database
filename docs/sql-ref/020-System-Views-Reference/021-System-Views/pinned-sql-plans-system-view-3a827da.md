@@ -15,21 +15,15 @@ Provides information on currently pinned SQL plans and corresponding hints.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 PINNED\_PLAN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the pinned ID.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the pinned ID.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume ID.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the volume ID.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user who prepared the plan.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the name of the user who prepared the plan.
 
 SESSION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the session user name who prepared the plan. This is the same value as displayed in the USER\_NAME column in the M\_CONNECTIONS monitored view.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the session user name who prepared the plan. This is the same value as 
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name that the SQL plan belongs to.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the schema name that the SQL plan belongs to.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement string.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the statement string.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MD5 hash value.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the MD5 hash value.
 
 IS\_INTERNAL
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the plan is executed from a database internal connection or a remote connection: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays whether the plan is executed from a database internal connection or a r
 
 ABAP\_VARCHAR\_MODE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the value ABAP NVARCHAR mode is enabled: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays whether the value ABAP NVARCHAR mode is enabled: TRUE/FALSE.
 
 PIN\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the plan was pinned.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the timestamp when the plan was pinned.
 
 LAST\_MODIFY\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the plan was modified.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the timestamp when the plan was modified.
 
 HINT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the text string to indicate a hint was applied.
-
-
 
 </td>
 </tr>
@@ -314,25 +236,27 @@ Displays the text string to indicate a hint was applied.
 
 SESSION\_PROPERTIES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(500\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the composed variables from the session context.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio3a827da524694d00a9d5f66e12935396__section_dvv_rr4_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

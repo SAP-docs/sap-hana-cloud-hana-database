@@ -19,21 +19,15 @@ The `_SYS_DI` monitoring view `M_ALL_ROLES` shows all the container roles for an
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Description
 
 CONTAINER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the container where the roles are deployed
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ The name of the container where the roles are deployed
 
 ROLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the role
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ The name of the role
 
 ROLE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The role ID
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ The role ID
 
 ROLE\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 The mode of the role: '`LOCAL`'
-
-
 
 </td>
 </tr>
@@ -134,21 +104,15 @@ The mode of the role: '`LOCAL`'
 
 GLOBAL\_IDENTITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The identity specified for role with `ROLE_MODE GLOBAL` 
-
-
 
 </td>
 </tr>
@@ -157,21 +121,15 @@ The identity specified for role with `ROLE_MODE GLOBAL`
 
 CREATOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the user who created the role
-
-
 
 </td>
 </tr>
@@ -180,21 +138,15 @@ The name of the user who created the role
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 The time at which the role was created
-
-
 
 </td>
 </tr>
@@ -203,21 +155,15 @@ The time at which the role was created
 
 CONTEXT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2048\)
 
-
-
 </td>
 <td valign="top">
 
 The context for which the role is valid
-
-
 
 </td>
 </tr>

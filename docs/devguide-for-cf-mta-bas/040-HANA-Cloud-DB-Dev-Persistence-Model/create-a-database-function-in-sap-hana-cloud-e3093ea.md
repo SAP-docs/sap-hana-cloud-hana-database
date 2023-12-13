@@ -44,14 +44,14 @@ To create and deploy a procedure using the SAP Business Application Studio, perf
 
             Choose *View* \> *Command Palette...*
 
-        -   In the command palette, type ***Project*** and choose *Create Project from Template*.
+        -   In the command palette, type `Project` and choose *Create Project from Template*.
 
         > ### Tip:  
         > Alternatively, in the *Welcome* tab, choose *Start from Template* \> *Create a new project*.
 
     2.  In the *New Project from Template* Wizard, choose *SAP HANA Database Project* and then choose *Start*.
 
-    3.  In the *Add Basic Information* pane, type the name of the new project \(***MyApp*** \) and choose *Next*.
+    3.  In the *Add Basic Information* pane, type the name of the new project \(`MyApp` \) and choose *Next*.
 
     4.  In the *Set Basic Properties* pane, accept the default settings and choose *Next*.
 
@@ -110,10 +110,10 @@ To create and deploy a procedure using the SAP Business Application Studio, perf
 
     2.  Create a new `.hdbfunction` file for your scalar user-defined function.
 
-        Right-click the application's database-module folder `db/src/functions`, choose *New* \> *File* from the context menu, and name the new stored scalar function ***apply\_discount.hdbfunction***.
+        Right-click the application's database-module folder `db/src/functions`, choose *New* \> *File* from the context menu, and name the new stored scalar function `apply_discount.hdbfunction`.
 
         > ### Note:  
-        > To use the *Create SAP HANA Database Artifact* Wizard to guide you through the artifact-creation process, choose *View* \> *Command Palette*, type ***create***, and choose *SAP HANA: Create SAP HANA Database Artifact*. Choose *Function \(hdbfunction\)* as the artifact type, provide a name for the new function and save it in the folder `db/src/functions`.
+        > To use the *Create SAP HANA Database Artifact* Wizard to guide you through the artifact-creation process, choose *View* \> *Command Palette*, type `create`, and choose *SAP HANA: Create SAP HANA Database Artifact*. Choose *Function \(hdbfunction\)* as the artifact type, provide a name for the new function and save it in the folder `db/src/functions`.
 
         The new scalar function opens in SAP Business Application Studio.
 

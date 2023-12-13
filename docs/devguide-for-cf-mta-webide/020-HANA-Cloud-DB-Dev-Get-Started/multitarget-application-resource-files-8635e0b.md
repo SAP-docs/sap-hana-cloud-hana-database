@@ -15,188 +15,136 @@ In SAP HANA Cloud, multitarget applications require a number of mandatory config
 
 File Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Database
 
-
-
 </th>
 <th valign="top">
 
 App Router
-
-
 
 </th>
 <th valign="top">
 
 Node/JS
 
-
-
 </th>
 <th valign="top">
 
 Java
-
-
 
 </th>
 <th valign="top">
 
 Python
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `mta.yaml` 
-
-
+`mta.yaml` 
 
 </td>
 <td valign="top">
 
 MTA development descriptor
 
+</td>
+<td valign="top">
 
+✔
 
 </td>
 <td valign="top">
 
 ✔
 
+</td>
+<td valign="top">
 
+✔
 
 </td>
 <td valign="top">
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
 ✔
-
-
-
-</td>
-<td valign="top">
-
-✔
-
-
-
-</td>
-<td valign="top">
-
-✔
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `mtad.yaml` 
-
-
+`mtad.yaml` 
 
 </td>
 <td valign="top">
 
 MTA deployment descriptor
 
+</td>
+<td valign="top">
 
+✔
 
 </td>
 <td valign="top">
 
 ✔
 
+</td>
+<td valign="top">
 
+✔
 
 </td>
 <td valign="top">
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
 ✔
-
-
-
-</td>
-<td valign="top">
-
-✔
-
-
-
-</td>
-<td valign="top">
-
-✔
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `package.json` 
-
-
+`package.json` 
 
 </td>
 <td valign="top">
 
 Description and dependencies of node modules
 
+</td>
+<td valign="top">
 
+✔
 
 </td>
 <td valign="top">
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
 ✔
-
-
-
-</td>
-<td valign="top">
-
-✔
-
-
 
 </td>
 <td valign="top">
@@ -213,17 +161,13 @@ Description and dependencies of node modules
 <tr>
 <td valign="top">
 
- `xs-app.json` 
-
-
+`xs-app.json` 
 
 </td>
 <td valign="top">
 
 Application router description
 
-
-
 </td>
 <td valign="top">
 
@@ -233,8 +177,6 @@ Application router description
 <td valign="top">
 
 ✔
-
-
 
 </td>
 <td valign="top">
@@ -256,23 +198,17 @@ Application router description
 <tr>
 <td valign="top">
 
- `*.hdi*` 
-
-
+`*.hdi*` 
 
 </td>
 <td valign="top">
 
 Configuration artifacts for the SAP HANA Cloud deployment infrastructure \(HDI\), for example, `.hdiconfig` and `.hdinamespace` 
 
-
-
 </td>
 <td valign="top">
 
 ✔
-
-
 
 </td>
 <td valign="top">
@@ -299,17 +235,13 @@ Configuration artifacts for the SAP HANA Cloud deployment infrastructure \(HDI\)
 <tr>
 <td valign="top">
 
- `*.java` 
-
-
+`*.java` 
 
 </td>
 <td valign="top">
 
 Java application source files
 
-
-
 </td>
 <td valign="top">
 
@@ -330,8 +262,6 @@ Java application source files
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
@@ -342,17 +272,13 @@ Java application source files
 <tr>
 <td valign="top">
 
- `*.js` 
-
-
+`*.js` 
 
 </td>
 <td valign="top">
 
 JavaScript \(node.js\) source files
 
-
-
 </td>
 <td valign="top">
 
@@ -367,8 +293,6 @@ JavaScript \(node.js\) source files
 <td valign="top">
 
 ✔
-
-
 
 </td>
 <td valign="top">
@@ -385,17 +309,13 @@ JavaScript \(node.js\) source files
 <tr>
 <td valign="top">
 
- `*.py` 
-
-
+`*.py` 
 
 </td>
 <td valign="top">
 
 Python source files
 
-
-
 </td>
 <td valign="top">
 
@@ -421,23 +341,17 @@ Python source files
 
 ✔
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `xs-security.json` 
-
-
+`xs-security.json` 
 
 </td>
 <td valign="top">
 
 Shared description of OAuth2 client
-
-
 
 </td>
 <td valign="top">

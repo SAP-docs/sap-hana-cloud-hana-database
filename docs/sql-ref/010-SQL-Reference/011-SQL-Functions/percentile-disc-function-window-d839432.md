@@ -80,36 +80,26 @@ FROM p_disc;
 
 CLASS
 
-
-
 </th>
 <th valign="top">
 
 VAL
-
-
 
 </th>
 <th valign="top">
 
 PD1
 
-
-
 </th>
 <th valign="top">
 
 PD2
-
-
 
 </th>
 <th valign="top">
 
 PD3
 
-
-
 </th>
 </tr>
 <tr>
@@ -117,35 +107,25 @@ PD3
 
 A
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>
@@ -153,36 +133,26 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>
@@ -191,35 +161,25 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>
@@ -228,35 +188,25 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>
@@ -265,35 +215,52 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+B
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+7
 
 </td>
 </tr>
@@ -302,35 +269,25 @@ A
 
 B
 
+</td>
+<td valign="top">
 
+1
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
 
 </td>
 <td valign="top">
 
 7
-
-
 
 </td>
 </tr>
@@ -339,72 +296,25 @@ B
 
 B
 
-
-
-</td>
-<td valign="top">
-
-1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
-
 </td>
 <td valign="top">
 
 7
 
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-B
-
-
-
 </td>
 <td valign="top">
 
-7
-
-
+1
 
 </td>
 <td valign="top">
 
 1
 
-
-
-</td>
-<td valign="top">
-
-1
-
-
-
 </td>
 <td valign="top">
 
 7
-
-
 
 </td>
 </tr>

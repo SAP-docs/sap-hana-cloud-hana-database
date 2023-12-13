@@ -9,7 +9,7 @@ Transform a design-time replication task description into a corresponding set of
 A replication task retrieves data from one or more objects in a single remote source and populates one or more tables in SAP HANA.
 
 > ### Tip:  
-> For more information about creating `.hdbreptask` artifacts, see the *Modeling Guide for SAP HANA Smart Data Integration and SAP HANA Smart Data Quality*.
+> For more information about creating `.hdbreptask` artifacts, see the *Modeling Guide for SAP HANA Smart Data Integration and SAP HANA Smart Data Quality* in *Related Information* below.
 
 The file format uses an XML-based syntax.
 
@@ -80,4 +80,6 @@ In the configuration file for the HDI container \(`.hdiconfig`\), the plug-in co
 
 
 [SAP HDI Artifact Types and Build Plug-ins Reference](sap-hdi-artifact-types-and-build-plug-ins-reference-9789224.md "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.")
+
+[Modelling Guide for SAP HANA Smart Data Integration and SAP HANA Smart Data Quality](https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/cc7ebd3f344a4cdda20966a7617f52d8/458f9f6d981c48d2817ad93f8ac50d66.html?version=LATEST)
 

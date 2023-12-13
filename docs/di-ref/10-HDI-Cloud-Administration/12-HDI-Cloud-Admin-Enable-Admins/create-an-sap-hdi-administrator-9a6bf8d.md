@@ -40,6 +40,9 @@ This method uses the predefined `_SYS_DI.T_DEFAULT_DI_ADMIN_PRIVILEGES` table, w
     CREATE USER <HDI_admin_username> PASSWORD <password> NO FORCE_FIRST_PASSWORD_CHANGE;
     ```
 
+    > ### Note:  
+    > For more information about setting the default user group, for example, to avoid errors if `DBADMIN` is the user-group operator of more than one user group, see *User Management with DBADMIN* in *Related Information* below.
+
 3.  Grant the new HDI administrator user the required privileges by executing the following statement:
 
     > ### Sample Code:  
@@ -66,10 +69,12 @@ This method uses the predefined `_SYS_DI.T_DEFAULT_DI_ADMIN_PRIVILEGES` table, w
 
 Deactivate the `DBADMIN` user:
 
- `ALTER USER DBADMIN DEACTIVATE USER NOW`.
+`ALTER USER DBADMIN DEACTIVATE USER NOW`.
 
 **Related Information**  
 
 
 [Revoke the SAP HDI Administrator Privileges](revoke-the-sap-hdi-administrator-privileges-84b472a.md "Revoke the SAP HDI administrator privileges from a specified user.")
+
+[User Management with the SAP HANA Database Administrator DBADMIN \(SAP HANA Cloud Admin Guide\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/5b35402c47b344d882ac13c661aff1c0.html)
 

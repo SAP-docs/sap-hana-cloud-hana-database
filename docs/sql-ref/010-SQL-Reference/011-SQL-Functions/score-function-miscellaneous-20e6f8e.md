@@ -423,7 +423,7 @@ INSERT INTO T1 VALUES('This is a test.');
 Use the SCORE function to check the table contents for relevance against the search string 'is':
 
 ```
-SELECT SCORE(), CONTENT FROM T1 WHERE CONTAINS(CONTENT, 'is', EXACT('searchMode=text')); 
+SELECT SCORE(), CONTENT FROM T1 WHERE CONTAINS(CONTENT, 'is', EXACT('searchMode=text'));
 ```
 
 
@@ -433,14 +433,10 @@ SELECT SCORE(), CONTENT FROM T1 WHERE CONTAINS(CONTENT, 'is', EXACT('searchMode=
 
 SCORE
 
-
-
 </th>
 <th valign="top">
 
 CONTENT
-
-
 
 </th>
 </tr>
@@ -449,30 +445,10 @@ CONTENT
 
 1
 
-
-
 </td>
 <td valign="top">
 
 This is a test.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-0.40833336114883423
-
-
-
-</td>
-<td valign="top">
-
-This was a test.
-
-
 
 </td>
 </tr>
@@ -498,14 +474,10 @@ SELECT SCORE(), CONTENT FROM T1 WHERE CONTAINS(CONTENT, 'example',FUZZY(0.8, 'se
 
 SCORE
 
-
-
 </th>
 <th valign="top">
 
 CONTENT
-
-
 
 </th>
 </tr>
@@ -514,14 +486,10 @@ CONTENT
 
 1
 
-
-
 </td>
 <td valign="top">
 
 example
-
-
 
 </td>
 </tr>
@@ -530,14 +498,10 @@ example
 
 0.9527000188827515
 
-
-
 </td>
 <td valign="top">
 
 examples
-
-
 
 </td>
 </tr>
@@ -573,14 +537,10 @@ SELECT SCORE('is' IN CONTENT EXACT SEARCH MODE 'text') AS SCORE, CONTENT FROM T2
 
 SCORE
 
-
-
 </th>
 <th valign="top">
 
 CONTENT
-
-
 
 </th>
 </tr>
@@ -589,13 +549,10 @@ CONTENT
 
 1
 
-
 </td>
 <td valign="top">
 
 This is a test.
-
-
 
 </td>
 </tr>
@@ -622,14 +579,10 @@ WHERE SCORE('example' IN CONTENT FUZZY MINIMAL SCORE 0.8 MINIMAL TOKEN SCORE 0.8
 
 SCORE
 
-
-
 </th>
 <th valign="top">
 
 CONTENT
-
-
 
 </th>
 </tr>
@@ -638,14 +591,10 @@ CONTENT
 
 1
 
-
-
 </td>
 <td valign="top">
 
 example
-
-
 
 </td>
 </tr>
@@ -654,14 +603,10 @@ example
 
 0.9527000188827515
 
-
-
 </td>
 <td valign="top">
 
 examples
-
-
 
 </td>
 </tr>

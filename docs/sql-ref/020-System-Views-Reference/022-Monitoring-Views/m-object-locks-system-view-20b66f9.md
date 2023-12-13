@@ -17,21 +17,15 @@ Provides the status of currently acquired locks on objects with detailed informa
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 LOCK\_OWNER\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction object ID owning the lock.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the transaction object ID owning the lock.
 
 LOCK\_OWNER\_UPDATE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the write transaction ID owning the lock.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the write transaction ID owning the lock.
 
 ACQUIRED\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the lock acquisition time.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the lock acquisition time.
 
 OBJECT\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object OID.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the object OID.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the schema name.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the object name.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the object type.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the locked partition, or 0 for a non-partition lock.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the ID of the locked partition, or 0 for a non-partition lock.
 
 LOCK\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the lock mode: EXCLUSIVE/INTENTIONAL EXCLUSIVE
-
-
 
 </td>
 </tr>

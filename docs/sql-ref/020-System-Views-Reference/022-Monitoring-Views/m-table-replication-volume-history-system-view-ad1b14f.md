@@ -13,21 +13,15 @@ Displays detailed information on the history of the table replication volume.
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence Volume ID.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the persistence Volume ID.
 
 SOURCE\_VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume ID of the source. If value is greater than 2048, it means it is in a remote location. This value is applicable to remote table replication only.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the volume ID of the source. If value is greater than 2048, it means it
 
 REPLICA\_VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume ID of replica. If the value is greater than 2048, it means that it is a remote location.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the volume ID of replica. If the value is greater than 2048, it means t
 
 SOURCE\_REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name of the source system. This value only appears if SOURCE\_VOLUME\_ID or REPLICA\_VOLUME\_ID is greater than 2048.
-
-
 
 </td>
 </tr>
@@ -174,21 +132,15 @@ Displays the remote source name of the source system. This value only appears if
 
 SOURCE\_REMOTE\_SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source schema name of the source system. This value only appears if SOURCE\_VOLUME\_ID or REPLICA\_VOLUME\_ID is greater than 2048.
-
-
 
 </td>
 </tr>
@@ -197,21 +149,15 @@ Displays the remote source schema name of the source system. This value only app
 
 REPLICA\_REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name of the replica system. This value only appears shown if SOURCE\_VOLUME\_ID or REPLICA\_VOLUME\_ID is greater than 2048.
-
-
 
 </td>
 </tr>
@@ -220,21 +166,15 @@ Displays the remote source name of the replica system. This value only appears s
 
 REPLICA\_REMOTE\_SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source schema name of the replica system. This value only appears if SOURCE\_VOLUME\_ID or REPLICA\_VOLUME\_ID is greater than 2048.
-
-
 
 </td>
 </tr>
@@ -243,21 +183,15 @@ Displays the remote source schema name of the replica system. This value only ap
 
 REPLICATION\_STATUS\_CHANGE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the replication status was changed.
-
-
 
 </td>
 </tr>
@@ -266,21 +200,15 @@ Displays the time when the replication status was changed.
 
 REPLICATION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replication status of the replica volume. Values are: DISABLED, ENABLING, ENABLED, ENABLED\_BUT\_UNAVAILABLE.
-
-
 
 </td>
 </tr>
@@ -289,21 +217,15 @@ Displays the replication status of the replica volume. Values are: DISABLED, ENA
 
 REPLICATION\_STATUS\_CHANGE\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason for the change in replication status. Values are: EXCEPTION, EXCEPTION\_CLEANUP, COMMAND, RESTART, SHUTDOWN, INTERNAL, INITIAL
-
-
 
 </td>
 </tr>
@@ -312,21 +234,15 @@ Displays the reason for the change in replication status. Values are: EXCEPTION,
 
 ERROR\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code in the event a replication volume related to the exception is turned off.
-
-
 
 </td>
 </tr>
@@ -335,21 +251,15 @@ Displays the error code in the event a replication volume related to the excepti
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error message in case the event a replication volume related to the exception is turned off.
-
-
 
 </td>
 </tr>

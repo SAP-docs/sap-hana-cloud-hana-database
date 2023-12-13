@@ -2,15 +2,15 @@
 
 # EXPORT INTO Statement \(Data Import Export\)
 
-Exports a table or view into a single file.
+Exports a table or view into a single-file, multi-file, or directory.
 
 
 
 ## Syntax
 
 ```
-EXPORT INTO [ <export_format> ] <storage_path>
-    FROM <table_or_view_name>
+EXPORT INTO [ <export_format> ] <cloud_provider_path>
+    FROM <export_into_from_option>
    [ WITH <export_into_option_list> ]
 ```
 
@@ -42,15 +42,15 @@ If not specified, the default format is CSV.
 
 </dd><dt><b>
 
-*<storage\_path\>*
+*<cloud\_provider\_path\>*
 
 </b></dt>
 <dd>
 
-Specifies the cloud storage location for the export.
+Specifies the cloud provider path for the export.
 
 ```
-<storage_path> ::=
+<cloud_provider_path> ::=
    { <azure_path> 
    | <amazon_path>
    | <google_path>
@@ -58,13 +58,148 @@ Specifies the cloud storage location for the export.
 ```
 
 
+<dl>
+<dt><b>
 
-</dd>
+*<storage\_path\>*
+
+</b></dt>
 <dd>
+
+Specifies a path to the object for the export using one of the supported formats:
+
+```
+<storage_path> ::= 
+   { <filename>.csv
+   | <filename>.parquet
+   | <directory>/
+   | <directory>/<prefix> }
+```
 
 
 <dl>
 <dt><b>
+
+*<filename\>*.csv or *<filename\>*.parquet
+
+</b></dt>
+<dd>
+
+Data is exported as a single file into the specified filename that must end in either .csv or .parquet.
+
+
+
+</dd><dt><b>
+
+*<directory\>*/
+
+</b></dt>
+<dd>
+
+Data is exported as multiple files into the specified directory, with the ROW GROUP SIZE value used to divide the data into multiple files, with each file containing 1 row group. The path must end with a forward slash \(/\). The format of the output filename for each file is as follows:
+
+-   **Parquet output filename format:** 
+
+    ```
+    <directory>/ ::= part-<partition_number>-<row_group_number>.<compression>.parquet
+    ```
+
+    For example: `part-00001-00001.snappy.parquet, part-00002-00002.snappy.parquet, ...`
+
+-   **CSV output filename format:**
+
+    ```
+    <directory>/ ::= part-<partition_number>-<row_group_number>.csv
+    ```
+
+    For example: `part-00001-00001.csv, part-00002-00002.csv, ...`
+
+
+
+<dl>
+<dt><b>
+
+*<partition\_number\>*
+
+</b></dt>
+<dd>
+
+Specifies the logical partition id of the containing table data, or 0 if not partitioned. The *<partition\_number\>* value is a zero-padded 5 digit value, starting at 0 and incrementing by 1 for each new row group.
+
+> ### Note:  
+> In scenarios where the export target is accessed indirectly, such as through a query string, view, or virtual table, the `<partition_number>` in the exported file name will default to 0, regardless of the partition status of the target table. This behavior applies uniformly to both CSV and Parquet file formats and is an important consideration in export operations.
+
+
+
+</dd><dt><b>
+
+*<row\_group\_number\>*
+
+</b></dt>
+<dd>
+
+Specifies the logical group number of the containing table data. The *<row\_group\_number\>* value is a zero-padded 5 digit value, starting at 0 and incrementing by 1 for each new row group.
+
+
+
+</dd><dt><b>
+
+*<compression\>*
+
+</b></dt>
+<dd>
+
+Specifies the compression algorithms for the export.
+
+```
+<compression> ::= { none | snappy | gzip | lz4 }
+```
+
+
+
+</dd>
+</dl>
+
+
+
+</dd><dt><b>
+
+*<directory\>*/*<prefix\>*
+
+</b></dt>
+<dd>
+
+Data is exported as multiple files into the specified directory, with the ROW GROUP SIZE value used to divide the data into multiple files, with each file containing 1 row group. The prefix is added to each file in the directory. The format of the output filename for each file is as follows:
+
+-   **Parquet output filename format:** 
+
+    ```
+    <directory>/<prefix> ::= <prefix>-part-<partition_number>-<row_group_number>.<compression>.parquet
+    ```
+
+    For example: `my_prefix-part-00001-00001.snappy.parquet, my_prefix-part-00002-00002.snappy.parquet, ...`
+
+-   **CSV output filename format:**
+
+    ```
+    <directory>/<prefix> ::= <prefix>-part-<partition_number>-<row_group_number>.csv
+    ```
+
+    For example: `my_prefix-part-00001-00001.csv, my_prefix-part-00002-00002.csv, ...`
+
+
+If not specified, *<prefix\>* is empty. *<partition\_number\>* and *<row\_group\_number\>* start at 0, and increment by 1 for each new partition/row group.
+
+CSV format does not support the concept of a row group, but for syntax consistency between filename formats, a value is still used to divide data into multiple CSV files. This value is equal to or smaller than the WITH ROW GROUP SIZE value.
+
+
+
+</dd>
+</dl>
+
+
+
+</dd><dt><b>
 
 *<azure\_path\>*
 
@@ -75,7 +210,7 @@ Specifies the location for the Azure export file.
 
 ```
 <azure_path> ::= 
-'azure://[<azure_credentials>@]<azure_container_name>/<azure_object_id>
+'azure://[<azure_credentials>@]<azure_container_name>/<storage_path>
 ```
 
 
@@ -87,7 +222,7 @@ Specifies the location for the Azure export file.
 </b></dt>
 <dd>
 
-Required when not using the WITH CREDENTIAL parameter.
+Required when not using the CREDENTIAL parameter.
 
 ```
 <azure_credentials> ::= 
@@ -109,7 +244,7 @@ Specifies the name of the Azure container to access storage.
 
 </dd><dt><b>
 
-*<azure\_object\_id\>*
+*<storage\_path\>*
 
 </b></dt>
 <dd>
@@ -134,7 +269,7 @@ Specifies the location for the Amazon \(AWS\) export file.
 
 ```
 <amazon_path> ::= 
-'s3-<amazon_region>://[<amazon_credentials>@]<amazon_bucket_name>/<amazon_object_id>
+'s3-<amazon_region>://[<amazon_credentials>@]<amazon_bucket_name>/<storage_path>
 ```
 
 
@@ -157,7 +292,7 @@ Specifies the geographical region the bucket is located in. Refer to [Regions an
 </b></dt>
 <dd>
 
-Not supported with the WITH CREDENTIAL parameter. Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account.
+Not supported with the CREDENTIAL clause. Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account.
 
 ```
 <amazon_credentials> ::= 
@@ -179,7 +314,7 @@ Specifies the name assigned to the Amazon storage bucket when it was created.
 
 </dd><dt><b>
 
-*<amazon\_object\_id\>*
+*<storage\_path\>*
 
 </b></dt>
 <dd>
@@ -204,7 +339,7 @@ Specifies the location for the Google Cloud storage export file.
 
 ```
 <google_path> ::=
-'gs://[<google_credentials>@]<google_bucket_name>/<google_object_id>'
+'gs://[<google_credentials>@]<google_bucket_name>/<storage_path>'
 ```
 
 
@@ -216,7 +351,7 @@ Specifies the location for the Google Cloud storage export file.
 </b></dt>
 <dd>
 
-Not supported with the WITH CREDENTIAL parameter. Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account.
+Not supported with the CREDENTIAL clause. Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account.
 
 ```
 <google_credentials> ::=
@@ -238,7 +373,7 @@ Specifies the name assigned to the Google Cloud storage bucket when it was creat
 
 </dd><dt><b>
 
-*<google\_object\_id\>*
+*<storage\_path\>*
 
 </b></dt>
 <dd>
@@ -303,7 +438,22 @@ Specifies a path or file name within the data lake Files container.
 
 </dd><dt><b>
 
-*<table\_or\_view\_name\>*
+*<export\_into\_from\_option\>*
+
+</b></dt>
+<dd>
+
+Specifies where the data to be exported exists.
+
+```
+<export_into_from_option> ::= { <table_or_view_name> | '(' <select_stmt_no_hint> ')' }
+```
+
+
+<dl>
+<dt><b>
+
+table\_or\_view\_name
 
 </b></dt>
 <dd>
@@ -311,8 +461,24 @@ Specifies a path or file name within the data lake Files container.
 Specifies the name of the table or view to be exported.
 
 ```
-<table_or_view_object_name> ::= [ <schema_name>.]<identifier> 
+<table_or_view_object_name> ::= [ <schema_name>.]<identifier>
 ```
+
+
+
+</dd><dt><b>
+
+*<select\_stmt\_no\_hint\>*
+
+</b></dt>
+<dd>
+
+Specifies the query string to be used to export the data. Supported query strings are simple SELECT statements that can include selection, projection and a join query without a hint and type casting. All schema objects included in the query string should be qualified with schema name. Temporary tables are not supported.
+
+
+
+</dd>
+</dl>
 
 
 
@@ -369,7 +535,7 @@ COLUMN LIST IN FIRST ROW
 </b></dt>
 <dd>
 
-Indicates that the column list is stored in the first row of the CSV import file.
+Indicates that the column list is stored in the first row of the CSV export file.
 
 This option is valid for CSV format only.
 
@@ -437,7 +603,7 @@ This option is valid for CSV format only.
 </b></dt>
 <dd>
 
-Specifies the escape character used in the import data.
+Specifies the escape character used in the export data.
 
 ```
 <escape_character> ::= <character_literal>
@@ -465,13 +631,13 @@ ROW GROUP SIZE
 </b></dt>
 <dd>
 
-Specifies the number of rows per each row group – a logical data structure of parquet format. The default value is 1,000,000.
+Specifies the number of rows per each row group. This option is valid for single-file exports in parquet format, or multi-file exports for both parquet and CSV formats \(1 file per row group\).
 
 ```
 <ROW GROUP SIZE> ::= <integer>
 ```
 
-This option is valid for parquet format only.
+The default value is 1,000,000. If a ROW GROUP SIZE is not specified, then it is calculated based on the size of the table data, with each row group containing 100 MB for parquet, or 256 MB for CSV. If an invalid ROW GROUP SIZE is specified \(for example, a value < 0\), then the default value of 1,000,000 is used.
 
 
 
@@ -482,7 +648,7 @@ CREDENTIAL *<purpose\_def\>*
 </b></dt>
 <dd>
 
-Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of export statements. The WITH CREDENTIAL clause cannot be specified when *<cloud\_path\>* contains credentials. The WITH CREDENTIAL clause is required for exports from SAP HANA Cloud, Data Lake Files, but is optional for all other cloud platforms.
+Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of export statements. The CREDENTIAL clause cannot be specified when *<cloud\_provider\_path\>* contains credentials. The CREDENTIAL clause is required for exports from SAP HANA Cloud, Data Lake Files, but is optional for all other cloud platforms.
 
 
 
@@ -522,7 +688,7 @@ Requires:
 
 ## Description
 
-Use the EXPORT INTO statement to export the data from a table or view into a single CSV or parquet file.
+Use the EXPORT INTO statement to export the data from a table or view into a single CSV or parquet file or into a directory with multiple CSV or parquet files.
 
 The EXPORT INTO command does not support parameterized views.
 
@@ -535,7 +701,8 @@ The EXPORT INTO command does not support parameterized views.
 This statement exports a table into CSV file in an Azure bucket.
 
 ```
-EXPORT INTO 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/tpch1_lineitem.csv' FROM TPCH1.LINEITEM WITH FIELD DELIMITED BY',' THREADS 4;
+EXPORT INTO 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/tpch1_lineitem.csv' 
+   FROM TPCH1.LINEITEM WITH FIELD DELIMITED BY',' THREADS 4;
 ```
 
 The following example creates a table and view, populates them, and exports each of them to a separate CSV file.
@@ -552,7 +719,7 @@ This example exports a table into a CSV file in an Azure bucket.
 
 ```
 EXPORT INTO 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/DEMO_TBL1.csv'
-FROM "IMEX_DEMO"."DEMO_TBL1" WITH FIELD DELIMITED BY ',' THREADS 4;
+   FROM "IMEX_DEMO"."DEMO_TBL1" WITH FIELD DELIMITED BY ',' THREADS 4;
 
 ```
 
@@ -560,8 +727,36 @@ This example exports a table into a CSV file in Google bucket.
 
 ```
 EXPORT INTO 'gs://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/DEMO_TBL1.csv'
-FROM "IMEX_DEMO"."DEMO_TBL1" WITH FIELD DELIMITED BY ',' THREADS 4;
+   FROM "IMEX_DEMO"."DEMO_TBL1" WITH FIELD DELIMITED BY ',' THREADS 4;
 
+```
+
+The following example exports multiple parquet files, one file per row group, with 100 records per file in an Amazon bucket.
+
+```
+EXPORT INTO PARGUET FILE 's3-region2://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/my_dir/' 
+   FROM SCH.NORMAL_TBL WITH ROW GROUP SIZE 100;
+```
+
+The following example exports multiple parquet files, one file per row group in a partition, with 100 records per file in an Amazon bucket.
+
+```
+EXPORT INTO PARQUET FILE 's3-region2://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/my_dir/' 
+   FROM SCH.PARTITIONED_TBL WITH ROW GROUP SIZE 100;
+```
+
+The following example exports data to a CSV file, in an Azure bucket, based on a query string.
+
+```
+EXPORT INTO CSV FILE 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/export.csv' 
+   FROM (SELECT SCHEMA_NAME, TABLE_NAME FROM SYS.TABLES);
+```
+
+The following example exports multiple parquet files, one file per row group in a partition, with 100 records per file with a prefix specified, in an Amazon bucket.
+
+```
+EXPORT INTO PARQUET FILE 's3-region2://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/my_dir/my-prefix' 
+   FROM SCH.PARTITIONED_TBL WITH ROW GROUP SIZE 100;
 ```
 
 **Related Information**  

@@ -59,7 +59,7 @@ The number of columns involved in the relationship must be equal for both ends o
 
 As a result of the generation of the service definition above, an `AssociationSet` named `Customer_Orders` and an `Association` with name `Customer_OrdersType` are generated:
 
- `http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
+`http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
 
 ![XS_examples_assoc_simple](images/XS_examples_assoc_simple_ef46e62.png)
 
@@ -146,7 +146,7 @@ service {
 
 In both cases a `NavigationProperty` is added to the `EntityType`.
 
- `http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
+`http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
 
 ![XS_examples_assoc_nav](images/XS_examples_assoc_nav_7bbf03b.png)
 

@@ -76,16 +76,12 @@ SELECT CONCAT_NAZ ('A', 'B') "concat" FROM DUMMY;
 
 concat
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 AB
-
-
 
 </td>
 </tr>
@@ -104,16 +100,12 @@ SELECT CONCAT_NAZ ('C', null) "concat" FROM DUMMY;
 
 concat
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 C
-
-
 
 </td>
 </tr>
@@ -132,16 +124,12 @@ SELECT CONCAT_NAZ (null, null) "concat" FROM DUMMY;
 
 concat
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 </tr>

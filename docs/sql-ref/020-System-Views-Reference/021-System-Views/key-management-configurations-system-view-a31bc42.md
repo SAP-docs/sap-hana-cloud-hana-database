@@ -17,21 +17,15 @@ Displays information about the existing key management configurations.
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the database name.
 
 CONFIGURATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the key management configuration.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the key management configuration.
 
 IS\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether this configuration is used by LSS to define access to SAP HANA's sensitive information.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Indicates whether this configuration is used by LSS to define access to SAP HANA
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of external key management.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type of external key management.
 
 CLIENT\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the version of the driver software.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the version of the driver software.
 
 PROPERTIES
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays a reduced version of the properties section of the *<settings\>* JSON \(the "credentials" object is omitted\).
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays a reduced version of the properties section of the *<settings\>* JSON \
 
 TENANT\_NAME
 
-
-
 </td>
 <td valign="top">
 
-NVARCHAR\(256
-
-
+NVARCHAR\(256\)
 
 </td>
 <td valign="top">
 
 Displays the tenant name if the configuration is tenant-specific.
-
-
 
 </td>
 </tr>
@@ -201,23 +153,25 @@ Displays the tenant name if the configuration is tenant-specific.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the host name.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioa31bc428fef04c02a3cd911fd06a0be9__section_krx_5rb_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

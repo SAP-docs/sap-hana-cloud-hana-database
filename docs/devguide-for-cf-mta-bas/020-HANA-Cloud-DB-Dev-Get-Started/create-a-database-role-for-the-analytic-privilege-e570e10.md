@@ -41,13 +41,13 @@ In this tutorial, you define the `development_debug_role` role required by the t
 
     1.  Open the command palette.
 
-        -   Press either  [Crtl\] + [Shift\] + [P\]  or
+        -   Press either [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -57,13 +57,13 @@ In this tutorial, you define the `development_debug_role` role required by the t
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new database role.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new database role.
 
     5.  Select the database artifact type, for example, a database role.
 
-        In the command palette, type ***hdbro*** and choose *Role \(hdbrole\)* in the list that appears.
+        In the command palette, type `hdbro` and choose *Role \(hdbrole\)* in the list that appears.
 
-    6.  Name the file "***development\_debug\_role***".
+    6.  Name the file "`development_debug_role`".
 
         The Wizard appends the appropriate file suffix \(`.hdbrole`\) to the role name.
 
@@ -80,7 +80,7 @@ In this tutorial, you define the `development_debug_role` role required by the t
 
     Locate and right-click the role-definition file that you created in the previous step, for example, `development_debug_role.hdbrole`, choose *Open with* \> *Code Editor*, and add the following SQL DDL code that defines the role scope:
 
-     `db/src/defaults/development_debug_role.hdbrole`
+    `db/src/defaults/development_debug_role.hdbrole`
 
     ```json
     {
@@ -112,7 +112,9 @@ In this tutorial, you define the `development_debug_role` role required by the t
     > ### Note:  
     > A mismatch between the installed SAP HANA version and the SAP HANA version specified in the `.hdiconfig` file \(with the optional parameter `"minimum_feature_version"`\) can cause problems with the deployment operation.
 
-6.  Similar to the established `default_access_role`, the new `development_debug_role` can be used to add additional privileges to the application user, for example, to enable access to data preview features in SAP Business Application Studio's calculation-view editor.
+6.  Use the `development_debug_role` to assign analytic privileges to the user that runs a data preview in SAP Business Application Studio.
+
+    Similar to the established `default_access_role`, the new `development_debug_role` can be used to add additional privileges to the application user, for example, to enable access to data preview features in SAP Business Application Studio's calculation-view editor.
 
     > ### Caution:  
     > This `development_debug_role` is intended for development and debugging only; it is not intended for use in productive scenarios.

@@ -17,21 +17,15 @@ Provides information about the aggregated file and packed LOB statistics per hos
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the host.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the host.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name associated with the LOBs.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name associated with the LOBs.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name associated with the LOBs.
-
-
 
 </td>
 </tr>
@@ -132,14 +102,10 @@ Displays the table name associated with the LOBs.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -160,21 +126,15 @@ Returns the table partition ID:
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name associated with the LOBs.
-
-
 
 </td>
 </tr>
@@ -183,14 +143,10 @@ Displays the column name associated with the LOBs.
 
 LOB\_STORAGE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
-
-
 
 </td>
 <td valign="top">
@@ -244,21 +200,15 @@ Large LOBs \(individually loaded into the main memory on demand\).
 
 CONTAINER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the container ID of the packed LOB container; NULL for file LOBs.
-
-
 
 </td>
 </tr>
@@ -267,21 +217,15 @@ Displays the container ID of the packed LOB container; NULL for file LOBs.
 
 DISK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of bytes used for the LOBs on a disk.
-
-
 
 </td>
 </tr>
@@ -290,21 +234,15 @@ Displays the number of bytes used for the LOBs on a disk.
 
 BINARY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the binary size in bytes of the LOBs. This value may be less than the DISK\_SIZE due to management information and paging.
-
-
 
 </td>
 </tr>
@@ -313,21 +251,15 @@ Displays the binary size in bytes of the LOBs. This value may be less than the D
 
 CHARACTER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of characters in the NCLOBs \(only\) column. For packed LOBs, this corresponds to the total number of characters of all of the LOBs in the container.
-
-
 
 </td>
 </tr>
@@ -336,21 +268,15 @@ Displays the number of characters in the NCLOBs \(only\) column. For packed LOBs
 
 LOB\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of associated LOBs.
-
-
 
 </td>
 </tr>
@@ -359,21 +285,15 @@ Displays the total number of associated LOBs.
 
 READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the counter for read operations on the LOBs.
-
-
 
 </td>
 </tr>
@@ -382,21 +302,15 @@ Displays the counter for read operations on the LOBs.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the LOB pages that are loaded in the memory.
-
-
 
 </td>
 </tr>
@@ -405,21 +319,15 @@ Displays the size in bytes of the LOB pages that are loaded in the memory.
 
 MEMORY\_PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of LOB pages loaded in the memory.
-
-
 
 </td>
 </tr>

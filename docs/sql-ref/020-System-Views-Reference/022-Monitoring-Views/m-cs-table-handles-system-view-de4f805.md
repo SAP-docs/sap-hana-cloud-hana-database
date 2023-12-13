@@ -13,21 +13,15 @@ Shows the threads waiting for table locks.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name as used in SQL.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the schema name as used in SQL.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name as used in SQL.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the table name as used in SQL.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique internal table ID which remains unchanged during rename.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the unique internal table ID which remains unchanged during rename.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical partition number, 0 if the table is not partitioned, -1 if the logical partition number may not be retrieved from metadata.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the logical partition number, 0 if the table is not partitioned, -1 if 
 
 INTERNAL\_PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal partition number as used in internal IndexName objects.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the internal partition number as used in internal IndexName objects.
 
 LOCK\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier for the table at IndexMgr level, also found in dumps, trace output, etc.
-
-
 
 </td>
 </tr>
@@ -174,21 +132,15 @@ Displays the unique identifier for the table at IndexMgr level, also found in du
 
 HANDLE\_ID
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique memory address of the IndexHandle.
-
-
 
 </td>
 </tr>
@@ -197,21 +149,15 @@ Displays the unique memory address of the IndexHandle.
 
 THREAD\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the thread using the IndexHandle \(when it was acquired\).
-
-
 
 </td>
 </tr>
@@ -220,21 +166,15 @@ Displays the thread using the IndexHandle \(when it was acquired\).
 
 CURRENT\_STATE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(30\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the current state of the IndexHandle. Values are: search\_delta, finish\_delta\_merge, delete., etc. It is the lowercase state name with the prefix ns\_ removed.
-
-
 
 </td>
 </tr>
@@ -243,21 +183,15 @@ Displays the current state of the IndexHandle. Values are: search\_delta, finish
 
 NEXT\_STATE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(30\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the next state of the IndexHandle when waiting for a lock upgrade. Values are the same as for CURRENT\_STATE.
-
-
 
 </td>
 </tr>
@@ -266,21 +200,15 @@ Displays the next state of the IndexHandle when waiting for a lock upgrade. Valu
 
 INITIAL\_ACQUIRE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp value when IndexHandles are upgraded or downgraded to different states. This preserves the time when the IndexHandle was first acquired along with the table name.
-
-
 
 </td>
 </tr>
@@ -289,21 +217,15 @@ Displays the timestamp value when IndexHandles are upgraded or downgraded to dif
 
 ACQUIRE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp value for the acquired time.
-
-
 
 </td>
 </tr>
@@ -312,21 +234,15 @@ Displays the timestamp value for the acquired time.
 
 QUEUE\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the position within the queue, when waiting; otherwise the value is 0.
-
-
 
 </td>
 </tr>

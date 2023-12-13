@@ -17,21 +17,15 @@ Shows available SAML providers.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SAML\_PROVIDER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the provider name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the provider name.
 
 SUBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subject of the X.509 certificate of the SAML provider.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the subject of the X.509 certificate of the SAML provider.
 
 ISSUER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the issuer of the X.509 certificate of the SAML provider.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the issuer of the X.509 certificate of the SAML provider.
 
 ENTITY\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the entity name of the SAML provider \(optional\).
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the entity name of the SAML provider \(optional\).
 
 IS\_CASE\_SENSITIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the user mapping is checked case sensitive: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays whether the user mapping is checked case sensitive: TRUE/FALSE.
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the owner of the provider.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the name of the owner of the provider.
 
 APPLICATION\_USER\_ATTRIBUTE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the attribute from where the application user is extracted.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the attribute from where the application user is extracted.
 
 IS\_USER\_CREATION\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the provider is allowed to create a user implicitly: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays whether the provider is allowed to create a user implicitly: TRUE/FALSE
 
 USER\_CREATION\_USER\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of user to create when user creation is enabled: STANDARD, RESTRICTED
-
-
 
 </td>
 </tr>
@@ -247,25 +187,27 @@ Displays the type of user to create when user creation is enabled: STANDARD, RES
 
 USER\_CREATION\_USERGROUP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the user group a created user will be a member of.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20cda7b5751910149d0ef5e67ff1a947__section_hyw_hrz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

@@ -15,21 +15,15 @@ Displays the global multi-version concurrency control \(MVCC\) timestamp history
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 GLOBAL\_MVCC\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the global MVCC timestamp
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the global MVCC timestamp
 
 SECONDARY\_SITE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the global MVCC timestamp updated time of the secondary site
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the global MVCC timestamp updated time of the secondary site
 
 PRIMARY\_SITE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the global MVCC updated time of the primary site
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the global MVCC updated time of the primary site
 
 SECONDARY\_SITE\_UPDATE\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the global MVCC update duration of the secondary site in milliseconds
-
-
 
 </td>
 </tr>

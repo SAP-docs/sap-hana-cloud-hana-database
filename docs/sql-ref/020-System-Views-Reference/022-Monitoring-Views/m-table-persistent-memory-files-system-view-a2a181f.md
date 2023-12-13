@@ -15,21 +15,15 @@ Displays the persistent memory file information for all of the tables in the dat
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -130,14 +100,10 @@ Displays the table name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -158,21 +124,15 @@ Returns the table partition ID:
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name.
-
-
 
 </td>
 </tr>
@@ -181,21 +141,15 @@ Displays the column name.
 
 COLUMN\_FRAGMENT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column fragment type: PAGED MAIN, SINGLE MAIN, or DELTA.
-
-
 
 </td>
 </tr>
@@ -204,21 +158,15 @@ Displays the column fragment type: PAGED MAIN, SINGLE MAIN, or DELTA.
 
 COLUMN\_FRAGMENT\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the column fragment version.
-
-
 
 </td>
 </tr>
@@ -227,21 +175,15 @@ Displays the column fragment version.
 
 FILE\_BLOCK\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistent memory block identifier inside the column fragment version.
-
-
 
 </td>
 </tr>
@@ -250,21 +192,15 @@ Displays the persistent memory block identifier inside the column fragment versi
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistent memory block file name.
-
-
 
 </td>
 </tr>
@@ -273,21 +209,15 @@ Displays the persistent memory block file name.
 
 FILE\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistent memory file status: ACTIVE/INACTIVE.
-
-
 
 </td>
 </tr>
@@ -304,7 +234,7 @@ Displays the persistent memory file status: ACTIVE/INACTIVE.
 
 [Non-Heterogeneous Alter Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/non-heterogeneous-alter-partition-clauses-f7ae27c.md "Modifies the partitions of an existing table with a non-heterogeneous partitioning schema.")
 
-[Non-heterogeneous Create Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/non-heterogeneous-create-partition-clauses-ca6a99b.md "Defines the various partitioning clauses available for non-heterogeneous partitions when creating a new table.")
+[Non-Heterogeneous Create Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/non-heterogeneous-create-partition-clauses-ca6a99b.md "Defines the various partitioning clauses available for non-heterogeneous partitions when creating a new table.")
 
 [UNLOAD Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/unload-statement-data-manipulation-20fe92a.md "Unloads the column store table from memory.")
 

@@ -36,87 +36,65 @@ The following table lists all the extensions that are enabled by default when yo
 
 Extension Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *Basic Tools* 
-
-
+*Basic Tools* 
 
 </td>
 <td valign="top">
 
 Optimize the Web-development work flow. The extension includes code editors, file management capabilities, split view and window management, preferences and settings.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *SAP HANA Calculation View Editor* 
-
-
+*SAP HANA Calculation View Editor* 
 
 </td>
 <td valign="top">
 
 Edit and manage SAP HANA calculation views. The extension includes the SAP HANA calculation view editor, the synonym editor, and the analytical privilege editor.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *SAP HANA Database Explorer* 
-
-
+*SAP HANA Database Explorer* 
 
 </td>
 <td valign="top">
 
 Access and inspect SAP HANA run-time objects. The extension includes a command that opens *SAP HANA Database Explorer* in a new browser tab. For a full list of the HDI database artifact types that you can develop and deploy, see *Related Information* below.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *SAP HANA Tools* 
-
-
+*SAP HANA Tools* 
 
 </td>
 <td valign="top">
 
 Develop native SAP HANA applications. The extension includes tools such as enhanced graphical and text-based editors for developing database artifacts, project generators, and productivity tools. For a full list of the HDI database artifact types that you can develop and deploy, see *Related Information* below.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *MTA Tools* 
-
-
+*MTA Tools* 
 
 </td>
 <td valign="top">
@@ -130,23 +108,17 @@ Perform operations such as build, deployment, and validation on SAP multitarget 
 
 For more information about the individual tools, see *Related Information* below.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *SAP HANA Smart Data Integration Tools* 
-
-
+*SAP HANA Smart Data Integration Tools* 
 
 </td>
 <td valign="top">
 
 Perform SDI tasks such as data federation, data replication, and data transformation in SAP HANA. The extension includes graphical editors for Flowgraphs, Replication Tasks, and File Formats.
-
-
 
 </td>
 </tr>
@@ -169,151 +141,113 @@ The following table lists the extensions that you can choose to add to your *SAP
 
 Extension Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *SAPUI5 Adaptation Project* 
-
-
+*SAPUI5 Adaptation Project* 
 
 </td>
 <td valign="top">
 
 Extend SAPUI5 applications using Adaptation Project and Visual Editor
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Basic Tools Next* 
-
-
+*Basic Tools Next* 
 
 </td>
 <td valign="top">
 
 Basic Tools Next version for testing and validations
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *CDS Graphical Modeler* 
-
-
+*CDS Graphical Modeler* 
 
 </td>
 <td valign="top">
 
 Design SAP core data services models in SAP cloud business application development projects. The extension includes the CDS Editor, which provides capabilities for SAP business developers to visually design SAP CDS models. Model artifacts include entities, types, unstructured types, enums, arrayed types, events, associations and compositions, projects and services, which accelerate SAP cloud business application development.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *CAP Tools* 
-
-
+*CAP Tools* 
 
 </td>
 <td valign="top">
 
 Develop CAP applications using the CDS command-line and tools.Includes enhanced code and graphical editors, database-management capabilities, and tools for running your application.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Chromium Browser Tools* 
-
-
+*Chromium Browser Tools* 
 
 </td>
 <td valign="top">
 
 Use Chromium tools.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Low-code Tools* 
-
-
+*Low-code Tools* 
 
 </td>
 <td valign="top">
 
 A collection of low-code tools enabling developers to easily build full-stack applications for desktop and mobile use.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Mobile Services App Development Tools* 
-
-
+*Mobile Services App Development Tools* 
 
 </td>
 <td valign="top">
 
 A collection of tools that enable developers to build end-to-end mobile applications - from modeling and generating OData services, and creating mobile native applications from metadata with MDK to building content for SAP Mobile Cards.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Fiori Freestyle Tools* 
-
-
+*Fiori Freestyle Tools* 
 
 </td>
 <td valign="top">
 
 Optimize your Fiori-based development. This extension provides Fiori templates with the following tools: UI5 CLI, Grunt CLI, abap-deploy CLI
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *SAP HANA Performance Tools* 
-
-
+*SAP HANA Performance Tools* 
 
 </td>
 <td valign="top">
@@ -330,41 +264,31 @@ Analyze SAP HANA performance traces. The extension includes the *SQL analyzer to
 <tr>
 <td valign="top">
 
- *HTML5 Runner* 
-
-
+*HTML5 Runner* 
 
 </td>
 <td valign="top">
 
 Run HTML5 applications locally. The extension includes the HTML5 application runner and run configurations.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *HTML5 Application Template* 
-
-
+*HTML5 Application Template* 
 
 </td>
 <td valign="top">
 
 Create an HTML5 application using a template wizard.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Java Tools* 
-
-
+*Java Tools* 
 
 </td>
 <td valign="top">
@@ -385,25 +309,19 @@ Develop and run Java applications. It includes debugging capabilities, enhanced 
 <tr>
 <td valign="top">
 
- *Launchpad Module* 
-
-
+*Launchpad Module* 
 
 </td>
 <td valign="top">
 
 Add a launchpad to your multitarget application.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *MTA Tools cf-v3* 
-
-
+*MTA Tools cf-v3* 
 
 </td>
 <td valign="top">
@@ -422,9 +340,7 @@ Perform operations such as build, deployment, and validation on multitarget appl
 <tr>
 <td valign="top">
 
- *SAP Fiori Tools* 
-
-
+*SAP Fiori Tools* 
 
 </td>
 <td valign="top">
@@ -445,41 +361,31 @@ Simplify the development of SAP Fiori elements applications by providing extensi
 <tr>
 <td valign="top">
 
- *Development Tools for SAP Work Zone* 
-
-
+*Development Tools for SAP Work Zone* 
 
 </td>
 <td valign="top">
 
 Build UI Integration cards, which are user interface elements that present new means to provide application information to the end user in a unified way. The business information are represented compactly and allows interaction on it being executed. This editor allows user to create new cards or build cards from available samples, edit card properties and preview the changes. Finally, users can bundle and deploy the cards into different systems.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *SAPUI5 Layout Editor* 
-
-
+*SAPUI5 Layout Editor* 
 
 </td>
 <td valign="top">
 
 Visualize and develop your XML view graphically.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *SAP Business Application Studio Extension Development* 
-
-
+*SAP Business Application Studio Extension Development* 
 
 </td>
 <td valign="top">
@@ -496,32 +402,24 @@ Use create, deploy, and manage your own SAP Business Application Studio extensio
 <tr>
 <td valign="top">
 
- *Workflow Management* 
-
-
+*Workflow Management* 
 
 </td>
 <td valign="top">
 
 Create workflow applications and process templates with SAP Workflow.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Serverless Runtime Development Tools* 
-
-
+*Serverless Runtime Development Tools* 
 
 </td>
 <td valign="top">
 
 Create and deploy extensions in a serverless environment.
-
-
 
 </td>
 </tr>

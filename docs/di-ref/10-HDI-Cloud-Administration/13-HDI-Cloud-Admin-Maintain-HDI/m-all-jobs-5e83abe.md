@@ -19,21 +19,15 @@ The `M_ALL_JOBS` view enables you to display information about the progress of t
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Description
 
 REQUEST\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The unique ID of the API call that produced this job. This ID is always the same for jobs that originate from the same API call.
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ The unique ID of the API call that produced this job. This ID is always the same
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The user who called the \(`ASYNC_`\)
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ The user who called the \(`ASYNC_`\)
 
 APPUSER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The application user who called the `(ASYNC_)MAKE API` 
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ The application user who called the `(ASYNC_)MAKE API`
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 The identifier of the connection that started the `(ASYNC_)MAKE` 
-
-
 
 </td>
 </tr>
@@ -134,21 +104,15 @@ The identifier of the connection that started the `(ASYNC_)MAKE`
 
 START\_TIMESTAMP\_UTC
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 The UTC time when the `(ASYNC_)MAKE` was started
-
-
 
 </td>
 </tr>
@@ -157,21 +121,15 @@ The UTC time when the `(ASYNC_)MAKE` was started
 
 JOB\_START\_TIMESTAMP\_UTC
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 The UTC time when the current job started
-
-
 
 </td>
 </tr>
@@ -180,21 +138,15 @@ The UTC time when the current job started
 
 CURRENT\_JOB
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The numeric identifier of the currently running job
-
-
 
 </td>
 </tr>
@@ -203,21 +155,15 @@ The numeric identifier of the currently running job
 
 NUM\_JOBS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The total number of jobs that will run
-
-
 
 </td>
 </tr>
@@ -226,21 +172,15 @@ The total number of jobs that will run
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The current status of the job, for example: Finished, Committed, Simulated, Rolled back, Post commit steps
-
-
 
 </td>
 </tr>
@@ -249,21 +189,15 @@ The current status of the job, for example: Finished, Committed, Simulated, Roll
 
 UPDATE\_TIMESTAMP\_UTC
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 UTC time when the job information was last updated
-
-
 
 </td>
 </tr>
@@ -272,21 +206,15 @@ UTC time when the job information was last updated
 
 INTERNAL\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 The identifier of the internal connection used by HDI
-
-
 
 </td>
 </tr>
@@ -295,21 +223,15 @@ The identifier of the internal connection used by HDI
 
 INTERNAL\_CONNECTION\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 The time when the internal connection started
-
-
 
 </td>
 </tr>
@@ -318,21 +240,15 @@ The time when the internal connection started
 
 IS\_INTERNAL\_CONNECTION\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 TRUE \(or FALSE\): indicates that the job is still running \(or not\)
-
-
 
 </td>
 </tr>
@@ -341,21 +257,15 @@ TRUE \(or FALSE\): indicates that the job is still running \(or not\)
 
 GROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the container group associated with the running job
-
-
 
 </td>
 </tr>

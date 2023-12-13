@@ -37,14 +37,10 @@ When a given set of operand/argument types does not match what an operator/funct
 
 Input Expression
 
-
-
 </th>
 <th valign="top">
 
 Transformed Expression with Implicit Conversion
-
-
 
 </th>
 </tr>
@@ -53,14 +49,10 @@ Transformed Expression with Implicit Conversion
 
 BIGINT \> NVARCHAR
 
-
-
 </td>
 <td valign="top">
 
 BIGINT \> BIGINT\(NVARCHAR\)
-
-
 
 </td>
 </tr>
@@ -69,14 +61,10 @@ BIGINT \> BIGINT\(NVARCHAR\)
 
 BIGINT \> DECIMAL
 
-
-
 </td>
 <td valign="top">
 
 DECIMAL\(BIGINT\) \> DECIMAL
-
-
 
 </td>
 </tr>
@@ -85,14 +73,10 @@ DECIMAL\(BIGINT\) \> DECIMAL
 
 TIMESTAMP \> DATE
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP \> TIMESTAMP\(DATE\)
-
-
 
 </td>
 </tr>
@@ -101,14 +85,10 @@ TIMESTAMP \> TIMESTAMP\(DATE\)
 
 DATE \> TIME
 
-
-
 </td>
 <td valign="top">
 
 Returns an error because conversion cannot occur between DATE and TIME
-
-
 
 </td>
 </tr>
@@ -132,77 +112,55 @@ In the tables below, **OK** means that data type conversions are allowed without
 
 Target/Source
 
-
-
 </th>
 <th valign="top">
 
 TINYINT
-
-
 
 </th>
 <th valign="top">
 
 SMALLINT
 
-
-
 </th>
 <th valign="top">
 
 INTEGER
-
-
 
 </th>
 <th valign="top">
 
 BIGINT
 
-
-
 </th>
 <th valign="top">
 
 DECIMAL
-
-
 
 </th>
 <th valign="top">
 
 DECIMAL\(*<p\>*,*<s\>*\)
 
-
-
 </th>
 <th valign="top">
 
 SMALLDECIMAL
-
-
 
 </th>
 <th valign="top">
 
 REAL
 
-
-
 </th>
 <th valign="top">
 
 DOUBLE
 
-
-
 </th>
 <th valign="top">
 
 NVARCHAR
-
-
 
 </th>
 </tr>
@@ -211,77 +169,55 @@ NVARCHAR
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 \-
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
 
 </td>
 </tr>
@@ -290,77 +226,55 @@ OK
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
 
 </td>
 </tr>
@@ -369,77 +283,55 @@ OK
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
+</td>
+<td valign="top">
 
+OK
 
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
 
 </td>
 </tr>
@@ -448,77 +340,55 @@ OK
 
 BIGINT
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -527,77 +397,55 @@ OK
 
 DECIMAL
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -606,77 +454,55 @@ OK
 
 DECIMAL\(*<p\>*,*<s\>*\)
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -685,77 +511,55 @@ OK
 
 SMALLDECIMAL
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
 
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -764,77 +568,55 @@ OK
 
 REAL
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -843,77 +625,55 @@ OK
 
 DOUBLE
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -922,77 +682,55 @@ OK
 
 NVARCHAR
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1007,43 +745,31 @@ CHK
 
 Target/ Source
 
-
-
 </th>
 <th valign="top">
 
 TIME
-
-
 
 </th>
 <th valign="top">
 
 DATE
 
-
-
 </th>
 <th valign="top">
 
 SECONDDATE
 
-
-
 </th>
 <th valign="top">
 
 TIMESTAMP
-
-
 
 </th>
 <th valign="top">
 
 NVARCHAR
 
-
-
 </th>
 </tr>
 <tr>
@@ -1051,42 +777,30 @@ NVARCHAR
 
 TIME
 
+</td>
+<td valign="top">
 
+\-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
-
-</td>
-<td valign="top">
-
-\-
-
-
 
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -1095,42 +809,30 @@ OK
 
 DATE
 
+</td>
+<td valign="top">
 
+\-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
-\-
-
-
+OK
 
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
-
-</td>
-<td valign="top">
-
-OK
-
-
 
 </td>
 </tr>
@@ -1139,42 +841,30 @@ OK
 
 SECONDDATE
 
-
-
 </td>
 <td valign="top">
 
 TIME
-
-
 
 </td>
 <td valign="top">
 
 DATE
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -1183,42 +873,30 @@ OK
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIME
-
-
 
 </td>
 <td valign="top">
 
 DATE
 
-
-
 </td>
 <td valign="top">
 
 SECONDDATE
-
-
 
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -1227,42 +905,30 @@ OK
 
 NVARCHAR
 
+</td>
+<td valign="top">
 
+CHK
 
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
 
-
-
 </td>
 <td valign="top">
 
 CHK
-
-
-
-</td>
-<td valign="top">
-
-CHK
-
-
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1277,21 +943,15 @@ CHK
 
 Target/ Source
 
-
-
 </th>
 <th valign="top">
 
 VARBINARY
 
-
-
 </th>
 <th valign="top">
 
 NVARCHAR
-
-
 
 </th>
 </tr>
@@ -1300,21 +960,15 @@ NVARCHAR
 
 VARBINARY
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1322,22 +976,16 @@ VARBINARY
 <td valign="top">
 
 NVARCHAR
-
-
 
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -1387,6 +1035,8 @@ The following list specifies the precedence of data types, with TIMESTAMP being 
 
 
 
+
+## Example
 
 -   When converting numeric types to DECIMAL or SMALLDECIMAL types, the least significant digits are rounded. For example, converting a BIGINT value such as 1234567890123456789 to SMALLDECIMAL becomes 1234567890123457000.
 

@@ -17,21 +17,15 @@ Provides the accumulated lock wait count and duration for record locks, table lo
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 LOCK\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the lock type: RECORD/TABLE.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the lock type: RECORD/TABLE.
 
 TOTAL\_LOCK\_WAITS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total lock wait count.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the total lock wait count.
 
 TOTAL\_LOCK\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total lock wait duration in microseconds.
-
-
 
 </td>
 </tr>

@@ -12,6 +12,9 @@ Enable access to the schema of an SAP HDI container of individual objects in the
 
 In SAP HANA Deployment Infrastructure \(HDI\), users that would like to consume objects deployed to an HDI container need to be granted the appropriate privileges. The privileges can be granted to specific objects in the schema \(for example, `C`\) by use of a role that has been deployed to the target container, for example, “C”, or by granting privileges for the entire schema.
 
+> ### Caution:  
+> HDI containers and their schemas are intended to be managed exclusively by HDI. Creating objects manually in an HDI container is highly likely to cause problems that can lead to loss of data. For this reason, it is not recommended to grant the `CREATE ANY` privilege.
+
 To grant access privileges for the entire container schema where the database objects are located to a database object consumer `NEW_CONTAINER_CONSUMER`, perform the following steps:
 
 

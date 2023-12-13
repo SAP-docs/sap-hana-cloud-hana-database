@@ -74,7 +74,7 @@ Searches in *<original\_string\>* for all occurrences of *<search\_string\>* and
 
 ## Example
 
-The following example changes all occurrences of ***DOWN*** in the original string to ***UP***, and returns the value ***UPGRADE UPWARD***:
+The following example changes all occurrences of `DOWN` in the original string to `UP`, and returns the value ***UPGRADE UPWARD***:
 
 ```
 SELECT REPLACE ('DOWNGRADE DOWNWARD','DOWN', 'UP') "replace" FROM DUMMY;

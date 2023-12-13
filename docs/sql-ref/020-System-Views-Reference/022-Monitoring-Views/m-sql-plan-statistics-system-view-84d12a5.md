@@ -15,21 +15,15 @@ Provides statistics of a live or evicted individual execution plan.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the persistence volume ID.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement string.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the statement string.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MD5 hash value for STATEMENT\_STRING.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the MD5 hash value for STATEMENT\_STRING.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name who prepared the plan.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the user name who prepared the plan.
 
 SESSION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SESSION\_USER name who prepared the plan. The same value as M\_CONNECTIONS.USER\_NAME.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the SESSION\_USER name who prepared the plan. The same value as M\_CONN
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name that the SQL plan belongs to.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the schema name that the SQL plan belongs to.
 
 SESSION\_PROPERTIES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(500\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the composed variables that can be changed by session context.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the composed variables that can be changed by session context.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the plan is currently valid: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays whether the plan is currently valid: TRUE/FALSE.
 
 IS\_EVICTED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the plan has already been evicted: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays whether the plan has already been evicted: TRUE/FALSE.
 
 LAST\_INVALIDATION\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last plan invalidation reason.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the last plan invalidation reason.
 
 IS\_INTERNAL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the plan is executed from a database internal connection \(TRUE\) or from a remote connection \(FALSE\).
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays whether the plan is executed from a database internal connection \(TRUE
 
 IS\_DISTRIBUTED\_EXECUTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the tables are located in multiple nodes: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -360,14 +270,10 @@ Displays whether the tables are located in multiple nodes: TRUE/FALSE.
 
 COMPILATION\_OPTIONS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
-
-
 
 </td>
 <td valign="top">
@@ -380,8 +286,6 @@ Displays the compilation options that are used by the SQL Query Optimizer when i
 
 Multiple options can be used together to create a list of options, for example: STATEMENT HINT, ABSTRACT SQL PLAN.
 
-
-
 </td>
 </tr>
 <tr>
@@ -389,21 +293,15 @@ Multiple options can be used together to create a list of options, for example: 
 
 IS\_PINNED\_PLAN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the plan is explicitly stored by PlanViz utility: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -412,21 +310,15 @@ Displays whether the plan is explicitly stored by PlanViz utility: TRUE/FALSE.
 
 PINNED\_PLAN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 If this plan is pinned, dispalys the same value as PINNED\_SQL\_PLANS.ID.
-
-
 
 </td>
 </tr>
@@ -435,21 +327,15 @@ If this plan is pinned, dispalys the same value as PINNED\_SQL\_PLANS.ID.
 
 ABAP\_VARCHAR\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether ABAP NVARCHAR mode is enabled: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -458,21 +344,15 @@ Displays whether ABAP NVARCHAR mode is enabled: TRUE/FALSE.
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application name information.
-
-
 
 </td>
 </tr>
@@ -481,21 +361,15 @@ Displays the application name information.
 
 APPLICATION\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application source information.
-
-
 
 </td>
 </tr>
@@ -504,21 +378,15 @@ Displays the application source information.
 
 ACCESSED\_TABLES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the relevant base table ID list accessed in the plan.
-
-
 
 </td>
 </tr>
@@ -527,21 +395,15 @@ Displays the relevant base table ID list accessed in the plan.
 
 ACCESSED\_TABLE\_NAMES
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the relevant base table name list accessed in the plan.
-
-
 
 </td>
 </tr>
@@ -550,21 +412,15 @@ Displays the relevant base table name list accessed in the plan.
 
 ACCESSED\_OBJECTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the relevant table object ID list accessed in the plan.
-
-
 
 </td>
 </tr>
@@ -573,21 +429,15 @@ Displays the relevant table object ID list accessed in the plan.
 
 ACCESSED\_OBJECT\_NAMES
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the relevant schema object name list accessed in the plan.
-
-
 
 </td>
 </tr>
@@ -596,21 +446,15 @@ Displays the relevant schema object name list accessed in the plan.
 
 TABLE\_LOCATIONS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the relevant table locations for the plan.
-
-
 
 </td>
 </tr>
@@ -619,21 +463,15 @@ Displays the relevant table locations for the plan.
 
 TABLE\_TYPES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the plan refers Column store only, Row store only or mixed.
-
-
 
 </td>
 </tr>
@@ -642,21 +480,15 @@ Displays whether the plan refers Column store only, Row store only or mixed.
 
 PLAN\_SHARING\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the plan sharing type.
-
-
 
 </td>
 </tr>
@@ -665,14 +497,10 @@ Displays the plan sharing type.
 
 OWNER\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -695,21 +523,15 @@ Displays the connection owning the plan. The possible values are:
 
 PLAN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical plan ID, which is a non-negative value. If the plan is evicted, -1 is shown.
-
-
 
 </td>
 </tr>
@@ -718,21 +540,15 @@ Displays the logical plan ID, which is a non-negative value. If the plan is evic
 
 PLAN\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory size used by the plan in bytes.
-
-
 
 </td>
 </tr>
@@ -741,21 +557,15 @@ Displays the memory size used by the plan in bytes.
 
 EVICTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of evictions that have occurred for the plan.
-
-
 
 </td>
 </tr>
@@ -764,21 +574,15 @@ Displays the number of evictions that have occurred for the plan.
 
 LAST\_EVICTION\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the plan was evicted for the last time. Returns zero if the plan has never been evicted.
-
-
 
 </td>
 </tr>
@@ -787,21 +591,15 @@ Displays the timestamp when the plan was evicted for the last time. Returns zero
 
 REFERENCE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of statements using the plan.
-
-
 
 </td>
 </tr>
@@ -810,21 +608,15 @@ Displays the number of statements using the plan.
 
 PARAMETER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of parameters to be assigned for the execution.
-
-
 
 </td>
 </tr>
@@ -833,21 +625,15 @@ Displays the number of parameters to be assigned for the execution.
 
 UPDATED\_TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table changed by the plan.
-
-
 
 </td>
 </tr>
@@ -856,21 +642,15 @@ Displays the object ID of the table changed by the plan.
 
 LOGICAL\_CONNECTION\_VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume ID of the logical connection. This value is 0 if there is no session context.
-
-
 
 </td>
 </tr>
@@ -879,21 +659,15 @@ Displays the volume ID of the logical connection. This value is 0 if there is no
 
 EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated count of plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -902,21 +676,15 @@ Displays the accumulated count of plan execution for valid and evicted plans.
 
 EXECUTION\_COUNT\_BY\_ROUTING
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated count of plan execution by client-routed connection in statement routing for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -925,21 +693,15 @@ Displays the accumulated count of plan execution by client-routed connection in 
 
 TOTAL\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of time, in microseconds, that cursors were opened. This includes plan execution and communication time with clients for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -948,21 +710,15 @@ Displays the sum of time, in microseconds, that cursors were opened. This includ
 
 AVG\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time, in microseconds, of the plan execution, including communication time with clients for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -971,21 +727,15 @@ Displays the average time, in microseconds, of the plan execution, including com
 
 MIN\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time, in microseconds, of the plan execution, including communication time with clients for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -994,21 +744,15 @@ Displays the minimum time, in microseconds, of the plan execution, including com
 
 MAX\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time, in microseconds, of the plan execution, including communication time with clients for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1017,21 +761,15 @@ Displays the maximum time, in microseconds, of the plan execution, including com
 
 TOTAL\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of time, in microseconds, of the plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1040,21 +778,15 @@ Displays the sum of time, in microseconds, of the plan execution for valid and e
 
 AVG\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time of the plan execution.
-
-
 
 </td>
 </tr>
@@ -1063,21 +795,15 @@ Displays the average time of the plan execution.
 
 MIN\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time of the plan execution.
-
-
 
 </td>
 </tr>
@@ -1086,21 +812,15 @@ Displays the minimum time of the plan execution.
 
 MAX\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time of the plan execution.
-
-
 
 </td>
 </tr>
@@ -1109,21 +829,15 @@ Displays the maximum time of the plan execution.
 
 TOTAL\_EXECUTION\_OPEN\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of time in microseconds for cursor open for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1132,21 +846,15 @@ Displays the sum of time in microseconds for cursor open for valid and evicted p
 
 AVG\_EXECUTION\_OPEN\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time in microseconds for cursor open for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1155,21 +863,15 @@ Displays the average time in microseconds for cursor open for valid and evicted 
 
 MIN\_EXECUTION\_OPEN\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time in microseconds for cursor open for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1178,21 +880,15 @@ Displays the minimum time in microseconds for cursor open for valid and evicted 
 
 MAX\_EXECUTION\_OPEN\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time in microseconds for cursor open for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1201,21 +897,15 @@ Displays the maximum time in microseconds for cursor open for valid and evicted 
 
 TOTAL\_EXECUTION\_FETCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of time in microseconds for cursor fetch for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1224,21 +914,15 @@ Displays the sum of time in microseconds for cursor fetch for valid and evicted 
 
 AVG\_EXECUTION\_FETCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time in microseconds for cursor fetch for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1247,21 +931,15 @@ Displays the average time in microseconds for cursor fetch for valid and evicted
 
 MIN\_EXECUTION\_FETCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time in microseconds for cursor fetch for valid and evicted plans
-
-
 
 </td>
 </tr>
@@ -1270,21 +948,15 @@ Displays the minimum time in microseconds for cursor fetch for valid and evicted
 
 MAX\_EXECUTION\_FETCH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time in microseconds for cursor fetch for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1293,21 +965,15 @@ Displays the maximum time in microseconds for cursor fetch for valid and evicted
 
 TOTAL\_EXECUTION\_CLOSE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of time in microseconds for cursor close for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1316,21 +982,15 @@ Displays the sum of time in microseconds for cursor close for valid and evicted 
 
 AVG\_EXECUTION\_CLOSE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time in microseconds for cursor close for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1339,21 +999,15 @@ Displays the average time in microseconds for cursor close for valid and evicted
 
 MIN\_EXECUTION\_CLOSE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time in microseconds for cursor close for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1362,21 +1016,15 @@ Displays the minimum time in microseconds for cursor close for valid and evicted
 
 MAX\_EXECUTION\_CLOSE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time in microseconds for cursor close for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1385,21 +1033,15 @@ Displays the maximum time in microseconds for cursor close for valid and evicted
 
 TOTAL\_METADATA\_CACHE\_MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Deprecated.
-
-
 
 </td>
 </tr>
@@ -1408,21 +1050,15 @@ Deprecated.
 
 TOTAL\_TABLE\_LOAD\_TIME\_DURING\_PREPARATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of table loading time during plan preparation for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1431,21 +1067,15 @@ Displays the sum of table loading time during plan preparation for valid and evi
 
 AVG\_TABLE\_LOAD\_TIME\_DURING\_PREPARATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average table loading time in microseconds during plan preparation for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1454,21 +1084,15 @@ Displays the average table loading time in microseconds during plan preparation 
 
 MIN\_TABLE\_LOAD\_TIME\_DURING\_PREPARATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum table loading time during plan preparation for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1477,21 +1101,15 @@ Displays the minimum table loading time during plan preparation for valid and ev
 
 MAX\_TABLE\_LOAD\_TIME\_DURING\_PREPARATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum table loading time in microseconds during plan preparation for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1500,21 +1118,15 @@ Displays the maximum table loading time in microseconds during plan preparation 
 
 PREPARATION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of plan preparations for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1523,21 +1135,15 @@ Displays the count of plan preparations for valid and evicted plans.
 
 TOTAL\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of time in microseconds of plan preparation for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1546,21 +1152,15 @@ Displays the sum of time in microseconds of plan preparation for valid and evict
 
 AVG\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time in microseconds of plan preparation for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1569,21 +1169,15 @@ Displays the average time in microseconds of plan preparation for valid and evic
 
 MIN\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time in microseconds of plan preparation for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1592,21 +1186,15 @@ Displays the minimum time in microseconds of plan preparation for valid and evic
 
 MAX\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time in microseconds of plan preparation for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1615,21 +1203,15 @@ Displays the maximum time in microseconds of plan preparation for valid and evic
 
 TOTAL\_RESULT\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated number of records during plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1638,21 +1220,15 @@ Displays the accumulated number of records during plan execution for valid and e
 
 TOTAL\_LOCK\_WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated lock wait count for the plan for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1661,21 +1237,15 @@ Displays the accumulated lock wait count for the plan for valid and evicted plan
 
 TOTAL\_LOCK\_WAIT\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated lock wait duration in microseconds for the plan for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1684,21 +1254,15 @@ Displays the accumulated lock wait duration in microseconds for the plan for val
 
 LAST\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last connection ID that executed the plan.
-
-
 
 </td>
 </tr>
@@ -1707,21 +1271,15 @@ Displays the last connection ID that executed the plan.
 
 LAST\_EXECUTION\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the plan was executed for the last time.
-
-
 
 </td>
 </tr>
@@ -1730,21 +1288,15 @@ Displays the timestamp when the plan was executed for the last time.
 
 LAST\_PREPARATION\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the plan was compiled for the last time.
-
-
 
 </td>
 </tr>
@@ -1753,21 +1305,15 @@ Displays the timestamp when the plan was compiled for the last time.
 
 TOTAL\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 With memory tracking, displays the average size in bytes of tracked actual memory consumption for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1776,21 +1322,15 @@ With memory tracking, displays the average size in bytes of tracked actual memor
 
 AVG\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 With memory tracking, displays the maximum size in bytes of tracked actual memory consumption for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1799,21 +1339,15 @@ With memory tracking, displays the maximum size in bytes of tracked actual memor
 
 MIN\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 With memory tracking, displays the minimum size in bytes of tracked actual memory consumption for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1822,21 +1356,15 @@ With memory tracking, displays the minimum size in bytes of tracked actual memor
 
 MAX\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 With memory tracking, displays the total size in bytes of tracked actual memory consumption for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1845,21 +1373,15 @@ With memory tracking, displays the total size in bytes of tracked actual memory 
 
 TOTAL\_SERVICE\_NETWORK\_REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total count of service network requests during plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1868,21 +1390,15 @@ Displays the total count of service network requests during plan execution for v
 
 AVG\_SERVICE\_NETWORK\_REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average count of service network requests during plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1891,21 +1407,15 @@ Displays the average count of service network requests during plan execution for
 
 MAX\_SERVICE\_NETWORK\_REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum count of service network requests during plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1914,21 +1424,15 @@ Displays the maximum count of service network requests during plan execution for
 
 TOTAL\_CALLED\_THREAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total count of called threads used during plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1937,21 +1441,15 @@ Displays the total count of called threads used during plan execution for valid 
 
 AVG\_CALLED\_THREAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average count of called threads used during plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1960,21 +1458,15 @@ Displays the average count of called threads used during plan execution for vali
 
 MAX\_CALLED\_THREAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average count of called threads used during plan execution for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -1983,21 +1475,15 @@ Displays the average count of called threads used during plan execution for vali
 
 TOTAL\_BATCH\_EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays a total batch count per one execution for cached DML plans for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -2006,21 +1492,15 @@ Displays a total batch count per one execution for cached DML plans for valid an
 
 AVG\_BATCH\_EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays an average batch count per one execution for cached DML plans for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -2029,21 +1509,15 @@ Displays an average batch count per one execution for cached DML plans for valid
 
 MIN\_BATCH\_EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays a minimum batch count per one execution for cached DML plans for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -2052,21 +1526,15 @@ Displays a minimum batch count per one execution for cached DML plans for valid 
 
 MAX\_BATCH\_EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays a maximum batch count per one execution for cached DML plans for valid and evicted plans.
-
-
 
 </td>
 </tr>
@@ -2075,21 +1543,15 @@ Displays a maximum batch count per one execution for cached DML plans for valid 
 
 TOTAL\_SERVICE\_NETWORK\_REQUEST\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time of the service network requests during plan execution.
-
-
 
 </td>
 </tr>
@@ -2098,21 +1560,15 @@ Displays the total time of the service network requests during plan execution.
 
 AVG\_SERVICE\_NETWORK\_REQUEST\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 REAL
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time of the service network requests during plan execution.
-
-
 
 </td>
 </tr>
@@ -2121,21 +1577,15 @@ Displays the average time of the service network requests during plan execution.
 
 MAX\_SERVICE\_NETWORK\_REQUEST\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time of the service network requests during plan execution.
-
-
 
 </td>
 </tr>
@@ -2144,21 +1594,15 @@ Displays the maximum time of the service network requests during plan execution.
 
 TOTAL\_SERVICE\_NETWORK\_REQUEST\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total amount of service network requests during plan execution in bytes.
-
-
 
 </td>
 </tr>
@@ -2167,21 +1611,15 @@ Displays the total amount of service network requests during plan execution in b
 
 AVG\_SERVICE\_NETWORK\_REQUEST\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 REAL
 
-
-
 </td>
 <td valign="top">
 
 Displays the average data amount of service network requests during plan execution in bytes.
-
-
 
 </td>
 </tr>
@@ -2190,21 +1628,15 @@ Displays the average data amount of service network requests during plan executi
 
 MAX\_SERVICE\_NETWORK\_REQUEST\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum amount of service network requests during plan execution in bytes.
-
-
 
 </td>
 </tr>
@@ -2213,21 +1645,15 @@ Displays the maximum amount of service network requests during plan execution in
 
 TOTAL\_EXECUTION\_CPU\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total amount of tracked CPU time.
-
-
 
 </td>
 </tr>
@@ -2236,21 +1662,15 @@ Displays the total amount of tracked CPU time.
 
 AVG\_EXECUTION\_CPU\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average amount of tracked CPU time.
-
-
 
 </td>
 </tr>
@@ -2259,21 +1679,15 @@ Displays the average amount of tracked CPU time.
 
 MIN\_EXECUTION\_CPU\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum amount of tracked CPU time.
-
-
 
 </td>
 </tr>
@@ -2282,21 +1696,15 @@ Displays the minimum amount of tracked CPU time.
 
 MAX\_EXECUTION\_CPU\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum amount of tracked CPU time.
-
-
 
 </td>
 </tr>
@@ -2305,21 +1713,15 @@ Displays the maximum amount of tracked CPU time.
 
 TOTAL\_BUFFER\_CACHE\_PAGE\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of times an NSE page was found in buffer cache memory.
-
-
 
 </td>
 </tr>
@@ -2328,21 +1730,15 @@ Displays the total number of times an NSE page was found in buffer cache memory.
 
 AVG\_BUFFER\_CACHE\_PAGE\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average number of times an NSE page was found in buffer cache memory.
-
-
 
 </td>
 </tr>
@@ -2351,21 +1747,15 @@ Displays the average number of times an NSE page was found in buffer cache memor
 
 MIN\_BUFFER\_CACHE\_PAGE\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum number of times an NSE page was found in buffer cache memory.
-
-
 
 </td>
 </tr>
@@ -2374,21 +1764,15 @@ Displays the minimum number of times an NSE page was found in buffer cache memor
 
 MAX\_BUFFER\_CACHE\_PAGE\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum number of times an NSE page was found in buffer cache memory.
-
-
 
 </td>
 </tr>
@@ -2397,21 +1781,15 @@ Displays the maximum number of times an NSE page was found in buffer cache memor
 
 TOTAL\_BUFFER\_CACHE\_PAGE\_MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of times an NSE page was read from disk into the buffer cache.
-
-
 
 </td>
 </tr>
@@ -2420,21 +1798,15 @@ Displays the total number of times an NSE page was read from disk into the buffe
 
 AVG\_BUFFER\_CACHE\_PAGE\_MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average number of times an NSE page was read from disk into the buffer cache.
-
-
 
 </td>
 </tr>
@@ -2443,21 +1815,15 @@ Displays the average number of times an NSE page was read from disk into the buf
 
 MIN\_BUFFER\_CACHE\_PAGE\_MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum number of times an NSE page was read from disk into the buffer cache.
-
-
 
 </td>
 </tr>
@@ -2466,21 +1832,15 @@ Displays the minimum number of times an NSE page was read from disk into the buf
 
 MAX\_BUFFER\_CACHE\_PAGE\_MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum number of times an NSE page was read from disk into the buffer cache.
-
-
 
 </td>
 </tr>
@@ -2489,21 +1849,15 @@ Displays the maximum number of times an NSE page was read from disk into the buf
 
 TOTAL\_BUFFER\_CACHE\_PINNED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of pinned NSE page memory in the buffer cache in bytes.
-
-
 
 </td>
 </tr>
@@ -2512,21 +1866,15 @@ Displays the total size of pinned NSE page memory in the buffer cache in bytes.
 
 AVG\_ BUFFER\_CACHE\_PINNED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of pinned NSE page memory in the buffer cache in bytes.
-
-
 
 </td>
 </tr>
@@ -2535,21 +1883,15 @@ Displays the average size of pinned NSE page memory in the buffer cache in bytes
 
 MIN\_ BUFFER\_CACHE\_PINNED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum size of pinned NSE page memory in the buffer cache in bytes.
-
-
 
 </td>
 </tr>
@@ -2558,21 +1900,15 @@ Displays the minimum size of pinned NSE page memory in the buffer cache in bytes
 
 MAX\_ BUFFER\_CACHE\_PINNED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of pinned NSE page memory in the buffer cache in bytes.
-
-
 
 </td>
 </tr>
@@ -2581,21 +1917,15 @@ Displays the maximum size of pinned NSE page memory in the buffer cache in bytes
 
 TOTAL\_BUFFER\_CACHE\_IO\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of NSE pages read from disk into the buffer cache.
-
-
 
 </td>
 </tr>
@@ -2604,21 +1934,15 @@ Displays the total size of NSE pages read from disk into the buffer cache.
 
 AVG\_BUFFER\_CACHE\_IO\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of NSE pages read from disk into the buffer cache.
-
-
 
 </td>
 </tr>
@@ -2627,21 +1951,15 @@ Displays the average size of NSE pages read from disk into the buffer cache.
 
 MIN\_BUFFER\_CACHE\_IO\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum size of NSE pages read from disk into the buffer cache.
-
-
 
 </td>
 </tr>
@@ -2650,21 +1968,15 @@ Displays the minimum size of NSE pages read from disk into the buffer cache.
 
 MAX\_BUFFER\_CACHE\_IO\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of NSE pages read from disk into the buffer cache.
-
-
 
 </td>
 </tr>

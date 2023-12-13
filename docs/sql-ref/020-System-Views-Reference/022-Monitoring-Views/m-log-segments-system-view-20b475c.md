@@ -17,21 +17,15 @@ Provides log segment statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ Displays the persistence volume ID.
 
 PARTITION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -137,21 +109,15 @@ Displays the partition ID. Returns the following:
 
 SEGMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the log segment ID within the partition.
-
-
 
 </td>
 </tr>
@@ -160,21 +126,15 @@ Displays the log segment ID within the partition.
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the log segment file name.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the log segment file name.
 
 FILE\_OFFSET
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the start position of the log segment in the file.
-
-
 
 </td>
 </tr>
@@ -206,14 +160,10 @@ Displays the start position of the log segment in the file.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -240,7 +190,7 @@ Preallocated
 </b></dt>
 <dd>
 
-The log segment has been preallocated, but never used.
+The log segment has been preallocated but has never been used.
 
 
 
@@ -295,7 +245,7 @@ RetainedFree
 </b></dt>
 <dd>
 
-The log segment has been backed up and is not required for restart, but is required to resync the system replication sites.
+The log segment has been backed up; it is not required for a restart but is needed to resynchronize the system replication sites.
 
 
 
@@ -307,6 +257,28 @@ Free
 <dd>
 
 The log segment has been backed up, it is not required for restart and can be reused.
+
+
+
+</dd><dt><b>
+
+ClosedIncoplete
+
+</b></dt>
+<dd>
+
+The log segment has been closed in an incomplete state on a system replication site. This is a temporary state that persists until system replication reconnects or a takeover occurs.
+
+
+
+</dd><dt><b>
+
+FreeIncomplete
+
+</b></dt>
+<dd>
+
+The log segment has been designated as 'free' in an incomplete state, typically following scenarios like a system replication takeover or log corruption.
 
 
 
@@ -322,21 +294,15 @@ The log segment has been backed up, it is not required for restart and can be re
 
 MIN\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the first position contained in the log segment.
-
-
 
 </td>
 </tr>
@@ -345,21 +311,15 @@ Displays the first position contained in the log segment.
 
 MAX\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the position behind the last log record in the log segment. This value is for closed log segments only.
-
-
 
 </td>
 </tr>
@@ -368,21 +328,15 @@ Displays the position behind the last log record in the log segment. This value 
 
 HOLE\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the start position of the log hole before the log segment. This value is equal to MIN\_POSITION if there is no hole.
-
-
 
 </td>
 </tr>
@@ -391,21 +345,15 @@ Displays the start position of the log hole before the log segment. This value i
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used log segment size in bytes.
-
-
 
 </td>
 </tr>
@@ -414,21 +362,15 @@ Displays the used log segment size in bytes.
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total log segment size in bytes.
-
-
 
 </td>
 </tr>
@@ -437,21 +379,15 @@ Displays the total log segment size in bytes.
 
 IN\_BACKUP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not the flag for the log segment is in the backup: TRUE/FALSE
-
-
 
 </td>
 </tr>
@@ -460,21 +396,15 @@ Indicates whether or not the flag for the log segment is in the backup: TRUE/FAL
 
 LAST\_COMMIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
-Displays the timestamp of the last commit in the log segment.
-
-
+Displays the time stamp of the last commit in the log segment.
 
 </td>
 </tr>
@@ -483,21 +413,15 @@ Displays the timestamp of the last commit in the log segment.
 
 ENCRYPTION\_KEY\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the hash of the key used for the log segment encryption.
-
-
 
 </td>
 </tr>

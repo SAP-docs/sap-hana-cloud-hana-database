@@ -17,21 +17,15 @@ Provides information about landscape redistribution algorithms.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 ALGORITHM\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the algorithm.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the ID of the algorithm.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the description.
 
 PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays any optional parameters.
-
-
 
 </td>
 </tr>

@@ -17,21 +17,15 @@ Displays the session variables set for each connection.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the connection ID.
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key name of a session context variable.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the key name of a session context variable.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the value of a session context variable.
-
-
 
 </td>
 </tr>
@@ -155,14 +119,10 @@ Displays the value of a session context variable.
 
 SECTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
-
-
 
 </td>
 <td valign="top">

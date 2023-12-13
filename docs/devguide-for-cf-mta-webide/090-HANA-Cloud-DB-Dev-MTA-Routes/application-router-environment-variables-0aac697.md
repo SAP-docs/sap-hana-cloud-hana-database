@@ -17,238 +17,178 @@ The following table lists the environment variables that you can use to configur
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- [`CJ_PROTECT_WHITELIST`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_nrz_hgn_mv) 
-
-
+[`CJ_PROTECT_WHITELIST`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_nrz_hgn_mv) 
 
 </td>
 <td valign="top">
 
 A list of allowed server or domain origins to use when checking for click-jacking attacks
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`COMPRESSION`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_vsq_xch_wx) 
-
-
+[`COMPRESSION`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_vsq_xch_wx) 
 
 </td>
 <td valign="top">
 
 Configure the compression of resources before a response to the client.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`CORS`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_nt3_t4k_sz) 
-
-
+[`CORS`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_nt3_t4k_sz) 
 
 </td>
 <td valign="top">
 
 Provide support for cross-origin requests, for example, by allowing the modification of the request header.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`destinations`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_upn_qhr_s1b) 
-
-
+[`destinations`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_upn_qhr_s1b) 
 
 </td>
 <td valign="top">
 
 Provide information about the available application \(microservice\) destinations.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`httpHeaders`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_rhz_hgn_mv) 
-
-
+[`httpHeaders`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_rhz_hgn_mv) 
 
 </td>
 <td valign="top">
 
 Configure the application router to return additional HTTP headers in its responses to client requests
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`INCOMING_CONNECTION_TIMEOUT`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_owp_xch_wx) 
-
-
+[`INCOMING_CONNECTION_TIMEOUT`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_owp_xch_wx) 
 
 </td>
 <td valign="top">
 
 Specify the maximum time \(in milliseconds\) for a client connection. If the specified time is exceeded, the connection is closed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`JWT_REFRESH`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_x5z_hgn_mv) 
-
-
+[`JWT_REFRESH`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_x5z_hgn_mv) 
 
 </td>
 <td valign="top">
 
 Configures the automatic refresh of the JSON Web Token \(JWT\) provided by the User Account and Authentication \(UAA\) service to prevent expiry \(default is 5 minutes\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`REQUEST_TRACE`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_s1p_qvj_2z) 
-
-
+[`REQUEST_TRACE`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_s1p_qvj_2z) 
 
 </td>
 <td valign="top">
 
 Enable additional traces of the incoming and outgoing requests
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`SECURE_SESSION_COOKIE`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_wpy_yfg_2z) 
-
-
+[`SECURE_SESSION_COOKIE`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_wpy_yfg_2z) 
 
 </td>
 <td valign="top">
 
 Configure the enforcement of the `Secure` flag of the application router's session cookie.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`SEND_XFRAMEOPTIONS`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_d4z_hgn_mv) 
-
-
+[`SEND_XFRAMEOPTIONS`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_d4z_hgn_mv) 
 
 </td>
 <td valign="top">
 
 Set or change the `X-Frame-Options` header
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`SESSION_TIMEOUT`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_blz_hgn_mv) 
-
-
+[`SESSION_TIMEOUT`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_blz_hgn_mv) 
 
 </td>
 <td valign="top">
 
 Set the time to trigger an automatic central log out from the User Account and Authentication \(UAA\) server.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`TENANT_HOST_PATTERN`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_zhq_xch_wx) 
-
-
+[`TENANT_HOST_PATTERN`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_zhq_xch_wx) 
 
 </td>
 <td valign="top">
 
 Define a regular expression to use when resolving tenant host names in the request’s host name.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`UAA_SERVICE_NAME`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_wf1_lgn_mv) 
-
-
+[`UAA_SERVICE_NAME`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_wf1_lgn_mv) 
 
 </td>
 <td valign="top">
 
 Specify the **exact** name of the UAA service to bind to an application.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`WS_ALLOWED_ORIGINS`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_ijs_5fm_4v) 
-
-
+[`WS_ALLOWED_ORIGINS`](application-router-environment-variables-0aac697.md#loio0aac697f0cf7444193ed5eb0fc6e5bd0__section_ijs_5fm_4v) 
 
 </td>
 <td valign="top">
 
 A list of the allowed server \(or domain\) origins that the application router uses to verify requests
-
-
 
 </td>
 </tr>
@@ -262,11 +202,11 @@ A list of the allowed server \(or domain\) origins that the application router u
 
 If configured, the application router sends additional HTTP headers in its responses to a client request. You can set the additional HTTP headers in the *<httpHeaders\>* environment variable. The following example configuration shows how to configure the application router to send two additional headers in the responses to the client requests from the application *<myApp\>*:
 
-***xs set-env *<myApp\>* httpHeaders "\[ \{ \\"X-Frame-Options\\": \\"ALLOW-FROM http://acme.com\\" \}, \{ \\"Test-Additional-Header\\": \\"1\\" \} \]"***
+<code>xs set-env <i class="varname">&lt;myApp&gt;</i> httpHeaders "[ { \"X-Frame-Options\": \"ALLOW-FROM http://acme.com\" }, { \"Test-Additional-Header\": \"1\" } ]"</code>
 
 or
 
-***xs set-env *<myApp\>* httpHeaders '\[\{ "X-Frame-Options": "ALLOW-FROM http://acme.com" \}, \{ "Test-Additional-Header": "1" \}\]'***
+<code>xs set-env <i class="varname">&lt;myApp&gt;</i> httpHeaders '[{ "X-Frame-Options": "ALLOW-FROM http://acme.com" }, { "Test-Additional-Header": "1" }]'</code>
 
 > ### Tip:  
 > To improve security in your application, set the `Content-Security-Policy` response header, which can be used to provide those Web browsers capable of interpreting it with information about the trusted sources from which an application can load resources.
@@ -293,111 +233,81 @@ The destinations configuration is an array of objects that is defined in the `de
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `name` 
-
-
+`name` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 A unique indentifier for the destination
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `url` 
-
-
+`url` 
 
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The Unique Resource Locator for the application \(microservice\)
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `proxyHost` 
-
-
+`proxyHost` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -414,23 +324,17 @@ The host of the proxy server used in case the request should go through a proxy 
 <tr>
 <td valign="top">
 
- `proxyPort` 
-
-
+`proxyPort` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -447,53 +351,39 @@ The port of the proxy server used in case the request should go through a proxy 
 <tr>
 <td valign="top">
 
- `forwardAuthToken` 
-
-
+`forwardAuthToken` 
 
 </td>
 <td valign="top">
 
 Boolean
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 If true, the OAuth token will be sent to the destination. The default value is “false”. This token contains the user identity, scopes, and some other attributes. The token is signed by the User Account and Authentication \(UAA\) service so that the token can be used for user-authentication and authorization purposed by back-end services.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `strictSSL` 
-
-
+`strictSSL` 
 
 </td>
 <td valign="top">
 
 Boolean
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -510,23 +400,17 @@ Configures whether the application router should reject untrusted certificates. 
 <tr>
 <td valign="top">
 
- `timeout` 
-
-
+`timeout` 
 
 </td>
 <td valign="top">
 
 Number
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -543,23 +427,17 @@ A positive integer representing the maximum amount of time to wait for a respons
 <tr>
 <td valign="top">
 
- `proxyType` 
-
-
+`proxyType` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -625,60 +503,44 @@ It is also possible to read a “destination” configuration from the `destinat
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Optional
-
-
 
 </th>
 <th valign="top">
 
 Destination Service Restrictions
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `type` 
-
-
+`type` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Supported protocol type: `HTTP` only
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `Authentication` 
-
-
+`Authentication` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -702,16 +564,12 @@ Supported authentication types:
 <tr>
 <td valign="top">
 
- `ProxyType` 
-
-
+`ProxyType` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -731,16 +589,12 @@ Supported proxy types:
 <tr>
 <td valign="top">
 
- `ForwardAuthToken` 
-
-
+`ForwardAuthToken` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -759,14 +613,10 @@ If set to `true`, the OAuth token is sent to the specified destination. The defa
 
 `Timeout`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -790,7 +640,7 @@ A positive integer representing the maximum amount of time \(in milliseconds\) t
 
 You can configure the triggering of an automatic central log-out from the User Account and Authentication \(UAA\) service if an application session is inactive for a specified time. A session is considered to be inactive if no requests are sent to the application router. The following command shows how to set the environment variable *<SESSION\_TIMEOUT\>* to 40 \(forty\) minutes for the application *<myApp1\>*:
 
-***xs set-env *<myApp1\>* SESSION\_TIMEOUT 40***
+<code>xs set-env <i class="varname">&lt;myApp1&gt;</i> SESSION_TIMEOUT 40</code>
 
 > ### Note:  
 > You can also set the session timeout value in the application's `manifest.yml` file, as illustrated in the following example:
@@ -842,118 +692,86 @@ The content is a JSON list of objects with the properties listed in the followin
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `protocol` 
-
-
+`protocol` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 URI scheme, for example “HTTP”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `host` 
-
-
+`host` 
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 A valid host name, for example, `acme.com.hostname`, or a domain name defined with an asterisk \(\*\) `*.acme.com`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `port` 
-
-
+`port` 
 
 </td>
 <td valign="top">
 
 String/Number
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Port string or number containing a valid port.
-
-
 
 </td>
 </tr>
@@ -1113,28 +931,20 @@ The CORS configuration includes an array of objects with the following propertie
 
 CORS Property
 
-
-
 </th>
 <th valign="top">
 
 Type
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1143,28 +953,20 @@ Description
 
 `uriPattern`
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 A regular expression \(RegExp\) representing the source routes to which the CORS configuration applies. To ensure that the RegExp matches the complete path, surround it with ^ and $,f or example, `"uriPattern": "^\route1$"`. Defaults: none
-
-
 
 </td>
 </tr>
@@ -1173,21 +975,15 @@ A regular expression \(RegExp\) representing the source routes to which the CORS
 
 `allowedOrigin`
 
-
-
 </td>
 <td valign="top">
 
 Array
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -1199,8 +995,6 @@ A comma-separated list of objects each of which contains a host name, port and p
 
 The defaults configuration is: `[{“host”: "*"}]`, which means that the server allows **any** origin to access the resource.
 
-
-
 </td>
 </tr>
 <tr>
@@ -1208,21 +1002,15 @@ The defaults configuration is: `[{“host”: "*"}]`, which means that the serve
 
 `allowedMethods`
 
-
-
 </td>
 <td valign="top">
 
 Array
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -1241,28 +1029,20 @@ A comma-separated list of HTTP methods that are allowed by the server, for examp
 
 `allowedHeaders`
 
-
-
 </td>
 <td valign="top">
 
 Array
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 A comma-separated list of request headers that are allowed by the server. the default values are as follows: `[“Origin”, “Accept”, “X-Requested-With”, “Content-Type”, “Access-Control-Request-Method”, “Access-Control-Request-Headers”]`.
-
-
 
 </td>
 </tr>
@@ -1271,28 +1051,20 @@ A comma-separated list of request headers that are allowed by the server. the de
 
 `maxAge`
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 A single value specifying the length of time \(in seconds\) a preflight request should be cached for. A negative value the prevents CORS filter from adding this response header to the pre-flight response. If `maxAge` is defined but no value is specified, the default time of “1800” seconds applies.
-
-
 
 </td>
 </tr>
@@ -1301,58 +1073,42 @@ A single value specifying the length of time \(in seconds\) a preflight request 
 
 `exposeHeaders`
 
-
-
 </td>
 <td valign="top">
 
 Array
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 A comma-separated list of **response** headers that are allowed to be exposed. If `exposeHeaders` is defined but no response header is specified for exposure, no default value is supplied.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `allowedCredentials` 
-
-
+`allowedCredentials` 
 
 </td>
 <td valign="top">
 
 Boolean
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 A flag that indicates if the specified resource supports user credentials. The default setting is “true”.
-
-
 
 </td>
 </tr>

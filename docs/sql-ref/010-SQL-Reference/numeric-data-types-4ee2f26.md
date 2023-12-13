@@ -64,12 +64,21 @@ The BIGINT data type stores a 64-bit signed integer. The minimum value is -9,223
 
 </dd><dt><b>
 
-DECIMAL\[\(*<precision\>*, *<scale\>*\)\] or DEC\[\(*<p\>*,*<s\>*\)\]
+DECIMAL\(*<precision\>*, *<scale\>*\) or DEC\[\(*<p\>*,*<s\>*\)
 
 </b></dt>
 <dd>
 
 DECIMAL\(*<p\>*, *<s\>*\) is the SQL standard notation for fixed-point decimals. *<p\>* specifies precision, or the number of total digits \(the sum of whole digits and fractional digits\). *<s\>* denotes scale, or the number of fractional digits. If a column is defined as DECIMAL\(5, 4\) for example, the numbers 3.14, 3.1415, 3.141592 are stored in the column as 3.1400, 3.1415, 3.1415, retaining the specified precision\(5\) and scale\(4\).
+
+
+
+</dd><dt><b>
+
+DECIMAL
+
+</b></dt>
+<dd>
 
 Precision can range from 1 to 38. The scale can range from 0 to *<p\>*. If the scale is not specified, then it defaults to 0.
 

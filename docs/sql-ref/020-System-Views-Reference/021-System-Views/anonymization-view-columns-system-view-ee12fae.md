@@ -17,21 +17,15 @@ Provides information about the anonymized columns in SAP HANA database.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the anonymized view.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the anonymized view.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the anonymized view.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the anonymized view.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the column with anonymization parameters.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the name of the column with anonymization parameters.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ordinal position of the view column.
-
-
 
 </td>
 </tr>
@@ -132,25 +102,27 @@ Displays the ordinal position of the view column.
 
 PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
-
-
 
 </td>
 <td valign="top">
 
 Displays the column-level anonymization parameters defined for the view, in JSON format.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioee12faebcecd4929a84160e503f9bc41__section_epk_23c_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

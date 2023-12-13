@@ -30,7 +30,7 @@ If the *<format\>* specifier is omitted, the conversion is performed using the d
 
 ## Example
 
-The following example converts the string ***2010-01-12*** to a DAYDATE value with the format ***YYYY-MM-DD***, and returns the value ***2010-01-12*** \(or another format like ***Jan 12, 2010***, depending on your date display settings\):
+The following example converts the string `2010-01-12` to a DAYDATE value with the format `YYYY-MM-DD`, and returns the value ***2010-01-12*** \(or another format like ***Jan 12, 2010***, depending on your date display settings\):
 
 ```
 SELECT TO_DATE('2010-01-12', 'YYYY-MM-DD') "to date" FROM DUMMY;

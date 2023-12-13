@@ -608,7 +608,7 @@ The following example enables dynamic result caching on view V.
 ALTER V ADD DYNAMIC CACHE;
 ```
 
-The following example removes the location specifications so that there are no restrictions on the cache entry location for ***view\_a***.
+The following example removes the location specifications so that there are no restrictions on the cache entry location for `view_a`.
 
 ```
 ALTER VIEW view_a ALTER STATIC CACHE DROP AT LOCATION 'myhost2:00002';
@@ -626,7 +626,7 @@ ALTER VIEW V DROP STATIC CACHE;
 
 **Expression macros examples**
 
-The following statements create a view with two expression macros \(***sum\_a*** and ***count\_a***\) and then alters the view to add another expression macro \(***avg\_a***\) to it:
+The following statements create a view with two expression macros \(`sum_a` and `count_a`\) and then alters the view to add another expression macro \(`avg_a`\) to it:
 
 ```
 CREATE TABLE t1(a INT);
@@ -634,13 +634,13 @@ CREATE VIEW v1 AS SELECT * FROM t1 WITH EXPRESSION MACROS(SUM(a) AS sum_a, COUNT
 ALTER VIEW v1 ADD EXPRESSION MACROS(AVG(a) AS avg_a);
 ```
 
-The following statement alters the view to add an expression macro \(***avg2\_a***\) that also calculates the average of column ***a*** but by using two of the other expression macros in the calculation:
+The following statement alters the view to add an expression macro \(`avg2_a`\) that also calculates the average of column `a` but by using two of the other expression macros in the calculation:
 
 ```
 ALTER VIEW v1 ADD EXPRESSION MACROS(EXPRESSION_MACRO(sum_a) / EXPRESSION_MACRO(count_a) AS avg2_a);
 ```
 
-The following example drops the two expression macros ***avg\_a*** and ***avg2\_a***:
+The following example drops the two expression macros `avg_a` and `avg2_a`:
 
 ```
 ALTER VIEW v1 DROP EXPRESSION MACROS( avg_a, avg2_a );
@@ -689,9 +689,9 @@ SELECT * FROM v1; -- invalid view name: cannot select the DDL only mode view
 
 [REFRESH VIEW Statement \(Data Definition\)](refresh-view-statement-data-definition-81e1583.md "Refreshes an anonymized view.")
 
-[Data Anonymization](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/6cf9d55f4d3d45b0bcdb41756d86629f.html "Anonymization methods available in the SAP HANA Cloud, SAP HANA database allow you to gain statistically valid insights from your data while protecting the privacy of individuals.") :arrow_upper_right:
+[Data Anonymization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/6cf9d55f4d3d45b0bcdb41756d86629f.html "Anonymization methods available in the SAP HANA Cloud, SAP HANA database allow you to gain statistically valid insights from your data while protecting the privacy of individuals.") :arrow_upper_right:
 
 [Predicates](../predicates-20a2ab2.md "")
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_2_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

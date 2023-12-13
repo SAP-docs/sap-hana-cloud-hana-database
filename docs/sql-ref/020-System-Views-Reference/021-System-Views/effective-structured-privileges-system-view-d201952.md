@@ -17,21 +17,15 @@ Displays the structured privileges applied to an object.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 ROOT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the root schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the root schema name.
 
 ROOT\_OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the object.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the object.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the user name.
 
 USER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the user ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the user ID.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema name.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the object.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the name of the object.
 
 OBJECT\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the object ID.
 
 EFFECTIVE\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the filter condition applied from all structured privileges.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the filter condition applied from all structured privileges.
 
 STRUCTURED\_PRIVILEGE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of a structured privilege created for an object.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the schema name of a structured privilege created for an object.
 
 STRUCTURED\_PRIVILEGE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of a structured privilege created for an object.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the name of a structured privilege created for an object.
 
 STRUCTURED\_PRIVILEGE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the structured privilege.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the ID of the structured privilege.
 
 STRUCTURED\_PRIVILEGE\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the filter condition provided by the structured privilege.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the filter condition provided by the structured privilege.
 
 STRUCTURED\_PRIVILEGE\_DEFAULT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default schema name of the structured privilege. This schema name is used for unqualified tables and views in a complex filter.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the default schema name of the structured privilege. This schema name i
 
 STRUCTURED\_PRIVILEGE\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of a particular structured privilege: APPLIED, NOT GRANTED, NO MATCHING ATTRIBUTE, or NO FILTER VALUES FOUND.
-
-
 
 </td>
 </tr>
@@ -363,7 +273,9 @@ Displays the status of a particular structured privilege: APPLIED, NOT GRANTED, 
 
 <a name="loiod2019526d2951014b8e1af76cdd74f8e__section_syl_zdk_h2b"/>
 
-## Additional Information
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 This view requires an equal predicate on ROOT\_SCHEMA\_NAME, ROOT\_OBJECT\_NAME, and USER\_NAME.
 
@@ -386,9 +298,9 @@ This view requires an equal predicate on ROOT\_SCHEMA\_NAME, ROOT\_OBJECT\_NAME,
 
 [OBJECT\_PRIVILEGES System View](object-privileges-system-view-47764eb.md "Provides information about the types of objects and privileges that can be granted to those types of objects.")
 
-[Analytic Privileges](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/db08ea0cbb571014a386f851122958b2.html "Analytic privileges grant different users access to different portions of data in the same view based on their business role. Within the definition of an analytic privilege, the conditions that control which data users see is defined using SQL.") :arrow_upper_right:
+[Analytic Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/db08ea0cbb571014a386f851122958b2.html "Analytic privileges grant different users access to different portions of data in the same view based on their business role. Within the definition of an analytic privilege, the conditions that control which data users see is defined using SQL.") :arrow_upper_right:
 
-[Object Privileges (Reference)](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/8978bfdfcf3b45f9acf3fdb0964d3d9c.html "Object privileges are used to allow access to and modification of database objects, such as tables and views.") :arrow_upper_right:
+[Object Privileges (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/8978bfdfcf3b45f9acf3fdb0964d3d9c.html "Object privileges are used to allow access to and modification of database objects, such as tables and views.") :arrow_upper_right:
 
-[System Views for Verifying Users&apos; Authorization](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/ddae823e3b27477ea4c949607eebc435.html "You can query several system views to get detailed information about exactly which privileges and roles users have and how they come to have them. This can help you to understand why a user is authorized to perform particular actions, access particular data, or not.") :arrow_upper_right:
+[System Views for Verifying Users' Authorization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/ddae823e3b27477ea4c949607eebc435.html "You can query several system views to get detailed information about exactly which privileges and roles users have and how they come to have them. This can help you to understand why a user is authorized to perform particular actions, access particular data, or not.") :arrow_upper_right:
 

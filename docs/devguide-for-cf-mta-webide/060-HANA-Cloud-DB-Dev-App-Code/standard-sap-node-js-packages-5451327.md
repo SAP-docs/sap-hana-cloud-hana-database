@@ -22,55 +22,41 @@ The following table lists the SAP Node.js packages that are currently available 
 
 Package Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/audit-logging`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_cgq_w5l_mv) 
-
-
+[`@sap/audit-logging`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_cgq_w5l_mv) 
 
 </td>
 <td valign="top">
 
 Utilities for audit logging
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/approuter`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_zrn_flt_vt) 
-
-
+[`@sap/approuter`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_zrn_flt_vt) 
 
 </td>
 <td valign="top">
 
 The application router is the single entry point for the \(business\) application. It serves static content, authenticates users, rewrites URLs, and routes requests to other micro services as well as propagating user information.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/cds`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_mz5_bqq_25) \*
-
-
+[`@sap/cds`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_mz5_bqq_25) \*
 
 </td>
 <td valign="top">
@@ -87,32 +73,24 @@ Core Data Services \(CDS\) client for SAP CAP
 <tr>
 <td valign="top">
 
- [`@sap/dwf-deploy`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_qps_rvm_cz) 
-
-
+[`@sap/dwf-deploy`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_qps_rvm_cz) 
 
 </td>
 <td valign="top">
 
 Node.js client for SAP HANA Data Warehousing Foundation 2.0 \(HANA DWF 2.0\) to deploy design-time artifacts
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/dwf-generator`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_tkt_x1s_k1b) 
-
-
+[`@sap/dwf-generator`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_tkt_x1s_k1b) 
 
 </td>
 <td valign="top">
 
 Node.js client for SAP HANA Data Warehousing Foundation 2.0 \(HANA DWF 2.0\) to generate design-time artifacts
-
-
 
 </td>
 </tr>
@@ -121,55 +99,41 @@ Node.js client for SAP HANA Data Warehousing Foundation 2.0 \(HANA DWF 2.0\) to 
 
 [`@sap/dwf-dws-client`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_ic3_fds_k1b)
 
-
-
 </td>
 <td valign="top">
 
 Node.js client for SAP HANA Data Warehousing Foundation 2.0 \(HANA DWF 2.0\) to host task types for the Task Orchestration Engine
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/e2e-trace`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_atm_w5l_mv) 
-
-
+[`@sap/e2e-trace`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_atm_w5l_mv) 
 
 </td>
 <td valign="top">
 
 Utilities for end-to-end tracing \(in particular the handling of SAP Passports\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/edmx2csn`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_lrt_rys_pgb) 
-
-
+[`@sap/edmx2csn`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_lrt_rys_pgb) 
 
 </td>
 <td valign="top">
 
 A utility to convert an OData V2 model \(EDMX\) to Core Schema Notation \(CSN\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/hdb-connection`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_rmz_bqq_25) 
-
-
+[`@sap/hdb-connection`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_rmz_bqq_25) 
 
 </td>
 <td valign="top">
@@ -186,9 +150,7 @@ Utility functions for access to SAP HANA in Node.js
 <tr>
 <td valign="top">
 
- [`@sap/hdbext`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_ilt_mkt_vt) 
-
-
+[`@sap/hdbext`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_ilt_mkt_vt) 
 
 </td>
 <td valign="top">
@@ -205,95 +167,83 @@ Extends the functionality of the `@sap/hana-client` package.
 <tr>
 <td valign="top">
 
- [`@sap/hana-client`](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.02/en-US/a5c332936d9f47d8b820a4ecc427352c.html) 
-
-
+[`@sap/hana-client`](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.02/en-US/a5c332936d9f47d8b820a4ecc427352c.html) 
 
 </td>
 <td valign="top">
 
 A client library for communication with the SAP HANA database.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/hdi-deploy`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_lbd_jwf_k5) 
-
-
+[`@sap/hdi-deploy`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_lbd_jwf_k5) 
 
 </td>
 <td valign="top">
 
 The Node.js based “HDI deploy” application \(also known as “DeployApp”\) which is based on HDI's SQL interface
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/hdi-dynamic-deploy`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_rww_bfp_tcb) 
-
-
+[`@sap/hdi-dynamic-deploy`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_rww_bfp_tcb) 
 
 </td>
 <td valign="top">
 
 A Node.js-based HTTP server for the deployment of database content to dynamically created SAP HANA DI \(HDI\) containers
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/hdi`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_k3r_2wm_cz) 
-
-
+[`@sap/hdi`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_k3r_2wm_cz) 
 
 </td>
 <td valign="top">
 
 A Node.js-based client library for SAP HANA DI \(HDI\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/jobs-client`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_xvk_f3t_vt) 
-
-
+[`@sap/jobs-client`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_xvk_f3t_vt) 
 
 </td>
 <td valign="top">
 
 A client library for the Job Scheduler service.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/logging`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_vwt_l3t_vt) 
-
-
+[`@sap/logging`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_vwt_l3t_vt) 
 
 </td>
 <td valign="top">
 
 Provides logging and tracing functions for Node.js applications. Logs and traces are written in the standard SAP format and in the appropriate JSON format in CloudFoundry \(from version ^4.0.0\).
 
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[`@sap/node-vsi`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_wxk_pqk_xz) 
+
+</td>
+<td valign="top">
+
 
 
 </td>
@@ -301,238 +251,168 @@ Provides logging and tracing functions for Node.js applications. Logs and traces
 <tr>
 <td valign="top">
 
- [`@sap/node-vsi`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_wxk_pqk_xz) 
-
-
-
-</td>
-<td valign="top">
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- [`@sap/sds-deploy`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_mn4_w5l_mv) 
-
-
+[`@sap/sds-deploy`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_mn4_w5l_mv) 
 
 </td>
 <td valign="top">
 
 Node.js client for the SAP HANA Streaming Analytics option
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/site-entry`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_lk1_dtq_sy) 
-
-
+[`@sap/site-entry`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_lk1_dtq_sy) 
 
 </td>
 <td valign="top">
 
 SAP Portal site entry point
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/site-content-deployer`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_pth_dtq_sy) 
-
-
+[`@sap/site-content-deployer`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_pth_dtq_sy) 
 
 </td>
 <td valign="top">
 
 Client for portal site content deployer
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/site-app-server`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_hs2_fpt_2z) 
-
-
+[`@sap/site-app-server`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_hs2_fpt_2z) 
 
 </td>
 <td valign="top">
 
 An application server for the independent apps scenario on the SAP portalA Node.js client that contains the Virus Scanning Interface \(VSI\) binding for Node.js
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xsenv`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_yqn_r4t_vt) 
-
-
+[`@sap/xsenv`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_yqn_r4t_vt) 
 
 </td>
 <td valign="top">
 
 Utility for easy setup and access of Cloud Foundry environment variables and services
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xsjs`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_dwh_dpt_vt) 
-
-
+[`@sap/xsjs`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_dwh_dpt_vt) 
 
 </td>
 <td valign="top">
 
 A Node.js client that contains the Virus Scanning Interface \(VSI\)Compatibility layer for SAP HANA extended application services, classic model \(SAP HANA XS Classic\) applications to run on JavaScript run time in SAP HANA extended application services, advanced model \(SAP HANA XS Advanced\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xsjs-test`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_bhp_hsl_mv) 
-
-
+[`@sap/xsjs-test`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_bhp_hsl_mv) 
 
 </td>
 <td valign="top">
 
 Unit test framework for the compatibility layer \(XS classic runtime\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xssec`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_atx_2vt_vt) 
-
-
+[`@sap/xssec`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_atx_2vt_vt) 
 
 </td>
 <td valign="top">
 
 Security API for Node.js, including the HDI container security API for Node.js
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xss-secure`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_mvj_4kt_vt) 
-
-
+[`@sap/xss-secure`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_mvj_4kt_vt) 
 
 </td>
 <td valign="top">
 
 Utilities for protection against cross-site scripting
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xb-msg`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_p4f_zxd_sy) 
-
-
+[`@sap/xb-msg`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_p4f_zxd_sy) 
 
 </td>
 <td valign="top">
 
 Provides messaging capabilities with a message broker
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xb-msg-env`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_tv5_wkj_tgb) 
-
-
+[`@sap/xb-msg-env`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_tv5_wkj_tgb) 
 
 </td>
 <td valign="top">
 
 Provides the functions needed to set up messaging client options from Cloud Foundry environment variables
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xb-msg-amqp-v091`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_fcw_zxd_sy) 
-
-
+[`@sap/xb-msg-amqp-v091`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_fcw_zxd_sy) 
 
 </td>
 <td valign="top">
 
 Provides a client implementation for AMQP v0.9.1
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xb-msg-amqp-v100`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_ox3_nlr_pgb) 
-
-
+[`@sap/xb-msg-amqp-v100`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_ox3_nlr_pgb) 
 
 </td>
 <td valign="top">
 
 Provides a client implementation for AMQP v100
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`@sap/xb-msg-mqtt-v311`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_fy2_yxd_sy) 
-
-
+[`@sap/xb-msg-mqtt-v311`](standard-sap-node-js-packages-5451327.md#loio54513272339246049bf438a03a8095e4__section_fy2_yxd_sy) 
 
 </td>
 <td valign="top">
 
 Provides a client implementation for MQTT v3.1.1
-
-
 
 </td>
 </tr>
@@ -605,90 +485,66 @@ This package includes a Node.js client for SAP HANA Datawarehousing Foundation \
 
 File
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `package.json` 
-
-
+`package.json` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Used by the Node.js package manager \(`npm`\) to boot and start the application.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `src/` 
-
-
+`src/` 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Subdirectory containing `DWF` deployment definition files \(optional, additional subfolders are allowed\).
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `cfg/` 
-
-
+`cfg/` 
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Additional deployment subdirectories ...
-
-
 
 </td>
 </tr>
@@ -714,136 +570,100 @@ This package includes a Node.js client for SAP HANA Datawarehousing Foundation 2
 
 File
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `package.json` 
-
-
+`package.json` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Used by the `dwf-generator` to discover the `dwf-config`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `src/` 
-
-
+`src/` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Subdirectory containing `DWF` deployment definition files \(optional, additional subfolders are allowed\).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `src/dlm_generated` 
-
-
+`src/dlm_generated` 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Subdirectory containing `XSA` or `DWF` deployment definition files \(optional, additional subfolders are allowed\).
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `cfg/` 
-
-
+`cfg/` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Additional deployment subdirectories, which are created in the designtime
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `cfg/dlm_generated` 
-
-
+`cfg/dlm_generated` 
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Additional deployment subdirectories, which are generated, based on the deployment definition files that have been created in the designtime.
-
-
 
 </td>
 </tr>
@@ -914,14 +734,10 @@ The following table provides details of the options used in the examples of the 
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -930,14 +746,10 @@ Description
 
 *\-i*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the name and location of the OData model to be converted to CSN \(using either a file path or the URL of a service metadata end point\)
-
-
 
 </td>
 </tr>
@@ -946,14 +758,10 @@ Specifies the name and location of the OData model to be converted to CSN \(usin
 
 *\-o*
 
-
-
 </td>
 <td valign="top">
 
 Specifies the location of the CSN file produced by the conversion process
-
-
 
 </td>
 </tr>
@@ -962,14 +770,10 @@ Specifies the location of the CSN file produced by the conversion process
 
 *\-f*
 
-
-
 </td>
 <td valign="top">
 
 Overwrite an existing CSN output file
-
-
 
 </td>
 </tr>
@@ -1098,90 +902,66 @@ Alternatively, you can close the client connection, as illustrated below:
 
 File
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `package.json` 
-
-
+`package.json` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Used by the Node.js package manager \(`npm` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `src/` 
-
-
+`src/` 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Subdirectory containing `.hdiconfig` and HDI deployment definition files \(optional, additional subfolders are allowed\).
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `cfg/` 
-
-
+`cfg/` 
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Additional deployment subdirectories ...
-
-
 
 </td>
 </tr>
@@ -1207,60 +987,44 @@ The following table lists the environment variables that can be used with the \)
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `TARGET_CONTAINER` 
-
-
+`TARGET_CONTAINER` 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 \) toService name that specifies the HDI target container \(required if more than one service is bound to the `DeployApp` application\).
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `SERVICE_REPLACEMENTS` 
-
-
+`SERVICE_REPLACEMENTS` 
 
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -1281,8 +1045,6 @@ JSON-structured list of service replacements,
 ```
 
 The **logical** service names refer to the names in the HDI content; the **real** service names refer to the services which are bound to the HDI Deployer via `VCAP_SERVICES`. If the HDI content references a service name which is not listed in the replacements, this name is used as a real service name.
-
-
 
 </td>
 </tr>
@@ -1851,62 +1613,46 @@ Both `getServices` and `filterCFServices` use the same service query values.
 
 Query Value
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `{string}` 
-
-
+`{string}` 
 
 </td>
 <td valign="top">
 
 Matches the service with the same service instance name \( `name` property\). Same as `{ name: '<string>' }`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `{object}` 
-
-
+`{object}` 
 
 </td>
 <td valign="top">
 
 All properties of the given object should match corresponding service instance properties as they appear in `VCAP_SERVICES` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `{function}` 
-
-
+`{function}` 
 
 </td>
 <td valign="top">
 
 A function that takes a service object as argument and returns true only if it is considered a match
-
-
 
 </td>
 </tr>
@@ -1923,78 +1669,58 @@ If an object is given as a query value, it may have the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `name` 
-
-
+`name` 
 
 </td>
 <td valign="top">
 
 The name of the service instance; the name you use to bind the service
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `label` 
-
-
+`label` 
 
 </td>
 <td valign="top">
 
 Service name - the name shown by the command: “`xs marketplace`” 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `tag` 
-
-
+`tag` 
 
 </td>
 <td valign="top">
 
 Should match any of the service tags
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `plan` 
-
-
+`plan` 
 
 </td>
 <td valign="top">
 
 The name of the service instance plan specified in the command: “`xs create-service`” 
-
-
 
 </td>
 </tr>
@@ -2083,405 +1809,299 @@ The starting function takes an object that contains service credentials and appl
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Usage
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `rootDir` 
-
-
+`rootDir` 
 
 </td>
 <td valign="top">
 
- `lib` 
-
-
+`lib` 
 
 </td>
 <td valign="top">
 
 Location of XS JavaScript files
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `rootDirs` 
-
-
+`rootDirs` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Same as `rootDir`, but an array of directories can be provided; overrides `rootDir` if both are set
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `uaa` 
-
-
+`uaa` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 UAA configuration necessary to enable authentication by JSON Web Tokens \(JWT\) and business-user propagation to SAP HANA
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hana` 
-
-
+`hana` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Object containing SAP HANA database connection parameters; used for database connectivity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `secureStore` 
-
-
+`secureStore` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Object containing SAP HANA database connection parameters; used for secure store connectivity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `jobs` 
-
-
+`jobs` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Job scheduler connection parameters used to register jobs during application start up and later for updating job execution status when the job has finished
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `mail` 
-
-
+`mail` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Mail options, used by XS JavaScript `$.net.Mail` API
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `maxBodySize` 
-
-
+`maxBodySize` 
 
 </td>
 <td valign="top">
 
 1 MB
 
-
-
 </td>
 <td valign="top">
 
 Maximum body size accepted by xsjs. The value is passed to the bytes library for parsing. For more information, see **Bytes Utility** in the **Related Links** section below.
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `anonymous` 
-
-
+`anonymous` 
 
 </td>
 <td valign="top">
 
- `false` 
-
-
+`false` 
 
 </td>
 <td valign="top">
 
 Enable anonymous access; that is, access without user credentials
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `formData` 
-
-
+`formData` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Special restrictions over form-data submitted to server
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `destinationProvider` 
-
-
+`destinationProvider` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Custom function, synchronous or asynchronous, to be used when`$.net.http.readDestination` is called in XS JavaScript code.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ca` 
-
-
+`ca` 
 
 </td>
 <td valign="top">
 
 Certificates listed in the environment variable *<XS\_CACERT\_PATH\>* 
 
-
-
 </td>
 <td valign="top">
 
 Trusted SSL certificates for any outgoing HTTPS connections, an array of loaded certificates
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `compression` 
-
-
+`compression` 
 
 </td>
 <td valign="top">
 
- `true` 
-
-
+`true` 
 
 </td>
 <td valign="top">
 
 By default text resources over 1,000 are compressed.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `auditLog` 
-
-
+`auditLog` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
 
 Object containing audit-log credentials.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `context` 
-
-
+`context` 
 
 </td>
 <td valign="top">
 
- `{}` 
-
-
+`{}` 
 
 </td>
 <td valign="top">
 
 Extend the default context in `@sap/xsjs` scripts
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `libraryCache` 
-
-
+`libraryCache` 
 
 </td>
 <td valign="top">
 
- `{}` 
-
-
+`{}` 
 
 </td>
 <td valign="top">
 
 Contains the `@sap/xsjs` libraries that should be cached.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `redirectUrl` 
-
-
+`redirectUrl` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 <td valign="top">
@@ -2514,122 +2134,90 @@ The `hana` object has the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Usage
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `host` 
-
-
+`host` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 SAP HANA database host name
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `port` 
-
-
+`port` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 SAP HANA database port number
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `user` 
-
-
+`user` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Technical user for database connections
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `password` 
-
-
+`password` 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Password for technical user specified in `user` 
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `schema` 
-
-
+`schema` 
 
 </td>
 <td valign="top">
@@ -2641,16 +2229,12 @@ Password for technical user specified in `user`
 
 If provided, sets current schema for database connections
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `connectWithLoggedUser` 
-
-
+`connectWithLoggedUser` 
 
 </td>
 <td valign="top">
@@ -2672,9 +2256,7 @@ Possible values are `true` or `false` \(default\). If provided the database conn
 <tr>
 <td valign="top">
 
- `sqlcc` 
-
-
+`sqlcc` 
 
 </td>
 <td valign="top">
@@ -2686,16 +2268,12 @@ Possible values are `true` or `false` \(default\). If provided the database conn
 
 Object containing all SQLCC configurations as properties with name after SQLCC name used in XS JavaScript code
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ca` 
-
-
+`ca` 
 
 </td>
 <td valign="top">
@@ -2706,8 +2284,6 @@ Object containing all SQLCC configurations as properties with name after SQLCC n
 <td valign="top">
 
 Trusted SSL certificates intended explicitly for use by SAP HANA connections, or an array of loaded certificates. If not provided, the certificate from the service binding is used. If no certificates are available, the SAP HANA connection cannot be encrypted.
-
-
 
 </td>
 </tr>
@@ -2745,122 +2321,90 @@ The `secureStore` object has the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Usage
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `host` 
-
-
+`host` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 SAP HANA database host name
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `port` 
-
-
+`port` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 SAP HANA database port number
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `user` 
-
-
+`user` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Technical user for database connections
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `password` 
-
-
+`password` 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Password for technical user specified in `user` 
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `schema` 
-
-
+`schema` 
 
 </td>
 <td valign="top">
@@ -2871,8 +2415,6 @@ Password for technical user specified in `user`
 <td valign="top">
 
 If provided, sets current schema for database connections
-
-
 
 </td>
 </tr>
@@ -2893,44 +2435,32 @@ The `formData` object has the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Default
-
-
 
 </th>
 <th valign="top">
 
 Usage
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `maxFilesSizeInBytes` 
-
-
+`maxFilesSizeInBytes` 
 
 </td>
 <td valign="top">
 
 10485760
 
-
-
 </td>
 <td valign="top">
 
 restricts the total size of all the uploaded files.
-
-
 
 </td>
 </tr>
@@ -2951,76 +2481,73 @@ The `mail` object has the following properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Usage
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `host` 
-
-
+`host` 
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 SMTP server host name
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `port` 
-
-
+`port` 
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 SMTP server port number
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+`ignoreTLS` 
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+`True` or `false` \(default\). Defines if a STARTTLS command should be invoked if available by the mail server.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ignoreTLS` 
-
-
+`secure` 
 
 </td>
 <td valign="top">
@@ -3030,39 +2557,14 @@ SMTP server port number
 </td>
 <td valign="top">
 
- `True` or `false` \(default\). Defines if a STARTTLS command should be invoked if available by the mail server.
-
-
+`True` or `false` \(default\). Defines if the connection should be over TLS/SSL.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `secure` 
-
-
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
- `True` or `false` \(default\). Defines if the connection should be over TLS/SSL.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- `connectionTimeout` 
-
-
+`connectionTimeout` 
 
 </td>
 <td valign="top">
@@ -3074,16 +2576,12 @@ SMTP server port number
 
 Connection timeout in ms. Default =60000.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `authMethod` 
-
-
+`authMethod` 
 
 </td>
 <td valign="top">
@@ -3095,16 +2593,12 @@ Connection timeout in ms. Default =60000.
 
 Authentication method to use. Options are: “`PLAIN`”, “`LOGIN`”, or “`CRAM-MD5`” 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `auth` 
-
-
+`auth` 
 
 </td>
 <td valign="top">
@@ -3115,8 +2609,6 @@ Authentication method to use. Options are: “`PLAIN`”, “`LOGIN`”, or “`
 <td valign="top">
 
 Authentication credentials, for example: `{user: 'user', pass: 'pass'}`; default is no authentication.
-
-
 
 </td>
 </tr>
@@ -3147,78 +2639,58 @@ If your application requires different mechanisms for destination configuration,
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `packagename` 
-
-
+`packagename` 
 
 </td>
 <td valign="top">
 
 The package of the destination supplied to `$.net.http.readDestination` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `objectname` 
-
-
+`objectname` 
 
 </td>
 <td valign="top">
 
 The object name of the destination supplied to `$.net.http.readDestination` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `dtDescriptor` 
-
-
+`dtDescriptor` 
 
 </td>
 <td valign="top">
 
 The object containing all properties contained in the corresponding HTTP destination configuration file \(`.xshttpdest`\), if available; otherwise “undefined” 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `callback` 
-
-
+`callback` 
 
 </td>
 <td valign="top">
 
 Provided only in the asynchronous case and should be called by your provider function to return the destination or report error
-
-
 
 </td>
 </tr>
@@ -3385,215 +2857,161 @@ The complete details of the container security API including all parameters and 
 
 API
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `createSecurityContext` 
-
-
+`createSecurityContext` 
 
 </td>
 <td valign="top">
 
 Creates the “security context” by validating the received access token against credentials put into the application's environment via the UAA service binding
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getLogonName` 
-
-
+`getLogonName` 
 
 </td>
 <td valign="top">
 
 Returns the user's logon name \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getGivenName` 
-
-
+`getGivenName` 
 
 </td>
 <td valign="top">
 
 Returns the user's given \(first\) name \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getFamilyName` 
-
-
+`getFamilyName` 
 
 </td>
 <td valign="top">
 
 Returns the user's family name \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getEmail` 
-
-
+`getEmail` 
 
 </td>
 <td valign="top">
 
 Returns the user's email address \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `checkLocalScope` 
-
-
+`checkLocalScope` 
 
 </td>
 <td valign="top">
 
 Checks a scope that is published by the current application in the `xs-security.json` file. Returns “true” if the checked scope is included in the user's authorization scopes \(otherwise “false”\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `checkScope` 
-
-
+`checkScope` 
 
 </td>
 <td valign="top">
 
 Checks a scope that is published by an application. Returns “true” if the checked scope is included in the user's authorization scopes \(otherwise “false”\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getToken` 
-
-
+`getToken` 
 
 </td>
 <td valign="top">
 
 Returns a token that can be used to connect to the SAP HANA database. If the token that the security context has been instantiated with is a foreign token \(meaning that the OAuth client contained in the token and the OAuth client of the current application do not match\), “`null`” is returned instead of a token.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getHdbToken` 
-
-
+`getHdbToken` 
 
 </td>
 <td valign="top">
 
 Returns a token that can be used to connect to the SAP HANA database. If the token that the security context has been instantiated with is a “foreign” token \(the OAuth client contained in the token and the OAuth client of the current application do not match\), “`null`” is returned instead of a token.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `requestTokenForClient` 
-
-
+`requestTokenForClient` 
 
 </td>
 <td valign="top">
 
 Requests a token with `grant_type=user_token` from another client. The requesting client must also have `grant_type=user_token`, and the current user token must include the authorization scope `uaa.user`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hasAttributes` 
-
-
+`hasAttributes` 
 
 </td>
 <td valign="top">
 
 Returns “`true`” if the token contains any user attributes; otherwise “`false`”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getAttribute` 
-
-
+`getAttribute` 
 
 </td>
 <td valign="top">
 
 Returns the attribute exactly as it is contained in the access token. If no attribute with the given name is contained in the access token, “`null`” is returned. If the token that the security context has been instantiated with is a foreign token \(the OAuth client contained in the token and the OAuth client of the current application do not match\), “`null`” is returned regardless of whether the requested attribute is contained in the token or not.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getAdditionalAuthAttribute` 
-
-
+`getAdditionalAuthAttribute` 
 
 </td>
 <td valign="top">
@@ -3610,80 +3028,60 @@ Requires the `name` of the additional authentication attribute requested. Return
 <tr>
 <td valign="top">
 
- `isInForeignMode` 
-
-
+`isInForeignMode` 
 
 </td>
 <td valign="top">
 
 Returns “`true`” if the token, that the security context has been instantiated with, is a foreign token that was not originally issued for the current application, otherwise “`false`”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getIdentityZone` 
-
-
+`getIdentityZone` 
 
 </td>
 <td valign="top">
 
 Returns the identity zone that the access token has been issued for
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getExpirationDate` 
-
-
+`getExpirationDate` 
 
 </td>
 <td valign="top">
 
 Returns the expiration date of the access token as a Javascript “Date” object
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getCloneServiceInstanceId` 
-
-
+`getCloneServiceInstanceId` 
 
 </td>
 <td valign="top">
 
 Returns the id of the cloned service instance, if the XSUAA broker plan is used
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `getGrantType` 
-
-
+`getGrantType` 
 
 </td>
 <td valign="top">
 
 Returns the grant type of the JWT token, for example: `authorization_code`, `password`, `client_credentials`, etc.
-
-
 
 </td>
 </tr>
@@ -3794,90 +3192,66 @@ This method takes an object with the following **mandatory** properties:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 <th valign="top">
 
 Semantics
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `previousComponent` 
-
-
+`previousComponent` 
 
 </td>
 <td valign="top">
 
 ASCII string \(up to 32 characters\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the current component which is about to make an outbound connection to another component.
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `connectionID` 
-
-
+`connectionID` 
 
 </td>
 <td valign="top">
 
 GUID \(16-byte hex\)
 
-
-
 </td>
 <td valign="top">
 
 Every connection between the current component and the next component should have an ID which is passed as that property.
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `connectionCounter` 
-
-
+`connectionCounter` 
 
 </td>
 <td valign="top">
 
 Positive integer \(up to 4 bytes\)
 
-
-
 </td>
 <td valign="top">
 
 The amount of time for the connection with the given `connectionID` is being reused.
-
-
 
 </td>
 </tr>
@@ -4137,62 +3511,46 @@ The following clients are supported:
 
 Environment Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *<VCAP\_SERVICES\>* 
-
-
+*<VCAP\_SERVICES\>* 
 
 </td>
 <td valign="top">
 
 Defines bindings to RabbitMQ or Enterprise Messaging services
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *<SAP\_XBEM\_SERVICE\_LABEL\>* 
-
-
+*<SAP\_XBEM\_SERVICE\_LABEL\>* 
 
 </td>
 <td valign="top">
 
 Defines details of an alternative service label for Enterprise Messaging
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *<SAP\_XBEM\_BINDINGS\>* 
-
-
+*<SAP\_XBEM\_BINDINGS\>* 
 
 </td>
 <td valign="top">
 
 Defines details of incoming and \(or\) outgoing message streams \(`"istreams"` and `"ostreams"`\)
-
-
 
 </td>
 </tr>

@@ -28,7 +28,7 @@ Converts a *<value\>* to a REAL \(single precision\) data type.
 
 ## Example
 
-The following example converts the value ***15.12*** to a REAL value and multiplies it by ***3*** to return the value ***45.36000061035156***.
+The following example converts the value `15.12` to a REAL value and multiplies it by `3` to return the value ***45.36000061035156***.
 
 ```
 SELECT 3*TO_REAL ('15.12') "to real" FROM DUMMY;

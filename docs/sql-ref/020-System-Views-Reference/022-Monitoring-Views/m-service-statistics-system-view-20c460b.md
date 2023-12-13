@@ -17,21 +17,15 @@ Provides statistics on active services.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the service name.
 
 PROCESS\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the process ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the process ID.
 
 DETAIL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the detail information, similar to COORDINATOR\_TYPE in M\_SERVICES.
-
-
 
 </td>
 </tr>
@@ -155,14 +119,10 @@ Displays the detail information, similar to COORDINATOR\_TYPE in M\_SERVICES.
 
 ACTIVE\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -184,21 +144,15 @@ Displays the active status. This column contains the following values:
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the process start timestamp.
-
-
 
 </td>
 </tr>
@@ -207,21 +161,15 @@ Displays the process start timestamp.
 
 SYS\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the current system timestamp.
-
-
 
 </td>
 </tr>
@@ -230,21 +178,15 @@ Displays the current system timestamp.
 
 PROCESS\_CPU
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU usage percentage of the current process. See additional notes after this table.
-
-
 
 </td>
 </tr>
@@ -253,21 +195,15 @@ Displays the CPU usage percentage of the current process. See additional notes a
 
 PROCESS\_CPU\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU usage of the current process since the start in milliseconds.
-
-
 
 </td>
 </tr>
@@ -276,21 +212,15 @@ Displays the CPU usage of the current process since the start in milliseconds.
 
 TOTAL\_CPU
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU usage percentage of all processes. See additional notes after this table.
-
-
 
 </td>
 </tr>
@@ -299,21 +229,15 @@ Displays the CPU usage percentage of all processes. See additional notes after t
 
 TOTAL\_CPU\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU usage of all processes since the start in milliseconds. See additional notes after this table.
-
-
 
 </td>
 </tr>
@@ -322,21 +246,15 @@ Displays the CPU usage of all processes since the start in milliseconds. See add
 
 PROCESS\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the process logical memory usage in bytes.
-
-
 
 </td>
 </tr>
@@ -345,21 +263,15 @@ Displays the process logical memory usage in bytes.
 
 PROCESS\_PHYSICAL\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the process physical memory usage in bytes.
-
-
 
 </td>
 </tr>
@@ -368,21 +280,15 @@ Displays the process physical memory usage in bytes.
 
 TOTAL\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the host physical and swap memory usage in bytes.
-
-
 
 </td>
 </tr>
@@ -391,21 +297,15 @@ Displays the host physical and swap memory usage in bytes.
 
 AVAILABLE\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the host physical and swap memory size in bytes.
-
-
 
 </td>
 </tr>
@@ -414,21 +314,15 @@ Displays the host physical and swap memory size in bytes.
 
 PHYSICAL\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the host physical memory size in bytes.
-
-
 
 </td>
 </tr>
@@ -437,21 +331,15 @@ Displays the host physical memory size in bytes.
 
 OPEN\_FILE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of open files.
-
-
 
 </td>
 </tr>

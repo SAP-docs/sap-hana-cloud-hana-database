@@ -6,7 +6,7 @@ The owner of a container object needs additional privileges to the ones assigned
 
 By default, an HDI container is assigned very few database privileges. For example, the object owner \( “`#OO`” user\) is only assigned the `CREATE ANY` privilege on the container's run-time schema \(schema “FOO” for an HDI container “FOO” \). To access database objects inside other database schemata or other HDI containers, and to be able to deploy synonyms into the HDI container which point to objects outside the container, the object owner needs additional privileges. For example, for an object “`object`” in schema “X”, the `SELECT` privilege on “`X.object`” :
 
- ![](images/HDI_Extenal_Container_Permissions_b5bf1df.png) 
+![](images/HDI_Extenal_Container_Permissions_b5bf1df.png)
 
 
 

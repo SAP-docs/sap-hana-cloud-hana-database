@@ -17,21 +17,15 @@ Provides information about spatial units of measure.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the owner name of this unit of measure.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the owner name of this unit of measure.
 
 UNIT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of this unit of measure.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of this unit of measure.
 
 UNIT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of this unit of measure: ANGULAR/LINEAR.
-
-
 
 </td>
 </tr>
@@ -109,25 +85,27 @@ Displays the type of this unit of measure: ANGULAR/LINEAR.
 
 CONVERSION\_FACTOR
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
-
-
 
 </td>
 <td valign="top">
 
 Displays the conversion factor of this unit of measure.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod234b23dd2951014bec9fb46e67facfa__section_tpc_svz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

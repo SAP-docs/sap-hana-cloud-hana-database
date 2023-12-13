@@ -28,7 +28,7 @@ Returns the hyperbolic tangent of the numeric argument *<number\>*.
 
 ## Example
 
-The following example returns the value ***0.7615941559557649*** for ***"tanh"***:
+The following example returns the value ***0.7615941559557649*** for `"tanh"`:
 
 ```
 SELECT TANH (1.0) "tanh" FROM DUMMY;

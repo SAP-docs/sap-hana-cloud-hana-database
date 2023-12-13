@@ -9,7 +9,7 @@ Searches the specified path for exported objects.
 ## Syntax
 
 ```
-IMPORT SCAN <storage_path> [ <file> ] [ WITH <import_scan_option_list> ] 
+IMPORT SCAN <cloud_provider_path> [ <file> ] [ WITH <import_scan_option_list> ] 
 ```
 
 
@@ -21,7 +21,7 @@ IMPORT SCAN <storage_path> [ <file> ] [ WITH <import_scan_option_list> ]
 Specifies the cloud storage location for the import.
 
 ```
-<storage_path> ::=
+<cloud_provider_path> ::=
    { <azure_path> 
    | <amazon_path>
    | <google_path>
@@ -43,7 +43,7 @@ Specifies the location for the Azure import file.
 
 ```
 <azure_path> ::= 
-'azure://[<azure_credentials>]<azure_container_name>/<azure_object_id>'
+'azure://[<azure_credentials_path>]<azure_container_name>/<azure_object_id>'
 ```
 
 
@@ -55,7 +55,7 @@ Specifies the location for the Azure import file.
 </b></dt>
 <dd>
 
-Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported when using the WITH CREDENTIAL parameter.
+Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported when using the CREDENTIAL clause.
 
 ```
 <azure_credentials> ::= 
@@ -125,7 +125,7 @@ Specifies the geographical region the bucket is located in. Refer to [Regions an
 </b></dt>
 <dd>
 
-Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the WITH CREDENTIAL parameter.
+Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the CREDENTIAL clause.
 
 ```
 <amazon_credentials> ::= 
@@ -184,7 +184,7 @@ Specifies the location for the Google Cloud storage import file.
 </b></dt>
 <dd>
 
-Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the WITH CREDENTIAL parameter.
+Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the CREDENTIAL clause.
 
 ```
 <google_credentials> ::=
@@ -336,7 +336,7 @@ CREDENTIAL *<purpose\_def\>*
 </b></dt>
 <dd>
 
-Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of import statements. The WITH CREDENTIAL clause cannot be specified when *<cloud\_path\>* contains credentials. The WITH CREDENTIAL clause is required for imports to SAP HANA Cloud, Data Lake Files, but is optional for all other cloud platforms.
+Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of import statements. The CREDENTIAL clause cannot be specified when *<cloud\_provider\_path\>* contains credentials. The CREDENTIAL clause is required for imports to SAP HANA Cloud, Data Lake Files, but is optional for all other cloud platforms.
 
 
 
@@ -369,7 +369,7 @@ Requires:
 
 The IMPORT SCAN statement searches the given path for objects exported with the EXPORT statement and stores the results in the following session-local temporary table at current\_schema of the session if the statement is executed successfully. If current\_schema of the session is invalid, then IMPORT SCAN throws an exception as it cannot create its result table of the current\_schema.
 
- ***<current\_schema\>*.\#IMPORT\_SCAN\_RESULT** 
+***<current\_schema\>*.\#IMPORT\_SCAN\_RESULT** 
 
 
 <table>
@@ -378,21 +378,15 @@ The IMPORT SCAN statement searches the given path for objects exported with the 
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -401,21 +395,15 @@ Description
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The database of the imported object
-
-
 
 </td>
 </tr>
@@ -424,21 +412,15 @@ The database of the imported object
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The schema of the object
-
-
 
 </td>
 </tr>
@@ -447,21 +429,15 @@ The schema of the object
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the object
-
-
 
 </td>
 </tr>
@@ -470,21 +446,15 @@ The name of the object
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 The type of the object \(TABLE, VIEW, and so on\)
-
-
 
 </td>
 </tr>
@@ -493,27 +463,21 @@ The type of the object \(TABLE, VIEW, and so on\)
 
 EXISTS
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
-
-
 
 </td>
 <td valign="top">
 
 Does the object already exist in the system? \(0/1\)
 
-
-
 </td>
 </tr>
 </table>
 
- ***<current\_schema\>*.\#IMPORT\_SCAN\_FILE\_RESULT** 
+***<current\_schema\>*.\#IMPORT\_SCAN\_FILE\_RESULT** 
 
 
 <table>
@@ -522,21 +486,15 @@ Does the object already exist in the system? \(0/1\)
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -545,21 +503,15 @@ Description
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the column.
-
-
 
 </td>
 </tr>
@@ -590,36 +542,26 @@ SELECT * FROM #IMPORT_SCAN_RESULT;
 
 DATABASE\_NAME
 
-
-
 </th>
 <th valign="top">
 
 SCHEMA\_NAME
-
-
 
 </th>
 <th valign="top">
 
 OBJECT\_NAME
 
-
-
 </th>
 <th valign="top">
 
 OBJECT\_TYPE
-
-
 
 </th>
 <th valign="top">
 
 EXISTS
 
-
-
 </th>
 </tr>
 <tr>
@@ -627,35 +569,25 @@ EXISTS
 
 OP2
 
-
-
 </td>
 <td valign="top">
 
 IMEX\_RESTTEST
-
-
 
 </td>
 <td valign="top">
 
 TEST\_TBL\_COLUMN
 
-
-
 </td>
 <td valign="top">
 
 TAABLE
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -664,35 +596,25 @@ TAABLE
 
 OP2
 
-
-
 </td>
 <td valign="top">
 
 IMEX\_RESTTEST
-
-
 
 </td>
 <td valign="top">
 
 TEST\_TBL\_ROW
 
-
-
 </td>
 <td valign="top">
 
 TABLE
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -717,16 +639,12 @@ SELECT * FROM #IMPORT_SCAN_FILE_RESULT;
 
 COLUMN\_NAME
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 field\_bool
-
-
 
 </td>
 </tr>
@@ -735,16 +653,12 @@ field\_bool
 
 field\_uint8
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 field\_int16
-
-
 
 </td>
 </tr>
@@ -753,16 +667,12 @@ field\_int16
 
 field\_int32
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 field\_int64
-
-
 
 </td>
 </tr>
@@ -771,8 +681,6 @@ field\_int64
 
 field\_float
 
-
-
 </td>
 </tr>
 <tr>
@@ -780,16 +688,12 @@ field\_float
 
 field\_double
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 field\_string
-
-
 
 </td>
 </tr>
@@ -800,7 +704,7 @@ field\_string
 
 [EXPORT Statement \(Data Import Export\)](export-statement-data-import-export-20da0be.md "Exports catalog objects.")
 
-[EXPORT INTO Statement \(Data Import Export\)](export-into-statement-data-import-export-6a6f59b.md "Exports a table or view into a single file.")
+[EXPORT INTO Statement \(Data Import Export\)](export-into-statement-data-import-export-6a6f59b.md "Exports a table or view into a single-file, multi-file, or directory.")
 
 [IMPORT Statement \(Data Import Export\)](import-statement-data-import-export-20f75ad.md "Imports catalog objects.")
 

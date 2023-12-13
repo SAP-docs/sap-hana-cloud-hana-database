@@ -14,6 +14,8 @@ An HDI container-group administrator can export an HDI container to a table or a
 -   Understand the information that describes how to prepare the SSL certificates required for the supported Cloud-storage scenario, which you can find in the following links in *Related Information* below:
     -   *Importing and Exporting with Amazon S3* 
     -   *Importing and Exporting with Azure Storage*
+    -   *Importing and Exporting with Google Cloud Platform Storage*
+    -   *Importing and Exporting with SAP HANA Cloud Data Lake Files Storage*
 
 -   If the exported HDI container has any dependencies to other HDI containers or normal database schemas, then the other containers and schemas must also be made available in the target database first.
 -   If the exported HDI container has been granted privileges to other containers or schemas, the granted privileges must also be assigned in the database before you import the dependent HDI container.
@@ -41,111 +43,83 @@ To export a container `C1` in container group `G` for copy purposes to a Cloud S
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Example
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        Region
-
-
+    Region
     
     </td>
     <td valign="top">
     
-        eu-central-1
-
-
+    eu-central-1
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        Access Key
-
-
+    Access Key
     
     </td>
     <td valign="top">
     
-        KHDD8BIWJN938HJHAJ
-
-
+    KHDD8BIWJN938HJHAJ
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        Secret Key
-
-
+    Secret Key
     
     </td>
     <td valign="top">
     
-        nD-TI089LahksfjhZWQfgeuG4dAU
-
-
+    nD-TI089LahksfjhZWQfgeuG4dAU
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        Bucket Name
-
-
+    Bucket Name
     
     </td>
     <td valign="top">
     
-        hc-container-export
-
-
+    hc-container-export
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        Object ID
-
-
+    Object ID
     
     </td>
     <td valign="top">
     
-        Specifies a path or file name within the named bucket, for example,"MY\_HDI\_EXPORT"
-
-
+    Specifies a path or file name within the named bucket, for example,"MY\_HDI\_EXPORT"
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        Certificate
-
-
+    Certificate
     
     </td>
     <td valign="top">
     
-         
-
-
+     
     
     </td>
     </tr>
@@ -215,6 +189,10 @@ To export a container `C1` in container group `G` for copy purposes to a Cloud S
 [Importing and Exporting with Amazon S3 \(SAP HANA Cloud Admin Guide\)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/41d9c51cc69a4178b01db4bda77fb94a.html)
 
 [Importing and Exporting with Azure Storage \(SAP HANA Cloud Admin Guide\)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/latest/en-US/fd45a3b7917349a1a8cbc81e202c5cdd.html)
+
+[Importing and Exporting with Google Cloud Platform Storage \(SAP HANA Cloud Admin Guide\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/f975e58e44354dbfb21028532555da4b.html)
+
+[Importing and Exporting with SAP HANA Cloud Data Lake Files Storage \(SAP HANA Cloud Admin Guide\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/462c861413b043bd93b9e8e838249b6e.html)
 
 [Import an SAP HDI Container for Copy Purposes from a Cloud Store](import-an-sap-hdi-container-for-copy-pur-0f76f6e.md "An HDI container-group administrator can import an HDI container from a Cloud store.")
 

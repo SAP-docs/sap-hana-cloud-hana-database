@@ -15,21 +15,15 @@ Provides information about user mappings for cross-database access.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user in the local database.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the name of the user in the local database.
 
 REMOTE\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user in the remote database.
-
-
 
 </td>
 </tr>
@@ -84,25 +66,27 @@ Displays the name of the user in the remote database.
 
 REMOTE\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the name of the remote database.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod8980f4706004249b6a36090a8061137__section_khm_vy4_dzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

@@ -17,21 +17,15 @@ Displays the values of various statistics in the system.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 STATISTIC\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the statistic.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the statistic.
 
 UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unit of measure for the value for the statistic.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the unit of measure for the value for the statistic.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the value of the statistic.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the value of the statistic.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description of the statistic.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the description of the statistic.
 
 SQL\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the equivalent SQL statement used to calculate the statistic.
-
-
 
 </td>
 </tr>

@@ -41,21 +41,15 @@ SELECT Revenue, Quantity, NDIV0(Revenue, Quantity) as AverageRevenue FROM DUMMY;
 
 Revenue
 
-
-
 </th>
 <th valign="top">
 
 Quantity
 
-
-
 </th>
 <th valign="top">
 
 AverageRevenue
-
-
 
 </th>
 </tr>
@@ -64,21 +58,15 @@ AverageRevenue
 
 1000
 
-
-
 </td>
 <td valign="top">
 
 4
 
-
-
 </td>
 <td valign="top">
 
 250
-
-
 
 </td>
 </tr>
@@ -87,21 +75,15 @@ AverageRevenue
 
 2000
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -110,21 +92,15 @@ AverageRevenue
 
 2500
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -133,21 +109,15 @@ AverageRevenue
 
 3000
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 600
-
-
 
 </td>
 </tr>

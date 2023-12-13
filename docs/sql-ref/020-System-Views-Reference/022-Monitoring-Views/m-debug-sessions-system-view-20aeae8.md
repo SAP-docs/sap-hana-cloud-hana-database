@@ -17,21 +17,15 @@ Provides an overview of debug sessions and their properties.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 DEBUG\_SESSION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the landscape-wide unique identifier for debug session.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the landscape-wide unique identifier for debug session.
 
 COMPILE\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the compilation handling of nested procedures.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the compilation handling of nested procedures.
 
 TIMEOUT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the time in seconds after which the debug session will timeout and destroy itself.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the time in seconds after which the debug session will timeout and dest
 
 ATTACH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of debuggees the debugger is currently attached to.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the number of debuggees the debugger is currently attached to.
 
 ATTACH\_FILTER\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID the debugger is using to attach to connections.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the connection ID the debugger is using to attach to connections.
 
 ATTACH\_FILTER\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection user name the debugger is using to attach to connections.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the connection user name the debugger is using to attach to connections
 
 ATTACH\_FILTER\_APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user name the debugger is using to attach to connections.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the application user name the debugger is using to attach to connection
 
 ATTACH\_FILTER\_DEBUG\_TOKEN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the debug token the debugger is using to attach to connections.
-
-
 
 </td>
 </tr>
@@ -226,5 +172,5 @@ Displays the debug token the debugger is using to attach to connections.
 
 [M\_DEBUG\_CONNECTIONS System View](m-debug-connections-system-view-20ae867.md "Provides an overview of connections used per debug session.")
 
-[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
+[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
 

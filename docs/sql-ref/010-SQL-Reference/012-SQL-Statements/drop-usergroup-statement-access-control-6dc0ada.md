@@ -58,7 +58,7 @@ You must have the CREATE USERGROUP system privilege.
 
 ## Example
 
-The following statement drops a \(fictitious\) user group named ***MyUserGroup***;
+The following statement drops a \(fictitious\) user group named `MyUserGroup`;
 
 ```
 DROP USERGROUP MyUserGroup;

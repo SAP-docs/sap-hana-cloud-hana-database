@@ -111,7 +111,7 @@ QRC 02/2020
 <dd>
 
 -   Ability to import and export data using these statements: [IMPORT Statement \(Data Import Export\)](../010-SQL-Reference/012-SQL-Statements/import-statement-data-import-export-20f75ad.md), and [EXPORT Statement \(Data Import Export\)](../010-SQL-Reference/012-SQL-Statements/export-statement-data-import-export-20da0be.md).
--    [SAP HANA Automated Predictive Library \(APL\)](https://help.sap.com/viewer/product/apl/latest/en-US)
+-   [SAP HANA Automated Predictive Library \(APL\)](https://help.sap.com/viewer/product/apl/latest/en-US)
 
 
 

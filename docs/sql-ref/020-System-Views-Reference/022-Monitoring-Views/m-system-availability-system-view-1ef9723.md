@@ -15,21 +15,15 @@ Monitors the availability of the system.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 EVENT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that this event was originally traced.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the time that this event was originally traced.
 
 GUID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(36\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the event guide.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the event guide.
 
 IS\_ORIGIN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the original entry.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the original entry.
 
 TRACE\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host the trace file was read from.
-
-
 
 </td>
 </tr>
@@ -130,14 +100,10 @@ Displays the host the trace file was read from.
 
 EVENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(32\)
-
-
 
 </td>
 <td valign="top">
@@ -194,21 +160,15 @@ Displays the event name:
 
 EVENT\_DETAIL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays any additional information.
-
-
 
 </td>
 </tr>
@@ -217,21 +177,15 @@ Displays any additional information.
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error message.
-
-
 
 </td>
 </tr>
@@ -240,21 +194,15 @@ Displays the error message.
 
 SYSTEM\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system active status: NO, YES, UNKNOWN, STARTING, or STOPPING.
-
-
 
 </td>
 </tr>
@@ -263,14 +211,10 @@ Displays the system active status: NO, YES, UNKNOWN, STARTING, or STOPPING.
 
 SYSTEM\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
-
-
 
 </td>
 <td valign="top">
@@ -297,21 +241,15 @@ Displays the system status:
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host that traced the event.
-
-
 
 </td>
 </tr>
@@ -320,21 +258,15 @@ Displays the host that traced the event.
 
 HOST\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host active status.
-
-
 
 </td>
 </tr>
@@ -343,21 +275,15 @@ Displays the host active status.
 
 HOST\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host status.
-
-
 
 </td>
 </tr>
@@ -366,21 +292,15 @@ Displays the host status.
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database name.
-
-
 
 </td>
 </tr>
@@ -389,21 +309,15 @@ Displays the database name.
 
 DATABASE\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database active status.
-
-
 
 </td>
 </tr>
@@ -412,21 +326,15 @@ Displays the database active status.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service name.
-
-
 
 </td>
 </tr>
@@ -435,21 +343,15 @@ Displays the service name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the service port.
-
-
 
 </td>
 </tr>
@@ -458,21 +360,15 @@ Displays the service port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume ID.
-
-
 
 </td>
 </tr>
@@ -481,21 +377,15 @@ Displays the volume ID.
 
 SERVICE\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service active status.
-
-
 
 </td>
 </tr>
@@ -504,21 +394,15 @@ Displays the service active status.
 
 HOST\_CONFIG\_ROLES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configured host roles.
-
-
 
 </td>
 </tr>
@@ -527,21 +411,15 @@ Displays the configured host roles.
 
 HOST\_ACTUAL\_ROLES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the actual host roles.
-
-
 
 </td>
 </tr>
@@ -550,21 +428,15 @@ Displays the actual host roles.
 
 STORAGE\_CONFIG\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the configured storage partition.
-
-
 
 </td>
 </tr>
@@ -573,21 +445,15 @@ Displays the configured storage partition.
 
 STORAGE\_ACTUAL\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the actual storage partition.
-
-
 
 </td>
 </tr>
@@ -596,21 +462,15 @@ Displays the actual storage partition.
 
 TARGET\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the failover target host.
-
-
 
 </td>
 </tr>
@@ -619,21 +479,15 @@ Displays the failover target host.
 
 TARGET\_HOST\_CONFIG\_ROLES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the target host configuration roles.
-
-
 
 </td>
 </tr>
@@ -642,21 +496,15 @@ Displays the target host configuration roles.
 
 TARGET\_HOST\_ACTUAL\_ROLES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the target host actual roles.
-
-
 
 </td>
 </tr>
@@ -665,21 +513,15 @@ Displays the target host actual roles.
 
 TARGET\_STORAGE\_CONFIG\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the target storage configuration partition.
-
-
 
 </td>
 </tr>
@@ -688,21 +530,15 @@ Displays the target storage configuration partition.
 
 TARGET\_STORAGE\_ACTUAL\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the target storage actual partition.
-
-
 
 </td>
 </tr>
@@ -711,21 +547,15 @@ Displays the target storage actual partition.
 
 SITE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the system replication site ID.
-
-
 
 </td>
 </tr>

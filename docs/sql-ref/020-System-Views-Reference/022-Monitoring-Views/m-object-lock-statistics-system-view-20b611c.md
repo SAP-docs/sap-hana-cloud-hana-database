@@ -17,21 +17,15 @@ Provides lock contention statistics, including lock wait count, wait time, and f
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type: RECORD, TABLE, VIEW, SYNONYM, or SEQUENCE.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object type: RECORD, TABLE, VIEW, SYNONYM, or SEQUENCE.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name that the object belongs to.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the schema name that the object belongs to.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name.
-
-
 
 </td>
 </tr>
@@ -155,14 +119,10 @@ Displays the object name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -183,21 +143,15 @@ Displays the partition ID. Returns the following:
 
 OBJECT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the object ID.
 
 LOCK\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the lock type: OBJECT/RECORD.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the lock type: OBJECT/RECORD.
 
 LOCK\_WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the lock wait count.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the lock wait count.
 
 LOCK\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the lock wait time in microseconds.
-
-
 
 </td>
 </tr>
@@ -275,21 +211,15 @@ Displays the lock wait time in microseconds.
 
 LOCK\_FAILED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the RECORD type lock failed count.
-
-
 
 </td>
 </tr>

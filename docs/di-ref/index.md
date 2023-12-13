@@ -145,6 +145,7 @@ How to set up and maintain the Deployment Infrastructure \(DI\) for SAP HANA Clo
     -   [Procedures \(.hdbprocedure\)](30-HDI-Cloud-Artifact-Types/procedures-hdbprocedure-93de88b.md)
     -   [Projection Views \(.hdbprojectionview and .hdbprojectionviewconfig\)](30-HDI-Cloud-Artifact-Types/projection-views-hdbprojectionview-and-hdbprojectionviewconfig-d8a3392.md)
     -   [Public Synonyms \(.hdbpublicsynonym\)](30-HDI-Cloud-Artifact-Types/public-synonyms-hdbpublicsynonym-d131415.md)
+    -   [Remote Table Replications \(.hdbremotetablereplica\)](30-HDI-Cloud-Artifact-Types/remote-table-replications-hdbremotetablereplica-f1dae33.md)
     -   [Replication Tasks \(.hdbreptask\)](30-HDI-Cloud-Artifact-Types/replication-tasks-hdbreptask-0194ba9.md)
     -   [Result Caches \(.hdbresultcache\)](30-HDI-Cloud-Artifact-Types/result-caches-hdbresultcache-a3e2b70.md)
     -   [Roles \(.hdbrole and .hdbroleconfig\)](30-HDI-Cloud-Artifact-Types/roles-hdbrole-and-hdbroleconfig-625d773.md)
@@ -161,9 +162,6 @@ How to set up and maintain the Deployment Infrastructure \(DI\) for SAP HANA Clo
     -   [Table Data Properties \(.properties\)](30-HDI-Cloud-Artifact-Types/table-data-properties-properties-f4da218.md)
     -   [Table Types \(.hdbtabletype\)](30-HDI-Cloud-Artifact-Types/table-types-hdbtabletype-83275bd.md)
     -   [Triggers \(.hdbtrigger\)](30-HDI-Cloud-Artifact-Types/triggers-hdbtrigger-bbd06f5.md)
-    -   [Virtual Functions \(.hdbvirtualfunction and .hdbvirtualfunctionconfig\)](30-HDI-Cloud-Artifact-Types/virtual-functions-hdbvirtualfunction-and-hdbvirtualfunctionconfig-73669eb.md)
-    -   [Virtual Procedures \(.hdbvirtualprocedure and .hdbvirtualprocedureconfig\)](30-HDI-Cloud-Artifact-Types/virtual-procedures-hdbvirtualprocedure-and-hdbvirtualprocedureconfig-6c8e6c1.md)
     -   [Virtual Tables \(.hdbvirtualtable and .hdbvirtualtableconfig\)](30-HDI-Cloud-Artifact-Types/virtual-tables-hdbvirtualtable-and-hdbvirtualtableconfig-0819114.md)
-    -   [Virtual Packages \(.hdbvirtualpackage \)](30-HDI-Cloud-Artifact-Types/virtual-packages-hdbvirtualpackage-28fe43b.md)
 -   [Important Disclaimer for Features in SAP HANA](important-disclaimer-for-features-in-sap-hana-a75d154.md)
 

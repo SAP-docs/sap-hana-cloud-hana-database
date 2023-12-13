@@ -28,13 +28,13 @@ If the input *<value\>* has a mantissa, then these digits are truncated during t
 
 ## Examples
 
-The following example converts the value ***10*** to a BIGINT value ***10***:
+The following example converts the value `10` to a BIGINT value ***10***:
 
 ```
 SELECT TO_BIGINT ('10') "to bigint" FROM DUMMY;
 ```
 
-The following example converts the value ***10.5*** to a BIGINT value ***10***, truncating the mantissa:
+The following example converts the value `10.5` to a BIGINT value ***10***, truncating the mantissa:
 
 ```
 SELECT TO_BIGINT (10.5) "to bigint" FROM DUMMY;

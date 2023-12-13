@@ -21,14 +21,10 @@ In the SAP HANA database, each data type can be classified by its characteristic
 
 Classification
 
-
-
 </th>
 <th valign="top">
 
 Data Type
-
-
 
 </th>
 </tr>
@@ -37,14 +33,10 @@ Data Type
 
 Datetime types
 
-
-
 </td>
 <td valign="top">
 
 DATE, TIME, SECONDDATE, TIMESTAMP
-
-
 
 </td>
 </tr>
@@ -53,14 +45,10 @@ DATE, TIME, SECONDDATE, TIMESTAMP
 
 Numeric types
 
-
-
 </td>
 <td valign="top">
 
 TINYINT, SMALLINT, INTEGER, BIGINT, SMALLDECIMAL, DECIMAL, REAL, DOUBLE
-
-
 
 </td>
 </tr>
@@ -69,14 +57,10 @@ TINYINT, SMALLINT, INTEGER, BIGINT, SMALLDECIMAL, DECIMAL, REAL, DOUBLE
 
 Boolean type
 
-
-
 </td>
 <td valign="top">
 
 BOOLEAN
-
-
 
 </td>
 </tr>
@@ -85,14 +69,10 @@ BOOLEAN
 
 Character string types
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR, NVARCHAR
-
-
 
 </td>
 </tr>
@@ -101,14 +81,10 @@ VARCHAR, NVARCHAR
 
 Binary types
 
-
-
 </td>
 <td valign="top">
 
 VARBINARY
-
-
 
 </td>
 </tr>
@@ -117,14 +93,10 @@ VARBINARY
 
 Large Object types
 
-
-
 </td>
 <td valign="top">
 
 BLOB, CLOB, NCLOB
-
-
 
 </td>
 </tr>
@@ -133,14 +105,10 @@ BLOB, CLOB, NCLOB
 
 Multi-valued types
 
-
-
 </td>
 <td valign="top">
 
 ARRAY
-
-
 
 </td>
 </tr>
@@ -149,14 +117,10 @@ ARRAY
 
 Spatial types
 
-
-
 </td>
 <td valign="top">
 
 ST\_GEOMETRY, ST\_POINT
-
-
 
 </td>
 </tr>
@@ -196,21 +160,15 @@ The example above returns the following results:
 
 character String 1
 
-
-
 </th>
 <th valign="top">
 
 character String 2
 
-
-
 </th>
 <th valign="top">
 
 unicode string
-
-
 
 </th>
 </tr>
@@ -219,21 +177,15 @@ unicode string
 
 Brian
 
-
-
 </td>
 <td valign="top">
 
 100
 
-
-
 </td>
 <td valign="top">
 
 abc
-
-
 
 </td>
 </tr>
@@ -265,28 +217,20 @@ The example above returns the following results:
 
 integer
 
-
-
 </th>
 <th valign="top">
 
 decimal1
-
-
 
 </th>
 <th valign="top">
 
 decimal2
 
-
-
 </th>
 <th valign="top">
 
 hexadecimal
-
-
 
 </th>
 </tr>
@@ -295,28 +239,20 @@ hexadecimal
 
 123
 
-
-
 </td>
 <td valign="top">
 
 123.4
 
-
-
 </td>
 <td valign="top">
 
 123.4
-
-
 
 </td>
 <td valign="top">
 
 2,748
-
-
 
 </td>
 </tr>
@@ -346,14 +282,10 @@ The example above returns the following results:
 
 binary string 1
 
-
-
 </th>
 <th valign="top">
 
 binary string 2
-
-
 
 </th>
 </tr>
@@ -362,14 +294,10 @@ binary string 2
 
 00ABCD
 
-
-
 </td>
 <td valign="top">
 
 DCBA00
-
-
 
 </td>
 </tr>
@@ -406,21 +334,15 @@ The example above returns the following results:
 
 date
 
-
-
 </th>
 <th valign="top">
 
 time
 
-
-
 </th>
 <th valign="top">
 
 timestamp
-
-
 
 </th>
 </tr>
@@ -429,21 +351,15 @@ timestamp
 
 Jan 1, 2010
 
-
-
 </td>
 <td valign="top">
 
 11:00:00 AM
 
-
-
 </td>
 <td valign="top">
 
 Dec 31, 2011 11:59:59.0 PM
-
-
 
 </td>
 </tr>

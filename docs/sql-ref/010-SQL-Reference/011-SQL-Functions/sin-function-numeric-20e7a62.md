@@ -28,7 +28,7 @@ Returns the sine of *<number\>*, where *<number\>* is an angle expressed in radi
 
 ## Example
 
-The following example returns the value ***1.0*** for ***"sine"***:
+The following example returns the value ***1.0*** for `"sine"`:
 
 ```
 SELECT SIN ( 3.141592653589793/2) "sine" FROM DUMMY;

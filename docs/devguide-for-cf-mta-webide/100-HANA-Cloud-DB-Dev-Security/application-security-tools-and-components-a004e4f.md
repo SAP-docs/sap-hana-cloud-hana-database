@@ -20,21 +20,15 @@ The following table lists the tasks you need to perform to set up security for y
 
 Task
 
-
-
 </th>
 <th valign="top">
 
 Tool
 
-
-
 </th>
 <th valign="top">
 
 Persona/Permissions
-
-
 
 </th>
 </tr>
@@ -42,8 +36,6 @@ Persona/Permissions
 <td valign="top">
 
 Application container: access and security
-
-
 
 </td>
 <td valign="top">
@@ -64,16 +56,12 @@ Container Security API
 
 Developer
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="3">
 
 Application Security
-
-
 
 </td>
 <td valign="top">
@@ -92,8 +80,6 @@ Java:
 <td valign="top">
 
 Developer
-
-
 
 </td>
 </tr>
@@ -117,8 +103,6 @@ JavaScript/Node.js:
 
 Developer
 
-
-
 </td>
 </tr>
 <tr>
@@ -136,16 +120,12 @@ Python
 
 Developer
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="3">
 
 Application authentication \(method, type, …\)
-
-
 
 </td>
 <td valign="top">
@@ -156,8 +136,6 @@ OAuth 2.0 configuration \(`xs-security.json`\)
 
 JSON Web Tokens \(JWT\)
 
-
-
 </td>
 <td valign="top">
 
@@ -166,8 +144,6 @@ Developer
 Developer
 
 Developer
-
-
 
 </td>
 </tr>
@@ -192,16 +168,12 @@ Developer: during development and testing
 
 XS advanced administrator: for installation and update on productive systems
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Single Sign-on \(SSO\) with SAP HANA OpenID Connect \(OIDC\). The default XSUAA server configuration \(`xsuaaserver.ini`\) enables support for X.509 certificates \(`uaa.oidc.enablex509 = true`\). Support for SPNego/Kerberos on the other hand is not enabled by default \(`uaa.oidc.enablespnego = false`\) but can be enabled in the XUAA server configuration file manually, if required.
-
-
 
 </td>
 <td valign="top">
@@ -210,16 +182,12 @@ XS advanced administrator: maintaining run-time certificates
 
 SAP HANA administrator: maintaining database users
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Application authorization \(scopes\)
-
-
 
 </td>
 <td valign="top">
@@ -228,14 +196,10 @@ Application security descriptor \(`xs-security.json`\)
 
 Application router configuration \(`xs-app.json`\)
 
-
-
 </td>
 <td valign="top">
 
 Developer
-
-
 
 </td>
 </tr>
@@ -244,21 +208,15 @@ Developer
 
 Application routes
 
-
-
 </td>
 <td valign="top">
 
 Application router configuration \(`xs-app.json`\)
 
-
-
 </td>
 <td valign="top">
 
 Developer
-
-
 
 </td>
 </tr>
@@ -266,8 +224,6 @@ Developer
 <td valign="top">
 
 Application destinations \(login/logout\)
-
-
 
 </td>
 <td valign="top">
@@ -286,16 +242,12 @@ Application deployment manifest \(`manifest.yml`\)
 
 Developer
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Click Jacking protection
-
-
 
 </td>
 <td valign="top">
@@ -319,16 +271,12 @@ CJ_PROTECT_WHITELIST {<protocol>, <hostname>, <portNr>}
 
 Developer
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Cross-Origin Resource Sharing \(CORS\) configuration
-
-
 
 </td>
 <td valign="top">
@@ -357,8 +305,6 @@ Application router environment variable \(<code><i class="varname">&lt;CORS&gt;<
 
 Developer
 
-
-
 </td>
 </tr>
 <tr>
@@ -366,21 +312,15 @@ Developer
 
 Cross-Site Resource Forgery \(CSRF\) protection
 
-
-
 </td>
 <td valign="top">
 
 Application router configuration \(`xs-app.json`\)
 
-
-
 </td>
 <td valign="top">
 
 Developer
-
-
 
 </td>
 </tr>
@@ -389,21 +329,15 @@ Developer
 
 Cross-site scripting \(XSS\) protection
 
-
-
 </td>
 <td valign="top">
 
 Node.js package `@sap/xss-secure` 
 
-
-
 </td>
 <td valign="top">
 
 Developer
-
-
 
 </td>
 </tr>
@@ -412,21 +346,15 @@ Developer
 
 Data anonymity
 
-
-
 </td>
 <td valign="top">
 
 Calculation views with the *k-anonymity* \(and differential privacy\) anonymization methods.
 
-
-
 </td>
 <td valign="top">
 
 Developer
-
-
 
 </td>
 </tr>
@@ -434,8 +362,6 @@ Developer
 <td valign="top">
 
 Secure Store
-
-
 
 </td>
 <td valign="top">
@@ -462,8 +388,6 @@ An application bound to an instance of the platform service `hana` with the serv
 
 Developer
 
-
-
 </td>
 </tr>
 <tr>
@@ -471,14 +395,10 @@ Developer
 
 User identification
 
-
-
 </td>
 <td valign="top">
 
 User accounts and subaccounts \(SAP BTP Cockpit\)
-
-
 
 </td>
 <td valign="top">
@@ -487,16 +407,12 @@ SAP BTP administrator
 
 XS advanced administrator
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 User roles
-
-
 
 </td>
 <td valign="top">
@@ -513,8 +429,6 @@ Application security descriptor \(`xs-security.json`\)
 
 Developer
 
-
-
 </td>
 </tr>
 <tr>
@@ -522,14 +436,10 @@ Developer
 
 User role collections
 
-
-
 </td>
 <td valign="top">
 
 SAP BTP Cockpit
-
-
 
 </td>
 <td valign="top">
@@ -538,16 +448,12 @@ XS advanced administrator
 
 SAP BTP administrator
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
 User organizations/spaces
-
-
 
 </td>
 <td valign="top">
@@ -567,8 +473,6 @@ CF CLI:
 orgManager
 
 spaceManager
-
-
 
 </td>
 </tr>
@@ -593,16 +497,12 @@ Administrator tools:
 
 XS advanced administrator
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Virus protection
-
-
 
 </td>
 <td valign="top">
@@ -618,8 +518,6 @@ Anti-virus scanning configuration in Node.js package `@sap/node-vsi`
 <td valign="top">
 
 Developer
-
-
 
 </td>
 </tr>

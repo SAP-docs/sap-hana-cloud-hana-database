@@ -165,21 +165,15 @@ SELECT DAYS_BETWEEN(B, C) FROM T;
 
 Format
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Examples
-
-
 
 </th>
 </tr>
@@ -188,14 +182,10 @@ Examples
 
 YYYY-MM-DD
 
-
-
 </td>
 <td valign="top">
 
 Default format.
-
-
 
 </td>
 <td valign="top">
@@ -217,14 +207,10 @@ YYYY/MM-DD
 
 YYYY-MM/DD
 
-
-
 </td>
 <td valign="top">
 
 YYYY is from 0001 to 9999, MM is from 1 to 12, and DD is from 1 to 31. If year has less than four digits, month has less than two digits, or day has less than two digits, then values are padded by one or more zeros. For example, a two-digit year like 45 is saved as year 0045, while a one digit month like 9 is saved as 09, and a one digit day like 2 is saved as 02.
-
-
 
 </td>
 <td valign="top">
@@ -254,14 +240,10 @@ INSERT INTO my_tbl VALUES ('1957-06/13');
 
 YYYYMMDD
 
-
-
 </td>
 <td valign="top">
 
 The ABAP Data Type, DATES format.
-
-
 
 </td>
 <td valign="top">
@@ -279,14 +261,10 @@ INSERT INTO my_tbl VALUES ('19570613');
 
 MON
 
-
-
 </td>
 <td valign="top">
 
 The abbreviated name of month. For example, JAN. or DEC..
-
-
 
 </td>
 <td valign="top">
@@ -308,14 +286,10 @@ INSERT INTO my_tbl VALUES (TO_DATE('Jan-10', 'MON-DD'));
 
 MONTH
 
-
-
 </td>
 <td valign="top">
 
 The name of month. For example, JANUARY - DECEMBER.
-
-
 
 </td>
 <td valign="top">
@@ -337,14 +311,10 @@ INSERT INTO my_tbl VALUES (TO_DATE('January-10', 'MONTH-DD'));
 
 RM
 
-
-
 </td>
 <td valign="top">
 
 The Roman numeral month \(I-XII; JAN = I\).
-
-
 
 </td>
 <td valign="top">
@@ -366,14 +336,10 @@ INSERT INTO my_tbl VALUES (TO_DATE('I-10', 'RM-DD'));
 
 DDD
 
-
-
 </td>
 <td valign="top">
 
 The day of the year \(1-366\).
-
-
 
 </td>
 <td valign="top">
@@ -405,21 +371,15 @@ INSERT INTO my_tbl VALUES (TO_DATE('2001-204','YYYY-DDD'));
 
 Format
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Examples
-
-
 
 </th>
 </tr>
@@ -428,21 +388,15 @@ Examples
 
 HH24:MI:SS
 
-
-
 </td>
 <td valign="top">
 
 The default format.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -455,8 +409,6 @@ HH12:MI\[:SS\]\[AM|PM\]
 
 HH24:MI\[:SS\]
 
-
-
 </td>
 <td valign="top">
 
@@ -467,8 +419,6 @@ If a one digit hour, minute, or second is specified, then 0 is also inserted int
 HH12 indicates a 12 hour clock. HH24 indicates a 24 hour clock.
 
 Specify AM or PM as a suffix to indicate that the time value is before or after midday.
-
-
 
 </td>
 <td valign="top">
@@ -498,14 +448,10 @@ INSERT INTO my_tbl VALUES (TO_TIME('11:59:59','HH12:MI:SS');
 
 SSSSS
 
-
-
 </td>
 <td valign="top">
 
 The seconds past midnight \(0-86399\).
-
-
 
 </td>
 <td valign="top">
@@ -533,21 +479,15 @@ INSERT INTO my_tbl VALUES (TO_TIME('12345', 'SSSSS'));
 
 Format
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Examples
-
-
 
 </th>
 </tr>
@@ -556,21 +496,15 @@ Examples
 
 YYYY-MM-DD HH24:MI:SS.FF7
 
-
-
 </td>
 <td valign="top">
 
 The default format.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -579,14 +513,10 @@ The default format.
 
 FF \[1..7\]
 
-
-
 </td>
 <td valign="top">
 
 Fractional seconds have the range of 1 to 7 after the FF parameter to specify the number of digits in the fractional second portion of the datetime value returned. If a digit is not specified, then an error is returned.
-
-
 
 </td>
 <td valign="top">
@@ -616,14 +546,10 @@ While all of the formats below can be converted to strings \(TO\_VARCHAR functio
 
 Format
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -632,14 +558,10 @@ Description
 
 D
 
-
-
 </td>
 <td valign="top">
 
 The day of the week \(1-7\).
-
-
 
 </td>
 </tr>
@@ -648,14 +570,10 @@ The day of the week \(1-7\).
 
 DAY
 
-
-
 </td>
 <td valign="top">
 
 The name of the day \(MONDAY - SUNDAY\).
-
-
 
 </td>
 </tr>
@@ -664,14 +582,10 @@ The name of the day \(MONDAY - SUNDAY\).
 
 DY
 
-
-
 </td>
 <td valign="top">
 
 The abbreviated name of the day \(MON - SUN\).
-
-
 
 </td>
 </tr>
@@ -680,14 +594,10 @@ The abbreviated name of the day \(MON - SUN\).
 
 MON
 
-
-
 </td>
 <td valign="top">
 
 The abbreviated month name \(JAN - DEC\).
-
-
 
 </td>
 </tr>
@@ -696,14 +606,10 @@ The abbreviated month name \(JAN - DEC\).
 
 MONTH
 
-
-
 </td>
 <td valign="top">
 
 The full month name \(JANUARY - DECEMBER\).
-
-
 
 </td>
 </tr>
@@ -712,14 +618,10 @@ The full month name \(JANUARY - DECEMBER\).
 
 RM
 
-
-
 </td>
 <td valign="top">
 
 The Roman numeral month \(I - XII; I is for January\).
-
-
 
 </td>
 </tr>
@@ -728,14 +630,10 @@ The Roman numeral month \(I - XII; I is for January\).
 
 Q
 
-
-
 </td>
 <td valign="top">
 
 The quarter of the year \(1, 2, 3, 4\).
-
-
 
 </td>
 </tr>
@@ -744,14 +642,10 @@ The quarter of the year \(1, 2, 3, 4\).
 
 W
 
-
-
 </td>
 <td valign="top">
 
 The week of the month \(1-6\).
-
-
 
 </td>
 </tr>
@@ -760,14 +654,10 @@ The week of the month \(1-6\).
 
 WW
 
-
-
 </td>
 <td valign="top">
 
 The week of the year \(1-54\).
-
-
 
 </td>
 </tr>

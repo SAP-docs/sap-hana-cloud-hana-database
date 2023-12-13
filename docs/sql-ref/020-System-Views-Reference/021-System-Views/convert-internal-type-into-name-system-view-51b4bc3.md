@@ -17,21 +17,15 @@ Converts an internal type into a name.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 INTERNAL\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal type.
-
-
 
 </td>
 </tr>
@@ -63,25 +51,27 @@ Displays the internal type.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the object type.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio51b4bc38b49b4de1a5a4808858f14e4f__section_oqw_21q_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

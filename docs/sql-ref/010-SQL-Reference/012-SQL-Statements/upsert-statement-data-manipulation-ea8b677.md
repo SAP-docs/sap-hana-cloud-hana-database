@@ -2,7 +2,7 @@
 
 # UPSERT Statement \(Data Manipulation\)
 
-Updates rows in a table or inserts new rows. This UPSERT and REPLACE statements are synonymous and have similar syntax and purpose.
+Updates rows in a table or inserts new rows. This UPSERT and REPLACE statements are synonymous and have identical syntax and purpose.
 
 
 
@@ -181,14 +181,10 @@ UPSERT T VALUES (1, 1);
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL
-
-
 
 </td>
 </tr>
@@ -197,14 +193,10 @@ VAL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -223,15 +215,11 @@ UPSERT T VALUES (2, 2) WHERE KEY = 2;
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL
 
-
-
 </td>
 </tr>
 <tr>
@@ -239,14 +227,10 @@ VAL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -255,14 +239,10 @@ VAL
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -281,14 +261,10 @@ UPSERT T VALUES (1, 9) WHERE KEY = 1;
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL
-
-
 
 </td>
 </tr>
@@ -297,14 +273,10 @@ VAL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 9
-
-
 
 </td>
 </tr>
@@ -313,14 +285,10 @@ VAL
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -339,14 +307,10 @@ UPSERT T VALUES (1, 8) WITH PRIMARY KEY;
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL
-
-
 
 </td>
 </tr>
@@ -355,14 +319,10 @@ VAL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 </tr>
@@ -371,14 +331,10 @@ VAL
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -397,14 +353,10 @@ UPSERT T SELECT KEY + 2, VAL FROM T;
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL
-
-
 
 </td>
 </tr>
@@ -413,14 +365,10 @@ VAL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 </tr>
@@ -429,14 +377,10 @@ VAL
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -445,14 +389,10 @@ VAL
 
 3
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 </tr>
@@ -461,14 +401,10 @@ VAL
 
 4
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -509,14 +445,10 @@ Select * from T2;
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 </tr>
@@ -525,14 +457,10 @@ B
 
 1
 
-
-
 </td>
 <td valign="top">
 
 20
-
-
 
 </td>
 </tr>

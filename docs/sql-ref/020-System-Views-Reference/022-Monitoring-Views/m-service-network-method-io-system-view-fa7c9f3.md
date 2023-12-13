@@ -15,21 +15,15 @@ Displays the number of calls and amount of data that is sent and received.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SENDER\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name of the sender.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name of the sender.
 
 SENDER\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the host port number of the sender.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the host port number of the sender.
 
 RECEIVER\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name of the receiver.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the host name of the receiver.
 
 RECEIVER\_PORT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host port number of the receiver.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the host port number of the receiver.
 
 THREAD\_METHOD
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the originating method name.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the originating method name.
 
 OPERATOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays additional details.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays additional details.
 
 REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of requests for the method.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the total number of requests for the method.
 
 SEND\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of bytes sent.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the total number of bytes sent.
 
 RECEIVE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of bytes received.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the total number of bytes received.
 
 LAST\_UPDATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last updated timestamp.
-
-
 
 </td>
 </tr>

@@ -20,14 +20,10 @@ The following mapping table lists how SAP HANA SQL types are mapped to OData EDM
 
 SAP HANA SQL Type
 
-
-
 </th>
 <th valign="top">
 
 OData EDM Type
-
-
 
 </th>
 </tr>
@@ -36,14 +32,10 @@ OData EDM Type
 
 Time
 
-
-
 </td>
 <td valign="top">
 
 Edm.Time
-
-
 
 </td>
 </tr>
@@ -52,14 +44,10 @@ Edm.Time
 
 Date
 
-
-
 </td>
 <td valign="top">
 
 Edm.DateTime
-
-
 
 </td>
 </tr>
@@ -68,14 +56,10 @@ Edm.DateTime
 
 SecondDate
 
-
-
 </td>
 <td valign="top">
 
 Edm.DateTime
-
-
 
 </td>
 </tr>
@@ -84,14 +68,10 @@ Edm.DateTime
 
 LongDate
 
-
-
 </td>
 <td valign="top">
 
 Edm.DateTime
-
-
 
 </td>
 </tr>
@@ -100,14 +80,10 @@ Edm.DateTime
 
 Timestamp
 
-
-
 </td>
 <td valign="top">
 
 Edm.DateTime
-
-
 
 </td>
 </tr>
@@ -116,14 +92,10 @@ Edm.DateTime
 
 TinyInt
 
-
-
 </td>
 <td valign="top">
 
 Edm.Byte
-
-
 
 </td>
 </tr>
@@ -132,14 +104,10 @@ Edm.Byte
 
 SmallInt
 
-
-
 </td>
 <td valign="top">
 
 Edm.Int16
-
-
 
 </td>
 </tr>
@@ -148,14 +116,10 @@ Edm.Int16
 
 Integer
 
-
-
 </td>
 <td valign="top">
 
 Edm.Int32
-
-
 
 </td>
 </tr>
@@ -164,14 +128,10 @@ Edm.Int32
 
 BigInt
 
-
-
 </td>
 <td valign="top">
 
 Edm.Int64
-
-
 
 </td>
 </tr>
@@ -180,14 +140,10 @@ Edm.Int64
 
 SmallDecimal
 
-
-
 </td>
 <td valign="top">
 
 Edm.Decimal
-
-
 
 </td>
 </tr>
@@ -196,14 +152,10 @@ Edm.Decimal
 
 Decimal
 
-
-
 </td>
 <td valign="top">
 
 Edm.Decimal
-
-
 
 </td>
 </tr>
@@ -212,14 +164,10 @@ Edm.Decimal
 
 Real
 
-
-
 </td>
 <td valign="top">
 
 Edm.Single
-
-
 
 </td>
 </tr>
@@ -228,14 +176,10 @@ Edm.Single
 
 Float
 
-
-
 </td>
 <td valign="top">
 
 Edm.Single
-
-
 
 </td>
 </tr>
@@ -244,14 +188,10 @@ Edm.Single
 
 Double
 
-
-
 </td>
 <td valign="top">
 
 Edm.Double
-
-
 
 </td>
 </tr>
@@ -260,14 +200,10 @@ Edm.Double
 
 Varchar
 
-
-
 </td>
 <td valign="top">
 
 Edm.String
-
-
 
 </td>
 </tr>
@@ -276,14 +212,10 @@ Edm.String
 
 NVarchar
 
-
-
 </td>
 <td valign="top">
 
 Edm.String
-
-
 
 </td>
 </tr>
@@ -292,14 +224,10 @@ Edm.String
 
 Char
 
-
-
 </td>
 <td valign="top">
 
 Edm.String
-
-
 
 </td>
 </tr>
@@ -308,14 +236,10 @@ Edm.String
 
 NChar
 
-
-
 </td>
 <td valign="top">
 
 Edm.String
-
-
 
 </td>
 </tr>
@@ -324,14 +248,10 @@ Edm.String
 
 Binary
 
-
-
 </td>
 <td valign="top">
 
 Edm.Binary
-
-
 
 </td>
 </tr>
@@ -340,14 +260,10 @@ Edm.Binary
 
 Varbinary
 
-
-
 </td>
 <td valign="top">
 
 Edm.Binary
-
-
 
 </td>
 </tr>

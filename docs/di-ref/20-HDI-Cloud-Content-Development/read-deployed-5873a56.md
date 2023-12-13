@@ -50,21 +50,15 @@ Specifies a list of **deployed** files or folders to read:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -73,21 +67,15 @@ Description
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(511\)
 
-
-
 </td>
 <td valign="top">
 
 A single path is either a fully qualified path to a **deployed** file \(for example, `/path/to/a/file.txt`'\), or a fully qualified path to a **deployed** folder \(for example, `/path/to/`\).
-
-
 
 </td>
 </tr>
@@ -108,21 +96,15 @@ Additional parameters can be used to control various aspects of the procedure ex
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -131,21 +113,15 @@ Description
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The key name of the parameter
-
-
 
 </td>
 </tr>
@@ -154,21 +130,15 @@ The key name of the parameter
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The value assigned to the parameter
-
-
 
 </td>
 </tr>
@@ -190,6 +160,9 @@ The following additional parameters are available:
 
 -   `message_severity`
 
+
+> ### Tip:  
+> For more information about all available SAP HANA HDI parameters, see *Available SAP HDI Parameters* in *Related Information* below.
 
 
 
@@ -224,21 +197,15 @@ Returns a list of files or folders including metadata:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -247,21 +214,15 @@ Description
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(511\)
 
-
-
 </td>
 <td valign="top">
 
 A single path is either a fully qualified path to the **deployed** file \(for example, `/path/to/a/file.txt`'\), or a fully qualified path to a **deployed** folder \(for example, `/path/to/`\).
-
-
 
 </td>
 </tr>
@@ -270,21 +231,15 @@ A single path is either a fully qualified path to the **deployed** file \(for ex
 
 CREATE\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 User associated with the creation of the **deployed** file or folder
-
-
 
 </td>
 </tr>
@@ -293,21 +248,15 @@ User associated with the creation of the **deployed** file or folder
 
 CREATE\_APPUSER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Application user associated with the creation of the **deployed** file or folder
-
-
 
 </td>
 </tr>
@@ -316,21 +265,15 @@ Application user associated with the creation of the **deployed** file or folder
 
 CREATE\_TIMESTAMP\_UTC
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Time stamp indicating when the **deployed** file or folder was created
-
-
 
 </td>
 </tr>
@@ -339,21 +282,15 @@ Time stamp indicating when the **deployed** file or folder was created
 
 MODIFICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 User associated with the last modification of the **deployed** file or folder
-
-
 
 </td>
 </tr>
@@ -362,21 +299,15 @@ User associated with the last modification of the **deployed** file or folder
 
 MODIFICATION\_APPUSER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Application user associated with the last modification of the **deployed** file or folder
-
-
 
 </td>
 </tr>
@@ -385,21 +316,15 @@ Application user associated with the last modification of the **deployed** file 
 
 MODIFICATION\_TIMESTAMP\_UTC
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Time stamp indicating when the **deployed** file or folder was last modified
-
-
 
 </td>
 </tr>
@@ -408,21 +333,15 @@ Time stamp indicating when the **deployed** file or folder was last modified
 
 SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Size of the listed **deployed** file in bytes
-
-
 
 </td>
 </tr>
@@ -431,21 +350,15 @@ Size of the listed **deployed** file in bytes
 
 SHA256
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 SHA256 hash of the file, if present in the **deployed** file system.
-
-
 
 </td>
 </tr>
@@ -454,21 +367,15 @@ SHA256 hash of the file, if present in the **deployed** file system.
 
 CONTENT
 
-
-
 </td>
 <td valign="top">
 
 BLOB
 
-
-
 </td>
 <td valign="top">
 
 Content of the **deployed** file
-
-
 
 </td>
 </tr>
@@ -611,4 +518,6 @@ Read specific files or folders in the deployed file system of container C:
 [The HDI Container API](the-hdi-container-api-40ba784.md "Maintain HDI containers and container content using the HDI container API.")
 
 [The SQL API for SAP HANA Deployment Infrastructure \(HDI\)](../the-sql-api-for-sap-hana-deployment-infrastructure-hdi-035dbbe.md "An SQL application programming interface (API) is available to help maintain the SAP HANA Deployment Infrastructure (HDI).")
+
+[Available SAP HDI Parameters](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/e2d3e543067e4f3282bf6dbf880c6b2d.html?version=2023_3_QRC#available-sap-hdi-parameters)
 

@@ -17,21 +17,15 @@ Contains the executed or to be executed table redistribution plan items.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 REORG\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the reorg ID.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the reorg ID.
 
 STEP\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the step ID.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the step ID.
 
 STEP\_GROUP
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the table redistribution group of steps that the item belongs to.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the ID of the table redistribution group of steps that the item belongs
 
 PRECONDITION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates the preconditions that have to be fulfilled before the table redistribution step can be executed.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Indicates the preconditions that have to be fulfilled before the table redistrib
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the table name.
 
 NEW\_PARTITION\_SPEC
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Returns the new partition specification.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Returns the new partition specification.
 
 OLD\_PARTITION\_SPEC
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Returns the old partition specification.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Returns the old partition specification.
 
 PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the partition ID.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the partition ID.
 
 NEW\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host where the table/partition is moved to.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the host where the table/partition is moved to.
 
 NEW\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port where the table/partition is moved to.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the port where the table/partition is moved to.
 
 OLD\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host where the table/partition was located.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the host where the table/partition was located.
 
 OLD\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port where the table/partition was located.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the port where the table/partition was located.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status message.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the status message.
 
 ERROR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error message.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the error message.
 
 START\_DATE
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Specifies the UTC timestamp when the plan execution started.
-
-
 
 </td>
 </tr>
@@ -408,25 +306,27 @@ Specifies the UTC timestamp when the plan execution started.
 
 END\_DATE
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
 
 Specifies the UTC timestamp when the plan execution stopped.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20cd6dd3751910149301cfd0bce9c079__section_kkf_31p_dzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

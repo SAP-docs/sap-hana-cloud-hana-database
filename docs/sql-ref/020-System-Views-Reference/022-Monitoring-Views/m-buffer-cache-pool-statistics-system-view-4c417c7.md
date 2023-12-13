@@ -15,21 +15,15 @@ Provides statistics for each buffer pool in a cache.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume identifier for the index server.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the volume identifier for the index server.
 
 CACHE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache name: C/S, R/S.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the cache name: C/S, R/S.
 
 BUFFER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the buffer in the pool in bytes.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the size of the buffer in the pool in bytes.
 
 REPLACEMENT\_POLICY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of replacement policy used by the cache.
-
-
 
 </td>
 </tr>
@@ -176,14 +134,10 @@ Displays the type of replacement policy used by the cache.
 
 GROWTH\_PERCENT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -203,21 +157,15 @@ TOTAL_BUFFER_COUNT = TOTAL_BUFFER_COUNT + GROWTH PERCENT / 100 * MAX_SIZE
 
 TOTAL\_BUFFER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of buffers allocated to the pool.
-
-
 
 </td>
 </tr>
@@ -226,21 +174,15 @@ Displays the number of buffers allocated to the pool.
 
 FREE\_BUFFER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of free buffers for the pool.
-
-
 
 </td>
 </tr>
@@ -249,21 +191,15 @@ Displays the number of free buffers for the pool.
 
 LRU\_LIST\_BUFFER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of buffers in the LRU chain for the pool.
-
-
 
 </td>
 </tr>
@@ -272,21 +208,15 @@ Displays the number of buffers in the LRU chain for the pool.
 
 MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache miss count of the cache group.
-
-
 
 </td>
 </tr>
@@ -295,21 +225,15 @@ Displays the cache miss count of the cache group.
 
 HOT\_BUFFER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of buffers in the hot buffer list for the pool.
-
-
 
 </td>
 </tr>
@@ -318,21 +242,15 @@ Displays the number of buffers in the hot buffer list for the pool.
 
 IO\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the disk I/O reads size for the pool.
-
-
 
 </td>
 </tr>
@@ -341,21 +259,15 @@ Displays the disk I/O reads size for the pool.
 
 BUFFER\_REUSE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of buffers released from the LRU list for the pool so that a requested page can be cached.
-
-
 
 </td>
 </tr>
@@ -364,21 +276,15 @@ Displays the number of buffers released from the LRU list for the pool so that a
 
 OUT\_OF\_BUFFER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times that an out-of-buffer situation occurred while requesting buffers from the pool.
-
-
 
 </td>
 </tr>
@@ -387,21 +293,15 @@ Displays the number of times that an out-of-buffer situation occurred while requ
 
 PINNED\_BUFFER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of pinned memory in the pool in bytes.
-
-
 
 </td>
 </tr>
@@ -418,5 +318,5 @@ Displays the size of pinned memory in the pool in bytes.
 
 [M\_LOG\_BUFFERS System View](m-log-buffers-system-view-20b3e49.md "Provides information about log buffer statistics.")
 
-[SAP HANA NSE Buffer Cache](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/8a35ce565c594c11bb785bea607213d8.html "The SAP HANA Native Storage Extension (NSE) buffer cache replaces the SAP HANA default page replacement and memory limit mechanism for the memory pages.") :arrow_upper_right:
+[SAP HANA NSE Buffer Cache](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/8a35ce565c594c11bb785bea607213d8.html "The SAP HANA Native Storage Extension (NSE) buffer cache replaces the SAP HANA default page replacement and memory limit mechanism for the memory pages.") :arrow_upper_right:
 

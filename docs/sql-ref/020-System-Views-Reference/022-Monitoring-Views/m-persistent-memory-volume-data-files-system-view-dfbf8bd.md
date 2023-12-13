@@ -17,21 +17,15 @@ Reports metadata statistics about files created by SAP HANA services for data st
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays an ID for the persistence volume.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays an ID for the persistence volume.
 
 NUMA\_NODE\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical NUMA node index as in the M\_NUMA\_NODES view.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,32 @@ Displays the logical NUMA node index as in the M\_NUMA\_NODES view.
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the file name of data block file located on persistent memory volume on Numa node of host \(for example, `000000fe0000018a-00000051-000001c2-00000001_159.fileblock`\).
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+STORAGE\_MODE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+For internal use only.
 
 </td>
 </tr>
@@ -155,21 +136,15 @@ Displays the file name of data block file located on persistent memory volume on
 
 IS\_MAPPED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the data block file is memory mapped into virtual address space: TRUE or FALSE.
-
-
 
 </td>
 </tr>
@@ -178,21 +153,15 @@ Indicates whether the data block file is memory mapped into virtual address spac
 
 SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the data block file in bytes.
-
-
 
 </td>
 </tr>

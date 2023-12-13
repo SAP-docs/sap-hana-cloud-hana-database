@@ -19,21 +19,15 @@ The SAP HDI Container API includes the `M_OBJECTS` view, which shows the databas
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Description
 
 CONTAINER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the HDI container hosting the objects
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ The name of the HDI container hosting the objects
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The object’s remote source name, if applicable
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ The object’s remote source name, if applicable
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The object’s database name
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ The object’s database name
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The object’s database schema name
-
-
 
 </td>
 </tr>
@@ -134,21 +104,15 @@ The object’s database schema name
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the container object
-
-
 
 </td>
 </tr>
@@ -157,21 +121,15 @@ The name of the container object
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 The type of the container object
-
-
 
 </td>
 </tr>
@@ -180,21 +138,15 @@ The type of the container object
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(511\)
 
-
-
 </td>
 <td valign="top">
 
 The object’s file path, if it is an object deployed by the container
-
-
 
 </td>
 </tr>
@@ -203,21 +155,15 @@ The object’s file path, if it is an object deployed by the container
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 The object's validity \(“TRUE” or “FALSE”\)
-
-
 
 </td>
 </tr>
@@ -226,21 +172,15 @@ The object's validity \(“TRUE” or “FALSE”\)
 
 OBJECT\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The metadata version of the container object
-
-
 
 </td>
 </tr>
@@ -249,21 +189,15 @@ The metadata version of the container object
 
 OBJECT\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 The object’s ID
-
-
 
 </td>
 </tr>
@@ -272,21 +206,15 @@ The object’s ID
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the owner of the container object
-
-
 
 </td>
 </tr>
@@ -295,21 +223,15 @@ The name of the owner of the container object
 
 DEPENDENT\_OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the object that the current object depends on, for example, a synonym if the current object is the synonym’s target object
-
-
 
 </td>
 </tr>

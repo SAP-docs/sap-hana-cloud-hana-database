@@ -46,7 +46,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 
 1.  Start SAP Web IDE Full-Stack.
 
-2.  3.  Create the structured-privilege definition file.
+2.  Create the structured-privilege definition file.
 
     Browse to the folder in the database module in your application's project workspace, for example, Open the application project to which you want to add your SQL DDL structured privilege.<code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/</code> where you want to create the new SQL DDL structured-privilege definition file and perform the following steps:
 
@@ -64,7 +64,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
     4.  Choose *Finish* to save the new SQL DDL structured-privilege definition file in the `roles` folder of the database module of your local project workspace.
 
 
-4.  Define the structure of the SQL DDL structured privilege.
+3.  Define the structure of the SQL DDL structured privilege.
 
     Locate and double-click the structured-privilege definition file that you created in the previous step, for example, `PurchaseOrder.hdbstructuredprivilege`, and add the following SQL DDL code that defines the structured-privilege:
 
@@ -86,7 +86,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
     > ### Note:  
     > This example of a structured privilege is used in the SQL view `"PurchaseOrder.ItemView"`, which is created and defined in another task. For more information, see *Create a Database View with SQL Data Definition Language* in *Related Information* below.
 
-5.  Save all changes and rebuild \(or redeploy\) the database module.
+4.  Save all changes and rebuild \(or redeploy\) the database module.
 
     1.  Right-click the new database module in your application project.
 
@@ -96,7 +96,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
         > You can follow progress of the build in the console at the bottom of the code editor.
 
 
-6.  Verify that the structured privilege is working and filtering access to the view data.
+5.  Verify that the structured privilege is working and filtering access to the view data.
 
     You can use the *Database Explorer* to display activated views in the run-time catalog and verify that the view contains the selected data.
 
@@ -116,7 +116,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 **Related Information**  
 
 
-[Structured Privilege Syntax (.hdbstructuredprivilege in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/c3827df3a9dc4c45b5b4e2f7b1070b08.html "Transforms a design-time DDL-based structured privilege resource into a structured privilege object.") :arrow_upper_right:
+[Structured Privilege Syntax (.hdbstructuredprivilege in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/c3827df3a9dc4c45b5b4e2f7b1070b08.html "Transforms a design-time DDL-based structured privilege resource into a structured privilege object.") :arrow_upper_right:
 
 [Create a Database View with SQL Data Definition Language](create-a-database-view-with-sql-data-definition-language-4920a3a.md "Define a design-time database view using the SQL Data Definition Language (DDL) syntax.")
 

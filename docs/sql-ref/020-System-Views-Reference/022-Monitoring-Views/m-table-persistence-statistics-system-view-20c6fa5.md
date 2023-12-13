@@ -17,21 +17,15 @@ Provides persistence summary statistics for tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the table name.
 
 DISK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total disk size, in bytes, of all of the table parts.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the total disk size, in bytes, of all of the table parts.
 
 PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of pages of all of the table parts.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the total number of pages of all of the table parts.
 
 BYTES\_WRITTEN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of bytes that are written to the table.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of bytes that are written to the table.
 
 BYTES\_APPENDED
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of bytes that are appended to the table.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the number of bytes that are appended to the table.
 
 BYTES\_READ
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of bytes that are read from the table.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the number of bytes that are read from the table.
 
 BYTESTREAM\_WRITTEN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of bytes that are written to the table via a streaming interface.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the number of bytes that are written to the table via a streaming inter
 
 APPEND\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times that the table was appended to.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the number of times that the table was appended to.
 
 WRITE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times that the table was written to.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the number of times that the table was written to.
 
 OPTIMIZE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times that the table was optimized.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the number of times that the table was optimized.
 
 READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times that the table was read from.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the number of times that the table was read from.
 
 TRUNCATE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times that the table was truncated.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the number of times that the table was truncated.
 
 COPY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of times that the table was copied.
-
-
 
 </td>
 </tr>

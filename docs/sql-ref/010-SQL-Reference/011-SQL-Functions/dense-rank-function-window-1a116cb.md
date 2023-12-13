@@ -78,36 +78,26 @@ SELECT class,
 
 CLASS
 
-
-
 </th>
 <th valign="top">
 
 VAL
-
-
 
 </th>
 <th valign="top">
 
 ROW\_NUM
 
-
-
 </th>
 <th valign="top">
 
 RANK
-
-
 
 </th>
 <th valign="top">
 
 DENSE\_RANK
 
-
-
 </th>
 </tr>
 <tr>
@@ -115,35 +105,25 @@ DENSE\_RANK
 
 A
 
+</td>
+<td valign="top">
 
+1
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
 
 </td>
 </tr>
@@ -151,36 +131,26 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 3
 
+</td>
+<td valign="top">
 
+2
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
-
-</td>
-<td valign="top">
-
-2
-
-
 
 </td>
 </tr>
@@ -188,36 +158,26 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 5
 
+</td>
+<td valign="top">
 
+3
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
-
-</td>
-<td valign="top">
-
-3
-
-
 
 </td>
 </tr>
@@ -226,35 +186,25 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 4
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -262,36 +212,53 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 4
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+B
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1
+
+</td>
+<td valign="top">
+
+1
 
 </td>
 </tr>
@@ -300,72 +267,25 @@ A
 
 B
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-B
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -373,36 +293,26 @@ B
 <td valign="top">
 
 B
-
-
 
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>

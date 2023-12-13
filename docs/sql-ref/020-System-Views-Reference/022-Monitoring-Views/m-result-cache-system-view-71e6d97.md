@@ -15,21 +15,15 @@ Provides result cache information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 CACHE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID for each result cache entry.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the unique ID for each result cache entry.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the schema name.
 
 CACHE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the results cache.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the name of the results cache.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the object name.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the object type.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the user name.
 
 DETAILS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the details.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the details.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of memory occupied by the result cache entry in bytes.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the size of memory occupied by the result cache entry in bytes.
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of records in the cache entry.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the number of records in the cache entry.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp the result cache entry is generated and stored.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the timestamp the result cache entry is generated and stored.
 
 LAST\_REFRESH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last refresh time of the result cache entry.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the last refresh time of the result cache entry.
 
 LAST\_REFRESH\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time duration of the cache entry preparation in milliseconds.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the time duration of the cache entry preparation in milliseconds.
 
 REFRESH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of refreshments on the cache entry.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the number of refreshments on the cache entry.
 
 LAST\_ACCESS\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time the result cache entry was accessed by a user.
-
-
 
 </td>
 </tr>
@@ -406,21 +304,15 @@ Displays the last time the result cache entry was accessed by a user.
 
 ACCESS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of accesses on the cache entry.
-
-
 
 </td>
 </tr>
@@ -429,21 +321,15 @@ Displays the number of accesses on the cache entry.
 
 RUNTIME\_MISS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of cache miss counts. This value is decided at runtime with parameter values.
-
-
 
 </td>
 </tr>
@@ -452,21 +338,15 @@ Displays the number of cache miss counts. This value is decided at runtime with 
 
 EVICT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of eviction counts due to budget limitations.
-
-
 
 </td>
 </tr>
@@ -475,21 +355,15 @@ Displays the total number of eviction counts due to budget limitations.
 
 IS\_EVICTED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the cache entry is evicted: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -514,7 +388,7 @@ Displays whether or not the cache entry is evicted: TRUE/FALSE.
 
 [ALTER SYSTEM CLEAR RESULT CACHE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-result-cache-statement-system-management-97dca93.md "Removes all result cache entries from the system.")
 
-[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
+[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
 
-[Deterministic Procedure Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/8809a2a02e1b49d9a3fc68bb135f430d.html "") :arrow_upper_right:
+[Deterministic Procedure Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8809a2a02e1b49d9a3fc68bb135f430d.html "") :arrow_upper_right:
 

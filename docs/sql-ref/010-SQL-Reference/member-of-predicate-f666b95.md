@@ -45,8 +45,6 @@ SELECT IDX FROM ARRAY_TEST WHERE 10 MEMBER OF VAL;
 
 IDX
 
-
-
 </th>
 </tr>
 <tr>
@@ -54,16 +52,12 @@ IDX
 
 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -82,8 +76,6 @@ SELECT IDX FROM ARRAY_TEST WHERE 10 NOT MEMBER OF VAL;
 
 IDX
 
-
-
 </th>
 </tr>
 <tr>
@@ -91,16 +83,12 @@ IDX
 
 1
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>

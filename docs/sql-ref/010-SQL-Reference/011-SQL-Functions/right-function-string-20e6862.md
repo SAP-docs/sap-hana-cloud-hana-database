@@ -63,13 +63,13 @@ Returns string specified by *<string\>* \(without blank padding\) if the value o
 
 ## Example
 
-The following example returns the rightmost ***3*** characters of the given string \(***789***\):
+The following example returns the rightmost `3` characters of the given string \(`789`\):
 
 ```
 SELECT RIGHT('HI0123456789', 3) "right" FROM DUMMY;
 ```
 
-The following example returns the entire input string because the value ***20*** exceeds the length of the input string:
+The following example returns the entire input string because the value `20` exceeds the length of the input string:
 
 ```
 SELECT RIGHT('HI0123456789', 20) "right" FROM DUMMY;

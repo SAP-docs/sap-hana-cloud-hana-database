@@ -49,13 +49,13 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
     2.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     3.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -65,11 +65,11 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
     5.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
     6.  Select the database artifact type, for example, table data.
 
-        In the *Artifact Type* box, type ***hdbt***, and choose *Table Data \(hdbtabledata\)* from the list that appears.
+        In the *Artifact Type* box, type `hdbt`, and choose *Table Data \(hdbtabledata\)* from the list that appears.
 
     7.  Name the file *PurchaseDemo*.
 
@@ -185,7 +185,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
     2.  Add a CSV file named `header.csv` to the `/src/data/loads` folder.
 
-        In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *db/src/data/loads* folder in the database module, choose the database version *HANA Cloud* and the artifact type *csv*, and name the new file "***header***".
+        In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *db/src/data/loads* folder in the database module, choose the database version *SAP HANA Cloud* and the artifact type *csv*, and name the new file "`header`".
 
     3.  Add data to the new CSV file `header.csv`.
 
@@ -201,7 +201,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
     4.  Add another CSV file named `item.csv` to the <code><i class="varname">&lt;MyApp1&gt;</i>/HDB/src/data/loads</code> folder.
 
-        In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *db/src/data/loads* folder in the database module, choose the database version *HANA Cloud* and the artifact type *csv*, and name the new file ***item***.
+        In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *db/src/data/loads* folder in the database module, choose the database version *SAP HANA Cloud* and the artifact type *csv*, and name the new file `item`.
 
     5.  Add data to the new CSV file `item.csv`.
 
@@ -240,7 +240,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
     1.  In the *SAP HANA PROJECTS* explorer, locate the application project you want to deploy.
 
-    2.  Choose <span class="FPA-icons"></span> \(Deploy\).
+    2.  Choose ![](../020-HANA-Cloud-DB-Dev-Get-Started/images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
         > ### Note:  
         > A mismatch between the installed SAP HANA version and the version specified in the `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
@@ -254,7 +254,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
@@ -275,7 +275,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 **Related Information**  
 
 
-[Table Data Syntax (.hdbtabledata in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
+[Table Data Syntax (.hdbtabledata in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
 
 [Create a Database Table with SQL Data Definition Language](create-a-database-table-with-sql-data-definition-language-879ce23.md "Define a design-time database table using the SQL Data Definition Language (DDL) syntax.")
 

@@ -15,21 +15,15 @@ Lists all the internal cache objects created to support the planning sessions, w
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,14 +32,10 @@ Description
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -67,21 +57,15 @@ Displays the object type:
 
 OBJECT\_SCOPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(45\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object scope: SESSION/GLOBAL.
-
-
 
 </td>
 </tr>
@@ -90,21 +74,15 @@ Displays the object scope: SESSION/GLOBAL.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name. This name is a generated, unique name for the runtime object, derived from the corresponding session name, planning command name, and source columns.
-
-
 
 </td>
 </tr>
@@ -113,21 +91,15 @@ Displays the object name. This name is a generated, unique name for the runtime 
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the creation time.
-
-
 
 </td>
 </tr>
@@ -136,21 +108,15 @@ Displays the creation time.
 
 SOURCE\_COLUMNS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the source columns.
-
-
 
 </td>
 </tr>
@@ -159,21 +125,15 @@ Displays the source columns.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory size, in bytes.
-
-
 
 </td>
 </tr>
@@ -182,21 +142,15 @@ Displays the memory size, in bytes.
 
 ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of entries in the runtime object.
-
-
 
 </td>
 </tr>
@@ -205,21 +159,15 @@ Displays the number of entries in the runtime object.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -228,21 +176,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -251,21 +193,15 @@ Displays the internal port.
 
 SITE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the site ID of the secondary site. This value is -1 on a single instance.
-
-
 
 </td>
 </tr>

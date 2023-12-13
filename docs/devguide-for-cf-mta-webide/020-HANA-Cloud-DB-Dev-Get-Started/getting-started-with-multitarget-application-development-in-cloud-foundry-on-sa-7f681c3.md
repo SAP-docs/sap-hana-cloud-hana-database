@@ -16,7 +16,7 @@ The following high-level rules need to be followed when setting up your SAP HANA
 
 
 > ### Note:  
-> The `XSODATA` infrastructure for OData services based on OData version 2 will no longer be extended or improved. In addition, `XSODATA` does not support SAP HANA Cloud services, as described in SAP note: [3013788](https://launchpad.support.sap.com/#/notes/3013788). For new OData services, it is recommended to move to OData version 4 or, alternatively, switch to the new SAP Cloud Application Programming \(CAP\) model. For more information, see *Related Information* below.
+> The `XSODATA` infrastructure for OData services based on OData version 2 will no longer be extended or improved. In addition, `XSODATA` does not support SAP HANA Cloud services, as described in SAP note: [3013788](https://me.sap.com/notes/3013788). For new OData services, it is recommended to move to OData version 4 or, alternatively, switch to the new SAP Cloud Application Programming \(CAP\) model. For more information, see *Related Information* below.
 
 -   `db/`
 
@@ -38,6 +38,8 @@ The following high-level rules need to be followed when setting up your SAP HANA
 The following example include modules for the following areas: database, Web, JavaScript application code, Odata \(optional\) services, and security \(OAuth2 client configuration\).
 
 
+
+## Example
 
 > ### Sample Code:  
 > ```

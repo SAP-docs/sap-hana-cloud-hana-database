@@ -17,21 +17,15 @@ Describes the expression macros defined for views.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name for the view.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name for the view.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the view.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the view.
 
 EXPRESSION\_MACRO\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the macro.
-
-
 
 </td>
 </tr>
@@ -109,25 +85,27 @@ Displays the name of the macro.
 
 DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the definition \(formula\) for the macro.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod163421608b04276bd64d152905de2e4__section_s2k_r11_fzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

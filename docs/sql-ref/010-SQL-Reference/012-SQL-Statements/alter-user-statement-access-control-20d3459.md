@@ -280,14 +280,10 @@ Specifies a list of user parameters.
 
 User Parameter
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -296,16 +292,12 @@ Purpose
 
 CLIENT
 
-
-
 </td>
 <td valign="top">
 
 When you define column store views, this parameter restricts the user's access to the specified client.
 
 This parameter cannot be specified by users themselves.
-
-
 
 </td>
 </tr>
@@ -314,14 +306,10 @@ This parameter cannot be specified by users themselves.
 
 LOCALE
 
-
-
 </td>
 <td valign="top">
 
 When you define column store views, the user parameter LOCALE translates information according to the user's locale.
-
-
 
 </td>
 </tr>
@@ -330,14 +318,10 @@ When you define column store views, the user parameter LOCALE translates informa
 
 TIME ZONE
 
-
-
 </td>
 <td valign="top">
 
 This parameter is not used by the SAP HANA database, but it can be read by external applications.
-
-
 
 </td>
 </tr>
@@ -346,14 +330,10 @@ This parameter is not used by the SAP HANA database, but it can be read by exter
 
 EMAIL ADDRESS
 
-
-
 </td>
 <td valign="top">
 
 This parameter is not used by the SAP HANA database, but can be read by external applications. This value must be unique.
-
-
 
 </td>
 </tr>
@@ -361,8 +341,6 @@ This parameter is not used by the SAP HANA database, but can be read by external
 <td valign="top">
 
 STATEMENT MEMORY LIMIT
-
-
 
 </td>
 <td valign="top">
@@ -387,14 +365,10 @@ Sets a user-specific statement memory limit in gigabytes.
 
 STATEMENT THREAD LIMIT
 
-
-
 </td>
 <td valign="top">
 
 Sets a user specific concurrency limit on statements \(despite the name, STATEMENT THREAD LIMIT is not an actual thread limit\). Similar behaviors to STATEMENT MEMORY LIMIT apply for STATEMENT THREAD LIMIT.
-
-
 
 </td>
 </tr>
@@ -403,14 +377,10 @@ Sets a user specific concurrency limit on statements \(despite the name, STATEME
 
 PARAMETER PRIORITY
 
-
-
 </td>
 <td valign="top">
 
 Sets a user-level priority value for all statements in the current connection; the range of possible values is from 0 to 9 \(the default is 5\).
-
-
 
 </td>
 </tr>

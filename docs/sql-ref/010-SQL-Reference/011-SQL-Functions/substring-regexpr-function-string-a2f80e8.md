@@ -54,14 +54,10 @@ Specifies that the matching behavior of the function can be defined by the flag 
 
 Flag option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -70,14 +66,10 @@ Description
 
 i
 
-
-
 </td>
 <td valign="top">
 
 Enables case-insensitive matching
-
-
 
 </td>
 </tr>
@@ -86,14 +78,10 @@ Enables case-insensitive matching
 
 m
 
-
-
 </td>
 <td valign="top">
 
 Enables multiline mode, where the *<subject\_string\>* will be treated as multiple lines and the expression ^ and $ match just after or just before, respectively, a line terminator or the end of the input sequence
-
-
 
 </td>
 </tr>
@@ -102,14 +90,10 @@ Enables multiline mode, where the *<subject\_string\>* will be treated as multip
 
 s
 
-
-
 </td>
 <td valign="top">
 
 Enables the expression *<.\>* as a wildcard to match any character, including a line terminator
-
-
 
 </td>
 </tr>
@@ -118,14 +102,10 @@ Enables the expression *<.\>* as a wildcard to match any character, including a 
 
 x
 
-
-
 </td>
 <td valign="top">
 
 Permits whitespace and comments in the pattern
-
-
 
 </td>
 </tr>
@@ -134,16 +114,12 @@ Permits whitespace and comments in the pattern
 
 U
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA uses the Perl-compatible Regular Expressions \(PCRE\) library to process regular expressions. Specifying 'U' \(short for "ungreedy"\) inverts the "greediness" of quantifiers so that they are not greedy by default but become greedy only when followed by "?". Ungreedy matching can often perform faster because it finds the shorter match at times when it is only interesting to know whether there is any match.
 
 For a full understanding of the "greedy" versus "ungreedy" matching behavior of the Perl-compatible Regular Expressions \(PCRE\) library, visit:[https://www.pcre.org/original/doc/html/pcrematching.html](https://www.pcre.org/original/doc/html/pcrematching.html) .
-
-
 
 </td>
 </tr>
@@ -230,7 +206,7 @@ If any of the following parameters is NULL, then the function returns NULL: *<pa
 
 ## Example
 
-The following example returns the day ***01*** from the date value ***20140401***:
+The following example returns the day ***01*** from the date value `20140401`:
 
 ```
 SELECT SUBSTR_REGEXPR('([[:digit:]]{4})([[:digit:]]{2})([[:digit:]]{2})' IN '20140401' GROUP 3) "substring_regexpr" FROM DUMMY;

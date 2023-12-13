@@ -15,21 +15,15 @@ Provides information about trigger order for triggers in the database.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the trigger.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name of the trigger.
 
 TRIGGER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the trigger name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the trigger name.
 
 TRIGGER\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the trigger.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the object ID of the trigger.
 
 REFERENCED\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the referenced trigger.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the schema name of the referenced trigger.
 
 REFERENCED\_TRIGGER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the referenced trigger.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the name of the referenced trigger.
 
 REFERENCED\_TRIGGER\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the referenced trigger.
-
-
 
 </td>
 </tr>
@@ -176,25 +134,27 @@ Displays the object ID of the referenced trigger.
 
 ORDER\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the type of ordering: FOLLOWS/PRECEDES.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio6ad29fd74b424d97b4476f648e3385e7__section_sjs_2zz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

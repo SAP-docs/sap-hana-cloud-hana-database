@@ -17,21 +17,15 @@ Provides information about available AFL texts.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the AFL text.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the AFL text.
 
 AREA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the area name of the AFL text.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the area name of the AFL text.
 
 TEXT\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the text ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the text ID.
 
 LANGUAGE\_CODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the language code of the AFL text.
-
-
 
 </td>
 </tr>
@@ -132,25 +102,27 @@ Displays the language code of the AFL text.
 
 TEXT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the text.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod1fd8aa7d2951014adaae34b0907a59b__section_nn1_fhc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are accessible to all PUBLIC users, with data filtered according to the privileges of the user accessing a view. One exception to this is the CATALOG READ system privilege, which allows unfiltered access to all system views and their data.
 
 **Related Information**  
 

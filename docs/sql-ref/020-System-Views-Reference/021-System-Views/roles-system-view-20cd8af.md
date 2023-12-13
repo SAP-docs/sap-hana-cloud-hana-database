@@ -17,21 +17,15 @@ Shows available roles.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 ROLE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema of the role granted.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the schema of the role granted.
 
 ROLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the role name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the role name.
 
 ROLE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the role ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the role ID.
 
 ROLE\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the local mode of the role.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the local mode of the role.
 
 GLOBAL\_IDENTITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the identity specified for the role with ROLE\_MODE GLOBAL.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the identity specified for the role with ROLE\_MODE GLOBAL.
 
 CREATOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user who created the role.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the name of the user who created the role.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that the role was created.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the time that the role was created.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description for the specified role.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the description for the specified role.
 
 CONTEXT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2048\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the context that the role is valid for.
-
-
 
 </td>
 </tr>
@@ -247,25 +187,27 @@ Displays the context that the role is valid for.
 
 ROLEGROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the name of the role role group the role the role belongs to. The value is NULL if no assignment exists.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20cd8af175191014a538d0938ced7f6a__section_b1v_g1p_dzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -284,7 +226,7 @@ Displays the name of the role role group the role the role belongs to. The value
 
 [EFFECTIVE\_ROLE\_GRANTEES System View](effective-role-grantees-system-view-d2beddd.md "Provides information regarding the users and roles that the role is granted to.")
 
-[Database Roles](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
+[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
 
-[Granting and Revoking Privileges and Roles](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/c719b2e7d9761014b9d798770c3d0958.html "To be able to grant and revoke privileges and roles to and from users and roles, the granting or revoking user must meet a number of prerequisites.") :arrow_upper_right:
+[Granting and Revoking Privileges and Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c719b2e7d9761014b9d798770c3d0958.html "To be able to grant and revoke privileges and roles to and from users and roles, the granting or revoking user must meet a number of prerequisites.") :arrow_upper_right:
 

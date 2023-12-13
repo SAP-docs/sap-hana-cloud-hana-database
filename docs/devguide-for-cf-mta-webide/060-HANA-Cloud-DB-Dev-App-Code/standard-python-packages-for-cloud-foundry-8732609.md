@@ -17,55 +17,41 @@ SAP provides a selection of Python packages for use by customers and partners. T
 
 Package
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- [`sap_instance_manager`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_vpc_qrj_ycb) 
-
-
+[`sap_instance_manager`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_vpc_qrj_ycb) 
 
 </td>
 <td valign="top">
 
 Python package for creating and deleting service instances per tenant within an application at run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`sap_xssec`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_atx_2vt_vt) 
-
-
+[`sap_xssec`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_atx_2vt_vt) 
 
 </td>
 <td valign="top">
 
 Container Security API for Python
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`sap_cf_logging`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_dhv_x21_cdb) 
-
-
+[`sap_cf_logging`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_dhv_x21_cdb) 
 
 </td>
 <td valign="top">
@@ -85,16 +71,12 @@ This is a collection of support libraries for Python applications running on Clo
 <tr>
 <td valign="top">
 
- [`hdbcli`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_jcs_5rf_2db) 
-
-
+[`hdbcli`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_jcs_5rf_2db) 
 
 </td>
 <td valign="top">
 
 The SAP HANA Cloud database client provides tools that enable connections to the SAP HANA Cloud database. archive; it is an open-source library that is developed by SAP and published on the Python Package Index \(Pypi\).
-
-
 
 </td>
 </tr>
@@ -156,28 +138,20 @@ Since operations involve network activity \(thus, can be considered relatively s
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -186,28 +160,20 @@ Details
 
 user
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 User for authentication.
-
-
 
 </td>
 </tr>
@@ -216,28 +182,20 @@ User for authentication.
 
 password
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Password for the user.
-
-
 
 </td>
 </tr>
@@ -246,28 +204,20 @@ Password for the user.
 
 post\_managed\_instance\_url
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 REST endpoint used for creating a new service instance for a tenant.
-
-
 
 </td>
 </tr>
@@ -276,28 +226,20 @@ REST endpoint used for creating a new service instance for a tenant.
 
 get\_managed\_instance\_url
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 REST endpoint.
-
-
 
 </td>
 </tr>
@@ -306,28 +248,20 @@ REST endpoint.
 
 get\_all\_managed\_instances\_url
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 REST endpoint used for getting details about all instances \(for all tenants\).
-
-
 
 </td>
 </tr>
@@ -336,28 +270,20 @@ REST endpoint used for getting details about all instances \(for all tenants\).
 
 delete\_managed\_instance\_url
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 REST endpoint used for deletion of a service instance.
-
-
 
 </td>
 </tr>
@@ -366,28 +292,20 @@ REST endpoint used for deletion of a service instance.
 
 polling\_interval\_millis
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 integer
 
-
-
 </td>
 <td valign="top">
 
 States how many milliseconds to wait between requests in the polling phase. Defaults to 300 milliseconds. Minimum value is 0.
-
-
 
 </td>
 </tr>
@@ -396,28 +314,20 @@ States how many milliseconds to wait between requests in the polling phase. Defa
 
 polling\_timeout\_seconds
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 integer
 
-
-
 </td>
 <td valign="top">
 
 Sets a limit for the amount of time \(in seconds\) that can be spent in polling. Defaults to 120 seconds. Minimum value is 1.
-
-
 
 </td>
 </tr>
@@ -426,28 +336,20 @@ Sets a limit for the amount of time \(in seconds\) that can be spent in polling.
 
 cache\_max\_items
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 integer
 
-
-
 </td>
 <td valign="top">
 
 States the capacity of the cache. Default value is 500. Minimum value is 1.
-
-
 
 </td>
 </tr>
@@ -456,28 +358,20 @@ States the capacity of the cache. Default value is 500. Minimum value is 1.
 
 cache\_item\_expire\_seconds
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 integer
 
-
-
 </td>
 <td valign="top">
 
 Number of seconds after which a cache entry expires. Defaults to 600 seconds. Minimum value is 1.
-
-
 
 </td>
 </tr>
@@ -504,39 +398,29 @@ The following table lists the methods available with the instance-manager API:
 
 Method
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `create(tenant, optional_parameters)` 
-
-
+`create(tenant, optional_parameters)` 
 
 </td>
 <td valign="top">
 
 Creates a service instance for the provided tenant. The method polls until the instance is successfully createdk. Reports error if an instance for this tenant already exists. The second argument is optional.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get(tenant)` 
-
-
+`get(tenant)` 
 
 </td>
 <td valign="top">
@@ -555,30 +439,22 @@ Retrieves the corresponding service instance for the specified tenant either fro
 
 get\_all\(\)
 
-
-
 </td>
 <td valign="top">
 
 Retrieves the service instances for all tenants as an array of objects. Filtering of the instances according to their status \(e.g. `CREATION_SUCCEEDED`, `CREATION_IN_PROGRESS`\) does not take place. Thus, having the credentials property on each of the instances provided is not guaranteed. This method updates the cache.
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `delete` 
-
-
+`delete` 
 
 </td>
 <td valign="top">
 
 Removes the service instance for the provided tenant. The method polls until the instance is successfully deleted and then invokes the callback. An error is reported if no instance exists for the specified tenant.
-
-
 
 </td>
 </tr>
@@ -653,334 +529,250 @@ The complete details of the application-container security API including all par
 
 API
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `create_security_context` 
-
-
+`create_security_context` 
 
 </td>
 <td valign="top">
 
 Creates the “security context” by validating the received access token against credentials put into the application's environment via the UAA service binding
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_logon_name` 
-
-
+`get_logon_name` 
 
 </td>
 <td valign="top">
 
 Returns the user's logon name \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_given_name` 
-
-
+`get_given_name` 
 
 </td>
 <td valign="top">
 
 Returns the user's given \(first\) name \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_family_name` 
-
-
+`get_family_name` 
 
 </td>
 <td valign="top">
 
 Returns the user's family name \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_email` 
-
-
+`get_email` 
 
 </td>
 <td valign="top">
 
 Returns the user's email address \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `check_local_scope` 
-
-
+`check_local_scope` 
 
 </td>
 <td valign="top">
 
 Checks a scope that is published by the current application in the `xs-security.json` file. Returns “True” if the checked scope is included in the user's authorization scopes \(otherwise “False”\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `check_scope` 
-
-
+`check_scope` 
 
 </td>
 <td valign="top">
 
 Checks a scope that is published by an application. Returns “True” if the checked scope is included in the user's authorization scopes \(otherwise “False”\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_token` 
-
-
+`get_token` 
 
 </td>
 <td valign="top">
 
 Returns a token that can be used to connect to the SAP HANA database. If the token that the security context has been instantiated with is a foreign token \(meaning that the OAuth client contained in the token and the OAuth client of the current application do not match\), “`None`” is returned instead of a token.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_hdb_token` 
-
-
+`get_hdb_token` 
 
 </td>
 <td valign="top">
 
 Returns a token that can be used to connect to the SAP HANA database. If the token that the security context has been instantiated with is a “foreign” token \(the OAuth client contained in the token and the OAuth client of the current application do not match\), “`None`” is returned instead of a token.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `request_token_for_client` 
-
-
+`request_token_for_client` 
 
 </td>
 <td valign="top">
 
 Requests a token with `grant_type=user_token` from another client. The requesting client must also have `grant_type=user_token`, and the current user token must include the authorization scope `uaa.user`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `has_attributes` 
-
-
+`has_attributes` 
 
 </td>
 <td valign="top">
 
 Returns “`True`” if the token contains any user attributes; otherwise “`False`”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_attribute` 
-
-
+`get_attribute` 
 
 </td>
 <td valign="top">
 
 Returns the attribute exactly as it is contained in the access token. If no attribute with the given name is contained in the access token, “`None`” is returned. If the token that the security context has been instantiated with is a foreign token \(the OAuth client contained in the token and the OAuth client of the current application do not match\), “`None`” is returned regardless of whether the requested attribute is contained in the token or not.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_additional_auth_attr` 
-
-
+`get_additional_auth_attr` 
 
 </td>
 <td valign="top">
 
 Requires the `name` of the additional authentication attribute requested. Returns the requested attribute exactly as it is contained in the access token. If no attribute with the given `name` is contained in the access token, `None` is returned.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `is_in_foreign_mode` 
-
-
+`is_in_foreign_mode` 
 
 </td>
 <td valign="top">
 
 Returns “`True`” if the token, that the security context has been instantiated with, is a foreign token that was not originally issued for the current application, otherwise “`False`”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_subdomain` 
-
-
+`get_subdomain` 
 
 </td>
 <td valign="top">
 
 Returns the subdomain that the access token has been issued for.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_clientid` 
-
-
+`get_clientid` 
 
 </td>
 <td valign="top">
 
 Returns the client id that the access token has been issued for.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_identity_zone` 
-
-
+`get_identity_zone` 
 
 </td>
 <td valign="top">
 
 Returns the identity zone that the access token has been issued for
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_expiration_date` 
-
-
+`get_expiration_date` 
 
 </td>
 <td valign="top">
 
 Returns the expiration date of the access token as a Javascript “Date” object
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_clone_service_instance_id` 
-
-
+`get_clone_service_instance_id` 
 
 </td>
 <td valign="top">
 
 Returns the id of the cloned service instance, if the XSUAA broker plan is used
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `get_grant_type` 
-
-
+`get_grant_type` 
 
 </td>
 <td valign="top">
 
 Returns the grant type of the JWT token, for example: `authorization_code`, `password`, `client_credentials`, etc.
-
-
 
 </td>
 </tr>

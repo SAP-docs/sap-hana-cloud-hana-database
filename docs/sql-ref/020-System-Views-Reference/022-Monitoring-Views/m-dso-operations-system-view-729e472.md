@@ -17,21 +17,15 @@ Provides information about data store object \(DSO\) operations.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 OPERATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the operation: ACTIVATION or ROLLBACK.
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ Displays the operation: ACTIVATION or ROLLBACK.
 
 USAGE\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -136,21 +108,15 @@ Displays the usage mode. This clarifies which variant of DSO is used:
 
 ACTIVATION\_IDS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the activation IDs.
-
-
 
 </td>
 </tr>
@@ -159,21 +125,15 @@ Displays the activation IDs.
 
 TARGET\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the target table.
-
-
 
 </td>
 </tr>
@@ -182,21 +142,15 @@ Displays the schema name of the target table.
 
 TARGET\_TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the target table.
-
-
 
 </td>
 </tr>
@@ -205,21 +159,15 @@ Displays the name of the target table.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the operation.
-
-
 
 </td>
 </tr>
@@ -228,21 +176,15 @@ Displays the start time of the operation.
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the end time of the operation.
-
-
 
 </td>
 </tr>
@@ -251,21 +193,15 @@ Displays the end time of the operation.
 
 ERROR\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last error code in the case of a failure. Otherwise this value is 0.
-
-
 
 </td>
 </tr>
@@ -274,21 +210,15 @@ Displays the last error code in the case of a failure. Otherwise this value is 0
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last error message in the case of a failure. Otherwise this value displays "no error".
-
-
 
 </td>
 </tr>
@@ -297,21 +227,15 @@ Displays the last error message in the case of a failure. Otherwise this value d
 
 SOURCE\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of source table rows activated.
-
-
 
 </td>
 </tr>
@@ -320,21 +244,15 @@ Displays the number of source table rows activated.
 
 INSERT\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows inserted into the target table.
-
-
 
 </td>
 </tr>
@@ -343,21 +261,15 @@ Displays the number of rows inserted into the target table.
 
 DELETE\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows deleted from the target table.
-
-
 
 </td>
 </tr>
@@ -366,21 +278,15 @@ Displays the number of rows deleted from the target table.
 
 UPDATE\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of target table rows that were updated.
-
-
 
 </td>
 </tr>
@@ -389,21 +295,15 @@ Displays the number of target table rows that were updated.
 
 CHANGE\_LOG\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows inserted into the change log.
-
-
 
 </td>
 </tr>
@@ -412,21 +312,15 @@ Displays the number of rows inserted into the change log.
 
 PACKAGE\_PROCESSING\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the processing times for all packages in microseconds.
-
-
 
 </td>
 </tr>
@@ -435,21 +329,15 @@ Displays the sum of the processing times for all packages in microseconds.
 
 PACKAGE\_INBOUND\_QUEUE\_READ\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the inbound queue read times in all packages in microseconds.
-
-
 
 </td>
 </tr>
@@ -458,21 +346,15 @@ Displays the sum of the inbound queue read times in all packages in microseconds
 
 PACKAGE\_ACTIVE\_DATA\_READ\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the active data read times in all packages in microseconds.
-
-
 
 </td>
 </tr>
@@ -481,21 +363,15 @@ Displays the sum of the active data read times in all packages in microseconds.
 
 ACTIVE\_DATA\_READ\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of active rows read.
-
-
 
 </td>
 </tr>
@@ -504,21 +380,15 @@ Displays the total number of active rows read.
 
 PACKAGE\_CALCULATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the calculation times for the change log and the new active data in microseconds.
-
-
 
 </td>
 </tr>
@@ -527,21 +397,15 @@ Displays the sum of the calculation times for the change log and the new active 
 
 AVG\_CALCULATION\_JOB\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the active number of jobs per package used for the calculation of the change log and the new active data.
-
-
 
 </td>
 </tr>
@@ -550,21 +414,15 @@ Displays the active number of jobs per package used for the calculation of the c
 
 CHANGE\_LOG\_INSERT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the time spent inserting the change log records in microseconds.
-
-
 
 </td>
 </tr>
@@ -573,21 +431,15 @@ Displays the sum of the time spent inserting the change log records in microseco
 
 ACTIVE\_DATA\_INSERT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the time spent inserting new active data records in microseconds.
-
-
 
 </td>
 </tr>
@@ -596,21 +448,15 @@ Displays the sum of the time spent inserting new active data records in microsec
 
 ACTIVE\_DATA\_UPDATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the time spent updating active data records in microseconds.
-
-
 
 </td>
 </tr>
@@ -619,21 +465,15 @@ Displays the sum of the time spent updating active data records in microseconds.
 
 ACTIVE\_DATA\_DELETE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time spent deleting active data records in microseconds.
-
-
 
 </td>
 </tr>
@@ -642,21 +482,15 @@ Displays the time spent deleting active data records in microseconds.
 
 PACKAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of packages.
-
-
 
 </td>
 </tr>
@@ -665,21 +499,15 @@ Displays the total number of packages.
 
 PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB\(2147483647\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the call parameters.
-
-
 
 </td>
 </tr>
@@ -688,21 +516,15 @@ Displays the call parameters.
 
 CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB\(2147483647\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the non-default, DSO-specific `ini` file settings used by the operation.
-
-
 
 </td>
 </tr>
@@ -711,21 +533,15 @@ Displays the non-default, DSO-specific `ini` file settings used by the operation
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name.
-
-
 
 </td>
 </tr>
@@ -734,21 +550,15 @@ Displays the user name.
 
 APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user name.
-
-
 
 </td>
 </tr>

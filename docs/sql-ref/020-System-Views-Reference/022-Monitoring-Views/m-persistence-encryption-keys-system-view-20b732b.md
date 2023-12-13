@@ -17,21 +17,15 @@ Provides information about encryption page keys.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VALID\_FROM\_SAVEPOINT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the valid from savepoint version.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the valid from savepoint version.
 
 VALID\_FROM\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the valid from timestamp, in microseconds, given in UTC.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the valid from timestamp, in microseconds, given in UTC.
 
 IS\_ENCRYPTED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not the persistence encryption is active: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -157,5 +121,5 @@ Indicates whether or not the persistence encryption is active: TRUE/FALSE.
 
 [M\_PERSISTENCE\_ENCRYPTION\_STATUS System View](m-persistence-encryption-status-system-view-20b7570.md "Provides information about persistence encryption.")
 
-[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
+[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
 

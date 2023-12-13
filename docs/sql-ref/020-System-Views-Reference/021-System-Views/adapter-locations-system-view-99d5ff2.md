@@ -17,21 +17,15 @@ Displays the location of adapters.
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 ADAPTER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the adapter name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the adapter name.
 
 LOCATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(11\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the location of the adapter: 'indexserver', 'dpserver', 'agent'.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the location of the adapter: 'indexserver', 'dpserver', 'agent'.
 
 AGENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the agent name.
 
 CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration of the adapter.
-
-
 
 </td>
 </tr>
@@ -132,25 +102,27 @@ Displays the configuration of the adapter.
 
 PROPERTIES
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
-
-
 
 </td>
 <td valign="top">
 
 Displays the properties of the adapter.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio99d5ff2d7d234f0d9c379147ee6b941a__section_pwn_hfc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

@@ -23,7 +23,7 @@ The following code shows a simple example of a system-versioned table for SAP HD
 > `/src/CUSTOMERS.hdbsystemversioning`
 > 
 > ```sql
-> SYSTEM VERSIONING “CUSTOMERS”(validfrom, validto) HISTORY TABLE “CUSTOMERS_HISTORY” NOT VALIDATED
+> SYSTEM VERSIONING “CUSTOMERS” ROW COMMIT (validfrom, validto) HISTORY TABLE “CUSTOMERS_HISTORY” NOT VALIDATED
 > ```
 
 

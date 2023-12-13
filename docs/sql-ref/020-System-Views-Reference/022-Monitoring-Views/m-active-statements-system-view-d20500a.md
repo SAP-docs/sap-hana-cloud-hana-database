@@ -17,21 +17,15 @@ Provides a prepared statements list.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the connection ID.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the prepared statement ID.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the prepared statement ID.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MD5 hash value for the statement string.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the MD5 hash value for the statement string.
 
 START\_MVCC\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal MVCC timestamp of the transaction start time.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the internal MVCC timestamp of the transaction start time.
 
 COMPILED\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the compilation timestamp of the statement.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the compilation timestamp of the statement.
 
 STATEMENT\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of the SQL statement.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the status of the SQL statement.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL statement.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the SQL statement.
 
 ALLOCATED\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory peak used for executing this statement. In case of distributed execution it is a sum of the local peak memories of multiple servers.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the memory peak used for executing this statement. In case of distribut
 
 PLAN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical plan ID.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the logical plan ID.
 
 LAST\_EXECUTED\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the recently executed time of the statement. This timestamp is updated when opening cursors and executing DML/DDL, but not when fetching cursor results or closing cursors.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the recently executed time of the statement. This timestamp is updated 
 
 LAST\_ACTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the recently performed time of action against the statement. This timestamp is updated when opening cursors, executing DML/DDL, fetching results, and closing cursors.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the recently performed time of action against the statement. This times
 
 RECOMPILE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the recompile count.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the recompile count.
 
 EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of executions.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the number of executions.
 
 AVG\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average statement execution time.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the average statement execution time.
 
 MAX\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum statement execution time.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the maximum statement execution time.
 
 MIN\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum statement execution time.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the minimum statement execution time.
 
 TOTAL\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the statement execution time.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the sum of the statement execution time.
 
 AVG\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time of the statement execution including communication time with the clients.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the average time of the statement execution including communication tim
 
 MAX\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time of the statement execution, including communication time with the clients.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the maximum time of the statement execution, including communication ti
 
 MIN\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time of the statement execution, including communication time with the clients.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the minimum time of the statement execution, including communication ti
 
 TOTAL\_CURSOR\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the statement execution time, including communication time with clients.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the sum of the statement execution time, including communication time w
 
 AVG\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average memory size, in bytes, used during each execution.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the average memory size, in bytes, used during each execution.
 
 MAX\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum memory size, in bytes, used during each execution.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the maximum memory size, in bytes, used during each execution.
 
 MIN\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum memory size, in bytes, used during each execution.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the minimum memory size, in bytes, used during each execution.
 
 TOTAL\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum of the memory size, in bytes, used during each execution.
-
-
 
 </td>
 </tr>
@@ -661,21 +493,15 @@ Displays the sum of the memory size, in bytes, used during each execution.
 
 AVG\_LOCKWAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average lock wait time for the statement.
-
-
 
 </td>
 </tr>
@@ -684,21 +510,15 @@ Displays the average lock wait time for the statement.
 
 MAX\_LOCKWAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum lock wait time for the statement.
-
-
 
 </td>
 </tr>
@@ -707,21 +527,15 @@ Displays the maximum lock wait time for the statement.
 
 MIN\_LOCKWAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum lock wait time for the statement.
-
-
 
 </td>
 </tr>
@@ -730,21 +544,15 @@ Displays the minimum lock wait time for the statement.
 
 TOTAL\_LOCKWAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total lock wait count for the statement.
-
-
 
 </td>
 </tr>
@@ -753,21 +561,15 @@ Displays the total lock wait count for the statement.
 
 TOTAL\_LOCKWAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated lock wait time for the statement.
-
-
 
 </td>
 </tr>
@@ -776,21 +578,15 @@ Displays the accumulated lock wait time for the statement.
 
 AVG\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time of statement preparation.
-
-
 
 </td>
 </tr>
@@ -799,21 +595,15 @@ Displays the average time of statement preparation.
 
 MAX\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time of statement preparation.
-
-
 
 </td>
 </tr>
@@ -822,21 +612,15 @@ Displays the maximum time of statement preparation.
 
 MIN\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time of statement preparation.
-
-
 
 </td>
 </tr>
@@ -845,21 +629,15 @@ Displays the minimum time of statement preparation.
 
 TOTAL\_PREPARATION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time of statement preparation.
-
-
 
 </td>
 </tr>
@@ -868,21 +646,15 @@ Displays the total time of statement preparation.
 
 TOTAL\_PREPARATION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total count of statement preparation.
-
-
 
 </td>
 </tr>
@@ -891,21 +663,15 @@ Displays the total count of statement preparation.
 
 HAS\_HOLDABLE\_CURSOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the holdable cursor existence.
-
-
 
 </td>
 </tr>
@@ -914,21 +680,15 @@ Displays the holdable cursor existence.
 
 CURSOR\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(18\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of cursor.
-
-
 
 </td>
 </tr>
@@ -937,21 +697,15 @@ Displays the type of cursor.
 
 PARENT\_STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the parent prepared statement ID.
-
-
 
 </td>
 </tr>
@@ -960,21 +714,15 @@ Displays the parent prepared statement ID.
 
 APPLICATION\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application source information.
-
-
 
 </td>
 </tr>
@@ -983,21 +731,15 @@ Displays the application source information.
 
 STATEMENT\_MEMORY\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective statement memory limit.
-
-
 
 </td>
 </tr>
@@ -1006,21 +748,15 @@ Displays the effective statement memory limit.
 
 STATEMENT\_THREAD\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective statement thread limit.
-
-
 
 </td>
 </tr>
@@ -1029,21 +765,15 @@ Displays the effective statement thread limit.
 
 TOTAL\_STATEMENT\_MEMORY\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective total statement memory limit.
-
-
 
 </td>
 </tr>
@@ -1052,21 +782,15 @@ Displays the effective total statement memory limit.
 
 TOTAL\_STATEMENT\_THREAD\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the effective total statement thread limit.
-
-
 
 </td>
 </tr>
@@ -1075,21 +799,15 @@ Displays the effective total statement thread limit.
 
 WORKLOAD\_CLASS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the effective workload class used for the execution.
-
-
 
 </td>
 </tr>
@@ -1106,7 +824,7 @@ Setting the value of the APPLICATION\_SOURCE is only available via internal APIs
 **Related Information**  
 
 
-[SAP Note 2873396](https://launchpad.support.sap.com/#/notes/2873396)
+[SAP Note 2873396](https://me.sap.com/notes/2873396)
 
 [M\_ACTIVE\_PROCEDURES System View](m-active-procedures-system-view-f3d2330.md "Provides statistics of procedure execution.")
 

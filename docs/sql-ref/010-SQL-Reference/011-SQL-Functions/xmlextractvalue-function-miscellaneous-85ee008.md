@@ -77,7 +77,7 @@ This function is only supported for single elements of child XML nodes. For exam
 
 ## Example
 
-The following example extracts the value from the ***<name\>*** element from item 2 \(and returns ***Jar***\):
+The following example extracts the value from the `<name>` element from item 2 \(and returns ***Jar***\):
 
 ```
 SELECT XMLEXTRACTVALUE(

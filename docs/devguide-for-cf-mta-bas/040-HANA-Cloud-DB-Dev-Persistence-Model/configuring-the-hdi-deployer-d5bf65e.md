@@ -18,7 +18,7 @@ The HDI Deployer is packaged into the `db/` module of the MTA. Consequently, in 
 
 [Integrate the HDI Deployer into a Mutlitarget Application's Database Module](integrate-the-hdi-deployer-into-a-mutlitarget-application-s-database-modu-0194390.md "Install the HDI Deployer for use by a Multi-Target Application (MTA).")
 
-[Consume SAP Node.js Packages](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_2_QRC/en-US/ddcff14e28384810a352bb6512cd3448.html "A selection of SAP-specific and ready-to-use Node.js packages is available on the public NPM registry.") :arrow_upper_right:
+[Consume SAP Node.js Packages](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/ddcff14e28384810a352bb6512cd3448.html "A selection of SAP-specific and ready-to-use Node.js packages is available on the public NPM registry.") :arrow_upper_right:
 
 [Managing SAP HDI Containers and Artifacts](managing-sap-hdi-containers-and-artifacts-23f1f40.md "In SAP HANA Deployment Infrastructure (HDI), database development artifacts are deployed to so-called containers.")
 

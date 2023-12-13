@@ -307,7 +307,7 @@ TRUNCATE TABLE T1 PARTITION (2,3);
 
 [DELETE Statement \(Data Manipulation\)](delete-statement-data-manipulation-20d6169.md "Deletes records from a table where a specified condition is met.")
 
-[Truncating Partitions](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/006600b969204574b90c6746ca27a394.html "You can use the SQL TRUNCATE statement to delete the content of specific partitions of a table.") :arrow_upper_right:
+[Truncating Partitions](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/006600b969204574b90c6746ca27a394.html "You can use the SQL TRUNCATE statement to delete the content of specific partitions of a table.") :arrow_upper_right:
 
 [TABLE\_PARTITIONS System View](../../020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 

@@ -318,9 +318,12 @@ Creates a table on the remote source using the *<table\_contents\_source\>* defi
 
 ## Description
 
-The CREATE VIRTUAL TABLE provides a way to access an existing table/view on a remote source from an SAP HANA instance. The list of remote columns is automatically imported into the virtual table.
+The CREATE VIRTUAL TABLE provides a way to access an existing table or a view on a remote source from an SAP HANA instance. The list of remote columns is automatically imported into the virtual table.
 
 Use the DROP TABLE *<table\_name\>* to drop a virtual table.
+
+> ### Note:  
+> The relationship between a virtual table and the remote object it points to can be considered as relatively shallow. In other words, while the virtual table can access and retrieve data from the remote object, it does not inherently reflect the complex relationships that the remote object may have with other entities. For instance, associations the remote object maintains with other remote objects are not automatically mirrored in the virtual table.
 
 
 
@@ -342,7 +345,7 @@ Create virtual table `VT` on existing remote source `S`. The originating table i
 CREATE VIRTUAL TABLE VT AT "S"."HA1"."SYSTEM"."tableA";
 ```
 
-Create a virtual table where the following string is sent to the adapter as a parameter for the metadata request: ***<Parameter name="objects"\>1,10,1000,300</Parameter\><Parameter name="stateHierarchy"\>USA</Parameter\><Parameter name="date”\>2014-06-01</Parameter\>***
+Create a virtual table where the following string is sent to the adapter as a parameter for the metadata request: `<Parameter name="objects">1,10,1000,300</Parameter><Parameter name="stateHierarchy">USA</Parameter><Parameter name="date”>2014-06-01</Parameter>`
 
 ```
 CREATE VIRTUAL TABLE …. 

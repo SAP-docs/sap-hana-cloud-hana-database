@@ -17,21 +17,15 @@ Provides detailed snapshot information of the Multiversion Concurrency Control \
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the associated transaction object ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the associated transaction object ID.
 
 MVCC\_SNAPSHOT\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the MVCC timestamp of the snapshot.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the MVCC timestamp of the snapshot.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the associated logical statement ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the associated logical statement ID.
 
 RELATED\_TABLES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the associated table object IDs.
-
-
 
 </td>
 </tr>

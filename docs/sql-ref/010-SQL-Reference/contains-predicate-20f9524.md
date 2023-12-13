@@ -195,7 +195,7 @@ If there are multiple CONTAINS predicates specified in the WHERE clause of a SEL
 
 ## Examples
 
-The following example performs a fuzzy search for the term ***cap***, and returns the rows that match \(`Blue baseball cap`, and `Red car`\), in descending order by score:
+The following example performs a fuzzy search for the term `cap`, and returns the rows that match \(`Blue baseball cap`, and `Red car`\), in descending order by score:
 
 ```
 CREATE SCHEMA mySchema;
@@ -210,7 +210,7 @@ SELECT SCORE() AS SCORE,*
    ORDER BY SCORE DESC;
 ```
 
-Changing SELECT statement to set the FUZZY parameter to ***0.9***, the equivalent of making the query less fuzzy or more exact, returns only the `Blue baseball cap` row:
+Changing SELECT statement to set the FUZZY parameter to `0.9`, the equivalent of making the query less fuzzy or more exact, returns only the `Blue baseball cap` row:
 
 ```
 SELECT SCORE() AS SCORE,*  
@@ -219,13 +219,13 @@ SELECT SCORE() AS SCORE,*
    ORDER BY SCORE DESC
 ```
 
-Using the table created in the previous example, the following statement performs an exact term search for either ***cap*** or ***sky***, and returns the `Blue baseball cap` and `Bluish sky` rows:
+Using the table created in the previous example, the following statement performs an exact term search for either `cap` or `sky`, and returns the `Blue baseball cap` and `Bluish sky` rows:
 
 ```
 SELECT * FROM mySchema.SEARCH_TEXT WHERE CONTAINS(CONTENT,'cap OR sky');
 ```
 
-The following statement performs an exact phrase search for either ***baseball cap*** and returns the `Blue baseball cap` row:
+The following statement performs an exact phrase search for either `baseball cap` and returns the `Blue baseball cap` row:
 
 ```
 SELECT * FROM mySchema.SEARCH_TEXT WHERE CONTAINS(CONTENT, '"baseball cap"');
@@ -241,7 +241,7 @@ SELECT * FROM mySchema.SEARCH_TEXT WHERE CONTAINS (*, 'vintage');
 **Related Information**  
 
 
-[Search with SQL](https://help.sap.com/viewer/05c9edaee7fe4d28ab3627d0b1583df6/2023_2_QRC/en-US/cd07da82bb571014b185c8e3e3974767.html "In column-oriented tables, you can perform searches using the SQL SELECT statement.") :arrow_upper_right:
+[Search with SQL](https://help.sap.com/viewer/05c9edaee7fe4d28ab3627d0b1583df6/2023_4_QRC/en-US/cd07da82bb571014b185c8e3e3974767.html "In column-oriented tables, you can perform searches using the SQL SELECT statement.") :arrow_upper_right:
 
 [SCORE Function \(Miscellaneous\)](011-SQL-Functions/score-function-miscellaneous-20e6f8e.md "Returns the relevance of a record that has been found.")
 

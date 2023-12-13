@@ -64,7 +64,7 @@ Computes the specified time plus the number of specified seconds.
 
 ## Example
 
-The example increments the TIMESTAMP ***2012-01-01 23:30:45*** by ***60\*30*** seconds, and returns the value ***2012-01-02 00:00:45.0***:
+The example increments the TIMESTAMP `2012-01-01 23:30:45` by `60*30` seconds, and returns the value ***2012-01-02 00:00:45.0***:
 
 ```
 SELECT ADD_SECONDS (TO_TIMESTAMP ('2012-01-01 23:30:45'), 60*30) "add seconds" FROM DUMMY;

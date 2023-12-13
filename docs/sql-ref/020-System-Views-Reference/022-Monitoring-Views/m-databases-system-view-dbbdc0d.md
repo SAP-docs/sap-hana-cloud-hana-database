@@ -15,21 +15,15 @@ Provides information about all databases in the system. The full content of this
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the database name.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database description.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the database description.
 
 ACTIVE\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database status.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the database status.
 
 ACTIVE\_STATUS\_DETAILS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database status details. Possible values include: stopped by user, stopped due to broken recovery, or stopped by takeover.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the database status details. Possible values include: stopped by user, 
 
 OS\_USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database isolation operation system user.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the database isolation operation system user.
 
 OS\_GROUP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database isolation operation system group.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the database isolation operation system group.
 
 RESTART\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the restart behavior after a system restart. Possible values are NO \(do not restart the database after a system restart\) or DEFAULT \(restore the database to the state it had before the system restart\).
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the restart behavior after a system restart. Possible values are NO \(d
 
 FALLBACK\_SNAPSHOT\_CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp for when the fallback snapshot was created, or NULL if there is no fallback snapshot for the database.
-
-
 
 </td>
 </tr>
@@ -232,7 +178,7 @@ Displays the timestamp for when the fallback snapshot was created, or NULL if th
 
 [M\_DATABASE\_REPLICA\_STATISTICS System View](m-database-replica-statistics-system-view-19a4438.md "Provides statistics on databases involved in replication.")
 
-[Database Roles](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
+[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
 
 [Log On to a Database](https://help.sap.com/viewer/f1b440ded6144a54ada97ff95dac7adf/LATEST/en-US/c2a6d9cbbb5710148afea455ba5746c0.html)
 

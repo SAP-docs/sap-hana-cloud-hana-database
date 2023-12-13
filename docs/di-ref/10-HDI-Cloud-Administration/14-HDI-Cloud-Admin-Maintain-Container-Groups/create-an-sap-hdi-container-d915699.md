@@ -10,6 +10,9 @@ In SAP HANA Deployment Infrastructure \(HDI\), the HDI container-group administr
 
 HDI container-group administrators can create HDI containers in any HDI container group for which they are responsible.
 
+> ### Caution:  
+> It is not recommended to change the default container-group assignment of an HDI container that is managed by an SAP BTP service instance. For example, containers created by or in the SAP BTP Cockpit should not be moved from the default container group to which they are assigned on creation.
+
 
 
 <a name="loiod9156997277f4af9a7837ea1efce82ec__steps_nxw_fsx_k1b"/>
@@ -44,4 +47,6 @@ HDI container-group administrators can create HDI containers in any HDI containe
 [Maintaining SAP HDI Container Groups](maintaining-sap-hdi-container-groups-4e9d597.md "The administrator of an SAP HDI container group is responsible for managing the SAP HDI containers that are organized into one or more HDI container groups.")
 
 [Drop an SAP HDI Container](drop-an-sap-hdi-container-fe51ebe.md "In SAP HANA Deployment Infrastructure (HDI), the HDI container-group administrator can drop a container.")
+
+[HDI Container Views](../../20-HDI-Cloud-Content-Development/hdi-container-views-2b3814d.md "Display information about calls made with the HDI container API.")
 

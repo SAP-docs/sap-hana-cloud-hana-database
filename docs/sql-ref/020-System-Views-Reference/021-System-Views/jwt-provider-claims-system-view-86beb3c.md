@@ -17,21 +17,15 @@ Lists the additional claims with its values for the JWT provider.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 JWT\_PROVIDER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the JWT provider.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the JWT provider.
 
 CLAIM
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the claim.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the claim.
 
 OPERATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
-Specifies how the claim is used. Operation include: EQUALS, HAS MEMBER, SET APPLICATION USER.
-
-
+Specifies how the claim is used. Operations include: EQUALS, HAS MEMBER, SET APPLICATION USER.
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Specifies how the claim is used. Operation include: EQUALS, HAS MEMBER, SET APPL
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
-Display the expected value of the claim in a JWT token.
-
-
+Displays the expected value of the claim in a JWT token.
 
 </td>
 </tr>
@@ -134,6 +104,8 @@ Display the expected value of the claim in a JWT token.
 <a name="loio86beb3c3974b415dbc0850afba1492b5__section_bbs_ppd_tfb"/>
 
 ## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 Users must have rights to the JWT provider to see the claims in this view.
 

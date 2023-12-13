@@ -30,6 +30,11 @@ The HDI container-group administrator can use a function that will assign an app
     When an HDI container is moved to another container group, then the DML schema access to all the other containers in the previous group is revoked \(assuming the parameter for the previous group is set to "true"\) from the application/run-time user, and the same procedure is performed on this container as explained for the creation of a container.
 
 
+> ### Note:  
+> The cross-container access you configure in this task provides privileges for an application user; the privileges provided do not include the `GRANT OPTION`. An application user needs these privileges when accessing objects in containers of the container group.
+> 
+> Cross-container access provides application users with the privileges they require to access other HDI containers and the objects in those containers. To work with objects in other HDI containers, application users do not need to use synonyms.
+
 
 
 ## Procedure

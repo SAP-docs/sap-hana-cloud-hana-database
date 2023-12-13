@@ -15,21 +15,15 @@ Provides information for column store indexes.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the table name.
 
 INDEX\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the index name.
-
-
 
 </td>
 </tr>
@@ -153,14 +117,10 @@ Displays the index name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -181,21 +141,15 @@ Displays the partition ID. Returns the following:
 
 HASH\_COLLISION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the count of hash collisions aggregated over all values.
-
-
 
 </td>
 </tr>
@@ -204,21 +158,15 @@ Displays the count of hash collisions aggregated over all values.
 
 CONCAT\_COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the concat column in the case of multi-column indexes. This is empty in the case of a single-column index.
-
-
 
 </td>
 </tr>
@@ -227,21 +175,15 @@ Displays the name of the concat column in the case of multi-column indexes. This
 
 MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the concat plus the sum of the inverted index sizes of the single index columns in bytes.
-
-
 
 </td>
 </tr>
@@ -250,21 +192,15 @@ Displays the total size of the concat plus the sum of the inverted index sizes o
 
 MEMORY\_SIZE\_IN\_CONCAT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of the concat in bytes.
-
-
 
 </td>
 </tr>
@@ -273,21 +209,15 @@ Displays the total size of the concat in bytes.
 
 MOST\_SELECTIVE\_COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the most selective index column of a composite index. The most selective column is the one with lowest cost value.
-
-
 
 </td>
 </tr>
@@ -296,21 +226,15 @@ Displays the name of the most selective index column of a composite index. The m
 
 INVERTED\_INDIVIDUAL\_COST
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the cost value for INVERTED INDIVIDUAL index type. This cost value is an indicator for the possible performance impact when switching between different index-types. A high cost value indicates a possible high overhead when using INVERTED INDIVIDUAL index-type compared to INVERTED VALUE index-type. A cost value of 1 indicates that there is no overhead. For non composite or non-unique indexes the value is -1, which indicates that no cost value is available.
-
-
 
 </td>
 </tr>
@@ -327,5 +251,5 @@ Displays the cost value for INVERTED INDIVIDUAL index type. This cost value is a
 
 [DROP INDEX Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-index-statement-data-definition-20d6f4e.md "Removes an index.")
 
-[Changing the Load Units for Indexes Using ALTER INDEX](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/02dc395617744584aa464f3e5e5ee509.html "") :arrow_upper_right:
+[Changing the Load Units for Indexes Using ALTER INDEX](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/02dc395617744584aa464f3e5e5ee509.html "") :arrow_upper_right:
 

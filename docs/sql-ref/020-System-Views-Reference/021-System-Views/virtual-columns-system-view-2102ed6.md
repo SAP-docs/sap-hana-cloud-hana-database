@@ -17,21 +17,15 @@ Provides information about virtual columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the table name.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the column name.
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type name of the column.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the SQL data type name of the column.
 
 LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of characterss for character types, the number of maximum digits for numeric types, the number of characters for datetime types, or the number of bytes for LOB types.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of characterss for character types, the number of maximum di
 
 SCALE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 For numeric types: displays the maximum number of digits to the right of the decimal point. For time, TIMESTAMP types: displays the decimal digits to the right of the decimal point in the second's component of the data.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ For numeric types: displays the maximum number of digits to the right of the dec
 
 REMOTE\_DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote data type name.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the remote data type name.
 
 REMOTE\_LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote column length.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the remote column length.
 
 REMOTE\_SCALE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote scale.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the remote scale.
 
 IS\_INSERTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not INSERT is supported: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays whether or not INSERT is supported: TRUE/FALSE.
 
 IS\_UPDATABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not UPDATE is supported: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays whether or not UPDATE is supported: TRUE/FALSE.
 
 IS\_UPSERTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not UPSERT is supported: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -316,25 +238,27 @@ Displays whether or not UPSERT is supported: TRUE/FALSE.
 
 IS\_SELECTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
 
 Displays whether or not SELECT is supported: TRUE/FALSE.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio2102ed64751910148e60a51d6bdb83da__section_qk5_511_fzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

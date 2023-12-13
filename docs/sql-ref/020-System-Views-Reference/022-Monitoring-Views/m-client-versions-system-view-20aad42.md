@@ -17,21 +17,15 @@ Provides versions of all supported client applications.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 CLIENT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of client, for example, ABAP\_FDA or BI Modeler.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the type of client, for example, ABAP\_FDA or BI Modeler.
 
 CLIENT\_RELEASE\_ID
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the technical release ID.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the technical release ID.
 
 CLIENT\_RELEASE\_DESC
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the human readable release description.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the human readable release description.
 
 MIN\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the lowest supported protocol version.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the lowest supported protocol version.
 
 MAX\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the highest supported protocol version.
-
-
 
 </td>
 </tr>

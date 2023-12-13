@@ -15,21 +15,15 @@ Shows the mapping between SAP HANA roles and LDAP groups.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 ROLE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the role.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name of the role.
 
 ROLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the role.
-
-
 
 </td>
 </tr>
@@ -84,25 +66,27 @@ Displays the name of the role.
 
 LDAP\_GROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the name of the LDAP group.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio5f1dffe49b484f9c88ba57c0340d6020__section_jgs_k1p_dzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -115,7 +99,7 @@ Displays the name of the LDAP group.
 
 [DROP LDAP PROVIDER Statement \(Access Control\)](../../010-SQL-Reference/012-SQL-Statements/drop-ldap-provider-statement-access-control-340e913.md "Drops an LDAP provider, and its associated credential, from the internal secure credential store.")
 
-[LDAP\_USERS System View](ldap-users-system-view-704e5b6.md "Shows information about the users using LDAP authorization.")
+[LDAP\_USERS System View](ldap-users-system-view-704e5b6.md "Provides information about the users using LDAP authorization.")
 
 [LDAP\_PROVIDERS System View](ldap-providers-system-view-5b54fe2.md "Lists all LDAP providers.")
 

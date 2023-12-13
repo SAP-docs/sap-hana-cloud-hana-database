@@ -17,21 +17,15 @@ Provides backup configuration statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 MAX\_RECOVERY\_FILE\_AGE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum recovery file age in seconds.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the maximum recovery file age in seconds.
 
 MAX\_RECOVERY\_BACKINT\_CHANNELS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum number of parallel backint channels per request during recovery.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the maximum number of parallel backint channels per request during reco
 
 BACKINT\_EXECUTABLE\_LINK
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the backint executable link name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the backint executable link name.
 
 BACKINT\_EXECUTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the backint executable file name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the backint executable file name.
 
 BACKINT\_DATA\_BACKUP\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data backup directory for the backint.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the data backup directory for the backint.
 
 BACKINT\_LOG\_BACKUP\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the log backup directory for the backint.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the log backup directory for the backint.
 
 BACKINT\_CATALOG\_BACKUP\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the directory for backint-based catalog backups.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the directory for backint-based catalog backups.
 
 FILE\_DATA\_BACKUP\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default directory for file-based data backups.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the default directory for file-based data backups.
 
 FILE\_LOG\_BACKUP\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the current directory for file-based log backups.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the current directory for file-based log backups.
 
 FILE\_CATALOG\_BACKUP\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the directory for file-based catalog backups.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the directory for file-based catalog backups.
 
 FILE\_ROOTKEY\_BACKUP\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the directory for file-based rootkey backups.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the directory for file-based rootkey backups.
 
 LOG\_BACKUP\_TIMEOUT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the log backup timeout in seconds.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the log backup timeout in seconds.
 
 LOG\_BACKUP\_INTERVAL\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the log backup interval mode.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the log backup interval mode.
 
 IS\_ROOT\_KEY\_BACKUP\_PASSWORD\_SET
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays if the root key backup password is set for the specified database: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays if the root key backup password is set for the specified database: TRUE
 
 ROOT\_KEY\_ENCRYPTION\_CONTROL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays where encryption is configured.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays where encryption is configured.
 
 ROOT\_KEY\_BACKUP\_PASSWORD\_LAST\_CHANGE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays when the root key backup password was last changed.
-
-
 
 </td>
 </tr>

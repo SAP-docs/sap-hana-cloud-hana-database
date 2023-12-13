@@ -31,12 +31,12 @@ TO_BOOLEAN(<value>)
 
 If *<value\>* is:
 
--   ***1***, ***'true'***, or ***true*** then TO\_BOOLEAN returns the value ***true***.
--   ***0***, ***'false'***, or ***false*** then TO\_BOOLEAN returns the value ***false***.
--   ***unknown\(Boolean\)*** or '***unknown***' then TO\_BOOLEAN returns the value .
+-   `1`, `'true'`, or `true` then TO\_BOOLEAN returns the value ***true***.
+-   `0`, `'false'`, or `false` then TO\_BOOLEAN returns the value ***false***.
+-   `unknown(Boolean)` or '`unknown`' then TO\_BOOLEAN returns the value ***unknown***.
 
 
-'***true***', '***false***', and '***unknown***' are not case sensitive, meaning that values of '***TRUE***' and '***TruE***' are treated the same as a value of ***true***. TO\_BOOLEAN throws an exception when *<value\>* is not one of ***true***, ***false***, ***unknown***, 0, 1, '0', '1',***'true'***,***'false'*** or ***'unknown'***.
+'`true`', '`false`', and '`unknown`' are not case sensitive, meaning that values of '`TRUE`' and '`TruE`' are treated the same as a value of `true`. TO\_BOOLEAN throws an exception when *<value\>* is not one of `true`, `false`, `unknown`, 0, 1, '0', '1',`'true'`,`'false'` or `'unknown'`.
 
 
 
@@ -57,13 +57,13 @@ Converts a *<value\>* to a BOOLEAN data type.
 
 ## Example
 
-Converts the value ***0*** to the BOOLEAN value ***FALSE***.
+Converts the value `0` to the BOOLEAN value ***FALSE***.
 
 ```
 SELECT TO_BOOLEAN(0) FROM DUMMY;
 ```
 
-Converts the value ***1*** to the BOOLEAN value ***TRUE***.
+Converts the value `1` to the BOOLEAN value ***TRUE***.
 
 ```
 SELECT TO_BOOLEAN(1) FROM DUMMY;

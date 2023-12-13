@@ -39,7 +39,7 @@ Federated identity is the concept of linking and reusing electronic user identit
   
 **OAuth 2.0 Authentication and Authorization Flow**
 
- ![OAuth2 authentication and authorization flow in SAP multitarget apps](images/XSA_Security_OAuth2_Flow_d8027d2.png "OAuth 2.0 Authentication and Authorization Flow") 
+![OAuth2 authentication and authorization flow in SAP multitarget apps](images/XSA_Security_OAuth2_Flow_d8027d2.png "OAuth 2.0 Authentication and Authorization Flow")
 
 
 

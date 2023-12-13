@@ -76,21 +76,15 @@ The following table shows how the semantic type values of calculated attributes 
 
 Calculated Attribute Semantic Type
 
-
-
 </th>
 <th valign="top">
 
 Input Parameter Semantic Type
 
-
-
 </th>
 <th valign="top">
 
 sap:semantics value
-
-
 
 </th>
 </tr>
@@ -99,21 +93,15 @@ sap:semantics value
 
 currencyCode
 
-
-
 </td>
 <td valign="top">
 
 Currency
 
-
-
 </td>
 <td valign="top">
 
 currency-code
-
-
 
 </td>
 </tr>
@@ -122,21 +110,15 @@ currency-code
 
 unitOfMeasure
 
-
-
 </td>
 <td valign="top">
 
 UnitOfMeasure
 
-
-
 </td>
 <td valign="top">
 
 unit-of-measure
-
-
 
 </td>
 </tr>
@@ -145,21 +127,15 @@ unit-of-measure
 
 date.businessDateFrom
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 dtstart
-
-
 
 </td>
 </tr>
@@ -168,21 +144,15 @@ dtstart
 
 date.businessDateTo
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 dtend
-
-
 
 </td>
 </tr>
@@ -224,16 +194,12 @@ The following table shows how the value of the “`mandatory`” attribute value
 <tr>
 <th valign="top">
 
- “mandatory” Attribute Value
-
-
+“mandatory” Attribute Value
 
 </th>
 <th valign="top">
 
 sap:parameter Value
-
-
 
 </th>
 </tr>
@@ -242,14 +208,10 @@ sap:parameter Value
 
 true
 
-
-
 </td>
 <td valign="top">
 
 mandatory
-
-
 
 </td>
 </tr>
@@ -258,14 +220,10 @@ mandatory
 
 false
 
-
-
 </td>
 <td valign="top">
 
 optional
-
-
 
 </td>
 </tr>
@@ -442,21 +400,15 @@ The following table below shows the mapping between the “`multiLine`” and �
 
 multiLine
 
-
-
 </th>
 <th valign="top">
 
 type
 
-
-
 </th>
 <th valign="top">
 
 sap:filter-restriction
-
-
 
 </th>
 </tr>
@@ -465,21 +417,15 @@ sap:filter-restriction
 
 false
 
-
-
 </td>
 <td valign="top">
 
 SingleValue
 
-
-
 </td>
 <td valign="top">
 
 single-value
-
-
 
 </td>
 </tr>
@@ -488,21 +434,15 @@ single-value
 
 true
 
-
-
 </td>
 <td valign="top">
 
 SingleValue
 
-
-
 </td>
 <td valign="top">
 
 multi-value
-
-
 
 </td>
 </tr>
@@ -511,21 +451,15 @@ multi-value
 
 false
 
-
-
 </td>
 <td valign="top">
 
 Interval
 
-
-
 </td>
 <td valign="top">
 
 interval
-
-
 
 </td>
 </tr>

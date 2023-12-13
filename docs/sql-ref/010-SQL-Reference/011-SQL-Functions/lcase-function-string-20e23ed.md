@@ -30,7 +30,7 @@ The LCASE function is identical to the LOWER function.
 
 ## Example
 
-This example converts all characters of the given string ***TesT*** to lowercase and returns the value ***test***.
+This example converts all characters of the given string `TesT` to lowercase and returns the value ***test***.
 
 ```
 SELECT LCASE ('TesT') "lcase" FROM DUMMY;

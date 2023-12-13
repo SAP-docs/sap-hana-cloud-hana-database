@@ -17,21 +17,15 @@ Provides the roles of the current user.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user for whom effective roles are shown.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the user for whom effective roles are shown.
 
 PRINCIPAL\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema of the role for whom effective privileges are shown.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the schema of the role for whom effective privileges are sh
 
 PRINCIPAL\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the principal \(user or role\) for whom effective privileges are shown.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the name of the principal \(user or role\) for whom effective privilege
 
 PRINCIPAL\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of the principal \(user or role\) for whom effective privileges are shown
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type of the principal \(user or role\) for whom effective privilege
 
 GRANTEE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema of the grantee.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the schema of the grantee.
 
 GRANTEE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user or role that has the role.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the user or role that has the role.
 
 GRANTEE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the grantee type: USER/ROLE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the grantee type: USER/ROLE.
 
 GRANTOR
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user or role group who granted the role.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the user or role group who granted the role.
 
 GRANTOR\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the grantor type: USER or ROLEGROUP.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the grantor type: USER or ROLEGROUP.
 
 ROLE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema of the role granted.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the name of the schema of the role granted.
 
 ROLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the role granted.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the role granted.
 
 IS\_GRANTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the role was granted with WITH ADMIN OPTION: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -317,7 +239,9 @@ Displays whether the role was granted with WITH ADMIN OPTION: TRUE/FALSE.
 
 <a name="loio20a3229a75191014a9f0893bb1ea23d5__section_u1x_wdk_h2b"/>
 
-## Additional Information
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 To search for effective \(directly or indirectly\) granted privileges and roles, respectively for a given user or role requires an equal predicate on USER\_NAME specifying an existing user name or an equal predicate on PRINCIPAL\_NAME specifying an existing user name or role name.
 
@@ -336,7 +260,7 @@ To search for effective \(directly or indirectly\) granted privileges and roles,
 
 [GRANTED\_ROLES System View](granted-roles-system-view-20a5c3b.md "Provides information about roles granted to users or other roles.")
 
-[Database Roles](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
+[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
 
-[System Views for Verifying Users&apos; Authorization](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/ddae823e3b27477ea4c949607eebc435.html "You can query several system views to get detailed information about exactly which privileges and roles users have and how they come to have them. This can help you to understand why a user is authorized to perform particular actions, access particular data, or not.") :arrow_upper_right:
+[System Views for Verifying Users' Authorization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/ddae823e3b27477ea4c949607eebc435.html "You can query several system views to get detailed information about exactly which privileges and roles users have and how they come to have them. This can help you to understand why a user is authorized to perform particular actions, access particular data, or not.") :arrow_upper_right:
 

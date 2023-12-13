@@ -17,21 +17,15 @@ Provides information about spatial columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the schema to which the table containing the spatial column belongs.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the schema to which the table containing the spatial column
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the table containing the spatial column.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the table containing the spatial column.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the spatial column.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the name of the spatial column.
 
 SRS\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the numeric identifier \(SRID\) for the spatial reference system \(SRS\) associated with the spatial column.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the numeric identifier \(SRID\) for the spatial reference system \(SRS\
 
 SRS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the SRS associated with the spatial column.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the SRS associated with the spatial column.
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the spatial data type.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the spatial data type.
 
 COORD\_DIMENSION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the dimension of the spatial column.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the dimension of the spatial column.
 
 INTERNAL\_LAYOUT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(13\)
 
-
-
 </td>
 <td valign="top">
 
 The internal geometry layout, either PLAIN or HILBERT CURVE. For details see the column definition and column configuration.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ The internal geometry layout, either PLAIN or HILBERT CURVE. For details see the
 
 SPATIAL\_INDEX\_PREFERENCE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the spatial index preference: DEFAULT, RDICT, or RTREE. For details see the column definition and the column configuration.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the spatial index preference: DEFAULT, RDICT, or RTREE. For details see
 
 VALIDATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the geometry validation level: NONE \(checked for bad representation\)/FULL \(checked for all known invalid representations as defined by the OGC standard\).
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the geometry validation level: NONE \(checked for bad representation\)/
 
 HAS\_BOUNDARY\_CHECK
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Checks whether the geometries in the column are within the SRS boundaries
-
-
 
 </td>
 </tr>
@@ -295,6 +223,8 @@ Checks whether the geometries in the column are within the SRS boundaries
 <a name="loiod23480cdd2951014bc59de575a0b05fa___r_e_o_r_g__p_l_a_n_1fulldesc_REORG_PLAN"/>
 
 ## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 Spatial columns in virtual tables are not shown in the system view ST\_GEOMETRY\_COLUMNS.
 

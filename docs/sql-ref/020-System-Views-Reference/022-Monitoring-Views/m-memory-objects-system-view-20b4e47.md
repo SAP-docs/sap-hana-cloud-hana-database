@@ -17,21 +17,15 @@ Returns memory object statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object \(statistic\) type.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the object \(statistic\) type.
 
 OBJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of objects currently in the memory object container.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of objects currently in the memory object container.
 
 OBJECT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the objects that are currently in the memory object container in bytes.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the size of the objects that are currently in the memory object contain
 
 NON\_SWAPPABLE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the non-swappable objects that are currently in the memory object container in bytes.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the size of the non-swappable objects that are currently in the memory 
 
 SWAPPABLE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the swappable objects that are currently in the memory object container in bytes.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the size of the swappable objects that are currently in the memory obje
 
 PUT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of put objects.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,66 @@ Displays the total number of put objects.
 
 PUT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Displays the total size of put objects in bytes.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+PUT\_FAILURE\_COUNT
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the number of objects not added to the memory object container, due to key conflicts.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GET\_HIT\_COUNT
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the total number of successful get operations.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+GET\_MISS\_COUNT
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the total number of get operations that failed because the object was not found in the memory object container.
 
 </td>
 </tr>
@@ -270,21 +255,15 @@ Displays the total size of put objects in bytes.
 
 MOVE\_IN\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of objects moved in from a different statistic.
-
-
 
 </td>
 </tr>
@@ -293,21 +272,15 @@ Displays the total number of objects moved in from a different statistic.
 
 MOVE\_IN\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of objects moved in from a different statistic in bytes.
-
-
 
 </td>
 </tr>
@@ -316,21 +289,15 @@ Displays the total size of objects moved in from a different statistic in bytes.
 
 MOVE\_OUT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of objects moved out to a different statistic.
-
-
 
 </td>
 </tr>
@@ -339,21 +306,15 @@ Displays the total number of objects moved out to a different statistic.
 
 MOVE\_OUT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of objects moved out to a different statistic in bytes.
-
-
 
 </td>
 </tr>
@@ -362,21 +323,15 @@ Displays the total size of objects moved out to a different statistic in bytes.
 
 EVICT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of evicted objects.
-
-
 
 </td>
 </tr>
@@ -385,21 +340,15 @@ Displays the total number of evicted objects.
 
 EVICT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of evicted objects in bytes.
-
-
 
 </td>
 </tr>
@@ -408,21 +357,15 @@ Displays the total size of evicted objects in bytes.
 
 TEMP\_EVICT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of temp-evicted objects.
-
-
 
 </td>
 </tr>
@@ -431,21 +374,15 @@ Displays the total number of temp-evicted objects.
 
 TEMP\_EVICT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of temp-evicted objects in bytes.
-
-
 
 </td>
 </tr>
@@ -454,21 +391,15 @@ Displays the total size of temp-evicted objects in bytes.
 
 RESIZE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of resizes of objects.
-
-
 
 </td>
 </tr>
@@ -477,21 +408,15 @@ Displays the total number of resizes of objects.
 
 RESIZE\_DELTA\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size delta changed by the resize of the objects in bytes.
-
-
 
 </td>
 </tr>
@@ -500,21 +425,15 @@ Displays the total size delta changed by the resize of the objects in bytes.
 
 SHRINK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of shrunken objects.
-
-
 
 </td>
 </tr>
@@ -523,21 +442,15 @@ Displays the total number of shrunken objects.
 
 SHRINK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of shrunken objects in bytes.
-
-
 
 </td>
 </tr>
@@ -546,21 +459,15 @@ Displays the total size of shrunken objects in bytes.
 
 RETENTION\_PERIOD\_SHRINK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of shrunken objects due to an unused retention period.
-
-
 
 </td>
 </tr>
@@ -569,21 +476,15 @@ Displays the total number of shrunken objects due to an unused retention period.
 
 RETENTION\_PERIOD\_SHRINK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of shrunken objects due to an unused retention period in bytes.
-
-
 
 </td>
 </tr>
@@ -592,21 +493,15 @@ Displays the total size of shrunken objects due to an unused retention period in
 
 PAGE\_LOADABLE\_COLUMNS\_LIMIT\_SHRINK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of shrunken objects due to a paged attribute limit violation.
-
-
 
 </td>
 </tr>
@@ -615,21 +510,15 @@ Displays the total number of shrunken objects due to a paged attribute limit vio
 
 PAGE\_LOADABLE\_COLUMNS\_LIMIT\_SHRINK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size of shrunken objects due to paged attribute limit violation in bytes.
-
-
 
 </td>
 </tr>
@@ -638,21 +527,15 @@ Displays the total size of shrunken objects due to paged attribute limit violati
 
 FAILED\_SHRINK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of the objects that the shrink failed to remove.
-
-
 
 </td>
 </tr>
@@ -661,21 +544,66 @@ Displays the total number of the objects that the shrink failed to remove.
 
 FAILED\_SHRINK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Displays the total size of the objects that the shrink failed to remove in bytes.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+UPPER\_LIMIT
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the effective upper size limit \(in bytes\) for objects of this memory object type. If the total memory usage for objects belonging to this memory object type exceeds the UPPER\_LIMIT, an automatic unload is triggered.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LOWER\_LIMIT
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the effective lower size limit \(in bytes\) for objects of this memory object type. If an automatic unload has been triggered because the UPPER\_LIMIT was exceeded, the unload execution stops when the total memory usage falls below the LOWER\_LIMIT.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+RESOURCE\_CATEGORY
+
+</td>
+<td valign="top">
+
+NVARCHAR\(8\)
+
+</td>
+<td valign="top">
+
+Displays the resource category. CACHE indicates that the object has been used as a cache.
 
 </td>
 </tr>
@@ -698,5 +626,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [M\_MEMORY\_OBJECT\_DISPOSITIONS System View](m-memory-object-dispositions-system-view-20b4bf9.md "Displays the disposition-specific memory object statistics.")
 
-[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
+[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
 

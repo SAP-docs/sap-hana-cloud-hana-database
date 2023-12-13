@@ -34,7 +34,7 @@ This tutorial shows how to create and set up a dev space in SAP Business Applica
 
     1.  Choose *Create Dev Space*.
 
-    2.  In the *Create a New Dev Space* Wizard, provide a name for the new space, for example, "***CAPDEV***"
+    2.  In the *Create a New Dev Space* Wizard, provide a name for the new space, for example, "`CAPDEV`"
 
         > ### Tip:  
         > The name must contain only alphanumeric characters; special characters are not permitted.

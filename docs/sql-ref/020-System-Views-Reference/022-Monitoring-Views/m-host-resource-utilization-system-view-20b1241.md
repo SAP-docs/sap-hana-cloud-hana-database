@@ -17,21 +17,15 @@ Provides information about host resource utilization by all processes \(includin
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 FREE\_PHYSICAL\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the free physical memory on the host in bytes.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the free physical memory on the host in bytes.
 
 USED\_PHYSICAL\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used physical memory on the host in bytes.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the used physical memory on the host in bytes.
 
 FREE\_SWAP\_SPACE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the free swap memory on the host in bytes.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the free swap memory on the host in bytes.
 
 USED\_SWAP\_SPACE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used swap memory on the host in bytes.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the used swap memory on the host in bytes.
 
 ALLOCATION\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocation limit for all processes in bytes.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the allocation limit for all processes in bytes.
 
 INSTANCE\_TOTAL\_MEMORY\_USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the amount of memory from the memory pool that is currently being used by SAP HANA processes in bytes.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the amount of memory from the memory pool that is currently being used 
 
 INSTANCE\_TOTAL\_MEMORY\_PEAK\_USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak memory from the memory pool used by SAP HANA processes since the instance started \(this is a sample-based value\) in bytes.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the peak memory from the memory pool used by SAP HANA processes since t
 
 INSTANCE\_TOTAL\_MEMORY\_ALLOCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the memory pool for all SAP HANA processes in bytes.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the size of the memory pool for all SAP HANA processes in bytes.
 
 INSTANCE\_CODE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the code size, including shared libraries of SAP HANA processes in bytes.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the code size, including shared libraries of SAP HANA processes in byte
 
 INSTANCE\_SHARED\_MEMORY\_ALLOCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the shared memory size of SAP HANA processes in bytes.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the shared memory size of SAP HANA processes in bytes.
 
 TOTAL\_CPU\_USER\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU time spent in the user mode in milliseconds.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the CPU time spent in the user mode in milliseconds.
 
 TOTAL\_CPU\_SYSTEM\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU time spent in the kernel mode in milliseconds.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the CPU time spent in the kernel mode in milliseconds.
 
 TOTAL\_CPU\_WIO\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU time spent in wait I/O in milliseconds. Linux only, Microsoft Windows is always 0.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the CPU time spent in wait I/O in milliseconds. Linux only, Microsoft W
 
 TOTAL\_CPU\_IDLE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the CPU idle time in milliseconds.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the CPU idle time in milliseconds.
 
 SYS\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the host timestamp in the local time zone.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the host timestamp in the local time zone.
 
 UTC\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the host timestamp in UTC.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the host timestamp in UTC.
 
 OPEN\_FILE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of allocated file handles on the host. The Kernel parameter is `fs.file-nr`. For more information, see the OPEN\_FILE\_LIMIT key in the M\_HOST\_INFORMATION system view topic.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,151 @@ Displays the number of allocated file handles on the host. The Kernel parameter 
 
 ACTIVE\_ASYNC\_IO\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Displays the number of asynchronous input and/or output requests on the host. The Kernel parameter is `fs.ai-nr`. For more information, see the ASYNC\_IO\_LIMIT key in the M\_HOST\_INFORMATION system view topic.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+FAST\_RESTART\_MEMORY\_MAPPED\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FAST\_RESTART\_MEMORY\_FILE\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FAST\_RESTART\_MEMORY\_PEAK\_MAPPED\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+FAST\_RESTART\_MEMORY\_PEAK\_FILE\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PERSISTENT\_MEMORY\_MAPPED\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PERSISTENT\_MEMORY\_FILE\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PERSISTENT\_MEMORY\_PEAK\_MAPPED\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+For internal use only.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PERSISTENT\_MEMORY\_PEAK\_FILE\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+For internal use only.
 
 </td>
 </tr>
@@ -477,7 +493,7 @@ Displays the number of asynchronous input and/or output requests on the host. Th
 **Related Information**  
 
 
-[HOST_RESOURCE_UTILIZATION_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_2_QRC/en-US/fbd82f0303c44e35a6bbb12cb803f94c.html "Returns the host resource utilization for all processes (including non-SAP HANA processes).") :arrow_upper_right:
+[HOST_RESOURCE_UTILIZATION_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/fbd82f0303c44e35a6bbb12cb803f94c.html "Returns the host resource utilization for all processes (including non-SAP HANA processes).") :arrow_upper_right:
 
 [M\_HOST\_INFORMATION System View](m-host-information-system-view-20b1002.md "Provides host information such as machine and OS configuration.")
 

@@ -94,36 +94,26 @@ FROM p_cont;
 
 CLASS
 
-
-
 </th>
 <th valign="top">
 
 VAL
-
-
 
 </th>
 <th valign="top">
 
 PC1
 
-
-
 </th>
 <th valign="top">
 
 PC2
-
-
 
 </th>
 <th valign="top">
 
 PC3
 
-
-
 </th>
 </tr>
 <tr>
@@ -131,35 +121,25 @@ PC3
 
 A
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 2.0
 
-
-
 </td>
 <td valign="top">
 
 5.0
 
-
-
 </td>
 <td valign="top">
 
 7.5
-
-
 
 </td>
 </tr>
@@ -167,36 +147,26 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 2.0
-
-
 
 </td>
 <td valign="top">
 
 5.0
 
-
-
 </td>
 <td valign="top">
 
 7.5
-
-
 
 </td>
 </tr>
@@ -204,36 +174,26 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 2.0
-
-
 
 </td>
 <td valign="top">
 
 5.0
 
-
-
 </td>
 <td valign="top">
 
 7.5
-
-
 
 </td>
 </tr>
@@ -241,36 +201,26 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 2.0
-
-
 
 </td>
 <td valign="top">
 
 5.0
 
-
-
 </td>
 <td valign="top">
 
 7.5
-
-
 
 </td>
 </tr>
@@ -278,73 +228,53 @@ A
 <td valign="top">
 
 A
-
-
 
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 2.0
-
-
 
 </td>
 <td valign="top">
 
 5.0
 
-
-
 </td>
 <td valign="top">
 
 7.5
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 B
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1.0
 
-
-
 </td>
 <td valign="top">
 
 1.0
-
-
 
 </td>
 <td valign="top">
 
 5.5
-
-
 
 </td>
 </tr>
@@ -352,36 +282,26 @@ B
 <td valign="top">
 
 B
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1.0
 
-
-
 </td>
 <td valign="top">
 
 1.0
-
-
 
 </td>
 <td valign="top">
 
 5.5
-
-
 
 </td>
 </tr>
@@ -389,36 +309,26 @@ B
 <td valign="top">
 
 B
-
-
 
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 1.0
 
-
-
 </td>
 <td valign="top">
 
 1.0
-
-
 
 </td>
 <td valign="top">
 
 5.5
-
-
 
 </td>
 </tr>

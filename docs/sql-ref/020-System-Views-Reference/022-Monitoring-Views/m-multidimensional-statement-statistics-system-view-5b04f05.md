@@ -15,21 +15,15 @@ Displays all multidimensional statement statistics gathered since the server sta
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement string.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the statement string.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the statement hash.
-
-
+Displays the multidimensional services \(MDS\) statement hash.
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the statement hash.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the name of the user.
 
 APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the application user.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the name of the application user.
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the application.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the name of the application.
 
 STATEMENT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(3\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement type.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the statement type.
 
 LAST\_CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last connection ID that executed the statement.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the last connection ID that executed the statement.
 
 LAST\_EXECUTION\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time of the last execution.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the time of the last execution.
 
 LAST\_METADATA\_READ\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the last metadata read duration.
-
-
+Displays the last metadata read duration, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the last metadata read duration.
 
 LAST\_QUERY\_PREPARATION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the last query preparation duration.
-
-
+Displays the last query preparation duration, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the last query preparation duration.
 
 LAST\_PLAN\_EXECUTION\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the last plan execution duration.
-
-
+Displays the last plan execution duration, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the last plan execution duration.
 
 LAST\_POST\_PROCESSING\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the last post processing duration.
-
-
+Displays the last post processing duration, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the last post processing duration.
 
 LAST\_CUBE\_PROCESSING\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the last cube processing duration.
-
-
+Displays the last cube processing duration, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the last cube processing duration.
 
 LAST\_PLAN\_EXECUTION\_RESULTSET\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last size of the intermediate result returned by the plan execution, in bytes.
-
-
 
 </td>
 </tr>
@@ -406,21 +304,15 @@ Displays the last size of the intermediate result returned by the plan execution
 
 LAST\_RESULTSET\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the last result set, in bytes.
-
-
 
 </td>
 </tr>
@@ -429,21 +321,15 @@ Displays the size of the last result set, in bytes.
 
 LAST\_RESULTSET\_CELL\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of cells in the last result set.
-
-
 
 </td>
 </tr>
@@ -452,21 +338,15 @@ Displays the number of cells in the last result set.
 
 LAST\_HIERARCHY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the latest number of hierarchies.
-
-
 
 </td>
 </tr>
@@ -475,21 +355,15 @@ Displays the latest number of hierarchies.
 
 LAST\_CACHED\_HIERARCHY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of hierarchy cache hits.
-
-
 
 </td>
 </tr>
@@ -498,21 +372,15 @@ Displays the last number of hierarchy cache hits.
 
 LAST\_CALCULATION\_ENTITY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of calculation entities.
-
-
 
 </td>
 </tr>
@@ -521,21 +389,15 @@ Displays the last number of calculation entities.
 
 LAST\_CALCULATION\_ENTITY\_GROUP\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of calculation entity groups.
-
-
 
 </td>
 </tr>
@@ -544,21 +406,15 @@ Displays the last number of calculation entity groups.
 
 LAST\_DRILL\_DIMENSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of dimensions in the drill.
-
-
 
 </td>
 </tr>
@@ -567,21 +423,15 @@ Displays the last number of dimensions in the drill.
 
 LAST\_AGGREGATION\_DIMENSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of aggregation dimensions.
-
-
 
 </td>
 </tr>
@@ -590,21 +440,15 @@ Displays the last number of aggregation dimensions.
 
 LAST\_SERIALIZED\_CUBE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last size of the serialized cube, in bytes.
-
-
 
 </td>
 </tr>
@@ -613,21 +457,15 @@ Displays the last size of the serialized cube, in bytes.
 
 LAST\_REQUEST\_QUEUE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of jobs waiting in the request queue.
-
-
 
 </td>
 </tr>
@@ -636,21 +474,15 @@ Displays the number of jobs waiting in the request queue.
 
 LAST\_EXECUTION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last execution status of the statement.
-
-
 
 </td>
 </tr>
@@ -659,21 +491,15 @@ Displays the last execution status of the statement.
 
 LAST\_PERFORMANCE\_DATA
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the last performance data.
-
-
 
 </td>
 </tr>
@@ -682,21 +508,15 @@ Displays the last performance data.
 
 EXECUTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution count.
-
-
 
 </td>
 </tr>
@@ -705,21 +525,15 @@ Displays the execution count.
 
 TOTAL\_METADATA\_CACHE\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of data cache hits.
-
-
 
 </td>
 </tr>
@@ -728,21 +542,15 @@ Displays the number of data cache hits.
 
 TOTAL\_DATA\_CACHE\_HIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of data cached hits.
-
-
 
 </td>
 </tr>
@@ -751,21 +559,15 @@ Displays the number of data cached hits.
 
 TOTAL\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the total time of the execution.
-
-
+Displays the total time of the execution, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -774,21 +576,15 @@ Displays the total time of the execution.
 
 AVG\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the average time of the execution.
-
-
+Displays the average time of the execution, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -797,21 +593,15 @@ Displays the average time of the execution.
 
 MIN\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the minimum time of the execution.
-
-
+Displays the minimum time of the execution, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -820,21 +610,15 @@ Displays the minimum time of the execution.
 
 MAX\_EXECUTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the maximum time of the execution.
-
-
+Displays the maximum time of the execution, in milliseconds \(ms\).
 
 </td>
 </tr>
@@ -843,21 +627,15 @@ Displays the maximum time of the execution.
 
 MAX\_CALLED\_THREAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum thread count.
-
-
 
 </td>
 </tr>
@@ -866,30 +644,17 @@ Displays the maximum thread count.
 
 MAX\_EXECUTION\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
 
 Displays the maximum memory size in bytes.
 
-
-
 </td>
 </tr>
 </table>
-
-**Related Information**  
-
-
-[Monitor SQL Statements](https://help.sap.com/viewer/9630e508caef4578b34db22014998dba/cloud/en-US/4fb056d4a45b4f2895d846cef424b985.html)
-
-[Statement Performance](https://help.sap.com/viewer/a2cea64fa3ac4f90a52405d07600047b/cloud/en-US/38a0454d1a2f4138bd47d99e09f3c094.html)
 

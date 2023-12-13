@@ -15,21 +15,15 @@ Provides replication log monitoring information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume ID.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the volume ID.
 
 IS\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays TRUE when the replication logs are being collected and FALSE when collecting replication logs is disabled.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays TRUE when the replication logs are being collected and FALSE when colle
 
 LAST\_DISABLE\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the latest disable reason: REPLICATION\_LOG\_SPACE FULL/USER\_COMMAND.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the latest disable reason: REPLICATION\_LOG\_SPACE FULL/USER\_COMMAND.
 
 USED\_REPLICATION\_LOG\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used replication log size in the volume in bytes.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the used replication log size in the volume in bytes.
 
 MAX\_REPLICATION\_LOG\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the limitation of the replication log size in the volume in bytes.
-
-
 
 </td>
 </tr>

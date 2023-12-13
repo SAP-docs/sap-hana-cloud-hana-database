@@ -95,35 +95,25 @@ A simple comparison of the temporary table types is provided in this table. To l
 
 Characteristic
 
-
-
 </th>
 <th valign="top">
 
 Global temp \(column\)
-
-
 
 </th>
 <th valign="top">
 
 Global temp \(row\)
 
-
-
 </th>
 <th valign="top">
 
 Local temp \(column\)
 
-
-
 </th>
 <th valign="top">
 
 Local temp \(row\)
-
-
 
 </th>
 </tr>
@@ -132,35 +122,25 @@ Local temp \(row\)
 
 Metadata shared across sessions
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -169,35 +149,25 @@ No
 
 Dropped after session terminates
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -206,35 +176,25 @@ Yes
 
 Allows add or drop of primary key
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -243,35 +203,25 @@ No
 
 Allows add or drop of identity column
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -1317,14 +1267,10 @@ The following UPDATE referential actions are possible:
 
 Action Name
 
-
-
 </th>
 <th valign="top">
 
 Update Action
-
-
 
 </th>
 </tr>
@@ -1333,14 +1279,10 @@ Update Action
 
 RESTRICT
 
-
-
 </td>
 <td valign="top">
 
 Any updates to a referenced table are prohibited if there are any matched records in the referencing table. This is the default action.
-
-
 
 </td>
 </tr>
@@ -1349,14 +1291,10 @@ Any updates to a referenced table are prohibited if there are any matched record
 
 CASCADE
 
-
-
 </td>
 <td valign="top">
 
-If a record is updated in the referenced table, then the corresponding records in the referencing table are also updated with the same values. Any updates to a referenced table are prohibited if there are any matched records in the referencing table. This is the default action.
-
-
+When a record in the referenced table is updated, the corresponding records in the referencing table are automatically updated to match the new values. This is the default action.
 
 </td>
 </tr>
@@ -1365,14 +1303,10 @@ If a record is updated in the referenced table, then the corresponding records i
 
 SET NULL
 
-
-
 </td>
 <td valign="top">
 
 If a record is updated in the referenced table, then the corresponding records in the referencing table are also updated with null values.
-
-
 
 </td>
 </tr>
@@ -1381,14 +1315,10 @@ If a record is updated in the referenced table, then the corresponding records i
 
 SET DEFAULT
 
-
-
 </td>
 <td valign="top">
 
 If a record is updated in the referenced table, then the corresponding records in the referencing table are also updated with their default values
-
-
 
 </td>
 </tr>
@@ -1418,14 +1348,10 @@ The following DELETE referential actions are possible:
 
 Action Name
 
-
-
 </th>
 <th valign="top">
 
 Delete Action
-
-
 
 </th>
 </tr>
@@ -1434,14 +1360,10 @@ Delete Action
 
 RESTRICT
 
-
-
 </td>
 <td valign="top">
 
 Any deletions to a referenced table are prohibited if there are any matched records in the referencing table. This is the default action.
-
-
 
 </td>
 </tr>
@@ -1450,14 +1372,10 @@ Any deletions to a referenced table are prohibited if there are any matched reco
 
 CASCADE
 
-
-
 </td>
 <td valign="top">
 
 If a record in the referenced table is deleted, then the corresponding records in the referencing table are also deleted. When you specify NOT ENFORCED, new or modified rows are not checked to determine whether they violate the foreign key constraint. If a record in the referenced table is deleted, then the corresponding records in the referencing table are also deleted.
-
-
 
 </td>
 </tr>
@@ -1466,14 +1384,10 @@ If a record in the referenced table is deleted, then the corresponding records i
 
 SET NULL
 
-
-
 </td>
 <td valign="top">
 
 If a record in the referenced table is deleted, then the corresponding records in the referencing table are set to null.
-
-
 
 </td>
 </tr>
@@ -1482,14 +1396,10 @@ If a record in the referenced table is deleted, then the corresponding records i
 
 SET DEFAULT
 
-
-
 </td>
 <td valign="top">
 
 If a record in the referenced table is deleted, then the corresponding records in the referencing table are set to their default values.
-
-
 
 </td>
 </tr>
@@ -2142,9 +2052,9 @@ Specifies the priority of the table to be unloaded from memory.
 
 For clauses for creating heterogeneous and non-heterogeneous partitions, see the topics on *Non-heterogeneous Create Partition Clauses* *Heterogeneous Create Partition Clauses* in this guide.
 
- [Non-heterogeneous Create Partition Clauses](non-heterogeneous-create-partition-clauses-ca6a99b.md)
+[Non-Heterogeneous Create Partition Clauses](non-heterogeneous-create-partition-clauses-ca6a99b.md)
 
- [Heterogeneous Create Partition Clauses](heterogeneous-create-partition-clauses-d496e58.md)
+[Heterogeneous Create Partition Clauses](heterogeneous-create-partition-clauses-d496e58.md)
 
 
 
@@ -3177,7 +3087,7 @@ INSERT INTO t2 VALUES(5, -3);
 Now, the following two statements return the same result \(2, 2\), as we have set the default predicate filter to y1<3:
 
 ```
-SELECT * FROM t2:1;
+SELECT * FROM t2:a;
 SELECT * FROM t2:a[y1<3];
 ```
 
@@ -3208,7 +3118,6 @@ INSERT INTO t1 VALUES(0, 0);
 INSERT INTO t1 VALUES(1, 1);
 INSERT INTO t1 VALUES(2, 2);
 INSERT INTO t1 VALUES(3, 3);
-
 ```
 
 Execute the following statements to create and populate table t2 with associations to table t1 and with the default filter set to filter column values to values less than 3:
@@ -3261,7 +3170,7 @@ Executing ***SELECT a\[y1\>1\].x1 FROM t2;*** returns the following values:
 **Related Information**  
 
 
-[Non-heterogeneous Create Partition Clauses](non-heterogeneous-create-partition-clauses-ca6a99b.md "Defines the various partitioning clauses available for non-heterogeneous partitions when creating a new table.")
+[Non-Heterogeneous Create Partition Clauses](non-heterogeneous-create-partition-clauses-ca6a99b.md "Defines the various partitioning clauses available for non-heterogeneous partitions when creating a new table.")
 
 [Heterogeneous Create Partition Clauses](heterogeneous-create-partition-clauses-d496e58.md "Defines the various partitioning clauses available for heterogeneous partitions when creating a new table.")
 
@@ -3273,17 +3182,17 @@ Executing ***SELECT a\[y1\>1\].x1 FROM t2;*** returns the following values:
 
 [CREATE VIRTUAL TABLE Statement \(Data Definition\)](create-virtual-table-statement-data-definition-d2a0406.md "Creates a virtual table at a remote source.")
 
-[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
+[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [Introduction to SQL](../introduction-to-sql-209f502.md "This chapter describes the SAP HANA database implementation of Structured Query Language (SQL).")
 
 [Predicates](../predicates-20a2ab2.md "")
 
-[Hybrid LOBs (Large Objects)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/61ab21a1972846e0aa0b9a989ce4867a.html "To save memory you can store LOB data on disk, in this case the data is only loaded into memory when it is needed. Alternatively, you can use the configurable Hybrid LOB feature which is flexible and stores LOBs either on disk or in memory depending on their size.") :arrow_upper_right:
+[Hybrid LOBs (Large Objects)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/61ab21a1972846e0aa0b9a989ce4867a.html "To save memory you can store LOB data on disk, in this case the data is only loaded into memory when it is needed. Alternatively, you can use the configurable Hybrid LOB feature which is flexible and stores LOBs either on disk or in memory depending on their size.") :arrow_upper_right:
 
 [CREATE REMOTE SOURCE Statement \(Access Control\)](create-remote-source-statement-access-control-20d4834.md "Defines an external data source that can connect to the SAP HANA database.")
 
@@ -3293,7 +3202,7 @@ Executing ***SELECT a\[y1\>1\].x1 FROM t2;*** returns the following values:
 
 [TABLE\_COLUMNS System View](../../020-System-Views-Reference/021-System-Views/table-columns-system-view-2100d33.md "Provides information about available table columns.")
 
-[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2023_2_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
+[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2023_4_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_2_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

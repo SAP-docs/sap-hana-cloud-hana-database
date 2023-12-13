@@ -17,21 +17,15 @@ Provides page usage statistics on data volumes.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ Displays the persistence volume ID.
 
 PARTITION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -137,21 +109,15 @@ Displays the partition ID. Returns the following:
 
 DATA\_VOLUME\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data volume name.
-
-
 
 </td>
 </tr>
@@ -160,21 +126,15 @@ Displays the data volume name.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data volume state: ACTIVATING, ACTIVE, or DEACTIVATING.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the data volume state: ACTIVATING, ACTIVE, or DEACTIVATING.
 
 PAGE\_SIZECLASS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the page size class.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the page size class.
 
 PAGE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the page size in bytes.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the page size in bytes.
 
 SUPERBLOCK\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the superblock size in bytes.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the superblock size in bytes.
 
 INITIAL\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of init pages.
-
-
 
 </td>
 </tr>
@@ -275,21 +211,15 @@ Displays the number of init pages.
 
 TOTAL\_ALLOCATE\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of single and group allocated blocks.
-
-
 
 </td>
 </tr>
@@ -298,21 +228,15 @@ Displays the number of single and group allocated blocks.
 
 TOTAL\_SET\_BLOCK\_FREE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of single and group freed blocks.
-
-
 
 </td>
 </tr>
@@ -321,21 +245,15 @@ Displays the number of single and group freed blocks.
 
 TOTAL\_SET\_BLOCK\_FREE\_AFTER\_SAVEPOINT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of single and group freed-after-savepoint blocks.
-
-
 
 </td>
 </tr>
@@ -344,21 +262,15 @@ Displays the number of single and group freed-after-savepoint blocks.
 
 SUPERBLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of used superblocks.
-
-
 
 </td>
 </tr>
@@ -367,21 +279,15 @@ Displays the number of used superblocks.
 
 USED\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of used blocks.
-
-
 
 </td>
 </tr>
@@ -390,21 +296,15 @@ Displays the number of used blocks.
 
 SHADOW\_BLOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of shadow blocks.
-
-
 
 </td>
 </tr>
@@ -413,21 +313,15 @@ Displays the number of shadow blocks.
 
 FILL\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the fill ratio.
-
-
 
 </td>
 </tr>
@@ -461,7 +355,7 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [M\_DATA\_VOLUME\_SUPERBLOCK\_STATISTICS System View](m-data-volume-superblock-statistics-system-view-20adf77.md "Provides FreeBlockManager Superblock statistics.")
 
-[HOST_DATA_VOLUME_PAGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_2_QRC/en-US/c8009f66ea304c5d9893b8a89de9de8c.html "Specifies the data volume page information per host.") :arrow_upper_right:
+[HOST_DATA_VOLUME_PAGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/c8009f66ea304c5d9893b8a89de9de8c.html "Specifies the data volume page information per host.") :arrow_upper_right:
 
-[Statistics for Page-Loadable Storage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/d791786e1f324187bd3a6ce2a8c1c601.html "A number of monitoring views report information at the partition, column, and column sub-object level, along with the existing non-paged memory size statistics.") :arrow_upper_right:
+[Statistics for Page-Loadable Storage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/d791786e1f324187bd3a6ce2a8c1c601.html "A number of monitoring views report information at the partition, column, and column sub-object level, along with the existing non-paged memory size statistics.") :arrow_upper_right:
 

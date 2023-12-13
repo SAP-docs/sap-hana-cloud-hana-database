@@ -17,21 +17,15 @@ Provides information about defined constraints for tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the table name.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the column name.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the column position in this constraint.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the column position in this constraint.
 
 CONSTRAINT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the constraint name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the constraint name.
 
 IS\_PRIMARY\_KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the constraint is a primary key constraint: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays whether the constraint is a primary key constraint: TRUE/FALSE.
 
 IS\_UNIQUE\_KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the constraint is a unique constraint: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -201,25 +153,27 @@ Displays whether the constraint is a unique constraint: TRUE/FALSE.
 
 CHECK\_CONDITION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the check condition of the check constraint.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio209f7cf5751910149d9ce6b033d8ddce__section_j3l_c1q_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

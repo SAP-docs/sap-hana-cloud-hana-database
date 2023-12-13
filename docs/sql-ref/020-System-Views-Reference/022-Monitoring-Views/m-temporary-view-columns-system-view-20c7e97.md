@@ -17,21 +17,15 @@ Provides information about temporary view columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the view name.
 
 VIEW\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the view.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the object ID of the view.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view column name.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the view column name.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ordinal position of the view column.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the ordinal position of the view column.
 
 DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type ID of the column.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the SQL data type ID of the column.
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type name of the column.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the SQL data type name of the column.
 
 OFFSET
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the offset of the column in a record.
-
-
 
 </td>
 </tr>
@@ -270,14 +204,10 @@ Displays the offset of the column in a record.
 
 LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -298,21 +228,15 @@ Displays the number of:
 
 SCALE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum number of digits to the right of the decimal point: TIME or TIMESTAMP. The decimal digits are defined as the number of digits to the right of the decimal point in the second's component of the data.
-
-
 
 </td>
 </tr>
@@ -321,21 +245,15 @@ Displays the maximum number of digits to the right of the decimal point: TIME or
 
 IS\_NULLABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column is allowed to accept null value: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -344,21 +262,15 @@ Displays whether the column is allowed to accept null value: TRUE/FALSE.
 
 DEFAULT\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default value in bytes.
-
-
 
 </td>
 </tr>
@@ -367,21 +279,15 @@ Displays the default value in bytes.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description for this column.
-
-
 
 </td>
 </tr>
@@ -390,21 +296,15 @@ Displays the description for this column.
 
 DDIC\_DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the DDIC data type ID.
-
-
 
 </td>
 </tr>
@@ -413,21 +313,15 @@ Displays the DDIC data type ID.
 
 DDIC\_DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the DDIC data type name.
-
-
 
 </td>
 </tr>
@@ -436,21 +330,15 @@ Displays the DDIC data type name.
 
 COMPRESSION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of compression: DEFAULT, PREFIXED, SPARSE, CLUSTERED, INDIRECT, or RLE.
-
-
 
 </td>
 </tr>
@@ -459,21 +347,15 @@ Displays the type of compression: DEFAULT, PREFIXED, SPARSE, CLUSTERED, INDIRECT
 
 INDEX\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of index: NONE/FULL.
-
-
 
 </td>
 </tr>
@@ -482,21 +364,15 @@ Displays the type of index: NONE/FULL.
 
 COLUMN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the column.
-
-
 
 </td>
 </tr>
@@ -505,21 +381,15 @@ Displays the ID of the column.
 
 PRELOAD
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column is preloaded: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -536,5 +406,5 @@ Displays whether the column is preloaded: TRUE/FALSE.
 
 [M\_TEMPORARY\_JOIN\_CONSTRAINTS System View](m-temporary-join-constraints-system-view-d21b187.md "Provides information about temporary join constraints.")
 
-[Handling Temporary Data](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/cffa9243511a4858882de2aa398a4899.html "") :arrow_upper_right:
+[Handling Temporary Data](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/cffa9243511a4858882de2aa398a4899.html "") :arrow_upper_right:
 

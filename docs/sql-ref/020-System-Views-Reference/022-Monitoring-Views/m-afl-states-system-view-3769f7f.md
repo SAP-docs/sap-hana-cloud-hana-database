@@ -15,21 +15,15 @@ Provides information about AFL states.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 STATE\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the state.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the ID of the state.
 
 AREA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the area.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the name of the area.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the state description.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the state description.
 
 CREATE\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the state was created.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the time when the state was created.
 
 LAST\_ACCESS\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time stamp of the last access.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the time stamp of the last access.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>

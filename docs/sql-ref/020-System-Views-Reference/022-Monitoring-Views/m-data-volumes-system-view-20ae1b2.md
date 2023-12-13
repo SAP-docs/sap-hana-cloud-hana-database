@@ -17,21 +17,15 @@ Provides data volume statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,14 +68,10 @@ Displays the internal port number.
 
 PARTITION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -114,21 +92,15 @@ Displays the partition ID. Returns the following:
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -137,21 +109,15 @@ Displays the persistence volume ID.
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the filename of the data volume.
-
-
 
 </td>
 </tr>
@@ -160,21 +126,15 @@ Displays the filename of the data volume.
 
 FILE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the file ID of data volume.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the file ID of data volume.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data volume state: ACTIVATING, ACTIVE, or DEACTIVATING.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the data volume state: ACTIVATING, ACTIVE, or DEACTIVATING.
 
 SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the data volume in bytes.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the size of the data volume in bytes.
 
 MAX\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size of the data volume in bytes.
-
-
 
 </td>
 </tr>

@@ -55,14 +55,10 @@ The set numbers are defined as follows:
 
 Set number
 
-
-
 </th>
 <th valign="top">
 
 Set
-
-
 
 </th>
 </tr>
@@ -71,14 +67,10 @@ Set
 
 0
 
-
-
 </td>
 <td valign="top">
 
 The value is not assigned to a set
-
-
 
 </td>
 </tr>
@@ -87,14 +79,10 @@ The value is not assigned to a set
 
 1
 
-
-
 </td>
 <td valign="top">
 
 The training set
-
-
 
 </td>
 </tr>
@@ -103,14 +91,10 @@ The training set
 
 2
 
-
-
 </td>
 <td valign="top">
 
 The validation set
-
-
 
 </td>
 </tr>
@@ -119,14 +103,10 @@ The validation set
 
 3
 
-
-
 </td>
 <td valign="top">
 
 The test set
-
-
 
 </td>
 </tr>
@@ -171,28 +151,20 @@ SELECT *, RANDOM_PARTITION(0.5, 0.2, 0.3, 0) OVER (PARTITION BY station ORDER BY
 
 STATION
 
-
-
 </th>
 <th valign="top">
 
 TS
-
-
 
 </th>
 <th valign="top">
 
 TEMPERATURE
 
-
-
 </th>
 <th valign="top">
 
 PART\_NUM
-
-
 
 </th>
 </tr>
@@ -201,28 +173,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 01.01.2014
-
-
 
 </td>
 <td valign="top">
 
 0.0
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -231,28 +195,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 02.01.2014
-
-
 
 </td>
 <td valign="top">
 
 3.0
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -261,28 +217,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 03.01.2014
-
-
 
 </td>
 <td valign="top">
 
 4.5
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -291,28 +239,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 04.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.0
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -321,28 +261,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 05.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.3
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -351,28 +283,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 06.01.2014
-
-
 
 </td>
 <td valign="top">
 
 5.9
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -380,29 +304,21 @@ PART\_NUM
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 01.01.2014
 
-
-
 </td>
 <td valign="top">
 
 1.0
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -410,29 +326,21 @@ PART\_NUM
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 02.01.2014
 
-
-
 </td>
 <td valign="top">
 
 3.4
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -440,29 +348,21 @@ PART\_NUM
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 03.01.2014
 
-
-
 </td>
 <td valign="top">
 
 5.0
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -470,29 +370,21 @@ PART\_NUM
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 04.01.2014
 
-
-
 </td>
 <td valign="top">
 
 6.7
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -500,29 +392,21 @@ PART\_NUM
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 05.01.2014
 
-
-
 </td>
 <td valign="top">
 
 4.9
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -531,28 +415,20 @@ PART\_NUM
 
 2
 
-
-
 </td>
 <td valign="top">
 
 06.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.9
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -588,28 +464,20 @@ SELECT *, RANDOM_PARTITION(5, 2, 3, 0) OVER (ORDER BY temperature) AS part_num F
 
 STATION
 
-
-
 </th>
 <th valign="top">
 
 TS
-
-
 
 </th>
 <th valign="top">
 
 TEMPERATURE
 
-
-
 </th>
 <th valign="top">
 
 PART\_NUM
-
-
 
 </th>
 </tr>
@@ -618,28 +486,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 01.01.2014
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -648,28 +508,20 @@ PART\_NUM
 
 2
 
-
-
 </td>
 <td valign="top">
 
 01.01.2014
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -678,28 +530,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 02.01.2014
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -708,28 +552,20 @@ PART\_NUM
 
 2
 
-
-
 </td>
 <td valign="top">
 
 02.01.2014
-
-
 
 </td>
 <td valign="top">
 
 3.4
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -738,28 +574,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 03.01.2014
-
-
 
 </td>
 <td valign="top">
 
 4.5
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -768,28 +596,20 @@ PART\_NUM
 
 2
 
-
-
 </td>
 <td valign="top">
 
 05.01.2014
-
-
 
 </td>
 <td valign="top">
 
 4.6
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -797,29 +617,21 @@ PART\_NUM
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 03.01.2014
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -828,28 +640,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 06.01.2014
-
-
 
 </td>
 <td valign="top">
 
 5.9
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -858,28 +662,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 04.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -888,28 +684,20 @@ PART\_NUM
 
 1
 
-
-
 </td>
 <td valign="top">
 
 05.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.3
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -917,29 +705,21 @@ PART\_NUM
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 04.01.2014
 
-
-
 </td>
 <td valign="top">
 
 6.7
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -948,28 +728,20 @@ PART\_NUM
 
 2
 
-
-
 </td>
 <td valign="top">
 
 06.01.2014
-
-
 
 </td>
 <td valign="top">
 
 6.9
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>

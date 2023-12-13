@@ -68,7 +68,7 @@ Before using SAP Web IDE Full-Stack, bear in mind the following prerequisites:
 
         Define mandatory \(\*\) details of the new project according to the requirements of the setup Wizard, for example:
 
-        -   *Basic Information* \> *Project Name\**: ***travel***
+        -   *Basic Information* \> *Project Name\**: `travel`
         -   *Template Customization* \> *Database Details\** \> *HANA Cloud*
 
     4.  Save the configuration; choose *Finish*.
@@ -82,7 +82,7 @@ Before using SAP Web IDE Full-Stack, bear in mind the following prerequisites:
 
         Right-click the folder `travel/db/src`, choose *New* \> *Database Artifact* in the context menu, and in the *New Database Artifact* window, enter the following values:
 
-        -   *File Name*: ***room***
+        -   *File Name*: `room`
         -   *File Type*: *hdbtable*
 
         The new file is displayed in a new tab in the SAP Web IDE code editor.
@@ -157,16 +157,16 @@ Before using SAP Web IDE Full-Stack, bear in mind the following prerequisites:
 
         Right-click the folder `travel/db/src`, choose *New* \> *Calculation View* in the context menu, and in the *New Calculation View* window, enter the following values:
 
-        -   *Name*: ***cv\_room***
+        -   *Name*: `cv_room`
         -   *Namespace*: travel.db
         -   *Label*: An optional short description of the view
-        -   *Data Category*: ***CUBE***
+        -   *Data Category*: `CUBE`
 
         The new calculation view is displayed in the graphical modeling editor.
 
     2.  Select a data source for the calculation view.
 
-        Click the *Aggregation* node and the \[+\] icon and in the *Find Data Sources* window, type ***room*** in the *All Types Selected* search box, and in the *Results* pane, choose *travel.db::room* and choose *Finish*.
+        Click the *Aggregation* node and the \[+\] icon and in the *Find Data Sources* window, type `room` in the *All Types Selected* search box, and in the *Results* pane, choose *travel.db::room* and choose *Finish*.
 
     3.  Display details of the calculation view's *Aggregation* node.
 

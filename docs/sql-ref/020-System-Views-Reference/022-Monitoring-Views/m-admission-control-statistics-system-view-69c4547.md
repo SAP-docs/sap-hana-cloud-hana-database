@@ -17,21 +17,15 @@ Provides the overall statistics values of the Session-Wise Admission Control fea
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 TOTAL\_ADMIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated request admission count.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the accumulated request admission count.
 
 TOTAL\_REJECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated request rejection count.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the accumulated request rejection count.
 
 TOTAL\_ENQUEUE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated request queued count.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the accumulated request queued count.
 
 TOTAL\_DEQUEUE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated request dequeued count \(the executed request count\).
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the accumulated request dequeued count \(the executed request count\).
 
 TOTAL\_TIMEOUT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated request dequeued count due to timeout \(the rejected request count\).
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the accumulated request dequeued count due to timeout \(the rejected re
 
 CURRENT\_QUEUE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current waiting request queued count.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the current waiting request queued count.
 
 LAST\_CPU\_USAGE\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last measured value of the CPU usage, as a percentage of \(max\_concurrency / vcpus\).
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the last measured value of the CPU usage, as a percentage of \(max\_con
 
 LAST\_CPU\_USAGE\_MEASURE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time at which the last CPU usage ratio was measured.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the time at which the last CPU usage ratio was measured.
 
 LAST\_MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last measured memory size in GB.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the last measured memory size in GB.
 
 LAST\_MEMORY\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last measured memory size, as a percentage of the global allocation limit \(last\_memory\_size/memory\_allocation\_limit\).
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the last measured memory size, as a percentage of the global allocation
 
 LAST\_MEMORY\_MEASURE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time at which the last memory size was measured.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the time at which the last memory size was measured.
 
 LAST\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last wait time of the request in the queue in microseconds.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the last wait time of the request in the queue in microseconds.
 
 AVG\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average wait time of the request in the queue in microseconds.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the average wait time of the request in the queue in microseconds.
 
 MAX\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum wait time of the request in the queue in microseconds.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the maximum wait time of the request in the queue in microseconds.
 
 MIN\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum wait time of the request in the queue in microseconds.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the minimum wait time of the request in the queue in microseconds.
 
 SUM\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total wait time of the request in the queue in microseconds.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the total wait time of the request in the queue in microseconds.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>

@@ -15,46 +15,34 @@ In SAP HANA Deployment Infrastructure \(HDI\), an HDI container administrator is
 
 HDI Container SQL View
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- [`M_CONFIGURATION`](m-configuration-b2b6ed1.md) 
-
-
+[`M_CONFIGURATION`](m-configuration-b2b6ed1.md) 
 
 </td>
 <td valign="top">
 
 Shows information about the changes made to the configuration of an HDI container
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`M_CONTAINERS`](m-containers-dcf1c9e.md) 
-
-
+[`M_CONTAINERS`](m-containers-dcf1c9e.md) 
 
 </td>
 <td valign="top">
 
 Shows all HDI containers that are assigned to a container group
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ Shows all HDI containers that are assigned to a container group
 
 [`M_CONTAINER_VERSIONS`](m-container-versions-22320f7.md)
 
-
-
 </td>
 <td valign="top">
 
 Shows the version history and status information of all HDI containers that are assigned to a container group. There can be multiple entries per container
-
-
 
 </td>
 </tr>
@@ -79,14 +63,10 @@ Shows the version history and status information of all HDI containers that are 
 
 [`M_GRANTED_SCHEMA_PRIVILEGES`](m-granted-schema-privileges-77bf987.md)
 
-
-
 </td>
 <td valign="top">
 
 Shows the HDI-container-specific, schema privileges that have been granted to users or user roles by means of the procedure `GRANT_CONTAINER_SCHEMA_PRIVILEGES` 
-
-
 
 </td>
 </tr>
@@ -95,14 +75,10 @@ Shows the HDI-container-specific, schema privileges that have been granted to us
 
 [`M_GRANTED_SCHEMA_ROLES`](m-granted-schema-roles-6f832a6.md)
 
-
-
 </td>
 <td valign="top">
 
 Shows the HDI-container-specific, schema-related roles that have been granted to users or user roles by means of the procedure `GRANT_CONTAINER_SCHEMA_ROLES` 
-
-
 
 </td>
 </tr>
@@ -111,62 +87,46 @@ Shows the HDI-container-specific, schema-related roles that have been granted to
 
 [`M_JOBS`](m-jobs-d114ced.md)
 
-
-
 </td>
 <td valign="top">
 
 Shows information about the progress of the individual jobs of a MAKE operation
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`M_MESSAGES`](m-messages-1696923.md) 
-
-
+[`M_MESSAGES`](m-messages-1696923.md) 
 
 </td>
 <td valign="top">
 
 Shows all recent messages for API calls to the specified HDI container
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`M_OBJECTS`](m-objects-d73be7e.md) 
-
-
+[`M_OBJECTS`](m-objects-d73be7e.md) 
 
 </td>
 <td valign="top">
 
 Shows the database objects in the run-time schema of an HDI container.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`M_ROLES`](m-roles-b7f3bee.md) 
-
-
+[`M_ROLES`](m-roles-b7f3bee.md) 
 
 </td>
 <td valign="top">
 
 Shows all the roles that are deployed in the specified HDI container
-
-
 
 </td>
 </tr>

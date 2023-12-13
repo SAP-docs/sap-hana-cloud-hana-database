@@ -224,14 +224,10 @@ SELECT * FROM T;
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL
-
-
 
 </td>
 </tr>
@@ -240,14 +236,10 @@ VAL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -256,14 +248,10 @@ VAL
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -283,14 +271,10 @@ SELECT * FROM T;
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 VAL
-
-
 
 </td>
 </tr>
@@ -299,14 +283,10 @@ VAL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 11
-
-
 
 </td>
 </tr>
@@ -315,14 +295,10 @@ VAL
 
 2
 
-
-
 </td>
 <td valign="top">
 
 12
-
-
 
 </td>
 </tr>
@@ -418,28 +394,20 @@ In this example, suppose you have the following application-period time table, T
 
 ValidFrom
 
-
-
 </th>
 <th valign="top">
 
 ValidTo
-
-
 
 </th>
 <th valign="top">
 
 PKEY
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -448,29 +416,21 @@ Value
 
 2018-08-01
 
-
-
 </td>
 <td valign="top">
 
 2018-08-15
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 9494
 
-
-
 </td>
 </tr>
 <tr>
@@ -478,29 +438,21 @@ Value
 
 2018-08-15
 
-
-
 </td>
 <td valign="top">
 
 2018-08-31
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 20
 
-
-
 </td>
 </tr>
 <tr>
@@ -508,28 +460,20 @@ Value
 
 2018-08-31
 
-
-
 </td>
 <td valign="top">
 
 2018-09-10
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 30
-
-
 
 </td>
 </tr>
@@ -538,28 +482,20 @@ Value
 
 2018-09-10
 
-
-
 </td>
 <td valign="top">
 
 9999-12-31
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 40
-
-
 
 </td>
 </tr>
@@ -578,35 +514,25 @@ UPDATE TAB01 FOR PORTION OF '2018-08-20' AND '2018-10-20' SET VALUE=42 WHERE PKE
 
 ValidFrom
 
-
-
 </th>
 <th valign="top">
 
 ValidTo
-
-
 
 </th>
 <th valign="top">
 
 PKEY
 
-
-
 </th>
 <th valign="top">
 
 VALUE
 
-
-
 </th>
 <th valign="top">
 
 Comment
-
-
 
 </th>
 </tr>
@@ -615,35 +541,25 @@ Comment
 
 2018-08-01
 
-
-
 </td>
 <td valign="top">
 
 2018-08-15
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 9394
 
-
-
 </td>
 <td valign="top">
 
 Not modified \(outside of portion interval\)
-
-
 
 </td>
 </tr>
@@ -652,35 +568,25 @@ Not modified \(outside of portion interval\)
 
 2018-08-15
 
-
-
 </td>
 <td valign="top">
 
 2018-08-20
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 20
 
-
-
 </td>
 <td valign="top">
 
 Newly inserted record \(case partial overlap\)
-
-
 
 </td>
 </tr>
@@ -689,36 +595,26 @@ Newly inserted record \(case partial overlap\)
 
 2018-08-20
 
-
-
 </td>
 <td valign="top">
 
 2018-08-31
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 42
-
-
 
 </td>
 <td valign="top">
 
 Validfrom and Value were updated \(case partial overlap\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -726,36 +622,26 @@ Validfrom and Value were updated \(case partial overlap\)
 
 2018-08-31
 
-
-
 </td>
 <td valign="top">
 
 2018-09-10
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 42
-
-
 
 </td>
 <td valign="top">
 
 Only Value was updated \(case full overlap\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -763,35 +649,25 @@ Only Value was updated \(case full overlap\)
 
 2018-09-10
 
-
-
 </td>
 <td valign="top">
 
 2018-10-20
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 42
 
-
-
 </td>
 <td valign="top">
 
 Validto and value were updated \(case partial overlap\)
-
-
 
 </td>
 </tr>
@@ -800,35 +676,25 @@ Validto and value were updated \(case partial overlap\)
 
 2018-10-20
 
-
-
 </td>
 <td valign="top">
 
 9999-12-31
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 40
 
-
-
 </td>
 <td valign="top">
 
 Newly inserted record \(case partial overlap\)
-
-
 
 </td>
 </tr>

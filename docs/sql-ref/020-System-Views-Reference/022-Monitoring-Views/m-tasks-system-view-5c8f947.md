@@ -15,21 +15,15 @@ Provides task monitoring information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name used in the task.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the schema name used in the task.
 
 TASK\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the task.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the name of the task.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection identifier.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the connection identifier.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction identifier used for the task execution.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the transaction identifier used for the task execution.
 
 TASK\_EXECUTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier of the task execution.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the unique identifier of the task execution.
 
 PARENT\_TASK\_EXECUTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the parent task identifier.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the parent task identifier.
 
 IS\_ASYNC
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not this is an asynchronous task: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays whether or not this is an asynchronous task: TRUE/FALSE.
 
 PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the input parameters for the task.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the input parameters for the task.
 
 PROCEDURE\_PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the input procedure parameters for the task.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the input procedure parameters for the task.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the task.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the start time of the task.
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the end time of the task.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the end time of the task.
 
 DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution time of the task in microseconds.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the execution time of the task in microseconds.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of the task: STARTING, RUNNING, FAILED, or COMPLETED.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the status of the task: STARTING, RUNNING, FAILED, or COMPLETED.
 
 CURRENT\_OPERATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the operation of the task.
-
-
 
 </td>
 </tr>
@@ -406,21 +304,15 @@ Displays the operation of the task.
 
 PROCESSED\_RECORDS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of processed records.
-
-
 
 </td>
 </tr>
@@ -429,21 +321,15 @@ Displays the total number of processed records.
 
 PARTITION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of task partitions for a task execution. This value is 1 if there is no task partitioning.
-
-
 
 </td>
 </tr>
@@ -452,21 +338,15 @@ Displays the total number of task partitions for a task execution. This value is
 
 TOTAL\_PROGRESS\_PERCENT
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the total task progress percentage.
-
-
 
 </td>
 </tr>
@@ -475,21 +355,15 @@ Displays the total task progress percentage.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name.
-
-
 
 </td>
 </tr>
@@ -498,21 +372,15 @@ Displays the user name.
 
 APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user name.
-
-
 
 </td>
 </tr>
@@ -521,21 +389,15 @@ Displays the application user name.
 
 HAS\_SIDE\_EFFECTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the task produces side effect data: TRUE/FALSE.
-
-
 
 </td>
 </tr>

@@ -102,5 +102,5 @@ CREATE PUBLIC KEY jwt_pubkey FROM '-----BEGIN PUBLIC KEY-----...-----END PUBLIC 
 
 [PUBLIC\_KEYS System View](../../020-System-Views-Reference/021-System-Views/public-keys-system-view-4924523.md "Provides information about all public keys.")
 
-[Certificate Management](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
 

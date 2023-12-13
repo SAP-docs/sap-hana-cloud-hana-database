@@ -41,35 +41,25 @@ Similar information is available in the *Service Marketplace* in SAP BTP cockpit
 
 Service
 
-
-
 </th>
 <th valign="top">
 
 Service Plan
-
-
 
 </th>
 <th valign="top">
 
 Platform
 
-
-
 </th>
 <th valign="top">
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Created Service
-
-
 
 </th>
 </tr>
@@ -78,35 +68,25 @@ Created Service
 
 auditlog-api
 
-
-
 </td>
 <td valign="top">
 
 default
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 com.sap.xs.auditlog
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 Audit-log service
-
-
 
 </td>
 </tr>
@@ -115,28 +95,20 @@ Audit-log service
 
 auditlog-management
 
-
-
 </td>
 <td valign="top">
 
 default
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 auditlog
-
-
 
 </td>
 </tr>
@@ -145,35 +117,25 @@ auditlog
 
 hana
 
-
-
 </td>
 <td valign="top">
 
 hdi-shared
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 com.sap.xs.hdi-container
 
-
-
 </td>
 <td valign="top">
 
 HDI container service
-
-
 
 </td>
 </tr>
@@ -182,28 +144,20 @@ HDI container service
 
 schema
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 com.sap.xs.hana-schema
 
-
-
 </td>
 <td valign="top">
 
 Plain schema service
-
-
 
 </td>
 </tr>
@@ -212,28 +166,20 @@ Plain schema service
 
 securestore
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 com.sap.xs.hana-securestore
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA secure-store service
-
-
 
 </td>
 </tr>
@@ -242,35 +188,25 @@ SAP HANA secure-store service
 
 xsuaa
 
-
-
 </td>
 <td valign="top">
 
 application
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 com.sap.xs.uaa-application
 
-
-
 </td>
 <td valign="top">
 
 PaaS-enabled UAA application service plan for CF scenarios
-
-
 
 </td>
 </tr>
@@ -279,28 +215,20 @@ PaaS-enabled UAA application service plan for CF scenarios
 
 apiaccess
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 com.sap.xs.uaa-apiaccess
 
-
-
 </td>
 <td valign="top">
 
 Access Plan for Authorization, Users and IDPS API endpoints in CF
-
-
 
 </td>
 </tr>
@@ -309,36 +237,26 @@ Access Plan for Authorization, Users and IDPS API endpoints in CF
 
 application-logs
 
-
-
 </td>
 <td valign="top">
 
 lite
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 application-logs
-
-
 
 </td>
 <td valign="top">
 
 Streams the logs of bound applications to a central application logging stack
 
-
-
 </td>
 </tr>
 <tr>
@@ -346,36 +264,26 @@ Streams the logs of bound applications to a central application logging stack
 
 autoscaler
 
-
-
 </td>
 <td valign="top">
 
 standard
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 autoscaler
-
-
 
 </td>
 <td valign="top">
 
 Automatically increases or decreases the number of application instances based on a policy you define.
 
-
-
 </td>
 </tr>
 <tr>
@@ -383,44 +291,32 @@ Automatically increases or decreases the number of application instances based o
 
 connectivity
 
-
-
 </td>
 <td valign="top">
 
 lite
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 connectivity
-
-
 
 </td>
 <td valign="top">
 
 Establishes secure, reliable connectivity between Cloud applications and on-premise systems
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 content-agent
-
-
 
 </td>
 <td valign="top">
@@ -429,29 +325,21 @@ standard
 
 application
 
-
-
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 content-agent
-
-
 
 </td>
 <td valign="top">
 
 Enables you to view, export, and import application content and track all activity along with logs, status, etc.
 
-
-
 </td>
 </tr>
 <tr>
@@ -459,35 +347,25 @@ Enables you to view, export, and import application content and track all activi
 
 destination
 
-
-
 </td>
 <td valign="top">
 
 lite
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 destination
 
-
-
 </td>
 <td valign="top">
 
 Retrieves the back-end destination details that you need to configure applications in the Cloud Foundry environment.
-
-
 
 </td>
 </tr>
@@ -495,8 +373,6 @@ Retrieves the back-end destination details that you need to configure applicatio
 <td valign="top">
 
 feature-flags
-
-
 
 </td>
 <td valign="top">
@@ -505,28 +381,20 @@ lite
 
 standard
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 feature-flags
 
-
-
 </td>
 <td valign="top">
 
 Enables the use of feature flags to the control the rollout of product features
-
-
 
 </td>
 </tr>
@@ -534,36 +402,26 @@ Enables the use of feature flags to the control the rollout of product features
 <td valign="top">
 
 objectstore
-
-
 
 </td>
 <td valign="top">
 
 s3-standard
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 objectstore
 
-
-
 </td>
 <td valign="top">
 
 Provides a highly available, distributed, consistent object store for CF applications. Service plan corresponds to the underlying infrastructure: Microsoft Azure Blobs, AWS S3 buckets, Google Cloud buckets, etc.
-
-
 
 </td>
 </tr>
@@ -572,35 +430,25 @@ Provides a highly available, distributed, consistent object store for CF applica
 
 saas-registry
 
-
-
 </td>
 <td valign="top">
 
 application
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 saas-registry
 
-
-
 </td>
 <td valign="top">
 
 Enables application providers to register multitenant applications and services and manage the application lifecycle
-
-
 
 </td>
 </tr>
@@ -608,8 +456,6 @@ Enables application providers to register multitenant applications and services 
 <td valign="top">
 
 lps-service
-
-
 
 </td>
 <td valign="top">
@@ -618,28 +464,20 @@ resource
 
 service
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 lps-service
 
-
-
 </td>
 <td valign="top">
 
 Enables access to SaaS API to retrieve resources from resource providers and update the dependencies of SaaS tenants
-
-
 
 </td>
 </tr>

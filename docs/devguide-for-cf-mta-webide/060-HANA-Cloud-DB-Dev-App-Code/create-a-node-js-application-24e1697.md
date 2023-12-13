@@ -44,7 +44,7 @@ Create a sample Node.js application.
       "description": "My App",
       "version": "0.0.1",
       "dependencies": {
-        "express": "4.16.2"
+        "express": "4.18.2"
       },
       "scripts": {
         "start": "node start.js"

@@ -17,21 +17,15 @@ Provides information about temporary object dependencies for transient objects.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 BASE\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database name of the base object.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the database name of the base object.
 
 BASE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the base object.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the schema name of the base object.
 
 BASE\_OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name of the base object.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object name of the base object.
 
 BASE\_OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of base object.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type of base object.
 
 BASE\_OBJECT\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the base object.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the object ID of the base object.
 
 BASE\_OBJECT\_IS\_TEMPORARY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the temporary property of the base object.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the temporary property of the base object.
 
 DEPENDENT\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the database name of the dependent object.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the database name of the dependent object.
 
 DEPENDENT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the dependent object.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the schema name of the dependent object.
 
 DEPENDENT\_OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name of the dependent object.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the object name of the dependent object.
 
 DEPENDENT\_OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the dependent type.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the dependent type.
 
 DEPENDENT\_OBJECT\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the dependent.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the object ID of the dependent.
 
 DEPENDENT\_OBJECT\_IS\_TEMPORARY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the temporary property of the dependent.
-
-
 
 </td>
 </tr>
@@ -318,9 +240,9 @@ Displays the temporary property of the dependent.
 
 [OBJECTS System View](../021-System-Views/objects-system-view-20cbede.md "Provides information about available objects.")
 
-[OBJECT\_DEPENDENCIES System View](../021-System-Views/object-dependencies-system-view-20cbd12.md "Provides information about dependencies between objects, such as which views refer to a specific table.")
+[OBJECT\_DEPENDENCIES System View](../021-System-Views/object-dependencies-system-view-20cbd12.md "Provides information about the dependencies between objects, such as which views refer to a specific table.")
 
-[Object Privileges](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/d6311b15a7e74e01b3f660f7d175b318.html "Object privileges are SQL privileges that are used to allow access to and modification of database objects.") :arrow_upper_right:
+[Object Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/d6311b15a7e74e01b3f660f7d175b318.html "Object privileges are SQL privileges that are used to allow access to and modification of database objects.") :arrow_upper_right:
 
-[Object Dependencies View Examples](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/38608b6773a6423986785de97d0d1ea8.html "") :arrow_upper_right:
+[Object Dependencies View Examples](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/38608b6773a6423986785de97d0d1ea8.html "") :arrow_upper_right:
 

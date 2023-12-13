@@ -20,136 +20,100 @@ SAP HANA Cloud includes a selection of standard Java libraries, which are availa
 
 Library
 
-
-
 </th>
 <th valign="top" align="center">
 
- [Maven Central](https://search.maven.org/) 
-
-
+[Maven Central](https://search.maven.org/) 
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- [`xs-env`](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_gby_rw4_dz) 
-
-
+[`xs-env`](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_gby_rw4_dz) 
 
 </td>
 <td valign="top" align="center">
 
 ✔
-
-
 
 </td>
 <td valign="top">
 
 A utility for setting up and accessing environment variables and services
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`java-security`](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_ors_th3_4mb) 
-
-
+[`java-security`](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_ors_th3_4mb) 
 
 </td>
 <td valign="top" align="center">
 
 ✔
-
-
 
 </td>
 <td valign="top">
 
 A Java wrapper for the security context of authentication for Java applications
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`spring-xsuaa`](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_pmt_th3_4mb) 
-
-
+[`spring-xsuaa`](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_pmt_th3_4mb) 
 
 </td>
 <td valign="top" align="center">
 
 ✔
-
-
 
 </td>
 <td valign="top">
 
 A Java wrapper for the security context of authentication for Spring Boot applications
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`java-js-client`](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_ctf_5w4_dz) 
-
-
+[`java-js-client`](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_ctf_5w4_dz) 
 
 </td>
 <td valign="top" align="center">
 
 ✔
-
-
 
 </td>
 <td valign="top">
 
 A convenient Java wrapper for the Job Scheduler REST API end points
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`sap-java-hdi` \(`hdi`\)](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_mwr_xw4_dz) 
-
-
+[`sap-java-hdi` \(`hdi`\)](standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md#loio6511bc054b0e48369a625a8019fefd53__section_mwr_xw4_dz) 
 
 </td>
 <td valign="top" align="center">
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
 The SAP HANA Cloud Deployment Infrastructure \(HDI\) client library for Java applications
-
-
 
 </td>
 </tr>
@@ -591,62 +555,46 @@ Version 2.\* of the SAP HANA DI \(HDI\) client library for Java applications wra
 
 Class
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `HDI` 
-
-
+`HDI` 
 
 </td>
 <td valign="top">
 
 Provides access to the `_SYS_DI` API
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `Container` 
-
-
+`Container` 
 
 </td>
 <td valign="top">
 
 Provides access to the API of a specific HDI container
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ContainerGroup` 
-
-
+`ContainerGroup` 
 
 </td>
 <td valign="top">
 
 Provides access to the API of a specific HDI container group
-
-
 
 </td>
 </tr>

@@ -9,7 +9,7 @@ In your multitarget application, you can create OData services that use either O
 OData version 2.0 is the basis for the XSODATA service infrastructure used in SAP HANA extended application services. XSODATA services can also be used in Cloud Foundry with the so-called XS compatibility layer, a Node package \(`@sap/xsjs`\) that enables SAP HANA XS applications to run in the JavaScript run time on Cloud Foundry. For more information about `@sap/xsjs`, see *Standard SAP Node.js Packages* in *Related Information* below.
 
 > ### Note:  
-> The XSODATA infrastructure for OData services based on OData version 2 will no longer be extended or improved, In addition, XSODATA does not support SAP HANA Cloud services, as described in SAP note: [3013788](https://launchpad.support.sap.com/#/notes/3013788). For new OData services, it is recommended to move to OData version 4 or, alternatively, switch to the new SAP Cloud application programming model mentioned below.
+> The XSODATA infrastructure for OData services based on OData version 2 will no longer be extended or improved, In addition, XSODATA does not support SAP HANA Cloud services, as described in SAP note: [3013788](https://me.sap.com/notes/3013788). For new OData services, it is recommended to move to OData version 4 or, alternatively, switch to the new SAP Cloud application programming model mentioned below.
 
 The OData version your multitarget applications can consume is determined by the programming model you use to develop the application, for example, Cloud Foundry or SAP Cloud application programming model, as described in the following list:
 
@@ -33,5 +33,5 @@ The OData version your multitarget applications can consume is determined by the
 
 [Working with the SAP Cloud Application Programming Model](../020-HANA-Cloud-DB-Dev-Get-Started/working-with-the-sap-cloud-application-programming-model-166f4fb.md "Create a business application using the SAP Cloud Application Programming model.")
 
-[SAP Note 3013788](https://launchpad.support.sap.com/#/notes/3013788 "XSODATA not supported in SAP HANA Cloud Service")
+[SAP Note 3013788](https://me.sap.com/notes/3013788 "XSODATA not supported in SAP HANA Cloud Service")
 

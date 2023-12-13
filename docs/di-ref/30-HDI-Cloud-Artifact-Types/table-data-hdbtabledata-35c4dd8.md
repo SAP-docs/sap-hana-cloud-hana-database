@@ -6,7 +6,7 @@ Insert data from other files \(for example, CSV, `.properties`, or `.tags` files
 
 
 
-The table data plug-in can be used to insert data defined in other design-time artifacts \(for example, `.hdbtabledata` and `.csv` files\) into database tables which are managed by SAP HANA DI and are not system-versioned, temporary, or virtual tables. It is possible to import data from collection tables but only with restrictions. It is not recommended to use `.hdbtabledata` artifacts to import test content or demo data if you do not want to use those artifacts in the productive scenario.
+The table data plug-in can be used to insert data defined in other design-time artifacts \(for example, `.hdbtabledata` and `.csv` files\) into database tables which are managed by SAP HANA DI and are not system-versioned, temporary, or virtual tables. It is possible to import data into collection tables but only with restrictions. It is not recommended to use `.hdbtabledata` artifacts to import test content or demo data if you do not want to use those artifacts in the productive scenario.
 
 > ### Caution:  
 > Do not use the table data plug-in for data that you intend to later modify at run time.
@@ -111,8 +111,62 @@ The `imports` property defines the following objects:
 
 -   [`column_mappings`](table-data-hdbtabledata-35c4dd8.md#loio35c4dd829d2046f29fc741505302f74d__section_anj_jkb_4gb)
 
-    “`import_settings`” with the data specified in “``”
+    Connects the target table’s columns specified in `"import_settings"` with the data specified in `"source_data"`
 
+
+
+
+<a name="loio35c4dd829d2046f29fc741505302f74d__section_r1d_hrd_gz"/>
+
+## is\_collection\_table
+
+You can use the HDI Table Data plug-in \(`hdbtabledata`\) to import JSON documents stored in a CSV file into a JSON collection created in the SAP HANA Document Store \(DocStore\).
+
+> ### Caution:  
+> Although JSON documents do not have a schema, it is not recommended to use different data types for the same identifier in different JSON documents. This could cause inconsistency in the results returned from queries.
+
+Since the CSV file must only contain **one** column, the mapping should look as follows:
+
+> ### Sample Code:  
+> ```
+> "column_mappings": { "MY_DocStore_COLLECTION": 1 },
+> ```
+
+It is only possible to import JSON data into a "table" of type "COLLECTION". For this reason, in the table-data definition, use the `"is_collection_table"` parameter \(default is `false`\) to define the target table “type” as illustrated in the following example.
+
+> ### Sample Code:  
+> ```
+> is_collection_table": true,
+> ```
+
+You must also specify the `"data_type":` \(CSV\) of the source file itself; the format of the data in the CSV file \(`"dialect": "HANA_JSON"`\); the name of the source CSV file \(`"file_name":`\), and indicate that the CSV file does not contain any header information \(`"has_header": false`\).
+
+It is only possible to import data into one, single collection from one, single `hdbtabledata` file, and the import operation always imports **all** the content included in the corresponding CSV file. The definition file for your import operation involving JSON data should look something like the following example:
+
+> ### Restriction:  
+> It is not allowed to use multiple data sources to fill a collection table, for example, by using the `include_filter` parameter in the `"import_settings"` section of the table-data definition file.
+
+> ### Sample Code:  
+> hdbtabledata File for JSON data import
+> 
+> ```
+> { 
+>   "format_version": 1,
+>   "imports": [{
+>      "column_mappings": { 
+>        "CUSTOMERS": 1 
+>      }, 
+>      "is_collection_table": true, 
+>      "source_data": { 
+>        "data_type": "CSV", 
+>        "dialect": "HANA-JSON", 
+>        "file_name": "sap::myJSONcustomerData.csv", 
+>        "has_header": false 
+>      }, 
+>      "target_table": "CUSTOMERS" 
+>   }] 
+> } 
+> ```
 
 
 
@@ -131,30 +185,22 @@ The data source to be used for the import operation is defined in the `source_da
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `data_type` 
-
-
+`data_type` 
 
 </td>
 <td valign="top">
@@ -171,67 +217,51 @@ The type of the data file. Supported values are: “CSV” and “PROPERTIES”
 
 Yes
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `file_name` 
-
-
+`file_name` 
 
 </td>
 <td valign="top">
 
 The name of a deployed table data source file, for example `data.csv`; the file has to be deployed via the table data source plug-in and follows the normal run-time naming scheme
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `has_header` 
-
-
+`has_header` 
 
 </td>
 <td valign="top">
 
 Boolean flag to indicate whether the data file contains a header \(default = “`false`”\)
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `no_data_import` 
-
-
+`no_data_import` 
 
 </td>
 <td valign="top">
 
-“`false`”\).
+Boolean flag to indicate that the data file should not be imported and an undeploy-call does not delete entries according to the key specifications \(default =“`false`”\).
 
 > ### Caution:  
 > If set to “true”, all data in the target table is overwritten even if matches are found in the key reservations. For more information, see Boolean flag to indicate that the data file should not be imported and an undeploy-call does not delete entries according to the key specifications \(default = "false"\). For more information, see *Key-Reservation Import Scenario* below.
@@ -243,16 +273,12 @@ No
 
 No
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `delete_existing_foreign_data` 
-
-
+`delete_existing_foreign_data` 
 
 </td>
 <td valign="top">
@@ -269,53 +295,39 @@ Boolean flag to indicate that in the deploy phase existing data in the target ta
 
 No
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `type_config` 
-
-
+`type_config` 
 
 </td>
 <td valign="top">
 
 Object to further configure the data parser to match the data file format
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `dialect` 
-
-
+`dialect` 
 
 </td>
 <td valign="top">
 
 Specifies the type of data to import. Possible dialects are: `HANA`. Note that the default configuration can be overwritten by `type_config`.
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -332,53 +344,39 @@ The <code>“data_type” : “CSV”</code> specifies a source file whose conte
 
 CSV Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Default Value
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `line_terminator` 
-
-
+`line_terminator` 
 
 </td>
 <td valign="top">
 
 Character to use as line terminator, for example, “\\n” or “\\r” 
 
-
-
 </td>
 <td valign="top">
 
 auto detect: \\n, \\r, \\r\\n
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `delimiter` 
-
-
+`delimiter` 
 
 </td>
 <td valign="top">
@@ -399,145 +397,107 @@ Character to use as record delimiter, for example, “,” \(comma\) or “;” 
 
 ,
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `do_quote` 
-
-
+`do_quote` 
 
 </td>
 <td valign="top">
 
 Flag to enable quoting
 
-
-
 </td>
 <td valign="top">
 
 true
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `quote_character` 
-
-
+`quote_character` 
 
 </td>
 <td valign="top">
 
 Character to use as quoting character for records, for example, " \(double quote\) for records like “value,1” 
 
-
-
 </td>
 <td valign="top">
 
 "
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `do_escape` 
-
-
+`do_escape` 
 
 </td>
 <td valign="top">
 
 Flag to enable escaping
 
-
-
 </td>
 <td valign="top">
 
 false
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `escape_character` 
-
-
+`escape_character` 
 
 </td>
 <td valign="top">
 
 Character to use as escaping character, for example, \\ \(backslash\) for escaped records such as “a\\nb” \(to escape the “n” character\)
 
-
-
 </td>
 <td valign="top">
 
 \\
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `do_weak_escape` 
-
-
+`do_weak_escape` 
 
 </td>
 <td valign="top">
 
 Flag to enable a weak-mode of escaping; only the record delimiter, the quote character, and the escape character are considered to be escaped
 
-
-
 </td>
 <td valign="top">
 
 true
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `use_escape_sequences` 
-
-
+`use_escape_sequences` 
 
 </td>
 <td valign="top">
 
 Flag to enable the standard set of escape characters sequences for example, “\\n” “\\r” “\\t” 
 
-
-
 </td>
 <td valign="top">
 
 true
-
-
 
 </td>
 </tr>
@@ -784,90 +744,66 @@ The following tables lists and describes the supported column mappings:
 
 Mapping Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Example
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *<columnName\>* - Integer X
-
-
+*<columnName\>* - Integer X
 
 </td>
 <td valign="top">
 
 Maps the data in column “X ”of the data file to the column with name “columnName” of the target table
 
-
-
 </td>
 <td valign="top">
 
 CSV column 1 is mapped to target table column “tableCol1” 
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *<columnName\>* - String X
-
-
+*<columnName\>* - String X
 
 </td>
 <td valign="top">
 
 Maps the data in the column identified with header name “X” to the column with *<columnName\>* of the table \(requires headers in the data file\)
 
-
-
 </td>
 <td valign="top">
 
 The data in the column specified with header name “csvCol4” is mapped to column “tableCol2” 
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *<columnName\>* - Function X
-
-
+*<columnName\>* - Function X
 
 </td>
 <td valign="top">
 
 Calculates the value to map to the column *<columnName\>* by means of the function “X” 
 
-
-
 </td>
 <td valign="top">
 
 Base16/base64 decodings
-
-
 
 </td>
 </tr>
@@ -884,21 +820,15 @@ The following functions can be used in a column mapping scenario to calculate th
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Parameters
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -907,21 +837,15 @@ Description
 
 constant
 
-
-
 </td>
 <td valign="top">
 
- `value` 
-
-
+`value` 
 
 </td>
 <td valign="top">
 
 Maps the column to a constant value
-
-
 
 </td>
 </tr>
@@ -930,8 +854,6 @@ Maps the column to a constant value
 
 range
 
-
-
 </td>
 <td valign="top">
 
@@ -939,14 +861,10 @@ range
 
 `increment_by`
 
-
-
 </td>
 <td valign="top">
 
 Uses a constant sequence to fill the column value, starting with the value “`start_with`”; for every row the value will be increased by “`increment_by`” 
-
-
 
 </td>
 </tr>
@@ -955,8 +873,6 @@ Uses a constant sequence to fill the column value, starting with the value “`s
 
 decodeBase16
 
-
-
 </td>
 <td valign="top">
 
@@ -964,14 +880,10 @@ decodeBase16
 
 `column_number` 
 
-
-
 </td>
 <td valign="top">
 
 Decodes a given value from the data file as a base16 string; the value from the CSV file is determined by `column_name` or `column_number` 
-
-
 
 </td>
 </tr>
@@ -980,8 +892,6 @@ Decodes a given value from the data file as a base16 string; the value from the 
 
 decodeBase64
 
-
-
 </td>
 <td valign="top">
 
@@ -989,20 +899,14 @@ decodeBase64
 
 `char63` \(optional\)
 
-column\_name
-
 `column_name` 
 
 `column_number` 
-
-
 
 </td>
 <td valign="top">
 
 Decodes a given value from the data file as a base64 string; the value from the CSV file is determined by `column_name` or `column_number`; the optional `char62` and `char63` parameters can be used to define the encoding characters for the values 62 and 63 \(defaults are “+” and “/”\)
-
-
 
 </td>
 </tr>
@@ -1011,21 +915,15 @@ Decodes a given value from the data file as a base64 string; the value from the 
 
 getCurrentSchemaName
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 Returns the name of the container’s run-time schema.
-
-
 
 </td>
 </tr>
@@ -1034,14 +932,10 @@ Returns the name of the container’s run-time schema.
 
 extractLanguageCodeFromFileName
 
-
-
 </td>
 <td valign="top">
 
- `file_name` 
-
-
+`file_name` 
 
 </td>
 <td valign="top">

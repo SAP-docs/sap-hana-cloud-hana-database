@@ -30,7 +30,7 @@ If the *<format\>* specifier is omitted, then the conversion is performed using 
 
 ## Example
 
-The following example converts the value ***2010-01-11 13:30:00*** to the TIMESTAMP value ***2010-01-11 13:30:00.0*** using the format ***YYYY-MM-DD HH24:MI:SS***:
+The following example converts the value `2010-01-11 13:30:00` to the TIMESTAMP value ***2010-01-11 13:30:00.0*** using the format `YYYY-MM-DD HH24:MI:SS`:
 
 ```
 SELECT TO_TIMESTAMP ('2010-01-11 13:30:00', 'YYYY-MM-DD HH24:MI:SS') "to timestamp" FROM DUMMY;

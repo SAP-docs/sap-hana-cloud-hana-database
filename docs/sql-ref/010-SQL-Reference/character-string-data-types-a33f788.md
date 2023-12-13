@@ -21,7 +21,7 @@ NVARCHAR and its alias VARCHAR
 
 The NVARCHAR\(*<n\>*\) data type specifies a variable-length Unicode character set string, where *<n\>* indicates the maximum length in characters and is an integer between 1 and 5000. If the length is not specified in DDL statements, then the default of 1 is used.
 
-If the NVARCHAR\(*<n\>*\) is used in a DML query, for example ***CAST \(A as NVARCHAR\(n\)\)***, then *<n\>* indicates the maximum length of the string in characters. If the length is not specified, then the default of 5000 is used.
+If the NVARCHAR\(*<n\>*\) is used in a DML query, for example `CAST (A as NVARCHAR(n))`, then *<n\>* indicates the maximum length of the string in characters. If the length is not specified, then the default of 5000 is used.
 
 In SAP HANA, VARCHAR is an alias for NVARCHAR.
 

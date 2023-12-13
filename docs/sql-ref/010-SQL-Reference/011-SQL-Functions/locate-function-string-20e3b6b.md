@@ -38,95 +38,71 @@ The LOCATE function returns the position of a substring *<needle\>* within a str
     <th valign="top">
 
     Statement
-
-
     
     </th>
     <th valign="top">
 
     Returns
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        `SELECT LOCATE('AAA', 'A', -1) FROM "DUMMY";`
-
-
+    `SELECT LOCATE('AAA', 'A', -1) FROM "DUMMY";`
     
     </td>
     <td valign="top">
     
-        3 - the position of the last A
-
-
+    3 - the position of the last A
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        `SELECT LOCATE('AAA', 'A', -2) FROM "DUMMY";`
-
-
+    `SELECT LOCATE('AAA', 'A', -2) FROM "DUMMY";`
     
     </td>
     <td valign="top">
     
-        2 - the position of the second to last A
-
-
+    2 - the position of the second to last A
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        `SELECT LOCATE('AAA', 'A', -3) FROM "DUMMY";`
-
-
+    `SELECT LOCATE('AAA', 'A', -3) FROM "DUMMY";`
     
     </td>
     <td valign="top">
     
-        1 - the position of the third to last A
-
-
+    1 - the position of the third to last A
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        `SELECT LOCATE('AAA', 'A', -4) FROM "DUMMY";`
-
-
+    `SELECT LOCATE('AAA', 'A', -4) FROM "DUMMY";`
     
     </td>
     <td valign="top">
     
-        0 - not found
-
-
+    0 - not found
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        `SELECT LOCATE('ABABAC', 'A', -2) FROM "DUMMY";`
-
-
+    `SELECT LOCATE('ABABAC', 'A', -2) FROM "DUMMY";`
     
     </td>
     <td valign="top">
     
-        5 - the position of the first A starting from the second last position
-
-
+    5 - the position of the first A starting from the second last position
     
     </td>
     </tr>
@@ -147,13 +123,13 @@ The following example returns ***1*** because *<needle\>* is an empty string.
 SELECT LOCATE ('length in char', '') "locate" FROM DUMMY;
 ```
 
-The following example returns the starting position \(***1***\) of ***length*** in the string ***length in char***:
+The following example returns the starting position \(***1***\) of `length` in the string `length in char`:
 
 ```
 SELECT LOCATE ('length in char', 'length') "locate" FROM DUMMY;
 ```
 
-The following example returns ***0*** because the search pattern ***zchar*** cannot be found in the given string:
+The following example returns ***0*** because the search pattern `zchar` cannot be found in the given string:
 
 ```
 SELECT LOCATE ('length in char', 'zchar') "locate" FROM DUMMY;

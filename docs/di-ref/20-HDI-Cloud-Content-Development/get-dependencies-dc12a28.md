@@ -6,7 +6,7 @@ Retrieve dependency data for objects and groups.
 
 
 
-The SAP HDI Container API includes the `GET_MAKE_GROUPS` command, which enables you to Retrieve dependency data; the kind of data that is retrieved depends on the optional "variant" parameter passed in `PARAMETERS`.
+The SAP HDI Container API includes the `GET_DEPENDENCIES` command, which enables you to retrieve dependency data; the kind of data that is retrieved depends on the optional "variant" parameter passed in `PARAMETERS`.
 
 
 
@@ -50,21 +50,15 @@ The Objects for which dependency data should be retrieved:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -73,14 +67,10 @@ Description
 
 DOMAIN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
@@ -101,14 +91,10 @@ Domain of the object to be queried.
 
 URI
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(510\)
-
-
 
 </td>
 <td valign="top">
@@ -141,21 +127,15 @@ Additional parameters can be used to control various aspects of the procedure ex
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -164,21 +144,15 @@ Description
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The key name of the parameter
-
-
 
 </td>
 </tr>
@@ -187,21 +161,15 @@ The key name of the parameter
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The value assigned to the parameter
-
-
 
 </td>
 </tr>
@@ -237,6 +205,9 @@ The following additional parameters are available:
 -   `message_severity`
 
 
+> ### Tip:  
+> For more information about all available SAP HANA HDI parameters, see *Available SAP HDI Parameters* in *Related Information* below.
+
 
 
 ### RETURN\_CODE \[OUT\]
@@ -257,9 +228,9 @@ A table is used to display messages that contain information logged during \(and
 
 
 
-### RESULT \[OUT\]
+### 
 
-Returns the dependency information for the queried objects. Depending on the used variant, some of the fields may not contain data:
+Returns the dependency information for the queried objects. Depending on the used variant, some of the fields may not contain data:RESULT \[OUT\]
 
 **\_SYS\_DI.TT\_DEPENDENCIES**
 
@@ -270,21 +241,15 @@ Returns the dependency information for the queried objects. Depending on the use
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -293,21 +258,15 @@ Description
 
 OBJECT\_DOMAIN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The domain where the object is located
-
-
 
 </td>
 </tr>
@@ -316,21 +275,15 @@ The domain where the object is located
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(510\)
 
-
-
 </td>
 <td valign="top">
 
 Unique resource identifier of the object
-
-
 
 </td>
 </tr>
@@ -339,21 +292,15 @@ Unique resource identifier of the object
 
 DEPENDENCY\_DOMAIN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
-The domain where the dependency is located
-
-
+RESULT \[OUTThe domain where the dependency is located
 
 </td>
 </tr>
@@ -362,21 +309,15 @@ The domain where the dependency is located
 
 DEPENDENCY\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(510\)
 
-
-
 </td>
 <td valign="top">
 
 Unique resource identifier of the dependency
-
-
 
 </td>
 </tr>
@@ -385,14 +326,10 @@ Unique resource identifier of the dependency
 
 DEPENDENCY\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
-
-
 
 </td>
 <td valign="top">
@@ -417,21 +354,15 @@ For the "`providers`" variant, indicates the type of the dependency:
 
 DEPENDENCY\_LOCATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(100\)
 
-
-
 </td>
 <td valign="top">
 
 For the "`providers`" variant, returns the line and column location of the dependency in the object. The type of location returned depends on the object type
-
-
 
 </td>
 </tr>
@@ -440,21 +371,15 @@ For the "`providers`" variant, returns the line and column location of the depen
 
 DEPENDENCY\_LOCATION\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 For the "`providers`" variant, returns a path to the location of the dependency in the object. The type of location path returned depends on the object type.
-
-
 
 </td>
 </tr>
@@ -580,7 +505,7 @@ In this variant, the command returns, for the given files, the provided and requ
 > ```
 
 > ### Output Code:  
->  `#DI.GET_DEPENDENCIES` Results \(`provides_and_requires`\)
+> `#DI.GET_DEPENDENCIES` Results \(`provides_and_requires`\)
 > 
 > ```sql
 > 
@@ -616,7 +541,7 @@ In this variant, the command returns, for the given objects, the files they dire
 > ```
 
 > ### Output Code:  
->  `#DI.GET_DEPENDENCIES` Results \(`depends`\)
+> `#DI.GET_DEPENDENCIES` Results \(`depends`\)
 > 
 > ```sql
 > 
@@ -649,7 +574,7 @@ In this variant, the command returns, for the given objects, the files they dire
 > ```
 
 > ### Output Code:  
->  `#DI.GET_DEPENDENCIES` Results \(`impacted`\)
+> `#DI.GET_DEPENDENCIES` Results \(`impacted`\)
 > 
 > ```sql
 > 
@@ -670,4 +595,6 @@ In this variant, the command returns, for the given objects, the files they dire
 [The HDI Container API](the-hdi-container-api-40ba784.md "Maintain HDI containers and container content using the HDI container API.")
 
 [The SQL API for SAP HANA Deployment Infrastructure \(HDI\)](../the-sql-api-for-sap-hana-deployment-infrastructure-hdi-035dbbe.md "An SQL application programming interface (API) is available to help maintain the SAP HANA Deployment Infrastructure (HDI).")
+
+[Available SAP HDI Parameters](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/e2d3e543067e4f3282bf6dbf880c6b2d.html?version=2023_3_QRC#available-sap-hdi-parameters)
 

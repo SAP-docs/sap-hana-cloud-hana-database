@@ -15,21 +15,15 @@ Provides stored application connection history information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the application name.
 
 CLIENT\_IP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(45\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the IP address of the client.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the IP address of the client.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the internal port.
 
 CONNECT\_DATE
 
-
-
 </td>
 <td valign="top">
 
 DAYDATE
 
-
-
 </td>
 <td valign="top">
 
 Displays the established date of the connection.
-
-
 
 </td>
 </tr>
@@ -153,25 +117,27 @@ Displays the established date of the connection.
 
 CONNECT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
 
 Displays the count of connections established in a day.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiof98cfabb024c46f6873b4e82c4d4f1be__section_hc5_mjc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

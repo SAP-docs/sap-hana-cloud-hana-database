@@ -29,13 +29,13 @@ In this topic, you can find information about the following components of the SQ
 
 ## SQL APIs for HDI
 
-The SAP HANA Deployment Infrastructure \(HDI\) can be seen as a layer on top of the SAP HANA database. The HDI includes an SQL-based API that is accessible by means of standard SAP HANA SQL connection data. HDI clients use the HDI SQL API to manage containers and their content. Examples of HDI clients include the following: the HDI command-line client and the development environment.
+The SAP HANA Deployment Infrastructure \(HDI\) can be seen as a layer on top of the SAP HANA database. The HDI includes an SQL-based API that is accessible by means of standard SAP HANA SQL connection data. HDI clients use the HDI SQL API to manage containers and their content. Examples of HDI clients include the following: the HDI command-line client, and the development environment.
 
 The HDI API is based on a combination of SQL and database procedures. For example, the system-wide container-management API contains procedures for creating and dropping HDI containers. Each HDI container has a container API consisting of container-specific procedures for uploading, listing, and retrieving design-time objects \(write, read, list\); for deploying uploaded design-time objects \(make\); and for granting or revoking access to \(or from\) the container’s schemas and API \(grant, revoke\).
 
 HDI containers can be grouped into container groups, where a corresponding group-level management API restricts the management operations \(for example, create, drop, configure, etc.\) to the set of HDI containers that are assigned to the specific HDI container group.
 
-The following SQL APIs are provided to help you manage and work with HDI:
+The following table lists the SQL APIs that are provided to help you manage and work with HDI:
 
 **SQL APIs for HDI**
 
@@ -46,14 +46,10 @@ The following SQL APIs are provided to help you manage and work with HDI:
 
 HDI SQL API
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -62,15 +58,13 @@ Description
 
 HDI administration API
 
-
-
 </td>
 <td valign="top">
 
 Used mainly for managing container groups and the administrative access to them. Use of the HDI administration API requires the privileges of an HDI administrator.
 
 > ### Note:  
-> SYSTEM user privileges are required to create the first HDI administrator, who can then create other HDI administrators, if required. After creation of the first HDI administrator, the SYSTEM user can be deactivated.
+> `DBADMIN` user privileges are required to create the first HDI administrator, who can then create other HDI administrators, if required. After creation of the first HDI administrator, the `DBADMIN` user can be deactivated.
 
 
 
@@ -81,14 +75,10 @@ Used mainly for managing container groups and the administrative access to them.
 
 HDI container group administration API
 
-
-
 </td>
 <td valign="top">
 
 Used for managing a set of containers inside a container group and the administrative access to them. To use this API, a user needs to be granted the privileges of an HDI container group administrator by an HDI administrator.
-
-
 
 </td>
 </tr>
@@ -97,14 +87,10 @@ Used for managing a set of containers inside a container group and the administr
 
 HDI container administration API
 
-
-
 </td>
 <td valign="top">
 
 Used for configuring a container and controlling the access to it. To use this API, a user needs to be granted the privileges of an HDI container administrator by an HDI container group administrator.
-
-
 
 </td>
 </tr>
@@ -112,8 +98,6 @@ Used for configuring a container and controlling the access to it. To use this A
 <td valign="top">
 
 HDI container content development API:
-
-
 
 </td>
 <td valign="top">
@@ -203,113 +187,83 @@ The return code indicates if the API call was successful, or if there were probl
 
 Return Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
-
-
 
 </th>
 <th valign="top">
 
 Details
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- ***0*** 
-
-
+***0*** 
 
 </td>
 <td valign="top">
 
 Success
 
-
-
 </td>
 <td valign="top">
 
 The call was successful, and the messages did not report any warnings or errors
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- ***1*** 
-
-
+***1*** 
 
 </td>
 <td valign="top">
 
 Warning
 
-
-
 </td>
 <td valign="top">
 
 The messages contain warnings, but no errors.
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- ***\-1*** 
-
-
+***\-1*** 
 
 </td>
 <td valign="top">
 
 Error
 
-
-
 </td>
 <td valign="top">
 
 The messages contain errors.
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- ***\-2*** 
-
-
+***\-2*** 
 
 </td>
 <td valign="top">
 
 Fatal Error
 
-
-
 </td>
 <td valign="top">
 
 No messages could be logged. This indicates a problem with the database.
-
-
 
 </td>
 </tr>
@@ -340,14 +294,10 @@ Most APIs return a table of messages with information about the execution of the
 
 Message Table
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -356,14 +306,10 @@ Description
 
 REQUEST\_ID
 
-
-
 </td>
 <td valign="top">
 
 The unique ID of the API call that produced this message. This ID is always the same for messages that originate from the same API call.
-
-
 
 </td>
 </tr>
@@ -372,14 +318,10 @@ The unique ID of the API call that produced this message. This ID is always the 
 
 ROW\_ID
 
-
-
 </td>
 <td valign="top">
 
 An increasing number representing the line number of the message log.
-
-
 
 </td>
 </tr>
@@ -388,14 +330,10 @@ An increasing number representing the line number of the message log.
 
 LEVEL
 
-
-
 </td>
 <td valign="top">
 
 The indentation level of the message \(used for better visual representation\).
-
-
 
 </td>
 </tr>
@@ -403,8 +341,6 @@ The indentation level of the message \(used for better visual representation\).
 <td valign="top">
 
 TYPE
-
-
 
 </td>
 <td valign="top">
@@ -433,14 +369,10 @@ The type of message returned; the following list describes the possible message 
 
 LIBRARY\_ID
 
-
-
 </td>
 <td valign="top">
 
 The ID of the library \(for messages from a plug-in\)
-
-
 
 </td>
 </tr>
@@ -449,14 +381,10 @@ The ID of the library \(for messages from a plug-in\)
 
 PLUGIN\_ID
 
-
-
 </td>
 <td valign="top">
 
 The ID of the plug-in \(for messages from a plug-in\)
-
-
 
 </td>
 </tr>
@@ -465,14 +393,10 @@ The ID of the plug-in \(for messages from a plug-in\)
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 The path to the artifact that is being processed
-
-
 
 </td>
 </tr>
@@ -481,14 +405,10 @@ The path to the artifact that is being processed
 
 SEVERITY
 
-
-
 </td>
 <td valign="top">
 
 The severity of the message, for example: INFO, WARNING, ERROR, ...
-
-
 
 </td>
 </tr>
@@ -497,14 +417,10 @@ The severity of the message, for example: INFO, WARNING, ERROR, ...
 
 MESSAGE\_CODE
 
-
-
 </td>
 <td valign="top">
 
 A unique code corresponding to the MESSAGE field
-
-
 
 </td>
 </tr>
@@ -513,14 +429,10 @@ A unique code corresponding to the MESSAGE field
 
 MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 The message text
-
-
 
 </td>
 </tr>
@@ -529,14 +441,10 @@ The message text
 
 LOCATION
 
-
-
 </td>
 <td valign="top">
 
 The Position \(for example, "line:column"\) within the artifact that the message refers to
-
-
 
 </td>
 </tr>
@@ -545,14 +453,10 @@ The Position \(for example, "line:column"\) within the artifact that the message
 
 LOCATION\_PATH
 
-
-
 </td>
 <td valign="top">
 
 The XPath expression within the artifact that the message refers to
-
-
 
 </td>
 </tr>
@@ -561,14 +465,10 @@ The XPath expression within the artifact that the message refers to
 
 TIMESTAMP\_UTC
 
-
-
 </td>
 <td valign="top">
 
 The time stamp indicating when the message was created
-
-
 
 </td>
 </tr>

@@ -22,21 +22,15 @@ The `_SYS_DI` monitoring view `M_ALL_GRANTED_SCHEMA_PRIVILEGES` shows all HDI-co
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -45,21 +39,15 @@ Description
 
 CONTAINER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the HDI container
-
-
 
 </td>
 </tr>
@@ -68,21 +56,15 @@ The name of the HDI container
 
 GRANTEE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the schema containing the target role to which the privilege is granted
-
-
 
 </td>
 </tr>
@@ -91,21 +73,15 @@ The name of the schema containing the target role to which the privilege is gran
 
 GRANTEE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the target user or user role to whom/which the privilege `PRIVILEGE` is granted
-
-
 
 </td>
 </tr>
@@ -114,21 +90,15 @@ The name of the target user or user role to whom/which the privilege `PRIVILEGE`
 
 GRANTEE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Either “USER” or “ROLE” 
-
-
 
 </td>
 </tr>
@@ -137,21 +107,15 @@ Either “USER” or “ROLE”
 
 PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the privilege to be granted to a user or user role
-
-
 
 </td>
 </tr>
@@ -160,21 +124,15 @@ The name of the privilege to be granted to a user or user role
 
 IS\_GRANTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 The privilege `PRIVILEGE` was granted `‘WITH [GRANT | ADMIN] OPTION': ['TRUE' | 'FALSE']` 
-
-
 
 </td>
 </tr>

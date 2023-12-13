@@ -17,21 +17,15 @@ Provides common data for all backup catalog entries.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 ENTRY\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Dislays the unique ID of the backup catalog entry.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Dislays the unique ID of the backup catalog entry.
 
 ENTRY\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the classification of backup catalog entries. The following types are supported: complete data backup, data snapshot, log backup, log missing, differential, and incremental backups.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the classification of backup catalog entries. The following types are s
 
 BACKUP\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of a data backup or a log backup, respectively. All backup files of a single data backup share the same BACKUP\_ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the unique ID of a data backup or a log backup, respectively. All backu
 
 SYS\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time given in the server's local time.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the start time given in the server's local time.
 
 UTC\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time given in UTC.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the start time given in UTC.
 
 SYS\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the stop time given in the server's local time.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the stop time given in the server's local time.
 
 UTC\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the stop time given in UTC.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the stop time given in UTC.
 
 STATE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the result of the corresponding action: successful, failed, running, cancel pending, or canceled.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the result of the corresponding action: successful, failed, running, ca
 
 COMMENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays any additional information.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays any additional information.
 
 MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays any additional information.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays any additional information.
 
 SYSTEM\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(3\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system identifier \(SID\) of the SAP HANA database.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the system identifier \(SID\) of the SAP HANA database.
 
 ENCRYPTION\_ROOT\_KEY\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key hash used, if any, to locate the encryption root key in the keystore.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the key hash used, if any, to locate the encryption root key in the key
 
 SOURCE\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the database that created the backup.
-
-
 
 </td>
 </tr>

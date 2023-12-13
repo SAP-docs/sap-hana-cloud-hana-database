@@ -125,19 +125,19 @@ You must have the OPTIMIZER ADMIN system privilege to execute the statements lis
 
 ## Examples
 
-The following statement pins a fictitious plan ***20170203150455***:
+The following statement pins a fictitious plan `20170203150455`:
 
 ```
 ALTER SYSTEM PIN SQL PLAN CACHE ENTRY 20170203150455;
 ```
 
-The following statement unpins the fictitious plan ***20170203150455***:
+The following statement unpins the fictitious plan `20170203150455`:
 
 ```
 ALTER SYSTEM UNPIN SQL PLAN CACHE ENTRY 20170203150455;
 ```
 
-The following statement pins the fictitious plan ***1000003***, and specifies the USE\_OLAP\_PLAN hint:
+The following statement pins the fictitious plan `1000003`, and specifies the USE\_OLAP\_PLAN hint:
 
 ```
 ALTER SYSTEM PIN SQL PLAN CACHE ENTRY 1000003 WITH HINT (USE_OLAP_PLAN);

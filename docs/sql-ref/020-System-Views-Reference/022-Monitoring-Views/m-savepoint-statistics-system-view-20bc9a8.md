@@ -17,21 +17,15 @@ Provides information about executed savepoints.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence Volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence Volume ID.
 
 SAVEPOINTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of executed savepoints.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the number of executed savepoints.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the last savepoint.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the start time of the last savepoint.
 
 INITIATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(24\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason why the last savepoint was executed.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the reason why the last savepoint was executed.
 
 PURPOSE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(24\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason why the last savepoint was executed.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the reason why the last savepoint was executed.
 
 STATE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last savepoint state.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the last savepoint state.
 
 VERSION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last savepoint version.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the last savepoint version.
 
 REQUESTED\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the currently active configured savepoint frequency in seconds.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the currently active configured savepoint frequency in seconds.
 
 LAST\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the actual frequency in seconds between the last two savepoints.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the actual frequency in seconds between the last two savepoints.
 
 AVG\_FREQUENCY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the actual average frequency in seconds between last two savepoints.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the actual average frequency in seconds between last two savepoints.
 
 LAST\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time spent in microseconds creating the last savepoint.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the total time spent in microseconds creating the last savepoint.
 
 AVG\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time spent in microseconds creating the last two savepoints.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the average time spent in microseconds creating the last two savepoints
 
 LAST\_BLOCKING\_PHASE\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the last blocking phase.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the start time of the last blocking phase.
 
 LAST\_BLOCKING\_PHASE\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration in seconds of the last blocking phase.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the duration in seconds of the last blocking phase.
 
 LAST\_CRITICAL\_PHASE\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the last critical phase.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the start time of the last critical phase.
 
 LAST\_CRITICAL\_PHASE\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time spent in microseconds in the last critical phase, during which updates are blocked.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the time spent in microseconds in the last critical phase, during which
 
 AVG\_CRITICAL\_PHASE\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time spent in microseconds for the last two critical phases, during which updates are blocked.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the average time spent in microseconds for the last two critical phases
 
 LAST\_TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of bytes written for the last savepoint.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the total number of bytes written for the last savepoint.
 
 AVG\_TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average number of bytes written for a savepoint.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the average number of bytes written for a savepoint.
 
 LAST\_FLUSHED\_PAGES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of asynchronously flushed pages.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the last number of asynchronously flushed pages.
 
 AVG\_FLUSHED\_PAGES
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average number of asynchronously flushed pages.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the average number of asynchronously flushed pages.
 
 LAST\_FLUSHED\_PAGES\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the last number of pages flushed in the critical phase.
 
 AVG\_FLUSHED\_PAGES\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average number of pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the average number of pages flushed in the critical phase.
 
 LAST\_FLUSHED\_ROWSTORE\_PAGES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of asynchronously flushed row store pages.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the last number of asynchronously flushed row store pages.
 
 AVG\_FLUSHED\_ROWSTORE\_PAGES
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average number of asynchronously flushed row store pages.
-
-
 
 </td>
 </tr>
@@ -661,21 +493,15 @@ Displays the average number of asynchronously flushed row store pages.
 
 LAST\_FLUSHED\_ROWSTORE\_PAGES\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last number of row store pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -684,21 +510,15 @@ Displays the last number of row store pages flushed in the critical phase.
 
 AVG\_FLUSHED\_ROWSTORE\_PAGES\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average number of row store pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -707,21 +527,15 @@ Displays the average number of row store pages flushed in the critical phase.
 
 LAST\_FLUSHED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the last asynchronously flushed pages.
-
-
 
 </td>
 </tr>
@@ -730,21 +544,15 @@ Displays the size in bytes of the last asynchronously flushed pages.
 
 AVG\_FLUSHED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size in bytes of asynchronously flushed pages.
-
-
 
 </td>
 </tr>
@@ -753,21 +561,15 @@ Displays the average size in bytes of asynchronously flushed pages.
 
 LAST\_FLUSHED\_SIZE\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the last pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -776,21 +578,15 @@ Displays the size in bytes of the last pages flushed in the critical phase.
 
 AVG\_FLUSHED\_SIZE\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size of pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -799,21 +595,15 @@ Displays the average size of pages flushed in the critical phase.
 
 LAST\_FLUSHED\_ROWSTORE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the last asynchronously flushed row store pages.
-
-
 
 </td>
 </tr>
@@ -822,21 +612,15 @@ Displays the size in bytes of the last asynchronously flushed row store pages.
 
 AVG\_FLUSHED\_ROWSTORE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size in bytes of the asynchronously flushed row store pages.
-
-
 
 </td>
 </tr>
@@ -845,21 +629,15 @@ Displays the average size in bytes of the asynchronously flushed row store pages
 
 LAST\_FLUSHED\_ROWSTORE\_SIZE\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size in bytes of the last row store pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -868,21 +646,15 @@ Displays the size in bytes of the last row store pages flushed in the critical p
 
 AVG\_FLUSHED\_ROWSTORE\_SIZE\_IN\_CRITICAL\_PHASE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average size in bytes of the row store pages flushed in the critical phase.
-
-
 
 </td>
 </tr>
@@ -891,21 +663,15 @@ Displays the average size in bytes of the row store pages flushed in the critica
 
 LAST\_RTT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size in bytes of the rollback transaction table at last savepoint. This may be less than the sum of components if there are duplicate TIDs.
-
-
 
 </td>
 </tr>
@@ -936,5 +702,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [RELEASE SAVEPOINT Statement \(Transaction Management\)](../../010-SQL-Reference/012-SQL-Statements/release-savepoint-statement-transaction-management-445eb4d.md "Releases a specified savepoint name.")
 
-[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
+[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
 

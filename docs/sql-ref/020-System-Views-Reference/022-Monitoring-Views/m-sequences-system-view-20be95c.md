@@ -17,21 +17,15 @@ Provides statistics for sequence caches.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host where the sequence cache exists. This is only displayed when the cache is greater than 1 and the value has been cached.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host where the sequence cache exists. This is only displayed when t
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port where the sequence cache exists. This is only displayed when the cache is greater than 1 and the value has been cached.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the port where the sequence cache exists. This is only displayed when t
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the sequence.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name of the sequence.
 
 SEQUENCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the sequence name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the sequence name.
 
 CACHE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache size of the sequence cache in bytes.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the cache size of the sequence cache in bytes.
 
 START\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 DECIMAL
 
-
-
 </td>
 <td valign="top">
 
 Displays the start value of the sequence cache. This is only displayed when the cache is greater than 1 and the value has been cached.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the start value of the sequence cache. This is only displayed when the 
 
 END\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 DECIMAL
 
-
-
 </td>
 <td valign="top">
 
 Displays the end value of the sequence cache. This is only displayed when the cache is greater than 1 and the value has been cached.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the end value of the sequence cache. This is only displayed when the ca
 
 CURRENT\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 DECIMAL
 
-
-
 </td>
 <td valign="top">
 
 Displays the current value of the sequence cache in bytes.
-
-
 
 </td>
 </tr>

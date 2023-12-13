@@ -174,28 +174,20 @@ FROM weather;
 
 TS
 
-
-
 </th>
 <th valign="top">
 
 TEMPERATURE
-
-
 
 </th>
 <th valign="top">
 
 SES
 
-
-
 </th>
 <th valign="top">
 
 DES
-
-
 
 </th>
 </tr>
@@ -204,28 +196,20 @@ DES
 
 01.01.2014
 
-
-
 </td>
 <td valign="top">
 
 0.0
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 </tr>
@@ -234,28 +218,20 @@ NULL
 
 02.01.2014
 
-
-
 </td>
 <td valign="top">
 
 3.0
-
-
 
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -264,28 +240,20 @@ NULL
 
 03.01.2014
 
-
-
 </td>
 <td valign="top">
 
 4.5
-
-
 
 </td>
 <td valign="top">
 
 0.6000000000000001
 
-
-
 </td>
 <td valign="top">
 
 6
-
-
 
 </td>
 </tr>
@@ -294,28 +262,20 @@ NULL
 
 04.01.2014
 
-
-
 </td>
 <td valign="top">
 
 6.0
-
-
 
 </td>
 <td valign="top">
 
 1.3800000000000001
 
-
-
 </td>
 <td valign="top">
 
 8.61
-
-
 
 </td>
 </tr>
@@ -324,28 +284,20 @@ NULL
 
 05.01.2014
 
-
-
 </td>
 <td valign="top">
 
 6.3
-
-
 
 </td>
 <td valign="top">
 
 2.3040000000000003
 
-
-
 </td>
 <td valign="top">
 
 10.8414
-
-
 
 </td>
 </tr>
@@ -354,28 +306,20 @@ NULL
 
 06.01.2014
 
-
-
 </td>
 <td valign="top">
 
 6.9
-
-
 
 </td>
 <td valign="top">
 
 3.1032
 
-
-
 </td>
 <td valign="top">
 
 12.414036
-
-
 
 </td>
 </tr>
@@ -384,28 +328,20 @@ NULL
 
 07.01.2014
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 3.86256
 
-
-
 </td>
 <td valign="top">
 
 13.46130264
-
-
 
 </td>
 </tr>
@@ -414,28 +350,20 @@ NULL
 
 08.01.2014
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 3.86256
 
-
-
 </td>
 <td valign="top">
 
 15.61137648
-
-
 
 </td>
 </tr>
@@ -476,134 +404,96 @@ SELECT class,
 
 CLASS
 
-
-
 </th>
 <th valign="top">
 
 VAL
-
-
 
 </th>
 <th valign="top">
 
 S0
 
-
-
 </th>
 <th valign="top">
 
 S1
-
-
 
 </th>
 <th valign="top">
 
 S2
 
-
-
 </th>
 <th valign="top">
 
 S3
-
-
 
 </th>
 <th valign="top">
 
 S4
 
-
-
 </th>
 <th valign="top">
 
 S5
-
-
 
 </th>
 <th valign="top">
 
 S6
 
-
-
 </th>
 <th valign="top">
 
 S7
-
-
 
 </th>
 <th valign="top">
 
 S8
 
-
-
 </th>
 <th valign="top">
 
 S9
-
-
 
 </th>
 <th valign="top">
 
 S10
 
-
-
 </th>
 <th valign="top">
 
 S11
-
-
 
 </th>
 <th valign="top">
 
 S12
 
-
-
 </th>
 <th valign="top">
 
 S13
-
-
 
 </th>
 <th valign="top">
 
 S14
 
-
-
 </th>
 <th valign="top">
 
 S15
-
-
 
 </th>
 <th valign="top">
 
 S16
 
-
-
 </th>
 </tr>
 <tr>
@@ -611,133 +501,95 @@ S16
 
 A
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 4
 
-
-
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 23
 
-
-
 </td>
 <td valign="top">
 
 8
 
+</td>
+<td valign="top">
 
+1
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
 
 </td>
 </tr>
@@ -746,133 +598,95 @@ null
 
 A
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 9
-
-
 
 </td>
 <td valign="top">
 
 23
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 9
-
-
 
 </td>
 <td valign="top">
 
 20
 
-
-
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -881,133 +695,95 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 14
 
-
-
 </td>
 <td valign="top">
 
 20
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">
 
 23
 
-
-
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 13
 
-
-
 </td>
 <td valign="top">
 
 15
 
-
-
 </td>
 <td valign="top">
 
 15
-
-
 
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 </tr>
@@ -1016,133 +792,95 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 14
-
-
 
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 15
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 15
-
-
 
 </td>
 <td valign="top">
 
 20
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 20
 
-
-
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">
 
 14
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>
@@ -1151,133 +889,95 @@ A
 
 A
 
-
-
 </td>
 <td valign="top">
 
 10
 
+</td>
+<td valign="top">
 
+24
 
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 24
-
-
-
-</td>
-<td valign="top">
-
-24
-
-
 
 </td>
 <td valign="top">
 
 14
 
+</td>
+<td valign="top">
 
+24
+
+</td>
+<td valign="top">
+
+10
+
+</td>
+<td valign="top">
+
+10
+
+</td>
+<td valign="top">
+
+10
+
+</td>
+<td valign="top">
+
+15
+
+</td>
+<td valign="top">
+
+15
+
+</td>
+<td valign="top">
+
+10
+
+</td>
+<td valign="top">
+
+15
+
+</td>
+<td valign="top">
+
+null
+
+</td>
+<td valign="top">
+
+null
 
 </td>
 <td valign="top">
 
 24
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
-
-</td>
-<td valign="top">
-
-10
-
-
-
-</td>
-<td valign="top">
-
-10
-
-
 
 </td>
 <td valign="top">
 
 15
-
-
-
-</td>
-<td valign="top">
-
-15
-
-
-
-</td>
-<td valign="top">
-
-10
-
-
-
-</td>
-<td valign="top">
-
-15
-
-
-
-</td>
-<td valign="top">
-
-null
-
-
-
-</td>
-<td valign="top">
-
-null
-
-
-
-</td>
-<td valign="top">
-
-24
-
-
-
-</td>
-<td valign="top">
-
-10
-
-
-
-</td>
-<td valign="top">
-
-15
-
-
 
 </td>
 </tr>
@@ -1286,133 +986,95 @@ null
 
 B
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 2
 
+</td>
+<td valign="top">
 
+8
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
-8
-
-
+1
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
-
-</td>
-<td valign="top">
-
-1
-
-
 
 </td>
 </tr>
@@ -1421,133 +1083,95 @@ null
 
 B
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 9
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 9
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -1556,133 +1180,95 @@ B
 
 B
 
-
-
 </td>
 <td valign="top">
 
 7
 
+</td>
+<td valign="top">
 
+9
 
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 9
-
-
-
-</td>
-<td valign="top">
-
-9
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 9
 
+</td>
+<td valign="top">
 
+7
 
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 7
-
-
-
-</td>
-<td valign="top">
-
-7
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 null
 
-
-
 </td>
 <td valign="top">
 
 null
-
-
 
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 </tr>

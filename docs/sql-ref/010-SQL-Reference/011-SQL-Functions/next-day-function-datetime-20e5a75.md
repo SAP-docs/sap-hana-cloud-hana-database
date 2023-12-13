@@ -28,7 +28,7 @@ Returns the date of the day following the specified date.
 
 ## Example
 
-The following example returns ***2010-01-01*** as the day after ***2009-12-31***:
+The following example returns ***2010-01-01*** as the day after `2009-12-31`:
 
 ```
 SELECT NEXT_DAY (TO_DATE ('2009-12-31', 'YYYY-MM-DD')) "next day" FROM DUMMY;

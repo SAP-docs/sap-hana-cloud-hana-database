@@ -37,20 +37,20 @@ In this tutorial, you create a calculation view to combine information from the 
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...* or
 
 
     1.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
     2.  Select the database artifact type, for example, calculation view.
 
-        In the *Artifact Type* box, type ***hdbca***, and choose *Calculation View \(hdbcalculationview\)* from the list that appears.
+        In the *Artifact Type* box, type `hdbca`, and choose *Calculation View \(hdbcalculationview\)* from the list that appears.
 
     3.  Choose the file location where you want to add the new calculation view.
 
@@ -58,9 +58,9 @@ In this tutorial, you create a calculation view to combine information from the 
 
     4.  Choose the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new database artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new database artifact.
 
-    5.  Name the file ***FlightReservation***.
+    5.  Name the file `FlightReservation`.
 
         The appropriate file suffix \(`.hdbcalculationview`\) is appended to the name by the Wizard.
 
@@ -85,15 +85,15 @@ In this tutorial, you create a calculation view to combine information from the 
 
     2.  Name the join node.
 
-        Right-click the join node, choose *Rename*, and type the name ***Reservations***.
+        Right-click the join node, choose *Rename*, and type the name `Reservations`.
 
     3.  Add a data source for the join node.
 
-        Click *\[+\]*, search for the *PASSENGERS* table in the add data source window, select the table, and click *Finish*.
+        Choose *\[+\]*, search for the *PASSENGERS* table in the add data source window, select the table, and click *Finish*.
 
     4.  Add another data source for the join node.
 
-        Click *\[+\]*, search for the *FLIGHTRESERVATION* table in the add data source window, select the table, and click *Finish*.
+        Choose *\[+\]*, search for the *FLIGHTRESERVATION* table in the add data source window, select the table, and click *Finish*.
 
     5.  Configure the join node.
 
@@ -107,8 +107,8 @@ In this tutorial, you create a calculation view to combine information from the 
 
     8.  Select the calculated column *CC\_1* and configure it as follows:
 
-        -   Rename it to ***Airline*** 
-        -   Change the column length to ***20***
+        -   Rename it to `Airline` 
+        -   Change the column length to `20`
         -   Add the following SQL expression:
 
             `CASE "CARRID" WHEN 'LH' THEN 'Lufthansa' WHEN 'SQ' THEN 'Singapore Airlines' END`
@@ -126,7 +126,7 @@ In this tutorial, you create a calculation view to combine information from the 
 
 4.  Deploy the calculation view.
 
-    In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose <span class="FPA-icons"></span> \(Deploy\).
+    In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose ![](images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
     > ### Note:  
     > A mismatch between the installed SAP HANA version and the SAP HANA version specified in the `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
@@ -137,7 +137,7 @@ In this tutorial, you create a calculation view to combine information from the 
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 

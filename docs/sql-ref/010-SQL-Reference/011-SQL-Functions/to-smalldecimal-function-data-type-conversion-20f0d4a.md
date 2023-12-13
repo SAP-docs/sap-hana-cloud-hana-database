@@ -28,7 +28,7 @@ Converts the specified value to a SMALLDECIMAL data type.
 
 ## Example
 
-The following example converts the value ***7654321.89*** to the SMALLDECIMAL value ***7,654,321.89***:
+The following example converts the value `7654321.89` to the SMALLDECIMAL value ***7,654,321.89***:
 
 ```
 SELECT TO_SMALLDECIMAL(7654321.89) "to smalldecimal" FROM DUMMY;

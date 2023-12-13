@@ -213,52 +213,6 @@ Flexible Tables
 
 </dd><dt><b>
 
-LiveCache
-
-</b></dt>
-<dd>
-
--   M\_LIVECACHE\_CONTAINER\_STATISTICS view removed.
-
--   M\_LIVECACHE\_CONTAINER\_STATISTICS\_RESET view removed.
-
--   M\_LIVECACHE\_LOCKS view removed.
-
--   M\_LIVECACHE\_LOCK\_STATISTICS view removed.
-
--   M\_LIVECACHE\_LOCK\_STATISTICS\_RESET view removed.
-
--   M\_LIVECACHE\_OMS\_VERSIONS view removed.
-
--   M\_LIVECACHE\_PROCEDURE\_STATISTICS view removed.
-
--   M\_LIVECACHE\_PROCEDURE\_STATISTICS\_RESET view removed.
-
--   M\_LIVECACHE\_SCHEMA\_STATISTICS view removed.
-
--   M\_LIVECACHE\_SCHEMA\_STATISTICS\_RESET view removed.
-
--   \_SYS\_STATISTICS.HOST\_LIVECACHE\_CONTAINER\_STATISTICS\_BASE table removed.
-
--   \_SYS\_STATISTICS.HOST\_LIVECACHE\_OMS\_VERSION\_BASE table removed.
-
--   \_SYS\_STATISTICS.HOST\_LIVECACHE\_PROCEDURE\_STATISTICS\_BASE table removed.
-
--   \_SYS\_STATISTICS.HOST\_LIVECACHE\_SCHEMA\_STATISTICS\_BASE table removed.
-
--   \_SYS\_STATISTICS.HOST\_LIVECACHE\_CONTAINER\_STATISTICS view removed.
-
--   \_SYS\_STATISTICS.HOST\_LIVECACHE\_OMS\_VERSIONS view removed.
-
--   \_SYS\_STATISTICS.HOST\_LIVECACHE\_PROCEDURE\_STATISTICS view removed.
-
--   \_SYS\_STATISTICS.HOST\_LIVECACHE\_SCHEMA\_STATISTICS view removed.
-
-
-
-
-</dd><dt><b>
-
 MDC
 
 </b></dt>
@@ -359,7 +313,7 @@ Security Changes
 
 </dd><dt><b>
 
-Smart Data Access \(refer to [2600176](https://launchpad.support.sap.com/#/notes/2600176) for details\)
+Smart Data Access \(refer to [2600176](https://me.sap.com/notes/2600176) for details\)
 
 </b></dt>
 <dd>
@@ -468,13 +422,13 @@ Time Series Tables
 
 [Compatibility with Other SAP HANA Versions](https://help.sap.com/viewer/3c53bc7b58934a9795b6dd8c7e28cf05/hanacloud/en-US/11cc86c44d0b4dd3bf70e16870d9d4df.html)
 
-[SAP Note 2695472](https://launchpad.support.sap.com/#/notes/2695472 "Statement on SAP HANA XS Classic and the SAP HANA Repository and SAP Business Technology Platform, SAP HANA Service")
+[SAP Note 2695472](https://me.sap.com/notes/2695472 "Statement on SAP HANA XS Classic and the SAP HANA Repository and SAP Business Technology Platform, SAP HANA Service")
 
-[SAP Note 2993439](https://launchpad.support.sap.com/#/notes/2993439 "2993439 - Statement on SAP HANA Studio and SAP HANA Cloud")
+[SAP Note 2993439](https://me.sap.com/notes/2993439 "2993439 - Statement on SAP HANA Studio and SAP HANA Cloud")
 
-[SAP Note 2868742](https://launchpad.support.sap.com/#/notes/2868742 "Differences between SAP HANA Cloud and SAP HANA Platform for SQL, SQLScript and SAP HDI (SAP HANA Deployment Infrastructure")
+[SAP Note 2868742](https://me.sap.com/notes/2868742 "Differences between SAP HANA Cloud and SAP HANA Platform for SQL, SQLScript and SAP HDI (SAP HANA Deployment Infrastructure")
 
-[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2023_2_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
+[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2023_4_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
 
-[Managing SAP HANA Users](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/ed7af17e5ae14de694d9bee5f35098f4.html "Every user who wants to work with the SAP HANA database must have a database user who can log on and is authorized to perform their individual tasks.") :arrow_upper_right:
+[Managing SAP HANA Users](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/ed7af17e5ae14de694d9bee5f35098f4.html "Every user who wants to work with the SAP HANA database must have a database user who can log on and is authorized to perform their individual tasks.") :arrow_upper_right:
 

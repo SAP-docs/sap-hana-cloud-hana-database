@@ -17,21 +17,15 @@ Provides information about annotations that have been added to SQL objects.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the object.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the object.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the object.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the object.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of object, for example, a table.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the type of object, for example, a table.
 
 SUBOBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the subobject, if applicable.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the name of the subobject, if applicable.
 
 SUBOBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of subobject, if applicable, for example, a table column.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the type of subobject, if applicable, for example, a table column.
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the annotation key.
-
-
 
 </td>
 </tr>
@@ -178,25 +136,27 @@ Displays the annotation key.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the annotation key value.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioda2b930e241147faa906c8f3056a4615__section_ijs_b3c_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

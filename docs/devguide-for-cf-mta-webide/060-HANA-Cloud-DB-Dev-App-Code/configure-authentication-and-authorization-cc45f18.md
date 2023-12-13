@@ -30,7 +30,7 @@ You configure authentication and authorization by using the integrated container
 
 It is possible to enable offline validation of the JSON Web Token \(JWT\) used for authentication purposes; it does not require an additional call to the User Account and Authentication \(UAA\) service. The trust for this offline validation is created by binding the `xsuaa` service instance to your application.
 
- <a name="task_gnr_wkm_mv"/>
+<a name="task_gnr_wkm_mv"/>
 
 <!-- task\_gnr\_wkm\_mv -->
 
@@ -94,7 +94,7 @@ To enforce a check for the `$XSAPPNAME.Display` scope, proceed as follows:
     ```
 
 
- <a name="task_w4n_mxp_4mb"/>
+<a name="task_w4n_mxp_4mb"/>
 
 <!-- task\_w4n\_mxp\_4mb -->
 
@@ -250,7 +250,7 @@ Applications using the deprecated Spring Security OAuth can use the Cloud `java-
     > Note that the token interface used in `java-security` is not compatible with the `XSUserInfo` interface. If you want to use `XSUserInfo`-specific methods such as `getHdbToken`, use the `XSUserInfoAdapter`.
 
 
- <a name="task_q5g_11q_4mb"/>
+<a name="task_q5g_11q_4mb"/>
 
 <!-- task\_q5g\_11q\_4mb -->
 
@@ -290,7 +290,7 @@ Spring Boot Applications can use the Cloud `spring-xsuaa` client library, which 
     [Sample application for Spring security](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/samples/spring-security-xsuaa-usage)
 
 
- <a name="task_um5_zbq_4mb"/>
+<a name="task_um5_zbq_4mb"/>
 
 <!-- task\_um5\_zbq\_4mb -->
 

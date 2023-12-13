@@ -15,21 +15,15 @@ Lists all LDAP providers.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 LDAP\_PROVIDER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the LDAP provider.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the name of the LDAP provider.
 
 LDAP\_PROVIDER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the LDAP provider.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the ID of the LDAP provider.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the creation time.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the creation time.
 
 IS\_DEFAULT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the the LDAP provider is the default provider: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays whether the the LDAP provider is the default provider: TRUE/FALSE.
 
 IS\_SSL\_USED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the connection to the configured LDAP Server uses SSL: TRUE/FALSE. If SSL ON is specified for the provider, or if USER LOOKUP URL or NESTED GROUP LOOKUP URL use 'ldaps://', the value is TRUE. Otherwise, the value is FALSE.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays whether the connection to the configured LDAP Server uses SSL: TRUE/FAL
 
 IS\_PROVIDER\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the LDAP provider is enabled for use: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays whether the LDAP provider is enabled for use: TRUE/FALSE.
 
 ATTRIBUTE\_DN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the LDAP attribute to provide the LDAP distinguished name of a user.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the LDAP attribute to provide the LDAP distinguished name of a user.
 
 ATTRIBUTE\_MEMBER\_OF
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the LDAP attribute that provides the list of LDAP groups that the user is a member of.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the LDAP attribute that provides the list of LDAP groups that the user 
 
 IS\_USER\_CREATION\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the LDAP provider is allowed to create a user implicitly: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays whether the LDAP provider is allowed to create a user implicitly: TRUE/
 
 USER\_CREATION\_USER\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of user to create when LDAP user creation is enabled. NULL if LDAP user creation is not enabled: STANDARD, RESTRICTED, NULL
-
-
 
 </td>
 </tr>
@@ -268,25 +202,27 @@ Displays the type of user to create when LDAP user creation is enabled. NULL if 
 
 USER\_CREATION\_USERGROUP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the usergroup a newly created user will be a member of.
-
-
+Displays the user group a newly created user will be a member of.
 
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio5b54fe223a8045bfbc6b51cb66c64967__section_bt3_ttb_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -301,7 +237,7 @@ Displays the usergroup a newly created user will be a member of.
 
 [LDAP\_PROVIDER\_URLS System View](ldap-provider-urls-system-view-7cf2869.md "Lists all LDAP provider URLs.")
 
-[LDAP\_USERS System View](ldap-users-system-view-704e5b6.md "Shows information about the users using LDAP authorization.")
+[LDAP\_USERS System View](ldap-users-system-view-704e5b6.md "Provides information about the users using LDAP authorization.")
 
-[LDAP Provider Configuration (Reference)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/b8406c6e363747dea9098f00648d15b5.html "To set up a connection to an LDAP server, you must create an LDAP provider in the SAP HANA database. Depending on your requirements, you can use the LDAP server to authenticate and/or authorize users. For LDAP-authenticated users, you can also enable the automatic creation of users in SAP HANA.") :arrow_upper_right:
+[LDAP Provider Configuration (Reference)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/b8406c6e363747dea9098f00648d15b5.html "To set up a connection to an LDAP server, you must create an LDAP provider in the SAP HANA database. Depending on your requirements, you can use the LDAP server to authenticate and/or authorize users. For LDAP-authenticated users, you can also enable the automatic creation of users in SAP HANA.") :arrow_upper_right:
 

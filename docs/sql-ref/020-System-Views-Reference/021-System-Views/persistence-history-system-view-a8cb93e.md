@@ -15,21 +15,15 @@ Records the database version history.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 CHANGE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the order of database installations.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the order of database installations.
 
 CHANGE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the database was upgraded or recovered to the current version.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the timestamp when the database was upgraded or recovered to the curren
 
 VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the version.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the version.
 
 SYSTEM\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(3\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system ID of the SAP HANA instance.
-
-
 
 </td>
 </tr>
@@ -130,25 +100,27 @@ Displays the system ID of the SAP HANA instance.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the host name of the catalog coordinator. Only users with INIFILE ADMIN or CATALOG READ privileges are able to view this column.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioa8cb93e80f494c15b19fc41109e7343c__section_r1s_qr4_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

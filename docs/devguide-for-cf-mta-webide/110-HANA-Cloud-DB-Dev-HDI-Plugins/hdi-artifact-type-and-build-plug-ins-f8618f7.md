@@ -22,67 +22,32 @@ Not all plug-in libraries are available by default. The list of plug-in librarie
 
 Artifact Type
 
-
-
 </th>
 <th valign="top">
 
 Artifact Suffix
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
-</tr>
-<tr>
-<td valign="top">
-
-text, copy only
-
-
-
-</td>
-<td valign="top">
-
-.? \(.txt, …\)
-
-
-
-</td>
-<td valign="top">
-
-Transform an arbitrary design-time resource into a deployed object
-
-
-
-</td>
 </tr>
 <tr>
 <td valign="top">
 
 Analytic Privilege
 
-
-
 </td>
 <td valign="top">
 
- `.hdbanalyticprivilege` 
-
-
+`.hdbanalyticprivilege` 
 
 </td>
 <td valign="top">
 
 Transform a design-time XML-based analytic-privileges resource into a analytic-privileges object in the database
-
-
 
 </td>
 </tr>
@@ -91,21 +56,15 @@ Transform a design-time XML-based analytic-privileges resource into a analytic-p
 
 Application Time-Period Table
 
-
-
 </td>
 <td valign="top">
 
- `.hdbapplicationtime` 
-
-
+`.hdbapplicationtime` 
 
 </td>
 <td valign="top">
 
 Transform a design-time application time-period table into a database table object with application-time period
-
-
 
 </td>
 </tr>
@@ -114,21 +73,15 @@ Transform a design-time application time-period table into a database table obje
 
 Calculation View
 
-
-
 </td>
 <td valign="top">
 
- `.hdbcalculationview` 
-
-
+`.hdbcalculationview` 
 
 </td>
 <td valign="top">
 
 Transform a design-time calculation view description into a set of view database objects
-
-
 
 </td>
 </tr>
@@ -137,21 +90,32 @@ Transform a design-time calculation view description into a set of view database
 
 Constraint
 
-
-
 </td>
 <td valign="top">
 
- `.hdbconstraint` 
-
-
+`.hdbconstraint` 
 
 </td>
 <td valign="top">
 
 Transform a design-time constraint into a constraint on database tables
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+Copy only \(.txt\)
+
+</td>
+<td valign="top">
+
+.? \(.txt, …\)
+
+</td>
+<td valign="top">
+
+Transform an arbitrary design-time resource into a deployed object
 
 </td>
 </tr>
@@ -160,21 +124,15 @@ Transform a design-time constraint into a constraint on database tables
 
 CSV
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 Source file containing comma-separated values \(CSV\) for data import with `.hdbtabledata` 
-
-
 
 </td>
 </tr>
@@ -183,21 +141,15 @@ Source file containing comma-separated values \(CSV\) for data import with `.hdb
 
 Document Store Collection
 
-
-
 </td>
 <td valign="top">
 
- `.hdbcollection` 
-
-
+`.hdbcollection` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time document-store collection resource into a JSON collection database object
-
-
 
 </td>
 </tr>
@@ -206,21 +158,15 @@ Transforms a design-time document-store collection resource into a JSON collecti
 
 Document Store Collection Index
 
-
-
 </td>
 <td valign="top">
 
- `.hdbcollectionindex` 
-
-
+`.hdbcollectionindex` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time document-store, collection-index resource into a JSON collection-index database object
-
-
 
 </td>
 </tr>
@@ -229,21 +175,32 @@ Transforms a design-time document-store, collection-index resource into a JSON c
 
 Drop/Create Table
 
-
-
 </td>
 <td valign="top">
 
- `.hdbdropcreatetable` 
-
-
+`.hdbdropcreatetable` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time table resource into a table database object. See also `.hdbtable` 
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+Enterprise Search Configurations
+
+</td>
+<td valign="top">
+
+`(.hdbeshconfig)` 
+
+</td>
+<td valign="top">
+
+Transforms a design-time, enterprise-search configuration resource \(specified in an .hdbeshconfig artifact\) into a search-configuration database object.
 
 </td>
 </tr>
@@ -252,21 +209,15 @@ Transforms a design-time table resource into a table database object. See also `
 
 Flowgraph
 
-
-
 </td>
 <td valign="top">
 
- `.hdbflowgraph` 
-
-
+`.hdbflowgraph` 
 
 </td>
 <td valign="top">
 
 Transform a design-time flowgraph description into a corresponding set of database procedure or task objects
-
-
 
 </td>
 </tr>
@@ -275,21 +226,15 @@ Transform a design-time flowgraph description into a corresponding set of databa
 
 Function
 
-
-
 </td>
 <td valign="top">
 
- `.hdbfunction` 
-
-
+`.hdbfunction` 
 
 </td>
 <td valign="top">
 
 Transform a design-time function resource into a function database object
-
-
 
 </td>
 </tr>
@@ -298,21 +243,15 @@ Transform a design-time function resource into a function database object
 
 Graph Workspace
 
-
-
 </td>
 <td valign="top">
 
- `.hdbgraphworkspace` 
-
-
+`.hdbgraphworkspace` 
 
 </td>
 <td valign="top">
 
 Transform a design-time graph-workspace resource into a graph-workspace object in the database
-
-
 
 </td>
 </tr>
@@ -321,21 +260,15 @@ Transform a design-time graph-workspace resource into a graph-workspace object i
 
 Index
 
-
-
 </td>
 <td valign="top">
 
- `.hdbindex` 
-
-
+`.hdbindex` 
 
 </td>
 <td valign="top">
 
 Transform a design-time index resource into an index on a database table
-
-
 
 </td>
 </tr>
@@ -344,21 +277,15 @@ Transform a design-time index resource into an index on a database table
 
 Library
 
-
-
 </td>
 <td valign="top">
 
- `.hdblibrary` 
-
-
+`.hdblibrary` 
 
 </td>
 <td valign="top">
 
 Transform a design-time library resource into a library database object
-
-
 
 </td>
 </tr>
@@ -367,21 +294,15 @@ Transform a design-time library resource into a library database object
 
 Logical Schema
 
-
-
 </td>
 <td valign="top">
 
- `.hdblogicalschema` 
-
-
+`.hdblogicalschema` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time logical-schema definition into database objects that can be consumed by synonyms and so on.
-
-
 
 </td>
 </tr>
@@ -390,21 +311,15 @@ Transforms a design-time logical-schema definition into database objects that ca
 
 Migration Table
 
-
-
 </td>
 <td valign="top">
 
- `.hdbmigrationtable` 
-
-
+`.hdbmigrationtable` 
 
 </td>
 <td valign="top">
 
 Transform a design-time table resource into a table database object for migration purposes
-
-
 
 </td>
 </tr>
@@ -413,21 +328,15 @@ Transform a design-time table resource into a table database object for migratio
 
 Procedure
 
-
-
 </td>
 <td valign="top">
 
- `.hdbprocedure` 
-
-
+`.hdbprocedure` 
 
 </td>
 <td valign="top">
 
 Transform a design-time procedure resource into a procedure database object
-
-
 
 </td>
 </tr>
@@ -436,21 +345,15 @@ Transform a design-time procedure resource into a procedure database object
 
 Projection View
 
-
-
 </td>
 <td valign="top">
 
- `.hdbprojectionview` 
-
-
+`.hdbprojectionview` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time projection-view definition into a database object
-
-
 
 </td>
 </tr>
@@ -459,44 +362,15 @@ Transforms a design-time projection-view definition into a database object
 
 Projection View Configuration
 
-
-
 </td>
 <td valign="top">
 
- `.hdbprojectionviewconfig` 
-
-
+`.hdbprojectionviewconfig` 
 
 </td>
 <td valign="top">
 
 An explicit configuration of the projection view's target. A projection view configuration file can contain multiple configurations
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-\(Table Data\) Properties
-
-
-
-</td>
-<td valign="top">
-
- `.properties` 
-
-
-
-</td>
-<td valign="top">
-
-Insert data from files referenced in the “.properties” file format into database tables which are managed by SAP HANA HDI. See also CSV and Table Data
-
-
 
 </td>
 </tr>
@@ -505,21 +379,32 @@ Insert data from files referenced in the “.properties” file format into data
 
 Public Synonym
 
-
-
 </td>
 <td valign="top">
 
- `.hdbpublicsynonym` 
-
-
+`.hdbpublicsynonym` 
 
 </td>
 <td valign="top">
 
 Create public synonyms that refer to database objects located in the target schema of the current container
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+Remote Table Replications
+
+</td>
+<td valign="top">
+
+`(.hdbremotetablereplica)` 
+
+</td>
+<td valign="top">
+
+Transforms a design-time remote-table replication that refers to a current virtual table into a remote-table-replication database object.
 
 </td>
 </tr>
@@ -528,21 +413,15 @@ Create public synonyms that refer to database objects located in the target sche
 
 Replication Task
 
-
-
 </td>
 <td valign="top">
 
- `.hdbreptask` 
-
-
+`.hdbreptask` 
 
 </td>
 <td valign="top">
 
 Transform a design-time replication task description into a corresponding set of database procedure or task operations
-
-
 
 </td>
 </tr>
@@ -551,21 +430,15 @@ Transform a design-time replication task description into a corresponding set of
 
 Result Cache
 
-
-
 </td>
 <td valign="top">
 
- `.hdbresultcache` 
-
-
+`.hdbresultcache` 
 
 </td>
 <td valign="top">
 
 Transform a DDL-based definition of a result cache into the corresponding catalog object
-
-
 
 </td>
 </tr>
@@ -574,21 +447,15 @@ Transform a DDL-based definition of a result cache into the corresponding catalo
 
 Role Configuration
 
-
-
 </td>
 <td valign="top">
 
- `.hdbrole` 
-
-
+`.hdbrole` 
 
 </td>
 <td valign="top">
 
 Transform a design-time role resource into a run-time role object.
-
-
 
 </td>
 </tr>
@@ -597,21 +464,15 @@ Transform a design-time role resource into a run-time role object.
 
 Search Rule Set
 
-
-
 </td>
 <td valign="top">
 
- `.hdbsearchruleset` 
-
-
+`.hdbsearchruleset` 
 
 </td>
 <td valign="top">
 
 Creates search configurations that can be consumed with a built-in database procedure
-
-
 
 </td>
 </tr>
@@ -620,44 +481,15 @@ Creates search configurations that can be consumed with a built-in database proc
 
 Sequence
 
-
-
 </td>
 <td valign="top">
 
- `.hdbsequence` 
-
-
+`.hdbsequence` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time sequence resource into a sequence database object
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SQL View
-
-
-
-</td>
-<td valign="top">
-
- `.hdbview` 
-
-
-
-</td>
-<td valign="top">
-
-Transforms a design-time view resource into an SQL view database object.
-
-
 
 </td>
 </tr>
@@ -666,21 +498,15 @@ Transforms a design-time view resource into an SQL view database object.
 
 Statistics
 
-
-
 </td>
 <td valign="top">
 
- `.hdbstatistics` 
-
-
+`.hdbstatistics` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time statistics resource into a statistics object on a database table.
-
-
 
 </td>
 </tr>
@@ -689,21 +515,15 @@ Transforms a design-time statistics resource into a statistics object on a datab
 
 Structured Privilege
 
-
-
 </td>
 <td valign="top">
 
- `.hdbstructuredprivilege` 
-
-
+`.hdbstructuredprivilege` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time DDL-based structured privilege resource into a structured privilege object
-
-
 
 </td>
 </tr>
@@ -712,21 +532,15 @@ Transforms a design-time DDL-based structured privilege resource into a structur
 
 Synonym
 
-
-
 </td>
 <td valign="top">
 
- `.hdbsynonym` 
-
-
+`.hdbsynonym` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time synonym definition into a database synonym object.
-
-
 
 </td>
 </tr>
@@ -735,21 +549,15 @@ Transforms a design-time synonym definition into a database synonym object.
 
 Synonym Configuration
 
-
-
 </td>
 <td valign="top">
 
- `.hdbsynonymconfig` 
-
-
+`.hdbsynonymconfig` 
 
 </td>
 <td valign="top">
 
 An explicit \(but optional\) configuration of the synonym’s target; the configuration can also be included in the synonym definition \(.`hdbsynonym`\).
-
-
 
 </td>
 </tr>
@@ -758,21 +566,15 @@ An explicit \(but optional\) configuration of the synonym’s target; the config
 
 System Version Table
 
-
-
 </td>
 <td valign="top">
 
- `.hdbsystemversioning` 
-
-
+`.hdbsystemversioning` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time, system-versioned table that refers to a current and history table into a system-versioned table database object
-
-
 
 </td>
 </tr>
@@ -781,21 +583,15 @@ Transforms a design-time, system-versioned table that refers to a current and hi
 
 Table
 
-
-
 </td>
 <td valign="top">
 
- `.hdbtable` 
-
-
+`.hdbtable` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time table resource into a table database object. See also `dropcreatetable`.
-
-
 
 </td>
 </tr>
@@ -804,21 +600,15 @@ Transforms a design-time table resource into a table database object. See also `
 
 Table Data
 
-
-
 </td>
 <td valign="top">
 
- `.hdbtabledata` 
-
-
+`.hdbtabledata` 
 
 </td>
 <td valign="top">
 
 Insert data from other files \(for example, CSV, `.properties`, or `.tags` files\) into database tables.
-
-
 
 </td>
 </tr>
@@ -827,21 +617,15 @@ Insert data from other files \(for example, CSV, `.properties`, or `.tags` files
 
 Table Data Properties
 
-
-
 </td>
 <td valign="top">
 
- `.properties` 
-
-
+`.properties` 
 
 </td>
 <td valign="top">
 
 Insert data from files referenced in the “.properties” file format into database tables which are managed by SAP HANA HDI. See also `.hdbtabledata` and `.tags`.
-
-
 
 </td>
 </tr>
@@ -850,21 +634,15 @@ Insert data from files referenced in the “.properties” file format into data
 
 Table Type
 
-
-
 </td>
 <td valign="top">
 
- `.hdbtabletype` 
-
-
+`.hdbtabletype` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time table type resource into a table type database object.
-
-
 
 </td>
 </tr>
@@ -873,21 +651,15 @@ Transforms a design-time table type resource into a table type database object.
 
 Tags
 
-
-
 </td>
 <td valign="top">
 
- `.tags` 
-
-
+`.tags` 
 
 </td>
 <td valign="top">
 
 Insert data from other files \(for example, CSV, `.properties`, or `.tags` files\) into database tables.
-
-
 
 </td>
 </tr>
@@ -896,44 +668,32 @@ Insert data from other files \(for example, CSV, `.properties`, or `.tags` files
 
 Trigger
 
-
-
 </td>
 <td valign="top">
 
- `.hdbtrigger` 
-
-
+`.hdbtrigger` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time trigger resource into a trigger on a database table.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-View
-
-
+SQL View
 
 </td>
 <td valign="top">
 
- `.hdbview` 
-
-
+`.hdbview` 
 
 </td>
 <td valign="top">
 
 Transforms a design-time view resource into an SQL view database object.
-
-
 
 </td>
 </tr>
@@ -942,21 +702,15 @@ Transforms a design-time view resource into an SQL view database object.
 
 Virtual Function
 
-
-
 </td>
 <td valign="top">
 
- `.hdbvirtualfunction` 
-
-
+`.hdbvirtualfunction` 
 
 </td>
 <td valign="top" rowspan="2">
 
 Transform a design-time virtual function resource into a virtual function database object
-
-
 
 </td>
 </tr>
@@ -965,14 +719,10 @@ Transform a design-time virtual function resource into a virtual function databa
 
 Virtual Function Configuration
 
-
-
 </td>
 <td valign="top">
 
- `.hdbvirtualfunctionconfig` 
-
-
+`.hdbvirtualfunctionconfig` 
 
 </td>
 </tr>
@@ -981,21 +731,15 @@ Virtual Function Configuration
 
 Virtual Package
 
-
-
 </td>
 <td valign="top">
 
- `.hdbvirtualpackage` 
-
-
+`.hdbvirtualpackage` 
 
 </td>
 <td valign="top">
 
 Transform a design-time Hadoop Map Reduce Job \(`.hdbvirtualpackagehadoop`\) or SparkSQL resource \(`.hdbvirtualpackagesparksql`\) into a virtual-package database object
-
-
 
 </td>
 </tr>
@@ -1004,21 +748,15 @@ Transform a design-time Hadoop Map Reduce Job \(`.hdbvirtualpackagehadoop`\) or 
 
 Virtual Procedure
 
-
-
 </td>
 <td valign="top">
 
- `.hdbvirtualprocedure` 
-
-
+`.hdbvirtualprocedure` 
 
 </td>
 <td valign="top" rowspan="2">
 
 Transform a design-time virtual-procedure resource into a virtual-procedure database object
-
-
 
 </td>
 </tr>
@@ -1027,14 +765,10 @@ Transform a design-time virtual-procedure resource into a virtual-procedure data
 
 Virtual Procedure Configuration
 
-
-
 </td>
 <td valign="top">
 
- `.hdbvirtualprocedureconfig` 
-
-
+`.hdbvirtualprocedureconfig` 
 
 </td>
 </tr>
@@ -1043,21 +777,15 @@ Virtual Procedure Configuration
 
 Virtual Table
 
-
-
 </td>
 <td valign="top">
 
- `.hdbvirtualtable` 
-
-
+`.hdbvirtualtable` 
 
 </td>
 <td valign="top" rowspan="2">
 
 Transform a design-time virtual table resource into a virtual table database object
-
-
 
 </td>
 </tr>
@@ -1066,14 +794,10 @@ Transform a design-time virtual table resource into a virtual table database obj
 
 Virtual Table Configuration
 
-
-
 </td>
 <td valign="top">
 
- `.hdbvirtualtableconfig` 
-
-
+`.hdbvirtualtableconfig` 
 
 </td>
 </tr>
@@ -1085,9 +809,9 @@ Virtual Table Configuration
 **Related Information**  
 
 
-[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
+[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA Database Deployment Infrastructure Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/4077972509f5437c85d6a03e01509417.html "Set up and maintain the deployment infrastructure for the SAP HANA Cloud, SAP HANA database service.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Deployment Infrastructure Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/4077972509f5437c85d6a03e01509417.html "Set up and maintain the deployment infrastructure for the SAP HANA Cloud, SAP HANA database service.") :arrow_upper_right:
 
 [Design-time Content Compatibility \(SAP HANA Cloud Migration Guide\)](https://help.sap.com/viewer/3c53bc7b58934a9795b6dd8c7e28cf05/hanacloud/en-US/9c8656d9c1a34c829fab426cb77b4639.html)
 

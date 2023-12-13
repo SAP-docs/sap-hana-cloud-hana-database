@@ -33,13 +33,13 @@ This tutorial shows how to use SAP Business Application Studio to add database a
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -49,11 +49,11 @@ This tutorial shows how to use SAP Business Application Studio to add database a
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
     5.  Select the database artifact type, for example, table.
 
-        In the *Artifact Type* box, type ***hdbt***, and choose *Table \(hdbtable\)* from the list that appears.
+        In the *Artifact Type* box, type `hdbt`, and choose *Table \(hdbtable\)* from the list that appears.
 
     6.  Name the file *PASSENGERS*.
 
@@ -107,9 +107,9 @@ This tutorial shows how to use SAP Business Application Studio to add database a
 
     3.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new database role.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new database role.
 
-    4.  Select the database artifact **type**. In the selection box, type ***.hdbt*** and choose *hdbtable* in the list that appears.
+    4.  Select the database artifact **type**. In the selection box, type `.hdbt` and choose *hdbtable* in the list that appears.
 
     5.  Name the file `FLIGHTRESERVATION`.
 
@@ -119,7 +119,7 @@ This tutorial shows how to use SAP Business Application Studio to add database a
     6.  Add the following code to the file and save it.
 
         > ### Sample Code:  
-        >  `FLIGHTRESERVATION.hdbtable`
+        > `FLIGHTRESERVATION.hdbtable`
         > 
         > ```
         > COLUMN TABLE "FLIGHTRESERVATION" ( 
@@ -139,7 +139,7 @@ This tutorial shows how to use SAP Business Application Studio to add database a
 
 3.  Build and deploy the database module.
 
-    In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose <span class="FPA-icons"></span> \(Deploy\).
+    In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose ![](images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
     > ### Tip:  
     > Details of each deployment operation are written to a dedicated log file displayed in the *Terminal* pane at the bottom of the SAP Business Application Studio's development space. The contents of this log file can be extended to include trace information from the HDI deployer, for example, with the user setting *Enable deployment tracing*. To ensure that the log file does not retain any information about previous deployments, enable the option *Clear the deployment log before starting a new deployment*, which you can find in :gear:. Choose *Settings* \> *SAP HANA Project Explorer* \> *Deploy: Auto clean deployment log*.
@@ -159,7 +159,7 @@ This tutorial shows how to use SAP Business Application Studio to add database a
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 

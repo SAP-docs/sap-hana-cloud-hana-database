@@ -125,9 +125,9 @@ You can use the HDI Table Data plug-in \(`hdbtabledata`\) to import one or more 
 **Related Information**  
 
 
-[Document Store Collections (.hdbcollection)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/fe16b635277c4aea825c72973f159359.html "Transforms a design-time document-collection resource into a collection database object.") :arrow_upper_right:
+[Document Store Collections (.hdbcollection)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/fe16b635277c4aea825c72973f159359.html "Transforms a design-time document-collection resource into a collection database object.") :arrow_upper_right:
 
-[Table Data (.hdbtabledata)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
+[Table Data (.hdbtabledata)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
 
 [Maintaining JSON Collections in the SAP HANA Document Store](maintaining-json-collections-in-the-sap-hana-document-store-a8f6f34.md "The SAP HANA Document Store (DocStore) is used to store collections which contain one or more JSON artifacts (documents).")
 

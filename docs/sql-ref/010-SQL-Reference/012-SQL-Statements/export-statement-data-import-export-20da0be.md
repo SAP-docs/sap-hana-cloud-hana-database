@@ -14,7 +14,7 @@ Exports catalog objects.
 EXPORT <export_object_name_list> 
  [ WHERE <condition> | HAVING <condition_list> ]
  AS <export_format>
- INTO <storage_path>
+ INTO <cloud_provider_path>
  [ WITH <export_option_list> ]
  [ <query_export_specification> ]
 ```
@@ -211,14 +211,10 @@ Specifies the format to export the data to. The default value is BINARY.
 
 Format Type
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
@@ -227,14 +223,10 @@ Details
 
 BINARY
 
-
-
 </td>
 <td valign="top">
 
 Table data is exported in an internal binary format. Exporting in BINARY RAW format is orders of magnitude faster than exporting the same table in CSV format. Only column non-temporary tables can be exported in binary format. Row tables are always exported in CSV format regardless of the format specified. If *<binary\_type\>* is not specified, RAW \(default\) is used. BINARY data is compatible between SAP HANA on-premise and cloud systems.
-
-
 
 </td>
 </tr>
@@ -243,14 +235,10 @@ Table data is exported in an internal binary format. Exporting in BINARY RAW for
 
 CSV
 
-
-
 </td>
 <td valign="top">
 
 Table data is exported in CSV format. With this export format the exported data can be scrambled. Both column and row tables can be exported in CSV format.
-
-
 
 </td>
 </tr>
@@ -259,14 +247,10 @@ Table data is exported in CSV format. With this export format the exported data 
 
 PARQUET
 
-
-
 </td>
 <td valign="top">
 
 Table data is exported in PARQUET format.
-
-
 
 </td>
 </tr>
@@ -276,15 +260,15 @@ Table data is exported in PARQUET format.
 
 </dd><dt><b>
 
-*<storage\_path\>*
+*<cloud\_provider\_path\>*
 
 </b></dt>
 <dd>
 
-Specifies the cloud storage location for the export.
+Specifies the cloud provider path for the export.
 
 ```
-<storage_path> ::=
+<cloud_provider_path> ::=
    { <azure_path> 
    | <amazon_path>
    | <google_path>
@@ -321,7 +305,7 @@ Specifies the location for the Azure export file.
 </b></dt>
 <dd>
 
-Required when not using the WITH CREDENTIAL parameter.
+Required when not using the CREDENTIAL clause.
 
 ```
 <azure_credentials> ::= 
@@ -391,7 +375,7 @@ Specifies the geographical region the bucket is located in. Refer to [Regions an
 </b></dt>
 <dd>
 
-Not supported with the WITH CREDENTIAL parameter. Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account.
+Not supported with the CREDENTIAL clause. Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account.
 
 ```
 <amazon_credentials> ::= 
@@ -450,7 +434,7 @@ Specifies the location for the Google Cloud storage export file.
 </b></dt>
 <dd>
 
-Not supported with the WITH CREDENTIAL parameter. Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account.
+Not supported with the CREDENTIAL clause. Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account.
 
 ```
 <google_credentials> ::=
@@ -704,7 +688,7 @@ CREDENTIAL *<purpose\_def\>*
 </b></dt>
 <dd>
 
-Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of export statements. The WITH CREDENTIAL clause cannot be specified when *<cloud\_path\>* contains credentials. The WITH CREDENTIAL clause is required for exports from SAP HANA Cloud, Data Lake Files, but is optional for all other cloud storage locations.
+Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of export statements. The CREDENTIAL clause cannot be specified when *<cloud\_provider\_path\>* contains credentials. The CREDENTIAL clause is required for exports from SAP HANA Cloud, Data Lake Files, but is optional for all other cloud storage locations.
 
 
 
@@ -772,21 +756,15 @@ Detailed results of the last successful execution of the EXPORT statement are st
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -795,21 +773,15 @@ Description
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The database of the exported object
-
-
 
 </td>
 </tr>
@@ -818,21 +790,15 @@ The database of the exported object
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The schema of the exported object
-
-
 
 </td>
 </tr>
@@ -841,21 +807,15 @@ The schema of the exported object
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the exported object
-
-
 
 </td>
 </tr>
@@ -864,21 +824,15 @@ The name of the exported object
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 The type of the exported object \(TABLE, VIEW, and so on\)
-
-
 
 </td>
 </tr>
@@ -887,21 +841,15 @@ The type of the exported object \(TABLE, VIEW, and so on\)
 
 LOCATION
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(75\)
 
-
-
 </td>
 <td valign="top">
 
 The location \(*<host\>*:*<port\>*\) where the object was exported
-
-
 
 </td>
 </tr>
@@ -910,21 +858,15 @@ The location \(*<host\>*:*<port\>*\) where the object was exported
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 The export status \(done, skipped, failed\)
-
-
 
 </td>
 </tr>
@@ -933,21 +875,15 @@ The export status \(done, skipped, failed\)
 
 ERROR
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 The error text if there is an export failure
-
-
 
 </td>
 </tr>
@@ -994,9 +930,9 @@ EXPORT IMEX_DEMO."*" INTO 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/IMEX_D
 **Related Information**  
 
 
-[Security Recommendations for SAP HANA Database](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/bc54d87673bc484faadb8330f43edc40.html "Recommendations to help you operate and configure the SAP HANA database securely") :arrow_upper_right:
+[Security Recommendations for SAP HANA Database](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/bc54d87673bc484faadb8330f43edc40.html "Recommendations to help you operate and configure the SAP HANA database securely") :arrow_upper_right:
 
-[EXPORT INTO Statement \(Data Import Export\)](export-into-statement-data-import-export-6a6f59b.md "Exports a table or view into a single file.")
+[EXPORT INTO Statement \(Data Import Export\)](export-into-statement-data-import-export-6a6f59b.md "Exports a table or view into a single-file, multi-file, or directory.")
 
 [IMPORT Statement \(Data Import Export\)](import-statement-data-import-export-20f75ad.md "Imports catalog objects.")
 
@@ -1006,7 +942,7 @@ EXPORT IMEX_DEMO."*" INTO 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/IMEX_D
 
 [Importing and Exporting Data](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/LATEST/en-US/261937915fa5438ca545b8278b2979b7.html)
 
-[SAP Note 2907201](https://launchpad.support.sap.com/#/notes/2907201 "Importing Data From Compressed Format Throws Error: &quot;Archive is incomplete&quot;")
+[SAP Note 2907201](https://me.sap.com/notes/2907201 "Importing Data From Compressed Format Throws Error: &quot;Archive is incomplete&quot;")
 
 [CREATE CREDENTIAL Statement \(Access Control\)](create-credential-statement-access-control-20d3f46.md "Creates a component-specific or application-specific credential.")
 

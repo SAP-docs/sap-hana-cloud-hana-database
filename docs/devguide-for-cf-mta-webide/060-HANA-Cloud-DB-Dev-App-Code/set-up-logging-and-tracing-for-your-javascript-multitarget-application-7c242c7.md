@@ -42,12 +42,12 @@ To consume the `@sap/logging` library, execute the following steps:
 
     ```
     "dependencies": {
-      "express": "4.16.2",
-      "@sap/xsenv": "1.2.9",
-      "@sap/hdbext": "^4.7.0",
-      "@sap/xssec": "^2.1.6",
-      "passport": "^0.3.2",
-      "@sap/logging": "^4.0.2"
+      "express": "4.18.2",
+      "@sap/xsenv": "4.2.0",
+      "@sap/hdbext": "^8.0.2",
+      "@sap/xssec": "^3.6.0",
+      "passport": "^0.7.0",
+      "@sap/logging": "^7.1.0"
     }
     ```
 

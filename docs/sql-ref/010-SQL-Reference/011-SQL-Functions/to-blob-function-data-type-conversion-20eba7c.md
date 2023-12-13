@@ -30,13 +30,13 @@ Converts a BINARY, NCLOB \(or CLOB which is an alias of NCLOB\) *<value\>* to a 
 
 ## Example
 
-The following example converts the BINARY value ***abcde*** to the BLOB value ***abcde***:
+The following example converts the BINARY value `abcde` to the BLOB value ***abcde***:
 
 ```
 SELECT TO_BLOB (TO_BINARY('abcde')) "to blob" FROM DUMMY;
 ```
 
-The following example converts the NCLOB value ***abc*** to the BLOB value `abc`:
+The following example converts the NCLOB value `abc` to the BLOB value `abc`:
 
 ```
 SELECT TO_BLOB (TO_NCLOB('abc')) "to blob" FROM DUMMY;

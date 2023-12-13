@@ -265,7 +265,7 @@ In the Java example above, the `KEY` parameter for the retrieved entry expects a
 
 [Maintaining Multitarget Application Services in Cloud Foundry](maintaining-multitarget-application-services-in-cloud-foundry-33e3c59.md "In Cloud Foundry, applications can make use of services managed by a service broker.")
 
-[SAP HANA Secure-Store Interface Procedures and Parameters](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_2_QRC/en-US/a847b4da7f6b4e8c9af3bf5e39c8ecfe.html "A list of the parameters available for interaction with the SAP HANA Secure Store using the dedicated stored procedures.") :arrow_upper_right:
+[SAP HANA Secure-Store Interface Procedures and Parameters](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/a847b4da7f6b4e8c9af3bf5e39c8ecfe.html "A list of the parameters available for interaction with the SAP HANA Secure Store using the dedicated stored procedures.") :arrow_upper_right:
 
 [Managing Services Using the SAP BTP Cockpit \(SAP Service Manager\)](https://help.sap.com/docs/SERVICEMANAGEMENT/09cc82baadc542a688176dce601398de/cdce096d411242bcbfb9644d0860fd0f.html?version=Cloud)
 

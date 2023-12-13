@@ -38,7 +38,7 @@ Database procedures and functions are used to automate actions that need to be r
 
         Currently, there is only one type of project template available, namely: *Multi-Target Application Project*. Select *Multi-Target Application Project* and choose *Next*.
 
-    3.  Type the name ***myapp*** for the new MTA project and choose *Next* to confirm.
+    3.  Type the name `myapp` for the new MTA project and choose *Next* to confirm.
 
     4.  Specify details of the new MTA project and choose *Next* to confirm.
 

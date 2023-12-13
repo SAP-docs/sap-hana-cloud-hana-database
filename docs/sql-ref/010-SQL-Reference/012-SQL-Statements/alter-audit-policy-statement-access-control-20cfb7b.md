@@ -258,9 +258,9 @@ ALTER AUDIT POLICY "priv_audit" RESET RETENTION;
 
 [CREATE AUDIT POLICY Statement \(Access Control\)](create-audit-policy-statement-access-control-20d3d56.md "Creates an audit policy.")
 
-[Auditing](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[Auditing](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 
 [M\_INIFILE\_CONTENTS System View](../../020-System-Views-Reference/022-Monitoring-Views/m-inifile-contents-system-view-20b16a7.md "Provides configuration information from INI files.")
 
-[AUDIT\_LOG System View](../../020-System-Views-Reference/021-System-Views/audit-log-system-view-d1fe124.md "Provides information about audit records, with the exception of XSA-auditing. You must have the AUDIT ADMIN, AUDIT OPERATOR, or AUDIT READ system privilege to access this view.")
+[AUDIT\_LOG System View](../../020-System-Views-Reference/021-System-Views/audit-log-system-view-d1fe124.md "Provides information about audit records, with the exception of XSA-auditing.")
 

@@ -62,14 +62,10 @@ The four Unicode normalization forms are as follows:
 
 Form
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -78,14 +74,10 @@ Description
 
 Normalization Form D \(NFD\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies canonical decomposition.
-
-
 
 </td>
 </tr>
@@ -94,14 +86,10 @@ Specifies canonical decomposition.
 
 Normalization Form C \(NFC\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies canonical decomposition followed by canonical composition.
-
-
 
 </td>
 </tr>
@@ -110,14 +98,10 @@ Specifies canonical decomposition followed by canonical composition.
 
 Normalization Form KD \(NFKD\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies compatibility decomposition.
-
-
 
 </td>
 </tr>
@@ -126,14 +110,10 @@ Specifies compatibility decomposition.
 
 Normalization Form KC \(NFKC\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies compatibility decomposition followed by canonical composition.
-
-
 
 </td>
 </tr>
@@ -164,14 +144,10 @@ The following is an example of canonical equivalence:
 
 Statement
 
-
-
 </th>
 <th valign="top">
 
 Result
-
-
 
 </th>
 </tr>
@@ -189,8 +165,6 @@ SELECT NORMALIZE('Å') FROM DUMMY;
 
 Å \(0x00C5\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -206,8 +180,6 @@ SELECT NORMALIZE('A °') FROM DUMMY;
 <td valign="top">
 
 Å
-
-
 
 </td>
 </tr>
@@ -225,8 +197,6 @@ SELECT NORMALIZE('Å', 'NFC') FROM DUMMY;
 
 Å \(0x00C5\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -242,8 +212,6 @@ SELECT NORMALIZE('Å', 'NFD') FROM DUMMY;
 <td valign="top">
 
 A °\(0x0041 0x030A\)
-
-
 
 </td>
 </tr>
@@ -261,8 +229,6 @@ SELECT NORMALIZE('A °', 'NFC') FROM DUMMY;
 
 Å \(0x00C5\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -278,8 +244,6 @@ SELECT NORMALIZE('A °', 'NFD') FROM DUMMY;
 <td valign="top">
 
 A °\(0x0041 0x030A\)
-
-
 
 </td>
 </tr>
@@ -297,14 +261,10 @@ The following is an example of compatibility equivalence:
 
 Statement
 
-
-
 </th>
 <th valign="top">
 
 Result
-
-
 
 </th>
 </tr>
@@ -322,8 +282,6 @@ SELECT NORMALIZE('ﻉ', 'NFKC') FROM DUMMY;
 
 ﻉ \(positional variants\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -339,8 +297,6 @@ SELECT NORMALIZE ('ﻊ', 'NFKC') FROM DUMMY;
 <td valign="top">
 
 ﻉ \(positional variants\)
-
-
 
 </td>
 </tr>
@@ -358,8 +314,6 @@ SELECT NORMALIZE('①', 'NFKC') FROM DUMMY;
 
 1 \(circled variants\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -375,8 +329,6 @@ SELECT NORMALIZE('ｶ', 'NFKC') FROM DUMMY;
 <td valign="top">
 
 カ \(width variants\)
-
-
 
 </td>
 </tr>
@@ -394,8 +346,6 @@ SELECT NORMALIZE('¼', 'NFKC') FROM DUMMY;
 
 1/4 \(fractions\)
 
-
-
 </td>
 </tr>
 <tr>
@@ -411,8 +361,6 @@ SELECT NORMALIZE('i⁹', 'NFD') FROM DUMMY;
 <td valign="top">
 
 i9 \(superscripts/subscripts\)
-
-
 
 </td>
 </tr>

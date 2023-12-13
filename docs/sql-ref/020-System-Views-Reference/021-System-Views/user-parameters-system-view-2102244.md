@@ -17,21 +17,15 @@ Lists all parameters and their values, which have been assigned to users in the 
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the user.
 
 PARAMETER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the client parameter name.
-
-
 
 </td>
 </tr>
@@ -86,30 +68,32 @@ Displays the client parameter name.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the parameter value.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio2102244575191014a7bde2c7e6b52081__section_ky3_yyz_2zb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
 
 [USERS System View](users-system-view-2102609.md "Lists all users.")
 
-[Restrict Use of the CLIENT User Parameter](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/91af0e7d50a14936a388618974ef8dc1.html "Allow only authorized technical users to overwrite the value of the CLIENT parameter for a database connection or the value of the $$client$$ parameter in an SQL query.") :arrow_upper_right:
+[Restrict Use of the CLIENT User Parameter](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/91af0e7d50a14936a388618974ef8dc1.html "Allow only authorized technical users to overwrite the value of the CLIENT parameter for a database connection or the value of the $$client$$ parameter in an SQL query.") :arrow_upper_right:
 

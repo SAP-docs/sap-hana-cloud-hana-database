@@ -17,21 +17,15 @@ Provides an overview of landscape redistributions.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 REORG\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier for the executed reorg plan.
-
-
 
 </td>
 </tr>
@@ -63,14 +51,10 @@ Displays the unique identifier for the executed reorg plan.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -93,21 +77,15 @@ Displays the status of the plan execution:
 
 START\_DATE
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the UTC timestamp when the plan execution started.
-
-
 
 </td>
 </tr>
@@ -116,21 +94,15 @@ Displays the UTC timestamp when the plan execution started.
 
 END\_DATE
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the UTC timestamp when plan execution stopped. This field remains empty while the execution is running or in the case of reboots during plan execution.
-
-
 
 </td>
 </tr>
@@ -139,21 +111,15 @@ Displays the UTC timestamp when plan execution stopped. This field remains empty
 
 USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user that executed the table redistribution.
-
-
 
 </td>
 </tr>
@@ -162,21 +128,15 @@ Displays the user that executed the table redistribution.
 
 ALGORITHM\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the algorithm for the table redistribution.
-
-
 
 </td>
 </tr>
@@ -185,21 +145,15 @@ Displays the ID of the algorithm for the table redistribution.
 
 PARAMETERS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameters given for the table redistribution call.
-
-
 
 </td>
 </tr>
@@ -210,6 +164,8 @@ Displays the parameters given for the table redistribution call.
 <a name="loio20ccfa20751910149c2de2cb9ce26e78___r_e_o_r_g__o_v_e_r_v_i_e_w_1fulldesc_REORG_OVERVIEW"/>
 
 ## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 This view contains information about table redistribution executions on this system and stores every call to the REORG\_EXECUTE statement. You can use this view to determine execution durations and the status of each table redistribution on this system. Only executed plan information is stored and calls of REORG\_GENERATE without REORG\_EXECUTE are not displayed.
 

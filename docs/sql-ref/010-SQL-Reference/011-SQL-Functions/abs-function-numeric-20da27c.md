@@ -48,7 +48,7 @@ Returns the absolute value of the numeric argument *<num\>*.
 
 ## Example
 
-The following example returns the value ***1*** for ***"absolute"***:
+The following example returns the value ***1*** for `"absolute"`:
 
 ```
 SELECT ABS (-1) "absolute" FROM DUMMY;

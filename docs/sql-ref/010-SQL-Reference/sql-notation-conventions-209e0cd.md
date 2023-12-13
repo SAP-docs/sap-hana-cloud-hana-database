@@ -21,14 +21,10 @@ This reference uses syntax notation very similar to BNF \(Backus-Naur Form\), a 
 
 Symbol
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -37,14 +33,10 @@ Description
 
 < \>
 
-
-
 </td>
 <td valign="top">
 
 Angle brackets are used to surround the name of a syntactic element \(BNF nonterminal\) of the SQL language.
-
-
 
 </td>
 </tr>
@@ -53,14 +45,10 @@ Angle brackets are used to surround the name of a syntactic element \(BNF nonter
 
 ::=
 
-
-
 </td>
 <td valign="top">
 
 The definition operator is used to provide definitions of the element appearing on the left side of the operator in a production rule.
-
-
 
 </td>
 </tr>
@@ -69,14 +57,10 @@ The definition operator is used to provide definitions of the element appearing 
 
 \[ \]
 
-
-
 </td>
 <td valign="top">
 
 Square brackets are used to indicate optional elements in a formula. Optional elements can be specified or omitted.
-
-
 
 </td>
 </tr>
@@ -85,14 +69,10 @@ Square brackets are used to indicate optional elements in a formula. Optional el
 
 \{ \}
 
-
-
 </td>
 <td valign="top">
 
 Braces group elements in a formula. Repetitive elements \(zero or more elements\) can be specified within brace symbols.
-
-
 
 </td>
 </tr>
@@ -101,14 +81,10 @@ Braces group elements in a formula. Repetitive elements \(zero or more elements\
 
 |
 
-
-
 </td>
 <td valign="top">
 
 The alternative operator indicates that the portion of the formula following the bar is an alternative to the portion preceding it.
-
-
 
 </td>
 </tr>
@@ -117,14 +93,10 @@ The alternative operator indicates that the portion of the formula following the
 
 \[…\]
 
-
-
 </td>
 <td valign="top">
 
 Ellipsis with square brackets around it indicates optional repetition of the preceding element or grouped elements. For example, if you can specify one or more columns for an option and must separate them by commas, this is expressed as <code><i class="varname">&lt;column_name&gt;</i> [,…]</code>. An example of grouped elements where a comma separator is not required looks like this: <code>{ <i class="varname">&lt;column_name&gt;</i> <i class="varname">&lt;data_type&gt;</i> } […]</code> 
-
-
 
 </td>
 </tr>
@@ -133,14 +105,10 @@ Ellipsis with square brackets around it indicates optional repetition of the pre
 
 !!
 
-
-
 </td>
 <td valign="top">
 
 Introduces normal English text. This is used when the definition of a syntactic element is not expressed in BNF.
-
-
 
 </td>
 </tr>

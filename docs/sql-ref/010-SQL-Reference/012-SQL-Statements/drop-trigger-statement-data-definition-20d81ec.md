@@ -96,7 +96,7 @@ Only database users with the TRIGGER privilege for the table on which the trigge
 
 ## Example
 
-Create two tables, ***target*** and ***sample***, and a trigger called ***test***.
+Create two tables, `target` and `sample`, and a trigger called `test`.
 
 ```
 CREATE ROW TABLE target ( A INT);

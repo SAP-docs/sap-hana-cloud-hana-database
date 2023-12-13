@@ -15,21 +15,15 @@ Provides REST statistics data, aggregated per SQL statement and categorized as A
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INT
-
-
 
 </td>
 <td valign="top">
@@ -77,8 +61,6 @@ Displays the internal port
 
 number.
 
-
-
 </td>
 </tr>
 <tr>
@@ -86,21 +68,15 @@ number.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the connection execution took place.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the ID of the connection execution took place.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the transaction execution took place.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the ID of the transaction execution took place.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the statement executed.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the ID of the statement executed.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the hash of the statement executed.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the hash of the statement executed.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the plain text string of the statement.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the plain text string of the statement.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start time of the statement.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the start time of the statement.
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the end time of the statement.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the end time of the statement.
 
 COMPONENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the component \(for example, Import, Export\),
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the name of the component \(for example, Import, Export\),
 
 USAGE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the usage type. Valid values are READ, WRITE, or ADMIN.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the usage type. Valid values are READ, WRITE, or ADMIN.
 
 REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of requests from the hyperscaler service.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the number of requests from the hyperscaler service.
 
 FAILED\_REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of unsuccessful attempts among REQUEST\_COUNT, after retrying is complete.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the number of unsuccessful attempts among REQUEST\_COUNT, after retryin
 
 RETRY\_REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of retry attempts.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the number of retry attempts.
 
 REQUEST\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated number of bytes retrieved.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the accumulated number of bytes retrieved.
 
 REQUEST\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated time spent for requests in microsecond.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the accumulated time spent for requests in microsecond.
 
 AVG\_REQUEST\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average roundtrip time for a request in microsecond.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the average roundtrip time for a request in microsecond.
 
 MAX\_REQUEST\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum roundtrip time for a request in microsecond.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the maximum roundtrip time for a request in microsecond.
 
 MIN\_REQUEST\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum roundtrip time for a request in microsecond.
-
-
 
 </td>
 </tr>

@@ -15,21 +15,15 @@ Provides information about objects available to use the result cache.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 CACHE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the results cache.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the name of the results cache.
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object name.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the object name.
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the object type: VIEW/FUNCTION.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the object type: VIEW/FUNCTION.
 
 OBJECT\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the object ID.
 
 CACHE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(44\)
 
-
-
 </td>
 <td valign="top">
 
 Displays which type of cache is enabled for the object: FULL, PARTIAL \(SELECTED COLUMNS\), PARTIAL \(FILTERED\), or PARTIAL \(SELECTED COLUMNS, FILTERED\).
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays which type of cache is enabled for the object: FULL, PARTIAL \(SELECTED
 
 CACHE\_LOCATIONS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the cache entry locations.
-
-
 
 </td>
 </tr>
@@ -199,25 +151,27 @@ Displays the cache entry locations.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5\)
-
-
 
 </td>
 <td valign="top">
 
 Specifies whether the result cache is valid or not. A result cache becomes invalid \(FALSE\) when its base objects are changed or dropped.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioae7b365856924c27895315c40549a485__section_bnt_1bp_dzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -238,9 +192,9 @@ Specifies whether the result cache is valid or not. A result cache becomes inval
 
 [ALTER SYSTEM REFRESH RESULT CACHE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-refresh-result-cache-statement-system-management-9d274fa.md "Refreshes all result cache entries related to the specified object with up-to-date results.")
 
-[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
+[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
 
-[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
+[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
 
-[Deterministic Procedure Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/8809a2a02e1b49d9a3fc68bb135f430d.html "") :arrow_upper_right:
+[Deterministic Procedure Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8809a2a02e1b49d9a3fc68bb135f430d.html "") :arrow_upper_right:
 

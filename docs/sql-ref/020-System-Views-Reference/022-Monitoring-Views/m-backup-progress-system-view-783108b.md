@@ -15,21 +15,15 @@ Provides the progress of the most recent backup.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 BACKUP\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of a data backup. All backup files of a single data backup share the same BACKUP\_ID.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the unique ID of a data backup. All backup files of a single data backu
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the internal port.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the service.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the name of the service.
 
 ENTRY\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the classification of the type of backup.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the classification of the type of backup.
 
 SYS\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the local server time that the backup started.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the local server time that the backup started.
 
 UTC\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that the backup started.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the time that the backup started.
 
 SYS\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the local server time that the backup was terminated.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the local server time that the backup was terminated.
 
 UTC\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that the backup was terminated.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the time that the backup was terminated.
 
 STATE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the current state of the backup.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the current state of the backup.
 
 BACKUP\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total amount of data in bytes.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the total amount of data in bytes.
 
 TRANSFERRED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the amount of data transferred in bytes.
-
-
 
 </td>
 </tr>

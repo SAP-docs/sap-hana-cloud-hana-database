@@ -17,21 +17,15 @@ Provides information about temporary key figures.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join view name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the join view name.
 
 KEY\_FIGURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key figure name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the key figure name.
 
 DEFAULT\_AGGREGATION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the aggregation type.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the aggregation type.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the description.
 
 UNIT\_CONVERSION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the unit conversion.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the name of the unit conversion.
 
 TABLE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the column.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the schema name of the column.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of the column.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the table name of the column.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the column name.
 
 EXPRESSION\_FLAGS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the expression flags.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the expression flags.
 
 EXPRESSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the expression.
-
-
 
 </td>
 </tr>

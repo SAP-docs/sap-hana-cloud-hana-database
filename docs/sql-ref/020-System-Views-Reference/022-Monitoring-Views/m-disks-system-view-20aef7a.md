@@ -17,21 +17,15 @@ Provides information about disk configuration and utilization of the host machin
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 DISK\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the disk ID.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the disk ID.
 
 DEVICE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the database internal device ID.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the database internal device ID.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name. This is only set if the disk is used by exactly one host.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the host name. This is only set if the disk is used by exactly one host
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the path.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the path.
 
 SUBPATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subpath.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the subpath.
 
 FILESYSTEM\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the filesystem type.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the filesystem type.
 
 USAGE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the usage type. Values are: LOG, DATA, TRACE, DATA\_BACKUP, LOG\_BACKUP, CATALOG\_BACKUP, ROOTKEY\_BACKUP, or XSA\_WORKSPACE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the usage type. Values are: LOG, DATA, TRACE, DATA\_BACKUP, LOG\_BACKUP
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the volume of the usable space in bytes.
-
-
+Displays the usable total size of the device in bytes.
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the volume of the usable space in bytes.
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the volume size in bytes.
-
-
+Displays the used size of the device in bytes.
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the volume size in bytes.
 
 TOTAL\_DEVICE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total device size returned by the operating system in bytes.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the total device size returned by the operating system in bytes.
 
 MOUNT\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the source of the mount.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the source of the mount.
 
 MOUNT\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the mount path.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the mount path.
 
 MOUNT\_DETAILS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the mount details as stated in `/proc/mount`.
-
-
 
 </td>
 </tr>

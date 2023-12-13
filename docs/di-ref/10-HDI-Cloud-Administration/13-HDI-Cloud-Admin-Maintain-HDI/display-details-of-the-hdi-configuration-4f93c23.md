@@ -19,21 +19,15 @@ The SAP HANA Deployment Infrastructure component includes a selection of `_SYS_D
 
 \#
 
-
-
 </th>
 <th valign="top">
 
 `_SYS_DI` HDI View
 
-
-
 </th>
 <th valign="top">
 
 Information Displayed
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Information Displayed
 
 1
 
-
-
 </td>
 <td valign="top">
 
- [`M_ALL_CONTAINERS`](m-all-containers-61ce5ab.md) 
-
-
+[`M_ALL_CONTAINERS`](m-all-containers-61ce5ab.md) 
 
 </td>
 <td valign="top">
 
 All HDI containers in the database and the container groups to which they are assigned
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ All HDI containers in the database and the container groups to which they are as
 
 2
 
-
-
 </td>
 <td valign="top">
 
 [`M_ALL_CONTAINER_GROUPS`](m-all-container-groups-0f41f81.md)
 
-
-
 </td>
 <td valign="top">
 
 All HDI container groups in the database
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ All HDI container groups in the database
 
 3
 
-
-
 </td>
 <td valign="top">
 
 [`M_ALL_CONTAINER_VERSIONS`](m-all-container-versions-d4d64f3.md)
 
-
-
 </td>
 <td valign="top">
 
 The version history and status information of all HDI containers in the database
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ The version history and status information of all HDI containers in the database
 
 4
 
-
-
 </td>
 <td valign="top">
 
 [`M_ALL_JOBS`](m-all-jobs-5e83abe.md)
 
-
-
 </td>
 <td valign="top">
 
 Progress of the individual jobs linked with container operations
-
-
 
 </td>
 </tr>
@@ -134,21 +104,15 @@ Progress of the individual jobs linked with container operations
 
 5
 
-
-
 </td>
 <td valign="top">
 
 [`M_ALL_MESSAGES`](m-all-messages-9a0433a.md)
 
-
-
 </td>
 <td valign="top">
 
 All messages relating to HDI container groups
-
-
 
 </td>
 </tr>
@@ -157,21 +121,15 @@ All messages relating to HDI container groups
 
 6
 
-
-
 </td>
 <td valign="top">
 
 [`M_ALL_ROLES`](m-all-roles-205b891.md)
 
-
-
 </td>
 <td valign="top">
 
 All container roles for any HDI container
-
-
 
 </td>
 </tr>
@@ -180,21 +138,15 @@ All container roles for any HDI container
 
 7
 
-
-
 </td>
 <td valign="top">
 
 [`M_ALL_GRANTED_SCHEMA_PRIVILEGES`](m-all-granted-schema-privileges-e00400d.md)
 
-
-
 </td>
 <td valign="top">
 
 The details of all granted schema privileges
-
-
 
 </td>
 </tr>
@@ -203,21 +155,15 @@ The details of all granted schema privileges
 
 8
 
-
-
 </td>
 <td valign="top">
 
 [`M_ALL_GRANTED_SCHEMA_ROLES`](m-all-granted-schema-roles-7e7b14e.md)
 
-
-
 </td>
 <td valign="top">
 
 The details of all granted schema roles
-
-
 
 </td>
 </tr>

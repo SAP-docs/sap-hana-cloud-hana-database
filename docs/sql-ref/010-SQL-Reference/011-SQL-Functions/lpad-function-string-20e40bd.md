@@ -74,7 +74,7 @@ LPAD returns an empty string value if *<number\>* is less than 1.
 
 ## Example
 
-The following example left-pads the start of string ***end*** with the pattern ***12345*** to make a string of ***15*** characters in length, and returns the value ***123451234512end***:
+The following example left-pads the start of string `end` with the pattern `12345` to make a string of `15` characters in length, and returns the value ***123451234512end***:
 
 ```
 SELECT LPAD ('end', 15, '12345') "lpad" FROM DUMMY;

@@ -13,21 +13,15 @@ Provides information on table partition operations from the memory ring buffer o
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 LONGDATE
 
-
-
 </td>
 <td valign="top">
 
 Displays the time the statement started.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the time the statement started.
 
 DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the duration, in microseconds, the statement ran.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the duration, in microseconds, the statement ran.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the table name.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name who executed the operation.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the user name who executed the operation.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier for a statement string.
-
-
 
 </td>
 </tr>
@@ -174,21 +132,15 @@ Displays the unique identifier for a statement string.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement string.
-
-
 
 </td>
 </tr>
@@ -197,21 +149,15 @@ Displays the statement string.
 
 PARTITION\_DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the partition definition after executing the statement.
-
-
 
 </td>
 </tr>
@@ -220,14 +166,10 @@ Displays the partition definition after executing the statement.
 
 OPERATION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(64\)
-
-
 
 </td>
 <td valign="top">
@@ -255,21 +197,15 @@ Displays the operation type strings. Valid strings include:
 
 IS\_ONLINE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether DDL is online \(TRUE\) or offline \(FALSE\).
-
-
 
 </td>
 </tr>
@@ -278,21 +214,15 @@ Indicates whether DDL is online \(TRUE\) or offline \(FALSE\).
 
 APPLICATION\_SOURCE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays source information of the application
-
-
 
 </td>
 </tr>
@@ -301,21 +231,15 @@ Displays source information of the application
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the application.
-
-
 
 </td>
 </tr>
@@ -324,21 +248,15 @@ Displays the name of the application.
 
 APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user name.
-
-
 
 </td>
 </tr>
@@ -347,21 +265,15 @@ Displays the application user name.
 
 CLIENT\_IP
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(45\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the IP address of the of client machine.
-
-
 
 </td>
 </tr>

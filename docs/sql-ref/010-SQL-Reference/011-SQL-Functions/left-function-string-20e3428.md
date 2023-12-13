@@ -63,13 +63,13 @@ Returns *<string\>* \(without blank padding\) if the value of *<number\>* is gre
 
 ## Example
 
-The following example returns the leftmost three characters of the string ***Hel***:
+The following example returns the leftmost three characters of the string `Hel`:
 
 ```
 SELECT LEFT ('Hello', 3) "left" FROM DUMMY;
 ```
 
-The following example returns the string ***Hello*** because the value 10 exceeds the string length:
+The following example returns the string `Hello` because the value 10 exceeds the string length:
 
 ```
 SELECT LEFT ('Hello', 10) "left" FROM DUMMY;

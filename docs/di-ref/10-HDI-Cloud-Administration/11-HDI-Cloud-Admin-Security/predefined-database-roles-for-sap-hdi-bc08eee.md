@@ -14,14 +14,10 @@ Several predefined database roles are necessary for operating the SAP HANA Deplo
 
 Role
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -29,8 +25,6 @@ Description
 <td valign="top">
 
 `_SYS_DI_OO_DEFAULTS` 
-
-
 
 </td>
 <td valign="top">
@@ -52,8 +46,6 @@ This role is not intended to be granted to database users.
 <td valign="top">
 
 <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>._SYS_DI_OO_DEFAULTS</code>
-
-
 
 </td>
 <td valign="top">

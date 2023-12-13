@@ -149,7 +149,7 @@ CREATE ROLE Securities_DBA
 
 [ROLEGROUPS System Views](../../020-System-Views-Reference/021-System-Views/rolegroups-system-views-5e2b4b9.md "Shows available role groups.")
 
-[Database Roles](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
+[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
 
-[Role Groups](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/33dfc7ed4ff648abbbaab4aefb7070d4.html "Role groups support a separation of role management tasks. This is useful if you want different aspects of your authorization setup managed by different administrators. In an SAP HANA Cloud environment, SAP uses role groups to separate the management of customer-owned roles and SAP-owned roles and therefore the authorization on underlying objects.") :arrow_upper_right:
+[Role Groups](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/33dfc7ed4ff648abbbaab4aefb7070d4.html "Role groups support a separation of role management tasks. This is useful if you want different aspects of your authorization setup managed by different administrators. In an SAP HANA Cloud environment, SAP uses role groups to separate the management of customer-owned roles and SAP-owned roles and therefore the authorization on underlying objects.") :arrow_upper_right:
 

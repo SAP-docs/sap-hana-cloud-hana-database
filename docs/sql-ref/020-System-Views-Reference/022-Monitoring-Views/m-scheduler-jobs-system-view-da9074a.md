@@ -13,21 +13,15 @@ Shows the status and the history of the status of the scheduled jobs.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user who will execute, who is executing, or who has executed the job.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the name of the user who will execute, who is executing, or who has exe
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the job.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the schema name of the job.
 
 SCHEDULER\_JOB\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the job.
-
-
 
 </td>
 </tr>
@@ -105,14 +81,10 @@ Displays the name of the job.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -133,21 +105,15 @@ Displays the status of the job. Valid statuses are:
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2048\)
 
-
-
 </td>
 <td valign="top">
 
 Displays an error message in the case where STATUS is ERROR.
-
-
 
 </td>
 </tr>
@@ -156,21 +122,15 @@ Displays an error message in the case where STATUS is ERROR.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the job is scheduled, if STATUS is SCHEDULED; otherwise, the time when the job execution started.
-
-
 
 </td>
 </tr>
@@ -179,21 +139,15 @@ Displays the time when the job is scheduled, if STATUS is SCHEDULED; otherwise, 
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the job execution ended if STATUS is SUCCESS or ERROR; otherwise NULL.
-
-
 
 </td>
 </tr>

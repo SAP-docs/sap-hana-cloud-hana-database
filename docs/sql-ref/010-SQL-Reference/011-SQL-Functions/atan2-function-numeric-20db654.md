@@ -59,7 +59,7 @@ Returns the arc-tangent, in radians, of the ratio of two numbers *<number1\>* an
 
 ## Example
 
-The following example returns the value ***0.4636476090008061*** for ***"atan2"***:
+The following example returns the value ***0.4636476090008061*** for `"atan2"`:
 
 ```
 SELECT ATAN2 (1.0, 2.0) "atan2" FROM DUMMY;

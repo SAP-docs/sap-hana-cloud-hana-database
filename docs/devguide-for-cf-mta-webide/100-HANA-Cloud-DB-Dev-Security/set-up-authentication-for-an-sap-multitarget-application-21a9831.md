@@ -16,9 +16,9 @@ Define the authentication model for your multitarget application.
 
         Open a command-line shell and run the following commands:
 
-        ***node --version***
+        `node --version`
 
-        ***npm --version***
+        `npm --version`
 
 
 
@@ -163,7 +163,7 @@ In multitarget applications, the Node.js application router \(`approuter`\) is u
 
     2.  Paste the URL for the `approuter` into a Web browser.
 
-        ***https://myAppTrial-approuter.acme.com***
+        `https://myAppTrial-approuter.acme.com`
 
         This should redirect you to XSUAA logon screen, where you can log on using the credentials required \(for example, e-mail address and password\). Both the authentication **method** \(`"route"`, or `"none"`\) and the authentication **type** \(`"xsuaa"`, `"basic"`, or `"none"`\) can be specified in the application router configuration \(`xs-app.json`\).
 

@@ -6,13 +6,13 @@ This chapter describes the SAP HANA database implementation of Structured Query 
 
 
 
--    [SQL](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9___bsql_introduction_1sql_introduction_sql) 
+-   [SQL](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9___bsql_introduction_1sql_introduction_sql) 
 
--    [Supported languages and code pages](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9___bsql_introduction_1sql_introduction_supported_languages_and_code_pages) 
+-   [Supported languages and code pages](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9___bsql_introduction_1sql_introduction_supported_languages_and_code_pages) 
 
--    [Comments](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9___bsql_introduction_1sql_introduction_comment) 
+-   [Comments](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9___bsql_introduction_1sql_introduction_comment) 
 
--    [Identifiers](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9___bsql_introduction_1sql_introduction_identifiers) 
+-   [Identifiers](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9___bsql_introduction_1sql_introduction_identifiers) 
 
 -   [Identifiers and case sensitivity](introduction-to-sql-209f502.md#loio209f5020751910148fd8fe88aa4d79d9__identifiers_case)
 
@@ -116,9 +116,9 @@ Single quotation marks are used to delimit string literals. A single quotation m
 **Related Information**  
 
 
-[Characters Not Permitted in User Names](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/55d3b5a01166494582cc12f70ccfa17f.html "User names can contain any Compatibility Encoding Scheme for UTF-16: 8-Bit (CESU-8) characters except for a small subset.") :arrow_upper_right:
+[Characters Not Permitted in User Names](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/55d3b5a01166494582cc12f70ccfa17f.html "User names can contain any Compatibility Encoding Scheme for UTF-16: 8-Bit (CESU-8) characters except for a small subset.") :arrow_upper_right:
 
-[Password Policy Configuration Options](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
+[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
 
 [SQL Notation Conventions](sql-notation-conventions-209e0cd.md "SQL syntax notation conventions used in this guide.")
 

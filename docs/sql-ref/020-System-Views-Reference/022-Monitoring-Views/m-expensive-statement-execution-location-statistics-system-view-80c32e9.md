@@ -17,21 +17,15 @@ Provides location statistics for expensive statements.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 STATEMENT\_EXECUTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution ID of the statement.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the execution ID of the statement.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the execution start time of the statement.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the execution start time of the statement.
 
 EXECUTION\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host where the statement was executed.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the host where the statement was executed.
 
 EXECUTION\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port of the host where the statement was executed.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the port of the host where the statement was executed.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the peak memory usage for the host in bytes. For example, if host A has a peak usage of 2 GB and host B has a peak usage of 3 GB, then there is a row with host A showing 2 GB and a row with host B showing 3 GB.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the peak memory usage for the host in bytes. For example, if host A has
 
 CPU\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the tracked CPU time that each location consumed.
-
-
 
 </td>
 </tr>
@@ -226,5 +172,5 @@ Displays the tracked CPU time that each location consumed.
 
 [M\_EXPENSIVE\_STATEMENTS System View](m-expensive-statements-system-view-20af736.md "Provides all statements with a duration longer than a specified threshold.")
 
-[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
+[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
 

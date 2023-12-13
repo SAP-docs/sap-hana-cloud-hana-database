@@ -55,28 +55,20 @@ You use field reference parameters to refer to table columns for the conversion.
 
 Field Reference Parameter Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Default Value
-
-
 
 </th>
 </tr>
@@ -85,28 +77,20 @@ Default Value
 
 AMOUNT
 
-
-
 </td>
 <td valign="top">
 
 The column identifier containing the values to be converted.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -115,8 +99,6 @@ None
 
 CLIENT
 
-
-
 </td>
 <td valign="top">
 
@@ -124,21 +106,15 @@ Defines a three character string that is used to separate tenants within ERP sys
 
 This parameter is mandatory, as the CLIENT session context variable is not used by this command.
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -147,28 +123,20 @@ None
 
 SOURCE\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 The column identifier describing the input unit. A constant string is also accepted using single quotations.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -177,28 +145,20 @@ None
 
 TARGET\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 The column identifier describing the target unit. A constant string is also accepted using single quotations.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -207,28 +167,20 @@ None
 
 REFERENCE\_DATE
 
-
-
 </td>
 <td valign="top">
 
 The column identifier describing the currency reference date. A constant string is also accepted using single quotations.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -260,28 +212,20 @@ None
 
 Constant Parameter Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Default Value
-
-
 
 </th>
 </tr>
@@ -290,28 +234,20 @@ Default Value
 
 SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 Defines the schema that contains the conversion tables used for the conversion.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -320,28 +256,20 @@ None
 
 DATABASE
 
-
-
 </td>
 <td valign="top">
 
 Defines the tenant where the conversion tables are located \(for example the TCUR\* tables of the ERP currency conversion\). If not specified, the conversion uses the current database.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -350,28 +278,20 @@ None
 
 METHOD
 
-
-
 </td>
 <td valign="top">
 
 Possible values: ERP, Banking
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 ERP
-
-
 
 </td>
 </tr>
@@ -380,28 +300,20 @@ ERP
 
 BID\_ASK\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 Possible values: bid, ask, mid
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 \(empty string\)
-
-
 
 </td>
 </tr>
@@ -410,28 +322,20 @@ No
 
 MARKET\_DATA\_AREA
 
-
-
 </td>
 <td valign="top">
 
 Defines the market data area as stored in the tables. This is mandatory for banking currency conversion.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 \(empty\_string\)
-
-
 
 </td>
 </tr>
@@ -440,28 +344,20 @@ No
 
 SYSTEM\_TIME
 
-
-
 </td>
 <td valign="top">
 
 Defines the system timestamp for time travel functionality.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Current system timestamp in GMT
-
-
 
 </td>
 </tr>
@@ -470,28 +366,20 @@ Current system timestamp in GMT
 
 CONVERSION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 Defines the conversion type as stored in the conversion tables. The conversion types available in your system vary according to the setup of your ERP system. In general, these are either M or EURX. Contact your system administrator for the details of your specific table configuration.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 M
-
-
 
 </td>
 </tr>
@@ -499,8 +387,6 @@ M
 <td valign="top">
 
 LOOKUP
-
-
 
 </td>
 <td valign="top">
@@ -541,14 +427,10 @@ Performs a reverse conversion with the input units swapped.
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Regular
-
-
 
 </td>
 </tr>
@@ -556,8 +438,6 @@ Regular
 <td valign="top">
 
 ERROR\_HANDLING
-
-
 
 </td>
 <td valign="top">
@@ -609,14 +489,10 @@ The input value is returned.
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Fail on error
-
-
 
 </td>
 </tr>
@@ -624,8 +500,6 @@ Fail on error
 <td valign="top">
 
 ACCURACY
-
-
 
 </td>
 <td valign="top">
@@ -666,14 +540,10 @@ Keeps as many digits as possible in the result.
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Compatibility
-
-
 
 </td>
 </tr>
@@ -681,8 +551,6 @@ Compatibility
 <td valign="top">
 
 DATE\_FORMAT
-
-
 
 </td>
 <td valign="top">
@@ -734,14 +602,10 @@ Date is provided in inverted SAP legacy format.
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Auto detect
-
-
 
 </td>
 </tr>
@@ -749,8 +613,6 @@ Auto detect
 <td valign="top">
 
 STEPS
-
-
 
 </td>
 <td valign="top">
@@ -799,7 +661,7 @@ shift\_back
 </b></dt>
 <dd>
 
-While shift changes the decimals from two to the configured precision of the source currency, shift\_back changes them back to two, but from the target currency. If error handling is set to ***keep unconverted*** the output currency might be the source instead of the target currency. In case of an error, the rounding and the shift\_back are done with respect to the source currency and the conversion is dropped. This renders all steps redundant, and yields the input value again.
+While shift changes the decimals from two to the configured precision of the source currency, shift\_back changes them back to two, but from the target currency. If error handling is set to `keep unconverted` the output currency might be the source instead of the target currency. In case of an error, the rounding and the shift\_back are done with respect to the source currency and the conversion is dropped. This renders all steps redundant, and yields the input value again.
 
 
 
@@ -813,14 +675,10 @@ While shift changes the decimals from two to the configured precision of the sou
 
 No
 
-
-
 </td>
 <td valign="top">
 
 shift, convert
-
-
 
 </td>
 </tr>
@@ -829,28 +687,20 @@ shift, convert
 
 CONFIGURATION\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the conversion type configuration. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 TCURV
-
-
 
 </td>
 </tr>
@@ -859,28 +709,20 @@ TCURV
 
 PRECISIONS\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the precision table. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 TCURX
-
-
 
 </td>
 </tr>
@@ -889,28 +731,20 @@ TCURX
 
 NOTATIONS\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the table that stores notations. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 TCURN
-
-
 
 </td>
 </tr>
@@ -925,28 +759,20 @@ Additional Parameters and Defaults for Method ERP
 
 Constant Parameter Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Default Value
-
-
 
 </th>
 </tr>
@@ -955,28 +781,20 @@ Default Value
 
 CONFIGURATION\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the conversion type configuration. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No TCURV
 
-
-
 </td>
 <td valign="top">
 
 TCURV
-
-
 
 </td>
 </tr>
@@ -985,28 +803,20 @@ TCURV
 
 RATES\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the conversion rates table. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No TCURR
 
-
-
 </td>
 <td valign="top">
 
 TCURR
-
-
 
 </td>
 </tr>
@@ -1015,28 +825,20 @@ TCURR
 
 PREFACTORS\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the pre-factors table. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No TCURF
 
-
-
 </td>
 <td valign="top">
 
 TCURF
-
-
 
 </td>
 </tr>
@@ -1051,28 +853,20 @@ Additional Parameters and Defaults for Method Banking
 
 Constant Parameter Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Mandatory
 
-
-
 </th>
 <th valign="top">
 
 Default Value
-
-
 
 </th>
 </tr>
@@ -1081,28 +875,20 @@ Default Value
 
 MARKET\_DATA\_AREA
 
-
-
 </td>
 <td valign="top">
 
 Defines the market data area as stored in the tables. This is mandatory for banking currency conversion.
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 \(empty\_string\)
-
-
 
 </td>
 </tr>
@@ -1111,28 +897,20 @@ Yes
 
 SYSTEM\_TIME
 
-
-
 </td>
 <td valign="top">
 
 Defines the system timestamp for time travel functionality. T
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Current system timestamp in GM
-
-
 
 </td>
 </tr>
@@ -1141,28 +919,20 @@ Current system timestamp in GM
 
 CONFIGURATION\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the conversion type configuration. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 /BA1/TF4\_FXRTTYP
-
-
 
 </td>
 </tr>
@@ -1171,28 +941,20 @@ No
 
 RATES\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the conversion rates table. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 /BA1/F4\_FXRATES
-
-
 
 </td>
 </tr>
@@ -1201,28 +963,20 @@ No
 
 PREFACTORS\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 The table identifier of the pre-factors table. If the table resides in a different tenant, provide a fully qualified name for the table or use the DATABASE parameter.
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 /BA1/TF4\_FXCVFCT
-
-
 
 </td>
 </tr>
@@ -1330,7 +1084,7 @@ SELECT *, CONVERT_CURRENCY(method=>'Banking', -- new
 **Related Information**  
 
 
-[SAP Note 2792149](https://launchpad.support.sap.com/#/notes/2792149 "Currency/unit conversion error: conversion type '<conversion type>' has unsupported 'BKUZU' or 'GKUZU' type set")
+[SAP Note 2792149](https://me.sap.com/notes/2792149 "Currency/unit conversion error: conversion type '<conversion type>' has unsupported 'BKUZU' or 'GKUZU' type set")
 
 [Expressions](../expressions-20a4389.md "An expression is a clause that can be evaluated to return values.")
 

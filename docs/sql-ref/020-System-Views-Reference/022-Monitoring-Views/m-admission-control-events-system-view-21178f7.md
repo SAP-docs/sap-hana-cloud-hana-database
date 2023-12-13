@@ -15,21 +15,15 @@ Displays information about significant events.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 EVENT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time of the event.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the time of the event.
 
 EVENT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of event.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the type of event.
 
 EVENT\_REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the reason for the event.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the reason for the event.
 
 QUEUE\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the queue wait time, in microseconds.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the queue wait time, in microseconds.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the session connection ID.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the session connection ID.
 
 MESSAGE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the request type.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the request type.
 
 STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the prepared statement ID.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the prepared statement ID.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique identifier for an SQL string.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the unique identifier for an SQL string.
 
 CPU\_USAGE\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the measured value of the CPU usage.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the measured value of the CPU usage.
 
 MEMORY\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the measured memory size, in bytes, as a percentage of the global allocation limit.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the measured memory size, in bytes, as a percentage of the global alloc
 
 WORKLOAD\_CLASS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the effective workload class
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the name of the effective workload class
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>

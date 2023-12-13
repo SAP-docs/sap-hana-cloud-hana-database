@@ -29,7 +29,7 @@ In the SAP HANA Native Application extension, you can set user preferences for t
 
 ## SAP HANA Database Artifacts
 
-To display the user preferences that you can set for the creation and management of SAP HANA database artifacts, open the *Settings* tab, enter ***SAP HANA*** in the filter box, and select the extension *SAP HANA Database Artifacts* in the list of results displayed.
+To display the user preferences that you can set for the creation and management of SAP HANA database artifacts, open the *Settings* tab, enter `SAP HANA` in the filter box, and select the extension *SAP HANA Database Artifacts* in the list of results displayed.
 
 The following table lists the user preferences you can set to customize the tools used in the creation of SAP HANA database artifacts:
 
@@ -42,23 +42,17 @@ The following table lists the user preferences you can set to customize the tool
 
 User Preference
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *Display SAP Web Analytics Startup Notification* 
-
-
+*Display SAP Web Analytics Startup Notification* 
 
 </td>
 <td valign="top">
@@ -75,32 +69,24 @@ Display a notification during start up which informs the user about the collecti
 <tr>
 <td valign="top">
 
- *Last Selected Target Path* 
-
-
+*Last Selected Target Path* 
 
 </td>
 <td valign="top">
 
 The path that was last selected when creating a database artifact; it is used as the default path when creating a new database artifact. The value must be a valid file path, otherwise it will be ignored.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Remember Last Selected Target Path* 
-
-
+*Remember Last Selected Target Path* 
 
 </td>
 <td valign="top">
 
-If selected, the design-time artifacts-creation Wizard for SAP HANA remembers \(and uses\) the last selected target path.
-
-
+If selected, the design-time artifact-creation Wizard for SAP HANA remembers \(and uses\) the last selected target path.
 
 </td>
 </tr>
@@ -112,7 +98,7 @@ If selected, the design-time artifacts-creation Wizard for SAP HANA remembers \(
 
 ## SAP HANA Database Explorer
 
-To display the user preferences that you can set for the *SAP HANA Database Explorer* in the *SAP HANA Native Application* extension, open the *Settings* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA Database Explorer* in the list of results displayed.
+To display the user preferences that you can set for the *SAP HANA Database Explorer* in the *SAP HANA Native Application* extension, open the *Settings* tab, enter `SAP HANA` in the filter box, and select *SAP HANA Database Explorer* in the list of results displayed.
 
 The following table lists the user preferences you can set to customize the embedded *SAP HANA Database Explorer*:
 
@@ -125,23 +111,17 @@ The following table lists the user preferences you can set to customize the embe
 
 User Preference
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *Database List* 
-
-
+*Database List* 
 
 </td>
 <td valign="top">
@@ -158,9 +138,7 @@ Display the list of manually added databases. You can also edit the list to add,
 <tr>
 <td valign="top">
 
- *Display SAP Web Analytics Startup Notification* 
-
-
+*Display SAP Web Analytics Startup Notification* 
 
 </td>
 <td valign="top">
@@ -177,9 +155,7 @@ Display a notification during start up which informs the user about the collecti
 <tr>
 <td valign="top">
 
- *Show Database Explorer Connections* 
-
-
+*Show Database Explorer Connections* 
 
 </td>
 <td valign="top">
@@ -196,25 +172,31 @@ Show the list of database connections managed by the SAP HANA Database Explorer 
 <tr>
 <td valign="top">
 
- *Logging: Level* 
-
-
+*Large Object Size Limit* 
 
 </td>
 <td valign="top">
 
-Specified the verbosity of logging information collected according to the following order: trace \> debug \> info \> warn \> error \> fatal \> off.
-
-
+Set the upper limit for large objects \(LOBs\) in kilobytes
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Logging: Source Location Tracking* 
+*Logging: Level* 
 
+</td>
+<td valign="top">
 
+Specify the verbosity of logging information collected according to the following order: trace \> debug \> info \> warn \> error \> fatal \> off.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Logging: Source Location Tracking* 
 
 </td>
 <td valign="top">
@@ -231,38 +213,30 @@ Add the source-code location to the log entries.
 <tr>
 <td valign="top">
 
- *Max Sql Result Size* 
-
-
+*Max Sql Result Size* 
 
 </td>
 <td valign="top">
 
-Specifies the maximum number of SQL results returned by any queries.
-
-
+Specify the maximum number of SQL results returned by any queries.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *URL* 
-
-
+*URL* 
 
 </td>
 <td valign="top">
 
-Specifies the URL of the SAP HANA Database Explorer instance to use. The following pattern is required for the URL:
+Specify the URL of the SAP HANA Database Explorer instance to use. The following pattern is required for the URL:
 
 ```
 https://hana-cockpit.cfapps.<region>.hana.ondemand.com/sap/hana/cst/catalog/index.html. 
 ```
 
-You need to replace <code><i class="varname">&lt;region&gt;</i></code> with the Cloud region of your database, for example, "***eu10***".
-
-
+You need to replace <code><i class="varname">&lt;region&gt;</i></code> with the Cloud region of your database, for example, "`eu10`".
 
 </td>
 </tr>
@@ -274,7 +248,7 @@ You need to replace <code><i class="varname">&lt;region&gt;</i></code> with the 
 
 ## SAP HANA Project Explorer
 
-To display the user preferences that you can set for the *SAP HANA Project* explorer in the *SAP HANA Native Application* extension, open the *Settings* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA Project Explorer* in the list displayed.
+To display the user preferences that you can set for the *SAP HANA Project* explorer in the *SAP HANA Native Application* extension, open the *Settings* tab, enter `SAP HANA` in the filter box, and select *SAP HANA Project Explorer* in the list displayed.
 
 The following table lists the user preferences you can set to customize the *SAP HANA Project Explorer*:
 
@@ -287,119 +261,89 @@ The following table lists the user preferences you can set to customize the *SAP
 
 User Preference
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *Auto Reveal* 
-
-
+*Auto Reveal* 
 
 </td>
 <td valign="top">
 
 Select edited files and reveal their location in the *SAP HANA Projects* explorer.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Bind: Bind user-provided services to target containers* 
-
-
+*Bind: Bind user-provided services to target containers* 
 
 </td>
 <td valign="top">
 
 Allow a user-provided service to be bound to the target container of a database module. If you disable this option, only "hdi-shared" services can be bound to target containers..
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Bind: Confirm automatic undeployment* 
-
-
+*Bind: Confirm automatic undeployment* 
 
 </td>
 <td valign="top">
 
 Ask whether automatic undeployment should be disabled when binding a module to an existing service.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Bind: Confirm existing service* 
-
-
+*Bind: Confirm existing service* 
 
 </td>
 <td valign="top">
 
 Display a confirmation message before binding a database module to an existing Cloud Foundry service. Warning: binding a project to an existing service can lead to data loss if the database module does not match the content of the existing service.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Deploy: Auto clean deployment log* 
-
-
+*Deploy: Auto clean deployment log* 
 
 </td>
 <td valign="top">
 
 Clear the deployment log before starting a new deployment.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Deploy: Enable deployment tracing* 
-
-
+*Deploy: Enable deployment tracing* 
 
 </td>
 <td valign="top">
 
 Choose whether to extend the HDI deployment log with trace information and display it in the SAP Business Application Studio's terminal during deployment.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Deploy: Keep default-env file* 
-
-
+*Deploy: Keep default-env file* 
 
 </td>
 <td valign="top">
@@ -416,9 +360,7 @@ Retain the `default-env.json` file in the workspace after deployment.
 <tr>
 <td valign="top">
 
- *Deploy: Confirm migration-table development mode* 
-
-
+*Deploy: Confirm migration-table development mode* 
 
 </td>
 <td valign="top">
@@ -437,25 +379,19 @@ Development mode enables the use of specific development versions of a table wit
 <tr>
 <td valign="top">
 
- *Logging: Level* 
-
-
+*Logging: Level* 
 
 </td>
 <td valign="top">
 
-The verbosity of logging according to the following order: trace \> debug \> info \> warn \> error \> fatal \> off.
-
-
+Set the verbosity of logging according to the following order: trace \> debug \> info \> warn \> error \> fatal \> off.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Logging: Source Location Tracking* 
-
-
+*Logging: Source Location Tracking* 
 
 </td>
 <td valign="top">
@@ -472,16 +408,12 @@ Add the source-code location to the log entries.
 <tr>
 <td valign="top">
 
- *Unbind: Unbind all services if the Cloud Foundry space changes* 
-
-
+*Unbind: Unbind all services if the Cloud Foundry space changes* 
 
 </td>
 <td valign="top">
 
 Enable this option, if you want all services of all database modules to be automatically unbound when an application project’s Cloud Foundry space is changed.
-
-
 
 </td>
 </tr>
@@ -493,7 +425,7 @@ Enable this option, if you want all services of all database modules to be autom
 
 ## SAP HANA SQLScript LSP
 
-To display the user preferences that you can set for SAP HANA SQLScript language services \(LSP\) in the *SAP HANA Native Application* extension, open the *Settings* tab, enter ***SAP HANA*** in the filter box, and select *SAP HANA SQLScript LSP* in the list of results displayed.
+To display the user preferences that you can set for SAP HANA SQLScript language services \(LSP\) in the *SAP HANA Native Application* extension, open the *Settings* tab, enter `SAP HANA` in the filter box, and select *SAP HANA SQLScript LSP* in the list of results displayed.
 
 The following table lists the user preferences you can set to customize the use of SAP HANA SQLScript LSP:
 
@@ -506,66 +438,50 @@ The following table lists the user preferences you can set to customize the use 
 
 User Preference
 
-
-
 </th>
 <th valign="top">
 
 Details
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *Max Number Of Problems* 
-
-
+*Max Number Of Problems* 
 
 </td>
 <td valign="top">
 
-Controls the maximum number of problems produced by the server.
+Control the maximum number of problems produced by the server.
 
 Default: 100
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Trace: Server* 
-
-
+*Trace: Server* 
 
 </td>
 <td valign="top">
 
-Traces the communication between VS Code and the language server. Possible values: "off", "messages", "verbose".
+Trace the communication between VS Code and the language server. Possible values include: "off", "messages", "verbose".
 
 Default: Verbose
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *URL* 
-
-
+*URL* 
 
 </td>
 <td valign="top">
 
-This configuration is intended for internal purpose. Please do not change this.
-
-
+This configuration is intended for internal purpose, only. Please do not change this.
 
 </td>
 </tr>
@@ -577,7 +493,7 @@ This configuration is intended for internal purpose. Please do not change this.
 
 ## Calculation View Editor
 
-To display the user preferences that you can set for the calculation-view editor in the *SAP HANA Native Application* extension, open the *Settings* tab, enter ***calculation view*** in the filter box, and select *Extensions* \> *Watt Feature* in the list of results displayed.
+To display the user preferences that you can set for the calculation-view editor in the *SAP HANA Native Application* extension, open the *Settings* tab, enter `calculation view` in the filter box, and select *Extensions* \> *Watt Feature* in the list of results displayed.
 
 The following table lists the user preferences you can set to customize the use of the calculation-view editor:
 
@@ -590,55 +506,41 @@ The following table lists the user preferences you can set to customize the use 
 
 User Preference
 
-
-
 </th>
 <th valign="top">
 
 Details
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- *Data Preview: Require Manual Refresh For Raw Data* 
-
-
+*Data Preview: Require Manual Refresh For Raw Data* 
 
 </td>
 <td valign="top">
 
 Require the manual refresh of data when opening a table or view, and when visualizing data in the *Analysis* tab
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Mapping Pane* 
-
-
+*Mapping Pane* 
 
 </td>
 <td valign="top">
 
 Set the required preference to customize the columns displayed in the mapping panes
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Performance Analysis Always On* 
-
-
+*Performance Analysis Always On* 
 
 </td>
 <td valign="top">
@@ -647,27 +549,23 @@ Display a warning icon next to the names of tables that have more rows than the 
 
 Default: 0 \(Zero\)
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- *Shortcuts: \[Add | Edit | Create | Open | Show\] *<element\>** 
-
-
+*Shortcuts: \[Add | Edit | Create | Open | Show\] *<element\>** 
 
 </td>
 <td valign="top">
 
 In SAP Business Application Studio, keyboard shortcuts for calculation views use the following format: [ctrl+\], [alt+\], [option+\], [shift+\] and a key; or [insert\]; or [F1\]-[F12\], for example:
 
--   Add an input parameter:  [ctrl\] + [shift\] + [i\] 
--   Create a join node:  [alt\] + [shift\] + [f1\] 
--   Create a calculated column:  [alt\] + [shift\] + [u\] 
--   Add a variable:  [ctrl\] + [shift\] + [v\] 
--   Create a data preview:  [alt\] + [shift\] + [d\]  
+-   Add an input parameter: [ctrl\] + [shift\] + [i\] 
+-   Create a join node: [alt\] + [shift\] + [f1\] 
+-   Create a calculated column: [alt\] + [shift\] + [u\] 
+-   Add a variable: [ctrl\] + [shift\] + [v\] 
+-   Create a data preview: [alt\] + [shift\] + [d\]  
 
 > ### Note:  
 > For more information about keyboard shortcuts for the calculation view editor, see *Related Information* below.

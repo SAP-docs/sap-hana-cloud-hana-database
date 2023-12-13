@@ -17,21 +17,15 @@ Provides information about the stored procedure parameters.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the stored procedure.
 
 PROCEDURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the stored procedure.
 
 PROCEDURE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the stored procedure.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object ID of the stored procedure.
 
 PARAMETER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameter name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the parameter name.
 
 DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the data type ID.
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type name.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the data type name.
 
 LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameter length.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the parameter length.
 
 SCALE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the scale of the parameter.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the scale of the parameter.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ordinal position of the parameter.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the ordinal position of the parameter.
 
 TABLE\_TYPE\_SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the table type if DATA\_TYPE\_NAME is TABLE\_TYPE.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the schema name of the table type if DATA\_TYPE\_NAME is TABLE\_TYPE.
 
 TABLE\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the table type if DATA\_TYPE\_NAME is TABLE\_TYPE.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the name of the table type if DATA\_TYPE\_NAME is TABLE\_TYPE.
 
 IS\_INPLACE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the parameter type is an inplace type: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays whether the parameter type is an inplace type: TRUE/FALSE.
 
 PARAMETER\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameter mode: IN, OUT, or INOUT.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the parameter mode: IN, OUT, or INOUT.
 
 HAS\_DEFAULT\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the parameter has a default value: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -362,30 +272,32 @@ Displays whether the parameter has a default value: TRUE/FALSE.
 
 IS\_NULLABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
-
-
 
 </td>
 <td valign="top">
 
 Displays whether the parameter accepts a NULL value: TRUE/FALSE.
 
-
-
 </td>
 </tr>
 </table>
 
+
+
+<a name="loio20cc6b9575191014a73bf6875843cd78__section_cdq_5r4_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
-[Procedure Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/3809c45287c44908a3d45a4db1514a55.html "") :arrow_upper_right:
+[Procedure Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/3809c45287c44908a3d45a4db1514a55.html "") :arrow_upper_right:
 
 [PROCEDURE\_PARAMETER\_COLUMNS System View](procedure-parameter-columns-system-view-3d02842.md "Lists available columns of table parameters of stored procedures.")
 

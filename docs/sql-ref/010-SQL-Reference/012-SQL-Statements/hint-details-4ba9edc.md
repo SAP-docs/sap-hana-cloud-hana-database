@@ -1801,14 +1801,10 @@ There are optimization levels created during plan generation to enable optimizat
 
 Hint Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1817,14 +1813,10 @@ Description
 
 OPTIMIZATION\_LEVEL \(MINIMAL\)
 
-
-
 </td>
 <td valign="top">
 
 Disables all optimization rules except the mandatory rules that execute the query as it is.
-
-
 
 </td>
 </tr>
@@ -1833,14 +1825,10 @@ Disables all optimization rules except the mandatory rules that execute the quer
 
 OPTIMIZATION\_LEVEL \(RULE\_BASED\)
 
-
-
 </td>
 <td valign="top">
 
 Displays all rewriting rules, including the MINIMAL optimization level.
-
-
 
 </td>
 </tr>
@@ -1849,14 +1837,10 @@ Displays all rewriting rules, including the MINIMAL optimization level.
 
 OPTIMIZATION\_LEVEL \(MINIMAL\_COST\_BASED\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the RULE\_BASED optimization level plus the heuristic join reordering.
-
-
 
 </td>
 </tr>
@@ -1865,14 +1849,10 @@ Displays the RULE\_BASED optimization level plus the heuristic join reordering.
 
 OPTIMIZATION\_LEVEL \(COST\_BASED\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MINIMAL\_COST\_BASED optimization level plus available cost-based optimizations, including logical enumeration. This is the default option.
-
-
 
 </td>
 </tr>
@@ -2052,14 +2032,10 @@ Discards the join cardinality information in the plan so that it does not affect
 
 Hint name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -2068,14 +2044,10 @@ Description
 
 NO\_JOIN\_CARDINALITY\(ALL\)
 
-
-
 </td>
 <td valign="top">
 
 Discards all join cardinality information in the plan.
-
-
 
 </td>
 </tr>
@@ -2084,14 +2056,10 @@ Discards all join cardinality information in the plan.
 
 NO\_JOIN\_CARDINALITY\(EXPLICIT\)
 
-
-
 </td>
 <td valign="top">
 
 Discards all join cardinality information specified in the model.
-
-
 
 </td>
 </tr>
@@ -2100,14 +2068,10 @@ Discards all join cardinality information specified in the model.
 
 NO\_JOIN\_CARDINALITY\(IMPLICIT\)
 
-
-
 </td>
 <td valign="top">
 
 Discards all join cardinality that is computed or derived by the SQL Optimizer using the metadata or the join cardinality specified in the model.
-
-
 
 </td>
 </tr>
@@ -2194,22 +2158,16 @@ Refer to the below table for a list of hints and their descriptions:
 
 Category
 
-
-
 </th>
 <th valign="top">
 
 Hint Name
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
@@ -2217,44 +2175,32 @@ Description
 
 OPTIMIZER\_REWRITE
 
-
-
 </td>
 <td valign="top">
 
 AGGR\_TARGET
-
-
 
 </td>
 <td valign="top">
 
 Prefers aggregation toward a target.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 DISJ\_FILTER\_TRANSFORMATION
 
-
-
 </td>
 <td valign="top">
 
 Prefers a split disjunctive filter into union all.
-
-
 
 </td>
 </tr>
@@ -2262,22 +2208,16 @@ Prefers a split disjunctive filter into union all.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_DISJ\_FILTER\_TRANSFORMATION
 
-
-
 </td>
 <td valign="top">
 
 Avoids a split disjunctive filter into union all.
-
-
 
 </td>
 </tr>
@@ -2285,22 +2225,16 @@ Avoids a split disjunctive filter into union all.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_SIMPLIFICATION
 
-
-
 </td>
 <td valign="top">
 
 Prefers join simplification.
-
-
 
 </td>
 </tr>
@@ -2308,22 +2242,16 @@ Prefers join simplification.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_SIMPLIFICATION
 
-
-
 </td>
 <td valign="top">
 
 Avoids join simplification.
-
-
 
 </td>
 </tr>
@@ -2331,22 +2259,16 @@ Avoids join simplification.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 GROUPING\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Prefers unnecessary grouping removal.
-
-
 
 </td>
 </tr>
@@ -2354,22 +2276,16 @@ Prefers unnecessary grouping removal.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_GROUPING\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Avoids unnecessary grouping removal.
-
-
 
 </td>
 </tr>
@@ -2377,22 +2293,16 @@ Avoids unnecessary grouping removal.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 AGGR\_SIMPLIFICATION
 
-
-
 </td>
 <td valign="top">
 
 Prefers aggregation simplification.
-
-
 
 </td>
 </tr>
@@ -2400,22 +2310,16 @@ Prefers aggregation simplification.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_AGGR\_SIMPLIFICATION
 
-
-
 </td>
 <td valign="top">
 
 Avoids aggregation simplification.
-
-
 
 </td>
 </tr>
@@ -2423,22 +2327,16 @@ Avoids aggregation simplification.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 MATERIALIZED\_COLUMN\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Prefers an unnecessary column removal.
-
-
 
 </td>
 </tr>
@@ -2446,22 +2344,16 @@ Prefers an unnecessary column removal.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_MATERIALIZED\_COLUMN\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Avoids an unnecessary column removal.
-
-
 
 </td>
 </tr>
@@ -2469,22 +2361,16 @@ Avoids an unnecessary column removal.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Prefers an unnecessary join removal.
-
-
 
 </td>
 </tr>
@@ -2492,22 +2378,16 @@ Prefers an unnecessary join removal.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Avoids an unnecessary join removal.
-
-
 
 </td>
 </tr>
@@ -2515,22 +2395,16 @@ Avoids an unnecessary join removal.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 GROUPING\_SIMPLIFICATION
 
-
-
 </td>
 <td valign="top">
 
 Prefers a group by simplification.
-
-
 
 </td>
 </tr>
@@ -2538,22 +2412,16 @@ Prefers a group by simplification.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_GROUPING\_SIMPLIFICATION
 
-
-
 </td>
 <td valign="top">
 
 Avoids a group by simplification.
-
-
 
 </td>
 </tr>
@@ -2561,22 +2429,16 @@ Avoids a group by simplification.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 CONST\_VIEW\_UNFOLDING
 
-
-
 </td>
 <td valign="top">
 
 Prefers constant view unfolding.
-
-
 
 </td>
 </tr>
@@ -2584,22 +2446,16 @@ Prefers constant view unfolding.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_CONST\_VIEW\_UNFOLDING
 
-
-
 </td>
 <td valign="top">
 
 Avoids constant view unfolding.
-
-
 
 </td>
 </tr>
@@ -2607,22 +2463,16 @@ Avoids constant view unfolding.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 HOST\_PORT\_JOIN\_COLOCATION
 
-
-
 </td>
 <td valign="top">
 
 Prefers a host/port join thru union.
-
-
 
 </td>
 </tr>
@@ -2630,22 +2480,16 @@ Prefers a host/port join thru union.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_HOST\_PORT\_JOIN\_COLOCATION
 
-
-
 </td>
 <td valign="top">
 
 Avoids a host/port join thru union.
-
-
 
 </td>
 </tr>
@@ -2653,22 +2497,16 @@ Avoids a host/port join thru union.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 CALC\_VIEW\_UNFOLDING
 
-
-
 </td>
 <td valign="top">
 
 Prefers the unfold calculation view.
-
-
 
 </td>
 </tr>
@@ -2676,22 +2514,16 @@ Prefers the unfold calculation view.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_CALC\_VIEW\_UNFOLDING
 
-
-
 </td>
 <td valign="top">
 
 Avoids the unfold calculation view.
-
-
 
 </td>
 </tr>
@@ -2699,22 +2531,16 @@ Avoids the unfold calculation view.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 TYPE\_CAST\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Prefers the removal of a redundant type cast.
-
-
 
 </td>
 </tr>
@@ -2722,22 +2548,16 @@ Prefers the removal of a redundant type cast.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_TYPE\_CAST\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Avoids the removal of a redundant type cast.
-
-
 
 </td>
 </tr>
@@ -2745,22 +2565,16 @@ Avoids the removal of a redundant type cast.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 WINDOW\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Prefers the removal of window function aggregation.
-
-
 
 </td>
 </tr>
@@ -2768,22 +2582,16 @@ Prefers the removal of window function aggregation.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_WINDOW\_REMOVAL
 
-
-
 </td>
 <td valign="top">
 
 Avoids the removal of window function aggregation.
-
-
 
 </td>
 </tr>
@@ -2791,22 +2599,16 @@ Avoids the removal of window function aggregation.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_REMOVAL\_USING\_CARDINALITY
 
-
-
 </td>
 <td valign="top">
 
 Prefers join removal based on cardinality.
-
-
 
 </td>
 </tr>
@@ -2814,22 +2616,16 @@ Prefers join removal based on cardinality.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_REMOVAL\_USING\_CARDINALITY
 
-
-
 </td>
 <td valign="top">
 
 Avoids join removal based on cardinality.
-
-
 
 </td>
 </tr>
@@ -2837,22 +2633,16 @@ Avoids join removal based on cardinality.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 PARTITION\_PRUNING
 
-
-
 </td>
 <td valign="top">
 
 Prefers compile-time partition pruning.
-
-
 
 </td>
 </tr>
@@ -2860,22 +2650,16 @@ Prefers compile-time partition pruning.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_PARTITION\_PRUNING
 
-
-
 </td>
 <td valign="top">
 
 Avoids compile-time partition pruning.
-
-
 
 </td>
 </tr>
@@ -2883,22 +2667,16 @@ Avoids compile-time partition pruning.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 FILTER\_RULE
 
-
-
 </td>
 <td valign="top">
 
 Prefers applying the filter rule.
-
-
 
 </td>
 </tr>
@@ -2906,22 +2684,16 @@ Prefers applying the filter rule.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_FILTER\_RULE
 
-
-
 </td>
 <td valign="top">
 
 Avoids applying the filter rule.
-
-
 
 </td>
 </tr>
@@ -2929,22 +2701,16 @@ Avoids applying the filter rule.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_RULE
 
-
-
 </td>
 <td valign="top">
 
 Prefers applying the join rule.
-
-
 
 </td>
 </tr>
@@ -2952,22 +2718,16 @@ Prefers applying the join rule.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_RULE
 
-
-
 </td>
 <td valign="top">
 
 Avoids applying the join rule.
-
-
 
 </td>
 </tr>
@@ -2975,22 +2735,16 @@ Avoids applying the join rule.
 <td valign="top">
 
 OPTIMIZER\_REWRITE
-
-
 
 </td>
 <td valign="top">
 
 UNFOLD\_SCALAR\_UDF
 
-
-
 </td>
 <td valign="top">
 
 Prefers scalar UDF unfolding.
-
-
 
 </td>
 </tr>
@@ -2999,44 +2753,32 @@ Prefers scalar UDF unfolding.
 
 OPTIMIZER\_REWRITE
 
-
-
 </td>
 <td valign="top">
 
 NO\_UNFOLD\_SCALAR\_UDF
-
-
 
 </td>
 <td valign="top">
 
 Avoids scalar UDF unfolding.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 AGGR\_THRU\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Prefers push down aggregation through a filter.
-
-
 
 </td>
 </tr>
@@ -3044,22 +2786,16 @@ Prefers push down aggregation through a filter.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_AGGR\_THRU\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Avoids push down aggregation through a filter.
-
-
 
 </td>
 </tr>
@@ -3067,22 +2803,16 @@ Avoids push down aggregation through a filter.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 AGGR\_THRU\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers push down aggregation through join.
-
-
 
 </td>
 </tr>
@@ -3090,22 +2820,16 @@ Prefers push down aggregation through join.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_AGGR\_THRU\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids push down aggregation through join.
-
-
 
 </td>
 </tr>
@@ -3113,22 +2837,16 @@ Avoids push down aggregation through join.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 DISTINCT\_THRU\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Prefers push down distinct through union all.
-
-
 
 </td>
 </tr>
@@ -3136,22 +2854,16 @@ Prefers push down distinct through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_DISTINCT\_THRU\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Avoids push down distinct through union all.
-
-
 
 </td>
 </tr>
@@ -3159,22 +2871,16 @@ Avoids push down distinct through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 AGGR\_INTO\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Prefers merging two aggregations into one.
-
-
 
 </td>
 </tr>
@@ -3182,22 +2888,16 @@ Prefers merging two aggregations into one.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_AGGR\_INTO\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Avoids merging two aggregations into one.
-
-
 
 </td>
 </tr>
@@ -3205,22 +2905,16 @@ Avoids merging two aggregations into one.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 AGGR\_INTO\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 Prefers merging aggregation with table scans.
-
-
 
 </td>
 </tr>
@@ -3228,22 +2922,16 @@ Prefers merging aggregation with table scans.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_AGGR\_INTO\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 Avoids merging aggregation with table scans.
-
-
 
 </td>
 </tr>
@@ -3251,22 +2939,16 @@ Avoids merging aggregation with table scans.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 DISTINCT\_INTO\_DISTINCT
 
-
-
 </td>
 <td valign="top">
 
 Prefers merging two distincts into one.
-
-
 
 </td>
 </tr>
@@ -3274,22 +2956,16 @@ Prefers merging two distincts into one.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_DISTINCT\_INTO\_DISTINCT
 
-
-
 </td>
 <td valign="top">
 
 Avoids merging two distincts into one.
-
-
 
 </td>
 </tr>
@@ -3297,22 +2973,16 @@ Avoids merging two distincts into one.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 DISTINCT\_INTO\_SEMI\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers merging a distinct with a join.
-
-
 
 </td>
 </tr>
@@ -3320,22 +2990,16 @@ Prefers merging a distinct with a join.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_DISTINCT\_INTO\_SEMI\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids merging a distinct with a join.
-
-
 
 </td>
 </tr>
@@ -3343,22 +3007,16 @@ Avoids merging a distinct with a join.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 UNION\_INTO\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Prefers merge\_union\_all.
-
-
 
 </td>
 </tr>
@@ -3366,22 +3024,16 @@ Prefers merge\_union\_all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_UNION\_INTO\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Avoids merge\_union\_all.
-
-
 
 </td>
 </tr>
@@ -3389,22 +3041,16 @@ Avoids merge\_union\_all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 UNION \_INTO\_UNION \_THRU\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Prefers merge union all through aggregation.
-
-
 
 </td>
 </tr>
@@ -3412,22 +3058,16 @@ Prefers merge union all through aggregation.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_UNION \_INTO\_UNION \_THRU\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Avoids merge union all through aggregation.
-
-
 
 </td>
 </tr>
@@ -3435,22 +3075,16 @@ Avoids merge union all through aggregation.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 PREAGGR\_BEFORE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers pre-aggregation before join.
-
-
 
 </td>
 </tr>
@@ -3458,22 +3092,16 @@ Prefers pre-aggregation before join.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_PREAGGR\_BEFORE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids pre-aggregation before join.
-
-
 
 </td>
 </tr>
@@ -3481,22 +3109,16 @@ Avoids pre-aggregation before join.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 DOUBLE\_PREAGGR\_BEFORE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers pre-aggregation before join for both of the children.
-
-
 
 </td>
 </tr>
@@ -3504,22 +3126,16 @@ Prefers pre-aggregation before join for both of the children.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_DOUBLE\_PREAGGR\_BEFORE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids pre-aggregation before join for both of the children.
-
-
 
 </td>
 </tr>
@@ -3527,22 +3143,16 @@ Avoids pre-aggregation before join for both of the children.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 PREAGGR\_BEFORE\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Prefers pre-aggregation before union all.
-
-
 
 </td>
 </tr>
@@ -3550,22 +3160,16 @@ Prefers pre-aggregation before union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_PREAGGR\_BEFORE\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Avoids pre-aggregation before union all.
-
-
 
 </td>
 </tr>
@@ -3573,22 +3177,16 @@ Avoids pre-aggregation before union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 DISJ\_JOIN\_INTO\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Prefers to split disjunctive join predicates into filters and making union all.
-
-
 
 </td>
 </tr>
@@ -3596,22 +3194,16 @@ Prefers to split disjunctive join predicates into filters and making union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_DISJ\_JOIN\_INTO\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Avoids splitting disjunctive join predicates into filters and making union all.
-
-
 
 </td>
 </tr>
@@ -3619,22 +3211,16 @@ Avoids splitting disjunctive join predicates into filters and making union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 PREDISTINCT\_BEFORE\_SEMI\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers putting DISTINCT on the right child of SEMI or ANTI SEMI joins.
-
-
 
 </td>
 </tr>
@@ -3642,22 +3228,16 @@ Prefers putting DISTINCT on the right child of SEMI or ANTI SEMI joins.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_PREDISTINCT\_BEFORE\_SEMI\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids putting DISTINCT on the right child of SEMI or ANTI SEMI joins.
-
-
 
 </td>
 </tr>
@@ -3665,22 +3245,16 @@ Avoids putting DISTINCT on the right child of SEMI or ANTI SEMI joins.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_THRU\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down joins through aggregation.
-
-
 
 </td>
 </tr>
@@ -3688,22 +3262,16 @@ Prefers pushing down joins through aggregation.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_THRU\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down joins through aggregation.
-
-
 
 </td>
 </tr>
@@ -3711,22 +3279,16 @@ Avoids pushing down joins through aggregation.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_THRU\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down joins through the filter.
-
-
 
 </td>
 </tr>
@@ -3734,22 +3296,16 @@ Prefers pushing down joins through the filter.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_THRU\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down joins through the filter.
-
-
 
 </td>
 </tr>
@@ -3757,22 +3313,16 @@ Avoids pushing down joins through the filter.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_THRU\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down joins through join.
-
-
 
 </td>
 </tr>
@@ -3780,22 +3330,16 @@ Prefers pushing down joins through join.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_THRU\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down joins through join.
-
-
 
 </td>
 </tr>
@@ -3803,22 +3347,16 @@ Avoids pushing down joins through join.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_THRU\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down joins through union all.
-
-
 
 </td>
 </tr>
@@ -3826,22 +3364,16 @@ Prefers pushing down joins through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_THRU\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down joins through union all.
-
-
 
 </td>
 </tr>
@@ -3849,22 +3381,16 @@ Avoids pushing down joins through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 SEMI\_JOIN\_BEFORE\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down semi-joins through union all.
-
-
 
 </td>
 </tr>
@@ -3872,22 +3398,16 @@ Prefers pushing down semi-joins through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_SEMI\_JOIN\_BEFORE\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down semi-joins through union all.
-
-
 
 </td>
 </tr>
@@ -3895,22 +3415,16 @@ Avoids pushing down semi-joins through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 FILTER\_THRU\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down filters through union all.
-
-
 
 </td>
 </tr>
@@ -3918,22 +3432,16 @@ Prefers pushing down filters through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_FILTER\_THRU\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down filters through union all.
-
-
 
 </td>
 </tr>
@@ -3941,22 +3449,16 @@ Avoids pushing down filters through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 FILTER\_THRU\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down filters through aggregation.
-
-
 
 </td>
 </tr>
@@ -3964,22 +3466,16 @@ Prefers pushing down filters through aggregation.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_FILTER\_THRU\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down filters through aggregation.
-
-
 
 </td>
 </tr>
@@ -3987,22 +3483,16 @@ Avoids pushing down filters through aggregation.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 FILTER\_THRU\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down filters through union all.
-
-
 
 </td>
 </tr>
@@ -4010,22 +3500,16 @@ Prefers pushing down filters through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_FILTER\_THRU\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down filters through union all.
-
-
 
 </td>
 </tr>
@@ -4033,22 +3517,16 @@ Avoids pushing down filters through union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 PRELIMIT\_BEFORE\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down limits before union all.
-
-
 
 </td>
 </tr>
@@ -4056,22 +3534,16 @@ Prefers pushing down limits before union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_PRELIMIT\_BEFORE\_UNION
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down limits before union all.
-
-
 
 </td>
 </tr>
@@ -4079,22 +3551,16 @@ Avoids pushing down limits before union all.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 LIMIT\_THRU\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers pushing down limits through joins.
-
-
 
 </td>
 </tr>
@@ -4102,22 +3568,16 @@ Prefers pushing down limits through joins.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_LIMIT\_THRU\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids pushing down limits through joins.
-
-
 
 </td>
 </tr>
@@ -4125,22 +3585,16 @@ Avoids pushing down limits through joins.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 PRELIMIT\_BEFORE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers LIMIT/SORT on the left child of the LEFT OUTER JOIN.
-
-
 
 </td>
 </tr>
@@ -4148,22 +3602,16 @@ Prefers LIMIT/SORT on the left child of the LEFT OUTER JOIN.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_PRELIMIT\_BEFORE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids LIMIT/SORT on the left child of the LEFT OUTER JOIN.
-
-
 
 </td>
 </tr>
@@ -4171,22 +3619,16 @@ Avoids LIMIT/SORT on the left child of the LEFT OUTER JOIN.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 PREAGGR\_BEFORE\_CASE\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Prefers pre-aggregation before case expression aggregation.
-
-
 
 </td>
 </tr>
@@ -4194,22 +3636,16 @@ Prefers pre-aggregation before case expression aggregation.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_PREAGGR\_BEFORE\_CASE\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Avoids pre-aggregation before case expression aggregation.
-
-
 
 </td>
 </tr>
@@ -4217,22 +3653,16 @@ Avoids pre-aggregation before case expression aggregation.
 <td valign="top">
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 DOUBLE\_JOIN\_THRU\_UNION\_ALL
 
-
-
 </td>
 <td valign="top">
 
 Prefers a pushdown join through double union all.
-
-
 
 </td>
 </tr>
@@ -4241,44 +3671,32 @@ Prefers a pushdown join through double union all.
 
 OPTIMIZER\_LOGICAL\_ENUMERATION
 
-
-
 </td>
 <td valign="top">
 
 NO\_DOUBLE\_JOIN\_THRU\_UNION\_ALL
-
-
 
 </td>
 <td valign="top">
 
 Avoids a pushdown join through double union all
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 INDEX\_SEARCH
 
-
-
 </td>
 <td valign="top">
 
 Prefers the row engine index search.
-
-
 
 </td>
 </tr>
@@ -4286,22 +3704,16 @@ Prefers the row engine index search.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_INDEX\_SEARCH
 
-
-
 </td>
 <td valign="top">
 
 Avoids the row engine index search.
-
-
 
 </td>
 </tr>
@@ -4309,22 +3721,16 @@ Avoids the row engine index search.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 INDEX\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers the row engine index join.
-
-
 
 </td>
 </tr>
@@ -4332,22 +3738,16 @@ Prefers the row engine index join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_INDEX\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids the row engine index join.
-
-
 
 </td>
 </tr>
@@ -4355,22 +3755,16 @@ Avoids the row engine index join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 HASH\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers the row engine hash join.
-
-
 
 </td>
 </tr>
@@ -4378,22 +3772,16 @@ Prefers the row engine hash join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_HASH\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids the row engine hash join.
-
-
 
 </td>
 </tr>
@@ -4401,22 +3789,16 @@ Avoids the row engine hash join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 RANGE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers the row engine range join.
-
-
 
 </td>
 </tr>
@@ -4424,22 +3806,16 @@ Prefers the row engine range join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_RANGE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids the row engine range join.
-
-
 
 </td>
 </tr>
@@ -4447,22 +3823,16 @@ Avoids the row engine range join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 HASHED\_RANGE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers the row engine hashed range join.
-
-
 
 </td>
 </tr>
@@ -4470,22 +3840,16 @@ Prefers the row engine hashed range join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_HASHED\_RANGE\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids the row engine hashed range join.
-
-
 
 </td>
 </tr>
@@ -4493,22 +3857,16 @@ Avoids the row engine hashed range join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 JOIN\_FILTER\_REORDERING
 
-
-
 </td>
 <td valign="top">
 
 Prefers join predicate reordering.
-
-
 
 </td>
 </tr>
@@ -4516,22 +3874,16 @@ Prefers join predicate reordering.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_JOIN\_FILTER\_REORDERING
 
-
-
 </td>
 <td valign="top">
 
 Avoids join predicate reordering.
-
-
 
 </td>
 </tr>
@@ -4539,22 +3891,16 @@ Avoids join predicate reordering.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_SORT
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine order by.
-
-
 
 </td>
 </tr>
@@ -4562,22 +3908,16 @@ Prefers the column engine order by.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_SORT
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine order by.
-
-
 
 </td>
 </tr>
@@ -4585,22 +3925,16 @@ Avoids the column engine order by.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine limit.
-
-
 
 </td>
 </tr>
@@ -4608,22 +3942,16 @@ Prefers the column engine limit.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine limit.
-
-
 
 </td>
 </tr>
@@ -4631,22 +3959,16 @@ Avoids the column engine limit.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine filter.
-
-
 
 </td>
 </tr>
@@ -4654,22 +3976,16 @@ Prefers the column engine filter.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine filter.
-
-
 
 </td>
 </tr>
@@ -4677,22 +3993,16 @@ Avoids the column engine filter.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_DISTINCT
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine distinct.
-
-
 
 </td>
 </tr>
@@ -4700,22 +4010,16 @@ Prefers the column engine distinct.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_DISTINCT
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine distinct.
-
-
 
 </td>
 </tr>
@@ -4723,22 +4027,16 @@ Avoids the column engine distinct.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Prefers column engine aggregation.
-
-
 
 </td>
 </tr>
@@ -4746,22 +4044,16 @@ Prefers column engine aggregation.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Avoids column engine aggregation.
-
-
 
 </td>
 </tr>
@@ -4769,22 +4061,16 @@ Avoids column engine aggregation.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers column engine join.
-
-
 
 </td>
 </tr>
@@ -4792,22 +4078,16 @@ Prefers column engine join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine join.
-
-
 
 </td>
 </tr>
@@ -4815,22 +4095,16 @@ Avoids the column engine join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_SCALAR\_SUBQUERY
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine scalar subquery.
-
-
 
 </td>
 </tr>
@@ -4838,22 +4112,16 @@ Prefers the column engine scalar subquery.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_SCALAR\_SUBQUERY
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine scalar subquery.
-
-
 
 </td>
 </tr>
@@ -4861,22 +4129,16 @@ Avoids the column engine scalar subquery.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_ITAB\_IN\_SUBQUERY
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine ITAB in the subquery.
-
-
 
 </td>
 </tr>
@@ -4884,22 +4146,16 @@ Prefers the column engine ITAB in the subquery.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_ITAB\_IN\_SUBQUERY
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine ITAB in the subquery.
-
-
 
 </td>
 </tr>
@@ -4907,22 +4163,16 @@ Avoids the column engine ITAB in the subquery.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_ITAB\_IN\_PREDICATE
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine ITAB for multi-columns in predicates.
-
-
 
 </td>
 </tr>
@@ -4930,22 +4180,16 @@ Prefers the column engine ITAB for multi-columns in predicates.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_ITAB\_IN\_PREDICATE
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine ITAB for multi-columns in predicates.
-
-
 
 </td>
 </tr>
@@ -4953,22 +4197,16 @@ Avoids the column engine ITAB for multi-columns in predicates.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_UNION\_ALL
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine union all.
-
-
 
 </td>
 </tr>
@@ -4976,22 +4214,16 @@ Prefers the column engine union all.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_UNION\_ALL\(CALC\)
 
-
-
 </td>
 <td valign="top">
 
 Prefers the calc engine union all.
-
-
 
 </td>
 </tr>
@@ -4999,22 +4231,16 @@ Prefers the calc engine union all.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_UNION\_ALL
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine union all.
-
-
 
 </td>
 </tr>
@@ -5022,22 +4248,16 @@ Avoids the column engine union all.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_WINDOW
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine window for row numbers only.
-
-
 
 </td>
 </tr>
@@ -5045,22 +4265,16 @@ Prefers the column engine window for row numbers only.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_WINDOW
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine window for row numbers only.
-
-
 
 </td>
 </tr>
@@ -5068,22 +4282,16 @@ Avoids the column engine window for row numbers only.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CYCLIC\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers cyclic joins in a single column search.
-
-
 
 </td>
 </tr>
@@ -5091,22 +4299,16 @@ Prefers cyclic joins in a single column search.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CYCLIC\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids cyclic joins in a single column search.
-
-
 
 </td>
 </tr>
@@ -5114,22 +4316,16 @@ Avoids cyclic joins in a single column search.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 OLAP\_GUIDED\_NAVIGATION
 
-
-
 </td>
 <td valign="top">
 
 Prefers OLAP engine guided navigation.
-
-
 
 </td>
 </tr>
@@ -5137,22 +4333,16 @@ Prefers OLAP engine guided navigation.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_OLAP\_GUIDED\_NAVIGATION
 
-
-
 </td>
 <td valign="top">
 
 Avoids OLAP engine guided navigation.
-
-
 
 </td>
 </tr>
@@ -5160,22 +4350,16 @@ Avoids OLAP engine guided navigation.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 OLAP\_FEMS
 
-
-
 </td>
 <td valign="top">
 
 Prefers the OLAP engine fems.
-
-
 
 </td>
 </tr>
@@ -5183,22 +4367,16 @@ Prefers the OLAP engine fems.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_OLAP\_FEMS
 
-
-
 </td>
 <td valign="top">
 
 Avoids the OLAP engine fems.
-
-
 
 </td>
 </tr>
@@ -5206,22 +4384,16 @@ Avoids the OLAP engine fems.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_EXPR\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine expression join.
-
-
 
 </td>
 </tr>
@@ -5229,22 +4401,16 @@ Prefers the column engine expression join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_EXPR\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine expression join.
-
-
 
 </td>
 </tr>
@@ -5252,22 +4418,16 @@ Avoids the column engine expression join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_SEMI\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers the column engine semi-join.
-
-
 
 </td>
 </tr>
@@ -5275,22 +4435,16 @@ Prefers the column engine semi-join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_SEMI\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids the column engine semi-join.
-
-
 
 </td>
 </tr>
@@ -5298,22 +4452,16 @@ Avoids the column engine semi-join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 CS\_OUTER\_JOIN\_WITH\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Prefers the outer join with the filter pushed down to the column engine.
-
-
 
 </td>
 </tr>
@@ -5321,22 +4469,16 @@ Prefers the outer join with the filter pushed down to the column engine.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_CS\_OUTER\_JOIN\_WITH\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Avoids the outer join with the filter pushed down to the column engine.
-
-
 
 </td>
 </tr>
@@ -5344,22 +4486,16 @@ Avoids the outer join with the filter pushed down to the column engine.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 REMOTE\_COLUMN\_SCAN
 
-
-
 </td>
 <td valign="top">
 
 Prefers the ITAB-producing remote scan operator.
-
-
 
 </td>
 </tr>
@@ -5367,22 +4503,16 @@ Prefers the ITAB-producing remote scan operator.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_REMOTE\_COLUMN\_SCAN
 
-
-
 </td>
 <td valign="top">
 
 Avoids the ITAB-producing remote scan operator.
-
-
 
 </td>
 </tr>
@@ -5390,22 +4520,16 @@ Avoids the ITAB-producing remote scan operator.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 REMOTE\_JOIN\_RELOCATION
 
-
-
 </td>
 <td valign="top">
 
 Prefers join relocation. Performs a JOIN between SAP HANA and the remote table at the remote database.
-
-
 
 </td>
 </tr>
@@ -5413,22 +4537,16 @@ Prefers join relocation. Performs a JOIN between SAP HANA and the remote table a
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_REMOTE\_JOIN\_RELOCATION
 
-
-
 </td>
 <td valign="top">
 
 Avoids join relocation. Performs a JOIN between SAP HANA and the remote table at the remote database.
-
-
 
 </td>
 </tr>
@@ -5436,22 +4554,16 @@ Avoids join relocation. Performs a JOIN between SAP HANA and the remote table at
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 REMOTE\_EXPR\_MATERIALIZATION
 
-
-
 </td>
 <td valign="top">
 
 Prefers expression materialization at the remote database.
-
-
 
 </td>
 </tr>
@@ -5459,22 +4571,16 @@ Prefers expression materialization at the remote database.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_REMOTE\_EXPR\_MATERIALIZATION
 
-
-
 </td>
 <td valign="top">
 
 Avoids expression materialization at the remote database.
-
-
 
 </td>
 </tr>
@@ -5482,22 +4588,16 @@ Avoids expression materialization at the remote database.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 DISJUNCTIVE\_HASH\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers disjunctive hash join implementation.
-
-
 
 </td>
 </tr>
@@ -5505,22 +4605,16 @@ Prefers disjunctive hash join implementation.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_DISJUNCTIVE\_HASH\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids disjunctive hash join implementation.
-
-
 
 </td>
 </tr>
@@ -5528,22 +4622,16 @@ Avoids disjunctive hash join implementation.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 OLAP\_FACT\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 Prefers choosing a fact table whose name is the same as is given.
-
-
 
 </td>
 </tr>
@@ -5551,22 +4639,16 @@ Prefers choosing a fact table whose name is the same as is given.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_TOPK\_SORT
 
-
-
 </td>
 <td valign="top">
 
 Prefers choosing a fact table whose name is the same as the one given.
-
-
 
 </td>
 </tr>
@@ -5574,22 +4656,16 @@ Prefers choosing a fact table whose name is the same as the one given.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_TOPK\_SORT
 
-
-
 </td>
 <td valign="top">
 
 Avoids choosing a fact table whose name is the same as the one given.
-
-
 
 </td>
 </tr>
@@ -5597,22 +4673,16 @@ Avoids choosing a fact table whose name is the same as the one given.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Prefers using the ESX engine filter.
-
-
 
 </td>
 </tr>
@@ -5620,22 +4690,16 @@ Prefers using the ESX engine filter.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_FILTER
 
-
-
 </td>
 <td valign="top">
 
 Avoids using the ESX engine filter.
-
-
 
 </td>
 </tr>
@@ -5643,22 +4707,16 @@ Avoids using the ESX engine filter.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_SORT
 
-
-
 </td>
 <td valign="top">
 
 Prefers using the ESX engine sort.
-
-
 
 </td>
 </tr>
@@ -5666,22 +4724,16 @@ Prefers using the ESX engine sort.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_SORT
 
-
-
 </td>
 <td valign="top">
 
 Avoids using the ESX engine sort.
-
-
 
 </td>
 </tr>
@@ -5689,22 +4741,16 @@ Avoids using the ESX engine sort.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 Prefers using the ESX engine limit.
-
-
 
 </td>
 </tr>
@@ -5712,22 +4758,16 @@ Prefers using the ESX engine limit.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_LIMIT
 
-
-
 </td>
 <td valign="top">
 
 Avoids using the ESX engine limit.
-
-
 
 </td>
 </tr>
@@ -5735,22 +4775,16 @@ Avoids using the ESX engine limit.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_DISTINCT
 
-
-
 </td>
 <td valign="top">
 
 Prefers using the ESX engine distinct.
-
-
 
 </td>
 </tr>
@@ -5758,22 +4792,16 @@ Prefers using the ESX engine distinct.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_DISTINCT
 
-
-
 </td>
 <td valign="top">
 
 Avoids using the ESX engine distinct.
-
-
 
 </td>
 </tr>
@@ -5781,22 +4809,16 @@ Avoids using the ESX engine distinct.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Prefers using ESX engine aggregation.
-
-
 
 </td>
 </tr>
@@ -5804,22 +4826,16 @@ Prefers using ESX engine aggregation.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_AGGR
 
-
-
 </td>
 <td valign="top">
 
 Avoids using ESX engine aggregation.
-
-
 
 </td>
 </tr>
@@ -5827,22 +4843,16 @@ Avoids using ESX engine aggregation.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers using the ESX join.
-
-
 
 </td>
 </tr>
@@ -5850,22 +4860,16 @@ Prefers using the ESX join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids using the ESX join.
-
-
 
 </td>
 </tr>
@@ -5873,22 +4877,16 @@ Avoids using the ESX join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_UNION\_ALL
 
-
-
 </td>
 <td valign="top">
 
 Prefers using the ESX engine union all.
-
-
 
 </td>
 </tr>
@@ -5896,22 +4894,16 @@ Prefers using the ESX engine union all.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_UNION\_ALL
 
-
-
 </td>
 <td valign="top">
 
 Avoids using the ESX engine union all.
-
-
 
 </td>
 </tr>
@@ -5919,22 +4911,16 @@ Avoids using the ESX engine union all.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_WINDOW
 
-
-
 </td>
 <td valign="top">
 
 Prefers using the ESX engine window.
-
-
 
 </td>
 </tr>
@@ -5942,22 +4928,16 @@ Prefers using the ESX engine window.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_WINDOW
 
-
-
 </td>
 <td valign="top">
 
 Avoids using the ESX engine window.
-
-
 
 </td>
 </tr>
@@ -5965,22 +4945,16 @@ Avoids using the ESX engine window.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 ESX\_DISK\_HASH\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Prefers ESX engine disk-based hash join.
-
-
 
 </td>
 </tr>
@@ -5988,22 +4962,16 @@ Prefers ESX engine disk-based hash join.
 <td valign="top">
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
-
-
 
 </td>
 <td valign="top">
 
 NO\_ESX\_DISK\_HASH\_JOIN
 
-
-
 </td>
 <td valign="top">
 
 Avoids ESX engine disk-based hash join.
-
-
 
 </td>
 </tr>
@@ -6012,21 +4980,15 @@ Avoids ESX engine disk-based hash join.
 
 OPTIMIZER\_PHYSICAL\_ENUMERATION
 
-
-
 </td>
 <td valign="top">
 
 ESX\_PARTITION\_HASH\_JOIN\_BUCKETS\(*<bucket\_size\>*\)
 
-
-
 </td>
 <td valign="top">
 
 Sets the size of the bucket for an ESX disk-based hash join. The hint configures the number of buckets to split the data.
-
-
 
 </td>
 </tr>
@@ -6041,5 +5003,5 @@ Sets the size of the bucket for an ESX disk-based hash join. The hint configures
 
 [STATEMENT\_HINTS System View](../../020-System-Views-Reference/021-System-Views/statement-hints-system-view-161a91a.md "Provides information about statement hints, including when they were last enabled and/or disabled and by whom.")
 
-[Performance: Using Hints to Query Data Snapshots](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "Several features in SAP HANA use data snapshots to improve performance. You can use configurable hint classes as a standard way of controlling at run time how the data is selected, either from the snapshot or from the database.") :arrow_upper_right:
+[Performance: Using Hints to Query Data Snapshots](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "Several features in SAP HANA use data snapshots to improve performance. You can use configurable hint classes as a standard way of controlling at run time how the data is selected, either from the snapshot or from the database.") :arrow_upper_right:
 

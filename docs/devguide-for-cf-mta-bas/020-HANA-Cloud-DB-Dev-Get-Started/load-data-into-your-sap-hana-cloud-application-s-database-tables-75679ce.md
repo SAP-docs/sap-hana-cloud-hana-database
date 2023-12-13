@@ -42,13 +42,13 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 
     1.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     2.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -58,11 +58,11 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new database role.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new database role.
 
     5.  Select the database artifact type, for example, table.
 
-        In the *Artifact Type* box, type ***hdbt***, and choose *Table Data \(hdbtabledata\)* from the list that appears.
+        In the *Artifact Type* box, type `hdbt`, and choose *Table Data \(hdbtabledata\)* from the list that appears.
 
     6.  Name the file *BookingDemo*.
 
@@ -77,7 +77,7 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 3.  Open the new database table artifact for editing.
 
     > ### Tip:  
-    > \) isSAP Business Application Studio provides a wide variety of dedicated editors that correspond to the database artifact types supported by the SAP HANA Deployment Infrastructure \(HDI\). The artifact type, for example, `hdbtable` or `hdbtabledata`, is used by SAP Business Application Studio to determine which editor to open by default to enable editing. Some editors also provide a default template for the artifact type, which you can either adapt, delete, or replace as required.
+    > SAP Business Application Studio provides a wide variety of dedicated editors that correspond to the database artifact types supported by the SAP HANA Deployment Infrastructure \(HDI\). The artifact type, for example, `hdbtable` or `hdbtabledata`, is used by SAP Business Application Studio to determine which editor to open by default to enable editing. Some editors also provide a default template for the artifact type, which you can either adapt, delete, or replace as required.
 
     Add the following code to the new table data artifact `BookingDemo.hdbtabledata`.
 
@@ -143,7 +143,7 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 
 4.  Add a file named `passengers.csv` to the `src/loads` folder.
 
-    In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *src/loads* folder in the database module, choose the database version *HANA Cloud* and the artifact type *csv*, and name the new file ***passengers***.
+    In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *src/loads* folder in the database module, choose the database version *SAP HANA Cloud* and the artifact type *csv*, and name the new file `passengers`.
 
     > ### Tip:  
     > The appropriate file suffix \(`.csv`\) is appended to the file name by the file-creation Wizard. The file extension is mandatory; it is used to determine which HDI plug-in to call when creating the corresponding run-time object during application build or deployment. CSV artifacts have the file extension `.csv`, for example, `MyTableData.csv`
@@ -164,12 +164,12 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 
 6.  Add a file named `flightreservations.csv` to the `src/loads` folder.
 
-    In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *src/loads* folder in the database module, choose the database version *HANA Cloud* and the artifact type *csv*, and name the new file ***flightreservations***.
+    In the command palette, choose *SAP HANA: Create SAP HANA Database artifact*, select the project's *src/loads* folder in the database module, choose the database version *SAP HANA Cloud* and the artifact type *csv*, and name the new file `flightreservations`.
 
     > ### Tip:  
     > The appropriate file suffix \(`.csv`\) is appended to the file name by the file-creation Wizard. The file extension is mandatory; it is used to determine which HDI plug-in to call when creating the corresponding run-time object during application build or deployment. CSV artifacts have the file extension `.csv`, for example, `MyTableData.csv`
 
-     
+
 
 7.  Add the following code to the new table data artifact `flightreservations.csv`.
 
@@ -193,7 +193,7 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 
 8.  Deploy the database module.
 
-    In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose <span class="FPA-icons"></span> \(Deploy\).
+    In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to deploy and choose ![](images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
     > ### Note:  
     > A mismatch between the installed SAP HANA version and the SAP HANA version specified in the `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
@@ -204,7 +204,7 @@ This tutorial shows how to use `hdbtabledata` artifacts to populate database tab
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 

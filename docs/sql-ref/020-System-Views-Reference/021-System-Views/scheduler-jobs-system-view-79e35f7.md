@@ -17,21 +17,15 @@ Shows existing jobs.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the user who owns the job. The job is executed as this user.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of the user who owns the job. The job is executed as this user
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the job.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the schema name of the job.
 
 SCHEDULER\_JOB\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the job.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the name of the job.
 
 PROCEDURE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the called procedure.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the schema name of the called procedure.
 
 PROCEDURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the called procedure.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the name of the called procedure.
 
 CRON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schedule of the job.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the schedule of the job.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 If specified, displays the earliest time after which the scheduled job can start to run; otherwise null.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ If specified, displays the earliest time after which the scheduled job can start
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 If specified, displays the latest time before which the scheduled job can start to run; otherwise null.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ If specified, displays the latest time before which the scheduled job can start 
 
 IS\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the scheduled job can run: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays whether the scheduled job can run: TRUE/FALSE.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the job is valid: TRUE/FALSE. The job may become invalid if the procedure becomes invalid or if the owner of the job no longer has the EXECUTE privilege for the procedure. Invalid job are not scheduled.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays whether the job is valid: TRUE/FALSE. The job may become invalid if the
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays any comment on the job.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays any comment on the job.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time at which the job was created.
-
-
 
 </td>
 </tr>
@@ -318,6 +240,8 @@ Displays the time at which the job was created.
 <a name="loio79e35f72f5374ad69dc0811e41339685__section_el4_mkv_b3b"/>
 
 ## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 Users see jobs that they created or on which they have been granted the ALTER or DROP object privilege. Users with the CATALOG READ system privilege see all jobs.
 

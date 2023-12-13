@@ -1,8 +1,197 @@
 <!-- loiofd3e0d24c7794cb5968d53cacf4ddb6d -->
 
-# SAP HANA Cloud, SAP HANA Database SQL Reference Guide \(New and Changed Features\)
+# New and Changed Features in 2023 for SAP HANA Cloud, SAP HANA Database SQL Reference Guide \(New and Changed Features\)
 
 SAP HANA Cloud introduces new and changed features for the SAP HANA Cloud, SAP HANA Database SQL Reference Guide.
+
+
+
+<a name="loiofd3e0d24c7794cb5968d53cacf4ddb6d__section_vrp_tm4_xyb"/>
+
+## QRC 04/2023
+
+
+<dl>
+<dt><b>
+
+M\_REMOTE\_CONNECTIONS System View \(Changed\)
+
+</b></dt>
+<dd>
+
+Several new columns have been added to this system view. [M\_REMOTE\_CONNECTIONS System View](020-System-Views-Reference/022-Monitoring-Views/m-remote-connections-system-view-20b91d7.md)
+
+
+
+</dd><dt><b>
+
+M\_REMOTE\_STATEMENTS System View \(Changed\)
+
+</b></dt>
+<dd>
+
+Several new columns have been added to this public monitoring view. [M\_REMOTE\_STATEMENTS System View](020-System-Views-Reference/022-Monitoring-Views/m-remote-statements-system-view-20b9a22.md)
+
+
+
+</dd><dt><b>
+
+INSERT Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+The INSERT statement now supports the NOWAIT parameter. [INSERT Statement \(Data Manipulation\)](010-SQL-Reference/012-SQL-Statements/insert-statement-data-manipulation-20f7f70.md)
+
+
+
+</dd>
+</dl>
+
+
+
+<a name="loiofd3e0d24c7794cb5968d53cacf4ddb6d__section_nsc_3gs_dyb"/>
+
+## QRC 03/2023
+
+
+<dl>
+<dt><b>
+
+CREATE AUDIT POLICY Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+This statement has been extended to allow auditing of credential management. [CREATE AUDIT POLICY Statement \(Access Control\)](010-SQL-Reference/012-SQL-Statements/create-audit-policy-statement-access-control-20d3d56.md)
+
+
+
+</dd><dt><b>
+
+ALTER VIRTUAL TABLE Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+This statement now supports adding an existing replica table to virtual table. [ALTER VIRTUAL TABLE Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/alter-virtual-table-statement-data-definition-5182698.md)
+
+
+
+</dd><dt><b>
+
+VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION Function and VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION\_DETAILS Function \(New\)
+
+</b></dt>
+<dd>
+
+These new functions return information on connection restrictions. [VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION\_DETAILS Function \(Security\)](010-SQL-Reference/011-SQL-Functions/validate-usergroup-connect-restriction-details-function-security-508e173.md), [VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION Function \(Security\)](010-SQL-Reference/011-SQL-Functions/validate-usergroup-connect-restriction-function-security-c7a96e0.md)
+
+
+
+</dd><dt><b>
+
+M\_REMOTE\_STATEMENTS System Views \(Changed\)
+
+</b></dt>
+<dd>
+
+The REMOTE\_DURATION column has been added to this view. [M\_REMOTE\_STATEMENTS System View](020-System-Views-Reference/022-Monitoring-Views/m-remote-statements-system-view-20b9a22.md)
+
+
+
+</dd><dt><b>
+
+M\_REMOTE\_CONNECTIONS System Views \(Changed\)
+
+</b></dt>
+<dd>
+
+The REMOTE\_SERVER\_VERSION column has been added to this view. [M\_REMOTE\_CONNECTIONS System View](020-System-Views-Reference/022-Monitoring-Views/m-remote-connections-system-view-20b91d7.md)
+
+
+
+</dd><dt><b>
+
+CREATE USERGROUP Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+The *<connect restriction\>* clause now supports restrictions by application in addition to restrictions by IP addresses. The USERGROUP\_CONNECTION\_RESTRICTIONS system view has been updated to reflect this new restriction type. [CREATE USERGROUP Statement \(Access Control\)](010-SQL-Reference/012-SQL-Statements/create-usergroup-statement-access-control-9869125.md)
+
+
+
+</dd><dt><b>
+
+ALTER SYSTEM REMOVE CACHE Statement \(New\)
+
+</b></dt>
+<dd>
+
+You can now remove cache entries by the hash value of the cached entry. [ALTER SYSTEM REMOVE CACHE Statement \(System Management\)](010-SQL-Reference/012-SQL-Statements/alter-system-remove-cache-statement-system-management-e4a2ad5.md)
+
+
+
+</dd><dt><b>
+
+M\_MULTIDIMENSIONAL\_STATEMENTS System View \(New\)
+
+</b></dt>
+<dd>
+
+This view displays the relationship between subqueries and the main query for Asynchronous Batch requests. [M\_MULTIDIMENSIONAL\_STATEMENTS System View](020-System-Views-Reference/022-Monitoring-Views/m-multidimensional-statements-system-view-4de7e92.md)
+
+
+
+</dd><dt><b>
+
+EXPORT INTO Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+-   You can now export multiple files into the PARQUET or CSV file formats.
+-   You can now export query results into CSV, PARQUET, or JSON file formats.
+-   [EXPORT INTO Statement \(Data Import Export\)](010-SQL-Reference/012-SQL-Statements/export-into-statement-data-import-export-6a6f59b.md)
+
+
+
+</dd><dt><b>
+
+IMPORT FROM Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+You can now choose a HIVE or DELTA directory type when importing data. [IMPORT FROM Statement \(Data Import Export\)](010-SQL-Reference/012-SQL-Statements/import-from-statement-data-import-export-20f712e.md)
+
+
+
+</dd><dt><b>
+
+LIVECACHE Monitoring Views \(New\)
+
+</b></dt>
+<dd>
+
+Several views have been added for use with SAP liveCache applications. [M\_LIVECACHE\_CONTAINER\_STATISTICS System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-container-statistics-system-view-20b2491.md), [M\_LIVECACHE\_CONTAINER\_STATISTICS\_RESET System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-container-statistics-reset-system-view-20b26d9.md), [M\_LIVECACHE\_LOCK\_STATISTICS System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-lock-statistics-system-view-20b287a.md), [M\_LIVECACHE\_LOCK\_STATISTICS\_RESET System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-lock-statistics-reset-system-view-20b2be6.md), [M\_LIVECACHE\_LOCKS System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-locks-system-view-20b2e3d.md), [M\_LIVECACHE\_OMS\_VERSIONS System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-oms-versions-system-view-20b3079.md), [M\_LIVECACHE\_PROCEDURE\_STATISTICS System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-procedure-statistics-system-view-20b32d0.md), [M\_LIVECACHE\_PROCEDURE\_STATISTICS\_RESET System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-procedure-statistics-reset-system-view-20b351e.md), [M\_LIVECACHE\_SCHEMA\_STATISTICS System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-schema-statistics-system-view-20b3778.md), [M\_LIVECACHE\_SCHEMA\_STATISTICS\_RESET System View](020-System-Views-Reference/022-Monitoring-Views/m-livecache-schema-statistics-reset-system-view-20b39b9.md)
+
+
+
+</dd><dt><b>
+
+M\_CS\_LOB\_SPACE\_RECLAIM\_DETAILS System View \(New\)
+
+</b></dt>
+<dd>
+
+This view provides detailed statistics per LOB owner for LOB garbage collection run. [M\_CS\_LOB\_SPACE\_RECLAIM\_DETAILS System View](020-System-Views-Reference/022-Monitoring-Views/m-cs-lob-space-reclaim-details-system-view-1d76e43.md)
+
+
+
+</dd>
+</dl>
 
 
 
@@ -25,12 +214,12 @@ The LAST\_SYNC\_TIME column displays the time of the last replication synchroniz
 
 </dd><dt><b>
 
-M\_SQL\_PLAN\_ADVISOR System View \(New\)
+STATEMENT\_HINTS and M\_SQL\_PLAN\_CACHE System View \(Changed\)
 
 </b></dt>
 <dd>
 
-This view provides information on the running status of SQL Plan Advisor. [M\_SQL\_PLAN\_ADVISOR System View](020-System-Views-Reference/022-Monitoring-Views/m-sql-plan-advisor-system-view-afa22f3.md)
+Several columns have been added to these views to provide information when specifying a procedure/function definition for a target query. [STATEMENT\_HINTS System View](020-System-Views-Reference/021-System-Views/statement-hints-system-view-161a91a.md), [M\_SQL\_PLAN\_CACHE System View](020-System-Views-Reference/022-Monitoring-Views/m-sql-plan-cache-system-view-20c57b8.md)
 
 
 

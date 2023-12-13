@@ -17,21 +17,15 @@ Displays adapters available in the SAP HANA system.
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 ADAPTER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the adapter name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the adapter name.
 
 PROPERTIES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the optional properties of the adapter such as display\_name and description.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the optional properties of the adapter such as display\_name and descri
 
 CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the UI properties that must be displayed when configuring remote data source.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the UI properties that must be displayed when configuring remote data s
 
 IS\_SYSTEM\_ADAPTER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the adapter is a system adapter: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays whether the adapter is a system adapter: TRUE/FALSE.
 
 IS\_ESS\_DEFINITION\_SUPPORTED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the procedure GET\_REMOTE\_SOURCE\_TABLE\_ESS\_DEFINITIONS is enabled for remote sources created using this adapter: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays whether the procedure GET\_REMOTE\_SOURCE\_TABLE\_ESS\_DEFINITIONS is e
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the owner of the adapter.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the owner of the adapter.
 
 HAS\_OBJECT\_PRIVILEGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the adapter is authorized by object privileges: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -202,7 +154,9 @@ Displays whether the adapter is authorized by object privileges: TRUE/FALSE.
 
 <a name="loio6d91840b7a6849a385b9e08400b81d97__section_y3k_lgj_k5b"/>
 
-## Additional information
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 Owners, users granted the CREATE ADAPTER system privilege, or users having any privilege on such an adapter can see the new adapter. Users granted the ADAPTER ADMIN system privilege cannot see the new adapters.
 
@@ -213,5 +167,5 @@ Owners, users granted the CREATE ADAPTER system privilege, or users having any p
 
 [ADAPTER\_LOCATIONS System View](adapter-locations-system-view-99d5ff2.md "Displays the location of adapters.")
 
-[Create an SAP HANA Cloud, SAP HANA Database Remote Source](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/275839492fef49318d92d0e31656ea0a.html "Create a remote source to an SAP HANA database in another SAP HANA Cloud instance. You can also use this procedure for loopback scenarios or when creating a remote source from an SAP HANA on-premise system (SAP HANA 2.0 SPS 04 revision 45 or higher) to an SAP HANA database in SAP HANA Cloud.") :arrow_upper_right:
+[Create an SAP HANA Cloud, SAP HANA Database Remote Source](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/275839492fef49318d92d0e31656ea0a.html "Create a remote source to an SAP HANA database in another SAP HANA Cloud instance. You can also use this procedure for loopback scenarios or when creating a remote source from an SAP HANA on-premise system (SAP HANA 2.0 SPS 04 revision 45 or higher) to an SAP HANA database in SAP HANA Cloud.") :arrow_upper_right:
 

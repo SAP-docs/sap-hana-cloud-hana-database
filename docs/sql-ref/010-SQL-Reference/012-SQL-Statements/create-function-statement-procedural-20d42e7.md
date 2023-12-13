@@ -585,7 +585,7 @@ You must have the CREATE ANY privilege on the schema in which the function is cr
 
 ## Examples
 
-Create a table function called ***Scale***.
+Create a table function called `Scale`.
 
 ```
 CREATE FUNCTION Scale (val INT)
@@ -595,14 +595,14 @@ CREATE FUNCTION Scale (val INT)
  END;
 ```
 
-Use the ***func\_add\_mul*** function like a table. For example:
+Use the `func_add_mul` function like a table. For example:
 
 ```
 SELECT * FROM Scale(10);
 SELECT * FROM Scale(10) AS a, Scale(10) AS b WHERE a.a =  b.a;
 ```
 
-Create a scalar function called ***func\_add\_mul***.
+Create a scalar function called `func_add_mul`.
 
 ```
 CREATE FUNCTION func_add_mul(x Double, y Double) 
@@ -614,7 +614,7 @@ CREATE FUNCTION func_add_mul(x Double, y Double)
  END;
 ```
 
-Use the ***func\_add\_mul*** function like a built-in function. For example:
+Use the `func_add_mul` function like a built-in function. For example:
 
 ```
 CREATE ROW TABLE TAB (a Double, b Double);
@@ -633,28 +633,20 @@ The SELECT statement returns the following results:
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 <th valign="top">
 
 ADD
 
-
-
 </th>
 <th valign="top">
 
 MUL
-
-
 
 </th>
 </tr>
@@ -663,28 +655,20 @@ MUL
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -693,34 +677,26 @@ MUL
 
 3
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 12
 
-
-
 </td>
 </tr>
 </table>
 
-Create a function called ***func\_mul*** that is assigned to a scalar variable in the ***func\_mul\_wrapper*** function.
+Create a function called `func_mul` that is assigned to a scalar variable in the `func_mul_wrapper` function.
 
 ```
 CREATE FUNCTION func_mul(input1 INT)
@@ -740,7 +716,7 @@ CREATE FUNCTION func_mul(input1 INT)
 
 The SELECT statement returns 4.
 
-Create a function called ***FuncHeader*** as HEADER ONLY. Later, you use ALTER FUNCTION to replace the header with the full function definitions.
+Create a function called `FuncHeader` as HEADER ONLY. Later, you use ALTER FUNCTION to replace the header with the full function definitions.
 
 ```
 CREATE FUNCTION FuncHeader (input1 integer) RETURNS  output1  integer AS HEADER ONLY;
@@ -752,7 +728,7 @@ BEGIN
 END;
 ```
 
-Create a table function called ***FUNC*** with a static result cache,
+Create a table function called `FUNC` with a static result cache,
 
 ```
 CREATE FUNCTION FUNC RETURNS TABLE (COL1 INT, COL2 INT) AS
@@ -767,11 +743,11 @@ WITH CACHE RETENTION 10;
 
 [CREATE PROCEDURE Statement \(Procedural\)](create-procedure-statement-procedural-20d4674.md "Creates a procedure that uses the specified programming language.")
 
-[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
+[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
 
-[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
+[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 
 [M\_SQLSCRIPT\_VARIABLE\_CACHE System view](../../020-System-Views-Reference/022-Monitoring-Views/m-sqlscript-variable-cache-system-view-9fb8ca5.md "Provides runtime information about procedures and functions that have variable caches defined.")
 
@@ -781,5 +757,5 @@ WITH CACHE RETENTION 10;
 
 [Predicates](../predicates-20a2ab2.md "")
 
-[OBJECT\_DEPENDENCIES System View](../../020-System-Views-Reference/021-System-Views/object-dependencies-system-view-20cbd12.md "Provides information about dependencies between objects, such as which views refer to a specific table.")
+[OBJECT\_DEPENDENCIES System View](../../020-System-Views-Reference/021-System-Views/object-dependencies-system-view-20cbd12.md "Provides information about the dependencies between objects, such as which views refer to a specific table.")
 

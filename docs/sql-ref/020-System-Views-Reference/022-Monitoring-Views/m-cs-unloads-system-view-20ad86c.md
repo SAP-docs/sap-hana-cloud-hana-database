@@ -17,21 +17,15 @@ Provides a history of column unloads.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 UNLOAD\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp of unload event.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the timestamp of unload event.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the table name.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name. Empty if the whole table is unloaded.
-
-
 
 </td>
 </tr>
@@ -178,14 +136,10 @@ Displays the column name. Empty if the whole table is unloaded.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -206,21 +160,15 @@ Displays the partition ID. Returns the following:
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the object ID of the table.
 
 REASON
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the possible reasons for the unload. Values are LOW MEMORY, SHRINK, EXPLICIT, MERGE, or UNUSED RESOURCE. Unloads caused by a manual shrink are reported as SHRINK, whereas unloads caused by memory management's automatic shrink on out of memory \(OOM\) are reported as LOW MEMORY.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the possible reasons for the unload. Values are LOW MEMORY, SHRINK, EXP
 
 PERSISTENT\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(6\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether persistent memory is removed as part of the unload. Values are RETAIN or DELETE. Empty if the user did not specify a value for the unload.
-
-
 
 </td>
 </tr>
@@ -277,5 +213,5 @@ Displays whether persistent memory is removed as part of the unload. Values are 
 
 [UNLOAD Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/unload-statement-data-manipulation-20fe92a.md "Unloads the column store table from memory.")
 
-[Load/Unload a Column Table into/from Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/c133165bbb57101493c5fb19b5b8607f.html "Under normal circumstances, the SAP HANA database manages the loading and unloading of tables into and from memory automatically, the aim being to keep all relevant data in memory. However, you can manually load and unload individual tables, as well as load table columns if necessary.") :arrow_upper_right:
+[Load/Unload a Column Table into/from Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c133165bbb57101493c5fb19b5b8607f.html "Under normal circumstances, the SAP HANA database manages the loading and unloading of tables into and from memory automatically, the aim being to keep all relevant data in memory. However, you can manually load and unload individual tables, as well as load table columns if necessary.") :arrow_upper_right:
 

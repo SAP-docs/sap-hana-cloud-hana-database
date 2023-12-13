@@ -17,21 +17,15 @@ Provides information about the volumes used by SAP HANA servers.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SERVICE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the service name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,49 @@ Displays the service name.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
 
 Displays the volume ID.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+VOLUME\_REPLICA\_ID
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the volume replica ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+VOLUME\_REPLICATION\_ROLE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+</td>
+<td valign="top">
+
+Can be none, source, or replica.
 
 </td>
 </tr>
@@ -132,21 +136,32 @@ Displays the volume ID.
 
 SUBPATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the subpath appended to M\_DISKS.PATH.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+LIVECACHE\_STORE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(10\)
+
+</td>
+<td valign="top">
+
+Indicates whether livecache is enabled.
 
 </td>
 </tr>
@@ -155,21 +170,15 @@ Displays the subpath appended to M\_DISKS.PATH.
 
 REMOVE\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remove progress.
-
-
 
 </td>
 </tr>

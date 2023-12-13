@@ -17,21 +17,15 @@ Provides the list of collations that can be specified in an ORDER BY clause.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 COLLATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the supported collation names.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the supported collation names.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the language and region description for the collation.
-
-
 
 </td>
 </tr>
@@ -85,11 +67,19 @@ Displays the language and region description for the collation.
 
 
 
-<a name="loio57ff6fdde30b40e99193eae9d14831e7__section_yvy_v5z_y2b"/>
+<a name="loio57ff6fdde30b40e99193eae9d14831e7__section_vvp_h3d_nzb"/>
 
-## Additional information
+## Additional Information
 
 The presence of CI or AI at the end of a collation name indicates that the collation is case-insensitive or accent-insensitive, respectively \(for example, FRENCH\_AI\).
+
+
+
+<a name="loio57ff6fdde30b40e99193eae9d14831e7__section_yvy_v5z_y2b"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

@@ -17,21 +17,15 @@ Provides information about all transactions created by users or the database.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the connection ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the connection ID.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction object ID \(this number is reused after a transaction is closed\).
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the transaction object ID \(this number is reused after a transaction i
 
 ORIGIN\_VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume ID where the transaction has started.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the volume ID where the transaction has started.
 
 ORIGIN\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the primary transaction object ID for the external transaction.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the primary transaction object ID for the external transaction.
 
 UPDATE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the write transaction ID \(this number is ever increasing\).
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the write transaction ID \(this number is ever increasing\).
 
 TRANSACTION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction status; INACTIVE, ACTIVE, PRECOMMITTED, ABORTING, PARTIAL\_ABORTING, or ACTIVE\_PREPARE\_COMMIT.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the transaction status; INACTIVE, ACTIVE, PRECOMMITTED, ABORTING, PARTI
 
 TRANSACTION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction type; USER, VERSION GARBAGE COLLECTION, DDL VERSION GARBAGE COLLECTION, INTERNAL, or EXTERNAL.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the transaction type; USER, VERSION GARBAGE COLLECTION, DDL VERSION GAR
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction start time.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the transaction start time.
 
 FINALIZE\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the transaction end time.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the transaction end time.
 
 START\_MVCC\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal MVCC timestamp of the transaction start time.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the internal MVCC timestamp of the transaction start time.
 
 END\_MVCC\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal MVCC timestamp of the transaction end time.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the internal MVCC timestamp of the transaction end time.
 
 EXECUTED\_STATEMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of executed statements in the transaction.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the number of executed statements in the transaction.
 
 ACQUIRED\_LOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of acquired locks in the transaction.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the number of acquired locks in the transaction.
 
 LOCK\_WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of lock waits in the transaction.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of lock waits in the transaction.
 
 LOCK\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the accumulated lock wait time in the transaction in seconds.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the accumulated lock wait time in the transaction in seconds.
 
 LOCK\_WAIT\_TIMEOUT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of milliseconds a statement waits for a lock to be released .
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the number of milliseconds a statement waits for a lock to be released 
 
 CURRENT\_STATEMENT\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the current statement ID.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the current statement ID.
 
 UNDO\_LOG\_AMOUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the undo log amount generated by the transaction in bytes.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the size of the undo log amount generated by the transaction in bytes.
 
 MIN\_MVCC\_SNAPSHOT\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical timestamp of the first executed statement in the transaction.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the logical timestamp of the first executed statement in the transactio
 
 LAST\_COMMIT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last commit ID of the transaction.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the last commit ID of the transaction.
 
 ACTIVE\_STATEMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of opened cursors in the transaction.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the number of opened cursors in the transaction.
 
 ISOLATION\_LEVEL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the isolation level of each transaction: READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, or SERIALIZABLE.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the isolation level of each transaction: READ UNCOMMITTED, READ COMMITT
 
 LOG\_FLUSH\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether log flushing is enabled for the transaction \(TRUE/FALSE\).
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays whether log flushing is enabled for the transaction \(TRUE/FALSE\).
 
 LOGGING\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether logging is enabled for the transaction \(TRUE/FALSE\).
-
-
 
 </td>
 </tr>
@@ -646,13 +484,13 @@ Displays whether logging is enabled for the transaction \(TRUE/FALSE\).
 
 [M\_TRANS\_TOKENS System View](m-trans-tokens-system-view-f760316.md "Provides information about all active transaction tokens.")
 
-[Workload in the Context of SAP HANA](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/752addaa767e4f0397f417c6468f3fdb.html "Workload in the context of SAP HANA can be described as a set of requests with common characteristics.") :arrow_upper_right:
+[Workload in the Context of SAP HANA](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/752addaa767e4f0397f417c6468f3fdb.html "Workload in the context of SAP HANA can be described as a set of requests with common characteristics.") :arrow_upper_right:
 
-[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
+[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
 
-[COMMIT and ROLLBACK](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/e4e1b570e4f04b93ae1538246894b496.html "The COMMIT and ROLLBACK commands are supported natively in SQLScript.") :arrow_upper_right:
+[COMMIT and ROLLBACK](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/e4e1b570e4f04b93ae1538246894b496.html "The COMMIT and ROLLBACK commands are supported natively in SQLScript.") :arrow_upper_right:
 
-[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
+[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
 
-[DECLARE EXIT HANDLER](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/ebc8b804be2e44789d767895f32503cf.html "") :arrow_upper_right:
+[DECLARE EXIT HANDLER](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/ebc8b804be2e44789d767895f32503cf.html "") :arrow_upper_right:
 

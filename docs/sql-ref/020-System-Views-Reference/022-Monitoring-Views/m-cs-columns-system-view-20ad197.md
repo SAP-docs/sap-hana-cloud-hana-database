@@ -17,21 +17,15 @@ Provides runtime information about columns in column tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the table name.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name.
-
-
 
 </td>
 </tr>
@@ -155,14 +119,10 @@ Displays the column name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -183,21 +143,15 @@ Returns the table partition ID:
 
 MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the sum, in bytes, of the memory used.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the sum, in bytes, of the memory used.
 
 MEMORY\_SIZE\_IN\_MAIN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current memory consumption, in bytes, in main. Returns 0 if the memory is not loaded in main.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the current memory consumption, in bytes, in main. Returns 0 if the mem
 
 MEMORY\_SIZE\_IN\_DELTA
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current memory consumption, in bytes, in delta. Returns 0 if the memory is not loaded in delta.
-
-
 
 </td>
 </tr>
@@ -252,21 +194,15 @@ Displays the current memory consumption, in bytes, in delta. Returns 0 if the me
 
 MEMORY\_SIZE\_IN\_PAGE\_LOADABLE\_MAIN
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total paged memory size of the column in bytes.
-
-
 
 </td>
 </tr>
@@ -275,21 +211,15 @@ Displays the total paged memory size of the column in bytes.
 
 PERSISTENT\_MEMORY\_SIZE\_IN\_TOTAL
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 For columns stored in persistent memory, displays the total memory size in bytes.
-
-
 
 </td>
 </tr>
@@ -298,21 +228,15 @@ For columns stored in persistent memory, displays the total memory size in bytes
 
 COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the record count. This value is -1 if the count is not loaded.
-
-
 
 </td>
 </tr>
@@ -321,14 +245,10 @@ Displays the record count. This value is -1 if the count is not loaded.
 
 DISTINCT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
-
-
 
 </td>
 <td valign="top">
@@ -337,8 +257,6 @@ Displays a distinct count of values, generally. This value is 0 if the count is 
 
 The values in this column are not equal to actual values that might be returned by a SELECT DISTINCT query. Do not use these values in a production system if precision is required.
 
-
-
 </td>
 </tr>
 <tr>
@@ -346,14 +264,10 @@ The values in this column are not equal to actual values that might be returned 
 
 COMPRESSION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -376,14 +290,10 @@ Displays the type of column compression:
 
 INDEX\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -448,21 +358,15 @@ Displays that no index is defined on the column.
 
 INDEX\_LOADED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the load status of the inverted index: NOT APPLICABLE, UNLOADED, or LOADED.
-
-
 
 </td>
 </tr>
@@ -471,21 +375,15 @@ Displays the load status of the inverted index: NOT APPLICABLE, UNLOADED, or LOA
 
 IMPLEMENTATION\_FLAGS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal implementation specification summary of the column.
-
-
 
 </td>
 </tr>
@@ -494,21 +392,15 @@ Displays the internal implementation specification summary of the column.
 
 LAST\_ACCESS\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time that the column was read or there was an INSERT to, UPDATE of, or DELETE from the column. This value is undefined for unloaded columns.
-
-
 
 </td>
 </tr>
@@ -517,21 +409,15 @@ Displays the last time that the column was read or there was an INSERT to, UPDAT
 
 LOADED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether the column is loaded into the memory: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -540,21 +426,15 @@ Indicates whether the column is loaded into the memory: TRUE/FALSE.
 
 LOADED\_FROM\_PERSISTENT\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column was loaded from persistent memory: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -563,21 +443,15 @@ Displays whether the column was loaded from persistent memory: TRUE/FALSE.
 
 STORED\_IN\_PERSISTENT\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether there is an associated persistent memory block: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -586,21 +460,15 @@ Displays whether there is an associated persistent memory block: TRUE/FALSE.
 
 LOAD\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the load unit for the column: PAGE, COLUMN, and UNKNOWN.
-
-
 
 </td>
 </tr>
@@ -609,21 +477,15 @@ Displays the load unit for the column: PAGE, COLUMN, and UNKNOWN.
 
 LAST\_LOAD\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time that the column was loaded. This is undefined for unloaded columns.
-
-
 
 </td>
 </tr>
@@ -632,21 +494,15 @@ Displays the last time that the column was loaded. This is undefined for unloade
 
 PERSISTENT\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistent memory preference inferred from the user-specified preferences in a bottom-up manner starting from this object: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -655,14 +511,10 @@ Displays the persistent memory preference inferred from the user-specified prefe
 
 NUMA\_NODE\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
-
-
 
 </td>
 <td valign="top">
@@ -683,21 +535,15 @@ Displays the NUMA node index where allocations are performed and columns are loa
 
 PERSISTENT\_MEMORY\_FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the persistent memory file associated with the column. If there is no associated persistent memory file, then NULL is returned.
-
-
 
 </td>
 </tr>
@@ -724,13 +570,13 @@ The information returned in the view is valid only for loaded columns \(LOADED =
 
 [RENAME COLUMN Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/rename-column-statement-data-definition-20fb2b8.md "Changes the name of a column.")
 
-[Memory Management in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/bd6e6be8bb5710149e34e14608e07b76.html "The column store is the part of the SAP HANA database that manages data organized in columns in memory. Tables created as column tables are stored here.") :arrow_upper_right:
+[Memory Management in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bd6e6be8bb5710149e34e14608e07b76.html "The column store is the part of the SAP HANA database that manages data organized in columns in memory. Tables created as column tables are stored here.") :arrow_upper_right:
 
-[Data Compression in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/bd9017c8bb571014ae79efaeb46940f3.html "The column store allows for the efficient compression of data. This makes it less costly for the SAP HANA database to keep data in main memory. It also speeds up searches and calculations.") :arrow_upper_right:
+[Data Compression in the Column Store](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bd9017c8bb571014ae79efaeb46940f3.html "The column store allows for the efficient compression of data. This makes it less costly for the SAP HANA database to keep data in main memory. It also speeds up searches and calculations.") :arrow_upper_right:
 
-[Viewing Load Unit Information for Column Store Tables in SAP HANA NSE](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/61c9c0f4379c41f3b3e1c483f2395a11.html "Several system and monitoring views provide information on load unit preferences (PAGE loadable, COLUMN loadable, or DEFAULT loadable) set for the SAP HANA NSE column-store table.") :arrow_upper_right:
+[Viewing Load Unit Information for Column Store Tables in SAP HANA NSE](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/61c9c0f4379c41f3b3e1c483f2395a11.html "Several system and monitoring views provide information on load unit preferences (PAGE loadable, COLUMN loadable, or DEFAULT loadable) set for the SAP HANA NSE column-store table.") :arrow_upper_right:
 
-[Understanding Load Unit Behavior in SAP HANA NSE Column Store Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/202101e31f1a42c884dd1d2057c6a605.html "The loading behavior is determined by the load unit (one of PAGE, COLUMN, and DEFAULT) specified for the column, partition, and table in SAP HANA native storage extension (NSE) column-store tables.") :arrow_upper_right:
+[Understanding Load Unit Behavior in SAP HANA NSE Column Store Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/202101e31f1a42c884dd1d2057c6a605.html "The loading behavior is determined by the load unit (one of PAGE, COLUMN, and DEFAULT) specified for the column, partition, and table in SAP HANA native storage extension (NSE) column-store tables.") :arrow_upper_right:
 
-[Monitoring View Extensions for Column Store Paged Data Size](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/b06e99431b2740fdb4a47c7ee130f89d.html "A number of monitoring views provide information about the in-memory and on-disk size of the page-loadable data in relation to the in-memory and on-disk size of non-paged (column-loadable) data, helping you understand the effectiveness of page-loadable storage.") :arrow_upper_right:
+[Monitoring View Extensions for Column Store Paged Data Size](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/b06e99431b2740fdb4a47c7ee130f89d.html "A number of monitoring views provide information about the in-memory and on-disk size of the page-loadable data in relation to the in-memory and on-disk size of non-paged (column-loadable) data, helping you understand the effectiveness of page-loadable storage.") :arrow_upper_right:
 

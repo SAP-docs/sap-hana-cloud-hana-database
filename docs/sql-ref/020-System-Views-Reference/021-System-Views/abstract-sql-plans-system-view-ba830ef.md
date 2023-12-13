@@ -15,21 +15,15 @@ Lists information about abstract SQL plans.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 QUERY\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays a number that uniquely identifies the abstract SQL query.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays a number that uniquely identifies the abstract SQL query.
 
 ABSTRACT\_SQL\_PLAN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays a number that uniquely identifies each abstract SQL plan entry.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays a number that uniquely identifies each abstract SQL plan entry.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name of the location where the abstract SQL plan was captured.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the host name of the location where the abstract SQL plan was captured.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port number of the location where the abstract SQL plan was captured.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the port number of the location where the abstract SQL plan was capture
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the volume where the abstract SQL plan was captured.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the ID of the volume where the abstract SQL plan was captured.
 
 STATEMENT\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the target statement string.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the target statement string.
 
 STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the MD5 hash value for the STATEMENT\_STRING column.
-
-
 
 </td>
 </tr>
@@ -199,14 +151,10 @@ Displays the MD5 hash value for the STATEMENT\_STRING column.
 
 PLAN\_KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
@@ -215,8 +163,6 @@ Displays the key for the abstract SQL plan in JSON format.
 
 These values can affect the generated query execution plans.
 
-
-
 </td>
 </tr>
 <tr>
@@ -224,14 +170,10 @@ These values can affect the generated query execution plans.
 
 ABSTRACT\_ SQL\_PLAN
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
-
-
 
 </td>
 <td valign="top">
@@ -275,21 +217,15 @@ Displays the abstract SQL plan in JSON format. For example:
 
 RELATED\_OBJECTS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays related object information for the captured abstract SQL plan.
-
-
 
 </td>
 </tr>
@@ -298,21 +234,15 @@ Displays related object information for the captured abstract SQL plan.
 
 ABSTRACT\_SQL\_PLAN\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the abstract SQL plan version with applied migration information.
-
-
 
 </td>
 </tr>
@@ -321,21 +251,15 @@ Displays the abstract SQL plan version with applied migration information.
 
 IS\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the abstract SQL plan will be used \(TRUE\) or not \(FALSE\).
-
-
 
 </td>
 </tr>
@@ -344,21 +268,15 @@ Displays whether the abstract SQL plan will be used \(TRUE\) or not \(FALSE\).
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the abstract SQL plan is valid \(TRUE\) or invalid \(FALSE\).
-
-
 
 </td>
 </tr>
@@ -367,21 +285,15 @@ Displays whether the abstract SQL plan is valid \(TRUE\) or invalid \(FALSE\).
 
 DETAILS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays additional information on the abstract SQL plan, including invalidation reasons.
-
-
 
 </td>
 </tr>
@@ -390,21 +302,15 @@ Displays additional information on the abstract SQL plan, including invalidation
 
 LAST\_ENABLE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the abstract SQL plan was added or last enabled.
-
-
 
 </td>
 </tr>
@@ -413,21 +319,15 @@ Displays the timestamp when the abstract SQL plan was added or last enabled.
 
 LAST\_ENABLE\_USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the user who added or last enabled the abstract SQL plan.
-
-
 
 </td>
 </tr>
@@ -436,21 +336,15 @@ Displays the ID of the user who added or last enabled the abstract SQL plan.
 
 LAST\_DISABLE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the abstract SQL plan was last disabled.
-
-
 
 </td>
 </tr>
@@ -459,21 +353,15 @@ Displays the timestamp when the abstract SQL plan was last disabled.
 
 LAST\_DISABLE\_USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the user who last disabled the abstract SQL plan.
-
-
 
 </td>
 </tr>
@@ -482,21 +370,15 @@ Displays the ID of the user who last disabled the abstract SQL plan.
 
 CAPTURE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the abstract SQL plan was captured.
-
-
 
 </td>
 </tr>
@@ -505,25 +387,27 @@ Displays the timestamp when the abstract SQL plan was captured.
 
 CAPTURE\_USER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the ID of the user who captured the abstract SQL plan.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioba830ef61250416d8a05e747fecab10b__section_ntz_24s_zyb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

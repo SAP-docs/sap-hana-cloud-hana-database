@@ -15,21 +15,15 @@ Provides information about the valid time travel range for each service on a sec
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the persistence volume ID.
 
 START\_SNAPSHOT\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the snapshot ID of the oldest commit timestamp on which timetravel can start.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the snapshot ID of the oldest commit timestamp on which timetravel can 
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the oldest commit timestamp on which timetravel can start.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the oldest commit timestamp on which timetravel can start.
 
 START\_REDO\_LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the oldest log position on which timetravel can start.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the oldest log position on which timetravel can start.
 
 END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the newest commit timestamp which can be reached via timetravel.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the newest commit timestamp which can be reached via timetravel.
 
 END\_REDO\_LOG\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the newest log position that can be reached via timetravel.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the newest log position that can be reached via timetravel.
 
 COORDINATOR\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the coordinator type: COORDINATOR if it is a transaction coordinator volume type or NONE if it is not a coordinator volume type.
-
-
 
 </td>
 </tr>
@@ -249,5 +189,5 @@ Displays the coordinator type: COORDINATOR if it is a transaction coordinator vo
 
 [M\_SYSTEM\_REPLICATION System View](m-system-replication-system-view-4b263e6.md "Monitors system replication information.")
 
-[Application-Time Period Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/2e37d6a82f7b48ccbfcc5a1a6ce490f5.html "Application-Time Period Tables allow you to manage and manipulate historical business data based on application-specific time periods which are independent of system time-stamps.") :arrow_upper_right:
+[Application-Time Period Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/2e37d6a82f7b48ccbfcc5a1a6ce490f5.html "Application-Time Period Tables allow you to manage and manipulate historical business data based on application-specific time periods which are independent of system time-stamps.") :arrow_upper_right:
 

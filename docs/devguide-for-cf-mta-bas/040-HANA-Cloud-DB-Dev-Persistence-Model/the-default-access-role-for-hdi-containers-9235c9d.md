@@ -18,7 +18,7 @@ When an HDI container service instance is created by the SAP HANA Service Broker
 > ### Note:  
 > The roles exist as long as the HDI container exists; they are not lost when the application binding user changes. New binding users are automatically assigned these roles by the broker.
 
- 
+
 
 Every time the service instance is bound to an application, the service broker creates two new users that are specific to this binding. The first user is the application user who is named user in the instance's credentials. This user is used by the application to access the HDI container's run-time schema “FOO”. This user is assigned the service instance's global access role “`FOO::access_role`” and the role “`FOO::external_privileges_role`”. The second user is the HDI API user - named “`hdi_user`” in the credentials. This user is equipped with privileges for the container's APIs in the “FOO\#DI” schema.
 
@@ -27,7 +27,7 @@ The following diagram illustrates the binding-specific application users and the
 > ### Note:  
 > For the sake of simplicity, the HDI API users and the bindings for the HDI Deployer are not shown in this diagram.
 
- ![](images/HDI_Default_Access_Role_1_5642d77.png) 
+![](images/HDI_Default_Access_Role_1_5642d77.png)
 
 To assign roles from the HDI content to the application-binding-specific users \(the users specified in <code>“user”:</code>\), the HDI Deployer implements an automatic assignment of the “`default_access_role`” role if it is present in the deployed content.
 
@@ -38,7 +38,7 @@ If a role definition file exists at the path `src/defaults/default_access_role.h
 
 The following diagram illustrates the binding-specific application users, the role of the global access role, and the container-specific default access role:
 
- ![](images/HDI_Default_Access_Role_2_1c6dcd8.png) 
+![](images/HDI_Default_Access_Role_2_1c6dcd8.png)
 
 > ### Note:  
 > The “`default_access_role`” is assumed to be an “umbrella” role which aggregates other roles.

@@ -4,7 +4,7 @@
 
 The data persistence model comprises the underlying database objects you want to use to store and provide data for your application, for example: tables, views, data types.
 
-As part of the process of defining the data model for your application, you create database design-time artifacts such as tables and views, or constraints and indexes. In SAP HANA Cloud you can choose to use either of the following the following languages to define the artifacts in your data model:
+As part of the process of defining the data model for your application, you create database design-time artifacts such as tables and views, or constraints and indexes. In SAP HANA Cloud you can choose to use either of the following languages to define the artifacts in your data model:
 
 -   SQL Data Definition Language \(DDL\)
 

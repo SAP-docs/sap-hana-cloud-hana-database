@@ -48,7 +48,7 @@ Converts a VARBINARY string *<varbinary\_string\>* to a character string with CE
 
 ## Example
 
-This example converts the VARBINARY string ***416E74*** to a CESU-8 encoded character string, and returns the value ***Ant***:
+This example converts the VARBINARY string `416E74` to a CESU-8 encoded character string, and returns the value ***Ant***:
 
 ```
 SELECT BINTOSTR ('416E74') "bintostr" FROM DUMMY;

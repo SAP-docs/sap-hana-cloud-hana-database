@@ -17,21 +17,15 @@ Provides information about triggers that are defined for tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the trigger.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the trigger.
 
 TRIGGER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the trigger name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the trigger name.
 
 TRIGGER\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the trigger.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object ID of the trigger.
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the trigger owner.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the name of the trigger owner.
 
 OWNER\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the trigger owner.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the object ID of the trigger owner.
 
 SUBJECT\_TABLE\_SCHEMA
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the table, the trigger is defined for.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the schema name of the table, the trigger is defined for.
 
 SUBJECT\_TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of the table, the trigger is defined for.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the table name of the table, the trigger is defined for.
 
 TRIGGER\_ACTION\_TIME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the time the trigger is executed: BEFORE, AFTER, or INSTEAD OF the specified event.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the time the trigger is executed: BEFORE, AFTER, or INSTEAD OF the spec
 
 TRIGGER\_EVENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(20\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the event the trigger is defined for: combination of DELETE, INSERT, or UPDATE.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the event the trigger is defined for: combination of DELETE, INSERT, or
 
 TRIGGERED\_ACTION\_LEVEL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the level of the event where the triggered action happens: ROW/STATEMENT.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the level of the event where the triggered action happens: ROW/STATEMEN
 
 DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the query string of the trigger.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the query string of the trigger.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the trigger is valid or not: TRUE/FALSE. This becomes FALSE when its base objects are changed or dropped.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays whether the trigger is valid or not: TRUE/FALSE. This becomes FALSE whe
 
 IS\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the trigger is enabled or not: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays whether the trigger is enabled or not: TRUE/FALSE.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time that the trigger was created.
-
-
 
 </td>
 </tr>

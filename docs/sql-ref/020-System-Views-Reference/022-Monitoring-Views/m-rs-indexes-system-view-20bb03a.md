@@ -17,21 +17,15 @@ Provides the statistics for B-tree and CPB-tree indexes.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the table name.
 
 INDEX\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the index name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the index name.
 
 KEY\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key type \(data or composite\).
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the key type \(data or composite\).
 
 INDEX\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the index status: VALID, INVALID, or UNUSABLE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the index status: VALID, INVALID, or UNUSABLE.
 
 TREE\_HEIGHT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the B-tree level.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the B-tree level.
 
 LEAF\_NODE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of leaf nodes.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the number of leaf nodes.
 
 NONLEAF\_NODE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of intermediate nodes.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the number of intermediate nodes.
 
 NODE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the node size in bytes.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the node size in bytes.
 
 FANOUT
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the index fan-out.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the index fan-out.
 
 BULKLOAD\_FACTOR
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the fill factor for creating or recovering indexes.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the fill factor for creating or recovering indexes.
 
 INDEX\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory index size \(number of nodes \* node size\) in bytes.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the memory index size \(number of nodes \* node size\) in bytes.
 
 ENTRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of indexed records.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the number of indexed records.
 
 FIXED\_LEAF\_NODE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of fixed leaf nodes. FIXED means that the key lengths of all entries in the node have the same value.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of fixed leaf nodes. FIXED means that the key lengths of all
 
 FIXED\_NONLEAF\_NODE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of fixed non-leaf nodes.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the number of fixed non-leaf nodes.
 
 AVG\_LEAF\_OFFSET\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average offset size of leaf nodes.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the average offset size of leaf nodes.
 
 AVG\_NONLEAF\_OFFSET\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average offset size of non-leaf nodes.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the average offset size of non-leaf nodes.
 
 AVG\_LEAF\_POINTER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average pointer size of leaf nodes.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the average pointer size of leaf nodes.
 
 AVG\_NONLEAF\_POINTER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the average pointer size of non-leaf nodes.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the average pointer size of non-leaf nodes.
 
 LEAF\_PARTIAL\_KEY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the partial key length of the leaf node.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the partial key length of the leaf node.
 
 NONLEAF\_PARTIAL\_KEY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the partial key length of the non-leaf node.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the partial key length of the non-leaf node.
 
 INDEX\_UTILIZATION
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the index utilization \(num\_entries / max\_entries\).
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the index utilization \(num\_entries / max\_entries\).
 
 IS\_UNIQUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the whether the index is unique: TRUE or FALSE.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the whether the index is unique: TRUE or FALSE.
 
 SEARCH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of search operations.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the number of search operations.
 
 DISTINCT\_KEY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of distinct keys.
-
-
 
 </td>
 </tr>
@@ -661,21 +493,15 @@ Displays the number of distinct keys.
 
 KEY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of keys.
-
-
 
 </td>
 </tr>
@@ -684,21 +510,15 @@ Displays the number of keys.
 
 ELIMINATED\_DUPLICATE\_LEAF\_NODE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of leaf nodes whose duplicate keys are eliminated.
-
-
 
 </td>
 </tr>
@@ -707,21 +527,15 @@ Displays the number of leaf nodes whose duplicate keys are eliminated.
 
 UNUSED\_LEAF\_SLOTS\_PER\_NODE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of unused slots per leaf node.
-
-
 
 </td>
 </tr>

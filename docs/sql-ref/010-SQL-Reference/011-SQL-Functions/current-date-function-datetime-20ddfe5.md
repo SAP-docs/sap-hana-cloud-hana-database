@@ -43,21 +43,15 @@ SELECT CURRENT_DATE "Current Date", CURRENT_UTCDATE "Coordinated Universal Date"
 
  
 
-
-
 </th>
 <th valign="top">
 
 Current Date
 
-
-
 </th>
 <th valign="top">
 
 Coordinated Universal Date
-
-
 
 </th>
 </tr>
@@ -66,21 +60,15 @@ Coordinated Universal Date
 
 1
 
-
-
 </td>
 <td valign="top">
 
 May 1, 2019
 
-
-
 </td>
 <td valign="top">
 
 May 1, 2019
-
-
 
 </td>
 </tr>
@@ -97,21 +85,15 @@ SELECT CURRENT_DATE "Current Date", CURRENT_UTCDATE "Coordinated Universal Date"
 
  
 
-
-
 </th>
 <th valign="top">
 
 Current Date
 
-
-
 </th>
 <th valign="top">
 
 Coordinated Universal Date
-
-
 
 </th>
 </tr>
@@ -120,21 +102,15 @@ Coordinated Universal Date
 
 1
 
-
-
 </td>
 <td valign="top">
 
 May 1, 2019
 
-
-
 </td>
 <td valign="top">
 
 May 1, 2019
-
-
 
 </td>
 </tr>

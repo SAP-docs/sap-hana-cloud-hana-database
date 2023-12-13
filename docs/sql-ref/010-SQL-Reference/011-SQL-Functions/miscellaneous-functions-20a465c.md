@@ -18,6 +18,7 @@ SAP HANA supports many functions that return system values and perform various o
 
 -   [CURRENT\_CONNECTION Function \(Miscellaneous\)](current-connection-function-miscellaneous-20dde16.md)
 
+-   [CURRENT\_DATABASE Function \(Miscellaneous\)](current-database-function-miscellaneous-7ddcb49.md)
 -   [CURRENT\_IDENTITY\_VALUE Function \(Miscellaneous\)](current-identity-value-function-miscellaneous-01e1a30.md)
 
 -   [CURRENT\_OBJECT\_SCHEMA Function \(Miscellaneous\)](current-object-schema-function-miscellaneous-8feedda.md)
@@ -30,6 +31,8 @@ SAP HANA supports many functions that return system values and perform various o
 
 -   [CURRENT\_TRANSACTION\_ISOLATION\_LEVEL Function \(Miscellaneous\)](current-transaction-isolation-level-function-miscellaneous-d22ded8.md)
 
+-   [CURRENT\_USERGROUP Function \(Miscellaneous\)](current-usergroup-function-miscellaneous-95fb067.md)
+
 -   [CURRENT\_UPDATE\_STATEMENT\_SEQUENCE Function \(Miscellaneous\)](current-update-statement-sequence-function-miscellaneous-9ae97ed.md)
 
 -   [CURRENT\_UPDATE\_TRANSACTION Function \(Miscellaneous\)](current-update-transaction-function-miscellaneous-e04d1f4.md)
@@ -37,8 +40,6 @@ SAP HANA supports many functions that return system values and perform various o
 -   [CURRENT\_USER Function \(Miscellaneous\)](current-user-function-miscellaneous-20de8b3.md)
 
 -   [CURRENT\_USER\_ID Function \(Miscellaneous\)](current-user-id-function-miscellaneous-75262ff.md)
-
--   [CURRENT\_USERGROUP Function \(Miscellaneous\)](current-usergroup-function-miscellaneous-95fb067.md)
 
 -   [EXPRESSION\_MACRO Function \(Miscellaneous\)](expression-macro-function-miscellaneous-a8d1145.md)
 

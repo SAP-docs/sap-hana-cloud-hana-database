@@ -17,21 +17,15 @@ Provides cache entry information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 CACHE\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the cache that created the entry.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the ID of the cache that created the entry.
 
 ENTRY\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the cached entry.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the ID of the cached entry.
 
 ENTRY\_DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description of the cached entry.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the description of the cached entry.
 
 COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the information about the component that created the cached entry.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the information about the component that created the cached entry.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the information about the user that created the cached entry.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the information about the user that created the cached entry.
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used memory to store the cached entry in the cache in bytes.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the used memory to store the cached entry in the cache in bytes.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the point in time when the cache entry was inserted into the cache in bytes.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the point in time when the cache entry was inserted into the cache in b
 
 READ\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Determines how often the cache entry was read successfully from the cache.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Determines how often the cache entry was read successfully from the cache.
 
 LAST\_ACCESS\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time of the last access of the cache instance.
-
-
 
 </td>
 </tr>

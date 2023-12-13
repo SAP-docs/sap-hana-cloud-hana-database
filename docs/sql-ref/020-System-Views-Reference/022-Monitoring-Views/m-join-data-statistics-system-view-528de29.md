@@ -15,21 +15,15 @@ Provides column store join engine join statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port.
 
 SCHEMA\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the first table
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the schema name of the first table
 
 TABLE\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the first table
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the name of the first table
 
 COLUMN\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name of the first table
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the column name of the first table
 
 SCHEMA\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the second table. Join data statistics are not collected
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the schema name of the second table. Join data statistics are not colle
 
 TABLE\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the second table.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the name of the second table.
 
 COLUMN\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column name of the second table.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the column name of the second table.
 
 LAST\_REFRESH\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time when the statistics was last refreshed.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the time when the statistics was last refreshed.
 
 RECORD\_COUNT1
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the estimated total row count of the first table. For temporary tables, this value is always 0.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the estimated total row count of the first table. For temporary tables,
 
 COUNT1
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of not Null values of the column of the first table.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the number of not Null values of the column of the first table.
 
 DISTINCT\_COUNT1
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of unique not Null values of the column of the first table.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the number of unique not Null values of the column of the first table.
 
 VALUE\_COUNTS1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a comma-separated sorted list of unique column value counts. An incomplete output of the list is truncated by an asterisk sign. If a uniform distribution of column values is assumed, then there is exactly one value count because values are uniformly distributed and every value counts the same.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays a comma-separated sorted list of unique column value counts. An incompl
 
 VALUE\_COUNTS\_FREQUENCIES1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a comma-separated list of frequencies of the first table's column values with the same count. Any frequency refers to that value count with a corresponding position in the list of value counts. An incomplete output of the list is truncated by an asterisk sign. If a uniform distribution of column values is assumed, then there is exactly one value frequency because values are uniformly distributed. Generally, this single frequency matches the distinct count.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays a comma-separated list of frequencies of the first table's column value
 
 MATCHING\_VALUES\_COUNTS1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a comma-separated list of counts of the first table's column values which find a join partner. Any matching values count refers to that value count with corresponding position in the list of value counts. An incomplete output of the list is truncated by an asterisk sign. If a uniform distribution of column values is assumed, then the matching values count the one and only value count that is calculated from the unified distribution of the value counts.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays a comma-separated list of counts of the first table's column values whi
 
 MEMORY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory size, in bytes, used by the join data statistics object.
-
-
 
 </td>
 </tr>

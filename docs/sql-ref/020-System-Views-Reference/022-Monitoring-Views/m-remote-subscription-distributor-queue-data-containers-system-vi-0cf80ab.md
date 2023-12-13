@@ -13,21 +13,15 @@ Lists all real time data elements between begin-marker and end-marker for the re
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Purpose
 
 REMOTE\_SOURCE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source OID.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the remote source OID.
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the remote source name.
 
 SUBSCRIPTION\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription OID.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the subscription OID.
 
 SUBSCRIPTION\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription schema name.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the subscription schema name.
 
 SUBSCRIPTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription name.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the subscription name.
 
 CONTAINER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the container ID of this virtual file.
-
-
 
 </td>
 </tr>
@@ -174,14 +132,10 @@ Displays the container ID of this virtual file.
 
 ELEMENT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -194,8 +148,6 @@ Displays the element type. Values are:
 
 3 - COMMITTED TRANSACTION
 
-
-
 </td>
 </tr>
 <tr>
@@ -203,21 +155,15 @@ Displays the element type. Values are:
 
 MARKER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the marker string.
-
-
 
 </td>
 </tr>
@@ -226,21 +172,15 @@ Displays the marker string.
 
 SEQUENCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the The sequence ID of the row.
-
-
 
 </td>
 </tr>
@@ -249,14 +189,10 @@ Displays the The sequence ID of the row.
 
 ROW\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -271,8 +207,6 @@ Displays the internal CDC row type. Values are:
 
 9 – END MARKER
 
-
-
 </td>
 </tr>
 <tr>
@@ -280,21 +214,15 @@ Displays the internal CDC row type. Values are:
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source transaction ID of the row.
-
-
 
 </td>
 </tr>
@@ -303,21 +231,15 @@ Displays the remote source transaction ID of the row.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -326,21 +248,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>

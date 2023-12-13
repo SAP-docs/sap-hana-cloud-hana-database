@@ -13,7 +13,7 @@ Imports catalog objects.
 ```
 IMPORT <import_object_name_list> 
  [ HAVING <object_condition> ] [ AS <import_format> ]
-  FROM <storage_path>
+  FROM <cloud_provider_path>
  [ WITH <import_option_list> ] 
  [ AT [ LOCATION ] <indexserver_host_port> ]
  [ IGNORE NUMA NODE ]
@@ -79,7 +79,7 @@ Imports a subset of data from a specified object type.
 HAVING <object_condition>
 ```
 
-The HAVING clause cannot be used with *<schema\>*."\*".
+The HAVING clause cannot be used with *<\>*."\*".
 
 For the types of conditions you can specify, see *<condition\_list\>*.
 
@@ -156,15 +156,15 @@ If *<binary\_type\>* is not specified, then RAW \(default\) is used.
 
 </dd><dt><b>
 
-FROM *<storage\_path\>*
+FROM *<cloud\_provider\_path\>*
 
 </b></dt>
 <dd>
 
-Specifies the cloud platform for the import.
+Specifies the cloud provider path for the import.
 
 ```
-<storage_path> ::=
+<cloud_provider_path> ::=
    { <azure_path> 
    | <amazon_path>
    | <google_path>
@@ -184,7 +184,7 @@ Specifies the location for the Azure import file.
 
 ```
 <azure_path> ::= 
-'azure://[<azure_credentials>]<azure_container_name>/<azure_object_id>'
+'azure://[<azure_credentials_path>]<azure_container_name>/<azure_object_id>'
 ```
 
 
@@ -196,7 +196,7 @@ Specifies the location for the Azure import file.
 </b></dt>
 <dd>
 
-Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported when using the WITH CREDENTIAL parameter.
+Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported when using the CREDENTIAL clause.
 
 ```
 <azure_credentials> ::= 
@@ -266,7 +266,7 @@ Specifies the geographical region the bucket is located in. Refer to [Regions an
 </b></dt>
 <dd>
 
-Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the WITH CREDENTIAL parameter.
+Specifies the credential key pair for API access from the AWS IAM Management Console. This is not the AWS account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the CREDENTIAL clause.
 
 ```
 <amazon_credentials> ::= 
@@ -325,7 +325,7 @@ Specifies the location for the Google Cloud storage import file.
 </b></dt>
 <dd>
 
-Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the WITH CREDENTIAL parameter.
+Specifies the credential key pair for access from the Google IAM Management Console. This is not the Google Cloud account. Credentials are required when accessing private storage, but are not applicable when accessing publicly readable cloud storage. Not supported with the CREDENTIAL clause.
 
 ```
 <google_credentials> ::=
@@ -644,7 +644,7 @@ CREDENTIAL *<purpose\_def\>*
 </b></dt>
 <dd>
 
-Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of import statements. The WITH CREDENTIAL clause cannot be specified when *<cloud\_path\>* contains credentials. The WITH CREDENTIAL clause is required for imports to SAP HANA Cloud, Data Lake Files, but is optional for all other cloud platforms.
+Specifies the name of the credential defined in the CREATE CREDENTIAL statement. Since the credentials are defined within the credential, they no longer appear as plain text as part of import statements. The CREDENTIAL clause cannot be specified when *<cloud\_provider\_path\>* contains credentials. The CREDENTIAL clause is required for imports to SAP HANA Cloud, Data Lake Files, but is optional for all other cloud platforms.
 
 
 
@@ -710,7 +710,7 @@ Requires the following:
 
 ## Description
 
-The IMPORT statement imports catalog objects \(tables, views, synonyms, sequences, and procedures\) that have previously been exported with the EXPORT statement. To import external data into existing tables, use the IMPORT FROM statement. The IMPORT statement can also import load history data that is stored in `nameserver_history.trc` files and timezone definitions according to SAP note [198411](https://launchpad.support.sap.com/#/notes/198411).
+The IMPORT statement imports catalog objects \(tables, views, synonyms, sequences, and procedures\) that have previously been exported with the EXPORT statement. To import external data into existing tables, use the IMPORT FROM statement. The IMPORT statement can also import load history data that is stored in `nameserver_history.trc` files and timezone definitions according to SAP note [198411](https://me.sap.com/notes/198411).
 
 When using CSV format to export/import tables that have columns of type GENERATED ALWAYS AS *<expression\>*, verify that the imported records match what was exported. If there are anomalies:
 
@@ -730,21 +730,15 @@ Detailed results of the last successful execution of the IMPORT statement are st
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -753,21 +747,15 @@ Description
 
 DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The database of the imported object
-
-
 
 </td>
 </tr>
@@ -776,21 +764,15 @@ The database of the imported object
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The schema of the imported object
-
-
 
 </td>
 </tr>
@@ -799,21 +781,15 @@ The schema of the imported object
 
 OBJECT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the imported object
-
-
 
 </td>
 </tr>
@@ -822,21 +798,15 @@ The name of the imported object
 
 OBJECT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 The type of the imported object \(TABLE, VIEW, and so on\)
-
-
 
 </td>
 </tr>
@@ -845,21 +815,15 @@ The type of the imported object \(TABLE, VIEW, and so on\)
 
 LOCATION
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(75\)
 
-
-
 </td>
 <td valign="top">
 
-The location \(*<host\>*:*<port\>*\) where the object was imported
-
-
+The location \(*<host\>*:*<port\>* 
 
 </td>
 </tr>
@@ -868,21 +832,15 @@ The location \(*<host\>*:*<port\>*\) where the object was imported
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 The import status \(done, skipped, or failed\)
-
-
 
 </td>
 </tr>
@@ -891,21 +849,15 @@ The import status \(done, skipped, or failed\)
 
 ERROR
 
-
-
 </td>
 <td valign="top">
 
 VARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 The error text in the case of an import failure
-
-
 
 </td>
 </tr>
@@ -917,7 +869,7 @@ The error text in the case of an import failure
 
 ## Examples
 
-This statement imports from Azure storage, all objects from the exported location.
+This statement imports from Azure storage, all objects from the exported location.\) where the object was imported
 
 ```
 IMPORT ALL FROM 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/tpch1' WITH THREADS 4 REPLACE;
@@ -951,7 +903,7 @@ IMPORT ALL FROM 's3-region2://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/t
 **Related Information**  
 
 
-[SAP HANA Cloud, SAP HANA Database Spatial Reference](https://help.sap.com/viewer/bc9e455fe75541b8a248b4c09b086cf5/2023_2_QRC/en-US/e1c934157bd14021a3b43b5822b2cbe9.html "This guide is the entry point for SAP HANA Spatial capabilities.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Spatial Reference](https://help.sap.com/viewer/bc9e455fe75541b8a248b4c09b086cf5/2023_4_QRC/en-US/e1c934157bd14021a3b43b5822b2cbe9.html "This guide is the entry point for SAP HANA Spatial capabilities.") :arrow_upper_right:
 
 [EXPORT Statement \(Data Import Export\)](export-statement-data-import-export-20da0be.md "Exports catalog objects.")
 

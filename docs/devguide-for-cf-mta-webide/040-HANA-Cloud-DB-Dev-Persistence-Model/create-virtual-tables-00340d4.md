@@ -32,7 +32,7 @@ The SAP Web IDE supports the creation of virtual tables using either a code edit
 
     3.  Select *Multi-Target Application Project* and choose *Next*.
 
-    4.  Type a name for the new MTA project \(for example, ***myApp*** and choose *Next* to confirm\).
+    4.  Type a name for the new MTA project \(for example, `myApp` and choose *Next* to confirm\).
 
     5.  Specify details of the new MTA project and choose *Next* to confirm.
 
@@ -94,7 +94,7 @@ The SAP Web IDE supports the creation of virtual tables using either a code edit
 
     Use the naming format ***namespace::virtual\_table\_name***.
 
-9.  Choose *Save* in the menu bar or  [CTRL\] + [S\]  to save your file \(virtual table\).
+9.  Choose *Save* in the menu bar or [CTRL\] + [S\]  to save your file \(virtual table\).
 
 10. Build the SAP HANA database module.
 

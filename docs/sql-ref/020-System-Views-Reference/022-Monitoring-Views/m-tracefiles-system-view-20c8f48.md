@@ -17,21 +17,15 @@ Provides information about all trace files.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the file name.
 
 FILE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the file size in bytes.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,32 @@ Displays the file size in bytes.
 
 FILE\_MTIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
 
 Displays the file date.
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+USED\_SIZE
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Shows the used disk space. This can help to identify issues caused by a full disk.
 
 </td>
 </tr>
@@ -150,14 +137,10 @@ It can clear different types of files:
 
 Name.
 
-
-
 </th>
 <th valign="top">
 
 Files.
-
-
 
 </th>
 </tr>
@@ -166,14 +149,10 @@ Files.
 
 ALERT.
 
-
-
 </td>
 <td valign="top">
 
 <service\>alert....trc.
-
-
 
 </td>
 </tr>
@@ -182,14 +161,10 @@ ALERT.
 
 CLIENT.
 
-
-
 </td>
 <td valign="top">
 
 localclient\_....trc.
-
-
 
 </td>
 </tr>
@@ -198,14 +173,10 @@ localclient\_....trc.
 
 CRASHDUMP.
 
-
-
 </td>
 <td valign="top">
 
 \*.crashdump....trc.
-
-
 
 </td>
 </tr>
@@ -214,14 +185,10 @@ CRASHDUMP.
 
 \*.
 
-
-
 </td>
 <td valign="top">
 
 open \*.trc files of all active services.
-
-
 
 </td>
 </tr>
@@ -230,14 +197,10 @@ open \*.trc files of all active services.
 
 INDEXSERVER,NAMESERVER,...,DAEMON
 
-
-
 </td>
 <td valign="top">
 
 open \*.trc files of a single service type.
-
-
 
 </td>
 </tr>

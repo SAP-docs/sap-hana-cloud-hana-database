@@ -103,5 +103,5 @@ ALTER SYSTEM CREATE WAITGRAPH ALL THREADS INTO FILE 'my_waitgraph.trc';
 **Related Information**  
 
 
-[Deadlock Detection Using SQL](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/159f604867804450bdc60b355e156457.html "To help with diagnosis of system issues you can create a waitgraph file that contains thread information about deadlocks.") :arrow_upper_right:
+[Deadlock Detection Using SQL](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/159f604867804450bdc60b355e156457.html "To help with diagnosis of system issues you can create a waitgraph file that contains thread information about deadlocks.") :arrow_upper_right:
 

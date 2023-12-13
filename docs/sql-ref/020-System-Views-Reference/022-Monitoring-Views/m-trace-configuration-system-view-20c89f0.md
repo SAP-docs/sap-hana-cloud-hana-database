@@ -17,21 +17,15 @@ Provides information about trace configuration statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the Persistence Volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the Persistence Volume ID.
 
 STATISTICS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistics object name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the statistics object name.
 
 TRACE\_DIRECTORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default trace level.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the default trace level.
 
 FORMATTER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the trace formatter name.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the trace formatter name.
 
 FILE\_NAME\_PREFIX
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the trace file name prefix.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the trace file name prefix.
 
 ALERT\_FORMATTER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the alert trace formatter name.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the alert trace formatter name.
 
 ALERT\_FILE\_NAME\_PREFIX
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the alert trace file name prefix.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the alert trace file name prefix.
 
 TRACE\_FLUSH\_INTERVAL
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the trace flush interval in seconds.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the trace flush interval in seconds.
 
 ALERT\_TRACE\_LEVEL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 The trace level for alert traces.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ The trace level for alert traces.
 
 DEFAULT\_TRACE\_LEVEL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default trace level.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the default trace level.
 
 TRACE\_BUFFER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the trace buffer size in bytes.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the trace buffer size in bytes.
 
 MAX\_TRACE\_FILE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the max trace file size in bytes.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the max trace file size in bytes.
 
 MAX\_TRACE\_FILE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the max trace file ID.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the max trace file ID.
 
 MAX\_TRACE\_FILES
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the max trace files to keep.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the max trace files to keep.
 
 ALERT\_TRACE\_BUFFER\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the alert trace buffer size in bytes.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the alert trace buffer size in bytes.
 
 MAX\_ALERT\_TRACE\_FILE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the max alert trace file size in bytes.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the max alert trace file size in bytes.
 
 TRACE\_COMPRESSION\_INTERVAL
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the interval, in seconds, to check for trace files that need to be compressed.
-
-
 
 </td>
 </tr>

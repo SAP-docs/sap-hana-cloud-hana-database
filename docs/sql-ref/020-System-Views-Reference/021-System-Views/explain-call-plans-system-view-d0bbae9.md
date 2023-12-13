@@ -17,21 +17,15 @@ Provides information about the compiled plan of a given procedure.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 OPERATOR\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of logical operator.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the name of logical operator.
 
 OPERATOR\_STRING
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement string or code \(llvm, expression, ce\) string, or se plan/operation in text format.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the statement string or code \(llvm, expression, ce\) string, or se pla
 
 RETURN\_TYPES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the list of return types.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the list of return types.
 
 INPUT\_VALUES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the list of values of input parameters.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the list of values of input parameters.
 
 OUTPUT\_VALUES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the list of values of output parameters.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the list of values of output parameters.
 
 EXECUTION\_ENGINE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the list of all involved execution frameworks.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the list of all involved execution frameworks.
 
 DEFAULT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default schema of each operator.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the default schema of each operator.
 
 PROCEDURE\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of database where procedure is defined.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the name of database where procedure is defined.
 
 PROCEDURE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of schema where procedure is defined.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the name of schema where procedure is defined.
 
 PROCEDURE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of outermost procedure.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the name of outermost procedure.
 
 SQLSCRIPT\_PLAN\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the SE plan ID.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the SE plan ID.
 
 SQLSCRIPT\_OPERATOR\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the SE Operation ID.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the SE Operation ID.
 
 SQLSCRIPT\_OPERATOR\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal name used in SQLScript.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the internal name used in SQLScript.
 
 NESTED\_STATEMENT\_IDS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the concatenated statement position with respect to SQL inlining.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the concatenated statement position with respect to SQL inlining.
 
 SQLSCRIPT\_OPERATOR\_COST
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the estimated cost from the SQLScript optimizer.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the estimated cost from the SQLScript optimizer.
 
 OPERATOR\_DETAILS
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays additional information on the operator.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays additional information on the operator.
 
 OPERATOR\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of an operator.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the unique ID of an operator.
 
 PARENT\_OPERATOR\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator ID of the parent of an operator.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the operator ID of the parent of an operator.
 
 LEVEL
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the level from the root operator.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the level from the root operator.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the position in the parent operator.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the position in the parent operator.
 
 STATEMENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal EXPLAIN PLAN command.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the internal EXPLAIN PLAN command.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the target node where the execution is expected to take place in a distributed system.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the target node where the execution is expected to take place in a dist
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the target node where the execution is expected to take place in a distributed system.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the target node where the execution is expected to take place in a dist
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the date and time when the EXPLAIN PLAN command was executed.
-
-
 
 </td>
 </tr>
@@ -592,25 +442,27 @@ Displays the date and time when the EXPLAIN PLAN command was executed.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
 
 Displays the connection ID.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod0bbae92c44b489db4b662bb6fed1909__section_ukx_l53_pzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 
 
@@ -629,14 +481,10 @@ Column engine operators:
 
 Operator Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -645,14 +493,10 @@ Description
 
 COLUMN SEARCH
 
-
-
 </td>
 <td valign="top">
 
 Displays the starting position of the column engine operators. OPERATOR\_DETAILS lists the projected columns.
-
-
 
 </td>
 </tr>
@@ -661,14 +505,10 @@ Displays the starting position of the column engine operators. OPERATOR\_DETAILS
 
 LIMIT
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for limiting the number of output rows.
-
-
 
 </td>
 </tr>
@@ -677,14 +517,10 @@ Displays the operator for limiting the number of output rows.
 
 ORDER BY
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for sorting output rows.
-
-
 
 </td>
 </tr>
@@ -693,14 +529,10 @@ Displays the operator for sorting output rows.
 
 HAVING
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for filtering with predicates on top of grouping and aggregation.
-
-
 
 </td>
 </tr>
@@ -709,14 +541,10 @@ Displays the operator for filtering with predicates on top of grouping and aggre
 
 GROUP BY
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for grouping and aggregation.
-
-
 
 </td>
 </tr>
@@ -725,14 +553,10 @@ Displays the operator for grouping and aggregation.
 
 DISTINCT
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for duplicate elimination.
-
-
 
 </td>
 </tr>
@@ -741,14 +565,10 @@ Displays the operator for duplicate elimination.
 
 FILTER
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for filtering with predicates.
-
-
 
 </td>
 </tr>
@@ -757,14 +577,10 @@ Displays the operator for filtering with predicates.
 
 JOIN
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for joining input relations.
-
-
 
 </td>
 </tr>
@@ -773,14 +589,10 @@ Displays the operator for joining input relations.
 
 COLUMN TABLE
 
-
-
 </td>
 <td valign="top">
 
 Displays information about the accessed column table.
-
-
 
 </td>
 </tr>
@@ -789,14 +601,10 @@ Displays information about the accessed column table.
 
 MULTIPROVIDER
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for producing union-all of multiple results having the same grouping and aggregation.
-
-
 
 </td>
 </tr>
@@ -811,14 +619,10 @@ Row engine operators:
 
 Operator Name
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -827,14 +631,10 @@ Description
 
 ROW SEARCH
 
-
-
 </td>
 <td valign="top">
 
 Displays the starting position of row engine operators. OPERATOR\_DETAILS lists projected columns.
-
-
 
 </td>
 </tr>
@@ -843,14 +643,10 @@ Displays the starting position of row engine operators. OPERATOR\_DETAILS lists 
 
 LIMIT
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for limiting number of output rows.
-
-
 
 </td>
 </tr>
@@ -859,14 +655,10 @@ Displays the operator for limiting number of output rows.
 
 ORDER BY
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for sorting output rows.
-
-
 
 </td>
 </tr>
@@ -875,14 +667,10 @@ Displays the operator for sorting output rows.
 
 HAVING
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for filtering with predicates on top of grouping and aggregation.
-
-
 
 </td>
 </tr>
@@ -891,14 +679,10 @@ Displays the operator for filtering with predicates on top of grouping and aggre
 
 GROUP BY
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for grouping and aggregation.
-
-
 
 </td>
 </tr>
@@ -907,14 +691,10 @@ Displays the operator for grouping and aggregation.
 
 MERGE AGGREGATION
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for merging the results of multiple parallel grouping and aggregations.
-
-
 
 </td>
 </tr>
@@ -923,14 +703,10 @@ Displays the operator for merging the results of multiple parallel grouping and 
 
 DISTINCT
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for duplicate elimination.
-
-
 
 </td>
 </tr>
@@ -939,14 +715,10 @@ Displays the operator for duplicate elimination.
 
 FILTER
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for filtering with predicates.
-
-
 
 </td>
 </tr>
@@ -955,14 +727,10 @@ Displays the operator for filtering with predicates.
 
 UNION ALL
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for producing union-all of input relations.
-
-
 
 </td>
 </tr>
@@ -971,14 +739,10 @@ Displays the operator for producing union-all of input relations.
 
 MATERIALIZED UNION ALL
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for producing union-all of input relations with intermediate result materialization.
-
-
 
 </td>
 </tr>
@@ -987,14 +751,10 @@ Displays the operator for producing union-all of input relations with intermedia
 
 BTREE INDEX JOIN
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for joining input relations through B-tree index searches. A join type suffix can be added, for example, a B-tree index join for a left outer join is shown as BTREE INDEX JOIN \(LEFT OUTER\). A join without a join type suffix indicates an inner join.
-
-
 
 </td>
 </tr>
@@ -1003,14 +763,10 @@ Displays the operator for joining input relations through B-tree index searches.
 
 CPBTREE INDEX JOIN
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for joining input relations through CPB-tree index searches. A join type suffix can be added.
-
-
 
 </td>
 </tr>
@@ -1019,14 +775,10 @@ Displays the operator for joining input relations through CPB-tree index searche
 
 HASH JOIN
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for joining input relations through probing a hash table built on the fly. A join type suffix can be added.
-
-
 
 </td>
 </tr>
@@ -1035,14 +787,10 @@ Displays the operator for joining input relations through probing a hash table b
 
 NESTED LOOP JOIN
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for joining input relations through nested looping. A join type suffix can be added.
-
-
 
 </td>
 </tr>
@@ -1051,14 +799,10 @@ Displays the operator for joining input relations through nested looping. A join
 
 MIXED INVERTED INDEX JOIN
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for joining an input relation of row store format with a column table without format conversion using an inverted index of the column table. A join type suffix can be added.
-
-
 
 </td>
 </tr>
@@ -1067,14 +811,10 @@ Displays the operator for joining an input relation of row store format with a c
 
 BTREE INDEX SEARCH
 
-
-
 </td>
 <td valign="top">
 
 Displays the table access through a B-tree index search.
-
-
 
 </td>
 </tr>
@@ -1083,14 +823,10 @@ Displays the table access through a B-tree index search.
 
 CPBTREE INDEX SEARCH
 
-
-
 </td>
 <td valign="top">
 
 Displays the table access through a CPB-tree index search.
-
-
 
 </td>
 </tr>
@@ -1099,14 +835,10 @@ Displays the table access through a CPB-tree index search.
 
 TABLE SCAN
 
-
-
 </td>
 <td valign="top">
 
 Displays the table access through scanning.
-
-
 
 </td>
 </tr>
@@ -1115,14 +847,10 @@ Displays the table access through scanning.
 
 AGGR TABLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the operator for aggregating a base table directly.
-
-
 
 </td>
 </tr>
@@ -1131,14 +859,10 @@ Displays the operator for aggregating a base table directly.
 
 MONITOR SEARCH
 
-
-
 </td>
 <td valign="top">
 
 Displays the monitoring view access through a search.
-
-
 
 </td>
 </tr>
@@ -1147,14 +871,10 @@ Displays the monitoring view access through a search.
 
 MONITOR SCAN
 
-
-
 </td>
 <td valign="top">
 
 Displays the monitoring view access through scanning.
-
-
 
 </td>
 </tr>
@@ -1167,9 +887,9 @@ Displays the monitoring view access through scanning.
 
 [CALL Statement \(Procedural\)](../../010-SQL-Reference/012-SQL-Statements/call-statement-procedural-20d364c.md "Calls a procedure.")
 
-[EXPLAIN PLAN for Call](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/7aabea5031134d2192f7022bc390fce6.html "") :arrow_upper_right:
+[EXPLAIN PLAN for Call](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/7aabea5031134d2192f7022bc390fce6.html "") :arrow_upper_right:
 
-[CALL](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/729281f732c14860902bcbc5c9cbf6f1.html "") :arrow_upper_right:
+[CALL](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/729281f732c14860902bcbc5c9cbf6f1.html "") :arrow_upper_right:
 
-[Best Practices for Using SQLScript](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/c59af8fa9ece40f4ba202e12fdacdfdf.html "") :arrow_upper_right:
+[Best Practices for Using SQLScript](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/c59af8fa9ece40f4ba202e12fdacdfdf.html "") :arrow_upper_right:
 

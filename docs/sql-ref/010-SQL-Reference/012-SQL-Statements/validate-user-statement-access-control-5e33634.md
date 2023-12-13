@@ -76,21 +76,21 @@ After successful validation, the user name can be found in the session variable 
 
 ## Examples
 
-The following example validates the credentials of user ***JSmith*** and returns a message indicating that the statement executed successfully \(***JSmith*** is a valid user\):
+The following example validates the credentials of user `JSmith` and returns a message indicating that the statement executed successfully \(`JSmith` is a valid user\):
 
 ```
 CREATE USER JSmith PASSWORD shg8475ghh11;
 VALIDATE USER JSmith PASSWORD shg8475ghh11;
 ```
 
-The following example returns an error indicating that validation of user ***T12345*** failed. Although the error does not indicate whether it failed because the user name doesn't exist or whether the password is incorrect, you can see from the example that the reason is because the password specified in the VALIDATE USER statement doesn't match the user's password:
+The following example returns an error indicating that validation of user `T12345` failed. Although the error does not indicate whether it failed because the user name doesn't exist or whether the password is incorrect, you can see from the example that the reason is because the password specified in the VALIDATE USER statement doesn't match the user's password:
 
 ```
 CREATE USER T12345 PASSWORD suelg75sjh;
 VALIDATE USER T12345 PASSWORD shgi33shi;
 ```
 
-The following example returns an error indicating that validation failed \(because the user ***BJones*** has not been created in this example\):
+The following example returns an error indicating that validation failed \(because the user `BJones` has not been created in this example\):
 
 ```
 VALIDATE USER BJones PASSWORD 34875hgj75;

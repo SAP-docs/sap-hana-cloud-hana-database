@@ -17,21 +17,15 @@ Lists available view columns.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the view name.
 
 VIEW\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the view.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object ID of the view.
 
 COLUMN\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the view column name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the view column name.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ordinal position of the view column.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the ordinal position of the view column.
 
 DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type ID.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the data type ID.
 
 DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type name.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the data type name.
 
 OFFSET
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the offset of the column in a record.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the offset of the column in a record.
 
 LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of chars for character types; max number of digits for numeric types; number of chars for datetime types; and number of bytes for LOB types.
-
-
 
 </td>
 </tr>
@@ -247,14 +187,10 @@ Displays the number of chars for character types; max number of digits for numer
 
 SCALE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -263,8 +199,6 @@ Numeric types: Displays the maximum number of digits to the right of the decimal
 
 Time, TIMESTAMP: defines the decimal digits as the number of digits to the right of the decimal point in the seconds component of the data.
 
-
-
 </td>
 </tr>
 <tr>
@@ -272,21 +206,15 @@ Time, TIMESTAMP: defines the decimal digits as the number of digits to the right
 
 IS\_NULLABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column is allowed to accept a NULL value: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -295,21 +223,15 @@ Displays whether the column is allowed to accept a NULL value: TRUE/FALSE.
 
 DEFAULT\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the default value.
-
-
 
 </td>
 </tr>
@@ -318,21 +240,15 @@ Displays the default value.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description for this column.
-
-
 
 </td>
 </tr>
@@ -341,21 +257,15 @@ Displays the description for this column.
 
 DDIC\_DATA\_TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the DDIC data type ID.
-
-
 
 </td>
 </tr>
@@ -364,21 +274,15 @@ Displays the DDIC data type ID.
 
 DDIC\_DATA\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the DDIC data type name.
-
-
 
 </td>
 </tr>
@@ -387,21 +291,15 @@ Displays the DDIC data type name.
 
 COMPRESSION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of compression: NONE, DEFAULT, PREFIXED, SPARSE, CLUSTERED, INDIRECT or RLE.
-
-
 
 </td>
 </tr>
@@ -410,21 +308,15 @@ Displays the type of compression: NONE, DEFAULT, PREFIXED, SPARSE, CLUSTERED, IN
 
 INDEX\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of index: NONE/FULL.
-
-
 
 </td>
 </tr>
@@ -433,21 +325,15 @@ Displays the type of index: NONE/FULL.
 
 COLUMN\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the column.
-
-
 
 </td>
 </tr>
@@ -456,21 +342,15 @@ Displays the ID of the column.
 
 PRELOAD
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays if the column is preloaded: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -479,21 +359,15 @@ Displays if the column is preloaded: TRUE/FALSE.
 
 GENERATED\_ALWAYS\_AS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the expression of the column created by GENERATED... AS.
-
-
 
 </td>
 </tr>
@@ -502,21 +376,15 @@ Displays the expression of the column created by GENERATED... AS.
 
 FUZZY\_SEARCH\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays if the column has a fuzzy search index: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -525,21 +393,15 @@ Displays if the column has a fuzzy search index: TRUE/FALSE.
 
 FUZZY\_SEARCH\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the fuzzy search mode.
-
-
 
 </td>
 </tr>
@@ -548,21 +410,15 @@ Displays the fuzzy search mode.
 
 MEMORY\_THRESHOLD
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the memory threshold in bytes for LOB types.
-
-
 
 </td>
 </tr>
@@ -571,21 +427,15 @@ Displays the memory threshold in bytes for LOB types.
 
 LOAD\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the unit of column data loading: TABLE, COLUMN, or PAGE.
-
-
 
 </td>
 </tr>
@@ -594,21 +444,15 @@ Displays the unit of column data loading: TABLE, COLUMN, or PAGE.
 
 GENERATION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1\)
 
-
-
 </td>
 <td valign="top">
 
 Displays ALWAYS AS if the column is a generated column, ALWAYS AS IDENTITY or BY DEFAULT AS IDENTITY if the column is an identity column whose values are always generated or generated by default, and NULL otherwise
-
-
 
 </td>
 </tr>
@@ -617,21 +461,15 @@ Displays ALWAYS AS if the column is a generated column, ALWAYS AS IDENTITY or BY
 
 IS\_CACHABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column is part of cached data: TRUE/FALSE
-
-
 
 </td>
 </tr>
@@ -640,21 +478,15 @@ Displays whether the column is part of cached data: TRUE/FALSE
 
 IS\_CACHE\_KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column is part of the cache key: TRUE/FALSE
-
-
 
 </td>
 </tr>
@@ -663,21 +495,15 @@ Displays whether the column is part of the cache key: TRUE/FALSE
 
 ROW\_ORDER\_POSITION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the row order position
-
-
 
 </td>
 </tr>
@@ -686,21 +512,15 @@ Displays the row order position
 
 IS\_HIDDEN
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the specified column is hidden: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -709,21 +529,15 @@ Displays whether the specified column is hidden: TRUE/FALSE.
 
 IS\_MASKED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the column is masked: TRUE/FALSE
-
-
 
 </td>
 </tr>
@@ -732,21 +546,15 @@ Displays whether the column is masked: TRUE/FALSE
 
 MASK\_EXPRESSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the mask expression \(only visible to users with the CATALOG READ or the SELECT METADATA privilege on the schema, or who own the view or schema\).
-
-
 
 </td>
 </tr>
@@ -755,21 +563,15 @@ Displays the mask expression \(only visible to users with the CATALOG READ or th
 
 CLIENTSIDE\_ENCRYPTION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 For internal use only.
-
-
 
 </td>
 </tr>
@@ -778,21 +580,15 @@ For internal use only.
 
 CLIENTSIDE\_ENCRYPTION\_COLUMN\_KEY\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 For internal use only.
-
-
 
 </td>
 </tr>
@@ -801,14 +597,10 @@ For internal use only.
 
 CLIENTSIDE\_ENCRYPTION\_MODE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -817,8 +609,6 @@ For internal use only.
 
 Displays the encryption mode. Possible values are RANDOM, DETERMINISTIC, or NULL \(not encrypted\).
 
-
-
 </td>
 </tr>
 <tr>
@@ -826,21 +616,15 @@ Displays the encryption mode. Possible values are RANDOM, DETERMINISTIC, or NULL
 
 PERSISTENT\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1\)
 
-
-
 </td>
 <td valign="top">
 
 For internal use only.
-
-
 
 </td>
 </tr>
@@ -849,25 +633,27 @@ For internal use only.
 
 NUMA\_NODE\_INDEXES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the comma-separated list of ranges of user-specified logical NUMA node indexes.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio21028f17751910149faef9996f9e43ea__section_vjc_q11_fzb"/>
+
+## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -884,5 +670,5 @@ Displays the comma-separated list of ranges of user-specified logical NUMA node 
 
 [M\_MONITOR\_COLUMNS System View](../022-Monitoring-Views/m-monitor-columns-system-view-20b54f6.md "All the columns in the monitoring views.")
 
-[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
+[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
 

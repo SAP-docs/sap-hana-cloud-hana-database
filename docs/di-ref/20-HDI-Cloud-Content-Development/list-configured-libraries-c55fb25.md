@@ -16,14 +16,7 @@ The SAP HDI Container API includes the `LIST_CONFIGURED_LIBRARIES` command, whic
 
 > ### Sample Code:  
 > ```sql
-> LIST_CONFIGURED_LIBRARIES
->  (
->   IN  PARAMETERS  _SYS_DI.TT_PARAMETERS,
->   OUT RETURN_CODE INT,
->   OUT REQUEST_ID  BIGINT,
->   OUT MESSAGES    _SYS_DI.TT_MESSAGES,
->   OUT RESULT      _SYS_DI.TT_LIBRARY_INFORMATION
->  )
+> 
 > ```
 
 
@@ -32,99 +25,10 @@ The SAP HDI Container API includes the `LIST_CONFIGURED_LIBRARIES` command, whic
 
 ## Parameters
 
-The following parameters can be used with `IN` and `OUT` parameters in the `LIST_CONFIGURED_LIBRARIES` command:
+The following parameters can be used with `IN`LIST\_CONFIGURED\_LIBRARIES and `OUT` parameters in the `LIST_CONFIGURED_LIBRARIES` command:
 
-
-
-### PARAMETERS \[IN\]
-
-Additional parameters can be used to control various aspects of the procedure execution. If no parameters are needed, the empty predefined parameters table `_SYS_DI.T_NO_PARAMETERS` can be used.
-
-**\_SYS\_DI.TT\_PARAMETERS**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Name
-
-
-
-</th>
-<th valign="top">
-
-Data Type
-
-
-
-</th>
-<th valign="top">
-
-Description
-
-
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-KEY
-
-
-
-</td>
-<td valign="top">
-
-NVARCHAR\(256\)
-
-
-
-</td>
-<td valign="top">
-
-The key name of the parameter
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-VALUE
-
-
-
-</td>
-<td valign="top">
-
-NVARCHAR\(256\)
-
-
-
-</td>
-<td valign="top">
-
-The value assigned to the parameter
-
-
-
-</td>
-</tr>
-</table>
-
-The following additional parameters are available:
-
--   `container_lock_wait_timeout`
-
--   `trace_context`
-
--   `trace_level.<trace topic>`
-
--   `message_severity`
-
+> ### Tip:  
+> For more information about all available SAP HANA HDI parameters, see *Available SAP HDI Parameters* in *Related Information* below.
 
 
 
@@ -159,21 +63,15 @@ Returns a list of the build plug-in libraries that have been configured for the 
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -182,21 +80,15 @@ Description
 
 LIBRARY\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the build plug-in library domain where the build plug-in is located
-
-
 
 </td>
 </tr>
@@ -205,21 +97,15 @@ The name of the build plug-in library domain where the build plug-in is located
 
 LIBRARY\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 The version number of the build plug-in library
-
-
 
 </td>
 </tr>
@@ -228,21 +114,15 @@ The version number of the build plug-in library
 
 PLUGIN\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The identifying name of the build plug-in
-
-
 
 </td>
 </tr>
@@ -251,21 +131,15 @@ The identifying name of the build plug-in
 
 PLUGIN\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 The version number of the build plug-in
-
-
 
 </td>
 </tr>
@@ -311,4 +185,6 @@ The following example shows an excerpt from the response to the call `LIST_CONFI
 [The HDI Container API](the-hdi-container-api-40ba784.md "Maintain HDI containers and container content using the HDI container API.")
 
 [The SQL API for SAP HANA Deployment Infrastructure \(HDI\)](../the-sql-api-for-sap-hana-deployment-infrastructure-hdi-035dbbe.md "An SQL application programming interface (API) is available to help maintain the SAP HANA Deployment Infrastructure (HDI).")
+
+[Available SAP HDI Parameters](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/e2d3e543067e4f3282bf6dbf880c6b2d.html?version=2023_3_QRC#available-sap-hdi-parameters)
 

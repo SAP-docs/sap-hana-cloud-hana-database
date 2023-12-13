@@ -17,21 +17,15 @@ Provides information on row and column tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the table name.
 
 RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of records in this table.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the number of records in this table.
 
 TABLE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated memory size for fixed-size and variable-size part in bytes.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the allocated memory size for fixed-size and variable-size part in byte
 
 IS\_COLUMN\_TABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the table is a column table: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays whether the table is a column table: TRUE/FALSE.
 
 TABLE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of the table: ROW, COLUMN, or COLLECTION.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the type of the table: ROW, COLUMN, or COLLECTION.
 
 IS\_PARTITIONED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the table is partitioned: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays whether the table is partitioned: TRUE/FALSE.
 
 IS\_REPLICATED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the table is replicated: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays whether the table is replicated: TRUE/FALSE.
 
 HAS\_RECORD\_COMMIT\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether table is tracking commit timestamps: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -261,5 +201,5 @@ Displays whether table is tracking commit timestamps: TRUE/FALSE.
 
 [DROP TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-table-statement-data-definition-20d7fd2.md "Removes a physical or virtual table from the database.")
 
-[Managing Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/68554490aee94885ba31611489a04992.html "The SAP HANA database stores data in memory in tables, organized in columns, and partitions, distributed among multiple servers.") :arrow_upper_right:
+[Managing Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/68554490aee94885ba31611489a04992.html "The SAP HANA database stores data in memory in tables, organized in columns, and partitions, distributed among multiple servers.") :arrow_upper_right:
 

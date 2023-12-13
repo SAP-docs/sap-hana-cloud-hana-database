@@ -60,13 +60,13 @@ To create and activate a database role, perform the following steps:
 
     2.  Open the command palette.
 
-        -   Press  [Crtl\] + [Shift\] + [P\]  or
+        -   Press [Crtl\] + [Shift\] + [P\]  or
         -   Press [F1\] or
         -   Choose *View* \> *Command Palette...*
 
     3.  Create a new SAP HANA database artifact.
 
-        Type ***hana*** in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
+        Type `hana` in the command palette and choose *SAP HANA: Create SAP HANA Database Artifact* in the list of commands displayed.
 
         The *Create SAP HANA Database Artifact* Wizard is displayed.
 
@@ -76,13 +76,13 @@ To create and activate a database role, perform the following steps:
 
     5.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
     6.  Select the database artifact type, for example, a database role.
 
-        In the command palette, type ***hdbr*** and choose *Role \(hdbrole\)* in the list that appears.
+        In the command palette, type `hdbr` and choose *Role \(hdbrole\)* in the list that appears.
 
-    7.  Name the file "***admin***".
+    7.  Name the file "`admin`".
 
         The appropriate file suffix \(`.hdbrole`\) is appended to the name by the Wizard.
 
@@ -145,13 +145,13 @@ To create and activate a database role, perform the following steps:
 
     3.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
     4.  Select the database artifact **type**.
 
-        In the selection box, type ***hdbr*** and choose *hdbrole* in the list that appears.
+        In the selection box, type `hdbr` and choose *hdbrole* in the list that appears.
 
-    5.  Name the file "***adminOwner***".
+    5.  Name the file "`adminOwner`".
 
         > ### Tip:  
         > The appropriate file suffix \(`.hdbrole`\) is appended to the name by the Wizard.
@@ -199,11 +199,11 @@ To create and activate a database role, perform the following steps:
 
     4.  Select the database version.
 
-        Use the drop-down menu provided to choose *HANA Cloud* as the database where you want to create the new artifact.
+        Use the drop-down menu provided to choose *SAP HANA Cloud* as the database where you want to create the new artifact.
 
     5.  Select the database artifact **type**.
 
-        In the selection box, type ***hdbr*** and choose *hdbrole* in the list that appears.
+        In the selection box, type `hdbr` and choose *hdbrole* in the list that appears.
 
     6.  Name the file *default\_access\_role*.
 
@@ -240,7 +240,7 @@ To create and activate a database role, perform the following steps:
 
     1.  In the *SAP HANA PROJECTS* explorer, locate the application project you want to deploy.
 
-    2.  Choose <span class="FPA-icons"></span> \(Deploy\).
+    2.  Choose ![](../020-HANA-Cloud-DB-Dev-Get-Started/images/BAS_icon_deploy_4423157.svg) \(*Deploy*\).
 
         > ### Note:  
         > A mismatch between the installed SAP HANA version and the version specified in the `.hdbconfig` file \(with the optional parameter `"minimmum_feature_version"`\) can cause problems with the deployment operation.
@@ -254,7 +254,7 @@ To create and activate a database role, perform the following steps:
 
         In the *SAP HANA PROJECTS* explorer, locate the project containing the artifacts you want to check and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \( [Ctrl\] + [Shift\] + [P\] \).
+        Alternatively, you can choose *SAP HANA: Open Database Explorer* from the command palette \([Ctrl\] + [Shift\] + [P\] \).
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
@@ -275,7 +275,7 @@ To create and activate a database role, perform the following steps:
 **Related Information**  
 
 
-[Database Role Syntax (.hdbrole in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_2_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
+[Database Role Syntax (.hdbrole in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
 
 [Create a Database View with SQL Data Definition Language](create-a-database-view-with-sql-data-definition-language-4920a3a.md "Define a design-time database view using the SQL Data Definition Language (DDL) syntax.")
 

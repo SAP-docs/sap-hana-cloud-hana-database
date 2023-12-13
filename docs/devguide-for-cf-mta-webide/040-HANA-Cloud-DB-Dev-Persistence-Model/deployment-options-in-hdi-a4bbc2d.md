@@ -46,71 +46,53 @@ The following table lists the options supported by the HDI deployer \(`@sap/hdi-
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `--version` 
-
-
+`--version` 
 
 </td>
 <td valign="top">
 
 Show the version of the currently installed HDI deployer and exit
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `-t, --trace` 
-
-
+`-t, --trace` 
 
 </td>
 <td valign="top">
 
 Enable tracing
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--use-hdb` 
-
-
+`--use-hdb` 
 
 </td>
 <td valign="top">
 
 Enable the `hdb` client to connect to the database instead of `@sap/hana-client`; by default, the `@sap/hana-client` is used
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--hana-client-trace` 
-
-
+`--hana-client-trace` 
 
 </td>
 <td valign="top">
@@ -127,9 +109,7 @@ Enable tracing for the SAP HANA client.
 <tr>
 <td valign="top">
 
- `--hana-client-packet-trace` 
-
-
+`--hana-client-packet-trace` 
 
 </td>
 <td valign="top">
@@ -146,313 +126,235 @@ Enable `PACKET` tracing for the SAP HANA client.
 <tr>
 <td valign="top">
 
- `--[no-]verbose` 
-
-
+`--[no-]verbose` 
 
 </td>
 <td valign="top">
 
 \[Do not\] print detailed log messages to the console
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--structured-log <i class="varname">&lt;file&gt;</i></code> 
-
-
+<code>--structured-log <i class="varname">&lt;file&gt;</i></code> 
 
 </td>
 <td valign="top">
 
 Write log messages as JSON objects into the given file. If the log file already exists, messages are appended.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--[no-]exit` 
-
-
+`--[no-]exit` 
 
 </td>
 <td valign="top">
 
 \[Do not\] exit after deployment of artifacts
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--[no-]lock-container` 
-
-
+`--[no-]lock-container` 
 
 </td>
 <td valign="top">
 
 \[Do not\] acquire the container lock while working with the container
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--root <i class="varname">&lt;path&gt;</i></code> 
-
-
+<code>--root <i class="varname">&lt;path&gt;</i></code> 
 
 </td>
 <td valign="top">
 
 Use the given root path for artifacts
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--working-set [<i class="varname">&lt;path&gt;</i> ...]</code> 
-
-
+<code>--working-set [<i class="varname">&lt;path&gt;</i> ...]</code> 
 
 </td>
 <td valign="top">
 
 Define the given paths \(directories and files\) as the working set; a non-default working set applies additional restrictions, for example, other options might be disallowed
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--include-filter [<i class="varname">&lt;path&gt;</i> ...]</code> 
-
-
+<code>--include-filter [<i class="varname">&lt;path&gt;</i> ...]</code> 
 
 </td>
 <td valign="top">
 
 Only include the given paths \(directories and files\) during delta detection
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--deploy [<i class="varname">&lt;file&gt;</i> ...]</code> 
-
-
+<code>--deploy [<i class="varname">&lt;file&gt;</i> ...]</code> 
 
 </td>
 <td valign="top">
 
 Explicitly schedule the given files for deployment and extends the include-filter for collecting local files. Instead of a real path, a path pattern like `src/**/*.hdbtable` can be used as well.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--[no-]treat-unmodified-as-modified` 
-
-
+`--[no-]treat-unmodified-as-modified` 
 
 </td>
 <td valign="top">
 
 \[Do not\] treat unmodified files during delta detection as modified files
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--undeploy [<i class="varname">&lt;file&gt;</i> ...]</code> 
-
-
+<code>--undeploy [<i class="varname">&lt;file&gt;</i> ...]</code> 
 
 </td>
 <td valign="top">
 
 Explicitly schedule the given files for undeployment
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--parameter [<i class="varname">&lt;key&gt;</i>=<i class="varname">&lt;value&gt;</i>&gt; ...]</code> 
-
-
+<code>--parameter [<i class="varname">&lt;key&gt;</i>=<i class="varname">&lt;value&gt;</i>&gt; ...]</code> 
 
 </td>
 <td valign="top">
 
 Pass the given list of key-value parameters to the deployment
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--path-parameter [<i class="varname">&lt;path&gt;</i>:<i class="varname">&lt;key&gt;</i>=<i class="varname">&lt;value&gt;</i> ...]</code> 
-
-
+<code>--path-parameter [<i class="varname">&lt;path&gt;</i>:<i class="varname">&lt;key&gt;</i>=<i class="varname">&lt;value&gt;</i> ...]</code> 
 
 </td>
 <td valign="top">
 
 Pass the given list of **path** key-value parameters to the deployment
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--[no-]auto-undeploy` 
-
-
+`--[no-]auto-undeploy` 
 
 </td>
 <td valign="top">
 
 \[Do not\] undeploy artifacts automatically based on delta detection and ignore the `undeploy.json` file
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--[no-]treat-warnings-as-errors` 
-
-
+`--[no-]treat-warnings-as-errors` 
 
 </td>
 <td valign="top">
 
 \[Do not\] treat warnings as errors
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--[no-]simulate-make` 
-
-
+`--[no-]simulate-make` 
 
 </td>
 <td valign="top">
 
 \[Do not\] simulate the `make`, and skip post-`make` activities; pre-`make` activities still take effect, for example, grants
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--connection-timeout <i class="varname">&lt;ms&gt;</i></code> 
-
-
+<code>--connection-timeout <i class="varname">&lt;ms&gt;</i></code> 
 
 </td>
 <td valign="top">
 
 The number of milliseconds to wait for the database connection\(s\) to succeed
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--delete-timeout <i class="varname">&lt;ms&gt;</i></code> 
-
-
+<code>--delete-timeout <i class="varname">&lt;ms&gt;</i></code> 
 
 </td>
 <td valign="top">
 
 The number of milliseconds to wait for the `DELETE` call
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--write-timeout <i class="varname">&lt;ms&gt;</i></code> 
-
-
+<code>--write-timeout <i class="varname">&lt;ms&gt;</i></code> 
 
 </td>
 <td valign="top">
 
 The number of milliseconds to wait for the `WRITE` call
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--lock-container-timeout <i class="varname">&lt;ms&gt;</i></code> 
-
-
+<code>--lock-container-timeout <i class="varname">&lt;ms&gt;</i></code> 
 
 </td>
 <td valign="top">
 
 The number of milliseconds to wait for the container lock to be released
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>--exclude-filter [<i class="varname">&lt;path&gt;</i> ...]</code> 
-
-
+<code>--exclude-filter [<i class="varname">&lt;path&gt;</i> ...]</code> 
 
 </td>
 <td valign="top">
@@ -469,25 +371,19 @@ Exclude the given paths during: file walk, delta detection and when explicitly s
 <tr>
 <td valign="top">
 
- `--[no]-optimise-file-upload` 
-
-
+`--[no]-optimise-file-upload` 
 
 </td>
 <td valign="top">
 
 \[Do not\] perform delta detection by means of local SHA256 calculation instead of `DELETE` and `WRITE` calls. Will not have any positive effect when used along with `--treat-unmodified-as-modified`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `--[no-]treat-wrong-ownership-as-errors` 
-
-
+`--[no-]treat-wrong-ownership-as-errors` 
 
 </td>
 <td valign="top">
@@ -504,9 +400,7 @@ Exclude the given paths during: file walk, delta detection and when explicitly s
 <tr>
 <td valign="top">
 
- `--[no-]migrationtable-development-mode` 
-
-
+`--[no-]migrationtable-development-mode` 
 
 </td>
 <td valign="top">
@@ -523,9 +417,7 @@ Exclude the given paths during: file walk, delta detection and when explicitly s
 <tr>
 <td valign="top">
 
- `--[no-]liveness-ping` 
-
-
+`--[no-]liveness-ping` 
 
 </td>
 <td valign="top">
@@ -542,9 +434,7 @@ Exclude the given paths during: file walk, delta detection and when explicitly s
 <tr>
 <td valign="top">
 
- `--[no-]live-messages` 
-
-
+`--[no-]live-messages` 
 
 </td>
 <td valign="top">
@@ -625,30 +515,22 @@ The following variables can be used to configure the HDI deployment infrastructu
 
 Variable
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Comments
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `EXIT` 
-
-
+`EXIT` 
 
 </td>
 <td valign="top">
@@ -665,39 +547,29 @@ If set, the HDI Deployer exits when the deployment is completed.
 
 Optional
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `DEPLOY_ID` 
-
-
+`DEPLOY_ID` 
 
 </td>
 <td valign="top">
 
 If set, the given deployment ID will be written to the final application log entry \(custom ID, to support processes in parsing log output\)
 
-
-
 </td>
 <td valign="top">
 
 Optional
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `HDI_DEPLOY_OPTIONS` 
-
-
+`HDI_DEPLOY_OPTIONS` 
 
 </td>
 <td valign="top">
@@ -724,16 +596,12 @@ Command line options can be translated to `HDI_DEPLOY_OPTIONS` options by replac
 
 Optional
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `APPLICATION_ID` 
-
-
+`APPLICATION_ID` 
 
 </td>
 <td valign="top">
@@ -750,30 +618,22 @@ Used in conjunction with the `space_name` and the `organization_name` of the *<V
 
 Optional, fallback = `SAP_HDI` 
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `APPLICATION_VERSION_INFO` 
-
-
+`APPLICATION_VERSION_INFO` 
 
 </td>
 <td valign="top">
 
 Logged to the command line, to allow logging of some additional information about the application.
 
-
-
 </td>
 <td valign="top">
 
 Optional
-
-
 
 </td>
 </tr>

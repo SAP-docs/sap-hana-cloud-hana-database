@@ -36,23 +36,17 @@ The following table lists the parameters available for use with SAP HDI `_SYS_DI
 
 SAP HDI Call
 
-
-
 </th>
 <th valign="top">
 
 Available Parameters
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.CREATE_CONTAINER_GROUP` 
-
-
+`_SYS_DI.CREATE_CONTAINER_GROUP` 
 
 </td>
 <td valign="top">
@@ -62,17 +56,13 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.DROP_CONTAINER_GROUP` 
-
-
+`_SYS_DI.DROP_CONTAINER_GROUP` 
 
 </td>
 <td valign="top">
@@ -82,17 +72,13 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.GRANT_CONTAINER_GROUP_API_PRIVILEGES` 
-
-
+`_SYS_DI.GRANT_CONTAINER_GROUP_API_PRIVILEGES` 
 
 </td>
 <td valign="top">
@@ -102,17 +88,13 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.GRANT_CONTAINER_GROUP_API_PRIVILEGES_WITH_ GRANT_OPTION` 
-
-
+`_SYS_DI.GRANT_CONTAINER_GROUP_API_PRIVILEGES_WITH_ GRANT_OPTION` 
 
 </td>
 <td valign="top">
@@ -122,17 +104,13 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.GRANT_DI_SUPPORT_PRIVILEGE` 
-
-
+`_SYS_DI.GRANT_DI_SUPPORT_PRIVILEGE` 
 
 </td>
 <td valign="top">
@@ -142,17 +120,13 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.LIST_LIBRARIES` 
-
-
+`_SYS_DI.LIST_LIBRARIES` 
 
 </td>
 <td valign="top">
@@ -162,17 +136,13 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.MOVE_CONTAINER_TO_GROUP` 
-
-
+`_SYS_DI.MOVE_CONTAINER_TO_GROUP` 
 
 </td>
 <td valign="top">
@@ -182,17 +152,13 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.REVOKE_CONTAINER_GROUP_API_PRIVILEGES` 
-
-
+`_SYS_DI.REVOKE_CONTAINER_GROUP_API_PRIVILEGES` 
 
 </td>
 <td valign="top">
@@ -202,17 +168,13 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `_SYS_DI.REVOKE_DI_SUPPORT_PRIVILEGE` 
-
-
+`_SYS_DI.REVOKE_DI_SUPPORT_PRIVILEGE` 
 
 </td>
 <td valign="top">
@@ -222,8 +184,6 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
@@ -259,23 +219,17 @@ The following table lists the parameters available for use with SAP HDI containe
 
 SAP HDI Call
 
-
-
 </th>
 <th valign="top">
 
 Available Parameters
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.CANCEL</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.CANCEL</code> 
 
 </td>
 <td valign="top">
@@ -290,16 +244,12 @@ treat\_warnings\_as\_errors
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.CONFIGURE_CONTAINER_PARAMETERS</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.CONFIGURE_CONTAINER_PARAMETERS</code> 
 
 </td>
 <td valign="top">
@@ -312,16 +262,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.CONFIGURE_LIBRARIES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.CONFIGURE_LIBRARIES</code> 
 
 </td>
 <td valign="top">
@@ -336,16 +282,12 @@ undeploy
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.CREATE_CONTAINER</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.CREATE_CONTAINER</code> 
 
 </td>
 <td valign="top">
@@ -356,16 +298,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.DROP_CONTAINER</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.DROP_CONTAINER</code> 
 
 </td>
 <td valign="top">
@@ -388,16 +326,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.EXPORT_CONTAINER_FOR_COPY</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.EXPORT_CONTAINER_FOR_COPY</code> 
 
 </td>
 <td valign="top">
@@ -414,16 +348,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.EXPORT_CONTAINER_FOR_SUPPORT</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.EXPORT_CONTAINER_FOR_SUPPORT</code> 
 
 </td>
 <td valign="top">
@@ -442,16 +372,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_API_PRIVILEGES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_API_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -464,16 +390,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_API_PRIVILEGES_WITH_GRANT_OPTION</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_API_PRIVILEGES_WITH_GRANT_OPTION</code> 
 
 </td>
 <td valign="top">
@@ -486,16 +408,12 @@ trace\_level.<trace topic\>
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_GROUP_API_PRIVILEGES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_GROUP_API_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -506,16 +424,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_GROUP_API_PRIVILEGES_WITH_ GRANT_OPTION</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_GROUP_API_PRIVILEGES_WITH_ GRANT_OPTION</code> 
 
 </td>
 <td valign="top">
@@ -526,16 +440,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_SCHEMA_PRIVILEGES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_SCHEMA_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -548,16 +458,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_SCHEMA_ROLES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_SCHEMA_ROLES</code> 
 
 </td>
 <td valign="top">
@@ -570,16 +476,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_SUPPORT_PRIVILEGE</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.GRANT_CONTAINER_SUPPORT_PRIVILEGE</code> 
 
 </td>
 <td valign="top">
@@ -592,16 +494,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.IMPORT_CONTAINER_FOR_COPY</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.IMPORT_CONTAINER_FOR_COPY</code> 
 
 </td>
 <td valign="top">
@@ -610,16 +508,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.IMPORT_CONTAINER_FOR_SUPPORT</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.IMPORT_CONTAINER_FOR_SUPPORT</code> 
 
 </td>
 <td valign="top">
@@ -634,16 +528,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.LIST_CONFIGURED_LIBRARIES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.LIST_CONFIGURED_LIBRARIES</code> 
 
 </td>
 <td valign="top">
@@ -656,16 +546,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_API_PRIVILEGES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_API_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -678,16 +564,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_GROUP_API_PRIVILEGES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_GROUP_API_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -698,16 +580,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_SCHEMA_PRIVILEGES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_SCHEMA_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -720,16 +598,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_SCHEMA_ROLES</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_SCHEMA_ROLES</code> 
 
 </td>
 <td valign="top">
@@ -742,16 +616,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_SUPPORT_PRIVILEGE</code> 
-
-
+<code>_SYS_DI#<i class="varname">&lt;container_group&gt;</i>.REVOKE_CONTAINER_SUPPORT_PRIVILEGE</code> 
 
 </td>
 <td valign="top">
@@ -763,8 +633,6 @@ trace\_context
 trace\_level.*<trace topic\>*
 
 message\_severity
-
-
 
 </td>
 </tr>
@@ -798,23 +666,17 @@ The following table lists the parameters available for use with SAP HDI containe
 
 SAP HDI Container-Specific Call
 
-
-
 </th>
 <th valign="top">
 
 Available Parameters
-
-
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.CANCEL</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.CANCEL</code> 
 
 </td>
 <td valign="top">
@@ -829,16 +691,12 @@ treat\_warnings\_as\_errors
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.CONFIGURE_CONTAINER_PARAMETERS</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.CONFIGURE_CONTAINER_PARAMETERS</code> 
 
 </td>
 <td valign="top">
@@ -851,16 +709,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.CONFIGURE_LIBRARIES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.CONFIGURE_LIBRARIES</code> 
 
 </td>
 <td valign="top">
@@ -875,16 +729,12 @@ undeploy
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.DELETE</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.DELETE</code> 
 
 </td>
 <td valign="top">
@@ -901,16 +751,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.EXPORT_CONTAINER_FOR_COPY</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.EXPORT_CONTAINER_FOR_COPY</code> 
 
 </td>
 <td valign="top">
@@ -927,16 +773,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.GET_DEPENDENCIES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.GET_DEPENDENCIES</code> 
 
 </td>
 <td valign="top">
@@ -951,16 +793,12 @@ variant
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.GET_MAKE_GROUPS</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.GET_MAKE_GROUPS</code> 
 
 </td>
 <td valign="top">
@@ -985,16 +823,12 @@ undeploy\_dependent\_recursively
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.GRANT_CONTAINER_API_PRIVILEGES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.GRANT_CONTAINER_API_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -1007,16 +841,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.GRANT_CONTAINER_API_PRIVILEGES_WITH_GRANT_OPTION</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.GRANT_CONTAINER_API_PRIVILEGES_WITH_GRANT_OPTION</code> 
 
 </td>
 <td valign="top">
@@ -1029,16 +859,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.GRANT_CONTAINER_SCHEMA_PRIVILEGES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.GRANT_CONTAINER_SCHEMA_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -1051,16 +877,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.GRANT_CONTAINER_SCHEMA_ROLES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.GRANT_CONTAINER_SCHEMA_ROLES</code> 
 
 </td>
 <td valign="top">
@@ -1073,16 +895,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.IMPORT_CONTAINER_FOR_COPY</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.IMPORT_CONTAINER_FOR_COPY</code> 
 
 </td>
 <td valign="top">
@@ -1095,16 +913,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.LIST</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.LIST</code> 
 
 </td>
 <td valign="top">
@@ -1123,16 +937,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.LIST_CONFIGURED_LIBRARIES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.LIST_CONFIGURED_LIBRARIES</code> 
 
 </td>
 <td valign="top">
@@ -1145,16 +955,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.LIST_DEPLOYED</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.LIST_DEPLOYED</code> 
 
 </td>
 <td valign="top">
@@ -1173,16 +979,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.MAKE</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.MAKE</code> 
 
 </td>
 <td valign="top">
@@ -1213,16 +1015,12 @@ enable\_make\_enforcer
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.MAKE_ASYNC</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.MAKE_ASYNC</code> 
 
 </td>
 <td valign="top">
@@ -1253,16 +1051,12 @@ enable\_make\_enforcer
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.READ</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.READ</code> 
 
 </td>
 <td valign="top">
@@ -1281,16 +1075,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.READ_DEPLOYED</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.READ_DEPLOYED</code> 
 
 </td>
 <td valign="top">
@@ -1309,16 +1099,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.REVOKE_CONTAINER_API_PRIVILEGES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.REVOKE_CONTAINER_API_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -1331,16 +1117,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.REVOKE_CONTAINER_SCHEMA_PRIVILEGES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.REVOKE_CONTAINER_SCHEMA_PRIVILEGES</code> 
 
 </td>
 <td valign="top">
@@ -1353,16 +1135,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.REVOKE_CONTAINER_SCHEMA_ROLES</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.REVOKE_CONTAINER_SCHEMA_ROLES</code> 
 
 </td>
 <td valign="top">
@@ -1375,16 +1153,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.STATUS</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.STATUS</code> 
 
 </td>
 <td valign="top">
@@ -1397,16 +1171,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.WRITE</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.WRITE</code> 
 
 </td>
 <td valign="top">
@@ -1419,16 +1189,12 @@ trace\_level.*<trace topic\>*
 
 message\_severity
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><i class="varname">&lt;container&gt;</i>#DI.CONFIGURE_CONTAINER</code> 
-
-
+<code><i class="varname">&lt;container&gt;</i>#DI.CONFIGURE_CONTAINER</code> 
 
 </td>
 <td valign="top">
@@ -1482,37 +1248,27 @@ The following table describes the parameters available in SAP HDI and their poss
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Possible values
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `container_lock_wait_timeout` 
-
-
+`container_lock_wait_timeout` 
 
 </td>
 <td valign="top">
 
 0 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -1521,23 +1277,17 @@ Specifies the time \(in milliseconds\) a container operation waits for a locking
 
 For more information, see *SAP HDI Configuration Parameters*.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `accept_risk_of_database_ corruption_by_container_import` 
-
-
+`accept_risk_of_database_ corruption_by_container_import` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1546,23 +1296,17 @@ Indicates that the user knows that a container import could potentially corrupt 
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `drop_container_asynchronously` 
-
-
+`drop_container_asynchronously` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1571,23 +1315,17 @@ Indicates that the drop-container operation should run asynchronously.
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `enable_drop_enforcer` 
-
-
+`enable_drop_enforcer` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1596,23 +1334,17 @@ If “true”, terminate all external database connections blocking a make call 
 
 The default value is “true”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `enable_make_enforcer` 
-
-
+`enable_make_enforcer` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1621,23 +1353,17 @@ If “true”, terminate all external database connections blocking a make call.
 
 The default value is “true”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `export_container_schema_data` 
-
-
+`export_container_schema_data` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1646,23 +1372,17 @@ Indicates that a container export should also export the data of the container s
 
 The default value is “true”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `export_container_use_binary_export` 
-
-
+`export_container_use_binary_export` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1671,23 +1391,17 @@ Indicates that the container export should export data in a binary format. If se
 
 The default value is “true”
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ignore_deployed` 
-
-
+`ignore_deployed` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1696,23 +1410,17 @@ Indicates if existing files in the deployed file system are to be ignored when d
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ignore_errors` 
-
-
+`ignore_errors` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1721,23 +1429,17 @@ Indicates if errors during an SAP HDI call should be ignored, that is, execute a
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ignore_files` 
-
-
+`ignore_files` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1746,23 +1448,17 @@ Indicates if files are to be ignored in the output when reading files.
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ignore_folders` 
-
-
+`ignore_folders` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1771,23 +1467,17 @@ Indicates if folders are to be ignored in the output when reading files.
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ignore_non_existing_paths` 
-
-
+`ignore_non_existing_paths` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1796,23 +1486,17 @@ Indicates if paths that do not exist should be ignored, for example, when deleti
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ignore_work` 
-
-
+`ignore_work` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1821,23 +1505,17 @@ Indicates if existing files in the work file system are to be ignored when dropp
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `max_parallel_jobs` 
-
-
+`max_parallel_jobs` 
 
 </td>
 <td valign="top">
 
 0 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -1846,23 +1524,17 @@ Specifies the maximum number of parallel jobs for graph execution and artifact d
 
 The default value is 8.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `move_containers_to_default_group` 
-
-
+`move_containers_to_default_group` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1871,23 +1543,17 @@ Indicates if all containers in a group should be moved to the default group \_SY
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `optimized_redeploy` 
-
-
+`optimized_redeploy` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1896,23 +1562,17 @@ Indicates if the optimized redeployment strategy should be used instead of the u
 
 The default value is “true”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `recursive` 
-
-
+`recursive` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1921,23 +1581,17 @@ Indicates if folders are to be read or deleted recursively.
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `simulate_make` 
-
-
+`simulate_make` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -1946,48 +1600,39 @@ Indicates if the make command should run only in simulation mode.
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `stop_on_error` 
-
-
+`stop_on_error` 
 
 </td>
 <td valign="top">
 
 true, false
 
-
-
 </td>
 <td valign="top">
 
-Indicates if the `make` command should stop deploying further files after an error occurs while deploying a file.
+Indicates if the `make` command should stop deploying further files if an error occurs while deploying a file.
+
+> ### Note:  
+> The HDI deployer does not stop at the first error it encounters. If multiple artifacts are being deployed in parallel and there are multiple errors, then the HDI deployer displays multiple error messages and tries to stop as soon as it can.
 
 The default value is “true”.
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `trace_context` 
-
-
+`trace_context` 
 
 </td>
 <td valign="top">
 
 request, container
-
-
 
 </td>
 <td valign="top">
@@ -1996,23 +1641,17 @@ Indicates if, during an SAP HDI request, all traces for trace topics configured 
 
 There is no default value.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `trace_level.<trace topic>` 
-
-
+`trace_level.<trace topic>` 
 
 </td>
 <td valign="top">
 
 Fatal, Error, Warning, Info, Interface, Debug, InterfaceFull, DebugFull
-
-
 
 </td>
 <td valign="top">
@@ -2021,23 +1660,17 @@ Specifies the trace level of a specific trace topic. *<trace topic\>* may be an 
 
 There is no default value.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `treat_warnings_as_errors` 
-
-
+`treat_warnings_as_errors` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2046,23 +1679,17 @@ Indicates if warnings during an SAP HDI call should be treated as errors.
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `undeploy` 
-
-
+`undeploy` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2071,23 +1698,17 @@ Indicates if, in case of a call to configure libraries, files corresponding to a
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `undeploy_dependent_recursively` 
-
-
+`undeploy_dependent_recursively` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2096,23 +1717,17 @@ Indicates that all dependent artifacts should be considered for an undeployment.
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `validate_external_dependencies` 
-
-
+`validate_external_dependencies` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2121,23 +1736,17 @@ Indicates that during a make, all deployed synonyms, projection views, and virtu
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `variant` 
-
-
+`variant` 
 
 </td>
 <td valign="top">
 
- “providers”, “provides\_and\_requires”, “impacted”, “depends” 
-
-
+“providers”, “provides\_and\_requires”, “impacted”, “depends” 
 
 </td>
 <td valign="top">
@@ -2163,23 +1772,17 @@ Specifies the variant of the SAP HDI \(HDI\) container-specific procedure <code>
 
 The default value is “providers”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `message_severity` 
-
-
+`message_severity` 
 
 </td>
 <td valign="top">
 
 INFO, WARNING, ERROR
-
-
 
 </td>
 <td valign="top">
@@ -2187,8 +1790,6 @@ INFO, WARNING, ERROR
 Specifies the minimum severity of the messages to be returned by a SAP HDI procedure call.
 
 The default value is INFO \(all messages are returned\).
-
-
 
 </td>
 </tr>
@@ -2211,21 +1812,15 @@ The following table describes the structure of each parameter type.
 
 Parameter Type
 
-
-
 </th>
 <th valign="top">
 
 File
 
-
-
 </th>
 <th valign="top">
 
 Parameter Structure
-
-
 
 </th>
 </tr>
@@ -2234,21 +1829,15 @@ Parameter Structure
 
 plug-ins-wide parameter
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 com.sap.hana.di/<key\>
-
-
 
 </td>
 </tr>
@@ -2257,21 +1846,15 @@ com.sap.hana.di/<key\>
 
 plug-in-specific parameter
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 com.sap.hana.di.<plug-in\>/<key\>
-
-
 
 </td>
 </tr>
@@ -2280,21 +1863,15 @@ com.sap.hana.di.<plug-in\>/<key\>
 
 path parameter
 
-
-
 </td>
 <td valign="top">
 
 <file\>
 
-
-
 </td>
 <td valign="top">
 
 <key\>
-
-
 
 </td>
 </tr>
@@ -2313,21 +1890,15 @@ The plug-in-specific parameters support additional layering by allowing addition
 
 Parameter Type
 
-
-
 </th>
 <th valign="top">
 
 File
 
-
-
 </th>
 <th valign="top">
 
 Parameter Structure
-
-
 
 </th>
 </tr>
@@ -2336,21 +1907,15 @@ Parameter Structure
 
 plug-ins-wide parameter
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 com.sap.hana.di/*<key\>* 
-
-
 
 </td>
 </tr>
@@ -2359,21 +1924,15 @@ com.sap.hana.di/*<key\>*
 
 layered parameter
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 com.sap.hana.di.*<layer1\>*/*<key\>* 
-
-
 
 </td>
 </tr>
@@ -2382,21 +1941,15 @@ com.sap.hana.di.*<layer1\>*/*<key\>*
 
 layered plug-in parameter
 
-
-
 </td>
 <td valign="top">
 
 \-
 
-
-
 </td>
 <td valign="top">
 
 com.sap.hana.di.*<layer1\>*.*<plug-in1\>*/*<key\>* 
-
-
 
 </td>
 </tr>
@@ -2405,21 +1958,15 @@ com.sap.hana.di.*<layer1\>*.*<plug-in1\>*/*<key\>*
 
 path parameter
 
-
-
 </td>
 <td valign="top">
 
 <file\>
 
-
-
 </td>
 <td valign="top">
 
- *<key\>* 
-
-
+*<key\>* 
 
 </td>
 </tr>
@@ -2442,21 +1989,15 @@ The following table lists the available parameters for the build plug-ins.
 
 Build Plug-in
 
-
-
 </th>
 <th valign="top">
 
 Available Build Plug-in Parameters
 
-
-
 </th>
 <th valign="top">
 
 Available Path Parameters
-
-
 
 </th>
 </tr>
@@ -2464,8 +2005,6 @@ Available Path Parameters
 <td valign="top">
 
 Applies to all build plug-ins
-
-
 
 </td>
 <td valign="top">
@@ -2476,14 +2015,10 @@ Applies to all build plug-ins
 
 `undeploy_dependent_recursively`
 
-
-
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -2492,21 +2027,19 @@ Applies to all build plug-ins
 
 com.sap.hana.di.role
 
-
-
 </td>
 <td valign="top">
 
- `force_undeploy` 
+`force_undeploy`
 
-
+`revoke_external_grants`
 
 </td>
 <td valign="top">
 
 \-
 
-
+\-
 
 </td>
 </tr>
@@ -2515,21 +2048,15 @@ com.sap.hana.di.role
 
 com.sap.hana.di.sequence
 
-
-
 </td>
 <td valign="top">
 
- `force_undeploy` 
-
-
+`force_undeploy` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -2538,8 +2065,6 @@ com.sap.hana.di.sequence
 
 com.sap.hana.di.table
 
-
-
 </td>
 <td valign="top">
 
@@ -2547,14 +2072,12 @@ com.sap.hana.di.table
 
 `try_fast_table_migration`
 
-
+`force_drop_columns`
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -2563,21 +2086,15 @@ com.sap.hana.di.table
 
 com.sap.hana.di.tabledata
 
-
-
 </td>
 <td valign="top">
 
- `batch_size` 
-
-
+`batch_size` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -2586,21 +2103,15 @@ com.sap.hana.di.tabledata
 
 com.sap.hana.di.table.migration
 
-
-
 </td>
 <td valign="top">
 
- `development_mode` 
-
-
+`development_mode` 
 
 </td>
 <td valign="top">
 
 \-
-
-
 
 </td>
 </tr>
@@ -2675,37 +2186,27 @@ The following table describes the build plug-in parameters available in SAP HDI 
 
 Build Plug-in Parameter
 
-
-
 </th>
 <th valign="top">
 
 Possible Values
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `batch_size` 
-
-
+`batch_size` 
 
 </td>
 <td valign="top">
 
 0 … 2,147,483,647
-
-
 
 </td>
 <td valign="top">
@@ -2714,23 +2215,17 @@ Specifies the batch size, for example, for batch database access or for batch pr
 
 The default value is “4000”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `development_mode` 
-
-
+`development_mode` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2739,23 +2234,17 @@ Indicates to the migration-table build plug-in \(`hdbmigrationtable`\) that it s
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `force_undeploy` 
-
-
+`force_undeploy` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2764,23 +2253,59 @@ Indicates if the undeployment of files should be forced within a build plug-in t
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `optimized_redeploy` 
-
-
+`force_drop_columns` 
 
 </td>
 <td valign="top">
 
 true, false
 
+</td>
+<td valign="top">
 
+Indicates to the table build plug-in \(`hdbtable`\) that if a newer version of the table to deploy requires columns to be dropped, then the plug-in should check if the corresponding columns contain any data.
+
+If such columns exist and the parameter is set to “false“, then the plug-in reports an error and cancels the deployment of the new version of the `hdbtable` artifact. If the parameter is set to “true“, the plug-in drops the required columns.
+
+The `force_drop_columns` parameter works for all allowed changes for the `hdbtable` plug-in.
+
+The default value is “true”.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`revoke_external_grants` 
+
+</td>
+<td valign="top">
+
+true, false
+
+</td>
+<td valign="top">
+
+Indicates if any privileges granted to '`.hdbrole`' artifacts by external authorities are revoked during redeploment to ensure consistency of roles.
+
+The default value is “false”.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`optimized_redeploy` 
+
+</td>
+<td valign="top">
+
+true, false
 
 </td>
 <td valign="top">
@@ -2789,23 +2314,17 @@ Indicates if the optimized redeployment strategy should be used instead of the u
 
 The default value is “true”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `skip_unchanged_expansions` 
-
-
+`skip_unchanged_expansions` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2814,23 +2333,17 @@ Instructs the make expander to not add expansions with same name and content as 
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `try_fast_table_migration` 
-
-
+`try_fast_table_migration` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2841,23 +2354,17 @@ This only works for simple changes such as adding or removing columns. For more 
 
 The default value is “false”.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `undeploy_dependent_ recursively` 
-
-
+`undeploy_dependent_ recursively` 
 
 </td>
 <td valign="top">
 
 true, false
-
-
 
 </td>
 <td valign="top">
@@ -2865,8 +2372,6 @@ true, false
 Indicates that all dependent artifacts should be considered for an undeployment.
 
 The default value is “false”.
-
-
 
 </td>
 </tr>

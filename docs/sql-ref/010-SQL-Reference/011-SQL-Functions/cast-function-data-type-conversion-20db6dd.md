@@ -94,13 +94,13 @@ Returns the value of an expression converted to a supplied data type.
 
 ## Examples
 
-Convert the value ***7*** to the NVARCHAR value ***7***:
+Convert the value `7` to the NVARCHAR value ***7***:
 
 ```
 SELECT CAST (7 AS NVARCHAR) "cast" FROM DUMMY;
 ```
 
-Converts the value ***10.5*** to the INTEGER value ***10***, truncating the mantissa.
+Converts the value `10.5` to the INTEGER value ***10***, truncating the mantissa.
 
 ```
 SELECT CAST (10.5 AS INTEGER) "cast" FROM DUMMY;

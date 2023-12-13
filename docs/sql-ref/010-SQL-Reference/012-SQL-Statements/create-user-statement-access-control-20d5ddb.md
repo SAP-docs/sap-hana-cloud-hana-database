@@ -429,14 +429,10 @@ Defines user parameters.
 
 User Parameter
 
-
-
 </th>
 <th valign="top">
 
 Purpose
-
-
 
 </th>
 </tr>
@@ -445,16 +441,12 @@ Purpose
 
 CLIENT
 
-
-
 </td>
 <td valign="top">
 
 When you define column store views, the user parameter CLIENT restricts the access of the user to the specified client.
 
 This parameter is for internal use only.
-
-
 
 </td>
 </tr>
@@ -463,14 +455,10 @@ This parameter is for internal use only.
 
 LOCALE
 
-
-
 </td>
 <td valign="top">
 
 When you define column store views, the user parameter LOCALE translates information according to the user's locale.
-
-
 
 </td>
 </tr>
@@ -479,14 +467,10 @@ When you define column store views, the user parameter LOCALE translates informa
 
 TIME ZONE
 
-
-
 </td>
 <td valign="top">
 
 Not used by the SAP HANA database, but can be read by external applications.
-
-
 
 </td>
 </tr>
@@ -495,14 +479,10 @@ Not used by the SAP HANA database, but can be read by external applications.
 
 EMAIL ADDRESS
 
-
-
 </td>
 <td valign="top">
 
 Not currently used by the SAP HANA database, but can be read by external applications. This value must be unique.
-
-
 
 </td>
 </tr>
@@ -510,8 +490,6 @@ Not currently used by the SAP HANA database, but can be read by external applica
 <td valign="top">
 
 STATEMENT MEMORY LIMIT
-
-
 
 </td>
 <td valign="top">
@@ -536,14 +514,10 @@ Sets a user specific statement memory limit in gigabytes.
 
 STATEMENT THREAD LIMIT
 
-
-
 </td>
 <td valign="top">
 
 Sets a user-specific concurrency limit on statements \(despite the name, STATEMENT THREAD LIMIT is not an actual thread limit\). Similar behaviors to STATEMENT MEMORY LIMIT apply to STATEMENT THREAD LIMIT.
-
-
 
 </td>
 </tr>
@@ -552,14 +526,10 @@ Sets a user-specific concurrency limit on statements \(despite the name, STATEME
 
 PARAMETER PRIORITY
 
-
-
 </td>
 <td valign="top">
 
 Sets a user-level priority value for all statements in the current connection; the range of possible values is from 0 to 9 \(the default is 5\).
-
-
 
 </td>
 </tr>
@@ -695,7 +665,7 @@ The description of the parameters concerned can be found in the Appendix of the 
 
 ## Example 1 - Create user with password
 
-The following example shows you how to create a user ***T12345*** with a password ***Password123***.
+The following example shows you how to create a user `T12345` with a password `Password123`.
 
 ```
 CREATE USER T12345 PASSWORD Password123;
@@ -707,7 +677,7 @@ CREATE USER T12345 PASSWORD Password123;
 
 ## Example 2 - Create user that uses an external authentication mechanism
 
-The following example creates an SAML provider named ***ac\_saml\_provider*** in the database, specifying a subject and issuer for ***ACompany***.
+The following example creates an SAML provider named `ac_saml_provider` in the database, specifying a subject and issuer for `ACompany`.
 
 ```
 CREATE SAML PROVIDER ac_saml_provider 
@@ -715,7 +685,7 @@ CREATE SAML PROVIDER ac_saml_provider
     ISSUER 'E = John.Do@acompany.com,CN = ACNetCA,OU = ACNet,O = ACompany,C = EN';
 ```
 
-The following example creates a new user called ***new\_user*** with password ***Password1***. The user can connect to the system by using the given password and with an assertion of the existing SAML provider ***ac\_saml\_provider***. The *<mapped\_user\_name\>* is set to ***ANY*** as the assertion provides the database user name.
+The following example creates a new user called `new_user` with password `Password1`. The user can connect to the system by using the given password and with an assertion of the existing SAML provider `ac_saml_provider`. The *<mapped\_user\_name\>* is set to `ANY` as the assertion provides the database user name.
 
 ```
 CREATE USER new_user PASSWORD Password1 WITH IDENTITY ANY FOR SAML PROVIDER ac_saml_provider;
@@ -749,7 +719,7 @@ CREATE USER testuser WITH IDENTITY ANY FOR SAML PROVIDER nonexistandsamlprovider
 
 ## Example 3 - Create user that is associated with a remote user
 
-This example creates a new user called ***USER1*** associated with the user ***USER2*** at the remote database ***DB2***.
+This example creates a new user called `USER1` associated with the user `USER2` at the remote database `DB2`.
 
 ```
 CREATE USER USER1 WITH REMOTE IDENTITY USER2 AT DATABASE DB2;
@@ -758,11 +728,11 @@ CREATE USER USER1 WITH REMOTE IDENTITY USER2 AT DATABASE DB2;
 **Related Information**  
 
 
-[User Management](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/dea55d23bb571014bf25f6ed0d3b2b17.html "Every user who wants to work directly with the SAP HANA database must have a database user with the necessary privileges. Depending on the scenario, the user accessing SAP HANA may either be a technical system user or an individual end user.") :arrow_upper_right:
+[User Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/dea55d23bb571014bf25f6ed0d3b2b17.html "Every user who wants to work directly with the SAP HANA database must have a database user with the necessary privileges. Depending on the scenario, the user accessing SAP HANA may either be a technical system user or an individual end user.") :arrow_upper_right:
 
-[Authentication and Single Sign-On](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/db60da90bb5710149e358d50a7361419.html "The identity of users accessing the SAP HANA database is verified through a process called authentication. SAP HANA supports several authentication mechanisms that can be used for the integration of SAP HANA into single sign-on environments (SSO). The mechanisms used to authenticate individual users are specified as part of the user definition.") :arrow_upper_right:
+[Authentication and Single Sign-On](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/db60da90bb5710149e358d50a7361419.html "The identity of users accessing the SAP HANA database is verified through a process called authentication. SAP HANA supports several authentication mechanisms that can be used for the integration of SAP HANA into single sign-on environments (SSO). The mechanisms used to authenticate individual users are specified as part of the user definition.") :arrow_upper_right:
 
-[Characters Not Permitted in User Names](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/55d3b5a01166494582cc12f70ccfa17f.html "User names can contain any Compatibility Encoding Scheme for UTF-16: 8-Bit (CESU-8) characters except for a small subset.") :arrow_upper_right:
+[Characters Not Permitted in User Names](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/55d3b5a01166494582cc12f70ccfa17f.html "User names can contain any Compatibility Encoding Scheme for UTF-16: 8-Bit (CESU-8) characters except for a small subset.") :arrow_upper_right:
 
 [CREATE SAML PROVIDER Statement \(Access Control\)](create-saml-provider-statement-access-control-20d4cca.md "Defines a SAML provider in the SAP HANA database.")
 
@@ -780,7 +750,7 @@ CREATE USER USER1 WITH REMOTE IDENTITY USER2 AT DATABASE DB2;
 
 [SAML\_USER\_MAPPINGS System View](../../020-System-Views-Reference/021-System-Views/saml-user-mappings-system-view-20cdc48.md "Shows the SAML providers known for each user.")
 
-[Password Policy Configuration Options](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
+[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
 
 [SET USERGROUP Statement \(Session Management\)](set-usergroup-statement-session-management-1991853.md "Specify a user group to which every subsequently created user is automatically assigned.")
 

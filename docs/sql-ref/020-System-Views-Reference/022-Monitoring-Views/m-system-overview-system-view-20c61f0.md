@@ -17,21 +17,15 @@ Provides an overview of system status including important resource usage informa
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SECTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the section name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the section name.
 
 NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key name in section.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the key name in section.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status value: OK, ERROR, or WARNING. This row is empty for info items.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the status value: OK, ERROR, or WARNING. This row is empty for info ite
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key value in section.
-
-
 
 </td>
 </tr>
@@ -132,7 +102,7 @@ Displays the key value in section.
 **Related Information**  
 
 
-[System Privileges](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/cadbcfc38b084808b80b3551b1cd756e.html "System privileges control general system activities.") :arrow_upper_right:
+[System Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/cadbcfc38b084808b80b3551b1cd756e.html "System privileges control general system activities.") :arrow_upper_right:
 
 [System Limitations](../../010-SQL-Reference/system-limitations-20a7605.md "Limitations to take into consideration when administering an SAP HANA Cloud database.")
 

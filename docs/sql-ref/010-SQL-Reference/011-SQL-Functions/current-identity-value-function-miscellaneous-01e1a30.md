@@ -43,16 +43,12 @@ SELECT CURRENT_IDENTITY_VALUE() "current identity value" FROM DUMMY;
 
 current identity value
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 101
-
-
 
 </td>
 </tr>

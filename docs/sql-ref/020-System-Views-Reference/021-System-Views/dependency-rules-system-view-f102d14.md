@@ -17,21 +17,15 @@ For internal use only. Provides a list of dependency rules in the system.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 DEPENDENCY\_RULE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of dependency rule.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of dependency rule.
 
 DEPENDENCY\_RULE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of dependency rule.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of dependency rule.
 
 DEPENDENCY\_RULE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(6\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of dependency rule.
-
-
 
 </td>
 </tr>
@@ -109,25 +85,27 @@ Displays the type of dependency rule.
 
 DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
-
-
 
 </td>
 <td valign="top">
 
 Definition of dependency rule
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiof102d14ced0c438abd8cdab118bde347__section_ktq_xdq_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

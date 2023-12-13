@@ -17,21 +17,15 @@ Provides information about volume files.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 FILE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of file: DATA, LOG, and so on.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the type of file: DATA, LOG, and so on.
 
 FILE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the file name.
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of used data within the file in bytes.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the size of used data within the file in bytes.
 
 TOTAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total file size in bytes.
-
-
 
 </td>
 </tr>
@@ -208,9 +160,9 @@ Displays information about files in the volume directories. All files in these d
 
 The meaning of ***USED\_SIZE*** depends on the file type:
 
--    **DATA:** Displays the size of used and shadow pages in the data volume file.
+-   **DATA:** Displays the size of used and shadow pages in the data volume file.
 
--    **LOG:** Displays that the used size equals the ***TOTAL\_SIZE***.
+-   **LOG:** Displays that the used size equals the ***TOTAL\_SIZE***.
 
 
 **Related Information**  

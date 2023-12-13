@@ -94,20 +94,20 @@ Only database users that have the CREATE X509 PROVIDER system privilege can crea
 Create an X.509 provider.
 
 ```
-CREATE X509 PROVIDER MyProvider WITH ISSUER 'CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US';
+CREATE X509 PROVIDER MyProvider WITH ISSUER 'CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US';
 ```
 
 Create an X.509 provider with a matching rule.
 
 ```
-CREATE X509 PROVIDER MyProvider WITH ISSUER 'CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US'
+CREATE X509 PROVIDER MyProvider WITH ISSUER 'CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US'
    MATCHING RULES 'CN=*, OU=SAP SE, C=DE';
 ```
 
 **Related Information**  
 
 
-[X.509 Certificate-Based User Authentication](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/2b335f7eec6a450095f110ea961d77cc.html "SAP HANA supports X.509 client certificates for user authentication in single sign-on environments. In particular, X.509 certificate-based authentication can be used for technical users to secure system-to-system integration.") :arrow_upper_right:
+[X.509 Certificate-Based User Authentication](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/2b335f7eec6a450095f110ea961d77cc.html "SAP HANA supports X.509 client certificates for user authentication in single sign-on environments. In particular, X.509 certificate-based authentication can be used for technical users to secure system-to-system integration.") :arrow_upper_right:
 
 [ALTER X509 PROVIDER Statement \(Access Control\)](alter-x509-provider-statement-access-control-4f7e59d.md "Alters an X.509 provider in the SAP HANA database.")
 

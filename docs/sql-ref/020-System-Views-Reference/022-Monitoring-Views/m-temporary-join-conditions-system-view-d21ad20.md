@@ -17,21 +17,15 @@ Provides information about temporary join conditions.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 VIEW\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join view name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the join view name.
 
 JOIN\_CONDITION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join condition name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the join condition name.
 
 JOIN\_ORDER
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the join order number.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the join order number.
 
 TABLE\_SCHEMA\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of column1.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema name of column1.
 
 TABLE\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of column1.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the table name of column1.
 
 COLUMN\_NAME1
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of column1.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the name of column1.
 
 ALIAS\_NUMBER1
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the alias number of table name1.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the alias number of table name1.
 
 TABLE\_SCHEMA\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of column2.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the schema name of column2.
 
 TABLE\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of column2.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the table name of column2.
 
 COLUMN\_NAME2
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of column2.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the name of column2.
 
 ALIAS\_NUMBER2
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the alias number of table name2.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the alias number of table name2.
 
 CONSTRAINTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join constraint name.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the join constraint name.
 
 JOIN\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join type.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the join type.
 
 CARDINALITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(3\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the join cardinality.
-
-
 
 </td>
 </tr>

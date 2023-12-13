@@ -23,5 +23,5 @@ In many cases, the features listed in this section are not available because the
 
 [SAP HANA Cloud Migration Guide](https://help.sap.com/viewer/3c53bc7b58934a9795b6dd8c7e28cf05/hanacloud/en-US)
 
-[SAP Note 2868742](https://launchpad.support.sap.com/#/notes/2868742 "Differences between SAP HANA Cloud and SAP HANA Platform for SQL, SQLScript and SAP HDI (SAP HANA Deployment Infrastructure")
+[SAP Note 2868742](https://me.sap.com/notes/2868742 "Differences between SAP HANA Cloud and SAP HANA Platform for SQL, SQLScript and SAP HDI (SAP HANA Deployment Infrastructure")
 

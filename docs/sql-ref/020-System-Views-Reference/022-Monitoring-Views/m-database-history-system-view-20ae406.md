@@ -17,21 +17,15 @@ Provides installation version history.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 INSTALL\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the installation or first start time.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the installation or first start time.
 
 VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the version: major.minor.patch.build.
-
-
 
 </td>
 </tr>

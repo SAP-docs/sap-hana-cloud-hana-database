@@ -17,21 +17,15 @@ Provides information about the virtual files for JSON collections.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the table name.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the object ID of the table.
 
 COLLECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the collection.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the ID of the collection.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the volume ID.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the volume ID.
 
 FILE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of file.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the type of file.
 
 INTERNAL\_OBJECT\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal identifier for the table.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the internal identifier for the table.
 
 FILE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the file.
 
 CONTAINER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the container ID.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the container ID.
 
 PHYSICAL\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the storage size used for the file in bytes.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the storage size used for the file in bytes.
 
 PAGE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of storage pages used for the file.
-
-
 
 </td>
 </tr>

@@ -63,7 +63,7 @@ Returns a substring from the specified string that follows the first occurrence 
 
 ## Example
 
-This example returns ***Friend***, the part of the given string that is to the right of the first occurrence of ***My***:
+This example returns ***Friend***, the part of the given string that is to the right of the first occurrence of `My`:
 
 ```
 SELECT SUBSTR_AFTER ('Hello My Friend','My ') "substr after" FROM DUMMY;

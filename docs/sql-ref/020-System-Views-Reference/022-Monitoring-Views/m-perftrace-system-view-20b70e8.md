@@ -17,21 +17,15 @@ Displays the state of the current performance trace. The performance trace provi
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of the performance trace: STOPPED, STARTED, or SAVING.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the status of the performance trace: STOPPED, STARTED, or SAVING.
 
 START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays when the performance trace started.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays when the performance trace started.
 
 STOP\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays when the performance trace stopped.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays when the performance trace stopped.
 
 FILE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of the collected trace files in bytes. This value is only valid if tracing is stopped and not saved.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the size of the collected trace files in bytes. This value is only vali
 
 REMAINING\_SECONDS
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the remaining number of seconds until tracing stops automatically.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the remaining number of seconds until tracing stops automatically.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL user name filter.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the SQL user name filter.
 
 APPLICATION\_USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application user name filter.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the application user name filter.
 
 APPLICATION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the application name filter.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the application name filter.
 
 PASSPORT\_TRACELEVEL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the passport filter: MEDIUM/HIGH.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the passport filter: MEDIUM/HIGH.
 
 PLAN\_EXECUTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether plan execution details are recorded.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Indicates whether plan execution details are recorded.
 
 FUNCTION\_PROFILER
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether or not the function profiler details are recorded: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays whether or not the function profiler details are recorded: TRUE/FALSE.
 
 ROOT\_STATEMENT\_HASH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the root statement hash filter.
-
-
 
 </td>
 </tr>

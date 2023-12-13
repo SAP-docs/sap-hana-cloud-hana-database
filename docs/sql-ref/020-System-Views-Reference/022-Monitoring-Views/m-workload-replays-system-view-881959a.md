@@ -15,21 +15,15 @@ Provides information about workload replays.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 CAPTURE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of the captured workload.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the unique ID of the captured workload.
 
 CAPTURE\_SYSTEM\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(3\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system ID in which the capture has been done.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the system ID in which the capture has been done.
 
 CAPTURE\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the database in which the capture has been done.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the name of the database in which the capture has been done.
 
 REPLAY\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique ID of the replayed workload.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the unique ID of the replayed workload.
 
 REPLAY\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user-specified name of the replayed workload.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the user-specified name of the replayed workload.
 
 REPLAY\_DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user-specified description of the replayed workload.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the user-specified description of the replayed workload.
 
 REPLAY\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the start timestamp of the replay.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the start timestamp of the replay.
 
 REPLAY\_UTC\_START\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the UTC start timestamp of the replay.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the UTC start timestamp of the replay.
 
 REPLAY\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the end timestamp of the replayed workload.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the end timestamp of the replayed workload.
 
 REPLAY\_UTC\_END\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the UTC end timestamp of the replayed workload.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the UTC end timestamp of the replayed workload.
 
 REPLAY\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name in which the replay has been done.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the host name in which the replay has been done.
 
 REPLAY\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the service port number in which the replay has been done.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the service port number in which the replay has been done.
 
 REPLAY\_SYSTEM\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(3\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the system ID in which the replay has been done.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the system ID in which the replay has been done.
 
 REPLAY\_DATABASE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the database in which the replay has been done.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the name of the database in which the replay has been done.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status of workload replays.
-
-
 
 </td>
 </tr>
@@ -383,21 +287,15 @@ Displays the status of workload replays.
 
 PROGRESS
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays a measure of how much the replayer has made its progress.
-
-
 
 </td>
 </tr>
@@ -406,21 +304,15 @@ Displays a measure of how much the replayer has made its progress.
 
 REPLAY\_SESSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current or replayed logical sessions.
-
-
 
 </td>
 </tr>
@@ -429,21 +321,15 @@ Displays the number of current or replayed logical sessions.
 
 REPLAY\_STATEMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current or replayed statements.
-
-
 
 </td>
 </tr>
@@ -452,21 +338,15 @@ Displays the number of current or replayed statements.
 
 REPLAY\_FETCH\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current or replayed fetch operations.
-
-
 
 </td>
 </tr>
@@ -475,21 +355,15 @@ Displays the number of current or replayed fetch operations.
 
 REPLAY\_COMMITTED\_TRANSACTION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of current or replayed committed transactions.
-
-
 
 </td>
 </tr>
@@ -498,21 +372,15 @@ Displays the number of current or replayed committed transactions.
 
 ERROR\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the error code generated by the system during capturing.
-
-
 
 </td>
 </tr>
@@ -521,21 +389,15 @@ Displays the error code generated by the system during capturing.
 
 ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the error message generated by the system during capturing.
-
-
 
 </td>
 </tr>
@@ -556,5 +418,5 @@ Displays the error message generated by the system during capturing.
 
 [DROP WORKLOAD MAPPING Statement \(Workload Management\)](../../010-SQL-Reference/012-SQL-Statements/drop-workload-mapping-statement-workload-management-8d90e94.md "Drops a workload mapping.")
 
-[Workload Management](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/30f2e9cb92aa4f358dda4ac58e062d83.html "The load on an SAP HANA system can be managed by selectively applying limitations and priorities to how resources are used. Settings can be applied globally or at the level of individual user sessions by using workload classes.") :arrow_upper_right:
+[Workload Management](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/30f2e9cb92aa4f358dda4ac58e062d83.html "The load on an SAP HANA system can be managed by selectively applying limitations and priorities to how resources are used. Settings can be applied globally or at the level of individual user sessions by using workload classes.") :arrow_upper_right:
 

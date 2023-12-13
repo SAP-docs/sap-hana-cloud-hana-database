@@ -52,7 +52,7 @@ To bind an application to an alternative schema service, perform the following s
         Choose the target schema service from the drop-down list of options, for example *MySchema hana \(schema\)*.
 
 
-    The new connection is displayed in the list of database connections under the *Database Connections* node in the *SAP HANA PROJECTS* pane, for example, ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *cross-container-service-1*.
+    The new connection is displayed in the list of database connections under the *Database Connections* node in the *SAP HANA PROJECTS* pane, for example, ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1*.
 
 3.  Bind a database application to a schema service.
 
@@ -60,14 +60,14 @@ To bind an application to an alternative schema service, perform the following s
 
     1.  Select a connection to bind the schema service to.
 
-        In the list of connections displayed in *Database Connections*, select the service to which you want to bind your application \(for example, ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *cross-container-service-1*\), and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
+        In the list of connections displayed in *Database Connections*, select the service to which you want to bind your application \(for example, ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1*\), and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
 
     2.  Select the target schema service
 
         In the list of options displayed, choose *Bind to a schema service* and choose *MySchema hana \(schema\)*.
 
 
-    The status of the database connection changes to ![](images/BAS_icon_dependencyBound_e45e7a9.svg) *cross-container-service-1 \(MySchema\)*.
+    The status of the database connection changes to ![](images/BAS_icon_dependencyBound_e45e7a9.svg)*cross-container-service-1 \(MySchema\)*.
 
 4.  Unbind your database application from a schema service.
 
@@ -77,7 +77,7 @@ To bind an application to an alternative schema service, perform the following s
 
         -   Bound "non-target" container services, for example, a schema service:
 
-            ![](images/BAS_icon_dependencyBound_e45e7a9.svg) *cross-container-service-1 \(MySchemaService\)* 
+            ![](images/BAS_icon_dependencyBound_e45e7a9.svg)*cross-container-service-1 \(MySchemaService\)* 
 
 
     2.  Check the status of the schema service.
@@ -86,7 +86,7 @@ To bind an application to an alternative schema service, perform the following s
 
         -   Unbound "non-target" container services, for example, a schema service:
 
-            ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) *cross-container-service-1* 
+            ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1* 
 
 
 

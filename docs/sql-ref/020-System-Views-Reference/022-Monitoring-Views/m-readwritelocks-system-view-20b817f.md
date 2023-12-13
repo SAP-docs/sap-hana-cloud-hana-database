@@ -17,21 +17,15 @@ Provides read and write lock statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 STATISTICS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistics object name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the statistics object name.
 
 STATISTICS\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the statistics object unique ID.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the statistics object unique ID.
 
 OWNER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the context ID of the owner context \(for exclusive/intent locks\).
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the context ID of the owner context \(for exclusive/intent locks\).
 
 EXCLUSIVE\_LOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of exclusive lock calls.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the number of exclusive lock calls.
 
 EXCLUSIVE\_WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocking exclusive lock calls.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the number of blocking exclusive lock calls.
 
 EXCLUSIVE\_CAS\_COLLISION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the collision count on atomic operations on exclusive locks.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the collision count on atomic operations on exclusive locks.
 
 EXCLUSIVE\_COLLISION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the collision rate on exclusive locks percentage.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the collision rate on exclusive locks percentage.
 
 LAST\_EXCLUSIVE\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time of blocking exclusive lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the last time of blocking exclusive lock calls in microseconds.
 
 MAX\_EXCLUSIVE\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time of blocking exclusive lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the maximum time of blocking exclusive lock calls in microseconds.
 
 MIN\_EXCLUSIVE\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time of blocking exclusive lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the minimum time of blocking exclusive lock calls in microseconds.
 
 SUM\_EXCLUSIVE\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time of blocking exclusive lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the total time of blocking exclusive lock calls in microseconds.
 
 AVG\_EXCLUSIVE\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time of blocking exclusive lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the average time of blocking exclusive lock calls in microseconds.
 
 INTENT\_LOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of intent lock calls.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of intent lock calls.
 
 INTENT\_WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocking intent lock calls.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the number of blocking intent lock calls.
 
 INTENT\_CAS\_COLLISION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the collision count on atomic operation on intent lock.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the collision count on atomic operation on intent lock.
 
 INTENT\_TIMEOUT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of timed out intent lock calls.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the number of timed out intent lock calls.
 
 INTENT\_COLLISION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the collision rate on intent locks percentage.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the collision rate on intent locks percentage.
 
 LAST\_INTENT\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time of blocking intent lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the last time of blocking intent lock calls in microseconds.
 
 MAX\_INTENT\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time of blocking intent lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the maximum time of blocking intent lock calls in microseconds.
 
 MIN\_INTENT\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time of blocking intent lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the minimum time of blocking intent lock calls in microseconds.
 
 SUM\_INTENT\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time of blocking intent lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the total time of blocking intent lock calls in microseconds.
 
 AVG\_INTENT\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time of blocking intent lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the average time of blocking intent lock calls in microseconds.
 
 SHARED\_LOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of shared lock calls.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the number of shared lock calls.
 
 SHARED\_WAIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocking shared lock calls.
-
-
 
 </td>
 </tr>
@@ -661,21 +493,15 @@ Displays the number of blocking shared lock calls.
 
 SHARED\_CAS\_COLLISION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the collision count on atomic operation on shared lock.
-
-
 
 </td>
 </tr>
@@ -684,21 +510,15 @@ Displays the collision count on atomic operation on shared lock.
 
 SHARED\_TIMEOUT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of timed out shared lock calls.
-
-
 
 </td>
 </tr>
@@ -707,21 +527,15 @@ Displays the number of timed out shared lock calls.
 
 SHARED\_COLLISION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the collision rate on shared lock percentage.
-
-
 
 </td>
 </tr>
@@ -730,21 +544,15 @@ Displays the collision rate on shared lock percentage.
 
 LAST\_SHARED\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time of blocking shared lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -753,21 +561,15 @@ Displays the last time of blocking shared lock calls in microseconds.
 
 MAX\_SHARED\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum time of blocking shared lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -776,21 +578,15 @@ Displays the maximum time of blocking shared lock calls in microseconds.
 
 MIN\_SHARED\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum time of blocking shared lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -799,21 +595,15 @@ Displays the minimum time of blocking shared lock calls in microseconds.
 
 SUM\_SHARED\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total time of blocking shared lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -822,21 +612,15 @@ Displays the total time of blocking shared lock calls in microseconds.
 
 AVG\_SHARED\_WAIT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the average time of blocking shared lock calls in microseconds.
-
-
 
 </td>
 </tr>
@@ -845,21 +629,15 @@ Displays the average time of blocking shared lock calls in microseconds.
 
 COLLISION\_RATE
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the global collision rate percentage.
-
-
 
 </td>
 </tr>
@@ -868,21 +646,15 @@ Displays the global collision rate percentage.
 
 CREATE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of read and write lock creation \(for shared statistics only\).
-
-
 
 </td>
 </tr>
@@ -891,21 +663,15 @@ Displays the number of read and write lock creation \(for shared statistics only
 
 DESTROY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of read/write lock destructions \(for shared statistics only\).
-
-
 
 </td>
 </tr>
@@ -914,21 +680,15 @@ Displays the number of read/write lock destructions \(for shared statistics only
 
 COMPONENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the component.
-
-
 
 </td>
 </tr>
@@ -951,5 +711,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [LOCK TABLE Statement \(Transaction Management\)](../../010-SQL-Reference/012-SQL-Statements/lock-table-statement-transaction-management-20f88d8.md "Acquires an exclusive lock for a table.")
 
-[Manage Read-Write and Read-Only Access to a Remote Source](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/31a8a5dcd24b47e0a1c3e21f2427cb6f.html "The DML mode property specifies whether read-write or read-only access to the remote source is allowed. The DML mode, however, cannot override the restrictions of a remote source itself. For example, Amazon Athena and Google BigQuery remote sources are read-only and only the DML mode readonly is allowed.") :arrow_upper_right:
+[Manage Read-Write and Read-Only Access to a Remote Source](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/31a8a5dcd24b47e0a1c3e21f2427cb6f.html "The DML mode property specifies whether read-write or read-only access to the remote source is allowed. The DML mode, however, cannot override the restrictions of a remote source itself. For example, Amazon Athena and Google BigQuery remote sources are read-only and only the DML mode readonly is allowed.") :arrow_upper_right:
 

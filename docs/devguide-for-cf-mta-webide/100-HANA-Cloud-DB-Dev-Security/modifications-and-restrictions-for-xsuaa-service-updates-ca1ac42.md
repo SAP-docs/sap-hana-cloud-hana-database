@@ -17,28 +17,20 @@ The service broker allows you to update the configuration of an existing service
 
 Security Artifacts
 
-
-
 </th>
 <th valign="top">
 
 Add
-
-
 
 </th>
 <th valign="top">
 
 Delete
 
-
-
 </th>
 <th valign="top">
 
 Change
-
-
 
 </th>
 </tr>
@@ -47,21 +39,15 @@ Change
 
 Authorization Scope
 
-
-
 </td>
 <td valign="top">
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
 ✔
-
-
 
 </td>
 <td valign="top">
@@ -80,21 +66,15 @@ You can only modify the scope's:
 
 Attribute
 
-
-
 </td>
 <td valign="top">
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
 ✔
-
-
 
 </td>
 <td valign="top">
@@ -115,21 +95,15 @@ You can only modify the attribute's:
 
 Role template
 
-
-
 </td>
 <td valign="top">
 
 ✔
 
-
-
 </td>
 <td valign="top">
 
 ✔
-
-
 
 </td>
 <td valign="top">

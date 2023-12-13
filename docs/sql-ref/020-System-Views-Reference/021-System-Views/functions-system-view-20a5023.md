@@ -17,21 +17,15 @@ Provides information about available functions.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the function.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the function.
 
 FUNCTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the function.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the function.
 
 FUNCTION\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the function.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the object ID of the function.
 
 SQL\_SECURITY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL security setting of the function: DEFINER/INVOKER.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the SQL security setting of the function: DEFINER/INVOKER.
 
 DEFAULT\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the unqualified objects in the function.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema name of the unqualified objects in the function.
 
 INPUT\_PARAMETER\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the input type parameter count.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the input type parameter count.
 
 RETURN\_VALUE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the return value type parameter count.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the return value type parameter count.
 
 IS\_ENCRYPTED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the function is encrypted: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays whether the function is encrypted: TRUE/FALSE.
 
 DEFINITION
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the query string of the function.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the query string of the function.
 
 FUNCTION\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(10\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of function.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the type of function.
 
 FUNCTION\_USAGE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(9\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the usage type of the function: SCALAR, TABLE, AGGREGATE, or WINDOW.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the usage type of the function: SCALAR, TABLE, AGGREGATE, or WINDOW.
 
 IS\_VALID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the function is valid or not. This value becomes FALSE when its base objects are changed or dropped: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays whether the function is valid or not. This value becomes FALSE when its
 
 IS\_HEADER\_ONLY.
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\).
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the function is a header-only function: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays whether the function is a header-only function: TRUE/FALSE.
 
 IS\_DETERMINISTIC
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the function is deterministic: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays whether the function is deterministic: TRUE/FALSE.
 
 OWNER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the owner of the function.
-
-
 
 </td>
 </tr>
@@ -385,25 +289,27 @@ Displays the name of the owner of the function.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
-
-
 
 </td>
 <td valign="top">
 
 Displays the creation time of the function.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20a50237751910149785ae5ef858c5da__section_hvp_54b_dzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -442,13 +348,13 @@ Displays the creation time of the function.
 
 [Window Functions and the Window Specification](../../010-SQL-Reference/011-SQL-Functions/window-functions-and-the-window-specification-20a3533.md "Window functions allow you to perform analytic operations over a set of input rows.")
 
-[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
+[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
 
-[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
+[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
 
-[DROP FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/1eccca0a59854c7192f0f855f8d5dc7c.html "") :arrow_upper_right:
+[DROP FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/1eccca0a59854c7192f0f855f8d5dc7c.html "") :arrow_upper_right:
 
-[Function Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/98599d94ae4e440eaea23dfd740de41b.html "") :arrow_upper_right:
+[Function Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/98599d94ae4e440eaea23dfd740de41b.html "") :arrow_upper_right:
 
-[Function Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/58106d8f4fb44120b76fc6fb1f4a0bcc.html "") :arrow_upper_right:
+[Function Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/58106d8f4fb44120b76fc6fb1f4a0bcc.html "") :arrow_upper_right:
 

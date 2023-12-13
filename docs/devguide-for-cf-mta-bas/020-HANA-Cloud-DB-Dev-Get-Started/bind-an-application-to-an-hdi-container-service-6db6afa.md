@@ -28,7 +28,7 @@ If you are developing native SAP HANA applications in SAP Business Application S
 When you create a new database application project, the application's database module is bound by default to its own, new HDI container in the SAP HANA database by means of a Cloud Foundry service. However, you can change this behavior, for example, by choosing not to create a default service or binding the application's database module to another service, which you select from a list displayed by the database-connections Wizard.
 
 > ### Tip:  
-> In the *SAP HANA PROJECTS* explorer, the name of the bound service is displayed \(in brackets\) for each item in the list of *Database Connections*, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_di \(FlightReservation-hdidb-ws-12345\)*, along with the current binding status, for example: ![](images/BAS_icon_targetContainerBound_5c18d02.svg) \(*bound container*\) or ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) \(*unbound container*\).
+> In the *SAP HANA PROJECTS* explorer, the name of the bound service is displayed \(in brackets\) for each item in the list of *Database Connections*, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_di \(FlightReservation-hdidb-ws-12345\)*, along with the current binding status, for example: ![](images/BAS_icon_targetContainerBound_5c18d02.svg) \(*bound container*\) or ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) \(*unbound container*\).
 
 Services bound to a database module are local to a Cloud Foundry space. More specifically, the services are taken from the space that you are logged to on at the time of the bind operation. If you subsequently change to another Cloud Foundry space, the bound services still reference the old Cloud Foundry space, which can cause problems for the application. To ensure that the original services are automatically unbound if the underlying Cloud Foundry space changes, you can set the following user preferences:
 
@@ -59,14 +59,14 @@ To bind an application to an HDI container service, perform the following steps:
 
     2.  Select the connection type.
 
-        Specify which type of connection you want to add, for example, *Existing HDI Container* and type ***Flight*** in the *Select SAP HANA HDI service instance name* box.
+        Specify which type of connection you want to add, for example, *Existing HDI Container* and type `Flight` in the *Select SAP HANA HDI service instance name* box.
 
     3.  Choose the HDI container that you want to connect to.
 
         In the list of HDI containers displayed choose the HDI container that you want to add as a target for the new database connection, for example, *FlightReservation-hdidb-ws-12345*, and choose *Add*.
 
 
-    The SAP HANA Database Explorer displays the bound HDI-container service in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_di \(FlightReservation-hdidb-ws-12345\)*.
+    The SAP HANA Database Explorer displays the bound HDI-container service in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_di \(FlightReservation-hdidb-ws-12345\)*.
 
     > ### Caution:  
     > Binding an application's database module to an existing \(HDI-container\) service can lead to problems caused by the automatic removal of artifacts from a previous deployment to the target container.
@@ -94,7 +94,7 @@ To bind an application to an HDI container service, perform the following steps:
         > ### Caution:  
         > Binding an application's database module to an existing \(HDI-container\) service can lead to problems caused by the automatic removal of artifacts from a previous deployment to the target container, as described in the previous steps.
 
-        1.  In the *Database Connections* node, select the database module that you want to bind \(![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) *hdi\_db*\) and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
+        1.  In the *Database Connections* node, select the database module that you want to bind \(![](images/BAS_icon_targetContainerNotBound_193ce0c.svg)*hdi\_db*\) and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
         2.  Choose *Bind to the default service \(MyApp-hdidb-ws-12345\)*.
 
             The name of the default service is displayed in brackets \(*MyApp-hdidb-ws-12345* in the example above\) based on the following information: "*<ProjectName\>*-hdidb-ws-*<WorkspaceName\>*". If the indicated service does not exist, it is created automatically as part of the binding process.
@@ -102,7 +102,7 @@ To bind an application to an HDI container service, perform the following steps:
             > ### Note:  
             > If the database ID of the specified service does not match the database ID of the SAP HANA application's database module as specified in the application project's `mta.yaml` file, SAP Business Application Studio requires you to confirm or cancel the requested binding action.
 
-        3.  The module is bound to the selected service, and the new binding status is displayed alongside the connection in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_di \(MyApp-hdidb-ws-12345\)*.
+        3.  The module is bound to the selected service, and the new binding status is displayed alongside the connection in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_di \(MyApp-hdidb-ws-12345\)*.
 
     2.  Bind a database module to an existing, non-default \(HDI-container\) service.
 
@@ -111,24 +111,24 @@ To bind an application to an HDI container service, perform the following steps:
         > ### Caution:  
         > Binding an application's database module to an existing \(HDI-container\) service can lead to problems caused by the automatic removal of artifacts from a previous deployment to the target container, as described in the previous steps.
 
-        1.  In the *Database Connections* node, select the database module that you want to bind \(![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) *hdi\_db*\) and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
+        1.  In the *Database Connections* node, select the database module that you want to bind \(![](images/BAS_icon_targetContainerNotBound_193ce0c.svg)*hdi\_db*\) and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
         2.  Choose *MyApp-hdidb-ws-54321\(hdi-shared\)* from the list of existing services displayed.
 
             > ### Tip:  
-            > To search for an existing service name, type part of the name into the *Select an SAP HANA Service* box, for example, "***MyApp***" or "***54321***".
+            > To search for an existing service name, type part of the name into the *Select an SAP HANA Service* box, for example, "`MyApp`" or "`54321`".
 
-        3.  The module is bound to the selected service and the new binding status is displayed alongside the service name \(in brackets\) in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_di \(MyApp-hdidb-ws-54321\)*.
+        3.  The module is bound to the selected service and the new binding status is displayed alongside the service name \(in brackets\) in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_di \(MyApp-hdidb-ws-54321\)*.
 
     3.  Bind a database module to a **new** \(HDI-container\) service.
 
         If you chose not to bind an application's database module to the HDI-container service that is created by default during the creation of the application project, or you chose not to create a default HDI-container service for your application project, you can perform these tasks manually, as follows:
 
-        1.  In the *Database Connections* node, select the database module that you want to bind \(![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) *hdi\_db*\) and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
+        1.  In the *Database Connections* node, select the database module that you want to bind \(![](images/BAS_icon_targetContainerNotBound_193ce0c.svg)*hdi\_db*\) and choose ![](images/BAS_icon_bind_074ce84.svg) \(*Bind*\).
         2.  Choose *\+ Create a new service* in the service-creation Wizard.
 
             The service-creation Wizard suggests a name for the new service, using the following format: **<AppName\>*-hdidb-ws-*<WorkspaceID\>**
 
-        3.  The module is bound to the new service, and the new binding status is displayed alongside the service name \(in brackets\) in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_di \(FlightReservation-hdidb-ws-12345\)*.
+        3.  The module is bound to the new service, and the new binding status is displayed alongside the service name \(in brackets\) in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_di \(FlightReservation-hdidb-ws-12345\)*.
 
 
 5.  Unbind an application from an HDI-container service.
@@ -139,7 +139,7 @@ To bind an application to an HDI container service, perform the following steps:
 
         -   Bound "target" HDI container services:
 
-            ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_db \(MyApp-hdidb-ws-123\)*
+            ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_db \(MyApp-hdidb-ws-123\)*
 
 
     2.  Check the status of the HDI container service.
@@ -148,7 +148,7 @@ To bind an application to an HDI container service, perform the following steps:
 
         -   Unbound "target" HDI container services:
 
-            ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg) *hdb\_db* 
+            ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg)*hdb\_db* 
 
 
 

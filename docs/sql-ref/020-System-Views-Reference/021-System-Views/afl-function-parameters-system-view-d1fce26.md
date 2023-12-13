@@ -17,21 +17,15 @@ Provides information about parameters of AFL functions.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the AFL function.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the AFL function.
 
 AREA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the area name of the AFL function.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the area name of the AFL function.
 
 FUNCTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the function name of the AFL function.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the function name of the AFL function.
 
 PARAMETER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameter name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the parameter name.
 
 POSITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ordinal position of the parameter.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the ordinal position of the parameter.
 
 IO\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the direction of the parameter.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the direction of the parameter.
 
 DATA\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(22\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the data type.
 
 SQL\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL name.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the SQL name.
 
 SQL\_DATA\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(14\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL data type.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the SQL data type.
 
 LENGTH
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameter length in bytes.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the parameter length in bytes.
 
 RAW\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the parameter raw size in bytes.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the parameter raw size in bytes.
 
 SCALE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the scale of the parameter.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the scale of the parameter.
 
 USAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the usage.
-
-
 
 </td>
 </tr>
@@ -339,25 +255,27 @@ Displays the usage.
 
 BUSINESS\_TEXT\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
 
 Displays the business text ID of the parameter.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod1fce26ed2951014985c9106b0460248__section_zxb_wgc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

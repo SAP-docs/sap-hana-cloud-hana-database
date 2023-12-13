@@ -82,8 +82,6 @@ The SELECT query returns the following result:
 
 RECORD\_ID
 
-
-
 </th>
 </tr>
 <tr>
@@ -91,16 +89,12 @@ RECORD\_ID
 
 1
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -119,16 +113,12 @@ SELECT * FROM T1 WHERE RECORD_ID(T1) = 2;
 
 COLUMN1
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
 10
-
-
 
 </td>
 </tr>

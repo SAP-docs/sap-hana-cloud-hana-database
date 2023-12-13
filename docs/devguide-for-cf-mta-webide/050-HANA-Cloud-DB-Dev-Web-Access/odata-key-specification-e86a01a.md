@@ -40,7 +40,7 @@ The metadata document for the exposure of the view above is almost equal to the 
 > ### Note:  
 > Examples and graphics are provided for illustration purposes only; some URLs may differ from the ones shown.
 
- `http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
+`http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
 
 ![XS_examples_keys_explicit](images/XS_examples_keys_explicit_cbc8b9b.png)
 

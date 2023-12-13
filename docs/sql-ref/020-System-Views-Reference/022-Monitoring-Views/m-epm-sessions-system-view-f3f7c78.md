@@ -17,21 +17,15 @@ Provides all EPM sessions with detailed information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the schema name.
 
 MODEL\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the model name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the model name.
 
 USER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the user name.
 
 VERSION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the version.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the version.
 
 STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(18\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the status.
-
-
 
 </td>
 </tr>
@@ -201,7 +153,7 @@ Displays the status.
 **Related Information**  
 
 
-[EPM\_QUERY\_SOURCES System View](../021-System-Views/epm-query-sources-system-view-f3e6641.md "Provides information about available EPM query source.")
+[EPM\_QUERY\_SOURCES System View](../021-System-Views/epm-query-sources-system-view-f3e6641.md "Provides information about available EPM query sources.")
 
 [EPM\_MODELS System View](../021-System-Views/epm-models-system-view-f3e5ebc.md "Provides information about available EPM Models.")
 

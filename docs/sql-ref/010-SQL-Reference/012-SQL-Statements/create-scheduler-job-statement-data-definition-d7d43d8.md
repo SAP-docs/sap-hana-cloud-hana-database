@@ -141,14 +141,10 @@ Each cron field also supports wildcard characters as follows.
 
 Character
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -157,14 +153,10 @@ Description
 
 \*
 
-
-
 </td>
 <td valign="top">
 
 Any value.
-
-
 
 </td>
 </tr>
@@ -173,14 +165,10 @@ Any value.
 
 \*/n
 
-
-
 </td>
 <td valign="top">
 
 Any n-th value. For example, \*/1 for the day of the month means run every day of the month, \*/3 means run every third day of the month.
-
-
 
 </td>
 </tr>
@@ -189,14 +177,10 @@ Any n-th value. For example, \*/1 for the day of the month means run every day o
 
 a:b
 
-
-
 </td>
 <td valign="top">
 
 Any value between a and b.
-
-
 
 </td>
 </tr>
@@ -205,14 +189,10 @@ Any value between a and b.
 
 a:b/n
 
-
-
 </td>
 <td valign="top">
 
 Any n-th value between a and b. For example, 1:10/3 for the day of the month means every 3rd day between 1 and 10 or the 3rd, 6th, and 9th day of the month.
-
-
 
 </td>
 </tr>
@@ -221,14 +201,10 @@ Any n-th value between a and b. For example, 1:10/3 for the day of the month mea
 
 n.a
 
-
-
 </td>
 <td valign="top">
 
 \(For *<weekday\>* only\) A day of the week where n is a number from -5 to 5 for the n-th occurrence of the day in week a. For example, for the year 2019, 2.3 means Tuesday, January 15th. -3.22 means Friday, May 31st..
-
-
 
 </td>
 </tr>
@@ -327,7 +303,7 @@ This statement requires the CREATE ANY privilege in the schema where the schedul
 
 This example creates the retention\_job scheduler job that runs from Monday to Friday at 1:23:45 and calls the procedure RETENTION\_PROCEDURE. The three \* mean that the scheduled job can run on any date \( year month day\). The job is enabled and the RETENTION\_PROCEDURE requires the DAYS parameter, which is set to 14 in this example.
 
- 
+
 
 ```
 CREATE SCHEDULER JOB RETENTION_JOB CRON ‘* * * mon,tue,wed,thu,fri 1 23 45’ 

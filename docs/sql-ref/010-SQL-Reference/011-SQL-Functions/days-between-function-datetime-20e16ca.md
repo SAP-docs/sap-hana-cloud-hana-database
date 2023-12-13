@@ -84,6 +84,6 @@ SELECT DAYS_BETWEEN('2018-02-07 23:00:00',  '2018-02-08 23:00:00') AS sinceDays 
 
 [Datetime Data Types](../datetime-data-types-3f81ccc.md "Datetime data types are used to store date and time information.")
 
-[SAP Note 2573900 - Changed Behavior of the DAYS\_BETWEEN function in HANA 2.0 SPS03](https://launchpad.support.sap.com/#/notes/2573900 - Changed Behavior of the DAYS_BETWEEN function in HANA 2.0
+[SAP Note 2573900 - Changed Behavior of the DAYS\_BETWEEN function in HANA 2.0 SPS03](https://me.sap.com/notes/2573900 - Changed Behavior of the DAYS_BETWEEN function in HANA 2.0
             SPS03)
 

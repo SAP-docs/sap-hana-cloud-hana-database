@@ -216,14 +216,10 @@ SELECT * FROM "my_schema".t1;
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 </tr>
@@ -232,14 +228,10 @@ B
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -248,14 +240,10 @@ B
 
 2
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -286,14 +274,10 @@ SELECT * FROM "my_schema".t1;
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 </tr>
@@ -302,14 +286,10 @@ B
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -340,14 +320,10 @@ SELECT * FROM "my_schema".t1;
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 </tr>
@@ -356,14 +332,10 @@ B
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -372,14 +344,10 @@ B
 
 2
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -435,14 +403,10 @@ SELECT * FROM T1;
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 </tr>
@@ -451,15 +415,11 @@ B
 
 1
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 </tr>
 <tr>
@@ -467,14 +427,10 @@ B
 
 2
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -483,14 +439,10 @@ B
 
 4
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -520,14 +472,10 @@ SELECT * from T1;
 
 A
 
-
-
 </th>
 <th valign="top">
 
 B
-
-
 
 </th>
 </tr>
@@ -536,14 +484,10 @@ B
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -552,14 +496,10 @@ B
 
 10
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>

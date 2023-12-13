@@ -28,7 +28,7 @@ Converts all characters in string *<string\>* into a binary encoding using the d
 
 ## Example
 
-This example converts all characters in the given string to binary ***UTF-16BE*** encoding, and returns the value ***0041006E0074***:
+This example converts all characters in the given string to binary `UTF-16BE` encoding, and returns the value ***0041006E0074***:
 
 ```
 SELECT STRTOBIN ('Ant', 'UTF-16BE') "strtobin" FROM DUMMY;

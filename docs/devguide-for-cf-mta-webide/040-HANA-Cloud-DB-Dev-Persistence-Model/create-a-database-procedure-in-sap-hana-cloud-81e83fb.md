@@ -42,7 +42,7 @@ In SAP HANA Cloud a database procedure has the file extension `.hdbprocedure`, f
 
         Currently, there is only one type of project template available, namely: *Multi-Target Application Project*. Select *Multi-Target Application Project* and choose *Next*.
 
-    3.  Type the name ***MyApp*** for the new MTA project and choose *Next* to confirm.
+    3.  Type the name `MyApp` for the new MTA project and choose *Next* to confirm.
 
     4.  Specify details of the new MTA project and choose *Next* to confirm.
 
@@ -59,7 +59,7 @@ In SAP HANA Cloud a database procedure has the file extension `.hdbprocedure`, f
 
     2.  Create a new `.hdbprocedure` file for your stored procedure.
 
-        Right-click the database-module folder `db/src/procedures`, choose *New* \> *Procedure* from the context menu, and name the new stored procedure ***OrderCount***.
+        Right-click the database-module folder `db/src/procedures`, choose *New* \> *Procedure* from the context menu, and name the new stored procedure `OrderCount`.
 
         The new stored procedure opens in SAP Web IDE Full-Stack.
 
@@ -176,7 +176,7 @@ In SAP HANA Cloud a database procedure has the file extension `.hdbprocedure`, f
     4.  Enter a value in the *PURCHASEORDER\_ID* box.
 
         > ### Tip:  
-        > Since the `PURCHASEORDERID` is defined in the first column of the table `PurchaseOrderItem`, you can use the first values in each row of the file `item.csv` to run the tests, for example, ***0500000000*** or ***0500000001***.
+        > Since the `PURCHASEORDERID` is defined in the first column of the table `PurchaseOrderItem`, you can use the first values in each row of the file `item.csv` to run the tests, for example, `0500000000` or `0500000001`.
 
     5.  Run the procedure.
 

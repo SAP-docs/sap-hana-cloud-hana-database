@@ -53,36 +53,26 @@ SELECT customer, year, product, SUM(sales),
 
 CUSTOMER
 
-
-
 </th>
 <th valign="top">
 
 YEAR
-
-
 
 </th>
 <th valign="top">
 
 PRODUCT
 
-
-
 </th>
 <th valign="top">
 
 SUM\(SALES\)
-
-
 
 </th>
 <th valign="top">
 
 GROUPING\_ID\(CUSTOMER,YEAR,PRODUCT\),
 
-
-
 </th>
 </tr>
 <tr>
@@ -90,35 +80,25 @@ GROUPING\_ID\(CUSTOMER,YEAR,PRODUCT\),
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 2009
-
-
 
 </td>
 <td valign="top">
 
 P1
 
-
-
 </td>
 <td valign="top">
 
 100
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -127,35 +107,25 @@ P1
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 2010
 
-
-
 </td>
 <td valign="top">
 
 P1
-
-
 
 </td>
 <td valign="top">
 
 50
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -163,36 +133,26 @@ P1
 <td valign="top">
 
 C2
-
-
 
 </td>
 <td valign="top">
 
 2009
 
-
-
 </td>
 <td valign="top">
 
 P1
-
-
 
 </td>
 <td valign="top">
 
 200
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -201,35 +161,25 @@ P1
 
 C2
 
-
-
 </td>
 <td valign="top">
 
 2010
 
-
-
 </td>
 <td valign="top">
 
 P1
-
-
 
 </td>
 <td valign="top">
 
 100
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -238,35 +188,25 @@ P1
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 2009
 
-
-
 </td>
 <td valign="top">
 
 P2
-
-
 
 </td>
 <td valign="top">
 
 200
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -275,35 +215,25 @@ P2
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 2010
-
-
 
 </td>
 <td valign="top">
 
 P2
 
-
-
 </td>
 <td valign="top">
 
 150
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -312,35 +242,25 @@ P2
 
 C2
 
-
-
 </td>
 <td valign="top">
 
 2009
 
-
-
 </td>
 <td valign="top">
 
 P2
-
-
 
 </td>
 <td valign="top">
 
 300
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -349,35 +269,25 @@ P2
 
 C2
 
-
-
 </td>
 <td valign="top">
 
 2010
-
-
 
 </td>
 <td valign="top">
 
 P2
 
-
-
 </td>
 <td valign="top">
 
 150
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 </tr>
@@ -386,36 +296,26 @@ P2
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 2009
-
-
 
 </td>
 <td valign="top">
 
 a
 
-
-
 </td>
 <td valign="top">
 
 300
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 </tr>
 <tr>
@@ -423,35 +323,25 @@ a
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 2010
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 200
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -460,35 +350,25 @@ a
 
 C2
 
-
-
 </td>
 <td valign="top">
 
 2009
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -497,35 +377,25 @@ a
 
 C2
 
-
-
 </td>
 <td valign="top">
 
 2010
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 250
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -534,35 +404,25 @@ a
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 P1
 
-
-
 </td>
 <td valign="top">
 
 150
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -571,35 +431,25 @@ P1
 
 C2
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 P1
 
-
-
 </td>
 <td valign="top">
 
 300
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -608,35 +458,25 @@ P1
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 a
 
-
-
 </td>
 <td valign="top">
 
 P2
-
-
 
 </td>
 <td valign="top">
 
 350
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -645,35 +485,25 @@ P2
 
 C2
 
-
-
 </td>
 <td valign="top">
 
 a
 
-
-
 </td>
 <td valign="top">
 
 P2
-
-
 
 </td>
 <td valign="top">
 
 450
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 </tr>
@@ -681,36 +511,26 @@ P2
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 2009
 
-
-
 </td>
 <td valign="top">
 
 P1
-
-
 
 </td>
 <td valign="top">
 
 300
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -719,35 +539,25 @@ P1
 
 a
 
-
-
 </td>
 <td valign="top">
 
 2010
 
-
-
 </td>
 <td valign="top">
 
 P1
-
-
 
 </td>
 <td valign="top">
 
 150
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -755,36 +565,26 @@ P1
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 2009
 
-
-
 </td>
 <td valign="top">
 
 P2
-
-
 
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -793,35 +593,25 @@ P2
 
 a
 
-
-
 </td>
 <td valign="top">
 
 2010
-
-
 
 </td>
 <td valign="top">
 
 P2
 
-
-
 </td>
 <td valign="top">
 
 300
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -830,35 +620,25 @@ P2
 
 C1
 
-
-
 </td>
 <td valign="top">
 
 a
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 500
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -867,35 +647,25 @@ a
 
 C2
 
-
-
 </td>
 <td valign="top">
 
 a
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 750
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -903,36 +673,26 @@ a
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 2009
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 800
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 </tr>
@@ -940,37 +700,27 @@ a
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 2010
 
-
-
 </td>
 <td valign="top">
 
 a
 
-
-
 </td>
 <td valign="top">
 
 450
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 </tr>
 <tr>
@@ -978,35 +728,25 @@ a
 
 a
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 P1
 
-
-
 </td>
 <td valign="top">
 
 450
 
-
-
 </td>
 <td valign="top">
 
 6
-
-
 
 </td>
 </tr>
@@ -1015,35 +755,25 @@ P1
 
 a
 
-
-
 </td>
 <td valign="top">
 
 a
-
-
 
 </td>
 <td valign="top">
 
 P2
 
-
-
 </td>
 <td valign="top">
 
 800
 
-
-
 </td>
 <td valign="top">
 
 6
-
-
 
 </td>
 </tr>

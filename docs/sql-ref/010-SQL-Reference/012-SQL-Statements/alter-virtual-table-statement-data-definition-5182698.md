@@ -15,6 +15,7 @@ ALTER VIRTUAL TABLE <virtual_table_name>
     | ALTER <column_name> SET PROPERTY 'name' = 'value' [, 'name2' = 'value2' [, ...] ]
     | ALTER <column_name> UNSET PROPERTY 'name'[, 'name2'[, ...] ]
     | [ CANCEL ] ADD SHARED [ SNAPSHOT ] REPLICA [ <partition_clause> ] [ <load_unit> ] [ ASYNC ]
+    | [ CANCEL ] ADD NOT SHARED [ SNAPSHOT ] REPLICA NAME <replica_table_name> [ ASYNC ]
     | ALTER REPLICA [ <partition_clause> ] [ <load_unit> ]
     | { ENABLE | DISABLE | DROP } REPLICA
     | [ CANCEL ] REFRESH SNAPSHOT REPLICA [ ASYNC ]
@@ -81,23 +82,6 @@ Cancels an asynchronous creation job. Include the ASYNC keyword when using CANCE
 
 </dd><dt><b>
 
-*<partition\_clause\>*
-
-</b></dt>
-<dd>
-
-Specifies the partitioning scheme for the replica table. Only single-level range partitions are supported, and only snapshot replicas can be partitioned.
-
-For clauses for creating heterogeneous and non-heterogeneous partitions, see the topics on *Non-heterogeneous Create Partition Clauses* *Heterogeneous Create Partition Clauses* in this guide.
-
- [Non-heterogeneous Create Partition Clauses](non-heterogeneous-create-partition-clauses-ca6a99b.md)
-
- [Heterogeneous Create Partition Clauses](heterogeneous-create-partition-clauses-d496e58.md)
-
-
-
-</dd><dt><b>
-
 *<load\_unit\>*
 
 </b></dt>
@@ -156,14 +140,45 @@ Creates the replica asynchronously.
 
 </dd><dt><b>
 
+\[ CANCEL \] ADD NOT SHARED \[ SNAPSHOT \] REPLICA NAME *<replica\_table\_name\>* \[ ASYNC \]
+
+</b></dt>
+<dd>
+
+Adds the specified replica table with replication or a snapshot of the remote source. The replica table cannot be shared among virtual tables.
+
+
+
+</dd><dt><b>
+
 ALTER REPLICA \[ *<partition\_clause\>* \] \[ *<load\_unit\>* \]
 
 </b></dt>
 <dd>
 
-Alters an existing replica column table.
+Alters an existing replica column table. If the replica is shared by multiple virtual tables, you cannot alter the partitioning scheme.
 
-If the replica is shared by multiple virtual tables, you cannot alter the partitioning scheme.
+
+<dl>
+<dt><b>
+
+*<partition\_clause\>*
+
+</b></dt>
+<dd>
+
+Specifies the partitioning scheme for the replica table. Only single-level range partitions are supported, and only snapshot replicas can be partitioned.
+
+For clauses for creating heterogeneous and non-heterogeneous partitions, see the topics on *Non-heterogeneous Create Partition Clauses* *Heterogeneous Create Partition Clauses* in this guide.
+
+[Non-Heterogeneous Create Partition Clauses](non-heterogeneous-create-partition-clauses-ca6a99b.md)
+
+[Heterogeneous Create Partition Clauses](heterogeneous-create-partition-clauses-d496e58.md)
+
+
+
+</dd>
+</dl>
 
 
 
@@ -328,6 +343,12 @@ Add a partitioned replica table for the virtual table VT1.
 ALTER VIRTUAL TABLE "VT1" ADD SHARED SNAPSHOT REPLICA PARTITION BY RANGE("l_orderkey")
  (PARTITION 1 <= VALUES < 10000, PARTITION 10000 <= VALUES < 20000, PARTITION 20000 <= VALUES < 30000, 
  PARTITION 30000 <= VALUES < 40000, PARTITION 40000 <= VALUES < 50000, PARTITION OTHERS) ASYNC
+```
+
+Add a non-shared replica table T1 for the virtual table REMOTE1\_VT.
+
+```
+ALTER VIRTUAL TABLE REMOTE1_VT ADD NOT SHARED REPLICA NAME T1;
 ```
 
 **Related Information**  

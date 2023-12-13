@@ -136,35 +136,25 @@ The operators between the top COLUMN SEARCH \(ID 1\) and the ROW SEARCH \(ID 7\)
 
 OPERATOR\_NAME
 
-
-
 </th>
 <th valign="top">
 
 OPERATOR\_ID
-
-
 
 </th>
 <th valign="top">
 
 PARENT\_OPERATOR\_ID
 
-
-
 </th>
 <th valign="top">
 
 LEVEL
 
-
-
 </th>
 <th valign="top">
 
 POSITION
-
-
 
 </th>
 </tr>
@@ -173,35 +163,25 @@ POSITION
 
 COLUMN SEARCH
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -210,35 +190,25 @@ NULL
 
 LIMIT
 
-
-
 </td>
 <td valign="top">
 
 2
-
-
 
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -247,35 +217,25 @@ LIMIT
 
 ORDER BY
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -284,35 +244,25 @@ ORDER BY
 
 GROUP BY
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 <td valign="top">
 
 3
 
-
-
 </td>
 <td valign="top">
 
 4
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -321,35 +271,25 @@ GROUP BY
 
 JOIN
 
-
-
 </td>
 <td valign="top">
 
 5
-
-
 
 </td>
 <td valign="top">
 
 4
 
-
-
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -358,35 +298,25 @@ JOIN
 
 COLUMN TABLE
 
-
-
 </td>
 <td valign="top">
 
 6
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 6
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -395,72 +325,52 @@ COLUMN TABLE
 
 ROW SEARCH
 
-
-
 </td>
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
 
 5
 
-
-
 </td>
 <td valign="top">
 
 6
-
-
 
 </td>
 <td valign="top">
 
 2
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 BTREE INDEX JOIN
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 7
 
-
-
 </td>
 <td valign="top">
 
 7
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -468,36 +378,26 @@ BTREE INDEX JOIN
 <td valign="top">
 
 BTREE INDEX JOIN
-
-
 
 </td>
 <td valign="top">
 
 9
 
-
-
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 8
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -506,35 +406,25 @@ BTREE INDEX JOIN
 
 COLUMN SEARCH
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">
 
 9<
 
-
-
 </td>
 <td valign="top">
 
 \>9
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -543,35 +433,25 @@ COLUMN SEARCH
 
 FILTER
 
-
-
 </td>
 <td valign="top">
 
 11
 
-
-
 </td>
 <td valign="top">
 
 10
 
-
-
 </td>
 <td valign="top">
 
 10
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -580,35 +460,25 @@ FILTER
 
 COLUMN TABLE
 
-
-
 </td>
 <td valign="top">
 
 12
 
-
-
 </td>
 <td valign="top">
 
 11
 
-
-
 </td>
 <td valign="top">
 
 11
-
-
 
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -712,21 +582,15 @@ The two examples give the same following result table.
 
 OPERATOR\_NAME
 
-
-
 </th>
 <th valign="top">
 
 OPERATOR\_DETAILS
 
-
-
 </th>
 <th valign="top">
 
 TABLE\_NAME
-
-
 
 </th>
 </tr>
@@ -735,21 +599,15 @@ TABLE\_NAME
 
 ROW SEARCH
 
-
-
 </td>
 <td valign="top">
 
 CUSTOMER.C\_CUSTKEY, CUSTOMER.C\_NAME, SUM\(LINEITEM.L\_EXTENDEDPRICE \* \(1 - LINEITEM.L\_DISCOUNT\)\), CUSTOMER.C\_ACCTBAL, NATION.N\_NAME, CUSTOMER.C\_ADDRESS, CUSTOMER.C\_PHONE, CUSTOMER.C\_ COMMENT
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -758,21 +616,15 @@ None
 
 LIMIT
 
-
-
 </td>
 <td valign="top">
 
 NUM RECORDS: 20
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -781,21 +633,15 @@ NUM RECORDS: 20
 
 ORDER BY
 
-
-
 </td>
 <td valign="top">
 
 SUM\(LINEITEM.L\_EXTENDEDPRICE \* \(1 - LINEITEM.L\_DISCOUNT\)\) DESC
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -804,21 +650,15 @@ None
 
 MERGE AGGREGATION
 
-
-
 </td>
 <td valign="top">
 
 NUM PARTITIONS: 4
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -827,21 +667,15 @@ None
 
 GROUP BY
 
-
-
 </td>
 <td valign="top">
 
 GROUPING: NATION.N\_NAME, R\_CUSTOMER.C\_CUSTKEY, AGGREGATION: SUM\(LINEITEM.L\_EXTENDEDPRICE \* \(1 - LINEITEM.L\_DISCOUNT\)\)
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 </tr>
@@ -849,8 +683,6 @@ None
 <td valign="top">
 
 CPBTREE INDEX JOIN
-
-
 
 </td>
 <td valign="top">
@@ -861,14 +693,10 @@ INDEX CONDITION: ORDERS.O\_ORDERKEY = LINEITEM.L\_ORDERKEY,
 
 INDEX FILTER: 'R' = LINEITEM.L\_RETURNFLAG
 
-
-
 </td>
 <td valign="top">
 
 LINEITEM
-
-
 
 </td>
 </tr>
@@ -876,8 +704,6 @@ LINEITEM
 <td valign="top">
 
 BTREE INDEX JOIN
-
-
 
 </td>
 <td valign="top">
@@ -886,14 +712,10 @@ INDEX NAME: \_SYS\_TREE\_RS\_285\_\#0\_\#P0,
 
 INDEX CONDITION: CUSTOMER.C\_NATIONKEY = NATION.N\_NATIONKEY
 
-
-
 </td>
 <td valign="top">
 
 NATION
-
-
 
 </td>
 </tr>
@@ -902,8 +724,6 @@ NATION
 
 BTREE INDEX JOIN
 
-
-
 </td>
 <td valign="top">
 
@@ -911,14 +731,10 @@ INDEX NAME: \_SYS\_TREE\_RS\_283\_\#0\_\#P0,
 
 INDEX CONDITION: ORDERS.O\_CUSTKEY = CUSTOMER.C\_CUSTKEY
 
-
-
 </td>
 <td valign="top">
 
 CUSTOMER
-
-
 
 </td>
 </tr>
@@ -927,21 +743,15 @@ CUSTOMER
 
 TABLE SCAN
 
-
-
 </td>
 <td valign="top">
 
 FILTER CONDITION: ORDERS.O\_ORDERDATE < '1994-01-01' AND ORDERS.O\_ORDERDATE \>= '1993-10-01'
 
-
-
 </td>
 <td valign="top">
 
 ORDERS
-
-
 
 </td>
 </tr>

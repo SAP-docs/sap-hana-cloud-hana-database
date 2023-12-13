@@ -17,21 +17,15 @@ Provides statistics on the physical contents of series tables.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the column table name.
-
-
 
 </td>
 </tr>
@@ -86,14 +68,10 @@ Displays the column table name.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -114,21 +92,15 @@ Displays the partition ID. Returns the following:
 
 SERIES\_KEY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of distinct series identified by the SERIES KEY columns.
-
-
 
 </td>
 </tr>
@@ -137,21 +109,15 @@ Displays the number of distinct series identified by the SERIES KEY columns.
 
 PERIOD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of distinct periods represented in the period column.
-
-
 
 </td>
 </tr>
@@ -160,21 +126,15 @@ Displays the number of distinct periods represented in the period column.
 
 ROWS\_EQUIDISTANT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows optimized to be in a piecewise equidistant segment.
-
-
 
 </td>
 </tr>
@@ -183,21 +143,15 @@ Displays the number of rows optimized to be in a piecewise equidistant segment.
 
 ROWS\_NOT\_EQUIDISTANT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows that have not been optimized to be in a piecewise equidistant segment.
-
-
 
 </td>
 </tr>
@@ -206,21 +160,15 @@ Displays the number of rows that have not been optimized to be in a piecewise eq
 
 ROWS\_REORGANIZED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows that have been optimized by the ALTER TABLE SERIES REORGANIZE statement.
-
-
 
 </td>
 </tr>
@@ -229,21 +177,15 @@ Displays the number of rows that have been optimized by the ALTER TABLE SERIES R
 
 ROWS\_NOT\_REORGANIZED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of rows that have not been processed by the ALTER TABLE SERIES REORGANIZE statement.
-
-
 
 </td>
 </tr>

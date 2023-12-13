@@ -17,21 +17,15 @@ Provides system information statements.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the statement name.
 
 DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement description.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the statement description.
 
 STATEMENT
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the SQL statement.
-
-
 
 </td>
 </tr>
@@ -109,7 +85,7 @@ Displays the SQL statement.
 **Related Information**  
 
 
-[System Privileges (Reference)](https://help.sap.com/viewer/c82f8d6a84c147f8b78bf6416dae7290/2023_2_QRC/en-US/4c6d4c4167ed42bcbbb2a0ed87790607.html "System privileges control general system activities.") :arrow_upper_right:
+[System Privileges (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/4c6d4c4167ed42bcbbb2a0ed87790607.html "System privileges control general system activities.") :arrow_upper_right:
 
-[System Views](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/25c9288d843945b7a9f39ccbc82c8bfa.html "System views for user-defined libraries.") :arrow_upper_right:
+[System Views](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/25c9288d843945b7a9f39ccbc82c8bfa.html "System views for user-defined libraries.") :arrow_upper_right:
 

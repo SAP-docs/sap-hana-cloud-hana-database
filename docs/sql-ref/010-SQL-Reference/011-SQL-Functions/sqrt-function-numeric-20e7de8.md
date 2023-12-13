@@ -28,7 +28,7 @@ Returns the square root of the numeric argument *<number\>*.
 
 ## Example
 
-The following example returns the value ***1.4142135623730951*** for ***"sqrt"***:
+The following example returns the value ***1.4142135623730951*** for `"sqrt"`:
 
 ```
 SELECT SQRT (2) "sqrt" FROM DUMMY;

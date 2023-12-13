@@ -17,21 +17,15 @@ Provides host information such as machine and OS configuration.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the key.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the key.
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the value.
-
-
 
 </td>
 </tr>
@@ -113,21 +89,15 @@ Displays the value.
 
 KEY
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Requires INIFILE ADMIN
-
-
 
 </th>
 </tr>
@@ -136,21 +106,32 @@ Requires INIFILE ADMIN
 
 build\_cloud\_edition
 
-
-
 </td>
 <td valign="top">
 
 Displays the Cloud version number for Cloud releases.
-
-
 
 </td>
 <td valign="top">
 
 Y
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+build\_qrc\_version
+
+</td>
+<td valign="top">
+
+Displays the quarterly release cycle version, in the form quarter/year, for example 4/2023. Non-quarterly release cycles show 0/0000.
+
+</td>
+<td valign="top">
+
+Y
 
 </td>
 </tr>
@@ -159,21 +140,15 @@ Y
 
 build\_version
 
-
-
 </td>
 <td valign="top">
 
 Displays the build version number. This is the same as M\_DATABASE.VERSION.
 
-
-
 </td>
 <td valign="top">
 
 N
-
-
 
 </td>
 </tr>
@@ -182,21 +157,15 @@ N
 
 timezone\_base\_name
 
-
-
 </td>
 <td valign="top">
 
 Displays the base time zone name.
 
-
-
 </td>
 <td valign="top">
 
 Y
-
-
 
 </td>
 </tr>
@@ -205,21 +174,15 @@ Y
 
 timezone\_dst\_name
 
-
-
 </td>
 <td valign="top">
 
 Displays the daylight savings time zone name.
 
-
-
 </td>
 <td valign="top">
 
 Y
-
-
 
 </td>
 </tr>
@@ -228,21 +191,15 @@ Y
 
 timezone\_name
 
-
-
 </td>
 <td valign="top">
 
 Displays the time zone name.
 
-
-
 </td>
 <td valign="top">
 
 Y
-
-
 
 </td>
 </tr>
@@ -251,21 +208,32 @@ Y
 
 timezone\_offset
 
-
-
 </td>
 <td valign="top">
 
 Displays the time zone offset to GMT, in seconds.
-
-
 
 </td>
 <td valign="top">
 
 Y
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+vcpus
+
+</td>
+<td valign="top">
+
+Displays the compute resources available, in vCPUs \(Virtual Central Processing Unit\).
+
+</td>
+<td valign="top">
+
+Y
 
 </td>
 </tr>

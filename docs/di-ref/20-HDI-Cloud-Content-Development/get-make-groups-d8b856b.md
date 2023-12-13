@@ -51,21 +51,15 @@ Specifies a list of files or folders to be deployed:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -74,21 +68,15 @@ Description
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(511\)
 
-
-
 </td>
 <td valign="top">
 
 A single path is either a fully qualified path to a file \(for example, `/path/to/a/file.txt`'\), or a fully qualified path to a folder \(for example, `/path/to/`\).
-
-
 
 </td>
 </tr>
@@ -109,21 +97,15 @@ Specifies a list of files or folders to be **un**deployed:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -132,21 +114,15 @@ Description
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(511\)
 
-
-
 </td>
 <td valign="top">
 
 A single path is either a fully qualified file path \(for example, `/path/to/a/file.txt`'\), or a fully qualified folder path \(for example, `/path/to/`\).
-
-
 
 </td>
 </tr>
@@ -167,21 +143,15 @@ The following table lists path parameters you can use with the `GET_MAKE_GROUPS`
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -190,21 +160,15 @@ Description
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(511\)
 
-
-
 </td>
 <td valign="top">
 
 A single path is either a fully qualified file path \(for example, `/path/to/a/file.txt`'\), or a fully qualified folder path \(for example, `/path/to/`\).
-
-
 
 </td>
 </tr>
@@ -213,21 +177,15 @@ A single path is either a fully qualified file path \(for example, `/path/to/a/f
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The key name of the parameter
-
-
 
 </td>
 </tr>
@@ -236,21 +194,15 @@ The key name of the parameter
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The value assigned to the parameter
-
-
 
 </td>
 </tr>
@@ -271,21 +223,15 @@ Additional parameters can be used to control various aspects of the procedure ex
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -294,21 +240,15 @@ Description
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The key name of the parameter
-
-
 
 </td>
 </tr>
@@ -317,21 +257,15 @@ The key name of the parameter
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The value assigned to the parameter
-
-
 
 </td>
 </tr>
@@ -344,8 +278,6 @@ The following additional parameters are available:
 -   `max_parallel_jobs`
 
 -   `optimized_redeploy`
-
--   `simulate_make`
 
 -   `skip_unchanged_expansions`
 
@@ -361,6 +293,9 @@ The following additional parameters are available:
 
 -   `message_severity`
 
+
+> ### Tip:  
+> For more information about all available SAP HANA HDI parameters, see *Available SAP HDI Parameters* in *Related Information* below.
 
 
 
@@ -395,21 +330,15 @@ Returns a table listing the independent MAKE groups, as follows:
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -418,21 +347,15 @@ Description
 
 MAKE\_GROUP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 An identifier for a make group which is assigned to every path
-
-
 
 </td>
 </tr>
@@ -441,21 +364,15 @@ An identifier for a make group which is assigned to every path
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(511\)
 
-
-
 </td>
 <td valign="top">
 
 A single path is either a fully qualified file path \(for example, `'a/path/to/a/file.txt`\), or a fully qualified folder path \(for example, `a/path/to/a/folder`\).
-
-
 
 </td>
 </tr>
@@ -601,4 +518,6 @@ The resulting file paths for each `MAKE` group can be used for separate calls to
 [The HDI Container API](the-hdi-container-api-40ba784.md "Maintain HDI containers and container content using the HDI container API.")
 
 [The SQL API for SAP HANA Deployment Infrastructure \(HDI\)](../the-sql-api-for-sap-hana-deployment-infrastructure-hdi-035dbbe.md "An SQL application programming interface (API) is available to help maintain the SAP HANA Deployment Infrastructure (HDI).")
+
+[Available SAP HDI Parameters](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/e2d3e543067e4f3282bf6dbf880c6b2d.html?version=2023_3_QRC#available-sap-hdi-parameters)
 

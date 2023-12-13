@@ -17,21 +17,15 @@ Provides service network I/O statistics.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SENDER\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name of the sending service.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name of the sending service.
 
 SENDER\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port that the sending service listens on.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the port that the sending service listens on.
 
 RECEIVER\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name of the receiving service.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the host name of the receiving service.
 
 RECEIVER\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port that the receiving service listens on.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the port that the receiving service listens on.
 
 SEND\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of bytes sent.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of bytes sent.
 
 RECEIVE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of bytes received.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the number of bytes received.
 
 SEND\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time spent sending in microseconds.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the time spent sending in microseconds.
 
 RECEIVE\_DURATION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the time spent receiving in microseconds.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the time spent receiving in microseconds.
 
 REQUEST\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of requests handled.
-
-
 
 </td>
 </tr>

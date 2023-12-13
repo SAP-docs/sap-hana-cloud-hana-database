@@ -17,21 +17,15 @@ Provides current plan information for landscape reorganization.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 STEP\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the step ID.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the step ID.
 
 STEP\_GROUP
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the step group.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the step group.
 
 PRECONDITION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the precondition of the specified step.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the precondition of the specified step.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the table name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the schema name.
 
 NEW\_PARTITION\_SPEC
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the new partition specification.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the new partition specification.
 
 OLD\_PARTITION\_SPEC
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
 
-
-
 </td>
 <td valign="top">
 
 Displays the old partition specification.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the old partition specification.
 
 PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the partition ID.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the partition ID.
 
 NEW\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host where the table/partition is moved to.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the host where the table/partition is moved to.
 
 NEW\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port where the table/partition is moved to.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the port where the table/partition is moved to.
 
 OLD\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host where the table/partition is located.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the host where the table/partition is located.
 
 OLD\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port where the table/partition is located.
-
-
 
 </td>
 </tr>
@@ -318,6 +240,8 @@ Displays the port where the table/partition is located.
 <a name="loio20cd4f11751910148df8d7b88529c921___r_e_o_r_g__p_l_a_n_1fulldesc_REORG_PLAN"/>
 
 ## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 This view contains the last table redistribution plan generated with this database connection. The contents of the session are stored temporarily and are deleted when the connection is closed.
 

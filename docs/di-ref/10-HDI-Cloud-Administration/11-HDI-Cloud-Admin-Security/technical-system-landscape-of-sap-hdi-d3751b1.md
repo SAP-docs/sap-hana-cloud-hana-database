@@ -10,7 +10,7 @@ The HDI API is based on SQL and database procedures. For example, the applicatio
 
 It is possible to assign HDI containers to container groups where a corresponding group-level management API restricts the management operations \(for example, create/drop, configure, etc.\) to the set of containers included in the specific group.
 
- ![](images/SAP_HDI_Architecture_9dee975.png) 
+![](images/SAP_HDI_Architecture_9dee975.png)
 
 
 

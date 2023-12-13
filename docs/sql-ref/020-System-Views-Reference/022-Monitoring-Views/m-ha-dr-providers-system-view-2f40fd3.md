@@ -15,21 +15,15 @@ Provides information about loaded HA/DR providers.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 PROVIDER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the HA/DR provider name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the HA/DR provider name.
 
 PROVIDER\_COMPANY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the HA/DR provider company name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the HA/DR provider company name.
 
 PROVIDER\_DESCRIPTION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(2000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the HA/DR provider description.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the HA/DR provider description.
 
 PROVIDER\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays theHA/DR provider version.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays theHA/DR provider version.
 
 PROVIDER\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the HA/DR provider type.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the HA/DR provider type.
 
 PROVIDER\_PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the HA/DR provider path.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the HA/DR provider path.
 
 EXECUTION\_ORDER
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the HA/DR provider execution order.
-
-
 
 </td>
 </tr>

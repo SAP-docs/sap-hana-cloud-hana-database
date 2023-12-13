@@ -66,28 +66,20 @@ The example above returns the results below:
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 A
-
-
 
 </th>
 <th valign="top">
 
 B
 
-
-
 </th>
 <th valign="top">
 
 coalesce
-
-
 
 </th>
 </tr>
@@ -96,28 +88,20 @@ coalesce
 
 1
 
-
-
 </td>
 <td valign="top">
 
 100.0
-
-
 
 </td>
 <td valign="top">
 
 80.0
 
-
-
 </td>
 <td valign="top">
 
 100.0
-
-
 
 </td>
 </tr>
@@ -126,28 +110,20 @@ coalesce
 
 2
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 63.0
 
-
-
 </td>
 <td valign="top">
 
 69.30000305175781
-
-
 
 </td>
 </tr>
@@ -156,28 +132,20 @@ NULL
 
 3
 
-
-
 </td>
 <td valign="top">
 
 NULL
 
-
-
 </td>
 <td valign="top">
 
 NULL
-
-
 
 </td>
 <td valign="top">
 
 50.0
-
-
 
 </td>
 </tr>

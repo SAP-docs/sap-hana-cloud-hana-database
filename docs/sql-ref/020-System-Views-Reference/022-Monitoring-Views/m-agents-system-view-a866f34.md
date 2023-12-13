@@ -13,21 +13,15 @@ Provides agent host information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 AGENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent name.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the agent name.
 
 FREE\_PHYSICAL\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the free physical memory on the agent host in bytes.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the free physical memory on the agent host in bytes.
 
 FREE\_SWAP\_SPACE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the free swap memory on the agent host in bytes.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the free swap memory on the agent host in bytes.
 
 LAST\_CONNECT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last successful connection time.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the last successful connection time.
 
 SYS\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent host timestamp in the agent host's local timezone.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the agent host timestamp in the agent host's local timezone.
 
 USED\_PHYSICAL\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used physical memory on the agent host in bytes.
-
-
 
 </td>
 </tr>
@@ -174,21 +132,15 @@ Displays the used physical memory on the agent host in bytes.
 
 USED\_SWAP\_SPACE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used swap memory on the agent host in bytes.
-
-
 
 </td>
 </tr>
@@ -197,21 +149,15 @@ Displays the used swap memory on the agent host in bytes.
 
 UTC\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent host timestamp in UTC.
-
-
 
 </td>
 </tr>
@@ -220,21 +166,15 @@ Displays the agent host timestamp in UTC.
 
 AGENT\_VERSION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent version.
-
-
 
 </td>
 </tr>
@@ -243,21 +183,15 @@ Displays the agent version.
 
 AGENT\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent status.
-
-
 
 </td>
 </tr>

@@ -62,95 +62,71 @@ For those sub-folders without a name-space configuration file, the name space de
     <th valign="top">
 
     Design-time Resource Path
-
-
     
     </th>
     <th valign="top">
 
     Name of Run-time Object \(ignore\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/` 
-
-
+    `/src/` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/db` 
-
-
+    `/src/db` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/db/proc` 
-
-
+    `/src/db/proc` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/data` 
-
-
+    `/src/data` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/data/import` 
-
-
+    `/src/data/import` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
@@ -168,95 +144,71 @@ For those sub-folders without a name-space configuration file, the name space de
     <th valign="top">
 
     Design-time Resource Path
-
-
     
     </th>
     <th valign="top">
 
     Name of Run-Time Object \(append\)
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/` 
-
-
+    `/src/` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/db` 
-
-
+    `/src/db` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example.db::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example.db::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/db/proc` 
-
-
+    `/src/db/proc` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example.db.proc::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example.db.proc::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/data` 
-
-
+    `/src/data` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example.data::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example.data::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-         `/src/data/import` 
-
-
+    `/src/data/import` 
     
     </td>
     <td valign="top">
     
-         <code>com.sap.hana.example.data.import::<i class="varname">&lt;Object_Name&gt;</i></code> 
-
-
+    <code>com.sap.hana.example.data.import::<i class="varname">&lt;Object_Name&gt;</i></code> 
     
     </td>
     </tr>

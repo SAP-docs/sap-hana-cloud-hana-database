@@ -22,21 +22,15 @@ The `_SYS_DI` monitoring view `M_ALL_GRANTED_SCHEMA_ROLES` shows all HDI-generat
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -45,21 +39,15 @@ Description
 
 CONTAINER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the HDI container
-
-
 
 </td>
 </tr>
@@ -68,21 +56,15 @@ The name of the HDI container
 
 ROLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the granted role
-
-
 
 </td>
 </tr>
@@ -91,21 +73,15 @@ The name of the granted role
 
 GRANTEE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the target user or the target role to whom \(or which\) the role `ROLE_NAME` is granted
-
-
 
 </td>
 </tr>
@@ -114,21 +90,15 @@ The name of the target user or the target role to whom \(or which\) the role `RO
 
 GRANTEE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the schema containing the granted role `ROLE_NAME` 
-
-
 
 </td>
 </tr>
@@ -137,21 +107,15 @@ The name of the schema containing the granted role `ROLE_NAME`
 
 GRANTEE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Either “USER” or “ROLE” 
-
-
 
 </td>
 </tr>
@@ -160,21 +124,15 @@ Either “USER” or “ROLE”
 
 IS\_GRANTABLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 The role `ROLE_NAME` was granted `‘WITH ADMIN OPTION': ['TRUE' | 'FALSE']` 
-
-
 
 </td>
 </tr>

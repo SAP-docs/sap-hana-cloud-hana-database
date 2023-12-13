@@ -173,61 +173,45 @@ Use the following attributes to define each new dependent module:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Example Value
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `name` 
-
-
+`name` 
 
 </td>
 <td valign="top">
 
 Name of the module to be deployed
 
-
-
 </td>
 <td valign="top">
 
 java-hello-world-backend
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- <code><a href="mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__table_sj5_vdb_kv">type</a></code> 
-
-
+<code><a href="mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__table_sj5_vdb_kv">type</a></code> 
 
 </td>
 <td valign="top">
 
 Determines the run-time to which the specified module is deployed.
 
-
-
 </td>
 <td valign="top">
 
@@ -238,9 +222,7 @@ Determines the run-time to which the specified module is deployed.
 <tr>
 <td valign="top">
 
- `path` 
-
-
+`path` 
 
 </td>
 <td valign="top">
@@ -252,30 +234,22 @@ The file-system path relative to the root of the MTA directory tree. The content
 
 For the deployment descriptor, `mtad.yaml`, see `config` and `config-path` in [parameters](mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__table_h3d_jp5_pt).
 
-
-
 </td>
 <td valign="top">
 
- `web/` 
-
-
+`web/` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `group` 
-
-
+`group` 
 
 </td>
 <td valign="top">
 
 Combine properties from multiple providers into one look-up object \(for example, an environment variable\). This reduces the number of look ups performed by the code of the requiring module.
-
-
 
 </td>
 <td valign="top">
@@ -284,39 +258,29 @@ Combine properties from multiple providers into one look-up object \(for example
 
 `API`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `provides` 
-
-
+`provides` 
 
 </td>
 <td valign="top">
 
 Used to specify the names of `provides` sections, each containing configuration data; the data **provided** can be **required** by other modules in the same MTA.
 
-
-
 </td>
 <td valign="top">
 
- *<provides\_section\_name\>* 
-
-
+*<provides\_section\_name\>* 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `requires` 
-
-
+`requires` 
 
 </td>
 <td valign="top">
@@ -325,23 +289,17 @@ Used to specify the names of “`requires`” sections that are provided“resou
 
 The `requires` section can declare a **group** assignment. Groups are used to combine properties from multiple providers into one lookup object \(for example, an environment variable\). This reduces the number of lookups performed by the code of the requiring module.
 
-
-
 </td>
 <td valign="top">
 
- *<requires\_section\_name\>* 
-
-
+*<requires\_section\_name\>* 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `properties` 
-
-
+`properties` 
 
 </td>
 <td valign="top">
@@ -376,21 +334,15 @@ properties:
 
 [`parameters`](mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__section_pp5_mg5_pt)
 
-
-
 </td>
 <td valign="top">
 
 Reserved variables that affect the behavior of the MTA-aware tools, such as the deployer. Parameters can be “read-only” values, “write-only”, or “read-write” \(current/defined value can be overwritten\). Modules and resources can read parameters by referencing them with place-holder notation, for example, enclosed by `${}`.
 
-
-
 </td>
 <td valign="top">
 
- `host: ${user}-node-hello-world` 
-
-
+`host: ${user}-node-hello-world` 
 
 </td>
 </tr>
@@ -413,72 +365,52 @@ The following table shows how the modules `type` defined in the MTA deployment d
 
 Module Type
 
-
-
 </th>
 <th valign="top">
 
 Platform
-
-
 
 </th>
 <th valign="top">
 
 Module Parameters \(default\)
 
-
-
 </th>
 <th valign="top">
 
 Module Properties
-
-
 
 </th>
 <th valign="top">
 
 Result
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
- `javascript.nodejs` 
-
-
+`javascript.nodejs` 
 
 </td>
 <td valign="top">
 
 XS
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 None
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 Node.js run time
-
-
 
 </td>
 </tr>
@@ -486,209 +418,153 @@ Node.js run time
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 Automatic build-pack detection
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `nodejs` 
-
-
+`nodejs` 
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(nodejs_buildpack)` 
-
-
+`buildpack(nodejs_buildpack)` 
 
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 Node.js run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `native` 
-
-
+`native` 
 
 </td>
 <td valign="top">
 
 XS
 
-
-
 </td>
 <td valign="top">
 
 None
 
-
-
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 Native C++ run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
- `custom` 
-
-
+`custom` 
 
 </td>
 <td valign="top">
 
 XS
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 None
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 Custom run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 Automatic build-pack detection
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `application` 
-
-
+`application` 
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 None
 
-
-
 </td>
 <td valign="top">
 
 Automatic build-pack detection
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
- `java` 
-
-
+`java` 
 
 </td>
 <td valign="top">
 
 XS
 
-
-
 </td>
 <td valign="top">
 
 None
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 None
-
-
 
 </td>
 <td valign="top" rowspan="2">
@@ -707,51 +583,37 @@ Java run time
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(sap_java_buildpack)` 
-
-
+`buildpack(sap_java_buildpack)` 
 
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
- `java.tomcat` 
-
-
+`java.tomcat` 
 
 </td>
 <td valign="top">
 
 XS
 
-
-
 </td>
 <td valign="top">
 
 None
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
- `TARGET_RUNTIME` \(tomcat\)
-
-
+`TARGET_RUNTIME` \(tomcat\)
 
 </td>
 <td valign="top" rowspan="2">
 
 Tomcat run time of `sap_java_buildpack` 
-
-
 
 </td>
 </tr>
@@ -760,44 +622,32 @@ Tomcat run time of `sap_java_buildpack`
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(sap_java_buildpack)` 
-
-
+`buildpack(sap_java_buildpack)` 
 
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
- `java.tomee` 
-
-
+`java.tomee` 
 
 </td>
 <td valign="top">
 
 XS
 
-
-
 </td>
 <td valign="top">
 
 None
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
- `TARGET_RUNTIME` \(tomee7\)
-
-
+`TARGET_RUNTIME` \(tomee7\)
 
 </td>
 <td valign="top" rowspan="2">
@@ -816,51 +666,37 @@ TomEE 7 run time in the `sap_java_buildpack`.
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(sap_java_buildpack)` 
-
-
+`buildpack(sap_java_buildpack)` 
 
 </td>
 </tr>
 <tr>
 <td valign="top" rowspan="2">
 
- `python` 
-
-
+`python` 
 
 </td>
 <td valign="top">
 
 XS
 
-
-
 </td>
 <td valign="top">
 
 None
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 None
 
-
-
 </td>
 <td valign="top" rowspan="2">
 
 Python run time
-
-
 
 </td>
 </tr>
@@ -869,30 +705,22 @@ Python run time
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(python_buildpack)` 
-
-
+`buildpack(python_buildpack)` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `com.sap.xs.hdi` 
-
-
+`com.sap.xs.hdi` 
 
 </td>
 <td valign="top">
 
 XS/CF
-
-
 
 </td>
 <td valign="top">
@@ -921,67 +749,49 @@ XS/CF
 
 None
 
-
-
 </td>
 <td valign="top">
 
 HDI content activation
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `com.sap.xs.hdi-dynamic` 
-
-
+`com.sap.xs.hdi-dynamic` 
 
 </td>
 <td valign="top">
 
 XS/CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(nodejs_buildpack)` 
-
-
+`buildpack(nodejs_buildpack)` 
 
 </td>
 <td valign="top">
 
 None
 
-
-
 </td>
 <td valign="top">
 
 Node.js run time
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `com.sap.xs.hdi-zdm` 
-
-
+`com.sap.xs.hdi-zdm` 
 
 </td>
 <td valign="top">
 
 XS/CF
-
-
 
 </td>
 <td valign="top">
@@ -1002,16 +812,12 @@ XS/CF
 </td>
 <td valign="top">
 
- `"HDI_DEPLOY_MODE": "ZDM"` 
-
-
+`"HDI_DEPLOY_MODE": "ZDM"` 
 
 </td>
 <td valign="top">
 
 HDI content activation
-
-
 
 </td>
 </tr>
@@ -1020,14 +826,10 @@ HDI content activation
 
 `com.sap.xs.sds`
 
-
-
 </td>
 <td valign="top">
 
 XS/CF
-
-
 
 </td>
 <td valign="top">
@@ -1042,30 +844,22 @@ XS/CF
 
 None
 
-
-
 </td>
 <td valign="top">
 
 Streaming Analytics
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `com.sap.xs.dwf` 
-
-
+`com.sap.xs.dwf` 
 
 </td>
 <td valign="top">
 
 XS/CF
-
-
 
 </td>
 <td valign="top">
@@ -1086,30 +880,22 @@ XS/CF
 
 None
 
-
-
 </td>
 <td valign="top">
 
 Data Warehousing Foundation
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `com.sap.portal.site-content` 
-
-
+`com.sap.portal.site-content` 
 
 </td>
 <td valign="top">
 
 XS/CF
-
-
 
 </td>
 <td valign="top">
@@ -1130,30 +916,22 @@ XS/CF
 
 None
 
-
-
 </td>
 <td valign="top">
 
 Portal content activation
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `com.sap.html5.application-content` 
-
-
+`com.sap.html5.application-content` 
 
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
@@ -1175,8 +953,6 @@ CF
 
 None
 
-
-
 </td>
 <td valign="top">
 
@@ -1192,16 +968,12 @@ HTML5 application content activation
 <tr>
 <td valign="top">
 
- `business-logging` 
-
-
+`business-logging` 
 
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
@@ -1221,236 +993,172 @@ CF
 
 None
 
-
-
 </td>
 <td valign="top">
 
 Deploys the Business Logging for configuring text resources
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `staticfile` 
-
-
+`staticfile` 
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(staticfile_buildpack)` 
-
-
+`buildpack(staticfile_buildpack)` 
 
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 Static file run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ruby` 
-
-
+`ruby` 
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(ruby_buildpack)` 
-
-
+`buildpack(ruby_buildpack)` 
 
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 Ruby run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `go` 
-
-
+`go` 
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(go_buildpack)` 
-
-
+`buildpack(go_buildpack)` 
 
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 Go run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `php` 
-
-
+`php` 
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(php_buildpack)` 
-
-
+`buildpack(php_buildpack)` 
 
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 PHP run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `binary` 
-
-
+`binary` 
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(binary_buildpack)` 
-
-
+`buildpack(binary_buildpack)` 
 
 </td>
 <td valign="top">
 
 None
-
-
 
 </td>
 <td valign="top">
 
 Binary run time
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `dotnet_core` 
-
-
+`dotnet_core` 
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
- `buildpack(dotnet_core_buildpack)` 
-
-
+`buildpack(dotnet_core_buildpack)` 
 
 </td>
 <td valign="top">
 
 None
 
-
-
 </td>
 <td valign="top">
 
 Dotnet run time
-
-
 
 </td>
 </tr>
@@ -1507,53 +1215,39 @@ In the `resources` section of the MTA deployment descriptor, the following attri
 
 Attributes
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Example Value
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `name` 
-
-
+`name` 
 
 </td>
 <td valign="top">
 
 The name of the required resource
 
-
-
 </td>
 <td valign="top">
 
- *<Module\_Name\>* 
-
-
+*<Module\_Name\>* 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`type`](mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__table_t1k_bdb_kv) 
-
-
+[`type`](mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__table_t1k_bdb_kv) 
 
 </td>
 <td valign="top">
@@ -1574,69 +1268,51 @@ com.sap.xs.uaa
 
 org.cloudfoundry.managed-service \*
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `description` 
-
-
+`description` 
 
 </td>
 <td valign="top">
 
 Non-translatable, free-text string; the string is not meant to be presented on application user interfaces \(UI\)
 
-
-
 </td>
 <td valign="top">
 
 Resource provides features that ...
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- [`parameters`](mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__section_pp5_mg5_pt) 
-
-
+[`parameters`](mta-deployment-descriptor-syntax-4050fee.md#loio4050fee4c469498ebc31b10f2ae15ff2__section_pp5_mg5_pt) 
 
 </td>
 <td valign="top">
 
 Reserved variables that affect the behavior of the MTA-aware tools, such as the deployer. Parameters can be “read-only” values, “write-only”, or “read-write” \(current/defined value can be overwritten\). Modules and resources can read parameters by referencing them with place-holder notation, that is; enclosed by `${}`.
 
-
-
 </td>
 <td valign="top">
 
- `service-plan: hdi-shared` 
-
-
+`service-plan: hdi-shared` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `properties` 
-
-
+`properties` 
 
 </td>
 <td valign="top">
 
 A structured set of name-value pairs, which contain values that are injected into the environment of requiring modules at run time.
-
-
 
 </td>
 <td valign="top">
@@ -1655,32 +1331,24 @@ properties:
 <tr>
 <td valign="top">
 
- `optional` 
-
-
+`optional` 
 
 </td>
 <td valign="top">
 
 An application can declare required resources to be `optional`, if it can compensate for their non-existence. If a required resource is declared as `optional: true` and the deployer cannot allocate the required resource, the deployer issues a warning and continues processing. If a required resource is **not** optional \(`optional: false`\), the deployer indicates an error and stops processing.
 
-
-
 </td>
 <td valign="top">
 
- `optional: true` \(default = `false`\)
-
-
+`optional: true` \(default = `false`\)
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `active` 
-
-
+`active` 
 
 </td>
 <td valign="top">
@@ -1697,9 +1365,7 @@ If you previously deployed the same application with the resource type attribute
 </td>
 <td valign="top">
 
- `active: false` \(default = `true`\)
-
-
+`active: false` \(default = `true`\)
 
 </td>
 </tr>
@@ -1743,35 +1409,25 @@ The following table shows how the **resource type** defined in the MTA deploymen
 
 Resource Type
 
-
-
 </th>
 <th valign="top">
 
 Service
-
-
 
 </th>
 <th valign="top">
 
 Platform
 
-
-
 </th>
 <th valign="top">
 
 Service Plan
 
-
-
 </th>
 <th valign="top">
 
 Created Service
-
-
 
 </th>
 </tr>
@@ -1780,35 +1436,25 @@ Created Service
 
 com.sap.xs.hana-schema
 
-
-
 </td>
 <td valign="top">
 
 hana
-
-
 
 </td>
 <td valign="top">
 
 XS/CF
 
-
-
 </td>
 <td valign="top">
 
 schema
 
-
-
 </td>
 <td valign="top">
 
 Plain schema
-
-
 
 </td>
 </tr>
@@ -1817,35 +1463,25 @@ Plain schema
 
 com.sap.xs.hana-securestore
 
-
-
 </td>
 <td valign="top">
 
 hana
-
-
 
 </td>
 <td valign="top">
 
 XS/CF
 
-
-
 </td>
 <td valign="top">
 
 securestore
 
-
-
 </td>
 <td valign="top">
 
 SAP HANA secure store
-
-
 
 </td>
 </tr>
@@ -1854,35 +1490,25 @@ SAP HANA secure store
 
 com.sap.xs.hdi-container
 
-
-
 </td>
 <td valign="top">
 
 hana
-
-
 
 </td>
 <td valign="top">
 
 XS/CF
 
-
-
 </td>
 <td valign="top">
 
 hdi-shared
 
-
-
 </td>
 <td valign="top">
 
 HDI container
-
-
 
 </td>
 </tr>
@@ -1891,35 +1517,25 @@ HDI container
 
 com.sap.xs.uaa
 
-
-
 </td>
 <td valign="top">
 
 xsuaa
-
-
 
 </td>
 <td valign="top">
 
 XS/CF
 
-
-
 </td>
 <td valign="top">
 
 default
 
-
-
 </td>
 <td valign="top">
 
 Global UAA \*
-
-
 
 </td>
 </tr>
@@ -1928,35 +1544,25 @@ Global UAA \*
 
 com.sap.xs.uaa-application
 
-
-
 </td>
 <td valign="top">
 
 xsuaa
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 application
 
-
-
 </td>
 <td valign="top">
 
 PaaS-enabled application UAA service plan for CF scenarios
-
-
 
 </td>
 </tr>
@@ -1965,35 +1571,25 @@ PaaS-enabled application UAA service plan for CF scenarios
 
 com.sap.xs.uaa-apiaccess
 
-
-
 </td>
 <td valign="top">
 
 xsuaa
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 apiaccess
 
-
-
 </td>
 <td valign="top">
 
 Access Plan for Authorization, Users and IDPS API endpoints in CF
-
-
 
 </td>
 </tr>
@@ -2002,36 +1598,26 @@ Access Plan for Authorization, Users and IDPS API endpoints in CF
 
 com.sap.xs.sds
 
-
-
 </td>
 <td valign="top">
 
 sds
-
-
 
 </td>
 <td valign="top">
 
 XS/CF
 
-
-
 </td>
 <td valign="top">
 
 default
-
-
 
 </td>
 <td valign="top">
 
 Streaming Analytics
 
-
-
 </td>
 </tr>
 <tr>
@@ -2039,36 +1625,26 @@ Streaming Analytics
 
 auditlog-api
 
-
-
 </td>
 <td valign="top">
 
 auditlog-api
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 default
-
-
 
 </td>
 <td valign="top" rowspan="2">
 
 Audit-log service
 
-
-
 </td>
 </tr>
 <tr>
@@ -2076,28 +1652,20 @@ Audit-log service
 
 auditlog-management
 
-
-
 </td>
 <td valign="top">
 
 auditlog-management
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 default
-
-
 
 </td>
 </tr>
@@ -2116,29 +1684,21 @@ application-logs
 
 application-logs
 
-
-
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 lite
-
-
 
 </td>
 <td valign="top">
 
 Streams logs of bound applications to a central application logging stack
 
-
-
 </td>
 </tr>
 <tr>
@@ -2146,36 +1706,26 @@ Streams logs of bound applications to a central application logging stack
 
 autoscaler
 
-
-
 </td>
 <td valign="top">
 
 autoscaler
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 lite
-
-
 
 </td>
 <td valign="top">
 
 Automatically increase or decrease the number of application instances based on a policy you define.
 
-
-
 </td>
 </tr>
 <tr>
@@ -2183,36 +1733,26 @@ Automatically increase or decrease the number of application instances based on 
 
 connectivity
 
-
-
 </td>
 <td valign="top">
 
 connectivity
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 lite
-
-
 
 </td>
 <td valign="top">
 
 Establishes secure, reliable connectivity between Cloud applications and on-premise systems
 
-
-
 </td>
 </tr>
 <tr>
@@ -2220,36 +1760,26 @@ Establishes secure, reliable connectivity between Cloud applications and on-prem
 
 destination
 
-
-
 </td>
 <td valign="top">
 
 destination
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 lite
-
-
 
 </td>
 <td valign="top">
 
 Provides a secure and a reliable access to destination configurations
 
-
-
 </td>
 </tr>
 <tr>
@@ -2257,36 +1787,26 @@ Provides a secure and a reliable access to destination configurations
 
 feature-flags
 
-
-
 </td>
 <td valign="top">
 
 feature-flags
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 lite
-
-
 
 </td>
 <td valign="top">
 
 Feature Flags service for the control of feature rollout
 
-
-
 </td>
 </tr>
 <tr>
@@ -2294,35 +1814,25 @@ Feature Flags service for the control of feature rollout
 
 ml-foundation-services
 
-
-
 </td>
 <td valign="top">
 
 ml-foundation-services
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 lite
 
-
-
 </td>
 <td valign="top">
 
 Provides access to foundation services by provisioning and deprovisioning“ ml foundation” services
-
-
 
 </td>
 </tr>
@@ -2331,28 +1841,20 @@ Provides access to foundation services by provisioning and deprovisioning“ ml 
 
 objectstore
 
-
-
 </td>
 <td valign="top">
 
 objectstore
-
-
 
 </td>
 <td valign="top">
 
 CF
 
-
-
 </td>
 <td valign="top">
 
 s3-standard
-
-
 
 </td>
 <td valign="top">
@@ -2381,28 +1883,20 @@ postgresql
 
 postgresql
 
-
-
 </td>
 <td valign="top">
 
 CF
-
-
 
 </td>
 <td valign="top">
 
 v9.4-container
 
-
-
 </td>
 <td valign="top">
 
 Provides a postgreSQL object-relational database system
-
-
 
 </td>
 </tr>
@@ -2447,21 +1941,15 @@ The deployment service also supports a number of “special” resource types, a
 
 Resource Type
 
-
-
 </th>
 <th valign="top">
 
 Resource Parameter ID
 
-
-
 </th>
 <th valign="top">
 
 Created Service
-
-
 
 </th>
 </tr>
@@ -2469,8 +1957,6 @@ Created Service
 <td valign="top">
 
 org.cloudfoundry.user-provided-service
-
-
 
 </td>
 <td valign="top">
@@ -2495,16 +1981,12 @@ org.cloudfoundry.user-provided-service
 
 Create or update a user-provided service configured with the specified resource parameters
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 org.cloudfoundry.managed-service
-
-
 
 </td>
 <td valign="top">
@@ -2529,16 +2011,12 @@ org.cloudfoundry.managed-service
 
 Create a managed service
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 org.cloudfoundry.existing-service
-
-
 
 </td>
 <td valign="top">
@@ -2555,16 +2033,12 @@ org.cloudfoundry.existing-service
 
 Assume that the named service exists and do not try to manage its life-cycle
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 org.cloudfoundry.existing-service-key
-
-
 
 </td>
 <td valign="top">
@@ -2585,16 +2059,12 @@ org.cloudfoundry.existing-service-key
 
 Check and use credentials for an existing service key.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 mta-provided
-
-
 
 </td>
 <td valign="top">
@@ -2619,16 +2089,12 @@ mta-provided
 
 Define dependencies between different MTAs
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 configuration
-
-
 
 </td>
 <td valign="top">
@@ -2670,8 +2136,6 @@ configuration
 
 Define the mechanism for filtering configuration entries based on their configuration content
 
-
-
 </td>
 </tr>
 </table>
@@ -2698,65 +2162,47 @@ The following parameters are supported:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Scope
-
-
 
 </th>
 <th valign="top">
 
 Read-Only \(System\)
 
-
-
 </th>
 <th valign="top">
 
 Default Value
-
-
 
 </th>
 <th valign="top">
 
 Example
 
-
-
 </th>
 </tr>
 <tr>
 <td valign="top">
 
- `app-name` 
-
-
+`app-name` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The name of the application to be deployed for this module, based on the module name \(with or without a name-space prefix\)
-
-
 
 </td>
 <td valign="top">
@@ -2765,30 +2211,22 @@ The name of the application to be deployed for this module, based on the module 
 
 `com.sap.xs2.samples.xsjshelloworld.node-hello-world`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `authorization-url` 
-
-
+`authorization-url` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -2805,136 +2243,100 @@ Default: N/A
 </td>
 <td valign="top">
 
- `https://localhost:9999/uaa-security` 
-
-
+`https://localhost:9999/uaa-security` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `buildpack` 
-
-
+`buildpack` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 Empty, or as specified in the deploy service configuration
 
-
-
 </td>
 <td valign="top">
 
- `buildpack: git://github.acme.com/xs2-java/xs2javabuildpack` 
-
-
+`buildpack: git://github.acme.com/xs2-java/xs2javabuildpack` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `command` 
-
-
+`command` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 Empty, or as specified in the deploy service configuration
 
-
-
 </td>
 <td valign="top">
 
- `command: node index.js` 
-
-
+`command: node index.js` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `check-deploy-id` 
-
-
+`check-deploy-id` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 Check the deployment \(process\) id when checking the application execution status
 
-
-
 </td>
 <td valign="top">
 
- `check-deploy-id: true` 
-
-
+`check-deploy-id: true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `config` 
-
-
+`config` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
@@ -2971,16 +2373,12 @@ resources:
 <tr>
 <td valign="top">
 
- `config-path` 
-
-
+`config-path` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
@@ -3016,23 +2414,17 @@ resources:
 <tr>
 <td valign="top">
 
- `controller-url` 
-
-
+`controller-url` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -3062,21 +2454,15 @@ https://api.cf.acme.ondemand.com
 
 `database_id`
 
-
-
 </td>
 <td valign="top">
 
 resources
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -3107,23 +2493,17 @@ resources:
 <tr>
 <td valign="top">
 
- `default-container-name` 
-
-
+`default-container-name` 
 
 </td>
 <td valign="top">
 
 resources
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -3132,44 +2512,32 @@ Default value for the container-name parameter that is used during HDI creation.
 
 Default: N/A
 
-
-
 </td>
 <td valign="top">
 
- `INITIAL_INITIAL_SERVICE_NAME` 
-
-
+`INITIAL_INITIAL_SERVICE_NAME` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `default-domain` 
-
-
+`default-domain` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The default domain \(configured in the Cloud Foundry environment\)
-
-
 
 </td>
 <td valign="top">
@@ -3178,60 +2546,44 @@ The default domain \(configured in the Cloud Foundry environment\)
 
 `cfapps.acme.com`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `default-host` 
-
-
+`default-host` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The default host name, composed based on the target platform name and the module name, which ensures uniqueness. Used with host-based routing to compose the default URI, see below.
 
-
-
 </td>
 <td valign="top">
 
- `trial-a007007-node-hello-world` 
-
-
+`trial-a007007-node-hello-world` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `default-port` 
-
-
+`default-port` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3245,44 +2597,32 @@ The default, automatically allocated port value. Used with port-based routing to
 
 If a previous version of the application is already deployed, the default port is the same as the port in the first URL used by that application. If a previous version has not been deployed, a new port is reserved that is not in use by any other application
 
-
-
 </td>
 <td valign="top">
 
 52001
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `default-uri` 
-
-
+`default-uri` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The default URI, composed either as `${domain}:${port}` with port-based routing or as `${host}.${domain}` with host-based routing. Note that `${host}` will be the same as `${default-host}`, unless specified explicitly as a parameter. Similarly, `${domain}` will be the same as `${default-domain}`, and `${port}` will be the same as `${default-port}`, unless specified explicitly.
-
-
 
 </td>
 <td valign="top">
@@ -3291,67 +2631,49 @@ On premise: `accra6024:52001`
 
 Cloud Foundry: `trial-a007007-node-hello-world.cfapps.acme.ondemand.com`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `default-url` 
-
-
+`default-url` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 The default URL, composed as `${protocol}://${default-uri}` 
 
-
-
 </td>
 <td valign="top">
 
- `${protocol}://${default-uri}` 
-
-
+`${protocol}://${default-uri}` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `default-xsappname` 
-
-
+`default-xsappname` 
 
 </td>
 <td valign="top">
 
 resources
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -3360,30 +2682,22 @@ Default value for the `xsappname` parameter that is used during UAA creation. It
 
 Default: N/A
 
-
-
 </td>
 <td valign="top">
 
- `xs_-deploy-service-database` \(if the service name is “`xs@-deploy-service-database`” 
-
-
+`xs_-deploy-service-database` \(if the service name is “`xs@-deploy-service-database`” 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `dependency-type` 
-
-
+`dependency-type` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3397,8 +2711,6 @@ Deployment order of modules with circular dependencies.
 
 Default: “`soft`”
 
-
-
 </td>
 <td valign="top">
 
@@ -3406,23 +2718,17 @@ Default: “`soft`”
 
 `dependency-type: soft`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `deployed-after` 
-
-
+`deployed-after` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3434,67 +2740,49 @@ modules
 
 Indicates the point in the deployment sequence when the specified modules must be deployed
 
-
-
 </td>
 <td valign="top">
 
- `deployed-after: [ backend, metrics ]` 
-
-
+`deployed-after: [ backend, metrics ]` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `deploy-url` 
-
-
+`deploy-url` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 The URL of the deploy service for the application run-time environment, for example, Cloud Foundry.
 
-
-
 </td>
 <td valign="top">
 
- `https://mo-de0825faa.mo.sap.corp:51002` 
-
-
+`https://mo-de0825faa.mo.sap.corp:51002` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `disk-quota` 
-
-
+`disk-quota` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3513,30 +2801,22 @@ On-premise: -1 \(unlimited\), or as specified in module-type.
 
 Cloud Foundry: 1GB, or as specified in module-type.
 
-
-
 </td>
 <td valign="top">
 
- `disk-quota: 1G` 
-
-
+`disk-quota: 1G` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `domain` 
-
-
+`domain` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3556,26 +2836,20 @@ modules
 </td>
 <td valign="top">
 
- `domain: ${default-domain}.acme.com` 
-
-
+`domain: ${default-domain}.acme.com` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `domains` 
-
-
+`domains` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
@@ -3584,32 +2858,24 @@ modules
 </td>
 <td valign="top">
 
- `domains: - ${default}` 
-
-
+`domains: - ${default}` 
 
 </td>
 <td valign="top">
 
- `domains: - ${default-domain}.acme.com - test-${default-domain}.acme.com` 
-
-
+`domains: - ${default-domain}.acme.com - test-${default-domain}.acme.com` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `enable-ssh` 
-
-
+`enable-ssh` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3629,25 +2895,19 @@ Enables \(`true`\) the use of SSH within an application.
 </td>
 <td valign="top">
 
- `enable-ssh: true` 
-
-
+`enable-ssh: true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `enable-parallel-deployments` 
-
-
+`enable-parallel-deployments` 
 
 </td>
 <td valign="top">
 
 All
-
-
 
 </td>
 <td valign="top">
@@ -3659,30 +2919,22 @@ All
 
 Activates `true`\) the parallel deployment of MTA modules that do not have any dependencies regarding the deployment order. If the parameter is missing or its value is `false`, the modules are deployed sequentially.
 
-
-
 </td>
 <td valign="top">
 
- `enable-parallel-deployments: true` 
-
-
+`enable-parallel-deployments: true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `execute-app` 
-
-
+`execute-app` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3694,30 +2946,22 @@ modules
 
 After start and upon completion, application sets \[success | failure\]-marker in a log message
 
-
-
 </td>
 <td valign="top">
 
- `execute-app: true` 
-
-
+`execute-app: true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `env-var-name` 
-
-
+`env-var-name` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3730,8 +2974,6 @@ modules
 Specified in required dependencies and defines the name of the environment variable that will contain the service key credentials. The parameter itself is optional
 
 Default: the name of the service key.
-
-
 
 </td>
 <td valign="top">
@@ -3753,23 +2995,17 @@ modules:
 <tr>
 <td valign="top">
 
- `failure-marker` 
-
-
+`failure-marker` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -3780,37 +3016,27 @@ The failure marker in the log files for application execution, for example:
 
 Default: `"STDOUT:FAILURE"`
 
-
-
 </td>
 <td valign="top">
 
- `failure-marker: "STDERR:Failure!"` 
-
-
+`failure-marker: "STDERR:Failure!"` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `generated-password` 
-
-
+`generated-password` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -3819,37 +3045,27 @@ A generated user id that is composed of 16 characters that may contain upper and
 
 Default: N/A
 
-
-
 </td>
 <td valign="top">
 
- `IG@zGg#2g-cvMvsW` 
-
-
+`IG@zGg#2g-cvMvsW` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `generated-user` 
-
-
+`generated-user` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -3858,30 +3074,22 @@ A generated user id that is composed of 16 characters that may contain upper and
 
 Default: N/A
 
-
-
 </td>
 <td valign="top">
 
- `uYi$d41TzM1-Dm6f` 
-
-
+`uYi$d41TzM1-Dm6f` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `health-check-http-endpoint` 
-
-
+`health-check-http-endpoint` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3907,23 +3115,17 @@ Default:
 
 `health-check-http-endpoint: /health`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `health-check-timeout` 
-
-
+`health-check-timeout` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3935,30 +3137,22 @@ modules
 
 Health-check timeout in seconds
 
-
-
 </td>
 <td valign="top">
 
- `health-check-timeout: 120` 
-
-
+`health-check-timeout: 120` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `health-check-type` 
-
-
+`health-check-type` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -3970,8 +3164,6 @@ modules
 
 .`http` 
 
-
-
 </td>
 <td valign="top">
 
@@ -3981,23 +3173,17 @@ modules
 
 `health-check-type: process`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `host` 
-
-
+`host` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -4017,26 +3203,20 @@ modules
 </td>
 <td valign="top">
 
- `host: ${space}-node-hello-world` 
-
-
+`host: ${space}-node-hello-world` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `hosts` 
-
-
+`hosts` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
@@ -4045,76 +3225,56 @@ modules
 </td>
 <td valign="top">
 
- `hosts: - ${host}` 
-
-
+`hosts: - ${host}` 
 
 </td>
 <td valign="top">
 
- `hosts: - ${space}-node-hello-world - test-${space}-node-hello-world` 
-
-
+`hosts: - ${space}-node-hello-world - test-${space}-node-hello-world` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `instances` 
-
-
+`instances` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 1, or as specified in module-type
 
-
-
 </td>
 <td valign="top">
 
- `instances: 2` 
-
-
+`instances: 2` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `keep-existing-routes` 
-
-
+`keep-existing-routes` 
 
 </td>
 <td valign="top">
 
 Global, modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -4125,8 +3285,6 @@ At the **global** level, it ensures that the existing routes of **all** applicat
 > The module-level variant of the parameter takes priority over the global parameter. Default is `false`.
 
 `keep-existing-routes` is typically used to retain manually mapped routes \(for example, with the "`cf map-route`" command\). However, manually mapped routes can lead to inconsistent deployment results or errors that are hard to trace. The recommended approach is to define all routes in the deployment and/or extension descriptors and let the deployer create and manage them.
-
-
 
 </td>
 <td valign="top">
@@ -4154,28 +3312,20 @@ modules:
 
 `makeUniqueName`
 
-
-
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Generate a unique schema name by appending a numeric identifier to the schema name, for example: MY\_SCHEMA\_1, MY\_SCHEMA\_2, etc. In SAP Business Application Studio, this parameter is set to "true" by default.
-
-
 
 </td>
 <td valign="top">
@@ -4196,97 +3346,71 @@ resources:
 <tr>
 <td valign="top">
 
- `memory` 
-
-
+`memory` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 256M, or as specified in module-type
 
-
-
 </td>
 <td valign="top">
 
- `memory: 128M` 
-
-
+`memory: 128M` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `no-route` 
-
-
+`no-route` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 Do not assign a route to the application
 
-
-
 </td>
 <td valign="top">
 
- `no-route: true` 
-
-
+`no-route: true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `no-start` 
-
-
+`no-start` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -4297,8 +3421,6 @@ Start/do not start the application during deployment. Default: `false`.
 > This parameter setting overrides the command-line option *\--no-start*.
 
 If you explicitly set the `no-start` to `false` for the module `foo` in the example provided, then the module `foo` **is** started on deployment, even if you also specify the command-line option `--no-start` with the `cf deploy` command.
-
-
 
 </td>
 <td valign="top">
@@ -4323,54 +3445,40 @@ modules:
 <tr>
 <td valign="top">
 
- `org` 
-
-
+`org` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Name of the target organization
 
-
-
 </td>
 <td valign="top">
 
- `initial, trial` 
-
-
+`initial, trial` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `port` 
-
-
+`port` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
@@ -4379,33 +3487,25 @@ modules
 </td>
 <td valign="top">
 
- `${default-port}` 
-
-
+`${default-port}` 
 
 </td>
 <td valign="top">
 
- `port: 52001` 
-
-
+`port: 52001` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `ports` 
-
-
+`ports` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
@@ -4414,76 +3514,56 @@ modules
 </td>
 <td valign="top">
 
- `ports: - ${port}` 
-
-
+`ports: - ${port}` 
 
 </td>
 <td valign="top">
 
- `ports: - 52001 - 52002` 
-
-
+`ports: - 52001 - 52002` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `protocol` 
-
-
+`protocol` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The protocol used by the application run-time \(Cloud Foundry\) environment, for example: “http” or “https” 
 
-
-
 </td>
 <td valign="top">
 
- `https` 
-
-
+`https` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `restart-on-env-change` 
-
-
+`restart-on-env-change` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -4512,23 +3592,17 @@ restart-on-env-change:
 <tr>
 <td valign="top">
 
- `route-path` 
-
-
+`route-path` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -4551,30 +3625,22 @@ Port-based routing:
 
 `${domain}:${port}${route-path}`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `routes` 
-
-
+`routes` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -4609,28 +3675,20 @@ modules:
 
 `schema`
 
-
-
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 The schema name or HDI container name. If no schema name is set, the schema name will be a generated GUID.
-
-
 
 </td>
 <td valign="top">
@@ -4651,53 +3709,39 @@ resources:
 <tr>
 <td valign="top">
 
- `service` 
-
-
+`service` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Empty, or as specified in resource-type
 
-
-
 </td>
 <td valign="top">
 
- `service: hana` 
-
-
+`service: hana` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `service-alternatives` 
-
-
+`service-alternatives` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
@@ -4710,8 +3754,6 @@ resources
 Empty, or as specified in the deploy service configuration \(`resource-type`\)
 
 List of alternatives for a **default** service offering defined in the deploy service configuration. If a default service offering does not exist for the current org/space or creating a service fails \(with a specific error\), service alternatives are used. The order of service alternatives is considered.
-
-
 
 </td>
 <td valign="top">
@@ -4731,23 +3773,17 @@ parameters:
 <tr>
 <td valign="top">
 
- `create-service-broker` 
-
-
+`create-service-broker` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -4756,37 +3792,27 @@ Specifies whether \[true|false\] a service broker should be registered for the a
 
 Default: false
 
-
-
 </td>
 <td valign="top">
 
- `create-service-broker: true` 
-
-
+`create-service-broker: true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `service-broker-name` 
-
-
+`service-broker-name` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -4795,8 +3821,6 @@ The name of the service broker in the Cloud Foundry environment to be created an
 
 Default: `${app-name}`
 
-
-
 </td>
 <td valign="top">
 
@@ -4804,134 +3828,98 @@ Default: `${app-name}`
 
 `service-broker-name: ${app-name}`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `service-broker-password` 
-
-
+`service-broker-password` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 The password used for authentication by the XS controller at the service broker when performing service-related requests. The parameter is mandatory if `create-service-broker: true`.
 
-
-
 </td>
 <td valign="top">
 
- `service-broker-password: ${generated-password}` 
-
-
+`service-broker-password: ${generated-password}` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `service-broker-url` 
-
-
+`service-broker-url` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Specifies the value of the service broker universal resource locator \(URL\) to register; service requests are sent to this URL. The parameter is mandatory if `create-service-broker: true`.
 
-
-
 </td>
 <td valign="top">
 
- `service-broker-url: ${default-url}` 
-
-
+`service-broker-url: ${default-url}` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `service-broker-user` 
-
-
+`service-broker-user` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 The name of the user required for authentication by the XS controller at the service broker when performing service-related requests. The parameter is mandatory if `create-service-broker: true`.
 
-
-
 </td>
 <td valign="top">
 
- `service-broker-user: ${generated-user}` 
-
-
+`service-broker-user: ${generated-user}` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `service-key-name` 
-
-
+`service-key-name` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
@@ -4942,8 +3930,6 @@ resources
 <td valign="top">
 
 For resource type `org.cloudfoundry.existing-service-key`. Resource parameter `service-name` is mandatory, if no `service-key-name` is defined, the deploy service uses the name of the resource.
-
-
 
 </td>
 <td valign="top">
@@ -4961,16 +3947,12 @@ parameters:
 <tr>
 <td valign="top">
 
- `service-keys` 
-
-
+`service-keys` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
@@ -4981,8 +3963,6 @@ resources
 <td valign="top">
 
 The name of the service key to be created or updated.
-
-
 
 </td>
 <td valign="top">
@@ -5005,30 +3985,22 @@ parameters:
 <tr>
 <td valign="top">
 
- `service-name` 
-
-
+`service-name` 
 
 </td>
 <td valign="top">
 
 resources
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The name of the service to be created for this resource in the Cloud Foundry environment, based on the resource name \(with or without a name-space prefix\)
-
-
 
 </td>
 <td valign="top">
@@ -5037,23 +4009,17 @@ The name of the service to be created for this resource in the Cloud Foundry env
 
 `com.sap.xs2.samples.xsjshelloworld.nodejs-hdi-container`
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `service-plan` 
-
-
+`service-plan` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
@@ -5065,30 +4031,22 @@ resources
 
 Empty, or as specified in resource-type
 
-
-
 </td>
 <td valign="top">
 
- `service-plan: hdi-shared` 
-
-
+`service-plan: hdi-shared` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `service-tags` 
-
-
+`service-tags` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
@@ -5099,8 +4057,6 @@ resources
 <td valign="top">
 
 A list of custom service tags that are added to the *<VCAP\_SERVICES\>* environment variable and assigned to the specified service instance
-
-
 
 </td>
 <td valign="top">
@@ -5117,16 +4073,12 @@ parameters:
 <tr>
 <td valign="top">
 
- `siteId` 
-
-
+`siteId` 
 
 </td>
 <td valign="top">
 
 resources
-
-
 
 </td>
 <td valign="top">
@@ -5138,111 +4090,81 @@ resources
 
 A globally unique ID \(GUID\) for your Fiori LaunchPad site
 
-
-
 </td>
 <td valign="top">
 
- `siteId=4c736e0c-a096-45f1-9ae5-a613eb24b2b9` 
-
-
+`siteId=4c736e0c-a096-45f1-9ae5-a613eb24b2b9` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `space` 
-
-
+`space` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Name of the target organizational space
 
-
-
 </td>
 <td valign="top">
 
- `initial, a007007` 
-
-
+`initial, a007007` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `stop-app` 
-
-
+`stop-app` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
 
 Stop the application after execution.
 
-
-
 </td>
 <td valign="top">
 
- `stop-app: true` 
-
-
+`stop-app: true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `success-marker` 
-
-
+`success-marker` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -5253,37 +4175,27 @@ The success marker in logfiles for application execution, for example:
 
 Default: `"STDOUT:SUCCESS"`
 
-
-
 </td>
 <td valign="top">
 
- `success-marker: "STDOUT:Success!"` 
-
-
+`success-marker: "STDOUT:Success!"` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `tasks` 
-
-
+`tasks` 
 
 </td>
 <td valign="top">
 
 modules
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -5314,16 +4226,12 @@ tasks:
 <tr>
 <td valign="top">
 
- `tcp` 
-
-
+`tcp` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -5337,30 +4245,22 @@ Use TCP type routes for all application routes if there is `domains` parameters 
 
 Default: `false`
 
-
-
 </td>
 <td valign="top">
 
- `tcp:true` 
-
-
+`tcp:true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `tcps` 
-
-
+`tcps` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -5377,67 +4277,49 @@ Create a TCPS route \(and use TLS with SSL termination at the platform router\) 
 
 Default: `false`
 
-
-
 </td>
 <td valign="top">
 
- `tcps:true` 
-
-
+`tcps:true` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `user` 
-
-
+`user` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 Name of the current user
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `visibility` 
-
-
+`visibility` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -5448,8 +4330,6 @@ modules
 <td valign="top">
 
 Specify in an “allow list” the organizations and spaces from which configuration data can be consumed. An allow list is not required for all the provider's spaces in its own organization. A consumer must explicitly declare in which organization or space a “provider” is expected to be deployed \(if it is not in the consumer's space\).
-
-
 
 </td>
 <td valign="top">
@@ -5473,23 +4353,17 @@ provides:
 <tr>
 <td valign="top">
 
- `xs-api-url` 
-
-
+`xs-api-url` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -5517,23 +4391,17 @@ https://api.cf.acme.ondemand.com
 <tr>
 <td valign="top">
 
- `xs-auth-url` 
-
-
+`xs-auth-url` 
 
 </td>
 <td valign="top">
 
 All
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -5550,25 +4418,19 @@ Default: N/A
 </td>
 <td valign="top">
 
- `https://localhost:9999/uaa-security` 
-
-
+`https://localhost:9999/uaa-security` 
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- `zdm-mode` 
-
-
+`zdm-mode` 
 
 </td>
 <td valign="top">
 
 modules
-
-
 
 </td>
 <td valign="top">
@@ -5580,14 +4442,10 @@ modules
 
 Run blue-green deployment in zero-downtime-maintenance mode
 
-
-
 </td>
 <td valign="top">
 
- `zdm-mode: true` 
-
-
+`zdm-mode: true` 
 
 </td>
 </tr>

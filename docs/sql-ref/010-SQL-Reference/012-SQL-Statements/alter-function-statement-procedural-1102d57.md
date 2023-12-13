@@ -471,7 +471,7 @@ To alter a function, you must have the ALTER object privilege on the function or
 
 ## Examples
 
-Create a table, Tab, and table function ***function\_a*** that selects all records from table ***Tab***.
+Create a table, Tab, and table function `function_a` that selects all records from table `Tab`.
 
 ```
 CREATE ROW TABLE Tab (COL1 INT PRIMARY KEY, COL2 INT);
@@ -481,31 +481,31 @@ BEGIN
 END;
 ```
 
-Add a static result cache to the ***function\_a*** function with a retention of 10:
+Add a static result cache to the `function_a` function with a retention of 10:
 
 ```
 ALTER FUNCTION function_a ADD STATIC CACHE RETENTION 10;
 ```
 
-Change the retention value of the result cache of the ***function\_a*** function to 20.
+Change the retention value of the result cache of the `function_a` function to 20.
 
 ```
 ALTER FUNCTION function_a ALTER CACHE RETENTION 20;
 ```
 
-Restrict the cache entry location for ***function\_a*** to the \(fictitious\) indexserver ***lbsrv18:31576***.
+Restrict the cache entry location for `function_a` to the \(fictitious\) indexserver `lbsrv18:31576`.
 
 ```
 ALTER FUNCTION function_a ALTER CACHE ADD AT LOCATION 'lbsrv18:31576';
 ```
 
-Remove the location specifications so that there are no restrictions on the cache entry location for ***function\_a***.
+Remove the location specifications so that there are no restrictions on the cache entry location for `function_a`.
 
 ```
 ALTER FUNCTION function_a ALTER CACHE DROP AT LOCATION 'lbsrv18:31576';
 ```
 
-Drop the result cache of table function ***function\_a***.
+Drop the result cache of table function `function_a`.
 
 ```
 ALTER FUNCTION function_a DROP CACHE;
@@ -516,9 +516,9 @@ ALTER FUNCTION function_a DROP CACHE;
 
 [CREATE FUNCTION Statement \(Procedural\)](create-function-statement-procedural-20d42e7.md "Creates a user-defined function.")
 
-[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
+[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
 
-[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
+[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
 
 [M\_SQLSCRIPT\_VARIABLE\_CACHE System view](../../020-System-Views-Reference/022-Monitoring-Views/m-sqlscript-variable-cache-system-view-9fb8ca5.md "Provides runtime information about procedures and functions that have variable caches defined.")
 

@@ -19,21 +19,15 @@ The SAP HANA Deployment Infrastructure \(HDI\) component includes a selection of
 
 \#
 
-
-
 </th>
 <th valign="top">
 
 HDI Container View
 
-
-
 </th>
 <th valign="top">
 
 Information Displayed
-
-
 
 </th>
 </tr>
@@ -42,21 +36,15 @@ Information Displayed
 
 1
 
-
-
 </td>
 <td valign="top">
 
 [`M_CONFIGURATION`](../../20-HDI-Cloud-Content-Development/m-configuration-b2b6ed1.md)
 
-
-
 </td>
 <td valign="top">
 
 The HDI container configuration
-
-
 
 </td>
 </tr>
@@ -65,21 +53,15 @@ The HDI container configuration
 
 2
 
-
-
 </td>
 <td valign="top">
 
 [`M_JOBS`](../../20-HDI-Cloud-Content-Development/m-jobs-d114ced.md)
 
-
-
 </td>
 <td valign="top">
 
 The progress of the individual jobs in a `MAKE` operation
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ The progress of the individual jobs in a `MAKE` operation
 
 3
 
-
-
 </td>
 <td valign="top">
 
 [`M_MESSAGES`](../../20-HDI-Cloud-Content-Development/m-messages-1696923.md)
 
-
-
 </td>
 <td valign="top">
 
 The messages relating to HDI container groups
-
-
 
 </td>
 </tr>
@@ -111,21 +87,15 @@ The messages relating to HDI container groups
 
 4
 
-
-
 </td>
 <td valign="top">
 
 [`M_OBJECTS`](../../20-HDI-Cloud-Content-Development/m-objects-d73be7e.md)
 
-
-
 </td>
 <td valign="top">
 
 The database objects in the run-time schema of an HDI container
-
-
 
 </td>
 </tr>
@@ -134,21 +104,15 @@ The database objects in the run-time schema of an HDI container
 
 5
 
-
-
 </td>
 <td valign="top">
 
 [`M_ROLES`](../../20-HDI-Cloud-Content-Development/m-roles-b7f3bee.md)
 
-
-
 </td>
 <td valign="top">
 
 The container roles deployed to an HDI container
-
-
 
 </td>
 </tr>
@@ -157,21 +121,15 @@ The container roles deployed to an HDI container
 
 6
 
-
-
 </td>
 <td valign="top">
 
 [`M_GRANTED_SCHEMA_PRIVILEGES`](../../20-HDI-Cloud-Content-Development/m-granted-schema-privileges-77bf987.md)
 
-
-
 </td>
 <td valign="top">
 
 The details of all granted schema privileges
-
-
 
 </td>
 </tr>
@@ -180,21 +138,15 @@ The details of all granted schema privileges
 
 7
 
-
-
 </td>
 <td valign="top">
 
 [`M_GRANTED_SCHEMA_ROLES`](../../20-HDI-Cloud-Content-Development/m-granted-schema-roles-6f832a6.md)
 
-
-
 </td>
 <td valign="top">
 
 The details of all granted schema roles
-
-
 
 </td>
 </tr>

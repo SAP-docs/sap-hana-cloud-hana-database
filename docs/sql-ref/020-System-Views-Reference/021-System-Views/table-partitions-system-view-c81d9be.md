@@ -15,21 +15,15 @@ Partition-specific information for partitioned tables.
 
 Column Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the table name.
 
 NODE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the partition node.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the ID of the partition node.
 
 PARENT\_NODE\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the parent node.
-
-
 
 </td>
 </tr>
@@ -130,14 +100,10 @@ Displays the ID of the parent node.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -158,21 +124,15 @@ Returns the table partition ID:
 
 LEVEL\_1\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the first level partition ID. Possible values are 1 through the number of first-level partitions. First-level partitions \(those used in ALTER TABLE...MOVE\) may have subpartitions. Displays the logical partition ID. Possible values are 1 through the number of partitions for partitioned tables. This is the ID shown in all monitoring views.
-
-
 
 </td>
 </tr>
@@ -181,21 +141,15 @@ Displays the first level partition ID. Possible values are 1 through the number 
 
 LEVEL\_2\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the subpartition ID. Possible values are 0 for tables without multilevel partitioning and 1 through the number of subpartitions for partitioned tables with multilevel partitioning.
-
-
 
 </td>
 </tr>
@@ -204,21 +158,15 @@ Displays the subpartition ID. Possible values are 0 for tables without multileve
 
 LEVEL\_1\_RANGE\_MIN\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum value of the range partition at the first level for a range-partitioned table; empty otherwise.
-
-
 
 </td>
 </tr>
@@ -227,21 +175,15 @@ Displays the minimum value of the range partition at the first level for a range
 
 LEVEL\_1\_RANGE\_MAX\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the exclusive maximum value of the range partition at the first level for a range-partitioned table; empty otherwise. This value is not included in the range.
-
-
 
 </td>
 </tr>
@@ -250,21 +192,15 @@ Specifies the exclusive maximum value of the range partition at the first level 
 
 LEVEL\_2\_RANGE\_MIN\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum value of the range partition at the second level for a range-partitioned table; empty otherwise.
-
-
 
 </td>
 </tr>
@@ -273,21 +209,15 @@ Displays the minimum value of the range partition at the second level for a rang
 
 LEVEL\_2\_RANGE\_MAX\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Specifies the exclusive maximum value of the range partition at the second level for a range-partitioned table; empty otherwise. This value is not included in the range.
-
-
 
 </td>
 </tr>
@@ -296,21 +226,15 @@ Specifies the exclusive maximum value of the range partition at the second level
 
 IS\_CURRENT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the partition is the current partition: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -319,21 +243,15 @@ Displays whether the partition is the current partition: TRUE/FALSE.
 
 UNIQUE\_CONSTRAINTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays if unique constraints are checked for this partition or not: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -342,21 +260,15 @@ Displays if unique constraints are checked for this partition or not: TRUE/FALSE
 
 LOAD\_UNIT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(7\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the load unit for partition: PAGE \(when the partition uses page loadable storage\), COLUMN \(when the partition uses column loadable storage\), or DEFAULT.
-
-
 
 </td>
 </tr>
@@ -365,21 +277,15 @@ Displays the load unit for partition: PAGE \(when the partition uses page loadab
 
 INSERT
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether INSERT statements are allowed on the partition: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -388,21 +294,15 @@ Displays whether INSERT statements are allowed on the partition: TRUE/FALSE.
 
 PERSISTENT\_MEMORY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the user-specified persistent memory preference: TRUE \(persistent memory is ON\)/FALSE \(persistent memory OFF\). If the user has not specified a persistent memory preference, or if the preference is set to the default, then the value is NULL.
-
-
 
 </td>
 </tr>
@@ -411,21 +311,15 @@ Displays the user-specified persistent memory preference: TRUE \(persistent memo
 
 NUMA\_NODE\_INDEXES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR \(1024\)
 
-
-
 </td>
 <td valign="top">
 
 Displays a comma-separated list of user-specified logical NUMA node indexes for the table partition. The elements of the list are either individual nodes indexes or ranges of index nodes, or a mixture of both. For example, the value ***0, 1 TO 3, 6*** indicates node indexes 0, 1, 2, 3, and 6.
-
-
 
 </td>
 </tr>
@@ -434,21 +328,15 @@ Displays a comma-separated list of user-specified logical NUMA node indexes for 
 
 GROUP\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the group type.
-
-
 
 </td>
 </tr>
@@ -457,21 +345,15 @@ Displays the group type.
 
 SUBTYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the group subtype.
-
-
 
 </td>
 </tr>
@@ -480,21 +362,15 @@ Displays the group subtype.
 
 GROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the group name.
-
-
 
 </td>
 </tr>
@@ -505,6 +381,8 @@ Displays the group name.
 <a name="loioc81d9beea383495c99ad48789b983708__section_epr_grq_xhb"/>
 
 ## Additional Information
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 You must own or have SELECT permission on the tables.
 
@@ -523,9 +401,9 @@ To see table information, you must own or have SELECT permission on the tables.
 
 [Heterogeneous Alter Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/heterogeneous-alter-partition-clauses-a4258b8.md "Modifies the partitions of an existing table with a heterogeneous partitioning schema.")
 
-[Non-heterogeneous Create Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/non-heterogeneous-create-partition-clauses-ca6a99b.md "Defines the various partitioning clauses available for non-heterogeneous partitions when creating a new table.")
+[Non-Heterogeneous Create Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/non-heterogeneous-create-partition-clauses-ca6a99b.md "Defines the various partitioning clauses available for non-heterogeneous partitions when creating a new table.")
 
 [Non-Heterogeneous Alter Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/non-heterogeneous-alter-partition-clauses-f7ae27c.md "Modifies the partitions of an existing table with a non-heterogeneous partitioning schema.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 

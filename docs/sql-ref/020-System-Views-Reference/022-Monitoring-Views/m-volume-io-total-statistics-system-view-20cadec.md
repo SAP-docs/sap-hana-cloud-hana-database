@@ -17,21 +17,15 @@ Shows information about basic I/O operations on I/O subsystems \(paths\).
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistence volume ID.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the persistence volume ID.
 
 PATH
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(512\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file system path.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the file system path.
 
 FILESYSTEM\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the file system type.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the file system type.
 
 TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of contained files.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the type of contained files.
 
 CONFIGURATION
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the configuration parameters.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the configuration parameters.
 
 BLOCKED\_WRITE\_REQUESTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of blocked write requests.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the number of blocked write requests.
 
 MAX\_BLOCKED\_WRITE\_REQUESTS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum number of blocked write requests.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the maximum number of blocked write requests.
 
 TOTAL\_READS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of synchronous reads.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the number of synchronous reads.
 
 TOTAL\_TRIGGER\_ASYNC\_READS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of triggered asynchronous reads.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the number of triggered asynchronous reads.
 
 ACTIVE\_ASYNC\_READS\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active asynchronous reads
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the number of active asynchronous reads
 
 TRIGGER\_READ\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the trigger-ratio of asynchronous reads.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the trigger-ratio of asynchronous reads.
 
 TOTAL\_SHORT\_READS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of reads that read fewer bytes than requested.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the number of reads that read fewer bytes than requested.
 
 TOTAL\_FULL\_RETRY\_READS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of full retry reads.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the number of full retry reads.
 
 TOTAL\_FAILED\_READS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of failed reads.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the number of failed reads.
 
 TOTAL\_READ\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of read data in bytes.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the size of read data in bytes.
 
 TOTAL\_READ\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total read time in microseconds.
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ Displays the total read time in microseconds.
 
 TOTAL\_APPENDS
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of appends.
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ Displays the number of appends.
 
 TOTAL\_WRITES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of synchronous writes.
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Displays the number of synchronous writes.
 
 TOTAL\_TRIGGER\_ASYNC\_WRITES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of triggered asynchronous writes.
-
-
 
 </td>
 </tr>
@@ -523,21 +391,15 @@ Displays the number of triggered asynchronous writes.
 
 ACTIVE\_ASYNC\_WRITES\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of active asynchronous writes
-
-
 
 </td>
 </tr>
@@ -546,21 +408,15 @@ Displays the number of active asynchronous writes
 
 TRIGGER\_WRITE\_RATIO
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the trigger-ratio of asynchronous writes.
-
-
 
 </td>
 </tr>
@@ -569,21 +425,15 @@ Displays the trigger-ratio of asynchronous writes.
 
 TOTAL\_SHORT\_WRITES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of writes that wrote less bytes than requested.
-
-
 
 </td>
 </tr>
@@ -592,21 +442,15 @@ Displays the number of writes that wrote less bytes than requested.
 
 TOTAL\_FULL\_RETRY\_WRITES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of full retry writes.
-
-
 
 </td>
 </tr>
@@ -615,21 +459,15 @@ Displays the number of full retry writes.
 
 TOTAL\_FAILED\_WRITES
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of failed writes.
-
-
 
 </td>
 </tr>
@@ -638,21 +476,15 @@ Displays the number of failed writes.
 
 TOTAL\_WRITE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the size of written data in bytes.
-
-
 
 </td>
 </tr>
@@ -661,21 +493,15 @@ Displays the size of written data in bytes.
 
 TOTAL\_WRITE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total write time in microseconds.
-
-
 
 </td>
 </tr>
@@ -684,21 +510,15 @@ Displays the total write time in microseconds.
 
 TOTAL\_IO\_TIME
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total IO time in microseconds.
-
-
 
 </td>
 </tr>

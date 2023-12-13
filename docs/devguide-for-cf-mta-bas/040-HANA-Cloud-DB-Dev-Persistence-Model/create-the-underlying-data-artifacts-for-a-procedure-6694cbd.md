@@ -38,14 +38,14 @@ Database procedures and functions are used to automate actions that need to be r
 
             Choose *View* \> *Command Palette...*
 
-        -   In the command palette, type ***Project*** and choose *Create Project from Template*.
+        -   In the command palette, type `Project` and choose *Create Project from Template*.
 
         > ### Tip:  
         > Alternatively, in the *Welcome* tab, choose *Start from Template* \> *Create a new project*.
 
     2.  In the *New Project from Template* Wizard, choose *SAP HANA Database Project* and then choose *Start*.
 
-    3.  In the *Add Basic Information* pane, type the name of the new project \(***myapp*** \) and choose *Next*.
+    3.  In the *Add Basic Information* pane, type the name of the new project \(`myapp` \) and choose *Next*.
 
     4.  In the *Set Basic Properties* pane, accept the default settings and choose *Next*.
 

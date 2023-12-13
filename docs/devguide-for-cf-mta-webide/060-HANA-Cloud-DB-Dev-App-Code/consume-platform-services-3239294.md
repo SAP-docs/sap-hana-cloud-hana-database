@@ -35,8 +35,8 @@ SAP provides a convenient package \(`@sap/xsenv`\) for Node.js applications, whi
 
     ```
       "dependencies": {
-        "express": "4.16.2",
-        "@sap/xsenv": "^1.2.9"
+        "express": "4.18.2",
+        "@sap/xsenv": "^4.2.0"
       },
     ```
 

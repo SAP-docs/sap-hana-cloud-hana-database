@@ -317,14 +317,10 @@ NAME NVARCHAR(20) PATH 'name'
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 NAME
-
-
 
 </th>
 </tr>
@@ -333,14 +329,10 @@ NAME
 
 10
 
-
-
 </td>
 <td valign="top">
 
 Box
-
-
 
 </td>
 </tr>
@@ -349,14 +341,10 @@ Box
 
 20
 
-
-
 </td>
 <td valign="top">
 
 Jar
-
-
 
 </td>
 </tr>
@@ -385,14 +373,10 @@ NAME NVARCHAR(20) PATH 'name'
 
 RN
 
-
-
 </th>
 <th valign="top">
 
 NAME
-
-
 
 </th>
 </tr>
@@ -401,14 +385,10 @@ NAME
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Box
-
-
 
 </td>
 </tr>
@@ -417,14 +397,10 @@ Box
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Jar
-
-
 
 </td>
 </tr>
@@ -453,14 +429,10 @@ NAME NVARCHAR(20) FORMAT XML PATH 'name'
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 NAME
-
-
 
 </th>
 </tr>
@@ -469,14 +441,10 @@ NAME
 
 <id\>10</id\>
 
-
-
 </td>
 <td valign="top">
 
 <name\>Box</name\>
-
-
 
 </td>
 </tr>
@@ -485,14 +453,10 @@ NAME
 
 <id\>20</id\>
 
-
-
 </td>
 <td valign="top">
 
 <name\>Jar</name\>
-
-
 
 </td>
 </tr>
@@ -521,14 +485,10 @@ NAME NVARCHAR(20) PATH 'name'
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 NAME
-
-
 
 </th>
 </tr>
@@ -537,14 +497,10 @@ NAME
 
 one
 
-
-
 </td>
 <td valign="top">
 
 Box
-
-
 
 </td>
 </tr>
@@ -553,14 +509,10 @@ Box
 
 two
 
-
-
 </td>
 <td valign="top">
 
 Jar
-
-
 
 </td>
 </tr>
@@ -591,14 +543,10 @@ NAME NVARCHAR(20) PATH 'sap:name'
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 NAME
-
-
 
 </th>
 </tr>
@@ -607,14 +555,10 @@ NAME
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Box
-
-
 
 </td>
 </tr>
@@ -623,14 +567,10 @@ Box
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Jar
-
-
 
 </td>
 </tr>
@@ -669,14 +609,10 @@ NAME NVARCHAR(20) PATH 'myns:name'
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 NAME
-
-
 
 </th>
 </tr>
@@ -685,14 +621,10 @@ NAME
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Apple
-
-
 
 </td>
 </tr>
@@ -701,14 +633,10 @@ Apple
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Coconut
-
-
 
 </td>
 </tr>
@@ -739,21 +667,15 @@ XMLTABLE(XMLNAMESPACE('http://www.sap.com/xmltable' AS 'myns', 'http://www.names
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 NAME
 
-
-
 </th>
 <th valign="top">
 
 COUNT
-
-
 
 </th>
 </tr>
@@ -762,21 +684,15 @@ COUNT
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Box
 
-
-
 </td>
 <td valign="top">
 
 3
-
-
 
 </td>
 </tr>
@@ -785,21 +701,15 @@ Box
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Jar
 
-
-
 </td>
 <td valign="top">
 
 4
-
-
 
 </td>
 </tr>
@@ -830,14 +740,10 @@ NAME NVARCHAR(20) PATH 'myns2:name'
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 NAME
-
-
 
 </th>
 </tr>
@@ -846,14 +752,10 @@ NAME
 
 1
 
-
-
 </td>
 <td valign="top">
 
 Box
-
-
 
 </td>
 </tr>
@@ -862,14 +764,10 @@ Box
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Jar
-
-
 
 </td>
 </tr>

@@ -28,7 +28,7 @@ A service file with the minimal content generates an empty, completely operation
 
 `http://<myHANAServer>:<port>/odata/services/<myService>.xsodata/$metadata` 
 
- ![XS_examples_service_metadata](images/XS_examples_service_metadata_dff0f08.png) 
+![XS_examples_service_metadata](images/XS_examples_service_metadata_dff0f08.png)
 
 An empty service metadata document consists of one `Schema` containing an empty `EntityContainer`. The name of the `EntityContainer` is the name of the`.xsodata` file, in this example "`empty`".
 

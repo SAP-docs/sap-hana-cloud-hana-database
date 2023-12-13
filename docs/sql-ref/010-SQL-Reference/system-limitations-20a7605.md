@@ -13,23 +13,17 @@ Aside from the table below, most system limits can also be viewed by querying th
 <tr>
 <td valign="top">
 
- **Limitation Area** 
-
-
+**Limitation Area** 
 
 </td>
 <td valign="top">
 
- **Limit** 
-
-
+**Limit** 
 
 </td>
 <td valign="top">
 
- **M\_SYSTEM\_LIMITS view name for the limitation** 
-
-
+**M\_SYSTEM\_LIMITS view name for the limitation** 
 
 </td>
 </tr>
@@ -38,8 +32,6 @@ Aside from the table below, most system limits can also be viewed by querying th
 
 Database size limit
 
-
-
 </td>
 <td valign="top">
 
@@ -47,14 +39,10 @@ Row Store: 1,945 GB
 
 Column Store: Dependent on size of physical memory
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_SIZE\_OF\_ROW\_STORE
-
-
 
 </td>
 </tr>
@@ -63,8 +51,6 @@ MAXIMUM\_SIZE\_OF\_ROW\_STORE
 
 Number of locks
 
-
-
 </td>
 <td valign="top">
 
@@ -72,14 +58,10 @@ Unlimited for record locks,
 
 16,383 for table locks
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_TABLE\_LOCKS
-
-
 
 </td>
 </tr>
@@ -88,21 +70,15 @@ MAXIMUM\_NUMBER\_OF\_TABLE\_LOCKS
 
 Number of simultaneous connections to the SAP HANA database
 
-
-
 </td>
 <td valign="top">
 
 500 \* number of vCPUs, to a maximum of 30,000
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -111,44 +87,32 @@ Number of simultaneous connections to the SAP HANA database
 
  
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- **Schema Limitations** 
-
-
+**Schema Limitations** 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -157,14 +121,10 @@ Number of simultaneous connections to the SAP HANA database
 
 Number of schemas per SAP HANA instance
 
-
-
 </td>
 <td valign="top">
 
 Maximum value of BIGINT data type
-
-
 
 </td>
 <td valign="top">
@@ -178,21 +138,15 @@ Maximum value of BIGINT data type
 
 Identifier length
 
-
-
 </td>
 <td valign="top">
 
 127 bytes
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_LENGTH\_OF\_IDENTIFIER
-
-
 
 </td>
 </tr>
@@ -201,21 +155,15 @@ MAXIMUM\_LENGTH\_OF\_IDENTIFIER
 
 Length of an alias name
 
-
-
 </td>
 <td valign="top">
 
 128 characters
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_LENGTH\_OF\_ALIAS\_NAME
-
-
 
 </td>
 </tr>
@@ -224,21 +172,15 @@ MAXIMUM\_LENGTH\_OF\_ALIAS\_NAME
 
 Table name length
 
-
-
 </td>
 <td valign="top">
 
 Same as Identifier length
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_LENGTH\_OF\_IDENTIFIER
-
-
 
 </td>
 </tr>
@@ -247,21 +189,15 @@ MAXIMUM\_LENGTH\_OF\_IDENTIFIER
 
 Column name length
 
-
-
 </td>
 <td valign="top">
 
 Same as Identifier length
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_LENGTH\_OF\_IDENTIFIER
-
-
 
 </td>
 </tr>
@@ -270,21 +206,15 @@ MAXIMUM\_LENGTH\_OF\_IDENTIFIER
 
 Length of a string literal
 
-
-
 </td>
 <td valign="top">
 
 8 MB
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_LENGTH\_OF\_STRING\_LITERAL
-
-
 
 </td>
 </tr>
@@ -293,22 +223,16 @@ MAXIMUM\_LENGTH\_OF\_STRING\_LITERAL
 
 Number of hex characters in a binary literal
 
-
-
 </td>
 <td valign="top">
 
 8,192 Bytes
-
-
 
 </td>
 <td valign="top">
 
 MAXIMUM\_LENGTH\_OF\_BINARY\_LITERAL
 
-
-
 </td>
 </tr>
 <tr>
@@ -316,44 +240,32 @@ MAXIMUM\_LENGTH\_OF\_BINARY\_LITERAL
 
  
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- **Tables and View Limitations** 
-
-
+**Tables and View Limitations** 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -362,8 +274,6 @@ MAXIMUM\_LENGTH\_OF\_BINARY\_LITERAL
 
 Number of columns in a table
 
-
-
 </td>
 <td valign="top">
 
@@ -371,14 +281,10 @@ Number of columns in a table
 
 This limit can vary based on context, for example, in the context of virtual tables, SAP HANA may be limited by the capabilities of the remote system and the limit of the other DBMS may apply instead. In cases such as this, the limit that is met first becomes the actual limit.
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_TABLE
-
-
 
 </td>
 </tr>
@@ -387,21 +293,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_TABLE
 
 Number of columns in a row table
 
-
-
 </td>
 <td valign="top">
 
 1,000
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_ROW\_TABLE
-
-
 
 </td>
 </tr>
@@ -410,21 +310,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_ROW\_TABLE
 
 Number of columns in a view
 
-
-
 </td>
 <td valign="top">
 
 64,000
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_VIEW
-
-
 
 </td>
 </tr>
@@ -433,16 +327,12 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_VIEW
 
 Number of rows in each table
 
-
-
 </td>
 <td valign="top">
 
 Limited by storage size RS: 1,945 GB/sizeof\(row\),
 
 CS: 2,100,000,000 \* number of partitions
-
-
 
 </td>
 <td valign="top">
@@ -456,14 +346,10 @@ CS: 2,100,000,000 \* number of partitions
 
 Length of a row
 
-
-
 </td>
 <td valign="top">
 
 Limited by RS storage size \(1,945 GB per index server\)
-
-
 
 </td>
 <td valign="top">
@@ -477,14 +363,10 @@ Limited by RS storage size \(1,945 GB per index server\)
 
 Size of a non-partitioned table
 
-
-
 </td>
 <td valign="top">
 
 Limited by RS storage size \(1,945 GB per index server\)
-
-
 
 </td>
 <td valign="top">
@@ -498,21 +380,15 @@ Limited by RS storage size \(1,945 GB per index server\)
 
 Number of partitions in a CS table
 
-
-
 </td>
 <td valign="top">
 
 16,000
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_PARTITIONS\_IN\_CSTABLE
-
-
 
 </td>
 </tr>
@@ -521,21 +397,15 @@ MAXIMUM\_NUMBER\_OF\_PARTITIONS\_IN\_CSTABLE
 
 Number of triggers per table per DML statement
 
-
-
 </td>
 <td valign="top">
 
 1,024
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_TRIGGERS\_PER\_TABLE\_PER\_DML
-
-
 
 </td>
 </tr>
@@ -544,15 +414,11 @@ MAXIMUM\_NUMBER\_OF\_TRIGGERS\_PER\_TABLE\_PER\_DML
 
 Number of records per \(non-partitioned\) table
 
-
-
 </td>
 <td valign="top">
 
 2,100,000,000
 
-
-
 </td>
 <td valign="top">
 
@@ -565,44 +431,32 @@ Number of records per \(non-partitioned\) table
 
  
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- **Indexes and Constraints** 
-
-
+**Indexes and Constraints** 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -611,21 +465,15 @@ Number of records per \(non-partitioned\) table
 
 Number of indexes for a table
 
-
-
 </td>
 <td valign="top">
 
 1,023
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_INDEXES\_IN\_TABLE
-
-
 
 </td>
 </tr>
@@ -634,21 +482,15 @@ MAXIMUM\_NUMBER\_OF\_INDEXES\_IN\_TABLE
 
 Number of primary key columns in each table
 
-
-
 </td>
 <td valign="top">
 
 16
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_PRIMARY\_KEY
-
-
 
 </td>
 </tr>
@@ -657,21 +499,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_PRIMARY\_KEY
 
 Number of primary key columns in each column store table
 
-
-
 </td>
 <td valign="top">
 
 1,000
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_PRIMARY\_KEY\_IN\_COLUMN\_TABLE
-
-
 
 </td>
 </tr>
@@ -680,21 +516,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_PRIMARY\_KEY\_IN\_COLUMN\_TABLE
 
 Number of columns in an index
 
-
-
 </td>
 <td valign="top">
 
 16
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_INDEX
-
-
 
 </td>
 </tr>
@@ -703,21 +533,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_INDEX
 
 Number of columns in a UNIQUE constraint
 
-
-
 </td>
 <td valign="top">
 
 16
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_UNIQUE\_CONSTRAINT
-
-
 
 </td>
 </tr>
@@ -726,21 +550,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_UNIQUE\_CONSTRAINT
 
 Size of sum of primary key, index, UNIQUE constraint
 
-
-
 </td>
 <td valign="top">
 
 16,384 Bytes
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_SIZE\_OF\_KEY\_IN\_INDEX
-
-
 
 </td>
 </tr>
@@ -749,15 +567,11 @@ MAXIMUM\_SIZE\_OF\_KEY\_IN\_INDEX
 
 Number of indexes in row store
 
-
-
 </td>
 <td valign="top">
 
 256,000
 
-
-
 </td>
 <td valign="top">
 
@@ -770,14 +584,10 @@ Number of indexes in row store
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -789,16 +599,12 @@ Number of indexes in row store
 <tr>
 <td valign="top">
 
- **SQL** 
-
-
+**SQL** 
 
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -812,21 +618,15 @@ Number of indexes in row store
 
 Length of an SQL statement
 
-
-
 </td>
 <td valign="top">
 
 2,147,483,648 Bytes
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_LENGTH\_OF\_SQL\_STATEMENT
-
-
 
 </td>
 </tr>
@@ -835,21 +635,15 @@ MAXIMUM\_LENGTH\_OF\_SQL\_STATEMENT
 
 Depth of SQL view nesting
 
-
-
 </td>
 <td valign="top">
 
 128
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_DEPTH\_OF\_SQL\_VIEW\_NESTING
-
-
 
 </td>
 </tr>
@@ -860,8 +654,6 @@ Maximum depth of SQL parse tree
 
 This limitation does not show in M\_SYSTEM\_LIMITS unless a limit is configured to something other than 0 \(no limit\) using the max\_parse\_tree\_depth parameter in `indexerver.ini`.
 
-
-
 </td>
 <td valign="top">
 
@@ -869,14 +661,10 @@ This limitation does not show in M\_SYSTEM\_LIMITS unless a limit is configured 
 
 0 \(unlimited\)
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_DEPTH\_OF\_SQL\_PARSE\_TREE
-
-
 
 </td>
 </tr>
@@ -887,21 +675,15 @@ Maximum depth of joins in a statement.
 
 This limitation does not show in M\_SYSTEM\_LIMITS unless a limit is configured to something other than 0 \(no limit\) using the max\_join\_depth parameter in `indexerver.ini`.
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_DEPTH\_OF\_JOINS
-
-
 
 </td>
 </tr>
@@ -910,21 +692,15 @@ MAXIMUM\_DEPTH\_OF\_JOINS
 
 Number of columns in an ORDER BY
 
-
-
 </td>
 <td valign="top">
 
 65,535
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_ORDER\_BY
-
-
 
 </td>
 </tr>
@@ -933,21 +709,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_ORDER\_BY
 
 Number of columns in a GROUP BY
 
-
-
 </td>
 <td valign="top">
 
 65,535
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_GROUP\_BY
-
-
 
 </td>
 </tr>
@@ -956,21 +726,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_GROUP\_BY
 
 Number of elements in IN predicates
 
-
-
 </td>
 <td valign="top">
 
 65,535
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_IN\_PREDICATE
-
-
 
 </td>
 </tr>
@@ -979,21 +743,15 @@ MAXIMUM\_NUMBER\_OF\_COLUMNS\_IN\_IN\_PREDICATE
 
 Number of elements in SELECT clause
 
-
-
 </td>
 <td valign="top">
 
 65,535
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_OUTPUT\_COLUMNS\_IN\_STATEMENT
-
-
 
 </td>
 </tr>
@@ -1004,22 +762,16 @@ Number of tables in a statement.
 
 This limitation does not show in M\_SYSTEM\_LIMITS unless a limit is configured to something other than 0 \(no limit\) using the max\_table\_count\_in\_statement parameter in indexerver.ini.
 
-
-
 </td>
 <td valign="top">
 
 0
-
-
 
 </td>
 <td valign="top">
 
 MAXIMUM\_NUMBER\_OF\_TABLES\_IN\_STATEMENT
 
-
-
 </td>
 </tr>
 <tr>
@@ -1027,14 +779,10 @@ MAXIMUM\_NUMBER\_OF\_TABLES\_IN\_STATEMENT
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1046,9 +794,7 @@ MAXIMUM\_NUMBER\_OF\_TABLES\_IN\_STATEMENT
 <tr>
 <td valign="top">
 
- **LOB Limitations** 
-
-
+**LOB Limitations** 
 
 </td>
 <td valign="top">
@@ -1067,21 +813,15 @@ MAXIMUM\_NUMBER\_OF\_TABLES\_IN\_STATEMENT
 
 Maximum size of an in-memory LOB for a column store table
 
-
-
 </td>
 <td valign="top">
 
 2 GB
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_SIZE\_OF\_MEMORY\_LOB\_IN\_COLUMN\_STORE
-
-
 
 </td>
 </tr>
@@ -1090,21 +830,15 @@ MAXIMUM\_SIZE\_OF\_MEMORY\_LOB\_IN\_COLUMN\_STORE
 
 Maximum size of an in-memory LOB for a row store table
 
-
-
 </td>
 <td valign="top">
 
 2 GB
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_SIZE\_OF\_MEMORY\_LOB\_IN\_ROW\_STORE
-
-
 
 </td>
 </tr>
@@ -1113,21 +847,15 @@ MAXIMUM\_SIZE\_OF\_MEMORY\_LOB\_IN\_ROW\_STORE
 
 Maximum size of a packed LOB
 
-
-
 </td>
 <td valign="top">
 
 1,013,760 bytes
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_SIZE\_OF\_PACKED\_LOB
-
-
 
 </td>
 </tr>
@@ -1136,22 +864,16 @@ MAXIMUM\_SIZE\_OF\_PACKED\_LOB
 
 Maximum size of a LOB on disk
 
-
-
 </td>
 <td valign="top">
 
 4,294,967,295 bytes
-
-
 
 </td>
 <td valign="top">
 
 MAXIMUM\_SIZE\_OF\_DISK\_LOB
 
-
-
 </td>
 </tr>
 <tr>
@@ -1159,37 +881,27 @@ MAXIMUM\_SIZE\_OF\_DISK\_LOB
 
  
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- **Procedures** 
-
-
+**Procedures** 
 
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -1203,21 +915,15 @@ MAXIMUM\_SIZE\_OF\_DISK\_LOB
 
 Size of all stored procedures
 
-
-
 </td>
 <td valign="top">
 
 1,945 GB
 
-
-
 </td>
 <td valign="top">
 
 MAXIMUM\_SIZE\_OF\_ALL\_STORED\_PROCEDURES
-
-
 
 </td>
 </tr>
@@ -1226,22 +932,16 @@ MAXIMUM\_SIZE\_OF\_ALL\_STORED\_PROCEDURES
 
 Size of a procedure definition
 
-
-
 </td>
 <td valign="top">
 
 2 GB
-
-
 
 </td>
 <td valign="top">
 
 MAXIMUM\_SIZE\_OF\_PROCEDURE\_DEFINITION
 
-
-
 </td>
 </tr>
 <tr>
@@ -1249,44 +949,32 @@ MAXIMUM\_SIZE\_OF\_PROCEDURE\_DEFINITION
 
  
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
- **Auditing** 
-
-
+**Auditing** 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1295,21 +983,15 @@ MAXIMUM\_SIZE\_OF\_PROCEDURE\_DEFINITION
 
 Maximum number of files
 
-
-
 </td>
 <td valign="top">
 
 999
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1318,21 +1000,15 @@ Maximum number of files
 
 Default timestamp format
 
-
-
 </td>
 <td valign="top">
 
 ISO format \(YYYY-MM-DDTHH:MM:SS.000000Z\)
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

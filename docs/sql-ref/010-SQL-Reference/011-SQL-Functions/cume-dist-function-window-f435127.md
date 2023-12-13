@@ -83,36 +83,26 @@ ORDER BY Sales DESC;
 
 PRODNAME
 
-
-
 </th>
 <th valign="top">
 
 DESCRIPTION
-
-
 
 </th>
 <th valign="top">
 
 SALES
 
-
-
 </th>
 <th valign="top">
 
 PERCENT\_RANK
-
-
 
 </th>
 <th valign="top">
 
 CUME\_DIST
 
-
-
 </th>
 </tr>
 <tr>
@@ -120,35 +110,25 @@ CUME\_DIST
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Team logo
-
-
 
 </td>
 <td valign="top">
 
 80
 
-
-
 </td>
 <td valign="top">
 
 1
 
-
-
 </td>
 <td valign="top">
 
 1
-
-
 
 </td>
 </tr>
@@ -157,35 +137,25 @@ Team logo
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Lettered
-
-
 
 </td>
 <td valign="top">
 
 65
 
-
-
 </td>
 <td valign="top">
 
 0.875
 
-
-
 </td>
 <td valign="top">
 
 0.8888888888888888
-
-
 
 </td>
 </tr>
@@ -194,36 +164,26 @@ Lettered
 
 Hoodie
 
-
-
 </td>
 <td valign="top">
 
 Plain
-
-
 
 </td>
 <td valign="top">
 
 60
 
-
-
 </td>
 <td valign="top">
 
 0.75
-
-
 
 </td>
 <td valign="top">
 
 0.7777777777777778
 
-
-
 </td>
 </tr>
 <tr>
@@ -231,36 +191,26 @@ Plain
 
 Ballcap
 
-
-
 </td>
 <td valign="top">
 
 Lettered
-
-
 
 </td>
 <td valign="top">
 
 40
 
-
-
 </td>
 <td valign="top">
 
 0.625
-
-
 
 </td>
 <td valign="top">
 
 0.6666666666666666
 
-
-
 </td>
 </tr>
 <tr>
@@ -268,72 +218,52 @@ Lettered
 
 Tee Shirt
 
-
-
 </td>
 <td valign="top">
 
 Team logo
-
-
 
 </td>
 <td valign="top">
 
 30
 
-
-
 </td>
 <td valign="top">
 
 0.5
-
-
 
 </td>
 <td valign="top">
 
 0.5555555555555556
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 Ballcap
-
-
 
 </td>
 <td valign="top">
 
 Team logo
 
-
-
 </td>
 <td valign="top">
 
 27
-
-
 
 </td>
 <td valign="top">
 
 0.375
 
-
-
 </td>
 <td valign="top">
 
 0.4444444444444444
-
-
 
 </td>
 </tr>
@@ -341,36 +271,26 @@ Team logo
 <td valign="top">
 
 Tee Shirt
-
-
 
 </td>
 <td valign="top">
 
 Lettered
 
-
-
 </td>
 <td valign="top">
 
 22
-
-
 
 </td>
 <td valign="top">
 
 0.25
 
-
-
 </td>
 <td valign="top">
 
 0.3333333333333333
-
-
 
 </td>
 </tr>
@@ -379,35 +299,25 @@ Lettered
 
 Tee Shirt
 
-
-
 </td>
 <td valign="top">
 
 Plain
-
-
 
 </td>
 <td valign="top">
 
 21
 
-
-
 </td>
 <td valign="top">
 
 0.125
 
-
-
 </td>
 <td valign="top">
 
 0.2222222222222222
-
-
 
 </td>
 </tr>
@@ -416,35 +326,25 @@ Plain
 
 Ballcap
 
-
-
 </td>
 <td valign="top">
 
 Plain
-
-
 
 </td>
 <td valign="top">
 
 8
 
-
-
 </td>
 <td valign="top">
 
 0
 
-
-
 </td>
 <td valign="top">
 
 0.1111111111111111
-
-
 
 </td>
 </tr>

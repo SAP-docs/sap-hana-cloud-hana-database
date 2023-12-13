@@ -17,21 +17,15 @@ Provides information on the status of a replica table and on the progress of ini
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the port number.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the port number.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replica schema name \(replication target\).
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the replica schema name \(replication target\).
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replica table name \(replication target\).
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the replica table name \(replication target\).
 
 REPLICA\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of replication: ASYNCHRONOUS, SYNCHRONOUS.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the type of replication: ASYNCHRONOUS, SYNCHRONOUS.
 
 SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the virtual table
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the schema name of the virtual table
 
 SOURCE\_TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the virtual table name of the replication source.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the virtual table name of the replication source.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the partition ID. 0 for non-partitioned tables and 1 through the number of partitions for partitioned tables.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the partition ID. 0 for non-partitioned tables and 1 through the number
 
 REPLICATION\_ENABLING\_PROGRESS
 
-
-
 </td>
 <td valign="top">
 
 DOUBLE
 
-
-
 </td>
 <td valign="top">
 
 Displays the current progress of replication when replication is being enabled.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the current progress of replication when replication is being enabled.
 
 REPLICATION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the current asynchronous replication status: ENABLED, ENABLING, DISABLED.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the current asynchronous replication status: ENABLED, ENABLING, DISABLE
 
 LAST\_ENABLE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time when replication was enabled.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the last time when replication was enabled.
 
 LAST\_DISABLE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the last time when replication was disabled.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the last time when replication was disabled.
 
 SHARE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of virtual tables that are currently pointing to a shared replica.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the number of virtual tables that are currently pointing to a shared re
 
 LAST\_SYNC\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the time of the last replication synchronization.
-
-
 
 </td>
 </tr>
@@ -370,15 +280,15 @@ Displays the time of the last replication synchronization.
 
 [VIRTUAL\_TABLE\_PROPERTIES System View](../021-System-Views/virtual-table-properties-system-view-88396eb.md "Provides the properties set on virtual tables.")
 
-[Managing Virtual Tables](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/d16e86e414b54cd0b6facd4f6a2e7e01.html "Virtual tables point to remote tables or views in a remote source. When SQL queries are executed on a virtual table, they access the remote data as if it were stored locally.") :arrow_upper_right:
+[Managing Virtual Tables](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/d16e86e414b54cd0b6facd4f6a2e7e01.html "Virtual tables point to remote tables or views in a remote source. When SQL queries are executed on a virtual table, they access the remote data as if it were stored locally.") :arrow_upper_right:
 
-[Create a Virtual Table](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/4ef3f55395dc47a89462b77b56d71f7f.html "Create a virtual table from the remote object of a remote source.") :arrow_upper_right:
+[Create a Virtual Table](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/4ef3f55395dc47a89462b77b56d71f7f.html "Create a virtual table from the remote object of a remote source.") :arrow_upper_right:
 
-[Delete a Virtual Table](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/ebcb10f2c2d44b3294dfb0cadd88c396.html "Delete an existing virtual table from your schema using the SAP HANA database explorer.") :arrow_upper_right:
+[Delete a Virtual Table](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/ebcb10f2c2d44b3294dfb0cadd88c396.html "Delete an existing virtual table from your schema using the SAP HANA database explorer.") :arrow_upper_right:
 
-[List All Virtual Tables](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/f4badb298616428ba585f68d4c68daa1.html "Provides a list of all virtual tables you have privilege to.") :arrow_upper_right:
+[List All Virtual Tables](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/f4badb298616428ba585f68d4c68daa1.html "Provides a list of all virtual tables you have privilege to.") :arrow_upper_right:
 
-[List Virtual Tables by Schema](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/682a0b4ee20349a0b36d3d940a6efaa0.html "Display the virtual tables of a remote source by schema using SQL syntax.") :arrow_upper_right:
+[List Virtual Tables by Schema](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/682a0b4ee20349a0b36d3d940a6efaa0.html "Display the virtual tables of a remote source by schema using SQL syntax.") :arrow_upper_right:
 
-[Refresh a Virtual Table](https://help.sap.com/viewer/b6c0184b46cc424b9bcce8e6aae02f97/2023_2_QRC/en-US/14ea22d516634790a29c2e3676dcb9b1.html "Update a virtual table to reflect metadata changes in the corresponding remote source table using SQL syntax.") :arrow_upper_right:
+[Refresh a Virtual Table](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/14ea22d516634790a29c2e3676dcb9b1.html "Update a virtual table to reflect metadata changes in the corresponding remote source table using SQL syntax.") :arrow_upper_right:
 

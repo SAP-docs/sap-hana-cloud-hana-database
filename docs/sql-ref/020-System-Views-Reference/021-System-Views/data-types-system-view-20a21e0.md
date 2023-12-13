@@ -17,21 +17,15 @@ Provides information about available SQL data types.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 TYPE\_ID
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type ID.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the data type ID.
 
 TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the data type name.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the data type name.
 
 COLUMN\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum size, in bytes, of the data type that this system can support.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the maximum size, in bytes, of the data type that this system can suppo
 
 LITERAL\_PREFIX
 
-
-
 </td>
 <td valign="top">
 
 CHAR\(1\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 2.0 SQLGetTypeInfo NVARCHAR. Character or characters used to prefix a literal, for example, a single quotation mark \('\) for character data types or 0x for binary data types; NULL is returned for data types where a literal prefix is not applicable.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the ODBC 2.0 SQLGetTypeInfo NVARCHAR. Character or characters used to p
 
 LITERAL\_SUFFIX
 
-
-
 </td>
 <td valign="top">
 
 CHAR\(1\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 2.0 SQLGetTypeInfo NVARCHAR. Character or characters used to terminate a literal, for example, a single quotation mark \('\) for character data types; NULL is returned for data types where a literal suffix is not applicable.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the ODBC 2.0 SQLGetTypeInfo NVARCHAR. Character or characters used to t
 
 CREATE\_PARAMS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 2.0 SQLGetTypeInfo NVARCHAR. A list of keywords, separated by commas, corresponding to each parameter that the application may specify in parentheses when using the name that is returned in the TYPE\_NAME field.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the ODBC 2.0 SQLGetTypeInfo NVARCHAR. A list of keywords, separated by 
 
 NULLABLE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the data type can accept NULL or not.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays whether the data type can accept NULL or not.
 
 CASE\_SENSITIVE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 2.0 SQLGetTypeInfo SMALLINT. Whether a character data type is case-sensitive in collations and comparisons.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the ODBC 2.0 SQLGetTypeInfo SMALLINT. Whether a character data type is 
 
 SEARCHABLE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the how the data type can be used in the WHERE clause.
-
-
+Displays how the data type can be used in the WHERE clause.
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the how the data type can be used in the WHERE clause.
 
 UNSIGNED\_ATTRIBUTE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the attribute is signed or unsigned.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays whether the attribute is signed or unsigned.
 
 FIXED\_PREC\_SCALE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
-Displays the whether the data type has predefined fixed precision and scale \(ODBC\).
-
-
+Displays whether the data type has predefined fixed precision and scale \(ODBC\).
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the whether the data type has predefined fixed precision and scale \(OD
 
 AUTO\_UNIQUE\_VALUE
 
-
-
 </td>
 <td valign="top">
 
 TINYINT
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the data type is auto incrementing \(ODBC\).
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays whether the data type is auto incrementing \(ODBC\).
 
 LOCAL\_TYPE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 2.0 SQLGetTypeInfo NVARCHAR. Localized version of the data source-dependent name of the data type.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the ODBC 2.0 SQLGetTypeInfo NVARCHAR. Localized version of the data sou
 
 MINIMUM\_SCALE
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 2.0 SQLGetTypeInfo SMALLINT. The minimum scale of the data type on the data source.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the ODBC 2.0 SQLGetTypeInfo SMALLINT. The minimum scale of the data typ
 
 MAXIMUM\_SCALE
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 2.0 SQLGetTypeInfo SMALLINT. The maximum scale of the data type on the data source.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the ODBC 2.0 SQLGetTypeInfo SMALLINT. The maximum scale of the data typ
 
 SQL\_DATA\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 3.0 SQLGetTypeInfo SMALLINT. The value of the SQL data type as it appears in the SQL\_DESC\_TYPE field of the descriptor. This column is the same as the DATATYPE column, except for interval and DATETIME data types.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the ODBC 3.0 SQLGetTypeInfo SMALLINT. The value of the SQL data type as
 
 SQL\_DATETIME\_SUB
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 3.0 SQLGetTypeInfo SMALLINT. When the value of SQL\_DATATYPE is SQL\_DATETIME or SQL\_INTERVAL, this column contains the DATETIME/interval subcode.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the ODBC 3.0 SQLGetTypeInfo SMALLINT. When the value of SQL\_DATATYPE i
 
 NUM\_PREC\_RADIX
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the ODBC 3.0 SQLGetTypeInfo INTEGER. In case of an approximate numeric data type, value is 2 to indicate that COLUMN\_SIZE specifies the number of bits. For exact numeric data types value 10 indicates that COLUMN\_SIZE specifies the number of decimal digits.
-
-
 
 </td>
 </tr>
@@ -454,25 +340,27 @@ Displays the ODBC 3.0 SQLGetTypeInfo INTEGER. In case of an approximate numeric 
 
 INTERVAL\_PRECISION
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
-
-
 
 </td>
 <td valign="top">
 
 Displays the ODBC 3.0 SQLGetTypeInfo SMALLINT. If the data type is an interval data type, then this column contains the value of the interval leading precision. Otherwise, this column is NULL.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20a21e0875191014bb13f70acec8cc5c__section_yjr_jdq_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
@@ -481,7 +369,7 @@ Displays the ODBC 3.0 SQLGetTypeInfo SMALLINT. If the data type is an interval d
 
 [Data Type Conversion Functions](../../010-SQL-Reference/011-SQL-Functions/data-type-conversion-functions-209ddef.md "Data type conversion functions convert data from one data type to another data type.")
 
-[Data Type Extension](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/1923f363c0ad4c778dc0e63812b751cd.html "") :arrow_upper_right:
+[Data Type Extension](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/1923f363c0ad4c778dc0e63812b751cd.html "") :arrow_upper_right:
 
-[Scalar Data Types](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/712f01427fac46b586cb08b4c02c4900.html "") :arrow_upper_right:
+[Scalar Data Types](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/712f01427fac46b586cb08b4c02c4900.html "") :arrow_upper_right:
 

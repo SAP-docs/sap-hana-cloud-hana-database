@@ -15,21 +15,15 @@ Provides information about JSON collections.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the schema name.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the table name.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the object ID of the table.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the object ID of the table.
 
 COLLECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the ID of the collection.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the ID of the collection.
 
 CREATE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the creation time of the table collection.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the creation time of the table collection.
 
 ESTIMATED\_DOCUMENT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the estimated document count.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the estimated document count.
 
 ALLOCATED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the allocated size of the collection in bytes.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the allocated size of the collection in bytes.
 
 USED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the used size of the collection in bytes.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the used size of the collection in bytes.
 
 LOAD\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the table collection is LOADED or UNLOADED.
-
-
 
 </td>
 </tr>

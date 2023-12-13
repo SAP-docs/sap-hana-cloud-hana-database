@@ -17,21 +17,15 @@ Provides an overview of the row-store Multiversion Concurrency Control \(MVCC\) 
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VERSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of all versions in the host.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the number of all versions in the host.
 
 DATA\_VERSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of data versions per service.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the number of data versions per service.
 
 METADATA\_VERSION\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of metadata versions per service.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the number of metadata versions per service.
 
 MIN\_MVCC\_SNAPSHOT\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the minimum MVCC timestamp which at least one transaction holds.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the minimum MVCC timestamp which at least one transaction holds.
 
 GLOBAL\_MVCC\_TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the current global MVCC timestamp.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the current global MVCC timestamp.
 
 MIN\_READ\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Indicates that all active transactions can see the changes of TRANSACTION IDs less than or equal to MIN\_READ\_TRANSACTION\_ID.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Indicates that all active transactions can see the changes of TRANSACTION IDs le
 
 MIN\_WRITE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Indicates that all write transactions with a TRANSACTION ID less than or equal to MIN\_WRITE\_TRANSACTION\_ID are closed.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Indicates that all write transactions with a TRANSACTION ID less than or equal t
 
 NEXT\_WRITE\_TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the maximum TRANSACTION ID which is assigned to the next write transaction.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the maximum TRANSACTION ID which is assigned to the next write transact
 
 ACQUIRED\_LOCK\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of acquired records locks.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the number of acquired records locks.
 
 MAX\_VERSIONS\_PER\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the max number of versions per partition.
-
-
 
 </td>
 </tr>

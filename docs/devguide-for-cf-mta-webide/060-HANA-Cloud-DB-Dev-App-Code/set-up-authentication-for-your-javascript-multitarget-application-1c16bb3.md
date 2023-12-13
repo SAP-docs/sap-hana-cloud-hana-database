@@ -52,12 +52,14 @@ The User Account and Authentication \(UAA\) service uses OAuth2 to implement aut
 
     The application run time supports the microservices concept in which a single business application my contain several different applications \(microservices\). A single entry point for these microservices is provided by the application router \(`@sap/approuter`\). The application router receives all the requests, performs authentication, and forwards the authenticated requests to the appropriate microservice along with a JSON Web Token \(JWT\). The application router can also perform first-level authorization.
 
-3.  To complete the authorization part of the tutorial you have to add one more application - the application router.
-4.  Create a directory named `web` in the `node-tutorial` directory.
 
-5.  In the `web` directory, create a subdirectory named `resources`.
+To complete the authorization part of the tutorial you have to add one more application - the application router.
 
-6.  In the `resources` directory, create file `index.html` and add the following content.
+3.  Create a directory named `web` in the `node-tutorial` directory.
+
+4.  In the `web` directory, create a subdirectory named `resources`.
+
+5.  In the `resources` directory, create file `index.html` and add the following content.
 
     ```
     <html>
@@ -73,7 +75,7 @@ The User Account and Authentication \(UAA\) service uses OAuth2 to implement aut
 
     This will be the application's entry page.
 
-7.  Create a `package.json` file in the `web` directory with the following content:
+6.  Create a `package.json` file in the `web` directory with the following content:
 
     ```
     {
@@ -84,17 +86,17 @@ The User Account and Authentication \(UAA\) service uses OAuth2 to implement aut
     }
     ```
 
-8.  In the `web` directory execute `npm install @sap/approuter --save` to install the `@sap/approuter` module and add it as a dependency in the `package.json` file.
+7.  In the `web` directory execute `npm install @sap/approuter --save` to install the `@sap/approuter` module and add it as a dependency in the `package.json` file.
 
     After the installation of the package is complete, the dependencies section in the `package.json` file should have the following content:
 
     ```
       "dependencies": {
-        "@sap/approuter": "^2.7.0"
+        "@sap/approuter": "^14.4.3"
       },
     ```
 
-9.  Add the following content to the end of the `manifest.yml` file in the `node-tutorial` directory:
+8.  Add the following content to the end of the `manifest.yml` file in the `node-tutorial` directory:
 
     ```
     - name: web
@@ -119,7 +121,7 @@ The User Account and Authentication \(UAA\) service uses OAuth2 to implement aut
     > ### Note:  
     > The `myuaa` service is bound to the `web` application during deployment.
 
-10. Create the application descriptor \(`xs-app.json`\) in the `web` directory and add the following content:
+9.  Create the application descriptor \(`xs-app.json`\) in the `web` directory and add the following content:
 
     ```
     {
@@ -133,23 +135,23 @@ The User Account and Authentication \(UAA\) service uses OAuth2 to implement aut
     }
     ```
 
-11. In the `myapp` execute `npm install @sap/xssec --save` to install the `@sap/xssec` module and add it as a dependency in the `package.json` file.
+10. In the `myapp` execute `npm install @sap/xssec --save` to install the `@sap/xssec` module and add it as a dependency in the `package.json` file.
 
-12. Execute `npm install passport --save` to install the `passport` module and add it as a dependency in the `package.json` file.
+11. Execute `npm install passport --save` to install the `passport` module and add it as a dependency in the `package.json` file.
 
     The list of dependencies should look like the following example:
 
     ```
     "dependencies": {
-      "express": "4.16.2",
-      "@sap/xsenv": "^1.2.9",
-      "@sap/hdbext": "^5.0.0",
-      "@sap/xssec": "^2.1.6",
-      "passport": "^0.3.2"
+      "express": "4.18.2",
+      "@sap/xsenv": "^4.2.0",
+      "@sap/hdbext": "^8.0.2",
+      "@sap/xssec": "^3.6.0",
+      "passport": "^0.7.0"
     }
     ```
 
-13. Verify that the request is authenticated by checking the JWT token included in the request.
+12. Verify that the request is authenticated by checking the JWT token included in the request.
 
     Replace the content of the application startup file \(`myapp/start.js`\) with the following.
 
@@ -178,7 +180,7 @@ The User Account and Authentication \(UAA\) service uses OAuth2 to implement aut
     });
     ```
 
-14. Go to the `node-tutorial` directory and deploy the application by executing the following command.
+13. Go to the `node-tutorial` directory and deploy the application by executing the following command.
 
     ```
     xs push
@@ -189,11 +191,11 @@ The User Account and Authentication \(UAA\) service uses OAuth2 to implement aut
     > ### Note:  
     > From this point in the tutorial we make requests using the URL of the `web` application, which forwards the requests to the *myapp* application.
 
-15. Find the URL of the `web` application using the `cf apps` command.
+14. Find the URL of the `web` application using the `cf apps` command.
 
-16. Request the `web` application with path `/myapp/`.
+15. Request the `web` application with path `/myapp/`.
 
-17. Enter the credentials of a valid user. If no custom identity provider \(IDP\) is configured, you should use the credential of a known SAP HANA user.
+16. Enter the credentials of a valid user. If no custom identity provider \(IDP\) is configured, you should use the credential of a known SAP HANA user.
 
     You should see a message similar to the following in the browser:
 
@@ -201,13 +203,13 @@ The User Account and Authentication \(UAA\) service uses OAuth2 to implement aut
 
         The name of the user who logs on to the application.
 
+        > ### Note:  
+        > An application user is not the same as a database user.
+
     -   *HANA user: *<db user\>**
 
         The technical user used to connect to SAP HANA.
 
-
-    > ### Note:  
-    > An application user is not the same as a database user.
 
     > ### Note:  
     > Both `myapp` and `web` applications are bound to the same UAA service instance - `myapp`. In this scenario authentication is handled by the `web` application.

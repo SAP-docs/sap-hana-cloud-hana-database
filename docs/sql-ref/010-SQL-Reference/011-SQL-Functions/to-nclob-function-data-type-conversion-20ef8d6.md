@@ -28,7 +28,7 @@ Converts a *<value\>* to an NCLOB data type.
 
 ## Example
 
-The following example converts the value ***TO\_NCLOB converts the value to a NCLOB data type*** to an NCLOB value.
+The following example converts the value `TO_NCLOB converts the value to a NCLOB data type` to an NCLOB value.
 
 ```
 SELECT TO_NCLOB ('TO_NCLOB converts the value to a NCLOB data type') "to nclob" FROM DUMMY;

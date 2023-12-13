@@ -57,16 +57,12 @@ You can selectively clear specific trace files by setting *<trace\_type\>* to on
 <tr>
 <th valign="top">
 
- *<trace\_type\>* 
-
-
+*<trace\_type\>* 
 
 </th>
 <th valign="top">
 
 Trace Files
-
-
 
 </th>
 </tr>
@@ -75,14 +71,10 @@ Trace Files
 
 \*
 
-
-
 </td>
 <td valign="top">
 
 all \*.trc files of services listed below
-
-
 
 </td>
 </tr>
@@ -91,14 +83,10 @@ all \*.trc files of services listed below
 
 ALERT
 
-
-
 </td>
 <td valign="top">
 
 \*alert\_\*.trc
-
-
 
 </td>
 </tr>
@@ -107,14 +95,10 @@ ALERT
 
 BACKUP
 
-
-
 </td>
 <td valign="top">
 
 backup.log
-
-
 
 </td>
 </tr>
@@ -123,14 +107,10 @@ backup.log
 
 BACKINT
 
-
-
 </td>
 <td valign="top">
 
 backint.log
-
-
 
 </td>
 </tr>
@@ -139,14 +119,10 @@ backint.log
 
 CLIENT
 
-
-
 </td>
 <td valign="top">
 
 localclient\_\*.trc
-
-
 
 </td>
 </tr>
@@ -155,14 +131,10 @@ localclient\_\*.trc
 
 CRASHDUMP
 
-
-
 </td>
 <td valign="top">
 
 \*.crashdump.\*
-
-
 
 </td>
 </tr>
@@ -171,14 +143,10 @@ CRASHDUMP
 
 EMERGENCYDUMP
 
-
-
 </td>
 <td valign="top">
 
 \*.emergencydump.\*
-
-
 
 </td>
 </tr>
@@ -187,14 +155,10 @@ EMERGENCYDUMP
 
 EXPENSIVESTATEMENT
 
-
-
 </td>
 <td valign="top">
 
 \*.expensive\_statements.\*.trc
-
-
 
 </td>
 </tr>
@@ -203,14 +167,10 @@ EXPENSIVESTATEMENT
 
 indexserver,nameserver,...,daemon
 
-
-
 </td>
 <td valign="top">
 
 open \*.trc files of a single service type
-
-
 
 </td>
 </tr>
@@ -219,14 +179,10 @@ open \*.trc files of a single service type
 
 ROWSTOREREORG
 
-
-
 </td>
 <td valign="top">
 
 \*.row\_store\_reorg.\*.trc
-
-
 
 </td>
 </tr>
@@ -235,14 +191,10 @@ ROWSTOREREORG
 
 RTEDUMP
 
-
-
 </td>
 <td valign="top">
 
 \*.rtedump.\*.trc
-
-
 
 </td>
 </tr>
@@ -251,14 +203,10 @@ RTEDUMP
 
 SQLTRACE
 
-
-
 </td>
 <td valign="top">
 
 sqltrace\*.py
-
-
 
 </td>
 </tr>
@@ -267,14 +215,10 @@ sqltrace\*.py
 
 TABLE PARTITION OPERATIONS
 
-
-
 </td>
 <td valign="top">
 
 indexserver\_\*.\*.table\_partition\_operation.\*.trc
-
-
 
 </td>
 </tr>
@@ -283,14 +227,10 @@ indexserver\_\*.\*.table\_partition\_operation.\*.trc
 
 UNLOAD
 
-
-
 </td>
 <td valign="top">
 
 \*.unloads.\*.trc
-
-
 
 </td>
 </tr>

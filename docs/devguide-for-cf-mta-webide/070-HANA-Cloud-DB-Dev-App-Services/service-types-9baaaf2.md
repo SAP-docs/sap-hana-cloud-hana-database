@@ -17,21 +17,15 @@ Multitarget applications running in Cloud Foundry can make use of services that 
 
 Service Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Example
-
-
 
 </th>
 </tr>
@@ -40,14 +34,10 @@ Example
 
 Managed
 
-
-
 </td>
 <td valign="top">
 
 Services that are available in pre-configured scopes in the Service Marketplace for Cloud Foundry
-
-
 
 </td>
 <td valign="top">
@@ -60,8 +50,6 @@ Services that are available in pre-configured scopes in the Service Marketplace 
 
 `portal-services`
 
-
-
 </td>
 </tr>
 <tr>
@@ -69,21 +57,15 @@ Services that are available in pre-configured scopes in the Service Marketplace 
 
 User-provided
 
-
-
 </td>
 <td valign="top">
 
 Services that are provided on demand and by hand for use by applications in a specific, dedicated space. User-provided services are **not** available in \(or managed by\) the Service Marketplace and are not associated with a service plan. Unlike managed services, user-provided services do not include any automatic provisioning of resources or credentials; these must by provided manually.
 
-
-
 </td>
 <td valign="top">
 
- `-` 
-
-
+`-` 
 
 </td>
 </tr>

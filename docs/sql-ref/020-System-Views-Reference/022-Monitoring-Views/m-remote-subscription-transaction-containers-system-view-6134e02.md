@@ -13,21 +13,15 @@ Lists all real time data rowsets in the remote subscription transaction containe
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -36,21 +30,15 @@ Description
 
 REMOTE\_SOURCE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source OID.
-
-
 
 </td>
 </tr>
@@ -59,21 +47,15 @@ Displays the remote source OID.
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name.
-
-
 
 </td>
 </tr>
@@ -82,21 +64,15 @@ Displays the remote source name.
 
 SUBSCRIPTION\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription OID.
-
-
 
 </td>
 </tr>
@@ -105,21 +81,15 @@ Displays the subscription OID.
 
 SUBSCRIPTION\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription schema name.
-
-
 
 </td>
 </tr>
@@ -128,21 +98,15 @@ Displays the subscription schema name.
 
 SUBSCRIPTION\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the subscription name.
-
-
 
 </td>
 </tr>
@@ -151,21 +115,15 @@ Displays the subscription name.
 
 CONTAINER\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the container ID of the virtual file.
-
-
 
 </td>
 </tr>
@@ -174,21 +132,15 @@ Displays the container ID of the virtual file.
 
 TRANSACTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the the remote source transaction ID of the row.
-
-
 
 </td>
 </tr>
@@ -197,21 +149,15 @@ Displays the the remote source transaction ID of the row.
 
 SEQUENCE\_ID
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the the sequence ID of the row.
-
-
 
 </td>
 </tr>
@@ -220,14 +166,10 @@ Displays the the sequence ID of the row.
 
 ROW\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
-
-
 
 </td>
 <td valign="top">
@@ -272,8 +214,6 @@ Displays the internal CDC row type. Values are:
 
 19 – LATENCY-STATISTICS
 
-
-
 </td>
 </tr>
 <tr>
@@ -281,21 +221,15 @@ Displays the internal CDC row type. Values are:
 
 DIGEST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(1000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the digest of the row content.
-
-
 
 </td>
 </tr>
@@ -304,21 +238,15 @@ Displays the digest of the row content.
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -327,21 +255,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>

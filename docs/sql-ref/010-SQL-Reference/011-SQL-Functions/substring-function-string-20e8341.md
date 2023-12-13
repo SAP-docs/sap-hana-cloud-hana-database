@@ -76,13 +76,13 @@ When used on binary types, SUBSTRING factors in byte length and interprets the o
 
 ## Example
 
-The following example selects two characters from the string ***1234567890*** starting at position ***4***, and returns the value ***45***:
+The following example selects two characters from the string `1234567890` starting at position `4`, and returns the value ***45***:
 
 ```
 SELECT SUBSTRING ('1234567890',4,2) "substring" FROM DUMMY;
 ```
 
-The following example returns ***'ABCD'*** from the binary value ***x'ABCDEF'***:
+The following example returns ***'ABCD'*** from the binary value `x'ABCDEF'`:
 
 ```
 SELECT SUBSTRING(x'ABCDEF',1,2) "substring" FROM DUMMY;

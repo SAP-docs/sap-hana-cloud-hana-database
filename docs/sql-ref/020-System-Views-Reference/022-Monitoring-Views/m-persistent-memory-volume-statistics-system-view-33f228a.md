@@ -17,21 +17,15 @@ Reports the statistics of physical lifecycle events of blocks managed by SAP HAN
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the internal port.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays an ID for the persistence volume.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays an ID for the persistence volume.
 
 NUMA\_NODE\_INDEX
 
-
-
 </td>
 <td valign="top">
 
 SMALLINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the logical NUMA node index as in the M\_NUMA\_NODES view.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the logical NUMA node index as in the M\_NUMA\_NODES view.
 
 TOTAL\_ACTIVE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of active blocks from persistent memory volume. This counter is computed as a sum of loaded or created blocks but excludes deleted blocks.
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ Displays the total number of active blocks from persistent memory volume. This c
 
 TOTAL\_ACTIVE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size, in bytes, of active blocks from persistent memory volume. This counter is computed as a sum of loaded or created blocks but excludes deleted blocks.
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ Displays the total size, in bytes, of active blocks from persistent memory volum
 
 TOTAL\_CREATE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of newly created \(that is, temporary\) blocks from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ Displays the total number of newly created \(that is, temporary\) blocks from th
 
 TOTAL\_CREATE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size, in bytes, of the newly created temporary blocks from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ Displays the total size, in bytes, of the newly created temporary blocks from th
 
 TOTAL\_COMMIT\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of the permanently persisted blocks from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ Displays the total number of the permanently persisted blocks from the persisten
 
 TOTAL\_COMMIT\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size, in bytes, of the permanently persisted blocks from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ Displays the total size, in bytes, of the permanently persisted blocks from the 
 
 TOTAL\_DELETE\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of deleted blocks from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ Displays the total number of deleted blocks from the persistent memory volume.
 
 TOTAL\_DELETE\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size, in bytes, of the deleted blocks from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ Displays the total size, in bytes, of the deleted blocks from the persistent mem
 
 TOTAL\_DESTROY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of destroyed blocks \(no refcount\) from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ Displays the total number of destroyed blocks \(no refcount\) from the persisten
 
 TOTAL\_DESTROY\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size, in bytes, of the destroyed blocks \(no refcount\) from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ Displays the total size, in bytes, of the destroyed blocks \(no refcount\) from 
 
 TOTAL\_LOAD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of loaded/initialized blocks from the persistent memory volume upon service restart.
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ Displays the total number of loaded/initialized blocks from the persistent memor
 
 TOTAL\_LOAD\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size, in bytes, of loaded/initialized blocks from the persistent memory volume upon service restart.
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ Displays the total size, in bytes, of loaded/initialized blocks from the persist
 
 TOTAL\_MAPPED\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total number of blocks mapped into virtual memory from the persistent memory volume.
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ Displays the total number of blocks mapped into virtual memory from the persiste
 
 TOTAL\_MAPPED\_SIZE
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the total size, in bytes, of blocks mapped into virtual memory from the persistent memory volume.
-
-
 
 </td>
 </tr>

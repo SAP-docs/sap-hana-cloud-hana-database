@@ -20,21 +20,15 @@ The `_SYS_DI` monitoring view `M_ALL_GROUP_CONFIGURATIONS` shows all HDI contain
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -43,21 +37,15 @@ Description
 
 CONTAINER\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the container group
-
-
 
 </td>
 </tr>
@@ -66,21 +54,15 @@ The name of the container group
 
 KEY
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 The name of the container-group configuration key
-
-
 
 </td>
 </tr>
@@ -89,21 +71,15 @@ The name of the container-group configuration key
 
 VALUE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 The value for the specified container-group `KEY` 
-
-
 
 </td>
 </tr>

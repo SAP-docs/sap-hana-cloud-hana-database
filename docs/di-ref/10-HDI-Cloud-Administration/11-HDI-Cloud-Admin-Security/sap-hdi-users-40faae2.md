@@ -17,28 +17,20 @@ The technical users listed in the following table are used to connect to the SAP
 
 User ID
 
-
-
 </th>
 <th valign="top">
 
 Service
-
-
 
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,28 +39,20 @@ Description
 
 `_SYS_DI`
 
-
-
 </td>
 <td valign="top">
 
 HDI
-
-
 
 </td>
 <td valign="top">
 
 Technical database user
 
-
-
 </td>
 <td valign="top">
 
 Owns all HDI SQL-based APIs, for example all API procedures in the `_SYS_DI` schema and API procedures in containers
-
-
 
 </td>
 </tr>
@@ -77,28 +61,20 @@ Owns all HDI SQL-based APIs, for example all API procedures in the `_SYS_DI` sch
 
 `_SYS_DI_*_CATALOG`
 
-
-
 </td>
 <td valign="top">
 
 HDI
-
-
 
 </td>
 <td valign="top">
 
 Technical database user
 
-
-
 </td>
 <td valign="top">
 
 Technical users used by the HDI to access database system catalog tables and views
-
-
 
 </td>
 </tr>
@@ -107,28 +83,20 @@ Technical users used by the HDI to access database system catalog tables and vie
 
 `_SYS_DI_SU`
 
-
-
 </td>
 <td valign="top">
 
 HDI
-
-
 
 </td>
 <td valign="top">
 
 Technical database user
 
-
-
 </td>
 <td valign="top">
 
 Technical superuser of the HDI created at installation time
-
-
 
 </td>
 </tr>
@@ -137,28 +105,20 @@ Technical superuser of the HDI created at installation time
 
 `_SYS_DI_TO`
 
-
-
 </td>
 <td valign="top">
 
 HDI
-
-
 
 </td>
 <td valign="top">
 
 Technical database user
 
-
-
 </td>
 <td valign="top">
 
 Owns transaction and connections of all internal HDI transactions
-
-
 
 </td>
 </tr>

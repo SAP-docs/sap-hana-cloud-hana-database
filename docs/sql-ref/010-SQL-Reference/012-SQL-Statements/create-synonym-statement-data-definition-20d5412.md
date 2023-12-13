@@ -2,7 +2,7 @@
 
 # CREATE SYNONYM Statement \(Data Definition\)
 
-Creates an alternate name for a table, view, procedure, or sequence.
+Creates an alternate name for a table, view, procedure, sequence or graph workspace.
 
 
 
@@ -67,11 +67,13 @@ Specifies the object you are creating a synonym for.
  | <view_name>
  | <procedure_name>
  | <sequence_name>
+ | <graph_workspace_name>
 
 <table_name> ::= [ [ <database_name>.]<schema_name>.]<identifier>
 <view_name> ::= [ <schema_name>.]<identifier>
 <sequence_name> ::= [ <schema_name>.]<identifier>
 <procedure_name> ::= [ <schema_name>.]<identifier>
+<graph_workspace_name> ::= [ <schema_name>.]<identifier>
  
 <database_name> ::= <identifier>
 <schema_name> ::= <unicode_name>
@@ -104,9 +106,20 @@ The optional PUBLIC element allows you to create a public synonym.
 
 ## Permissions
 
-No additional privilege is required to create a synonym on an object within your own schema. The CREATE ANY object privilege is required to create synonym on an object within another user's schema.
+To create or replace a synonym requires one of the following:
 
-Any user can access a public synonym, but only the users that have the proper privileges on its base object can access the base object.
+-   For synonyms owned by self:
+    -   No additional privilege is required.
+
+-   For synonyms owned by others:
+    -   To create a synonym, you need one of the following:
+        -   CREATE ANY schema level privilege granted on the synonym.
+
+    -   To replace an existing synonym, you need one of the following:
+        -   CREATE ANY and DROP schema level privilege granted on the synonym.
+
+
+-   Regardless of synonym ownership, you require the proper privilege on its base objects within the synonym that you don't own.
 
 
 

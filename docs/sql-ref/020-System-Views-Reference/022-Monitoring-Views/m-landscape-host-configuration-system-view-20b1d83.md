@@ -17,21 +17,15 @@ Specifies the host roles in a distributed landscape.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the host name.
 
 HOST\_ACTIVE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host active status which is a summary of the active values of all the services on that host.
-
-
 
 </td>
 </tr>
@@ -86,14 +68,10 @@ Displays the host active status which is a summary of the active values of all t
 
 HOST\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
-
-
 
 </td>
 <td valign="top">
@@ -169,14 +147,10 @@ The host not operational; the host is in an erroneous state.
 
 FAILOVER\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(128\)
-
-
 
 </td>
 <td valign="top">
@@ -263,14 +237,10 @@ The failover failed. See `nameserver.trc` for details
 
 FAILOVER\_CONFIG\_GROUP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
@@ -279,8 +249,6 @@ Displays the configured failover group.
 
 Hosts can be grouped and during failover a host is looked for within the same group. If no host is available in the same group, hosts from other groups are used.
 
-
-
 </td>
 </tr>
 <tr>
@@ -288,21 +256,15 @@ Hosts can be grouped and during failover a host is looked for within the same gr
 
 FAILOVER\_ACTUAL\_GROUP
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the actual failover group.
-
-
 
 </td>
 </tr>
@@ -311,21 +273,15 @@ Displays the actual failover group.
 
 NAMESERVER\_CONFIG\_ROLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the nameserver configured roles: COORDINATOR/WORKER. During installation, up to 3 hosts are automatically configured as coordinator candidates. All others are worker.
-
-
 
 </td>
 </tr>
@@ -334,14 +290,10 @@ Displays the nameserver configured roles: COORDINATOR/WORKER. During installatio
 
 NAMESERVER\_ACTUAL\_ROLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -350,8 +302,6 @@ Displays the nameserver actual roles: COORDINATOR/WORKER. Exactly one of the can
 
 The primary name server and primary index server are both on the same host.
 
-
-
 </td>
 </tr>
 <tr>
@@ -359,14 +309,10 @@ The primary name server and primary index server are both on the same host.
 
 INDEXSERVER\_CONFIG\_ROLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
-
-
 
 </td>
 <td valign="top">
@@ -375,8 +321,6 @@ Displays the indexserver configured roles: WORKER/STANDBY.
 
 During SAP HANA system installation or host addition, hosts can be assigned the SAP HANA server roles WORKER or STANDBY. The host can also be assigned other roles.
 
-
-
 </td>
 </tr>
 <tr>
@@ -384,21 +328,15 @@ During SAP HANA system installation or host addition, hosts can be assigned the 
 
 INDEXSERVER\_ACTUAL\_ROLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the indexserver roles: COORDINATOR, WORKER, or STANDBY. Exactly one host is coordinator and all others are worker or STANDBY.
-
-
 
 </td>
 </tr>
@@ -407,21 +345,15 @@ Displays the indexserver roles: COORDINATOR, WORKER, or STANDBY. Exactly one hos
 
 HOST\_CONFIG\_ROLES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host's configured database and SAP HANA option roles: ETS\_WORKER, ETS\_STANDBY, STANDBY, STREAMING, WORKER, XS\_WORKER, or XS\_STANDBY.
-
-
 
 </td>
 </tr>
@@ -430,21 +362,15 @@ Displays the host's configured database and SAP HANA option roles: ETS\_WORKER, 
 
 HOST\_ACTUAL\_ROLES
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host's current database and SAP HANA option roles: ETS\_WORKER, ETS\_STANDBY, STANDBY, STREAMING, WORKER, XS\_WORKER, or XS\_STANDBY.
-
-
 
 </td>
 </tr>
@@ -453,21 +379,15 @@ Displays the host's current database and SAP HANA option roles: ETS\_WORKER, ETS
 
 STORAGE\_CONFIG\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the stable subpath to reassign the same storage partition after failovers.
-
-
 
 </td>
 </tr>
@@ -476,21 +396,15 @@ Displays the stable subpath to reassign the same storage partition after failove
 
 STORAGE\_ACTUAL\_PARTITION
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the unique number of the mount sub-directory used by the host for storing data and logs \(also known as the "subpath"\).
-
-
 
 </td>
 </tr>
@@ -499,21 +413,15 @@ Displays the unique number of the mount sub-directory used by the host for stori
 
 WORKER\_CONFIG\_GROUPS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the stable classification values to assign hosts to logical worker groups.
-
-
 
 </td>
 </tr>
@@ -522,21 +430,15 @@ Displays the stable classification values to assign hosts to logical worker grou
 
 WORKER\_ACTUAL\_GROUPS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the current classification values to assign hosts to logical worker groups.
-
-
 
 </td>
 </tr>
@@ -545,21 +447,15 @@ Displays the current classification values to assign hosts to logical worker gro
 
 VOLUME\_REPLICATION\_GROUPS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the System Managed Volume Replication \(SMVR\) groups assigned to this host.
-
-
 
 </td>
 </tr>
@@ -568,21 +464,15 @@ Displays the System Managed Volume Replication \(SMVR\) groups assigned to this 
 
 VOLUME\_REPLICATION\_ACTUAL\_ROLE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the current replication role in the context of System Managed Volume Replication \(SMVR\): NONE \(or empty\), SOURCE, or REPLICA.
-
-
 
 </td>
 </tr>
@@ -591,21 +481,15 @@ Displays the current replication role in the context of System Managed Volume Re
 
 REMOVE\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Removes progress information.
-
-
 
 </td>
 </tr>

@@ -45,8 +45,6 @@ SELECT MEMBER_AT(VAL, 4) "member_at" FROM ARRAY_TEST;
 
 member\_at
 
-
-
 </th>
 </tr>
 <tr>
@@ -54,16 +52,12 @@ member\_at
 
 ?
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 40
-
-
 
 </td>
 </tr>
@@ -82,8 +76,6 @@ SELECT MEMBER_AT(VAL, 4, 1) "member_at" FROM ARRAY_TEST;
 
 member\_at
 
-
-
 </th>
 </tr>
 <tr>
@@ -91,16 +83,12 @@ member\_at
 
 1
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 40
-
-
 
 </td>
 </tr>

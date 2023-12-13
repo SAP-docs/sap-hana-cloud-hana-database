@@ -17,21 +17,15 @@ Lists active data provisioning agents in the system.
 
 Column
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 AGENT\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent name.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the agent name.
 
 PROTOCOL
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(4\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the protocol for communication with SAP HANA database: TCP/HTTP.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the protocol for communication with SAP HANA database: TCP/HTTP.
 
 AGENT\_HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent host specified when using TCP.
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ Displays the agent host specified when using TCP.
 
 AGENT\_PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the agent port number specified when using TCP.
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ Displays the agent port number specified when using TCP.
 
 IS\_SSL\_ENABLED
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Displays whether the agent listening on the TCP port uses SSL: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -155,25 +119,27 @@ Displays whether the agent listening on the TCP port uses SSL: TRUE/FALSE.
 
 AGENT\_GROUP\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
-
-
 
 </td>
 <td valign="top">
 
 Displays the agent clustering group to which the agent belongs.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loioc4bec1f4c1fd4eb38c738856e49c8177__section_eg3_phc_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

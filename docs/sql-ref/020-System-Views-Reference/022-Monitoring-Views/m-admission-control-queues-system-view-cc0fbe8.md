@@ -15,21 +15,15 @@ Provides detailed information regarding queued session requests by Session-Wise 
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 MESSAGE\_ID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the request ID of the client packet.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the request ID of the client packet.
 
 CONNECTION\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the session connection ID.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the session connection ID.
 
 MESSAGE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(32\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the request type.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the request type.
 
 STATEMENT\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(8\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the statement type \(for example, DDL or DML\).
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Displays the statement type \(for example, DDL or DML\).
 
 ENQUEUE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the request queue time in microseconds.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the request queue time in microseconds.
 
 TIMEOUT\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the estimated time, in microseconds, when the request should be timed-out.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the estimated time, in microseconds, when the request should be timed-o
 
 WORKLOAD\_CLASS\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the effective workload class
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the name of the effective workload class
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port.
-
-
 
 </td>
 </tr>

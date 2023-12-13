@@ -27,13 +27,13 @@ If design-time database artifacts are missing from your application's database m
 
 1.  In SAP Business Application Studio, open the command palette.
 
-    -   Press  [Crtl\] + [Shift\] + [P\]  or
+    -   Press [Crtl\] + [Shift\] + [P\]  or
     -   Press [F1\] or
     -   Choose *View* \> *Command Palette...*
 
 2.  Start the *SAP HDI Artifact Recovery Wizard*
 
-    Type ***recovery*** in the command palette and choose *SAP HANA: Start Database Artifact Recovery* in the list of commands displayed.
+    Type `recovery` in the command palette and choose *SAP HANA: Start Database Artifact Recovery* in the list of commands displayed.
 
     The *SAP HDI Artifact Recovery Wizard* is displayed.
 
@@ -51,63 +51,47 @@ If design-time database artifacts are missing from your application's database m
     <th valign="top">
 
     Status
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
     <tr>
     <td valign="top">
     
-        *Missing from workspace*
-
-
+    *Missing from workspace*
     
     </td>
     <td valign="top">
     
-        The artifact exists in the HDI container's deployed file system but not in the application workspace
-
-
+    The artifact exists in the HDI container's deployed file system but not in the application workspace
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        *Modified*
-
-
+    *Modified*
     
     </td>
     <td valign="top">
     
-        The artifact in the workspace is newer than the artifact in the deployed file system.
-
-
+    The artifact in the workspace is newer than the artifact in the deployed file system.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-        *Unchanged*
-
-
+    *Unchanged*
     
     </td>
     <td valign="top">
     
-        The artifact in the workspace file system is the same as the artifact in the deployed file system.
-
-
+    The artifact in the workspace file system is the same as the artifact in the deployed file system.
     
     </td>
     </tr>

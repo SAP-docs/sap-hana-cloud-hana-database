@@ -2,7 +2,7 @@
 
 # EPM\_QUERY\_SOURCES System View
 
-Provides information about available EPM query source.
+Provides information about available EPM query sources.
 
 
 
@@ -17,21 +17,15 @@ Provides information about available EPM query source.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Description
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the EPM query source.
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ Displays the schema name of the EPM query source.
 
 QUERY\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the name of the EPM query source.
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ Displays the name of the EPM query source.
 
 COMMENTS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the description of the EPM query source.
-
-
 
 </td>
 </tr>
@@ -109,25 +85,27 @@ Displays the description of the EPM query source.
 
 CDATA
 
-
-
 </td>
 <td valign="top">
 
 NCLOB
-
-
 
 </td>
 <td valign="top">
 
 Displays the definition of the EPM query source with JSON representation.
 
-
-
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiof3e6641e6f5b10149c43f9c510633ee7__section_amy_vhr_bzb"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

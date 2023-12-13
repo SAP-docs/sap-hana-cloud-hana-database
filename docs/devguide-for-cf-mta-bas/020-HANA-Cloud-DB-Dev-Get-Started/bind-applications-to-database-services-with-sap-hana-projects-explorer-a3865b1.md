@@ -44,7 +44,7 @@ If you are developing native SAP HANA applications in SAP Business Application S
 
     In the *SAP HANA PROJECTS* explorer, locate the application that contains the database artifacts you want to explore, for example, *FlightReservation/db*, and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
-    The selected HDI container is displayed in the *SAP HANA Database Explorer*, which enables you to browse through the different categories of database artifacts in the catalog, for example, *Tables*, *Views*, *Column Views*, etc.
+    The selected HDI container is displayed in the *SAP HANA Database Explorer*, where you can browse through the different categories of database artifacts in the catalog, for example, *Tables*, *Views*, *Column Views*, etc.
 
 3.  Bind an application to a database service.
 
@@ -58,16 +58,18 @@ If you are developing native SAP HANA applications in SAP Business Application S
     > ### Tip:  
     > For instructions that describe how to bind an application to a particular service type, see *Related Information* below.
 
-4.  Add a connection to an existing HDI container service to SAP HANA Database Explorer \(optional\).
+4.  Add a connection to a database to the SAP HANA Project Explorer \(optional\).
+
+    You can add connections to a database, for example, an HDI container or a user-provided service and display the connections in the SAP HANA Project Explorer, where you can also bind them to \(and unbind them from\) a database application.
 
     In the *Database Connections* node, choose <span class="SAP-icons"></span> \(Add database connection\) to display the *Add Database Connection* Wizard.
 
     > ### Note:  
     > To test the connection details \(for example, the host name, port number, user name and password\), check the option *Validate the database information*. The *Add database Connection* Wizard tries to connect to the specified database using the credentials provided and notifies you immediately if the connection attempt is successful or not.
 
-    Select the connection type, for example, *Existing HDI Container* and type ***Flight*** in the *Select SAP HANA HDI service instance name* box. In the list of HDI containers displayed choose the HDI container you want to add, for example, *FlightReservation-hdidb-ws-12345*, and choose *Add*.
+    Select the connection type, for example, *Existing HDI Container* and type `Flight` in the *Select SAP HANA HDI service instance name* box. In the list of HDI containers displayed choose the HDI container you want to add, for example, *FlightReservation-hdidb-ws-12345*, and choose *Add*.
 
-    The SAP HANA Database Explorer displays the bound HDI-container service in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg) *hdb\_di \(FlightReservation-hdidb-ws-12345\)*.
+    The SAP HANA Project Explorer displays the bound HDI-container service in the *Database Connections* node, for example, ![](images/BAS_icon_targetContainerBound_5c18d02.svg)*hdb\_di \(FlightReservation-hdidb-ws-12345\)*.
 
     > ### Caution:  
     > Binding an application's database module to an existing \(HDI-container\) service can lead to problems caused by the automatic removal of artifacts from a previous deployment to the target container.
@@ -77,7 +79,14 @@ If you are developing native SAP HANA applications in SAP Business Application S
     > ### Tip:  
     > To help prevent the undeployment of unmatched files during deployment, you can set the project preferences in SAP Business Application Studio to display warning messages, as described in the next steps.
 
-5.  Manage the user preferences for messages displayed during binding operations. \(Optional\)
+5.  Delete a database connection from SAP HANA Project Explorer \(optional\).
+
+    Open the *Database Connections* node in the SAP HANA Project Explorer, locate the connection you want to delete, and choose :wastebasket:. Choose *Delete* to confirm that you want to remove the selected database connection from the list of connections displayed in the *Database Connections* node.
+
+    > ### Note:  
+    > If the database connection selected for deletion is bound to an application, the binding is removed before the database connection is deleted.
+
+6.  Manage the user preferences for messages displayed during binding operations. \(Optional\)
 
     1.  Display a confirmation message to warn users about the consequences of binding to an existing container service. \(Optional\)
 

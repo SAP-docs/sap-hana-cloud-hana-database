@@ -305,14 +305,10 @@ Sets options for the resulting JSON
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -321,14 +317,10 @@ Description
 
 format
 
-
-
 </td>
 <td valign="top">
 
 Whether to insert newline and tab for elements. Possible values are 'yes' or 'no' \(the default\).
-
-
 
 </td>
 </tr>
@@ -337,14 +329,10 @@ Whether to insert newline and tab for elements. Possible values are 'yes' or 'no
 
 omitnull
 
-
-
 </td>
 <td valign="top">
 
 Whether to omit NULL value records in the result JSON document. Possible values are 'yes' \(the default\), or 'no'.
-
-
 
 </td>
 </tr>
@@ -353,14 +341,10 @@ Whether to omit NULL value records in the result JSON document. Possible values 
 
 arraywrap
 
-
-
 </td>
 <td valign="top">
 
 Whether to include \[ \] at the beginning and end of the JSON document. Possible values are 'yes' \(the default\), or 'no'.
-
-
 
 </td>
 </tr>
@@ -429,14 +413,10 @@ Sets options for the resulting XML.
 
 Option
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -445,14 +425,10 @@ Description
 
 columnstyle
 
-
-
 </td>
 <td valign="top">
 
 The representation of SQL columns. Possible values are 'element' \(the default\), or 'attribute'.
-
-
 
 </td>
 </tr>
@@ -461,14 +437,10 @@ The representation of SQL columns. Possible values are 'element' \(the default\)
 
 format
 
-
-
 </td>
 <td valign="top">
 
 Whether to insert newline and tab for elements. Possible values are 'yes' \(the default\), or 'no'.
-
-
 
 </td>
 </tr>
@@ -477,14 +449,10 @@ Whether to insert newline and tab for elements. Possible values are 'yes' \(the 
 
 header
 
-
-
 </td>
 <td valign="top">
 
 Whether to include the XML declaration header \(<?xml version="1.0"?\>\). Possible values are 'yes', or 'no' \(the default\).
-
-
 
 </td>
 </tr>
@@ -493,14 +461,10 @@ Whether to include the XML declaration header \(<?xml version="1.0"?\>\). Possib
 
 incremental
 
-
-
 </td>
 <td valign="top">
 
 Whether to return a single row or multiple rows. Possible values are 'yes', or 'no' \(the default\).
-
-
 
 </td>
 </tr>
@@ -509,14 +473,10 @@ Whether to return a single row or multiple rows. Possible values are 'yes', or '
 
 nullstyle
 
-
-
 </td>
 <td valign="top">
 
 Whether to omit or present a null attribute for NULL values. Possible values are 'omit' \(the default\), or 'attribute'.
-
-
 
 </td>
 </tr>
@@ -525,14 +485,10 @@ Whether to omit or present a null attribute for NULL values. Possible values are
 
 root
 
-
-
 </td>
 <td valign="top">
 
 Whether to include a root element for the table name. Possible values are 'yes' \(the default\), or 'no'
-
-
 
 </td>
 </tr>
@@ -541,14 +497,10 @@ Whether to include a root element for the table name. Possible values are 'yes' 
 
 rowname
 
-
-
 </td>
 <td valign="top">
 
 Sets the name of the row element. The default is 'row'.
-
-
 
 </td>
 </tr>
@@ -557,14 +509,10 @@ Sets the name of the row element. The default is 'row'.
 
 schemaloc
 
-
-
 </td>
 <td valign="top">
 
 Sets the *<schemalocation\>* value in the root element. If the *<root\>* option is set to no, then this option is ignored. This value is a string with a URI.
-
-
 
 </td>
 </tr>
@@ -573,14 +521,10 @@ Sets the *<schemalocation\>* value in the root element. If the *<root\>* option 
 
 tablename
 
-
-
 </td>
 <td valign="top">
 
 Names the root element. If the root option is set to 'no', then this option is ignored. The value is a string and the default is 'resultset'.
-
-
 
 </td>
 </tr>
@@ -589,14 +533,10 @@ Names the root element. If the root option is set to 'no', then this option is i
 
 targetns
 
-
-
 </td>
 <td valign="top">
 
 Sets the *<targetnamespace\>* value in the root element. If the *<root\>* option is set to 'no', then this option is ignored.
-
-
 
 </td>
 </tr>
@@ -636,7 +576,7 @@ Specifies the return type of the results. The default is NCLOB.
 </b></dt>
 <dd>
 
-Specifies the collation to use at the statement level. *<collation\_name\>* is one of the supported collation names listed in the COLLATIONS system view.
+Specifies the collation to use at the statement level. For each language, there are three entries, for example, ENGLISH, ENGLISH\_CI, and ENGLISH\_AI. The later two are case-insensitive and accent-insensitive.
 
 ```
 <collation_clause> ::= WITH COLLATION <collation_name>
@@ -646,6 +586,12 @@ For example, in the following SELECT statement, collation ENGLISH applies to bot
 
 ```
 SELECT * FROM T3 ORDER BY a, b WITH COLLATION ENGLISH;
+```
+
+Not all collation languages are supported. For a supported list, query the COLLATIONS system view where IS\_BASE\_COLLATION = 'TRUE'.
+
+```
+SELECT * FROM COLLATIONS WHERE IS_BASE_COLLATION = 'TRUE';
 ```
 
 
@@ -2706,14 +2652,10 @@ SELECT * FROM EMPLOYEES:CITY.STATE;
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 Name
-
-
 
 </th>
 </tr>
@@ -2722,14 +2664,10 @@ Name
 
 1
 
-
-
 </td>
 <td valign="top">
 
 California
-
-
 
 </td>
 </tr>
@@ -2738,14 +2676,10 @@ California
 
 2
 
-
-
 </td>
 <td valign="top">
 
 Washington
-
-
 
 </td>
 </tr>
@@ -2764,14 +2698,10 @@ SELECT * FROM EMPLOYEES[ID<5]:CITY.STATE[ID<2];
 
 ID
 
-
-
 </th>
 <th valign="top">
 
 Name
-
-
 
 </th>
 </tr>
@@ -2780,14 +2710,10 @@ Name
 
 1
 
-
-
 </td>
 <td valign="top">
 
 California
-
-
 
 </td>
 </tr>
@@ -2828,21 +2754,15 @@ SELECT t1.branch, case_join.c1, case_join.c2
 
 Branch
 
-
-
 </th>
 <th valign="top">
 
 C1
 
-
-
 </th>
 <th valign="top">
 
 C2
-
-
 
 </th>
 </tr>
@@ -2851,21 +2771,15 @@ C2
 
 1
 
-
-
 </td>
 <td valign="top">
 
 100
 
-
-
 </td>
 <td valign="top">
 
 200
-
-
 
 </td>
 </tr>
@@ -2874,21 +2788,15 @@ C2
 
 2
 
-
-
 </td>
 <td valign="top">
 
 300
 
-
-
 </td>
 <td valign="top">
 
 400
-
-
 
 </td>
 </tr>
@@ -3216,11 +3124,11 @@ SELECT "PASSOC_1"('EN')."PASSOC_2"('P6')."PASSOC_3"(2)."ID",
 **Related Information**  
 
 
-[User-Defined Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/765815cd7d214ed38c190dc2f570fe39.html "") :arrow_upper_right:
+[User-Defined Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/765815cd7d214ed38c190dc2f570fe39.html "") :arrow_upper_right:
 
-[Declarative SQLScript Logic](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/f0a6dceac8b94cca98dd2741ac6541b8.html "") :arrow_upper_right:
+[Declarative SQLScript Logic](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/f0a6dceac8b94cca98dd2741ac6541b8.html "") :arrow_upper_right:
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_2_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 
 [EXPRESSION\_MACRO Function \(Miscellaneous\)](../011-SQL-Functions/expression-macro-function-miscellaneous-a8d1145.md "Returns aggregated results from a query.")
 

@@ -15,21 +15,15 @@ Provides remote table replication information.
 
 Column name
 
-
-
 </th>
 <th valign="top">
 
 Data type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,21 +32,15 @@ Description
 
 HOST
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(64\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the host name.
-
-
 
 </td>
 </tr>
@@ -61,21 +49,15 @@ Displays the host name.
 
 PORT
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the internal port number.
-
-
 
 </td>
 </tr>
@@ -84,21 +66,15 @@ Displays the internal port number.
 
 VOLUME\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the persistent volume ID of the server.
-
-
 
 </td>
 </tr>
@@ -107,21 +83,15 @@ Displays the persistent volume ID of the server.
 
 IS\_SOURCE\_SYSTEM
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5\)
 
-
-
 </td>
 <td valign="top">
 
 Indicates whether or not the system has a source table: TRUE/FALSE.
-
-
 
 </td>
 </tr>
@@ -130,21 +100,15 @@ Indicates whether or not the system has a source table: TRUE/FALSE.
 
 REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name on the replication system.
-
-
 
 </td>
 </tr>
@@ -153,21 +117,15 @@ Displays the remote source name on the replication system.
 
 SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the replication table.
-
-
 
 </td>
 </tr>
@@ -176,21 +134,15 @@ Displays the schema name of the replication table.
 
 TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of the replication table.
-
-
 
 </td>
 </tr>
@@ -199,21 +151,15 @@ Displays the table name of the replication table.
 
 TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the Table OID of the replication table.
-
-
 
 </td>
 </tr>
@@ -222,21 +168,15 @@ Displays the Table OID of the replication table.
 
 TABLE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the type of replication table: ROW/COLUMN.
-
-
 
 </td>
 </tr>
@@ -245,21 +185,15 @@ Displays the type of replication table: ROW/COLUMN.
 
 REPLICA\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(12\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the replication type: SYNCHRONOUS/ASYNCHRONOUS.
-
-
 
 </td>
 </tr>
@@ -268,21 +202,15 @@ Displays the replication type: SYNCHRONOUS/ASYNCHRONOUS.
 
 SOURCE\_REMOTE\_SOURCE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the remote source name on the source system.
-
-
 
 </td>
 </tr>
@@ -291,21 +219,15 @@ Displays the remote source name on the source system.
 
 SOURCE\_SCHEMA\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the schema name of the source table.
-
-
 
 </td>
 </tr>
@@ -314,21 +236,15 @@ Displays the schema name of the source table.
 
 SOURCE\_TABLE\_NAME
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(256\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the table name of the source table.
-
-
 
 </td>
 </tr>
@@ -337,21 +253,15 @@ Displays the table name of the source table.
 
 SOURCE\_TABLE\_OID
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the table OID of a source table.
-
-
 
 </td>
 </tr>
@@ -360,21 +270,15 @@ Displays the table OID of a source table.
 
 SOURCE\_TABLE\_TYPE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(6\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the source table type: ROW/COLUMN.
-
-
 
 </td>
 </tr>
@@ -383,14 +287,10 @@ Displays the source table type: ROW/COLUMN.
 
 PART\_ID
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
-
-
 
 </td>
 <td valign="top">
@@ -411,21 +311,15 @@ Displays the partition ID. Returns the following:
 
 REPLICATION\_STATUS
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(16\)
 
-
-
 </td>
 <td valign="top">
 
-Displays the replication status: ENABLING, ENABLED, or DISABLED.
-
-
+Displays the replication status: ENABLING, ENABLED, DISABLED, or SUSPENDED.
 
 </td>
 </tr>
@@ -434,21 +328,15 @@ Displays the replication status: ENABLING, ENABLED, or DISABLED.
 
 LAST\_ENABLE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the table was last enabled.
-
-
 
 </td>
 </tr>
@@ -457,21 +345,15 @@ Displays the timestamp when the table was last enabled.
 
 LAST\_DISABLE\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the table was last disabled.
-
-
 
 </td>
 </tr>
@@ -480,21 +362,15 @@ Displays the timestamp when the table was last disabled.
 
 LAST\_ERROR\_CODE
 
-
-
 </td>
 <td valign="top">
 
 INTEGER
 
-
-
 </td>
 <td valign="top">
 
 Displays the last error code number.
-
-
 
 </td>
 </tr>
@@ -503,21 +379,15 @@ Displays the last error code number.
 
 LAST\_ERROR\_MESSAGE
 
-
-
 </td>
 <td valign="top">
 
 NVARCHAR\(5000\)
 
-
-
 </td>
 <td valign="top">
 
 Displays the last error message.
-
-
 
 </td>
 </tr>
@@ -526,21 +396,15 @@ Displays the last error message.
 
 LAST\_ERROR\_TIME
 
-
-
 </td>
 <td valign="top">
 
 TIMESTAMP
 
-
-
 </td>
 <td valign="top">
 
 Displays the timestamp when the last error occurred.
-
-
 
 </td>
 </tr>
@@ -549,21 +413,15 @@ Displays the timestamp when the last error occurred.
 
 INSERT\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of inserted records.
-
-
 
 </td>
 </tr>
@@ -572,21 +430,15 @@ Displays the number of inserted records.
 
 UPDATE\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of updated records.
-
-
 
 </td>
 </tr>
@@ -595,21 +447,15 @@ Displays the number of updated records.
 
 DELETE\_RECORD\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of deleted records.
-
-
 
 </td>
 </tr>
@@ -618,21 +464,15 @@ Displays the number of deleted records.
 
 INSERT\_RETRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of retries to insert.
-
-
 
 </td>
 </tr>
@@ -641,21 +481,15 @@ Displays the number of retries to insert.
 
 UPDATE\_RETRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of retries to update.
-
-
 
 </td>
 </tr>
@@ -664,21 +498,15 @@ Displays the number of retries to update.
 
 DELETE\_RETRY\_COUNT
 
-
-
 </td>
 <td valign="top">
 
 BIGINT
 
-
-
 </td>
 <td valign="top">
 
 Displays the number of retries to delete.
-
-
 
 </td>
 </tr>
@@ -695,5 +523,5 @@ Displays the number of retries to delete.
 
 [ALTER SYSTEM \{ENABLE | DISABLE\} ALL \[ASYNCHRONOUS | SYNCHRONOUS\] TABLE REPLICAS Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-enable-disable-all-asynchronous-synchronous-table-replicas-stat-f948665.md "Activates or deactivates the overall replication operation of all replication tables or of asynchronous or synchronous tables only.")
 
-[Table Replication](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_2_QRC/en-US/33dd5d248add4b7a8c085846748b80ba.html "In a scale-out system tables (or selected columns of column store tables) may be replicated to multiple hosts. This can help to reduce network traffic when, for example, slowly-changing master data often has to be joined with tables, or partitions of tables, that are located on other hosts.") :arrow_upper_right:
+[Table Replication](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/33dd5d248add4b7a8c085846748b80ba.html "In a scale-out system tables (or selected columns of column store tables) may be replicated to multiple hosts. This can help to reduce network traffic when, for example, slowly-changing master data often has to be joined with tables, or partitions of tables, that are located on other hosts.") :arrow_upper_right:
 
