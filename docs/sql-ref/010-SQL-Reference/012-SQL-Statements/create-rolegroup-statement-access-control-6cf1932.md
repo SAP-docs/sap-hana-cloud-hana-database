@@ -24,6 +24,17 @@ CREATE ROLEGROUP <rolegroup_name> [ NO GRANT TO CREATOR ] [ ENABLE ROLE ADMIN ]
 <dl>
 <dt><b>
 
+*<rolegroup\_name\>*
+
+</b></dt>
+<dd>
+
+Specifies the user name of the role group to be created. The specified name must not be identical to the name of an existing user, user group, role or role group.
+
+
+
+</dd><dt><b>
+
 NO GRANT TO CREATOR
 
 </b></dt>
@@ -93,5 +104,5 @@ Only users with the CREATE ROLEGROUP system privilege can create role groups.
 
 [GRANTED\_PRIVILEGES System View](../../020-System-Views-Reference/021-System-Views/granted-privileges-system-view-20a5958.md "Provides information about privileges and roles granted to users.")
 
-[Role Groups](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/33dfc7ed4ff648abbbaab4aefb7070d4.html "Role groups support a separation of role management tasks. This is useful if you want different aspects of your authorization setup managed by different administrators. In an SAP HANA Cloud environment, SAP uses role groups to separate the management of customer-owned roles and SAP-owned roles and therefore the authorization on underlying objects.") :arrow_upper_right:
+[Role Groups](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/33dfc7ed4ff648abbbaab4aefb7070d4.html "Role groups support a separation of role management tasks. This is useful if you want different aspects of your authorization setup managed by different administrators. In an SAP HANA Cloud environment, SAP uses role groups to separate the management of customer-owned roles and SAP-owned roles and therefore the authorization on underlying objects.") :arrow_upper_right:
 

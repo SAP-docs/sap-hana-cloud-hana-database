@@ -250,7 +250,7 @@ The following steps provides useful tips and tricks to help you understand what 
 
 [Standard SAP Java Client Libraries for Cloud Foundry](../060-HANA-Cloud-DB-Dev-App-Code/standard-sap-java-client-libraries-for-cloud-foundry-6511bc0.md "A collection of Java client libraries developed by SAP is provided to help you develop Java applications for Cloud Foundry.")
 
-[Standard Python Packages for Cloud Foundry](../060-HANA-Cloud-DB-Dev-App-Code/standard-python-packages-for-cloud-foundry-8732609.md "A list of Python packages developed by SAP, which are available for download and use.")
+[Standard Python Packages for Cloud Foundry](../060-HANA-Cloud-DB-Dev-App-Code/standard-python-packages-for-cloud-foundry-8732609.md "A list of Python packages developed by SAP, which are available for download and use from the Python Package Index (PyPI).")
 
 [SAP CP Java Security Library \(GitHub\)](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/java-security)
 

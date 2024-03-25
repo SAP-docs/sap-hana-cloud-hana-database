@@ -118,5 +118,5 @@ To delete values use ALTER SYSTEM ALTER CONFIGURATION \('topology.ini','system'\
 **Related Information**  
 
 
-[Partitioning Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/7b1e7a1577cc4e05bb4c05b4189c5b2f.html "A number of table consistency checks are available to check the validity of partitioned tables.") :arrow_upper_right:
+[Partitioning Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/7b1e7a1577cc4e05bb4c05b4189c5b2f.html "A number of table consistency checks are available to check the validity of partitioned tables.") :arrow_upper_right:
 

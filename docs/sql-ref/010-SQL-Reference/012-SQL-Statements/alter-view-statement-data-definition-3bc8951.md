@@ -10,15 +10,13 @@ Alters the definition, restrictions, or options on a view.
 
 ```
 ALTER VIEW <view_name> {
- [ ( <column_name_list> ) ] AS <subquery> [ <view_option_list> ] [ <view_cache> ]
- | <cache_clause>
- | <mask_clause>
- | <expression_macros>
- | <view_access_modes>
- | WITH ANONYMIZATION ( ALGORITHM <algorithm_name> { [ <view_level_parameters> ] [ <column_level_parameters> ] } ) 
-}
-
-<view_option_list> ::=  <view_associations> <view_annotations>
+   { [ ( <column_name_list> ) ] AS <subquery> [ <view_option_list> ] [ <view_cache> ]
+   | <cache_clause>
+   | <mask_clause>
+   | <expression_macros>
+   | <view_access_modes>
+   | WITH ANONYMIZATION ( ALGORITHM <algorithm_name> { [ <view_level_parameters> ] [ <column_level_parameters> ] } ) }
+   [ WITH [ NO ] STRUCTURED FILTER CHECK ]
 ```
 
 
@@ -74,7 +72,21 @@ Specifies the subquery to use for populating the view with data.
 
 </dd><dt><b>
 
-*<with\_association\_clause\>*
+*<view\_option\_list\>*
+
+</b></dt>
+<dd>
+
+```
+<view_option_list> ::= 
+   <associations_clause> <annotations_clause>
+```
+
+
+<dl>
+<dt><b>
+
+*<association\_clause\>*
 
 </b></dt>
 <dd>
@@ -82,19 +94,23 @@ Specifies the subquery to use for populating the view with data.
 Defines a relationship between the view and one or more tables \(or views, in the case of JOIN\).
 
 ```
-<with_association_clause> ::= WITH ASSOCIATIONS ( <association_def_list> )
+<association_clause> ::= 
+   WITH ASSOCIATIONS ( <association_def_list> )
 
-<association_def_list> ::= <association_def> [,<association_def> [,…] ]
-<association_def> ::= { <join_definition> | <column_def>  }
+<association_def_list> ::= 
+   <association_def> [,<association_def> [,…] ]
+
+<association_def> ::= 
+   { <join_definition> | <column_def>  }
 
 <join_definition> ::= 
- <join_cardinality> JOIN <table_or_view_identifier> [ AS <table_alias> ] ON { <condition> | <column_def> }
+   <join_cardinality> JOIN <table_or_view_identifier> [ AS <table_alias> ] ON { <condition> | <column_def> }
 
 <join_cardinality> ::= 
- MANY TO ONE
- | MANY TO MANY
- | ONE TO ONE
- | ONE TO MANY
+   { MANY TO ONE
+   | MANY TO MANY
+   | ONE TO ONE
+   | ONE TO MANY }
 
 <column_def> ::= [ [ <schema_name>.]<table_ref>.]<column_name> [ AS <column_name> ]
 ```
@@ -103,40 +119,45 @@ Defines a relationship between the view and one or more tables \(or views, in th
 
 </dd><dt><b>
 
-*<with\_annotation\_clause\>*
+*<annotations\_clause\>*
 
 </b></dt>
 <dd>
 
-Alters table-, column-, and parameter-level annotations. You can reference annotations in subsequent queries to filter results.
+Specifies view-, column-, and parameter-level annotations in the form of key/value pairs. You can reference annotations in subsequent queries to filter results.
 
 ```
-<with_annotation_clause> ::= 
- WITH ANNOTATIONS ( { [ <view_annotations> ] [ <column_annotations> ] [ <parameter_annotations> ] } )
+<annotations_clause> ::= 
+   WITH ANNOTATIONS ( 
+      { [ <set_view_annotations> ]
+      | [ <set_column_annotations> ] 
+      | [ <set_parameter_annotations> ]
+   } )
 
-<view_annotations> ::= { [ <key_set_operation> ] [ <key_unset_operation> ] }
+<set_view_annotations> ::= <key_set_operation>
 
-<column_annotations> ::= <column_annotation> [ <column_annotation> […] ]
-<column_annotation> ::= COLUMN <column_ref> { <key_set_operation> | <key_unset_operation> }
+<set_column_annotations> ::= <column_annotation> [ <column_annotation> […] ]
+<column_annotation> ::= COLUMN <column_ref> <key_set_operation>
 
-<parameter_annotations> ::= <parameter_annotation> [ <parameter_annotation> […] ]
-<parameter_annotation> ::= PARAMETER <column_ref> { <key_set_operation> | <key_unset_operation> }
+<set_parameter_annotations> ::= <parameter_annotation> [ <parameter_annotation> […] ]
+<parameter_annotation> ::= PARAMETER <column_ref> <key_set_operation>
 
 <key_set_operation> ::= SET <key_value_pair_list> 
-<key_unset_operation> ::= UNSET <key_list>
 
 <key_value_pair_list> ::= <key_value_pair> [, <key_value_pair> [,…] ]
 <key_value_pair> ::= '<key>'='<value>'
-<key_list> ::= { '<key>'[,'<key>'[,…]] | ALL }
 
 <column_ref> ::= <identifier>
 <key> ::= <string>
 <value> ::= <string>
 ```
 
-While you must specify annotation on at least one object with the WITH ANNOTATION clause \(view, column, or parameter\), there is no limit on the number of annotations or types of annotations you can specify.
+While you must specify annotation on at least one object with the WITH ANNOTATION clause \(view, column, or parameter\), there is no limit on the number of annotations or types of annotations you can specify. *<key\>* and *<value\>* represent the annotations you are configuring for the object \(view, column, or parameter\).
 
-*<key\>* and *<value\>* represent the annotations you are configuring for the object \(view, column, or parameter\).
+
+
+</dd>
+</dl>
 
 
 
@@ -316,6 +337,17 @@ By default, when you execute a query on a static or dynamic result cached view, 
 
 
 
+</dd><dt><b>
+
+FORCE
+
+</b></dt>
+<dd>
+
+For static result caches, forces the addition of a result cache without checking its cachability. This feature is only available for calculation views. This option is not supported for dynamic result caches.
+
+
+
 </dd>
 </dl>
 
@@ -332,25 +364,21 @@ Changes the result cache.
 
 ```
 <alter_cache_clause> ::=  
-   ALTER [ <cache_type> ] CACHE [ NAME <cache_name> ]
-   { <alter_retention_clause > | <alter_location_clause> | <index_clause> }
-
-<cache_type> ::= STATIC | DYNAMIC
-
-<alter_retention_clause > ::= RETENTION <minute_value> 
-
-<alter_location_clause> ::=  { ADD | DROP } AT [ LOCATION ] '<hostname>:<port_number>'[, ...]
-
-<index_clause> ::= { ADD | DROP } INDEX ON <column_name>
+   ALTER [ { STATIC | DYNAMIC  ] CACHE [ NAME <cache_name> ] 
+   { RETENTION <minute_value> 
+     | { { ADD | DROP } AT [ LOCATION ] '<hostname>:<port_number>'[, ...] 
+       | { ADD | DROP } INDEX ON <column_name>
+       }
+   }
 ```
 
 *<cache\_name\>* specifies the result cache being altered. If the cache name is not specified, the system uses the default cache name \_SYS\_CACHE\#*<function\_name\>*. If the default name doesn't exist, an error occurs.
 
-For static caches, you can change the retention value of the result cache of a view. For dynamic caches, only the value 0 is supported.
+For STATIC cache, you can change the retention value of the result cache of a view. For DYNAMIC cache, only the value 0 is supported.
 
-Use the *<location\_clause\>* to change the location where the cache entry is created. By default, when you execute a query on a static or dynamic cached view, the optimizer determines the cache location. In some cases, the same cache entry is created at multiple indexservers. *<host\_port\>* specifies the hostname and port of an currently running indexserver.
+Use LOCATION to change the location where the cache entry is created. By default, when you execute a query on a static or dynamic cached view, the optimizer determines the cache location. In some cases, the same cache entry is created at multiple indexservers. *<hostname\>*:*<port\_number\>* specifies the hostname and port of an currently running indexserver.
 
-Use the *<index\_clause\>* to create an index on a dynamic result cache to improve filter evaluation performance on the top of the dynamic result cache. The *<index\_clause\>* is not supported for static caches. Dynamic result cache indexes are restricted to single-node systems only.
+Use INDEX to create an index on a dynamic result cache to improve filter evaluation performance on the top of the dynamic result cache. INDEX is not supported for STATIC caches. DYNAMIC result cache indexes are restricted to single-node systems only.
 
 
 
@@ -364,9 +392,8 @@ Use the *<index\_clause\>* to create an index on a dynamic result cache to impro
 Specifies to drop the result cache of a view.
 
 ```
-<drop_cache_clause> ::= DROP [ <cache_type> ] CACHE { NAME <cache_name> | ALL }
-
-<cache_type> ::= STATIC | DYNAMIC 
+<drop_cache_clause> ::= 
+   DROP [ { STATIC | DYNAMIC } ] CACHE { NAME <cache_name> | ALL }
 ```
 
 *<cache\_name\>* specifies the result cache being dropped.
@@ -389,28 +416,18 @@ Adds a new masking expression or changes or drops an existing mask expression. *
 
 ```
 <mask_clause> ::=
- { ADD | ALTER } [{ DEFAULT | SESSION USER }] MASK (<column_mask_list>)
- | ALTER  MASK (<column_mask_list>)
- | DROP MASK ( <column_name_list> )
-
-<column_mask_list> ::= ( <column_name> USING <mask_expression> [,…] )
+   { ADD | ALTER } [{ DEFAULT | SESSION USER }] MASK (<column_mask_list>)
+   | ALTER MASK ( <column_name> USING <mask_expression> [,…] )
+   | DROP MASK ( <column_name>[,...] )
 
 <mask_expression> ::= <expression>
-
-<column_name_list> ::= <column_name>[,...]
 ```
 
 When adding a mask expression, the mask behavior is defined for the object. New column masks must use the same mask mode. When altering, you can change the mask expression, but not the mode. Once all existing masks are dropped, you can add new masks using a different mask mode.
 
-Masking behavior is supported on row and column tables, and SQL row and calculation views. It is not supported on any other type of tables \(virtual tables, extended tables, temporary tables etc.\) and views \(Join/Olap/Hierarchy views\).
+Masking behavior is supported on row and column tables, and SQL row and calculation views. It is not supported on any other type of tables \(virtual tables, extended tables, temporary tables etc.\) and views \(Join/Olap/Hierarchy views\). Only one masking behavior, definer owner-based \(DEFAULT MASK\) or session user based masking \(SESSION USER MASK\), is supported on a table or view with masked columns. You can combine both masking behaviors in an object hierarchy. For example, a view with session user based masking can be created on a table with owner-based masking. If masking is enforced on lower-level objects, results for higher-level objects, for unauthorized users, may be incorrect because some results data is masked; no error is returned indicating lower-level objects are masked. If not specified, DEFAULT is the default.
 
-Only one masking behavior, definer owner-based \(DEFAULT MASK\) or session user based masking \(SESSION USER MASK\), is supported on a table or view with masked columns. You can combine both masking behaviors in an object hierarchy. For example, a view with session user based masking can be created on a table with owner-based masking.
-
-If not specified, DEFAULT is the default.
-
-*<mask\_expression\>* can be any type of expression, including a user-defined function, that returns the same data type and length as the original column.
-
-For more information on data masking, see the *SAP HANA Cloud, SAP HANA Database Security Guide*.
+*<mask\_expression\>* can be any type of expression, including a user-defined function, that returns the same data type and length as the original column. For more information on data masking, see the *SAP HANA Cloud, SAP HANA Database Security Guide*.
 
 
 
@@ -564,6 +581,17 @@ For more information, see the topics on data anonymization in the *SAP HANA Clou
 
 
 
+</dd><dt><b>
+
+STRUCTURED FILTER CHECK
+
+</b></dt>
+<dd>
+
+Allows execution context to control access to rows in database objects. This clause is only supported for SQL and parameterized SQL views.
+
+
+
 </dd>
 </dl>
 
@@ -689,9 +717,9 @@ SELECT * FROM v1; -- invalid view name: cannot select the DDL only mode view
 
 [REFRESH VIEW Statement \(Data Definition\)](refresh-view-statement-data-definition-81e1583.md "Refreshes an anonymized view.")
 
-[Data Anonymization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/6cf9d55f4d3d45b0bcdb41756d86629f.html "Anonymization methods available in the SAP HANA Cloud, SAP HANA database allow you to gain statistically valid insights from your data while protecting the privacy of individuals.") :arrow_upper_right:
+[Data Anonymization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/6cf9d55f4d3d45b0bcdb41756d86629f.html "Anonymization methods available in the SAP HANA Cloud, SAP HANA database allow you to gain statistically valid insights from your data while protecting the privacy of individuals.") :arrow_upper_right:
 
 [Predicates](../predicates-20a2ab2.md "")
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

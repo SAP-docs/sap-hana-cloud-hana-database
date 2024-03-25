@@ -509,14 +509,6 @@ Controls concurrency. This setting only accepts the value 1 \(single thread plan
 Examples:
 
 ```
-SELECT * FROM T1 WITH HINT( OPTIMIZE_METAMODEL );
-```
-
-```
-SELECT * FROM T1 WITH HINT( NO_OPTIMIZE_METAMODEL );
-```
-
-```
 SELECT * FROM T1 WITH HINT( MAX_CONCURRENCY(1) );
 ```
 
@@ -741,31 +733,6 @@ Guides the optimizer to avoid joining the input relations through probing the ha
 
 
 
-</dd><dt><b>
-
-OPTIMIZE\_METAMODEL
-
-</b></dt>
-<dd>
-
-Guides the optimizer to avoid joining the input relations through probing the hashCreates concat attributes for joins with multiple columns \(if they do not already exist\) and uses them during the join calculation. Concat attributes need additional memory as they are persisted.
-
-
-
-</dd><dt><b>
-
-NO\_OPTIMIZE\_METAMODEL
-
-</b></dt>
-<dd>
-
-Forces the use of the native hash-based multi-column join implementation and does not use the concat attributes even if they should have already been created.
-
-> ### Note:  
-> The hash-based approach might be slower than using concat attributes.
-
-
-
 </dd>
 </dl>
 
@@ -785,14 +752,6 @@ SELECT * FROM T1, T2 WITH HINT( HASH_JOIN );
 
 ```
 SELECT * FROM T1, T2 WITH HINT( NO_HASH_JOIN );
-```
-
-```
-SELECT * FROM T1, T2 WITH HINT( OPTIMIZE_METAMODEL );
-```
-
-```
-SELECT * FROM T1, T2 WITH HINT( NO_OPTIMIZE_METAMODEL );
 ```
 
 
@@ -5003,5 +4962,5 @@ Sets the size of the bucket for an ESX disk-based hash join. The hint configures
 
 [STATEMENT\_HINTS System View](../../020-System-Views-Reference/021-System-Views/statement-hints-system-view-161a91a.md "Provides information about statement hints, including when they were last enabled and/or disabled and by whom.")
 
-[Performance: Using Hints to Query Data Snapshots](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "Several features in SAP HANA use data snapshots to improve performance. You can use configurable hint classes as a standard way of controlling at run time how the data is selected, either from the snapshot or from the database.") :arrow_upper_right:
+[Using Hints With Select Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "In some cases hints can be appended to select statements to determine how the statement is executed. This may be used, for example, to improve performance or to route a query to a specific data source.") :arrow_upper_right:
 

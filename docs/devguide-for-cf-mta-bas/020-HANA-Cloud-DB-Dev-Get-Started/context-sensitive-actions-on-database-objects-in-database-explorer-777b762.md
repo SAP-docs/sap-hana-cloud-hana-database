@@ -1,5 +1,7 @@
 <!-- loio777b7623ca9c4fb58b27ad9f2d5284a8 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Context-sensitive Actions on Database Objects in Database Explorer
 
 A list of available context-sensitive actions that can be performed on SAP HANA database objects in the database explorer.
@@ -224,13 +226,20 @@ The option is only available with:
 
 Display a graphical representation of the connections between the currently selected object and any dependendent objects, for example, between a database procedure, table, view, and analytic privilege.
 
+For ease of use, especially in larger dependency trees, you can change the default settings, for example:
+
+-   Hide specific types of objects
+-   Set a maximum depth for the connections displayed
+
+
+
 </td>
 <td valign="top">
 
-If the selected object does not have any dependencies, no graph is displayed.
+If the selected object does not have any dependencies, no graph is displayed, and objects in a dependency tree are sometimes hidden.
 
 > ### Tip:  
-> See *Related Information* below for more information about how to use this feature.
+> Choose :gear: to display information about any currently hidden objects and connections.
 
 
 

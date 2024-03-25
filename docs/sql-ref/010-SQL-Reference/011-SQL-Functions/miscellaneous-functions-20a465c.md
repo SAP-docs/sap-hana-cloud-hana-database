@@ -77,6 +77,10 @@ SAP HANA supports many functions that return system values and perform various o
 
 -   [SESSION\_USER Function \(Miscellaneous\)](session-user-function-miscellaneous-20e76c1.md)
 
+-   [STATEMENT\_EXECUTION\_HOST Function \(Miscellaneous\)](statement-execution-host-function-miscellaneous-d42113d.md)
+
+-   [STATEMENT\_EXECUTION\_PORT Function \(Miscellaneous\)](statement-execution-port-function-miscellaneous-4b410dd.md)
+
 -   [SYSUUID Function \(Miscellaneous\)](sysuuid-function-miscellaneous-20e8cdf.md)
 
 -   [WIDTH\_BUCKET Function \(Miscellaneous\)](width-bucket-function-miscellaneous-953bce3.md)

@@ -152,7 +152,7 @@ Displays the type of ordering: FOLLOWS/PRECEDES.
 
 <a name="loio6ad29fd74b424d97b4476f648e3385e7__section_sjs_2zz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

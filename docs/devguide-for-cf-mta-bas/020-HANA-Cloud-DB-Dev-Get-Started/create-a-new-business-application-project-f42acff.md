@@ -37,7 +37,7 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
         Or choose *View* \> *Command Palette...*
 
         > ### Tip:  
-        > By default, SAP Business Application Studio provides "compact" menus and options, which are displayed when you choose <span class="SAP-icons"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the dev. space, choose :gear:in the Views pane, choose *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* to "*classic*" in the drop-down list provided.
+        > By default, SAP Business Application Studio provides "compact" menus and options, which are displayed when you choose <span class="SAP-icons-V5"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the dev. space, choose :gear:in the Views pane, choose *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* to "*classic*" in the drop-down list provided.
 
         Or just press [F1\]
 
@@ -143,7 +143,7 @@ This tutorial shows how to use the templates provided by SAP Business Applicatio
 
     2.  Open the database explorer provided by the *SAP HANA Native Application* extension for SAP Business Application Studio.
 
-        In the views pane on the left-hand side of SAP Business Application Studio, choose <span class="FPA-icons"></span> \(SAP HANA Database Explorer\) to display a list of connections to SAP HANA databases.
+        In the views pane on the left-hand side of SAP Business Application Studio, choose <span class="FPA-icons-V3"></span> \(SAP HANA Database Explorer\) to display a list of connections to SAP HANA databases.
 
 
     > ### Tip:  

@@ -212,7 +212,7 @@ NVARCHAR\(64\)
 </td>
 <td valign="top">
 
-Displays the host where the table/partition is located.
+Displays the host where the table/partition was located.
 
 </td>
 </tr>
@@ -239,9 +239,15 @@ Displays the port where the table/partition is located.
 
 <a name="loio20cd4f11751910148df8d7b88529c921___r_e_o_r_g__p_l_a_n_1fulldesc_REORG_PLAN"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
+<a name="loio20cd4f11751910148df8d7b88529c921__section_xth_h3d_zzb"/>
+
+## Additional Information
 
 This view contains the last table redistribution plan generated with this database connection. The contents of the session are stored temporarily and are deleted when the connection is closed.
 

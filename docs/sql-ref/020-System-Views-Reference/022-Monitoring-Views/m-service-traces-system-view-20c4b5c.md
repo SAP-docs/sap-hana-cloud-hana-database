@@ -72,13 +72,13 @@ Displays the trace component name.
 
 [M\_TRACEFILES System View](m-tracefiles-system-view-20c8f48.md "Provides information about all trace files.")
 
-[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-traces-statement-system-management-20d1281.md "Clears (removes) trace files opened by SAP HANA.")
+[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-traces-statement-system-management-20d1281.md "Clears trace files opened by SAP HANA.")
 
-[ALTER SYSTEM REMOVE TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-remove-traces-statement-system-management-20d25bf.md "Deletes the trace files on a specified host to reduce the disk space used by large trace files.")
+[ALTER SYSTEM REMOVE TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-remove-traces-statement-system-management-20d25bf.md "Removes the trace files from a specified host to reduce the disk space used by large trace files.")
 
-[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
+[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
 
-[Traces](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/7e31247372fb4dd7b8c6bbac758b8c91.html "SAP HANA provides various traces for obtaining detailed information about the actions of the database system for troubleshooting and error analysis.") :arrow_upper_right:
+[Traces](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/7e31247372fb4dd7b8c6bbac758b8c91.html "") :arrow_upper_right:
 
-[SQL Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bedc9668bb5710149d56d29fe2632ba0.html "The SQL trace collects information about all SQL statements executed and saves it in a trace file for further analysis. The SQL trace is inactive by default.") :arrow_upper_right:
+ <?sap-ot O2O class="- topic/link " href="bedc9668bb5710149d56d29fe2632ba0.xml" text="" desc="" xtrc="link:7" xtrf="file:/home/builder/src/dita-all/chx1701941200833/loio14c89f3b00c24c86909b194d24afedf4_en-US/src/content/localization/en-us/20c4b5cf75191014971a86dc9cad285c.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

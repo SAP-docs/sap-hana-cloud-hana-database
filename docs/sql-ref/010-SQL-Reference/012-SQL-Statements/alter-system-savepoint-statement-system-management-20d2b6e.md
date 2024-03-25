@@ -57,7 +57,7 @@ ALTER SYSTEM SAVEPOINT;
 
 [M\_SAVEPOINTS System View](../../020-System-Views-Reference/022-Monitoring-Views/m-savepoints-system-view-20bdd30.md "Displays current and historical savepoint statistics.")
 
-[HOST_SAVEPOINTS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/3706a4f73e9745d7ba205784a7025c5f.html "Specifies the current and historical savepoint statistics.") :arrow_upper_right:
+[HOST_SAVEPOINTS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/3706a4f73e9745d7ba205784a7025c5f.html "Specifies the current and historical savepoint statistics.") :arrow_upper_right:
 
 [SAVEPOINT Statement \(Transaction Management\)](savepoint-statement-transaction-management-cd4172a.md "Defines a location to which a transaction can return if part of the transaction is conditionally canceled.")
 

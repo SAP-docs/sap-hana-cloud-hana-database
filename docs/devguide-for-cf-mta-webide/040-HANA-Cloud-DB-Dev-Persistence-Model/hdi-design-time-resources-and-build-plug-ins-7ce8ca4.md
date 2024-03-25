@@ -86,17 +86,17 @@ An arbitrary design-time resource
 <tr>
 <td valign="top">
 
-`hdbafllangprocedure` 
+`hdbapplicationtime` 
 
 </td>
 <td valign="top">
 
-Definition of a language procedure for an application function library \(AFL\)
+Transforms a design-time application time-period table into a database table object with application-time period
 
 </td>
 <td valign="top">
 
-`com.sap.hana.di.afllangprocedure` 
+`com.sap.hana.di.applicationtime` 
 
 </td>
 </tr>
@@ -148,6 +148,74 @@ Transforms a design-time constraint into a constraint on database tables
 <td valign="top">
 
 `com.sap.hana.di.constraint` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hdbcollection` 
+
+</td>
+<td valign="top">
+
+Transforms a design-time document-collection resource into a collection database object
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.collection` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hdbcollectionindex` 
+
+</td>
+<td valign="top">
+
+Transforms a design-time resource for a document collection index into a collection-index database object
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.collection.index` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hdbeshconfig` 
+
+</td>
+<td valign="top">
+
+Creates and deploys a search configuration with the SAP HANA database's deployment infrastructure \(HDI\)
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.eshconfig` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hdbfabricvirtualtable` 
+
+</td>
+<td valign="top">
+
+Adds a system-owned replica to a virtual table from a fabric virtual table
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.sharedreplica` 
 
 </td>
 </tr>
@@ -290,6 +358,23 @@ Transforms a design-time logical-schema definition into database objects that ca
 <tr>
 <td valign="top">
 
+`hdbmigrationtable` 
+
+</td>
+<td valign="top">
+
+Transforms a design-time table resource into a table database object
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.table.migration` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `hdbprocedure` 
 
 </td>
@@ -352,6 +437,23 @@ Definition of a public database synonym
 <td valign="top">
 
 `com.sap.hana.di.publicsynonym` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hdbremotetablereplica` 
+
+</td>
+<td valign="top">
+
+Transforms a design-time remote-table replication that refers to a current virtual table into a remote-table-replication database object
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.remotetablereplica` 
 
 </td>
 </tr>
@@ -426,6 +528,23 @@ Configuration of database privileges \(and other roles\) to be included in a dat
 <tr>
 <td valign="top">
 
+`hdbschedulerjob` 
+
+</td>
+<td valign="top">
+
+Transforms a design-time scheduler-job resource into a scheduler job on a database procedure.
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.schedulerjob` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `hdbsearchruleset` 
 
 </td>
@@ -460,40 +579,6 @@ Definition of a database sequence
 <tr>
 <td valign="top">
 
-`hdbsynonym` 
-
-</td>
-<td valign="top">
-
-Database synonym definition
-
-</td>
-<td valign="top">
-
-`com.sap.hana.di.synonym` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hdbsynonymconfig` 
-
-</td>
-<td valign="top">
-
-Configuration file for a database synonym
-
-</td>
-<td valign="top">
-
-`com.sap.hana.di.synonym.config` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `hdbstatistics` 
 
 </td>
@@ -522,6 +607,40 @@ Definition of analytic or structured privileges
 <td valign="top">
 
 `com.sap.hana.di.structuredprivilege` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hdbsynonym` 
+
+</td>
+<td valign="top">
+
+Database synonym definition
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.synonym` 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hdbsynonymconfig` 
+
+</td>
+<td valign="top">
+
+Configuration file for a database synonym
+
+</td>
+<td valign="top">
+
+`com.sap.hana.di.synonym.config` 
 
 </td>
 </tr>
@@ -630,91 +749,6 @@ View definition file
 <tr>
 <td valign="top">
 
-`hdbvirtualfunction` 
-
-</td>
-<td valign="top">
-
-Definition of a virtual database function
-
-</td>
-<td valign="top">
-
-`com.sap.hana.di.virtualfunction` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hdbvirtualfunctionconfig` 
-
-</td>
-<td valign="top">
-
-Configuration file for a virtual function
-
-</td>
-<td valign="top">
-
-`com.sap.hana.di.virtualfunction.config` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hdbvirtualpackage` 
-
-</td>
-<td valign="top">
-
-Transform a design-time Hadoop Map Reduce Job or SparkSQL resource into a virtual-package database object
-
-</td>
-<td valign="top">
-
-`com.sap.hana.di.virtualpackage.hadoop` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hdbvirtualprocedure` 
-
-</td>
-<td valign="top">
-
-Definition of a virtual database procedure
-
-</td>
-<td valign="top">
-
-`com.sap.hana.di.virtualprocedure` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hdbvirtualprocedureconfig` 
-
-</td>
-<td valign="top">
-
-Configuration file for the virtual database procedure definition
-
-</td>
-<td valign="top">
-
-`com.sap.hana.di.virtualprocedure.config` 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `hdbvirtualtable` 
 
 </td>
@@ -770,7 +804,7 @@ Properties file for a table-import operation
 **Related Information**  
 
 
-[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
+[SAP HDI Artifact Types and Build Plug-ins Reference](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/9789224788a34d93a86080cab993575c.html "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.") :arrow_upper_right:
 
 [The SAP HDI Container Configuration File](the-sap-hdi-container-configuration-file-6400400.md "Bind design-time file types to the corresponding build plug-in required in the SAP HANA Deployment Infrastructure (HDI).")
 

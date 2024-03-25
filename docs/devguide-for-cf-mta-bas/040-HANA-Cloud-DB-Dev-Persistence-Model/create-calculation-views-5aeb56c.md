@@ -121,130 +121,11 @@ Create a calculation view.
 
     Connect the nodes to model the data processing at runtime. To switch between any of the inner aggregation or projection nodes, right-click the node and select an option.
 
-7.  Add data sources to a view node.
+7.  Add data sources to a view node. For more information, see *Add Data Sources*.
 
-    1.  Select a view node.
+8.  Define output columns. For more information, see *Define Output Columns*.
 
-    2.  Choose ![](images/Add_Data_Sources_1689131.jpg) \(Add Data Source\).
-
-    3.  In *Find Data Sources*, select the type of the data source.
-
-    4.  Enter a search string or the name of the data source, then select it from the list.
-
-        Depending on the view node, you can add one or more data sources.
-
-    5.  Choose *Finish*.
-
-
-8.  \(Optional\) Add external objects \(from HDI or non-HDI schemas\) as a data source.
-
-    You can use synonyms to access objects from HDI or non-HDI container schemas. If a synonym for a specific target object does not exist, you can create it during the dialog.
-
-    > ### Note:  
-    > You can access data sources that are not defined in your project by using services and synonyms. To use a service from the *Add Data Source* dialog, ensure that the service is listed in your `mta.yaml` file.
-    > 
-    > For more information, see *Consume Objects That are not Included in Your Development Project*.
-
-    1.  Select a view node.
-
-    2.  Choose ![](images/Add_Data_Sources_1689131.jpg) \(Add Data Source\).
-
-        The *Find Data Sources* dialog box appears.
-
-    3.  Under *Services*, select the required external service.
-
-        To display the source service through which the object is accessible, select *Show Services*.
-
-    4.  Search for the name of the target object that you want to access using the external service, then select it from the list.
-
-        Depending on the selected view node, you can add one or more external data sources.
-
-    5.  If a synonym for a specific target object does not exist, choose *Create Synonym*.
-
-    6.  \(Optional\) If you have chosen to create a synonym, you can now modify its name and assign roles through the `.hdbgrants` files.
-
-    7.  To assign roles through the `.hdbgrants` files, select *Generate .hdbgrants file*.
-
-
-        <table>
-        <tr>
-        <th valign="top">
-
-        In Field...
-        
-        </th>
-        <th valign="top">
-
-        Specify...
-        
-        </th>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Object Owner Role*
-        
-        </td>
-        <td valign="top">
-        
-        The name of the role to assign to the object owner \(ending in `OO`\).
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Application User Role*
-        
-        </td>
-        <td valign="top">
-        
-        The name of the role to assign to the users that are running.
-
-        For example, data previews from Business Application Studio.
-        
-        </td>
-        </tr>
-        </table>
-        
-        By default, the search results only contain the roles that are explicitly granted to the external service user with the option to grant the role \(in the view *EFFECTIVE\_ROLES*, the column *IS\_GRANTABLE* is `TRUE`\). To display all the roles that the service user is authorized to see, select *Show all visible roles*.
-
-        > ### Note:  
-        > With these roles you can grant, for example, SELECT privileges with GRANT OPTION on the target object to the object owner, and SELECT privileges on the target object to the application user.
-
-        For more information on roles for HDI containers, see *Roles \(.hdbrole\)* in the *SAP HANA Cloud Deployment Infrastructure \(HDI\) Reference*.
-
-        For more information on roles for non-HDI containers, see the topic, *Enable Access to Objects in a Remote Classic Schema* in the *SAP HANA Cloud Deployment Infrastructure \(HDI\) Reference*.
-
-    8.  Assign schemas.
-
-        If *Generate .hdbgrants file* is selected, the options *Assign roles* and *Take default schema of service* are displayed.
-
-        If *Take default schema of service* is not selected, schema inputs are displayed.
-
-        This gives you the option to define the schema of the roles to be granted. If the role has no schema, leave the option unselected.
-
-    9.  Choose *Finish*.
-
-        The synonym is created.
-
-        If a synonym for a specific target object does not exist, you can create it during the dialog.
-
-
-9.  Define output columns.
-
-    1.  Select a view node.
-
-    2.  In the editor toolbar, choose ![](images/details_5b34943.png) \(Expand Details Panel\).
-
-    3.  On the *Mapping* tab, select the column you want to add to the output.
-
-    4.  In the context menu, choose *Add To Output*.
-
-    5.  To add all columns in a data source to the output, choose *Select All* from the context menu of the data source, then select *Add To Output.*
-
-
-10. Define attributes and measures.
+9.  Define attributes and measures.
 
     To successfully activate a calculation view with data category CUBE, you must specify at least one column as a measure.
 
@@ -257,7 +138,7 @@ Create a calculation view.
         If the data category is set to CUBE, an additional aggregation column is available to specify the aggregation type for measures.
 
 
-11. Buildand deploy an SAP HANA Database Module.
+10. Buildand deploy an SAP HANA Database Module.
 
     In the HANA project explorer, select the module and choose *Deploy*.
 
@@ -593,27 +474,29 @@ For more information, see *Quick Reference: Calculation View Properties*.
 **Related Information**  
 
 
-[Working With View Nodes](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/20ad4018a0ab4f2f84968beb8ab521e2.html "View nodes are the building blocks of calculation views.") :arrow_upper_right:
+[Add Data Sources](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2024_1_QRC/en-US/9a0471a69dfd4f92b8c96cf14c731e12.html "You must assign at least one data source to a calculation view. A data source provides the input data that is processed by the calculation view.") :arrow_upper_right:
+
+[Define Output Columns](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2024_1_QRC/en-US/d4cd2e3bb6794762ab541d12f7b6a3f9.html "You map columns in calculation view nodes to output columns. Output columns serve as the input to the higher-level node. Output column names must be unique.") :arrow_upper_right:
+
+[Working With View Nodes](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/20ad4018a0ab4f2f84968beb8ab521e2.html "View nodes are the building blocks of calculation views.") :arrow_upper_right:
 
 [Preview Calculation View Output](preview-calculation-view-output-903eff8.md "After you have modeled a calculation view, you can deploy it and preview its output.")
 
-[Working With Attributes and Measures](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/8493c7f54a3b4b728821ecee972e2963.html "Attributes and measures form content data that you can use for data modeling.") :arrow_upper_right:
+[Working With Attributes and Measures](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/8493c7f54a3b4b728821ecee972e2963.html "Attributes and measures form content data that you can use for data modeling.") :arrow_upper_right:
 
-[Working With Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/9774a676c8fe46c79c5b197051fa9743.html "When you model calculation views, you can define certain properties that can be referenced at runtime.") :arrow_upper_right:
+[Working With Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/9774a676c8fe46c79c5b197051fa9743.html "When you model calculation views, you can define certain properties that can be referenced at runtime.") :arrow_upper_right:
 
-[Additional Functionality for Calculation Views](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/a19aa4797aea4eb0b402aef360a4e14f.html "After modeling a calculation view or during design time, you can use additional functions to better understand the performance of the view at runtime and to more efficiently model calculation views.") :arrow_upper_right:
+[Create Calculation Views with Star Joins](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/988f5a9bd87c4492ad5c1e6f7936f0b5.html "Star joins connect a central data entity to multiple entities that are logically related. You can create a calculation view with star joins that join multiple dimensions to a single fact table.") :arrow_upper_right:
 
-[Create Calculation Views with Star Joins](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/988f5a9bd87c4492ad5c1e6f7936f0b5.html "Star joins connect a central data entity to multiple entities that are logically related. You can create a calculation view with star joins that join multiple dimensions to a single fact table.") :arrow_upper_right:
+[Create Calculation Views with Time Dimension](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/5a787289ee7e4f7fad10f0f5dfd54646.html "You can add time dimensions to a calculation view by using the standard time-related tables as data sources in the calculation view.") :arrow_upper_right:
 
-[Create Calculation Views with Time Dimension](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/5a787289ee7e4f7fad10f0f5dfd54646.html "You can add time dimensions to a calculation view by using the standard time-related tables as data sources in the calculation view.") :arrow_upper_right:
+[Using the Keep Flag](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/f0e101a7641340708f0b098206210d9c.html "The Keep Flag option for attribute columns influences the result set of a calculation view.") :arrow_upper_right:
 
-[Example: Using Keep Flag](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/f0e101a7641340708f0b098206210d9c.html "The Keep Flag option for attribute columns influences the result set of a calculation view.") :arrow_upper_right:
+[Consume Objects That are not Included in Your Development Project](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/9c5e5d49af274281b74062a87d5cb34e.html "To consume objects that are not included in your project (or in your HDI container), you need to define synonyms that point to the objects to be consumed.") :arrow_upper_right:
 
-[Consume Objects That are not Included in Your Development Project](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/9c5e5d49af274281b74062a87d5cb34e.html "To consume objects that are not included in your project (or in your HDI container), you need to define synonyms that point to the objects to be consumed.") :arrow_upper_right:
+[Quick Reference: Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/8a5d5228e41d4083b06e94d60756429b.html "Configure calculation view properties. The configured values determine the behavior of a calculation view at runtime.") :arrow_upper_right:
 
-[Quick Reference: Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/8a5d5228e41d4083b06e94d60756429b.html "Configure calculation view properties. The configured values determine the behavior of a calculation view at runtime.") :arrow_upper_right:
+[Filter Data for Specific Clients](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/2175374c28a84f69ab125feb71a78ef7.html "Obtain data for all client values, or filter the calculation view data, either with a fixed client value or with the session client value of the query user.") :arrow_upper_right:
 
-[Filter Data for Specific Clients](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/2175374c28a84f69ab125feb71a78ef7.html "Obtain data for all client values, or filter the calculation view data, either with a fixed client value or with the session client value of the query user.") :arrow_upper_right:
-
-[Filter Output](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2023_4_QRC/en-US/d00c142746904c80a5730614f567a0a3.html "Apply filters on columns of nodes to filter their output.") :arrow_upper_right:
+[Filter Output](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/d00c142746904c80a5730614f567a0a3.html "Apply filters on columns of nodes to filter their output.") :arrow_upper_right:
 

@@ -36,7 +36,7 @@ Specifies the name of the group to check.
 
 </dd><dt><b>
 
-*<client\_IP\_address\>*
+*<client\_ip\_address\>*
 
 </b></dt>
 <dd>
@@ -53,6 +53,9 @@ Specifies the client IP address to check. If not specified or NULL, the actual I
 <dd>
 
 Specifies the login time to check. If not specified or NULL, the actual time is used.
+
+> ### Note:  
+> This parameter is reserved for future use and will be ignored.
 
 
 
@@ -76,35 +79,9 @@ Specifies the name of the application to check. If not set or NULL, the applicat
 
 ## Description
 
-Specification of the parameter name is optional when specifying parameter values in the designated left to right order. For example,
+This function evaluates all connect restrictions for the usergroup *<usergroup\_name\>* for the given parameter values or their default values \(in case that they are not specified\). When executing the function, you can use the named parameters calling convention to only specify a subset of parameters.
 
-```
-SYS.VALIDATE_USERGROUP_CONNECT_RESTRICTION('MY_GROUP', '1.2.3.4');
-```
-
-is valid, but
-
-```
-SYS.VALIDATE_USERGROUP_CONNECT_RESTRICTION('MY_GROUP', 'hdbsql');
-```
-
-is invalid because it skips the *<client\_IP\_address\>* parameter, violating the preservation of the left to right parameter requirement.
-
-The order requirement is waived if you preface each parameter value with the parameter name, but with this scenario all parameters are required. For example,
-
-```
-SYS.VALIDATE_USERGROUP_CONNECT_RESTRICTION(application_name=>'hdbsql',
-   usergroup_name=>'MY_GROUP', client_IP_address=>'1.2.3.4', CURRENT_TIMESTAMP);
-```
-
-is valid because each value is specified, but
-
-```
-SYS.VALIDATE_USERGROUP_CONNECT_RESTRICTION(application_name=>'hdbsql',
-   usergroup_name=>'MY_GROUP');
-```
-
-is invalid because two parameter names are not specified.
+To verify whether an individual connect restriction will allow a user connection, use the VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION\_DETAILS function.
 
 
 
@@ -116,7 +93,6 @@ The following example is based on the following statements:
 
 ```
 CREATE USERGROUP MY_GROUP CONNECT RESTRICTION (R1 IP ('1.2.3.4') APPLICATION ('hdbsql'));
-ALTER USERGROUP MY_GROUP ADD CONNECT RESTRICTION (R2 IP ('9.9.9.9', '8.8.8.8'));
 ALTER USERGROUP MY_GROUP ENABLE CONNECT RESTRICTION R1;
 
 ```
@@ -149,29 +125,6 @@ USERGROUP\_ID
 IS\_CONNECT\_ALLOWED
 
 </th>
-</tr>
-<tr>
-<td valign="top">
-
-MY\_GROUP
-
-</td>
-<td valign="top">
-
-158328
-
-</td>
-<td valign="top">
-
-FALSE
-
-</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
 <th valign="top">
 
 CONNECT\_TIMESTAMP
@@ -186,12 +139,27 @@ APPLICATION\_NAME
 <tr>
 <td valign="top">
 
+MY\_GROUP
+
+</td>
+<td valign="top">
+
+158328
+
+</td>
+<td valign="top">
+
+TRUE
+
+</td>
+<td valign="top">
+
 2023-08-17 19:16:13.751000000
 
 </td>
 <td valign="top">
 
-SAP\_HANARuntimeTools\_HRA
+hdbsql
 
 </td>
 </tr>
@@ -203,4 +171,6 @@ SAP\_HANARuntimeTools\_HRA
 [CREATE USERGROUP Statement \(Access Control\)](../012-SQL-Statements/create-usergroup-statement-access-control-9869125.md "Creates a usergroup.")
 
 [ALTER USERGROUP Statement \(Access Control\)](../012-SQL-Statements/alter-usergroup-statement-access-control-aa94ca8.md "Alters a usergroup.")
+
+[VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION\_DETAILS Function \(Security\)](validate-usergroup-connect-restriction-details-function-security-508e173.md "Displays details of each connect restriction if a login were allowed for a specific condition.")
 

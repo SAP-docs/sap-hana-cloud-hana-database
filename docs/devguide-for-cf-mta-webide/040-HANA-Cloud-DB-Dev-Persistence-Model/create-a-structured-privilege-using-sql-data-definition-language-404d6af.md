@@ -116,7 +116,7 @@ To create a design-time SQL DDL structured-privilege definition file, perform th
 **Related Information**  
 
 
-[Structured Privilege Syntax (.hdbstructuredprivilege in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/c3827df3a9dc4c45b5b4e2f7b1070b08.html "Transforms a design-time DDL-based structured privilege resource into a structured privilege object.") :arrow_upper_right:
+[Structured Privilege Syntax (.hdbstructuredprivilege in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/c3827df3a9dc4c45b5b4e2f7b1070b08.html "Transforms a design-time DDL-based structured privilege resource into a structured privilege object.") :arrow_upper_right:
 
 [Create a Database View with SQL Data Definition Language](create-a-database-view-with-sql-data-definition-language-4920a3a.md "Define a design-time database view using the SQL Data Definition Language (DDL) syntax.")
 

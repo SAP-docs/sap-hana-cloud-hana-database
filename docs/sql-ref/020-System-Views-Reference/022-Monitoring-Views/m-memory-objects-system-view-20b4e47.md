@@ -626,5 +626,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [M\_MEMORY\_OBJECT\_DISPOSITIONS System View](m-memory-object-dispositions-system-view-20b4bf9.md "Displays the disposition-specific memory object statistics.")
 
-[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
+[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
 

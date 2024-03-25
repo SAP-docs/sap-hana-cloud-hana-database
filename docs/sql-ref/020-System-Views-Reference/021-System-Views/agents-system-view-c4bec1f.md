@@ -127,7 +127,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the agent clustering group to which the agent belongs.
+Displays the clustering group to which the agent belongs.
 
 </td>
 </tr>

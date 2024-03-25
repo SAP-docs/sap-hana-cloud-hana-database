@@ -54,7 +54,7 @@ SAP BusinessTo enable access between containers in the same HDI container group,
         In the *DATABASE LIST* pane, locate the database that you want to explore, click the alternate mouse button, and choose *Open SQL Console \(Admin\)* in the context-sensitive menu that is displayed.
 
         > ### Tip:  
-        > If you cannot find your database in the list, choose <span class="FPA-icons"></span> \(Refresh\) in the Database Explorer pane.
+        > If you cannot find your database in the list, choose <span class="FPA-icons-V3"></span> \(Refresh\) in the Database Explorer pane.
 
         If the connection succeeds, the tool bar in the SQL console for SAP HANA indicates the name of the database it is connected to and \(in brackets\) the name of the Cloud Foundry space to which the database is assigned, for example, *Myapp-hdidb-*<UserID\>*-workspace1234abcd\(MyDevSpace\)*.
 
@@ -96,7 +96,7 @@ SAP BusinessTo enable access between containers in the same HDI container group,
 **Related Information**  
 
 
-[Enable Access to Objects in a Remote Classic Schema](enable-access-to-objects-in-a-remote-classic-schema-402944b.md "Use a synonym to enable access to objects in a remote schema that is not managed by your Cloud Foundry application (for example, ERP).")
+[Enable Access to Objects in a Classic \(non-HDI\) Schema](enable-access-to-objects-in-a-classic-non-hdi-schema-402944b.md "Use a synonym to enable access to objects in a database schema that is not managed by SAP HDI (for example, ERP).")
 
 [Enable Access to Objects in Another HDI Container](enable-access-to-objects-in-another-hdi-container-4adba34.md "Use a synonym to enable access to another HDI container.")
 

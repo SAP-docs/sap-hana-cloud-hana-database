@@ -85,7 +85,7 @@ Specifies the audit actions for the audit policy.
 Specifies that commands executed by a user or a set of users or all users except the named set of users are audited.
 
 ```
-<actions_for_user> ::= ACTIONS [ EXCEPT ] FOR <user_name> [, <user_name> [,...] ]
+<actions_for_principals> ::= ACTIONS [ EXCEPT ] FOR <user_name> [, <user_name> [,...] ]
 ```
 
 
@@ -3029,7 +3029,7 @@ CREATE AUDIT POLICY MY_AUDIT_POLICY AUDITING ALL CREATE TABLE ON SCHEMA TEST_SCH
 
 [ALTER AUDIT POLICY Statement \(Access Control\)](alter-audit-policy-statement-access-control-20cfb7b.md "Enables or disables an audit policy, changes audit trail target types for an audit policy, and configures the retention period of the policy.")
 
-[Auditing](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[Auditing](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 
 [AUDIT\_ACTIONS System View](../../020-System-Views-Reference/021-System-Views/audit-actions-system-view-b856cdd.md "Provides information about all available audit actions.")
 

@@ -217,7 +217,7 @@ In the following example, we first create the content, and then show how to dele
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src1/v.hdbview', 'VIEW V AS SELECT A FROM T');
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src2/', '');
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src2/p.hdbprocedure', 'PROCEDURE P (OUT RESULT INT) LANGUAGE SQLSCRIPT AS BEGIN SELECT COUNT(*) INTO RESULT FROM V; end');
-> CALL C#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #PATHS;
 > ```
 
@@ -236,7 +236,7 @@ In this example, to remove the folder `src2/`, the file `src2/p.hdbprocedure` ha
 > INSERT INTO #PATHS (PATH) VALUES ('src1/v.hdbview');
 > INSERT INTO #PATHS (PATH) VALUES ('src2/p.hdbprocedure');
 > INSERT INTO #PATHS (PATH) VALUES ('src2/');
-> CALL C#DI.DELETE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.DELETE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #PATHS;
 > 
 > ```

@@ -435,5 +435,5 @@ Displays the sample size at build time, expressed as a percent of the data volum
 
 [DATA\_STATISTICS System View](../021-System-Views/data-statistics-system-view-20a1f10.md "Provides an overview of data statistics objects.")
 
-[Managing Statistics](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
+[Managing Statistics](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
 

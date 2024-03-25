@@ -10,9 +10,11 @@ Find information about how to set up the Python run time for your Python applica
 
 ## Prerequisites
 
--   The Python run time must be version 2.7.9 or higher.
+-   The installed Python run time must be version 3.0 or higher.
 
 -   The Python run time must include `setuptools` and `pip`.
+
+-   At least Python 3 must be installed on the target system \(at the operating-system level; not just the run time\).
 
 
 

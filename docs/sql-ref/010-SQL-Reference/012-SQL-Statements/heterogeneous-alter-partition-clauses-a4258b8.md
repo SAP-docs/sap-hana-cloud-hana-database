@@ -244,7 +244,8 @@ Specifies a partition for all values outside of the defined partition ranges.
 
 ```
 <partition_others> ::= 
-OTHERS [ DYNAMIC [ {THRESHOLD <threshold_count> ] ] | [ DYNAMIC INTERVAL <interval> ]
+   { OTHERS [ DYNAMIC [ {THRESHOLD <threshold_count> ] ]
+   | [ DYNAMIC INTERVAL <interval>  ] }
 ```
 
 
@@ -1375,18 +1376,20 @@ Defines the alter operations you can perform with regards to setting and unsetti
 </b></dt>
 <dd>
 
+Specifies the group options to set on the specified rangeGROUP options are only supported on range partitions in a range, range-range, or range-hash partition schema.
+
 ```
 <set_partition_group_partitionid_clause> ::= 
-  ALTER PARTITION <partition_id_list> SET <group_list>
+  ALTER PARTITION <group_partition_id_list> SET <group_list>
 ```
 
-Specifies the group options to set on the specified rangeGROUP options are only supported on range partitions in a range, range-range, or range-hash partition schema. Use the M\_TABLE\_PARTITIONS view to see effective group values \(after applying inheritance from parent levels\).
+Use the M\_TABLE\_PARTITIONS view to see effective group values \(after applying inheritance from parent levels\).
 
 
 <dl>
 <dt><b>
 
-*<partition\_id\_list\>*
+*<group\_partition\_id\_list\>*
 
 </b></dt>
 <dd>
@@ -1851,11 +1854,11 @@ ALTER TABLE A1 PARTITION BY RANGE (A)
 
 [ALTER TABLE Statement \(Data Definition\)](alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
-[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "Dynamic Range Partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
+[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "Dynamic Range Partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
 
-[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
+[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
 
 [TABLE\_PARTITIONS System View](../../020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 

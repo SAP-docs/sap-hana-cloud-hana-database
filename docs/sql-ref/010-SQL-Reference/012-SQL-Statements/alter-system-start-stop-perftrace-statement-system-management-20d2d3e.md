@@ -202,9 +202,9 @@ ALTER SYSTEM STOP PERFTRACE;
 
 [M\_PERFTRACE System View](../../020-System-Views-Reference/022-Monitoring-Views/m-perftrace-system-view-20b70e8.md "Displays the state of the current performance trace. The performance trace provides detailed information about query execution.")
 
-[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](alter-system-clear-traces-statement-system-management-20d1281.md "Clears (removes) trace files opened by SAP HANA.")
+[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](alter-system-clear-traces-statement-system-management-20d1281.md "Clears trace files opened by SAP HANA.")
 
-[ALTER SYSTEM REMOVE TRACES Statement \(System Management\)](alter-system-remove-traces-statement-system-management-20d25bf.md "Deletes the trace files on a specified host to reduce the disk space used by large trace files.")
+[ALTER SYSTEM REMOVE TRACES Statement \(System Management\)](alter-system-remove-traces-statement-system-management-20d25bf.md "Removes the trace files from a specified host to reduce the disk space used by large trace files.")
 
 [ALTER SYSTEM \{START | STOP\} PERFTRACE Statement \(System Management\)](alter-system-start-stop-perftrace-statement-system-management-20d2d3e.md "Starts or stops performance tracing.")
 

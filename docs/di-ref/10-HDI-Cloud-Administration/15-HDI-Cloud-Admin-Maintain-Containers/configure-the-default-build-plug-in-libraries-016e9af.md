@@ -19,7 +19,7 @@ In SAP HANA Deployment Infrastructure \(HDI\), HDI container administrators can 
 
 ## Procedure
 
-1.  In an SQL console, connect to the database as the administrator of the target HDI container \(in this example, “C”\).
+1.  In an SQL console, connect to the database as the administrator of the target HDI container \(in this example, *<container\_name\>*\).
 
 2.  Open the SQL editor for this database.
 
@@ -29,13 +29,13 @@ In SAP HANA Deployment Infrastructure \(HDI\), HDI container administrators can 
 
     > ### Sample Code:  
     > ```sql
-    > CALL C#DI.CONFIGURE_LIBRARIES(_SYS_DI.T_DEFAULT_LIBRARIES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > CALL <container_name>#DI.CONFIGURE_LIBRARIES(_SYS_DI.T_DEFAULT_LIBRARIES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > ```
 
-    1.  Replace the name of the container “C” in the `CALL` statement with the name of your container.
+    1.  Replace *<container\_name\>* in the `CALL` statement with the name of your container.
 
 
-4.  Execute the SQL code.
+4.  Run the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 

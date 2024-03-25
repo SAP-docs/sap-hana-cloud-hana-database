@@ -27,21 +27,19 @@ This method uses the predefined `_SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILE
 
 3.  Insert the following SQL code into the SQL editor:
 
-    In the following code snippet, the name of the HDI container-group is "G", for example, <code>CALL _SYS_DI#<b>G</b>.GRANT_...</code>. You will have to change this name to reflect the name of the HDI container group in your scenario.
-
     > ### Sample Code:  
     > ```sql
     > CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_API_PRIVILEGES;
-    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT 'OTHER_CONTAINER_GROUP_ADMIN', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES;
-    > CALL _SYS_DI#G.GRANT_CONTAINER_GROUP_API_PRIVILEGES(#PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT '<container_group_admin_username>', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES;
+    > CALL _SYS_DI#<container_group_name>.GRANT_CONTAINER_GROUP_API_PRIVILEGES(#PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     > DROP TABLE #PRIVILEGES; 
     > ```
 
-4.  Adjust the name of the user `OTHER_CONTAINER_GROUP_ADMIN` in the `INSERT` command in line 2 to reflect the name of the user to whom the API privileges should be granted, and the name of the container group “G” in line 3 to correspond with the name of your container group.
+4.  Replace the name of the user *<container\_group\_admin\_username\>* in the `INSERT` command in line 2 with the name of the user to whom the container-group admin API privileges should be granted, and in line 3 replace *<container\_group\_name\>* with the name of the container group for which you want to grant administrator privileges.
 
 5.  Execute the SQL code.
 
-6.  \(Optional\) Confirm that the `OTHER_CONTAINER_GROUP_ADMIN` user is now able to call HDI API procedures in the container group “G”'s API schema `_SYS_DI#G`, where “G” is replaced with the name of your HDI container group.
+6.  \(Optional\) Confirm that the *<container\_group\_admin\_username\>* user is now able to call HDI API procedures in the container group *<container\_group\_name\>*'s API schema <code>_SYS_DI#<i class="varname">&lt;container_group_name&gt;</i></code>, where *<container\_group\_name\>* is replaced with the name of your HDI container group.
 
 
 **Related Information**  

@@ -2,7 +2,7 @@
 
 # ABAP\_DF34RAW\_TO\_DECIMAL Function \(String\)
 
-Converts from ABAP decfloat type DF34\_RAW to HANA decfloat type decimal.
+Converts from ABAP `DECFLOAT` type `DF34_RAW` to HANA `DECFLOAT` type `DECIMAL`.
 
 
 
@@ -42,7 +42,9 @@ The format to convert: Decimal Floating Point, 34 Digits, RAW on database
 
 ## Description
 
-Converts from ABAP decfloat type DF34\_RAW to HANA decfloat type decimal.
+Converts from ABAP `DECFLOAT` type `DF34_RAW` to HANA `DECFLOAT` type `DECIMAL`.
+
+Please note that only one-way conversion from ABAP to HANA type is available. The reverse conversion must be performed in the ABAP layer if needed. For more information, see[Decimal Floating Point Numbers](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenddic_decimal_floating_point.htm) in the ABAP Keyword Documentation.
 
 
 
@@ -50,13 +52,13 @@ Converts from ABAP decfloat type DF34\_RAW to HANA decfloat type decimal.
 
 ## Example
 
-The following example converts the binary value to type decimal.
+The following example converts the binary value to type `DECIMAL`.
 
 ```
-CREATE TABLE t2(b binary(32))
-INSERT INTO t2 values(X'BF2C000000000000')
-INSERT INTO t2 values(X'BF54000000000001')
-INSERT INTO t2 values(X'3DE3E7F9FE7F9FE7')
+CREATE TABLE t2(b binary(64));
+INSERT INTO t2 values(X'BDBBC000000000000000000000000000');
+INSERT INTO t2 values(X'BDBE4000000000000000000000000001');
+INSERT INTO t2 values(X'BDBEC8D9428D937193B9CEA0D7F45DF7');
 
 SELECT ABAP_DF34RAW_TO_DECIMAL(b) FROM t2
 /* returns

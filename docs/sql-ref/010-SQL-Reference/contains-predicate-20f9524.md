@@ -241,7 +241,7 @@ SELECT * FROM mySchema.SEARCH_TEXT WHERE CONTAINS (*, 'vintage');
 **Related Information**  
 
 
-[Search with SQL](https://help.sap.com/viewer/05c9edaee7fe4d28ab3627d0b1583df6/2023_4_QRC/en-US/cd07da82bb571014b185c8e3e3974767.html "In column-oriented tables, you can perform searches using the SQL SELECT statement.") :arrow_upper_right:
+[Search with SQL](https://help.sap.com/viewer/05c9edaee7fe4d28ab3627d0b1583df6/2024_1_QRC/en-US/cd07da82bb571014b185c8e3e3974767.html "In column-oriented tables, you can perform searches using the SQL SELECT statement.") :arrow_upper_right:
 
 [SCORE Function \(Miscellaneous\)](011-SQL-Functions/score-function-miscellaneous-20e6f8e.md "Returns the relevance of a record that has been found.")
 

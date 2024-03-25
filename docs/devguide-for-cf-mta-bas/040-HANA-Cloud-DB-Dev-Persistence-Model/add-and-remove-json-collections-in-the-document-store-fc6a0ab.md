@@ -156,5 +156,5 @@ The Document Store allows native operations on JSON documents, for example: filt
 
 [Maintaining JSON Collections in the SAP HANA Document Store](maintaining-json-collections-in-the-sap-hana-document-store-a8f6f34.md "The SAP HANA Document Store (DocStore) is used to store collections which contain one or more JSON artifacts (documents).")
 
-[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2023_4_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2024_1_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
 

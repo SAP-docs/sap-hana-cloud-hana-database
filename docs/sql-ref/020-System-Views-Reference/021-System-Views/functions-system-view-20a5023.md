@@ -348,13 +348,13 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [Window Functions and the Window Specification](../../010-SQL-Reference/011-SQL-Functions/window-functions-and-the-window-specification-20a3533.md "Window functions allow you to perform analytic operations over a set of input rows.")
 
-[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
+[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
 
-[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
+[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
 
-[DROP FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/1eccca0a59854c7192f0f855f8d5dc7c.html "") :arrow_upper_right:
+[DROP FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/1eccca0a59854c7192f0f855f8d5dc7c.html "") :arrow_upper_right:
 
-[Function Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/98599d94ae4e440eaea23dfd740de41b.html "") :arrow_upper_right:
+[Function Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/98599d94ae4e440eaea23dfd740de41b.html "") :arrow_upper_right:
 
-[Function Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/58106d8f4fb44120b76fc6fb1f4a0bcc.html "") :arrow_upper_right:
+[Function Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/58106d8f4fb44120b76fc6fb1f4a0bcc.html "") :arrow_upper_right:
 

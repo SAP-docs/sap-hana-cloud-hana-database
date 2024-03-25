@@ -13,7 +13,7 @@ You can set user preferences to customize the way you start and use selected too
 To open the *Settings* tab in SAP Business Application Studio, start the development workspace, choose :gear: in the *Views* pane, and then choose *Settings*.
 
 > ### Tip:  
-> By default, SAP Business Application Studio only provides "compact" menus and options, which are displayed when you choose <span class="SAP-icons"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the dev. space, open *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* from "compact" to "classic" in the drop-down list provided.
+> By default, SAP Business Application Studio only provides "compact" menus and options, which are displayed when you choose <span class="SAP-icons-V5"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the dev. space, open *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* from "compact" to "classic" in the drop-down list provided.
 
 In the SAP HANA Native Application extension, you can set user preferences for the following components:
 
@@ -130,6 +130,23 @@ Display the list of manually added databases. You can also edit the list to add,
 
 > ### Note:  
 > Only available in Visual Studio Code, not in SAP Business Application Studio.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*Dependency Viewer: Default Graph Depth* 
+
+</td>
+<td valign="top">
+
+Set the maximum graph depth, which is represented by the number of links displayed along a single dependency path between the root node \(the run-time database object selected when opening the dependency viewer\) and other nodes in the dependency graph \(default: 2\).
+
+> ### Note:  
+> This is a display setting only; the dependency viewer loads all nodes and dependencies in the background.
 
 
 

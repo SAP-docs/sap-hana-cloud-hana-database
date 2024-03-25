@@ -326,7 +326,7 @@ The roles specified in the `hdbgrants` file must already exist as objects in the
 **Related Information**  
 
 
-[Enable Access to Objects in a Remote Classic Schema](enable-access-to-objects-in-a-remote-classic-schema-402944b.md "Use a synonym to enable access to objects in a remote schema that is not managed by your Cloud Foundry application (for example, ERP).")
+[Enable Access to Objects in a Classic \(non-HDI\) Schema](enable-access-to-objects-in-a-classic-non-hdi-schema-402944b.md "Use a synonym to enable access to objects in a database schema that is not managed by SAP HDI (for example, ERP).")
 
 [Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
 

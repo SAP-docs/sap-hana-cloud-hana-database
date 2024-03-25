@@ -78,7 +78,7 @@ Web-based administration tools for SAP HANA Cloud are available in the SAP HANA 
 
 [Introduction to Multitarget Application Development and Deployment with SAP HANA Cloud](introduction-to-multitarget-application-development-and-deployment-with-sap-hana-clou-f472017.md "A developer’s view of multitarget applications in the Cloud Foundry run-time platform for SAP HANA Cloud, SAP HANA database.")
 
-[SAP HANA Cloud, SAP HANA Database Administration Guide](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/330e5550b09d4f0f8b6cceb14a64cd22.html "This guide provides general information about administering the SAP HANA database consumed through SAP HANA Cloud.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Administration Guide](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/330e5550b09d4f0f8b6cceb14a64cd22.html "This guide provides general information about administering the SAP HANA database consumed through SAP HANA Cloud.") :arrow_upper_right:
 
 [The Cloud MTA Build Tool \(MBT\)](../030-HANA-Cloud-DB-Dev-Deployment/the-cloud-mta-build-tool-mbt-1412120.md "A new tool for building deployment archives for multitarget applications (MTA).")
 

@@ -273,9 +273,9 @@ This view also requires the SELECT privilege to see information in a table owned
 
 [M\_TABLES System View](../022-Monitoring-Views/m-tables-system-view-20c7689.md "Provides information on row and column tables.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
-[NSE-Enabled Partitioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/322bb45b63fd4d3c90ca4baf5e7558df.html "For SAP HANA NSE tables, partitioning can be heterogeneous or non-heterogenous. However, partition load unit can be set only for heterogeneous partitioning. This scenario describes a sequence of steps creating a page-loadable, partitioned table and then altering its load unit.") :arrow_upper_right:
+[NSE-Enabled Partitioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/322bb45b63fd4d3c90ca4baf5e7558df.html "For SAP HANA NSE tables, partitioning can be heterogeneous or non-heterogenous. However, partition load unit can be set only for heterogeneous partitioning. This scenario describes a sequence of steps creating a page-loadable, partitioned table and then altering its load unit.") :arrow_upper_right:
 
 [Heterogeneous Create Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/heterogeneous-create-partition-clauses-d496e58.md "Defines the various partitioning clauses available for heterogeneous partitions when creating a new table.")
 

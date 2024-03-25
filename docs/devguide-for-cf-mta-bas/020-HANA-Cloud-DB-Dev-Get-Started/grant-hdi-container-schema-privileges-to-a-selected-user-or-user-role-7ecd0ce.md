@@ -69,9 +69,9 @@ To grant HDI-container schema privileges to a specific user or user role, perfor
 **Related Information**  
 
 
-[Create an HDI-Container Service Instance](create-an-hdi-container-service-instance-7074c22.md "Create a new instance of an HDI container service.")
+[Assign HDI-Container Roles to a Selected User or Role](assign-hdi-container-roles-to-a-selected-user-or-role-bb9788e.md "Assign an HDI container role to a selected user or user role.")
 
-[Export an SAP HDI Container for Support Purposes](export-an-sap-hdi-container-for-support-purposes-0e4c340.md "An HDI container administrator or database administrator can export an HDI container to a table or a file.")
+[Create an HDI-Container Service Instance](create-an-hdi-container-service-instance-7074c22.md "Create a new instance of an HDI container service.")
 
 [User and Role Management \(SAP HANA Cloud Database Administration Guide for SAP HANA Cockpit\)](https://help.sap.com/docs/HANA_CLOUD/9630e508caef4578b34db22014998dba/923b896cabdb415487919f28dbbc4bfd.html)
 

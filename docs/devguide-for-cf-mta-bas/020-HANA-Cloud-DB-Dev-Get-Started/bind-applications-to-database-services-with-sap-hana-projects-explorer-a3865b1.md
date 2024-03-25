@@ -62,7 +62,7 @@ If you are developing native SAP HANA applications in SAP Business Application S
 
     You can add connections to a database, for example, an HDI container or a user-provided service and display the connections in the SAP HANA Project Explorer, where you can also bind them to \(and unbind them from\) a database application.
 
-    In the *Database Connections* node, choose <span class="SAP-icons"></span> \(Add database connection\) to display the *Add Database Connection* Wizard.
+    In the *Database Connections* node, choose <span class="SAP-icons-V5"></span> \(Add database connection\) to display the *Add Database Connection* Wizard.
 
     > ### Note:  
     > To test the connection details \(for example, the host name, port number, user name and password\), check the option *Validate the database information*. The *Add database Connection* Wizard tries to connect to the specified database using the credentials provided and notifies you immediately if the connection attempt is successful or not.

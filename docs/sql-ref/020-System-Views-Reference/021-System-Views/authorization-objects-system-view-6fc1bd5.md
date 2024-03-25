@@ -182,5 +182,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [AUTHORIZATION\_TYPES System View](authorization-types-system-view-3b7990e.md "Provides information about object types and subtypes used by authorization object IDs.")
 
-[Object Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/d6311b15a7e74e01b3f660f7d175b318.html "Object privileges are SQL privileges that are used to allow access to and modification of database objects.") :arrow_upper_right:
+[Object Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/d6311b15a7e74e01b3f660f7d175b318.html "Object privileges are SQL privileges that are used to allow access to and modification of database objects.") :arrow_upper_right:
 

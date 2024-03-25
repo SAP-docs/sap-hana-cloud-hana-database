@@ -131,7 +131,7 @@ Displays the calculated volume IDs for the location name.
 
 [ALTER TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Table Placement Rules for Replicas](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/266f9d2a727148f586d7bfb2a0cc4df8.html "The following SQL commands create table placement rules for replica schema, which can be used to create or add replica tables.") :arrow_upper_right:
+[Table Placement Rules for Replicas](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/266f9d2a727148f586d7bfb2a0cc4df8.html "The following SQL commands create table placement rules for replica schema, which can be used to create or add replica tables.") :arrow_upper_right:
 
 [M\_TABLE\_LOCATIONS System View](m-table-locations-system-view-20c65d5.md "Provides information about tables and their logical location. Physical locations are shown in M_TABLE_PERSISTENCE_LOCATIONS.")
 

@@ -100,7 +100,7 @@ You can use the HDI `.hdbindex` artifact to define constraints on unique keys. T
 **Related Information**  
 
 
-[Database Table Index Syntax (.hdbindex in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/58fdf2d2ffae44b6a3dd0e9a3f5ae8c5.html "Transform a design-time index resource into an index on a database table.") :arrow_upper_right:
+[Database Table Index Syntax (.hdbindex in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/58fdf2d2ffae44b6a3dd0e9a3f5ae8c5.html "Transform a design-time index resource into an index on a database table.") :arrow_upper_right:
 
 [Create a Database Constraint with SQL Data Definition Language](create-a-database-constraint-with-sql-data-definition-language-65b61c4.md "Define a design-time database constraint using the SQL Data Definition Language (DDL) syntax.")
 

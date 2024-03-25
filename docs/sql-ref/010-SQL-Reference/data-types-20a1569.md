@@ -124,6 +124,18 @@ ST\_GEOMETRY, ST\_POINT
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Vector type
+
+</td>
+<td valign="top">
+
+REAL\_VECTOR
+
+</td>
+</tr>
 </table>
 
 

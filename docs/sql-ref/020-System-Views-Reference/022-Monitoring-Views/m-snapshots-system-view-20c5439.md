@@ -208,5 +208,5 @@ Displays the timestamp of the last commit of the snapshot.
 
 [M\_MVCC\_SNAPSHOTS System View](m-mvcc-snapshots-system-view-b41f6b2.md "Provides detailed snapshot information of the Multiversion Concurrency Control (MVCC) manager.")
 
-[Performance: Using Hints to Query Data Snapshots](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "Several features in SAP HANA use data snapshots to improve performance. You can use configurable hint classes as a standard way of controlling at run time how the data is selected, either from the snapshot or from the database.") :arrow_upper_right:
+[Using Hints With Select Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "In some cases hints can be appended to select statements to determine how the statement is executed. This may be used, for example, to improve performance or to route a query to a specific data source.") :arrow_upper_right:
 

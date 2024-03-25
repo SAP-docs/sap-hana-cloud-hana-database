@@ -93,7 +93,7 @@ NVARCHAR\(1024\)
 </td>
 <td valign="top">
 
-Displays the entity name of the SAML provider \(optional\).
+Displays the entity ID of the SAML provider \(optional\).
 
 </td>
 </tr>
@@ -161,7 +161,7 @@ VARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the provider is allowed to create a user implicitly: TRUE/FALSE.
+Displays whether the provider is allowed to implicitly create a user: TRUE/FALSE.
 
 </td>
 </tr>
@@ -205,7 +205,7 @@ Displays the user group a created user will be a member of.
 
 <a name="loio20cda7b5751910149d0ef5e67ff1a947__section_hyw_hrz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

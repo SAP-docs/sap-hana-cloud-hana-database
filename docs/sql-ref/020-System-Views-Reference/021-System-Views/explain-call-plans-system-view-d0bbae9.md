@@ -887,9 +887,9 @@ Displays the monitoring view access through scanning.
 
 [CALL Statement \(Procedural\)](../../010-SQL-Reference/012-SQL-Statements/call-statement-procedural-20d364c.md "Calls a procedure.")
 
-[EXPLAIN PLAN for Call](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/7aabea5031134d2192f7022bc390fce6.html "") :arrow_upper_right:
+[EXPLAIN PLAN for Call](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7aabea5031134d2192f7022bc390fce6.html "") :arrow_upper_right:
 
-[CALL](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/729281f732c14860902bcbc5c9cbf6f1.html "") :arrow_upper_right:
+[CALL](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/729281f732c14860902bcbc5c9cbf6f1.html "") :arrow_upper_right:
 
-[Best Practices for Using SQLScript](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/c59af8fa9ece40f4ba202e12fdacdfdf.html "") :arrow_upper_right:
+[Best Practices for Using SQLScript](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/c59af8fa9ece40f4ba202e12fdacdfdf.html "") :arrow_upper_right:
 

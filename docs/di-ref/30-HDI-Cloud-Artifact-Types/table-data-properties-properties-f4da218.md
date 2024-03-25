@@ -13,7 +13,7 @@ The special `extractLanguageCodeFromFileName` function can be used to automatica
 > ### Restriction:  
 > A `.properties` file does not support the `\u` escape sequence.
 
-The special `target_table` value “`#BIMC_DESCRIPTIONS`” must be used when translated texts should be deployed for calculation views, because these translations are stored inside the database-internal table `_SYS_BI.BIMC_DESCRIPTIONS`. For the `BIMC_DESCRIPTIONS` table, a schema entry in the HDI properties file is ignored and always replaced by the name of the container's runtime schema., unless the schema name `_SYS_BIC` is used, as shown in the code sample below.
+The special `target_table` value “`#BIMC_DESCRIPTIONS`” must be used when translated texts should be deployed for calculation views, because these translations are stored inside the database-internal table `_SYS_BI.BIMC_DESCRIPTIONS`. For the `BIMC_DESCRIPTIONS` table, a schema entry in the HDI properties file is ignored and always replaced by the name of the container's runtime schema, unless the schema name `_SYS_BIC` is used, as shown in the code sample below.
 
 To support so-called "multi-key" properties in the `.properties` file, it is possible to use the `"multi_key_separator"` tag in the `!tabledata` section. For example, in <code>"multi_key_separator": "<i class="varname">&lt;key_separator&gt;</i>"</code>, the value specified in <code><i class="varname">&lt;key_separator&gt;</i></code> defines a single character that is used to separate the key into a fixed number of subkeys according to the columns specified in the `"column_mappings"` section of the `.properties` file. When using the `"multi_key_separator"` property, bear in mind the following restrictions:
 

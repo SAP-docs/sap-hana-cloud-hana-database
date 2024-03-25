@@ -11,7 +11,7 @@ Calls a procedure.
 ## Syntax
 
 ```
-CALL <proc_name> ( <param_list> ) [ <hint_clause> ]
+CALL <proc_name> ( <param_list> ) [ ASYNC ] [ <hint_clause> ]
  | CALL <sqlscript_lib_member> ( <param_list> )
 ```
 
@@ -81,6 +81,28 @@ Parameters passed to a procedure are scalar constants and can be passed either a
 
 </dd>
 </dl>
+
+
+
+</dd><dt><b>
+
+ASYNC
+
+</b></dt>
+<dd>
+
+If ASYNC is specified for a procedure, the procedure runs in the background. When the procedure is ready to start background execution, a result set containing ASYNC\_CALL\_ID is immediately returned. This unique ID can be used to:
+
+-   cancel the procedure running in background.
+-   query the execution status in the M\_PROCEDURE\_ASYNC\_EXECUTIONS monitoring system view.
+
+A procedure call execution using ASYNC:
+
+-   cannot read uncommitted data from the main connection and session local containers \(session local temp table\).
+-   is committed regardless of the caller's auto commit property.
+-   supports scalar input only \(SQL Parameter is not supported\).
+-   supports outermost ASYNC calls only.
+-   does not support Built-in procedures.
 
 
 
@@ -182,13 +204,15 @@ Unquoted identifiers are implicitly treated as upper case. Quoting identifiers r
 
 ## Examples
 
-Call the getOutput procedure in debug mode.
+Call the simple\_proc procedure using ASYNC.
 
 ```
-CALL getOutput (1000, 'EUR', NULL, NULL) IN DEBUG MODE;
+CALL simple_proc() ASYNC;
 ```
 
-The following example creates a library with one member procedure and then calls the member procedure directly using the CALL statement:
+A result set with the ASYNC\_CALL\_ID for the called procedure is returned.
+
+This example creates a library with one member procedure and then calls the member procedure directly using the CALL statement:
 
 ```
 CREATE LIBRARY MyLib AS BEGIN
@@ -203,11 +227,11 @@ CALL MyLib:MemberProc(1, ?);
 **Related Information**  
 
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 
-[User-Defined Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/7cd14f1931404738a05c5e93e22564af.html "") :arrow_upper_right:
+[User-Defined Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7cd14f1931404738a05c5e93e22564af.html "") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
 
 [SQL Notation Conventions](../sql-notation-conventions-209e0cd.md "SQL syntax notation conventions used in this guide.")
 

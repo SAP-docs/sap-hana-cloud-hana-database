@@ -590,6 +590,40 @@ Displays the extended passport \(EPP\) trace flags.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+W3C\_TRACE\_ID
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Displays the W3C trace context ID, which is identical to the PASSPORT\_TRANSACTION\_ID.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+W3C\_SPAN\_ID
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+</td>
+<td valign="top">
+
+Displays the W3C trace context span ID, which is derived from the PASSPORT\_CONNECTION\_ID and PASSPORT\_CONNECTION\_COUNTER.
+
+</td>
+</tr>
 </table>
 
 **Related Information**  
@@ -597,7 +631,7 @@ Displays the extended passport \(EPP\) trace flags.
 
 [MERGE INTO Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/merge-into-statement-data-manipulation-3226201.md "Merges data into an existing column store table.")
 
-[The Delta Merge Operation](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bd9ac728bb57101482b2ebfe243dcd7a.html "Write operations are only performed on the delta storage. The delta merge operation optimizes the data and transfers it to the main storage.") :arrow_upper_right:
+[The Delta Merge Operation](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bd9ac728bb57101482b2ebfe243dcd7a.html "Write operations are only performed on the delta storage. The delta merge operation optimizes the data and transfers it to the main storage.") :arrow_upper_right:
 
-[Traces](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/7e31247372fb4dd7b8c6bbac758b8c91.html "SAP HANA provides various traces for obtaining detailed information about the actions of the database system for troubleshooting and error analysis.") :arrow_upper_right:
+[Traces](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/7e31247372fb4dd7b8c6bbac758b8c91.html "") :arrow_upper_right:
 

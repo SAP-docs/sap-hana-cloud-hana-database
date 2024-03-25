@@ -244,17 +244,17 @@ This column does not always contain a value, even in the case of an error. For s
 
 [SQL Error Codes](../../010-SQL-Reference/sql-error-codes-20a78d3.md "Each SAP HANA error has a numeric error code. The M_ERROR_CODES system view contains information about the error codes.")
 
-[Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/9357bf52c7324bee9567dca417ad9f8b.html "The table consistency check is a procedure available in the SAP HANA database that performs a range of consistency check actions on database tables. It can be run from the command line or scheduled within the statistics service.") :arrow_upper_right:
+[Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/9357bf52c7324bee9567dca417ad9f8b.html "The table consistency check is a procedure available in the SAP HANA database that performs a range of consistency check actions on database tables. It can be run from the command line or scheduled within the statistics service.") :arrow_upper_right:
 
-[Table and Catalog Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/2584ec2e324d44529edc8221956359ea.html "Using stored procedures and commands available in the SAP HANA database, you can perform a range of consistency checks on the database catalog and on database tables.") :arrow_upper_right:
+[Table and Catalog Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/2584ec2e324d44529edc8221956359ea.html "Using stored procedures and commands available in the SAP HANA database, you can perform a range of consistency checks on the database catalog and on database tables.") :arrow_upper_right:
 
-[Partitioning Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/7b1e7a1577cc4e05bb4c05b4189c5b2f.html "A number of table consistency checks are available to check the validity of partitioned tables.") :arrow_upper_right:
+[Partitioning Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/7b1e7a1577cc4e05bb4c05b4189c5b2f.html "A number of table consistency checks are available to check the validity of partitioned tables.") :arrow_upper_right:
 
-[Catalog Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/9aed20fccc28455ea515c8c4eeceb7b3.html "The catalog consistency check can be run from the command line or be scheduled at the operating system level to perform a range of consistency check actions on the database catalog. The frequency with which you do this depends on your scenario.") :arrow_upper_right:
+[Catalog Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/9aed20fccc28455ea515c8c4eeceb7b3.html "The catalog consistency check can be run from the command line or be scheduled at the operating system level to perform a range of consistency check actions on the database catalog. The frequency with which you do this depends on your scenario.") :arrow_upper_right:
 
-[Configuration Parameters for the Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/49ff94736bb84e948321cb1e8cd1ca22.html "A set of configuration parameters in the indexserver.ini file is available to control the manual table consistency check.") :arrow_upper_right:
+[Configuration Parameters for the Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/49ff94736bb84e948321cb1e8cd1ca22.html "A set of configuration parameters in the indexserver.ini file is available to control the manual table consistency check.") :arrow_upper_right:
 
-[Break on Error](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/d3378a9550204fee8c327f7545d55f9a.html "") :arrow_upper_right:
+[Break on Error](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/d3378a9550204fee8c327f7545d55f9a.html "") :arrow_upper_right:
 
-[Supported Error Codes](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/83686b04386e4c009f57418bccb7d9ee.html "The following is a list of the error codes supported by the exit handler.") :arrow_upper_right:
+[Supported Error Codes](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/83686b04386e4c009f57418bccb7d9ee.html "The following is a list of the error codes supported by the exit handler.") :arrow_upper_right:
 

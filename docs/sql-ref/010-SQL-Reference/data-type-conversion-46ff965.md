@@ -110,7 +110,7 @@ In the tables below, **OK** means that data type conversions are allowed without
 <tr>
 <th valign="top">
 
-Target/Source
+Target/ Source
 
 </th>
 <th valign="top">
@@ -986,6 +986,146 @@ OK
 <td valign="top">
 
 \-
+
+</td>
+</tr>
+</table>
+
+**Vector Data Type Conversion Table with Vector Data Type as Target**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Target/ Source
+
+</th>
+<th valign="top">
+
+NVARCHAR
+
+</th>
+<th valign="top">
+
+VARBINARY
+
+</th>
+<th valign="top">
+
+NCLOB
+
+</th>
+<th valign="top">
+
+BLOB
+
+</th>
+<th valign="top">
+
+ARRAY
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+REAL\_VECTOR
+
+</td>
+<td valign="top">
+
+CHK
+
+</td>
+<td valign="top">
+
+CHK
+
+</td>
+<td valign="top">
+
+CHK
+
+</td>
+<td valign="top">
+
+CHK
+
+</td>
+<td valign="top">
+
+CHK
+
+</td>
+</tr>
+</table>
+
+**Vector Data Type Conversion Table with Vector Data Type as Source**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Source/ Target
+
+</th>
+<th valign="top">
+
+NVARCHAR
+
+</th>
+<th valign="top">
+
+VARBINARY
+
+</th>
+<th valign="top">
+
+NCLOB
+
+</th>
+<th valign="top">
+
+BLOB
+
+</th>
+<th valign="top">
+
+ARRAY
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+REAL\_VECTOR
+
+</td>
+<td valign="top">
+
+OK
+
+</td>
+<td valign="top">
+
+OK
+
+</td>
+<td valign="top">
+
+OK
+
+</td>
+<td valign="top">
+
+OK
+
+</td>
+<td valign="top">
+
+OK
 
 </td>
 </tr>

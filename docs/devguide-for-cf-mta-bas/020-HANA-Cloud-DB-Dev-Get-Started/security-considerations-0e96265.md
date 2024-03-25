@@ -18,12 +18,12 @@ The Cloud Foundry development model uses services to pass information to applica
 
 ## SAP HANA Credentials
 
-When a SAP HANA database module is bound to a Cloud Foundry service, the credentials contained in one of the service's service key are copied to a local file named `.env`, which is located in the database module's root directory. The credentials are, among others, the host and port of the SAP HANA database, as well as the user names and passwords of technical users that can access the HDI container backing the Cloud Foundry service.
+When an SAP HANA database module is bound to a Cloud Foundry service, the credentials contained in one of the service's service key are copied to a local file named `.env`, which is located in the database module's root directory. The credentials are, among others, the host and port of the SAP HANA database, as well as the user names and passwords of technical users that can access the HDI container backing the Cloud Foundry service.
 
 > ### Tip:  
 > For details about which privileges these users can have, see *Configuring the HDI Deployer* in *Related Information* below.
 
-Since the `.env` files can contain sensitive information, users must ensure that these files are protected from unauthorized access. By default, the permissions of the `.env` file are set to allow access only for the user who created the file. In addition, To prevent the accidental publication of the database credentials to a Git repository, the `.env` files are added to the `.gitignore` file that is automatically generated with a database module. f a different version control system is used, the appropriate measures must be taken to prevent `.env` files from being added to the version-control repository.
+Since the `.env` files can contain sensitive information, users must ensure that these files are protected from unauthorized access. By default, the permissions of the `.env` file are set to allow access only for the user who created the file. In addition, To prevent the accidental publication of the database credentials to a Git repository, the `.env` files are added to the `.gitignore` file that is automatically generated with a database module. If a different version control system is used, the appropriate measures must be taken to prevent `.env` files from being added to the version-control repository.
 
 > ### Note:  
 > The *SAP HANA Projects* explorer checks if an application project's `.gitignore` file includes an entry for the application's `.env` file. If no entry for `.env` exists, a warning is displayed with a recommendation to add the `.env` file to the list of files for Git to ignore.
@@ -34,7 +34,7 @@ Since the `.env` files can contain sensitive information, users must ensure that
 
 ## SAP Business Application Studio Extensions
 
-SAP Business Application Studio allows the installation of arbitrary Visual Studio Code extensions. These extensions have very few limitations in the IDE and can access all data available in a workspace. It is important to bear in minde that malicious extensions can steal or manipulate any data that are accessible in the workspace. For this reason, users must ensure that only trusted extensions are installed in an SAP Business Application Studio development space \(dev space\).
+SAP Business Application Studio allows the installation of arbitrary Visual Studio Code extensions. These extensions have very few limitations in the IDE and can access all data available in a workspace. It is important to bear in mind that malicious extensions can steal or manipulate any data that are accessible in the workspace. For this reason, users must ensure that only trusted extensions are installed in an SAP Business Application Studio development space \(dev space\).
 
 **Related Information**  
 

@@ -14,10 +14,10 @@ To control access to the content you serve, use the Python `xssec` security libr
     > `requirements.txt`
     > 
     > ```
-    > Flask==0.12.2
+    > Flask==3.0.0
     > cfenv==0.5.3
-    > hdbcli
-    > xssec==1.0.0
+    > hdbcli==2.19.21
+    > sap-xssec==4.1.0
     > ```
 
 2.  Modify the `manifest.yml` file and bind the same UAA service:
@@ -35,8 +35,6 @@ To control access to the content you serve, use the Python `xssec` security libr
     >   services:
     >     - myhana
     >     - myuaa
-    > 
-    > 
     > ```
 
     > ### Caution:  
@@ -54,7 +52,7 @@ To control access to the content you serve, use the Python `xssec` security libr
     > from flask import request
     > from flask import abort
     > 
-    > import xssec
+    > from sap import xssec
     > 
     > from hdbcli import dbapi
     > 
@@ -88,7 +86,6 @@ To control access to the content you serve, use the Python `xssec` security libr
     > 
     > if __name__ == '__main__':
     >     app.run(port=port)
-    > 
     > ```
 
 4.  Modify the application's package dependencies to include the security library in the download to the `vendor` folder.
@@ -103,5 +100,5 @@ To control access to the content you serve, use the Python `xssec` security libr
 **Related Information**  
 
 
-[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
+[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "Python client libraries developed by SAP on the Python Package Index (PyPI).")
 

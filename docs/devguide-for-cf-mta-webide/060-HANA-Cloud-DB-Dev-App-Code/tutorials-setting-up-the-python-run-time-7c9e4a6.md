@@ -21,7 +21,7 @@ Before you start the tutorials in this section, bear in mind the following prere
 
 -   SAP Python packages
 
-    The archive \(<code>XS_PYTHON<i class="varname">&lt;version&gt;</i>.SAR</code>\) is available on the SAP Marketplace \(SMP\); it includes a selection of Python packages developed by SAP for use with the Python applications running in the Cloud Foundry run-time environment.
+    The most recent versions of the SAP Python client packages are available for download on the Python Package Index \(PyPI\). Newer client packages might require a more recent version of Python. For more information, see *Related Information* below.
 
 
 **Related Information**  
@@ -31,7 +31,9 @@ Before you start the tutorials in this section, bear in mind the following prere
 
 [pip Documentation](https://pip.pypa.io/en/stable/quickstart/)
 
-[Standard Python Packages for Cloud Foundry](standard-python-packages-for-cloud-foundry-8732609.md "A list of Python packages developed by SAP, which are available for download and use.")
+[Standard Python Packages for Cloud Foundry](standard-python-packages-for-cloud-foundry-8732609.md "A list of Python packages developed by SAP, which are available for download and use from the Python Package Index (PyPI).")
 
-[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
+[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "Python client libraries developed by SAP on the Python Package Index (PyPI).")
+
+[The Python Package Index \(PyPI\)](https://pypi.org/search/?q=sap_instance_manager)
 

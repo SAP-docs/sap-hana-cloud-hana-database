@@ -537,13 +537,13 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [M\_LIVECACHE\_CONTAINER\_STATISTICS\_RESET System View](m-livecache-container-statistics-reset-system-view-20b26d9.md "Provides accumulated LiveCache container statistics since last reset.")
 
-[HOST_LIVECACHE_CONTAINER_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/ef6f2f4a443d427880f712674afbc7bc.html "Returns LiveCache container statistics per host status information.") :arrow_upper_right:
+[HOST_LIVECACHE_CONTAINER_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/ef6f2f4a443d427880f712674afbc7bc.html "Returns LiveCache container statistics per host status information.") :arrow_upper_right:
 
-[HOST_LIVECACHE_OMS_VERSIONS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/29ffcc773260413481653377de803596.html "Returns LiveCache OMS versions per host status information.") :arrow_upper_right:
+[HOST_LIVECACHE_OMS_VERSIONS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/29ffcc773260413481653377de803596.html "Returns LiveCache OMS versions per host status information.") :arrow_upper_right:
 
-[HOST_LIVECACHE_SCHEMA_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/e908695d7b2b4220a6d7df7923da68fd.html "LiveCache schema statistics per host. This view contains information only for the last 21 days. The collection interval is 30 minutes.") :arrow_upper_right:
+[HOST_LIVECACHE_SCHEMA_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/e908695d7b2b4220a6d7df7923da68fd.html "LiveCache schema statistics per host. This view contains information only for the last 21 days. The collection interval is 30 minutes.") :arrow_upper_right:
 
-[HOST_LIVECACHE_PROCEDURE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/9bd3356b46c44487ab86167aaa8056c3.html "LiveCache procedure statistics per host. This view contains information only for the last 21 days. The collection interval is 30 minutes.") :arrow_upper_right:
+[HOST_LIVECACHE_PROCEDURE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/9bd3356b46c44487ab86167aaa8056c3.html "LiveCache procedure statistics per host. This view contains information only for the last 21 days. The collection interval is 30 minutes.") :arrow_upper_right:
 
 [ALTER SYSTEM RESET MONITORING VIEW Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-reset-monitoring-view-statement-system-management-20d27aa.md "Resets statistics data for the specified monitoring view.")
 

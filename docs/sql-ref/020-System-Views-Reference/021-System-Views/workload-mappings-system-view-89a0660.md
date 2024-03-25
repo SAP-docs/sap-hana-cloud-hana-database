@@ -414,7 +414,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays the workload class is enabled: TRUE/FALSE.
+Displays whether the workload class is enabled: TRUE/FALSE.
 
 </td>
 </tr>
@@ -441,7 +441,7 @@ Displays whether the workload mapping is valid or not. This value is FALSE when 
 
 <a name="loio89a066058d3f4e7f873216c6050181de__section_ebc_1c1_fzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -454,5 +454,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [WORKLOAD\_CLASSES System View](workload-classes-system-view-d520e47.md "Provides information about available workload classes.")
 
-[Managing Workload with Workload Classes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/5066181717df4110931271d1efd84cbc.html "You can manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session.") :arrow_upper_right:
+[Managing Workload with Workload Classes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5066181717df4110931271d1efd84cbc.html "You can manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session.") :arrow_upper_right:
 

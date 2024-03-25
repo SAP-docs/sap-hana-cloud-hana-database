@@ -25,14 +25,14 @@ Every HDI container group can have its own set of administrators. An HDI adminis
 
     ```sql
     CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_API_PRIVILEGES;
-    INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT '<new_container_group_admin_username>', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES;
+    INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT '<container_group_admin_username>', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES;
     CALL _SYS_DI.GRANT_CONTAINER_GROUP_API_PRIVILEGES('<container_group_name>', #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     DROP TABLE #PRIVILEGES;
     
     ```
 
     > ### Tip:  
-    > Replace the name of the user *<container\_group\_admin\_username\>* in `INSERT` command in line 2 with the name of the user to whom the API privileges should be granted, and replace the name of the container group *<container\_group\_name\>* in the `CALL` command in line 3 with the name of the desired container group name.
+    > Replace the name of the user *<container\_group\_admin\_username\>* in the `INSERT` command in line 2 with the name of the user to whom the API privileges should be granted, and replace the name of the container group *<container\_group\_name\>* in the `CALL` command in line 3 with the name of the desired container group name.
 
 3.  Execute the SQL code.
 

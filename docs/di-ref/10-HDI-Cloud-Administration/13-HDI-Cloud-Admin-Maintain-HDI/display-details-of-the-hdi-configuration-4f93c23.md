@@ -235,7 +235,7 @@ The details of all granted schema roles
     Use the `_SYS_DI` monitoring view `M_ALL_GRANTED_SCHEMA_PRIVILEGES` to display an overview of all container-specific schema privileges \(for any container\), which have been granted to users or roles by means of the procedure `GRANT_CONTAINER_SCHEMA_PRIVILEGES`.
 
     > ### Tip:  
-    > The permission check is done for any HDI container where the current user has `SELECT` permission on either the corresponding views <code>"<i class="varname">&lt;CONTAINER_GROUP_SCHEMA&gt;</i>". M_GRANTED_SCHEMA_PRIVILEGES</code> or <code>"<i class="varname">&lt;container specific&gt;</i>#DI". M_GRANTED_SCHEMA_PRIVILEGES</code>.
+    > The permission check is done for any HDI container where the current user has `SELECT` permission on either the corresponding views <code>"<i class="varname">&lt;CONTAINER_GROUP_SCHEMA&gt;</i>".M_GRANTED_SCHEMA_PRIVILEGES</code> or <code>"<i class="varname">&lt;container specific&gt;</i>#DI".M_GRANTED_SCHEMA_PRIVILEGES</code>.
 
     For example, you can use this view to see the target of the privilege \(`GRANTEE`\), the type of target \(`GRANTEE_TYPE`\) which can be either a user or a role, as well as details of the privilege granted \(`PRIVILEGE`\) and whether or not \(TRUE/FALSE\) the privilege can be granted further \(`IS_GRANTABLE`\).
 

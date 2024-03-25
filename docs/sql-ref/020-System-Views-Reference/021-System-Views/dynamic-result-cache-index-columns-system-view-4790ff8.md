@@ -59,7 +59,7 @@ NVARCHAR \(256\)
 </td>
 <td valign="top">
 
-Displays the name of the results cache.
+Displays the name of the result cache.
 
 </td>
 </tr>

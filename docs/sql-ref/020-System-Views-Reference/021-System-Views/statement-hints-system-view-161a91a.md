@@ -178,7 +178,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the user who enabled the hint.
+Displays the user who most recently enabled the hint.
 
 </td>
 </tr>
@@ -212,7 +212,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the user who disabled the hint.
+Displays the user who most recently disabled the hint.
 
 </td>
 </tr>
@@ -273,7 +273,7 @@ Displays the name of the target object the hint is being applied to.
 
 <a name="loio161a91a544a442a4b66da674a80d98e0__section_z4m_zvz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

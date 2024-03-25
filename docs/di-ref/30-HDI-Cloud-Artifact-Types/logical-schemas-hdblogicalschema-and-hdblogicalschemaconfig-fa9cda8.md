@@ -110,7 +110,7 @@ In the configuration file for the HDI container \(`.hdiconfig`\), the plug-in co
 > 
 > ```json
 > "hdblogicalschema" : { 
->    "plugin_name" : "com.sap.hana.di.logicalschema
+>    "plugin_name" : "com.sap.hana.di.logicalschema"
 > }, 
 > "hdblogicalschemaconfig" : { 
 >    "plugin_name" : "com.sap.hana.di.logicalschema.config" 
@@ -126,5 +126,5 @@ In the configuration file for the HDI container \(`.hdiconfig`\), the plug-in co
 
 [Virtual Tables \(.hdbvirtualtable and .hdbvirtualtableconfig\)](virtual-tables-hdbvirtualtable-and-hdbvirtualtableconfig-0819114.md "Transform a design-time virtual table resource into a virtual table database object.")
 
-[Templates for HDI Configuration Files (SAP HANA Cloud Database Developer Guide (SAP Business App Studio))](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/7ef53fb04ecc49a3ae647c21a0736994.html "The HDI Deployer implements a template mechanism for HDI configuration files.") :arrow_upper_right:
+[Templates for HDI Configuration Files (SAP HANA Cloud Database Developer Guide (SAP Business App Studio))](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/7ef53fb04ecc49a3ae647c21a0736994.html "The HDI Deployer implements a template mechanism for HDI configuration files.") :arrow_upper_right:
 

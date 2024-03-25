@@ -324,7 +324,7 @@ Displays the description for the column.
 
 <a name="loio210065d275191014b18ddc68a972679f__section_vsg_hxz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

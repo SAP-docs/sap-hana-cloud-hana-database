@@ -27,9 +27,9 @@ An HDI container administrator can export an HDI container to a Cloud Store.
 
 ## Context
 
-The HDI container administrator can export a source container, for example, `C1`, to a Cloud store, for example, Amazon Simple Storage Service \(Amazon S3\) or Azure Cloud Storage, by calling the built-in procedure `C1#DI.EXPORT_CONTAINER_FOR_COPY`. The procedure expects as input a table containing any parameters. After the export procedure has completed successfully, the specified Cloud store contains not only the objects of the source container’s API schema \(`C1#DI`\) but also the deployed objects of the source container’s run-time schema \(`C1`\), including all dependent data..
+The HDI container administrator can export a source container, for example, *<source\_container\_name\>*, to a Cloud store, for example, Amazon Simple Storage Service \(Amazon S3\) or Azure Cloud Storage, by calling the built-in procedure <code><i class="varname">&lt;source_container_name&gt;</i>#DI.EXPORT_CONTAINER_FOR_COPY</code>. The procedure expects as input a table containing any parameters. After the export procedure has completed successfully, the specified Cloud store contains not only the objects of the source container’s API schema \(<code><i class="varname">&lt;source_container_name&gt;</i>#DI</code>\) but also the deployed objects of the source container’s run-time schema \(*<source\_container\_name\>*\), including all dependent data..
 
-To export a container `C1` for copy purposes to a Cloud Store in Amazon S3, Microsoft Azure, Google Cloud Platform, or SAP HANA Data Lake Cloud files, perform the following steps:
+To export the container *<source\_container\_name\>* for copy purposes to a Cloud Store in Amazon S3, Microsoft Azure, Google Cloud Platform, or SAP HANA Data Lake Cloud files, perform the following steps:
 
 
 
@@ -51,16 +51,16 @@ To export a container `C1` for copy purposes to a Cloud Store in Amazon S3, Micr
     > ### Note:  
     > If the exported container depends on other containers, you need to export those other containers, too.
 
-    Working with the HDI **Container** API, call the container's `EXPORT_CONTAINER_FOR_COPY` procedure with the Cloud path you generated in a previous step, as illustrated in the following example:
+    Working with the HDI **container** API, call the container's `EXPORT_CONTAINER_FOR_COPY` procedure with the Cloud path you generated in a previous step, as illustrated in the following example:
 
     ```
     CREATE LOCAL TEMPORARY COLUMN TABLE #PARAMETERS LIKE _SYS_DI.TT_PARAMETERS; 
     INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('target_path', 's3-<region>://<access_key>:<secret_key>@<bucket_name>/<object_id>');
-    grant REFERENCES on PSE <PSE name> to <container name>; -- for authentication via credential stored in the PSE (only for HDLFS)
-    grant REFERENCES on PSE <PSE name> to <container name>#DI; -- for authentication via credential stored in the PSE (only for HDLFS) 
-    grant REFERENCES on PSE <PSE name> to <container name>#OO; -- for authentication via credential stored in the PSE (only for HDLFS) 
+    grant REFERENCES on PSE <PSE_name> to <source_container_name>; -- for authentication via credential stored in the PSE (only for HDLFS)
+    grant REFERENCES on PSE <PSE_name> to <source_container_name>#DI; -- for authentication via credential stored in the PSE (only for HDLFS) 
+    grant REFERENCES on PSE <PSE_name> to <source_container_name>#OO; -- for authentication via credential stored in the PSE (only for HDLFS) 
     INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('credential', '<credential purpose>'); -- optional for authentication via credential stored in the PSE (required for HDLFS and GCS)
-    CALL <CONTAINER_NAME>#DI.EXPORT_CONTAINER_FOR_COPY('', '', #PARAMETERS, ?, ?, ?); 
+    CALL <source_container_name>#DI.EXPORT_CONTAINER_FOR_COPY('', '', #PARAMETERS, ?, ?, ?); 
     DROP TABLE #PARAMETERS;
     ```
 

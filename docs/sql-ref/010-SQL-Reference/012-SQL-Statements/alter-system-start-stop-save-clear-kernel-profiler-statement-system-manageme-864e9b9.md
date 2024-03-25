@@ -38,7 +38,7 @@ Starts the Kernel Profiler.
 ```
 <start_profiler> ::= START KERNEL PROFILER 
  [ <location> ] 
- [ <profile_by> ]
+ [ { <profile_by> | <rolling_strategy> } ]
  [ <memory_limit> ] 
  [ <sampling_interval> ]
 ```
@@ -141,6 +141,46 @@ Restricts profiling to the specified user-specific trace profile.
 
 </dd><dt><b>
 
+*<rolling\_strategy\>*
+
+</b></dt>
+<dd>
+
+Periodically roll the profilers, according to a specified interval \(in seconds\).
+
+```
+<rolling_strategy> ::= USING ROLLING STRATEGY [ <rolling_interval> ]
+```
+
+
+
+</dd>
+<dd>
+
+
+<dl>
+<dt><b>
+
+*<rolling\_interval\>*
+
+</b></dt>
+<dd>
+
+Specifies the rolling interval. The valid range are 10 seconds - 600 seconds. If not specified, the default is 300 seconds.
+
+```
+<rolling_interval> ::= INTERVAL [ <numeric_literal> ]
+```
+
+
+
+</dd>
+</dl>
+
+
+
+</dd><dt><b>
+
 *<memory\_limit\>*
 
 </b></dt>
@@ -184,7 +224,9 @@ Periodically stores profiler samples, according to specified interval \(in milli
 Stops the Kernel Profiler \(but does not free up the allocated memory\).
 
 ```
-<stop_profiler> ::= STOP KERNEL PROFILER [ <location> ]
+<stop_profiler> ::= STOP KERNEL PROFILER
+   [ <location> ]
+   [ <rolling_strategy> ]
 ```
 
 *<location\>* restricts profiling to the specified location. See the definition of *<location\>* later in this topic.
@@ -348,12 +390,30 @@ The following statement stops profiling and clears the profiling data for the sp
 ALTER SYSTEM CLEAR KERNEL PROFILER AT LOCATION 'ab1234:30003';
 ```
 
+The following statement starts the rolling profiler using the default rolling interval of 300 seconds.
+
+```
+ALTER SYSTEM START KERNEL PROFILER USING ROLLING STRATEGY;
+```
+
+The following statement starts the rolling profiler using a rolling interval of 60 seconds.
+
+```
+ALTER SYSTEM START KERNEL PROFILER USING ROLLING STRATEGY INTERVAL 60;
+```
+
+The following statement stops the rolling profiler.
+
+```
+ALTER SYSTEM STOP KERNEL PROFILER USING ROLLING STRATEGY;
+```
+
 **Related Information**  
 
 
 [M\_KERNEL\_PROFILER System View](../../020-System-Views-Reference/022-Monitoring-Views/m-kernel-profiler-system-view-d20e2e8.md "Displays the state and provides information about Kernel Profilers in the system. You must have the RESOURCE ADMIN or TRACE ADMIN system privileges to use this view.")
 
-[Kernel Profiler](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bdd27500bb571014b7f7e61e7c4cda04.html "The kernel profiler is a sampling profiler built into the SAP HANA database. It can be used to analyze performance issues and it collects, for example, information about frequent and/or expensive execution paths during query processing.") :arrow_upper_right:
+[Kernel Profiler](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bdd27500bb571014b7f7e61e7c4cda04.html "The kernel profiler is a sampling profiler built into the SAP HANA database. It can be used to analyze performance issues and it collects, for example, information about frequent and/or expensive execution paths during query processing.") :arrow_upper_right:
 
-[Diagnostic Files and Logs](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/335e2374c20245e78c9c4c6ce5b0fec6.html "In the event of problems with the SAP HANA database, you can check diagnosis files for errors.") :arrow_upper_right:
+[Diagnostic Files and Logs](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/335e2374c20245e78c9c4c6ce5b0fec6.html "In the event of problems with the SAP HANA database, you can check diagnosis files for errors.") :arrow_upper_right:
 

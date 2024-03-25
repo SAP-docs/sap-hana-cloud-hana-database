@@ -2,20 +2,22 @@
 
 # Standard Python Packages for Cloud Foundry
 
-A list of Python packages developed by SAP, which are available for download and use.
+A list of Python packages developed by SAP, which are available for download and use from the Python Package Index \(PyPI\).
 
 
 
-SAP provides a selection of Python packages for use by customers and partners. The packages are available for download and use from the SAP Service Marketplace \(SMP\) for anyone with the appropriate access authorization. For more information about how to download and use Python packages from the SAP Service Marketplace, log on to the SMP and search for the software component `XS_PYTHON`, which is an archive that contains the SAP packages. The following table lists the SAP Python packages that are currently available. For more details about the contents of each Python package as well as any configuration tips, see the `README` file in the corresponding package.
+SAP provides a selection of Python packages, which are available for download and use from the Python Package Index \(PyPI\). Newer client packages might require a more recent version of Python. For more information, see the following table or *Related Information* below.
 
-**Python Packages**
+The following table lists the SAP Python packages that are currently available. For more details about the contents of each SAP Python package as well as any configuration tips, see the related section below or the `README` file in the corresponding package.
+
+**SAP Python Packages**
 
 
 <table>
 <tr>
 <th valign="top">
 
-Package
+PyPI Package
 
 </th>
 <th valign="top">
@@ -27,7 +29,7 @@ Description
 <tr>
 <td valign="top">
 
-[`sap_instance_manager`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_vpc_qrj_ycb) 
+[`sap-instance-manager`](https://pypi.org/project/sap-instance-manager/) 
 
 </td>
 <td valign="top">
@@ -39,7 +41,7 @@ Python package for creating and deleting service instances per tenant within an 
 <tr>
 <td valign="top">
 
-[`sap_xssec`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_atx_2vt_vt) 
+[`sap-xssec`](https://pypi.org/project/sap-xssec/) 
 
 </td>
 <td valign="top">
@@ -51,7 +53,7 @@ Container Security API for Python
 <tr>
 <td valign="top">
 
-[`sap_cf_logging`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_dhv_x21_cdb) 
+[`sap-cf-logging`](https://pypi.org/project/sap-cf-logging/) 
 
 </td>
 <td valign="top">
@@ -62,7 +64,7 @@ This is a collection of support libraries for Python applications running on Clo
 -   Enable web applications in your application stack to collect request metrics
 
 > ### Note:  
-> `sap_cf_logging` is not included in SAP's `XS_PYTHON`
+> `sap-cf-logging` is an open-source library that is developed by SAP and published on the Python Package Index \(PyPI\).
 
 
 
@@ -71,12 +73,12 @@ This is a collection of support libraries for Python applications running on Clo
 <tr>
 <td valign="top">
 
-[`hdbcli`](standard-python-packages-for-cloud-foundry-8732609.md#loio8732609bd5314b51a17d6a3cc09110c3__section_jcs_5rf_2db) 
+[hdbcli](https://pypi.org/project/hdbcli/) 
 
 </td>
 <td valign="top">
 
-The SAP HANA Cloud database client provides tools that enable connections to the SAP HANA Cloud database. archive; it is an open-source library that is developed by SAP and published on the Python Package Index \(Pypi\).
+The SAP HANA Cloud database client provides tools that enable connections to the SAP HANA Cloud database. archive; it is an open-source library that is developed by SAP and published on the Python Package Index \(PyPI\).
 
 </td>
 </tr>
@@ -437,7 +439,7 @@ Retrieves the corresponding service instance for the specified tenant either fro
 <tr>
 <td valign="top">
 
-get\_all\(\)
+`get_all()` 
 
 </td>
 <td valign="top">
@@ -599,6 +601,18 @@ Returns the user's email address \*
 <tr>
 <td valign="top">
 
+`get_origin` 
+
+</td>
+<td valign="top">
+
+Returns the user origin. The origin is an alias that refers to a user store in which the user is persisted. For example, users that are authenticated by the User Account and Authentication \(UAA\) service itself \(with a combination of user name and password\) have their origin set to the value "uaa".
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `check_local_scope` 
 
 </td>
@@ -653,6 +667,18 @@ Returns a token that can be used to connect to the SAP HANA database. If the tok
 <td valign="top">
 
 Requests a token with `grant_type=user_token` from another client. The requesting client must also have `grant_type=user_token`, and the current user token must include the authorization scope `uaa.user`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`request_token_for_client_async` 
+
+</td>
+<td valign="top">
+
+This method provides the same functionality as `request_token_for_client` above, but with added support for asynchronous frameworks, for example, *django* and *fastAPI*.
 
 </td>
 </tr>
@@ -743,6 +769,18 @@ Returns the identity zone that the access token has been issued for
 <tr>
 <td valign="top">
 
+`get_subaccount_id` 
+
+</td>
+<td valign="top">
+
+Returns the subaccount ID that the access token has been issued for
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `get_expiration_date` 
 
 </td>
@@ -794,7 +832,7 @@ This is a lightweight library for Python applications that is compatible with th
 ### Installation
 
 > ### Note:  
-> The `sap_cf_logging` library is not included in SAP's `XS_PYTHON` archive; it is an open-source library that is developed by SAP and published on the Python Package Index \(Pypi\). To install “`sap_cf_logging`”, you must use the standard Python tools.
+> `sap_cf_logging` is an open-source library that is developed by SAP and published on the Python Package Index \(Pypi\). To install “`sap_cf_logging`”, you must use the standard Python tools.
 
 To install the packages run the following command in your command line interface:
 
@@ -875,4 +913,6 @@ The library implements PEP 249 - The Python Database API Specification v2.0. For
 
 
 [hdbcli](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.02/en-US/f3b8fabf34324302b123297cdbe710f0.html)
+
+[The Python Package Index \(PyPI\)](https://pypi.org/search/?q=sap_instance_manager)
 

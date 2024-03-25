@@ -231,5 +231,5 @@ This view shows information about the number and distribution of superblocks ins
 
 [M\_DATA\_VOLUME\_PARTITION\_STATISTICS System View](m-data-volume-partition-statistics-system-view-7ff90b1.md "Provides data volume partition statistics.")
 
-[HOST_DATA_VOLUME_SUPERBLOCK_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/54c8f4e486514185862d01fbc805fecf.html "Data volume superblock information per host.") :arrow_upper_right:
+[HOST_DATA_VOLUME_SUPERBLOCK_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/54c8f4e486514185862d01fbc805fecf.html "Data volume superblock information per host.") :arrow_upper_right:
 

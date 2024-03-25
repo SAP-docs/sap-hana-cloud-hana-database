@@ -157,7 +157,7 @@ The following example shows an excerpt from the response to the call `LIST_CONFI
 > Call `#DI.LIST_CONFIGURED_LIBRARIES`
 > 
 > ```sql
-> CALL C#DI.LIST_CONFIGURED_LIBRARIES(_SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.LIST_CONFIGURED_LIBRARIES(_SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?);
 > ```
 
 > ### Note:  

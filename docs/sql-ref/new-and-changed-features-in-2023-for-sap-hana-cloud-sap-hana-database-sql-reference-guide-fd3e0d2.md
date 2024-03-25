@@ -58,6 +58,17 @@ The INSERT statement now supports the NOWAIT parameter. [INSERT Statement \(Data
 <dl>
 <dt><b>
 
+TABLE\_PARTITIONS System View \(Changed\)
+
+</b></dt>
+<dd>
+
+The column IS\_DYNAMIC was added to support dynamic partitions. [TABLE\_PARTITIONS System View](020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md)
+
+
+
+</dd><dt><b>
+
 CREATE AUDIT POLICY Statement \(Changed\)
 
 </b></dt>
@@ -334,6 +345,28 @@ The columns CCM\_CONNECTION\_ID and CCM\_CONNECTION\_VERSION have been added to 
 
 <dl>
 <dt><b>
+
+TABLE\_PARTITIONS System View \(Changed\)
+
+</b></dt>
+<dd>
+
+The DYNAMIC\_RANGE\_INTERVAL column has been added to the view to provide information on the interval and type of dynamically created partitions. [TABLE\_PARTITIONS System View](020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md)
+
+
+
+</dd><dt><b>
+
+ALTER SYSTEM \{START | STOP | SAVE | CLEAR\} KERNEL PROFILER Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+Starting and stopping the kernel profiler now supports a rolling strategy. [ALTER SYSTEM \{START | STOP | SAVE | CLEAR\} KERNEL PROFILER Statement \(System Management\)](010-SQL-Reference/012-SQL-Statements/alter-system-start-stop-save-clear-kernel-profiler-statement-system-manageme-864e9b9.md)
+
+
+
+</dd><dt><b>
 
 ADD\_WORKDAYS and WORKDAYS\_BETWEEN Function \(Changed\)
 

@@ -27,6 +27,81 @@ The following code shows a simple example of a design-time, structured-privilege
 
 
 
+<a name="loioc3827df3a9dc4c45b5b4e2f7b1070b08__section_yj2_wth_k1c"/>
+
+## Wildcards
+
+The file format also allows the use of wildcards, as shown in the following example:
+
+> ### Code Syntax:  
+> ```sql
+> STRUCTURED PRIVILEGE PRIVILEGE_NAME 
+> FOR SELECT ON <object_identifier>[, <object_identifier>] 
+> [ ESCAPE '\' ] 
+> [ LIKE <wildcard_object_identifier>[, <wildcard_object_identifier>] 
+> [ NOT LIKE <wildcard_object_identifier>[, <wildcard_object_identifier>] ] ] 
+> WHERE | CONDITION PROVIDER
+> ```
+
+Note the following important points:
+
+-   Using `ESCAPE` followed by a single quoted character defines the escape character which can be used to escape wildcards.
+
+-   Any `wildcard_object_identifiers` specified in the `NOT LIKE` section require corresponding `wildcard_object_identifiers` in the `LIKE` section, i.e. `NOT LIKE` should only exclude matches made due to `LIKE` conditions.
+
+-   A `wildcard_object_identifier` must be wrapped in double quotes \(""\) and must be schema-local \(i.e. `"someSchema"."V%1"` is not allowed\).
+
+-   The use of `wildcard_object_identifiers` requires at least one valid `object_identifier` \(defined in the “`SELECT ON`” clause\).
+
+-   The `NOT LIKE` section can only be used if `wildcard_object_identifiers` in the `LIKE` section are specified; the `NOT LIKE` section is used to restrict the set of views declared in the `LIKE` section.
+
+-   Valid wildcards are '\_' \(underscore character\) and '%' \(percentage character\).
+
+
+> ### Tip:  
+> The `wildcard_object_identifiers` specified in the `LIKE` section are used to define an `OR` query. The `wildcard_object_identifiers` in the `NOT LIKE` section are used to define an `AND NOT` query.
+
+For example, the wildcards declared in the `LIKE` and `NOT LIKE` sections of the following code sample:
+
+> ### Code Syntax:  
+> ```sql
+> LIKE obj1, obj2, … objN 
+> NOT LIKE notObj1, notObj2, … notObjM
+> ```
+
+correspond logically to the following syntax:
+
+> ### Code Syntax:  
+> ```sql
+> (obj1 or obj2 or … or objN) AND NOT (notObj1 or notObj2 or … or notObjM)
+> ```
+
+
+
+<a name="loioc3827df3a9dc4c45b5b4e2f7b1070b08__section_pr1_rvh_k1c"/>
+
+## Example Artifact Code with Wildcards
+
+It is also possible to use wildcards according to the format shown in the following example:
+
+> ### Code Syntax:  
+> `/src/USER_DATA_VIEW_PRIVILEGE_WILDCARD.hdbstructuredprivilege`
+> 
+> ```sql
+> STRUCTURED PRIVILEGE USER_DATA_VIEW_PRIVILEGE_WILDCARD 
+> FOR SELECT ON USER_DATA_VIEW 
+> ESCAPE '\' 
+> LIKE "USER\_Data\_VIEW1%", "USER\_Data\_VIEW2%" 
+> NOT LIKE "USER_Data_VIEW1\%"
+> WHERE USER_DATA_VIEW.USER_NAME = CURRENT_USER
+> ```
+
+Here, in addition to the former definition, all views with a structured privilege check that start with `USER_Data_VIEW1` or `USER_Data_VIEW2` \(excluding the `USER_Data_VIEW1` view\) should automatically be added. A view `USERsData_VIEW1` is also not detected because the underscore \('\_'\) was escaped.
+
+Errors might occur if the conditions provided by the `WHERE` clause cannot be performed on some of these views. In that case, exclude them using the "`NOT LIKE`" section.
+
+
+
 <a name="loioc3827df3a9dc4c45b5b4e2f7b1070b08__section_npv_r13_1hb"/>
 
 ## Plug-in Configuration

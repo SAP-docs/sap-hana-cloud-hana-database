@@ -355,7 +355,7 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [M\_DATA\_VOLUME\_SUPERBLOCK\_STATISTICS System View](m-data-volume-superblock-statistics-system-view-20adf77.md "Provides FreeBlockManager Superblock statistics.")
 
-[HOST_DATA_VOLUME_PAGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/c8009f66ea304c5d9893b8a89de9de8c.html "Specifies the data volume page information per host.") :arrow_upper_right:
+[HOST_DATA_VOLUME_PAGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/c8009f66ea304c5d9893b8a89de9de8c.html "Specifies the data volume page information per host.") :arrow_upper_right:
 
-[Statistics for Page-Loadable Storage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/d791786e1f324187bd3a6ce2a8c1c601.html "A number of monitoring views report information at the partition, column, and column sub-object level, along with the existing non-paged memory size statistics.") :arrow_upper_right:
+[Statistics for Page-Loadable Storage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/d791786e1f324187bd3a6ce2a8c1c601.html "A number of monitoring views report information at the partition, column, and column sub-object level, along with the existing non-paged memory size statistics.") :arrow_upper_right:
 

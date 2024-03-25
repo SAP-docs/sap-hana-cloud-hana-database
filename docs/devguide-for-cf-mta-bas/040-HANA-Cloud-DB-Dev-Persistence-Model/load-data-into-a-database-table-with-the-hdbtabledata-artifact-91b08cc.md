@@ -258,11 +258,11 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
-        You can filter by name the databases displayed in the *DATABASE LIST*. For example, choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and choose *OK* press or [Enter\]. To reset the filter, press [Escape\].
+        You can filter by name the databases displayed in the *DATABASE LIST*. For example, choose <span class="SAP-icons-V5"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and choose *OK* press or [Enter\]. To reset the filter, press [Escape\].
 
     2.  In the SAP HANA Database Explorer, expand the HDI container that contains the new database artifacts.
 
-        You can filter by name the database objects displayed in the *CATALOG BROWSER*. Choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Escape\].
+        You can filter by name the database objects displayed in the *CATALOG BROWSER*. Choose <span class="SAP-icons-V5"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Escape\].
 
     3.  Choose *Tables*.
 
@@ -275,7 +275,7 @@ You can use the `hdbtabledata` development object to enable the loading of data 
 **Related Information**  
 
 
-[Table Data Syntax (.hdbtabledata in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
+[Table Data Syntax (.hdbtabledata in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/35c4dd829d2046f29fc741505302f74d.html "Insert data from other files (for example, CSV, .properties, or .tags files) into database tables.") :arrow_upper_right:
 
 [Create a Database Table with SQL Data Definition Language](create-a-database-table-with-sql-data-definition-language-879ce23.md "Define a design-time database table using the SQL Data Definition Language (DDL) syntax.")
 

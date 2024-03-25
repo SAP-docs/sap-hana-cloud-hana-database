@@ -523,5 +523,5 @@ Displays the number of retries to delete.
 
 [ALTER SYSTEM \{ENABLE | DISABLE\} ALL \[ASYNCHRONOUS | SYNCHRONOUS\] TABLE REPLICAS Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-enable-disable-all-asynchronous-synchronous-table-replicas-stat-f948665.md "Activates or deactivates the overall replication operation of all replication tables or of asynchronous or synchronous tables only.")
 
-[Table Replication](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/33dd5d248add4b7a8c085846748b80ba.html "In a scale-out system tables (or selected columns of column store tables) may be replicated to multiple hosts. This can help to reduce network traffic when, for example, slowly-changing master data often has to be joined with tables, or partitions of tables, that are located on other hosts.") :arrow_upper_right:
+[Table Replication](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/33dd5d248add4b7a8c085846748b80ba.html "In a scale-out system tables (or selected columns of column store tables) may be replicated to multiple hosts. This can help to reduce network traffic when, for example, slowly-changing master data often has to be joined with tables, or partitions of tables, that are located on other hosts.") :arrow_upper_right:
 

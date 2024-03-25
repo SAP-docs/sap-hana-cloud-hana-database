@@ -103,5 +103,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [LDAP\_USERS System View](ldap-users-system-view-704e5b6.md "Provides information about the users using LDAP authorization.")
 
-[LDAP Provider Configuration (Reference)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/b8406c6e363747dea9098f00648d15b5.html "To set up a connection to an LDAP server, you must create an LDAP provider in the SAP HANA database. Depending on your requirements, you can use the LDAP server to authenticate and/or authorize users. For LDAP-authenticated users, you can also enable the automatic creation of users in SAP HANA.") :arrow_upper_right:
+[LDAP Provider Configuration (Reference)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/b8406c6e363747dea9098f00648d15b5.html "To set up a connection to an LDAP server, you must create an LDAP provider in the SAP HANA database. Depending on your requirements, you can use the LDAP server to authenticate and/or authorize users. For LDAP-authenticated users, you can also enable the automatic creation of users in SAP HANA.") :arrow_upper_right:
 

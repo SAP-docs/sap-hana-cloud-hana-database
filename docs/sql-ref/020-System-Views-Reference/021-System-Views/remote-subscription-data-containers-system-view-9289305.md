@@ -59,7 +59,7 @@ NVARCHAR\(40\)
 </td>
 <td valign="top">
 
-Displays the category of data containers:
+Displays the data type of the content in the containers:
 
 -   COMMIT SEQUENCE GROUP
 -   COMMIT SEQUENCES \(displays the order that transactions get committed and a sequence number for each commit row\)
@@ -67,7 +67,7 @@ Displays the category of data containers:
 -   LOBS
 -   ROLLBACK SAVEPOINTS
 -   DISTRIBUTOR QUEUE DATA \(displays the data currently being queued by the distributor\)
--   DISTRIBUTOR QUEUE DATA REFERENCES \(displays the list of transactions currently being referenced by the distributor\)
+-   DISTRIBUTOR QUEUE DATA REFERENCES \(displays the list of transactions currently being referenced by the distributor\).
 
 
 
@@ -147,7 +147,7 @@ Displays the ID of the data container. Depending on the content type, a containe
 
 <a name="loio9289305ea87d4984bcdd2453b678e5e4__section_ztg_4y4_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

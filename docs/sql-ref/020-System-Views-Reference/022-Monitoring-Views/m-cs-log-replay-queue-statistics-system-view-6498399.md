@@ -376,5 +376,5 @@ Displays the number of expensive creations of DML contexts.
 
 [M\_CS\_LOG\_REPLAY\_QUEUE\_STATISTICS\_RESET System View](m-cs-log-replay-queue-statistics-reset-system-view-415dc16.md "Provides information about column store log replay queue statistics since the last reset.")
 
-[HOST_SERVICE_REPLICATION View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/7df5ea067be947e7b0b09a13234f1d80.html "Specifies the service replication statistics per host.") :arrow_upper_right:
+[HOST_SERVICE_REPLICATION View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/7df5ea067be947e7b0b09a13234f1d80.html "Specifies the service replication statistics per host.") :arrow_upper_right:
 

@@ -178,7 +178,7 @@ It is also possible to audit the SAP HDI procedures of **all** containers. Since
 
 ## Auditing All SAP HDI Database Operations
 
-The standard capabilities provided by the SAP HANA auditing mechanism are sufficient forIn rare cases, it can be helpful to audit all SAP HDI database operations, for example, creating and dropping tables and users, or inserting data into tables. As all those database operations are internally executed by a dedicated SAP HDI transaction owner named “`_SYS_DI_TO`”, it is sufficient to limit auditing to this user. For example, the following SQL command shows how to create and enable an audit policy that audits all SAP HDI database operations for the SAP HDI transaction owner `_SYS_DI_TO`:
+The standard capabilities provided by the SAP HANA auditing mechanism are sufficient for most scenarios. In rare cases, however, it can be helpful to audit all SAP HDI database operations, for example, creating and dropping tables and users, or inserting data into tables. Since all those database operations are internally executed by a dedicated SAP HDI transaction owner named “`_SYS_DI_TO`”, it is sufficient to limit auditing to this user. For example, the following SQL command shows how to create and enable an audit policy that audits all SAP HDI database operations for the SAP HDI transaction owner `_SYS_DI_TO`:
 
 > ### Sample Code:  
 > Auditing All Database Operations in SAP HDI

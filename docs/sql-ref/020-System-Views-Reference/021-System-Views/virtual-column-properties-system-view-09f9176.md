@@ -135,7 +135,7 @@ Displays whether or not the property is read-only: TRUE/FALSE.
 
 <a name="loio09f9176a592c442d82830e4a51833e57__section_t5t_v11_fzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

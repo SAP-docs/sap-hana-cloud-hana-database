@@ -59,7 +59,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
         -   Choose *View* \> *Command Palette...*
 
             > ### Tip:  
-            > By default, SAP Business Application Studio only provides "compact" menus and options, which are initially hidden and displayed when you choose <span class="SAP-icons"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the work space, choose :gear:and then *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* from *compact* to *classic* in the drop-down list provided.
+            > By default, SAP Business Application Studio only provides "compact" menus and options, which are initially hidden and displayed when you choose <span class="SAP-icons-V5"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the work space, choose :gear:and then *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* from *compact* to *classic* in the drop-down list provided.
 
 
     2.  Create a new SAP HANA database artifact.
@@ -211,11 +211,11 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 
         The selected HDI container is displayed in the SAP HANA Database Explorer, and you can browse through the different categories of database artifacts, for example, *Column Views*, *Tables*, or *Views*.
 
-        You can filter by name the databases displayed in the *DATABASE LIST*. For example, choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and choose *OK* press or [Enter\]. To reset the filter, press [Escape\].
+        You can filter by name the databases displayed in the *DATABASE LIST*. For example, choose <span class="SAP-icons-V5"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and choose *OK* press or [Enter\]. To reset the filter, press [Escape\].
 
     2.  In the SAP HANA Database Explorer, expand the HDI container that contains the new database artifacts.
 
-        You can filter by name the database objects displayed in the *CATALOG BROWSER*. Choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Escape\].
+        You can filter by name the database objects displayed in the *CATALOG BROWSER*. Choose <span class="SAP-icons-V5"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Escape\].
 
     3.  Choose *Tables*.
 
@@ -228,7 +228,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 **Related Information**  
 
 
-[Table Syntax (.hdbtable in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/453d48e28f6747799546236b4b432e58.html "Transforms a design-time table resource into a table database object.") :arrow_upper_right:
+[Table Syntax (.hdbtable in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/453d48e28f6747799546236b4b432e58.html "Transforms a design-time table resource into a table database object.") :arrow_upper_right:
 
 [Creating Data Persistence Artifacts with SQL DDL](creating-data-persistence-artifacts-with-sql-ddl-a216fd8.md "You can use SQL DDL to define the underlying database objects that store and provide data for your application, for example, tables and views.")
 

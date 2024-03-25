@@ -93,7 +93,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether a user granted the ROLE ADMIN system privilege can manage this role group. Valid values are: TRUE/FALSE.
+Displays whether a user is granted the ROLE ADMIN system privilege and can manage this role group. Valid values are: TRUE/FALSE.
 
 </td>
 </tr>
@@ -120,7 +120,7 @@ Displays a description of the role group.
 
 <a name="loio5e2b4b95879a408e91c64f85fae53485__section_twp_3fl_qrb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

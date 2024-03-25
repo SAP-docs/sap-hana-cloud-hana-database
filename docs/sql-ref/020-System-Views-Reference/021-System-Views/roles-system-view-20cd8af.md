@@ -42,7 +42,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the name of the schema of the role granted.
+Displays the name of the schema granted to the role.
 
 </td>
 </tr>
@@ -110,7 +110,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the identity specified for the role with ROLE\_MODE GLOBAL.
+Displays the identity specified for a role with ROLE\_MODE GLOBAL.
 
 </td>
 </tr>
@@ -195,7 +195,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the name of the role role group the role the role belongs to. The value is NULL if no assignment exists.
+Displays the name of the role group where the role belongs. The value is NULL if no assignment exists.
 
 </td>
 </tr>
@@ -205,7 +205,7 @@ Displays the name of the role role group the role the role belongs to. The value
 
 <a name="loio20cd8af175191014a538d0938ced7f6a__section_b1v_g1p_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -226,7 +226,7 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [EFFECTIVE\_ROLE\_GRANTEES System View](effective-role-grantees-system-view-d2beddd.md "Provides information regarding the users and roles that the role is granted to.")
 
-[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
+[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
 
-[Granting and Revoking Privileges and Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c719b2e7d9761014b9d798770c3d0958.html "To be able to grant and revoke privileges and roles to and from users and roles, the granting or revoking user must meet a number of prerequisites.") :arrow_upper_right:
+[Granting and Revoking Privileges and Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/c719b2e7d9761014b9d798770c3d0958.html "To be able to grant and revoke privileges and roles to and from users and roles, the granting or revoking user must meet a number of prerequisites.") :arrow_upper_right:
 

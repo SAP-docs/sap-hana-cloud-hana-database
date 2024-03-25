@@ -711,5 +711,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [LOCK TABLE Statement \(Transaction Management\)](../../010-SQL-Reference/012-SQL-Statements/lock-table-statement-transaction-management-20f88d8.md "Acquires an exclusive lock for a table.")
 
-[Manage Read-Write and Read-Only Access to a Remote Source](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/31a8a5dcd24b47e0a1c3e21f2427cb6f.html "The DML mode property specifies whether read-write or read-only access to the remote source is allowed. The DML mode, however, cannot override the restrictions of a remote source itself. For example, Amazon Athena and Google BigQuery remote sources are read-only and only the DML mode readonly is allowed.") :arrow_upper_right:
+[Manage Read-Write and Read-Only Access to a Remote Source](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/31a8a5dcd24b47e0a1c3e21f2427cb6f.html "The DML mode property specifies whether read-write or read-only access to the remote source is allowed. The DML mode, however, cannot override the restrictions of a remote source itself. For example, Amazon Athena and Google BigQuery remote sources are read-only and only the DML mode readonly is allowed.") :arrow_upper_right:
 

@@ -310,5 +310,5 @@ Displays the number of cache misses.
 
 [CONTAINS Predicate](../../010-SQL-Reference/contains-predicate-20f9524.md "Matches a search string with the results of a subquery.")
 
-[Logic Container](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/2d84158c530941b898b2b88316ea7649.html "The following types of logic containers are available in SQLScript: Procedure, Anonymous Block, User-Defined Function, and User-Defined Library.") :arrow_upper_right:
+[Logic Container](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/2d84158c530941b898b2b88316ea7649.html "The following types of logic containers are available in SQLScript: Procedure, Anonymous Block, User-Defined Function, and User-Defined Library.") :arrow_upper_right:
 

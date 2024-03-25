@@ -18,7 +18,7 @@ In SAP HANA Deployment Infrastructure \(HDI\), HDI container administrators can 
 
 ## Procedure
 
-1.  In an SQL console, connect to the database as an administrator of the target HDI container, for example, “C”.
+1.  In an SQL console, connect to the database as an administrator of the target HDI container, for example, *<container\_name\>*.
 
 2.  Open the SQL editor for this database.
 
@@ -33,17 +33,17 @@ In SAP HANA Deployment Infrastructure \(HDI\), HDI container administrators can 
     > INSERT INTO #LIBRARY_CONFIGURATION ( ACTION, LIBRARY_NAME ) VALUES ( 'ADD', 'com.sap.hana.di.cds' );
     > INSERT INTO #LIBRARY_CONFIGURATION ( ACTION, LIBRARY_NAME ) VALUES ( 'ADD', 'com.sap.hana.di.synonym' );
     > INSERT INTO #LIBRARY_CONFIGURATION ( ACTION, LIBRARY_NAME ) VALUES ( 'REMOVE', 'com.sap.hana.di.view' );
-    > CALL C#DI.CONFIGURE_LIBRARIES(#LIBRARY_CONFIGURATION, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > CALL <container_name>#DI.CONFIGURE_LIBRARIES(#LIBRARY_CONFIGURATION, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > DROP TABLE #LIBRARY_CONFIGURATION;
     > 
     > ```
 
-    1.  Replace the name of the container “C” in the `CALL` statement with the name of your container.
+    1.  Replace *<container\_name\>* in the `CALL` statement with the name of your container.
 
     2.  Adjust the set of libraries to be added or removed in the `INSERT` statements as needed. This example adds three libraries and removes one.
 
 
-4.  Execute the SQL code.
+4.  Run the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 
@@ -64,7 +64,7 @@ In SAP HANA Deployment Infrastructure \(HDI\), HDI container administrators can 
     > INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('undeploy', 'true');
     > CREATE LOCAL TEMPORARY COLUMN TABLE #LIBRARY_CONFIGURATION LIKE _SYS_DI.TT_LIBRARY_CONFIGURATION;
     > INSERT INTO #LIBRARY_CONFIGURATION ( ACTION, LIBRARY_NAME ) VALUES ( 'REMOVE', 'com.sap.hana.di.view' );
-    > CALL C#DI.CONFIGURE_LIBRARIES(#LIBRARY_CONFIGURATION, #PARAMETERS, ?, ?, ?);
+    > CALL <container_name>#DI.CONFIGURE_LIBRARIES(#LIBRARY_CONFIGURATION, #PARAMETERS, ?, ?, ?);
     > DROP TABLE #LIBRARY_CONFIGURATION;
     > DROP TABLE #PARAMETERS;
     > 

@@ -210,5 +210,5 @@ Displays whether or not the service is local to the database.
 
 [M\_SERVICE\_TYPES System View](m-service-types-system-view-20c4d1d.md "Provides information about service types.")
 
-[Data Storage Security](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/b30fda1483b34628802a8d62bd5d39df.html "Several mechanisms are used to protect security-relevant data used by the SAP HANA Cloud, SAP HANA database from unauthorized access.") :arrow_upper_right:
+[Data Storage Security](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/b30fda1483b34628802a8d62bd5d39df.html "Several mechanisms are used to protect security-relevant data used by the SAP HANA Cloud, SAP HANA database from unauthorized access.") :arrow_upper_right:
 

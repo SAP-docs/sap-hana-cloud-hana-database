@@ -263,5 +263,5 @@ Important events \(for example, DiskFull\) reported by the database are shown in
 **Related Information**  
 
 
-[GLOBAL_INTERNAL_EVENTS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/449bb507ab944d5f8702e812e751bd28.html "Specifies global internal event information.") :arrow_upper_right:
+[GLOBAL_INTERNAL_EVENTS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/449bb507ab944d5f8702e812e751bd28.html "Specifies global internal event information.") :arrow_upper_right:
 

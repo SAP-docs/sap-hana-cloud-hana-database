@@ -23,7 +23,7 @@ The predefined table `_SYS_DI.T_DEFAULT_CONTAINER_ROLE_ADMIN_PRIVILEGES` used in
 
 ## Procedure
 
-1.  In an SQL console, connect to the database as the administrator of the target HDI container group \(for example, “G”\).
+1.  In an SQL console, connect to the database as the administrator of the target HDI container group \(for example, *<container\_group\_name\>*\).
 
 2.  Open the SQL editor for this database.
 
@@ -34,19 +34,19 @@ The predefined table `_SYS_DI.T_DEFAULT_CONTAINER_ROLE_ADMIN_PRIVILEGES` used in
     > ### Sample Code:  
     > ```sql
     > CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_API_PRIVILEGES; 
-    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT 'NEW_CONTAINER_ADMIN', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_ROLE_ADMIN_PRIVILEGES; 
-    > CALL _SYS_DI#G.GRANT_CONTAINER_API_PRIVILEGES('C', #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT '<container_admin_username>', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_ROLE_ADMIN_PRIVILEGES; 
+    > CALL _SYS_DI#<container_group_name>.GRANT_CONTAINER_API_PRIVILEGES('<container_name>', #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     > DROP TABLE #PRIVILEGES
     > 
     > ```
 
-4.  Adjust the name of the user `NEW_CONTAINER_ADMIN` in the `INSERT` statement in line 2 to reflect the name of the user to whom the API privileges should be granted. You will also have to change the name of the container group “G” in the API schema `_SYS_DI#G` and the name of the container “C” to reflect the names in your landscape.
+4.  Replace *<container\_admin\_username\>* in the `INSERT` statement in line 2 with the name of the user to whom the API privileges should be granted. You will also have to change the name of the container group *<container\_group\_name\>* in the API schema <code>_SYS_DI#<i class="varname">&lt;container_group_name&gt;</i></code> and the name of the container *<container\_name\>* to reflect the group and container names in your landscape.
 
 5.  Execute the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 
-6.  \(Optional\) Confirm that the `NEW_CONTAINER_ADMIN` user is now able to call HDI container API procedures in the container C's API schema `C#DI`.
+6.  \(Optional\) Confirm that the *<container\_admin\_username\>* user is now able to call HDI container API procedures in the container *<container\_name\>*'s API schema <code><i class="varname">&lt;container_name&gt;</i>#DI</code>.
 
 
 **Related Information**  

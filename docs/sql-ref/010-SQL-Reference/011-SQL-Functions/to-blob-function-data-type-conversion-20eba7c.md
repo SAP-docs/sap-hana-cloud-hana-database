@@ -2,7 +2,7 @@
 
 # TO\_BLOB Function \(Data Type Conversion\)
 
-Converts a binary string or NCLOB \(or CLOB which is an alias of NCLOB\) data type to a BLOB data type.
+Converts a binary string, NCLOB \(or CLOB which is an alias of NCLOB\) or vector data type to a BLOB data type.
 
 
 
@@ -13,7 +13,7 @@ Converts a binary string or NCLOB \(or CLOB which is an alias of NCLOB\) data ty
 ```
 TO_BLOB(<value>)
 
-<value> ::= <binary string> | <nclob_value> | <clob_value>
+<value> ::= <binary string> | <nclob_value> | <clob_value> | <vector>
 ```
 
 
@@ -22,7 +22,7 @@ TO_BLOB(<value>)
 
 ## Description
 
-Converts a BINARY, NCLOB \(or CLOB which is an alias of NCLOB\) *<value\>* to a BLOB data type.
+Converts a BINARY, NCLOB \(or CLOB which is an alias of NCLOB\), or vector *<value\>* to a BLOB data type.
 
 
 

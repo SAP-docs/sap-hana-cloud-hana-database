@@ -61,7 +61,6 @@ Though the non-local schema references are no longer included, it is still not p
 > { 
 >   "com.sap.hana.example::DUMMY" : { 
 >      "target" : { 
->         "database"   : "DATABASE_A", // optional (cross-database access)
 >         "schema"     : "SYS",        // optional
 >         "object"     : "DUMMY",
 >         "revalidate" : true          // optional (Boolean)
@@ -69,14 +68,14 @@ Though the non-local schema references are no longer included, it is still not p
 >   },
 >   "com.sap.hana.example::synonym2" : { 
 >      "target": { 
->         "logical_schema": "<the logical schema>", // not in conjunction with 
->                                                   // "database", "schema", "revalidate"
+>         "logical_schema": "<the logical schema>", // not in conjunction 
+>                                                   // with "schema", "revalidate"
 >         "object" : "<the target object>" 
 >      } 
 >   },
 >   "com.sap.hana.example::synonym3" : { 
 >      "target" : { 
->         "remote"   : "<the remote source>", // not in conjunction with "database"
+>         "remote"   : "<the remote source>",
 >         "schema"   : "<my Schema>",        
 >         "object"   : "<the target object>"
 >      }
@@ -84,7 +83,7 @@ Though the non-local schema references are no longer included, it is still not p
 > }
 > ```
 
-If the `logical_schema` field of a target description is defined, it is not necessary to provide the fields `database`, `schema`, or `revalidate`. In this case, there is a deployment dependency to a logical schema definition \(described in `.hdblogicalschema` files\). The logical schema definition contains the schema name that is actually used; it must be different from the name of the container schema.
+If the `logical_schema` field of a target description is defined, it is not necessary to provide the fields `schema`, or `revalidate`. In this case, there is a deployment dependency to a logical schema definition \(described in `.hdblogicalschema` files\). The logical schema definition contains the schema name that is actually used; it must be different from the name of the container schema.
 
 If the target description does not contain the `logical_schema` field and the `schema` field is omitted, too, then the synonym points to a container-local object. In this case, the referenced object is considered as a deployment dependency unless the `revalidate` field is set to <code>“false”</code>. The `revalidate` field is optional and defaults to <code>“true”</code> for this case.
 
@@ -95,9 +94,7 @@ If the `schema` field of a target description is defined, then the referenced ta
 > ### Restriction:  
 > The `revalidate` field is not allowed if the `schema` field is defined.
 
-If the `database` field of a target description is defined, then the synonym points to an object inside a remote database in a multi-tenant database-container setup.
-
-If the `"remote"` field of a target description is defined, then a `"database"` cannot be specified. Note that the referenced target `"object"` is **not** regarded as an HDI-managed run-time object, is therefore not considered during dependency management.
+If the `"remote"` field of a target description is defined, then the referenced target `"object"` is **not** regarded as an HDI-managed run-time object and, as a result, is not considered during dependency management.
 
 With these two configuration files, the synonym `com.sap.hana.example::DUMMY` for the table `SYS.DUMMY` is fully defined, and the procedure can be deployed. In this way, you can access non-local schema references and configure the synonyms to match the local deployment database structure without modifying any sources **except** the synonym configurations.
 
@@ -138,5 +135,5 @@ In the configuration file for the HDI container \(`.hdiconfig`\), the plug-in co
 
 [Logical Schemas \(.hdblogicalschema and .hdblogicalschemaconfig\)](logical-schemas-hdblogicalschema-and-hdblogicalschemaconfig-fa9cda8.md "Transforms a design-time logical-schema definition into run-time database objects that can be used by synonyms and so on.")
 
-[Templates for HDI Configuration Files (SAP HANA Cloud Database Developer Guide (SAP Business App Studio))](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/7ef53fb04ecc49a3ae647c21a0736994.html "The HDI Deployer implements a template mechanism for HDI configuration files.") :arrow_upper_right:
+[Templates for HDI Configuration Files (SAP HANA Cloud Database Developer Guide (SAP Business App Studio))](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/7ef53fb04ecc49a3ae647c21a0736994.html "The HDI Deployer implements a template mechanism for HDI configuration files.") :arrow_upper_right:
 

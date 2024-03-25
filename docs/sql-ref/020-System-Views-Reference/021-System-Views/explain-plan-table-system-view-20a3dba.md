@@ -802,7 +802,7 @@ Displays the monitoring view access through scanning.
 
 [ALTER SYSTEM \{PIN | UNPIN\} SQL PLAN CACHE ENTRY Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-pin-unpin-sql-plan-cache-entry-statement-system-management-68e2f7a.md "Provides a runtime mechanism to bind the target query and hints to the Hint Table to force the compilation of the target query with the hint.")
 
-[EXPLAIN PLAN for Call](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/7aabea5031134d2192f7022bc390fce6.html "") :arrow_upper_right:
+[EXPLAIN PLAN for Call](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7aabea5031134d2192f7022bc390fce6.html "") :arrow_upper_right:
 
-[EXPLAIN PLAN for Table User-Defined Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/de08addfcf2242c9a6acea09620aa889.html "") :arrow_upper_right:
+[EXPLAIN PLAN for Table User-Defined Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/de08addfcf2242c9a6acea09620aa889.html "") :arrow_upper_right:
 

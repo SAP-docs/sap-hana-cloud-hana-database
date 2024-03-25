@@ -27,11 +27,11 @@ An HDI container administrator can import an HDI container from a Cloud store.
 
 ## Context
 
-The HDI container administrator can import a source container from a Cloud store, for example, Amazon Simple Storage Service \(Amazon S3\) or Azure Cloud Storage, by calling the built-in procedure `C2#DI.IMPORT_CONTAINER_FOR_COPY`. This procedure expects as input a table containing any necessary parameters.
+The HDI container administrator can import a source container from a Cloud store, for example, Amazon Simple Storage Service \(Amazon S3\) or Azure Cloud Storage, by calling the built-in procedure <code><i class="varname">&lt;target_container name&gt;</i>#DI.IMPORT_CONTAINER_FOR_COPY</code>. The procedure expects as input a table containing any necessary parameters.
 
 The import procedure removes the contents of the target container, writes the data from the Cloud store to the target container, and runs a make. Any existing objects and data in the target container will be deleted before the import procedure starts. After the import procedure has completed successfully, the target container will be a copy of the source container including all the data of the original run-time schema.
 
-To import a container for copy purposes from a Cloud Store such as Amazon S3, Microsoft Azure, Google Cloud Platform, or SAP HANA Data Lake Cloud files, perform the following steps:
+To import a container *<source\_container\_name\>* for copy purposes from a Cloud Store such as Amazon S3, Microsoft Azure, Google Cloud Platform, or SAP HANA Data Lake Cloud files, perform the following steps:
 
 
 
@@ -44,37 +44,37 @@ To import a container for copy purposes from a Cloud Store such as Amazon S3, Mi
 2.  Prepare the container import.
 
     > ### Note:  
-    > The target system should be the same Cloud version as the source system \(or more recent\), and the target HDI container must already exist, or be created before the import operation. If the target HDI container is not empty, the content is overwritten.
+    > The target system should be the same Cloud version as the source system \(or more recent\), and the target HDI container *<target\_container\_name\>* must already exist, or be created before the import operation, for example, by an HDI container-group administrator. If the target HDI container is not empty, the content is overwritten.
 
     Working with the HDI container API, open an SQL console and connect to the target system as an HDI container administrator user.
 
 3.  Set up any required dependencies and privileges.
 
-    All external objects referenced by design-time objects in the imported container \(as well as the remote container\(s\) in which the external objects are located\) must already be available in the target database and accessible to the object owner of the imported container when the import operation starts. So, if necessary, grant the object owner <code><i class="varname">&lt;ContainerName&gt;</i>#OO</code> of the imported container any privileges required for access to the external objects in any remote containers.
+    All external objects referenced by design-time objects in the imported container \(as well as the remote container\(s\) in which the external objects are located\) must already be available in the target database and accessible to the object owner of the imported container when the import operation starts. So, if necessary, grant the object owner <code><i class="varname">&lt;source_container_name&gt;</i>#OO</code> of the imported container any privileges required to access the external objects in any remote containers.
 
     > ### Note:  
-    > If remote container "C3" exposes a role for enabling cross-container access, this role must be granted to the dependent container "C2"’s user `C2#OO`. The role can be granted to user `C2#OO` either by a role administrator \(`ROLE ADMIN`\) or by using the HDI Container API for role assignment.
+    > If remote container *<remote\_container\_name\>* exposes a role for enabling cross-container access, this role must be granted to the dependent target container’s user <code><i class="varname">&lt;target_container_name&gt;</i>#OO</code>. The role can be granted to user <code><i class="varname">&lt;target_container_name&gt;</i>#OO</code> either by a role administrator \(`ROLE ADMIN`\) or by using the HDI **container** API for role assignment.
     > 
-    > If remote container "C3" does not expose a role, the required privileges must be granted to the dependent container "C2"’s user `C2#OO` by other means, for example, using the HDI Container API for granting schema privileges.
+    > If remote container *<remote\_container\_name\>* does not expose a role, the required privileges must be granted to the dependent target container’s user <code><i class="varname">&lt;target_container_name&gt;</i>#OO</code> by other means, for example, using the HDI **container** API for granting schema privileges.
 
 4.  Import the container.
 
     > ### Note:  
-    > If the HDI container you want to import \(for example, container C2\) has dependencies to objects in another container \(for example, in container C3\), then you need to import the other container \(C3\) first and set up any required privileges, as described above.
+    > If the HDI container you want to import \(for example, *<source\_container\_name\>*\) has dependencies to objects in another remote container \(for example, in *<remote\_container\_name\>*\), then you need to import *<remote\_container\_name\>* first and set up any required privileges, as described above.
 
     Working with the HDI container API, call the container's `IMPORT_CONTAINER_FOR_COPY` procedure with the Cloud path you generated in a previous step, as illustrated in the following example:
 
-    Working with the HDI **Container** API, open an SQL console and run the following SQL code:
+    Working with the HDI **Container** API, open an SQL console and run the following SQL code after replacing the various PSE and container names \(for example, *<source\_container\_name\>* and *<source\_container\_name\>*\) with the names of your source and target containers:
 
     ```
     CREATE LOCAL TEMPORARY COLUMN TABLE #PARAMETERS LIKE _SYS_DI.TT_PARAMETERS; 
     INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('source_path', 's3-<region>://<access_key>:<secret_key>@<bucket_name>/<object_id>');
-    INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('original_container_name', '<CONTAINER_NAME>'); 
-    grant REFERENCES on PSE <PSE name> to <container name>; -- for authentication via credential stored in the PSE (only for HDLFS)
-    grant REFERENCES on PSE <PSE name> to <container name>#DI; -- for authentication via credential stored in the PSE (only for HDLFS) 
-    grant REFERENCES on PSE <PSE name> to <container name>#OO; -- for authentication via credential stored in the PSE (only for HDLFS) 
-    INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('credential', '<credential purpose>'); -- optional for authentication via credential stored in the PSE (required for HDLFS and GCS)
-    CALL <TARGET_CONTAINER_NAME>#DI.IMPORT_CONTAINER_FOR_COPY('', '', #PARAMETERS, ?, ?, ?);
+    INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('original_container_name', '<source_container_name>'); 
+    grant REFERENCES on PSE <PSE_name> to <target_container_name>; -- for authentication via credential stored in the PSE (only for HDLFS)
+    grant REFERENCES on PSE <PSE_name> to <target_container_name>#DI; -- for authentication via credential stored in the PSE (only for HDLFS) 
+    grant REFERENCES on PSE <PSE_name> to <target_container_name>#OO; -- for authentication via credential stored in the PSE (only for HDLFS) 
+    INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('credential', '<credential_purpose>'); -- optional for authentication via credential stored in the PSE (required for HDLFS and GCS)
+    CALL <target_container_name>#DI.IMPORT_CONTAINER_FOR_COPY('', '', #PARAMETERS, ?, ?, ?);
     DROP TABLE #PARAMETERS;
     ```
 

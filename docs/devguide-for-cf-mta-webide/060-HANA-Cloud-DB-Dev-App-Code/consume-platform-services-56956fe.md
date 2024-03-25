@@ -36,7 +36,7 @@
     > `requirements.txt`
     > 
     > ```
-    > Flask==0.12.2
+    > Flask==3.0.0
     > cfenv==0.5.3
     > ```
 

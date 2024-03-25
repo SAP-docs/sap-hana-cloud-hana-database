@@ -84,7 +84,7 @@ Displays the name of the LDAP group.
 
 <a name="loio5f1dffe49b484f9c88ba57c0340d6020__section_jgs_k1p_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

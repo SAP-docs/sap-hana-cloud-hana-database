@@ -624,11 +624,11 @@ Setting the value of the APPLICATION\_SOURCE is only available via internal APIs
 
 [SAP Note 2873396](https://me.sap.com/notes/2873396)
 
-[Controlling Parallel Execution of SQL Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/5c012ca1def64bceb5f29028325193bd.html "Job management takes place in the HANA worker framework and is handled by the JobExecutor which is a job queueing and dispatching subsystem.") :arrow_upper_right:
+[Controlling Parallel Execution of SQL Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5c012ca1def64bceb5f29028325193bd.html "Job management takes place in the HANA worker framework and is handled by the JobExecutor which is a job queueing and dispatching subsystem.") :arrow_upper_right:
 
 [SQL Statements](../../010-SQL-Reference/012-SQL-Statements/sql-statements-20a6791.md "SAP HANA supports many SQL statements to allow you to perform such tasks as create database objects, administer your system, and manipulate data.")
 
-[EXECUTE IMMEDIATE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/093c4fd307064f838cb582555c187b9e.html "") :arrow_upper_right:
+[EXECUTE IMMEDIATE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/093c4fd307064f838cb582555c187b9e.html "") :arrow_upper_right:
 
-[Explicit Parallel Execution](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8db200a4f585490c81c4930689ec1a5c.html "") :arrow_upper_right:
+[Explicit Parallel Execution](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/8db200a4f585490c81c4930689ec1a5c.html "") :arrow_upper_right:
 

@@ -228,6 +228,11 @@ BINARY
 
 Table data is exported in an internal binary format. Exporting in BINARY RAW format is orders of magnitude faster than exporting the same table in CSV format. Only column non-temporary tables can be exported in binary format. Row tables are always exported in CSV format regardless of the format specified. If *<binary\_type\>* is not specified, RAW \(default\) is used. BINARY data is compatible between SAP HANA on-premise and cloud systems.
 
+> ### Note:  
+> Feature incompatibilities between SAP HANA on-premise and cloud systems may lead to import rejections. Generally, importing BINARY \(DATA or RAW\) exports from a newer version of SAP HANA into an older one is not feasible and may be declined. For additional information, consult the *SAP HANA Cloud Migration Guide*.
+
+
+
 </td>
 </tr>
 <tr>
@@ -930,7 +935,7 @@ EXPORT IMEX_DEMO."*" INTO 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/IMEX_D
 **Related Information**  
 
 
-[Security Recommendations for SAP HANA Database](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/bc54d87673bc484faadb8330f43edc40.html "Recommendations to help you operate and configure the SAP HANA database securely") :arrow_upper_right:
+[Security Recommendations for SAP HANA Database](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/bc54d87673bc484faadb8330f43edc40.html "Recommendations to help you operate and configure the SAP HANA database securely") :arrow_upper_right:
 
 [EXPORT INTO Statement \(Data Import Export\)](export-into-statement-data-import-export-6a6f59b.md "Exports a table or view into a single-file, multi-file, or directory.")
 
@@ -945,4 +950,6 @@ EXPORT IMEX_DEMO."*" INTO 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/IMEX_D
 [SAP Note 2907201](https://me.sap.com/notes/2907201 "Importing Data From Compressed Format Throws Error: &quot;Archive is incomplete&quot;")
 
 [CREATE CREDENTIAL Statement \(Access Control\)](create-credential-statement-access-control-20d3f46.md "Creates a component-specific or application-specific credential.")
+
+[Migrating to SAP HANA Cloud](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-migration-guide/migrating-to-sap-hana-cloud)
 

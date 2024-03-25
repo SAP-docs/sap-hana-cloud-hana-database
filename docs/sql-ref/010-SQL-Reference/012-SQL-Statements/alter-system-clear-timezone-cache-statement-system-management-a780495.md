@@ -92,5 +92,5 @@ ALTER SYSTEM CLEAR TIMEZONE CACHE DATASET 'sap';
 **Related Information**  
 
 
-[TIMEZONES System View](../../020-System-Views-Reference/021-System-Views/timezones-system-view-adeba8e.md "Provides information about the timezones which are available together with their originating data set.")
+[TIMEZONES System View](../../020-System-Views-Reference/021-System-Views/timezones-system-view-adeba8e.md "Provides information about the available time zones, together with their originating data set.")
 

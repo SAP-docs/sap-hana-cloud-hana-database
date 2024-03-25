@@ -128,9 +128,9 @@ You can also download the output data to `.csv` files.
 **Related Information**  
 
 
-[Data Analysis](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2023_4_QRC/en-US/42beb7bab4484130958ef62ee7b031aa.html "After you have modeled a calculation view, you can analyze its output.") :arrow_upper_right:
+[Data Analysis](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2024_1_QRC/en-US/42beb7bab4484130958ef62ee7b031aa.html "After you have modeled a calculation view, you can analyze its output.") :arrow_upper_right:
 
-[Configuring Data Preview Behavior](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2023_4_QRC/en-US/92883c2b13c74649b183590c4b5744ae.html "You can configure different preview options.") :arrow_upper_right:
+[Configuring Data Preview Behavior](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2024_1_QRC/en-US/92883c2b13c74649b183590c4b5744ae.html "You can configure different preview options.") :arrow_upper_right:
 
 [Create Calculation Views](create-calculation-views-5aeb56c.md "Use a graphical editor to create calculation views that depict complex business scenarios.")
 

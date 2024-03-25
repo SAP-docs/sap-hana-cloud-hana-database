@@ -178,7 +178,7 @@ NVARCHAR\(128\)
 </td>
 <td valign="top">
 
-Displays the transaction type; USER, VERSION GARBAGE COLLECTION, DDL VERSION GARBAGE COLLECTION, INTERNAL, or EXTERNAL.
+Displays the transaction type: USER, VERSION GARBAGE COLLECTION, INTERNAL, EXTERNAL, REDO LOG, APPLICATION\_LOCK.
 
 </td>
 </tr>
@@ -275,12 +275,29 @@ ACQUIRED\_LOCK\_COUNT
 </td>
 <td valign="top">
 
-INTEGER
+BIGINT
 
 </td>
 <td valign="top">
 
 Displays the number of acquired locks in the transaction.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ACQUIRED\_APPLICATION\_LOCK\_COUNT
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the number of acquired application locks in the transaction.
 
 </td>
 </tr>
@@ -484,13 +501,13 @@ Displays whether logging is enabled for the transaction \(TRUE/FALSE\).
 
 [M\_TRANS\_TOKENS System View](m-trans-tokens-system-view-f760316.md "Provides information about all active transaction tokens.")
 
-[Workload in the Context of SAP HANA](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/752addaa767e4f0397f417c6468f3fdb.html "Workload in the context of SAP HANA can be described as a set of requests with common characteristics.") :arrow_upper_right:
+[Workload in the Context of SAP HANA](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/752addaa767e4f0397f417c6468f3fdb.html "Workload in the context of SAP HANA can be described as a set of requests with common characteristics.") :arrow_upper_right:
 
-[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
+[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
 
-[COMMIT and ROLLBACK](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/e4e1b570e4f04b93ae1538246894b496.html "The COMMIT and ROLLBACK commands are supported natively in SQLScript.") :arrow_upper_right:
+[COMMIT and ROLLBACK](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/e4e1b570e4f04b93ae1538246894b496.html "The COMMIT and ROLLBACK commands are supported natively in SQLScript.") :arrow_upper_right:
 
-[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
+[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
 
-[DECLARE EXIT HANDLER](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/ebc8b804be2e44789d767895f32503cf.html "") :arrow_upper_right:
+[DECLARE EXIT HANDLER](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/ebc8b804be2e44789d767895f32503cf.html "") :arrow_upper_right:
 

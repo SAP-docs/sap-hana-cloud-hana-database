@@ -52,7 +52,7 @@ Displays the reserved keyword.
 
 <a name="loiof4204d3e6f5b1014ade0e12064d00743__section_a1c_fbp_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

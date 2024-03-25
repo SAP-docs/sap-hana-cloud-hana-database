@@ -36,7 +36,7 @@ Specifies the name of the group to check
 
 </dd><dt><b>
 
-*<client\_IP\_address\>*
+*<client\_ip\_address\>*
 
 </b></dt>
 <dd>
@@ -53,6 +53,9 @@ Specifies the client IP address to check. If not specified or NULL, the actual I
 <dd>
 
 Specifies the login time to check. If not specified or NULL, the actual time is used.
+
+> ### Note:  
+> This parameter is reserved for future use and will be ignored.
 
 
 
@@ -76,37 +79,11 @@ Specifies the name of the application to check. If not specified or NULL, the ap
 
 ## Description
 
-Validates all connect restrictions, active and inactive, of a user group. A NULL value is returned if a condition doesn’t exist in a connect restriction.
+Validates all individual connect restrictions, active and inactive, of a user group. A connect restriction that is disabled always returns TRUE in the IS\_CONNECT\_ALLOWED column. If a connect restriction does not include a particular connect restriction type, the corresponding column value is NULL.
 
-Specification of the parameter name is optional when specifying parameter values in the designated left to right order. For example,
+When executing the function, you can use the named parameters calling convention to only specify a subset of parameters.
 
-```
-SYS.VALIDATE_USERGROUP_CONNECT_RESTRICTION_DETAILS('MY_GROUP', '1.2.3.4');
-```
-
-is valid, but
-
-```
-SYS.VALIDATE_USERGROUP_CONNECT_RESTRICTION_DETAILS('MY_GROUP', 'hdbsql');
-```
-
-is invalid because it skips the *<client\_IP\_address\>* parameter, violating the preservation of the left to right parameter requirement.
-
-The order requirement is waived if you preface each parameter value with the parameter name, but with this scenario all parameters are required. For example,
-
-```
-SYS.VALIDATE_USERGROUP_CONNECT_RESTRICTION_DETAILS(application_name=>'hdbsql',
-   usergroup_name=>'MY_GROUP', client_IP_address=>'1.2.3.4', CURRENT_TIMESTAMP);
-```
-
-is valid because each value is specified, but
-
-```
-SYS.VALIDATE_USERGROUP_CONNECT_RESTRICTION_DETAILS(application_name=>'hdbsql',
-   usergroup_name=>'MY_GROUP');
-```
-
-is invalid because two parameter names are not specified.
+To verify whether a user will be able to successfully connect, use the VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION function.
 
 
 
@@ -334,4 +311,6 @@ NULL
 [CREATE USERGROUP Statement \(Access Control\)](../012-SQL-Statements/create-usergroup-statement-access-control-9869125.md "Creates a usergroup.")
 
 [ALTER USERGROUP Statement \(Access Control\)](../012-SQL-Statements/alter-usergroup-statement-access-control-aa94ca8.md "Alters a usergroup.")
+
+[VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION Function \(Security\)](validate-usergroup-connect-restriction-function-security-c7a96e0.md "Displays whether a connect attempt would be possible given the active connect restrictions of a user group.")
 

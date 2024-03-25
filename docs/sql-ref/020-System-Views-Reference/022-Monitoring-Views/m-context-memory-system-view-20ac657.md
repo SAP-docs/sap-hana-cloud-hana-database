@@ -505,6 +505,23 @@ Displays the name of the SAP HANA component of this allocator.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+WORKLOAD\_CLASS\_NAME
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the name of the effective workload class.
+
+</td>
+</tr>
 </table>
 
 
@@ -528,9 +545,9 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [M\_CATALOG\_MEMORY System View](m-catalog-memory-system-view-20a994e.md "Provides memory usage information by catalog manager.")
 
-[Memory Sizing](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bdf26308bb571014b7bcd3bcd586aecd.html "Memory sizing is the process of estimating in advance the amount of memory that will be required to run a certain workload on an SAP HANA database. To understand memory sizing, several questions need to be answered.") :arrow_upper_right:
+[Memory Sizing](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bdf26308bb571014b7bcd3bcd586aecd.html "Memory sizing is the process of estimating in advance the amount of memory that will be required to run a certain workload on an SAP HANA database. To understand memory sizing, several questions need to be answered.") :arrow_upper_right:
 
-[Memory Allocator Statistics](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/546bac9a6f924210aabd34dc90c00e05.html "Detailed information about memory consumption can be found by looking into allocator statistics.") :arrow_upper_right:
+[Memory Allocator Statistics](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/546bac9a6f924210aabd34dc90c00e05.html "Detailed information about memory consumption can be found by looking into allocator statistics.") :arrow_upper_right:
 
-[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
+[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
 

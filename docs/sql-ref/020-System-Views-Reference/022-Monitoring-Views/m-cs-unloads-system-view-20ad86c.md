@@ -213,5 +213,5 @@ Displays whether persistent memory is removed as part of the unload. Values are 
 
 [UNLOAD Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/unload-statement-data-manipulation-20fe92a.md "Unloads the column store table from memory.")
 
-[Load/Unload a Column Table into/from Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c133165bbb57101493c5fb19b5b8607f.html "Under normal circumstances, the SAP HANA database manages the loading and unloading of tables into and from memory automatically, the aim being to keep all relevant data in memory. However, you can manually load and unload individual tables, as well as load table columns if necessary.") :arrow_upper_right:
+[Load/Unload a Column Table into/from Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c133165bbb57101493c5fb19b5b8607f.html "Under normal circumstances, the SAP HANA database manages the loading and unloading of tables into and from memory automatically, the aim being to keep all relevant data in memory. However, you can manually load and unload individual tables, as well as load table columns if necessary.") :arrow_upper_right:
 

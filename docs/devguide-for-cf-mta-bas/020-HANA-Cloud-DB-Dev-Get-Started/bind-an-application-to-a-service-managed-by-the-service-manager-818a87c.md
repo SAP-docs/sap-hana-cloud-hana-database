@@ -45,11 +45,11 @@ To use the *SAP HANA PROJECTS* explorer in SAP Business Application Studio to bi
 
     1.  Add a connection to a target HDI container.
 
-        Use the <span class="SAP-icons"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard, choose the connection type *Existing HDI Container*, and select the managed service instance listed in the drop-down list of options, for example, *hdb\_db \(MyApp-hdidb-ws-ab123c\)*.
+        Use the <span class="SAP-icons-V5"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard, choose the connection type *Existing HDI Container*, and select the managed service instance listed in the drop-down list of options, for example, *hdb\_db \(MyApp-hdidb-ws-ab123c\)*.
 
     2.  Add a connection to a non-target HDI container.
 
-        Use the <span class="SAP-icons"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard, choose the connection type *Existing schema service instance*, and select the managed service instance listed in the drop-down list of options, for example, *MySchema managed-hana \(schema\)*.
+        Use the <span class="SAP-icons-V5"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard, choose the connection type *Existing schema service instance*, and select the managed service instance listed in the drop-down list of options, for example, *MySchema managed-hana \(schema\)*.
 
 
     The new connection is displayed in the list of database connections under the *Database Connections* node in the *SAP HANA PROJECTS* pane, for example, ![](images/BAS_icon_targetContainerNotBound_193ce0c.svg)*hdi\_db* or ![](images/BAS_icon_dependencyNotBound_1694e4a.svg)*cross-container-service-1*.

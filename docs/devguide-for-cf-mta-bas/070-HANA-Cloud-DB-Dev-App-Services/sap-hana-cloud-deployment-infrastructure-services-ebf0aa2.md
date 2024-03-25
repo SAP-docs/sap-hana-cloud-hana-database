@@ -102,6 +102,42 @@ In the application deployment descriptor \(`mtad.yaml`\), this would look like t
 
 
 
+### Reusing HDI Containers during Service Creation
+
+If a database has been cloned or a rebuild of the database is required as part of a disaster-recovery operation, an existing HDI container can be specified as the deployment target when creating a new service instance.
+
+To reuse an existing HDI container, it is necessary to specify that the target HDI container already exists when you create the service instance that applications will then bind to and use for deployment, for example, using the Boolean parameter `"reuse_hdi_container"`. You also need to provide the name of the target container that you want to reuse when you create the new shared HDI service instance, for example, using the paramter `"schema"`, as shown in the following example:
+
+> ### Sample Code:  
+> Service-Creation Parameters:
+> 
+> ```
+> cf create-service hana hdi-shared <Service Name> -c '{"reuse_hdi_container": "true", "schema": "<HDI container name>"}'
+> ```
+
+If the database was cloned and there is still an hdi-shared service instance available for the HDI container in the original database, a new service instance can be created using the original service instance as a template by providing the original service instance ID by means of the `"from_instance"` parameter, as shown in the following example.
+
+> ### Sample Code:  
+> Service-Creation Parameters:
+> 
+> ```
+> cf create-service hana hdi-shared <Service Name> -c '{"from_instance": "<source service instance ID>", "database_id" : "<target_database_id>" }'
+> ```
+
+In this example, the service instance-creation process retrieves all relevant information from the original service instance and creates a new service instance pointing to the existing HDI container in the cloned database instance.
+
+> ### Tip:  
+> In a Windows environment, it is necessaryto use the backslash \(\\\) to escape the quotes \("\) in the configuration options, as shown in the following example:
+
+> ### Sample Code:  
+> Service-Creation Parameters:
+> 
+> ```
+> cf create-service hana hdi-shared <Service Name> -c '{\"from_instance\": \"<source service instance ID>\", \"database_id\" : \"<target_database_id>\"}'
+> ```
+
+
+
 <a name="loioebf0aa26958443f58f86b862056862d4__section_oqq_s1b_5z"/>
 
 ## The “schema” Service Plan
@@ -265,7 +301,7 @@ In the Java example above, the `KEY` parameter for the retrieved entry expects a
 
 [Maintaining Multitarget Application Services in Cloud Foundry](maintaining-multitarget-application-services-in-cloud-foundry-33e3c59.md "In Cloud Foundry, applications can make use of services managed by a service broker.")
 
-[SAP HANA Secure-Store Interface Procedures and Parameters](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/a847b4da7f6b4e8c9af3bf5e39c8ecfe.html "A list of the parameters available for interaction with the SAP HANA Secure Store using the dedicated stored procedures.") :arrow_upper_right:
+[SAP HANA Secure-Store Interface Procedures and Parameters](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/a847b4da7f6b4e8c9af3bf5e39c8ecfe.html "A list of the parameters available for interaction with the SAP HANA Secure Store using the dedicated stored procedures.") :arrow_upper_right:
 
 [Managing Services Using the SAP BTP Cockpit \(SAP Service Manager\)](https://help.sap.com/docs/SERVICEMANAGEMENT/09cc82baadc542a688176dce601398de/cdce096d411242bcbfb9644d0860fd0f.html?version=Cloud)
 

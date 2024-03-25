@@ -202,6 +202,23 @@ Displays the ID of the record on which the lock is currently placed.
 <tr>
 <td valign="top">
 
+WAITING\_APPLICATION\_LOCK
+
+</td>
+<td valign="top">
+
+NVARCHAR\(128\)
+
+</td>
+<td valign="top">
+
+Displays the name of the application lock on which the lock is currently place.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 WAITING\_SCHEMA\_NAME
 
 </td>
@@ -280,7 +297,7 @@ NVARCHAR\(32\)
 </td>
 <td valign="top">
 
-Displays the lock type: RECORD, TABLE, or METADATA.
+Displays the lock type: RECORD, OBJECT, METADATA, or APPLICATION.
 
 </td>
 </tr>
@@ -310,5 +327,5 @@ Displays the lock mode: SHARED, EXCLUSIVE, or INTENTIONAL EXCLUSIVE.
 
 [SET TRANSACTION AUTOCOMMIT DDL Statement \(Transaction Management\)](../../010-SQL-Reference/012-SQL-Statements/set-transaction-autocommit-ddl-statement-transaction-management-d538d11.md "Specifies the auto commit property for DDL statements specific to the session.")
 
-[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
+[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
 

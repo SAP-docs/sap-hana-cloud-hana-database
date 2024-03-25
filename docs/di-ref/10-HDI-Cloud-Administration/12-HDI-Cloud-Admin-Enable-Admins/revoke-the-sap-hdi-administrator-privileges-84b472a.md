@@ -39,11 +39,11 @@ The database administrator `DBADMIN` can revoke the SAP HDI administrator privil
     Insert the following SQL code into the SQL console:
 
     > ### Note:  
-    > In the following code example, replace `NEW_HDI_ADMIN` with the name of the user from whom the HDI administrator privileges should be revoked.
+    > In the following code example, replace *<HDI\_admin\_username\>* with the name of the user from whom the HDI administrator privileges should be revoked.
 
     ```sql
     CREATE LOCAL TEMPORARY TABLE #PRIVILEGES LIKE _SYS_DI.TT_API_PRIVILEGES;
-    INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT 'NEW_HDI_ADMIN', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_DI_ADMIN_PRIVILEGES WHERE NOT (PRIVILEGE_NAME = 'SELECT' AND OBJECT_NAME LIKE 'T%');
+    INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT '<HDI_admin_username>', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_DI_ADMIN_PRIVILEGES WHERE NOT (PRIVILEGE_NAME = 'SELECT' AND OBJECT_NAME LIKE 'T%');
     CALL _SYS_DI.REVOKE_CONTAINER_GROUP_API_PRIVILEGES('_SYS_DI', #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     DROP TABLE #PRIVILEGES; 
     ```
@@ -52,7 +52,7 @@ The database administrator `DBADMIN` can revoke the SAP HDI administrator privil
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 
-5.  \(Optional\) Confirm that the `NEW_HDI_ADMIN` user is no longer able to call HDI API procedures in the `_SYS_DI` schema.
+5.  \(Optional\) Confirm that the *<HDI\_admin\_username\>* user is no longer able to call HDI API procedures in the `_SYS_DI` schema.
 
 
 

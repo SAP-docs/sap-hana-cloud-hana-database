@@ -25,7 +25,7 @@ The information in this section covers the following basic application-developme
 **Related Information**  
 
 
-[Enable Access to Objects in a Remote Classic Schema](enable-access-to-objects-in-a-remote-classic-schema-402944b.md "Use a synonym to enable access to objects in a remote schema that is not managed by your Cloud Foundry application (for example, ERP).")
+[Enable Access to Objects in a Classic \(non-HDI\) Schema](enable-access-to-objects-in-a-classic-non-hdi-schema-402944b.md "Use a synonym to enable access to objects in a database schema that is not managed by SAP HDI (for example, ERP).")
 
 [Enable Access to Objects in Another HDI Container](enable-access-to-objects-in-another-hdi-container-4adba34.md "Use a synonym to enable access to another HDI container.")
 

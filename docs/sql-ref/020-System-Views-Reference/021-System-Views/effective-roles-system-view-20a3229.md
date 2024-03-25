@@ -243,7 +243,7 @@ Displays whether the role was granted with WITH ADMIN OPTION: TRUE/FALSE.
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
-To search for effective \(directly or indirectly\) granted privileges and roles, respectively for a given user or role requires an equal predicate on USER\_NAME specifying an existing user name or an equal predicate on PRINCIPAL\_NAME specifying an existing user name or role name.
+To search for effective \(directly or indirectly\) privileges and roles, granted to a given user or role, requires an equal \(=\) predicate on USER\_NAME specifying an existing user name or an equal \(=\) predicate on PRINCIPAL\_NAME specifying an existing user name or role name.
 
 **Related Information**  
 
@@ -260,7 +260,7 @@ To search for effective \(directly or indirectly\) granted privileges and roles,
 
 [GRANTED\_ROLES System View](granted-roles-system-view-20a5c3b.md "Provides information about roles granted to users or other roles.")
 
-[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
+[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
 
-[System Views for Verifying Users' Authorization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/ddae823e3b27477ea4c949607eebc435.html "You can query several system views to get detailed information about exactly which privileges and roles users have and how they come to have them. This can help you to understand why a user is authorized to perform particular actions, access particular data, or not.") :arrow_upper_right:
+[System Views for Verifying Users' Authorization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/ddae823e3b27477ea4c949607eebc435.html "You can query several system views to get detailed information about exactly which privileges and roles users have and how they come to have them. This can help you to understand why a user is authorized to perform particular actions, access particular data, or not.") :arrow_upper_right:
 

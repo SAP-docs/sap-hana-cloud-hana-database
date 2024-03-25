@@ -2,25 +2,23 @@
 
 # Download and Consume Python Libraries
 
-A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.
+Python client libraries developed by SAP on the Python Package Index \(PyPI\).
 
 
 
 ## Context
 
-To download the SAP Python Client libraries, perform the following steps:
+A selection of SAP-specific and ready-to-use Python client libraries is available for download from the Python Package Index \(PyPI\). To download the SAP Python Client libraries, perform the following steps:
 
 
 
 ## Procedure
 
-1.  Download the ZIP archive `XS_PYTHON` from SAP Service Marketplace.
+1.  Download the client libraries from the Python Package Index \(PyPI\).
 
-    The `XS_PYTHON` ZIP archive is available for download on SAP Service Marketplace at the following location for those people with the required S-User ID:
+    The most recent versions of the SAP Python client libraries are available for download on the Python Package Index \(PyPI\). Newer client packages might require a more recent version of Python. For more information, see *Related Information* below.
 
-    *Service Marketplace* \> *Products* \> *Software download* \> *SUPPORT PACKAGES & PATCHES* \> *Search* \> *XS PYTHON 1*
-
-2.  Extract the contents of the `XS_PYTHON` archive into a folder in your local file system, for example `sap_dependencies`.
+2.  Extract the contents of the Python packages into a folder in your local file system, for example `sap_dependencies`.
 
     The overall recommendation for applications is for them to be deployed as self-contained. For this reason, applications need to include all of their dependent packages so that the staging process does not need to make any network calls. The Python build pack provides a mechanism for this; applications can make provision for their dependencies by creating a `vendor/` directory in the application's root directory and executing the following command to download \(*\-d*\) the dependent packages and save them in the `vendor/` directory:
 
@@ -44,4 +42,6 @@ To download the SAP Python Client libraries, perform the following steps:
 [SAP Software Center](https://launchpad.support.sap.com/#/softwarecenter)
 
 [pip download](https://pip.pypa.io/en/stable/reference/pip_download/)
+
+[The Python Package Index \(PyPI\)](https://pypi.org/search/?q=sap_instance_manager)
 

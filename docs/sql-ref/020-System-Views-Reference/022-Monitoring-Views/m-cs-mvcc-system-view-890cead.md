@@ -555,7 +555,7 @@ Displays the number of available sparse timestamp blocks for successive operatio
 
 [M\_MVCC\_OVERVIEW System View](m-mvcc-overview-system-view-f405b73.md "Provides an overview of the row-store Multiversion Concurrency Control (MVCC) manager.")
 
-[HOST_MVCC_OVERVIEW View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/4ea7cb57d6954278ab2eee175705d144.html "Specifies the MVCC overview per host.") :arrow_upper_right:
+[HOST_MVCC_OVERVIEW View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/4ea7cb57d6954278ab2eee175705d144.html "Specifies the MVCC overview per host.") :arrow_upper_right:
 
 [M\_MVCC\_TABLES System View](m-mvcc-tables-system-view-20b5e31.md "Provides statistics for the row-store Multiversion Concurrency Control (MVCC) manager.")
 

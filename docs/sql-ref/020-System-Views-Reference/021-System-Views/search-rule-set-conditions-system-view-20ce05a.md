@@ -2,7 +2,7 @@
 
 # SEARCH\_RULE\_SET\_CONDITIONS System View
 
-Shows conditions to available search rule sets.
+Shows information on available search rule set conditions.
 
 
 
@@ -159,7 +159,7 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Displays the value the user input is compared to, if condition is EQUALS.
+Displays the value the user input is compared to, if the condition is EQUALS.
 
 </td>
 </tr>
@@ -176,7 +176,7 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Displays the user input is replaced by this value if the action is REPLACE.
+Displays the user input that is replaced by this value if the action is REPLACE.
 
 </td>
 </tr>
@@ -203,14 +203,14 @@ Displays the action that is performed when the condition is true: SKIP COLUMN, S
 
 <a name="loio20ce05a3751910149c86ae812bde572e__section_msp_yrz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
 
-[SEARCH\_RULE\_SETS System View](search-rule-sets-system-view-20ceb95.md "Shows information about available search rule sets.")
+[SEARCH\_RULE\_SETS System View](search-rule-sets-system-view-20ceb95.md "Shows information on available search rule sets.")
 
-[Search in Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/1eb7673ed88b4aa9b2cb43959bbbbde0.html "This feature offers an efficient way to search by key value pairs in table variables.") :arrow_upper_right:
+[Search in Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/1eb7673ed88b4aa9b2cb43959bbbbde0.html "This feature offers an efficient way to search by key value pairs in table variables.") :arrow_upper_right:
 

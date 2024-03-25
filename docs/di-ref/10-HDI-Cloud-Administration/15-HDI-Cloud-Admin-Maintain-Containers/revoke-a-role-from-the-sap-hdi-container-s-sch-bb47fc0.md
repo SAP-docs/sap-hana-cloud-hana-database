@@ -10,7 +10,7 @@ Use a role to disable access to an SAP HDI container's schema objects.
 
 ## Context
 
-In SAP HANA Deployment Infrastructure \(HDI\), users who would like to consume objects deployed to an SAP HDI container \(for example, named “C”\) need to be granted the appropriate access privileges for the container's schema. The privileges for specific objects in the target schema \(for example, `C#DI`\), granted by a role in the schema, can be revoked with the `REVOKE_CONTAINER_SCHEMA_ROLES` API:
+In SAP HANA Deployment Infrastructure \(HDI\), users who would like to consume objects deployed to an SAP HDI container \(for example, named *<container\_name\>*\) need to be granted the appropriate access privileges for the container's schema. The privileges for specific objects in the target schema \(for example, <code><i class="varname">&lt;container_name&gt;</i>#DI</code>\), granted by a role in the schema, can be revoked with the `REVOKE_CONTAINER_SCHEMA_ROLES` API:
 
 To revoke a role and disable access privileges for specific objects in the container from a user, perform the following steps:
 
@@ -20,7 +20,7 @@ To revoke a role and disable access privileges for specific objects in the conta
 
 ## Procedure
 
-1.  In an SQL console, connect to the database with an administrator of the target HDI container \(for example, “C”\).
+1.  In an SQL console, connect to the database with an administrator of the target HDI container \(for example, *<container\_name\>*\).
 
 2.  Open the SQL editor for this database.
 
@@ -31,21 +31,21 @@ To revoke a role and disable access privileges for specific objects in the conta
     > ### Sample Code:  
     > ```sql
     > CREATE LOCAL TEMPORARY COLUMN TABLE #ROLES LIKE _SYS_DI.TT_SCHEMA_ROLES;
-    > INSERT INTO #ROLES ( ROLE_NAME, PRINCIPAL_SCHEMA_NAME, PRINCIPAL_NAME ) VALUES ( 'myrole', '', 'NEW_CONTAINER_CONSUMER' );
-    > CALL C#DI.REVOKE_CONTAINER_SCHEMA_ROLES(#ROLES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > INSERT INTO #ROLES ( ROLE_NAME, PRINCIPAL_SCHEMA_NAME, PRINCIPAL_NAME ) VALUES ( '<myrole'>, '', '<NEW_CONTAINER_CONSUMER>' );
+    > CALL <container_name>#DI.REVOKE_CONTAINER_SCHEMA_ROLES(#ROLES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > DROP TABLE #ROLES; 
     > ```
 
-    1.  In the `INSERT` statement in line 2, adjust the name of the consumer user `NEW_CONTAINER_CONSUMER` and the role "`myrole`" to suit your needs.
+    1.  In the `INSERT` statement in line 2, replace *<NEW\_CONTAINER\_CONSUMER\>* and the role "`myrole`" with the name of your container and role you want to revoke, respectively.
 
-    2.  In the `CALL` statement in line 3, adjust the schema name of the container “C”'s API schema C\#DI.
+    2.  In the `CALL` statement in line 3, replace *<container\_name\>* in the container's API schema name \(<code><i class="varname">&lt;container_name&gt;</i>#DI</code>\) with the name of your container.
 
 
-4.  Execute the SQL code.
+4.  Run the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 
-5.  \(Optional\) Confirm that the `NEW_CONTAINER_CONSUMER` can no longer access the database objects specified by the role in the container's schema.
+5.  \(Optional\) Confirm that the *<NEW\_CONTAINER\_CONSUMER\>* can no longer access the database objects specified by the role in *<container\_name\>*'s schema.
 
 
 **Related Information**  

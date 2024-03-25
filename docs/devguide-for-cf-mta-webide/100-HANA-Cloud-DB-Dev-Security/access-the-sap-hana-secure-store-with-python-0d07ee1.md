@@ -336,7 +336,7 @@ The following examples show how to use an multitarget Python application to main
 
 [SAP HANA Secure-Store Interface Procedures and Parameters](sap-hana-secure-store-interface-procedures-and-parameters-a847b4d.md "A list of the parameters available for interaction with the SAP HANA Secure Store using the dedicated stored procedures.")
 
-[Download and Consume Python Libraries](../060-HANA-Cloud-DB-Dev-App-Code/download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
+[Download and Consume Python Libraries](../060-HANA-Cloud-DB-Dev-App-Code/download-and-consume-python-libraries-842824f.md "Python client libraries developed by SAP on the Python Package Index (PyPI).")
 
 [Connect to SAP HANA from Python \(Client Programming Reference\)](https://help.sap.com/viewer/f1b440ded6144a54ada97ff95dac7adf/2.latest/en-US/d12c86af7cb442d1b9f8520e2aba7758.html)
 

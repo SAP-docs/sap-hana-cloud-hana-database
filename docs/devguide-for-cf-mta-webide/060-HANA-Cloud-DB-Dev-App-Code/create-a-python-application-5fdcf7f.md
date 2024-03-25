@@ -16,7 +16,7 @@ This topic will guide you through the steps required to create a simple Python a
     > `runtime.txt`
     > 
     > ```
-    > python-3.6.3
+    > python-3.9.18
     > ```
 
 3.  Specify Flask as a dependency for the Python application.
@@ -27,7 +27,7 @@ This topic will guide you through the steps required to create a simple Python a
     > Flask Dependency in `requirements.txt`
     > 
     > ```
-    > Flask==0.12.2
+    > Flask==3.0.0
     > ```
 
 4.  Create a `manifest.yml` file in the `pyapp` directory, which describes the Python application and how to deploy and run it in the target run-time environment.

@@ -93,7 +93,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether this view is read-only or updatable: TRUE/FALSE.
+Displays whether this view is read-only: TRUE/FALSE.
 
 </td>
 </tr>
@@ -341,7 +341,7 @@ Displays the creation time.
 
 <a name="loio2102bf28751910149d0a817a65699956__section_arb_m11_fzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -362,5 +362,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [VIEW\_PARAMETERS System View](view-parameters-system-view-45b86e8.md "Provides information about view parameters.")
 
-[System Views for Monitoring Partitions](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/9d829883639d445884cc0d9210f14394.html "A number of system views allow you to monitor your partitions.") :arrow_upper_right:
+[System Views for Monitoring Partitions](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/9d829883639d445884cc0d9210f14394.html "A number of system views allow you to monitor your partitions.") :arrow_upper_right:
 

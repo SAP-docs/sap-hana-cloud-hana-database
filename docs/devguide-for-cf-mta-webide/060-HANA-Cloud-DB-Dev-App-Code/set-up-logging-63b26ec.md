@@ -14,10 +14,10 @@ To add logging support, use the SAP Python library `sap_cf_logging`.
     > requirements.txt
     > 
     > ```
-    > Flask==0.12.2
+    > Flask==3.0.0
     > cfenv==0.5.3
-    > hdbcli
-    > xssec==1.0.0
+    > hdbcli==2.19.21
+    > sap-xssec==4.1.0
     > sap_cf_logging==3.0.0
     > 
     > ```
@@ -35,7 +35,7 @@ To add logging support, use the SAP Python library `sap_cf_logging`.
     > from flask import request
     > from flask import abort
     > 
-    > import xssec
+    > from sap import xssec
     > from hdbcli import dbapi
     > from cf_logging import flask_logging
     > 
@@ -101,5 +101,5 @@ To add logging support, use the SAP Python library `sap_cf_logging`.
 **Related Information**  
 
 
-[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
+[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "Python client libraries developed by SAP on the Python Package Index (PyPI).")
 

@@ -76,7 +76,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the schema that the task was created in.
+Displays the schema where the task was created.
 
 </td>
 </tr>
@@ -297,7 +297,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-If the task was created with a procedure instead of a plan, contains the schema name of the stored procedure.
+If the task was created with a procedure instead of a plan, it contains the schema name of the stored procedure.
 
 </td>
 </tr>
@@ -314,7 +314,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-If the task was created with a procedure instead of a plan, contains the name of the stored procedure.
+If the task was created with a procedure instead of a plan, it contains the name of the stored procedure.
 
 </td>
 </tr>
@@ -375,7 +375,7 @@ Displays the security model for the task: DEFINER/INVOKER.
 
 <a name="loio0bbbcb8a7ed54b7fb0efb875dd7e26f1__section_h5x_pyz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

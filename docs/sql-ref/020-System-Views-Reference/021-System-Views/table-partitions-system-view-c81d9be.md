@@ -224,23 +224,6 @@ Specifies the exclusive maximum value of the range partition at the second level
 <tr>
 <td valign="top">
 
-IS\_CURRENT
-
-</td>
-<td valign="top">
-
-NVARCHAR\(5\)
-
-</td>
-<td valign="top">
-
-Displays whether the partition is the current partition: TRUE/FALSE.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 UNIQUE\_CONSTRAINTS
 
 </td>
@@ -374,19 +357,51 @@ Displays the group name.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+DYNAMIC\_RANGE\_INTERVAL
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+Displays the interval value and type by which new partitions can be created dynamically.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_DYNAMIC
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+</td>
+<td valign="top">
+
+Displays whether a partition is dynamic: \(TRUE/FALSE\).
+
+</td>
+</tr>
 </table>
 
 
 
 <a name="loioc81d9beea383495c99ad48789b983708__section_epr_grq_xhb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
-You must own or have SELECT permission on the tables.
-
-To see table information, you must own or have SELECT permission on the tables.
+This view also requires the SELECT permission on the tables.
 
 **Related Information**  
 
@@ -405,5 +420,5 @@ To see table information, you must own or have SELECT permission on the tables.
 
 [Non-Heterogeneous Alter Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/non-heterogeneous-alter-partition-clauses-f7ae27c.md "Modifies the partitions of an existing table with a non-heterogeneous partitioning schema.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 

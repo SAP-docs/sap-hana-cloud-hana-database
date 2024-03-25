@@ -19,7 +19,7 @@ To configure container-specific parameters, perform the following steps:
 
 ## Procedure
 
-1.  In an SQL console, connect to the database with an administrator of the target HDI container \(for example, “C”\).
+1.  In an SQL console, connect to the database with an administrator of the target HDI container \(for example, *<container\_name\>*\).
 
 2.  Open the SQL editor for this database.
 
@@ -29,7 +29,7 @@ To configure container-specific parameters, perform the following steps:
     > ```sql
     > CREATE LOCAL TEMPORARY COLUMN TABLE #CONFIG_PARAMETERS LIKE _SYS_DI.TT_PARAMETERS; 
     > INSERT INTO #CONFIG_PARAMETERS (KEY, VALUE) VALUES ('make.max_parallel_jobs', '8');
-    > CALL C#DI.CONFIGURE_CONTAINER_PARAMETERS(#CONFIG_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > CALL <container_name>#DI.CONFIGURE_CONTAINER_PARAMETERS(#CONFIG_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > DROP TABLE #CONFIG_PARAMETERS; 
     > ```
 
@@ -45,10 +45,10 @@ To configure container-specific parameters, perform the following steps:
         ...
         ```
 
-    2.  Adjust the schema name of the container \(“C”\) in the `CALL` statement.
+    2.  In the `CALL` statement, replace *<container\_name\>* in the schema name of the container \(<code><i class="varname">&lt;container_name&gt;</i>#DI</code>\) with the name of your container.
 
 
-4.  Execute the SQL code.
+4.  Run the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 

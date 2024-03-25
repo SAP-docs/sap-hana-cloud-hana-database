@@ -59,7 +59,7 @@ NVARCHAR\(512\)
 </td>
 <td valign="top">
 
-Displays the name in the iss claim of the JWT tokens provided by this provider.
+Displays the name in the issuer claim of the JWT tokens provided by this provider.
 
 </td>
 </tr>
@@ -93,7 +93,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the user mapping is checked case sensitive: TRUE/FALSE.
+Displays whether the user mapping is case sensitive: TRUE/FALSE.
 
 </td>
 </tr>

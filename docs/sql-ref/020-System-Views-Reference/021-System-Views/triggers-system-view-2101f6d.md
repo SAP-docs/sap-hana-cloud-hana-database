@@ -269,6 +269,14 @@ Displays the time that the trigger was created.
 </tr>
 </table>
 
+
+
+<a name="loio2101f6db7519101493d39a89898b9480__section_eyy_tqv_11c"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

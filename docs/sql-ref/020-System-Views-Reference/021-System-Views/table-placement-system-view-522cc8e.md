@@ -261,7 +261,7 @@ INTEGER
 </td>
 <td valign="top">
 
-Sets the required number of replicas.
+Displays the value of the required number of replicas.
 
 </td>
 </tr>
@@ -278,26 +278,103 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Sets the allowed numa nodes.
+Displays the value of the allowed numa nodes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+REPLICA\_TYPE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+</td>
+<td valign="top">
+
+Displays the value of the allowed replica type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+REPLICA\_LOAD\_UNIT
+
+</td>
+<td valign="top">
+
+NVARCHAR\(7\)
+
+</td>
+<td valign="top">
+
+Displays the value of the LOAD\_UNIT of the replica.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+COMPUTE\_REPLICA\_COUNT
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the value of the required number of compute replica counts.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+COMPUTE\_REPLICA\_TYPE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+</td>
+<td valign="top">
+
+Displays the value of the allowed compute replica type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+COMPUTE\_REPLICA\_LOAD\_UNIT
+
+</td>
+<td valign="top">
+
+NVARCHAR\(7\)
+
+</td>
+<td valign="top">
+
+Displays the value of the LOAD\_UNIT of compute replica.
 
 </td>
 </tr>
 </table>
-
-
-
-<a name="loio522cc8ecebbe4508b572d0f61cec8e28__section_bdc_fxz_2zb"/>
-
-## Additional Information
-
-Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
 
 [ALTER SYSTEM ALTER TABLE PLACEMENT Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-alter-table-placement-statement-system-management-0715b97.md "Changes table classification and placement settings for table groups.")
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [TABLES System View](tables-system-view-2101973.md "Provides information about tables in the database.")
 

@@ -650,7 +650,7 @@ message\_severity
 > insert into MY_PARAMETERS (KEY, VALUE) values ('ignore_deployed', 'true'); 
 > 
 > -- call procedure
-> call _SYS_DI#G.DROP_CONTAINER('MY_CONTAINER', MY_PARAMETERS, ?, ?, ?);
+> call _SYS_DI#<container_group_name>.DROP_CONTAINER('MY_CONTAINER', MY_PARAMETERS, ?, ?, ?);
 > ```
 
 
@@ -1229,7 +1229,7 @@ message\_severity
 > 
 > 
 > -- call procedure
-> call MY_CONTAINER#DI.WRITE(MY_PATH_CONTENT, MY_PARAMETERS, ?, ?, ?);
+> call <container name>#DI.WRITE(MY_PATH_CONTENT, MY_PARAMETERS, ?, ?, ?);
 > 
 > ```
 
@@ -2131,7 +2131,7 @@ Example for calling the make procedure with a plug-ins-wide parameter set:
 > insert into MY_PARAMETERS (KEY, VALUE) values ('com.sap.hana.di/force_undeploy', 'true');
 > 
 > -- call procedure
-> call MY_CONTAINER#DI.MAKE(MY_DEPLOY_PATHS, _SYS_DI.T_NO_FILESFOLDERS, _SYS_DI.T_NO_FILESFOLDERS_PARAMETERS, MY_PARAMETERS, ?, ?, ?);
+> call <container name>#DI.MAKE(MY_DEPLOY_PATHS, _SYS_DI.T_NO_FILESFOLDERS, _SYS_DI.T_NO_FILESFOLDERS_PARAMETERS, MY_PARAMETERS, ?, ?, ?);
 > 
 > ```
 
@@ -2149,7 +2149,7 @@ Example for calling the make procedure with a plug-in-specific parameter set:
 > insert into MY_PARAMETERS (KEY, VALUE) values ('com.sap.hana.di.table/force_undeploy', 'true');
 > 
 > -- call procedure
-> call MY_CONTAINER#DI.MAKE(MY_DEPLOY_PATHS, _SYS_DI.T_NO_FILESFOLDERS, _SYS_DI.T_NO_FILESFOLDERS_PARAMETERS, MY_PARAMETERS, ?, ?, ?);
+> call <container name>#DI.MAKE(MY_DEPLOY_PATHS, _SYS_DI.T_NO_FILESFOLDERS, _SYS_DI.T_NO_FILESFOLDERS_PARAMETERS, MY_PARAMETERS, ?, ?, ?);
 > 
 > ```
 
@@ -2167,7 +2167,7 @@ Example for calling the make procedure with a path parameter set:
 > insert into MY_PATH_PARAMETERS (PATH, KEY, VALUE) values ('mypath/myfile1.hdbtable', 'force_undeploy', 'true');
 > 
 > -- call procedure
-> call MY_CONTAINER#DI.MAKE(MY_DEPLOY_PATHS, _SYS_DI.T_NO_FILESFOLDERS, MY_PATH_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> call <container name>#DI.MAKE(MY_DEPLOY_PATHS, _SYS_DI.T_NO_FILESFOLDERS, MY_PATH_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > 
 > ```
 

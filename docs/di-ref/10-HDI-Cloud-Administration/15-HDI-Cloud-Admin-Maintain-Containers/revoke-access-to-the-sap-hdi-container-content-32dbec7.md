@@ -21,7 +21,7 @@ In SAP HANA Deployment Infrastructure \(HDI\), the content-development API in an
 
 ## Procedure
 
-1.  In an SQL console, connect to the database as an administrator of the HDI container whose development API you want to disable \(for example, “C”\).
+1.  In an SQL console, connect to the database as an administrator of the HDI container whose development API you want to disable \(for example, *<container\_name\>*\).
 
 2.  Open the SQL editor for this database.
 
@@ -32,21 +32,21 @@ In SAP HANA Deployment Infrastructure \(HDI\), the content-development API in an
     > ### Sample Code:  
     > ```sql
     > CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_API_PRIVILEGES;
-    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT 'NEW_CONTAINER_CONTENT_DEVELOPER', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_USER_PRIVILEGES WHERE NOT (PRIVILEGE_NAME = 'SELECT' AND OBJECT_NAME LIKE '_SYS_DI.T%');
-    > CALL C#DI.REVOKE_CONTAINER_API_PRIVILEGES(#PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT '<NEW_CONTAINER_CONTENT_DEVELOPER>', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_USER_PRIVILEGES WHERE NOT (PRIVILEGE_NAME = 'SELECT' AND OBJECT_NAME LIKE '_SYS_DI.T%');
+    > CALL <container_name>#DI.REVOKE_CONTAINER_API_PRIVILEGES(#PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > DROP TABLE #PRIVILEGES; 
     > ```
 
-    1.  In the `INSERT` statement in line 2, adjust the name of the new content-development user “`NEW_CONTAINER_CONTENT_DEVELOPER`” to reflect the name of the user from whom the API privileges should be revoked.
+    1.  In the `INSERT` statement in line 2, replace the name of the new content-development user “`NEW_CONTAINER_CONTENT_DEVELOPER`” with the name of the user from whom the API privileges should be revoked.
 
-    2.  In the `CALL` statement in line 3, adjust the name of the container's API schema `C#DI` to suit your needs.
+    2.  In the `CALL` statement in line 3, replace *<container\_name\>* in the name of the container's API schema <code><i class="varname">&lt;container_name&gt;</i>#DI</code> with the name of your container.
 
 
-4.  Execute the SQL code.
+4.  Run the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 
-5.  \(Optional\) Confirm that the `NEW_CONTAINER_CONTENT_DEVELOPER` user is no longer able to call the HDI container content-development API in the containers API schema \(for example, `C#DI` in container “C”\).
+5.  \(Optional\) Confirm that the *<NEW\_CONTAINER\_CONTENT\_DEVELOPER\>* user is no longer able to call the HDI container content-development API in the containers API schema \(for example, <code><i class="varname">&lt;container_name&gt;</i>#DI</code> in container *<container\_name\>*\).
 
 
 **Related Information**  

@@ -480,5 +480,5 @@ Displays the internal port.
 
 [DYNAMIC\_RESULT\_CACHE\_INDEX\_COLUMNS System View](../021-System-Views/dynamic-result-cache-index-columns-system-view-4790ff8.md "Provides information about the indexes of dynamic result caches.")
 
-[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
+[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
 

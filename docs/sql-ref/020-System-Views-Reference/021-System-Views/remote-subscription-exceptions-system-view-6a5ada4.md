@@ -110,7 +110,7 @@ TIMESTAMP
 </td>
 <td valign="top">
 
-Displays the time at which the exception was raised.
+Displays the time when the exception was raised.
 
 </td>
 </tr>
@@ -171,7 +171,7 @@ Displays the component that raised the exception.
 
 <a name="loio6a5ada48bd1e46f4849ce9c90a09d84b__section_atm_py4_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

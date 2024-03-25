@@ -526,7 +526,7 @@ Displays the name of the column.
 Scan the file in Azure for import data.
 
 ```
-IMPORT SCAN 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/tpch1_lineitem.csv';
+IMPORT SCAN 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/import_directory';
 ```
 
 Select the data in the \#IMPORT\_SCAN\_RESULT table to get the result of the scan.

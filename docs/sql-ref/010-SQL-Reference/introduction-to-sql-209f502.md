@@ -79,6 +79,8 @@ Identifiers are used to represent names used in SQL statement including table na
 
     -   "\_SYS\_" is reserved exclusively for database engine and is therefore not allowed at the beginning of schema object names.
 
+    -   "\_SAP\_" is reserved exclusively for SAP HANA Cloud internal services and is therefore not allowed at the beginning of user and schema object names.
+
     -   The role name and user name must be specified as undelimited identifiers.
 
     -   The maximum length for identifiers is 127 characters.
@@ -116,9 +118,9 @@ Single quotation marks are used to delimit string literals. A single quotation m
 **Related Information**  
 
 
-[Characters Not Permitted in User Names](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/55d3b5a01166494582cc12f70ccfa17f.html "User names can contain any Compatibility Encoding Scheme for UTF-16: 8-Bit (CESU-8) characters except for a small subset.") :arrow_upper_right:
+[Characters Not Permitted in User Names](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/55d3b5a01166494582cc12f70ccfa17f.html "User names can contain any Compatibility Encoding Scheme for UTF-16: 8-Bit (CESU-8) characters except for a small subset.") :arrow_upper_right:
 
-[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
+[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
 
 [SQL Notation Conventions](sql-notation-conventions-209e0cd.md "SQL syntax notation conventions used in this guide.")
 

@@ -357,9 +357,9 @@ Users with the CATALOG READ system privilege can view statistics on all runs of 
 
 [ALTER SYSTEM RECLAIM LOB SPACE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-reclaim-lob-space-statement-system-management-a0b7235.md "Runs LOB garbage collection and removes any non-referenced LOB files.")
 
-[HOST_CS_LOB_SPACE_RECLAIMS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/10897f1b23ce40b5b1aeadec9960f568.html "Aggregated LOB garbage collection statistics per volume. This view contains information only for the last 42 days. The collection interval is 43200 seconds.") :arrow_upper_right:
+[HOST_CS_LOB_SPACE_RECLAIMS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/10897f1b23ce40b5b1aeadec9960f568.html "Aggregated LOB garbage collection statistics per volume. This view contains information only for the last 42 days. The collection interval is 43200 seconds.") :arrow_upper_right:
 
 [M\_GARBAGE\_COLLECTION\_STATISTICS System View](m-garbage-collection-statistics-system-view-20b04b8.md "Provides garbage collection and history manager statistics.")
 
-[Hybrid LOBs (Large Objects)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/61ab21a1972846e0aa0b9a989ce4867a.html "To save memory you can store LOB data on disk, in this case the data is only loaded into memory when it is needed. Alternatively, you can use the configurable Hybrid LOB feature which is flexible and stores LOBs either on disk or in memory depending on their size.") :arrow_upper_right:
+[Hybrid LOBs (Large Objects)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/61ab21a1972846e0aa0b9a989ce4867a.html "To save memory you can store LOB data on disk, in this case the data is only loaded into memory when it is needed. Alternatively, you can use the configurable Hybrid LOB feature which is flexible and stores LOBs either on disk or in memory depending on their size.") :arrow_upper_right:
 

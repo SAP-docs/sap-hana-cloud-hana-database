@@ -541,7 +541,7 @@ Indicates if the build plug-in specified by the parameter is disabled. By defaul
 > 
 > 
 > -- call procedure
-> call MY_CONTAINER#DI.CONFIGURE_CONTAINER_PARAMETERS(MY_CONFIG_PARAMETERS, MY_PARAMETERS, ?, ?, ?);
+> call <container_name>#DI.CONFIGURE_CONTAINER_PARAMETERS(MY_CONFIG_PARAMETERS, MY_PARAMETERS, ?, ?, ?);
 > 
 > ```
 
@@ -603,7 +603,7 @@ The following example shows how to use the HDI container-group administration AP
 > ```sql
 > CREATE LOCAL TEMPORARY COLUMN TABLE #CONFIG_GROUP_PARAMETERS LIKE _SYS_DI.TT_PARAMETERS;
 > INSERT INTO #CONFIG_GROUP_PARAMETERS (KEY, VALUE) VALUES ('enable_cross_container_access', 'true');
-> CALL _SYS_DI#G.CONFIGURE_CONTAINER_GROUP_PARAMETERS(#CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL _SYS_DI#<container_group_name>.CONFIGURE_CONTAINER_GROUP_PARAMETERS(#CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #CONFIG_GROUP_PARAMETERS; 
 > ```
 

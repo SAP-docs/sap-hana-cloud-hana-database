@@ -17,16 +17,16 @@ The following components help build a Python micro service:
     Used for communication between the application router, micro services, and the database
 
 -   A Python client for communication with the Audit Log service
--   -   A Python library for creating and deleting service instances per tenant within an application during run time
+-   A Python library for creating and deleting service instances per tenant within an application during run time
 
 **Related Information**  
 
 
 [Set up the Python Run Time for Cloud Foundry](set-up-the-python-run-time-for-cloud-foundry-d3eb423.md "Find information about how to set up the Python run time for your Python applications.")
 
-[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
+[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "Python client libraries developed by SAP on the Python Package Index (PyPI).")
 
 [Tutorials: Setting Up the Python Run Time](tutorials-setting-up-the-python-run-time-7c9e4a6.md "Tutorials that show you how to set up Python applications for Cloud Foundry.")
 
-[Python Application Programming \(SAP HANA Client Interface Programming Reference\)](https://help.sap.com/viewer/f1b440ded6144a54ada97ff95dac7adf/2.7/en-US/f3b8fabf34324302b123297cdbe710f0.html)
+[Python Application Programming \(SAP HANA Client Interface Programming Reference\)](https://help.sap.com/docs/SAP_HANA_CLIENT/f1b440ded6144a54ada97ff95dac7adf/f3b8fabf34324302b123297cdbe710f0.html)
 

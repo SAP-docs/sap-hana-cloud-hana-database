@@ -14,6 +14,8 @@ When an HDI container service instance is created by the SAP HANA Service Broker
 
     A role that grants the application user the privileges required for access to schemas and objects outside the HDI container, for example, the run-time schema “BAR”.
 
+    By default, `external_privileges_role` has no privileges assigned. If the application user requires access to external objects, a user with grant-option privileges on those external objects must first explicitly grant the required privileges to the `external_privileges_role`. Similarly, any assigned privileges must also be explicitly revoked.
+
 
 > ### Note:  
 > The roles exist as long as the HDI container exists; they are not lost when the application binding user changes. New binding users are automatically assigned these roles by the broker.

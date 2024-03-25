@@ -59,7 +59,7 @@ The following example include modules for the following areas: database, Web, Ja
 **Related Information**  
 
 
-[Maintaining OData Services in SAP HANA Cloud](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/78606fc13a6b41e5b654ca5f289351ca.html "Define OData services for your Java and JavaScript multitarget applications in SAP HANA Cloud.") :arrow_upper_right:
+[Maintaining OData Services in SAP HANA Cloud](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/78606fc13a6b41e5b654ca5f289351ca.html "Define OData services for your Java and JavaScript multitarget applications in SAP HANA Cloud.") :arrow_upper_right:
 
 [Working with the SAP Cloud Application Programming Model](working-with-the-sap-cloud-application-programming-model-166f4fb.md "Create a business application using the SAP Cloud Application Programming model.")
 

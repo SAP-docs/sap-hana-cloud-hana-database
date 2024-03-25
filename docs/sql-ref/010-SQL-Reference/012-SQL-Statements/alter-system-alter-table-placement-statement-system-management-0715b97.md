@@ -119,13 +119,23 @@ Specifies one or more table group placement properties.
  | REPARTITIONING_THRESHOLD [ => <unsigned_integer> ]
  | LOCATION [ => <string_literal> ]
  | SAME_PARTITION_COUNT [ => <boolean> ]
+ | DYNAMIC_RANGE_THRESHOLD [ => <unsigned_integer> ]
+ | PAGE_LOADABLE [ => <boolean> ]
+ | PERSISTENT_MEMORY [ => <boolean> ]
+ | NUMA_NODE_INDEXES [ => <string_literal> ]
+ | REPLICA_COUNT [ => <unsigned_integer> ]
+ | REPLICA_TYPE [ => <string_literal> ]
+ | COMPUTE_REPLICA_COUNT [ => <unsigned integer> ]
+ | COMPUTE_REPLICA_TYPE [ => <string_literal> ]
+ | REPLICA_LOAD_UNIT [ => <string_literal> ]
+ | COMPUTE_REPLICA_LOAD_UNIT [ => <string_literal> ]
 ```
 
 
 <dl>
 <dt><b>
 
-MIN\_ROWS\_FOR\_PARTITIONING \[ =\> *<unsigned\_integer\>*\]
+MIN\_ROWS\_FOR\_PARTITIONING \[ =\> *<unsigned\_integer\>* \]
 
 </b></dt>
 <dd>
@@ -165,18 +175,146 @@ LOCATION \[=\> *<string\_literal\>*\]
 </b></dt>
 <dd>
 
-Specifies one or more indexserver volume IDs \(values are COORDINATOR, DEFAULT, WORKER, and ALL\), or the name of a custom set of indexservers previously defined \(*<custom\_location\_specification\>*\) using the ALTER TABLE ALTER TABLE PLACEMENT LOCATION syntax.
+Specifies a location. Valid values are:
+
+-   One of the predefined locations:
+    -   COORDINATOR \(MASTER\)
+    -   WORKER \(SLAVE\)
+    -   ALL
+    -   DEFAULT
+
+-   the name of a custom set of indexservers previously defined \(*<custom\_location\_specification\>*\) using the ALTER TABLE ALTER TABLE PLACEMENT LOCATION syntax.
+
+The location \(except DEFAULT\) can be followed by a '\#' and a number, which implies that at most that many servers out of the location shall be used. For example, WORKER\#1 means that the table and partitions will be placed on one server out of the worker servers.
 
 
 
 </dd><dt><b>
 
-SAME\_PARTITION\_COUNT \[ =\> *<boolean\>*\]
+SAME\_PARTITION\_COUNT \[ =\> *<boolean\>* \]
 
 </b></dt>
 <dd>
 
 Specifies that all partitions of the tables in a group will contain the same number of partitions.
+
+
+
+</dd><dt><b>
+
+DYNAMIC\_RANGE\_THRESHOLD \[ =\> *<unsigned\_integer\>* \]
+
+</b></dt>
+<dd>
+
+Specifies the dynamic range partitioning threshold that is applied to the table partitioning specification.
+
+
+
+</dd><dt><b>
+
+PAGE\_LOADABLE \[ =\> *<boolean\>* \]
+
+</b></dt>
+<dd>
+
+Specifies whether a table should be stored in NSE or not.
+
+
+
+</dd><dt><b>
+
+PERSISTENT\_MEMORY \[ =\> *<boolean\>* \]
+
+</b></dt>
+<dd>
+
+Specifies whether use of persistent memory should be enabled on table.
+
+
+
+</dd><dt><b>
+
+NUMA\_NODE\_INDEXES \[ =\> *<string\_literal\>* \]
+
+</b></dt>
+<dd>
+
+Specifies the NUMA node specification for the table.
+
+
+
+</dd><dt><b>
+
+REPLICA\_COUNT \[ =\> *<unsigned\_integer\>* \]
+
+</b></dt>
+<dd>
+
+Specifies the number of replicas that should be set up for a table.
+
+
+
+</dd><dt><b>
+
+REPLICA\_TYPE \[ =\> *<string\_literal\>* \]
+
+</b></dt>
+<dd>
+
+Specifies the type of replica. Valid values are ASYNCHRONOUS or SYNCHRONOUS.
+
+
+
+</dd><dt><b>
+
+COMPUTE\_REPLICA\_COUNT \[ =\> *<unsigned integer\>* \]
+
+</b></dt>
+<dd>
+
+Specifies the replica count for compute server replicas.
+
+
+
+</dd><dt><b>
+
+COMPUTE\_REPLICA\_TYPE \[ =\> *<string\_literal\>* \]
+
+</b></dt>
+<dd>
+
+Specifies the type of compute server replicas.
+
+
+
+</dd><dt><b>
+
+REPLICA\_LOAD\_UNIT \[ =\> *<string\_literal\>* \]
+
+</b></dt>
+<dd>
+
+Specifies the load unit of the replica. Valid values are:
+
+-   PAGE - load unit is page
+-   COLUMN - load unit is column
+-   DEFAULT - load unit is same as replica source
+
+
+
+</dd><dt><b>
+
+COMPUTE\_REPLICA\_LOAD\_UNIT \[ =\> *<string\_literal\>* \]
+
+</b></dt>
+<dd>
+
+Specifies the load unit of the compute server replica. Valid values are:
+
+-   PAGE - load unit is page
+-   COLUMN - load unit is column
+-   DEFAULT - load unit is same as replica source
 
 
 
@@ -192,7 +330,7 @@ LOCATION *<custom\_location\_specification\>*
 </b></dt>
 <dd>
 
-Defines a synonym for a list of one or more SAP HANA indexservers, or groups of indexservers, by their intended use; for example, as a worker for a specific application to isolate the workload, or to define a custom subset of indexservers that host data of a specific customer. This capabilitity relies more on volume IDs instead of host/port names.
+Defines a synonym for a list of one or more SAP HANA indexservers, or groups of indexservers, by their intended use. For example, as a worker for a specific application to isolate the workload, or to define a custom subset of indexservers that host data of a specific customer. This capability relies more on volume IDs instead of host/port names.
 
 ```
 LOCATION <custom_location_specification> ::= <custom_location_names> { SET <location_specification> | UNSET }
@@ -333,7 +471,7 @@ ALTER SYSTEM ALTER TABLE PLACEMENT LOCATION MyLocation UNSET;
 **Related Information**  
 
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [TABLE\_PLACEMENT System View](../../020-System-Views-Reference/021-System-Views/table-placement-system-view-522cc8e.md "Provides table placement information.")
 

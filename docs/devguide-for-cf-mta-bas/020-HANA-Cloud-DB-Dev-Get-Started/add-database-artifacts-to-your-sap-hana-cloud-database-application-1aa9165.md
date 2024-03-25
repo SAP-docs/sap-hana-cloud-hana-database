@@ -96,7 +96,7 @@ This tutorial shows how to use SAP Business Application Studio to add database a
         > ```
 
         > ### Tip:  
-        > For more information about the syntax requirements for the HDI artifact you are defining, choose <span class="SAP-icons"></span> \(Open the artifact documentation...\) in the editor's title bar.
+        > For more information about the syntax requirements for the HDI artifact you are defining, choose <span class="SAP-icons-V5"></span> \(Open the artifact documentation...\) in the editor's title bar.
 
 
 2.  Add another database table to your SAP HANA Cloud database application

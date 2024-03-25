@@ -6,17 +6,17 @@ Transforms a design-time projection-view definition into a database object.
 
 
 
-The Projection View plug-in transforms a design-time projection view resource \(described in a `.hdbprojectionview` artifact\) into a projection view database object. A projection-view configuration resource is required that contains the binding from the projection view to the target database, target schema, and target object; the configuration file is similar in format to the one that can be used for the configuration of a database synonym or a logical-schema target.
+The Projection View plug-in transforms a design-time, projection-view resource \(described in a `.hdbprojectionview` artifact\) into a projection-view database object. A projection-view configuration resource is required which contains the binding from the projection view to the target schema and target object; the configuration file is similar in format to the one that can be used for the configuration of a database synonym or a logical-schema target.
 
 The complete definition of a projection view is split into the following design-time files:
 
 -   `hdbprojectionview`
 
-    A projection view declaration \(with an optional default configuration\)
+    A projection-view declaration \(with an optional default configuration\)
 
 -   `hdbprojectionviewconfig`
 
-    An explicit configuration of the projection view's target. A projection view configuration file can contain multiple configurations.
+    An explicit configuration of the projection view's target. A projection-view configuration file can contain multiple configurations.
 
 
 > ### Note:  
@@ -28,7 +28,7 @@ The complete definition of a projection view is split into the following design-
 
 ## Example Artifact Code
 
-The format of the projection view file uses a DDL-style syntax which is equivalent to the syntax of the corresponding SQL command `CREATE PROJECTION VIEW`, without the leading “`CREATE`” command. The `FROM` clause of the `PROJECTION VIEW` definition defines the default configuration. For more information about the syntax used in an SQL projection view, see *Related Information* below.
+The format of the projection-view file uses a DDL-style syntax which is equivalent to the syntax of the corresponding SQL command `CREATE PROJECTION VIEW`, without the leading “`CREATE`” command. The `FROM` clause of the `PROJECTION VIEW` definition defines the default configuration. For more information about the syntax used in an SQL projection view, see *Related Information* below.
 
 The following code shows a simple example of a projection-view definition for HDI:
 
@@ -38,7 +38,7 @@ The following code shows a simple example of a projection-view definition for HD
 > ```sql
 > PROJECTION VIEW "com.sap.hana.example::CUSTOMERS_VIEW" 
 > AS 
-> SELECT ID, NAME FROM "<database>"."<schema>"."<object>"
+> SELECT ID, NAME FROM "<schema>"."<object>"
 > ```
 
 To deploy the projection view, you must bind the projection view to an object. To bind the projection view to an object, you must define a projection-view **configuration**, as illustrated in the following example:
@@ -49,8 +49,7 @@ To deploy the projection view, you must bind the projection view to an object. T
 > ```json
 > { 
 >   "com.sap.hana.example::CUSTOMERS_VIEW" : { 
->     "target" : { 
->       "database" : "DATABASE_A",  
+>     "target" : {  
 >       "schema"   : "APPLICATON_B", // optional 
 >       "object"   : "CUSTOMERS" 
 >     } 
@@ -59,27 +58,12 @@ To deploy the projection view, you must bind the projection view to an object. T
 > ```
 
 > ### Note:  
-> A projection view configuration file can contain multiple configurations.
+> A projection-view configuration file can contain multiple configurations.
 
 > ### Code Syntax:  
 > `/src/alternate.hdbprojectionviewconfig`
-> 
-> ```json
-> { 
->   "com.sap.hana.example::CUSTOMERS_VIEW" : { 
->     "target" : { 
->       "logical_schema" : "ANOTHER_APPLICATON", // not in conjunction with 
->                                                // database or schema
->       "object"   : "CUSTOMERS" 
->     } 
->   } 
-> }
-> ```
 
-If the `"logical_schema"` field of a target description is defined, it is not possible to define either the `"database"` or the `"schema"` field. The `"logical_schema"` specifies a deployment dependency to a logical schema definition \(described in the `.hdblogicalschema` artifact\). The logical schema definition contains the schema name that is actually used, which must be different from the name of the container schema.
-
-> ### Note:  
-> It is also possible to include an \(optional\) `"database"` name. However, a `remote` source name is not allowed.
+If the `"logical_schema"` field of a target description is defined, it is not possible to define the `"schema"` field. The `"logical_schema"` specifies a deployment dependency to a logical schema definition \(described in the `.hdblogicalschema` artifact\). The logical schema definition contains the schema name that is actually used, which must be different from the name of the container schema.
 
 If the target description does not contain the `logical_schema` field and the `schema` field is omitted, too, then the projection view points to a container-local object. In this case, the referenced object is considered as a deployment dependency unless the `revalidate` field is set to <code>“false”</code>. The `revalidate` field is optional and defaults to <code>“true”</code> for this case.
 
@@ -119,7 +103,9 @@ In the configuration file for the HDI container \(`.hdiconfig`\), the plug-in co
 
 [Logical Schemas \(.hdblogicalschema and .hdblogicalschemaconfig\)](logical-schemas-hdblogicalschema-and-hdblogicalschemaconfig-fa9cda8.md "Transforms a design-time logical-schema definition into run-time database objects that can be used by synonyms and so on.")
 
-[Templates for HDI Configuration Files (SAP HANA Cloud Database Developer Guide (SAP Business App Studio))](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2023_4_QRC/en-US/7ef53fb04ecc49a3ae647c21a0736994.html "The HDI Deployer implements a template mechanism for HDI configuration files.") :arrow_upper_right:
+[Templates for HDI Configuration Files \(SAP HANA Cloud Database Developer Guide \(SAP Business App Studio\)\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/7ef53fb04ecc49a3ae647c21a0736994.html)
+
+[Templates for HDI Configuration Files \(SAP HANA Cloud Database Developer Guide \(SAP Web IDE Full-Stack\)\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/b9902c314aef4afb8f7a29bf8c5b37b3/7ef53fb04ecc49a3ae647c21a0736994.html)
 
 [CREATE PROJECTION VIEW Statement \(SAP HANA Cloud SQL Reference Guide\)](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/cloud/en-US/e35411b417a94f199679b9f9f45c2306.html)
 

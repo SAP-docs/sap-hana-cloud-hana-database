@@ -486,7 +486,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the column is part of the cache key: TRUE/FALSE
+Displays whether the column is part of the cache key: TRUE/FALSE.
 
 </td>
 </tr>
@@ -503,7 +503,7 @@ NVARCHAR\(1\)
 </td>
 <td valign="top">
 
-Displays the row order position
+Displays the row order position.
 
 </td>
 </tr>
@@ -537,7 +537,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the column is masked: TRUE/FALSE
+Displays whether the column is masked: TRUE/FALSE.
 
 </td>
 </tr>
@@ -651,7 +651,7 @@ Displays the comma-separated list of ranges of user-specified logical NUMA node 
 
 <a name="loio21028f17751910149faef9996f9e43ea__section_vjc_q11_fzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -670,5 +670,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [M\_MONITOR\_COLUMNS System View](../022-Monitoring-Views/m-monitor-columns-system-view-20b54f6.md "All the columns in the monitoring views.")
 
-[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
+[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
 

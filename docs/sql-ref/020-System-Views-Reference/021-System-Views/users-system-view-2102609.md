@@ -535,7 +535,7 @@ NVARCHAR\(16\)
 </td>
 <td valign="top">
 
-If the user was created by a provider using automatic user provisioning, then value indicates the type of provider: LDAP PROVIDER/SAML PROVIDER. If the user was created by another user \(using a CREATE USER statement\), then the value is NULL.
+If the user was created by a provider using automatic user provisioning, then the value indicates the type of provider: LDAP PROVIDER/SAML PROVIDER. If the user was created by another user \(using a CREATE USER statement\), then the value is NULL.
 
 </td>
 </tr>
@@ -562,7 +562,7 @@ Displays the name of the provider that created the user, or NULL if the user was
 
 <a name="loio21026099751910148e0cdbddc75652b8__section_cs2_cdb_x2b"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -586,9 +586,9 @@ Users see different values in this view depending on their privileges, as follow
 
 [USERGROUPS System View](usergroups-system-view-ac342d0.md "Provides details on all user groups.")
 
-[Managing SAP HANA Users](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/ed7af17e5ae14de694d9bee5f35098f4.html "Every user who wants to work with the SAP HANA database must have a database user who can log on and is authorized to perform their individual tasks.") :arrow_upper_right:
+[Managing SAP HANA Users](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/ed7af17e5ae14de694d9bee5f35098f4.html "Every user who wants to work with the SAP HANA database must have a database user who can log on and is authorized to perform their individual tasks.") :arrow_upper_right:
 
-[User Provisioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bebc1c98bb571014a119aa7e6763c7e1.html "Depending on your organization and its user provisioning strategy, people with different job functions may be involved in the process of provisioning users. If you use an LDAP-compliant directory server to manage users and their access to resources, you can leverage this infrastructure for user provisioning.") :arrow_upper_right:
+[User Provisioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bebc1c98bb571014a119aa7e6763c7e1.html "Depending on your organization and its user provisioning strategy, people with different job functions may be involved in the process of provisioning users. If you use an LDAP-compliant directory server to manage users and their access to resources, you can leverage this infrastructure for user provisioning.") :arrow_upper_right:
 
-[User Authorization](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bd592d78bb57101499eabd0e17606802.html "After successful logon, the user's authorization to perform the requested operations on the requested objects is verified.") :arrow_upper_right:
+[User Authorization](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bd592d78bb57101499eabd0e17606802.html "After successful logon, the user's authorization to perform the requested operations on the requested objects is verified.") :arrow_upper_right:
 

@@ -102,6 +102,42 @@ In the application deployment descriptor \(`mtad.yaml`\), this would look like t
 
 
 
+### Reusing HDI Containers during Service Creation
+
+If a database has been cloned or a rebuild of the database is required as part of a disaster-recovery operation, an existing HDI container can be specified as the deployment target when creating a new service instance.
+
+To reuse an existing HDI container, it is necessary to specify that the target HDI container already exists when you create the service instance that applications will then bind to and use for deployment, for example, using the Boolean parameter `"reuse_hdi_container"`. You also need to provide the name of the target container that you want to reuse when you create the new shared HDI service instance, for example, using the paramter `"schema"`, as shown in the following example:
+
+> ### Sample Code:  
+> Service-Creation Parameters:
+> 
+> ```
+> cf create-service hana hdi-shared <Service Name> -c '{"reuse_hdi_container": "true", "schema": "<HDI container name>"}'
+> ```
+
+If the database was cloned and there is still an hdi-shared service instance available for the HDI container in the original database, a new service instance can be created using the original service instance as a template by providing the original service instance ID by means of the `"from_instance"` parameter, as shown in the following example.
+
+> ### Sample Code:  
+> Service-Creation Parameters:
+> 
+> ```
+> cf create-service hana hdi-shared <Service Name> -c '{"from_instance": "<source service instance ID>", "database_id" : "<target_database_id>" }'
+> ```
+
+In this example, the service instance-creation process retrieves all relevant information from the original service instance and creates a new service instance pointing to the existing HDI container in the cloned database instance.
+
+> ### Tip:  
+> In a Windows environment, it is necessaryto use the backslash \(\\\) to escape the quotes \("\) in the configuration options, as shown in the following example:
+
+> ### Sample Code:  
+> Service-Creation Parameters:
+> 
+> ```
+> cf create-service hana hdi-shared <Service Name> -c '{\"from_instance\": \"<source service instance ID>\", \"database_id\" : \"<target_database_id>\"}'
+> ```
+
+
+
 <a name="loioebf0aa26958443f58f86b862056862d4__section_oqq_s1b_5z"/>
 
 ## The “schema” Service Plan

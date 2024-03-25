@@ -60,14 +60,14 @@ This tutorial shows how to create and set up a dev space in SAP Business Applica
     In the list of dev space names, monitor the status of the new *HANADEV* dev space. When it displays the status *RUNNING*, click the dev space name *HANADEV* to open it in a new workspace.
 
     > ### Tip:  
-    > On startup, SAP Business Application Studio displays a list of available development spaces in the dev space manager, but all dev spaces are in the status *STOPPED*. Since you can only open a dev space whose status is *RUNNING*, you have to start it manually. Choose <span style="font-size:16px;"><span class="SAP-icons"></span></span> \(Run\) to start the development space that contains the application project you want to work on.
+    > On startup, SAP Business Application Studio displays a list of available development spaces in the dev space manager, but all dev spaces are in the status *STOPPED*. Since you can only open a dev space whose status is *RUNNING*, you have to start it manually. Choose <span style="font-size:16px;"><span class="SAP-icons-V5"></span></span> \(Run\) to start the development space that contains the application project you want to work on.
 
 4.  Connect the dev space to the Cloud Foundry organization and space where you want to develop and deploy your business application.
 
     By default, SAP Business Application Studio logs on to the most recently used Cloud Foundry target and displays the connection details in the status bar, for example, *Targeting Cloud Foundry MyOrg/MySpace*. If no target has yet been set, the status bar displays the message *The Organization and space in CF have not been set*.
 
     > ### Note:  
-    > If no information about the connection to Cloud Foundry is available in the status bar, click <span style="font-size:16px;"><span class="SAP-icons"></span></span> \(Manage\) and choose *Settings* \> *Extensions* \> *Cloud Foundry Tools* \> *Show Target Information* and enable *Display the current Cloud Foundry target information in the status bar*.
+    > If no information about the connection to Cloud Foundry is available in the status bar, click <span style="font-size:16px;"><span class="SAP-icons-V5"></span></span> \(Manage\) and choose *Settings* \> *Extensions* \> *Cloud Foundry Tools* \> *Show Target Information* and enable *Display the current Cloud Foundry target information in the status bar*.
 
     To set the organization and space for your dev space, you need to log on to Cloud Foundry and specify the target to use, as described in the following steps:
 
@@ -85,7 +85,7 @@ This tutorial shows how to create and set up a dev space in SAP Business Applica
 
 5.  Customize a dev space.
 
-    You can add extensions to \(or remove them from\) an existing dev space, for example, using the <span style="font-size:16px;"><span class="SAP-icons"></span></span> \(Edit\) tool in the list of dev spaces.
+    You can add extensions to \(or remove them from\) an existing dev space, for example, using the <span style="font-size:16px;"><span class="SAP-icons-V5"></span></span> \(Edit\) tool in the list of dev spaces.
 
     > ### Note:  
     > The dev space you want to modify must be *STOPPED*; it is not possible to edit a dev space whose status is *RUNNING* or *STARTING*.

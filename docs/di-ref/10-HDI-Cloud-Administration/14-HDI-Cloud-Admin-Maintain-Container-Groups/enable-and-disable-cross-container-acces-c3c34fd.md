@@ -47,32 +47,32 @@ To enable access between containers in the same HDI container group, perform the
 
 3.  Enable access between containers in the chosen container group.
 
-    Execute the following code, which shows how to use the configuration parameter `enable_cross_container_access` to enable access between containers assigned to container group `'G'`:
+    Execute the following code, which shows how to use the configuration parameter `enable_cross_container_access` to enable access between containers assigned to container group *<container\_group\_name\>*:
 
     ```sql
     CREATE LOCAL TEMPORARY COLUMN TABLE #CONFIG_GROUP_PARAMETERS LIKE _SYS_DI.TT_PARAMETERS; 
     INSERT INTO #CONFIG_GROUP_PARAMETERS (KEY, VALUE) VALUES ('enable_cross_container_access', 'true'); 
-    CALL _SYS_DI#G.CONFIGURE_CONTAINER_GROUP_PARAMETERS(#CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    CALL _SYS_DI#<container_group_name>.CONFIGURE_CONTAINER_GROUP_PARAMETERS(#CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     DROP TABLE #CONFIG_GROUP_PARAMETERS; 
     ```
 
-    With the configuration parameter `enable_cross_container_access` set to `'true'` for the specified container group \(`'G'`\), any containers already in group `'G'` are granted DML schema access to all other containers in container group `'G'`.
+    With the configuration parameter `enable_cross_container_access` set to `'true'` for the specified container group \(*<container\_group\_name\>*\), any containers already in group *<container\_group\_name\>* are granted DML schema access to all other containers in container group *<container\_group\_name\>*.
 
     > ### Note:  
     > The same access is also granted to any new containers which are subsequently added \(or moved\) to the HDI container group where the configuration parameter is set to `'true'`.
 
 4.  Disable access between containers in the chosen container group.
 
-    The following code example shows how to use the configuration parameter `enable_cross_container_access` to disable access between containers in the container group 'G':
+    The following code example shows how to use the configuration parameter `enable_cross_container_access` to disable access between containers in the container group *<container\_group\_name\>*:
 
     ```sql
     CREATE LOCAL TEMPORARY COLUMN TABLE #CONFIG_GROUP_PARAMETERS LIKE _SYS_DI.TT_PARAMETERS; 
     INSERT INTO #CONFIG_GROUP_PARAMETERS (KEY, VALUE) VALUES ('enable_cross_container_access', ''); 
-    CALL _SYS_DI#G.CONFIGURE_CONTAINER_GROUP_PARAMETERS(#CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    CALL _SYS_DI#<container_group_name>.CONFIGURE_CONTAINER_GROUP_PARAMETERS(#CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     DROP TABLE #CONFIG_GROUP_PARAMETERS; 
     ```
 
-    In this example, no value \(`''`\) is provided for the parameter `enable_cross_container_access`, which revokes DML schema access between containers in the container group `'G'`, but you can also explicitly set the parameter to `'false'`.
+    In this example, no value \(`''`\) is provided for the parameter `enable_cross_container_access`, which revokes DML schema access between containers in the container group *<container\_group\_name\>*, but you can also explicitly set the parameter to `'false'`.
 
 
 **Related Information**  

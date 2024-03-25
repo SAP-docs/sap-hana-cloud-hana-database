@@ -152,5 +152,5 @@ For more details about sizing HDI containers, see *Related Information* below.
 
 [Managing Entitlements and Quotas Using SAP BTP Cockpit](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/c8248745dde24afb91479361de336111.html)
 
-[System Views (SAP HANA SQL Reference Guide)](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2023_4_QRC/en-US/3859e48180bb4cf8a207e15cf25a7e57.html "System views allow you to query for various information about the system state using SQL commands. The results appear as tables.") :arrow_upper_right:
+[System Views (SAP HANA SQL Reference Guide)](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2024_1_QRC/en-US/3859e48180bb4cf8a207e15cf25a7e57.html "System views allow you to query for various information about the system state using SQL commands. The results appear as tables.") :arrow_upper_right:
 

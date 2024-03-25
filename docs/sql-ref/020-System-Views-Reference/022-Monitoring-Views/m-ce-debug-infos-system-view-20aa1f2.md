@@ -229,5 +229,5 @@ Displays the application query ID.
 
 [M\_DEBUG\_CONNECTIONS System View](m-debug-connections-system-view-20ae867.md "Provides an overview of connections used per debug session.")
 
-[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
+[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
 

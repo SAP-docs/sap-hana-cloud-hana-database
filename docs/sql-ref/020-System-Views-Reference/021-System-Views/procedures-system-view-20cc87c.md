@@ -398,21 +398,21 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [PROCEDURE\_ROUTES System View](procedure-routes-system-view-61d897c.md "Provides information about the procedure being routed. This view is for internal use only.")
 
-[Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/d43d91578c3b42b3bacfd89aacf0d62f.html "") :arrow_upper_right:
+[Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/d43d91578c3b42b3bacfd89aacf0d62f.html "") :arrow_upper_right:
 
-[CREATE PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/7a2da744ce544db1814a5fff250e99f6.html "You use this SQL statement to create a procedure.") :arrow_upper_right:
+[CREATE PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7a2da744ce544db1814a5fff250e99f6.html "You use this SQL statement to create a procedure.") :arrow_upper_right:
 
-[ALTER PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/042ab4636cf34a9cb88dd61c808861a8.html "") :arrow_upper_right:
+[ALTER PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/042ab4636cf34a9cb88dd61c808861a8.html "") :arrow_upper_right:
 
-[DROP PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/5f244d38d5984899ae8263539badf306.html "") :arrow_upper_right:
+[DROP PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/5f244d38d5984899ae8263539badf306.html "") :arrow_upper_right:
 
-[Deterministic Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/dae6fae315c546ba9dc8665c0ca51cb9.html "") :arrow_upper_right:
+[Deterministic Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/dae6fae315c546ba9dc8665c0ca51cb9.html "") :arrow_upper_right:
 
-[Procedure Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8c59aace1caf472ebe71e6592a06b27a.html "") :arrow_upper_right:
+[Procedure Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/8c59aace1caf472ebe71e6592a06b27a.html "") :arrow_upper_right:
 
-[Procedure Calls](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/461da7cfaaff4d89b518b8ae48121263.html "") :arrow_upper_right:
+[Procedure Calls](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/461da7cfaaff4d89b518b8ae48121263.html "") :arrow_upper_right:
 
-[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
+[Procedure Result Cache](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/23bd07d4f4a1444ab64ca580373e8efc.html "Procedure Result Cache (PRC) is a server-wide in-memory cache that caches the output arguments of procedure calls using the input arguments as keys.") :arrow_upper_right:
 
-[SYS.PROCEDURES](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/a7b1261516ae4166883e6bc373733de5.html "Available stored procedures") :arrow_upper_right:
+[SYS.PROCEDURES](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/a7b1261516ae4166883e6bc373733de5.html "Available stored procedures") :arrow_upper_right:
 

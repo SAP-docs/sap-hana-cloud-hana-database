@@ -78,7 +78,7 @@ Number of simultaneous connections to the SAP HANA database
 </td>
 <td valign="top">
 
- 
+MAXIMUM\_NUMBER\_OF\_SESSIONS
 
 </td>
 </tr>

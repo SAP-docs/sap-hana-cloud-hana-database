@@ -13,5 +13,5 @@ For more information, see the *SAP HANA Cloud, SAP HANA Database Graph Reference
 **Related Information**  
 
 
-[SAP HANA Cloud, SAP HANA Database Graph Reference](https://help.sap.com/viewer/11afa2e60a5f4192a381df30f94863f9/2023_4_QRC/en-US/30d1d8cfd5d0470dbaac2ebe20cefb8f.html "This reference provides information about SAP HANA Graph. It is organized as follows:") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Graph Reference](https://help.sap.com/viewer/11afa2e60a5f4192a381df30f94863f9/2024_1_QRC/en-US/30d1d8cfd5d0470dbaac2ebe20cefb8f.html "This reference provides information about SAP HANA Graph. It is organized as follows:") :arrow_upper_right:
 

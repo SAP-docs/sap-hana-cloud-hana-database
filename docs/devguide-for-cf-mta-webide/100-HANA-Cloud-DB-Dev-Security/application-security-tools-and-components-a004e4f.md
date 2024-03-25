@@ -536,7 +536,7 @@ Developer
 
 [Download and Consume Java Libraries](../060-HANA-Cloud-DB-Dev-App-Code/download-and-consume-java-libraries-8783c06.md "A selection of SAP-specific and ready-to-use Java client libraries is available for download from the Maven Central Repository.")
 
-[Download and Consume Python Libraries](../060-HANA-Cloud-DB-Dev-App-Code/download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
+[Download and Consume Python Libraries](../060-HANA-Cloud-DB-Dev-App-Code/download-and-consume-python-libraries-842824f.md "Python client libraries developed by SAP on the Python Package Index (PyPI).")
 
 [SAP HANA Cloud Deployment-Infrastructure Services](../070-HANA-Cloud-DB-Dev-App-Services/sap-hana-cloud-deployment-infrastructure-services-ebf0aa2.md "The SAP HANA Cloud Deployment Infrastructure service (HDI) is the central infrastructure component for application-container management.")
 

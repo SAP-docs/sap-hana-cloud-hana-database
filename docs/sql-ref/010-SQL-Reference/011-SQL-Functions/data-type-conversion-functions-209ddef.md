@@ -17,6 +17,8 @@ Data type conversion functions are used to convert function arguments from one d
 
 -   [CAST Function \(Data Type Conversion\)](cast-function-data-type-conversion-20db6dd.md)
 
+-   [TO_ARRAY Function (Data Type Conversion)](https://help.sap.com/viewer/c40cab369db246f1a17feea1c031ddc1/2024_1_QRC/en-US/877008aee4ad4467a1d5ae38f325671d.html "Converts a vector to an ARRAY data type.") :arrow_upper_right:
+
 -   [TO\_BIGINT Function \(Data Type Conversion\)](to-bigint-function-data-type-conversion-20eae5e.md)
 
 -   [TO\_BINARY Function \(Data Type Conversion\)](to-binary-function-data-type-conversion-20eb65d.md)
@@ -46,6 +48,8 @@ Data type conversion functions are used to convert function arguments from one d
 -   [TO\_NVARCHAR Function \(Data Type Conversion\)](to-nvarchar-function-data-type-conversion-20efce3.md)
 
 -   [TO\_REAL Function \(Data Type Conversion\)](to-real-function-data-type-conversion-20f017b.md)
+
+-   [TO_REAL_VECTOR Function (Data Type Conversion)](https://help.sap.com/viewer/c40cab369db246f1a17feea1c031ddc1/2024_1_QRC/en-US/2c10279264a04affbb018753641b01cf.html "Constructs a vector from a textual or binary representation, or from an array.") :arrow_upper_right:
 
 -   [TO\_SECONDDATE Function \(Data Type Conversion\)](to-seconddate-function-data-type-conversion-20f057b.md)
 

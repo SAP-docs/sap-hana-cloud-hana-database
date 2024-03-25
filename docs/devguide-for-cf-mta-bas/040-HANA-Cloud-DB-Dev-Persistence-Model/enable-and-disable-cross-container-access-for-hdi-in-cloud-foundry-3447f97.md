@@ -47,14 +47,14 @@ SAP BusinessTo enable access between containers in the same HDI container group,
         > ### Note:  
         > To be able to see the list of databases that you want to explore, you must be logged on to Cloud Foundry; the databases are associated with a Cloud Foundry development space. If you are not logged into Cloud Foundry, *SAP Business Application Studio* prompts you to provide the required user credentials.
 
-        In the views pane of *SAP Business Application Studio*, choose <span class="FPA-icons"></span> \(SAP HANA Database Explorer\).
+        In the views pane of *SAP Business Application Studio*, choose <span class="FPA-icons-V3"></span> \(SAP HANA Database Explorer\).
 
     2.  Open the SQL console for SAP HANA as the HDI administrator.
 
-        In the *DATABASE LIST* pane, locate the database that you want to explore, and choose <span class="FPA-icons"></span> \(Open SQL Console as HDI Admin\).
+        In the *DATABASE LIST* pane, locate the database that you want to explore, and choose <span class="FPA-icons-V3"></span> \(Open SQL Console as HDI Admin\).
 
         > ### Tip:  
-        > If you cannot find your database in the list, choose <span class="FPA-icons"></span> \(Refresh\) in the Database Explorer pane.
+        > If you cannot find your database in the list, choose <span class="FPA-icons-V3"></span> \(Refresh\) in the Database Explorer pane.
 
         If the connection succeeds, the tool bar in the SQL console for SAP HANA indicates the name of the database it is connected to and \(in brackets\) the name of the Cloud Foundry space to which the database is assigned, for example, *Myapp-hdidb-ws-ab1cd \(MyDevSpace\)*.
 
@@ -96,7 +96,7 @@ SAP BusinessTo enable access between containers in the same HDI container group,
 **Related Information**  
 
 
-[Enable Access to Objects in a Remote Classic Schema](enable-access-to-objects-in-a-remote-classic-schema-402944b.md "Use a synonym to enable access to objects in a remote schema that is not managed by your Cloud Foundry application (for example, ERP).")
+[Enable Access to Objects in a Classic \(non-HDI\) Schema](enable-access-to-objects-in-a-classic-non-hdi-schema-402944b.md "Use a synonym to enable access to objects in a database schema that is not managed by SAP HDI (for example, ERP).")
 
 [Enable Access to Objects in Another HDI Container](enable-access-to-objects-in-another-hdi-container-4adba34.md "Use a synonym to enable access to another HDI container.")
 

@@ -19,11 +19,11 @@ The contents of the multitarget application package descriptor, `package.json`, 
 >     "url": "git@github.acme.com:xs-samples/nodejs-hello-world.git"
 >   },
 >   "dependencies": {
->     "@sap/xsjs": "^1.0.5",
->     "@sap/approuter": "^2.3.1"
+>     "@sap/async-xsjs": "^2.0.0",
+>     "@sap/approuter": "^14.4.3"
 >   },
 >   "engines": {
->     "node": ">=0.10.x <0.12"
+>     "node": ">=18.x <20.0"
 >   },
 >   "scripts": {
 >     "start": "node --max-old-space-size=400 --expose-gc main.js"
@@ -128,11 +128,11 @@ A list of dependencies that apply to the JavaScript application whose package pr
 > ### Sample Code:  
 > ```
 > "dependencies": {
->     "@sap/xsjs": "^1.2.5",
->     "@sap/approuter": "^2.3.1",
->     "@sap/cds": "^1.1.7",
->     "@sap/xssec": "^1.3.6", 
->     "@sap/xsenv": "^1.2.2"
+>     "@sap/async-xsjs": "^2.0.0",
+>     "@sap/approuter": "^14.4.3",
+>     "@sap/cds": "^1.5.0",
+>     "@sap/xssec": "^3.6.0", 
+>     "@sap/xsenv": "^4.2.0"
 > },
 > ```
 
@@ -150,7 +150,7 @@ The run-time engines used by the application specified in the `name` property.
 > ### Sample Code:  
 > ```
 > "engines": {
->     "node": >=0.10.x <0.12"
+>     "node": ">=18.x <20.x"
 > },
 > ```
 

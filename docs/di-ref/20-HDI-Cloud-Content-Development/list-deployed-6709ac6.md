@@ -403,7 +403,7 @@ The following example shows how to create the files in container C's work file s
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src1/v.hdbview', 'VIEW V AS SELECT A FROM T');
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src2/', '');
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src2/p.hdbprocedure', 'PROCEDURE P (OUT RESULT INT) LANGUAGE SQLSCRIPT AS BEGIN SELECT COUNT(*) INTO RESULT FROM V; end');
-> CALL C#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #PATHS; 
 > ```
 
@@ -421,7 +421,7 @@ Deploy the files to container C's deployed file system:
 > INSERT INTO #DEPLOY_PATHS (PATH) VALUES ('src2/p.hdbprocedure');
 > CREATE LOCAL TEMPORARY COLUMN TABLE #UNDEPLOY_PATHS LIKE _SYS_DI.TT_FILESFOLDERS;
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PATH_PARAMETERS LIKE _SYS_DI.TT_FILESFOLDERS_PARAMETERS;
-> CALL C#DI.MAKE(#DEPLOY_PATHS, #UNDEPLOY_PATHS, #PATH_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.MAKE(#DEPLOY_PATHS, #UNDEPLOY_PATHS, #PATH_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #DEPLOY_PATHS;
 > DROP TABLE #UNDEPLOY_PATHS;
 > DROP TABLE #PATH_PARAMETERS;
@@ -433,7 +433,7 @@ List non-recursively all files and folders in the deployed file system of contai
 > List Files and Folders Non-Recursively
 > 
 > ```sql
-> CALL C#DI.LIST_DEPLOYED(_SYS_DI.T_NO_FILESFOLDERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.LIST_DEPLOYED(_SYS_DI.T_NO_FILESFOLDERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?);
 > ```
 
 List recursively all files and folders in the deployed file system of container C; this displays all objects at all levels:
@@ -444,7 +444,7 @@ List recursively all files and folders in the deployed file system of container 
 > ```sql
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PARAMETERS LIKE _SYS_DI.TT_PARAMETERS;
 > INSERT INTO #PARAMETERS ( KEY, VALUE ) VALUES ('recursive', 'true');
-> CALL C#DI.LIST_DEPLOYED(_SYS_DI.T_NO_FILESFOLDERS, #PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.LIST_DEPLOYED(_SYS_DI.T_NO_FILESFOLDERS, #PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #PARAMETERS; 
 > ```
 
@@ -457,7 +457,7 @@ List recursively all files \(but no folders\) in the deployed file system of con
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PARAMETERS LIKE _SYS_DI.TT_PARAMETERS;
 > INSERT INTO #PARAMETERS ( KEY, VALUE ) VALUES ('ignore_folders', 'true');
 > INSERT INTO #PARAMETERS ( KEY, VALUE ) VALUES ('recursive', 'true');
-> CALL C#DI.LIST_DEPLOYED(_SYS_DI.T_NO_FILESFOLDERS, #PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.LIST_DEPLOYED(_SYS_DI.T_NO_FILESFOLDERS, #PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #PARAMETERS; 
 > ```
 
@@ -470,7 +470,7 @@ List recursively all folders \(but no files\) in the deployed file system of con
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PARAMETERS LIKE _SYS_DI.TT_PARAMETERS;
 > INSERT INTO #PARAMETERS ( KEY, VALUE ) VALUES ('ignore_files', 'true');
 > INSERT INTO #PARAMETERS ( KEY, VALUE ) VALUES ('recursive', 'true');
-> CALL C#DI.LIST_DEPLOYED(_SYS_DI.T_NO_FILESFOLDERS, #PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.LIST_DEPLOYED(_SYS_DI.T_NO_FILESFOLDERS, #PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #PARAMETERS; 
 > ```
 
@@ -485,7 +485,7 @@ List specific files or folders in the deployed file system of container C:
 > INSERT INTO #PATHS (PATH) VALUES ('src2/p.hdbprocedure');
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PARAMETERS LIKE _SYS_DI.TT_PARAMETERS;
 > INSERT INTO #PARAMETERS ( KEY, VALUE ) VALUES ('recursive', 'false');
-> CALL C#DI.LIST_DEPLOYED(#PATHS, #PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.LIST_DEPLOYED(#PATHS, #PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #PATHS; DROP TABLE #PARAMETERS; 
 > ```
 

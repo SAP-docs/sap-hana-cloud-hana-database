@@ -41,7 +41,7 @@ To bind an application to an alternative schema service, perform the following s
 
     1.  Start the *Add Database Wizard*.
 
-        Use the <span class="SAP-icons"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard,
+        Use the <span class="SAP-icons-V5"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard,
 
     2.  Select the **type** of database connection to add.
 

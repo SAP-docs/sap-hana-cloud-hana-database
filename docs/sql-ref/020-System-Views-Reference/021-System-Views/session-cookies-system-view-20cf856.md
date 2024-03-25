@@ -110,7 +110,7 @@ TIMESTAMP
 </td>
 <td valign="top">
 
-Displays the last time that the session cookie was used for successful reconnection.
+Displays the last time that the session cookie was used for a successful reconnection.
 
 </td>
 </tr>
@@ -137,7 +137,7 @@ Displays the time that the main connection ended.
 
 <a name="loio20cf856975191014899998454833ff7c__section_ex3_3sz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -146,9 +146,9 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [Session Management Statements](../../010-SQL-Reference/012-SQL-Statements/session-management-statements-20a27b0.md "The following SQL statements manage database sessions.")
 
-[Session-Specific Information for Connections](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/d80b8d7ddf944f55801a534b3ce036e3.html "Set session-specific client information on SAP HANA remote source connections.") :arrow_upper_right:
+[Session-Specific Information for Connections](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/d80b8d7ddf944f55801a534b3ce036e3.html "Set session-specific client information on SAP HANA remote source connections.") :arrow_upper_right:
 
-[Global Session Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/aaef0b96852a4e1d9ce2570bbb1493c9.html "") :arrow_upper_right:
+[Global Session Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/aaef0b96852a4e1d9ce2570bbb1493c9.html "") :arrow_upper_right:
 
 [M\_SESSION\_CONTEXT System View](../022-Monitoring-Views/m-session-context-system-view-20c50b7.md "Displays the session variables set for each connection.")
 

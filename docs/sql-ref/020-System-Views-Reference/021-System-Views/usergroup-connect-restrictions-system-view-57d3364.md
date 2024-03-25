@@ -188,11 +188,11 @@ For internal use.
 
 <a name="loio57d3364557d140c291e6cc5fb09eef7c__section_oly_g3s_3xb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
-Users see different values in this view depending on their privileges, as follows:
+This view also requires other privileges to see different values.
 
 -   Users with one of the following object privileges can see all connection restrictions for that user group:
     -   OPERATOR object privilege

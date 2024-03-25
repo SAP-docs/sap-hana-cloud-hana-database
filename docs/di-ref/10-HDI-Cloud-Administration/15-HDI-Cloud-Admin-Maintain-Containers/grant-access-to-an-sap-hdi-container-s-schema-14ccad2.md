@@ -10,7 +10,7 @@ Enable access to the schema of an SAP HDI container of individual objects in the
 
 ## Context
 
-In SAP HANA Deployment Infrastructure \(HDI\), users that would like to consume objects deployed to an HDI container need to be granted the appropriate privileges. The privileges can be granted to specific objects in the schema \(for example, `C`\) by use of a role that has been deployed to the target container, for example, “C”, or by granting privileges for the entire schema.
+In SAP HANA Deployment Infrastructure \(HDI\), users that would like to consume objects deployed to an HDI container need to be granted the appropriate privileges. The privileges can be granted to specific objects in the schema \(for example, <code><i class="varname">&lt;container_name&gt;</i>#DI</code>\) by use of a role that has been deployed to the target container, for example, *<container\_name\>*, or by granting privileges for the entire schema.
 
 > ### Caution:  
 > HDI containers and their schemas are intended to be managed exclusively by HDI. Creating objects manually in an HDI container is highly likely to cause problems that can lead to loss of data. For this reason, it is not recommended to grant the `CREATE ANY` privilege.
@@ -23,7 +23,7 @@ To grant access privileges for the entire container schema where the database ob
 
 ## Procedure
 
-1.  In an SQL console, connect to the database with an administrator of the target HDI container \(for example, “C”\).
+1.  In an SQL console, connect to the database with an administrator of the target HDI container \(for example, *<container\_name\>*\).
 
 2.  Open the SQL editor for this database.
 
@@ -34,21 +34,21 @@ To grant access privileges for the entire container schema where the database ob
     > ### Sample Code:  
     > ```sql
     > CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_SCHEMA_PRIVILEGES; 
-    > INSERT INTO #PRIVILEGES ( PRIVILEGE_NAME, PRINCIPAL_SCHEMA_NAME, PRINCIPAL_NAME ) VALUES ( 'SELECT', '', 'NEW_CONTAINER_CONSUMER' );
-    > CALL C#DI.GRANT_CONTAINER_SCHEMA_PRIVILEGES( #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > INSERT INTO #PRIVILEGES ( PRIVILEGE_NAME, PRINCIPAL_SCHEMA_NAME, PRINCIPAL_NAME ) VALUES ( 'SELECT', '', '<NEW_CONTAINER_CONSUMER>' );
+    > CALL <container_name>#DI.GRANT_CONTAINER_SCHEMA_PRIVILEGES( #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > DROP TABLE #PRIVILEGES;
     > ```
 
-    1.  Adjust the name of the consumer user “`NEW_CONTAINER_CONSUMER`” in the `INSERT` statement in line 2 to reflect the name of the user who requires access to the container.
+    1.  Replace *<NEW\_CONTAINER\_CONSUMER\>* in the `INSERT` statement in line 2 with the name of the user who requires access to the container.
 
-    2.  Adjust the name of the container's API schema \(`C#DI`\) in the `CALL` statement to suit your needs.
+    2.  in the `CALL` statement, replace *<container\_name\>* in the name of the container's API schema \(<code><i class="varname">&lt;container_name&gt;</i>#DI</code>\) with the name of your container.
 
 
-4.  Execute the SQL code.
+4.  Run the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 
-5.  \(Optional\) Confirm that the `NEW_CONTAINER_CONSUMER` can now access the database objects in the container's schema.
+5.  \(Optional\) Confirm that the *<NEW\_CONTAINER\_CONSUMER\>* can now access the database objects in *<container\_name\>*'s schema.
 
 
 **Related Information**  

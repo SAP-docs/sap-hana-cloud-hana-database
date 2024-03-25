@@ -8,7 +8,7 @@ Transforms a design-time table resource into a table database object.
 
 The table plug-ins transform a design-time table resource \(defined in `.hdbtable` or `.hdbdropcreatetable` artifacts\) into a table database object.
 
-The Table plug-in uses a data migration component which transforms an already deployed version of the table into the new structure of the table. The necessary migration steps for the table structure are determined automatically based on changes to the design-time definition of the table. This transformation always uses a temporary shadow table into which the existing data is copied to match the new structure. For the duration of the copy operation, the source table is protected by means of an exclusive lock that prevents access by any other user until the lock is released again, which could in some situtations lead to a lock-wait time-out. Since the copy operation can be very costly for tables that contain a lot of data, where the use of the migration-table \(`.hdbmigrationtable`\) plug-in should be considered. For smaller tables containing, for example, configuration data, this cost is usually negligible.
+The Table plug-in uses a data migration component which transforms an already deployed version of the table into the new structure of the table. The necessary migration steps for the table structure are determined automatically based on changes to the design-time definition of the table. This transformation always uses a temporary shadow table into which the existing data is copied to match the new structure. For the duration of the copy operation, the source table is protected by means of an exclusive lock that prevents access by any other user until the lock is released again, which could in some situtations lead to a lock-wait time-out. Since the copy operation can be very costly for tables that contain a lot of data, the use of the migration-table \(`.hdbmigrationtable`\) plug-in should be considered. For smaller tables containing, for example, configuration data, this cost is usually negligible.
 
 > ### Note:  
 > It is possible to switch from `.hdbmigrationtable` to `.hdbtable`. For more information about how to switch formats, see *Switching from `.hdbmigrationtable` to `.hdbtable`* below.
@@ -1445,4 +1445,6 @@ When making use of the fast-migration feature for hdbtable artifacts, bear in mi
 [SAP HDI Artifact Types and Build Plug-ins Reference](sap-hdi-artifact-types-and-build-plug-ins-reference-9789224.md "The SAP HANA Cloud, SAP HANA database deployment infrastructure (HDI) supports a wide variety of database artifact types, for example, tables, indexes, and views.")
 
 [HDI Delta Deployment and Undeploy Allow List \(SAP HANA Cloud Database Developer Guide for Business App Studio\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/ebb0a1d1d41e4ab0a06ea951717e7d3d.html)
+
+[SAP HDI Parameters](../10-HDI-Cloud-Administration/13-HDI-Cloud-Admin-Maintain-HDI/sap-hdi-parameters-e2d3e54.md "An overview of the parameters available for the SAP HANA Deployment Infrastructure (HDI) and the corresponding build plug-ins.")
 

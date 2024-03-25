@@ -297,7 +297,7 @@ Unless otherwise specified, system views are available to all users granted the 
 **Related Information**  
 
 
-[Procedure Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/3809c45287c44908a3d45a4db1514a55.html "") :arrow_upper_right:
+[Procedure Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/3809c45287c44908a3d45a4db1514a55.html "") :arrow_upper_right:
 
 [PROCEDURE\_PARAMETER\_COLUMNS System View](procedure-parameter-columns-system-view-3d02842.md "Lists available columns of table parameters of stored procedures.")
 

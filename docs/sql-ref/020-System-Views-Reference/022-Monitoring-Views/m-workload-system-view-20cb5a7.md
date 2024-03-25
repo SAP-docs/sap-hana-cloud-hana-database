@@ -409,5 +409,5 @@ Displays the peak size of used memory per minute in bytes.
 
 [DROP WORKLOAD MAPPING Statement \(Workload Management\)](../../010-SQL-Reference/012-SQL-Statements/drop-workload-mapping-statement-workload-management-8d90e94.md "Drops a workload mapping.")
 
-[Workload Management](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/30f2e9cb92aa4f358dda4ac58e062d83.html "The load on an SAP HANA system can be managed by selectively applying limitations and priorities to how resources are used. Settings can be applied globally or at the level of individual user sessions by using workload classes.") :arrow_upper_right:
+[Workload Management](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/30f2e9cb92aa4f358dda4ac58e062d83.html "The load on an SAP HANA system can be managed by selectively applying limitations and priorities to how resources are used. Settings can be applied globally or at the level of individual user sessions by using workload classes.") :arrow_upper_right:
 

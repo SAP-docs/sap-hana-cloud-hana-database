@@ -183,7 +183,7 @@ To see all entries in the M\_SQLSCRIPT\_PLAN\_PROFILERS system view, you must ha
 **Related Information**  
 
 
-[SQLScript Plan Profiler](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/ba8396bcc4344c5988fb78749a6d02c2.html "") :arrow_upper_right:
+[SQLScript Plan Profiler](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/ba8396bcc4344c5988fb78749a6d02c2.html "") :arrow_upper_right:
 
 [ALTER SYSTEM \{START | STOP | CLEAR\} SQLSCRIPT PLAN PROFILER Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-start-stop-clear-sqlscript-plan-profiler-statement-system-manag-f518753.md "Starts, stops, and clears the SQLScript Plan Profiling feature.")
 

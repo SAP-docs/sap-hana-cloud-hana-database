@@ -36,6 +36,23 @@ Description
 <tr>
 <td valign="top">
 
+0
+
+</td>
+<td valign="top">
+
+ERR\_LTT\_NO\_ERROR
+
+</td>
+<td valign="top">
+
+Default constructed empty exception object
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 1
 
 </td>
@@ -46,7 +63,7 @@ WRN\_GENERAL
 </td>
 <td valign="top">
 
-A general warning.
+general warning
 
 </td>
 </tr>
@@ -63,7 +80,7 @@ ERR\_GENERAL
 </td>
 <td valign="top">
 
-A general error.
+general error
 
 </td>
 </tr>
@@ -80,7 +97,7 @@ FATAL\_GENERAL
 </td>
 <td valign="top">
 
-A fatal error.
+fatal error
 
 </td>
 </tr>
@@ -97,7 +114,7 @@ FATAL\_OUT\_OF\_MEMORY
 </td>
 <td valign="top">
 
-Cannot allocate enough memory.
+cannot allocate enough memory
 
 </td>
 </tr>
@@ -114,7 +131,7 @@ ERR\_INIT
 </td>
 <td valign="top">
 
-Initialization error.
+initialization error
 
 </td>
 </tr>
@@ -131,7 +148,7 @@ ERR\_DATA
 </td>
 <td valign="top">
 
-Invalid data.
+invalid data
 
 </td>
 </tr>
@@ -148,7 +165,7 @@ ERR\_FEATURE\_NOT\_SUPPORTED
 </td>
 <td valign="top">
 
-The feature is not supported.
+feature not supported
 
 </td>
 </tr>
@@ -165,7 +182,7 @@ ERR\_INV\_ARGUMENT
 </td>
 <td valign="top">
 
-Invalid argument.
+invalid argument
 
 </td>
 </tr>
@@ -182,7 +199,7 @@ ERR\_INDEX\_OUT\_OF\_BOUNDS
 </td>
 <td valign="top">
 
-The index is out of bounds.
+index out of bounds
 
 </td>
 </tr>
@@ -199,7 +216,7 @@ ERR\_AUTHENTICATION\_FAILED
 </td>
 <td valign="top">
 
-Authentication failed.
+authentication failed
 
 </td>
 </tr>
@@ -216,7 +233,7 @@ ERR\_INV\_STATE
 </td>
 <td valign="top">
 
-Invalid state.
+invalid state
 
 </td>
 </tr>
@@ -233,7 +250,7 @@ ERR\_FILE\_OPEN\_FAILED
 </td>
 <td valign="top">
 
-Cannot open the file.
+cannot open file
 
 </td>
 </tr>
@@ -250,7 +267,7 @@ ERR\_FILE\_CREATE\_WRITE\_FAILED
 </td>
 <td valign="top">
 
-Cannot create/write the file.
+cannot create/write file
 
 </td>
 </tr>
@@ -267,7 +284,7 @@ ERR\_DISK\_SPACE\_SHORTAGE
 </td>
 <td valign="top">
 
-Cannot allocate enough disk space.
+cannot allocate enough disk space
 
 </td>
 </tr>
@@ -284,7 +301,7 @@ ERR\_FILE\_NOT\_FOUND
 </td>
 <td valign="top">
 
-Cannot find file.
+cannot find file
 
 </td>
 </tr>
@@ -301,7 +318,7 @@ ERR\_RETRY\_STATEMENT
 </td>
 <td valign="top">
 
-Retry the statement.
+statement retry
 
 </td>
 </tr>
@@ -318,7 +335,7 @@ ERR\_CATA\_VER\_MISMATCH
 </td>
 <td valign="top">
 
-The metadata schema version is incompatible between the database and the executable file.
+metadata schema version incompatible between database and executable file
 
 </td>
 </tr>
@@ -335,7 +352,7 @@ ERR\_SERVICE\_SHUTDOWN
 </td>
 <td valign="top">
 
-The service is shutting down.
+service shutting down
 
 </td>
 </tr>
@@ -352,7 +369,7 @@ ERR\_INV\_LICENSE
 </td>
 <td valign="top">
 
-Invalid license.
+invalid license
 
 </td>
 </tr>
@@ -369,7 +386,7 @@ ERR\_CON\_OUTSIDE\_VALIDITY\_PERIOD
 </td>
 <td valign="top">
 
-The connection attempt was outside of the user's validity period.
+connect attempt outside user's validity period
 
 </td>
 </tr>
@@ -386,24 +403,7 @@ ERR\_PERSISTENCE
 </td>
 <td valign="top">
 
-Persistence error.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-22
-
-</td>
-<td valign="top">
-
-ERR\_RECOMPILE\_STATEMENT
-
-</td>
-<td valign="top">
-
-A statement recompile is required.
+persistence error
 
 </td>
 </tr>
@@ -420,7 +420,7 @@ ERR\_TX
 </td>
 <td valign="top">
 
-Transaction error.
+transaction error
 
 </td>
 </tr>
@@ -437,7 +437,7 @@ ERR\_TX\_ROLLBACK
 </td>
 <td valign="top">
 
-The transaction is rolled back by an internal error.
+transaction rolled back by an internal error
 
 </td>
 </tr>
@@ -454,7 +454,7 @@ ERR\_TX\_ROLLBACK\_INTEGRITY
 </td>
 <td valign="top">
 
-The transaction rolled back by an integrity constraint violation.
+transaction rolled back by integrity constraint violation
 
 </td>
 </tr>
@@ -471,7 +471,7 @@ ERR\_TX\_ROLLBACK\_LOCK\_TIMEOUT
 </td>
 <td valign="top">
 
-The transaction is rolled back by a lock wait timeout.
+transaction rolled back by lock wait timeout
 
 </td>
 </tr>
@@ -488,7 +488,7 @@ ERR\_TX\_ROLLBACK\_RESOURCE
 </td>
 <td valign="top">
 
-The transaction is rolled back due to unavailable resources.
+transaction rolled back due to unavailable resource
 
 </td>
 </tr>
@@ -505,7 +505,7 @@ ERR\_TX\_ROLLBACK\_DEADLOCK
 </td>
 <td valign="top">
 
-The transaction is rolled back by a detected deadlock.
+transaction rolled back by detected deadlock
 
 </td>
 </tr>
@@ -522,7 +522,7 @@ FATAL\_REC\_CHKPT\_FILE\_FAIL
 </td>
 <td valign="top">
 
-Failure accessing the checkpoint file.
+failure in accessing checkpoint file
 
 </td>
 </tr>
@@ -539,7 +539,7 @@ FATAL\_REC\_ANCHOR\_FILE\_FAIL
 </td>
 <td valign="top">
 
-Failure accessing the anchor file.
+failure in accessing anchor file
 
 </td>
 </tr>
@@ -556,7 +556,7 @@ FATAL\_REC\_LOG\_FILE\_FAIL
 </td>
 <td valign="top">
 
-Failure accessing the log file.
+failure in accessing log file
 
 </td>
 </tr>
@@ -573,7 +573,7 @@ FATAL\_REC\_ARCHIVE\_FILE\_FAIL
 </td>
 <td valign="top">
 
-Failure accessing the archive file.
+failure in accessing archive file
 
 </td>
 </tr>
@@ -590,7 +590,7 @@ ERR\_TX\_SERIALIZATION
 </td>
 <td valign="top">
 
-Transaction serialization failure.
+transaction serialization failure
 
 </td>
 </tr>
@@ -607,7 +607,7 @@ ERR\_TX\_ROLLBACK\_QUERY\_CANCEL
 </td>
 <td valign="top">
 
-The current operation was canceled by request and the transaction was rolled back.
+current operation cancelled by request and transaction rolled back
 
 </td>
 </tr>
@@ -624,7 +624,7 @@ ERR\_TX\_INV\_TID
 </td>
 <td valign="top">
 
-Invalid write-transaction identifier.
+invalid write-transaction identifier
 
 </td>
 </tr>
@@ -641,7 +641,7 @@ ERR\_INV\_LOG\_FILE\_FAIL
 </td>
 <td valign="top">
 
-Failure in accessing the invisible log file.
+failure in accessing invisible log file
 
 </td>
 </tr>
@@ -658,7 +658,7 @@ ERR\_TX\_EXCEED\_MAX\_TX\_NUM
 </td>
 <td valign="top">
 
-Exceeded maximum number of concurrent transactions.
+exceed max num of concurrent transactions
 
 </td>
 </tr>
@@ -675,7 +675,7 @@ ERR\_TX\_SERIALIZATION\_WITH\_TIMEOUT
 </td>
 <td valign="top">
 
-There is a transaction serialization failure until the timeout expires.
+transaction serialization failure until timeout expires
 
 </td>
 </tr>
@@ -692,7 +692,7 @@ ERR\_TX\_ROLLBACK\_UNIQUE\_VIOLATED
 </td>
 <td valign="top">
 
-The transaction rollback unique constraint has been violated.
+transaction rollback
 
 </td>
 </tr>
@@ -709,7 +709,7 @@ ERR\_TX\_DIST\_FAILURE
 </td>
 <td valign="top">
 
-The transaction distribution work failed.
+transaction distribution work failure
 
 </td>
 </tr>
@@ -726,7 +726,7 @@ ERR\_TX\_LOCK\_ACQUISITION\_FAIL
 </td>
 <td valign="top">
 
-The resource is busy and NOWAIT has been specified.
+Resource busy and NOWAIT specified
 
 </td>
 </tr>
@@ -743,7 +743,7 @@ ERR\_TX\_DATA\_LOG\_INCONSISTENT
 </td>
 <td valign="top">
 
-Inconsistency between data and log.
+inconsistency between data and log
 
 </td>
 </tr>
@@ -760,7 +760,7 @@ ERR\_TX\_START\_BLOCKED
 </td>
 <td valign="top">
 
-The transaction start is blocked until the Master\_Restart finishes.
+transaction start is blocked until Coordinator\_Restart finishes
 
 </td>
 </tr>
@@ -777,7 +777,7 @@ ERR\_TX\_DIST\_2PC\_FAILURE
 </td>
 <td valign="top">
 
-Distributed transaction commit failure.
+distributed transaction commit failure
 
 </td>
 </tr>
@@ -794,7 +794,7 @@ ERR\_TX\_SNAPSHOT\_TOO\_OLD
 </td>
 <td valign="top">
 
-The statement is canceled or the snapshot timestamp is already invalidated.
+statement cancelled or snapshot timestamp already invalidated
 
 </td>
 </tr>
@@ -811,7 +811,7 @@ ERR\_TX\_ROLLBACK\_ROW\_STORE\_FULL
 </td>
 <td valign="top">
 
-The transaction rollback exceeds the maximum size of the persistent row store data space.
+transaction rollback
 
 </td>
 </tr>
@@ -828,7 +828,7 @@ ERR\_TX\_ROLLBACK\_ROW\_STORE\_FULL\_DBAREQ
 </td>
 <td valign="top">
 
-The transaction rollback exceeds the maximum size of the persistent row store data space requested by the DBAdmin's action.
+transaction rollback
 
 </td>
 </tr>
@@ -845,7 +845,7 @@ ERR\_TX\_SERIALIZATION\_UNLOCK\_REQUIRED
 </td>
 <td valign="top">
 
-The transaction serialization failure internally used to distinguish serialization failure caused by delete and other versions.
+transaction serialization failure
 
 </td>
 </tr>
@@ -862,7 +862,7 @@ ERR\_TX\_INDEX\_HANDLE\_ACQUISITION\_FAIL
 </td>
 <td valign="top">
 
-Failure in acquiring the index handle.
+failure in acquiring index handle
 
 </td>
 </tr>
@@ -879,7 +879,7 @@ ERR\_TX\_ROLLBACK\_DEFERRED\_FK
 </td>
 <td valign="top">
 
-The transaction rollback deferred an FK constraint violation.
+transaction rollback
 
 </td>
 </tr>
@@ -896,7 +896,7 @@ ERR\_TX\_XAER
 </td>
 <td valign="top">
 
-XA transaction error.
+XA transaction error
 
 </td>
 </tr>
@@ -913,7 +913,7 @@ ERR\_TX\_XAER\_ASYNC
 </td>
 <td valign="top">
 
-Asynchronous operation error.
+asynchronous operation error
 
 </td>
 </tr>
@@ -930,7 +930,7 @@ ERR\_TX\_XAER\_DUPID
 </td>
 <td valign="top">
 
-Duplicate XID.
+duplicate XID
 
 </td>
 </tr>
@@ -947,7 +947,7 @@ ERR\_TX\_XAER\_INVAL
 </td>
 <td valign="top">
 
-Invalid argument of XA call.
+invalid argument of XA call
 
 </td>
 </tr>
@@ -964,7 +964,7 @@ ERR\_TX\_XAER\_NOTA
 </td>
 <td valign="top">
 
-No valid XID.
+no valid XID
 
 </td>
 </tr>
@@ -981,7 +981,7 @@ ERR\_TX\_XAER\_OUTSIDE
 </td>
 <td valign="top">
 
-Outside of global transaction.
+outside of global transaction
 
 </td>
 </tr>
@@ -998,7 +998,7 @@ ERR\_TX\_XAER\_PROTO
 </td>
 <td valign="top">
 
-Improper XA call sequence.
+improper XA call sequence
 
 </td>
 </tr>
@@ -1015,7 +1015,7 @@ ERR\_TX\_XAER\_RMERR
 </td>
 <td valign="top">
 
-Resource manager error.
+resource manager error
 
 </td>
 </tr>
@@ -1032,7 +1032,7 @@ ERR\_TX\_XAER\_RMFAIL
 </td>
 <td valign="top">
 
-Resource manager unavailable.
+Resource manager unavailable
 
 </td>
 </tr>
@@ -1049,7 +1049,7 @@ ERR\_TX\_XA\_RBPROTO
 </td>
 <td valign="top">
 
-A protocol error occurred in the resource manager.
+A protocol error occurred in the resource manager
 
 </td>
 </tr>
@@ -1066,7 +1066,7 @@ ERR\_TX\_XA\_RBROLLBACK
 </td>
 <td valign="top">
 
-The reason that the rollback was caused is unspecified.
+The rollback was caused by an unspecified reason
 
 </td>
 </tr>
@@ -1083,7 +1083,7 @@ ERR\_SQL
 </td>
 <td valign="top">
 
-SQL processing error.
+sql processing error
 
 </td>
 </tr>
@@ -1100,7 +1100,7 @@ ERR\_SQL\_PARSE
 </td>
 <td valign="top">
 
-SQL syntax error.
+sql syntax error
 
 </td>
 </tr>
@@ -1117,7 +1117,7 @@ ERR\_SQL\_INSUFF\_PRIV
 </td>
 <td valign="top">
 
-Insufficient privilege.
+insufficient privilege
 
 </td>
 </tr>
@@ -1134,7 +1134,7 @@ ERR\_SQL\_INV\_TABLE
 </td>
 <td valign="top">
 
-Invalid table name.
+invalid table name
 
 </td>
 </tr>
@@ -1151,7 +1151,7 @@ ERR\_SQL\_INV\_COLUMN
 </td>
 <td valign="top">
 
-Invalid column name.
+invalid column name
 
 </td>
 </tr>
@@ -1168,7 +1168,7 @@ ERR\_SQL\_INV\_INDEX
 </td>
 <td valign="top">
 
-Invalid index name.
+invalid index name
 
 </td>
 </tr>
@@ -1185,7 +1185,7 @@ ERR\_SQL\_INV\_QUERY
 </td>
 <td valign="top">
 
-Invalid query name.
+invalid query name
 
 </td>
 </tr>
@@ -1202,7 +1202,7 @@ ERR\_SQL\_INV\_ALIAS
 </td>
 <td valign="top">
 
-Invalid alias name.
+invalid alias name
 
 </td>
 </tr>
@@ -1219,7 +1219,7 @@ ERR\_SQL\_INV\_DATATYPE
 </td>
 <td valign="top">
 
-Invalid data type.
+invalid datatype
 
 </td>
 </tr>
@@ -1236,7 +1236,7 @@ ERR\_SQL\_MISSING\_EXP
 </td>
 <td valign="top">
 
-The expression is missing.
+expression missing
 
 </td>
 </tr>
@@ -1253,7 +1253,7 @@ ERR\_SQL\_INCNST\_DATATYPE
 </td>
 <td valign="top">
 
-Inconsistent data type.
+inconsistent datatype
 
 </td>
 </tr>
@@ -1270,7 +1270,7 @@ ERR\_SQL\_LONG\_LEN\_TYPE
 </td>
 <td valign="top">
 
-The specified length is too long for its data type.
+specified length too long for its datatype
 
 </td>
 </tr>
@@ -1287,7 +1287,7 @@ ERR\_SQL\_AMBG\_COLUMN
 </td>
 <td valign="top">
 
-The column is ambiguously defined.
+column ambiguously defined
 
 </td>
 </tr>
@@ -1304,7 +1304,7 @@ ERR\_SQL\_MANY\_VALUES
 </td>
 <td valign="top">
 
-There are too many values.
+too many values
 
 </td>
 </tr>
@@ -1321,7 +1321,7 @@ ERR\_SQL\_FEW\_VALUES
 </td>
 <td valign="top">
 
-There are not enough values.
+not enough values
 
 </td>
 </tr>
@@ -1338,7 +1338,7 @@ ERR\_SQL\_DPLC\_ALIAS
 </td>
 <td valign="top">
 
-Duplicate alias.
+duplicate alias
 
 </td>
 </tr>
@@ -1355,7 +1355,7 @@ ERR\_SQL\_DPLC\_COLUMN
 </td>
 <td valign="top">
 
-Duplicate column name.
+duplicate column name
 
 </td>
 </tr>
@@ -1372,7 +1372,7 @@ ERR\_SQL\_LONG\_CHAR
 </td>
 <td valign="top">
 
-Not a single character string.
+not a single character string
 
 </td>
 </tr>
@@ -1389,7 +1389,7 @@ ERR\_SQL\_INS\_LARGE\_VALUE
 </td>
 <td valign="top">
 
-The inserted value is too large for the column.
+inserted value too large for column
 
 </td>
 </tr>
@@ -1406,7 +1406,7 @@ ERR\_SQL\_NOT\_FUNCTION
 </td>
 <td valign="top">
 
-The aggregate function is not allowed.
+aggregate function not allowed
 
 </td>
 </tr>
@@ -1423,7 +1423,7 @@ ERR\_SQL\_NOT\_SINGLE\_GROUP
 </td>
 <td valign="top">
 
-Aggregation or grouping is missing.
+missing aggregation or grouping
 
 </td>
 </tr>
@@ -1440,7 +1440,7 @@ ERR\_SQL\_NOT\_GROUP\_EXP
 </td>
 <td valign="top">
 
-This is not a GROUP BY expression.
+not a GROUP BY expression
 
 </td>
 </tr>
@@ -1457,7 +1457,7 @@ ERR\_SQL\_NESTED\_WO\_GROUP
 </td>
 <td valign="top">
 
-The nested group function is without GROUP BY.
+nested group function without GROUP BY
 
 </td>
 </tr>
@@ -1474,7 +1474,7 @@ ERR\_SQL\_TOO\_DEEP\_NESTED
 </td>
 <td valign="top">
 
-The group function is nested.
+group function is nested
 
 </td>
 </tr>
@@ -1491,7 +1491,7 @@ ERR\_SQL\_ORDER\_EXCEED\_NUM
 </td>
 <td valign="top">
 
-The ORDER BY item must be the number of a SELECT list.
+ORDER BY item must be the number of a SELECT-list
 
 </td>
 </tr>
@@ -1508,7 +1508,7 @@ ERR\_SQL\_OUTER\_IN\_OR
 </td>
 <td valign="top">
 
-The outer join is not allowed in the operand OR or IN.
+outer join not allowed in operand of OR or IN
 
 </td>
 </tr>
@@ -1525,7 +1525,7 @@ ERR\_SQL\_OUTER\_CROSS\_JOIN
 </td>
 <td valign="top">
 
-The two tables cannot be outer-joined to each other.
+two tables cannot be outer-joined to each other
 
 </td>
 </tr>
@@ -1542,7 +1542,7 @@ ERR\_SQL\_OUTER\_MORE\_TWO
 </td>
 <td valign="top">
 
-A table may be outer joined to at most one other table.
+a table may be outer joined to at most one other table
 
 </td>
 </tr>
@@ -1559,7 +1559,7 @@ ERR\_SQL\_JOIN\_NOT\_MATCH
 </td>
 <td valign="top">
 
-The join field does not match.
+join field does not match
 
 </td>
 </tr>
@@ -1576,7 +1576,7 @@ ERR\_SQL\_INV\_JOIN\_PRED
 </td>
 <td valign="top">
 
-Invalid join condition.
+invalid join condition
 
 </td>
 </tr>
@@ -1593,7 +1593,7 @@ ERR\_SQL\_LONG\_IDENTIFIER
 </td>
 <td valign="top">
 
-The identifier is too long.
+identifier is too long
 
 </td>
 </tr>
@@ -1610,7 +1610,7 @@ ERR\_SQL\_NOT\_NULL
 </td>
 <td valign="top">
 
-Cannot insert NULL or update to NULL.
+cannot insert NULL or update to NULL
 
 </td>
 </tr>
@@ -1627,7 +1627,7 @@ ERR\_SQL\_EXST\_TABLE
 </td>
 <td valign="top">
 
-Cannot use a duplicate table name.
+cannot use duplicate table name
 
 </td>
 </tr>
@@ -1644,7 +1644,7 @@ ERR\_SQL\_EXST\_INDEX
 </td>
 <td valign="top">
 
-Cannot use a duplicate index name.
+cannot use duplicate index name
 
 </td>
 </tr>
@@ -1661,7 +1661,7 @@ ERR\_SQL\_EXST\_QUERY
 </td>
 <td valign="top">
 
-Cannot use a duplicate query name.
+cannot use duplicate query name
 
 </td>
 </tr>
@@ -1678,7 +1678,7 @@ ERR\_SQL\_NOT\_POS\_ARGUMENT
 </td>
 <td valign="top">
 
-The argument identifier must be positive.
+argument identifier must be positive
 
 </td>
 </tr>
@@ -1695,7 +1695,7 @@ ERR\_SQL\_FEW\_ARGUMENT
 </td>
 <td valign="top">
 
-There is a wrong number of arguments.
+wrong number of arguments
 
 </td>
 </tr>
@@ -1712,7 +1712,7 @@ ERR\_SQL\_INV\_ARGUMENT
 </td>
 <td valign="top">
 
-There is an argument type mismatch.
+argument type mismatch
 
 </td>
 </tr>
@@ -1729,7 +1729,7 @@ ERR\_SQL\_MANY\_PRIMARY\_KEY
 </td>
 <td valign="top">
 
-You cannot have more than one primary key.
+cannot have more than one primary key
 
 </td>
 </tr>
@@ -1746,7 +1746,7 @@ ERR\_SQL\_LONG\_MULTIKEY
 </td>
 <td valign="top">
 
-The multi key length is too long.
+too long multi key length
 
 </td>
 </tr>
@@ -1763,7 +1763,7 @@ ERR\_SQL\_REP\_TABLE\_KEY
 </td>
 <td valign="top">
 
-The replicated table must have a primary key.
+replicated table must have a primary key
 
 </td>
 </tr>
@@ -1780,7 +1780,7 @@ ERR\_SQL\_REP\_UPDATE\_KEY
 </td>
 <td valign="top">
 
-You cannot update the primary key field in replicated table.
+cannot update primary key field in replicated table
 
 </td>
 </tr>
@@ -1797,7 +1797,7 @@ ERR\_SQL\_NOT\_DDL\_STORE
 </td>
 <td valign="top">
 
-Cannot store DDL.
+cannot store DDL
 
 </td>
 </tr>
@@ -1814,7 +1814,7 @@ ERR\_SQL\_NOT\_DROP\_SYSIDX
 </td>
 <td valign="top">
 
-Cannot drop the index used to enforce a unique/primary key.
+cannot drop index used for enforcement of unique/primary key
 
 </td>
 </tr>
@@ -1831,7 +1831,7 @@ ERR\_SQL\_ARG\_OUT\_OF\_RANGE
 </td>
 <td valign="top">
 
-The argument index is out of range.
+argument index is out of range
 
 </td>
 </tr>
@@ -1848,7 +1848,7 @@ ERR\_SQL\_UNIQUE\_VIOLATED
 </td>
 <td valign="top">
 
-The unique constraint is violated.
+unique constraint violated
 
 </td>
 </tr>
@@ -1865,7 +1865,7 @@ ERR\_SQL\_INV\_CHAR\_VAL
 </td>
 <td valign="top">
 
-Invalid CHAR or VARCHAR value.
+invalid CHAR or VARCHAR value
 
 </td>
 </tr>
@@ -1882,7 +1882,7 @@ ERR\_SQL\_INV\_DATETIME\_VAL
 </td>
 <td valign="top">
 
-Invalid DATE TIME or TIMESTAMP value.
+invalid DATE
 
 </td>
 </tr>
@@ -1899,7 +1899,7 @@ ERR\_SQL\_DIV\_BY\_ZERO
 </td>
 <td valign="top">
 
-The division by zero is undefined.
+division by zero undefined
 
 </td>
 </tr>
@@ -1916,7 +1916,7 @@ ERR\_SQL\_SINGLE\_ROW
 </td>
 <td valign="top">
 
-The single-row query returns more than one row.
+single-row query returns more than one row
 
 </td>
 </tr>
@@ -1933,7 +1933,7 @@ ERR\_SQL\_INV\_CURSOR
 </td>
 <td valign="top">
 
-Invalid cursor.
+invalid cursor
 
 </td>
 </tr>
@@ -1950,7 +1950,7 @@ ERR\_SQL\_NUM\_OUT\_OF\_RANGE
 </td>
 <td valign="top">
 
-The numeric value is out of range.
+numeric value out of range
 
 </td>
 </tr>
@@ -1967,7 +1967,7 @@ ERR\_SQL\_EXST\_COLUMN
 </td>
 <td valign="top">
 
-The column name already exists.
+column name already exists
 
 </td>
 </tr>
@@ -1984,7 +1984,7 @@ ERR\_SQL\_SUBQ\_TOP\_ORDERBY
 </td>
 <td valign="top">
 
-The correlated subquery cannot have TOP or ORDER BY.
+correlated subquery cannot have TOP or ORDER BY
 
 </td>
 </tr>
@@ -2001,7 +2001,7 @@ ERR\_SQL\_IN\_PROC
 </td>
 <td valign="top">
 
-There is an SQL error in the procedure.
+sql error in procedure
 
 </td>
 </tr>
@@ -2018,7 +2018,7 @@ ERR\_SQL\_DROP\_ALL\_COLUMNS
 </td>
 <td valign="top">
 
-Cannot drop all columns in a table.
+cannot drop all columns in a table
 
 </td>
 </tr>
@@ -2035,7 +2035,7 @@ ERR\_SQL\_SEQ\_EXHAUST
 </td>
 <td valign="top">
 
-The sequence is exhausted.
+sequence is exhausted
 
 </td>
 </tr>
@@ -2052,7 +2052,7 @@ ERR\_SQL\_INV\_SEQ
 </td>
 <td valign="top">
 
-Invalid sequence.
+invalid sequence
 
 </td>
 </tr>
@@ -2069,7 +2069,7 @@ ERR\_SQL\_OVERFLOW\_NUMERIC
 </td>
 <td valign="top">
 
-Numeric overflow.
+numeric overflow
 
 </td>
 </tr>
@@ -2086,7 +2086,7 @@ ERR\_SQL\_INV\_SYNONYM
 </td>
 <td valign="top">
 
-Invalid synonym.
+invalid synonym
 
 </td>
 </tr>
@@ -2103,7 +2103,7 @@ ERR\_SQL\_INV\_NUM\_ARG\_FUNC
 </td>
 <td valign="top">
 
-Wrong number of arguments in the function invocation.
+wrong number of arguments in function invocation
 
 </td>
 </tr>
@@ -2120,7 +2120,7 @@ ERR\_SQL\_NOT\_MATCH\_PLAN\_TABLE
 </td>
 <td valign="top">
 
-P\_QUERYPLANS does not exist or is not in a valid format.
+P\_QUERYPLANS not exists nor valid format
 
 </td>
 </tr>
@@ -2137,7 +2137,7 @@ ERR\_SQL\_DECIMAL\_PRECISION
 </td>
 <td valign="top">
 
-The decimal precision specifier is out of range.
+decimal precision specifier is out of range
 
 </td>
 </tr>
@@ -2154,7 +2154,7 @@ ERR\_SQL\_DECIMAL\_SCALE
 </td>
 <td valign="top">
 
-The decimal scale specifier is out of range.
+decimal scale specifier is out of range
 
 </td>
 </tr>
@@ -2171,7 +2171,7 @@ ERR\_SQL\_LOB\_INDEX
 </td>
 <td valign="top">
 
-Cannot create an index on an expression with a LOB data type.
+cannot create index on expression with datatype LOB
 
 </td>
 </tr>
@@ -2188,7 +2188,7 @@ ERR\_SQL\_INV\_VIEW
 </td>
 <td valign="top">
 
-Invalid view name.
+invalid view name
 
 </td>
 </tr>
@@ -2205,7 +2205,7 @@ ERR\_SQL\_EXST\_VIEW
 </td>
 <td valign="top">
 
-Cannot use duplicate view name.
+cannot use duplicate view name
 
 </td>
 </tr>
@@ -2222,7 +2222,7 @@ ERR\_SQL\_REP\_DPLC\_ID
 </td>
 <td valign="top">
 
-Duplicate replication ID.
+duplicate replication id
 
 </td>
 </tr>
@@ -2239,7 +2239,7 @@ ERR\_SQL\_EXST\_SEQ
 </td>
 <td valign="top">
 
-Cannot use a duplicate sequence name.
+cannot use duplicate sequence name
 
 </td>
 </tr>
@@ -2256,7 +2256,7 @@ ERR\_SQL\_ESC\_SEQ
 </td>
 <td valign="top">
 
-Invalid escape sequence.
+invalid escape sequence
 
 </td>
 </tr>
@@ -2273,7 +2273,7 @@ ERR\_SQL\_SEQ\_CURRVAL
 </td>
 <td valign="top">
 
-The CURRVAL of the given sequence is not yet defined in this session.
+CURRVAL of given sequence is not yet defined in this session
 
 </td>
 </tr>
@@ -2290,7 +2290,7 @@ ERR\_SQL\_CANNOT\_EXPLAIN
 </td>
 <td valign="top">
 
-Cannot explain the plan of the given statement.
+cannot explain plan of given statement
 
 </td>
 </tr>
@@ -2307,7 +2307,7 @@ ERR\_SQL\_INV\_FUNC\_PROC
 </td>
 <td valign="top">
 
-Invalid function name or procedure.
+invalid name of function or procedure
 
 </td>
 </tr>
@@ -2324,7 +2324,7 @@ ERR\_SQL\_EXST\_FUNC\_PROC
 </td>
 <td valign="top">
 
-Cannot use duplicate function or procedure names.
+cannot use duplicate name of function or procedure
 
 </td>
 </tr>
@@ -2341,7 +2341,7 @@ ERR\_SQL\_EXST\_SYNONYM
 </td>
 <td valign="top">
 
-Cannot use duplicate synonym names.
+cannot use duplicate synonym name
 
 </td>
 </tr>
@@ -2358,7 +2358,7 @@ ERR\_SQL\_EXST\_USER
 </td>
 <td valign="top">
 
-The user name already exists.
+user name already exists
 
 </td>
 </tr>
@@ -2375,7 +2375,7 @@ ERR\_SQL\_INV\_USER
 </td>
 <td valign="top">
 
-Invalid user name.
+invalid user name
 
 </td>
 </tr>
@@ -2392,7 +2392,7 @@ ERR\_SQL\_COLUMN\_NOT\_ALLOWED\_HERE
 </td>
 <td valign="top">
 
-The column is not allowed.
+column not allowed
 
 </td>
 </tr>
@@ -2409,7 +2409,7 @@ ERR\_SQL\_INV\_PRIV
 </td>
 <td valign="top">
 
-Invalid user privilege.
+invalid user privilege
 
 </td>
 </tr>
@@ -2426,7 +2426,7 @@ ERR\_SQL\_EXST\_ALIAS
 </td>
 <td valign="top">
 
-The field alias name already exists.
+field alias name already exists
 
 </td>
 </tr>
@@ -2443,7 +2443,7 @@ ERR\_SQL\_INV\_DEFAULT
 </td>
 <td valign="top">
 
-Invalid default value.
+invalid default value
 
 </td>
 </tr>
@@ -2460,7 +2460,7 @@ ERR\_SQL\_INTO\_NOT\_ALLOWED
 </td>
 <td valign="top">
 
-The INTO clause is not allowed for this SELECT statement.
+INTO clause not allowed for this SELECT statement
 
 </td>
 </tr>
@@ -2477,7 +2477,7 @@ ERR\_SQL\_ZERO\_LEN\_NOT\_ALLOWED
 </td>
 <td valign="top">
 
-Zero length columns are not allowed.
+zero-length columns are not allowed
 
 </td>
 </tr>
@@ -2494,7 +2494,7 @@ ERR\_SQL\_INV\_NUMBER
 </td>
 <td valign="top">
 
-Invalid number.
+invalid number
 
 </td>
 </tr>
@@ -2511,7 +2511,7 @@ ERR\_SQL\_VAR\_NOT\_BOUND
 </td>
 <td valign="top">
 
-Not all variables are bound.
+not all variables bound
 
 </td>
 </tr>
@@ -2528,7 +2528,7 @@ ERR\_SQL\_UNDERFLOW\_NUMERIC
 </td>
 <td valign="top">
 
-Numeric underflow.
+numeric underflow
 
 </td>
 </tr>
@@ -2545,7 +2545,7 @@ ERR\_SQL\_COLLATE\_CONFLICT
 </td>
 <td valign="top">
 
-Collation conflict.
+collation conflict
 
 </td>
 </tr>
@@ -2562,7 +2562,7 @@ ERR\_SQL\_INV\_COLLATE\_NAME
 </td>
 <td valign="top">
 
-Invalid collate name.
+invalid collate name
 
 </td>
 </tr>
@@ -2579,7 +2579,7 @@ ERR\_SQL\_LOADER\_PARSE
 </td>
 <td valign="top">
 
-There is a parse error in the data loader.
+parse error in data loader
 
 </td>
 </tr>
@@ -2596,7 +2596,7 @@ ERR\_SQL\_NOT\_REP\_TABLE
 </td>
 <td valign="top">
 
-This is not a replication table.
+not a replication table
 
 </td>
 </tr>
@@ -2613,7 +2613,7 @@ ERR\_SQL\_INV\_REP\_ID
 </td>
 <td valign="top">
 
-Invalid replication ID.
+invalid replication id
 
 </td>
 </tr>
@@ -2630,7 +2630,7 @@ ERR\_SQL\_INV\_OPTION
 </td>
 <td valign="top">
 
-Invalid option in the monitor.
+invalid option
 
 </td>
 </tr>
@@ -2647,7 +2647,7 @@ ERR\_SQL\_INV\_DATETIME\_FORMAT
 </td>
 <td valign="top">
 
-Invalid datetime format.
+invalid datetime format
 
 </td>
 </tr>
@@ -2664,7 +2664,7 @@ ERR\_SQL\_CREATE\_UNIQUE\_INDEX
 </td>
 <td valign="top">
 
-Cannot CREATE UNIQUE INDEX because a duplicate key has been found.
+cannot CREATE UNIQUE INDEX; duplicate key found
 
 </td>
 </tr>
@@ -2681,7 +2681,7 @@ ERR\_SQL\_DROP\_COL\_PRIMARY\_KEY
 </td>
 <td valign="top">
 
-Cannot drop columns in the primary key column list.
+cannot drop columns in the primary-key column list
 
 </td>
 </tr>
@@ -2698,7 +2698,7 @@ ERR\_SQL\_DROP\_MULTI\_COL\_UNIQUE
 </td>
 <td valign="top">
 
-This column is referenced in a multi-column constraint.
+column is referenced in a multi-column constraint
 
 </td>
 </tr>
@@ -2715,7 +2715,7 @@ ERR\_SQL\_CREATE\_UNIQUE\_INDEX\_ON\_CDX\_TAB
 </td>
 <td valign="top">
 
-Cannot create a unique index on a CDX table.
+cannot create unique index on cdx table
 
 </td>
 </tr>
@@ -2732,7 +2732,7 @@ ERR\_SQL\_EXST\_UPDATE\_LOG\_GROUP
 </td>
 <td valign="top">
 
-The updated log group name already exists.
+update log group name already exists
 
 </td>
 </tr>
@@ -2749,7 +2749,7 @@ ERR\_SQL\_INV\_UPDATE\_LOG\_GROUP\_NAME
 </td>
 <td valign="top">
 
-Invalid update log group name.
+invalid update log group name
 
 </td>
 </tr>
@@ -2766,7 +2766,7 @@ ERR\_SQL\_UPDATE\_LOG\_TABLE\_KEY
 </td>
 <td valign="top">
 
-The base table of the update log table must have a primary key.
+the base table of the update log table must have a primary key
 
 </td>
 </tr>
@@ -2783,7 +2783,7 @@ ERR\_SQL\_MAX\_UPDATE\_LOG\_GROUP
 </td>
 <td valign="top">
 
-You have exceeded the maximum number of update log groups.
+exceed maximum number of update log group
 
 </td>
 </tr>
@@ -2800,7 +2800,7 @@ ERR\_SQL\_BASE\_TABLE\_ALREADY\_HAS\_ULT
 </td>
 <td valign="top">
 
-The base table already has an update log table.
+the base table already has a update log table
 
 </td>
 </tr>
@@ -2817,7 +2817,7 @@ ERR\_SQL\_ULT\_CAN\_NOT\_HAVE\_ULT
 </td>
 <td valign="top">
 
-The update log table cannot have an update log table.
+update log table can not have a update log table
 
 </td>
 </tr>
@@ -2834,7 +2834,7 @@ ERR\_SQL\_STR\_LENGTH\_TOO\_LARGE
 </td>
 <td valign="top">
 
-The string is too long.
+string is too long
 
 </td>
 </tr>
@@ -2851,7 +2851,7 @@ ERR\_SQL\_VIEW\_CHECK\_VIOLATION
 </td>
 <td valign="top">
 
-The view WITH CHECK OPTION where-clause has a violation.
+view WITH CHECK OPTION where-clause violation
 
 </td>
 </tr>
@@ -2868,7 +2868,7 @@ ERR\_SQL\_VIEW\_UPDATE\_VIOLATION
 </td>
 <td valign="top">
 
-The data manipulation operation is not legal on this view.
+data manipulation operation not legal on this view
 
 </td>
 </tr>
@@ -2885,7 +2885,7 @@ ERR\_SQL\_INV\_SCHEMA
 </td>
 <td valign="top">
 
-Invalid schema name.
+invalid schema name
 
 </td>
 </tr>
@@ -2902,7 +2902,7 @@ ERR\_SQL\_MAX\_NUM\_INDEX\_COLUMN
 </td>
 <td valign="top">
 
-The number of index columns exceeds the maximum.
+number of index columns exceeds its maximum
 
 </td>
 </tr>
@@ -2919,7 +2919,7 @@ ERR\_SQL\_INV\_PARTIAL\_KEY\_SIZE
 </td>
 <td valign="top">
 
-Invalid partial key size.
+invalid partial key size
 
 </td>
 </tr>
@@ -2936,7 +2936,7 @@ ERR\_SQL\_NO\_MATCHING\_UNIQUE\_OR\_PRIMARY\_KEY
 </td>
 <td valign="top">
 
-There is no matching primary key for this column list.
+no matching primary key for this column list
 
 </td>
 </tr>
@@ -2953,7 +2953,7 @@ ERR\_SQL\_NO\_PRIMARY\_KEY
 </td>
 <td valign="top">
 
-The referenced table does not have a primary key.
+referenced table does not have a primary key
 
 </td>
 </tr>
@@ -2970,7 +2970,7 @@ ERR\_SQL\_MISMATCH\_OF\_COLUMN\_NUMBERS
 </td>
 <td valign="top">
 
-The number of referencing columns must match referenced columns.
+number of referencing columns must match referenced columns
 
 </td>
 </tr>
@@ -2987,7 +2987,7 @@ ERR\_SQL\_TEMP\_TABLE\_WITH\_UNIQUE
 </td>
 <td valign="top">
 
-The unique constraint is not allowed on the temporary table.
+unique constraint not allowed on temporary table
 
 </td>
 </tr>
@@ -3004,7 +3004,7 @@ ERR\_SQL\_MAX\_VIEW\_DEPTH
 </td>
 <td valign="top">
 
-You have exceeded the maximum view depth limit.
+exceed maximum view depth limit
 
 </td>
 </tr>
@@ -3021,7 +3021,7 @@ ERR\_SQL\_DIRECT\_INSERT\_WITH\_UNIQUE\_INDEX
 </td>
 <td valign="top">
 
-You cannot perform a DIRECT INSERT operation on a table with unique indexes.
+cannot perform DIRECT INSERT operation on table with unique indexes
 
 </td>
 </tr>
@@ -3038,7 +3038,7 @@ ERR\_SQL\_XML\_PARSE
 </td>
 <td valign="top">
 
-Invalid XML document.
+invalid XML document
 
 </td>
 </tr>
@@ -3055,7 +3055,7 @@ ERR\_SQL\_XPATH\_PARSE
 </td>
 <td valign="top">
 
-Invalid XPATH.
+invalid XPATH
 
 </td>
 </tr>
@@ -3072,7 +3072,7 @@ ERR\_SQL\_INV\_XML\_DURATION
 </td>
 <td valign="top">
 
-Invalid XML duration value.
+invalid XML duration value
 
 </td>
 </tr>
@@ -3089,7 +3089,7 @@ ERR\_SQL\_INV\_XML\_FUNCTION
 </td>
 <td valign="top">
 
-Invalid XML function usage.
+invalid XML function usage
 
 </td>
 </tr>
@@ -3106,7 +3106,7 @@ ERR\_SQL\_INV\_XML\_INDEX\_OPERATION
 </td>
 <td valign="top">
 
-Invalid XML index operation.
+invalid XML index operation
 
 </td>
 </tr>
@@ -3123,7 +3123,7 @@ ERR\_SQL\_PYTHON
 </td>
 <td valign="top">
 
-Python built-in procedure error.
+Python buildin procedure error
 
 </td>
 </tr>
@@ -3140,7 +3140,7 @@ ERR\_SQL\_JIT
 </td>
 <td valign="top">
 
-JIT operation error.
+JIT operation error
 
 </td>
 </tr>
@@ -3157,7 +3157,7 @@ ERR\_SQL\_INV\_COLUMN\_VIEW
 </td>
 <td valign="top">
 
-Invalid column view.
+invalid column view
 
 </td>
 </tr>
@@ -3174,7 +3174,7 @@ ERR\_SQL\_TABLE\_SCHEMA\_MISMATCH
 </td>
 <td valign="top">
 
-Table schema mismatch.
+table schema mismatch
 
 </td>
 </tr>
@@ -3191,7 +3191,7 @@ ERR\_SQL\_RUN\_LEVEL\_CHANGE
 </td>
 <td valign="top">
 
-Failed to change run level.
+fail to change run level
 
 </td>
 </tr>
@@ -3208,7 +3208,7 @@ ERR\_SQL\_RESTART
 </td>
 <td valign="top">
 
-Failed to restart.
+fail to restart
 
 </td>
 </tr>
@@ -3225,7 +3225,7 @@ ERR\_SQL\_COLLECT\_ALL\_VERSIONS
 </td>
 <td valign="top">
 
-Failed to collect all versions of the garbage.
+fail to collect all version garbage
 
 </td>
 </tr>
@@ -3242,7 +3242,7 @@ ERR\_SQL\_INV\_IDENTIFIER
 </td>
 <td valign="top">
 
-Invalid identifier.
+invalid identifier
 
 </td>
 </tr>
@@ -3259,7 +3259,7 @@ ERR\_SQL\_TOO\_LONG\_CONSTANT
 </td>
 <td valign="top">
 
-The string is too long.
+string is too long
 
 </td>
 </tr>
@@ -3276,7 +3276,7 @@ ERR\_SQL\_RESTORE\_SESSION
 </td>
 <td valign="top">
 
-Could not restore the session.
+could not restore session
 
 </td>
 </tr>
@@ -3293,7 +3293,7 @@ ERR\_SQL\_EXST\_SCHEMA
 </td>
 <td valign="top">
 
-Cannot use a duplicate schema name.
+cannot use duplicate schema name
 
 </td>
 </tr>
@@ -3310,7 +3310,7 @@ ERR\_SQL\_AMBG\_TABLE
 </td>
 <td valign="top">
 
-The table is ambiguously defined.
+table ambiguously defined
 
 </td>
 </tr>
@@ -3327,7 +3327,7 @@ ERR\_SQL\_EXST\_ROLE
 </td>
 <td valign="top">
 
-The role already exists.
+role already exists
 
 </td>
 </tr>
@@ -3344,7 +3344,7 @@ ERR\_SQL\_INV\_ROLE
 </td>
 <td valign="top">
 
-Invalid role name.
+invalid role name
 
 </td>
 </tr>
@@ -3361,7 +3361,7 @@ ERR\_SQL\_INV\_USERTYPE
 </td>
 <td valign="top">
 
-Invalid user type.
+invalid user type
 
 </td>
 </tr>
@@ -3378,7 +3378,7 @@ ERR\_SQL\_INV\_USABLE\_VIEW
 </td>
 <td valign="top">
 
-Invalidated view.
+invalidated view
 
 </td>
 </tr>
@@ -3395,7 +3395,7 @@ ERR\_SQL\_CYCLIC\_ROLES
 </td>
 <td valign="top">
 
-Cannot assign a cyclic role.
+can't assign cyclic role
 
 </td>
 </tr>
@@ -3412,7 +3412,7 @@ ERR\_SQL\_NO\_GRANT\_OPTION\_FOR\_ROLE
 </td>
 <td valign="top">
 
-The roles must not receive a privilege with a GRANT option.
+roles must not receive a privilege with grant option
 
 </td>
 </tr>
@@ -3429,7 +3429,7 @@ ERR\_SQL\_CANT\_REVOKE\_ROLE
 </td>
 <td valign="top">
 
-There was an error revoking the role.
+error revoking role
 
 </td>
 </tr>
@@ -3446,7 +3446,7 @@ ERR\_SQL\_INV\_USER\_DEFINED\_TYPE
 </td>
 <td valign="top">
 
-Invalid user-defined type name.
+invalid user-defined type name
 
 </td>
 </tr>
@@ -3463,7 +3463,7 @@ ERR\_SQL\_EXST\_USER\_DEFINED\_TYPE
 </td>
 <td valign="top">
 
-Cannot use duplicate user-defined type names.
+cannot use duplicate user-defined type name
 
 </td>
 </tr>
@@ -3480,7 +3480,7 @@ ERR\_SQL\_INV\_OBJ\_NAME
 </td>
 <td valign="top">
 
-Invalid object name.
+invalid object name
 
 </td>
 </tr>
@@ -3497,7 +3497,7 @@ ERR\_SQL\_MANY\_ORDER\_BY
 </td>
 <td valign="top">
 
-Cannot have more than one order by.
+cannot have more than one order by
 
 </td>
 </tr>
@@ -3514,7 +3514,7 @@ ERR\_SQL\_TOO\_DEEP\_ROLE\_TREE
 </td>
 <td valign="top">
 
-The role tree is too deep.
+role tree too deep
 
 </td>
 </tr>
@@ -3531,7 +3531,7 @@ ERR\_SQL\_INSERT\_ONLY\_TABLE\_WITH\_PRIMARY\_KEY
 </td>
 <td valign="top">
 
-The primary key is not allowed on an insert-only table.
+primary key not allowed on insert-only table
 
 </td>
 </tr>
@@ -3548,7 +3548,7 @@ ERR\_SQL\_INSERT\_ONLY\_TABLE\_WITH\_UNIQUE
 </td>
 <td valign="top">
 
-The unique constraint is not allowed on an insert-only table.
+unique constraint not allowed on insert-only table
 
 </td>
 </tr>
@@ -3565,7 +3565,7 @@ ERR\_SQL\_DROPPED\_USER
 </td>
 <td valign="top">
 
-The user was already dropped before the query execution.
+the user was already dropped before query execution
 
 </td>
 </tr>
@@ -3582,7 +3582,7 @@ ERR\_SQL\_INTERNAL\_ERROR
 </td>
 <td valign="top">
 
-Internal error.
+internal error
 
 </td>
 </tr>
@@ -3599,7 +3599,7 @@ ERR\_SQL\_INV\_STRUCTURED\_PRIVILEGE\_NAME
 </td>
 <td valign="top">
 
-Invalid \(non-existent\) structured privilege name.
+invalid \(non-existent\) structured privilege name
 
 </td>
 </tr>
@@ -3616,7 +3616,7 @@ ERR\_SQL\_DUP\_STRUCTURED\_PRIVILEGE\_NAME
 </td>
 <td valign="top">
 
-Cannot use duplicate structured privilege name.
+cannot use duplicate structured privilege name
 
 </td>
 </tr>
@@ -3633,7 +3633,7 @@ ERR\_SQL\_CANT\_UPDATE\_GEN\_COL
 </td>
 <td valign="top">
 
-INSERT UPDATE and UPSERT are not allowed on the generated field.
+INSERT
 
 </td>
 </tr>
@@ -3650,7 +3650,7 @@ ERR\_SQL\_INV\_DATE\_FORMAT
 </td>
 <td valign="top">
 
-Invalid date format.
+invalid date format
 
 </td>
 </tr>
@@ -3667,7 +3667,7 @@ ERR\_SQL\_PASS\_OR\_PARAMETER\_NEEDED
 </td>
 <td valign="top">
 
-A password or parameter is required for the user.
+password or parameter required for user
 
 </td>
 </tr>
@@ -3684,7 +3684,7 @@ ERR\_SQL\_TOO\_MANY\_PARAMETER\_VALUES
 </td>
 <td valign="top">
 
-Multiple values for a parameter not supported.
+multiple values for a parameter not supported
 
 </td>
 </tr>
@@ -3701,7 +3701,7 @@ ERR\_SQL\_INV\_PRIVILEGE\_NAMESPACE
 </td>
 <td valign="top">
 
-Invalid privilege namespace.
+invalid privilege namespace
 
 </td>
 </tr>
@@ -3718,7 +3718,7 @@ ERR\_SQL\_INV\_TABLE\_TYPE
 </td>
 <td valign="top">
 
-Invalid table type.
+invalid table type
 
 </td>
 </tr>
@@ -3735,7 +3735,7 @@ ERR\_SQL\_INV\_PASSWORD\_LAYOUT
 </td>
 <td valign="top">
 
-Invalid password layout.
+invalid password layout
 
 </td>
 </tr>
@@ -3752,7 +3752,7 @@ ERR\_SQL\_PASSWORD\_REUSED
 </td>
 <td valign="top">
 
-The last password cannot be reused.
+last n passwords can not be reused
 
 </td>
 </tr>
@@ -3769,7 +3769,7 @@ ERR\_SQL\_ALTER\_PASSWORD\_NEEDED
 </td>
 <td valign="top">
 
-The user is forced to change the password.
+user is forced to change password
 
 </td>
 </tr>
@@ -3786,7 +3786,7 @@ ERR\_SQL\_USER\_DEACTIVATED
 </td>
 <td valign="top">
 
-The user is deactivated.
+user is deactivated
 
 </td>
 </tr>
@@ -3803,7 +3803,7 @@ ERR\_SQL\_USER\_LOCKED
 </td>
 <td valign="top">
 
-The user is locked, try again later.
+user is locked; try again later
 
 </td>
 </tr>
@@ -3820,7 +3820,7 @@ ERR\_SQL\_CANT\_DROP\_WITHOUT\_CASCADE
 </td>
 <td valign="top">
 
-Cannot drop without the CASCADE specification.
+can't drop without CASCADE specification
 
 </td>
 </tr>
@@ -3837,7 +3837,7 @@ ERR\_SQL\_INV\_VIEW\_QUERY
 </td>
 <td valign="top">
 
-Invalid view query for creation.
+invalid view query for creation
 
 </td>
 </tr>
@@ -3854,7 +3854,7 @@ ERR\_SQL\_CANT\_DROP\_WITH\_RESTRICT
 </td>
 <td valign="top">
 
-Cannot drop with the RESTRICT specification.
+can't drop with RESTRICT specification
 
 </td>
 </tr>
@@ -3871,7 +3871,24 @@ ERR\_SQL\_ALTER\_PASSWORD\_NOT\_ALLOWED
 </td>
 <td valign="top">
 
-The password change is not currently allowed.
+password change currently not allowed
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+421
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_FULLTEXT\_INDEX
+
+</td>
+<td valign="top">
+
+cannot create fulltext index
 
 </td>
 </tr>
@@ -3888,7 +3905,7 @@ ERR\_SQL\_MIXED\_PRIVILEGE\_NAMESPACES
 </td>
 <td valign="top">
 
-The privileges must be either all SQL or all from one namespace.
+privileges must be either all SQL or all from one namespace
 
 </td>
 </tr>
@@ -3905,7 +3922,7 @@ ERR\_SQL\_LVC
 </td>
 <td valign="top">
 
-AFL error.
+AFL error
 
 </td>
 </tr>
@@ -3922,7 +3939,7 @@ ERR\_SQL\_INV\_PACKAGE
 </td>
 <td valign="top">
 
-Invalid package name.
+invalid name of package
 
 </td>
 </tr>
@@ -3939,7 +3956,7 @@ ERR\_SQL\_EXST\_PACKAGE
 </td>
 <td valign="top">
 
-Duplicate package name.
+duplicate package name
 
 </td>
 </tr>
@@ -3956,7 +3973,7 @@ ERR\_SQL\_NUM\_COLUMN\_MISMATCH
 </td>
 <td valign="top">
 
-The number of columns do not match.
+number of columns mismatch
 
 </td>
 </tr>
@@ -3973,7 +3990,7 @@ ERR\_SQL\_CANT\_RESERVE\_INDEX\_ID
 </td>
 <td valign="top">
 
-Cannot reserve the index ID anymore.
+can not reserve index id any more
 
 </td>
 </tr>
@@ -3990,7 +4007,7 @@ ERR\_INV\_QUERY\_PLAN\_ID
 </td>
 <td valign="top">
 
-Invalid query plan ID.
+invalid query plan id
 
 </td>
 </tr>
@@ -4007,7 +4024,7 @@ ERR\_SQL\_INTEGRITY\_CHECK\_FAILED
 </td>
 <td valign="top">
 
-The integrity check failed.
+integrity check failed
 
 </td>
 </tr>
@@ -4024,7 +4041,7 @@ ERR\_SQL\_INV\_USABLE\_PROC
 </td>
 <td valign="top">
 
-Invalidated procedure.
+invalidated procedure
 
 </td>
 </tr>
@@ -4041,7 +4058,7 @@ WRN\_SQL\_NEARLY\_EXPIRED\_PASSWORD
 </td>
 <td valign="top">
 
-The user's password will expire within few days.
+user's password will expire within few days
 
 </td>
 </tr>
@@ -4058,7 +4075,7 @@ WRN\_SQL\_DEPRECATED\_SYNTAX
 </td>
 <td valign="top">
 
-This syntax has been deprecated and will be removed in next release.
+this syntax has been deprecated and will be removed in next release
 
 </td>
 </tr>
@@ -4075,7 +4092,7 @@ ERR\_SQL\_NOT\_NULL\_CONSTRAINT
 </td>
 <td valign="top">
 
-NULL value found.
+null value found
 
 </td>
 </tr>
@@ -4092,7 +4109,7 @@ ERR\_SQL\_INV\_OBJECT
 </td>
 <td valign="top">
 
-Invalid object ID.
+invalid object ID
 
 </td>
 </tr>
@@ -4109,7 +4126,7 @@ ERR\_SQL\_INV\_EXP
 </td>
 <td valign="top">
 
-Invalid expression.
+invalid expression
 
 </td>
 </tr>
@@ -4126,7 +4143,7 @@ ERR\_SQL\_SET\_SYSTEM\_LICENSE
 </td>
 <td valign="top">
 
-Could not set system license.
+could not set system license
 
 </td>
 </tr>
@@ -4143,7 +4160,7 @@ ERR\_SQL\_ONLY\_LICENSE\_HANDLING
 </td>
 <td valign="top">
 
-Only commands for license handling are allowed in current state.
+only commands for license handling are allowed in current state
 
 </td>
 </tr>
@@ -4160,7 +4177,7 @@ ERR\_SQL\_INVALID\_USER\_PARAMETER\_VALUE
 </td>
 <td valign="top">
 
-Invalid user parameter value.
+invalid user parameter value
 
 </td>
 </tr>
@@ -4177,7 +4194,7 @@ ERR\_SQL\_COMPOSITE\_ERROR
 </td>
 <td valign="top">
 
-Composite error.
+composite error
 
 </td>
 </tr>
@@ -4194,7 +4211,7 @@ ERR\_SQL\_TABLE\_TYPE\_CONVERSION\_ERROR
 </td>
 <td valign="top">
 
-Table type conversion error.
+table type conversion error
 
 </td>
 </tr>
@@ -4211,7 +4228,7 @@ WRN\_SQL\_DEPRECATED\_FEATURE
 </td>
 <td valign="top">
 
-This feature has been deprecated and will be removed in next release.
+this feature has been deprecated and will be removed in next release
 
 </td>
 </tr>
@@ -4228,7 +4245,7 @@ ERR\_SQL\_MAX\_NUM\_COLUMN
 </td>
 <td valign="top">
 
-The number of columns exceeds its maximum.
+number of columns exceeds its maximum
 
 </td>
 </tr>
@@ -4245,7 +4262,7 @@ ERR\_SQL\_INV\_CALC\_SCENARIO
 </td>
 <td valign="top">
 
-Invalid calculation scenario name.
+invalid calculation scenario name
 
 </td>
 </tr>
@@ -4262,7 +4279,7 @@ ERR\_SQL\_PACKMAN
 </td>
 <td valign="top">
 
-Package manager error.
+package manager error
 
 </td>
 </tr>
@@ -4279,7 +4296,7 @@ ERR\_SQL\_INV\_TRIGGER
 </td>
 <td valign="top">
 
-Invalid trigger name.
+invalid trigger name
 
 </td>
 </tr>
@@ -4296,7 +4313,7 @@ ERR\_SQL\_EXST\_TRIGGER
 </td>
 <td valign="top">
 
-Cannot use a duplicate trigger name.
+cannot use duplicate trigger name
 
 </td>
 </tr>
@@ -4313,7 +4330,7 @@ ERR\_SQL\_BACKUP\_FAILED
 </td>
 <td valign="top">
 
-The backup could not be completed.
+backup could not be completed
 
 </td>
 </tr>
@@ -4330,7 +4347,7 @@ ERR\_SQL\_RECOVERY\_FAILED
 </td>
 <td valign="top">
 
-The recovery could not be completed.
+recovery could not be completed
 
 </td>
 </tr>
@@ -4347,7 +4364,7 @@ ERR\_SQL\_RECOVERY\_STRATEGY
 </td>
 <td valign="top">
 
-The recovery strategy could not be determined.
+recovery strategy could not be determined
 
 </td>
 </tr>
@@ -4364,7 +4381,7 @@ ERR\_SQL\_UNSET\_SYSTEM\_LICENSE
 </td>
 <td valign="top">
 
-Failed to unset the system license.
+failed to unset system license
 
 </td>
 </tr>
@@ -4381,7 +4398,7 @@ ERR\_SQL\_NOT\_ALLOWED\_SUBJ\_TAB\_ACCESS\_TRIGGER
 </td>
 <td valign="top">
 
-The modification of the subject table in the trigger is not allowed.
+modification of subject table in trigger not allowed
 
 </td>
 </tr>
@@ -4398,7 +4415,7 @@ ERR\_SQL\_INV\_BACKUPID
 </td>
 <td valign="top">
 
-Invalid backup ID.
+invalid backup id
 
 </td>
 </tr>
@@ -4415,7 +4432,7 @@ ERR\_SQL\_USER\_WITHOUT\_PASSWORD
 </td>
 <td valign="top">
 
-The user does not have a password.
+user does not have a password
 
 </td>
 </tr>
@@ -4432,7 +4449,7 @@ WRN\_SQL\_WRONG\_HINT\_SYNTAX
 </td>
 <td valign="top">
 
-Wrong hint syntax.
+wrong hint syntax
 
 </td>
 </tr>
@@ -4449,7 +4466,7 @@ ERR\_SQL\_READ\_ONLY\_SESSION\_VARIABLE
 </td>
 <td valign="top">
 
-The predefined session variable cannot be set via the SET command.
+the predefined session variable cannot be set via SET command
 
 </td>
 </tr>
@@ -4466,7 +4483,7 @@ ERR\_SQL\_NOT\_ALLOWED\_FOR\_SPECIAL\_ROLE
 </td>
 <td valign="top">
 
-This action is not allowed for this role.
+not allowed for this role
 
 </td>
 </tr>
@@ -4483,7 +4500,7 @@ ERR\_SQL\_DPLC\_CONSTRAINT
 </td>
 <td valign="top">
 
-Duplicate constraint name.
+duplicate constraint name
 
 </td>
 </tr>
@@ -4500,7 +4517,7 @@ ERR\_SQL\_UNSUPPORTED\_FUNCTION
 </td>
 <td valign="top">
 
-Unsupported function included.
+unsupported function included
 
 </td>
 </tr>
@@ -4517,7 +4534,7 @@ ERR\_SQL\_INV\_USABLE\_FUNC
 </td>
 <td valign="top">
 
-Invalidated function.
+invalidated function
 
 </td>
 </tr>
@@ -4534,7 +4551,7 @@ ERR\_SQL\_INV\_PRIVILEGE\_FOR\_OBJECT
 </td>
 <td valign="top">
 
-Invalid privilege for object.
+invalid privilege for object
 
 </td>
 </tr>
@@ -4551,7 +4568,7 @@ ERR\_SQL\_FK\_NOT\_FOUND
 </td>
 <td valign="top">
 
-Foreign key constraint violation.
+foreign key constraint violation
 
 </td>
 </tr>
@@ -4568,7 +4585,7 @@ ERR\_SQL\_FK\_ON\_UPDATE\_DELETE\_FAILED
 </td>
 <td valign="top">
 
-Failed on UPDATE or DELETE by a foreign key constraint violation.
+failed on update or delete by foreign key constraint violation
 
 </td>
 </tr>
@@ -4585,7 +4602,7 @@ ERR\_SQL\_MAX\_NUM\_TABLE
 </td>
 <td valign="top">
 
-The number of tables exceeds its maximum.
+number of tables exceeds its maximum
 
 </td>
 </tr>
@@ -4602,7 +4619,7 @@ ERR\_SQL\_MAX\_PARSE\_TREE\_DEPTH
 </td>
 <td valign="top">
 
-The SQL internal parse tree depth exceeds its maximum.
+SQL internal parse tree depth exceeds its maximum
 
 </td>
 </tr>
@@ -4619,7 +4636,7 @@ ERR\_SQL\_INV\_USABLE\_TRIGGER
 </td>
 <td valign="top">
 
-Cannot execute a trigger that was invalidated by an object change.
+Cannot execute trigger
 
 </td>
 </tr>
@@ -4636,7 +4653,7 @@ ERR\_SQL\_CREDENTIAL\_NOT\_FOUND
 </td>
 <td valign="top">
 
-No credential found.
+no credential found
 
 </td>
 </tr>
@@ -4653,7 +4670,7 @@ ERR\_SQL\_PARAM\_VARIABLE
 </td>
 <td valign="top">
 
-Cannot use a parameter variable.
+cannot use parameter variable
 
 </td>
 </tr>
@@ -4670,7 +4687,7 @@ ERR\_SQL\_HINT
 </td>
 <td valign="top">
 
-Hint error.
+hint error
 
 </td>
 </tr>
@@ -4687,7 +4704,7 @@ ERR\_SQL\_INV\_SRC\_DATATYPE
 </td>
 <td valign="top">
 
-Unsupported data type on the source, consider using a view.
+unsupported datatype on source
 
 </td>
 </tr>
@@ -4704,7 +4721,7 @@ ERR\_SQL\_INV\_DATA\_SOURCE\_CONF
 </td>
 <td valign="top">
 
-Invalid data source configuration.
+invalid data source configuration
 
 </td>
 </tr>
@@ -4721,7 +4738,7 @@ ERR\_SQL\_INV\_DATA\_SOURCE
 </td>
 <td valign="top">
 
-Invalid data source name.
+invalid data source name
 
 </td>
 </tr>
@@ -4738,7 +4755,7 @@ ERR\_SQL\_EXST\_DATA\_SOURCE
 </td>
 <td valign="top">
 
-Cannot use a duplicate data source name.
+cannot use duplicate data source name
 
 </td>
 </tr>
@@ -4755,7 +4772,7 @@ ERR\_SQL\_ADAPTER\_CONFIGURATION
 </td>
 <td valign="top">
 
-Invalid adapter configuration.
+invalid adapter configuration
 
 </td>
 </tr>
@@ -4772,7 +4789,7 @@ ERR\_SQL\_INV\_ADAPTER
 </td>
 <td valign="top">
 
-Invalid adapter name.
+invalid adapter name
 
 </td>
 </tr>
@@ -4789,7 +4806,7 @@ ERR\_SQL\_EXST\_ADAPTER
 </td>
 <td valign="top">
 
-Cannot use a duplicate adapter name.
+cannot use duplicate adapter name
 
 </td>
 </tr>
@@ -4806,7 +4823,7 @@ ERR\_SQL\_INV\_REMOTE\_OBJECT
 </td>
 <td valign="top">
 
-Invalid remote object name.
+invalid remote object name
 
 </td>
 </tr>
@@ -4823,7 +4840,7 @@ ERR\_SQL\_CREDENTIAL\_EXISTS
 </td>
 <td valign="top">
 
-The credential already exists.
+credential exists
 
 </td>
 </tr>
@@ -4840,7 +4857,7 @@ ERR\_SQL\_UDF\_RUNTIME
 </td>
 <td valign="top">
 
-User-defined function runtime error.
+user defined function runtime error
 
 </td>
 </tr>
@@ -4857,7 +4874,7 @@ ERR\_SQL\_INV\_SPATIAL\_ATTRIBUTE
 </td>
 <td valign="top">
 
-Invalid spatial attribute.
+invalid spatial attribute
 
 </td>
 </tr>
@@ -4874,7 +4891,7 @@ ERR\_SQL\_INV\_SPATIAL\_UNIT
 </td>
 <td valign="top">
 
-Invalid spatial unit of measure name.
+invalid spatial unit of measure name
 
 </td>
 </tr>
@@ -4891,7 +4908,7 @@ ERR\_SQL\_EXST\_SPATIAL\_UNIT
 </td>
 <td valign="top">
 
-Cannot use a duplicate spatial unit of measure name.
+cannot use duplicate spatial unit of measure name
 
 </td>
 </tr>
@@ -4908,7 +4925,7 @@ ERR\_SQL\_INV\_SPATIAL\_REF\_SYS
 </td>
 <td valign="top">
 
-Invalid spatial reference system name.
+invalid spatial reference system name
 
 </td>
 </tr>
@@ -4925,7 +4942,7 @@ ERR\_SQL\_EXST\_SPATIAL\_REF\_SYS
 </td>
 <td valign="top">
 
-Cannot use a duplicate spatial reference system name.
+cannot use duplicate spatial reference system name
 
 </td>
 </tr>
@@ -4942,7 +4959,7 @@ ERR\_SQL\_SESSION\_GROUP\_COMMAND\_FAILURE
 </td>
 <td valign="top">
 
-Invalid session group command.
+invalid session group command
 
 </td>
 </tr>
@@ -4959,7 +4976,7 @@ ERR\_SQL\_INV\_STRUCTURED\_PRIVILEGE\_DEFINITION
 </td>
 <td valign="top">
 
-Invalid definition of structured privilege.
+invalid definition of structured privilege
 
 </td>
 </tr>
@@ -4976,7 +4993,7 @@ WRN\_SQL\_IMPORT\_PARTIALLY\_FAILED
 </td>
 <td valign="top">
 
-Some rows have failed to be imported.
+some of rows have failed to be imported
 
 </td>
 </tr>
@@ -4993,7 +5010,7 @@ ERR\_SQL\_IMPORT\_PARTIALLY\_FAILED
 </td>
 <td valign="top">
 
-Some of rows have failed to be imported.
+some of rows have failed to be imported
 
 </td>
 </tr>
@@ -5010,7 +5027,7 @@ ERR\_SQL\_INV\_DATABASE
 </td>
 <td valign="top">
 
-Invalid database name.
+invalid database name
 
 </td>
 </tr>
@@ -5027,7 +5044,7 @@ ERR\_SQL\_INV\_EPMMODEL
 </td>
 <td valign="top">
 
-Invalid EPM Model name.
+invalid EPM Model name
 
 </td>
 </tr>
@@ -5044,7 +5061,7 @@ ERR\_SQL\_EXST\_EPMMODEL
 </td>
 <td valign="top">
 
-Cannot use a duplicate EPM Model name.
+cannot use duplicate EPM Model name
 
 </td>
 </tr>
@@ -5061,7 +5078,7 @@ ERR\_SQL\_INV\_EPMMODEL\_DEF
 </td>
 <td valign="top">
 
-Invalid EPM Model definition.
+invalid EPM Model definition
 
 </td>
 </tr>
@@ -5078,7 +5095,7 @@ ERR\_SQL\_INV\_EPMQUERYSOURCE
 </td>
 <td valign="top">
 
-Invalid EPM Query Source name.
+invalid EPM Query Source name
 
 </td>
 </tr>
@@ -5095,7 +5112,7 @@ ERR\_SQL\_EXST\_EPMQUERYSOURCE
 </td>
 <td valign="top">
 
-Cannot use a duplicate EPM Query Source name.
+cannot use duplicate EPM Query Source name
 
 </td>
 </tr>
@@ -5112,7 +5129,7 @@ ERR\_SQL\_INV\_EPMQUERYSOURCE\_DEF
 </td>
 <td valign="top">
 
-Invalid EPM Query Source definition.
+invalid EPM Query Source definition
 
 </td>
 </tr>
@@ -5129,7 +5146,7 @@ ERROR\_SQL\_INVALID\_CONV\_TO\_EXTENDED
 </td>
 <td valign="top">
 
-The table is already extended with a right delta option.
+Table already Extended with right delta option
 
 </td>
 </tr>
@@ -5146,7 +5163,7 @@ ERROR\_SQL\_INVALID\_CONV\_FROM\_EXTENDED
 </td>
 <td valign="top">
 
-The table already specified as non-extended.
+Table already Non-Extended
 
 </td>
 </tr>
@@ -5163,7 +5180,7 @@ ERROR\_EXTENDED\_STORAGE\_NOT\_FOUND
 </td>
 <td valign="top">
 
-The Extended Storage cannot be found for the table.
+Extended Storage not found for table:
 
 </td>
 </tr>
@@ -5180,7 +5197,7 @@ ERR\_SQL\_IMPORT\_FAIL\_ON\_MAX\_RECORD\_SIZE\_CHECK
 </td>
 <td valign="top">
 
-The memory for the record exceeds the limit.
+Memory for a record exceeds the limit
 
 </td>
 </tr>
@@ -5197,7 +5214,7 @@ ERR\_SQL\_INV\_C2C
 </td>
 <td valign="top">
 
-Invalid stacked column search.
+invalid stacked column search
 
 </td>
 </tr>
@@ -5214,7 +5231,7 @@ ERR\_SQL\_REQUIRE\_PREDICATE
 </td>
 <td valign="top">
 
-Predicates are required in a WHERE clause.
+predicates are required in a where clause
 
 </td>
 </tr>
@@ -5231,7 +5248,7 @@ ERR\_SQL\_SERIES\_INVALID\_SPEC
 </td>
 <td valign="top">
 
-Invalid series data specification.
+Invalid series data specification:
 
 </td>
 </tr>
@@ -5248,7 +5265,7 @@ ERR\_SQL\_INV\_TASK
 </td>
 <td valign="top">
 
-Invalid task name.
+invalid name of task
 
 </td>
 </tr>
@@ -5265,7 +5282,7 @@ ERR\_SQL\_EXST\_TASK
 </td>
 <td valign="top">
 
-Cannot use a duplicate task name.
+cannot use duplicate name of task
 
 </td>
 </tr>
@@ -5282,7 +5299,7 @@ ERR\_SQL\_INV\_ADAPTER\_LOCATION
 </td>
 <td valign="top">
 
-Invalid adapter location.
+invalid adapter location
 
 </td>
 </tr>
@@ -5299,7 +5316,7 @@ ERR\_SQL\_LAST\_ADAPTER\_LOCATION
 </td>
 <td valign="top">
 
-Cannot remove the last location of the adapter. Use the DROP ADAPTER statement.
+cannot remove last location of adapter
 
 </td>
 </tr>
@@ -5316,7 +5333,7 @@ ERR\_SQL\_SYSTEM\_ADAPTER
 </td>
 <td valign="top">
 
-Invalid CREATE, ALTER, or DROP system adapter.
+invalid create
 
 </td>
 </tr>
@@ -5333,7 +5350,7 @@ ERR\_SQL\_INV\_AGENT
 </td>
 <td valign="top">
 
-Invalid agent name.
+invalid agent name
 
 </td>
 </tr>
@@ -5350,7 +5367,7 @@ ERR\_SQL\_EXST\_AGENT
 </td>
 <td valign="top">
 
-Cannot use a duplicate agent name.
+cannot use duplicate agent name
 
 </td>
 </tr>
@@ -5367,7 +5384,7 @@ ERR\_SQL\_INV\_AGENT\_PROPS
 </td>
 <td valign="top">
 
-Invalid agent properties.
+invalid agent properties
 
 </td>
 </tr>
@@ -5384,7 +5401,7 @@ ERR\_SQL\_TEMP\_TABLE\_IN\_USE
 </td>
 <td valign="top">
 
-Cannot alter a global temporary table in use or a CREATE/ALTER/DROP index on the table.
+cannot alter global temporary table in use or create/alter/drop index on the table
 
 </td>
 </tr>
@@ -5401,7 +5418,7 @@ ERR\_REP
 </td>
 <td valign="top">
 
-Replication error.
+replication error
 
 </td>
 </tr>
@@ -5418,7 +5435,7 @@ ERR\_SQL\_REP\_ALREADY\_ACTIVE
 </td>
 <td valign="top">
 
-Cannot execute a DDL statement on a replication table while replicating.
+cannot execute DDL statement on replication table while replicating
 
 </td>
 </tr>
@@ -5435,7 +5452,7 @@ FATAL\_REP\_ANCHOR\_FILE\_FAIL
 </td>
 <td valign="top">
 
-Failure in accessing the anchor file.
+failure in accessing anchor file
 
 </td>
 </tr>
@@ -5452,7 +5469,7 @@ FATAL\_REP\_LOG\_FILE\_FAIL
 </td>
 <td valign="top">
 
-Failure in accessing the log file.
+failure in accessing log file
 
 </td>
 </tr>
@@ -5469,7 +5486,7 @@ ERR\_REP\_TABLE\_HAVE\_NOT\_REPORT\_TABLE
 </td>
 <td valign="top">
 
-The replication table has no conflict report table.
+replication table has not conflict report table
 
 </td>
 </tr>
@@ -5486,7 +5503,7 @@ ERR\_REPORT\_TABLE\_ALREADY\_ENABLED
 </td>
 <td valign="top">
 
-The conflict report table is already enabled.
+conflict report table already enabled
 
 </td>
 </tr>
@@ -5503,7 +5520,7 @@ ERR\_REPORT\_TABLE\_ALREADY\_DISABLED
 </td>
 <td valign="top">
 
-The conflict report table is already disabled.
+conflict report table already disabled
 
 </td>
 </tr>
@@ -5520,7 +5537,7 @@ ERR\_RS\_PARTITION
 </td>
 <td valign="top">
 
-Partition error.
+partition error
 
 </td>
 </tr>
@@ -5537,7 +5554,7 @@ ERR\_RS\_PARTITION\_INVALID\_SPEC
 </td>
 <td valign="top">
 
-Invalid partition spec.
+invalid partition spec
 
 </td>
 </tr>
@@ -5554,7 +5571,7 @@ ERR\_RS\_PARTITION\_INVALID\_ID
 </td>
 <td valign="top">
 
-Invalid partition id.
+invalid partition id
 
 </td>
 </tr>
@@ -5571,7 +5588,7 @@ ERR\_RS\_PARTITION\_INVALID\_PROPERTY
 </td>
 <td valign="top">
 
-Invalid use of partition property.
+invalid use of partition property
 
 </td>
 </tr>
@@ -5588,7 +5605,7 @@ ERR\_RS\_PARTITION\_INVALID\_RANGE
 </td>
 <td valign="top">
 
-Invalid partition range.
+invalid partition range
 
 </td>
 </tr>
@@ -5605,7 +5622,7 @@ ERR\_RS\_PARTITION\_INVALID\_TYPE
 </td>
 <td valign="top">
 
-Invalid partition type.
+invalid partition type
 
 </td>
 </tr>
@@ -5622,7 +5639,7 @@ ERR\_RS\_PARTITION\_INVALID\_COLUMN
 </td>
 <td valign="top">
 
-Invalid partition column.
+invalid partition column
 
 </td>
 </tr>
@@ -5639,7 +5656,7 @@ ERR\_RS\_PARTITION\_INVALID\_LEVEL
 </td>
 <td valign="top">
 
-Invalid partition level.
+invalid partition level
 
 </td>
 </tr>
@@ -5656,7 +5673,7 @@ ERR\_API
 </td>
 <td valign="top">
 
-API error.
+api error
 
 </td>
 </tr>
@@ -5673,7 +5690,7 @@ ERR\_API\_NO\_CURSOR\_FWD
 </td>
 <td valign="top">
 
-The cursor type of forward is not allowed.
+cursor type of forward is not allowed
 
 </td>
 </tr>
@@ -5690,7 +5707,7 @@ ERR\_API\_INV\_STATEMENT
 </td>
 <td valign="top">
 
-Invalid statement.
+invalid statement
 
 </td>
 </tr>
@@ -5707,7 +5724,7 @@ ERR\_API\_EXCEED\_MAX\_GROUP\_SIZE
 </td>
 <td valign="top">
 
-You have exceeded the maximum batch size.
+exceed maximum batch size
 
 </td>
 </tr>
@@ -5724,7 +5741,7 @@ ERR\_API\_VERSION\_INCOMPATIBLE
 </td>
 <td valign="top">
 
-The server rejected the connection \(there was a protocol version mismatch\).
+Server rejected the connection\(protocol version mismatch\)
 
 </td>
 </tr>
@@ -5741,7 +5758,7 @@ ERR\_API\_ONLY\_SINGLE\_STATEMENT
 </td>
 <td valign="top">
 
-This function can only be called in the case of single statement.
+this function can be called only in the case of single statement
 
 </td>
 </tr>
@@ -5758,7 +5775,7 @@ ERR\_API\_INV\_RETURN\_OBJECT
 </td>
 <td valign="top">
 
-This query does not have a result set.
+this query does not have result set
 
 </td>
 </tr>
@@ -5775,7 +5792,7 @@ ERR\_API\_CONNECTION\_DOES\_NOT\_EXIST
 </td>
 <td valign="top">
 
-The connection does not exist.
+connection does not exist
 
 </td>
 </tr>
@@ -5792,7 +5809,7 @@ ERR\_API\_NO\_MORE\_LOB\_DATA
 </td>
 <td valign="top">
 
-There is no more LOB data.
+No more LOB data
 
 </td>
 </tr>
@@ -5809,7 +5826,7 @@ ERR\_API\_OPERATION\_NOT\_PERMITTED
 </td>
 <td valign="top">
 
-This operation is not permitted.
+operation is not permitted
 
 </td>
 </tr>
@@ -5826,7 +5843,7 @@ ERR\_API\_INV\_PARAMETER\_FROM\_SERVER
 </td>
 <td valign="top">
 
-There was an invalid parameter received from the server.
+invalid parameter is received from server
 
 </td>
 </tr>
@@ -5843,7 +5860,7 @@ ERR\_API\_INV\_RESULTSET
 </td>
 <td valign="top">
 
-The result set is currently invalid.
+result set is currently invalid
 
 </td>
 </tr>
@@ -5860,7 +5877,7 @@ ERR\_API\_RESULTSET\_NEXT\_NOT\_CALLED
 </td>
 <td valign="top">
 
-Next\(\) is not called for this result set.
+next\(\) is not called for this result set
 
 </td>
 </tr>
@@ -5877,7 +5894,7 @@ ERR\_API\_TOO\_MANY\_PARAMETERS
 </td>
 <td valign="top">
 
-Too many parameters are set.
+too many parameters are set
 
 </td>
 </tr>
@@ -5894,7 +5911,7 @@ ERR\_API\_MISSING\_PARAMETER
 </td>
 <td valign="top">
 
-Some parameters are missing.
+some parameters are missing
 
 </td>
 </tr>
@@ -5911,7 +5928,7 @@ ERR\_API\_INTERNAL\_ERROR
 </td>
 <td valign="top">
 
-Internal API error.
+internal error
 
 </td>
 </tr>
@@ -5928,7 +5945,7 @@ ERR\_API\_NOT\_SUPPORTED\_TYPECONV
 </td>
 <td valign="top">
 
-This is not a supported type conversion.
+not supported type conversion
 
 </td>
 </tr>
@@ -5945,7 +5962,7 @@ ERR\_API\_REMOTE\_ONLY
 </td>
 <td valign="top">
 
-This is a remote-only function.
+remote-only function
 
 </td>
 </tr>
@@ -5962,7 +5979,7 @@ ERR\_API\_NO\_MORE\_RESULT\_ROW
 </td>
 <td valign="top">
 
-There are no more result rows in the result set.
+no more result row in result set
 
 </td>
 </tr>
@@ -5979,7 +5996,7 @@ ERR\_API\_NOT\_OUT\_PARAM
 </td>
 <td valign="top">
 
-The specified parameter is not an output parameter.
+Specified parameter is not output parameter
 
 </td>
 </tr>
@@ -5996,7 +6013,7 @@ ERR\_API\_LOB\_STREAM\_NOT\_PERMITTED
 </td>
 <td valign="top">
 
-LOB streaming is not permitted in auto-commit mode.
+LOB streaming is not permitted in auto-commit mode
 
 </td>
 </tr>
@@ -6013,7 +6030,7 @@ ERR\_API\_SESSION\_CONTEXT\_ERROR
 </td>
 <td valign="top">
 
-There is a session context error.
+session context error
 
 </td>
 </tr>
@@ -6030,7 +6047,7 @@ ERR\_API\_EXTERNAL\_EXECUTION\_FAILURE
 </td>
 <td valign="top">
 
-Failed to execute the external statement.
+failed to execute the external statement
 
 </td>
 </tr>
@@ -6047,7 +6064,7 @@ ERR\_API\_NOT\_INITIALIZED
 </td>
 <td valign="top">
 
-The session layer is not initialized yet.
+session layer is not initialized yet
 
 </td>
 </tr>
@@ -6064,7 +6081,7 @@ ERR\_API\_CALL\_ROUTING\_FAILURE
 </td>
 <td valign="top">
 
-Failed routed execution.
+failed routed execution
 
 </td>
 </tr>
@@ -6081,7 +6098,7 @@ ERR\_API\_TOO\_MANY\_SESSION\_VARIABLES
 </td>
 <td valign="top">
 
-Too many session variables are set.
+too many session variables are set
 
 </td>
 </tr>
@@ -6098,7 +6115,7 @@ ERR\_API\_READONLY\_SESSION\_VARIABLE
 </td>
 <td valign="top">
 
-Cannot set read-only session variables.
+cannot set read-only session variable
 
 </td>
 </tr>
@@ -6115,7 +6132,7 @@ ERR\_API\_INV\_LOB
 </td>
 <td valign="top">
 
-Invalid LOB.
+invalid LOB
 
 </td>
 </tr>
@@ -6132,7 +6149,7 @@ ERR\_API\_REMOTE\_TEMP\_TABLE
 </td>
 <td valign="top">
 
-There is a remote temporary table access failure.
+remote temp table access failure
 
 </td>
 </tr>
@@ -6149,7 +6166,7 @@ ERR\_API\_INV\_XA\_JOIN
 </td>
 <td valign="top">
 
-Invalid XA join request.
+invalid xa join request
 
 </td>
 </tr>
@@ -6166,7 +6183,7 @@ ERR\_API\_EXCEED\_MAX\_LOB\_SIZE
 </td>
 <td valign="top">
 
-You have exceeded the maximum LOB size.
+exceed maximum LOB size
 
 </td>
 </tr>
@@ -6183,7 +6200,7 @@ ERR\_API\_CLEANUP\_RESOURCE
 </td>
 <td valign="top">
 
-Failed to cleanup resources.
+failed to cleanup resources
 
 </td>
 </tr>
@@ -6200,7 +6217,7 @@ ERR\_API\_EXCEED\_MAX\_PREPARED\_STATEMENT
 </td>
 <td valign="top">
 
-You have exceeded the maximum number of prepared statements.
+exceed maximum number of prepared statements
 
 </td>
 </tr>
@@ -6217,7 +6234,7 @@ ERR\_API\_INVALID\_CESU8\_STRING
 </td>
 <td valign="top">
 
-Invalid CESU-8 string.
+invalid CESU-8 string
 
 </td>
 </tr>
@@ -6234,7 +6251,7 @@ ERR\_API\_ROLLBACK\_FAILURE
 </td>
 <td valign="top">
 
-There is a transaction rollback failure.
+transaction rollback failure
 
 </td>
 </tr>
@@ -6251,7 +6268,7 @@ ERR\_API\_SESSION\_VARIABLE\_VALUE\_LENGTH\_EXCEEDED
 </td>
 <td valign="top">
 
-You have exceeded the maximum value length for the session variable.
+maximum length of value for session variable exceeded
 
 </td>
 </tr>
@@ -6268,7 +6285,7 @@ ERR\_API\_SESSION\_VARIABLE\_KEY\_LENGTH\_EXCEEDED
 </td>
 <td valign="top">
 
-You have exceeded the maximum key length for the session variable.
+maximum length of key for session variable exceeded
 
 </td>
 </tr>
@@ -6285,7 +6302,7 @@ ERR\_API\_TIMEOUT
 </td>
 <td valign="top">
 
-The execution was aborted by a timeout.
+execution aborted by timeout
 
 </td>
 </tr>
@@ -6302,7 +6319,7 @@ ERR\_API\_ACCESS\_ENCRYPTED\_DATA
 </td>
 <td valign="top">
 
-Encrypted data access is not permitted.
+encrypted data access is not permitted
 
 </td>
 </tr>
@@ -6319,7 +6336,7 @@ ERR\_API\_REMOTE\_CONNECTION\_DOES\_NOT\_EXIST
 </td>
 <td valign="top">
 
-The remote connection does not exist.
+remote connection does not exist
 
 </td>
 </tr>
@@ -6336,7 +6353,7 @@ ERR\_API\_REJECTED\_BY\_WORKLOAD\_CLASS
 </td>
 <td valign="top">
 
-The request was rejected by the workload class admission control thresholds for either CPU or memory.
+rejected by workload class configuration
 
 </td>
 </tr>
@@ -6353,7 +6370,7 @@ ERR\_SQL\_2
 </td>
 <td valign="top">
 
-SQL processing error.
+sql processing error
 
 </td>
 </tr>
@@ -6370,7 +6387,7 @@ ERR\_SQL\_INV\_REMOTE\_SUBSCRIPTION
 </td>
 <td valign="top">
 
-Invalid remote subscription name.
+invalid remote subscription name
 
 </td>
 </tr>
@@ -6387,7 +6404,7 @@ ERR\_SQL\_EXST\_REMOTE\_SUBSCRIPTION
 </td>
 <td valign="top">
 
-Cannot use duplicate remote subscription names.
+cannot use duplicate remote subscription name
 
 </td>
 </tr>
@@ -6404,7 +6421,7 @@ ERR\_SQL\_INV\_REMOTE\_SUBSCRIPTION\_DEF
 </td>
 <td valign="top">
 
-Invalid remote subscription definition.
+invalid remote subscription definition
 
 </td>
 </tr>
@@ -6421,7 +6438,7 @@ ERR\_SQL\_EXST\_REMOTE\_SOURCE\_ADAPTER\_LOCATION
 </td>
 <td valign="top">
 
-The remote source refers to the adapter location.
+remote source refers to the adapter location
 
 </td>
 </tr>
@@ -6438,7 +6455,7 @@ ERR\_SQL\_EXST\_REMOTE\_SOURCE\_ACTIVE\_SUBSCRIPTIONS
 </td>
 <td valign="top">
 
-The remote source has active remote subscriptions.
+remote source has active remote subscriptions:
 
 </td>
 </tr>
@@ -6455,7 +6472,7 @@ ERR\_SQL\_INV\_USABLE\_TASK
 </td>
 <td valign="top">
 
-Invalidated task.
+invalidated task
 
 </td>
 </tr>
@@ -6472,7 +6489,7 @@ ERR\_SQL\_NOT\_ALLOWED\_SYNTAX\_FOR\_TRIGGER
 </td>
 <td valign="top">
 
-The syntax is not supported in the trigger.
+not supported syntax in trigger
 
 </td>
 </tr>
@@ -6489,7 +6506,7 @@ ERR\_SQL\_TRIGGER\_AND\_PROC\_NESTING\_DEPTH\_EXCEEDED
 </td>
 <td valign="top">
 
-You have exceeded the nesting depth of the trigger and the procedure.
+nesting depth of trigger and procedure is exceeded
 
 </td>
 </tr>
@@ -6506,7 +6523,7 @@ ERR\_SQL\_QUERY\_PINNED\_PLAN
 </td>
 <td valign="top">
 
-Pinned plan error.
+Pinned plan error
 
 </td>
 </tr>
@@ -6523,7 +6540,7 @@ ERR\_SQL\_QUERY\_REMOVE\_PINNED\_PLAN
 </td>
 <td valign="top">
 
-Remove pinned plan error.
+Remove pinned plan error
 
 </td>
 </tr>
@@ -6540,7 +6557,7 @@ ERR\_SQL\_EXST\_OBJECT
 </td>
 <td valign="top">
 
-Cannot use duplicate object name.
+cannot use duplicate object name
 
 </td>
 </tr>
@@ -6557,7 +6574,7 @@ ERR\_SQL\_AMBG\_SCHEMA
 </td>
 <td valign="top">
 
-The schema is ambiguously defined.
+schema ambiguously defined
 
 </td>
 </tr>
@@ -6574,7 +6591,7 @@ ERR\_SQL\_SET\_ROW\_ORDER
 </td>
 <td valign="top">
 
-The row order is already set on the table.
+row order already set on table
 
 </td>
 </tr>
@@ -6591,7 +6608,7 @@ ERR\_SQL\_NO\_ROW\_ORDER
 </td>
 <td valign="top">
 
-There is no row order set on the table.
+no row order on table set
 
 </td>
 </tr>
@@ -6608,7 +6625,7 @@ ERR\_SQL\_LICENSING\_RUNTIME
 </td>
 <td valign="top">
 
-Licensing error.
+licensing error
 
 </td>
 </tr>
@@ -6625,7 +6642,7 @@ ERR\_SQL\_LONG\_PROPERTY
 </td>
 <td valign="top">
 
-The property value is too long.
+property value too long
 
 </td>
 </tr>
@@ -6642,7 +6659,7 @@ ERR\_SQL\_CANCEL\_TASK\_TIMEOUT\_REACHED
 </td>
 <td valign="top">
 
-The request to cancel the task was sent but the task did not cancel before the timeout was reached.
+request to cancel task was sent but task did not cancel before timeout was reached
 
 </td>
 </tr>
@@ -6659,7 +6676,7 @@ ERR\_SQL\_CANNOT\_MUTATE\_TABLE\_DURING\_FK\_EXECUTION
 </td>
 <td valign="top">
 
-Cannot mutate the table during trigger or foreign key execution.
+cannot mutate the table during trigger or foreign key execution
 
 </td>
 </tr>
@@ -6676,7 +6693,7 @@ ERR\_SQL\_EXST\_WORKLOAD\_CLASS
 </td>
 <td valign="top">
 
-Cannot use duplicate workload class name.
+cannot use duplicate workload class name
 
 </td>
 </tr>
@@ -6693,7 +6710,7 @@ ERR\_SQL\_INV\_WORKLOAD\_CLASS
 </td>
 <td valign="top">
 
-Invalid workload class name.
+invalid workload class name
 
 </td>
 </tr>
@@ -6710,7 +6727,7 @@ ERR\_SQL\_EXST\_WORKLOAD\_MAPPING
 </td>
 <td valign="top">
 
-Cannot use duplicate workload mapping names.
+cannot use duplicate workload mapping name
 
 </td>
 </tr>
@@ -6727,7 +6744,7 @@ ERR\_SQL\_INV\_WORKLOAD\_MAPPING
 </td>
 <td valign="top">
 
-Invalid workload mapping name.
+invalid workload mapping name
 
 </td>
 </tr>
@@ -6744,7 +6761,7 @@ ERR\_SQL\_CONNECT\_NOT\_ALLOWED
 </td>
 <td valign="top">
 
-The user is not allowed to connect from the client.
+user not allowed to connect from client
 
 </td>
 </tr>
@@ -6761,7 +6778,7 @@ ERR\_SQL\_INV\_AGENT\_GROUP
 </td>
 <td valign="top">
 
-Invalid agent group name.
+invalid agent group name
 
 </td>
 </tr>
@@ -6778,7 +6795,7 @@ ERR\_SQL\_EXST\_AGENT\_GROUP
 </td>
 <td valign="top">
 
-Cannot use duplicate agent group names.
+cannot use duplicate agent group name
 
 </td>
 </tr>
@@ -6795,7 +6812,24 @@ ERR\_SQL\_AGENT\_GROUP\_NOT\_EMPTY
 </td>
 <td valign="top">
 
-The agents are still set to this agent group.
+agents are still set to this agent group.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+667
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_TEXT\_MINING\_FAILURE
+
+</td>
+<td valign="top">
+
+text mining error
 
 </td>
 </tr>
@@ -6812,7 +6846,7 @@ ERR\_SQL\_2D\_POINTS\_SUPPORTED\_ONLY
 </td>
 <td valign="top">
 
-ST\_Point columns only support 2-dimensional points.
+ST\_Point columns support 2-dimensional points only
 
 </td>
 </tr>
@@ -6829,7 +6863,7 @@ ERR\_SQL\_SPATIAL\_ERROR
 </td>
 <td valign="top">
 
-Spatial error.
+spatial error
 
 </td>
 </tr>
@@ -6846,7 +6880,7 @@ ERR\_SQL\_PART\_NOT\_EXIST
 </td>
 <td valign="top">
 
-The part does not exist.
+part does not exist
 
 </td>
 </tr>
@@ -6863,7 +6897,7 @@ ERR\_SQL\_EXST\_LIBRARY
 </td>
 <td valign="top">
 
-Cannot use duplicate library names.
+cannot use duplicate library name
 
 </td>
 </tr>
@@ -6880,7 +6914,7 @@ ERR\_SQL\_DPLC\_ASSOCIATION
 </td>
 <td valign="top">
 
-Duplicate association names.
+duplicate association name
 
 </td>
 </tr>
@@ -6897,7 +6931,7 @@ ERR\_SQL\_INV\_GRAPH\_WORKSPACE
 </td>
 <td valign="top">
 
-Invalid graph workspace name.
+invalid graph workspace name
 
 </td>
 </tr>
@@ -6914,7 +6948,7 @@ WRN\_SQL\_EXPORT\_SKIP\_CROSSDB\_OBJECT
 </td>
 <td valign="top">
 
-The cross database object found and skipped in exporting might cause IMPORT to fail.
+cross database object found and skipped in exporting
 
 </td>
 </tr>
@@ -6931,7 +6965,7 @@ ERR\_SQL\_EXST\_GRAPH\_WORKSPACE
 </td>
 <td valign="top">
 
-Cannot use duplicate graph workspace names.
+cannot use duplicate graph workspace name
 
 </td>
 </tr>
@@ -6948,7 +6982,7 @@ ERR\_SQL\_DUP\_WORKLOAD\_MAPPING
 </td>
 <td valign="top">
 
-Cannot use duplicate workload mappings to the same combination of: user name, application user name, application name, client application, component name, or application component type.
+cannot use duplicate combination of workload mapping
 
 </td>
 </tr>
@@ -6965,7 +6999,7 @@ ERR\_SQL\_CHECK\_CONSTRAINT\_VIOLATION
 </td>
 <td valign="top">
 
-Check the constraint violation.
+check constraint violation
 
 </td>
 </tr>
@@ -6982,7 +7016,7 @@ ERR\_SQL\_PLANSTABILIZER\_DEPRECATED
 </td>
 <td valign="top">
 
-Deprecated plan stabilizer error.
+deprecated plan stabilizer error
 
 </td>
 </tr>
@@ -6999,7 +7033,7 @@ ERR\_SQL\_PLANSTABILIZER\_NO\_MANAGER\_DEPRECATED
 </td>
 <td valign="top">
 
-Deprecated plan stabilizer error - manager not found. Check if the Plan Stabilizer is enabled.
+deprecated plan stabilizer error - manager not found: please check if Plan Stabilizer is enabled
 
 </td>
 </tr>
@@ -7016,7 +7050,7 @@ ERR\_SQL\_STATEMENT\_HINT
 </td>
 <td valign="top">
 
-Statement hint error.
+statement hint error
 
 </td>
 </tr>
@@ -7028,12 +7062,12 @@ Statement hint error.
 </td>
 <td valign="top">
 
-ERR\_SQL\_PLANSTABILIZER\_STORED\_HINT\_COMMAND
+ERR\_SQL\_STATEMENT\_HINT\_COMMAND
 
 </td>
 <td valign="top">
 
-Plan stabilizer stored hint error - error while processing the statement hint command.
+statement hint error - error while processing statement hint command
 
 </td>
 </tr>
@@ -7045,12 +7079,12 @@ Plan stabilizer stored hint error - error while processing the statement hint co
 </td>
 <td valign="top">
 
-ERR\_SQL\_PLANSTABILIZER\_STORED\_HINT\_TABLE\_EMPTY
+ERR\_SQL\_STATEMENT\_HINT\_TABLE\_EMPTY
 
 </td>
 <td valign="top">
 
-Plan stabilizer stored hint error - the statement hint table is empty.
+statement hint error - statement hint table is empty
 
 </td>
 </tr>
@@ -7062,12 +7096,12 @@ Plan stabilizer stored hint error - the statement hint table is empty.
 </td>
 <td valign="top">
 
-ERR\_SQL\_PLANSTABILIZER\_STORED\_HINT\_MAP\_LOAD\_ERROR
+ERR\_SQL\_STATEMENT\_HINT\_MAP\_LOAD\_ERROR
 
 </td>
 <td valign="top">
 
-Plan stabilizer stored hint error - the statement hint table is corrupt.
+statement hint error - statement hint table is corrupt
 
 </td>
 </tr>
@@ -7079,12 +7113,12 @@ Plan stabilizer stored hint error - the statement hint table is corrupt.
 </td>
 <td valign="top">
 
-ERR\_SQL\_PLANSTABILIZER\_STORED\_HINT\_RECORD\_ALREADY\_EXISTS
+ERR\_SQL\_STATEMENT\_HINT\_RECORD\_ALREADY\_EXISTS
 
 </td>
 <td valign="top">
 
-Plan stabilizer stored hint error - the statement hint record already exists.
+statement hint error - statement hint record already exists
 
 </td>
 </tr>
@@ -7096,12 +7130,12 @@ Plan stabilizer stored hint error - the statement hint record already exists.
 </td>
 <td valign="top">
 
-ERR\_SQL\_PLANSTABILIZER\_STORED\_HINT\_RECORD\_DOES\_NOT\_EXIST
+ERR\_SQL\_STATEMENT\_HINT\_RECORD\_DOES\_NOT\_EXIST
 
 </td>
 <td valign="top">
 
-Plan stabilizer stored hint error - the statement hint record does not exist.
+statement hint error - statement hint record does not exist
 
 </td>
 </tr>
@@ -7118,7 +7152,7 @@ ERR\_SQL\_START\_TASK\_ERROR
 </td>
 <td valign="top">
 
-Start task error.
+start task error
 
 </td>
 </tr>
@@ -7135,7 +7169,7 @@ ERR\_SQL\_EXCEED\_LAG\_TIME
 </td>
 <td valign="top">
 
-You have exceeded the lag time of RESULT\_LAG.
+exceed lag time of RESULT\_LAG
 
 </td>
 </tr>
@@ -7152,7 +7186,7 @@ ERR\_IO\_FAILURE\_ON\_FILE\_WRITE
 </td>
 <td valign="top">
 
-I/O error occurred on the file write.
+I/O error occured on file write
 
 </td>
 </tr>
@@ -7169,7 +7203,7 @@ ERR\_SQL\_DUPLICATE\_ROWID\_MATCHED
 </td>
 <td valign="top">
 
-Duplicate ROWID matched during the merge.
+duplicate rowid matched during merge into
 
 </td>
 </tr>
@@ -7181,12 +7215,12 @@ Duplicate ROWID matched during the merge.
 </td>
 <td valign="top">
 
-ERR\_SQL\_PLANSTABILIZER\_STORED\_PLAN\_DEPRECATED
+ERR\_SQL\_PLAN\_STABILITY\_DEPRECATED
 
 </td>
 <td valign="top">
 
-Deprecated plan stabilizer stored plan error.
+deprecated plan stability error
 
 </td>
 </tr>
@@ -7198,12 +7232,12 @@ Deprecated plan stabilizer stored plan error.
 </td>
 <td valign="top">
 
-ERR\_SQL\_PLANSTABILIZER\_STORED\_PLAN\_COMMAND\_DEPRECATED
+ERR\_SQL\_PLAN\_STABILITY\_COMMAND\_DEPRECATED
 
 </td>
 <td valign="top">
 
-Deprecated plan stabilizer stored plan error - error while processing command.
+deprecated plan stability error - error while processing command
 
 </td>
 </tr>
@@ -7220,7 +7254,7 @@ ERR\_SQL\_PLAN\_STABILITY\_TABLE\_EMPTY\_DEPRECATED
 </td>
 <td valign="top">
 
-Deprecated plan stabilizer stored plan error - stored plan table is empty.
+deprecated plan stability error - stored plan table is empty
 
 </td>
 </tr>
@@ -7237,7 +7271,7 @@ ERR\_SQL\_PLAN\_STABILITY\_MAP\_LOAD\_ERROR\_DEPRECATED
 </td>
 <td valign="top">
 
-Deprecated plan stability error - stored plan table is corrupt.
+deprecated plan stability error - stored plan table is corrupt
 
 </td>
 </tr>
@@ -7254,7 +7288,7 @@ ERR\_SQL\_PLAN\_STABILITY\_RECORD\_ALREADY\_EXISTS\_DEPRECATED
 </td>
 <td valign="top">
 
-Deprecated plan stability error - stored plan record already exists.
+deprecated plan stability error - stored plan record already exists
 
 </td>
 </tr>
@@ -7271,7 +7305,7 @@ ERR\_SQL\_PLAN\_STABILITY\_RECORD\_DOES\_NOT\_EXIST\_DEPRECATED
 </td>
 <td valign="top">
 
-Deprecated plan stability error - stored plan record does not exist.
+deprecated plan stability error - stored plan record does not exist
 
 </td>
 </tr>
@@ -7288,7 +7322,7 @@ ERR\_SQL\_PLAN\_STABILITY\_CANNOT\_CONVERT\_ABSTRACT\_PLAN\_DEPRECATED
 </td>
 <td valign="top">
 
-Deprecated plan stability error - cannot convert to abstract plan.
+deprecated plan stability error - cannot convert to abstract plan
 
 </td>
 </tr>
@@ -7305,7 +7339,7 @@ ERR\_SQL\_PREACTIVE\_KEY\_EXISTS
 </td>
 <td valign="top">
 
-Preactive key already exists.
+Preactive key already exists
 
 </td>
 </tr>
@@ -7322,7 +7356,7 @@ ERR\_SQL\_NO\_PREACTIVE\_KEY
 </td>
 <td valign="top">
 
-No preactive key exists.
+No preactive key exists
 
 </td>
 </tr>
@@ -7339,7 +7373,7 @@ ERR\_SQL\_EXST\_DEPENDENCY\_RULE
 </td>
 <td valign="top">
 
-Cannot use a duplicate dependency rule name.
+cannot use duplicate dependency rule name
 
 </td>
 </tr>
@@ -7356,7 +7390,7 @@ ERR\_SQL\_SINGLE\_COLUMN\_SEARCH\_THROW\_ERROR
 </td>
 <td valign="top">
 
-There is no stacked column search \(throw\_error\) error.
+no\_stacked\_column\_search\(throw\_error\) error
 
 </td>
 </tr>
@@ -7373,7 +7407,7 @@ ERR\_SQL\_EXST\_USERGROUP
 </td>
 <td valign="top">
 
-The usergroup name already exists.
+usergroup name already exists
 
 </td>
 </tr>
@@ -7390,7 +7424,7 @@ ERR\_SQL\_INV\_USERGROUP
 </td>
 <td valign="top">
 
-Invalid usergroup name.
+invalid usergroup name
 
 </td>
 </tr>
@@ -7407,7 +7441,7 @@ ERR\_INCORRECT\_ROOT\_KEYS\_BACKUP\_PASSWORD
 </td>
 <td valign="top">
 
-Incorrect root keys backup password.
+incorrect root keys backup password
 
 </td>
 </tr>
@@ -7424,7 +7458,7 @@ ERR\_SQL\_USERGROUP\_DELETION\_FAILED
 </td>
 <td valign="top">
 
-The usergroup cannot be dropped.
+usergroup cannot be dropped
 
 </td>
 </tr>
@@ -7441,7 +7475,7 @@ ERR\_SQL\_CONCURRENT\_GRANT
 </td>
 <td valign="top">
 
-Two concurrent statements performed the same GRANT operation.
+Two concurrent statements performed the same grant operation
 
 </td>
 </tr>
@@ -7458,7 +7492,7 @@ ERR\_SQL\_INV\_SYMMETRIC\_CIPHER
 </td>
 <td valign="top">
 
-Only AES-256-CBC is supported: invalid cipher.
+currently only AES-256-CBC is supported: invalid cipher
 
 </td>
 </tr>
@@ -7475,7 +7509,7 @@ ERR\_SQL\_EXST\_COLUMN\_KEY
 </td>
 <td valign="top">
 
-Cannot use duplicate column key names.
+cannot use duplicate column key name
 
 </td>
 </tr>
@@ -7492,7 +7526,7 @@ ERR\_SQL\_EXST\_COLUMN\_KEYCOPY
 </td>
 <td valign="top">
 
-The `keycopy` column already exists.
+column keycopy already exists
 
 </td>
 </tr>
@@ -7509,7 +7543,7 @@ ERR\_SQL\_EXST\_KEYPAIR
 </td>
 <td valign="top">
 
-The `keypair` column already exists.
+keypair already exists
 
 </td>
 </tr>
@@ -7526,7 +7560,7 @@ ERR\_SQL\_INV\_ASYMMETRIC\_CIPHER
 </td>
 <td valign="top">
 
-Only RSA-OAEP-2048 is supported: invalid cipher.
+currently only RSA-OAEP-2048 is supported: invalid cipher
 
 </td>
 </tr>
@@ -7543,7 +7577,7 @@ ERR\_SQL\_EXST\_COLUMN\_KEY\_ID
 </td>
 <td valign="top">
 
-Cannot use duplicate column key IDs.
+cannot use duplicate column key id
 
 </td>
 </tr>
@@ -7560,7 +7594,7 @@ ERR\_SQL\_PLAN\_STABILITY\_MIGRATION\_DEPRECATED
 </td>
 <td valign="top">
 
-Deprecated plan stabilizer stored plan error - migration error.
+deprecated plan stabilizer stored plan error - migration error
 
 </td>
 </tr>
@@ -7577,7 +7611,7 @@ ERR\_SQL\_NOT\_OWN\_KEYPAIR
 </td>
 <td valign="top">
 
-The `keypair` column is not owned by the creator of the column key.
+keypair not owned by the creator of the column key
 
 </td>
 </tr>
@@ -7594,7 +7628,7 @@ ERR\_SQL\_DROP\_COLUMN\_KEYCOPY
 </td>
 <td valign="top">
 
-Cannot drop the last key admin `keycopy`.
+cannot drop the last key admin keycopy
 
 </td>
 </tr>
@@ -7611,7 +7645,7 @@ ERR\_SQL\_EMPTY\_WORKLOAD\_MAPPING
 </td>
 <td valign="top">
 
-Cannot use a workload mapping with no properties.
+cannot use a workload mapping with no properties
 
 </td>
 </tr>
@@ -7628,7 +7662,7 @@ ERR\_SQL\_STALE\_STATEMENT
 </td>
 <td valign="top">
 
-The statement has stale metadata or the column encryption key of some columns have changed.
+statement is stale
 
 </td>
 </tr>
@@ -7645,7 +7679,7 @@ ERR\_SQL\_INV\_KEY\_ID
 </td>
 <td valign="top">
 
-Invalid key ID.
+invalid key id
 
 </td>
 </tr>
@@ -7662,7 +7696,7 @@ ERR\_SQL\_CANNOT\_UPDATE\_NOT\_EXISTING\_ROW
 </td>
 <td valign="top">
 
-Cannot update a non-existent row.
+cannot update non-existent row
 
 </td>
 </tr>
@@ -7679,7 +7713,7 @@ ERR\_SQL\_CURRENCY\_UNIT\_CONVERSION
 </td>
 <td valign="top">
 
-Currency/unit conversion error.
+currency/unit conversion error
 
 </td>
 </tr>
@@ -7696,7 +7730,7 @@ ERR\_SQL\_DDL\_DISABLED
 </td>
 <td valign="top">
 
-DDL is currently disabled in this session.
+DDL is currently disabled in this session
 
 </td>
 </tr>
@@ -7713,7 +7747,7 @@ ERR\_SQL\_MISSING\_ROWID
 </td>
 <td valign="top">
 
-The row ID column is not found.
+rowid column is not found
 
 </td>
 </tr>
@@ -7730,7 +7764,7 @@ ERR\_SQL\_DROP\_LAST\_COLUMN\_KEYCOPY
 </td>
 <td valign="top">
 
-Cannot drop the last keycopy.
+cannot drop the last keycopy
 
 </td>
 </tr>
@@ -7747,7 +7781,7 @@ ERR\_SQL\_NOT\_KEY\_ADMIN\_KEYPAIR
 </td>
 <td valign="top">
 
-The keypair is not owned by the key admin.
+keypair not owned by key admin
 
 </td>
 </tr>
@@ -7764,7 +7798,7 @@ ERR\_SQL\_INV\_LIBRARY
 </td>
 <td valign="top">
 
-Invalid library name.
+invalid name of library
 
 </td>
 </tr>
@@ -7781,7 +7815,432 @@ ERR\_SQL\_INV\_USABLE\_LIBRARY
 </td>
 <td valign="top">
 
-Invalidated library.
+invalidated library
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+726
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_INVALID\_BASE64\_STRING
+
+</td>
+<td valign="top">
+
+invalid Base64 string
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+727
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_INV\_CACHE
+
+</td>
+<td valign="top">
+
+invalid result cache name
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+728
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_EXST\_CACHE
+
+</td>
+<td valign="top">
+
+cannot use duplicate result cache name
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+729
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_UNKNOWN\_SESSION
+
+</td>
+<td valign="top">
+
+unknown session id
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+730
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_RECOMPILE\_WITHOUT\_FALLBACK
+
+</td>
+<td valign="top">
+
+query recompilation is required for reoptimized plan generation
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+731
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_RECOMPILE\_WITH\_FALLBACK
+
+</td>
+<td valign="top">
+
+query recompilation is required for legacy plan generation
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+732
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_FAIL\_AUTO\_MATCH\_CACHE
+
+</td>
+<td valign="top">
+
+cannot find matching view
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+733
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_DDL\_ONLY\_OBJECT
+
+</td>
+<td valign="top">
+
+no DML on DDL-only object
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+734
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_EMPTY\_COLUMN\_KEY
+
+</td>
+<td valign="top">
+
+cannot use empty column encryption key
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+735
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_RECOMPILE\_WITH\_DISK
+
+</td>
+<td valign="top">
+
+query recompilation is required for disk plan generation
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+736
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_REMOVE\_SQL\_PLAN\_CACHE\_SELECTIVE
+
+</td>
+<td valign="top">
+
+invalid WHERE condition.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+737
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_FUZZY\_SEARCH\_INDEX
+
+</td>
+<td valign="top">
+
+cannot create fuzzy search index
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+738
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_INV\_TENANT
+
+</td>
+<td valign="top">
+
+invalid tenant name
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+739
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_EXST\_TENANT
+
+</td>
+<td valign="top">
+
+cannot use duplicate tenant name
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+740
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_TENANT\_IN\_USE
+
+</td>
+<td valign="top">
+
+tenant in use
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+741
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_TENANT\_OBJECT\_ALREADY\_ADDED
+
+</td>
+<td valign="top">
+
+object already added to tenant
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+742
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_INV\_ROLEGROUP
+
+</td>
+<td valign="top">
+
+invalid rolegroup name
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+743
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_EXST\_ROLEGROUP
+
+</td>
+<td valign="top">
+
+rolegroup name already exists
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+744
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_EXST\_ROLE\_IN\_ROLEGROUP
+
+</td>
+<td valign="top">
+
+there are roles in the rolegroup
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+745
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_ROLE\_NOT\_IN\_ANY\_ROLEGROUP
+
+</td>
+<td valign="top">
+
+role is not member of any rolegroup
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+746
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_DATABASE\_EXTERNAL\_KEY\_REVOKED
+
+</td>
+<td valign="top">
+
+external key for database has been revoked
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+747
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_TENANT\_EXTERNAL\_KEY\_REVOKED
+
+</td>
+<td valign="top">
+
+external key for tenant has been revoked
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+748
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_INV\_RESULT\_CACHE\_TYPE
+
+</td>
+<td valign="top">
+
+invalid result cache type
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+749
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_RETRY\_BY\_INTERNAL\_CANCEL
+
+</td>
+<td valign="top">
+
+current sql operation cancelled internally by SQL Plan Advisor
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+750
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_INDEX\_NOT\_SUPPORTED
+
+</td>
+<td valign="top">
+
+cannot create index
 
 </td>
 </tr>
@@ -7798,7 +8257,7 @@ ERR\_SES
 </td>
 <td valign="top">
 
-Session error.
+session error
 
 </td>
 </tr>
@@ -7815,7 +8274,7 @@ ERR\_COM
 </td>
 <td valign="top">
 
-Communication error.
+communication error
 
 </td>
 </tr>
@@ -7832,7 +8291,7 @@ ERR\_COM\_LISTEN
 </td>
 <td valign="top">
 
-Cannot bind a communication port.
+cannot bind a communication port
 
 </td>
 </tr>
@@ -7849,7 +8308,7 @@ ERR\_COM\_INIT
 </td>
 <td valign="top">
 
-Communication initialization error.
+communication initialization error
 
 </td>
 </tr>
@@ -7866,7 +8325,7 @@ ERR\_COM\_IOCTL
 </td>
 <td valign="top">
 
-I/O control error.
+I/O control error
 
 </td>
 </tr>
@@ -7883,7 +8342,7 @@ ERR\_COM\_CONNECT
 </td>
 <td valign="top">
 
-Connection failure.
+connection failure
 
 </td>
 </tr>
@@ -7900,7 +8359,7 @@ ERR\_COM\_SEND
 </td>
 <td valign="top">
 
-Send error.
+send error
 
 </td>
 </tr>
@@ -7917,7 +8376,7 @@ ERR\_COM\_RECEIVE
 </td>
 <td valign="top">
 
-Receive error.
+receive error
 
 </td>
 </tr>
@@ -7934,7 +8393,7 @@ ERR\_SES\_THREAD\_CREATE
 </td>
 <td valign="top">
 
-Cannot create a thread.
+cannot create a thread
 
 </td>
 </tr>
@@ -7951,7 +8410,7 @@ ERR\_SES\_INV\_PROTOCOL
 </td>
 <td valign="top">
 
-Error while parsing the protocol.
+error while parsing protocol
 
 </td>
 </tr>
@@ -7968,7 +8427,7 @@ ERR\_SES\_EXCEED\_MAX\_SESSION
 </td>
 <td valign="top">
 
-You have exceeded the maximum number of sessions.
+exceed maximum number of external connections
 
 </td>
 </tr>
@@ -7985,7 +8444,7 @@ ERR\_SES\_INV\_VERSION
 </td>
 <td valign="top">
 
-The version is not supported.
+not supported version
 
 </td>
 </tr>
@@ -8002,7 +8461,7 @@ ERR\_SES\_INV\_SESSION
 </td>
 <td valign="top">
 
-Invalid session ID.
+invalid session id
 
 </td>
 </tr>
@@ -8019,7 +8478,7 @@ ERR\_COM\_UNKNOWN\_HOST
 </td>
 <td valign="top">
 
-Unknown hostname.
+unknown hostname
 
 </td>
 </tr>
@@ -8036,7 +8495,41 @@ ERR\_SES\_SERVER\_BUSY
 </td>
 <td valign="top">
 
-The server is temporarily overloaded.
+rejected as server is temporarily overloaded
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1039
+
+</td>
+<td valign="top">
+
+ERR\_SES\_LOOKUP\_PORT\_CONNECT
+
+</td>
+<td valign="top">
+
+not supported to redirect connection with no database name by using low version of client library
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1040
+
+</td>
+<td valign="top">
+
+ERR\_SES\_FORCE\_REROUTE
+
+</td>
+<td valign="top">
+
+failed to execute statement in routing by workload class configuration
 
 </td>
 </tr>
@@ -8053,7 +8546,7 @@ ERR\_DATA\_STAT
 </td>
 <td valign="top">
 
-Data statistics error.
+data statistics error
 
 </td>
 </tr>
@@ -8070,7 +8563,7 @@ ERR\_DATA\_STAT\_NOT\_FOUND
 </td>
 <td valign="top">
 
-No matching data statistics objects found.
+no matching data statistics objects found
 
 </td>
 </tr>
@@ -8087,7 +8580,7 @@ ERR\_DATA\_STAT\_REMOTE\_QUERY\_ERR
 </td>
 <td valign="top">
 
-Invalid results from the query to the remote source.
+invalid result from query to remote source
 
 </td>
 </tr>
@@ -8104,7 +8597,7 @@ ERR\_DATA\_STAT\_TABLE\_NOT\_FOUND
 </td>
 <td valign="top">
 
-The specified table is not found or not supported.
+specified table not found or not supported
 
 </td>
 </tr>
@@ -8121,7 +8614,7 @@ ERR\_DATA\_STAT\_BUILD\_ERROR
 </td>
 <td valign="top">
 
-Error building data statistics object.
+error building data statistics object
 
 </td>
 </tr>
@@ -8138,7 +8631,7 @@ ERR\_DATA\_STAT\_EXISTS
 </td>
 <td valign="top">
 
-The data statistics object already exists.
+data statistics object already exists
 
 </td>
 </tr>
@@ -8155,7 +8648,7 @@ ERR\_DATA\_STAT\_INVALID\_SETTING
 </td>
 <td valign="top">
 
-There is an invalid combination of settings specified.
+invalid combination of settings specified
 
 </td>
 </tr>
@@ -8172,7 +8665,7 @@ ERR\_USERGROUP\_GENERAL
 </td>
 <td valign="top">
 
-Usergroup error.
+usergroup error
 
 </td>
 </tr>
@@ -8189,7 +8682,7 @@ ERR\_USERGROUP\_USER\_NOT\_MEMBER\_OF\_ANY
 </td>
 <td valign="top">
 
-The user is not a member of any usergroup.
+user is not member of any usergroup
 
 </td>
 </tr>
@@ -8206,7 +8699,7 @@ ERR\_USERGROUP\_EQUAL\_CURRENT\_AND\_NEW\_USERGROUP
 </td>
 <td valign="top">
 
-The current and new usergroup are the same.
+current and new usergroup are the same
 
 </td>
 </tr>
@@ -8223,7 +8716,7 @@ ERR\_USERGROUP\_UNKNOWN\_PARAMETER\_NAME
 </td>
 <td valign="top">
 
-There is an unknown parameter for the usergroup.
+unknown parameter for usergroup
 
 </td>
 </tr>
@@ -8240,7 +8733,7 @@ ERR\_USERGROUP\_UNKNOWN\_PARAMETER\_SET\_NAME
 </td>
 <td valign="top">
 
-An unknown parameter is set for the usergroup.
+unknown parameter set for usergroup
 
 </td>
 </tr>
@@ -8257,7 +8750,7 @@ ERR\_USERGROUP\_DUPLICATE\_PARAMETER\_NAME
 </td>
 <td valign="top">
 
-The same parameter name is specified more than once.
+same parametername specified more than once
 
 </td>
 </tr>
@@ -8274,7 +8767,92 @@ ERR\_USERGROUP\_INVALID\_PARAMETER\_VALUE
 </td>
 <td valign="top">
 
-Invalid value for the usergroup parameter.
+invalid value for usergroup parameter
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1127
+
+</td>
+<td valign="top">
+
+ERR\_USERGROUP\_DISABLE\_CONNECT\_BY\_GROUP\_MEMBER\_NOT\_ALLOWED
+
+</td>
+<td valign="top">
+
+user is member of this usergroup
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1128
+
+</td>
+<td valign="top">
+
+ERR\_USERGROUP\_IMPLICIT\_DEDUCTION\_NOT\_POSSIBLE
+
+</td>
+<td valign="top">
+
+usergroup cannot be deduced automatically when creator has more than one OPERATOR privilege; amend the SQL command with SET USERGROUP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1129
+
+</td>
+<td valign="top">
+
+ERR\_USERGROUP\_INVALID\_CONNECT\_RESTRICTION
+
+</td>
+<td valign="top">
+
+unknown connect restriction for usergroup
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1130
+
+</td>
+<td valign="top">
+
+ERR\_USERGROUP\_CONNECT\_RESTRICTION\_EXISTS
+
+</td>
+<td valign="top">
+
+connect restriction already exists for usergroup
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1131
+
+</td>
+<td valign="top">
+
+ERR\_USERGROUP\_CONNECT\_RESTRICTION\_CHANGE\_LOCKS\_SESSION\_USER
+
+</td>
+<td valign="top">
+
+connect restriction change locks out session user
 
 </td>
 </tr>
@@ -8291,7 +8869,7 @@ ERR\_SQL\_PLAN\_STABILITY
 </td>
 <td valign="top">
 
-Plan stability error.
+plan stability error
 
 </td>
 </tr>
@@ -8308,7 +8886,7 @@ ERR\_SQL\_PLAN\_STABILITY\_COMMAND
 </td>
 <td valign="top">
 
-Plan stability error - cannot execute the command.
+plan stability error - cannot execute command
 
 </td>
 </tr>
@@ -8325,7 +8903,7 @@ ERR\_SQL\_PLAN\_STABILITY\_TABLE\_EMPTY
 </td>
 <td valign="top">
 
-Plan stability error - the abstract SQL plan table is empty.
+plan stability error - abstract sql plan table is empty
 
 </td>
 </tr>
@@ -8342,7 +8920,7 @@ ERR\_SQL\_PLAN\_STABILITY\_MAP\_LOAD\_ERROR
 </td>
 <td valign="top">
 
-Plan stability error - cannot load the abstract SQL plan.
+plan stability error - cannot load abstract sql plan
 
 </td>
 </tr>
@@ -8359,7 +8937,7 @@ ERR\_SQL\_PLAN\_STABILITY\_RECORD\_ALREADY\_EXISTS
 </td>
 <td valign="top">
 
-Plan stability error - the abstract SQL plan record already exists.
+plan stability error - abstract sql plan record already exists
 
 </td>
 </tr>
@@ -8376,7 +8954,7 @@ ERR\_SQL\_PLAN\_STABILITY\_RECORD\_DOES\_NOT\_EXIST
 </td>
 <td valign="top">
 
-Plan stability error - the abstract SQL plan record does not exist.
+plan stability error - abstract sql plan record does not exist
 
 </td>
 </tr>
@@ -8393,7 +8971,7 @@ ERR\_SQL\_PLAN\_STABILITY\_CANNOT\_CAPTURE
 </td>
 <td valign="top">
 
-Plan stability error - cannot capture the plan.
+cannot capture abstract sql plan
 
 </td>
 </tr>
@@ -8410,7 +8988,7 @@ ERR\_SQL\_PLAN\_STABILITY\_MIGRATION
 </td>
 <td valign="top">
 
-Plan stability error - migration.
+plan stability error - migration
 
 </td>
 </tr>
@@ -8427,7 +9005,7 @@ ERR\_SQL\_PLAN\_STABILITY\_CANNOT\_APPLY
 </td>
 <td valign="top">
 
-Plan stability error - cannot apply using abstract SQL plan.
+cannot apply abstract sql plan
 
 </td>
 </tr>
@@ -8444,7 +9022,7 @@ ERR\_SQL\_PLAN\_STABILITY\_JSON\_ERROR
 </td>
 <td valign="top">
 
-Plan stability error - cannot deserialize the captured JSON.
+cannot deserialize abstract sql plan
 
 </td>
 </tr>
@@ -8461,7 +9039,41 @@ ERR\_SQL\_PLAN\_STABILITY\_UPDATE\_LOCATION
 </td>
 <td valign="top">
 
-Plan stability error - update location first.
+plan stability error - update location first
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1163
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_PLAN\_STABILITY\_RELATED\_OBJECT\_CHECK\_FAILED
+
+</td>
+<td valign="top">
+
+plan stability error - related object mismatch
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1164
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_PLAN\_STABILITY\_COMPRESSION\_ERROR
+
+</td>
+<td valign="top">
+
+plan stability error - cannot compress abstract sql plan
 
 </td>
 </tr>
@@ -8478,7 +9090,7 @@ ERR\_SQLSCRIPT\_2
 </td>
 <td valign="top">
 
-SQLscript error.
+sqlscript error
 
 </td>
 </tr>
@@ -8495,7 +9107,7 @@ ERR\_SQLSCRIPT\_WRONG\_PARAMS
 </td>
 <td valign="top">
 
-There is an incorrect number or types of parameters in call.
+wrong number or types of parameters in call
 
 </td>
 </tr>
@@ -8512,7 +9124,7 @@ ERR\_SQLSCRIPT\_OUT\_PARAM\_VAR
 </td>
 <td valign="top">
 
-The output parameter is not a variable.
+output parameter not a variable
 
 </td>
 </tr>
@@ -8529,7 +9141,7 @@ ERR\_SQLSCRIPT\_OUT\_PARAM\_DEFAULT
 </td>
 <td valign="top">
 
-The OUT and IN OUT parameters may not have default expressions.
+OUT and IN OUT parameters may not have default expressions
 
 </td>
 </tr>
@@ -8546,7 +9158,7 @@ ERR\_SQLSCRIPT\_DUP\_PARAMETERS
 </td>
 <td valign="top">
 
-Duplicate parameters are not permitted.
+duplicate parameters are not permitted
 
 </td>
 </tr>
@@ -8563,7 +9175,7 @@ ERR\_SQLSCRIPT\_DUP\_DECL
 </td>
 <td valign="top">
 
-At most one declaration is permitted in the declaration section.
+at most one declaration is permitted in the declaration section
 
 </td>
 </tr>
@@ -8580,7 +9192,7 @@ ERR\_SQLSCRIPT\_CURSOR\_SELECT\_STMT
 </td>
 <td valign="top">
 
-The cursor must be declared by a SELECT statement.
+cursor must be declared by SELECT statement
 
 </td>
 </tr>
@@ -8597,7 +9209,7 @@ ERR\_SQLSCRIPT\_ID\_NOT\_DECLARED
 </td>
 <td valign="top">
 
-An identifier must be declared.
+identifier must be declared
 
 </td>
 </tr>
@@ -8614,7 +9226,7 @@ ERR\_SQLSCRIPT\_NOT\_ASSIGN\_TARGET
 </td>
 <td valign="top">
 
-The expression cannot be used as an assignment target.
+expression cannot be used as an assignment target
 
 </td>
 </tr>
@@ -8631,7 +9243,7 @@ ERR\_SQLSCRIPT\_NOT\_INTO\_TARGET
 </td>
 <td valign="top">
 
-The expression cannot be used as an INTO-target of the SELECT/FETCH statement.
+Not allowed expression for INTO-target
 
 </td>
 </tr>
@@ -8648,7 +9260,7 @@ ERR\_SQLSCRIPT\_LHS\_CANNOT\_ASSIGNED
 </td>
 <td valign="top">
 
-The expression is inappropriate as the left-hand side of an assignment statement.
+expression is inappropriate as the left hand side of an assignment statement
 
 </td>
 </tr>
@@ -8665,7 +9277,7 @@ ERR\_SQLSCRIPT\_EXPR\_WRONG\_TYPE
 </td>
 <td valign="top">
 
-Incorrect expression type.
+expression is of wrong type
 
 </td>
 </tr>
@@ -8682,7 +9294,7 @@ ERR\_SQLSCRIPT\_ILLEGAL\_EXIT\_STMT
 </td>
 <td valign="top">
 
-Illegal EXIT statement, it must appear inside a loop.
+illegal loop control statement
 
 </td>
 </tr>
@@ -8699,7 +9311,7 @@ ERR\_SQLSCRIPT\_ID\_EXCEPTION\_TYPE
 </td>
 <td valign="top">
 
-The identifier name must be an exception name.
+not a condition variable
 
 </td>
 </tr>
@@ -8716,7 +9328,7 @@ ERR\_SQLSCRIPT\_INTO\_CLAUSE
 </td>
 <td valign="top">
 
-An INTO clause is expected in the SELECT statement.
+an INTO clause is expected in SELECT statement
 
 </td>
 </tr>
@@ -8733,7 +9345,7 @@ ERR\_SQLSCRIPT\_NOT\_ALLOWED\_STMT
 </td>
 <td valign="top">
 
-The statement is not permitted.
+not permitted statement
 
 </td>
 </tr>
@@ -8750,7 +9362,7 @@ ERR\_SQLSCRIPT\_NOT\_CURSOR
 </td>
 <td valign="top">
 
-The identifier is not a cursor.
+identifier is not a cursor
 
 </td>
 </tr>
@@ -8767,7 +9379,7 @@ ERR\_SQLSCRIPT\_NUM\_FETCH\_VALUES
 </td>
 <td valign="top">
 
-There is an incorrect number of values in the INTO list of a FETCH statement.
+wrong number of values in the INTO list of a FETCH statement
 
 </td>
 </tr>
@@ -8784,7 +9396,7 @@ ERR\_SQLSCRIPT\_UNHANDLED\_EXCEPTION
 </td>
 <td valign="top">
 
-Unhandled user-defined exception.
+unhandled user-defined exception
 
 </td>
 </tr>
@@ -8801,7 +9413,7 @@ ERR\_SQLSCRIPT\_NO\_DATA\_FOUND
 </td>
 <td valign="top">
 
-No data found.
+no data found
 
 </td>
 </tr>
@@ -8818,7 +9430,7 @@ ERR\_SQLSCRIPT\_FETCH\_MANY\_ROWS
 </td>
 <td valign="top">
 
-The fetch returned more than the requested number of rows.
+fetch returns more than requested number of rows
 
 </td>
 </tr>
@@ -8835,7 +9447,7 @@ ERR\_SQLSCRIPT\_VALUE\_ERROR
 </td>
 <td valign="top">
 
-Numeric or value error.
+numeric or value error
 
 </td>
 </tr>
@@ -8852,7 +9464,7 @@ ERR\_SQLSCRIPT\_OUT\_PARAM\_IN\_FUNCTION
 </td>
 <td valign="top">
 
-The parallelizable function cannot have an OUT or an IN OUT parameter.
+parallelizable function cannot have OUT or IN OUT parameter
 
 </td>
 </tr>
@@ -8869,7 +9481,7 @@ ERR\_SQLSCRIPT\_USER\_DEFINED\_EXCEPTION
 </td>
 <td valign="top">
 
-User-defined exception.
+user-defined exception
 
 </td>
 </tr>
@@ -8886,7 +9498,7 @@ ERR\_SQLSCRIPT\_CURSOR\_ALREADY\_OPEN
 </td>
 <td valign="top">
 
-The cursor is already opened.
+cursor is already opened
 
 </td>
 </tr>
@@ -8903,7 +9515,7 @@ ERR\_SQLSCRIPT\_INVALID\_RETURN\_TYPE
 </td>
 <td valign="top">
 
-The return type is invalid.
+return type is invalid
 
 </td>
 </tr>
@@ -8920,7 +9532,7 @@ ERR\_SQLSCRIPT\_RETURN\_TYPE\_MISMATCH
 </td>
 <td valign="top">
 
-Return type mismatch.
+return type mismatch
 
 </td>
 </tr>
@@ -8937,7 +9549,7 @@ ERR\_SQLSCRIPT\_UNSUPPORTED\_DATATYPE
 </td>
 <td valign="top">
 
-An unsupported datatype is used.
+unsupported datatype is used
 
 </td>
 </tr>
@@ -8954,7 +9566,7 @@ ERR\_SQLSCRIPT\_INVALID\_SINGLE\_ASSIGNMENT
 </td>
 <td valign="top">
 
-Illegal single assignment.
+illegal single assignment
 
 </td>
 </tr>
@@ -8971,7 +9583,7 @@ ERR\_SQLSCRIPT\_INVALID\_USE\_OF\_TABLE\_VARIABLE
 </td>
 <td valign="top">
 
-Invalid use of a table variable.
+invalid use of table variable
 
 </td>
 </tr>
@@ -8988,7 +9600,7 @@ ERR\_SQLSCRIPT\_NOT\_ALLOWED\_SCALAR\_TYPE
 </td>
 <td valign="top">
 
-A scalar type is not allowed.
+scalar type is not allowed
 
 </td>
 </tr>
@@ -9005,7 +9617,7 @@ ERR\_SQLSCRIPT\_NO\_OUT\_PARAM
 </td>
 <td valign="top">
 
-The out parameter is not specified.
+Out parameter is not specified
 
 </td>
 </tr>
@@ -9022,7 +9634,7 @@ ERR\_SQLSCRIPT\_AT\_MOST\_ONE\_OUT\_PARAM
 </td>
 <td valign="top">
 
-At most one output parameter is allowed.
+At most one output parameter is allowed
 
 </td>
 </tr>
@@ -9039,7 +9651,7 @@ ERR\_SQLSCRIPT\_OUT\_PARAM\_TABLE
 </td>
 <td valign="top">
 
-The output parameter should be a table or a table variable.
+output parameter should be a table or a table variable
 
 </td>
 </tr>
@@ -9056,7 +9668,7 @@ ERR\_SQLSCRIPT\_INVALID\_VARIABLE\_NAME
 </td>
 <td valign="top">
 
-"inappropriate variable name: do not allow """" or '\_SYS\_' prefix for the name of variable or parameter"
+invalid or reserved variable name
 
 </td>
 </tr>
@@ -9107,7 +9719,7 @@ ERR\_SQLSCRIPT\_FUNCTION\_NAME\_MAX\_LEN
 </td>
 <td valign="top">
 
-Function name exceeds max. limit
+Function name exceeds maximum length limitation
 
 </td>
 </tr>
@@ -9454,6 +10066,23 @@ Variable depends on an unassigned variable
 <tr>
 <td valign="top">
 
+1338
+
+</td>
+<td valign="top">
+
+ERR\_SQLSCRIPT\_CE\_CONVERSION\_CUSTOM\_TAB\_MISSING
+
+</td>
+<td valign="top">
+
+Cannot find table used in CE\_CONVERSION
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 1339
 
 </td>
@@ -9505,6 +10134,23 @@ Procedure version validation failed
 <tr>
 <td valign="top">
 
+1342
+
+</td>
+<td valign="top">
+
+ERR\_SQLSCRIPT\_CE\_CALC\_ATTRIBUTE\_AND\_ALIAS\_ARE\_SAME
+
+</td>
+<td valign="top">
+
+Attribute has the same name as the alias
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 1343
 
 </td>
@@ -9549,7 +10195,7 @@ ERR\_SQLSCRIPT\_NOT\_ALLOWED\_CONCURRENT\_WRITES
 </td>
 <td valign="top">
 
-Concurrently two or more write operations to the same object are not allowed
+not allowed concurrent write
 
 </td>
 </tr>
@@ -9566,7 +10212,7 @@ ERR\_SQLSCRIPT\_NOT\_ALLOWED\_CONCURRENT\_READ\_AND\_WRITE
 </td>
 <td valign="top">
 
-Concurrently read and write operations to the same object are not allowed
+not allowed concurrent read and write
 
 </td>
 </tr>
@@ -9753,7 +10399,7 @@ ERR\_SQLSCRIPT\_CE\_TYPE\_MISMATCH
 </td>
 <td valign="top">
 
-There is a datatype mismatch in the CE function.
+datatype mismatch in CE function
 
 </td>
 </tr>
@@ -9770,7 +10416,7 @@ ERR\_SQLSCRIPT\_LIB\_WITHOUT\_USING
 </td>
 <td valign="top">
 
-The USING statement is required before use.
+Require USING statement before use
 
 </td>
 </tr>
@@ -9787,7 +10433,7 @@ ERR\_SQLSCRIPT\_TOO\_MANY\_MEMBERS
 </td>
 <td valign="top">
 
-The expected library member count has been surpassed.
+Surpassed expected library member count
 
 </td>
 </tr>
@@ -9804,7 +10450,7 @@ ERR\_SQLSCRIPT\_INVALID\_INPUT
 </td>
 <td valign="top">
 
-Invalid input.
+Invalid input
 
 </td>
 </tr>
@@ -9821,7 +10467,7 @@ ERR\_SQLSCRIPT\_INVALID\_PRAGMA
 </td>
 <td valign="top">
 
-Invalid pragma.
+Invalid pragma
 
 </td>
 </tr>
@@ -9838,7 +10484,75 @@ ERR\_SQLSCRIPT\_CALLSTACK\_TOO\_DEEP
 </td>
 <td valign="top">
 
-The depth of the sqlscript callstack is too deep.
+The depth of the sqlscript callstack is too deep
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1363
+
+</td>
+<td valign="top">
+
+ERR\_SQLSCRIPT\_USER\_CONDITION
+
+</td>
+<td valign="top">
+
+User-defined condition
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1364
+
+</td>
+<td valign="top">
+
+ERR\_SQLSCRIPT\_ASYNC\_CALL\_INIT\_FAILED
+
+</td>
+<td valign="top">
+
+Asynchronous procedure call initialization failed
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1365
+
+</td>
+<td valign="top">
+
+ERR\_SQLSCRIPT\_ASYNC\_CALL\_CANCELLATION\_FAILED
+
+</td>
+<td valign="top">
+
+Asynchronous procedure call cancellation failed
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1536
+
+</td>
+<td valign="top">
+
+ERR\_STATISTISTICS\_MONITOR\_INTERNAL\_ERROR
+
+</td>
+<td valign="top">
+
+System monitor internal error
 
 </td>
 </tr>
@@ -9855,7 +10569,7 @@ ERR\_CONFIG\_UNSUPPORTED
 </td>
 <td valign="top">
 
-Configuration error.
+Configuration error:
 
 </td>
 </tr>
@@ -9872,7 +10586,7 @@ WRN\_CONFIG\_UNSUPPORTED
 </td>
 <td valign="top">
 
-Configuration warning.
+Configuration warning:
 
 </td>
 </tr>
@@ -9957,7 +10671,7 @@ ERR\_SHM\_CREATE\_NOT\_EXIST
 </td>
 <td valign="top">
 
-"no segment exists for the given key and IPC\_CREAT was not specified"
+no segment exists for the given key
 
 </td>
 </tr>
@@ -10008,7 +10722,7 @@ ERR\_SHM\_DROP\_INVALID
 </td>
 <td valign="top">
 
-invalid shm id
+invalid shmid
 
 </td>
 </tr>
@@ -10025,7 +10739,7 @@ ERR\_SHM\_DROP\_NO\_ACCESS
 </td>
 <td valign="top">
 
-allow read access for shm id
+allow read access for shmid
 
 </td>
 </tr>
@@ -10042,7 +10756,7 @@ ERR\_SHM\_DROP\_REMOVED\_IDENTIFIER
 </td>
 <td valign="top">
 
-shm id points to a removed identifier
+shmid points to a removed identifier
 
 </td>
 </tr>
@@ -10110,7 +10824,7 @@ ERR\_SHM\_ATTACH\_INVALID
 </td>
 <td valign="top">
 
-invalid shm id
+invalid shmid
 
 </td>
 </tr>
@@ -10145,6 +10859,414 @@ ERR\_SHM\_UNKNOWN
 <td valign="top">
 
 unknown shared memory error
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1840
+
+</td>
+<td valign="top">
+
+ERR\_TZ
+
+</td>
+<td valign="top">
+
+timezone error
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1841
+
+</td>
+<td valign="top">
+
+ERR\_TZ\_INVALID\_DATASET
+
+</td>
+<td valign="top">
+
+invalid timezone dataset specified
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1842
+
+</td>
+<td valign="top">
+
+ERR\_TZ\_DATA\_NOT\_AVAILABLE
+
+</td>
+<td valign="top">
+
+timezone data not available \(please see SAP note 1791342\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1843
+
+</td>
+<td valign="top">
+
+ERR\_TZ\_NOT\_FOUND
+
+</td>
+<td valign="top">
+
+timezone not found
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1844
+
+</td>
+<td valign="top">
+
+ERR\_TZ\_FAILED
+
+</td>
+<td valign="top">
+
+timezone calculation failed
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1856
+
+</td>
+<td valign="top">
+
+ERR\_SQL\_PLAN\_EXECUTION\_MONITOR\_GENERAL
+
+</td>
+<td valign="top">
+
+\[SQL Plan Execution Monitor\] general error
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1888
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_NOT\_AVAILABLE
+
+</td>
+<td valign="top">
+
+HANA Database service is not available
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1889
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_NOT\_AVAILABLE\_CCEK
+
+</td>
+<td valign="top">
+
+HANA Database service not available because of revoked customer-controlled encryption key \(CCEK\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1890
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_STOPPED
+
+</td>
+<td valign="top">
+
+HANA Database service is stopped
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1891
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_STARTING
+
+</td>
+<td valign="top">
+
+HANA Database service is starting
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1892
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_STOPPING
+
+</td>
+<td valign="top">
+
+HANA Database service is stopping
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1893
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_UPGRADE
+
+</td>
+<td valign="top">
+
+HANA Database service upgrade in progress
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1894
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_RESIZE
+
+</td>
+<td valign="top">
+
+HANA Database service resize in progress
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1895
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_RECOVERY
+
+</td>
+<td valign="top">
+
+HANA Database service recovery in progress
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1896
+
+</td>
+<td valign="top">
+
+ERR\_URS\_INSTANCE\_MAINTENANCE
+
+</td>
+<td valign="top">
+
+HANA Database service is in maintenance mode
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1920
+
+</td>
+<td valign="top">
+
+ERR\_VECTOR\_INVALID\_FORMAT
+
+</td>
+<td valign="top">
+
+Invalid vector format
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1921
+
+</td>
+<td valign="top">
+
+ERR\_VECTOR\_DIMENSION\_MISMATCH
+
+</td>
+<td valign="top">
+
+Vector dimension mismatch
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1922
+
+</td>
+<td valign="top">
+
+ERR\_VECTOR\_NUMERICAL\_ISSUE
+
+</td>
+<td valign="top">
+
+Numerical issue in vector similarity function
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1952
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_SUBSCRIPTION
+
+</td>
+<td valign="top">
+
+Remote subscription error
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1953
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_SUBSCRIPTION\_IN\_INITIAL\_LOAD\_PHASE
+
+</td>
+<td valign="top">
+
+Remote subscription in initial load phasea
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1954
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_SUBSCRIPTION\_IN\_DELTA\_LOAD\_PHASE
+
+</td>
+<td valign="top">
+
+Remote subscription in delta load phase
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1955
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_SUBSCRIPTION\_INITIAL\_LOAD\_CHUNK\_ALREADY\_LOADED
+
+</td>
+<td valign="top">
+
+Initial load chunk already loaded
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1956
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_SUBSCRIPTION\_DELTA\_LOAD\_VERSION\_ALREADY\_LOADED
+
+</td>
+<td valign="top">
+
+Delta load version already loaded
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+1957
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_SUBSCRIPTION\_COLUMN\_MISMATCH
+
+</td>
+<td valign="top">
+
+Schema mismatch between source and target tables
 
 </td>
 </tr>
@@ -10263,7 +11385,7 @@ ERR\_CS\_DELTA\_LOG\_REPLAY\_FAILED
 </td>
 <td valign="top">
 
-The delta log replay failed.
+delta log replay failed
 
 </td>
 </tr>
@@ -10535,7 +11657,7 @@ ERR\_DIST\_METADATA\_NOT\_SUPPORT
 </td>
 <td valign="top">
 
-metadata update not supported in secondary
+metadata update not supported in worker node
 
 </td>
 </tr>
@@ -10547,12 +11669,12 @@ metadata update not supported in secondary
 </td>
 <td valign="top">
 
-ERR\_DIST\_METADATA\_MASTER\_UPDATE\_FAILURE
+ERR\_DIST\_METADATA\_COORDINATOR\_UPDATE\_FAILURE
 
 </td>
 <td valign="top">
 
-metadata update in primary indexserver is failed
+metadata update in coordinator indexserver is failed
 
 </td>
 </tr>
@@ -10671,7 +11793,7 @@ ERR\_CATALOG\_INVALID\_ADDRESS
 </td>
 <td valign="top">
 
-"attempt to access metadata of an invalid address \(already deleted or corrupted etc.\)"
+attempt to access metadata of an invalid address \(already deleted or corrupted
 
 </td>
 </tr>
@@ -10773,7 +11895,7 @@ ERR\_CATALOG\_FOREIGN\_KEY\_CONSTRAINT
 </td>
 <td valign="top">
 
-cannot find catalog object
+can not find catalog object
 
 </td>
 </tr>
@@ -10807,7 +11929,7 @@ ERR\_CATALOG\_CYCLIC\_DEPENDENCY
 </td>
 <td valign="top">
 
-cannot make cyclic dependency
+can not make cyclic dependency
 
 </td>
 </tr>
@@ -10875,7 +11997,7 @@ ERR\_SQLSCRIPT\_BUILTIN\_TOO\_MANY\_RETURN\_PARAM
 </td>
 <td valign="top">
 
-SqlScript Built-in Function
+SqlScript Builtin Function
 
 </td>
 </tr>
@@ -11851,6 +12973,23 @@ SqlScript
 <tr>
 <td valign="top">
 
+2875
+
+</td>
+<td valign="top">
+
+ERR\_SQLSCRIPT\_RLANG\_EXACTLY\_ONE\_OUTPUT\_PARAM
+
+</td>
+<td valign="top">
+
+SqlScript
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 2876
 
 </td>
@@ -12405,7 +13544,7 @@ ERR\_AUDITING\_INV\_ACTION
 </td>
 <td valign="top">
 
-Invalid action for tenant specific audit policy.
+Invalid action for tenant specific audit policy
 
 </td>
 </tr>
@@ -12422,7 +13561,7 @@ ERR\_AUDITING\_INV\_RETENTION
 </td>
 <td valign="top">
 
-Number of days for retention too small or no retention for used trail types allowed at all.
+Number of days for retention too small or no retention for used trail types allowed at all
 
 </td>
 </tr>
@@ -12745,7 +13884,7 @@ ERR\_LDAP
 </td>
 <td valign="top">
 
-General LDAP error.
+general LDAP error
 
 </td>
 </tr>
@@ -12762,7 +13901,7 @@ ERR\_LDAP\_CANNOT\_AUTHORIZE\_LOCALLY
 </td>
 <td valign="top">
 
-Local authorization not allowed.
+Local authorization not allowed
 
 </td>
 </tr>
@@ -12779,7 +13918,7 @@ ERR\_LDAP\_CANNOT\_CHANGE\_AUTHORIZATION\_MODE
 </td>
 <td valign="top">
 
-Authorization mode change not allowed.
+Authorization mode change not allowed
 
 </td>
 </tr>
@@ -12796,7 +13935,7 @@ ERR\_LDAP\_MAPPING\_ALREADY\_EXISTS
 </td>
 <td valign="top">
 
-Role to LDAP group mapping already exists.
+Role to LDAP group mapping already exists
 
 </td>
 </tr>
@@ -12813,7 +13952,7 @@ ERR\_LDAP\_MAPPING\_DOESNT\_EXIST
 </td>
 <td valign="top">
 
-Role to LDAP group mapping does not exist.
+Role to LDAP group mapping does not exist
 
 </td>
 </tr>
@@ -12830,7 +13969,7 @@ ERR\_LDAP\_PROVIDER\_CREATION\_FAILED
 </td>
 <td valign="top">
 
-Creating LDAP provider failed because of internal error.
+Creating LDAP provider failed because of internal error
 
 </td>
 </tr>
@@ -12847,7 +13986,7 @@ ERR\_LDAP\_PROVIDER\_DELETION\_FAILED
 </td>
 <td valign="top">
 
-Deleting LDAP provider failed because of internal error.
+Deleting LDAP provider failed because of internal error
 
 </td>
 </tr>
@@ -12864,7 +14003,7 @@ ERR\_LDAP\_PROVIDER\_ALTER\_FAILED
 </td>
 <td valign="top">
 
-Alter LDAP provider failed because of internal error.
+Alter LDAP provider failed because of internal error
 
 </td>
 </tr>
@@ -12881,7 +14020,7 @@ ERR\_LDAP\_PROVIDER\_VALIDATE\_FAILED
 </td>
 <td valign="top">
 
-Validate LDAP provider failed because of internal error.
+Validate LDAP provider failed because of internal error
 
 </td>
 </tr>
@@ -12898,7 +14037,7 @@ ERR\_LDAP\_PROVIDER\_ALREADY\_EXISTS
 </td>
 <td valign="top">
 
-LDAP provider already exists.
+LDAP provider already exists
 
 </td>
 </tr>
@@ -12915,7 +14054,7 @@ ERR\_LDAP\_INVALID\_PROVIDER\_NAME
 </td>
 <td valign="top">
 
-Invalid LDAP provider name.
+Invalid LDAP provider name
 
 </td>
 </tr>
@@ -12932,7 +14071,7 @@ ERR\_LDAP\_MALFORMED\_CREDENTIALS
 </td>
 <td valign="top">
 
-Credentials not provided in proper format.
+Credentials not provided in proper format
 
 </td>
 </tr>
@@ -12949,7 +14088,7 @@ ERR\_LDAP\_PASSWORD\_MUTUAL\_EXCLUSION\_FAILED
 </td>
 <td valign="top">
 
-Local password authentication and LDAP authentication cannot be enabled together for the same user.
+Local password authentication and LDAP authentication cannot be enabled together for the same user
 
 </td>
 </tr>
@@ -13102,7 +14241,7 @@ ERR\_PROVIDER\_CREATION\_FAILED
 </td>
 <td valign="top">
 
-Creating provider failed because of internal error:
+Creating provider failed because of internal error
 
 </td>
 </tr>
@@ -13119,7 +14258,7 @@ ERR\_PROVIDER\_DELETION\_FAILED
 </td>
 <td valign="top">
 
-Deleting provider failed because of internal error:
+Deleting provider failed because of internal error
 
 </td>
 </tr>
@@ -13136,7 +14275,7 @@ ERR\_PROVIDER\_ALTER\_FAILED
 </td>
 <td valign="top">
 
-Alter provider failed because of internal error:
+Alter provider failed because of internal error
 
 </td>
 </tr>
@@ -13187,7 +14326,7 @@ ERR\_PROVIDER\_DUPLICATE\_ISSUER
 </td>
 <td valign="top">
 
-Duplicate Provider for this issuer
+Duplicate provider for this issuer
 
 </td>
 </tr>
@@ -13221,7 +14360,75 @@ ERR\_PROVIDER\_DUPLICATE\_IDENTITY
 </td>
 <td valign="top">
 
-Duplicate identity for this provider.
+Duplicate identity for this provider
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4241
+
+</td>
+<td valign="top">
+
+ERR\_PROVIDER\_HAS\_USER\_MAPPINGS
+
+</td>
+<td valign="top">
+
+Provider has user mappings
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4242
+
+</td>
+<td valign="top">
+
+ERR\_PROVIDER\_DROPPING\_USER\_MAPPING\_FAILED
+
+</td>
+<td valign="top">
+
+Dropping a provider user mapping failed
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4243
+
+</td>
+<td valign="top">
+
+ERR\_PROVIDER\_DUPLICATE\_SUBJECT\_ISSUER
+
+</td>
+<td valign="top">
+
+Duplicate provider for this subject and this issuer
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4244
+
+</td>
+<td valign="top">
+
+ERR\_PROVIDER\_INVALID\_ATTRIBUTE
+
+</td>
+<td valign="top">
+
+Invalid attribute
 
 </td>
 </tr>
@@ -13324,57 +14531,6 @@ ERR\_USER\_PARAM\_INVALID\_PARAMETER
 <td valign="top">
 
 Invalid parameter name
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4273
-
-</td>
-<td valign="top">
-
-ERR\_KERBEROS
-
-</td>
-<td valign="top">
-
-general Kerberos error
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4274
-
-</td>
-<td valign="top">
-
-ERR\_KERBEROS\_DUPLICATE\_PROVIDER
-
-</td>
-<td valign="top">
-
-Duplicate specification of identity for KERBEROS
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4275
-
-</td>
-<td valign="top">
-
-ERR\_KERBEROS\_MISSING\_PROVIDER
-
-</td>
-<td valign="top">
-
-Missing specification of identity for KERBEROS
 
 </td>
 </tr>
@@ -13511,6 +14667,57 @@ ERR\_X509\_INV\_ISSUER\_NAME
 <td valign="top">
 
 Invalid issuer name layout
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4294
+
+</td>
+<td valign="top">
+
+ERR\_X509\_INV\_MATCHING\_RULE
+
+</td>
+<td valign="top">
+
+Invalid matching rule layout
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4295
+
+</td>
+<td valign="top">
+
+ERR\_X509\_DISABLED
+
+</td>
+<td valign="top">
+
+X.509 feature disabled
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+4296
+
+</td>
+<td valign="top">
+
+ERR\_X509\_NO\_MATCHING\_RULES
+
+</td>
+<td valign="top">
+
+Provider has no matching rules
 
 </td>
 </tr>
@@ -13714,7 +14921,7 @@ ERR\_DATAPROV\_INVALID\_DATAFLOW\_PACKAGE\_NAME
 </td>
 <td valign="top">
 
-Invalid dataflow package name
+Invalid data flow package name
 
 </td>
 </tr>
@@ -13816,7 +15023,7 @@ ERR\_DPSERVER
 </td>
 <td valign="top">
 
-General dpserver error occurred
+General dpserver error occured
 
 </td>
 </tr>
@@ -13935,7 +15142,7 @@ ERR\_DPSERVER\_ADAPTER\_REMOTE\_SOURCE\_DOWN
 </td>
 <td valign="top">
 
-Adapter failure remote source is down.
+Adapter failure
 
 </td>
 </tr>
@@ -13969,7 +15176,7 @@ ERR\_DPSERVER\_SCHEMA\_CHANGE\_ON\_DATASOURCE\_DROPTABLE\_OPERATION
 </td>
 <td valign="top">
 
-Source table dropped in the remote source.
+Source table dropped in the remote source
 
 </td>
 </tr>
@@ -13986,7 +15193,7 @@ ERR\_SCHEDULER\_JOB\_INVALID
 </td>
 <td valign="top">
 
-Invalid scheduler job name.
+Invalid scheduler job name
 
 </td>
 </tr>
@@ -14003,432 +15210,160 @@ ERR\_SCHEDULER\_JOB\_EXISTS
 </td>
 <td valign="top">
 
-Cannot use duplicate scheduler job name.
+Cannot use duplicate scheduler job name
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4864
+4738
 
 </td>
 <td valign="top">
 
-ERR\_GEM
+ERR\_INV\_USABLE\_SCHEDULER\_JOB
 
 </td>
 <td valign="top">
 
-General GEM error
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4865
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_WORKSPACE\_NOT\_EXISTS
-
-</td>
-<td valign="top">
-
-GEM workspace does not exist
+Invalidated scheduler job
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4866
+4900
 
 </td>
 <td valign="top">
 
-ERR\_GEM\_WORKSPACE\_SCHEMA\_NOT\_EXISTS
+ERR\_GRAPH\_UNKNOWN
 
 </td>
 <td valign="top">
 
-Schema specified for GEM workspace does not exist
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4867
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_WORKSPACE\_ALREADY\_EXISTS
-
-</td>
-<td valign="top">
-
-GEM workspace already exists
+GraphEngine: unknown error occurred
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4868
+4901
 
 </td>
 <td valign="top">
 
-ERR\_GEM\_WORKSPACE\_URI\_TOO\_LONG
+ERR\_GRAPH\_COMPILATION\_FAILED
 
 </td>
 <td valign="top">
 
-Workspace URI exceeds maximum allowed length
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4869
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_ADD\_COLUMN
-
-</td>
-<td valign="top">
-
-Failed to add column
+GraphEngine: compilation failed
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4870
+4902
 
 </td>
 <td valign="top">
 
-ERR\_GEM\_PREP\_INSERT
+ERR\_GRAPH\_COMPILATION\_WARNING
 
 </td>
 <td valign="top">
 
-Failed in preparation to add column
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4871
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_CALC
-
-</td>
-<td valign="top">
-
-Calculation Scenario
+GraphEngine: compilation warning occurred
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4872
+4903
 
 </td>
 <td valign="top">
 
-ERR\_GEM\_VISITOR
+ERR\_GRAPH\_INTERNAL
 
 </td>
 <td valign="top">
 
-GEM Visitor
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4873
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_GRAMMAR
-
-</td>
-<td valign="top">
-
-GEM Grammar
+GraphEngine: internal error
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4874
+4904
 
 </td>
 <td valign="top">
 
-ERR\_GEM\_TREE\_BUILDER
+ERR\_GRAPH\_NOT\_SUPPORTED
 
 </td>
 <td valign="top">
 
-Tree Builder
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4875
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_TECHTYPE\_UNKNOWN
-
-</td>
-<td valign="top">
-
-Techtype unknown in predicate/expression
+GraphEngine: feature not supported
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4876
+4905
 
 </td>
 <td valign="top">
 
-ERR\_GEM\_TECHTYPE\_MISMATCH
+ERR\_GRAPH\_OPENCYPHER\_SYNTAX\_ERROR
 
 </td>
 <td valign="top">
 
-Mismatch of technical types
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4877
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_TERM\_NOT\_EXISTS
-
-</td>
-<td valign="top">
-
-Term does not exist
+GraphEngine: OpenCypher syntax error
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4878
+4906
 
 </td>
 <td valign="top">
 
-ERR\_GEM\_TERM\_ALREADY\_EXISTS
+ERR\_GRAPH\_OPENCYPHER\_COMPILATION\_ERROR
 
 </td>
 <td valign="top">
 
-Term already exists
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4879
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_VERTEX\_NOT\_EXISTS
-
-</td>
-<td valign="top">
-
-Vertex does not exist
+GraphEngine: OpenCypher compilation error
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-4880
+4907
 
 </td>
 <td valign="top">
 
-ERR\_GEM\_VERTEX\_ALREADY\_EXISTS
+ERR\_GRAPH\_GRAPHSCRIPT\_RUNTIME\_ERROR
 
 </td>
 <td valign="top">
 
-Vertex already exists
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4881
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_LOCAL\_NAME\_NOT\_FOUND
-
-</td>
-<td valign="top">
-
-Local name was not found
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4882
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_LOCAL\_NAME\_ALREADY\_EXISTS
-
-</td>
-<td valign="top">
-
-Local name already exists
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4883
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_UNKNOWN\_FUNC
-
-</td>
-<td valign="top">
-
-Unknown function
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4884
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_FEATURE\_NOT\_SUPPORTED
-
-</td>
-<td valign="top">
-
-This GEM feature is not supported
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4885
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_FUNCTION
-
-</td>
-<td valign="top">
-
-Error in using GEM function
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4886
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_TECHTYPE\_MISSING
-
-</td>
-<td valign="top">
-
-Techtype not specified
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4887
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_URI\_MISSING
-
-</td>
-<td valign="top">
-
-URI is missing
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-4888
-
-</td>
-<td valign="top">
-
-ERR\_GEM\_TECHTYPE\_ERROR
-
-</td>
-<td valign="top">
-
-GEM technical type error
+GraphEngine: runtime error during graphscript execution
 
 </td>
 </tr>
@@ -14479,7 +15414,7 @@ ERR\_CERTADM\_EXST\_CERTIFICATE
 </td>
 <td valign="top">
 
-Certificate with same hash already exists
+Certificate already exists
 
 </td>
 </tr>
@@ -14707,6 +15642,278 @@ PSE is not set to any purpose
 <tr>
 <td valign="top">
 
+5649
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_OBJECT\_NOT\_FOUND
+
+</td>
+<td valign="top">
+
+Purpose object not found
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5650
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_OBJECT\_ALREADY\_IN\_USE
+
+</td>
+<td valign="top">
+
+Purpose object already in use by another PSE
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5651
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_INVALID\_HOSTNAME
+
+</td>
+<td valign="top">
+
+Invalid hostname format
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5652
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_PSE\_WITHOUT\_OTHER\_PURPOSE\_OBJECT
+
+</td>
+<td valign="top">
+
+PSE has no other purpose object
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5653
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_PSE\_WITHOUT\_OTHER\_HOST
+
+</td>
+<td valign="top">
+
+PSE has no other host
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5654
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_CERTIFICATE\_EXPIRED
+
+</td>
+<td valign="top">
+
+Certificate is already expired
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5655
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_CHAIN\_CERTIFICATE\_EXPIRED
+
+</td>
+<td valign="top">
+
+Invalid certificate chain: contains expired certificates
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5656
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_UNSET\_OWN\_WITH\_PURPOSE
+
+</td>
+<td valign="top">
+
+Can't unset own certificate if the PSE still has the purpose SSL
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5657
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_PSE\_PURPOSE\_BLOCKED\_BY\_CONFIG
+
+</td>
+<td valign="top">
+
+PSE purpose blocked by configuration
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5658
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_INVALID\_PUBKEY\_DEFINITION
+
+</td>
+<td valign="top">
+
+Public key definition invalid or not supported
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5659
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_EXST\_PUBKEY
+
+</td>
+<td valign="top">
+
+Public key with same name already exists
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5660
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_NON\_EXST\_PUBKEY
+
+</td>
+<td valign="top">
+
+Public key could not be found
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5661
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_PUBKEY\_IN\_USE
+
+</td>
+<td valign="top">
+
+Public key could not be dropped because it is still in use by at least one PSE
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5662
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_NO\_SUCH\_PUBKEY\_IN\_PSE
+
+</td>
+<td valign="top">
+
+PSE does not contain such public key
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5663
+
+</td>
+<td valign="top">
+
+ERR\_CERTADM\_RELOAD\_PSE\_FAILURE
+
+</td>
+<td valign="top">
+
+Error reloading file-based PSEs
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5712
+
+</td>
+<td valign="top">
+
+ERR\_PFCG\_INVALID\_CONFIGURATION
+
+</td>
+<td valign="top">
+
+Pfcg: invalid configuration
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 5734
 
 </td>
@@ -14769,6 +15976,74 @@ ERR\_MASKING\_INVALID\_MASK\_COLUMN
 <td valign="top">
 
 Masking: invalid mask column
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5920
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_UNKNOWN
+
+</td>
+<td valign="top">
+
+Unable to use remote source
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5921
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_CONNECTION
+
+</td>
+<td valign="top">
+
+Unable to connect remote source
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5922
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_FETCH
+
+</td>
+<td valign="top">
+
+Unable to fetch from remote source
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+5923
+
+</td>
+<td valign="top">
+
+ERR\_REMOTE\_CREATE
+
+</td>
+<td valign="top">
+
+Unable to create remote source
 
 </td>
 </tr>

@@ -251,5 +251,5 @@ Displays the cost value for INVERTED INDIVIDUAL index type. This cost value is a
 
 [DROP INDEX Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-index-statement-data-definition-20d6f4e.md "Removes an index.")
 
-[Changing the Load Units for Indexes Using ALTER INDEX](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/02dc395617744584aa464f3e5e5ee509.html "") :arrow_upper_right:
+[Changing the Load Units for Indexes Using ALTER INDEX](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/02dc395617744584aa464f3e5e5ee509.html "") :arrow_upper_right:
 

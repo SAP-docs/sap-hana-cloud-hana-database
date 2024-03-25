@@ -280,7 +280,7 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the accumulated number of bytes retrieved.
+Displays the accumulated number of bytes downloaded for READ/ADMIN requests, bytes uploaded for WRITE requests.
 
 </td>
 </tr>

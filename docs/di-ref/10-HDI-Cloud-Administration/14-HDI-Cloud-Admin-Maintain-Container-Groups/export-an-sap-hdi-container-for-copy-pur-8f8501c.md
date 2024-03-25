@@ -27,9 +27,11 @@ An HDI container-group administrator can export an HDI container to a table or a
 
 ## Context
 
-The HDI container-group administrator can export a source container, for example, `C1`, to a Cloud store, for example, Amazon Simple Storage Service \(Amazon S3\) or Azure Cloud Storage, by calling the built-in procedure `_SYS_DI#G.EXPORT_CONTAINER_FOR_COPY`. The procedure expects as inputs the name of the source container and a table containing any parameters. After the export procedure has completed successfully, the Cloud store contains not only the objects of the source container’s API schema \(`C1#DI`\) but also the deployed objects of the source container’s run-time schema \(`C1`\), including all dependent data.
+The HDI container-group administrator can export a source container to a Cloud store, for example, Amazon Simple Storage Service \(Amazon S3\) or Azure Cloud Storage, by calling the built-in procedure <code>_SYS_DI#<i class="varname">&lt;container_group_name&gt;</i>.EXPORT_CONTAINER_FOR_COPY</code>.
 
-To export a container `C1` in container group `G` for copy purposes to a Cloud Store in Amazon S3, perform the following steps:
+The procedure expects as inputs the name of the source container and a table containing any parameters. After the export procedure has completed successfully, the Cloud store contains not only the objects of the source container’s API schema \(<code><i class="varname">&lt;source_container_name&gt;</i>#DI</code>\) but also the deployed objects of the source container’s run-time schema \(*<source\_container\_name\>*\), including all dependent data.
+
+To export the container *<source\_container\_name\>* in container group *<container\_group\_name\>* for copy purposes to a Cloud Store in Amazon S3, perform the following steps:
 
 
 
@@ -163,10 +165,10 @@ To export a container `C1` in container group `G` for copy purposes to a Cloud S
 
     Working with the HDI Container Group API, open an SQL console and connect to the source system as an HDI container-group administrator user.
 
-5.  Export the container
+5.  Export the container.
 
     > ### Note:  
-    > If the exported container depends on other containers, you need to export those other containers, too.
+    > If the exported container *<source\_container\_name\>* depends on other containers, you need to export those other containers, too.
 
     Working with the HDI **container-group** API, call the container group's `EXPORT_CONTAINER_FOR_COPY` procedure with the Cloud path you generated in a previous step, as illustrated in the following example:
 
@@ -175,7 +177,11 @@ To export a container `C1` in container group `G` for copy purposes to a Cloud S
     ```
     CREATE LOCAL TEMPORARY COLUMN TABLE #PARAMETERS LIKE _SYS_DI.TT_PARAMETERS; 
     INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('target_path', 's3-<region>://<access_key>:<secret_key>@<bucket_name>/<object_id>');
-    CALL _SYS_DI#<CONTAINER_GROUP_NAME>.EXPORT_CONTAINER_FOR_COPY('<container name>', '', '', #PARAMETERS, ?, ?, ?); 
+    grant REFERENCES on PSE <PSE_name> to <source_container_name>; -- for authentication via credential stored in the PSE (only for HDLFS)
+    grant REFERENCES on PSE <PSE_name> to <source_container_name>#DI; -- for authentication via credential stored in the PSE (only for HDLFS) 
+    grant REFERENCES on PSE <PSE_name> to <source_container_name>#OO; -- for authentication via credential stored in the PSE (only for HDLFS) 
+    INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('credential', '<credential purpose>'); -- optional for authentication via credential stored in the PSE (required for HDLFS and GCS)
+    CALL _SYS_DI#<container_group_name>.EXPORT_CONTAINER_FOR_COPY('<source_container_name>', '', '', #PARAMETERS, ?, ?, ?); 
     DROP TABLE #PARAMETERS;
     ```
 

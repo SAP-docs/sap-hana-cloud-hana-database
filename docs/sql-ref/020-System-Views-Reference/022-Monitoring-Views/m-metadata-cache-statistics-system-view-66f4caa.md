@@ -312,7 +312,7 @@ Displays the size of the memory occupied by the cache group in bytes.
 
 [ALTER SYSTEM REMOVE RESULT CACHE ENTRY Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-remove-result-cache-entry-statement-system-management-2124566.md "Removes the result cache entry for the specified cache ID.")
 
-[Function Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/98599d94ae4e440eaea23dfd740de41b.html "") :arrow_upper_right:
+[Function Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/98599d94ae4e440eaea23dfd740de41b.html "") :arrow_upper_right:
 
-[Procedure Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/8c59aace1caf472ebe71e6592a06b27a.html "") :arrow_upper_right:
+[Procedure Metadata](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/8c59aace1caf472ebe71e6592a06b27a.html "") :arrow_upper_right:
 

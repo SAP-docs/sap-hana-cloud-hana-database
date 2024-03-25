@@ -503,7 +503,7 @@ SMALLINT
 </td>
 <td valign="top">
 
-Displays the row order position.
+Displays the position of the row in the table.
 
 </td>
 </tr>
@@ -554,7 +554,7 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Displays the mask expression. It is only visible to users with the CATALOG READ privilege, the SELECT METADATA privilege on the schema, and who are the owner of the table or schema.
+Displays the mask expression. See Permissions for further details.
 
 </td>
 </tr>
@@ -651,9 +651,11 @@ The elements of the list are either individual nodes indexes or ranges of index 
 
 <a name="loio2100d33a75191014868bbcd89274199c__section_cyy_lxz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
+The column MASK\_EXPRESSION is only visible to users who are the owner of the table or schema and have the SELECT METADATA privilege on the schema.
 
 **Related Information**  
 
@@ -664,9 +666,9 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [RENAME COLUMN Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/rename-column-statement-data-definition-20fb2b8.md "Changes the name of a column.")
 
-[Check the Compression of a Column Table](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bfbbf27bbb5710149299ee91cc769734.html "For column-store tables, you can check the type of compression applied to table columns.") :arrow_upper_right:
+[Check the Compression of a Column Table](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bfbbf27bbb5710149299ee91cc769734.html "For column-store tables, you can check the type of compression applied to table columns.") :arrow_upper_right:
 
-[Compress a Column Table Manually](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/bfdd39c0bb571014b690889664aecc94.html "The SAP HANA database decides which columns in a column table to compress and which compression algorithm to apply for each column. It does this as part of the delta merge operation. It is normally not necessary that you interfere with this process. However, you can trigger compression manually.") :arrow_upper_right:
+[Compress a Column Table Manually](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bfdd39c0bb571014b690889664aecc94.html "The SAP HANA database decides which columns in a column table to compress and which compression algorithm to apply for each column. It does this as part of the delta merge operation. It is normally not necessary that you interfere with this process. However, you can trigger compression manually.") :arrow_upper_right:
 
-[Load/Unload a Column Table into/from Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/c133165bbb57101493c5fb19b5b8607f.html "Under normal circumstances, the SAP HANA database manages the loading and unloading of tables into and from memory automatically, the aim being to keep all relevant data in memory. However, you can manually load and unload individual tables, as well as load table columns if necessary.") :arrow_upper_right:
+[Load/Unload a Column Table into/from Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c133165bbb57101493c5fb19b5b8607f.html "Under normal circumstances, the SAP HANA database manages the loading and unloading of tables into and from memory automatically, the aim being to keep all relevant data in memory. However, you can manually load and unload individual tables, as well as load table columns if necessary.") :arrow_upper_right:
 

@@ -62,6 +62,7 @@ Specifies the target data type.
  | LOB
  | BINARY
  | GEOMETRY
+ | REAL_VECTOR
 ```
 
 
@@ -73,7 +74,7 @@ Specifies the target data type.
 </b></dt>
 <dd>
 
-Specifies the maximum length of the string in characters.
+If the target type is a string, *<length\>* specifies the maximum length of the string in characters. If the target type is a vector, *<length\>* specifies the dimension of the vector.
 
 
 

@@ -53,7 +53,7 @@ Specifies the value for the specified variable. The maximum length of *<value\>*
 
 ## Description
 
-The maximum number of session variables is 1024 per session by default \(or as defined by the max\_session\_variables setting in the `indexserver.ini` configuration file.
+The maximum number of session variables is 4096 per session by default \(or as defined by the max\_session\_variables setting in the `indexserver.ini` configuration file.
 
 Session variable settings may be overridden by options specified in a query.
 

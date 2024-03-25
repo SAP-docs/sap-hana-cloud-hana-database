@@ -71,7 +71,7 @@ A - L
 </th>
 <th valign="top">
 
-M - S
+L - S
 
 </th>
 <th valign="top">
@@ -88,6 +88,23 @@ S - Z
 </td>
 <td valign="top">
 
+[Logical Schema Definition](logical-schemas-hdblogicalschema-and-hdblogicalschemaconfig-fa9cda8.md) 
+
+</td>
+<td valign="top">
+
+[Structured Privilege](structured-privileges-hdbstructuredprivilege-c3827df.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+[.? \(txt, copy only\)](copy-only-txt-64459f1.md) 
+
+</td>
+<td valign="top">
+
 [Migration Table](migration-tables-hdbmigrationtable-52d1f5a.md) 
 
 </td>
@@ -100,7 +117,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[.? \(txt, copy only\)](copy-only-txt-64459f1.md) 
+[Analytic Privilege](analytic-privileges-hdbanalyticprivilege-2d30563.md) 
 
 </td>
 <td valign="top">
@@ -117,7 +134,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[Analytic Privilege](analytic-privileges-hdbanalyticprivilege-2d30563.md) 
+[App. Time-Period Table](application-time-period-tables-hdbapplicationtime-73c7b80.md) 
 
 </td>
 <td valign="top">
@@ -134,7 +151,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[App. Time-Period Table](application-time-period-tables-hdbapplicationtime-73c7b80.md) 
+[Calculation View](calculation-views-hdbcalculationview-3db2a35.md) 
 
 </td>
 <td valign="top">
@@ -151,7 +168,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[Calculation View](calculation-views-hdbcalculationview-3db2a35.md) 
+[Constraint](constraints-hdbconstraint-bda5470.md) 
 
 </td>
 <td valign="top">
@@ -168,7 +185,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[Constraint](constraints-hdbconstraint-bda5470.md) 
+[Document Store Collection](document-store-collections-hdbcollection-fe16b63.md) 
 
 </td>
 <td valign="top">
@@ -185,7 +202,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[Document Store Collection](document-store-collections-hdbcollection-fe16b63.md) 
+[Document Store Collection Index](document-store-collection-indexes-hdbcollectionindex-b4b1b5c.md) 
 
 </td>
 <td valign="top">
@@ -202,7 +219,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[Document Store Collection Index](document-store-collection-indexes-hdbcollectionindex-b4b1b5c.md) 
+[Drop/Create Table](tables-hdbtable-and-hdbdropcreatetable-453d48e.md) 
 
 </td>
 <td valign="top">
@@ -219,7 +236,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[Drop/Create Table](tables-hdbtable-and-hdbdropcreatetable-453d48e.md) 
+[Enterprise Search Configuration](enterprise-search-configurations-hdbeshconfig-eb019bb.md) 
 
 </td>
 <td valign="top">
@@ -236,7 +253,7 @@ S - Z
 <tr>
 <td valign="top">
 
-[Enterprise Search Configuration](enterprise-search-configurations-hdbeshconfig-eb019bb.md) 
+[Fabric Virtual Table](fabric-virtual-tables-hdbfabricvirtualtable-0019655.md) 
 
 </td>
 <td valign="top">
@@ -327,23 +344,6 @@ S - Z
 <td valign="top">
 
 [Statistics](statistics-hdbstatistics-435423d.md) 
-
-</td>
-<td valign="top">
-
-\-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-[Logical Schema Definition](logical-schemas-hdblogicalschema-and-hdblogicalschemaconfig-fa9cda8.md) 
-
-</td>
-<td valign="top">
-
-[Structured Privilege](structured-privileges-hdbstructuredprivilege-c3827df.md) 
 
 </td>
 <td valign="top">

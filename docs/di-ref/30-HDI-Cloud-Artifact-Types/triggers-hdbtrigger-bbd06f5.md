@@ -8,15 +8,14 @@ Transforms a design-time trigger resource into a trigger on a database table.
 
 The trigger plug-in transforms a design-time trigger resource \(defined in a `.hdbtrigger` artifact\) into a trigger on a database table. The file format required for the `.hdbtrigger` artifact uses a DDL-style syntax that is equivalent to the syntax of the corresponding SQL command `CREATE TRIGGER`, but without the leading `CREATE`.
 
+> ### Note:  
+> A database trigger on a table is not initiated during deployment of `.hdbtabledata` artefacts.
+
 
 
 <a name="loiobbd06f5b88eb4d70a03a25a5c4274ec5__section_ky3_1j3_1hb"/>
 
 ## Example Artifact Code
-
-
-
-### 
 
 The following code shows a simple example of a trigger definition for SAP HDI:
 

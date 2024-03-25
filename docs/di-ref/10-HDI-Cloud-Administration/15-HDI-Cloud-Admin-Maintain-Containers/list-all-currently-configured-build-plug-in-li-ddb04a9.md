@@ -8,13 +8,13 @@ Display a list of all the build plug-in libraries available for use in an SAP HD
 
 ## Context
 
-In SAP HANA Deployment Infrastructure \(HDI\), administrators of an HDI container \(for example, container “C”\) can view all currently configured HDI build plug-in libraries and their versions for any container where they have the container-administration permissions, as described in the following procedure:
+In SAP HANA Deployment Infrastructure \(HDI\), administrators of an HDI container \(for example, container *<container\_name\>*\) can view all currently configured HDI build plug-in libraries and their versions for any container where they have the container-administration permissions, as described in the following procedure:
 
 
 
 ## Procedure
 
-1.  In an SQL console, connect to the database with an administrator of the target HDI container, for example, “C”.
+1.  In an SQL console, connect to the database with an administrator of the target HDI container, for example, *<container\_name\>*.
 
 2.  Open the SQL editor for this database.
 
@@ -24,13 +24,13 @@ In SAP HANA Deployment Infrastructure \(HDI\), administrators of an HDI containe
 
     > ### Sample Code:  
     > ```sql
-    > CALL C#DI.LIST_CONFIGURED_LIBRARIES(_SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?); 
+    > CALL <container_name>#DI.LIST_CONFIGURED_LIBRARIES(_SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?); 
     > ```
 
-    1.  Replace the name of the container “C” in the `CALL` statement with the name of your container.
+    1.  Replace *<container\_name\>* in the `CALL` statement with the name of your container.
 
 
-4.  Execute the SQL code.
+4.  Run the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 

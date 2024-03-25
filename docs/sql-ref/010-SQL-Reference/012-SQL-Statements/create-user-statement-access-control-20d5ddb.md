@@ -34,7 +34,7 @@ CREATE [ RESTRICTED ] USER <user_name>
 </b></dt>
 <dd>
 
-Specifies the user name of the user to be created.
+Specifies the user name of the user to be created. The specified user name must not be identical to the name of an existing user, user group, role, role group or schema.
 
 ```
 <user_name> ::= <unicode_name>
@@ -614,7 +614,7 @@ This clause is required, unless the user group for newly created users has been 
 
 ## Description
 
-The specified user name must not be identical to the name of an existing user, usergroup, role, or schema.
+The specified user name must not be identical to the name of an existing user, user group, role, role group or schema.
 
 There are some users that are delivered with the SAP HANA database: SYS, SYSTEM, and a number of users with the \_SYS\_ prefix.
 
@@ -728,11 +728,11 @@ CREATE USER USER1 WITH REMOTE IDENTITY USER2 AT DATABASE DB2;
 **Related Information**  
 
 
-[User Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/dea55d23bb571014bf25f6ed0d3b2b17.html "Every user who wants to work directly with the SAP HANA database must have a database user with the necessary privileges. Depending on the scenario, the user accessing SAP HANA may either be a technical system user or an individual end user.") :arrow_upper_right:
+[User Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/dea55d23bb571014bf25f6ed0d3b2b17.html "Every user who wants to work directly with the SAP HANA database must have a database user with the necessary privileges. Depending on the scenario, the user accessing SAP HANA may either be a technical system user or an individual end user.") :arrow_upper_right:
 
-[Authentication and Single Sign-On](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/db60da90bb5710149e358d50a7361419.html "The identity of users accessing the SAP HANA database is verified through a process called authentication. SAP HANA supports several authentication mechanisms that can be used for the integration of SAP HANA into single sign-on environments (SSO). The mechanisms used to authenticate individual users are specified as part of the user definition.") :arrow_upper_right:
+[Authentication and Single Sign-On](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/db60da90bb5710149e358d50a7361419.html "The identity of users accessing the SAP HANA database is verified through a process called authentication. SAP HANA supports several authentication mechanisms that can be used for the integration of SAP HANA into single sign-on environments (SSO). The mechanisms used to authenticate individual users are specified as part of the user definition.") :arrow_upper_right:
 
-[Characters Not Permitted in User Names](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/55d3b5a01166494582cc12f70ccfa17f.html "User names can contain any Compatibility Encoding Scheme for UTF-16: 8-Bit (CESU-8) characters except for a small subset.") :arrow_upper_right:
+[Characters Not Permitted in User Names](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/55d3b5a01166494582cc12f70ccfa17f.html "User names can contain any Compatibility Encoding Scheme for UTF-16: 8-Bit (CESU-8) characters except for a small subset.") :arrow_upper_right:
 
 [CREATE SAML PROVIDER Statement \(Access Control\)](create-saml-provider-statement-access-control-20d4cca.md "Defines a SAML provider in the SAP HANA database.")
 
@@ -748,9 +748,9 @@ CREATE USER USER1 WITH REMOTE IDENTITY USER2 AT DATABASE DB2;
 
 [SAML\_PROVIDERS System View](../../020-System-Views-Reference/021-System-Views/saml-providers-system-view-20cda7b.md "Shows available SAML providers.")
 
-[SAML\_USER\_MAPPINGS System View](../../020-System-Views-Reference/021-System-Views/saml-user-mappings-system-view-20cdc48.md "Shows the SAML providers known for each user.")
+[SAML\_USER\_MAPPINGS System View](../../020-System-Views-Reference/021-System-Views/saml-user-mappings-system-view-20cdc48.md "Shows the SAML provider information for each user.")
 
-[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
+[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
 
 [SET USERGROUP Statement \(Session Management\)](set-usergroup-statement-session-management-1991853.md "Specify a user group to which every subsequently created user is automatically assigned.")
 

@@ -75,5 +75,5 @@ For a working example of how to refresh an anonymized view, see the anonymized v
 
 [M\_ANONYMIZATION\_VIEWS System View](../../020-System-Views-Reference/022-Monitoring-Views/m-anonymization-views-system-view-6a44772.md "Provides runtime information about anonymized views.")
 
-[Data Anonymization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/6cf9d55f4d3d45b0bcdb41756d86629f.html "Anonymization methods available in the SAP HANA Cloud, SAP HANA database allow you to gain statistically valid insights from your data while protecting the privacy of individuals.") :arrow_upper_right:
+[Data Anonymization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/6cf9d55f4d3d45b0bcdb41756d86629f.html "Anonymization methods available in the SAP HANA Cloud, SAP HANA database allow you to gain statistically valid insights from your data while protecting the privacy of individuals.") :arrow_upper_right:
 

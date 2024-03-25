@@ -2,7 +2,7 @@
 
 # ABAP\_DF16RAW\_TO\_SMALLDECIMAL Function \(String\)
 
-Converts from ABAP decfloat type DF16\_RAW to HANA decfloat type smalldecimal.
+Converts from ABAP `DECFLOAT` type `DF16_RAW` to HANA `DECFLOAT` type `SMALLDECIMAL`.
 
 
 
@@ -42,7 +42,9 @@ The format to convert: Decimal Floating Point, 16 Digits, RAW on database
 
 ## Description
 
-Converts from ABAP decfloat type DF34\_RAW to HANA decfloat type decimal.
+Converts from ABAP `DECFLOAT` type `DF16_RAW` to HANA `DECFLOAT` type `SMALLDECIMAL`.
+
+Please note that only one-way conversion from ABAP to HANA type is available. The reverse conversion must be performed in the ABAP layer if needed. For more information, see[Decimal Floating Point Numbers](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenddic_decimal_floating_point.htm) in the ABAP Keyword Documentation.
 
 
 

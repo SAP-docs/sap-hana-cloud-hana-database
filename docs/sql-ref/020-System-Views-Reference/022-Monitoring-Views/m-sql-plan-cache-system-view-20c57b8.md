@@ -173,7 +173,7 @@ SESSION\_PROPERTIES
 </td>
 <td valign="top">
 
-NVARCHAR\(500\)
+VARCHAR\(64\)
 
 </td>
 <td valign="top">
@@ -207,7 +207,7 @@ LAST\_INVALIDATION\_REASON
 </td>
 <td valign="top">
 
-VARCHAR\(64\)
+NVARCHAR\(500\)
 
 </td>
 <td valign="top">
@@ -485,6 +485,23 @@ Displays the list of all involved execution frameworks.
 <tr>
 <td valign="top">
 
+HEX\_REJECTION\_REASON
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Displays the reason for not using the HEX engine.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 PLAN\_SHARING\_TYPE
 
 </td>
@@ -634,6 +651,23 @@ BIGINT
 <td valign="top">
 
 Displays the accumulated count of the plan execution.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+PREFERRED\_ROUTING\_VOLUME\_IDS
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the preferred routing volumns.
 
 </td>
 </tr>

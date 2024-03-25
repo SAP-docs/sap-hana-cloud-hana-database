@@ -84,7 +84,7 @@ Displays the name of the remote database.
 
 <a name="loiod8980f4706004249b6a36090a8061137__section_khm_vy4_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

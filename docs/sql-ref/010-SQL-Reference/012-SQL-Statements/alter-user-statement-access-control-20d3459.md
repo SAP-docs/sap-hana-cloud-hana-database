@@ -998,5 +998,5 @@ ALTER USER new_user DEACTIVATE;
 
 [SAML\_PROVIDERS System View](../../020-System-Views-Reference/021-System-Views/saml-providers-system-view-20cda7b.md "Shows available SAML providers.")
 
-[SAML\_USER\_MAPPINGS System View](../../020-System-Views-Reference/021-System-Views/saml-user-mappings-system-view-20cdc48.md "Shows the SAML providers known for each user.")
+[SAML\_USER\_MAPPINGS System View](../../020-System-Views-Reference/021-System-Views/saml-user-mappings-system-view-20cdc48.md "Shows the SAML provider information for each user.")
 

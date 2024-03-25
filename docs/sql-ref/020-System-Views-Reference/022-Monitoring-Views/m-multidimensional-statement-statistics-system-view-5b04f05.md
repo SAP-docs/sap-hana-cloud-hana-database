@@ -217,7 +217,7 @@ Displays the last metadata read duration, in milliseconds \(ms\).
 <tr>
 <td valign="top">
 
-LAST\_QUERY\_PREPARATION\_DURATION
+Feature removal - MDX - LQNLAST\_QUERY\_PREPARATION\_DURATION
 
 </td>
 <td valign="top">
@@ -642,7 +642,7 @@ Displays the maximum thread count.
 <tr>
 <td valign="top">
 
-MAX\_EXECUTION\_MEMORY\_SIZE
+TOTAL\_EXECUTION\_MEMORY\_SIZE<sup>\*\*</sup>
 
 </td>
 <td valign="top">
@@ -652,9 +652,182 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the maximum memory size in bytes.
+Displays the total memory size, in bytes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AVG\_EXECUTION\_MEMORY\_SIZE<sup>\*\*</sup>
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the average memory size, in bytes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MIN\_EXECUTION\_MEMORY\_SIZE<sup>\*\*</sup>
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the minimum memory size, in bytes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MAX\_EXECUTION\_MEMORY\_SIZE<sup>\*\*</sup>
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the maximum memory size, in bytes.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TOTAL\_EXECUTION\_CPU\_TIME<sup>\*\*</sup>
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Specifies the total used CPU time, in milliseconds \(ms\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+AVG\_EXECUTION\_CPU\_TIME<sup>\*\*</sup>
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Specifies the average used CPU time, in milliseconds \(ms\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MIN\_EXECUTION\_CPU\_TIME<sup>\*\*</sup>
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Specifies the minimum used CPU time, in milliseconds \(ms\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+MAX\_EXECUTION\_CPU\_TIME<sup>\*\*</sup>
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Specifies the maximum used CPU time, in milliseconds \(ms\).
 
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio5b04f05f501f4f91aea202f1394cfddc__section_n2h_4fs_dyb"/>
+
+## Additional Information
+
+<sup>\*\*</sup>Only memory usage and CPU time on the main system is tracked. If any other system is involved, for example, an external view is used, then memory usage and CPU time on this system is not tracked. For batch queries, there is always one entry for the complete query and one for each sub query. To avoid a double counting of memory and CPU time, the following rules apply:
+
+
+<dl>
+<dt><b>
+
+Normal Batch Request:
+
+</b></dt>
+<dd>
+
+The memory usage is tracked for the complete query, while CPU-Time is tracked for each sub query.
+
+-   Batch query:
+    -   For all forms, EXECUTION\_MEMORY\_SIZE is the memory-usage of all subqueries together.
+    -   For all forms, EXECUTION\_CPU\_TIME is NULL.
+
+-   Sub queries:
+    -   For all forms, EXECUTION\_MEMORY\_SIZE is NULL.
+    -   For all forms, EXECUTION\_CPU\_TIME is the CPU time used by the subquery.
+
+
+
+
+</dd><dt><b>
+
+Asynchronous Batch Request:
+
+</b></dt>
+<dd>
+
+For asynchronous batch requests, both CPU time and memory usage are tracked per subquery.
+
+-   Batch query:
+    -   All forms of EXECUTION\_MEMORY\_SIZE and EXECUTION\_CPU\_TIME are null.
+
+-   Sub queries:
+    -   For all forms of EXECUTION\_MEMORY\_SIZE is the memory used by the subquery.
+    -   For all forms of EXECUTION\_CPU\_TIME is the CPU time used by the subquery.
+
+
+
+
+</dd>
+</dl>
+
+The M\_MULTIDIMENSIONAL\_STATEMENTS\_STATISTICS view is not enabled by default. Refer to the *mds* section in the *SAP HANA Cloud, SAP HANA Database Configuration Parameter Reference* for details on enabling.
 

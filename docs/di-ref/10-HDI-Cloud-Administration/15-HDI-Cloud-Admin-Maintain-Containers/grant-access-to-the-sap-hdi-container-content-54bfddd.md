@@ -21,7 +21,7 @@ In SAP HANA Deployment Infrastructure \(HDI\), the content-development API in a 
 
 ## Procedure
 
-1.  In an SQL console, connect to the database with an administrator of the target HDI container \(for example, “C”\).
+1.  In an SQL console, connect to the database with an administrator of the target HDI container \(for example, *<container\_name\>*\).
 
 2.  Open the SQL editor for this database.
 
@@ -32,22 +32,22 @@ In SAP HANA Deployment Infrastructure \(HDI\), the content-development API in a 
     > ### Sample Code:  
     > ```sql
     > CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_API_PRIVILEGES;
-    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT 'NEW_CONTAINER_CONTENT_DEVELOPER', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_USER_PRIVILEGES;
-    > CALL C#DI.GRANT_CONTAINER_API_PRIVILEGES(#PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT '<NEW_CONTAINER_CONTENT_DEVELOPER>', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_USER_PRIVILEGES;
+    > CALL <container_name>#DI.GRANT_CONTAINER_API_PRIVILEGES(#PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > DROP TABLE #PRIVILEGES;
     > 
     > ```
 
-    1.  Adjust the name of the new content-development user “`NEW_CONTAINER_CONTENT_DEVELOPER`” in the `INSERT` statement in line 2 to reflect the name of the user to whom the API privileges should be granted.
+    1.  Replace the name of the new content-development user *<NEW\_CONTAINER\_CONTENT\_DEVELOPER\>* in the `INSERT` statement in line 2 with the name of the user to whom the API privileges should be granted.
 
-    2.  Adjust the name of the container's API schema `C#DI` in the `CALL` statement to suit your needs.
+    2.  In the `CALL` statement, replace *<container\_name\>* in the name of the container's API schema <code><i class="varname">&lt;container_name&gt;</i>#DI</code> with the name of your container.
 
 
-4.  Execute the SQL code.
+4.  Run the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 
-5.  \(Optional\) Confirm that the `NEW_CONTAINER_CONTENT_DEVELOPER` user is now able to call the HDI container content-development API in the containers API schema \(for example, `C#DI` in container “C”\).
+5.  \(Optional\) Confirm that the *<NEW\_CONTAINER\_CONTENT\_DEVELOPER\>* user is now able to call the HDI container content-development API in the containers API schema \(for example, <code><i class="varname">&lt;container_name&gt;</i>#DI</code> in container *<container\_name\>*\).
 
 
 **Related Information**  

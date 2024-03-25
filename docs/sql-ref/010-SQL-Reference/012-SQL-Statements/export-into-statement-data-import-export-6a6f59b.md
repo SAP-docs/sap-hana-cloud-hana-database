@@ -72,6 +72,7 @@ Specifies a path to the object for the export using one of the supported formats
 <storage_path> ::= 
    { <filename>.csv
    | <filename>.parquet
+   | <filename>.json
    | <directory>/
    | <directory>/<prefix> }
 ```
@@ -80,12 +81,12 @@ Specifies a path to the object for the export using one of the supported formats
 <dl>
 <dt><b>
 
-*<filename\>*.csv or *<filename\>*.parquet
+*<filename\>*.csv, *<filename\>*.parquet or *<filename\>*.json
 
 </b></dt>
 <dd>
 
-Data is exported as a single file into the specified filename that must end in either .csv or .parquet.
+Data is exported as a single file into the specified file name that must end in either .csv, .parquet, or .json.
 
 
 
@@ -688,9 +689,11 @@ Requires:
 
 ## Description
 
-Use the EXPORT INTO statement to export the data from a table or view into a single CSV or parquet file or into a directory with multiple CSV or parquet files.
+Use the EXPORT INTO statement to export the data from a table or view into a single CSV, Parquet, or JSON file, or into a directory with multiple CSV, Parquet, or JSON files.
 
 The EXPORT INTO command does not support parameterized views.
+
+The values of calculated columns defined as `C AS A+B` and generated columns defined as `GENERATED ALWAYS AS A+B` are not exported.
 
 
 
@@ -734,7 +737,7 @@ EXPORT INTO 'gs://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/DEMO_TBL1.csv
 The following example exports multiple parquet files, one file per row group, with 100 records per file in an Amazon bucket.
 
 ```
-EXPORT INTO PARGUET FILE 's3-region2://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/my_dir/' 
+EXPORT INTO PARQUET FILE 's3-region2://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/my_dir/' 
    FROM SCH.NORMAL_TBL WITH ROW GROUP SIZE 100;
 ```
 

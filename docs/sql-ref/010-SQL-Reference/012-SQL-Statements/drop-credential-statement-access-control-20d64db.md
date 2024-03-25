@@ -38,6 +38,12 @@ Specifies the owner of the credential to be dropped.
 
 Only users with the CREDENTIAL ADMIN system privilege can drop credentials for other users.
 
+> ### Note:  
+> When dropping a credential, it is crucial to specify the user component \[USER *<user\_name\>*\] consistently with how the credential was initially created. Credentials created with a specified user are distinct from those created without. To drop a credential successfully:
+> 
+> -   If the credential was created with a specified user, you must include the \[USER *<user\_name\>*\] component in the DROP CREDENTIAL statement.
+> -   If the credential was created without specifying a user, the DROP CREDENTIAL statement should not include the \[USER *<user\_name\>*\] component. Only the credential without a user will be dropped in this case. Attempting to drop a credential without specifying a user, when it was created with one, will result in an error.
+
 
 
 </dd><dt><b>
@@ -95,6 +101,8 @@ Specifies a connection mechanism; for example 'PASSWORD'.
 ## Description
 
 Each user can drop credentials that they own.
+
+
 
 
 

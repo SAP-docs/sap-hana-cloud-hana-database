@@ -14,7 +14,7 @@ HDI container-group administrators can drop HDI containers from any empty or non
 
 ## Procedure
 
-1.  In an SQL console, connect to the database as administrator of the target HDI container group \(for example, "G"\).
+1.  In an SQL console, connect to the database as administrator of the target HDI container group \(for example, *<container\_group\_name\>*\).
 
 2.  Open the SQL editor for this database.
 
@@ -24,7 +24,7 @@ HDI container-group administrators can drop HDI containers from any empty or non
 
     > ### Sample Code:  
     > ```sql
-    > CALL _SYS_DI#G.DROP_CONTAINER('C', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > CALL _SYS_DI#<container_group_name>.DROP_CONTAINER('<container_name>', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > ```
 
     To drop an HDI container that is not empty, use the following code:
@@ -33,24 +33,24 @@ HDI container-group administrators can drop HDI containers from any empty or non
     CREATE LOCAL TEMPORARY COLUMN TABLE #DROP_CONTAINER_PARAMETERS LIKE _SYS_DI.TT_PARAMETERS;
     INSERT INTO #DROP_CONTAINER_PARAMETERS ( KEY, VALUE ) VALUES ( 'ignore_work', 'true' );
     INSERT INTO #DROP_CONTAINER_PARAMETERS ( KEY, VALUE ) VALUES ( 'ignore_deployed', 'true' );
-    CALL _SYS_DI#G.DROP_CONTAINER('C', #DROP_CONTAINER_PARAMETERS, ?, ?, ?);
+    CALL _SYS_DI#<container_group_name>.DROP_CONTAINER('<container_name>', #DROP_CONTAINER_PARAMETERS, ?, ?, ?);
     DROP TABLE #DROP_CONTAINER_PARAMETERS; 
     ```
 
-4.  Adjust the name of the container group “G” and the name of the new container “C” in the `CALL` statement to suit the names of your container group and container respectively.
+4.  Replace *<container\_group\_name\>* and *<container\_name\>* in the `CALL` statement with the names of your container group and container, respectively.
 
     The following example uses the group name "`myContainerGroup`" and container name "`myContainer`":
 
     > ### Sample Code:  
     > ```sql
-    > CALL _SYS_DI#<myContainerGroup>.DROP_CONTAINER('<myContainer>', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > CALL _SYS_DI#myContainerGroup.DROP_CONTAINER('myContainer', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > ```
 
 5.  Execute the SQL code.
 
     Check that the code completes successfully with the HDI return code 0.
 
-6.  \(Optional\) Confirm that the container no longer exists by checking that a corresponding entry has been removed from the list displayed in the container group schema's `_SYS_DI#G.M_CONTAINERS` view.
+6.  \(Optional\) Confirm that the container no longer exists by checking that a corresponding entry has been removed from the list displayed in the container group schema's <code>_SYS_DI#<i class="varname">&lt;container_group_name&gt;</i>.M_CONTAINERS</code> view.
 
 
 **Related Information**  

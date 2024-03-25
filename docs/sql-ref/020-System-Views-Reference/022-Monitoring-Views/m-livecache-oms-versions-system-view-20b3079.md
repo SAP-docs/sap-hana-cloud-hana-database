@@ -214,9 +214,9 @@ This view can only be used if liveCache is enabled.
 **Related Information**  
 
 
-[HOST_LIVECACHE_OMS_VERSIONS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/29ffcc773260413481653377de803596.html "Returns LiveCache OMS versions per host status information.") :arrow_upper_right:
+[HOST_LIVECACHE_OMS_VERSIONS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/29ffcc773260413481653377de803596.html "Returns LiveCache OMS versions per host status information.") :arrow_upper_right:
 
 [M\_LIVECACHE\_PROCEDURE\_STATISTICS System View](m-livecache-procedure-statistics-system-view-20b32d0.md "Provides accumulated LiveCache procedure statistics.")
 
-[System-Versioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/91302b26f62c4433bbc58e0a951cdc1d.html "System-versioned tables are part of the SQL standard. They support the tracking of changes on column store tables by capturing the validity period of each record.") :arrow_upper_right:
+[System-Versioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/91302b26f62c4433bbc58e0a951cdc1d.html "System-versioned tables are part of the SQL standard. They support the tracking of changes on column store tables by capturing the validity period of each record.") :arrow_upper_right:
 

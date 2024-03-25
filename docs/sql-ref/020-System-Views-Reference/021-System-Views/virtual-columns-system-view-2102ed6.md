@@ -256,7 +256,7 @@ Displays whether or not SELECT is supported: TRUE/FALSE.
 
 <a name="loio2102ed64751910148e60a51d6bdb83da__section_qk5_511_fzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

@@ -135,6 +135,7 @@ How to set up and maintain the Deployment Infrastructure \(DI\) for SAP HANA Clo
     -   [Document Store Collections \(.hdbcollection\)](30-HDI-Cloud-Artifact-Types/document-store-collections-hdbcollection-fe16b63.md)
     -   [Document Store Collection Indexes \(.hdbcollectionindex\)](30-HDI-Cloud-Artifact-Types/document-store-collection-indexes-hdbcollectionindex-b4b1b5c.md)
     -   [Enterprise Search Configurations \(.hdbeshconfig\)](30-HDI-Cloud-Artifact-Types/enterprise-search-configurations-hdbeshconfig-eb019bb.md)
+    -   [Fabric Virtual Tables \(.hdbfabricvirtualtable\)](30-HDI-Cloud-Artifact-Types/fabric-virtual-tables-hdbfabricvirtualtable-0019655.md)
     -   [Flowgraphs \(.hdbflowgraph\)](30-HDI-Cloud-Artifact-Types/flowgraphs-hdbflowgraph-6d4fc4a.md)
     -   [Functions \(.hdbfunction\)](30-HDI-Cloud-Artifact-Types/functions-hdbfunction-cbf1369.md)
     -   [Graph Workspaces \(.hdbgraphworkspace\)](30-HDI-Cloud-Artifact-Types/graph-workspaces-hdbgraphworkspace-ff89373.md)

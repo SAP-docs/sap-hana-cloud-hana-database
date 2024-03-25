@@ -455,9 +455,9 @@ Displays the delete statement retry count.
 
 [ALTER TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Table Replication](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/33dd5d248add4b7a8c085846748b80ba.html "In a scale-out system tables (or selected columns of column store tables) may be replicated to multiple hosts. This can help to reduce network traffic when, for example, slowly-changing master data often has to be joined with tables, or partitions of tables, that are located on other hosts.") :arrow_upper_right:
+[Table Replication](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/33dd5d248add4b7a8c085846748b80ba.html "In a scale-out system tables (or selected columns of column store tables) may be replicated to multiple hosts. This can help to reduce network traffic when, for example, slowly-changing master data often has to be joined with tables, or partitions of tables, that are located on other hosts.") :arrow_upper_right:
 
-[Table Replication Limitations](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/7683a6b0e9f649808cb956cd50087c5f.html "General restrictions that apply to the use of table replication.") :arrow_upper_right:
+[Table Replication Limitations](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/7683a6b0e9f649808cb956cd50087c5f.html "General restrictions that apply to the use of table replication.") :arrow_upper_right:
 
-[Asynchronous Table Replication](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/604ac507d6494e9eb70e5256220c5018.html "Asynchronous table replication can help reduce workload on hosts by balancing load across replica tables on worker hosts in a distributed SAP HANA system.") :arrow_upper_right:
+[Asynchronous Table Replication](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/604ac507d6494e9eb70e5256220c5018.html "Asynchronous table replication can help reduce workload on hosts by balancing load across replica tables on worker hosts in a distributed SAP HANA system.") :arrow_upper_right:
 

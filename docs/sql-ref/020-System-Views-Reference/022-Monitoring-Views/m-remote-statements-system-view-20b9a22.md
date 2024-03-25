@@ -513,7 +513,7 @@ PASSPORT\_ROOTCONTEXT\_ID
 </td>
 <td valign="top">
 
-VARBINARY
+VARBINARY\(16\)
 
 </td>
 <td valign="top">

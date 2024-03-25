@@ -186,5 +186,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [PROCEDURE\_ROUTES System View](procedure-routes-system-view-61d897c.md "Provides information about the procedure being routed. This view is for internal use only.")
 
-[SYS.PROCEDURES](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/a7b1261516ae4166883e6bc373733de5.html "Available stored procedures") :arrow_upper_right:
+[SYS.PROCEDURES](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/a7b1261516ae4166883e6bc373733de5.html "Available stored procedures") :arrow_upper_right:
 

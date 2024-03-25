@@ -222,7 +222,7 @@ Displays the creation time of the sequence.
 
 <a name="loio20cf0e79751910149462bf9e7d571ab8__section_kfp_jsz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

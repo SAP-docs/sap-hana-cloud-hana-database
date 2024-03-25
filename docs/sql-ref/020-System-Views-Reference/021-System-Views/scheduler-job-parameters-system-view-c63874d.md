@@ -2,7 +2,7 @@
 
 # SCHEDULER\_JOB\_PARAMETERS System View
 
-Shows parameters for the jobs.
+Shows parameters information for the job scheduler.
 
 
 
@@ -99,9 +99,9 @@ Displays the parameter value as a Unicode string.
 
 <a name="loioc63874da0e89479aa7919291abcbc144__section_el4_mkv_b3b"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
-Users see jobs that they created or on which they have been granted the ALTER or DROP object privilege. Users with the CATALOG READ system privilege see parameters for all jobs.
+This view allows users to see jobs that they created or on which they have been granted the ALTER or DROP object privilege.
 

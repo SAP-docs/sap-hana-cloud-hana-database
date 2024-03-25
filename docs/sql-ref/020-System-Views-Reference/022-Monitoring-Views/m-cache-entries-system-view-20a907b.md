@@ -100,6 +100,23 @@ Displays the ID of the cache that created the entry.
 <tr>
 <td valign="top">
 
+ENTRY\_HASH
+
+</td>
+<td valign="top">
+
+VARBINARY\(8\)
+
+</td>
+<td valign="top">
+
+Displays the hash value of the cached entry.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 ENTRY\_ID
 
 </td>

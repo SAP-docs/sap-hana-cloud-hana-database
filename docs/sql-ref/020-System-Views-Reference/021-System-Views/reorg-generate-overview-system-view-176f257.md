@@ -169,7 +169,7 @@ Displays the detailed text for additional information.
 
 <a name="loio176f2576a2094def8f7b5a444d461464__section_xmh_f1p_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

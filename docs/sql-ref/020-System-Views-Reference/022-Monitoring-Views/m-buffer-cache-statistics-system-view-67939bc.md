@@ -278,5 +278,5 @@ Displays the size of pinned memory in the buffer cache in bytes.
 
 [M\_LOG\_BUFFERS System View](m-log-buffers-system-view-20b3e49.md "Provides information about log buffer statistics.")
 
-[SAP HANA NSE Buffer Cache](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/8a35ce565c594c11bb785bea607213d8.html "The SAP HANA Native Storage Extension (NSE) buffer cache replaces the SAP HANA default page replacement and memory limit mechanism for the memory pages.") :arrow_upper_right:
+[SAP HANA NSE Buffer Cache](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/8a35ce565c594c11bb785bea607213d8.html "The SAP HANA Native Storage Extension (NSE) buffer cache replaces the SAP HANA default page replacement and memory limit mechanism for the memory pages.") :arrow_upper_right:
 

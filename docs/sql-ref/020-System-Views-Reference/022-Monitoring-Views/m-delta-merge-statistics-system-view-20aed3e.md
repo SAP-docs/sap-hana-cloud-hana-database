@@ -752,5 +752,5 @@ Table delta merges, optimize compression runs, and application merge hints are l
 
 [MERGE INTO Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/merge-into-statement-data-manipulation-3226201.md "Merges data into an existing column store table.")
 
-[HOST_DELTA_MERGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/b1a754a52a484a85922a87a269592cfa.html "Specifies the table delta merge statistics per host.") :arrow_upper_right:
+[HOST_DELTA_MERGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/b1a754a52a484a85922a87a269592cfa.html "Specifies the table delta merge statistics per host.") :arrow_upper_right:
 

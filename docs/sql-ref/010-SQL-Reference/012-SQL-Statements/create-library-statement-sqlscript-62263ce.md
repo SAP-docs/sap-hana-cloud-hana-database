@@ -156,9 +156,9 @@ CALL myproc(150);  – returns the value 100
 **Related Information**  
 
 
-[User-Defined Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/7cd14f1931404738a05c5e93e22564af.html "") :arrow_upper_right:
+[User-Defined Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7cd14f1931404738a05c5e93e22564af.html "") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
 
 [DROP LIBRARY Statement \(SQLScript\)](drop-library-statement-sqlscript-d416079.md "Drops a SQLScript user-defined library.")
 
@@ -168,5 +168,5 @@ CALL myproc(150);  – returns the value 100
 
 [LIBRARY\_MEMBERS System View](../../020-System-Views-Reference/021-System-Views/library-members-system-view-215c8db.md "Provides member information for SQLScript user-defined libraries.")
 
-[End-User Test Framework in SQLScript](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/1386a5eb77444ca8ba3a050c4043f1f8.html "") :arrow_upper_right:
+[End-User Test Framework in SQLScript](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/1386a5eb77444ca8ba3a050c4043f1f8.html "") :arrow_upper_right:
 

@@ -103,7 +103,7 @@ Displays the creation time of the schema.
 
 <a name="loio20cde599751910149fc2954ef99edcd6__section_ywg_hsz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -124,5 +124,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [CURRENT\_OBJECT\_SCHEMA Function \(Miscellaneous\)](../../010-SQL-Reference/011-SQL-Functions/current-object-schema-function-miscellaneous-8feedda.md "Returns the current schema name when creating a view.")
 
-[List Virtual Tables By Schema](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/c9bb5442df154095ba106ec675c91c3f.html "Display the virtual tables of a remote source by schema using the SAP HANA database explorer.") :arrow_upper_right:
+[List Virtual Tables By Schema](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/c9bb5442df154095ba106ec675c91c3f.html "Display the virtual tables of a remote source by schema using the SAP HANA database explorer.") :arrow_upper_right:
 

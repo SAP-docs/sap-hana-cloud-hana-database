@@ -2,7 +2,7 @@
 
 # QUERY\_PLANS System View
 
-Plans how to handle query execution.
+Provides information on how to handle query plans.
 
 
 
@@ -273,12 +273,12 @@ Displays the port where the plan operator is executed.
 
 <a name="loio20cca38775191014bf46bc83f328ee5c__section_gk3_yw4_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
 
-[Query Parameterization: BIND_AS_PARAMETER and BIND_AS_VALUE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/0b2958ee0426496f9c084c92b14993f1.html "All scalar variables used in queries of procedures, functions or anonymous blocks, are represented either as query parameters, or as constant values during query compilation. Which option shall be chosen is a decision of the optimizer.") :arrow_upper_right:
+[Query Parameterization: BIND_AS_PARAMETER and BIND_AS_VALUE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/0b2958ee0426496f9c084c92b14993f1.html "All scalar variables used in queries of procedures, functions or anonymous blocks, are represented either as query parameters, or as constant values during query compilation. Which option shall be chosen is a decision of the optimizer.") :arrow_upper_right:
 

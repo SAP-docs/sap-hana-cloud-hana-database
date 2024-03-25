@@ -10,9 +10,6 @@ In SAP HANA Deployment Infrastructure \(HDI\), managing an HDI container group t
 
 -   Create and drop containers
 
-    > ### Caution:  
-    > It is not recommended to change the default container-group assignment of an HDI container that is managed by an SAP BTP service instance. For example, containers created by or in the SAP BTP Cockpit should not be moved from the default container group to which they are assigned on creation.
-
 -   Grant and revoke container administrator privileges
 
 -   Grant and revoke container access

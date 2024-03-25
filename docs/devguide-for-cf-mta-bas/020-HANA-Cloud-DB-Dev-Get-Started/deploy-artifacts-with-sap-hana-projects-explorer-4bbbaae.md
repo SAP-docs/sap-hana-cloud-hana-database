@@ -37,7 +37,7 @@ If you are developing native SAP HANA applications in SAP Business Application S
 
     By default, the *SAP HANA PROJECTS* explorer uses the ![](images/BAS_icon_listTree_c55a137.svg) \(*tree*\) view to display all the artifacts and folders in the database module of the application that you are working on, regardless of whether the artifacts are deployed or not.
 
-    If you want to see only those database objects that are pending deployment, hover the mouse cursor over the *SAP HANA PROJECTS* explorer pane's title and choose <span class="FPA-icons"></span> \(Pending Deployment\) . The ![](images/BAS_icon_pendingDeploymentFolder_eefbce6.svg)*Pending Deployment \(\#\)* view displays a single folder that contains any database artifacts awaiting deployment, where "\#" is the number of artifacts currently in the folder.
+    If you want to see only those database objects that are pending deployment, hover the mouse cursor over the *SAP HANA PROJECTS* explorer pane's title and choose <span class="FPA-icons-V3"></span> \(Pending Deployment\) . The ![](images/BAS_icon_pendingDeploymentFolder_eefbce6.svg)*Pending Deployment \(\#\)* view displays a single folder that contains any database artifacts awaiting deployment, where "\#" is the number of artifacts currently in the folder.
 
 3.  Deploy an application's database artifacts to the SAP HANA database.
 
@@ -169,7 +169,7 @@ If you are developing native SAP HANA applications in SAP Business Application S
 
     3.  Add a database connection to the SAP HANA Database Explorer.
 
-        In the *Database Connections* node, choose <span class="SAP-icons"></span> \(Add database connection\) to display the *Add Database Connection* Wizard.
+        In the *Database Connections* node, choose <span class="SAP-icons-V5"></span> \(Add database connection\) to display the *Add Database Connection* Wizard.
 
         > ### Note:  
         > To test the connection details \(for example, the host name, port number, user name and password\), check the option *Validate the database information*. The *Add database Connection* Wizard tries to connect to the specified database using the credentials provided and notifies you immediately if the connection attempt is successful or not.

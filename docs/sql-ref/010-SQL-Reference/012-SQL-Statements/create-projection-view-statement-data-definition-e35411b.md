@@ -17,6 +17,7 @@ CREATE [ OR REPLACE ] PROJECTION VIEW <projection_view_name> [ ( <view_column_na
  [ <with_association_clause> ]
  [ <with_annotations_clause> ]
  [ WITH DDL ONLY ]
+ [ WITH READ ONLY ]
 ```
 
 
@@ -159,6 +160,31 @@ WITH DDL ONLY
 <dd>
 
 Prevents users from querying the view and from modifying the underlying table.
+
+
+
+</dd><dt><b>
+
+WITH READ ONLY
+
+</b></dt>
+<dd>
+
+This clause restricts the view to read-only access. It also enables the creation of projection views by overriding some standard limitations that normally disallow modifications on the view.
+
+These limitations include requirements such as:
+
+-   Each column in the view should map to a column of a single table.
+-   If a column in the base table of the view has a NOT NULL constraint without a default value, then that column must be included in the view columns to enable insert operations.
+-   The view cannot contain aggregate or analytic functions in the SELECT list. For example, the following functions are not allowed:
+    -   TOP, SET, or DISTINCT operators in a SELECT list.
+    -   A GROUP BY clause.
+
+-   The view cannot contain a subquery in a SELECT list.
+-   The view cannot contain a sequence value \(CURRVAL, NEXTVAL\).
+-   The view cannot contain a column view as the base view.
+-   The view cannot contain a calculated or a generated column.
+-   The view cannot contain a partition restriction in a SELECT list.
 
 
 
@@ -319,7 +345,7 @@ CREATE PROJECTION VIEW v2 AS SELECT * FROM v1; -- you can select from the view i
 **Related Information**  
 
 
-[Projection Views (.hdbprojectionview and .hdbprojectionviewconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/d8a3392c1287420ca82ac3090cd5049b.html "Transforms a design-time projection-view definition into a database object.") :arrow_upper_right:
+[Projection Views (.hdbprojectionview and .hdbprojectionviewconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/d8a3392c1287420ca82ac3090cd5049b.html "Transforms a design-time projection-view definition into a database object.") :arrow_upper_right:
 
 [DROP VIEW Statement \(Data Definition\)](drop-view-statement-data-definition-20d9c05.md "Removes a view from the database.")
 

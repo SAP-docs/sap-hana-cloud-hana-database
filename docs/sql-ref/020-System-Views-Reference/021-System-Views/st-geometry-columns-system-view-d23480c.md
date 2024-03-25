@@ -161,7 +161,7 @@ NVARCHAR\(13\)
 </td>
 <td valign="top">
 
-The internal geometry layout, either PLAIN or HILBERT CURVE. For details see the column definition and column configuration.
+Displays the internal geometry layout, either PLAIN or HILBERT CURVE. For details see the column definition and column configuration.
 
 </td>
 </tr>
@@ -222,9 +222,15 @@ Checks whether the geometries in the column are within the SRS boundaries
 
 <a name="loiod23480cdd2951014bc59de575a0b05fa___r_e_o_r_g__p_l_a_n_1fulldesc_REORG_PLAN"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
+<a name="loiod23480cdd2951014bc59de575a0b05fa__section_gz1_h54_11c"/>
+
+## Additional Information
 
 Spatial columns in virtual tables are not shown in the system view ST\_GEOMETRY\_COLUMNS.
 

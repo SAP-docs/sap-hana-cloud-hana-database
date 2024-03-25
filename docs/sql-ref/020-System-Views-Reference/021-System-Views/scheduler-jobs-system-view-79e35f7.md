@@ -2,7 +2,7 @@
 
 # SCHEDULER\_JOBS System View
 
-Shows existing jobs.
+Shows information on the jobs scheduler.
 
 
 
@@ -195,7 +195,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the job is valid: TRUE/FALSE. The job may become invalid if the procedure becomes invalid or if the owner of the job no longer has the EXECUTE privilege for the procedure. Invalid job are not scheduled.
+Displays whether the job is valid: TRUE/FALSE. The job may become invalid if the procedure becomes invalid or if the owner of the job no longer has the EXECUTE privilege for the procedure. Invalid jobs are not scheduled.
 
 </td>
 </tr>
@@ -229,7 +229,7 @@ TIMESTAMP
 </td>
 <td valign="top">
 
-Displays the time at which the job was created.
+Displays the time when the job was created.
 
 </td>
 </tr>
@@ -239,9 +239,9 @@ Displays the time at which the job was created.
 
 <a name="loio79e35f72f5374ad69dc0811e41339685__section_el4_mkv_b3b"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
-Users see jobs that they created or on which they have been granted the ALTER or DROP object privilege. Users with the CATALOG READ system privilege see all jobs.
+This view allows users to see jobs that they created or on which they have been granted the ALTER or DROP object privilege.
 

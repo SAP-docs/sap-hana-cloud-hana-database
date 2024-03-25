@@ -493,7 +493,7 @@ For internal use only.
 **Related Information**  
 
 
-[HOST_RESOURCE_UTILIZATION_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2023_4_QRC/en-US/fbd82f0303c44e35a6bbb12cb803f94c.html "Returns the host resource utilization for all processes (including non-SAP HANA processes).") :arrow_upper_right:
+[HOST_RESOURCE_UTILIZATION_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/fbd82f0303c44e35a6bbb12cb803f94c.html "Returns the host resource utilization for all processes (including non-SAP HANA processes).") :arrow_upper_right:
 
 [M\_HOST\_INFORMATION System View](m-host-information-system-view-20b1002.md "Provides host information such as machine and OS configuration.")
 

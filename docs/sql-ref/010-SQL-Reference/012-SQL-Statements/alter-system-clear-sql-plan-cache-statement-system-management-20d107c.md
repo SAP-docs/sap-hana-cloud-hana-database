@@ -51,5 +51,5 @@ ALTER SYSTEM CLEAR SQL PLAN CACHE;
 
 [M\_SQL\_PLAN\_CACHE\_OVERVIEW System View](../../020-System-Views-Reference/022-Monitoring-Views/m-sql-plan-cache-overview-system-view-20c55fd.md "Provides overall statistics of evicted and cached plans.")
 
-[Plan Cache](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/f0aaab730a1540758a8f36c9aee2118a.html "The plan cache stores execution plans of frequently executed SQL statements so that they can be reused whenever the statement is run. Administrators can also use the plan cache for performance analysis to get an overview of what statements are executed in the system.") :arrow_upper_right:
+[SQL Plan Cache](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/f0aaab730a1540758a8f36c9aee2118a.html "The SQL plan cache stores execution plans of frequently executed SQL statements so that they can be reused whenever the statement is run. Administrators can also use the plan cache for performance analysis to get an overview of what statements are executed in the system.") :arrow_upper_right:
 

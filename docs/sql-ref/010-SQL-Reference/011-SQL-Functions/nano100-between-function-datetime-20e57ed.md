@@ -28,7 +28,7 @@ Computes the time difference between date arguments *<timestamp\_1\>* and *<time
 
 ## Example
 
-The following example returns ***864000000000*** as the time difference between the two specified dates:
+The following example returns ***477*** as the time difference between the two specified dates:
 
 ```
 SELECT NANO100_BETWEEN ('2021-01-31 00:00:00.0000176', '2021-01-31 00:00:00.0000653') "nano100 between" FROM DUMMY;

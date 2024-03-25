@@ -30,19 +30,19 @@ Each container group can have its own set of administrators. Administrative priv
     > ### Sample Code:  
     > ```sql
     > CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_API_PRIVILEGES;
-    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT 'OTHER_CONTAINER_GROUP_ADMIN', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES WHERE NOT (PRIVILEGE_NAME = 'SELECT' AND OBJECT_NAME LIKE '_SYS_DI.T%');
-    > CALL _SYS_DI#G.REVOKE_CONTAINER_GROUP_API_PRIVILEGES(#PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+    > INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME) SELECT '<container_group_admin_username>', PRIVILEGE_NAME, OBJECT_NAME FROM _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES WHERE NOT (PRIVILEGE_NAME = 'SELECT' AND OBJECT_NAME LIKE '_SYS_DI.T%');
+    > CALL _SYS_DI#<container_group_name>.REVOKE_CONTAINER_GROUP_API_PRIVILEGES(#PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     > DROP TABLE #PRIVILEGES; 
     > ```
 
-    1.  Adjust the name of the user `OTHER_CONTAINER_GROUP_ADMIN` in the `INSERT` statement in line 2 to reflect the name of the user from whom the API privileges should be revoked, and the name of the container group “G” in the `CALL` statement in line 3 to correspond with the name of your container group.
+    1.  Replace *<container\_group\_admin\_username\>* in the `INSERT` statement in line 2 with the name of the user from whom the API privileges should be revoked, and in line 3 replace *<container\_group\_name\>* in the `CALL` statement with the name of your container group.
 
 
 4.  Execute the SQL code.
 
     Check that the code completes successfully with the HDI return code 0.
 
-5.  \(Optional\) Confirm that the `OTHER_CONTAINER_GROUP_ADMIN` user is no longer able to call HDI API procedures in the container group “G”'s API schema `_SYS_DI#G`, where “G” is replaced with the name of your HDI container group.
+5.  \(Optional\) Confirm that the *<container\_group\_admin\_username\>* user is no longer able to call HDI API procedures in the container group *<container\_group\_name\>*'s API schema <code>_SYS_DI#<i class="varname">&lt;container_group_name&gt;</i></code>, where *<container\_group\_name\>* is replaced with the name of your HDI container group.
 
 
 **Related Information**  

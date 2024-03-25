@@ -102,7 +102,7 @@ TIMESTAMP
 </td>
 <td valign="top">
 
-Displays the UTC timestamp when plan execution stopped. This field remains empty while the execution is running or in the case of reboots during plan execution.
+Displays the UTC timestamp when the plan execution stopped. This field remains empty while the execution is running or in the case of reboots during plan execution.
 
 </td>
 </tr>
@@ -163,9 +163,15 @@ Displays the parameters given for the table redistribution call.
 
 <a name="loio20ccfa20751910149c2de2cb9ce26e78___r_e_o_r_g__o_v_e_r_v_i_e_w_1fulldesc_REORG_OVERVIEW"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
+<a name="loio20ccfa20751910149c2de2cb9ce26e78__section_fpz_qhd_zzb"/>
+
+## Additional Information
 
 This view contains information about table redistribution executions on this system and stores every call to the REORG\_EXECUTE statement. You can use this view to determine execution durations and the status of each table redistribution on this system. Only executed plan information is stored and calls of REORG\_GENERATE without REORG\_EXECUTE are not displayed.
 

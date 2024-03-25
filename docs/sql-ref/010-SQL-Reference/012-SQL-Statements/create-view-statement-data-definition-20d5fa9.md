@@ -13,16 +13,16 @@ Creates a view on the database.
 ```
 CREATE [ OR REPLACE ] VIEW <view_name> [ COMMENT <string_literal> ]
    [ ( <column_name_list> ) ] [ ( <parameterized_view_clause> ) ] 
-   <as_subquery> [ <with_association_clause> ]
+   <as_subquery> [ <association_clause> ]
    [ WITH EXPRESSION MACROS( <expression_macro_list> ) ]
-   [ WITH <annotations> ]
+   [ WITH <annotations_clause> ]
    [ WITH STRUCTURED PRIVILEGE CHECK ]
    [ WITH ANONYMIZATION ( ALGORITHM <algorithm_name> { [ <view_level_parameters> ] [
 <column_level_parameters> ] } ) ]
    [ WITH [ CHECK OPTION ][ <mask_clause> ] 
       | WITH [READ ONLY] [DDL ONLY] [ <mask_clause> ] ]
    [ <cache_clause> ]
-
+   [ WITH STRUCTURED FILTER CHECK ]
 ```
 
 
@@ -160,7 +160,7 @@ Defines the columns for the view by using a common table expression.
 
 </dd><dt><b>
 
-*<with\_association\_clause\>*
+*<association\_clause\>*
 
 </b></dt>
 <dd>
@@ -168,22 +168,65 @@ Defines the columns for the view by using a common table expression.
 Defines a relationship between the view and one or more tables \(or views, in the case of JOIN\).
 
 ```
-<with_association_clause> ::= WITH ASSOCIATIONS ( <association_def_list> )
+<association_clause> ::= 
+   WITH ASSOCIATIONS ( <association_def_list> )
 
-<association_def_list> ::= <association_def> [,<association_def> [,…] ]
-<association_def> ::= { <join_definition> | <column_def>  }
+<association_def_list> ::= 
+   <association_def> [,<association_def> [,…] ]
+
+<association_def> ::= 
+   { <join_definition> | <column_def>  }
 
 <join_definition> ::= 
- <join_cardinality> JOIN <table_or_view_identifier> [ AS <table_alias> ] ON { <condition> | <column_def> }
+   <join_cardinality> JOIN <table_or_view_identifier> [ AS <table_alias> ] ON { <condition> | <column_def> }
 
 <join_cardinality> ::= 
- MANY TO ONE
- | MANY TO MANY
- | ONE TO ONE
- | ONE TO MANY
+   { MANY TO ONE
+   | MANY TO MANY
+   | ONE TO ONE
+   | ONE TO MANY }
 
 <column_def> ::= [ [ <schema_name>.]<table_ref>.]<column_name> [ AS <column_name> ]
 ```
+
+
+
+</dd><dt><b>
+
+*<annotations\_clause\>*
+
+</b></dt>
+<dd>
+
+Specifies view-, column-, and parameter-level annotations in the form of key/value pairs. You can reference annotations in subsequent queries to filter results.
+
+```
+<annotations_clause> ::= 
+   WITH ANNOTATIONS ( 
+      { [ <set_view_annotations> ]
+      | [ <set_column_annotations> ] 
+      | [ <set_parameter_annotations> ]
+   } )
+
+<set_view_annotations> ::= <key_set_operation>
+
+<set_column_annotations> ::= <column_annotation> [ <column_annotation> […] ]
+<column_annotation> ::= COLUMN <column_ref> <key_set_operation>
+
+<set_parameter_annotations> ::= <parameter_annotation> [ <parameter_annotation> […] ]
+<parameter_annotation> ::= PARAMETER <column_ref> <key_set_operation>
+
+<key_set_operation> ::= SET <key_value_pair_list> 
+
+<key_value_pair_list> ::= <key_value_pair> [, <key_value_pair> [,…] ]
+<key_value_pair> ::= '<key>'='<value>'
+
+<column_ref> ::= <identifier>
+<key> ::= <string>
+<value> ::= <string>
+```
+
+While you must specify annotation on at least one object with the WITH ANNOTATION clause \(view, column, or parameter\), there is no limit on the number of annotations or types of annotations you can specify. *<key\>* and *<value\>* represent the annotations you are configuring for the object \(view, column, or parameter\).
 
 
 
@@ -204,15 +247,9 @@ Adds new masking expression or drops an existing mask expression.
 <mask_expression> ::= <expression>
 ```
 
-Masking behavior is supported on row and column tables, and SQL row and calculation views. It is not supported on any other type of tables \(virtual tables, extended tables, temporary tables etc.\) and views \(Join/Olap/Hierarchy views\).
+Masking behavior is supported on row and column tables, and SQL row and calculation views. It is not supported on any other type of tables \(virtual tables, extended tables, temporary tables etc.\) and views \(Join/Olap/Hierarchy views\). Only one masking behavior, definer owner-based \(DEFAULT MASK\) or session user based masking \(SESSION USER MASK\), is supported on a table or view with masked columns. You can combine both masking behaviors in an object hierarchy. For example, a view with session user based masking can be created on a table with owner-based masking. If masking is enforced on lower-level objects, results for higher-level objects, for unauthorized users, may be incorrect because some results data is masked; no error is returned indicating lower-level objects are masked. If not specified, DEFAULT is the default.
 
-Only one masking behavior, definer owner-based \(DEFAULT MASK\) or session user based masking \(SESSION USER MASK\), is supported on a table or view with masked columns. You can combine both masking behaviors in an object hierarchy. For example, a view with session user based masking can be created on a table with owner-based masking.
-
-If not specified, DEFAULT is the default.
-
-*<mask\_expression\>* can be any type of expression, including a user-defined function, that returns the same data type and length as the original column.
-
-For more information on data masking, see the *SAP HANA Cloud, SAP HANA Database Security Guide*.
+*<mask\_expression\>* can be any type of expression, including a user-defined function, that returns the same data type and length as the original column. For more information on data masking, see the *SAP HANA Cloud, SAP HANA Database Security Guide*.
 
 
 
@@ -258,11 +295,11 @@ Is a list of expression macros being created on the specified view.
 </b></dt>
 <dd>
 
-Use *<expression\_macro\>* to reference an existing expression macro. When creating a macro expression that references another macro expression, the macro expression that is being referenced must be defined prior to the macro expression that references it.
+The *<expression\_macro\>* is used to reference an existing expression macro in view creation. It is no longer necessary to define a macro expression before referencing it in another macro expression.
 
-When using *<expression\_macro\>* to reference an existing expression macro, then the AS clause is optional. Use the AS clause to give the new expression macro a different alias, or omit the AS clause to use the alias of the referenced expression macro.
+The AS clause when using *<expression\_macro\>* is optional. You can either use it to give a new alias to your expression macro or skip it to keep the existing alias.
 
-An example for *<expression\_macro\>* is `sum_colA AS sum_colB` where `sum_colA` is a predefined expression macro.
+Example: `sum_colA AS sum_colB` uses `sum_colA`, a predefined expression macro. The order of defining the expression macros does not affect the creation of views.
 
 
 
@@ -290,42 +327,6 @@ An example for *<expression\_macro\>* is `sum_colA AS sum_colB` where `sum_colA`
 
 </dd>
 </dl>
-
-
-
-</dd><dt><b>
-
-WITH *<annotations\>*
-
-</b></dt>
-<dd>
-
-Specifies view-, column-, and parameter-level annotations in the form of key/value pairs. You can reference annotations in subsequent queries to filter results.
-
-```
-<with_annotation_clause> ::= WITH ANNOTATIONS ( { [ <set_view_annotations> ] [ <set_column_annotations> ] [ <set_parameter_annotations> ] } )
-
-<set_view_annotations> ::= <key_set_operation>
-
-<set_column_annotations> ::= <column_annotation> [ <column_annotation> […] ]
-<column_annotation> ::= COLUMN <column_ref> <key_set_operation>
-
-<set_parameter_annotations> ::= <parameter_annotation> [ <parameter_annotation> […] ]
-<parameter_annotation> ::= PARAMETER <column_ref> <key_set_operation>
-
-<key_set_operation> ::= SET <key_value_pair_list> 
-
-<key_value_pair_list> ::= <key_value_pair> [, <key_value_pair> [,…] ]
-<key_value_pair> ::= '<key>'='<value>'
-
-<column_ref> ::= <identifier>
-<key> ::= <string>
-<value> ::= <string>
-```
-
-While you must specify annotation on at least one object with the WITH ANNOTATION clause \(view, column, or parameter\), there is no limit on the number of annotations or types of annotations you can specify.
-
-*<key\>* and *<value\>* represent the annotations you are configuring for the object \(view, column, or parameter\).
 
 
 
@@ -599,6 +600,17 @@ For more information, see the topics on data anonymization in the *SAP HANA Clou
 
 
 
+</dd><dt><b>
+
+STRUCTURED FILTER CHECK
+
+</b></dt>
+<dd>
+
+Allows execution context to control access to rows in database objects. This clause is only supported for SQL and parameterized SQL views.
+
+
+
 </dd>
 </dl>
 
@@ -612,20 +624,20 @@ Update operations on views are supported when the following conditions are met:
 
 -   Each column in the view maps to the column of a single table.
 
--   If a column in a view base table has a NOT NULL constraint without a default value, then the column must be included in view columns so that inserts can be performed.
+-   If a column in a view base table has a NOT NULL constraint without a default value, then that column must be included in the view columns so that inserts can be performed.
 
--   The view cannot contain an aggregate or analytic function in a SELECT list. For example, the following functions are not allowed:
+-   The view cannot contain aggregate or analytic functions in a SELECT list. For example, the following functions are not allowed:
 
     -   TOP, SET, or DISTINCT operator in a SELECT list
 
     -   an ORDER BY clause.
 
 
--   The view cannot contain a subquery in a SELECT list
+-   The view cannot contain a subquery in a SELECT list.
 
--   The view cannot contain a sequence value \(CURRVAL, NEXTVAL\)
+-   The view cannot contain a sequence value \(CURRVAL, NEXTVAL\).
 
--   The view cannot contain a column view as the base view
+-   The view cannot contain a column view as the base view.
 
 
 If the base views or tables are updatable, then a view on the base views or tables can also be updatable if the above conditions are met.
@@ -1286,5 +1298,5 @@ BROKEN LEG
 
 [VIEW\_COLUMNS System View](../../020-System-Views-Reference/021-System-Views/view-columns-system-view-21028f1.md "Lists available view columns.")
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

@@ -2,7 +2,7 @@
 
 # SEARCH\_RULE\_SETS System View
 
-Shows information about available search rule sets.
+Shows information on available search rule sets.
 
 
 
@@ -57,7 +57,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the name of the repository package of the search rule set.
+Displays the ID of the repository package of the search rule set.
 
 </td>
 </tr>
@@ -152,14 +152,14 @@ Displays the name of the repository object that is searched by the given search 
 
 <a name="loio20ceb95e75191014b0b5d975d08c1805__section_whl_grz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
 
-[SEARCH\_RULE\_SET\_CONDITIONS System View](search-rule-set-conditions-system-view-20ce05a.md "Shows conditions to available search rule sets.")
+[SEARCH\_RULE\_SET\_CONDITIONS System View](search-rule-set-conditions-system-view-20ce05a.md "Shows information on available search rule set conditions.")
 
-[Search in Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/1eb7673ed88b4aa9b2cb43959bbbbde0.html "This feature offers an efficient way to search by key value pairs in table variables.") :arrow_upper_right:
+[Search in Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/1eb7673ed88b4aa9b2cb43959bbbbde0.html "This feature offers an efficient way to search by key value pairs in table variables.") :arrow_upper_right:
 

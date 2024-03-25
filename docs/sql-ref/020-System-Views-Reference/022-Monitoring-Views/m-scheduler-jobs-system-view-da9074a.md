@@ -164,7 +164,7 @@ Users see jobs that they created or on which they have been granted the ALTER or
 **Related Information**  
 
 
-[SCHEDULER\_JOBS System View](../021-System-Views/scheduler-jobs-system-view-79e35f7.md "Shows existing jobs.")
+[SCHEDULER\_JOBS System View](../021-System-Views/scheduler-jobs-system-view-79e35f7.md "Shows information on the jobs scheduler.")
 
 [CREATE SCHEDULER JOB Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/create-scheduler-job-statement-data-definition-d7d43d8.md "Creates a scheduled job in the current or specified schema.")
 

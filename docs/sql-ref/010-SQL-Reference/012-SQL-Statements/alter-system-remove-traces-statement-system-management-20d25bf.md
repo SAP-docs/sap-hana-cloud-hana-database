@@ -2,7 +2,7 @@
 
 # ALTER SYSTEM REMOVE TRACES Statement \(System Management\)
 
-Deletes the trace files on a specified host to reduce the disk space used by large trace files.
+Removes the trace files from a specified host to reduce the disk space used by large trace files.
 
 
 
@@ -66,7 +66,7 @@ Specifies the trace files to be removed.
 
 Valid host name and file name combinations can be retrieved from the M\_TRACEFILES system view.
 
-When a service has a trace file open, it cannot be deleted. In this case, clear the trace file by using the ALTER SYSTEM CLEAR TRACES statement.
+When a service has a trace file open, it cannot be removed. In this case, clear the trace file by using the ALTER SYSTEM CLEAR TRACES statement.
 
 
 
@@ -74,7 +74,7 @@ When a service has a trace file open, it cannot be deleted. In this case, clear 
 
 ## Permissions
 
-To delete trace files, you must have the TRACE ADMIN system privilege.
+To remove trace files, you must have the TRACE ADMIN system privilege.
 
 
 
@@ -82,7 +82,7 @@ To delete trace files, you must have the TRACE ADMIN system privilege.
 
 ## Example
 
-This command deletes files on the host named HOST\_NAME.
+This command removes files on the host named HOST\_NAME.
 
 ```
 ALTER SYSTEM REMOVE TRACES ('hananode01', 'extrace.py', 'extrace.py.old');
@@ -93,7 +93,7 @@ ALTER SYSTEM REMOVE TRACES ('hananode01', 'extrace.py', 'extrace.py.old');
 
 [M\_TRACEFILES System View](../../020-System-Views-Reference/022-Monitoring-Views/m-tracefiles-system-view-20c8f48.md "Provides information about all trace files.")
 
-[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](alter-system-clear-traces-statement-system-management-20d1281.md "Clears (removes) trace files opened by SAP HANA.")
+[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](alter-system-clear-traces-statement-system-management-20d1281.md "Clears trace files opened by SAP HANA.")
 
 [ALTER SYSTEM \{START | STOP\} PERFTRACE Statement \(System Management\)](alter-system-start-stop-perftrace-statement-system-management-20d2d3e.md "Starts or stops performance tracing.")
 

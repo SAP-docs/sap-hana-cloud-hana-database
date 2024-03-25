@@ -333,7 +333,7 @@ In the following example, we first create content in HDI container "C':
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src1/v.hdbview', 'VIEW V AS SELECT A FROM T');
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src2/', '');
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src2/p.hdbprocedure', 'PROCEDURE P (OUT RESULT INT) LANGUAGE SQLSCRIPT AS BEGIN SELECT COUNT(*) INTO RESULT FROM V; end');
-> CALL C#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #PATHS;
 > ```
 
@@ -373,7 +373,7 @@ In this example, we deploy the newly created files to the deployed file system i
 > INSERT INTO #DEPLOY_PATHS (PATH) VALUES ('src2/p.hdbprocedure');
 > CREATE LOCAL TEMPORARY COLUMN TABLE #UNDEPLOY_PATHS LIKE _SYS_DI.TT_FILESFOLDERS;
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PATH_PARAMETERS LIKE _SYS_DI.TT_FILESFOLDERS_PARAMETERS;
-> CALL C#DI.MAKE(#DEPLOY_PATHS, #UNDEPLOY_PATHS, #PATH_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.MAKE(#DEPLOY_PATHS, #UNDEPLOY_PATHS, #PATH_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #DEPLOY_PATHS;
 > DROP TABLE #UNDEPLOY_PATHS;
 > DROP TABLE #PATH_PARAMETERS; 
@@ -393,7 +393,7 @@ To demonstrate other status types, in this example we modify one of the files \(
 > ```sql
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PATHS LIKE _SYS_DI.TT_FILESFOLDERS_CONTENT
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('src1/t.hdbtable', 'COLUMN TABLE T ( A INTEGER, B INTEGER )');
-> CALL C#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #PATHS; 
 > ```
 
@@ -403,7 +403,7 @@ To demonstrate other status types, in this example we modify one of the files \(
 > ```sql
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PATHS LIKE _SYS_DI.TT_FILESFOLDERS;
 > INSERT INTO #PATHS (PATH) VALUES ('src2/p.hdbprocedure');
-> CALL C#DI.DELETE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.DELETE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #PATHS; 
 > ```
 
@@ -432,7 +432,7 @@ Since no `PATH` has been specified to the `STATUS` API, the API returns the stat
 > ```sql
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PATHS LIKE _SYS_DI.TT_FILESFOLDERS;
 > INSERT INTO #PATHS (PATH) VALUES ('src1/');
-> CALL C#DI.STATUS(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.STATUS(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #PATHS; 
 > 
 > PATH                 STATUS   SHA256                  SHA256_DEPLOYED
@@ -449,7 +449,7 @@ You can display the status for specific files in an HDI container, for example, 
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PATHS LIKE _SYS_DI.TT_FILESFOLDERS;
 > INSERT INTO #PATHS (PATH) VALUES ('src1/v.hdbview');
 > INSERT INTO #PATHS (PATH) VALUES ('src2/p.hdbprocedure');
-> CALL C#DI.STATUS(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.STATUS(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #PATHS; 
 > 
 > PATH                  STATUS   SHA256                 SHA256_DEPLOYED

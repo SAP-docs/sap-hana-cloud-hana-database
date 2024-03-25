@@ -38,9 +38,11 @@ It is possible to enable offline validation of the JSON Web Token \(JWT\) used f
 
 
 
+<a name="task_gnr_wkm_mv__context_kxn_pml_51c"/>
+
 ## Context
 
-The Java build pack includes an authentication method called `XSUAA`. This makes an offline validation of the received JWT token possible. The signature is validated using the verification key received from the service binding to the `xsuaa` service.
+The SAP Java build pack includes an authentication method called `XSUAA`. This makes an offline validation of the received JWT token possible. The signature is validated using the verification key received from the service binding to the `xsuaa` service.
 
 To enforce a check for the `$XSAPPNAME.Display` scope, proceed as follows:
 
@@ -62,11 +64,28 @@ To enforce a check for the `$XSAPPNAME.Display` scope, proceed as follows:
         xmlns="http://java.sun.com/xml/ns/javaee
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd
-        version=“3.0”>
-        <display-name>sample</display-name>
-        <login-config>
-            <auth-method>XSUAA</auth-method>
-        </login-config>
+    version=“3.0”>
+    <display-name>sample</display-name>
+    <login-config>
+        <auth-method>XSUAA</auth-method>
+    </login-config>
+    </web-app>
+    
+    ```
+
+    Sample `web.xml` file for TomCat 10 and TomEE 9:
+
+    ```
+    <?xml version=“1.0” encoding=“UTF-8”?>
+    <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance
+        xmlns="http://java.sun.com/xml/ns/jakartaee    
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                           https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+    version=“6.0”>
+    <display-name>sample</display-name>
+    <login-config>
+        <auth-method>XSUAA</auth-method>
+    </login-config>
     </web-app>
     
     ```
@@ -93,12 +112,33 @@ To enforce a check for the `$XSAPPNAME.Display` scope, proceed as follows:
     
     ```
 
+    For Tomcat 10 and TomEE 9, replace all references to `javax.*` packages with `jakarta.*`, as shown in the following example.
+
+    ```
+    import java.io.IOException;
+    import jakarta.servlet.ServletException;
+    import jakarta.servlet.annotation.*;
+    import jakarta.servlet.http.*;
+    /**
+     * Servlet implementation class HomeServlet
+     */
+    @WebServlet(“/*”)
+    @ServletSecurity(@HttpConstraint(rolesAllowed = { “Display” }))
+    public class HomeServlet extends HttpServlet {
+        /**
+         * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+         */
+        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+            response.getWriter().println(“principal” + request.getUserPrincipal());
+        }
+    ```
+
 
 <a name="task_w4n_mxp_4mb"/>
 
 <!-- task\_w4n\_mxp\_4mb -->
 
-## Configure Spring Security for Web Applications
+## Configure Spring Security for Web Applications \(`java-security`\)
 
 
 
@@ -107,6 +147,9 @@ To enforce a check for the `$XSAPPNAME.Display` scope, proceed as follows:
 ## Context
 
 Applications using the deprecated Spring Security OAuth can use the Cloud `java-security` client library with the Spring Security Adapter. SAP HANA XS advanced model provides a module for offline validation of the received JSON Web Token \(JWT\). The signature is validated using the verification key received from the XS UAA service. To configure Spring security for your Java Web application, perform the following steps:
+
+> ### Note:  
+> Due to incompatible changes between versions 2.7.\* and 3.\* of the `java-security` library, the information in this section only applies to Java Tomcat <10 and TomEE <9. For more information about migrating to Tomcat 10 and TomEE 9 and `java-security` 3.\*, see *Related Information* below.
 
 
 
@@ -254,7 +297,7 @@ Applications using the deprecated Spring Security OAuth can use the Cloud `java-
 
 <!-- task\_q5g\_11q\_4mb -->
 
-## Configure Spring Security for Spring Boot Applications
+## Configure Spring Security for Spring Boot Applications **\(`spring-xsuaa`\)**
 
 
 
@@ -263,6 +306,9 @@ Applications using the deprecated Spring Security OAuth can use the Cloud `java-
 ## Context
 
 Spring Boot Applications can use the Cloud `spring-xsuaa` client library, which provides a module for offline token validation of the received JSON Web Token \(JWT\). The signature is validated using the token keys received from the `XS UAA` service. To configure Spring security for your Spring Boot application, perform the following steps:
+
+> ### Note:  
+> The following instructions work for Tomcat 8 and 9, only. For Tomcat 10 and TomEE 9, refer to Maven Dependencies in [Migration Guide for Applications that use Spring Security and java-container-security](https://github.com/SAP/cloud-security-services-integration-library/blob/main/spring-xsuaa/Migration_JavaContainerSecurityProjects.md#maven-dependencies).
 
 
 
@@ -285,16 +331,17 @@ Spring Boot Applications can use the Cloud `spring-xsuaa` client library, which 
 
 3.  Authenticate requests with JSON Web tokens \(JWT\).
 
-    For instructions and examples showing how to authenticate requests with JWTs, see the following sample application:
+    For instructions and examples showing how to authenticate requests with JWTs, see the following sample applications:
 
-    [Sample application for Spring security](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/samples/spring-security-xsuaa-usage)
+    -   [Sample application for Spring security](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/samples/spring-security-xsuaa-usage)
+    -   [cloud-security-services-integration-library](https://github.com/SAP/cloud-security-services-integration-library/tree/main/samples/spring-security-hybrid-usage)
 
 
 <a name="task_um5_zbq_4mb"/>
 
 <!-- task\_um5\_zbq\_4mb -->
 
-## Configure Authentication and Authorization Checks for Java applications
+## Configure Authentication and Authorization Checks for Java applications \(`java-security`\)
 
 
 

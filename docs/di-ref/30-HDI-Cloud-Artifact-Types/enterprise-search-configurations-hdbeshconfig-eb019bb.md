@@ -81,5 +81,5 @@ In addition to this configuration, the HDI plug-in library `com.sap.hana.di.eshc
 **Related Information**  
 
 
-[SAP HANA Cloud, SAP HANA Database Search Developer Guide](https://help.sap.com/viewer/05c9edaee7fe4d28ab3627d0b1583df6/2023_4_QRC/en-US/ce86ef2fd97610149eaaaa0244ca4d36.html "With SAP HANA Cloud, your users can search tables and views much like they would when searching for information on the Internet. In SAP HANA, you can either query data using OData service definitions, directly with SQL queries, or via the built-in procedure sys.esh_search().") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Search Developer Guide](https://help.sap.com/viewer/05c9edaee7fe4d28ab3627d0b1583df6/2024_1_QRC/en-US/ce86ef2fd97610149eaaaa0244ca4d36.html "With SAP HANA Cloud, your users can search tables and views much like they would when searching for information on the Internet. In SAP HANA, you can either query data using OData service definitions, directly with SQL queries, or via the built-in procedure sys.esh_search().") :arrow_upper_right:
 

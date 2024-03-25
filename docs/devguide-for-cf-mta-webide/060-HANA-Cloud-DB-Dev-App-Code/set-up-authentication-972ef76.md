@@ -70,7 +70,7 @@ To set up authentication, you use the application router and the XS User Account
         >     "start": "node node_modules/@sap/approuter/approuter.js"
         >   },
         >   "dependencies": {
-        >     "@sap/approuter": "^3.0.1"
+        >     "@sap/approuter": "^16.1.0"
         >   }
         > }
         > 

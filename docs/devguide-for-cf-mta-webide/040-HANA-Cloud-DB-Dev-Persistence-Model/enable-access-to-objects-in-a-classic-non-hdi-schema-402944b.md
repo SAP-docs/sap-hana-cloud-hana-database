@@ -1,8 +1,8 @@
 <!-- loio402944b21b7c4d60a825b3ac69479955 -->
 
-# Enable Access to Objects in a Remote Classic Schema
+# Enable Access to Objects in a Classic \(non-HDI\) Schema
 
-Use a synonym to enable access to objects in a remote schema that is not managed by your Cloud Foundry application \(for example, ERP\).
+Use a synonym to enable access to objects in a database schema that is not managed by SAP HDI \(for example, ERP\).
 
 
 
@@ -14,16 +14,16 @@ To complete the steps described in this task, the following prerequisites apply:
 
 -   You have access to SAP Web IDE Full-Stack
 
--   -   You have access to the CF command-line interface client
+-   You have access to the CF command-line interface client
 
--   You have access to a “classic” SAP database schema in a remote system \(for example, SAP NetWeaver EPM\)
+-   You have access to a “classic” SAP database schema that is not managed by SAP HDI \(for example, SAP NetWeaver EPM\)
 
 
 
 
 ## Context
 
-You can enable a multitarget application to access objects in a remote schema; that is, a classic schema in a remote database. The target objects for the synonyms can be tables, views, functions, and procedures, as well as database sequences.
+You can enable a multitarget application to access objects in a database schema that is not managed by SAP HDI. The target objects for the synonyms can be tables, views, functions, and procedures, as well as database sequences.
 
 > ### Note:  
 > For illustration purposes only, the target \(base\) objects used in this example are taken from SAP NetWeaver EPM content \(Sales Order Model\). However, you can substitute the target objects specified in the examples with your own target objects. Similarly, you can substitute the synonyms, roles, etc. specified in the examples with your own artifacts.
@@ -330,7 +330,7 @@ You can enable a multitarget application to access objects in a remote schema; t
 
 [Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
 
-[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
+[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
 
 [Enable Access to Objects in Another HDI Container](enable-access-to-objects-in-another-hdi-container-4adba34.md "Use a synonym to enable access to another HDI container.")
 

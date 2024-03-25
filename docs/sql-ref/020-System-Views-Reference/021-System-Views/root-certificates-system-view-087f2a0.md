@@ -59,7 +59,7 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Displays the distinguished name of the X.509 certificate subject.
+Displays the common name of the X.509 certificate subject.
 
 </td>
 </tr>
@@ -93,7 +93,7 @@ TIMESTAMP
 </td>
 <td valign="top">
 
-Displays the start time of certificate's validity.
+Displays the start time of a certificate's validity.
 
 </td>
 </tr>
@@ -110,7 +110,7 @@ TIMESTAMP
 </td>
 <td valign="top">
 
-Displays the end time of certificate's validity.
+Displays the end time of a certificate's validity.
 
 </td>
 </tr>
@@ -307,7 +307,7 @@ Displays the certificate as given during SQL.
 
 <a name="loio087f2a01433e4ccca3f707fd9e177f2d__section_wjj_kbp_dzb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 

@@ -2,7 +2,7 @@
 
 # ALTER SYSTEM CLEAR TRACES Statement \(System Management\)
 
-Clears \(removes\) trace files opened by SAP HANA.
+Clears trace files opened by SAP HANA.
 
 
 
@@ -177,6 +177,18 @@ open \*.trc files of a single service type
 <tr>
 <td valign="top">
 
+PLAN DECISION RECORDER
+
+</td>
+<td valign="top">
+
+\*.sqlplan.\*.trc
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 ROWSTOREREORG
 
 </td>
@@ -250,7 +262,7 @@ UNLOAD
 </b></dt>
 <dd>
 
-Specifies that all trace files with a modification time before or equal to the timestamp are deleted.
+Specifies that all trace files with a modification time before or equal to the timestamp are cleared.
 
 ```
 <timestamp> ::= <string_literal>
@@ -265,7 +277,7 @@ WITH BACKUP
 </b></dt>
 <dd>
 
-Specifies that trace files are compressed and saved instead of removed.
+Specifies that trace files are compressed and saved instead of cleared.
 
 
 
@@ -278,7 +290,7 @@ Specifies that trace files are compressed and saved instead of removed.
 
 ## Description
 
-When you use this statement, all trace files and compressed files \(like .gz\) that were opened by the SAP HANA database are removed, assuming WITH BACKUP is not specified.
+When you use this statement, all trace files and compressed files \(like .gz\) that were opened by the SAP HANA database are cleared, assuming WITH BACKUP is not specified.
 
 On distributed systems, this command clears all trace files on all hosts.
 
@@ -331,7 +343,7 @@ ALTER SYSTEM CLEAR TRACES('indexserver') WITH BACKUP;
 **Related Information**  
 
 
-[ALTER SYSTEM REMOVE TRACES Statement \(System Management\)](alter-system-remove-traces-statement-system-management-20d25bf.md "Deletes the trace files on a specified host to reduce the disk space used by large trace files.")
+[ALTER SYSTEM REMOVE TRACES Statement \(System Management\)](alter-system-remove-traces-statement-system-management-20d25bf.md "Removes the trace files from a specified host to reduce the disk space used by large trace files.")
 
 [M\_TRACEFILES System View](../../020-System-Views-Reference/022-Monitoring-Views/m-tracefiles-system-view-20c8f48.md "Provides information about all trace files.")
 

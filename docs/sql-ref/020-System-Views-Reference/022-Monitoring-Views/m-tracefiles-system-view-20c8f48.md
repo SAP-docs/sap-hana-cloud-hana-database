@@ -211,9 +211,9 @@ open \*.trc files of a single service type.
 
 [M\_TRACEFILE\_CONTENTS System View](m-tracefile-contents-system-view-20c8d7f.md "Provides SAP HANA information from trace files.")
 
-[ALTER SYSTEM REMOVE TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-remove-traces-statement-system-management-20d25bf.md "Deletes the trace files on a specified host to reduce the disk space used by large trace files.")
+[ALTER SYSTEM REMOVE TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-remove-traces-statement-system-management-20d25bf.md "Removes the trace files from a specified host to reduce the disk space used by large trace files.")
 
-[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-traces-statement-system-management-20d1281.md "Clears (removes) trace files opened by SAP HANA.")
+[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-traces-statement-system-management-20d1281.md "Clears trace files opened by SAP HANA.")
 
 [M\_SERVICE\_TRACES System View](m-service-traces-system-view-20c4b5c.md "Provides configured trace components for each service type.")
 

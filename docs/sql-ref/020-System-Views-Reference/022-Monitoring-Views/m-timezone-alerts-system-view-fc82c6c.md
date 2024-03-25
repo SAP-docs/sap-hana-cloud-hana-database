@@ -151,9 +151,9 @@ Displays the detailed information.
 **Related Information**  
 
 
-[TIMEZONES System View](../021-System-Views/timezones-system-view-adeba8e.md "Provides information about the timezones which are available together with their originating data set.")
+[TIMEZONES System View](../021-System-Views/timezones-system-view-adeba8e.md "Provides information about the available time zones, together with their originating data set.")
 
-[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-traces-statement-system-management-20d1281.md "Clears (removes) trace files opened by SAP HANA.")
+[ALTER SYSTEM CLEAR TRACES Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-traces-statement-system-management-20d1281.md "Clears trace files opened by SAP HANA.")
 
 [ALTER SYSTEM CLEAR TIMEZONE CACHE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-timezone-cache-statement-system-management-a780495.md "Clears cached timezone definitions.")
 

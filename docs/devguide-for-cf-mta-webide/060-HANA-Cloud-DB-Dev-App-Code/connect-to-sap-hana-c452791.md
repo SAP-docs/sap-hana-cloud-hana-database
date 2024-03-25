@@ -14,9 +14,9 @@ Use the `hdbcli` module to connect to SAP HANA Cloud.
     > `requirements.txt`
     > 
     > ```
-    > Flask==0.12.2
+    > Flask==3.0.0
     > cfenv==0.5.3
-    > hdbcli
+    > hdbcli==2.19.21
     > ```
 
 2.  Use the module to connect to SAP HANA Cloud and execute a simple query.
@@ -84,5 +84,5 @@ Use the `hdbcli` module to connect to SAP HANA Cloud.
 
 [Python Support](https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.02/en-US/f3b8fabf34324302b123297cdbe710f0.html)
 
-[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "A selection of SAP-specific and ready-to-use Python client libraries is available for download from the SAP Service Marketplace.")
+[Download and Consume Python Libraries](download-and-consume-python-libraries-842824f.md "Python client libraries developed by SAP on the Python Package Index (PyPI).")
 

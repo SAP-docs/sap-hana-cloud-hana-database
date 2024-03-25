@@ -8,7 +8,7 @@ Provide members of the support teams with temporary access to an SAP HDI contain
 
 ## Context
 
-In the event of container-related problems in SAP HANA Deployment Infrastructure \(HDI\), it might be necessary for a support user to access HDI-internal objects in a container API schema, for example, `C#DI` for the container “C”. These privileges must be temporarily granted to an explicit support user and then revoked when the support task is completed.
+In the event of container-related problems in SAP HANA Deployment Infrastructure \(HDI\), it might be necessary for a support user to access HDI-internal objects in a container API schema, for example, <code><i class="varname">&lt;container_name&gt;</i>#DI</code> for the container *<container\_name\>*. These privileges must be temporarily granted to an explicit support user and then revoked when the support task is completed.
 
 > ### Caution:  
 > The use of this function is only recommended in exceptional circumstances; it allows the support user to access all the data in the container, some of which could be private or confidential. Use of this function could also compromise the integrity of the container resulting in an unusable container or data loss. Enabling a support user to access a container raises a security alert to the database administrator.
@@ -17,7 +17,7 @@ In the event of container-related problems in SAP HANA Deployment Infrastructure
 
 ## Procedure
 
-1.  In an SQL console, connect to the database with the administrator of the HDI container group G.
+1.  In an SQL console, connect to the database with the administrator of the HDI container group *<container\_group\_name\>*.
 
 2.  Open the SQL editor for this database.
 
@@ -25,24 +25,24 @@ In the event of container-related problems in SAP HANA Deployment Infrastructure
 
     > ### Sample Code:  
     > ```sql
-    > CALL _SYS_DI#G.GRANT_CONTAINER_SUPPORT_PRIVILEGE( 'C', 'SELECT', 'CONTAINER_SUPPORT_USER', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    > CALL _SYS_DI#<container_group_name>.GRANT_CONTAINER_SUPPORT_PRIVILEGE( '<container_name>', 'SELECT', '<CONTAINER_SUPPORT_USER>', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     > ```
 
-4.  Adjust the schema name of the container group G's API schema `_SYS_DI#G`.
+4.  Replace *<container\_group\_name\>* with the name of the container group in which the target container is located.
 
-5.  Adjust the name of the container “C”.
+5.  Replace the name of the container *<container\_name\>* with the name of the container you want to grant access to.
 
 6.  Adjust the privilege as needed.
 
     Possible values are `SELECT`, `UPDATE`, `INSERT`, and `DELETE`.
 
-7.  Adjust the name of the user `CONTAINER_SUPPORT_USER`.
+7.  Replace <code><i class="varname">&lt;CONTAINER_SUPPORT_USER&gt;</i></code> with the name of the support user to whom you want to grant container-access privileges.
 
 8.  Execute the SQL code.
 
     Confirm that the SQL code completes successfully and displays the HDI return code 0.
 
-9.  \(Optional\) Confirm that the `CONTAINER_SUPPORT_USER` user can now access objects in the container C's API schema `C#DI` per the given privileges.
+9.  \(Optional\) Confirm that the <code><i class="varname">&lt;CONTAINER_SUPPORT_USER&gt;</i></code> user can now access objects in the container *<container\_name\>*'s API schema <code><i class="varname">&lt;container_name&gt;</i>#DI</code> according to the granted privileges.
 
 
 **Related Information**  

@@ -9,7 +9,7 @@ View information about all schema-related privileges granted to users and roles.
 The `_SYS_DI` monitoring view `M_ALL_GRANTED_SCHEMA_PRIVILEGES` shows all HDI-container-specific schema privileges for any container, which are granted to users or roles by means of the procedure `GRANT_CONTAINER_SCHEMA_PRIVILEGES`.
 
 > ### Tip:  
-> Container-related information is visible to any user with the `SELECT` permission on either the corresponding views <code>“<i class="varname">&lt;CONTAINER_GROUP_SCHEMA&gt;</i>”. M_GRANTED_SCHEMA_PRIVILEGES</code> or <code>“<i class="varname">&lt;container specific&gt;</i>#DI”. M_GRANTED_SCHEMA_PRIVILEGES</code>.
+> Container-related information is visible to any user with the `SELECT` permission on either the corresponding views <code>“<i class="varname">&lt;CONTAINER_GROUP_SCHEMA&gt;</i>”.M_GRANTED_SCHEMA_PRIVILEGES</code> or <code>“<i class="varname">&lt;container specific&gt;</i>#DI”.M_GRANTED_SCHEMA_PRIVILEGES</code>.
 
 
 

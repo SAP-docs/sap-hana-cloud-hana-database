@@ -76,5 +76,5 @@ The Document Store is a dedicated binary store that enables the storage and proc
 
 [Add and Remove JSON Collections in the Document Store](add-and-remove-json-collections-in-the-document-store-fc6a0ab.md "Maintain new and existing collections of JSON documents in the SAP HANA Document Store.")
 
-[Document Store Collections (.hdbcollection)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2023_4_QRC/en-US/fe16b635277c4aea825c72973f159359.html "Transforms a design-time document-collection resource into a collection database object.") :arrow_upper_right:
+[Document Store Collections (.hdbcollection)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/fe16b635277c4aea825c72973f159359.html "Transforms a design-time document-collection resource into a collection database object.") :arrow_upper_right:
 

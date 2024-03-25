@@ -224,7 +224,7 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [M\_CONVERTER\_STATISTICS System View](m-converter-statistics-system-view-20acadb.md "Provides converter statistics.")
 
-[Reduce the Memory Footprint Using Page-Loadable Columns in SAP HANA NSE](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/786c621dd35e4534a2f955bf2f04a2e2.html "SAP HANA native storage extension (NSE) uses techniques to load only the pages into memory that include data that is relevant to your search. Pages containing data that is not accessed by your query are not loaded from disk.") :arrow_upper_right:
+[Reduce the Memory Footprint Using Page-Loadable Columns in SAP HANA NSE](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/786c621dd35e4534a2f955bf2f04a2e2.html "SAP HANA native storage extension (NSE) uses techniques to load only the pages into memory that include data that is relevant to your search. Pages containing data that is not accessed by your query are not loaded from disk.") :arrow_upper_right:
 
-[Data Access in the SAP HANA Cloud, SAP HANA Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/7791e61775f949d9989eafc443158cdb.html "The SAP HANA database in SAP HANA Cloud supports the integration of data from many data sources to enrich your applications and deliver in-depth analysis. These include federated queries, data replication, and processes to improve data quality.") :arrow_upper_right:
+[Data Access in the SAP HANA Cloud, SAP HANA Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/7791e61775f949d9989eafc443158cdb.html "The SAP HANA database in SAP HANA Cloud supports the integration of data from many data sources to enrich your applications and deliver in-depth analysis. These include federated queries, data replication, and processes to improve data quality.") :arrow_upper_right:
 

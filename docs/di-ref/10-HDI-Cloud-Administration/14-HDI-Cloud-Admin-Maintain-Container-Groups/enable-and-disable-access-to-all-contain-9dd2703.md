@@ -45,38 +45,38 @@ The HDI container-group administrator can use a function that will assign an app
 
 2.  Locate the target HDI container group where you want to enable cross-container access for the application or run-time user.
 
-3.  Grant the user access to containers in the target container group \("G" in this example\).
+3.  Grant the user access to containers in the target container group \(*<container\_group\_name\>* in this example\).
 
     ```sql
-    CALL _SYS_DI#G.GRANT_CONTAINERS_ACCESS_ROLE('', 'RT_USER', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    CALL _SYS_DI#<container_group_name>.GRANT_CONTAINERS_ACCESS_ROLE('', 'RT_USER', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     ```
 
-4.  Enable the configuration parameter “`enable_cross_container_access`” for container group "G".
+4.  Enable the configuration parameter “`enable_cross_container_access`” for container group *<container\_group\_name\>*.
 
     ```sql
     CREATE LOCAL TEMPORARY COLUMN TABLE #CONFIG_GROUP_PARAMETERS LIKE _SYS_DI.TT_PARAMETERS;
     INSERT INTO #CONFIG_GROUP_PARAMETERS (KEY, VALUE) VALUES ('enable_cross_container_access', 'True'); 
-    CALL _SYS_DI.CONFIGURE_CONTAINER_GROUP_PARAMETERS('G', #CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    CALL _SYS_DI.CONFIGURE_CONTAINER_GROUP_PARAMETERS('<container_group_name>', #CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     DROP TABLE #CONFIG_GROUP_PARAMETERS;
     ```
 
-    This enables DML access to all the containers in the HDI container group "G" for the run-time user "`RT_USER`". `RT_USER` is automatically granted DML access to any new containers which are added \(or moved\) to the HDI container group "G" after the group configuration parameter `enable_cross_container_access` is set to "True".
+    This enables DML access to all the containers in the HDI container group *<container\_group\_name\>* for the run-time user "`RT_USER`". `RT_USER` is automatically granted DML access to any new containers which are added \(or moved\) to the HDI container group *<container\_group\_name\>* after the group configuration parameter `enable_cross_container_access` is set to "True".
 
-5.  Disable DML access to containers inside the container group "G" for the run-time user `RT_USER`.
+5.  Disable DML access to containers inside the container group *<container\_group\_name\>* for the run-time user `RT_USER`.
 
     ```sql
     CREATE LOCAL TEMPORARY COLUMN TABLE #CONFIG_GROUP_PARAMETERS LIKE _SYS_DI.TT_PARAMETERS; 
     INSERT INTO #CONFIG_GROUP_PARAMETERS (KEY, VALUE) VALUES ('enable_cross_container_access', ''); 
-    CALL _SYS_DI.CONFIGURE_CONTAINER_GROUP_PARAMETERS('G', #CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    CALL _SYS_DI.CONFIGURE_CONTAINER_GROUP_PARAMETERS('<container_group_name>', #CONFIG_GROUP_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     DROP TABLE #CONFIG_GROUP_PARAMETERS; 
     ```
 
-    This revokes DML access to all the containers in the HDI container group "G" from the run-time user "`RT_USER`".
+    This revokes DML access to all the containers in the HDI container group *<container\_group\_name\>* from the run-time user "`RT_USER`".
 
 6.  Revoke the containers access role from the run-time user `RT_USER`.
 
     ```sql
-    CALL _SYS_DI#G.REVOKE_CONTAINERS_ACCESS_ROLE('', 'RT_USER', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
+    CALL _SYS_DI#<container_group_name>.REVOKE_CONTAINERS_ACCESS_ROLE('', 'RT_USER', _SYS_DI.T_NO_PARAMETERS, ?, ?, ?); 
     ```
 
 

@@ -18,7 +18,7 @@ ALTER USERGROUP <usergroup_name>
  [ { ENABLE | DISABLE } CLIENT CONNECT
  [ { ENABLE | DISABLE } CONNECT RESTRICTION { <restriction_name>[, ...] | ALL } ]
  [ DROP CONNECT RESTRICTION { <restriction_name>[, ...] | ALL } ]
- [ { ADD | ALTER } CONNECT RESTRICTION <connect_restriction>, ... ]
+ [ { ADD | ALTER } CONNECT RESTRICTION <connect_restriction_list> ]
 ```
 
 
@@ -126,7 +126,7 @@ ENABLE / DISABLE CONNECT RESTRICTION
 </b></dt>
 <dd>
 
-Enables or disables the named connection restrictions for an existing usergroup. *<restriction\_name\>* is a unique name that identifies the set of restricted connections. By default, a new the connection restriction is disabled and must be enabled before it can be used. Once enabled, connection attempts by all members of the user group are verified. If the connection does not satisfy at least one of the enabled connect restrictions, the connect attempt is denied.
+Enables or disables the named connect restrictions for the usergroup. If ALL is specified, then all connect restrictions of the usergroup are enabled or disabled. By default, a new connect restriction is disabled and must be enabled before it can be used.
 
 
 
@@ -148,12 +148,9 @@ ADD / ALTER CONNECT RESTRICTION
 </b></dt>
 <dd>
 
-Adds a new or overrides an existing connection restriction definition for an existing usergroup.
+Adds a new or overrides an existing connect restriction definition for an existing usergroup.
 
-```
-<connect_restriction> ::
- <restriction_name> IP { <ip_address> | ( <ip_address>, ... ) }
-```
+For more information, see *CREATE USERGROUP* in *SAP HANA Cloud, SAP HANA Database SQL Reference Guide*.
 
 
 
@@ -191,59 +188,35 @@ You must have the OPERATOR object privilege on the user group.
 The following example disables the password policy parameter set for the MyUserGroup usergroup:
 
 ```
-ALTER USERGROUP MyUserGroup DISABLE PARAMETER SET 'password policy';
+ALTER USERGROUP "MyUserGroup" DISABLE PARAMETER SET 'password policy';
 ```
 
-The following example changes MyUserGroup to allow connections to the database by members of the group:
+This example enables an existing connect restriction IPS\_4 for USERGROUP:
 
 ```
-ALTER USERGROUP MyUserGroup ENABLE CLIENT CONNECT;
+ALTER USERGROUP usergroup ENABLE CONNECT RESTRICTION IPS_V4;
 ```
 
-This example changes MyUserGroup to restrict connections to the database by members of the usergroup:
+This example disables all connect restrictions for USERGROUP:
 
 ```
-ALTER USERGROUP MyUserGroup DISABLE CLIENT CONNECT;
+ALTER USERGROUP usergroup DISABLE CONNECT RESTRICTION ALL;
 ```
 
-This example enables connection restriction IPS\_4 for Usergroup1.
+This example changes the IP/network addresses for the existing named connection restriction IPS\_V4 and IPS\_V6 for USERGROUP:
 
 ```
-ALTER USERGROUP Usergroup1 ENABLE CONNECT RESTRICTION IPS_V4;
-```
-
-This example disables all connection restrictions for Usergroup1.
-
-```
-ALTER USERGROUP Usergroup1 DISABLE CONNECT RESTRICTION ALL;
-```
-
-This example adds a new restriction named IPS\_V4 to Usergroup1:
-
-```
-ALTER USERGROUP Usergroup1 ADD CONNECT RESTRICTION ( IPS_V4 IP ('1.2.3.4', '1.2.3.4/8'), IPS_V6 IP ('1:2:3:4:5:6:7:8/16') );
-```
-
-This example changes the IP/network addresses for the existing named connection restriction IPS\_V4 and IPS\_V6 for Usergroup1:
-
-```
-ALTER USERGROUP Usergroup1 ALTER CONNECT RESTRICTION ( IPS_V4 IP ('1.2.3.4', '1.2.3.4/8'),  IPS_V6 IP ('1:2:3:4:5:6:7:8/16') );
-```
-
-This example drops connection restrictions IPS\_V4 and IPS\_V6 for Usergroup1:
-
-```
-ALTER USERGROUP Usergroup1 DROP CONNECT RESTRICTION IPS_V4, IPS_V6;
+ALTER USERGROUP Usergroup1 ALTER CONNECT RESTRICTION (IPS_V4 IP ('1.2.3.4', '1.2.3.4/8'), IPS_V6 IP ('1:2:3:4:5:6:7:8/16'));
 ```
 
 **Related Information**  
 
 
-[User Groups](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/b9174d035f274ce481387700c13b7d2c.html "User groups support a separation of user management tasks, allowing you to manage related users together.") :arrow_upper_right:
+[User Groups](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/b9174d035f274ce481387700c13b7d2c.html "User groups support a separation of user management tasks, allowing you to manage related users together.") :arrow_upper_right:
 
-[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
+[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
 
-[Password Exclude List](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/fe3ffb3d7ac24fddb80e3322c671299f.html "A password exclude list is a list of words that are not allowed as passwords or parts of passwords. A password exclude list can be managed for every database individually.") :arrow_upper_right:
+[Password Exclude List](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/fe3ffb3d7ac24fddb80e3322c671299f.html "A password exclude list is a list of words that are not allowed as passwords or parts of passwords. A password exclude list can be managed for every database individually.") :arrow_upper_right:
 
 [CREATE USERGROUP Statement \(Access Control\)](create-usergroup-statement-access-control-9869125.md "Creates a usergroup.")
 
@@ -262,4 +235,8 @@ ALTER USERGROUP Usergroup1 DROP CONNECT RESTRICTION IPS_V4, IPS_V6;
 [M\_EFFECTIVE\_PASSWORD\_POLICY System View](../../020-System-Views-Reference/022-Monitoring-Views/m-effective-password-policy-system-view-388378c.md "Provides information about password policy parameters for database users.")
 
 [USERGROUP\_CONNECT\_RESTRICTIONS System View](../../020-System-Views-Reference/021-System-Views/usergroup-connect-restrictions-system-view-57d3364.md "Provides details on connection restrictions for all user groups.")
+
+[VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION Function \(Security\)](../011-SQL-Functions/validate-usergroup-connect-restriction-function-security-c7a96e0.md "Displays whether a connect attempt would be possible given the active connect restrictions of a user group.")
+
+[VALIDATE\_USERGROUP\_CONNECT\_RESTRICTION\_DETAILS Function \(Security\)](../011-SQL-Functions/validate-usergroup-connect-restriction-details-function-security-508e173.md "Displays details of each connect restriction if a login were allowed for a specific condition.")
 

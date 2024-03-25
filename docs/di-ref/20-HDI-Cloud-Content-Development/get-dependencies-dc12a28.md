@@ -420,7 +420,7 @@ If not already present, the dependent files listed above first must be written t
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('t.hdbtable', 'COLUMN TABLE T ( A INTEGER )');
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('v.hdbview', 'VIEW V AS SELECT A FROM T');
 > INSERT INTO #PATHS (PATH, CONTENT) VALUES ('p.hdbprocedure', 'PROCEDURE P (OUT RESULT INT) LANGUAGE SQLSCRIPT AS BEGIN SELECT COUNT(*) INTO RESULT FROM V; end');
-> CALL C#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.WRITE(#PATHS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #PATHS;
 > ```
 
@@ -438,7 +438,7 @@ The following example shows how to deploy the files to the database:
 > INSERT INTO #DEPLOY_PATHS (PATH) VALUES ('p.hdbprocedure');
 > CREATE LOCAL TEMPORARY COLUMN TABLE #UNDEPLOY_PATHS LIKE _SYS_DI.TT_FILESFOLDERS;
 > CREATE LOCAL TEMPORARY COLUMN TABLE #PATH_PARAMETERS LIKE _SYS_DI.TT_FILESFOLDERS_PARAMETERS;
-> CALL C#DI.MAKE(#DEPLOY_PATHS, #UNDEPLOY_PATHS, #PATH_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
+> CALL <container name>#DI.MAKE(#DEPLOY_PATHS, #UNDEPLOY_PATHS, #PATH_PARAMETERS, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
 > DROP TABLE #DEPLOY_PATHS;
 > DROP TABLE #UNDEPLOY_PATHS;
 > DROP TABLE #PATH_PARAMETERS; 
@@ -465,7 +465,7 @@ In this variant, the command returns, for the given objects, the files providing
 > INSERT INTO #OBJECTS (DOMAIN, URI) VALUES ('db', 'V');
 > INSERT INTO #OBJECTS (DOMAIN, URI) VALUES ('db', 'P');
 > INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('variant', 'providers');
-> CALL C#DI.GET_DEPENDENCIES(#OBJECTS, #PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.GET_DEPENDENCIES(#OBJECTS, #PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #OBJECTS; 
 > DROP TABLE #PARAMETERS; 
 > ```
@@ -499,7 +499,7 @@ In this variant, the command returns, for the given files, the provided and requ
 > INSERT INTO #OBJECTS (DOMAIN, URI) VALUES ('', 'v.hdbview');
 > INSERT INTO #OBJECTS (DOMAIN, URI) VALUES ('', 'p.hdbprocedure');
 > INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('variant', 'provides_and_requires'); 
-> CALL C#DI.GET_DEPENDENCIES(#OBJECTS, #PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.GET_DEPENDENCIES(#OBJECTS, #PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #OBJECTS; 
 > DROP TABLE #PARAMETERS; 
 > ```
@@ -535,7 +535,7 @@ In this variant, the command returns, for the given objects, the files they dire
 > INSERT INTO #OBJECTS (DOMAIN, URI) VALUES ('', 'v.hdbview');
 > INSERT INTO #OBJECTS (DOMAIN, URI) VALUES ('', 'p.hdbprocedure'); 
 > INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('variant', 'depends');
-> CALL C#DI.GET_DEPENDENCIES(#OBJECTS, #PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.GET_DEPENDENCIES(#OBJECTS, #PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #OBJECTS; 
 > DROP TABLE #PARAMETERS; 
 > ```
@@ -568,7 +568,7 @@ In this variant, the command returns, for the given objects, the files they dire
 > INSERT INTO #OBJECTS (DOMAIN, URI) VALUES ('', 'v.hdbview');
 > INSERT INTO #OBJECTS (DOMAIN, URI) VALUES ('', 'p.hdbprocedure'); 
 > INSERT INTO #PARAMETERS (KEY, VALUE) VALUES ('variant', 'impacted');
-> CALL C#DI.GET_DEPENDENCIES(#OBJECTS, #PARAMETERS, ?, ?, ?, ?);
+> CALL <container name>#DI.GET_DEPENDENCIES(#OBJECTS, #PARAMETERS, ?, ?, ?, ?);
 > DROP TABLE #OBJECTS; 
 > DROP TABLE #PARAMETERS; 
 > ```

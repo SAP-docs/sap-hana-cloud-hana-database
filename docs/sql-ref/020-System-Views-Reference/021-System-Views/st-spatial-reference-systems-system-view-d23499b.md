@@ -460,7 +460,7 @@ Displays the transform definition settings for use when transforming data from t
 
 <a name="loiod23499bcd2951014ad38a3bd89faf03e__section_bdz_xvz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -473,5 +473,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [Spatial Data Types](../../010-SQL-Reference/spatial-data-types-8efe5a4.md "Spatial data types are used to store values that contain spatial data, such as points, lines, or polygons.")
 
-[HANA Spatial Support](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/e4672cc39b584ea1a79a134ec0b7859b.html "") :arrow_upper_right:
+[HANA Spatial Support](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/e4672cc39b584ea1a79a134ec0b7859b.html "") :arrow_upper_right:
 

@@ -26,6 +26,11 @@ In SAP HANA Deployment Infrastructure \(HDI\), an HDI container group is used fo
 4.  Confirm that the new container group has been created.
 
     > ### Tip:  
-    > The system view `_SYS_DI.M_ALL_CONTAINER_GROUPS` contains a list of **all** created HDI container groups.
+    > The system view `_SYS_DI.M_ALL_CONTAINER_GROUPS` contains a list of **all** created HDI container groups. For more information, see *Related Information* below.
 
+
+**Related Information**  
+
+
+[M\_ALL\_CONTAINER\_GROUPS](m-all-container-groups-0f41f81.md "View all HDI container groups in the database.")
 

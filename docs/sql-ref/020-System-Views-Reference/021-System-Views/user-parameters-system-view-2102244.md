@@ -86,7 +86,7 @@ Displays the parameter value.
 
 <a name="loio2102244575191014a7bde2c7e6b52081__section_ky3_yyz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
@@ -95,5 +95,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [USERS System View](users-system-view-2102609.md "Lists all users.")
 
-[Restrict Use of the CLIENT User Parameter](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/91af0e7d50a14936a388618974ef8dc1.html "Allow only authorized technical users to overwrite the value of the CLIENT parameter for a database connection or the value of the $$client$$ parameter in an SQL query.") :arrow_upper_right:
+[Restrict Use of the CLIENT User Parameter](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/91af0e7d50a14936a388618974ef8dc1.html "Allow only authorized technical users to overwrite the value of the CLIENT parameter for a database connection or the value of the $$client$$ parameter in an SQL query.") :arrow_upper_right:
 

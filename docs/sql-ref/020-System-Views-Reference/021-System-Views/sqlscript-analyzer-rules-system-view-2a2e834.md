@@ -76,7 +76,7 @@ NVARCHAR\(16\)
 </td>
 <td valign="top">
 
-Displays the classification of the rule: security, consistency, performance, and so on.
+Displays the classification of the rule, for example: security, consistency, performance,...
 
 </td>
 </tr>
@@ -137,14 +137,14 @@ Displays the recommendation on how to handle the rule.
 
 <a name="loio2a2e83453ebf444291a7ccb9f4951017__section_u4t_pvz_2zb"/>
 
-## Additional Information
+## Permissions
 
 Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 
 
-[SQLScript Code Analyzer](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/f7e1c7fbce6f4db49e29d7cc58b78384.html "The SQLScript Code Analyzer consists of two built-in procedures that scan CREATE FUNCTION and CREATE PROCEDURE statements and search for patterns indicating problems in code quality, security or performance.") :arrow_upper_right:
+[SQLScript Code Analyzer](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/f7e1c7fbce6f4db49e29d7cc58b78384.html "The SQLScript Code Analyzer consists of two built-in procedures that scan CREATE FUNCTION and CREATE PROCEDURE statements and search for patterns indicating problems in code quality, security or performance.") :arrow_upper_right:
 
-[Limitations in the SQLScript Code Analyzer](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/2c230ed67be44187907ddd38dcb61240.html "") :arrow_upper_right:
+[Limitations in the SQLScript Code Analyzer](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/2c230ed67be44187907ddd38dcb61240.html "") :arrow_upper_right:
 

@@ -30,7 +30,7 @@ INSERT INTO RTABLE VALUES (1);
 SELECT VAR_POP(A) "VARPOP" FROM RTABLE;
 ```
 
-The following example returns ***0.24*** as the population variance for the specified expression:
+The following example returns ***0.25*** as the population variance for the specified expression:
 
 ```
 INSERT INTO RTABLE VALUES (2);

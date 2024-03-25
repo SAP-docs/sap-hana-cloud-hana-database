@@ -10,15 +10,15 @@ As part of the process of defining the data model for your application, you crea
 
     Tables, views, constraints, indexes, etc.
 
--   SAP CAP Core Data and Services \(CD+S\)
+-   SAP CAP Core Data and Services \(CDS\)
 
-    Tables \(entities\), views, associations, etc.
+    Tables \(entities\), views, associations. For more information about developing database artifacts supported by CAP CDS, see *Related Information* below.
 
 
 **Related Information**  
 
 
-[SAP CAP CD+S Language Reference Documentation](https://cap.cloud.sap/docs/cds/)
+[SAP CAP CDS Language Reference Documentation](https://cap.cloud.sap/docs/cds/)
 
 [Creating Data Persistence Artifacts with SQL DDL](creating-data-persistence-artifacts-with-sql-ddl-a216fd8.md "You can use SQL DDL to define the underlying database objects that store and provide data for your application, for example, tables and views.")
 

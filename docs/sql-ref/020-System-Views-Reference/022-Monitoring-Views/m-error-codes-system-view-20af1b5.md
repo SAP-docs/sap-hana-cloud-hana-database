@@ -87,5 +87,5 @@ Displays the error description.
 
 [SQL Error Codes](../../010-SQL-Reference/sql-error-codes-20a78d3.md "Each SAP HANA error has a numeric error code. The M_ERROR_CODES system view contains information about the error codes.")
 
-[Supported Error Codes](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/83686b04386e4c009f57418bccb7d9ee.html "The following is a list of the error codes supported by the exit handler.") :arrow_upper_right:
+[Supported Error Codes](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/83686b04386e4c009f57418bccb7d9ee.html "The following is a list of the error codes supported by the exit handler.") :arrow_upper_right:
 

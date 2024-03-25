@@ -28,5 +28,5 @@ The Document Store is an optional feature of the SAP HANA database which you hav
 
 [JSON Collections](json-collections-66a8d33.md "JSON documents are grouped together as “collections ” that are stored in the SAP HANA Documentation Store (DocStore).")
 
-[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2023_4_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2024_1_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
 

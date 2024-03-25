@@ -16,6 +16,8 @@ Data definition statements define structures in the SAP HANA database.
 
 -   [ALTER STATISTICS Statement \(Data Definition\)](alter-statistics-statement-data-definition-c656476.md)
 
+-   [ALTER STRUCUTRED FILTER Statement \(Data Definition\)](alter-strucutred-filter-statement-data-definition-07b14e0.md)
+
 -   [ALTER TABLE Statement \(Data Definition\)](alter-table-statement-data-definition-20d329a.md)
 
 -   [ALTER VIEW Statement \(Data Definition\)](alter-view-statement-data-definition-3bc8951.md)
@@ -42,6 +44,8 @@ Data definition statements define structures in the SAP HANA database.
 
 -   [CREATE STATISTICS Statement \(Data Definition\)](create-statistics-statement-data-definition-20d5252.md)
 
+-   [CREATE STRUCTURED FILTER Statement \(Data Definition\)](create-structured-filter-statement-data-definition-f0238ff.md)
+
 -   [CREATE SYNONYM Statement \(Data Definition\)](create-synonym-statement-data-definition-20d5412.md)
 
 -   [CREATE TABLE Statement \(Data Definition\)](create-table-statement-data-definition-20d58a5.md)
@@ -63,6 +67,8 @@ Data definition statements define structures in the SAP HANA database.
 -   [DROP SEQUENCE Statement \(Data Definition\)](drop-sequence-statement-data-definition-20d7a85.md)
 
 -   [DROP STATISTICS Statement \(Data Definition\)](drop-statistics-statement-data-definition-20d7c59.md)
+
+-   [DROP STRUCUTRED FILTER Statement \(Data Definition\)](drop-strucutred-filter-statement-data-definition-897bc02.md)
 
 -   [DROP SYNONYM Statement \(Data Definition\)](drop-synonym-statement-data-definition-20d7e17.md)
 

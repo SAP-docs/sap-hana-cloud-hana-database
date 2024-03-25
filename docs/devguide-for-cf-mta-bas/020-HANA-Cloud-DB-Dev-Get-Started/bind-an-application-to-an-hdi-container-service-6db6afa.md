@@ -52,7 +52,7 @@ To bind an application to an HDI container service, perform the following steps:
 
     1.  Open the *Add Database Connection* Wizard.
 
-        In the *Database Connections* node, choose <span class="SAP-icons"></span> \(Add database connection\) to display the *Add Database Connection* Wizard.
+        In the *Database Connections* node, choose <span class="SAP-icons-V5"></span> \(Add database connection\) to display the *Add Database Connection* Wizard.
 
         > ### Note:  
         > To test the connection details \(for example, the host name, port number, user name and password\), check the option *Validate the database information*. The *Add database Connection* Wizard tries to connect to the specified database using the credentials provided and notifies you immediately if the connection attempt is successful or not.

@@ -12,6 +12,9 @@ To configure your multitargetr application to establish a connection to the SAP 
 
 The easiest way to define the required data source is to declare the keys for the data source in a resource file.
 
+> ### Tip:  
+> For database connections using Tomcat 10, you can replace references to the Tomcat datasource factory in the application's context.xml file, for example,`"tomcat.TomcatDatasourceFactor"` with `"jakarta.TomcatDatasourceFactory"`.
+
 > ### Example:  
 > For the Tomcat run time, you can create a `context.xml` file in the `META-INF/` directory with the following content:
 > 

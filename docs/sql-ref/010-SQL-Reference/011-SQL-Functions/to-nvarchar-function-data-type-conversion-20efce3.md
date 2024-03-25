@@ -42,7 +42,7 @@ The input value for the function. If *<value\>* is a datetime data type, and *<f
 
 Specifies the desired formatting to apply to the converted value. For datetime values, use *<format\>* to define the desired datetime output format \(for example, `YYYY/MM/DD`. See the *Datetime Data Types* topic in this guide for more information on possible datetime formats.
 
-To define other types of output formats, for example numbers with custom symbols, commas, zeros and so on, specify *<format\>* using the following conventions:
+To define other types of output formats \(for example numbers with custom symbols, commas, zeros and so on\), specify *<format\>* using the following conventions:
 
 -   9 - Return the number in the specified position; otherwise, return nothing.
 
@@ -76,6 +76,7 @@ The following data types can be converted to NVARCHAR using the TO\_NVARCHAR fun
 
 -   BIGINT, DAYDATE, DECIMAL, DOUBLE, FIXED12, FIXED16, FIXED8, INTEGER, REAL, SECONDDATE, SMALLDECIMAL, SMALLINT, TIME, TIMESTAMP, TINYINT, VARBINARY, VARCHAR
 -   CLOB, NCLOB
+-   REAL\_VECTOR
 
 
 
@@ -83,7 +84,7 @@ The following data types can be converted to NVARCHAR using the TO\_NVARCHAR fun
 
 ## Example
 
-The following example coverts the value `2009/12/31` to the NVARCHAR value ***09-12-31***.
+The following example converts the value `2009/12/31` to the NVARCHAR value ***09-12-31***.
 
 ```
 SELECT TO_NVARCHAR(TO_DATE('2009/12/31'), 'YY-MM-DD') "to nvarchar" FROM DUMMY;

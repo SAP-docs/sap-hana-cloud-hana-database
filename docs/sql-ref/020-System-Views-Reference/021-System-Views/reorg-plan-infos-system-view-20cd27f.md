@@ -65,15 +65,7 @@ Displays the value.
 </tr>
 </table>
 
-
-
-<a name="loio20cd27f275191014b538ef5faa5b00a2___r_e_o_r_g__p_l_a_n__i_n_f_o_s_1fulldesc_REORG_PLAN_INFOS"/>
-
-## Additional Information
-
-Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
-
-This view contains information about the last table redistribution plan generation with this database connection. The contents are stored for the current session and are deleted when the connection is closed. The following list describes the contents of the individual lines of this view \(***VALUE***\), as identified by ***KEY***:
+This view contains information about the most recent table redistribution plan generation with this database connection. The contents are stored for the current session and are deleted when the connection is closed. The following list describes the contents of the individual lines of this view \(***VALUE***\), as identified by ***KEY***:
 
 
 <dl>
@@ -122,6 +114,14 @@ Displays the parameter information of the last table redistribution plan generat
 
 </dd>
 </dl>
+
+
+
+<a name="loio20cd27f275191014b538ef5faa5b00a2___r_e_o_r_g__p_l_a_n__i_n_f_o_s_1fulldesc_REORG_PLAN_INFOS"/>
+
+## Permissions
+
+Unless otherwise specified, system views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all system views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

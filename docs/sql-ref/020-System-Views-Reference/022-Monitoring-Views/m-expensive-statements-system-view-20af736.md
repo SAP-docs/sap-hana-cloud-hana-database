@@ -933,5 +933,5 @@ Setting the value of the APPLICATION\_SOURCE is only available via internal APIs
 
 [M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS System View](m-expensive-statement-execution-location-statistics-system-view-80c32e9.md "Provides location statistics for expensive statements.")
 
-[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
+[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
 

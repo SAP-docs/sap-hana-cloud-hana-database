@@ -26,7 +26,7 @@ Check the contents of your database with SAP HANA Database Explorer.
 The SAP HANA Database Explorer enables you to view the run-time contents of your database module after the corresponding design-time artifacts have been deployed to the HDI container that is created and assigned to the module during deployment.
 
 > ### Tip:  
-> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. The tool is available on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Command Palette...* \> *Guided Development*\).
+> The *Get Started with SAP HANA* tutorial in SAP Business Application Studio's *Guided Development* tool helps you to complete this task. Choose ![](images/BAS_icon_GuidedDevCenter_b7736b4.svg) \(*Guided Development Center*\) in SAP Business Application Studio's *Views* pane or open the command palette \(*View* \> *Command Palette...*\) and search for *Guided Development Center*. In the list of guided development tutorials, choose *Create SAP HANA Database Applications & Artifacts* \> *Get Started with SAP HANA*.
 
 
 
@@ -53,7 +53,7 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
 
     3.  Start the embedded database explorer from the *SAP HANA Database Explorer* tool in the views pane of the SAP Business Application Studio.
 
-        In the views pane on the left-hand side of SAP Business Application Studio, choose <span class="FPA-icons"></span> \(SAP HANA Database Explorer\) to display a list of connections to SAP HANA databases and a corresponding catalog browser.
+        In the views pane on the left-hand side of SAP Business Application Studio, choose <span class="FPA-icons-V3"></span> \(SAP HANA Database Explorer\) to display a list of connections to SAP HANA databases and a corresponding catalog browser.
 
         Since the databases are associated with a Cloud Foundry development space, you must be logged on to Cloud Foundry to see the database list. If you are not already logged on to Cloud Foundry, *SAP HANA Database Explorer* prompts you to provide logon credentials.
 
@@ -70,12 +70,12 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
     1.  Expand the selected database in the *DATABASE LIST* pane to display a list of all the different categories of objects the database contains, for example: *Column Views*, *Tables*, *Procedures*, *Views*, etc.
 
         > ### Tip:  
-        > To locate a specific database name more quickly you can filter the list of databases displayed according to a defined string. For example, in the *DATABASE LIST* choose <span class="SAP-icons"></span> \(Select Database\)and type the desired string in the text box. Select one or more databases from the filtered list and choose *OK*. The list of selected databases is displayed, and the filter icon remains "active" to indicate that the list of databases is incomplete. To remove the filter, choose <span class="SAP-icons"></span> \(Select Database\), uncheck the selected databases in the filter list, and choose *OK*.
+        > To locate a specific database name more quickly you can filter the list of databases displayed according to a defined string. For example, in the *DATABASE LIST* choose <span class="SAP-icons-V5"></span> \(Select Database\)and type the desired string in the text box. Select one or more databases from the filtered list and choose *OK*. The list of selected databases is displayed, and the filter icon remains "active" to indicate that the list of databases is incomplete. To remove the filter, choose <span class="SAP-icons-V5"></span> \(Select Database\), uncheck the selected databases in the filter list, and choose *OK*.
 
     2.  Select a category, for example, *Tables* or *Column Views* to display all deployed objects of the selected category in the *CATALOG BROWSER*.
 
         > ### Tip:  
-        > To reduce the number of database objects displayed in the *CATALOG BROWSER* and find the object you are looking for more quickly, you can filter the list of database objects by name or part of a name. For example, in the *CATALOG BROWSER* choose <span class="SAP-icons"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Cancel\].
+        > To reduce the number of database objects displayed in the *CATALOG BROWSER* and find the object you are looking for more quickly, you can filter the list of database objects by name or part of a name. For example, in the *CATALOG BROWSER* choose <span class="SAP-icons-V5"></span> \(Apply filter\), type the desired name or part of a name in the text box provided, and press [Enter\]. To reset the filter, press [Cancel\].
 
     3.  Click a database object in the *CATALOG BROWSER* to display the object's metadata in the details pane.
 
@@ -87,7 +87,7 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
     4.  Right-click a database object in the *CATALOG BROWSER* to display a context-sensitive menu that you can use to perform the following actions:
 
         > ### Note:  
-        > The context-sensitive menu is only displayed if the selected database object is supported, and the list of menu options displayed changes according to the type of object selected, for example, table, user, procedure, etc. For more detailed information about the scope of each individual action, see *Context-sensitive Actions on Database Objects in Database Explorer* in *Related Information* below.
+        > The context-sensitive menu is only displayed if the selected database object is supported, and the list of menu options displayed changes according to the type of object selected, for example, table, view, procedure, etc. For more detailed information about the scope of each individual action, see *Context-sensitive Actions on Database Objects in Database Explorer* in *Related Information* below.
 
         -   *Open Data*: Preview the data returned by the SQL query run on the selected database object.
         -   *Copy \[Name | Full Name\]*: Copy \(to the clipboard\) the name of the selected database object along with \(*Full Name*\) the name of the schema where the object is located.\)
@@ -138,40 +138,70 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
 
     2.  Zoom in to an individual object in a schema and back out again to view all objects in the schema.
 
-        To zoom in and out of the dependency view, use the scroll-wheel on your mouse or the resize buttons <span class="FPA-icons"></span> and <span class="FPA-icons"></span>.
+        To zoom in and out of the dependency view, use the scroll-wheel on your mouse or the resize buttons <span class="FPA-icons-V3"></span> and <span class="FPA-icons-V3"></span>.
 
         > ### Tip:  
         > To collapse or expand an entire schema, double-click it.
 
-    3.  Show or hide any analytic privileges that are defined, for example, for an SQL view.
-
-    4.  Show or hide the `Minimap View`.
+    3.  Show or hide the minimap view.
 
         The minimap view \(![](images/BAS_FluentUI_contract_down_right_16_regular_2ffad45.svg) \(*Toggle Minimap*\)\) is a subpane that shows where the currently displayed objects are located in the context of a larger and more complicated dependency tree.
 
-    5.  Hide or show selected object types in the dependency viewer.
+        > ### Tip:  
+        > To locate and highlight an object in the minimap view, click the object in the main schema view.
 
-        -   Choose ![](images/BAS_FluentUI_eye-closed_16_regular_487012b.svg) \(*Hide nodes of selected types*\) and use the list provided to select the object types that you want to hide.
-        -   Choose <span class="FPA-icons"></span> to remove the object type from the list of hidden object types and show them in the depencency view again.
+    4.  Hide or show selected object types in the dependency viewer.
+
+        Choose :gear: and use the list provided in the *Hide Nodes of Selected Types* box to select the object types that you want to hide in the currently displayed dependency graph.
+
+        To remove the object type from the list of hidden object types and show them in the depencency view again, choose <span class="FPA-icons-V3"></span>.
+
+        > ### Tip:  
+        > If a graph seems to be small or incomplete, choose :gear: to display information about the current show/hide settings. Objects can be hidden because the schema to which they belong is collapsed, the graph-depth setting is too low, or specific object types have been excluded from the graph.
+
+    5.  Set the maximum depth \(scope\) of the dependency viewer.
+
+        To help navigation and reduce complexity, you can set the maximum number of links that can be displayed along a single dependency path between the root node \(the run-time database object selected when the dependency viewer is opened\) and other nodes in a dependency graph, as follows:
+
+        -   Locally, for the currently displayed dependency graph \(default: 3\):
+
+            Enter a value in the *Graph Depth \(Maximum\)* box in the dependency viewer's *Settings* dialog and choose *Apply Change*.
+
+        -   Globally, for all dependency graphs \(default: 3\):
+
+            In the tools pane, choose :gear:, then *Settings*, search for *Dependency Viewer: Default Graph Depth*, and enter a new \(non-default\) value, for example, 5.
+
+
+        > ### Note:  
+        > If the specified graph depth \(3, in this example\) is lower than the number of nodes in a long dependency path, then some nodes will not be shown. To ensure that all nodes in a long dependency path are displayed, you need to increase the graph-depth setting accordingly.
 
     6.  Save the currently displayed dependency view to a local file.
 
-        Choose <span class="SAP-icons"></span> \(Export as dot graph\)\), which you can then open and view in text form in a separate tab.
+        Choose <span class="FPA-icons-V3"></span> \(Save as...\), and choose the output format to use, for example:
+
+        -   *DOT*
+
+            The DOT format is used for describing hierarchical or layered "directed" graphs, for example, flowcharts or dependency trees.
+
+        -   *SVG*
+
+            The XML-based SVG format is used for defining simple two-dimensional scalable vector graphics.
+
 
     7.  Restore the default layout used in the dependency viewer.
 
-        Use <span class="SAP-icons"></span> \(Run layout\) to restore the items displayed in the dependency viewer to the layout used at the start of the current session, for example, after modifying the initial or default layout.
+        Use <span class="SAP-icons-V5"></span> \(Run layout\) to restore the items displayed in the dependency viewer to the layout used at the start of the current session, for example, after modifying the initial or default layout.
 
     8.  Lock \(or unlock\) the current layout of the items displayed in the dependency viewer.
 
-        Choose <span class="BusinessSuiteInAppSymbols"></span> \(Toggle graph lock\) to lock \(save\) any modifications made to the layout in the current session or unlock the current layout in order to enable changes..
+        Choose <span class="BusinessSuiteInAppSymbols-V2"></span> \(Toggle graph lock\) to lock \(save\) any modifications made to the layout in the current session or unlock the current layout in order to enable changes.
 
     9.  Display the metadata of a selected object.
 
         The metadata includes the definition of the object in SQL, for example, the name of the object, the name of the schema where the object is located, any parameter names as well as the SQL statement used to create the selected object.
 
         > ### Note:  
-        > In the dependency viewer, this feature is currently only available for the database object types "function" \(`hdbfunction`\), "procedure" \(`hdbprocedure`\) and "views" \(`hdbview` and `hdbcalculationview`\).
+        > In the dependency viewer, this feature is currently only available for the database object types "function" \(`hdbfunction`\), "procedure" \(`hdbprocedure`\), and "views" \(`hdbview` or `hdbcalculationview`\).
 
         To view the metadata of a database object in the dependency viewer, select the object in the displayed schema and choose *Open metadata view* in the object description pane.
 

@@ -22,7 +22,7 @@
 
 ## Context
 
-The *SAP HANA PROJECTS* explorer includes tools that enable you to manage the bindings to any user-provided services required by your SAP HANA database application. You can bind an application either to a new user-provided service that you create using the <span class="SAP-icons"></span> \(Add database connection\) tool in the *Database Connections* node or to a user-provided service that already exists.
+The *SAP HANA PROJECTS* explorer includes tools that enable you to manage the bindings to any user-provided services required by your SAP HANA database application. You can bind an application either to a new user-provided service that you create using the <span class="SAP-icons-V5"></span> \(Add database connection\) tool in the *Database Connections* node or to a user-provided service that already exists.
 
 > ### Tip:  
 > The list of user-provided services is displayed in *Database Connections* along with the current binding status, for example: ![](images/BAS_icon_dependencyBound_e45e7a9.svg) \(*bound service*\) or ![](images/BAS_icon_dependencyNotBound_1694e4a.svg) \(*unbound service*\). If a service is already bound to your application, the name of the bound service is included \(in brackets\), for example, *cross-container-service-1 \(UPS\)*.
@@ -39,7 +39,7 @@ The *SAP HANA PROJECTS* explorer includes tools that enable you to manage the bi
 
     1.  Start the add-database-connection Wizard.
 
-        Use the <span class="SAP-icons"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard.
+        Use the <span class="SAP-icons-V5"></span> \(Add database connection\) tool in the *Database Connections* node to start the *Add Database Connection* Wizard.
 
     2.  Specify a connection type for the new database connection.
 

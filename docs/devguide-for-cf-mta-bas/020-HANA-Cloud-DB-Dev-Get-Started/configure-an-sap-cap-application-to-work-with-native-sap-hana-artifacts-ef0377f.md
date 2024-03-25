@@ -208,7 +208,7 @@ To enable the use of native SAP HANA database artifacts in your SAP CAP applicat
 
     -   Graphical User Interface:
 
-        In SAP Business Application Studio, open the *SAP HANA Projects* pane, select the project you want to deploy, for example, `sapcapjava1`, and choose: <span class="FPA-icons"></span> \(Deploy\). The progress of the deployment is displayed in the *Terminal*.
+        In SAP Business Application Studio, open the *SAP HANA Projects* pane, select the project you want to deploy, for example, `sapcapjava1`, and choose: <span class="FPA-icons-V3"></span> \(Deploy\). The progress of the deployment is displayed in the *Terminal*.
 
     -   Command-line Interface:
 

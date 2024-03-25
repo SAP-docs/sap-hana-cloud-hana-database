@@ -16,7 +16,7 @@ You can change the run-time settings in your Java application's manifest file.
 
 ## Context
 
-You can specify the Java Virtual Machine \(JVM\) that your application needs by setting the *<JBP\_CONFIG\_COMPONENTS\>* environment variable in the application’s `manifest.yml` file before pushing the application to the run-time environment. Depending on the Java version your application requires, choose one of the options described in the following sections.
+You can specify the Java Virtual Machine \(JVM\) that your application needs by setting the *<JBP\_CONFIG\_COMPONENTS\>* environment variable \(for example, in the application’s `manifest.yml` file\) before pushing the application to the run-time environment. Depending on the Java version your application requires, choose one of the options described in the following sections.
 
 
 
@@ -94,16 +94,15 @@ Use the environment variable *<JBP\_CONFIG\_SAP\_MACHINE\_JDK\>* to configure th
 
 <!-- task\_ynm\_3sy\_lv -->
 
-## Set the TomEE 7 Run Time
+## Set the Tomcat or TomEE Run Time
 
 
+
+<a name="task_ynm_3sy_lv__context_qs3_vll_51c"/>
 
 ## Context
 
-The default Java run-time environment is “Tomcat”. However, you can change the desired Java run-time environment to “TomEE 7” by setting the *<TARGET\_RUNTIME\>* environment variable in the Java application's `manifest.yml`, as illustrated in the following examples:
-
-> ### Note:  
-> The outdated TomEE 1.7 version is no longer included in the SAP Java Buildpack. Although TomEE 1.7 will continue to be supported until the end of the deprecation period, it is recommended to migrate to TomEE 7 as soon as possible, as described in the *TomEE Migration Guide* listed in *Related Information* below. TomEE 7 is already included in previous versions of the SAP Java Buildpack.
+The default Java run-time environment in XS advanced is “Tomcat”. To select the Tomcat 9 runtime enviroment or a lower version, or the TomEE 7 runtime environment or a lower version, use the *<TARGET\_RUNTIME\>* environment variable in the Java application's `manifest.yml`, as illustrated in the following example:
 
 > ### Code Syntax:  
 > For TomEE 7
@@ -114,6 +113,133 @@ The default Java run-time environment is “Tomcat”. However, you can change t
 > 
 > ```
 
+The following table lists the values that are supported for *<TARGET\_RUNTIME\>*:
+
+**Supported Values for TARGET\_RUNTIME**
+
+
+<table>
+<tr>
+<th valign="top">
+
+TARGET\_RUNTIME
+
+</th>
+<th valign="top">
+
+Run-time Version
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+tomcat \(default\)
+
+</td>
+<td valign="top">
+
+Apache Tomcat 8 \(XS advanced <= 1.1.3\)
+
+Apache Tomcat 9 \(XS advanced \>= 1.1.4\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tomcat8
+
+</td>
+<td valign="top">
+
+Apache Tomcat 8 \(out of maintenance\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tomcat9
+
+</td>
+<td valign="top">
+
+Apache Tomcat 9
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tomcat10
+
+</td>
+<td valign="top">
+
+Apache Tomcat 10
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tomee7
+
+</td>
+<td valign="top">
+
+Apache TomEE 7
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+tomee
+
+</td>
+<td valign="top">
+
+Apache TomEE 1.7 \(out of maintenance\)
+
+</td>
+</tr>
+</table>
+
+To configure Tomcat10 or higher, use the property *<JBP\_CONFIG\_TOMCAT\>* instead, as shown in the following example:
+
+> ### Code Syntax:  
+> For TomCat \>=10
+> 
+> ```
+> env:
+>     JBP_CONFIG_TOMCAT: "{tomcat: {version: 10.+}}" 
+> ```
+
+To configure Tomee9 or higher, use the property *<JBP\_CONFIG\_TOMEE\>* instead, as shown in the following example:
+
+> ### Code Syntax:  
+> For TomEE \>=9
+> 
+> ```
+> env:
+>     JBP_CONFIG_TOMEE: "{tomee: {version: 9.+}}" 
+> ```
+
+> ### Note:  
+> Tomcat 10 and TomEE 9 must be configured with SAP machine version 17.
+
+> ### Code Syntax:  
+> For TomCat 10
+> 
+> ```
+> env:
+>     JBP_CONFIG_COMPONENTS: '{ "jres": ["com.sap.xs.java.buildpack.jre.SAPMachineJRE"] }' 
+>     JBP_CONFIG_SAP_MACHINE_JDK: '{ "version": "17.+" }' 
+>     JBP_CONFIG_TOMCAT: "{tomcat: {version: 10.+}}" 
+> ```
+
 <a name="task_nwz_fhw_3v"/>
 
 <!-- task\_nwz\_fhw\_3v -->
@@ -121,6 +247,8 @@ The default Java run-time environment is “Tomcat”. However, you can change t
 ## Configure Memory Sizes
 
 
+
+<a name="task_nwz_fhw_3v__context_rs3_vll_51c"/>
 
 ## Context
 
@@ -134,7 +262,7 @@ The HEAP, METASPACE and STACK memory types are configured with a corresponding d
 
 -   Configure the memory sizes during the staging phase.
 
-    Provide the *<JBP\_CONFIG\_SAPJVM\>* \(or *<JBP\_CONFIG\_SAP\_MACHINE\_\[JRE|JDK\]\>* if you use SapMachine\) environment variable in the `manifest.yml` file of the application and then stage the application.
+    Provide the *<JBP\_CONFIG\_SAPJVM\>* \(or *<JBP\_CONFIG\_SAP\_MACHINE\_\[JRE|JDK\]\>* if you use SAPMACHINE\) environment variable in the `manifest.yml` file of the application and then stage the application.
 
     > ### Example:  
     > Sample `manifest.yml`
@@ -146,10 +274,10 @@ The HEAP, METASPACE and STACK memory types are configured with a corresponding d
     >   memory: 512M
     > ...
     >   env:
-    >     JBP_CONFIG_SAPJVM: '{ "memory_calculator": { "memory_heuristics": { "heap": 85, "stack": 10 } } }'
+    >     JBP_CONFIG_SAPJVM:  '{ "memory_calculator": { "memory_heuristics": { "heap": 85, "stack": 10 } } }'
     > ```
 
-    For more information about memory types for the Cloud Foundry Java run-time environment, see *Memory Size Options* in *Related Information*.
+    For more information about memory types for the XS advanced Java run-time environment, see *Memory Size Options* in *Related Information*.
 
 -   Configure the memory sizes during the application run time.
 
@@ -173,11 +301,13 @@ The HEAP, METASPACE and STACK memory types are configured with a corresponding d
 
 
 
+<a name="task_vq2_tlw_3v__context_ss3_vll_51c"/>
+
 ## Context
 
 You can add custom JVM properties as this configuration is done once and can be changed only when the application is re-staged.
 
-For more information about the Java run-time options, see *Related Links*.
+For more information about the Java run-time options in XS advanced, see *Related Links*.
 
 
 
@@ -203,17 +333,17 @@ For more information about the Java run-time options, see *Related Links*.
     > ### Note:  
     > A single quote is used to enclose the *<JBP\_CONFIG\_JAVA\_OPTS\>* string in the YML file because the string can contain any one \(or combination\) of the following characters: *:*, *\{*, *\}*, *\[*, *\]*, *,*, *&*, *\**, *\#*, *?*, *|*, *\-*, *<*, *\>*, *=*, *!*, *%*, *@*, *\\*.
 
--   Set the environment variable with a the `cf set-env` command.
+-   Set the environment variable with a the `xs set-env` command.
 
-    If the application is already available in Cloud Foundry, and the application developer wants to fine-tune the JVM additionally with an additional or modified property, a new value for the *<JBP\_CONFIG\_JAVA\_OPTS\>* environment variable can be specified with the `cf set-env` command. The new values will overwrite the default \(or set\) values in the corresponding build pack the next time the application is staged.
+    If the application is already available on SAP HANA XS advanced and the application developer wants to fine-tune the JVM additionally with an additional or modified property, a new value for the *<JBP\_CONFIG\_JAVA\_OPTS\>* environment variable can be specified with the `xs set-env` command. The new values will overwrite the default \(or set\) values in the corresponding `buildpack` the next time the application is staged.
 
     > ### Example:  
     > ```
-    > cf set-env myapp JBP_CONFIG_JAVA_OPTS '{ "java_opts": "-Dlog4j2.debug=\"true\" -DcustomProperty=\"<custom_value>\"" }'
+    > xs set-env myapp JBP_CONFIG_JAVA_OPTS '{ "java_opts": "-Dlog4j2.debug=\"true\" -DcustomProperty=\"<custom_value>\"" }'
     > ```
 
     > ### Note:  
-    > When the Java options are specified on the command line with the `cf set-env` command, the string defining the new values must be enclosed in double quotes, for example, <code>“<i class="varname">&lt;New-config_values&gt;</i>”</code>.
+    > When the Java options are specified on the command line with the `xs set-env` command, the string defining the new values must be enclosed in double quotes, for example, <code>“<i class="varname">&lt;New-config_values&gt;</i>”</code>.
 
 
 <a name="task_sbr_gp5_plb"/>

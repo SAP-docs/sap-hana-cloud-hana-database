@@ -263,7 +263,7 @@ ALTER SYSTEM REMOVE ABSTRACT SQL PLAN RELATED OBJECT DEFINITION ALL;
 **Related Information**  
 
 
-[SQL Plan Stability](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2023_4_QRC/en-US/deab4aee414e4b00a3df5666a44adfff.html "SQL Plan Stability can be used to guarantee the consistent optimal performance of select statements by capturing query execution plans so that exactly the same plan can be reused when the query is executed again.") :arrow_upper_right:
+[SQL Plan Stability](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/deab4aee414e4b00a3df5666a44adfff.html "SQL Plan Stability can be used to guarantee the consistent optimal performance of select statements by capturing query execution plans so that exactly the same plan can be reused when the query is executed again.") :arrow_upper_right:
 
 [ALTER SYSTEM \{ADD | REMOVE\} ABSTRACT SQL PLAN FILTER \(System Management\)](alter-system-add-remove-abstract-sql-plan-filter-system-management-9c6ac16.md "Starts or stops capturing abstract SQL plans for queries that match the specified filters.")
 

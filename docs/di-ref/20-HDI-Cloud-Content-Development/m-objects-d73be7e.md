@@ -243,28 +243,28 @@ The name of the object that the current object depends on, for example, a synony
 
 ## Examples
 
-Select all objects that were manually created in run-time schema of the container “C”:
+Select all objects that were manually created in run-time schema of the container *<container name\>*:
 
 ```
-SELECT * FROM C#DI.M_OBJECTS WHERE PATH IS NULL
+SELECT * FROM <container name>#DI.M_OBJECTS WHERE PATH IS NULL
 ```
 
 Select all objects in container “C” which are no longer owned by the container’s object owner:
 
 ```
-SELECT * FROM C#DI.M_OBJECTS WHERE PATH IS NOT NULL AND OWNER_NAME != 'C#OO' 
+SELECT * FROM <container name>#DI.M_OBJECTS WHERE PATH IS NOT NULL AND OWNER_NAME != 'C#OO' 
 ```
 
 Select all objects that should be deployed in container “C”, but have been manually deleted:
 
 ```
-SELECT * FROM C#DI.M_OBJECTS WHERE PATH IS NOT NULL AND OBJECT_TYPE IS NULL
+SELECT * FROM <container name>#DI.M_OBJECTS WHERE PATH IS NOT NULL AND OBJECT_TYPE IS NULL
 ```
 
 Select all invalid objects in container “C”:
 
 ```
-SELECT * FROM C#DI.M_OBJECTS WHERE IS_VALID='FALSE' 
+SELECT * FROM <container name>#DI.M_OBJECTS WHERE IS_VALID='FALSE' 
 ```
 
 **Related Information**  

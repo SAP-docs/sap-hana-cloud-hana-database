@@ -330,7 +330,7 @@ ALTER REMOTE SOURCE RS1 UNSET PROPERTY ALL;
 **Related Information**  
 
 
-[Creating Remote Sources (Smart Data Access)](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/e8274a1cf62b4aa5b58f261bc904a4af.html "Create a smart data access remote source using SQL syntax or the SAP HANA database explorer.") :arrow_upper_right:
+[Creating Remote Sources (Smart Data Access)](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/e8274a1cf62b4aa5b58f261bc904a4af.html "Create a smart data access remote source using SQL syntax or the SAP HANA database explorer.") :arrow_upper_right:
 
-[Configure Remote Source Capabilities](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2023_4_QRC/en-US/59e0ffd04ce04eb792331315c9e984fb.html "Customize the behavior of capabilities for your remote source.") :arrow_upper_right:
+[Configure Remote Source Capabilities](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/59e0ffd04ce04eb792331315c9e984fb.html "Customize the behavior of capabilities for your remote source.") :arrow_upper_right:
 

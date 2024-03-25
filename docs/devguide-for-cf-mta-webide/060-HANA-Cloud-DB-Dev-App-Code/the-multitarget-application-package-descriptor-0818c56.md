@@ -27,13 +27,13 @@ Typically, the `package.json` file is created with the node.js command `npm init
 >     "url": "git@github.acme.com:xs-samples/nodejs-hello-world.git"
 >   },
 >   "dependencies": {
->     "@sap/xsjs": "^1.1.9"
->     "@sap/approuter": ">=1.0.1 <2.0.1"
->     "@sap/hdbext": "^1.0.2"
->     "@sap/xssec": "^1.0.5"
+>     "@sap/async-xsjs": "^2.0.0"
+>     "@sap/approuter": ">=14.0.0 <14.4.3"
+>     "@sap/hdbext": "^8.0.2"
+>     "@sap/xssec": "^3.6.0"
 >   },
 >   "engines": {
->     "node": ">=0.10.x <0.12"
+>     "node": ">=18.x <20.0"
 >   },
 >   "scripts": {
 >     "start": "node --max-old-space-size=400 --expose-gc main.js"
@@ -96,7 +96,7 @@ For Node.js, the client security library is an `npm` module called `@sap/xssec`.
 > ### Sample Code:  
 > ```
 > "dependencies": {
->     "@sap/xssec": "^1.0.5"
+>     "@sap/xssec": "^3.6.0"
 >   },
 > 
 > ```

@@ -33,15 +33,15 @@ INSERT INTO <table_name> [ PARTITION <num> ]
 </b></dt>
 <dd>
 
-Specifies the table or view where the insert is to be performed, with optional schema name.
+Specifies the table or view where the insert is to be performed, with an optional schema name.
 
 ```
 <table_name> ::= [ [ <database_name>.]<schema_name>.]<identifier>
 ```
 
-For views, the view must only reference a single table, have no GROUP BY clause, and have an INSTEAD OF TRIGGER defined.
+For views, they must reference only a single table and should not include a GROUP BY clause.
 
-For linked database, *<database\_name\>* is the name of the remote source. *<identifier\>* is the name of the table on the remote source.
+For linked databases, *<database\_name\>* is the name of the remote source. *<identifier\>* is the name of the table on the remote source.
 
 
 
@@ -88,7 +88,6 @@ Specifies a list of column identifiers, ordered in the order of values in the *<
 <schema_name> ::= <identifier>
 <table_name> ::= <identifier>
 <column_name> ::= <identifier>
-
 ```
 
 If the column list is omitted, then the database performs the insert using all the columns in the table. A column that is not included in the column list is filled using the column's default value. When altering a table, always specify the column names to avoid potential issues where the order of the columns has changed.
@@ -186,20 +185,18 @@ The WITH NOWAIT clause supports:
 -   column table
 -   partitioned column table
 -   projection view on column table
--   system versioned table
+-   system-versioned table
 -   INSERT operator
-
-.
 
 WITH NOWAIT does not support:
 
 -   row table
 -   application-app-time table
--   temp table
+-   temporary table
 -   virtual table
 -   UPDATE, DELETE, REPLACE, or MERGE-INTO operators
 -   INSERT inside a trigger or foreign key in a cascaded manner
--   Cascade to a trigger or foreign key
+-   Cascade to a trigger or a foreign key
 
 
 

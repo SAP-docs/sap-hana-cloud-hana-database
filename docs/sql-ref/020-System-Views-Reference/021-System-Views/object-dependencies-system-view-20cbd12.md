@@ -161,7 +161,7 @@ NVARCHAR\(32\)
 </td>
 <td valign="top">
 
-Displays the type of the base dependency.
+Displays the object type of the base dependency.
 
 </td>
 </tr>
@@ -209,11 +209,11 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [M\_TEMPORARY\_OBJECT\_DEPENDENCIES System View](../022-Monitoring-Views/m-temporary-object-dependencies-system-view-20c786a.md "Provides information about temporary object dependencies for transient objects.")
 
-[Object Dependencies View Examples](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/38608b6773a6423986785de97d0d1ea8.html "") :arrow_upper_right:
+[Object Dependencies View Examples](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/38608b6773a6423986785de97d0d1ea8.html "") :arrow_upper_right:
 
-[SYS.OBJECT_DEPENDENCIES](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2023_4_QRC/en-US/5ce9a6584eb84f10afbbf2b133534932.html "Dependencies between objects, for example, views that refer to a specific table") :arrow_upper_right:
+[SYS.OBJECT_DEPENDENCIES](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/5ce9a6584eb84f10afbbf2b133534932.html "Dependencies between objects, for example, views that refer to a specific table") :arrow_upper_right:
 
-[Reduce Dependencies Between Statements](https://help.sap.com/viewer/4466fb5b5e3f4388a00b44aad5a4bffa/2023_4_QRC/en-US/afc236f8178546238c96a576c462e0c0.html "One of the most important methods for speeding up processing in the SAP HANA database is through massively parallelized query execution.") :arrow_upper_right:
+[Reduce Dependencies Between Statements](https://help.sap.com/viewer/4466fb5b5e3f4388a00b44aad5a4bffa/2024_1_QRC/en-US/afc236f8178546238c96a576c462e0c0.html "One of the most important methods for speeding up processing in the SAP HANA database is through massively parallelized query execution.") :arrow_upper_right:
 
-[Object Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2023_4_QRC/en-US/d6311b15a7e74e01b3f660f7d175b318.html "Object privileges are SQL privileges that are used to allow access to and modification of database objects.") :arrow_upper_right:
+[Object Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/d6311b15a7e74e01b3f660f7d175b318.html "Object privileges are SQL privileges that are used to allow access to and modification of database objects.") :arrow_upper_right:
 
