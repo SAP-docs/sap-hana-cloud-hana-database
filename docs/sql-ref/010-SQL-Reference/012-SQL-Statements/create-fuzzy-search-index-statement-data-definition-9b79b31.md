@@ -33,7 +33,7 @@ Fuzzy search indexes are used to make a fuzzy search faster and they can be crea
 
 The DROP INDEX and RENAME INDEX statements can be used to managed fuzzy search indexes.
 
-NCLOBs must be defined with MEMORY THRESHOLD NULL and NCLOB columns support search mode TEXT only.
+NCLOB columns support search mode TEXT only.
 
 
 
