@@ -495,3 +495,11 @@ Removes progress information.
 </tr>
 </table>
 
+
+
+<a name="loio20b1d83875191014b028e076c874e9d7__section_wzz_l11_ybc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+

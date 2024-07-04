@@ -332,9 +332,9 @@ END;
 **Related Information**  
 
 
-[Anonymous Block](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/dec9d68044bd49bcbb45c990ba49c81d.html "An anonymous block is an executable DML statement which can contain imperative or declarative statements.") :arrow_upper_right:
+[Anonymous Block](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/dec9d68044bd49bcbb45c990ba49c81d.html "An anonymous block is an executable DML statement which can contain imperative or declarative statements.") :arrow_upper_right:
 
-[Explicit Parallel Execution](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/8db200a4f585490c81c4930689ec1a5c.html "") :arrow_upper_right:
+[Explicit Parallel Execution](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/8db200a4f585490c81c4930689ec1a5c.html "") :arrow_upper_right:
 
 [CREATE PROCEDURE Statement \(Procedural\)](create-procedure-statement-procedural-20d4674.md "Creates a procedure that uses the specified programming language.")
 

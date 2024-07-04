@@ -73,5 +73,5 @@ To enable access to elements defined in an array, a standard index operator `[#]
 
 [Import JSON Documents into a Document-Store Collection](import-json-documents-into-a-document-store-collection-cf46dc4.md "Import JSON data from a CSV file into a collection in the SAP HANA Document Store.")
 
-[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2024_1_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2024_3_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
 

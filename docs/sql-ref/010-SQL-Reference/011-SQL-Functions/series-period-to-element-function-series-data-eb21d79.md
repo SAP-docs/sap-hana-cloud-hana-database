@@ -261,13 +261,3 @@ SELECT SERIES_PERIOD_TO_ELEMENT(
     ROUND_HALF_DOWN) "element" FROM DUMMY;
 ```
 
-The previous example could be written like the following fictitious example to refer to an equidistant series table:
-
-```
-CREATE COLUMN TABLE ExampleSeriesTable(id INTEGER, ts TIMESTAMP)
- SERIES(SERIES KEY(id) EQUIDISTANT INCREMENT BY INTERVAL 1 DAY
- MINVALUE '2014-01-01' MAXVALUE '2014-12-31' PERIOD FOR SERIES(ts));  
-
-SELECT SERIES_PERIOD_TO_ELEMENT('2014-01-05 12:00:00', SERIES TABLE ExampleSeriesTable, ROUND_HALF_DOWN) "element" FROM DUMMY;
-```
-

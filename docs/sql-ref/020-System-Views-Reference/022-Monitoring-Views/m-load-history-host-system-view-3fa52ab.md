@@ -267,6 +267,14 @@ Displays the bytes written to swap by all processes in bytes per sample.
 </tr>
 </table>
 
+
+
+<a name="loio3fa52abf1d854edbb7342a69364bcb0e__section_hyt_c21_ybc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

@@ -259,7 +259,7 @@ NVARCHAR\(4000\)
 </td>
 <td valign="top">
 
-
+Displays the constant parameter string to pass during execution when the target object type is PROCEDURE or TASK.
 
 </td>
 </tr>
@@ -276,7 +276,7 @@ NVARCHAR\(6\)
 </td>
 <td valign="top">
 
-Displays the remote subscription change mode: NULL, NORMAL, UPSERT, or INSERT. Displays the constant parameter string to pass during execution when the target object type is PROCEDURE or TASK.
+Displays the remote subscription change mode: NULL, NORMAL, UPSERT, or INSERT.
 
 </td>
 </tr>

@@ -935,7 +935,7 @@ EXPORT IMEX_DEMO."*" INTO 'azure://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_demo/IMEX_D
 **Related Information**  
 
 
-[Security Recommendations for SAP HANA Database](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/bc54d87673bc484faadb8330f43edc40.html "Recommendations to help you operate and configure the SAP HANA database securely") :arrow_upper_right:
+[Security Recommendations for SAP HANA Database](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/bc54d87673bc484faadb8330f43edc40.html "Recommendations to help you operate and configure the SAP HANA database securely") :arrow_upper_right:
 
 [EXPORT INTO Statement \(Data Import Export\)](export-into-statement-data-import-export-6a6f59b.md "Exports a table or view into a single-file, multi-file, or directory.")
 

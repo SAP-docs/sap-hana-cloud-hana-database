@@ -348,7 +348,7 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the total remote request fetch duration.
+Displays the total remote request fetch duration in milliseconds.
 
 </td>
 </tr>
@@ -399,7 +399,7 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the remote server processing time in milliseconds.
+Displays the remote server processing time in microseconds.
 
 </td>
 </tr>
@@ -416,7 +416,7 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the remote server CPU time.
+Displays the remote server CPU time in microseconds.
 
 </td>
 </tr>
@@ -547,7 +547,7 @@ PASSPORT\_CONNECTION\_ID
 </td>
 <td valign="top">
 
-VARBINARY
+VARBINARY\(16\)
 
 </td>
 <td valign="top">

@@ -371,10 +371,18 @@ Displays the number of expensive creations of DML contexts.
 </tr>
 </table>
 
+
+
+<a name="loio6498399c829b441696a4fa9b49886091__section_k3z_dbv_tbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
 [M\_CS\_LOG\_REPLAY\_QUEUE\_STATISTICS\_RESET System View](m-cs-log-replay-queue-statistics-reset-system-view-415dc16.md "Provides information about column store log replay queue statistics since the last reset.")
 
-[HOST_SERVICE_REPLICATION View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/7df5ea067be947e7b0b09a13234f1d80.html "Specifies the service replication statistics per host.") :arrow_upper_right:
+[HOST_SERVICE_REPLICATION View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_3_QRC/en-US/7df5ea067be947e7b0b09a13234f1d80.html "Specifies the service replication statistics per host.") :arrow_upper_right:
 

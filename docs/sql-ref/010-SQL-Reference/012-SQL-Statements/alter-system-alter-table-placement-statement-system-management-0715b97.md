@@ -471,7 +471,7 @@ ALTER SYSTEM ALTER TABLE PLACEMENT LOCATION MyLocation UNSET;
 **Related Information**  
 
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [TABLE\_PLACEMENT System View](../../020-System-Views-Reference/021-System-Views/table-placement-system-view-522cc8e.md "Provides table placement information.")
 

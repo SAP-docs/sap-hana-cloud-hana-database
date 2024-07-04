@@ -121,5 +121,5 @@ Indicates whether or not the persistence encryption is active: TRUE/FALSE.
 
 [M\_PERSISTENCE\_ENCRYPTION\_STATUS System View](m-persistence-encryption-status-system-view-20b7570.md "Provides information about persistence encryption.")
 
-[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
+[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
 

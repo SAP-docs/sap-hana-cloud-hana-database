@@ -284,6 +284,14 @@ Indicates whether the license is a local database local license: TRUE/FALSE.
 </tr>
 </table>
 
+
+
+<a name="loio1d7e7f52f6574a238c137e17b0840673__section_p4y_311_ybc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

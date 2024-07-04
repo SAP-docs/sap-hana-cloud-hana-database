@@ -72,9 +72,6 @@ To create and activate a database role, perform the following steps:
 
     Locate and right-click the role-definition file that you created in the previous step, for example, `admin.hdbrole`, choose *Open with* \> *Code Editor*, and add the following SQL DDL code that defines the role scope:
 
-    > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
-
     The following code example is provided for illustration purposes only.
 
     > ### Sample Code:  
@@ -107,7 +104,7 @@ To create and activate a database role, perform the following steps:
     > ```
 
     > ### Tip:  
-    > By default, *SAP Web IDE Full-stack* opens a role-definition artifact in the *Role Editor*, which displays a graphical representation of the role. To switch between the *Role Editor* and the text-based *Code Editor*, right-click the role-definition artifact that you want to open, and choose *Open with* \> *\[Code Editor | Role Editor\]*. Changes to the open artifact are synchronized between both editors. Note that the *Role Editor* is not able to open an incorrectly formatted file.
+    > By default, *SAP Web IDE Full-stack* opens a role-definition artifact in the *Role Editor*, which displays a graphical representation of the role. To switch between the *Role Editor* and the text-based *Code Editor*, you can either choose the toggle-editor button in the tool bar next to the help icon or simply right-click the role-definition artifact that you want to open, and choose *Open with* \> *\[Code Editor | Role Editor\]*. Changes to the open artifact are synchronized between both editors. Note that the *Role Editor* is not able to open an incorrectly formatted file.
 
 5.  Create the role-definition file `adminOwner.hdbrole`.
 
@@ -215,7 +212,7 @@ To create and activate a database role, perform the following steps:
 **Related Information**  
 
 
-[Database Role Syntax (.hdbrole in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
+[Database Role Syntax (.hdbrole in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
 
 [Create a Database View with SQL Data Definition Language](create-a-database-view-with-sql-data-definition-language-4920a3a.md "Define a design-time database view using the SQL Data Definition Language (DDL) syntax.")
 

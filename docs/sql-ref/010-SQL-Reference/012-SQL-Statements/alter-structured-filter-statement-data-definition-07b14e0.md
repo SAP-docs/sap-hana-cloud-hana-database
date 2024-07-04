@@ -1,6 +1,6 @@
 <!-- loio07b14e01c65a4e7b89b779defb12c97c -->
 
-# ALTER STRUCUTRED FILTER Statement \(Data Definition\)
+# ALTER STRUCTURED FILTER Statement \(Data Definition\)
 
 Alter an existing a structured filter.
 

@@ -150,6 +150,14 @@ Displays the timestamp when the dynamic result cache entry was decided.
 
 
 
+<a name="loioe5a5b8401be54a49a55f7799e59d564f__section_dgp_4gn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 ## Additional Information
 
 Cache entries that exceed configurable size \(defined in the `.ini` file\) are automatically removed and added to M\_DYNAMIC\_RESULT\_CACHE\_EXCLUSION. If the view is marked to be excluded, then redefine the view definition rather than increasing the configurable size.
@@ -167,5 +175,5 @@ Cache entries that exceed configurable size \(defined in the `.ini` file\) are a
 
 [ALTER SYSTEM REMOVE RESULT CACHE ENTRY Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-remove-result-cache-entry-statement-system-management-2124566.md "Removes the result cache entry for the specified cache ID.")
 
-[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
+[Results Caching for Virtual Tables and Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/7dc806a729c64cd589f0d58d3b77aae1.html "Only view results caching is supported for virtual tables and linked database.") :arrow_upper_right:
 

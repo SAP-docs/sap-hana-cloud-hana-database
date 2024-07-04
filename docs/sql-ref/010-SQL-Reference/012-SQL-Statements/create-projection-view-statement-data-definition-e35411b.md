@@ -345,7 +345,7 @@ CREATE PROJECTION VIEW v2 AS SELECT * FROM v1; -- you can select from the view i
 **Related Information**  
 
 
-[Projection Views (.hdbprojectionview and .hdbprojectionviewconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/d8a3392c1287420ca82ac3090cd5049b.html "Transforms a design-time projection-view definition into a database object.") :arrow_upper_right:
+[Projection Views (.hdbprojectionview and .hdbprojectionviewconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/d8a3392c1287420ca82ac3090cd5049b.html "Transforms a design-time projection-view definition into a database object.") :arrow_upper_right:
 
 [DROP VIEW Statement \(Data Definition\)](drop-view-statement-data-definition-20d9c05.md "Removes a view from the database.")
 

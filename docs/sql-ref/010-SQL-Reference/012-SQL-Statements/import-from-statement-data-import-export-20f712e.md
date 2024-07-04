@@ -369,6 +369,7 @@ WITH <import_from_option_list>
  | SKIP FIRST <number_of_rows_to_skip> ROW
  | COLUMN LIST IN FIRST ROW 
  | COLUMN LIST ( <column_name_list> ) 
+ | FILE COLUMN LIST ( <file_column_list> )
  | RECORD DELIMITED BY <string_for_record_delimiter>
  | FIELD DELIMITED BY <string_for_field_delimiter>
  | OPTIONALLY ENCLOSED BY <character_for_optional_enclosure>
@@ -376,6 +377,7 @@ WITH <import_from_option_list>
  | DATE FORMAT <string_for_date_format>
  | TIME FORMAT <string_for_time_format>
  | TIMESTAMP FORMAT <string_for_timestamp_format>
+ | ERROR LOG
  | FAIL ON INVALID DATA
  | CREDENTIAL '<purpose_def> }
 ```
@@ -453,7 +455,7 @@ This option is not supported with the *<file\_type\>* parquet or JSON.
 
 </dd><dt><b>
 
-COLUMN LIST
+COLUMN LIST \(*<column\_name\_list\>*\)
 
 </b></dt>
 <dd>
@@ -461,9 +463,8 @@ COLUMN LIST
 Specifies the list of table columns for the data being imported.
 
 ```
-COLUMN LIST (<column_name_list>)
-
-<column_name_list> ::= <column_name> [, <column_name>...]
+<column_name_list> ::=
+   <column_name> [, <column_name>[, ...].]
 
 <column_name> ::= <identifier>
 ```
@@ -471,6 +472,30 @@ COLUMN LIST (<column_name_list>)
 This option is not supported with the *<file\_type\>* JSON.
 
 The name list has one or more column names. The ordering of the column names has to match the order of the column data in the CSV file from the leftmost column. The column names must exist in the target table, and the data types must match those in the CSV file. Unmatched columns in the target table have NULL values. If the number of column names is larger than the number of columns in the CSV file, unmatched columns have NULL values.
+
+
+
+</dd><dt><b>
+
+FILE COLUMN LIST \(*<file\_column\_list\>*\)
+
+</b></dt>
+<dd>
+
+Specifies one or more file columns.
+
+```
+<file_column_list> ::=
+   <file_column_name> [, <file_column_name>[, ...].]
+
+<file_column_name> ::= <unsigned_integer>
+```
+
+For CSV and PARQUET files the leftmost column has the file column of 1. For PARQUET files used for HIVE or DELTA LAKE directory, the file column number starts from the first level of the directory. If there are two levels of directories, the file column number of the PARQUET file starts from 3.
+
+If the COLUMN LIST clause is specified, then it specifies the names of the columns in the target table where the file data specified by the FILE COLUMN LIST option will be imported. The column names specified by COLUMN LIST must exist in the target table. If COLUMN LIST is not specified, then the target table column having a SYS.TABLE\_COLUMNS.POSITION value of 1 matches the first file column, and so on.
+
+Data types of table columns must match those in the CSV and PARQUET file. Unmatched columns in the target table have NULL values.
 
 
 
@@ -622,7 +647,7 @@ ERROR LOG
 
 The default location of the log file is the same location as the file being imported.
 
-This option is not supported with the *<file\_type\>* JSON.
+This option is not supported with the *<file\_type\>* JSON and PARQUET.
 
 
 
@@ -717,6 +742,48 @@ This example imports data using a DELTA LAKE directory in an Amazon bucket.
 IMPORT FROM PARQUET FILE IN DELTA LAKE' s3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_delta_dir' 
    INTO TEST.TARGET_TABLE;
 
+```
+
+This example imports the second column \(file\_column = 2\) from a CSV file into column A in table T1.
+
+```
+IMPORT FROM CSV FILE 's3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/data.csv' 
+   T1 WITH COLUMN LIST (A) FILE COLUMN LIST (2);
+```
+
+This example imports the second column \(file\_column = 2\) and the third column \(fil\_ column= 3\) from a PARQUET file into columns B and C respectively, in table T1.
+
+```
+IMPORT FROM PARQUET FILE 's3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/data.parquet' 
+   INTO T1 WITH COLUMN LIST (B, C) FILE COLUMN LIST (2, 3);
+```
+
+This example imports the second column \(file\_column = 2\) from a CSV file into the first column of table T1.
+
+```
+IMPORT FROM CSV FILE 's3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/data.csv' 
+  INTO T1 WITH FILE COLUMN LIST (2);
+```
+
+This example imports the second column \(file\_column = 2\) and the third column \(file\_column 3\) from a PARQUET file into the first and second columns respectively, of table T1.
+
+```
+IMPORT FROM PARQUET FILE 's3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_demo/data.parquet' 
+   INTO T1 WITH FILE COLUMN LIST (2, 3);
+```
+
+This example imports the first and third columns from a PARQUET file into the DAY and VALUE columns of table T1. *<file\_column\_list\>* includes directory columns.
+
+```
+IMPORT FROM PARQUET FILE IN HIVE PARTITION ' s3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_hive_dir' 
+   INTO T1 WITH COLUMN LIST (DAY, VALUE) FILE COLUMN LIST (1, 3);
+```
+
+This example imports the second and third columns from a PARQUET file into the MONTH and VALUE columns of table T1. *<file\_column\_list\>* includes directory columns.
+
+```
+IMPORT FROM PARQUET FILE IN DELTA LAKE' s3-region://AKIAxxxxxxxxxx:xl6WWxxxxxxxxxx@my_bucket/my_delta_dir' 
+   INTO T1 WITH COLUMN LIST (MONTH, VALUE) FILE COLUMN LIST (2, 3);
 ```
 
 **Related Information**  

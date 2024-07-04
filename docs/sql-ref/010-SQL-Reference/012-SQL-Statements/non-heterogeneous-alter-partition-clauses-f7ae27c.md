@@ -12,7 +12,7 @@ Modifies the partitions of an existing table with a non-heterogeneous partitioni
 
 ```
 ALTER TABLE <table_name>
-   {| <partition_table_clause> 
+   { <partition_table_clause> 
    | <add_range_clause>
    | <redefine_range_partition_clause>
    | <move_partition_clause>
@@ -21,6 +21,7 @@ ALTER TABLE <table_name>
    | <alter_dynamic_range_clauses>
    | <alter_dynamic_property_clause>
    | <alter_partition_numa_node_preference_clause>
+   | <alter_partition_movable_clause>
    }
 ```
 
@@ -457,7 +458,7 @@ DYNAMIC THRESHOLD *<threshold\_count\>*
 </b></dt>
 <dd>
 
-The keyword DYNAMIC enables dynamic range partitioning on the table \(the default is inactive\) and THRESHOLD specifies the maximum row count in the partition before generating a new dynamic range partition from OTHERS or the priority for determining the maximum row count value. The THRESHOLD default, if not specified, is 10 000 000 \(10 million\) rows. You can define DYNAMIC on a single RANGE partition or on the second-level range of an X-RANGE partition. For more information on dynamic range partitioning, see *Dynamic Range Partitioning*.
+The keyword DYNAMIC enables dynamic range partitioning on the table \(the default is inactive\) and THRESHOLD specifies the maximum row count in the partition before generating a new dynamic range partition from OTHERS or the priority for determining the maximum row count value. The THRESHOLD default, if not specified, is 10 000 000 \(10 million\) rows. You can define DYNAMIC on a single RANGE partition or on the second-level range of an X-RANGE partition. To enable dynamic range partitioning, the range column of OTHERS requires a NOT NULL constraint. For more information on dynamic range partitioning, see *Dynamic Range Partitioning*.
 
 
 
@@ -479,13 +480,205 @@ Specifies the properties for the partition.
 <range_prop_list> ::= <range_prop> [ <range_prop> ...] ]
 
 <range_prop> ::= 
-   INSERT {OFF | ON}
+   { INSERT {OFF | ON}
    | AT [ LOCATION ] ( <location> )
    | <load_unit> 
    | <group_list>
    | <persistent_memory_spec_clause>
    | <numa_node_preference_clause>
+   | <set_movable> }
 ```
+
+
+<dl>
+<dt><b>
+
+INSERT \{ ON | OFF \}
+
+</b></dt>
+<dd>
+
+Specifies if INSERT statements are allowed on a partition. If defined at the first-level, it applies to all second-level partitions within the first-level partition. If defined at both the first- and second-level, any value at the second-level overrides the first-level value. If not specified, default is ON.
+
+
+
+</dd><dt><b>
+
+*<location\>*
+
+</b></dt>
+<dd>
+
+Specifies where the partitions reside.
+
+```
+<location> ::= '<HANA_host>:<HANA_port>'
+```
+
+If no location is specified, then for each first-level partition, a different indexserver is selected from those available \(primary and secondary indexservers\) in a round-robin fashion, and the second-level partitions then inherit the assigned location from the parent partition.
+
+If a location is only specified for a parent first level partition, then any child second-level partitions inherit the location of the parent.
+
+If a location is specified for a child second-level partition, then the second-level partition is assigned to that location, regardless of any parent location specification.
+
+
+
+</dd><dt><b>
+
+*<load\_unit\>*
+
+</b></dt>
+<dd>
+
+Specifies how to load data into memory when the table is queried. Specifying the load unit is only supported on column-store tables. *<load\_unit\>* can be set at column, table, and partition levels.
+
+```
+<load_unit> ::= { COLUMN | PAGE } LOADABLE
+```
+
+
+<dl>
+<dt><b>
+
+COLUMN LOADABLE
+
+</b></dt>
+<dd>
+
+In-memory loading - the entire column is loaded into memory. COLUMN LOADABLE boosts performance at the cost of higher memory usage. This is the default behavior unless another value is inherited.
+
+
+
+</dd><dt><b>
+
+PAGE LOADABLE
+
+</b></dt>
+<dd>
+
+In-buffer cache loading - column data is loaded by page into the buffer cache. PAGE LOADABLE reduces memory usage for specific columns by not requiring those columns to be fully memory resident.
+
+
+
+</dd>
+</dl>
+
+In the case of competing or unspecified *<load\_unit\>* settings, the following logic is applied.
+
+-   If there is a load unit preference specified for a column, apply that value.
+
+-   Else if there is a load unit preference specified for the parent partition, apply that value.
+
+-   Else if there is a load unit specified for the parent table, apply that value.
+
+-   Else apply the default \(COLUMN LOADABLE\).
+
+
+
+
+</dd><dt><b>
+
+*<group\_list\>*
+
+</b></dt>
+<dd>
+
+Specifies the GROUP option to apply to the specified partition.
+
+```
+<group_list> ::= <group> [ <group> ... ]
+
+<group> ::= GROUP {NAME | TYPE | SUBTYPE } <identifier>
+```
+
+Each partition can be assigned a group name, type, and subtype. If a GROUP option already exists on a partition, then the new value overwrites the existing value.
+
+
+
+</dd><dt><b>
+
+*<persistent\_memory\_spec\_clause\>*
+
+</b></dt>
+<dd>
+
+Enables or disables persistent memory storage preference at the table, range partition, or column level, depending on where the clause is situated in the CREATE statement. For example, when specified inside the *<column\_definition\>* clause, it enables or disables persistent memory storage for the column.
+
+```
+<persistent_memory_spec> ::= PERSISTENT MEMORY <pm_preference>
+
+<pm_preference> ::= { ON | OFF }
+```
+
+
+
+</dd><dt><b>
+
+*<numa\_node\_preference\_clause\>*
+
+</b></dt>
+<dd>
+
+Sets the NUMA node preferences. This clause can be set in various locations such as range partition definitions \(not hash or round-robin\) and column definitions.
+
+```
+<numa_node_preference_clause> ::= NUMA NODE ( <numa_node_index_spec> )
+
+<numa_node_index_spec> :: = <numa_node_spec> [, <numa_node_spec> [,…] 
+
+<numa_node_spec> ::= { <integer_const> | <integer_const> TO <integer_const> }
+```
+
+
+<dl>
+<dt><b>
+
+*<numa\_node\_spec\>*
+
+</b></dt>
+<dd>
+
+Specify one or more single NUMA nodes \(*<single\_node\_spec\>*\), or one or more NUMA node ranges \(*<range\_node\_spec\>*\), or a mixture of both.
+
+NUMA node indexes should be specified in the range of 0 to one less than max\_numa\_node\_count, where max\_numa\_node\_count is the number of NUMA nodes configured for the system. If the NUMA node index specified is greater than or equal to max\_numa\_node\_count, then a random NUMA node in the range of 0 to one less than max\_numa\_node\_count is selected for allocation. For example, on a system where max\_numa\_node\_count is set to 8, if you specify a NUMA node index of 10, then any node in the range of 0 to 7 \(inclusive\) is chosen randomly for allocation.
+
+
+
+</dd><dt><b>
+
+*<integer\_const\>*
+
+</b></dt>
+<dd>
+
+*<integer\_const\>* is an integer that cannot be a negative number.
+
+
+
+</dd>
+</dl>
+
+
+
+</dd><dt><b>
+
+*<set\_movable\>*
+
+</b></dt>
+<dd>
+
+Specifies whether a partition is movable.
+
+```
+<set_movable> ::= [ NOT ] MOVABLE
+```
+
+If not specified, then the value is inherited from its parent partitions \(from near to far\). If none of the parents have the move property explicitly set, then the table-level moveable property value is used. If none of these apply, then the partition is moveable by default.
+
+
+
+</dd>
+</dl>
 
 Return to [*<redefine\_range\_partition\_clause\>*](non-heterogeneous-alter-partition-clauses-f7ae27c.md#loiof7ae27ca1b954471a4e1a7feab2c24d7__redefine_range_partition_clause) or [*<numa\_node\_preference\_clause\>*](non-heterogeneous-alter-partition-clauses-f7ae27c.md#loiof7ae27ca1b954471a4e1a7feab2c24d7__numa_node_preference_clause).
 
@@ -627,7 +820,7 @@ Enables or disables persistent memory storage preference at the table, range par
 Sets the NUMA node preferences. This clause can be set in various locations such as range partition definitions \(not hash or round-robin\) and column definitions.
 
 ```
-<numa_node_preference_clause> ::= NUMA NODE { ( <numa_node_index_spec> )
+<numa_node_preference_clause> ::= NUMA NODE ( <numa_node_index_spec> )
 
 <numa_node_index_spec> :: = <numa_node_spec> [, <numa_node_spec> [,…] 
 
@@ -662,6 +855,23 @@ NUMA node indexes should be specified in the range of 0 to one less than max\_nu
 
 </dd>
 </dl>
+
+
+
+</dd><dt><b>
+
+*<set\_movable\>*
+
+</b></dt>
+<dd>
+
+Specifies whether a partition is movable.
+
+```
+<set_movable> ::= [ NOT ] MOVABLE
+```
+
+If not specified, then the value is inherited from its parent partitions \(from near to far\). If none of the parents have the move property explicitly set, then the table-level moveable property value is used. If none of these apply, then the partition is moveable by default.
 
 
 
@@ -921,7 +1131,7 @@ Specifies other supported dynamic partitioning options.
 <partition_others_dynamic_range> ::= PARTITION OTHERS { DYNAMIC [ THRESHOLD <threshold_count> ] | NO DYNAMIC }
 ```
 
-The keyword DYNAMIC enables dynamic range partitioning on the table \(the default is inactive\) and THRESHOLD specifies the maximum row count in the partition before generating a new dynamic range partition from OTHERS or the priority for determining the maximum row count value. The THRESHOLD default, if not specified, is 10 000 000 \(10 million\) rows. You can define DYNAMIC on a single RANGE partition or on the second-level range of an X-RANGE partition. 
+The keyword DYNAMIC enables dynamic range partitioning on the table \(the default is inactive\) and THRESHOLD specifies the maximum row count in the partition before generating a new dynamic range partition from OTHERS or the priority for determining the maximum row count value. The THRESHOLD default, if not specified, is 10 000 000 \(10 million\) rows. You can define DYNAMIC on a single RANGE partition or on the second-level range of an X-RANGE partition. To enable dynamic range partitioning, the range column of OTHERS requires a NOT NULL constraint. For more information on dynamic range partitioning, see *Dynamic Range Partitioning*.
 
 
 
@@ -972,7 +1182,7 @@ DYNAMIC THRESHOLD *<threshold\_count\>*
 </b></dt>
 <dd>
 
-The keyword DYNAMIC enables dynamic range partitioning on the table \(default is inactive\) and THRESHOLD specifies the maximum row count in the partition before generating a new dynamic range partition from OTHERS or the priority for determining the maximum row count value. The THRESHOLD default, if not specified, is 100 000 000 rows. You can only define DYNAMIC on a single range partition or on any range subpartition. For more information on dynamic range partitioning, see *Dynamic Range Partitioning*.
+The keyword DYNAMIC enables dynamic range partitioning on the table \(the default is inactive\) and THRESHOLD specifies the maximum row count in the partition before generating a new dynamic range partition from OTHERS or the priority for determining the maximum row count value. The THRESHOLD default, if not specified, is 10 000 000 \(10 million\) rows. You can define DYNAMIC on a single RANGE partition or on the second-level range of an X-RANGE partition. To enable dynamic range partitioning, the range column of OTHERS requires a NOT NULL constraint. For more information on dynamic range partitioning, see *Dynamic Range Partitioning*.
 
 
 
@@ -981,12 +1191,7 @@ The keyword DYNAMIC enables dynamic range partitioning on the table \(default is
 
 
 
-</dd>
-</dl>
-
-
-<dl>
-<dt><b>
+</dd><dt><b>
 
 *<alter\_partition\_numa\_node\_preference\_clause\>*
 
@@ -1097,6 +1302,22 @@ Return to [*<range\_prop\_list\>*](non-heterogeneous-alter-partition-clauses-f7a
 
 </dd>
 </dl>
+
+
+
+</dd><dt><b>
+
+*<alter\_partition\_movable\_clause\>*
+
+</b></dt>
+<dd>
+
+Controls whether a partition is movable.
+
+```
+<alter_partition_movable_clause> ::=
+   ALTER PARTITION { <partition_id_list> | <range_list> } SET [ NOT ] MOVABLE
+```
 
 
 
@@ -1235,6 +1456,25 @@ CREATE TABLE T5 (A INT, B INT) PARTITION BY RANGE (A) (PARTITION 10 <= values < 
 ALTER TABLE T5 PARTITION BY HASH (A) PARTITIONS 2;
 ```
 
+This example alters table T6 to make partition 1 not movable.
+
+```
+ALTER TABLE T6 ALTER PARTITION 1 SET NOT MOVABLE;
+```
+
+This example alters table T6 to make partition 2 and 3 movable.
+
+```
+ALTER TABLE T6 ALTER PARTITION (2,3) SET MOVABLE;
+
+```
+
+This example alters table T7 to make the range movable.
+
+```
+ALTER TABLE T7 ALTER PARTITION RANGE (C1) ((PARTITION 100 <= VALUES < 200)) SET MOVABLE;
+```
+
 
 <dl>
 <dt><b>
@@ -1292,9 +1532,9 @@ ALTER TABLE A1 PARTITION OTHERS NO DYNAMIC;
 
 [ALTER TABLE Statement \(Data Definition\)](alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
 [TABLE\_PARTITIONS System View](../../020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 
-[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "Dynamic Range Partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
+[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "For heterogeneous partitioning schemas dynamic range partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
 

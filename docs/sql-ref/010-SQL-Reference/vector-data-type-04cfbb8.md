@@ -28,7 +28,7 @@ The REAL\_VECTOR\(*<n\>*\) data type specifies a vector type with REAL \(IEEE 75
 **Related Information**  
 
 
-[REAL_VECTOR Data Type](https://help.sap.com/viewer/c40cab369db246f1a17feea1c031ddc1/2024_1_QRC/en-US/3e563557d6314060ae18a789aff4e400.html "The SAP HANA Cloud database has the built-in vector data type REAL_VECTOR.") :arrow_upper_right:
+[REAL_VECTOR Data Type](https://help.sap.com/viewer/c40cab369db246f1a17feea1c031ddc1/2024_3_QRC/en-US/3e563557d6314060ae18a789aff4e400.html "The SAP HANA Cloud database has the built-in vector data type REAL_VECTOR.") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA Database Vector Engine Guide](https://help.sap.com/viewer/c40cab369db246f1a17feea1c031ddc1/2024_1_QRC/en-US/8d2675524f454b248de942da9bc04777.html "This guide provides information about the SAP HANA Cloud vector engine.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Vector Engine Guide](https://help.sap.com/viewer/c40cab369db246f1a17feea1c031ddc1/2024_3_QRC/en-US/8d2675524f454b248de942da9bc04777.html "This guide provides information about the SAP HANA Cloud vector engine.") :arrow_upper_right:
 

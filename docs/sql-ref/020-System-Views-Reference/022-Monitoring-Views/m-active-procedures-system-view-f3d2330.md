@@ -410,6 +410,14 @@ Displays the peak amount of memory, in bytes, used for executing each statement 
 </tr>
 </table>
 
+
+
+<a name="loiof3d23305d0dd495590e0061c3546de9a__section_ffz_g22_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
@@ -425,13 +433,13 @@ Displays the peak amount of memory, in bytes, used for executing each statement 
 
 [PROCEDURES System View](../021-System-Views/procedures-system-view-20cc87c.md "Provides information about available stored procedures.")
 
-[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
 
-[CREATE PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7a2da744ce544db1814a5fff250e99f6.html "You use this SQL statement to create a procedure.") :arrow_upper_right:
+[CREATE PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/7a2da744ce544db1814a5fff250e99f6.html "You use this SQL statement to create a procedure.") :arrow_upper_right:
 
-[DROP PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/5f244d38d5984899ae8263539badf306.html "") :arrow_upper_right:
+[DROP PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/5f244d38d5984899ae8263539badf306.html "") :arrow_upper_right:
 
-[ALTER PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/042ab4636cf34a9cb88dd61c808861a8.html "") :arrow_upper_right:
+[ALTER PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/042ab4636cf34a9cb88dd61c808861a8.html "") :arrow_upper_right:
 
-[Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/d43d91578c3b42b3bacfd89aacf0d62f.html "") :arrow_upper_right:
+[Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/d43d91578c3b42b3bacfd89aacf0d62f.html "") :arrow_upper_right:
 

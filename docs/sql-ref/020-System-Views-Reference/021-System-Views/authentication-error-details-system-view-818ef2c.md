@@ -42,7 +42,7 @@ NVARCHAR\(32\)
 </td>
 <td valign="top">
 
-Displays the unique correlation ID for this authentication.
+Displays the unique correlation ID for this authentication error.
 
 </td>
 </tr>
@@ -59,7 +59,7 @@ TIMESTAMP
 </td>
 <td valign="top">
 
-Displays the time the authentication occurred.
+Displays the time the authentication error occurred.
 
 </td>
 </tr>
@@ -76,7 +76,7 @@ NVARCHAR\(64\)
 </td>
 <td valign="top">
 
-Displays the name of the host where the authentication occurred.
+Displays the name of the host where the authentication error occurred.
 
 </td>
 </tr>

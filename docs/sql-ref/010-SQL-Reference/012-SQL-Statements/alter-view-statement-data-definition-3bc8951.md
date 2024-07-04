@@ -717,9 +717,9 @@ SELECT * FROM v1; -- invalid view name: cannot select the DDL only mode view
 
 [REFRESH VIEW Statement \(Data Definition\)](refresh-view-statement-data-definition-81e1583.md "Refreshes an anonymized view.")
 
-[Data Anonymization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/6cf9d55f4d3d45b0bcdb41756d86629f.html "Anonymization methods available in the SAP HANA Cloud, SAP HANA database allow you to gain statistically valid insights from your data while protecting the privacy of individuals.") :arrow_upper_right:
+[Data Anonymization](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/6cf9d55f4d3d45b0bcdb41756d86629f.html "Anonymization methods available in the SAP HANA Cloud, SAP HANA database allow you to gain statistically valid insights from your data while protecting the privacy of individuals.") :arrow_upper_right:
 
 [Predicates](../predicates-20a2ab2.md "")
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

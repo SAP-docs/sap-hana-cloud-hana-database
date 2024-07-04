@@ -161,5 +161,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [SEARCH\_RULE\_SET\_CONDITIONS System View](search-rule-set-conditions-system-view-20ce05a.md "Shows information on available search rule set conditions.")
 
-[Search in Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/1eb7673ed88b4aa9b2cb43959bbbbde0.html "This feature offers an efficient way to search by key value pairs in table variables.") :arrow_upper_right:
+[Search in Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/1eb7673ed88b4aa9b2cb43959bbbbde0.html "This feature offers an efficient way to search by key value pairs in table variables.") :arrow_upper_right:
 

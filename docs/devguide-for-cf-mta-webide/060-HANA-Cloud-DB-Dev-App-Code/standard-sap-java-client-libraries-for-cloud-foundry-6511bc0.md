@@ -6,7 +6,7 @@ A collection of Java client libraries developed by SAP is provided to help you d
 
 
 
-SAP HANA Cloud includes a selection of standard Java libraries, which are available for download from the Maven Central Repository. The libraries include the packages listed in the following table:
+SAP provides a selection of standard Java client libraries, which are available for download from the Maven Central repository. The libraries include the packages listed in the following table:
 
 > ### Tip:  
 > For more detailed information, see the `README` file in the corresponding package or, where available, the JavaDoc reference guide.

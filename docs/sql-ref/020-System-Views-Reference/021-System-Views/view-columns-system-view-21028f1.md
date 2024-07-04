@@ -670,5 +670,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [M\_MONITOR\_COLUMNS System View](../022-Monitoring-Views/m-monitor-columns-system-view-20b54f6.md "All the columns in the monitoring views.")
 
-[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
+[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
 

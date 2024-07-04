@@ -169,6 +169,11 @@ Bind a service instance to an application
 
 Remove the binding between a service instance and an application
 
+> ### Caution:  
+> Unbinding a service instance deletes the corresponding HDI containers's run-time \(\_RT\) user, too.
+
+
+
 </td>
 </tr>
 <tr>
@@ -270,6 +275,11 @@ Create a service key for a specified service instance.
 <td valign="top">
 
 Delete a service key for a specified service instance.
+
+> ### Caution:  
+> Deleting a service key deletes the corresponding HDI containers's run-time \(\_RT\) user, too.
+
+
 
 </td>
 </tr>

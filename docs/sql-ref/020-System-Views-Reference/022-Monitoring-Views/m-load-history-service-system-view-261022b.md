@@ -856,7 +856,7 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the number of admission requests admitted by admission control.
+Displays the number of session requests admitted by admission control.
 
 </td>
 </tr>
@@ -958,7 +958,7 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the number of session requests dequeued for timed out by admission control.
+Displays the number of session requests removed from the queue \(rejected\) due to admission control queue timeout.
 
 </td>
 </tr>

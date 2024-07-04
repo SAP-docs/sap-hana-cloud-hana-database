@@ -239,6 +239,14 @@ Displays the time of the last access of the cache instance.
 
 
 
+<a name="loio20a93aa875191014b777dfd020006ba1__section_ubq_gxv_rbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20a93aa875191014b777dfd020006ba1__section_bzn_c2b_x2b"/>
 
 ## Additional Information

@@ -13,7 +13,7 @@ You can set user preferences to customize the way you start and use selected too
 To open the *Settings* tab in SAP Business Application Studio, start the development workspace, choose :gear: in the *Views* pane, and then choose *Settings*.
 
 > ### Tip:  
-> By default, SAP Business Application Studio only provides "compact" menus and options, which are displayed when you choose <span class="SAP-icons-V5"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the dev. space, open *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* from "compact" to "classic" in the drop-down list provided.
+> By default, SAP Business Application Studio provides "compact" menus and options, which are displayed when you choose <span class="SAP-icons-V5"></span> \(Menus\)in the Views pane. If you want to display the traditional, horizontal *Menu* bar at the top of the dev. space, open *Settings*, search for "*Menu*", and change the value of *Window: Menu Bar Visibility* from "compact" to "classic" in the drop-down list provided.
 
 In the SAP HANA Native Application extension, you can set user preferences for the following components:
 
@@ -396,6 +396,23 @@ Development mode enables the use of specific development versions of a table wit
 <tr>
 <td valign="top">
 
+*Deploy: Enable fast table migration* 
+
+</td>
+<td valign="top">
+
+Enable fast table-migration during deployment. Default: true \(enabled\)
+
+> ### Tip:  
+> This setting does not affect deployments made from the command line, for example, in the terminal, with the `cf` or `cds` command, where the default setting is "false".
+
+Fast migration is intended for use in making simple changes to tables, for example, adding, removing, or changing columns, partitioning, or associations. For more details, see *Related Information* below.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 *Logging: Level* 
 
 </td>
@@ -600,5 +617,7 @@ In SAP Business Application Studio, keyboard shortcuts for calculation views use
 
 [View Database Objects with the Database Explorer](view-database-objects-with-the-database-explorer-0e5ac0b.md "Check the contents of your database with SAP HANA Database Explorer.")
 
-[Migration Tables \(SAP HANA Cloud HDI Reference\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/52d1f5acfa754a7887e21226641eb261.html)
+[Migration Tables \(SAP HANA Cloud, HDI Reference\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/52d1f5acfa754a7887e21226641eb261.html)
+
+[Fast Table Migration (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/453d48e28f6747799546236b4b432e58.html "Transforms a design-time table resource into a table database object.") :arrow_upper_right:
 

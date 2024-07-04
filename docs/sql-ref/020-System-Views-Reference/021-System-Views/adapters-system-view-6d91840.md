@@ -167,5 +167,5 @@ Owners, users granted the CREATE ADAPTER system privilege, or users having any p
 
 [ADAPTER\_LOCATIONS System View](adapter-locations-system-view-99d5ff2.md "Displays the location of adapters.")
 
-[Create an SAP HANA Cloud, SAP HANA Database Remote Source](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/275839492fef49318d92d0e31656ea0a.html "Create a remote source to an SAP HANA database in an SAP HANA Cloud instance. You can also use this procedure for loopback scenarios.") :arrow_upper_right:
+[Create an SAP HANA Cloud, SAP HANA Database Remote Source](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/275839492fef49318d92d0e31656ea0a.html "Create a remote source to an SAP HANA database in an SAP HANA Cloud instance. You can also use this procedure for loopback scenarios.") :arrow_upper_right:
 

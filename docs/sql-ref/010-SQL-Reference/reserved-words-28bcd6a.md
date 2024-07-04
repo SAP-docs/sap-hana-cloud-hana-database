@@ -4,11 +4,7 @@
 
 Reserved words are words which have a special meaning to the SQL parser in the SAP HANA database and cannot be used as when defining an identifier.
 
-The following list provides you with the current reserved words for the SAP HANA database. You can obtain this list by querying the RESERVED\_KEYWORDS system view:
-
-```
-SELECT * FROM RESERVED_KEYWORDS ORDER BY RESERVED_KEYWORD;
-```
+The following list provides you with the current reserved words for the SAP HANA database.
 
 In addition to the keywords listed below, avoid using the reserved keywords from the most recent ANSI SQL standard to ensure the compatibility of your SQL statements with subsequent SAP HANA database developments. However, if you do use any of them, we recommend placing them in uppercase and delimiting them with double quotation marks to ensure compatibility.
 

@@ -39,7 +39,7 @@ SECONDDATE
 </b></dt>
 <dd>
 
-The SECONDDATE data type consists of year, month, day, hour, minute and second information to represent a date with a time value. The default format for the SECONDDATE data type is YYYY-MM-DD HH24:MI:SS. YYYY represents the year, MM represents the month, DD represents the day, HH24 represents hours, MI represents minutes, and SS represents seconds. The range of the date value is between 0001-01-01 00:00:01 and 9999-12-31 24:00:00.
+The SECONDDATE data type consists of year, month, day, hour, minute and second information to represent a date with a time value. The default format for the SECONDDATE data type is YYYY-MM-DD HH24:MI:SS. YYYY represents the year, MM represents the month, DD represents the day, HH24 represents hours, MI represents minutes, and SS represents seconds. The range of the date value is between 0001-01-01 00:00:01 and 9999-12-31 23:59:59.
 
 
 

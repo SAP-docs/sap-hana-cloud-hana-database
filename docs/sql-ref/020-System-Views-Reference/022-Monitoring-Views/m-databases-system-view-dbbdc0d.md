@@ -165,6 +165,14 @@ Displays the timestamp for when the fallback snapshot was created, or NULL if th
 </tr>
 </table>
 
+
+
+<a name="loiodbbdc0d96675470e80801c5ddfb8d348__section_qtj_fzm_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
@@ -178,7 +186,7 @@ Displays the timestamp for when the fallback snapshot was created, or NULL if th
 
 [M\_DATABASE\_REPLICA\_STATISTICS System View](m-database-replica-statistics-system-view-19a4438.md "Provides statistics on databases involved in replication.")
 
-[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
+[Database Roles](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/e7f358b6e85b4610a2b62c5a25755fc0.html "A database role is a collection of privileges that can be granted to either a database user or another role in runtime.") :arrow_upper_right:
 
 [Log On to a Database](https://help.sap.com/viewer/f1b440ded6144a54ada97ff95dac7adf/LATEST/en-US/c2a6d9cbbb5710148afea455ba5746c0.html)
 

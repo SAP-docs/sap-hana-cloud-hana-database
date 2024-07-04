@@ -6,6 +6,113 @@ SAP HANA Cloud introduces new and changed features for the SAP HANA Cloud, SAP H
 
 
 
+<a name="loioc178ed2e4435410a9d70120b02fbae40__section_l3x_gsd_y1c"/>
+
+## QRC 02/2024
+
+
+<dl>
+<dt><b>
+
+M\_HOST\_INFORMATION \(Changed\)
+
+</b></dt>
+<dd>
+
+Some fields \(keys\) in the view are hidden and fulfilled with dummy/null values. See [3468710](https://me.sap.com/notes/3468710) for details.
+
+
+
+</dd><dt><b>
+
+Heterogeneous Create Partition Clauses and Heterogeneous Alter Partition Clauses \(Changed\)
+
+</b></dt>
+<dd>
+
+-   Range generation has been extended to include decreasing and bidirectional dynamic range generation. A new column was added to the TABLE\_PARTITIONS view to display this information.
+-   Dynamic range checking can now be set a the table level. A new column was added to the PARTITIONED\_TABLES view to display this information.
+-   The *<set\_movable\>* property allows you to control whether a partition is movable. A new column was added to the TABLE\_PARTITIONS and M\_TABLE\_PARTITIONS views to display this information.
+-   Table partitions now support dynamic aging. A new column was added to the TABLE\_PARTITIONS view to display this information.
+-   [Heterogeneous Create Partition Clauses](010-SQL-Reference/012-SQL-Statements/heterogeneous-create-partition-clauses-d496e58.md), [Heterogeneous Alter Partition Clauses](010-SQL-Reference/012-SQL-Statements/heterogeneous-alter-partition-clauses-a4258b8.md), [TABLE\_PARTITIONS System View](020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md), [PARTITIONED\_TABLES System View](020-System-Views-Reference/021-System-Views/partitioned-tables-system-view-cdd4329.md), [M\_TABLE\_PARTITIONS System View](020-System-Views-Reference/022-Monitoring-Views/m-table-partitions-system-view-6e81917.md)
+
+
+
+</dd><dt><b>
+
+VIEW\_PARAMETERS, PROCEDURE\_PARAMETERS, FUNCITON\_PARAMETERS System Views \(Changed\)
+
+</b></dt>
+<dd>
+
+These views have been extended to include the DEFAULT\_VALUE column, which displays the default value of the object. [FUNCTION\_PARAMETERS System View](020-System-Views-Reference/021-System-Views/function-parameters-system-view-20a4c5c.md), [PROCEDURE\_PARAMETERS System View](020-System-Views-Reference/021-System-Views/procedure-parameters-system-view-20cc6b9.md), [VIEW\_PARAMETERS System View](020-System-Views-Reference/021-System-Views/view-parameters-system-view-45b86e8.md)
+
+
+
+</dd><dt><b>
+
+IMPORT FROM Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+This statement now supports file-based column mapping. [IMPORT FROM Statement \(Data Import Export\)](010-SQL-Reference/012-SQL-Statements/import-from-statement-data-import-export-20f712e.md)
+
+
+
+</dd><dt><b>
+
+CREATE FUZZY SEARCH INDEX Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+This statement now supports MIME TYPE and TOKEN SEPARATORS options for text mode searches. [CREATE FUZZY SEARCH INDEX Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/create-fuzzy-search-index-statement-data-definition-9b79b31.md)
+
+
+
+</dd><dt><b>
+
+Managed PSE \(New\)
+
+</b></dt>
+<dd>
+
+SAP HANA database now supports managed PSEs. A new system view, MANAGED\_PSES System View, was introduced and several existing system views were extended to support this feature.
+
+See [CREATE PSE Statement \(System Management\)](010-SQL-Reference/012-SQL-Statements/create-pse-statement-system-management-4d80bf6.md), [ALTER PSE Statement \(System Management\)](010-SQL-Reference/012-SQL-Statements/alter-pse-statement-system-management-9c22c6f.md)[REFRESH PSE Statement \(System Management\)](010-SQL-Reference/012-SQL-Statements/refresh-pse-statement-system-management-c2f1007.md), [SET PSE Statement \(System Management\)](010-SQL-Reference/012-SQL-Statements/set-pse-statement-system-management-10fe807.md), [UNSET PSE Statement \(System Management\)](010-SQL-Reference/012-SQL-Statements/unset-pse-statement-system-management-4082553.md)
+
+See [M\_MANAGED\_PSES System View](020-System-Views-Reference/022-Monitoring-Views/m-managed-pses-system-view-5c745ca.md), [PSES System View](020-System-Views-Reference/021-System-Views/pses-system-view-6d9713d.md), [PSE\_PURPOSE\_OBJECTS System View](020-System-Views-Reference/021-System-Views/pse-purpose-objects-system-view-437cd32.md), [PUBLIC\_KEYS System View](020-System-Views-Reference/021-System-Views/public-keys-system-view-4924523.md), [PSE\_PUBLIC\_KEYS System View](020-System-Views-Reference/021-System-Views/pse-public-keys-system-view-bded95a.md)
+
+
+
+</dd><dt><b>
+
+M\_SQL\_PLAN\_VARIANT\_STATISTICS and M\_SQL\_PLAN\_VARIANT\_STATISTICS\_RESET System Views \(New\)
+
+</b></dt>
+<dd>
+
+Two new views have been introduced to support Plan Variant. [M\_SQL\_PLAN\_VARIANT\_STATISTICS System View](020-System-Views-Reference/022-Monitoring-Views/m-sql-plan-variant-statistics-system-view-b8d14c0.md), [M\_SQL\_PLAN\_VARIANT\_STATISTICS\_RESET System View](020-System-Views-Reference/022-Monitoring-Views/m-sql-plan-variant-statistics-reset-system-view-be58182.md)
+
+
+
+</dd><dt><b>
+
+EXPLAIN PLAN Statement \(Changed\)
+
+</b></dt>
+<dd>
+
+You can now specify a variant id when evaluating an execution plan. [EXPLAIN PLAN Statement \(Data Manipulation\)](010-SQL-Reference/012-SQL-Statements/explain-plan-statement-data-manipulation-20d9ec5.md)
+
+
+
+</dd>
+</dl>
+
+
+
 <a name="loioc178ed2e4435410a9d70120b02fbae40__section_vrp_tm4_xyb"/>
 
 ## QRC 01/2024
@@ -63,7 +170,7 @@ STRUCTURED FILTER CHECK \(New\)
 </b></dt>
 <dd>
 
-Row-level security policies are now supported in SQL Views / Parameterized SQL Views through a structured filter check. [CREATE VIEW Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/create-view-statement-data-definition-20d5fa9.md), [ALTER VIEW Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/alter-view-statement-data-definition-3bc8951.md), [CREATE STRUCTURED FILTER Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/create-structured-filter-statement-data-definition-f0238ff.md), [ALTER STRUCUTRED FILTER Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/alter-strucutred-filter-statement-data-definition-07b14e0.md), [DROP STRUCTURED PRIVILEGE Statement \(Access Control\)](010-SQL-Reference/012-SQL-Statements/drop-structured-privilege-statement-access-control-4742f57.md)
+Row-level security policies are now supported in SQL Views / Parameterized SQL Views through a structured filter check. [CREATE VIEW Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/create-view-statement-data-definition-20d5fa9.md), [ALTER VIEW Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/alter-view-statement-data-definition-3bc8951.md), [CREATE STRUCTURED FILTER Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/create-structured-filter-statement-data-definition-f0238ff.md), [ALTER STRUCTURED FILTER Statement \(Data Definition\)](010-SQL-Reference/012-SQL-Statements/alter-structured-filter-statement-data-definition-07b14e0.md), [DROP STRUCTURED PRIVILEGE Statement \(Access Control\)](010-SQL-Reference/012-SQL-Statements/drop-structured-privilege-statement-access-control-4742f57.md)
 
 
 

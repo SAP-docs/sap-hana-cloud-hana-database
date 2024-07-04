@@ -424,6 +424,14 @@ Displays the number of level 4 converter pages written to the disk.
 
 
 
+<a name="loio20acadb5751910148bbcb1243495f6db__section_x3x_my5_tbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20acadb5751910148bbcb1243495f6db___m__c_o_n_v_e_r_t_e_r__s_t_a_t_i_s_t_i_c_s_1fulldesc_M_CONVERTER_STATISTICS"/>
 
 ## Additional Information
@@ -449,5 +457,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [DROP STATISTICS Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-statistics-statement-data-definition-20d7c59.md "Drops user-defined data statistic objects that the query optimizer uses to make decisions for query plans.")
 
-[Managing Statistics](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
+[Managing Statistics](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
 

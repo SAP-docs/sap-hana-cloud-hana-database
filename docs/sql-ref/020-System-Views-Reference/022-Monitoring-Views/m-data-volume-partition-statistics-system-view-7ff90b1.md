@@ -225,6 +225,14 @@ Displays the fill ratio of the data volume partition.
 </tr>
 </table>
 
+
+
+<a name="loio7ff90b14514b4214ba3e6ac91ec80d8e__section_ix5_tcn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
@@ -236,5 +244,5 @@ Displays the fill ratio of the data volume partition.
 
 [M\_DATA\_VOLUME\_SUPERBLOCK\_STATISTICS System View](m-data-volume-superblock-statistics-system-view-20adf77.md "Provides FreeBlockManager Superblock statistics.")
 
-[Static and Dynamic Partition Pruning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/602e0dcb40364401a092329296405b84.html "An important partitioning strategy to improve performance is to match partitions wherever possible with the most frequently queried data so that data pruning is possible.") :arrow_upper_right:
+[Static and Dynamic Partition Pruning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/602e0dcb40364401a092329296405b84.html "An important partitioning strategy to improve performance is to match partitions wherever possible with the most frequently queried data so that data pruning is possible.") :arrow_upper_right:
 

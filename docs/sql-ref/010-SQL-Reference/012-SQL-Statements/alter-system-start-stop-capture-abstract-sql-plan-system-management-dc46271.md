@@ -117,7 +117,7 @@ ALTER SYSTEM START CAPTURE ABSTRACT SQL PLAN FOR USER TESTUSER1, TESTUSER2;
 **Related Information**  
 
 
-[SQL Plan Stability](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/deab4aee414e4b00a3df5666a44adfff.html "SQL Plan Stability can be used to guarantee the consistent optimal performance of select statements by capturing query execution plans so that exactly the same plan can be reused when the query is executed again.") :arrow_upper_right:
+[SQL Plan Stability](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/deab4aee414e4b00a3df5666a44adfff.html "SQL Plan Stability can be used to guarantee the consistent optimal performance of select statements by capturing query execution plans so that exactly the same plan can be reused when the query is executed again.") :arrow_upper_right:
 
 [ALTER SYSTEM \{ENABLE | DISABLE | REMOVE\} ABSTRACT SQL PLAN \(System Management\)](alter-system-enable-disable-remove-abstract-sql-plan-system-management-031158f.md "Enables or disables execution plan generation for abstract SQL plans, or removes plans from the ABSTRACT_SQL_PLANS table.")
 

@@ -208,10 +208,18 @@ Displays whether persistent memory is removed as part of the unload. Values are 
 </tr>
 </table>
 
+
+
+<a name="loio20ad86c6751910148fe5ee1c3b76cadb__section_q44_qdv_tbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
 [UNLOAD Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/unload-statement-data-manipulation-20fe92a.md "Unloads the column store table from memory.")
 
-[Load/Unload a Column Table into/from Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c133165bbb57101493c5fb19b5b8607f.html "Under normal circumstances, the SAP HANA database manages the loading and unloading of tables into and from memory automatically, the aim being to keep all relevant data in memory. However, you can manually load and unload individual tables, as well as load table columns if necessary.") :arrow_upper_right:
+[Load/Unload a Column Table into/from Memory](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/c133165bbb57101493c5fb19b5b8607f.html "Under normal circumstances, the SAP HANA database manages the loading and unloading of tables into and from memory automatically, the aim being to keep all relevant data in memory. However, you can manually load and unload individual tables, as well as load table columns if necessary.") :arrow_upper_right:
 

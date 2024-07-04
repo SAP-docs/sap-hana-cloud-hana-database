@@ -422,6 +422,14 @@ Displays the error message returned by the check.
 
 
 
+<a name="loio1f696b9f9df34f268c0c996e73421363__section_npz_bw5_tbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio1f696b9f9df34f268c0c996e73421363__section_hxj_pqh_cfb"/>
 
 ## Additional Information
@@ -435,13 +443,13 @@ Entries are aggregated, meaning that an existing entry is updated if the same ch
 
 [M\_CONSISTENCY\_CHECK\_HISTORY\_ERRORS System View](m-consistency-check-history-errors-system-view-f08f029.md "Lists the errors that were found within a specified check run.")
 
-[Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/9357bf52c7324bee9567dca417ad9f8b.html "The table consistency check is a procedure available in the SAP HANA database that performs a range of consistency check actions on database tables. It can be run from the command line or scheduled within the statistics service.") :arrow_upper_right:
+[Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/9357bf52c7324bee9567dca417ad9f8b.html "The table consistency check is a procedure available in the SAP HANA database that performs a range of consistency check actions on database tables. You can run it from the command line or scheduled it within the statistics service.") :arrow_upper_right:
 
-[Table and Catalog Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/2584ec2e324d44529edc8221956359ea.html "Using stored procedures and commands available in the SAP HANA database, you can perform a range of consistency checks on the database catalog and on database tables.") :arrow_upper_right:
+[Table and Catalog Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/2584ec2e324d44529edc8221956359ea.html "Using stored procedures and commands available in the SAP HANA database, you can perform a range of consistency checks on the database catalog and on database tables.") :arrow_upper_right:
 
-[Partitioning Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/7b1e7a1577cc4e05bb4c05b4189c5b2f.html "A number of table consistency checks are available to check the validity of partitioned tables.") :arrow_upper_right:
+[Partitioning Consistency Checks](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/7b1e7a1577cc4e05bb4c05b4189c5b2f.html "A number of table consistency checks are available to check the validity of partitioned tables.") :arrow_upper_right:
 
-[Catalog Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/9aed20fccc28455ea515c8c4eeceb7b3.html "The catalog consistency check can be run from the command line or be scheduled at the operating system level to perform a range of consistency check actions on the database catalog. The frequency with which you do this depends on your scenario.") :arrow_upper_right:
+[Catalog Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/9aed20fccc28455ea515c8c4eeceb7b3.html "The catalog consistency check can be run from the command line or be scheduled at the operating system level to perform a range of consistency check actions on the database catalog. The frequency with which you do this depends on your scenario.") :arrow_upper_right:
 
-[Configuration Parameters for the Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/49ff94736bb84e948321cb1e8cd1ca22.html "A set of configuration parameters in the indexserver.ini file is available to control the manual table consistency check.") :arrow_upper_right:
+[Configuration Parameters for the Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/49ff94736bb84e948321cb1e8cd1ca22.html "A set of configuration parameters in the indexserver.ini file is available to control the manual table consistency check.") :arrow_upper_right:
 

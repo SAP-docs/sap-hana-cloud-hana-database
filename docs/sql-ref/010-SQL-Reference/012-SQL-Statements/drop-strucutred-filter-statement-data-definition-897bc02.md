@@ -40,7 +40,7 @@ DROP STRUCTURED FILTER SF_T2_VIEW;
 **Related Information**  
 
 
-[ALTER STRUCUTRED FILTER Statement \(Data Definition\)](alter-strucutred-filter-statement-data-definition-07b14e0.md "Alter an existing a structured filter.")
+[ALTER STRUCTURED FILTER Statement \(Data Definition\)](alter-structured-filter-statement-data-definition-07b14e0.md "Alter an existing a structured filter.")
 
 [CREATE STRUCTURED FILTER Statement \(Data Definition\)](create-structured-filter-statement-data-definition-f0238ff.md "Create a structured filter to manage binding between a database object (SQL or parameterized SQL view) and static / dynamic filter condition under it.")
 

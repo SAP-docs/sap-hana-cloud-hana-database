@@ -358,5 +358,5 @@ This view also requires the CATALOG READ or AUDIT ADMIN system privilege.
 
 [DROP AUDIT POLICY Statement \(Access Control\)](../../010-SQL-Reference/012-SQL-Statements/drop-audit-policy-statement-access-control-20d6324.md "Drops an audit policy.")
 
-[Best Practices and Recommendations for Creating Audit Policies](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/35eb4e567d53456088755b8131b7ed1d.html "Best practices and recommendations to help you create audit policies") :arrow_upper_right:
+[Best Practices and Recommendations for Creating Audit Policies](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/35eb4e567d53456088755b8131b7ed1d.html "Best practices and recommendations to help you create audit policies") :arrow_upper_right:
 

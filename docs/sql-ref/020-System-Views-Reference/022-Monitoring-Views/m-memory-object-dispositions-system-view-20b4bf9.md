@@ -439,5 +439,5 @@ Reading this view may take some time as the entire resource container must be tr
 
 [M\_MEMORY\_OBJECTS\_RESET System View](m-memory-objects-reset-system-view-20b508b.md "Provides values accumulated since the last reset of the main view M_MEMORY_OBJECTS.")
 
-[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
+[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
 

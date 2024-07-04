@@ -238,7 +238,7 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [FUNCTIONS System View](functions-system-view-20a5023.md "Provides information about available functions.")
 
-[Function Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/58106d8f4fb44120b76fc6fb1f4a0bcc.html "") :arrow_upper_right:
+[Function Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/58106d8f4fb44120b76fc6fb1f4a0bcc.html "") :arrow_upper_right:
 
-[Array Parameters for Procedures and Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/dcffe459010546bd981d3b74b3798962.html "You can create procedures and functions with array parameters so that array variables or constant arrays can be passed to them.") :arrow_upper_right:
+[Array Parameters for Procedures and Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/dcffe459010546bd981d3b74b3798962.html "You can create procedures and functions with array parameters so that array variables or constant arrays can be passed to them.") :arrow_upper_right:
 

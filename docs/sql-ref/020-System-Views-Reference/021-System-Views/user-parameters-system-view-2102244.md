@@ -95,5 +95,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [USERS System View](users-system-view-2102609.md "Lists all users.")
 
-[Restrict Use of the CLIENT User Parameter](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/91af0e7d50a14936a388618974ef8dc1.html "Allow only authorized technical users to overwrite the value of the CLIENT parameter for a database connection or the value of the $$client$$ parameter in an SQL query.") :arrow_upper_right:
+[Restrict Use of the CLIENT User Parameter](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/91af0e7d50a14936a388618974ef8dc1.html "Allow only authorized technical users to overwrite the value of the CLIENT parameter for a database connection or the value of the $$client$$ parameter in an SQL query.") :arrow_upper_right:
 

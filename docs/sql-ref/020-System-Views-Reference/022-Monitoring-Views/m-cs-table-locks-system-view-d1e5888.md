@@ -208,7 +208,7 @@ VARCHAR\(5\)
 </td>
 <td valign="top">
 
-I Displays the iternal flag used for asserting in IndexMgr code.
+Displays the iternal flag used for asserting in IndexMgr code.
 
 </td>
 </tr>
@@ -247,4 +247,12 @@ Displays the IS\_MODE\_NO\_WAIT flag. Access to all current handles is granted w
 </td>
 </tr>
 </table>
+
+
+
+<a name="loiod1e58889c4bb4f9e88411a0e5a5e3590__section_uy5_mcv_tbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
 

@@ -20,8 +20,11 @@ ALTER TABLE <table_name>
    | <merge_partition_clause>
    | <alter_dynamic_range_clauses>
    | <alter_dynamic_property_clause>
+   | <manage_dynamic_distance_clause>
    | <alter_partition_load_unit_clause>
    | <alter_partition_group_clauses>
+   | <alter_partition_movable_clause>
+   | <manage_dynamic_check_interval>
    }
 
 ```
@@ -37,20 +40,18 @@ ALTER TABLE <table_name>
 </b></dt>
 <dd>
 
-Partitions an existing unpartitioned table using a heterogeneous range, range-range, or range-hash partitioning scheme.
+Partitions an existing unpartitioned table using a heterogeneous range. Partitions can be up to three levels, using one of the following schemas: RANGE-RANGE, RANGE-HASH, RANGE-RANGE-RANGE, or RANGE-RANGE-HASH. For more information on partitioning schema, see *Table Partitioning* in the *SAP HANA Cloud, SAP HANA Database Administration Guide*.
 
 ```
 <partition_table_clause> ::= PARTITION BY RANGE (<partition_expression>) 
-   [ [ NO ] PRIMARY KEY CHECK ] ( <part_spec> [, <part_spec> [,...] ] ) [ ONLINE ]
+   [ [ NO ] PRIMARY KEY CHECK ] ( <part_spec> [, <part_spec> [,...] ] ) 
+   [ ONLINE ]
 
 <part_spec> ::= 
-   { ( <part_range> [, <part_range> [,...] ] ) [ <subpart_by_clause> ] 
-   | ( <part_range> ) [ <subpart_by_clause> ] }
-
-<subpart_by_clause> ::= SUBPARTITION BY { sub_part_range | <sub_part_hash> } }
+   ( <part_range> [, <part_range> [,...] ] ) [ <subpart1_by_clause> [ <subpart2_by_clause> ] ] 
 ```
 
-All subpartitions must be of the same type and reference the same column or in the case of a hash subpartition the same group of columns. Mixed range and hash subpartitions are not supported. If the first subpartition is a range using column B, then all additional subpartition must be ranges using column B. If the first subpartition is a hash, referencing columns B and C, then all subpartitions must hash referencing the same group of columns.
+All subpartitions of a common level must be of the same type and reference the same column or in the case of a hash subpartition the same group of columns. For example, if the first-level subpartition is RANGE using column B, then all additional first-level subpartitions must be RANGE using column B. If the first-level subpartition is HASH, referencing columns B and C, then all first-level subpartitions must be HASH referencing the same group of columns. The same column reference cannot be used on different subpartition levels regardless of type. For example, if PARTITION BY RANGE *<partition\_expression\>* references column A, then neither *<subpart1\_by\_clause\>* or *<subpart2\_by\_clause\>* can reference column A. If *<subpart1\_by\_clause\>* references column B, then *<subpart2\_by\_clause\>* can't reference column A or B.
 
 
 <dl>
@@ -153,13 +154,11 @@ The primary key check is performed on the first level of a partition. If not spe
 </b></dt>
 <dd>
 
-Specifies the range for the first- or second-level range partition.
+Specifies the range for the first-, second-, or third-level partition.
 
 ```
 <part_range> ::= PARTITION <range_values> [ <range_prop_list> ]
 ```
-
-Return to [*<add\_partition\_clauses\>*.](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__add_partition_clauses)
 
 
 <dl>
@@ -170,16 +169,14 @@ Return to [*<add\_partition\_clauses\>*.](heterogeneous-alter-partition-clauses-
 </b></dt>
 <dd>
 
-Specifies the values of the first- or second-level range partition.
+Specifies the values of the range partition.
 
 ```
 <range_values> ::= 
-   <min_value> <= VALUES < <max_value>
+   { <min_value> <= VALUES < <max_value>
    | VALUE[S] = <target_value>
-   | <partition_others>
+   | <partition_others> }
 ```
-
-Return to [*<redefine\_partition\_clause\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__redefine_partition_clause), [*<move\_partition\_clauses\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__move_partition_clauses), [*<drop\_partition\_clauses\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__drop_partition_clauses), [*<alter\_partition\_load\_unit\_clause\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__alter_partition_load_unit_clause), or [*<alter\_partition\_group\_clauses\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__alter_partition_group_clauses).
 
 
 <dl>
@@ -240,19 +237,33 @@ Specifies a single value of a first- or second-level range partition. The value 
 </b></dt>
 <dd>
 
-Specifies a partition for all values outside of the defined partition ranges.
 
-```
-<partition_others> ::= 
-   { OTHERS [ DYNAMIC [ {THRESHOLD <threshold_count> ] ]
-   | [ DYNAMIC INTERVAL <interval>  ] }
-```
 
 
 <dl>
 <dt><b>
 
-DYNAMIC THRESHOLD *<threshold\_count\>*
+*<dynamic\_direction\>*
+
+</b></dt>
+<dd>
+
+Specifies the direction in which dynamic range generates new range partitions.
+
+```
+<dynamic_direction> ::=
+   { BIDIRECTIONAL
+   | DECREASING
+   | INCREASING }
+```
+
+DECREASING generates new range partitions towards negative infinity. BIDIRECTIONAL generates new range partitions towards both negative infinity and positive infinity. If not specified, then INCREASING \(default\) is used to generate new range partitions towards positive infinity.
+
+
+
+</dd><dt><b>
+
+*<dynamic\_threshold\_count\>*
 
 </b></dt>
 <dd>
@@ -263,7 +274,7 @@ The keyword DYNAMIC enables dynamic range partitioning on the table \(default is
 
 </dd><dt><b>
 
-DYNAMIC INTERVAL
+*<dynamic\_interval\>*
 
 </b></dt>
 <dd>
@@ -271,13 +282,30 @@ DYNAMIC INTERVAL
 Specifies a dynamic interval for the range OTHERS partition. The interval is between the last range partition and new partition created dynamically.
 
 ```
-<interval> ::= <interval_value> <interval_type>
+<dynamic_interval> ::= <interval_value> <interval_type>
 
 <interval_value>  ::= <unsigned_integer>
 <interval_type> ::= [ YEAR | MONTH | HOUR ]
 ```
 
 Dynamic interval is only supported when the partition column type is TINYINT, SMALLINT, INT, BIGINT, DATE, SECONDDATE or LONGDATE. If no *<interval\_type\>* is specified, INT is used implicitly.
+
+
+
+</dd><dt><b>
+
+*<distance\_interval\>*
+
+</b></dt>
+<dd>
+
+Calculates the distance of each partition by comparing with the maximum value of the partition group. If it is equal to or greater than the preset distance, then dynamic aging deems it to be a warm partition and converts the partition into PAGE LOADABLE. The criteria to convert a partition to PAGE LOADABLE is:
+
+-   The partition's load unit property is not explicit COLUMN LOADABLE.
+-   The partition does not derive COLUMN LOADABLE from its parent partitions or table.
+-   The partition does not have sub partitions.
+-   The partition contains data. If it's empty but its next partition is deemed to be warm partition, then it is still be converted.
+-   The calculated distance \>= the preset distance threshold.
 
 
 
@@ -304,12 +332,12 @@ Specifies the first- or second-level properties for the range partition.
 <range_prop_list> ::= <part_property> [ <part_property> ...]
 
 <part_property> ::= 
-   INSERT {OFF | ON}
+   { INSERT {OFF | ON}
    | AT [ LOCATION ] ( <location> )
-   | <load_unit> 
-   | <group_list>
+   | <load_unit><group_list>
    | <persistent_memory_spec>
    | <numa_node_preference_clause>
+   | <set_movable> }
 ```
 
 
@@ -445,7 +473,7 @@ Enables or disables persistent memory storage preference at the table, range par
 Sets the NUMA node preferences. This clause can be set in various locations such as range partition definitions \(not hash or round-robin\) and column definitions.
 
 ```
-<numa_node_preference_clause> ::= NUMA NODE { ( <numa_node_index_spec> )
+<numa_node_preference_clause> ::= NUMA NODE ( <numa_node_index_spec> )
 
 <numa_node_index_spec> :: = <numa_node_spec> [, <numa_node_spec> [,…] 
 
@@ -483,6 +511,23 @@ NUMA node indexes should be specified in the range of 0 to one less than max\_nu
 
 
 
+</dd><dt><b>
+
+*<set\_movable\>*
+
+</b></dt>
+<dd>
+
+Specifies whether a partition is movable.
+
+```
+<set_movable> ::= [ NOT ] MOVABLE
+```
+
+If not specified, then the value is inherited from its parent partitions \(from near to far\). If none of the parents have the move property explicitly set, then the table-level movable property value is used. If none of these apply, then the partition is movable by default.
+
+
+
 </dd>
 </dl>
 
@@ -495,42 +540,44 @@ NUMA node indexes should be specified in the range of 0 to one less than max\_nu
 
 </dd><dt><b>
 
-*<sub\_part\_range\>*
+*<subpart1\_by\_clause\>*
 
 </b></dt>
 <dd>
 
-Specifies the range subpartition.
+Specifies a range or hash subpartition.
 
 ```
-<sub_part_range> ::= RANGE ( <sub_range_col_def> ) ( <part_range> [, <part_range> [,...] ] )
-
-<sub_range_col_def> ::= { <exist_subpart_col_name> | <partition_expression> }
+<subpart1_by_clause> ::= 
+   SUBPARTITION BY { <subpart1_range> | <subpart1_hash> }
 ```
-
-All subpartitions must be of the same type and reference the same column or in the case of a hash subpartition the same group of columns. Mixed range and hash subpartitions are not supported. If the first subpartition is a range using column B, then all additional subpartition must be ranges using column B. If the first subpartition is a hash, referencing columns B and C, then all subpartitions must hash referencing the same group of columns.
 
 
 <dl>
 <dt><b>
 
-*<exist\_part\_column\_name\>*
+*<subpart1\_range\>*
 
 </b></dt>
 <dd>
 
-Specifies the name of the existing first-level range partitioning column.
+Specifies the first-level range subpartition.
+
+```
+<subpart1_range> ::= 
+   RANGE ( <sub_range_lev1_col_def> ) ( <part_range> [, <part_range> [,...] ] [ <subpart2_by_clause> ] )
+```
 
 
+<dl>
+<dt><b>
 
-</dd><dt><b>
-
-*<sub\_range\_col\_def\>*
+*<sub\_range\_lev1\_col\_def\>*
 
 </b></dt>
 <dd>
 
-Specifies the subpartitioning column. If this is the first subpartition in the partitioned table, then specify *<partition\_expression\>*. For all subsequent range subpartitions added or referenced, specify *<exist\_subpart\_col\_name\>*, the name of the existing range subpartitioning column.
+Specifies the referencing column for the initial first-level subpartition. For all subsequent first-level subpartitions, specify the column defined for the initial first-level subpartition.
 
 
 
@@ -539,57 +586,75 @@ Specifies the subpartitioning column. If this is the first subpartition in the p
 
 
 
-</dd>
-<dd>
-
-Return to [*<partition\_table\_clause\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__partition_table_clause), [*<add\_partition\_clauses\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__add_partition_clauses) or [*<redefine\_partition\_clause\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__redefine_partition_clause).
-
-
-
 </dd><dt><b>
 
-*<sub\_part\_hash\>*
+*<subpart2\_by\_clause\>*
 
 </b></dt>
 <dd>
 
-Specifies the hash subpartition.
+Specifies the second-level subpartition type. It can be a RANGE or HASH subpartition.
 
 ```
-<sub_part_hash> ::= HASH ( <sub_hash_col_def> ) PARTITIONS <num_partitions> [ AT [ LOCATION ] ( <loc_list> ) ]
-
-<sub_hash_col_def> ::= { <exist_col_grp_list> | <partition_expression> [,<partition_expression> [,...] ] }
+<subpart2_by_clause> ::= 
+   SUBPARTITION BY { <subpart2_range> | <subpart2_hash>
 ```
-
-All subpartitions must be of the same type and reference the same column or in the case of a hash subpartition the same group of columns. Mixed range and hash subpartitions are not supported. If the first subpartition is a range using column B, then all additional subpartition must be ranges using column B. If the first subpartition is a hash, referencing columns B and C, then all subpartitions must hash referencing the same group of columns. With the exception of LOCATION, all hash partitions share the same properties.
 
 
 <dl>
 <dt><b>
 
-*<sub\_hash\_col\_def\>*
+*<subpart2\_range\>*
 
 </b></dt>
 <dd>
 
-Specifies the subpartitioning column. If this is the first subpartition in the partitioned table, then specify *<partition\_expression\>*. For all subsequent hash subpartitions added or referenced, specify *<exist\_col\_grp\_list\>*, the name of the existing hash partitioning column or group of columns.
+```
+<subpart2_range> ::= 
+      RANGE ( <subpart_lev2_col_def> ) ( <part_range> [, <part_range> [,...] ] )
+```
 
 
 
 </dd><dt><b>
 
-*<loc\_list\>*
+*<subpart\_lev2\_col\_def\>*
 
 </b></dt>
 <dd>
 
-Specifies where the hash partition resides.
+Specifies the referencing column for the initial second-level subpartition. For all subsequent second-level subpartitions, specify the column defined for the initial second-level subpartition.
 
-> ### Note:  
-> When the number of target partitions is a multiple of the number of source partitions, they are distributed across the available index servers in a round-robin style. However, in cases where the number of target partitions is not a multiple of the source partitions, all the target partitions are stored at the location of the first source partition.
+
+
+</dd><dt><b>
+
+*<subpart2\_hash\>*
+
+</b></dt>
+<dd>
+
+Specifies the second-level hash subpartition.
 
 ```
-<loc_list> ::= <location> [ , <location> [,...] ]
+<subpart2_hash> ::= 
+   HASH ( <subpart_lev2_col_def> ) PARTITIONS <num_partitions> [ AT [ LOCATION ] ( <loc_list_lev2> ) ]
+
+```
+
+
+
+</dd><dt><b>
+
+*<loc\_list\_lev2\>*
+
+</b></dt>
+<dd>
+
+Specifies where the partitions reside.
+
+```
+<loc_list_lev2> ::= <location> [, <location> [,...] ]
 
 <location> ::= '<HANA_host>:<HANA_port>'
 ```
@@ -599,7 +664,61 @@ Specifies where the hash partition resides.
 </dd>
 </dl>
 
-Return to [*<partition\_table\_clause\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__partition_table_clause), [*<add\_partition\_clauses\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__add_partition_clauses) or [*<redefine\_partition\_clause\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__redefine_partition_clause).
+
+
+</dd><dt><b>
+
+*<subpart1\_hash\>*
+
+</b></dt>
+<dd>
+
+Specifies the first-level hash subpartition.
+
+```
+<subpart1_hash> ::= 
+   HASH ( <subpart_lev1_col_def> ) PARTITIONS <num_partitions> [ AT [ LOCATION ] ( <loc_list> ) ]
+```
+
+With the exception of LOCATION, all hash partitions share the same properties.
+
+
+<dl>
+<dt><b>
+
+*<subpart\_lev1\_col\_def\>*
+
+</b></dt>
+<dd>
+
+Specifies the referencing column for the initial first-level subpartition. For all subsequent first-level subpartitions, specify the column defined for the initial first-level subpartition.
+
+
+
+</dd><dt><b>
+
+*<loc\_list\_lev1\>*
+
+</b></dt>
+<dd>
+
+Specifies where the partitions reside.
+
+```
+<loc_list_lev1> ::= <location> [, <location> [,...] ]
+
+<location> ::= '<HANA_host>:<HANA_port>'
+```
+
+
+
+</dd>
+</dl>
+
+
+
+</dd>
+</dl>
 
 
 
@@ -628,7 +747,7 @@ If load units are not specified while repartitioning, the load unit for all new 
 </b></dt>
 <dd>
 
-Defines the alter operations to add first- and second-level partitions to an existing partitioned table.
+Defines the alter operations to add partitions and subpartitions to an existing partitioned table.
 
 
 <dl>
@@ -639,18 +758,53 @@ Defines the alter operations to add first- and second-level partitions to an exi
 </b></dt>
 <dd>
 
-Adds a new first-level partition, with an optional subpartition, to an existing partitioned table.
+Adds a new first-level partition, with optional subpartitions, to an existing partitioned table.
 
 ```
-<add_partition_clause> ::= ADD PARTITION RANGE ( <exist_part_column_name> ) ( ( <part_range_list> )
-   [ SUBPARTITION BY { <sub_part_range> | <sub_part_hash> } ] );
+<add_partition_clause> ::= ADD PARTITION RANGE ( <exist_part_column_name> ) 
+   ( <part_range_list>[,<part_range_list>[,...] ])
 
-<part_range_list> ::= <part_range> [, <part_range> [,...] ]
+<part_range_list> ::=
+   ( <part_spec> ) [ SUBPARTITION BY { <subpart1_by_clause> [ <subpart2_by_clause> } ] );
+
+<part_spec> ::= <part_range> [, <part_range> [,...] ]
 ```
 
 *<exist\_part\_column\_name\>* is the name of the existing first-level range partitioning column.
 
 You can also add a partition by redefining existing partition ranges. See [*<redefine\_partition\_clause\>*](heterogeneous-alter-partition-clauses-a4258b8.md#loioa4258b865710423b8712b06fb5b8e7c5__redefine_partition_clause).
+
+
+
+</dd>
+<dd>
+
+
+<dl>
+<dt><b>
+
+*<partition\_list\>*
+
+</b></dt>
+<dd>
+
+Specifies the partition and optional subpartitions to be added.
+
+
+
+</dd><dt><b>
+
+*<part\_spec\>*
+
+</b></dt>
+<dd>
+
+Specifies the partition ranges to be added.
+
+
+
+</dd>
+</dl>
 
 
 
@@ -661,36 +815,22 @@ You can also add a partition by redefining existing partition ranges. See [*<red
 </b></dt>
 <dd>
 
-Adds a new range subpartition to an existing first-level range partition.
+Adds a new subpartition to an existing range partition.
 
 ```
-<add_partition_clause> ::= ALTER PARTITION RANGE (<exist_part_column_name>) ( ( <part_range_list> ) )
-   PARTITION BY RANGE ( <sub_range_column_def> ) ( ( <subpart_range_list> ) );
+<add_partition_clause> ::= 
+   PARTITION RANGE (<exist_part_column_name>) 
+   ( <part_range_list>[,<part_range_list>[,...] ])
 
-<part_range_list> ::= <part_range> [, <part_range> [,...] ]
-<sub_range_col_def> ::= { <exist_subpart_col_name> | <partition_expression> }
-<subpart_range_list> ::= <part_range> [, <part_range> [,...] ]
+<part_range_list> ::=
+   ( <part_spec> ) [ SUBPARTITION BY { <subpart1_by_clause> [ <subpart2_by_clause> } ] );
+
+<part_spec> ::= <part_range> [, <part_range> [,...] ]
 ```
 
 If data exists in the table, then the subpartition specifications must account for all data within the partitioning column. For example, if a table contains the data rows \(10, 100\) and \(10, 200\), and the first-level partitioning column is the first column, then the subpartition range must include both values of column two. You could specify a range \(100 - 200\) or fixed values \(100, 200\). You could also include the OTHERS partition to account for later values added, which might fall outside the subpartition range.
 
 To add a hash subpartition to an existing first-level range partition, use the *<redefine\_partition\_clause\>* syntax.
-
-
-<dl>
-<dt><b>
-
-*<sub\_range\_col\_def\>*
-
-</b></dt>
-<dd>
-
-Specifies the subpartitioning column. If this is the first subpartition in the partitioned table, then specify *<partition\_expression\>*. For all subsequent range subpartitions added or referenced, specify *<exist\_subpart\_col\_name\>*, the name of the existing range subpartitioning column.
-
-
-
-</dd>
-</dl>
 
 
 
@@ -710,7 +850,7 @@ Modifies the existing ranges and the INSERT property of the first- and second-le
 
 ```
 <redefine_partition_clause> ::= PARTITION BY RANGE (<exist_partition_column_name>) 
-( ( <redefine_part_range_list> ) [ SUBPARTITION BY { <sub_part_range> | <sub_part_hash> } )
+( ( <redefine_part_range_list> ) [ SUBPARTITION BY { <subpart1_range> | <subpart1_hash> } )
 
 <redefine_part_range_list> ::= <redefine_part_range> [, <redefine_part_range> [,...] ]
 ```
@@ -940,86 +1080,36 @@ Drops a first-level range partition and all associated subpartitions. Dropping a
 
 
 
-</dd>
-<dd>
+</dd><dt><b>
 
-
-<dl>
-<dt><b>
-
-*<exist\_part\_column\_name\>*
+*<drop\_subpart1\_clause\>*
 
 </b></dt>
 <dd>
 
-Specifies the name of the existing first-level range partitioning column.
+Drops a range first-level subpartition. Dropping the last range subpartition deletes the first-level range partition as well.
+
+```
+<drop_subpart1_clause> ::= ALTER PARTITION RANGE (<exist_part_column_name>) ( (<part_range_values> ) ) 
+   DROP PARTITION RANGE (<exist_part_column_name>) ( ( <subpart1_range_values> [, <subpart1_range_values> [,...] ] ) )
+```
 
 
 
 </dd><dt><b>
 
-*<drop\_part\_range\>*
+*<drop\_subpart2\_clause\>*
 
 </b></dt>
 <dd>
 
-Specifies the first-level range being dropped.
+Drops a range second-level subpartition.
 
 ```
-<drop_part_range> ::= PARTITION <range_values>
+<drop_subpart_clause> ::= ALTER PARTITION RANGE (<exist_part_column_name>) ( (<part_range_values> ) ) 
+   SUBPARTITION BY RANGE (<subpart1_range_values> ) ) 
+   DROP PARTITION RANGE (<exist_part_column_name>) ( ( <subbpart2_range_values> [, <subbpart2_range_values> [,...] ] ) )
 ```
-
-
-
-</dd>
-</dl>
-
-
-
-</dd><dt><b>
-
-*<drop\_subpart\_clause\>*
-
-</b></dt>
-<dd>
-
-Drops a range subpartition. Dropping the last range subpartition deletes the first-level range partition as well.
-
-```
-<drop_subpart_clause> ::= ALTER PARTITION RANGE (<exist_part_column_name>) ( (<part_range_drop> ) )
-   DROP PARTITION RANGE (<exist_part_column_name>) ( ( <range_values> [, <range_values> [,...] ] ) )
-```
-
-
-<dl>
-<dt><b>
-
-*<exist\_part\_column\_name\>*
-
-</b></dt>
-<dd>
-
-Specifies the name of the existing first-level range partitioning column.
-
-
-
-</dd><dt><b>
-
-*<part\_range\_drop\>*
-
-</b></dt>
-<dd>
-
-Specifies the first-level range partition containing the range subpartition being dropped.
-
-```
-<part_range_drop> ::= <drop_part_range> 
-```
-
-
-
-</dd>
-</dl>
 
 
 
@@ -1110,7 +1200,9 @@ Change the applied property.
 
 ```
 <alter_dynamic_property_clause> ::= 
-   ALTER PARTITION <partition_ids> <dynamic_property>
+   { ALTER PARTITION <partition_ids> <dynamic_range_property>
+   | ALTER PARTITION <partition_ids> NO DYNAMIC DISTANCE
+   | REFRESH DYNAMIC DISTANCE }
 ```
 
 
@@ -1135,7 +1227,7 @@ Specifies the partition to apply the property to.
 
 </dd><dt><b>
 
-*<dynamic\_property\>*
+*<dynamic\_range\_property\>*
 
 </b></dt>
 <dd>
@@ -1143,16 +1235,38 @@ Specifies the partition to apply the property to.
 Specifies the property to apply.
 
 ```
-<dynamic_property> ::= 
-   { DYNAMIC { [ THRESHOLD <threshold_count> ] | INTERVAL <interval> } 
-   | NO DYNAMIC }
+<dynamic_range_property> ::= 
+   DYNAMIC [ <dynamic_direction> ] 
+      { [ THRESHOLD <dynamic_threshold_count> ]
+      | INTERVAL <dynamic_interval> }
+   [ DISTANCE <distance_interval> PAGE LOADABLE ] 
 ```
 
 
 <dl>
 <dt><b>
 
-DYNAMIC THRESHOLD *<threshold\_count\>*
+*<dynamic\_direction\>*
+
+</b></dt>
+<dd>
+
+Specifies the direction in which dynamic range generates new range partitions.
+
+```
+<dynamic_direction> ::=
+   { BIDIRECTIONAL
+   | DECREASING
+   | INCREASING }
+```
+
+DECREASING generates new range partitions towards negative infinity. BIDIRECTIONAL generates new range partitions towards both negative infinity and positive infinity. If not specified, then INCREASING \(default\) is used to generate new range partitions towards positive infinity.
+
+
+
+</dd><dt><b>
+
+*<dynamic\_threshold\_count\>*
 
 </b></dt>
 <dd>
@@ -1163,7 +1277,7 @@ The keyword DYNAMIC enables dynamic range partitioning on the table \(default is
 
 </dd><dt><b>
 
-DYNAMIC INTERVAL
+*<dynamic\_interval\>*
 
 </b></dt>
 <dd>
@@ -1171,7 +1285,7 @@ DYNAMIC INTERVAL
 Specifies a dynamic interval for the range OTHERS partition. The interval is between the last range partition and new partition created dynamically.
 
 ```
-<interval> ::= <interval_value> <interval_type>
+<dynamic_interval> ::= <interval_value> <interval_type>
 
 <interval_value>  ::= <unsigned_integer>
 <interval_type> ::= [ YEAR | MONTH | HOUR ]
@@ -1181,8 +1295,100 @@ Dynamic interval is only supported when the partition column type is TINYINT, SM
 
 
 
+</dd><dt><b>
+
+*<distance\_interval\>*
+
+</b></dt>
+<dd>
+
+Calculates the distance of each partition by comparing with the maximum value of the partition group. If it is equal to or greater than the preset distance, then dynamic aging deems it to be a warm partition and converts the partition into PAGE LOADABLE. The criteria to convert a partition to PAGE LOADABLE is:
+
+-   The partition's load unit property is not explicit COLUMN LOADABLE.
+-   The partition does not derive COLUMN LOADABLE from its parent partitions or table.
+-   The partition does not have sub partitions.
+-   The partition contains data. If it's empty but its next partition is deemed to be warm partition, then it is still be converted.
+-   The calculated distance \>= the preset distance threshold.
+
+
+
 </dd>
 </dl>
+
+
+
+</dd><dt><b>
+
+NO DYNAMIC DISTANCE
+
+</b></dt>
+<dd>
+
+Disable dynamic aging on a partition group.
+
+
+
+</dd><dt><b>
+
+REFRESH DYNAMIC DISTANCE
+
+</b></dt>
+<dd>
+
+Manually initiate dynamic aging on a table.
+
+
+
+</dd>
+</dl>
+
+
+
+</dd><dt><b>
+
+manage\_dynamic\_distance\_clause
+
+</b></dt>
+<dd>
+
+Manage dynamic aging.
+
+```
+
+   | <disable_dynamic_distance_clause>
+   | <refresh_dynamic_distance_clause>REFRESH DYNAMIC DISTANCE
+```
+
+
+<dl>
+<dt><b>
+
+*<refresh\_dynamic\_distance\_clause\>*
+
+</b></dt>
+<dd>
+
+Manually trigger dynamic aging on a table.
+
+```
+REFRESH DYNAMIC DISTANCE
+```
+
+
+
+</dd><dt><b>
+
+*<disable\_dynamic\_distance\_clause\>*
+
+</b></dt>
+<dd>
+
+Disable dynamic aging on a partition group.
+
+```
+<disable_dynamic_distance_clause> ::=
+   ALTER PARTITION { <partition_ids> | OTHERS } NO DYNAMIC DISTANCE
+```
 
 
 
@@ -1201,7 +1407,7 @@ Dynamic interval is only supported when the partition column type is TINYINT, SM
 Alters the paging attributes for a range partition or subpartition.
 
 ```
-<alter_partition_load_unit_clause> ::= ALTER PARTITION {<partition_id_list> | <range> } <load_unit>;
+<alter_partition_load_unit_clause> ::= ALTER PARTITION {<partition_id_list> | <range> } <load_unit>
 ```
 
 
@@ -1240,7 +1446,8 @@ Specifies the partition to apply the property to.
 Specifies the partition or subpartition range to alter.
 
 ```
-<range> ::= RANGE ( <exist_part_column_name> ) ( ( <alter_load_unit_range_list>) [ SUBPARTITION BY { <sub_range> | <sub_hash> } ] );
+<range> ::= RANGE ( <exist_part_column_name> ) 
+   ( ( <alter_load_unit_range_list>) [ SUBPARTITION BY { <subpart1_range> | <subpart1_hash> } ] )
 
 <alter_load_unit_range_list> ::= PARTITION <range_values> [, PARTITION <range_values> [,...] ]
 ```
@@ -1255,36 +1462,6 @@ Specifies the partition or subpartition range to alter.
 <dd>
 
 Specifies the name of the existing first-level range partitioning column.
-
-
-
-</dd><dt><b>
-
-*<sub\_range\>*
-
-</b></dt>
-<dd>
-
-Specifies the range of the range subpartition to alter.
-
-```
-<sub_range> ::= RANGE ( <exist_part_column_name> ) ( PARTITION <range_values> [,...] )
-```
-
-
-
-</dd><dt><b>
-
-*<sub\_hash\>*
-
-</b></dt>
-<dd>
-
-Specifies the hash subpartition.
-
-```
-<sub_hash> ::= HASH ( <exist_part_column_name> ) PARTITIONS <num_partitions>
-```
 
 
 
@@ -1458,7 +1635,7 @@ Specifies the group options to set on the specified range partition or subpartit
   ALTER PARTITION <group_range> SET <group_list> [ CASCADE ]
 ```
 
-GROUP options are only supported on range partitions in a range, range-range, or range-hash partition schema. Use the M\_TABLE\_PARTITIONS view to see effective group values \(after applying inheritance from parent levels\).
+GROUP options are only supported on range partitions in a range, range-range, or range-hash, or range-range-range partition schema. Use the M\_TABLE\_PARTITIONS view to see effective group values \(after applying inheritance from parent levels\).
 
 
 <dl>
@@ -1473,10 +1650,7 @@ Specifies the ranges of the range partition to apply the GROUP option to.
 
 ```
 <group_range> ::= RANGE ( <exist_part_column_name> ) ( ( <part_range_list> )
-   [SUBPARTITION BY RANGE ( <exist_part_column_name> ) ( <subpart_range_list> ) [,...] )
-
-<part_range_list> ::= PARTITION <range_values> ] [, PARTITION <range_values> [,...] ]
-<subpart_range_list> ::= PARTITION <range_values> ] [, PARTITION <range_values> [,...] ]
+   [ SUBPARTITION BY { <subpart1_range> | <subpart1_hash> }
 ```
 
 
@@ -1585,6 +1759,77 @@ Removes all GROUP options \(NAME, TYPE, SUBTYPE\) applied to the specified parti
 
 </dd>
 </dl>
+
+
+
+</dd><dt><b>
+
+*<alter\_partition\_movable\_clause\>*
+
+</b></dt>
+<dd>
+
+Controls whether a partition is movable and can be defined by partition id or range.
+
+```
+<alter_partition_movable_clause>::=
+   ALTER PARTITION { <partition_id_list> | <range_list> } [ NOT ] MOVABLE
+```
+
+
+<dl>
+<dt><b>
+
+*<partition\_id\_list\>*
+
+</b></dt>
+<dd>
+
+Specifies the partition to apply the movable clause to.
+
+```
+partition_id_list ::= ( partition_id [, partition_id [,...] ] )
+```
+
+
+
+</dd><dt><b>
+
+*<range\_list\>*
+
+</b></dt>
+<dd>
+
+Specifies the range to apply the movable clause to.
+
+```
+<range_list> ::= 
+   RANGE ( <exist_part_column_name> ) ( ( <part_range_list> )
+     [ SUBPARTITION BY { <subpart1_range> | <subpart1_hash> } )
+
+```
+
+
+
+</dd>
+</dl>
+
+
+
+</dd><dt><b>
+
+*<manage\_dynamic\_check\_interval\>*
+
+</b></dt>
+<dd>
+
+Specifies the interval, in minutes, for the minimum background dynamic range trigger interval on the table. The valid range is 1-1440000. Set to 0 to disable the background dynamic range trigger on this table until the property is unset, or reset with a new value. If not set, it uses the global background dynamic range trigger interval, which has a default value 15 minutes.
+
+```
+<manage_dynamic_check_interval> ::=
+   { SET DYNAMIC RANGE CHECK INTERVAL <dynamic_check_interval>
+   | UNSET DYNAMIC RANGE CHECK INTERVAL }
+```
 
 
 
@@ -1739,20 +1984,17 @@ Remove the GROUP value from the partition range 10 -20 and its subpartitions on 
 ALTER TABLE T1 ALTER PARTITION RANGE (a) ((PARTITION 20 <= VALUES < 30)) UNSET GROUP CASCADE;
 ```
 
-This example creates a multilevel heterogeneous partitioned table and then applies the *<load\_unit\>* attribute first by partition number \(1\) and then to partition range \(10 to 20\).
+These examples alter whether partitions can be moved.
 
 ```
-CREATE COLUMN TABLE T4 (a INT, b INT) PARTITION BY RANGE(a) 
-   ((PARTITION 10 <= VALUES < 20) SUBPARTITION BY RANGE (b) (PARTITION VALUES=100));
-
-ALTER TABLE T4 ALTER PARTITION 1 COLUMN LOADABLE;
-ALTER TABLE T4 ALTER PARTITION RANGE (a) ((PARTITION 10 <= VALUES < 20) 
-   SUBPARTITION BY RANGE (b) (PARTITION VALUES = 100)) PAGE LOADABLE;
+ALTER TABLE T1 ALTER PARTITION 1 SET NOT MOVABLE;
+ALTER TABLE T1 ALTER PARTITION (2,3) SET MOVABLE;
+ALTER TABLE T1 ALTER PARTITION RANGE (a) ((PARTITION 10 <= VALUES < 20)) SET DEFAULT MOVABLE;
 ```
 
 
-<dl>
-<dt><b>
+
+</dd><dt><b>
 
 Dynamic Range Partitioning
 
@@ -1815,9 +2057,34 @@ ALTER TABLE A1 PARTITION BY RANGE (A)
     (PARTITION OTHERS));
 ```
 
+Alter a non-partitioned table to partition it with decreasing dynamic ranges.
 
-<dl>
-<dt><b>
+```
+ALTER TABLE A1 PARTITION BY RANGE (A) 
+   (PARTITION OTHERS DYNAMIC DECREASING INTERVAL 2);
+```
+
+Alter a partitioned table to have bidirectional dynamic ranges.
+
+```
+ALTER TABLE A1 ALTER PARTITION OTHERS DYNAMIC BIDIRECTIONAL THRESHOLD 2;
+```
+
+Set the custom dynamic check interval on table A1 to every 600 minutes.
+
+```
+ALTER TABLE A1 SET DYNAMIC RANGE CHECK INTERVAL 600
+```
+
+Unset the custom dynamic range check interval on table A1.
+
+```
+ALTER TABLE A1 UNSET DYNAMIC RANGE CHECK INTERVAL 0;
+```
+
+
+
+</dd><dt><b>
 
 Redefine Partitions
 
@@ -1837,16 +2104,6 @@ ALTER TABLE A1 PARTITION BY RANGE (A)
 </dd>
 </dl>
 
-
-
-</dd>
-</dl>
-
-
-
-</dd>
-</dl>
-
 **Related Information**  
 
 
@@ -1854,11 +2111,11 @@ ALTER TABLE A1 PARTITION BY RANGE (A)
 
 [ALTER TABLE Statement \(Data Definition\)](alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
-[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "Dynamic Range Partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
+[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "For heterogeneous partitioning schemas dynamic range partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
 
-[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
+[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
 
 [TABLE\_PARTITIONS System View](../../020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 

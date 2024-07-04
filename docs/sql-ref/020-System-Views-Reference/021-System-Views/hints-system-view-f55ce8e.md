@@ -78,13 +78,13 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [STATEMENT\_HINTS System View](statement-hints-system-view-161a91a.md "Provides information about statement hints, including when they were last enabled and/or disabled and by whom.")
 
-[Using Hints With Select Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "In some cases hints can be appended to select statements to determine how the statement is executed. This may be used, for example, to improve performance or to route a query to a specific data source.") :arrow_upper_right:
+[Using Hints with Select Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "In some cases hints can be appended to select statements to determine how the statement is run. This may be used, for example, to improve performance or to route a query to a specific data source.") :arrow_upper_right:
 
 [ALTER SYSTEM \{ADD | ALTER | REMOVE\} STATEMENT HINT Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-add-alter-remove-statement-hint-statement-system-management-1ec23ef.md "Adds, alters, or removes statement hints from the system to a specified query or statement hash.")
 
-[Managing and Monitoring SAP HANA Cloud](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5c3891048fa44d6983801e0aeaf9af38.html "In addition to the administration tools in the SAP HANA cockpit and SAP HANA Cloud Central, other resources are introduced here that are available to help monitor and improve the performance of your database.") :arrow_upper_right:
+[Managing and Monitoring SAP HANA Cloud](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/5c3891048fa44d6983801e0aeaf9af38.html "In addition to the administration tools in the SAP HANA cockpit and SAP HANA Cloud Central, other resources are introduced here that are available to help monitor and improve the performance of your database.") :arrow_upper_right:
 
-[NO_INLINE and INLINE Hints](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/23531168b23340c08731b9660058ee8f.html "The SQLScript compiler combines statements to optimize code. Hints enable you to block or enforce the inlining of table variables.") :arrow_upper_right:
+[NO_INLINE and INLINE Hints](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/23531168b23340c08731b9660058ee8f.html "The SQLScript compiler combines statements to optimize code. Hints enable you to block or enforce the inlining of table variables.") :arrow_upper_right:
 
-[ROUTE_TO Hint](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/79a9f25f2e9a41e0a4cf03dc6b45a111.html "The ROUTE_TO hint routes the query to the specified volume ID or service type.") :arrow_upper_right:
+[ROUTE_TO Hint](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/79a9f25f2e9a41e0a4cf03dc6b45a111.html "The ROUTE_TO hint routes the query to the specified volume ID or service type.") :arrow_upper_right:
 

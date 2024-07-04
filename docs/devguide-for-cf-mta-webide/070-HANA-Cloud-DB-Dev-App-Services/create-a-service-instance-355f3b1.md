@@ -63,6 +63,9 @@ To create an instance of a service controlled by a service broker, perform the f
 
     <code>cf unbind-service <i class="varname">&lt;myApp&gt;</i> <i class="varname">&lt;myServiceInstance&gt;</i></code>
 
+    > ### Caution:  
+    > Unbinding a service instance \(or deleting a service key, for example, with the `delete-service-key` command\) deletes the corresponding HDI containers's run-time \(\_RT\) user, too.
+
 7.  Delete the service instance.
 
     <code>cf delete-service <i class="varname">&lt;myServiceInstance&gt;</i></code>

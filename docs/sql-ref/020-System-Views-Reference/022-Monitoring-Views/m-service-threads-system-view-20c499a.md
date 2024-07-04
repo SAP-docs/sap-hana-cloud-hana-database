@@ -955,5 +955,5 @@ While this view is publicly visible, its contents can only be seen by users with
 
 [M\_SERVICE\_THREAD\_SAMPLES System View](m-service-thread-samples-system-view-d2176a6.md "Displays detailed information about locks held by threads.")
 
-[Analyzing System Performance](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/2f1b50583b214f8c8d64d5a8f65bd74b.html "You can use monitoring views to analyze how effectively your system is handling the current workload.") :arrow_upper_right:
+[Analyzing System Performance](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/2f1b50583b214f8c8d64d5a8f65bd74b.html "You can use monitoring views to analyze how effectively your system is handling the current workload.") :arrow_upper_right:
 

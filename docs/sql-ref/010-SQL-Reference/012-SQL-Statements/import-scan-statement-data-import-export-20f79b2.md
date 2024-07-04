@@ -582,7 +582,7 @@ TEST\_TBL\_COLUMN
 </td>
 <td valign="top">
 
-TAABLE
+TABLE
 
 </td>
 <td valign="top">

@@ -80,6 +80,14 @@ Indicates whether the customizable functionality is enabled: TRUE/FALSE.
 </tr>
 </table>
 
+
+
+<a name="loio7e667ef7ff2d49d7a7a9d4aec27c4b41__section_p4n_yym_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

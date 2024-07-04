@@ -108,5 +108,5 @@ Displays the operation that is currently running within this connection.
 
 [M\_CE\_DEBUG\_JSONS System View](m-ce-debug-jsons-system-view-20aa4be.md "Provides all available JSONS (original, instantiated, or optimized) of a scenario for a concrete query.")
 
-[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
+[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
 

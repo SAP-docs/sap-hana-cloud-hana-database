@@ -428,7 +428,7 @@ Time Series Tables
 
 [SAP Note 2868742](https://me.sap.com/notes/2868742 "Differences between SAP HANA Cloud and SAP HANA Platform for SQL, SQLScript and SAP HDI (SAP HANA Deployment Infrastructure")
 
-[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2024_1_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
+[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2024_3_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
 
-[Managing SAP HANA Users](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/ed7af17e5ae14de694d9bee5f35098f4.html "Every user who wants to work with the SAP HANA database must have a database user who can log on and is authorized to perform their individual tasks.") :arrow_upper_right:
+[Managing SAP HANA Users](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/ed7af17e5ae14de694d9bee5f35098f4.html "Every user who wants to work with the SAP HANA database must have a database user who can log on and is authorized to perform their individual tasks.") :arrow_upper_right:
 

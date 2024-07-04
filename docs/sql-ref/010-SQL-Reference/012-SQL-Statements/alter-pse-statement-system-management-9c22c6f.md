@@ -14,7 +14,8 @@ ALTER PSE <pse_name> { <certificate_clause>
    | <unset_own_certificate_clause>
    | <add_purpose_object_clause>
    | <drop_purpose_object_clause>
-   | <public_key_clause> } 
+   | <public_key_clause> 
+   | <set_url_clause> } 
 ```
 
 
@@ -105,28 +106,30 @@ Specifies the remote source or identity provider to add to the PSE.
 ```
 <add_purpose_object_clause> ::= 
 ADD { PROVIDER <provider_list>
-  | REMOTE SOURCE <remote_source_list> }
+    | REMOTE SOURCE <remote_source_list> 
+    | MANAGED PSE <managed_pse_list> }
 
-<provider_list> ::= <simple_identifier>
+<provider_list> ::= <provider>[, <provider> [,...] ]
+<provider> ::= <simple_identifier>
 <remote_source_list> ::= <remote_source> [, <remote_source> [,...] ]
-
+<remote_source> ::= <simple_identifier>
+<managed_pse_list> ::= <managed_pse>[, <managed_pse> [,...] ]
+<managed_pse> ::= <string_identifier>
 ```
 
 Use the SET PSE statement with the *<purpose\_object\_list\>* clause, not the ALTER PSE statement with the *<add\_purpose\_object\_clause\>* clause, to add a provider or remote source to an existing PSE that does not have at least one provider or remote source assigned.
-
-No objects can be assigned to a PSE with purpose LDAP.
 
 PROVIDER can only be specified for a PSE with purpose SAML, JWT, or X509. A PSE with purpose SAML, JWT, or X509 must specify a provider.
 
 REMOTE SOURCE can only be specified for a PSE with purpose REMOTE SOURCE. Specifying REMOTE SOURCE is optional.
 
-For JWT, SAML, and X509, the provider must exist before it can be added. See *CREATE JWT PROVIDER Statement*, *CREATE SAML PROVIDER Statement*, and *CREATE X509 PROVIDER Statement*. For REMOTE SOURCE, the remote source must exist before it can be added. See *CREATE REMOTE SOURCE* Statement.
-
-Duplicates defined in *<provider\_list\>* or *<remote\_source\>* are ignored.
+Duplicates objects in the object lists are ignored.
 
 Multiple providers or remote sources can be assigned to a single PSE, but a provider or remote source can only be assigned to one PSE.
 
-Assigning a provider or remote source that has already been assigned to another PSE results in a reassignment. If such a reassignment results in the other PSE having no objects, then its purpose is cleared.
+An object, such as a provider, remote source, etc., can only be assigned to one PSE. Assigning an object to a PSE removes a previous PSE assignment for that object.
+
+Reassigning an object to another PSE may result in the original PSE losing its purpose assignment if the object was the only one assigned to the original PSE.
 
 
 
@@ -142,16 +145,20 @@ Assigning a provider or remote source that has already been assigned to another 
 </b></dt>
 <dd>
 
-Specifies the remote source to drop from the PSE.
+Specifies the objects to remove from the PSE.
 
 ```
 <drop_purpose_object_clause> ::= 
-DROP { PROVIDER <provider_list>
- | REMOTE SOURCE <remote_source_list> }
+   { DROP { PROVIDER <provider_list>
+   | REMOTE SOURCE <remote_source_list> }
+   | MANAGED PSE <managed_pse_list> }
 
-<provider_list> ::= <simple_identifier>
+<provider_list> ::= <provider>[, <provider> [,...] ]
+<provider> ::= <simple_identifier>
 <remote_source_list> ::= <remote_source> [, <remote_source> [,...] ]
-
+<remote_source> ::= <simple_identifier>
+<managed_pse_list> ::= <managed_pse>[, <managed_pse> [,...] ]
+<managed_pse> ::= <string_identifier>
 ```
 
 Use the UNSET PSE statement with the *<purpose\_object\_list\>* clause, not the ALTER PSE statement with the *<drop\_purpose\_object\_clause\>* clause, to remove a provider or remote source from a PSE that does not have any other provider or remote source assigned.
@@ -176,6 +183,22 @@ Add or drop a public key to or from the PSE.
 
 
 
+</dd><dt><b>
+
+*<set\_url\_clause\>*
+
+</b></dt>
+<dd>
+
+Defines the URL for the managed PSE.
+
+```
+<set_url_clause> ::= 
+   SET URL <url_string_literal>
+```
+
+
+
 </dd>
 </dl>
 
@@ -193,13 +216,103 @@ Use the SET PURPOSE and UNSET PURPOSE statements to change the purpose of a PSE.
 
 ## Permissions
 
-You must have the ALTER object privilege on the PSE object or be the object owner.
+The privilege required depends on the action performed.
 
-If the PSE has already been assigned a purpose, you must have the REFERENCES object privilege on the PSE, as well as the following purpose-specific permissions to add or drop a purpose object:
 
-To add or drop a remote source, the CREATE REMOTE SOURCE system privilege is required.
+<table>
+<tr>
+<th valign="top">
 
-To add or drop a SAML, JWT or X509 identity provider, the ALTER object privilege on the provider is required.
+Action
+
+</th>
+<th valign="top" colspan="2">
+
+Privilege
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Alter a PSE with no purpose assigned.
+
+</td>
+<td valign="top" colspan="2">
+
+Requires one of the following:
+
+-   You own the PSE object.
+-   ALTER object privilege on the PSE object.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Alter a PSE that has a purpose assigned.
+
+</td>
+<td valign="top" colspan="2">
+
+Requires the REVERENCES object-level privilege on the PSE along with purpose-specific permissions to add or drop a purpose object:
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+**Purpose**
+
+</td>
+<td valign="top">
+
+**Privilege**
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+Remote source,
+
+</td>
+<td valign="top">
+
+CREATE REMOTE SOURCE system privilege
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+SAML, JWT, X509 identity provider, or a Managed PSE
+
+</td>
+<td valign="top">
+
+ALTER object privilege on the provider
+
+</td>
+</tr>
+</table>
 
 
 
@@ -223,14 +336,32 @@ The following example adds the certificate saml\_cert to the PSE saml\_pse.
 ALTER PSE saml_pse ADD CERTIFICATE saml_cert;
 ```
 
+The following example sets the managed PSE URL for pse1.
+
+```
+ALTER PSE pse1 SET URL 'https://XXXXX.sap.com/.well-known/xxxxx/jwks';
+```
+
+The following example adds two managed PSEs to pse1.
+
+```
+ALTER PSE pse1 ADD MANAGED PSE my_managed_pse1, my_managed_pse2;
+```
+
+The following example drops a managed PSE my\_managed\_pse1 from pse1.
+
+```
+ALTER PSE pse1 DROP MANAGED PSE my_managed_pse1;
+```
+
 **Related Information**  
 
 
-[SET PSE Statement \(System Management\)](set-pse-statement-system-management-10fe807.md "Sets the purpose of a PSE.")
+[SET PSE Statement \(System Management\)](set-pse-statement-system-management-10fe807.md "Sets the purpose of a PSE, which is the type of trust validation for the PSE to use.")
 
 [PSE\_PURPOSE\_OBJECTS System View](../../020-System-Views-Reference/021-System-Views/pse-purpose-objects-system-view-437cd32.md "Provides information about all PSEs and their assigned providers or hosts, referred to as purpose objects.")
 
-[UNSET PSE Statement \(System Management\)](unset-pse-statement-system-management-4082553.md "Removes the purpose for a PSE.")
+[UNSET PSE Statement \(System Management\)](unset-pse-statement-system-management-4082553.md "Remove the assigned purpose for a PSE along with any assigned objects.")
 
 [CREATE REMOTE SOURCE Statement \(Access Control\)](create-remote-source-statement-access-control-20d4834.md "Defines an external data source that can connect to the SAP HANA database.")
 
@@ -240,7 +371,7 @@ ALTER PSE saml_pse ADD CERTIFICATE saml_cert;
 
 [CREATE X509 PROVIDER Statement \(Access Control\)](create-x509-provider-statement-access-control-3b3163d.md "Defines an X.509 provider in the SAP HANA database.")
 
-[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
 
-[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
+[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
 

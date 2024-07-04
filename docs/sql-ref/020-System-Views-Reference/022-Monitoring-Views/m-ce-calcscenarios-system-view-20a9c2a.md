@@ -201,6 +201,14 @@ Displays the JSON string representing the calculation scenario.
 </tr>
 </table>
 
+
+
+<a name="loio20a9c2a175191014b943cc586ea80d5a__section_q35_zzv_rbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

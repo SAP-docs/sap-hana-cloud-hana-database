@@ -702,5 +702,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [RELEASE SAVEPOINT Statement \(Transaction Management\)](../../010-SQL-Reference/012-SQL-Statements/release-savepoint-statement-transaction-management-445eb4d.md "Releases a specified savepoint name.")
 
-[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
+[SAVEPOINT](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/e933397e9ec84f439f25962f4e193063.html "") :arrow_upper_right:
 

@@ -851,6 +851,14 @@ Displays the effective total statement memory limit.
 
 
 
+<a name="loio20af736e751910148162e2ab1982f035__section_htz_ckj_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20af736e751910148162e2ab1982f035___m__e_x_p_e_n_s_i_v_e__s_t_a_t_e_m_e_n_t_s_1fulldesc_M_EXPENSIVE_STATEMENTS"/>
 
 ## Additional Information
@@ -918,12 +926,6 @@ Consider a query with 4 session requests from a client:
 
 Assuming that all operations are longer than the threshold, they are shown as: OPERATION DURATION COMPILE 10 SELECT 20 FETCH 15 CURSOR\_CLOSE 5 AGGREGATED\_EXECUTION 40 \(20+15+5\).
 
-
-
-<a name="loio20af736e751910148162e2ab1982f035__section_yjl_flg_rkb"/>
-
-## Additional Information
-
 Setting the value of the APPLICATION\_SOURCE is only available via internal APIs of the SAP HANA database client interfaces \(for more information see SAP Note 2873396\).
 
 **Related Information**  
@@ -933,5 +935,5 @@ Setting the value of the APPLICATION\_SOURCE is only available via internal APIs
 
 [M\_EXPENSIVE\_STATEMENT\_EXECUTION\_LOCATION\_STATISTICS System View](m-expensive-statement-execution-location-statistics-system-view-80c32e9.md "Provides location statistics for expensive statements.")
 
-[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
+[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
 

@@ -235,7 +235,7 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [M\_PERSISTENCE\_ENCRYPTION\_STATUS System View](../022-Monitoring-Views/m-persistence-encryption-status-system-view-20b7570.md "Provides information about persistence encryption.")
 
-[Data Encryption](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/8b39eaf4af7a422e9ffd48a62c2558ce.html "The SAP HANA Cloud, SAP HANA database uses a number of encryption services to protect data at rest.") :arrow_upper_right:
+[Data Encryption](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/8b39eaf4af7a422e9ffd48a62c2558ce.html "The SAP HANA Cloud, SAP HANA database uses a number of encryption services to protect data at rest.") :arrow_upper_right:
 
-[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
+[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
 

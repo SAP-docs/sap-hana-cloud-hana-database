@@ -11,7 +11,7 @@ The Java run time for Cloud Foundry on SAP Business Technology Platform provides
 
 Cloud Foundry on SAP Business Technology Platform provides the following components to help build a Java micro service:
 
--   Tomcat, TomEE 7, and Java Main run times
+-   Tomcat, TomEE, and Java Main run times
 
     > ### Note:  
     > The outdated TomEE 1.7 version is no longer included in the SAP Java Buildpack. Although TomEE 1.7 will continue to be supported until the end of the deprecation period, it is recommended to migrate to TomEE 7 as soon as possible, as described in the *TomEE Migration Guide* listed in *Related Information* below. TomEE 7 is already included in previous versions of the SAP Java Buildpack.

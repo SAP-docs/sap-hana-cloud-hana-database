@@ -129,5 +129,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [Hierarchy Functions](../../010-SQL-Reference/011-SQL-Functions/hierarchy-functions-2969da8.md "Hierarchy functions allow you to work with hierarchical data such as tables with rows arranged in a tree or directed graph.")
 
-[SAP HANA Cloud, SAP HANA Database Hierarchy Developer Guide](https://help.sap.com/viewer/09f734c2169c4661b1aa15c00022ab21/2024_1_QRC/en-US/a93c356d32ef4e7fbd6143b554278eab.html "This guide explains how to use the hierarchy functions that are an integral part of SAP HANA core functionality.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Hierarchy Developer Guide](https://help.sap.com/viewer/09f734c2169c4661b1aa15c00022ab21/2024_3_QRC/en-US/a93c356d32ef4e7fbd6143b554278eab.html "This guide explains how to use the hierarchy functions that are an integral part of SAP HANA core functionality.") :arrow_upper_right:
 

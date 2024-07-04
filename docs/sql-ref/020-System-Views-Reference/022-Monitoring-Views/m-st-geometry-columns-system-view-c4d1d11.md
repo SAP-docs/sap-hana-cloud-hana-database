@@ -219,5 +219,5 @@ Specifies the maximum m value of the spatial column data.
 **Related Information**  
 
 
-[Spatial Extent with SYS.M_ST_GEOMETRY_COLUMNS](https://help.sap.com/viewer/bc9e455fe75541b8a248b4c09b086cf5/2024_1_QRC/en-US/33b2ae76d374445bb17f86072039f7d4.html "You can access the extent of spatial columns by accessing the monitoring view M_ST_GEOMETRY_COLUMNS.") :arrow_upper_right:
+[Spatial Extent with SYS.M_ST_GEOMETRY_COLUMNS](https://help.sap.com/viewer/bc9e455fe75541b8a248b4c09b086cf5/2024_3_QRC/en-US/33b2ae76d374445bb17f86072039f7d4.html "You can access the extent of spatial columns by accessing the monitoring view M_ST_GEOMETRY_COLUMNS.") :arrow_upper_right:
 

@@ -2100,12 +2100,67 @@ The unfolding view copies the expression when the parent of the view references 
 
 
 
+<a name="loio4ba9edce1f2347a0b9fcda99879c17a1__section_d1m_2hk_y1c"/>
+
+## Hints for Plan Variant
+
+Refer to the below table for a list of hints and their descriptions:
+
+
+<dl>
+<dt><b>
+
+PLAN\_VARIANT
+
+</b></dt>
+<dd>
+
+When a column argument is provided with this hint, filters with the given column argument\(T1.C1\) are preferred as variant filter.
+
+
+
+</dd><dt><b>
+
+PLAN\_VARIANT\_FILTER\_COUNT
+
+</b></dt>
+<dd>
+
+Change the maximum number of variant filters. The default is 3.
+
+
+
+</dd><dt><b>
+
+PLAN\_VARIANT\_PLAN\_COUNT
+
+</b></dt>
+<dd>
+
+Change the maximum number of stored plans in the plan variant cache. The default is 10.
+
+
+
+</dd>
+</dl>
+
+Examples:
+
+```
+SELECT * FROM T1 WHERE C1 = ? WITH HINT (PLAN_VARIANT(T1.C1));
+SELECT * FROM DUMMY WITH HINT (PLAN_VARIANT, PLAN_VARIANT_FILTER_COUNT(10));
+SELECT * FROM DUMMY WITH HINT (PLAN_VARIANT, PLAN_VARIANT_PLAN_COUNT(20));
+```
+
+
+
 ## Hints for Query Rewriting and Logical Transformations
 
 The SQL Optimizer relies heavily on query rewriting and logical transformation rules to enumerate all possible plans to find the best plan in the potential search space. Using the hints below can help you manipulate the SQL Optimizer and provide a quick workaround to fix various issues. For example:
 
 ```
-SELECT * FROM T1 WITH HINT( JOIN_REMOVAL ); SELECT * FROM T1 WITH HINT(  NO_JOIN_REMOVAL );
+SELECT * FROM T1 WITH HINT( JOIN_REMOVAL ); 
+SELECT * FROM T1 WITH HINT(  NO_JOIN_REMOVAL );
 ```
 
 Refer to the below table for a list of hints and their descriptions:
@@ -4962,5 +5017,5 @@ Sets the size of the bucket for an ESX disk-based hash join. The hint configures
 
 [STATEMENT\_HINTS System View](../../020-System-Views-Reference/021-System-Views/statement-hints-system-view-161a91a.md "Provides information about statement hints, including when they were last enabled and/or disabled and by whom.")
 
-[Using Hints With Select Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "In some cases hints can be appended to select statements to determine how the statement is executed. This may be used, for example, to improve performance or to route a query to a specific data source.") :arrow_upper_right:
+[Using Hints with Select Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/556a518b49f84d8db770cbd068b94b65.html "In some cases hints can be appended to select statements to determine how the statement is run. This may be used, for example, to improve performance or to route a query to a specific data source.") :arrow_upper_right:
 

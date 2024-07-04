@@ -2,14 +2,14 @@
 
 # SET PSE Statement \(System Management\)
 
-Sets the purpose of a PSE.
+Sets the purpose of a PSE, which is the type of trust validation for the PSE to use.
 
 
 
 ## Syntax
 
 ```
-SET PSE <pse_name> PURPOSE <purpose> [ FOR <purpose_object_list> ]
+SET PSE <pse_name> PURPOSE <purpose_list>
 ```
 
 
@@ -35,7 +35,7 @@ Specifies the name of the PSE.
 
 </dd><dt><b>
 
-PURPOSE *<purpose\>*
+*<purpose\_list\>*
 
 </b></dt>
 <dd>
@@ -43,54 +43,136 @@ PURPOSE *<purpose\>*
 Specifies the purpose of the PSE.
 
 ```
-<purpose> ::= 
- JWT
- | SAML
- | X509
- | LDAP
- | REMOTE SOURCE
+<purpose_list> ::= 
+   { LDAP
+   | <purpose_JWT>
+   | <purpose_SAML>
+   | <purpose_X509>
+   | <purpose_REMOTE_SOURCE>
+   | <purpose_HTTPS> }
+```
+
+
+<dl>
+<dt><b>
+
+*<purpose\_JWT\>*
+
+</b></dt>
+<dd>
+
+```
+<purpose_JWT> ::= JWT FOR PROVIDER <provider_list>
 ```
 
 
 
 </dd><dt><b>
 
-*<purpose\_object\_list\>*
+*<purpose\_SAML\>*
 
 </b></dt>
 <dd>
 
-Specifies the remote sources or identity providers to assign to a PSE that has no purpose objects assigned.
+```
+<purpose_SAML> ::= SAML FOR PROVIDER <provider_list>
+```
+
+
+
+</dd><dt><b>
+
+*<purpose\_X509\>*
+
+</b></dt>
+<dd>
 
 ```
-<purpose_object_list> ::= 
-{ PROVIDER <provider_list> | REMOTE SOURCE <remote_source_list> }
+<purpose_X509> ::= x509 FOR PROVIDER <provider_list>
+```
 
-<provider_list> ::= <provider> [ , <provider>[ ,...] ]
+
+
+</dd><dt><b>
+
+*<purpose\_REMOTE\_SOURCE\>*
+
+</b></dt>
+<dd>
+
+```
+<purpose_REMOTE_SOURCE> ::= REMOTE SOURCE [FOR REMOTE SOURECE <remote_source_list> FOR PROVIDER <provider_list> ]
+```
+
+
+
+</dd><dt><b>
+
+*<purpose\_HTTPS\>*
+
+</b></dt>
+<dd>
+
+```
+<purpose_HTTPS> ::= HTTPS FOR MANAGED PSE <managed_pse_list>
+```
+
+
+
+</dd>
+</dl>
+
+
+
+</dd><dt><b>
+
+*<provider\_list\>*
+
+</b></dt>
+<dd>
+
+A list of provider names. Providers of different types cannot be mixed in a single purpose.
+
+```
+<provider_list> ::= <provider>[, <provider>[,...] ]
+
 <provider> ::= <simple_identifier>
-<remote_source_list> ::= <remote_source> [, <remote_source> [,...] ]
+
+```
+
+
+
+</dd><dt><b>
+
+*<remote\_source\_list\>*
+
+</b></dt>
+<dd>
+
+A list of remote sourece names.
+
+```
+<remote_source_list> ::= <remote_source>[, <remote_source>[,...] ]
+
 <remote_source> ::= <simple_identifier>
 ```
 
-Use the ALTER PSE statement with the *<add\_purpose\_object\_clause\>* clause, not the SET PSE statement with the *<purpose\_object\_list\>* clause, to add or reassign providers or remote sources to an existing PSE with providers or remote sources already assigned.
 
-No objects can be assigned to a PSE with purpose LDAP.
 
-PROVIDER can only be specified for a PSE with purpose SAML, JWT, or X509. A PSE with purpose SAML, JWT, or X509 must specify a provider.
+</dd><dt><b>
 
-REMOTE SOURCE can only be specified for a PSE with purpose REMOTE SOURCE. Specifying REMOTE SOURCE is optional.
+*<managed\_pse\_list\>*
 
-For JWT, SAML, and X509, the provider must exist before it can be added. See *CREATE JWT PROVIDER Statement*, *CREATE SAML PROVIDER Statement*, and *CREATE X509 PROVIDER Statement*. For REMOTE SOURCE, the remote source must exist before it can be added. See *CREATE REMOTE SOURCE* Statement.
+</b></dt>
+<dd>
 
-Duplicates defined in *<provider\_list\>* or *<remote\_source\_list\>* are ignored.
+A list of Managed PSE names.
 
-Multiple providers or remote sources can be assigned to a single PSE, but a provider or remote source can only be assigned to one PSE.
+```
+<managed_pse_list> ::= <managed_pse>[, <managed_pse>[,...] ]
 
-Assigning a provider or remote source that has already been assigned to another PSE results in a reassignment. If such a reassignment results in the other PSE having no objects, then its purpose is cleared.
-
-For a PSE with purpose REMOTE SOURCE, to remove all remote sources but keep the purpose, execute the SET PSE statement without the FOR *<remote\_source\_list\>* clauses. The purpose of the PSE becomes unqualified.
-
-To remove a provider or remote source from a PSE, use ALTER PSE with the *<drop\_purpose\_object\_clause\>* clause.
+<managed_pse> ::= <simple_identifier>
+```
 
 
 
@@ -101,9 +183,19 @@ To remove a provider or remote source from a PSE, use ALTER PSE with the *<drop\
 
 ## Description
 
-Sets the purpose of the PSE, that is which type of trust validation the PSE will be used for. For information about qualifying PSEs, see *Certificate Collections* in the *SAP HANA Cloud, SAP HANA Database Security Guide*.
+For information about qualifying PSEs, see *Certificate Collections* in the *SAP HANA Cloud, SAP HANA Database Security Guide*.
 
-To change the purpose of an existing PSE, you must first execute the UNSET PSE statement to remove the existing purpose and any assigned objects from the PSE and then use the SET PSE statement to assign a new purpose.
+Using SET PSE to set the purpose of a PSE removes any previous purpose assignments from the PSE. Use the ALTER PSE statement to add or remove purpose elements to a PSE. To change the purpose of an existing PSE, first execute the UNSET PSE statement to remove the existing purpose and any assigned objects from the PSE. Then use the SET PSE statement to assign a new purpose.
+
+A PSE can only have one main purpose such as JWT or SAML assigned. Mixing different purposes is not allowed.
+
+An object, such as a provider, remote source, etc., can only be assigned to one PSE. Assigning an object to a PSE removes a previous PSE assignment for that object.
+
+If a PSE does not have any purpose objects assigned, the assignment of a purpose object must be done using the SET PSE statement.
+
+Reassigning an object to another PSE may result in the original PSE losing its purpose assignment if the object was the only one assigned to the original PSE.
+
+The purpose REMOTE SOURCE without any qualifying objects is used for all remote sources that do not have a specific PSE assigned.
 
 
 
@@ -111,7 +203,12 @@ To change the purpose of an existing PSE, you must first execute the UNSET PSE s
 
 ## Permissions
 
-You must have the REFERENCES object privilege on the PSE or be the owner and the following purpose-specific privileges:
+Requires one of the following:
+
+-   You own the object.
+-   You have the REFERENCES object privilege on the PSE.
+
+In addition, depending on the type of purpose, you also require one of the following:
 
 
 <table>
@@ -163,6 +260,18 @@ ALTER object privilege on the providers
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+HTTPS
+
+</td>
+<td valign="top">
+
+ALTER object privilege on the Managed PSE
+
+</td>
+</tr>
 </table>
 
 
@@ -181,16 +290,10 @@ Set the REMOTE SOURCE purpose for the HDD1\_PSE store using remote sources HDB\_
 SET PSE HDB1_PSE PURPOSE REMOTE SOURCE FOR REMOTE SOURCE HDB_SYS1, HDB_SYS2;
 ```
 
-This example creates the JWT PSE JWT\_PSE for the provider MY\_JWT\_PROVIDER.
+This example sets the purpose for PSE pse1 to HTTPS.
 
 ```
-SET PSE JWT_PSE PURPOSE JWT FOR PROVIDER MY_JWT_PROVIDER;
-```
-
-This example creates the SAML PSE SAML\_PSE for the provider MY\_SAML\_PROVIDER.
-
-```
-SET PSE SAML_PSE PURPOSE SAML FOR PROVIDER MY_SAML_PROVIDER;
+SET PSE pse1 PURPOSE HTTPS FOR MANAGED PSE my_managed_pse;
 ```
 
 **Related Information**  
@@ -200,7 +303,7 @@ SET PSE SAML_PSE PURPOSE SAML FOR PROVIDER MY_SAML_PROVIDER;
 
 [PSE\_PURPOSE\_OBJECTS System View](../../020-System-Views-Reference/021-System-Views/pse-purpose-objects-system-view-437cd32.md "Provides information about all PSEs and their assigned providers or hosts, referred to as purpose objects.")
 
-[UNSET PSE Statement \(System Management\)](unset-pse-statement-system-management-4082553.md "Removes the purpose for a PSE.")
+[UNSET PSE Statement \(System Management\)](unset-pse-statement-system-management-4082553.md "Remove the assigned purpose for a PSE along with any assigned objects.")
 
 [CREATE JWT PROVIDER Statement \(Access Control\)](create-jwt-provider-statement-access-control-bfe3daf.md "Defines a JWT provider in the SAP HANA database.")
 
@@ -210,7 +313,7 @@ SET PSE SAML_PSE PURPOSE SAML FOR PROVIDER MY_SAML_PROVIDER;
 
 [CREATE REMOTE SOURCE Statement \(Access Control\)](create-remote-source-statement-access-control-20d4834.md "Defines an external data source that can connect to the SAP HANA database.")
 
-[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
 
-[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
+[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
 

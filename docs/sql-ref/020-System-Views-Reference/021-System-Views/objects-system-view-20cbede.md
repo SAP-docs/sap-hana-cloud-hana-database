@@ -137,7 +137,7 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [M\_OBJECT\_LOCK\_STATISTICS\_RESET System View](../022-Monitoring-Views/m-object-lock-statistics-reset-system-view-20b644f.md "Provides lock contention statistics, including lock wait count, wait time, and failed count for each object since the last reset.")
 
-[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
+[Managing Memory by Object Usage](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/815fd19868d84c13962852faa3b1ee85.html "You can use the Unused Retention Period feature to automatically unload objects from memory which are not being used.") :arrow_upper_right:
 
 [M\_MEMORY\_OBJECTS System View](../022-Monitoring-Views/m-memory-objects-system-view-20b4e47.md "Returns memory object statistics.")
 

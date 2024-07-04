@@ -280,5 +280,5 @@ Unless otherwise specified, system views are available to all users granted the 
 **Related Information**  
 
 
-[Query Parameterization: BIND_AS_PARAMETER and BIND_AS_VALUE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/0b2958ee0426496f9c084c92b14993f1.html "All scalar variables used in queries of procedures, functions or anonymous blocks, are represented either as query parameters, or as constant values during query compilation. Which option shall be chosen is a decision of the optimizer.") :arrow_upper_right:
+[Query Parameterization: BIND_AS_PARAMETER and BIND_AS_VALUE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/0b2958ee0426496f9c084c92b14993f1.html "All scalar variables used in queries of procedures, functions or anonymous blocks, are represented either as query parameters, or as constant values during query compilation. Which option shall be chosen is a decision of the optimizer.") :arrow_upper_right:
 

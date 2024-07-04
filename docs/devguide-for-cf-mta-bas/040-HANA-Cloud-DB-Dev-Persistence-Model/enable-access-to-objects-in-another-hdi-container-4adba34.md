@@ -45,8 +45,12 @@ You can use a synonym in one application to enable access to database objects in
 
         The role Role R1\# \(`Role_R1G.hdbrole`\) defines the privileges required for external access to a specific target object \(with grant option\); the role must be assigned to the user who needs access to the schema where the target object `Table_T1` is located. In this case, the access role is assigned to the owner of the schema containing the synonym that points to the target table.
 
+        You can use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time `hdbrole` artifact.
+
         > ### Tip:  
-        > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
+        > By default, SAP Business Application Studio opens the new `hdbrole` artifact in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also toggle between code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+
+        If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts. For common scenarios, templates are provided, too.
 
         > ### Sample Code:  
         > Role Definition `Role_R1G.hdbrole` for HDI Schema Owner
@@ -94,13 +98,24 @@ You can use a synonym in one application to enable access to database objects in
         > } 
         > ```
 
+        You can use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time `hdbrole` artifact.
+
+        > ### Tip:  
+        > By default, SAP Business Application Studio opens the new `hdbrole` artifact in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also toggle between code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+
+        If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts. For common scenarios, templates are provided, too.
+
 
 3.  Grant access to the schema containing the synonym's target object \(for example, `Table_T1`\).
 
     The owner of the schema containing the synonym requires `SELECT` privileges on the target object to which the synonym points. Access for the schema owner can be enabled in user roles which are then referenced with the <code>“container_roles”</code> property in an `.hdbgrants` file, as illustrated in the following example:
 
+    You can use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time `hdbgrants` artifact.
+
     > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
+    > By default, SAP Business Application Studio opens the new `hdbgrants` artifact in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also toggle between code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+
+    If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts. For common scenarios, templates are provided, too.
 
     > ### Sample Code:  
     > Access-Granting Configuration File \(`myApp/db/cfg/Synonym_S1-table.hdbgrants`\)
@@ -129,8 +144,12 @@ You can use a synonym in one application to enable access to database objects in
 
     You can create the synonym design-time object in a subfolder of your application's database module, for example in <code>/<i class="varname">&lt;MyApp&gt;</i>/db/src/synonyms/</code>. In this example, we name the synonym definition `Synonym_S1.hdbsynonym`, which contains multiple synonyms referencing tables \(`Table_T1`, `Table_T2`, and `Table_T3`\), as illustrated in the following example:
 
+    You can use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time `hdbsynonym` artifact.
+
     > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole``hdbroleconfig`, `hdbgrants`, and `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
+    > By default, SAP Business Application Studio opens the new `hdbsynonym` artifact in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also toggle between code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+
+    If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts. For common scenarios, templates are provided, too.
 
     > ### Sample Code:  
     > Synonym-Definition File \(`/MyApp/db/src/synonyms/Synonym_S1.hdbsynonym`\)
@@ -155,8 +174,7 @@ You can use a synonym in one application to enable access to database objects in
 
     andRather than defining a schema and a concrete schema name, you can use <code>“schema.configure”</code> to specify a path to a service name. The path expression is replaced at deployment time with the name of the schema of the referenced service. For example, in the following code example, <code>“schema.configure”</code> is replaced with schema used by the grantor service.
 
-    > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
+    If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts. For common scenarios, templates are provided, too.
 
     > ### Sample Code:  
     > Synonym Configuration File \(`myApp/db/cfg/Synonym_S1.hdbsynonymconfig`\)

@@ -131,6 +131,14 @@ Displays the timestamp of the last execution.
 </tr>
 </table>
 
+
+
+<a name="loio654db9b1c0874a2ba417add5a58fb848__section_pb4_fh2_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

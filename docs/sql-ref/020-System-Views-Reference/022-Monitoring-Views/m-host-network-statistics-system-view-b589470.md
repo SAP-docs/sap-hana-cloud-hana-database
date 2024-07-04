@@ -116,6 +116,14 @@ Displays the number of TCP segments that were broken upon receiving.
 
 
 
+<a name="loiob58947046b354d0ea1c27af7e21520ff__section_lzy_1xz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loiob58947046b354d0ea1c27af7e21520ff__section_llz_3sp_q2b"/>
 
 ## Additional Information

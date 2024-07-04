@@ -50,12 +50,12 @@ On startup, the HDI Deployer looks for files with the `.hdbgrants` suffix and pr
 >         {
 >           "schema": "SYS",
 >           "name": "VIEWS",
->           "privileges": ["SELECT"]
+>           "privileges_with_grant_option": ["SELECT"]
 >         },
 >         {
 >           "schema": "SYS",
 >           "name": "TABLES",
->           "privileges": ["SELECT"]
+>           "privileges_with_grant_option": ["SELECT"]
 >         }
 >       ]
 >     },
@@ -77,6 +77,8 @@ On startup, the HDI Deployer looks for files with the `.hdbgrants` suffix and pr
 > }
 > 
 > ```
+
+In the default `DEFINER` security mode, a database object \(like a definer-mode procedure or a view\) is executed using the privileges assigned to the object's owner. To enable the application user to select from the view, the object owner needs access privileges to the underlying `"TABLES"` \(with grants option\). These privileges can be assigned using the property, `"privileges_with_grant_option"`, as illustrated in the example above.
 
 
 
@@ -111,4 +113,10 @@ Starting with version 3.8, the HDI deployer enables the assignment of revoking r
 [Configuring the HDI Deployer](configuring-the-hdi-deployer-d5bf65e.md "Set up and use the Node.js-based HDI Deployer in Cloud Foundry.")
 
 [Integrate the HDI Deployer into a Mutlitarget Application's Database Module](integrate-the-hdi-deployer-into-a-mutlitarget-application-s-database-modu-0194390.md "Install the HDI Deployer for use by a Multi-Target Application (MTA).")
+
+[Permissions for Objects in HDI Containers](permissions-for-objects-in-hdi-containers-79e8664.md "The owner of a container object needs additional privileges to the ones assigned by default.")
+
+[Granting Roles and Privileges for Use with Synonyms](granting-roles-and-privileges-for-use-with-synonyms-f7381cc.md "Assigning roles and privileges to object owners for applications that use synonyms to access external objects.")
+
+[Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
 

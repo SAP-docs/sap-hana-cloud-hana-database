@@ -1359,9 +1359,7 @@ For more information about SQLScript, see *SAP HANA Cloud, SAP HANA Database SQL
 
 -   Explicitly set all parameters where the desired setting is different from the default \(for example, settings for the procedure language, the default schema, whether the procedure is deterministic or encrypted, sequential execution options, and so on\). Everything not specified in a CREATE OR REPLACE PROCEDURE statement is reset to its default.
 
--   You cannot use CREATE OR REPLACE PROCEDURE to change the route options.
-
--   If you specify the security mode or route options, then the behavior depends on the existence of a pre-defined procedure: If there is no existing procedure, then the operation succeeds \(the procedure is created\). If the procedure exists, and the security mode or route option is different, then an error is returned.
+-   If you specify the security mode, then the behavior depends on the existence of a pre-defined procedure: If there is no existing procedure, then the operation succeeds \(the procedure is created\). If the procedure exists, and the security mode is different, then an error is returned.
 
 -   CREATE OR REPLACE does not change any DDL settings for the procedure, such as grant privileges, dependent objects, and so on.
 
@@ -1431,19 +1429,19 @@ CREATE PROCEDURE Proc1() READS SQL DATA AS
 **Related Information**  
 
 
-[CREATE PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7a2da744ce544db1814a5fff250e99f6.html "You use this SQL statement to create a procedure.") :arrow_upper_right:
+[CREATE PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/7a2da744ce544db1814a5fff250e99f6.html "You use this SQL statement to create a procedure.") :arrow_upper_right:
 
-[ALTER PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/042ab4636cf34a9cb88dd61c808861a8.html "") :arrow_upper_right:
+[ALTER PROCEDURE](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/042ab4636cf34a9cb88dd61c808861a8.html "") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA SQLScript Reference](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/28f2d64d4fab4e789ee0070be418419d.html "This reference describes how to use the SQL extension SAP HANA SQLScript to embed data-intensive application logic into SAP HANA.") :arrow_upper_right:
 
 [ALTER PROCEDURE Statement \(Procedural\)](alter-procedure-statement-procedural-20d0328.md "Alters a procedure or manually triggers a recompilation of a procedure by generating an updated execution plan.")
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 
-[Library Members](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7ed0d89b6aa84696a3ce8cf5a8517415.html "") :arrow_upper_right:
+[Library Members](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/7ed0d89b6aa84696a3ce8cf5a8517415.html "") :arrow_upper_right:
 
-[User-Defined Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7cd14f1931404738a05c5e93e22564af.html "") :arrow_upper_right:
+[User-Defined Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/7cd14f1931404738a05c5e93e22564af.html "") :arrow_upper_right:
 
 [CREATE LIBRARY Statement \(SQLScript\)](create-library-statement-sqlscript-62263ce.md "Creates a SQLScript user-defined library.")
 

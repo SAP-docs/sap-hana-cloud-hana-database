@@ -508,5 +508,5 @@ Displays the potential execution memory size of the target query, based on execu
 **Related Information**  
 
 
-[SQL Plan Advisor, SAP HANA Cloud, SAP HANA Database Administration Guide](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/ba3b3413ff4541da9a05debdf3d720c0.html "The SQL Plan Advisor is a built-in procedure that compares execution plans for registered SELECT queries and provides advice on which plan promises the best performance.") :arrow_upper_right:
+[SQL Plan Advisor, SAP HANA Cloud, SAP HANA Database Administration Guide](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/ba3b3413ff4541da9a05debdf3d720c0.html "The SQL Plan Advisor compares query execution plans for SELECT queries and provides advice on which plan promises the best performance.") :arrow_upper_right:
 

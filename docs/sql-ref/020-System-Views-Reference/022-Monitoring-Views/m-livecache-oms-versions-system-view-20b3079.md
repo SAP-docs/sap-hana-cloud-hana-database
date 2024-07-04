@@ -203,6 +203,14 @@ Displays the description.
 
 
 
+<a name="loio20b3079f7519101491b1c22f0d951530__section_ulf_kb1_ybc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20b3079f7519101491b1c22f0d951530___m__l_i_v_e_c_a_c_h_e__o_m_s__v_e_r_s_i_o_n_s_1fulldesc_M_LIVECACHE_OMS_VERSIONS"/>
 
 ## Additional Information
@@ -214,9 +222,9 @@ This view can only be used if liveCache is enabled.
 **Related Information**  
 
 
-[HOST_LIVECACHE_OMS_VERSIONS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/29ffcc773260413481653377de803596.html "Returns LiveCache OMS versions per host status information.") :arrow_upper_right:
+[HOST_LIVECACHE_OMS_VERSIONS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_3_QRC/en-US/29ffcc773260413481653377de803596.html "Returns LiveCache OMS versions per host status information.") :arrow_upper_right:
 
 [M\_LIVECACHE\_PROCEDURE\_STATISTICS System View](m-livecache-procedure-statistics-system-view-20b32d0.md "Provides accumulated LiveCache procedure statistics.")
 
-[System-Versioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/91302b26f62c4433bbc58e0a951cdc1d.html "System-versioned tables are part of the SQL standard. They support the tracking of changes on column store tables by capturing the validity period of each record.") :arrow_upper_right:
+[System-Versioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/91302b26f62c4433bbc58e0a951cdc1d.html "System-versioned tables are part of the SQL standard. They support the tracking of changes on column store tables by capturing the validity period of each record.") :arrow_upper_right:
 

@@ -191,7 +191,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-For the edge source and target columns, the schema name of the referenced vertex table \(NULL for all other columns\).
+Displays the schema name of the vertex table referenced by the edge source and target columns \(NULL for all other columns\).
 
 </td>
 </tr>
@@ -208,7 +208,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-For the edge source and target columns, the table name of the referenced vertex table \(NULL for all other columns\).
+Displays the table name of the vertex table referenced by the edge source and target columns \(NULL for all other columns\).
 
 </td>
 </tr>
@@ -225,11 +225,11 @@ Unless otherwise specified, system views are available to all users granted the 
 **Related Information**  
 
 
-[CREATE GRAPH WORKSPACE Statement (Data Definition)](https://help.sap.com/viewer/11afa2e60a5f4192a381df30f94863f9/2024_1_QRC/en-US/e6e1c7e2b9064b05b26572808f941ec4.html "Creates a graph workspace.") :arrow_upper_right:
+[CREATE GRAPH WORKSPACE Statement (Data Definition)](https://help.sap.com/viewer/11afa2e60a5f4192a381df30f94863f9/2024_3_QRC/en-US/e6e1c7e2b9064b05b26572808f941ec4.html "Creates a graph workspace.") :arrow_upper_right:
 
-[DROP GRAPH WORKSPACE Statement (Data Definition)](https://help.sap.com/viewer/11afa2e60a5f4192a381df30f94863f9/2024_1_QRC/en-US/88c7091e96c64b819898476536f7a849.html "Drops a graph workspace.") :arrow_upper_right:
+[DROP GRAPH WORKSPACE Statement (Data Definition)](https://help.sap.com/viewer/11afa2e60a5f4192a381df30f94863f9/2024_3_QRC/en-US/88c7091e96c64b819898476536f7a849.html "Drops a graph workspace.") :arrow_upper_right:
 
-[Object Privileges (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/8978bfdfcf3b45f9acf3fdb0964d3d9c.html "Object privileges are used to allow access to and modification of database objects, such as tables and views.") :arrow_upper_right:
+[Object Privileges (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/8978bfdfcf3b45f9acf3fdb0964d3d9c.html "Object privileges are used to allow access to and modification of database objects, such as tables and views.") :arrow_upper_right:
 
-[Graph Metadata Views](https://help.sap.com/viewer/11afa2e60a5f4192a381df30f94863f9/2024_1_QRC/en-US/5526e356098a40caa67e0e717dd85064.html "SAP HANA Graph the views GRAPH_WORKSPACES and GRAPH_WORKSPACE_COLUMNS are provided.") :arrow_upper_right:
+[Graph Metadata Views](https://help.sap.com/viewer/11afa2e60a5f4192a381df30f94863f9/2024_3_QRC/en-US/5526e356098a40caa67e0e717dd85064.html "The GRAPH_WORKSPACES and GRAPH_WORKSPACE_COLUMNS system views provide metadata information about the graph workspaces in the SAP HANA system.") :arrow_upper_right:
 

@@ -58,9 +58,9 @@ The HDI Deployer is an application that is included in a Multi-Target Applicatio
 
 [Configuring the HDI Deployer](configuring-the-hdi-deployer-d5bf65e.md "Set up and use the Node.js-based HDI Deployer in Cloud Foundry.")
 
-[Consume SAP Node.js Packages](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/ddcff14e28384810a352bb6512cd3448.html "A selection of SAP-specific and ready-to-use Node.js packages is available on the public NPM registry.") :arrow_upper_right:
+[Consume SAP Node.js Packages](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_3_QRC/en-US/ddcff14e28384810a352bb6512cd3448.html "A selection of SAP-specific and ready-to-use Node.js packages is available on the public NPM registry.") :arrow_upper_right:
 
-[The NPM Registry](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/726e5d41462c4eb29eaa6cc83ff41e84.html "The public NPM registry includes SAP Node.js modules for use by application developers.") :arrow_upper_right:
+[The NPM Registry](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_3_QRC/en-US/726e5d41462c4eb29eaa6cc83ff41e84.html "The public NPM registry includes SAP Node.js modules for use by application developers.") :arrow_upper_right:
 
 [@sap/hdi-deploy README](https://www.npmjs.com/package/@sap/hdi-deployhttps://www.npmjs.com/package/@sap/hdi-deploy)
 

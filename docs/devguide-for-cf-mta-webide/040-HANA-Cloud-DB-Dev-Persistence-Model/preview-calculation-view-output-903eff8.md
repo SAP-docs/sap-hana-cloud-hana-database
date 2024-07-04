@@ -1,5 +1,7 @@
 <!-- loio903eff885ebd4c5cadb1e0c3e58f681d -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Preview Calculation View Output
 
 After you have modeled a calculation view, you can deploy it and preview its output.
@@ -37,11 +39,11 @@ You can also download the output data to `.csv` files.
         In the *Raw Data* tab, the output data is displayed.
 
 
-5.  \(Optional\) Apply filters.
+5.  **Optional:** Apply filters.
 
-    1.  To apply filters on columns and preview the filtered output data, in the toolbar, choose ![](images/Filter_f553f3d.png) \(Add Filter\).
+    1.  To apply filters on columns and preview the filtered output data, in the toolbar, choose <span class="SAP-icons-V4"></span> \(Add Filter\).
 
-    2.  Choose *Add Filters*.
+    2.  Choose *Add Filter*.
 
     3.  Select the required columns and define the filter conditions.
 
@@ -52,7 +54,7 @@ You can also download the output data to `.csv` files.
 
     To export the raw data output to a `.csv` file:
 
-    1.  In the toolbar, choose ![](images/Download_30e7d1e.png) \(Download\).
+    1.  In the toolbar, choose <span class="SAP-icons-V4"></span> \(Download\).
 
     2.  In *Delimiter*, select the delimiter to be used to separate the values in the `.csv` file.
 
@@ -61,9 +63,9 @@ You can also download the output data to `.csv` files.
 
 7.  View the SQL query used by the calculation view.
 
-    1.  To view the SQL query that the tool executed to fetch the data, in the toolbar, choose *SQL*.
+    1.  To view the SQL query that the tool executed to fetch the data, in the toolbar, choose *SQL* *\(Show/Hide the Current SQL Statement\)*.
 
-    2.  To view, edit, and execute the SQL query in SQL editor, choose ![](images/SQL_9bdadeb.png) \(Edit SQL Statement in SQL Console\).
+    2.  To view, edit, and execute the SQL query in SQL editor, choose <span class="SAP-icons-V4"></span> *SQL* *\(Edit SQL Statement in SQL Console\)*.
 
 
 8.  Preview the output of a calculation view in graphical format.
@@ -76,13 +78,13 @@ You can also download the output data to `.csv` files.
 
         The tool displays the output data. Select the required chart icons in the menu to view the output.
 
-    3.  In the toolbar, choose ![](images/Settings_DataPreview_e220dd1.png) \(Display Settings\) to toggle legends and values.
+    3.  In the toolbar, choose :gear: to toggle legends and values.
 
-    4.  To view the SQL query that the tool executed to fetch the data for the axis configurations, in the toolbar, choose *SQL*.
+    4.  To view the SQL query that the tool executed to fetch the data for the axis configurations, in the toolbar, choose *SQL* *\(Show SQL Query\)*.
 
-    5.  To export the charts as `.png` files to your local file system, in the toolbar, choose ![](images/Download_30e7d1e.png) \(Download\) and select *Chart*.
+    5.  To export the charts as `.png` files to your local file system, in the toolbar, choose <span class="SAP-icons-V4"></span> \(Export\) and then *Chart*.
 
-    6.  To export the raw output data as `.csv` files to your local file system, in the toolbar, choose ![](images/Download_30e7d1e.png) \(Download\) and select *Data*.
+    6.  To export the raw output data as `.csv` files to your local file system, in the toolbar, choose <span class="SAP-icons-V4"></span> \(Export\) and then *Data*.
 
 
     > ### Note:  
@@ -104,16 +106,16 @@ You can also download the output data to `.csv` files.
         > ### Restriction:  
         > Preview of multiple hierarchies at the same time is not supported. You can preview output in hierarchical tree structure of only one hierarchy at a time.
 
-    3.  \(Optional\) To preview the output with one or more measures from the calculation view, drag and drop the measure to the *Selected Measure\(s\)* pane.
+    3.  **Optional:** To preview the output with one or more measures from the calculation view, drag and drop the measure to the *Selected Measure\(s\)* pane.
 
         The output data is built in a hierarchical tree structure for the selected configuration. The root node is expanded and the number of records displayed depends on the SQL console settings.
 
     4.  If you are previewing output of a calculation view \(type dimension\) and if you want to view the SQL query that the tool executed on the tables to fetch the output data, in the toolbar, choose *SQL*.
 
-    5.  To export the output data to a `.csv` file, in the toolbar, choose ![](images/Download_30e7d1e.png) \(Download\).
+    5.  To export the output data to a `.csv` file, in the toolbar, choose <span class="SAP-icons-V4"></span> \(Download\) .
 
 
-10. \(Optional\) Preview output of intermediate nodes.
+10. **Optional:** Preview output of intermediate nodes.
 
     If you have activated the calculation view, you can also preview the output of any of its intermediate view nodes. This preview helps know the output data that is passed to the higher view node levels.
 
@@ -128,9 +130,9 @@ You can also download the output data to `.csv` files.
 **Related Information**  
 
 
-[Data Analysis](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2024_1_QRC/en-US/42beb7bab4484130958ef62ee7b031aa.html "After you have modeled a calculation view, you can analyze its output.") :arrow_upper_right:
+[Data Analysis](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2024_3_QRC/en-US/42beb7bab4484130958ef62ee7b031aa.html "After you have modeled a calculation view, you can analyze its output.") :arrow_upper_right:
 
-[Configuring Data Preview Behavior](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2024_1_QRC/en-US/92883c2b13c74649b183590c4b5744ae.html "You can configure different preview options.") :arrow_upper_right:
+[Configuring Data Preview Behavior](https://help.sap.com/viewer/d625b46ef0b445abb2c2fd9ba008c265/2024_3_QRC/en-US/92883c2b13c74649b183590c4b5744ae.html "You can configure different preview options.") :arrow_upper_right:
 
 [Create Calculation Views](create-calculation-views-5aeb56c.md "Use a graphical editor to create calculation views that depict complex business scenarios.")
 

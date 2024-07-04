@@ -236,6 +236,40 @@ Displays whether the view is valid or not. This value is FALSE when its base obj
 <tr>
 <td valign="top">
 
+HAS\_STRUCTURED\_PRIVILEGE\_CHECK
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+</td>
+<td valign="top">
+
+Displays whether the view is registered for structured privilege check \(SQL Analytic Privilege only\): TRUE/FALSE
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+HAS\_STRUCTURED\_FILTER\_CHECK
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+</td>
+<td valign="top">
+
+Displays whether the view is registered for structured filter check: TRUE/FALSE
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 HAS\_MASKED\_COLUMNS
 
 </td>
@@ -362,5 +396,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [VIEW\_PARAMETERS System View](view-parameters-system-view-45b86e8.md "Provides information about view parameters.")
 
-[System Views for Monitoring Partitions](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/9d829883639d445884cc0d9210f14394.html "A number of system views allow you to monitor your partitions.") :arrow_upper_right:
+[System Views for Monitoring Partitions](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/9d829883639d445884cc0d9210f14394.html "A number of system views allow you to monitor your partitions.") :arrow_upper_right:
 

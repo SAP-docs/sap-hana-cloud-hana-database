@@ -1,5 +1,7 @@
 <!-- loio5aeb56cba39e4df4ae62b43a0dc2fad4 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Create Calculation Views
 
 Use a graphical editor to create calculation views that depict complex business scenarios.
@@ -59,9 +61,9 @@ Create a calculation view.
 
     1.  Select a view node.
 
-    2.  In the editor toolbar, choose ![](images/details_5b34943.png) \(Expand Details Panel\).
+    2.  In the editor toolbar, choose <span style="color:#007cc0;"><span class="SAP-icons-V4"></span></span> \(Expand Details Panel\).
 
-    3.  Choose ![](images/Add_Data_Sources_1689131.jpg) \(Add Data Source\).
+    3.  Choose :heavy_plus_sign:.
 
     4.  In *Find Data Sources*, select the type of the data source.
 
@@ -77,7 +79,7 @@ Create a calculation view.
         > The *Find Data Sources* dialog box displays multiple object types in the search result. But, depending on the selected view node, you can only add one object, such as activated \(built\) catalog tables, calculation views, SQL views, and table functions as data sources in the view nodes.
 
 
-8.  \(Optional\) Add data sources from external services \(HDI or non-HDI containers\).
+8.  **Optional:** Add data sources from external services \(HDI or non-HDI containers\).
 
     You can use synonyms to access objects from non-HDI containers or from HDI containers. The tool automatically creates \(or modifies the existing\) `.hdbsynonym`, `.hdbgrants`, and `.hdbsynonymconfig` \(which is created in `cfg` folder for objects in HDI\), files that are necessary to consume the synonym.
 
@@ -88,7 +90,7 @@ Create a calculation view.
 
     1.  Select a view node.
 
-    2.  Choose ![](images/Add_Data_Sources_1689131.jpg) \(Add Data Source\).
+    2.  Choose :heavy_plus_sign:.
 
         The *Find Data Sources* dialog box appears.
 
@@ -102,7 +104,7 @@ Create a calculation view.
 
         If a synonym already exists for the target object, choose *Finish*.
 
-    6.  \(Optional\) Modify the synonym name.
+    6.  **Optional:** Modify the synonym name.
 
     7.  Define the object owner role and the application user role.
 
@@ -169,7 +171,7 @@ Create a calculation view.
 
     1.  Select a view node.
 
-    2.  In the editor toolbar, choose ![](images/details_5b34943.png) \(Expand Details Panel\).
+    2.  In the editor toolbar, choose <span style="color:#007cc0;"><span class="SAP-icons-V4"></span></span> \(Expand Details Panel\) .
 
     3.  On the *Mapping* tab, select the column you want to add to the output.
 
@@ -198,7 +200,7 @@ Create a calculation view.
         If the data category is set to CUBE, an additional aggregation column is available to specify the aggregation type for measures.
 
 
-11. \(Optional\) Copy a calculation view.
+11. **Optional:** Copy a calculation view.
 
     You can copy a calculation view and paste it using a different name within the same or different SAP HANA Database module. In the view properties, the calculation view ID is automatically adjusted.
 
@@ -213,13 +215,13 @@ Create a calculation view.
     5.  Choose *OK*.
 
 
-12. \(Optional\) View modeler objects in the outline pane.
+12. **Optional:** View modeler objects in the outline pane.
 
-    Use the *Outline* pane in SAP Web IDE to obtain a quick overview of the modeler objects \(view nodes and columns\) in the calculation view.
+    Use the outline pane in SAP Web IDE to obtain a quick overview of the modeler objects \(view nodes and columns\) in the calculation view.
 
     1.  In the menu bar, choose *View* \> *Outline*.
 
-        All the modeler objects are displayed in the calculation view. You can also select an object in the outline pane, and navigate to the editor to identify where the object is used in the calculation view.
+        All the modeler objects are displayed in the calculation view. You can also select an object in the outline pane and navigate to the editor to identify where the object is used in the calculation view.
 
     2.  In the right menu bar, choose ![](images/Outline_Pane_137600d.jpg) \(Outline\) to show or hide the outline pane.
 
@@ -574,29 +576,29 @@ For more information, see *Quick Reference: Calculation View Properties*.
 **Related Information**  
 
 
-[Working With View Nodes](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/20ad4018a0ab4f2f84968beb8ab521e2.html "View nodes are the building blocks of calculation views.") :arrow_upper_right:
+[Working With View Nodes](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/20ad4018a0ab4f2f84968beb8ab521e2.html "View nodes are the building blocks of calculation views.") :arrow_upper_right:
 
 [Preview Calculation View Output](preview-calculation-view-output-903eff8.md "After you have modeled a calculation view, you can deploy it and preview its output.")
 
-[Working With Attributes and Measures](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/8493c7f54a3b4b728821ecee972e2963.html "Attributes and measures form content data that you can use for data modeling.") :arrow_upper_right:
+[Working With Attributes and Measures](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/8493c7f54a3b4b728821ecee972e2963.html "Attributes and measures form content data that you can use for data modeling.") :arrow_upper_right:
 
-[Working With Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/9774a676c8fe46c79c5b197051fa9743.html "When you model calculation views, you can define certain properties that can be referenced at runtime.") :arrow_upper_right:
+[Working With Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/9774a676c8fe46c79c5b197051fa9743.html "When you model calculation views, you can define certain properties that can be referenced at runtime.") :arrow_upper_right:
 
-[Additional Functionality for Calculation Views](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/a19aa4797aea4eb0b402aef360a4e14f.html "After modeling a calculation view or during design time, you can use additional functions to better understand the performance of the view at runtime and to more efficiently model calculation views.") :arrow_upper_right:
+[Additional Functionality for Calculation Views](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/a19aa4797aea4eb0b402aef360a4e14f.html "After modeling a calculation view or during design time, you can use additional functions to better understand the performance of the view at runtime and to more efficiently model calculation views.") :arrow_upper_right:
 
 [Defining Data Access Privileges](defining-data-access-privileges-acd7703.md "Use the analytic privilege editor in SAP Web IDE Full-Stack to create analytic privileges.")
 
-[Create Calculation Views with Star Joins](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/988f5a9bd87c4492ad5c1e6f7936f0b5.html "Star joins connect a central data entity to multiple entities that are logically related. You can create a calculation view with star joins that join multiple dimensions to a single fact table.") :arrow_upper_right:
+[Create Calculation Views with Star Joins](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/988f5a9bd87c4492ad5c1e6f7936f0b5.html "Star joins connect a central data entity to multiple entities that are logically related. You can create a calculation view with star joins that join multiple dimensions to a single fact table.") :arrow_upper_right:
 
-[Create Calculation Views with Time Dimension](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/5a787289ee7e4f7fad10f0f5dfd54646.html "You can add time dimensions to a calculation view by using the standard time-related tables as data sources in the calculation view.") :arrow_upper_right:
+[Create Calculation Views with Time Dimension](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/5a787289ee7e4f7fad10f0f5dfd54646.html "You can add time dimensions to a calculation view by using the standard time-related tables as data sources in the calculation view.") :arrow_upper_right:
 
-[Using the Keep Flag](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/f0e101a7641340708f0b098206210d9c.html "The Keep Flag option for attribute columns influences the result set of a calculation view.") :arrow_upper_right:
+[Using the Keep Flag](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/f0e101a7641340708f0b098206210d9c.html "The Keep Flag option for attribute columns influences the result set of a calculation view.") :arrow_upper_right:
 
-[Consume Objects That are not Included in Your Development Project](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/9c5e5d49af274281b74062a87d5cb34e.html "To consume objects that are not included in your project (or in your HDI container), you need to define synonyms that point to the objects to be consumed.") :arrow_upper_right:
+[Consume Objects That are not Included in Your Development Project](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/9c5e5d49af274281b74062a87d5cb34e.html "To consume objects that are not included in your project (or in your HDI container), you need to define synonyms that point to the objects to be consumed.") :arrow_upper_right:
 
-[Quick Reference: Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/8a5d5228e41d4083b06e94d60756429b.html "Configure calculation view properties. The configured values determine the behavior of a calculation view at runtime.") :arrow_upper_right:
+[Quick Reference: Calculation View Properties](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/8a5d5228e41d4083b06e94d60756429b.html "Configure calculation view properties. The configured values determine the behavior of a calculation view at runtime.") :arrow_upper_right:
 
-[Filter Data for Specific Clients](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/2175374c28a84f69ab125feb71a78ef7.html "Obtain data for all client values, or filter the calculation view data, either with a fixed client value or with the session client value of the query user.") :arrow_upper_right:
+[Filter Data for Specific Clients](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/2175374c28a84f69ab125feb71a78ef7.html "Obtain data for all client values, or filter the calculation view data, either with a fixed client value or with the session client value of the query user.") :arrow_upper_right:
 
-[Filter Output](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/d00c142746904c80a5730614f567a0a3.html "Apply filters on columns of nodes to filter their output.") :arrow_upper_right:
+[Filter Output](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/d00c142746904c80a5730614f567a0a3.html "Apply filters on columns of nodes to filter their output.") :arrow_upper_right:
 

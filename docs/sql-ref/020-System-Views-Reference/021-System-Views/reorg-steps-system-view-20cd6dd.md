@@ -76,7 +76,7 @@ INTEGER
 </td>
 <td valign="top">
 
-Displays the ID of the table redistribution group of steps that the item belongs to.
+Displays the ID of the group of steps of the table redistribution that the item belongs to.
 
 </td>
 </tr>

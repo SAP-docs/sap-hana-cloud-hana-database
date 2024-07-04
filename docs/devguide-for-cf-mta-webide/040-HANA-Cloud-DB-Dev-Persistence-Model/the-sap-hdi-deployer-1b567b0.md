@@ -15,7 +15,7 @@ You can install the HDI Deployer by including the Node.js application “`@sap/h
 > {
 >   "name": "deploy",
 >   "dependencies": {
->     "@sap/hdi-deploy": "3.9.1"
+>     "@sap/hdi-deploy": "4.9.2"
 >   },
 >   "scripts": {
 >     "start": "node node_modules/@sap/hdi-deploy/"
@@ -48,7 +48,7 @@ Typically, `@sap/hdi-dynamic-deploy` is installed by including a dependency in t
 > {
 >   "name": "deploy",
 >   "dependencies": { 
->      "@sap/hdi-dynamic-deploy": "1.5.0" 
+>      "@sap/hdi-dynamic-deploy": "2.7.1" 
 >   }, 
 >   "scripts": { 
 >      "start": "node node_modules/@sap/hdi-dynamic-deploy/"

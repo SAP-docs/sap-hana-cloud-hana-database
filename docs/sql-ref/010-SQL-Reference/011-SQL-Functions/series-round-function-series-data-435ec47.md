@@ -203,52 +203,6 @@ Rounds a specified value to the series value using the specified rounding settin
 
 ## Examples
 
-The example below illustrates different ways of aggregating data when moving from narrower to wider intervals:
-
-```
-CREATE COLUMN TABLE SampleSensorData (
-    machine_id NVARCHAR(10),
-    ts timestamp,
-    power_consumption double,
-    flow_rate double,
-    primary key(machine_id, ts))
-SERIES (
-    SERIES KEY(machine_id)
-    PERIOD FOR SERIES(ts)
-    EQUIDISTANT INCREMENT BY INTERVAL 1 MINUTE MISSING ELEMENTS ALLOWED);
-
--- Going from 1 minute to 1 day using Standard SQL:
-SELECT machine_id,
-    TO_DATE(YEAR(ts) || '-' || MONTH(ts) || '-' || DAYOFMONTH(ts),
-        'YYYY-MM-DD') AS ts,
-    SUM(power_consumption) AS power_consumption
-    FROM SampleSensorData
-    GROUP BY machine_id, YEAR(ts), MONTH(ts), DAYOFMONTH(ts);
-
--- Going from 1 minute to 15 minutes using SERIES_ROUND:
-SELECT machine_id, ts AS original_ts,
-    SERIES_ROUND(ts, 'INTERVAL 15 MINUTE', ROUND_FLOOR) AS rounded_ts
-        FROM SampleSensorData
-        WHERE machine_id = 'EQ42-P01'
-        ORDER BY ts;
-
--- Going from 1 minute to 15 minutes using SERIES_ROUND (variant #1)
-SELECT machine_id, ts, SUM(power_consumption) AS power_consumption
-    FROM (
-        SELECT machine_id, SERIES_ROUND(ts, 'INTERVAL 15 MINUTE', ROUND_FLOOR)
-            AS ts, power_consumption
-            FROM SampleSensorData
-    )
-    GROUP BY machine_id, ts
-    ORDER BY machine_id, ts;
-
--- Going from 1 minute to 15 minutes using SERIES_ROUND (variant #2)
-SELECT machine_id, SERIES_ROUND(ts, 'INTERVAL 15 MINUTE', ROUND_FLOOR)
-    AS ts, sum(power_consumption) AS power_consumption
-    FROM SampleSensorData
-    GROUP BY machine_id, SERIES_ROUND(ts, 'INTERVAL 15 MINUTE', ROUND_FLOOR);
-```
-
 The example below shows how to round up 4.5 to a series incremented by 3. It returns the result ***6***:
 
 ```

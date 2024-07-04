@@ -17,7 +17,7 @@ Check the contents of your database with SAP HANA Database Explorer.
 -   The application project contains a database module called *db*.
 
 > ### Note:  
-> For information about developing SAP HANA database applications using the *SAP HANA Native Application* extension in Visual Studio Code, see *SAP HANA Database Explorer Integration for Visual Studio Code \(Visual Studio Marketplace\)* in *Related Information* below.
+> For information about developing SAP HANA database applications using the *SAP HANA Native Application* dev space in Visual Studio Code, see *SAP HANA Database Explorer Integration for Visual Studio Code \(Visual Studio Marketplace\)* in *Related Information* below.
 
 
 
@@ -45,11 +45,10 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
         Open the command palette by choosing *View* \> *Command Palette...* \(or with the keyboard shortcut [Ctrl\] + [Shift\] + [P\] \), type `data`, and choose *SAP HANA: Open Database Explorer* in the list of commands displayed.
 
         > ### Note:  
-        > With this method, you need to locate and select the database \(HDI container\) manually.
 
-    2.  Start the standalone database explorer from the *SAP HANA PROJECTS* explorer.
+    2.  Start the standalone database explorer from the *SAP HANA PROJECTSWith this method, you need to locate and select the database \(HDI container\) manually.* explorer.
 
-        In the *SAP HANA PROJECTS* explorer, locate the application project containing the database artifacts that you want to explore, for example, *FlightReservation/db*, and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
+        In the *SAP HANA PROJECTS*With this method, you need to locate and select the database \(HDI explorer, locate the application project containing the database artifacts that you want to explore, for example, *FlightReservation/db*, and choose <span class="SAP-icons-watt"></span> \(Open HDI Container\).
 
     3.  Start the embedded database explorer from the *SAP HANA Database Explorer* tool in the views pane of the SAP Business Application Studio.
 
@@ -80,7 +79,7 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
     3.  Click a database object in the *CATALOG BROWSER* to display the object's metadata in the details pane.
 
         > ### Note:  
-        > This feature is currently available for selected objects only, for example, functions, procedures, and views. You can also view the metadata of supported database object types from a link in the dependency viewer, as described below.
+        > This feature is currently available for selected objects only, for example, functions, procedures, tables, indexes, and views. You can also view the metadata of supported database object types from a link in the dependency viewer, as described below.
 
         The information displayed can include the name of the selected object, the schema the selected object is located in, any parameters defined for the object, and the SQL statement used to create the object.
 
@@ -201,7 +200,7 @@ The SAP HANA Database Explorer enables you to view the run-time contents of your
         The metadata includes the definition of the object in SQL, for example, the name of the object, the name of the schema where the object is located, any parameter names as well as the SQL statement used to create the selected object.
 
         > ### Note:  
-        > In the dependency viewer, this feature is currently only available for the database object types "function" \(`hdbfunction`\), "procedure" \(`hdbprocedure`\), and "views" \(`hdbview` or `hdbcalculationview`\).
+        > In the dependency viewer, this feature is currently only available for the database object types "function" \(`hdbfunction`\), "procedure" \(`hdbprocedure`\), tables \(`hdbtable`\), indexes \(`hdbindex`\), and "views" \(`hdbview` or `hdbcalculationview`\).
 
         To view the metadata of a database object in the dependency viewer, select the object in the displayed schema and choose *Open metadata view* in the object description pane.
 

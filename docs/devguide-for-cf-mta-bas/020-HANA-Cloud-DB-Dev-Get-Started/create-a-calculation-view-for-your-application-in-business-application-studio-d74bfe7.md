@@ -79,6 +79,9 @@ In this tutorial, you create a calculation view to combine information from the 
 
     In the *Project Explorer*, double-click the calculation view to display it in the graphical *Calculation View Editor*. If you prefer to view and work with the artifact source code, right-click the calculation-view artifact and choose *Open with* \> *Code Editor*.
 
+    > ### Tip:  
+    > You can toggle between code and graphical editor. Changes made to the open artifact during the editing session are synchronized between both editors.
+
     1.  Create a new join node for the calculation view.
 
         In the tools palette, choose *Join*.
@@ -89,11 +92,11 @@ In this tutorial, you create a calculation view to combine information from the 
 
     3.  Add a data source for the join node.
 
-        Choose *\[+\]*, search for the *PASSENGERS* table in the add data source window, select the table, and click *Finish*.
+        Choose :heavy_plus_sign:, search for the *PASSENGERS* table in the add data source window, select the table, and choose *Finish*.
 
     4.  Add another data source for the join node.
 
-        Choose *\[+\]*, search for the *FLIGHTRESERVATION* table in the add data source window, select the table, and click *Finish*.
+        Choose :heavy_plus_sign:, search for the *FLIGHTRESERVATION* table in the add data source window, select the table, and choose *Finish*.
 
     5.  Configure the join node.
 

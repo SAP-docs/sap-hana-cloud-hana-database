@@ -233,12 +233,20 @@ Displays if the parameter value has been changed and requires a restart to becom
 </tr>
 </table>
 
+
+
+<a name="loio0eff3c0e8970497c9973d828f08d40c2__section_ozg_555_tbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
 [CONFIGURATION\_PARAMETER\_PROPERTIES System View](../021-System-Views/configuration-parameter-properties-system-view-e8c6c69.md "Displays metadata and properties of the public configuration parameters for SAP HANA.")
 
-[Configuration Parameters for the Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/49ff94736bb84e948321cb1e8cd1ca22.html "A set of configuration parameters in the indexserver.ini file is available to control the manual table consistency check.") :arrow_upper_right:
+[Configuration Parameters for the Table Consistency Check](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/49ff94736bb84e948321cb1e8cd1ca22.html "A set of configuration parameters in the indexserver.ini file is available to control the manual table consistency check.") :arrow_upper_right:
 
 [ALTER SYSTEM ALTER CONFIGURATION Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-alter-configuration-statement-system-management-20d08a5.md "Sets or removes configuration parameters in an INI file.")
 

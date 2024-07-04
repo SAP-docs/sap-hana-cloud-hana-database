@@ -203,6 +203,14 @@ Displays the detailed information about the operation.
 
 
 
+<a name="loio20b1b238751910148e45c5be2837b57f__section_e3f_zyz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20b1b238751910148e45c5be2837b57f___m__j_o_b__p_r_o_g_r_e_s_s_1fulldesc_M_JOB_PROGRESS"/>
 
 ## Additional Information

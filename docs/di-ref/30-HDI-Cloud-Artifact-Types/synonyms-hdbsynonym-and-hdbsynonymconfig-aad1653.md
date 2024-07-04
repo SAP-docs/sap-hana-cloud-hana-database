@@ -8,6 +8,9 @@ Transforms a design-time synonym definition into a database synonym object.
 
 Although it is true that design-time resources must be free of explicit schema references in order to enable deployment into multiple containers, the rules requiring the use only schema-local objects is occasionally too restrictive. For example, often it is necessary to be able to access database objects that are not brought into the system via HANA DI; such objects include database objects from an ERP system or replicated objects. These objects can be easily accessed by defining synonyms.
 
+> ### Caution:  
+> Do not create a local synonym with the same name as an existing system table that already has a public synonym. This could result in locks on the system object and block other HDI deployments and database operations that depend on it. For example, do not create a synonym named `DUMMY` for the table `"SYS"."DUMMY"`. For more information, see SAP note [3239397](https://me.sap.com/notes/3239397) \(*Lock wait timeout*\).
+
 Since, in most cases, the fully qualified names of the referenced database objects are not known at design time \(because they depend on deployment decisions\), the complete definition of a synonym is split into two design-time files: a declaration \(with an optional default configuration\), and an explicit configuration of the synonym’s target. The explicit configuration can be provided at latest at deployment time, and the explicit configuration overrides the optional default configuration. In this way, an administrator can map object references according to the deployment context.
 
 The complete definition of a synonym is split into the following design-time files:
@@ -98,10 +101,15 @@ If the `"remote"` field of a target description is defined, then the referenced 
 
 With these two configuration files, the synonym `com.sap.hana.example::DUMMY` for the table `SYS.DUMMY` is fully defined, and the procedure can be deployed. In this way, you can access non-local schema references and configure the synonyms to match the local deployment database structure without modifying any sources **except** the synonym configurations.
 
-If the synonym points to an object outside of the container, this external object or one of its dependencies might change over time, making it necessary to re-deploy the synonym and the objects in the container that depend on the synonym. Such changes can be detected automatically during a `MAKE` of the container, even when the synonym is not included in the set of files to be deployed, by using the `MAKE` parameter "`validate_external_dependencies`" set to "true", or the optional container configuration parameter "`make.validate_external_dependencies`" set to "true".
-
 > ### Restriction:  
 > If the synonym points to an object inside another schema or a different container or to an object inside the same container which is owned by a different user, then the container’s object owner \(<code><i class="varname">&lt;container&gt;</i>#OO</code>\) needs to be granted the required privileges on this target object, for example, `SELECT`, `UPDATE`, and `INSERT`. If views \(that are exposed to other users\) or definer-mode procedures are built on top of synonyms, then the object owner needs privileges `WITH GRANT OPTION`.
+
+If the synonym points to an object outside of the container, this external object or one of its dependencies might change over time, making it necessary to re-deploy the synonym and the objects in the container that depend on the synonym. Such changes can be detected automatically during a `MAKE` of the container, even when the synonym is not included in the set of files to be deployed, by using the `MAKE` parameter "`validate_external_dependencies`" set to "true", or the optional container configuration parameter "`make.validate_external_dependencies`" set to "true".
+
+> ### Note:  
+> If `validate_external_dependencies` is not set \(or set to false\), changes to the external objects may still affect the deployment.
+
+For example, when a view depending on an external table is modified by the deployment, the deployment will fail if the view is not compatible with the modifications to the table. However, if the table is located in a different database, the change might not have been noticed by the current \(source\) database, so the deployment works, but accessing the view fails. Setting `validate_external_dependencies` to "true" on the other hand enforces a validation check.
 
 The HDI Deployer enables you to set up a template mechanism for HDI configuration files, for example, configuration files for logical schemas, synonyms, or projection views based on services which are bound to an application's database \(`db/`\) module. With this template mechanism, it is possible to configure synonyms, projection views, and similar artifacts. to point to the right database schema without knowing the schema name at development time.
 
@@ -135,5 +143,5 @@ In the configuration file for the HDI container \(`.hdiconfig`\), the plug-in co
 
 [Logical Schemas \(.hdblogicalschema and .hdblogicalschemaconfig\)](logical-schemas-hdblogicalschema-and-hdblogicalschemaconfig-fa9cda8.md "Transforms a design-time logical-schema definition into run-time database objects that can be used by synonyms and so on.")
 
-[Templates for HDI Configuration Files (SAP HANA Cloud Database Developer Guide (SAP Business App Studio))](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/7ef53fb04ecc49a3ae647c21a0736994.html "The HDI Deployer implements a template mechanism for HDI configuration files.") :arrow_upper_right:
+[Templates for HDI Configuration Files (SAP HANA Cloud Database Developer Guide (SAP Business App Studio))](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_3_QRC/en-US/7ef53fb04ecc49a3ae647c21a0736994.html "The HDI Deployer implements a template mechanism for HDI configuration files.") :arrow_upper_right:
 

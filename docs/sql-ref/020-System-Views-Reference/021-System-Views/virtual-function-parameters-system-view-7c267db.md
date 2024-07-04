@@ -229,7 +229,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the parameter type is an inplace type: 'TRUE'/'FALSE'.
+Displays whether the parameter type is an inplace type: TRUE/FALSE.
 
 </td>
 </tr>
@@ -263,7 +263,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the parameter has a default value or not: 'TRUE'/'FALSE'.
+Displays whether the parameter has a default value or not: TRUE/FALSE.
 
 </td>
 </tr>
@@ -280,7 +280,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the parameter accepts a null value: 'TRUE'/'FALSE'.
+Displays whether the parameter accepts a null value: TRUE/FALSE.
 
 </td>
 </tr>
@@ -297,5 +297,5 @@ Unless otherwise specified, system views are available to all users granted the 
 **Related Information**  
 
 
-[Virtualizing Table User-Defined Functions](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/2f6c8c47650b4acebe359598b6737e6c.html "In the SAP HANA Cloud, SAP HANA database, you can create virtual table user-defined functions (TUDFs) that point to remote table user-defined functions in another SAP HANA Cloud, SAP HANA database or in an SAP HANA on-premise system.") :arrow_upper_right:
+[Virtualizing Table User-Defined Functions](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/2f6c8c47650b4acebe359598b6737e6c.html "In the SAP HANA Cloud, SAP HANA database, you can create virtual table user-defined functions (TUDFs) that point to remote table user-defined functions in another SAP HANA Cloud, SAP HANA database or in an SAP HANA on-premise system.") :arrow_upper_right:
 

@@ -150,6 +150,14 @@ Displays the component that create the calculation scenario.
 </tr>
 </table>
 
+
+
+<a name="loiod2069373d2951014a6c5c06e5c43cf77__section_kmw_21w_rbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

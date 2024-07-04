@@ -218,6 +218,14 @@ Displays the execution timestamp.
 </tr>
 </table>
 
+
+
+<a name="loio20aa7a5b751910148e10f97a350b0f7f__section_hg3_2bw_rbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
@@ -229,5 +237,5 @@ Displays the execution timestamp.
 
 [M\_DEBUG\_CONNECTIONS System View](m-debug-connections-system-view-20ae867.md "Provides an overview of connections used per debug session.")
 
-[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
+[SQLScript Debugger](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/77b84f65439d4ead97c88b7452476674.html "") :arrow_upper_right:
 

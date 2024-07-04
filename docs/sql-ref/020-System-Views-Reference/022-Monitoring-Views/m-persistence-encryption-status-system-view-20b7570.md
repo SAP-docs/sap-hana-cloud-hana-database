@@ -206,5 +206,5 @@ Displays the hash of the root key that this service is using.
 
 [M\_PERSISTENCE\_ENCRYPTION\_KEYS System View](m-persistence-encryption-keys-system-view-20b732b.md "Provides information about encryption page keys.")
 
-[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
+[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
 

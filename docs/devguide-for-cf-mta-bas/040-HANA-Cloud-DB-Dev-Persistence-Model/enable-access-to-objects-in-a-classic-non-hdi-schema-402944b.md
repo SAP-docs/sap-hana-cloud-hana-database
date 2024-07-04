@@ -41,6 +41,11 @@ You can enable a multitarget application to access objects in a database schema 
 
 2.  Create the roles to be granted for external access by means of the synonym.
 
+    You can use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time role artifact.
+
+    > ### Tip:  
+    > By default, SAP Business Application Studio opens the new role artifact in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also toggle between code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+
     The following roles are required here:
 
     -   `external_access_g`
@@ -79,8 +84,12 @@ You can enable a multitarget application to access objects in a database schema 
 
     You can create the synonym design-time object in a subfolder of your mulitarget application's database module, for example in <code>/<i class="varname">&lt;MyApp&gt;</i>/db/src/synonyms/SNWD.hdbsynonym</code>. In this example, we name the synonym definition `SNWD.hdbsynonym`, which contains multiple synonyms referencing tables/views in the target schema “`EPM_DEV`”.
 
+    You can use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time synonym artifact.
+
     > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
+    > By default, SAP Business Application Studio opens the new synonym artifact in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also toggle between code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+
+    If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
 
     > ### Sample Code:  
     > Synonym Definition \(`/MyApp/db/src/synonyms/SNWD.hdbsynonym`\)
@@ -123,6 +132,13 @@ You can enable a multitarget application to access objects in a database schema 
     > ### Caution:  
     > To prevent unwanted schema access, for example, via “definer-mode”, it is recommended to assign different roles to the object owner and the application user.
 
+    You can use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time `hdbgrants` artifact.
+
+    > ### Tip:  
+    > By default, SAP Business Application Studio opens the new `hdbgrants` artifact in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also toggle between code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+
+    If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
+
     > ### Sample Code:  
     > `myApp/db/cfg/epm_dev.hdbgrants` File
     > 
@@ -145,9 +161,6 @@ You can enable a multitarget application to access objects in a database schema 
     > ```
 
     “`EPM_XXX-table-grantor`” is a symbolic name for a user-defined service that executes the `GRANT` statement. The user-defined service must be specified in the application project’s development-descriptor \(`mta.yaml`\). “`application_user`” refers to a technical access role; it is not a reference to a real user.
-
-    > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
 
     The role specified for assignment to <code>“object_owner”</code> should contain the `SELECT WITH GRANT OPTION` privilege on the corresponding target table; the role specified for assignment to <code>“application_user”</code> should specify the `SELECT` privilege \(**without** `GRANT OPTION`\) for the corresponding target tables, view, sequences, and `EXECUTE WITH GRANT OPTION` for the corresponding functions and procedures to enable access to the target objects via the synonyms created.
 
@@ -330,7 +343,7 @@ You can enable a multitarget application to access objects in a database schema 
 
 [Syntax Options in the hdbgrants File](syntax-options-in-the-hdbgrants-file-f49c1f5.md "Assign the privileges required by users to access objects in the target schema.")
 
-[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
+[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
 
 [Enable Access to Objects in Another HDI Container](enable-access-to-objects-in-another-hdi-container-4adba34.md "Use a synonym to enable access to another HDI container.")
 

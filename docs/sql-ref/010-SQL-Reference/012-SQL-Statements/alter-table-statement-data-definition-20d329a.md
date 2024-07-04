@@ -40,19 +40,16 @@ ALTER TABLE <table_name>
    | <set_movable_clause>
    | <convert_index_type>
    | <numa_node_preference_clause>
+   | <primary_key_update_clause>
 ```
 
 
-
-<a name="loio20d329a6751910149d5fdbc4800f92ff__sql_alter_table_syntax_elements"/>
-
-## Syntax Elements
 
 
 <dl>
 <dt><b>
 
-*<table\_name\>*
+*<e\_name\>*
 
 </b></dt>
 <dd>
@@ -1788,22 +1785,6 @@ Specifies if UPDATE statements are allowed on primary key columns. This clause i
 ```
 
 
-<dl>
-<dt><b>
-
-PRIMARY KEY UPDATE \{ ON | OFF \}
-
-</b></dt>
-<dd>
-
-Specifies if UPDATE statements are allowed on primary key columns.
-
-
-
-</dd>
-</dl>
-
-
 
 </dd>
 </dl>
@@ -1900,13 +1881,21 @@ If BATCH is not specified, then the default value of 2,000,000 is used. Inserts 
 </dd>
 </dl>
 
+
+<dl>
+<dt><b>
+
+*<association\_clauses\>*
+
+</b></dt>
+<dd>
+
 Defines the association operations you can perform.
 
 ```
-   [<add_association_clause>Converts the table storage from ROW to COLUMN or
-                     from COLUMN to ROW.]
-   [Converts the table storage from ROW to COLUMN or
-                     from COLUMN to ROW.<drop_association_clause>]
+<association_clauses> ::= 
+   <add_association_clause><**add_association_clause>
+   <drop_association_clause><drop_association_clause>
 ```
 
 
@@ -1922,17 +1911,48 @@ Adds an association clause. Associations are checked at runtime.
 
 ```
 <add_association_clause> ::= ADD ASSOCIATION ( <association_def> )
-<association_def> ::= [ <join_cardinality> ] JOIN <table_name> [ AS <identifier> ] ON <predicate> WITH DEFAULT FILTER <predicate>
-<join_cardinality> ::=
- MANY TO ONE
- | MANY TO MANY
- | ONE TO ONE
- | ONE TO MANY
 
-<table_name> ::= <identifier>
+```
+
+
+<dl>
+<dt><b>
+
+*<association\_def\>*
+
+</b></dt>
+<dd>
+
+```
+<association_def> ::= [ <join_cardinality> ] 
+   JOIN <table_name> 
+   [ AS <identifier> ] 
+   ON <predicate> WITH DEFAULT FILTER <predicate>
 ```
 
 The WITH DEFAULT FILTER clause specifies a default predicate to filter column values.
+
+
+
+</dd><dt><b>
+
+*<join\_cardinality\>*
+
+</b></dt>
+<dd>
+
+```
+<join_cardinality> ::=
+   { MANY TO ONE
+   | MANY TO MANY
+   | ONE TO ONE
+   | ONE TO MANY }
+```
+
+
+
+</dd>
+</dl>
 
 
 
@@ -1948,6 +1968,11 @@ Drops an association clause
 ```
 <drop_association_clause> ::= DROP ASSOCIATION <identifier>
 ```
+
+
+
+</dd>
+</dl>
 
 
 
@@ -3442,6 +3467,25 @@ CREATE TABLE T5 (A INT, B INT) PARTITION BY RANGE (A) (PARTITION 10 <= values < 
 ALTER TABLE T5 PARTITION BY HASH (A) PARTITIONS 2;
 ```
 
+This example alters table T6 to make partition 1 not movable.
+
+```
+ALTER TABLE T6 ALTER PARTITION 1 SET NOT MOVABLE;
+```
+
+This example alters table T6 to make partition 2 and 3 movable.
+
+```
+ALTER TABLE T6 ALTER PARTITION (2,3) SET MOVABLE;
+
+```
+
+This example alters table T7 to make the range movable.
+
+```
+ALTER TABLE T7 ALTER PARTITION RANGE (C1) ((PARTITION 100 <= VALUES < 200)) SET MOVABLE;
+```
+
 
 <dl>
 <dt><b>
@@ -3603,108 +3647,13 @@ Remove the GROUP value from the partition range 10 -20 and its subpartitions on 
 ALTER TABLE T1 ALTER PARTITION RANGE (a) ((PARTITION 20 <= VALUES < 30)) UNSET GROUP CASCADE;
 ```
 
-This example creates a multilevel heterogeneous partitioned table and then applies the *<load\_unit\>* attribute first by partition number \(1\) and then to partition range \(10 to 20\).
+These examples alter whether partitions can be moved.
 
 ```
-CREATE COLUMN TABLE T4 (a INT, b INT) PARTITION BY RANGE(a) 
-   ((PARTITION 10 <= VALUES < 20) SUBPARTITION BY RANGE (b) (PARTITION VALUES=100));
-
-ALTER TABLE T4 ALTER PARTITION 1 COLUMN LOADABLE;
-ALTER TABLE T4 ALTER PARTITION RANGE (a) ((PARTITION 10 <= VALUES < 20) 
-   SUBPARTITION BY RANGE (b) (PARTITION VALUES = 100)) PAGE LOADABLE;
+ALTER TABLE T1 ALTER PARTITION 1 SET NOT MOVABLE;
+ALTER TABLE T1 ALTER PARTITION (2,3) SET MOVABLE;
+ALTER TABLE T1 ALTER PARTITION RANGE (a) ((PARTITION 10 <= VALUES < 20)) SET DEFAULT MOVABLE;
 ```
-
-
-<dl>
-<dt><b>
-
-Dynamic Range Partitioning
-
-</b></dt>
-<dd>
-
-These examples are based on table A1 using this CREATE TABLE statement.
-
-```
-CREATE COLUMN TABLE A1 (A INT, B INT NOT NULL) PARTITION BY RANGE (A) 
-   ((PARTITION 10 <= VALUES < 20) 
-      SUBPARTITION BY RANGE (B) (PARTITION 15 <= VALUES < 20, PARTITION OTHERS),
-    (PARTITION VALUES = 30) 
-      SUBPARTITION BY RANGE (B) (PARTITION VALUES=20, PARTITION OTHERS),
-    (PARTITION OTHERS));
-```
-
-Enable dynamic range partitioning on range 10-20, subpartition 15-20 on table A1.
-
-```
-ALTER TABLE A1 PARTITION BY RANGE (A) 
-   ((PARTITION 10 <= VALUES < 20) 
-      SUBPARTITION BY RANGE (B) (PARTITION 15 <= VALUES < 20, PARTITION OTHERS DYNAMIC),
-    (PARTITION VALUES = 30) 
-      SUBPARTITION BY RANGE (B) (PARTITION VALUES=20, PARTITION OTHERS),
-    (PARTITION OTHERS));
-```
-
-Add another partition from OTHERS on table A1.
-
-```
-ALTER TABLE A1 ADD PARTITION FROM OTHERS;
-```
-
-Drop any empty partitions except OTHERS on table A1.
-
-```
-ALTER TABLE A1 DROP EMPTY PARTITIONS;
-```
-
-Set the threshold to 2 for dynamic range partitioning on the subpartition of range 10-20 on table A1.
-
-```
-ALTER TABLE A1 PARTITION BY RANGE (A) 
-   ((PARTITION 10 <= VALUES < 20) 
-      SUBPARTITION BY RANGE (B) (PARTITION 15 <= VALUES < 20, PARTITION OTHERS DYNAMIC THRESHOLD 2),
-    (PARTITION VALUES = 30) 
-      SUBPARTITION BY RANGE (B) (PARTITION VALUES = 20, PARTITION OTHERS),
-    (PARTITION OTHERS));
-```
-
-Disable dynamic range partitioning on the subpartition on range 10-20 on table A1.
-
-```
-ALTER TABLE A1 PARTITION BY RANGE (A) 
-   ((PARTITION 10 <= VALUES < 20) 
-      SUBPARTITION BY RANGE (B) (PARTITION 15 <= VALUES < 20, PARTITION OTHERS),
-    (PARTITION VALUES = 30) 
-      SUBPARTITION BY RANGE (B) (PARTITION VALUES = 20, PARTITION OTHERS),
-    (PARTITION OTHERS));
-```
-
-
-<dl>
-<dt><b>
-
-Redefine Partitions
-
-</b></dt>
-<dd>
-
-Alter the load unit of any range partition in default storage:
-
-```
-ALTER TABLE A1 PARTITION BY RANGE (A)
-   (PARTITION 0 <= VALUES < 10 PAGE LOADABLE,
-    PARTITION OTHERS COLUMN LOADABLE);
-```
-
-
-
-</dd>
-</dl>
-
-
-
-</dd>
-</dl>
 
 
 
@@ -3803,7 +3752,7 @@ ALTER TABLE T ALTER (C1 INT DEFAULT LOADABLE);
 **Related Information**  
 
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
 [Non-Heterogeneous Alter Partition Clauses](non-heterogeneous-alter-partition-clauses-f7ae27c.md "Modifies the partitions of an existing table with a non-heterogeneous partitioning schema.")
 
@@ -3821,9 +3770,9 @@ ALTER TABLE T ALTER (C1 INT DEFAULT LOADABLE);
 
 [TABLE\_PARTITIONS System View](../../020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 
-[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
+[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [Predicates](../predicates-20a2ab2.md "")
 
@@ -3831,7 +3780,7 @@ ALTER TABLE T ALTER (C1 INT DEFAULT LOADABLE);
 
 [TABLE\_COLUMNS System View](../../020-System-Views-Reference/021-System-Views/table-columns-system-view-2100d33.md "Provides information about available table columns.")
 
-[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2024_1_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
+[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2024_3_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

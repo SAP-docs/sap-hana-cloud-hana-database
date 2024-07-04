@@ -233,11 +233,9 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [PROCEDURE\_PARAMETERS System View](procedure-parameters-system-view-20cc6b9.md "Provides information about the stored procedure parameters.")
 
-[PROCEDURE\_ROUTES System View](procedure-routes-system-view-61d897c.md "Provides information about the procedure being routed. This view is for internal use only.")
+[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
 
-[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
+[Procedure Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/3809c45287c44908a3d45a4db1514a55.html "") :arrow_upper_right:
 
-[Procedure Parameters](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/3809c45287c44908a3d45a4db1514a55.html "") :arrow_upper_right:
-
-[Array Parameters for Procedures and Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/dcffe459010546bd981d3b74b3798962.html "You can create procedures and functions with array parameters so that array variables or constant arrays can be passed to them.") :arrow_upper_right:
+[Array Parameters for Procedures and Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/dcffe459010546bd981d3b74b3798962.html "You can create procedures and functions with array parameters so that array variables or constant arrays can be passed to them.") :arrow_upper_right:
 

@@ -182,6 +182,14 @@ Displays the internal port.
 </tr>
 </table>
 
+
+
+<a name="loiocc0fbe8198134882a082a8a2507c50e8__section_ov3_xf2_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

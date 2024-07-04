@@ -167,10 +167,18 @@ Displays the tracked CPU time that each location consumed.
 </tr>
 </table>
 
+
+
+<a name="loio80c32e9dc5b742efa254adfe164102dc__section_e1g_qkj_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
 [M\_EXPENSIVE\_STATEMENTS System View](m-expensive-statements-system-view-20af736.md "Provides all statements with a duration longer than a specified threshold.")
 
-[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
+[Expensive Statements Trace](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/5faf04f17830464eacdb7938b383d2ab.html "Expensive statements are individual SQL statements whose execution time exceeds a configured threshold. The expensive statements trace records information about these statements for further analysis and is inactive by default.") :arrow_upper_right:
 

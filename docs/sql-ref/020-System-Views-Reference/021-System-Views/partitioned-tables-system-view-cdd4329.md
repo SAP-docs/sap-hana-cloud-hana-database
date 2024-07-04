@@ -108,7 +108,7 @@ NVARCHAR\(16\)
 </td>
 <td valign="top">
 
-Displays the partitioning type at the first level: HASH, RANGE, ROUNDROBIN, REPLICATE, or RANGE HETEROGENEOUS.
+Displays the partitioning type at the first level: HASH, RANGE, ROUNDROBIN.
 
 </td>
 </tr>
@@ -125,7 +125,7 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Displays the partitioning expression for second-level partitions.
+Displays the partitioning expression for second-level partitions \(first-level subpartitions\).
 
 </td>
 </tr>
@@ -159,7 +159,58 @@ NVARCHAR\(16\)
 </td>
 <td valign="top">
 
-Displays the partitioning type at the second level: HASH, RANGE, RANGE HETEROGENEOUS, or HASH HETEROGENEOUS. Heterogeneous indicates an unbalanced partitioning scheme.
+Displays the partitioning type at the second level \(first-level subpartition\): HASH, RANGE, or RANGE HETEROGENEOUS. Heterogeneous indicates an unbalanced partitioning scheme.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LEVEL\_3\_EXPRESSION
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Displays the partitioning expression for third-level partitions.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LEVEL\_3\_COUNT
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the total number of partitions at the third level.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LEVEL\_3\_TYPE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+</td>
+<td valign="top">
+
+Displays the partitioning type at the third level \(second-level subpartition\): HASH or RANGE.
 
 </td>
 </tr>
@@ -248,6 +299,23 @@ Displays the PARTITION BY clause.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+DYNAMIC\_RANGE\_CHECK\_INTERVAL
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the frequency in minutes of the dynamic range check. Valid values are: 1-1440000, 0 \(disabled\), NULL \(not set, uses default of 900\).
+
+</td>
+</tr>
 </table>
 
 
@@ -273,9 +341,9 @@ This view also requires the SELECT privilege to see information in a table owned
 
 [M\_TABLES System View](../022-Monitoring-Views/m-tables-system-view-20c7689.md "Provides information on row and column tables.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
-[NSE-Enabled Partitioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/322bb45b63fd4d3c90ca4baf5e7558df.html "For SAP HANA NSE tables, partitioning can be heterogeneous or non-heterogenous. However, partition load unit can be set only for heterogeneous partitioning. This scenario describes a sequence of steps creating a page-loadable, partitioned table and then altering its load unit.") :arrow_upper_right:
+[NSE-Enabled Partitioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/322bb45b63fd4d3c90ca4baf5e7558df.html "For SAP HANA NSE tables, partitioning can be heterogeneous or non-heterogenous. However, partition load unit can be set only for heterogeneous partitioning. This scenario describes a sequence of steps creating a page-loadable, partitioned table and then altering its load unit.") :arrow_upper_right:
 
 [Heterogeneous Create Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/heterogeneous-create-partition-clauses-d496e58.md "Defines the various partitioning clauses available for heterogeneous partitions when creating a new table.")
 

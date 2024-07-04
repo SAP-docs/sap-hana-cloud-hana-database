@@ -139,7 +139,7 @@ To create a design-time SQL DDL view-definition file, perform the following step
 **Related Information**  
 
 
-[SQL View Syntax (.hdbview in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/2bf9a6f2db824fbd84315196a9c318d5.html "Transforms a design-time view resource into an SQL view database object.") :arrow_upper_right:
+[SQL View Syntax (.hdbview in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/2bf9a6f2db824fbd84315196a9c318d5.html "Transforms a design-time view resource into an SQL view database object.") :arrow_upper_right:
 
 [Data Definition Statements \(SQL Reference\)](https://help.sap.com/viewer/4fe29514fd584807ac9f2a04f6754767/latest/en-US/209ce8cd75191014bcd59c2b379a17c9.html)
 

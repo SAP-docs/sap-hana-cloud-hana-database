@@ -179,7 +179,7 @@ To create a design-time SQL DDL table-definition file, perform the following ste
 **Related Information**  
 
 
-[Table Syntax (.hdbtable in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/453d48e28f6747799546236b4b432e58.html "Transforms a design-time table resource into a table database object.") :arrow_upper_right:
+[Table Syntax (.hdbtable in SAP HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/453d48e28f6747799546236b4b432e58.html "Transforms a design-time table resource into a table database object.") :arrow_upper_right:
 
 [Creating Data Persistence Artifacts with SQL DDL](creating-data-persistence-artifacts-with-sql-ddl-a216fd8.md "You can use SQL DDL to define the underlying database objects that store and provide data for your application, for example, tables and views.")
 

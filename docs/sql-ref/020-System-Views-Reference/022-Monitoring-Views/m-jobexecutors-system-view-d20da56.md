@@ -258,6 +258,14 @@ Displays the number of threads created.
 
 
 
+<a name="loiod20da56dd2951014b0ed84780bd84d7e__section_nnn_ryz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loiod20da56dd2951014b0ed84780bd84d7e__section_bdz_gyg_x2b"/>
 
 ## Additional Information
@@ -269,5 +277,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [M\_JOBEXECUTORS\_RESET System View](m-jobexecutors-reset-system-view-d20dec6.md "Provides values accumulated since the last reset of the main view M_JOBEXECUTORS.")
 
-[Controlling Parallel Execution of SQL Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5c012ca1def64bceb5f29028325193bd.html "Job management takes place in the HANA worker framework and is handled by the JobExecutor which is a job queueing and dispatching subsystem.") :arrow_upper_right:
+[Controlling Parallel Execution of SQL Statements](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/5c012ca1def64bceb5f29028325193bd.html "Job management takes place in the HANA worker framework and is handled by the JobExecutor which is a job queueing and dispatching subsystem.") :arrow_upper_right:
 

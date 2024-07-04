@@ -220,5 +220,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [DROP SCHEMA SYNONYM Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-schema-synonym-statement-data-definition-f8ac4d9.md "Removes a schema synonym.")
 
-[Synonyms](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/22f8edb7ab7944b3962f01007477bdd4.html "Use synonyms to create an alternative name for a virtual table or a remote table when using linked database with SAP HANA view modeling.") :arrow_upper_right:
+[Synonyms](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/22f8edb7ab7944b3962f01007477bdd4.html "Use synonyms to create an alternative name for a virtual table or a remote table when using linked database with SAP HANA view modeling.") :arrow_upper_right:
 

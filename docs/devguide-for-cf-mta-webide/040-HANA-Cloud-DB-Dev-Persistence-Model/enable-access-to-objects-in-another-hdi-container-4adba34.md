@@ -21,9 +21,6 @@ To complete the steps described in this task, the following prerequisites apply:
 
 You can use a synonym in one application to enable access to database objects in a different application container; that is, objects in an HDI container that belongs to another application. You need to ensure access to the external HDI container and specify the type of privileges \(`SELECT`, `EXECUTE`\) required on the target object \(table, view, etc.\).
 
-> ### Tip:  
-> SAP Business Application Studio's *Guided Development* tool includes a tutorial called *Use Objects Contained in an External Database Schema* which shows you how to complete the individual steps in this task. You can find a link to the *Guided Development* tool on SAP Business Application Studio's *Welcome* screen or in the command palette \(*View* \> *Command Palette...* \> *Guided Development*\).
-
 
 
 <a name="loio4adba34bd86544a880db8f9f1e32efb7__steps_g1b_qwk_cy"/>
@@ -44,9 +41,6 @@ You can use a synonym in one application to enable access to database objects in
     1.  Create a role for the schema owner of the application that contains the synonym.
 
         The role Role R1\# \(`Role_R1G.hdbrole`\) defines the privileges required for external access to a specific target object \(with grant option\); the role must be assigned to the user who needs access to the schema where the target object `Table_T1` is located. In this case, the access role is assigned to the owner of the schema containing the synonym that points to the target table.
-
-        > ### Tip:  
-        > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
 
         > ### Sample Code:  
         > Role Definition `Role_R1G.hdbrole` for HDI Schema Owner
@@ -99,9 +93,6 @@ You can use a synonym in one application to enable access to database objects in
 
     The owner of the schema containing the synonym requires `SELECT` privileges on the target object to which the synonym points. Access for the schema owner can be enabled in user roles which are then referenced with the <code>“container_roles”</code> property in an `.hdbgrants` file, as illustrated in the following example:
 
-    > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
-
     > ### Sample Code:  
     > Access-Granting Configuration File \(`myApp/db/cfg/Synonym_S1-table.hdbgrants`\)
     > 
@@ -129,9 +120,6 @@ You can use a synonym in one application to enable access to database objects in
 
     You can create the synonym design-time object in a subfolder of your application's database module, for example in <code>/<i class="varname">&lt;MyApp&gt;</i>/db/src/synonyms/</code>. In this example, we name the synonym definition `Synonym_S1.hdbsynonym`, which contains multiple synonyms referencing tables \(`Table_T1`, `Table_T2`, and `Table_T3`\), as illustrated in the following example:
 
-    > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole``hdbroleconfig`, `hdbgrants`, and `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
-
     > ### Sample Code:  
     > Synonym-Definition File \(`/MyApp/db/src/synonyms/Synonym_S1.hdbsynonym`\)
     > 
@@ -154,9 +142,6 @@ You can use a synonym in one application to enable access to database objects in
 6.  Define details of the synonym configuration.
 
     andRather than defining a schema and a concrete schema name, you can use <code>“schema.configure”</code> to specify a path to a service name. The path expression is replaced at deployment time with the name of the schema of the referenced service. For example, in the following code example, <code>“schema.configure”</code> is replaced with schema used by the grantor service.
-
-    > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
 
     > ### Sample Code:  
     > Synonym Configuration File \(`myApp/db/cfg/Synonym_S1.hdbsynonymconfig`\)

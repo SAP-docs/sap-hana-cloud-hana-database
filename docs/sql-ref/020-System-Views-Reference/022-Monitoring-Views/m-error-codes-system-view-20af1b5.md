@@ -82,10 +82,18 @@ Displays the error description.
 </tr>
 </table>
 
+
+
+<a name="loio20af1b5175191014bf239331bed9d39f__section_mmg_5j3_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
 [SQL Error Codes](../../010-SQL-Reference/sql-error-codes-20a78d3.md "Each SAP HANA error has a numeric error code. The M_ERROR_CODES system view contains information about the error codes.")
 
-[Supported Error Codes](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/83686b04386e4c009f57418bccb7d9ee.html "The following is a list of the error codes supported by the exit handler.") :arrow_upper_right:
+[Supported Error Codes](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/83686b04386e4c009f57418bccb7d9ee.html "The following is a list of the error codes supported by the exit handler.") :arrow_upper_right:
 

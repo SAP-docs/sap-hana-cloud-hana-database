@@ -184,11 +184,11 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [DROP LIBRARY Statement \(SQLScript\)](../../010-SQL-Reference/012-SQL-Statements/drop-library-statement-sqlscript-d416079.md "Drops a SQLScript user-defined library.")
 
-[Library Members](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7ed0d89b6aa84696a3ce8cf5a8517415.html "") :arrow_upper_right:
+[Library Members](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/7ed0d89b6aa84696a3ce8cf5a8517415.html "") :arrow_upper_right:
 
-[User-Defined Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/7cd14f1931404738a05c5e93e22564af.html "") :arrow_upper_right:
+[User-Defined Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/7cd14f1931404738a05c5e93e22564af.html "") :arrow_upper_right:
 
-[Built-In Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/d1faac82ec0d4bb382ab5fef6be4c0d5.html "") :arrow_upper_right:
+[Built-In Libraries](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/d1faac82ec0d4bb382ab5fef6be4c0d5.html "") :arrow_upper_right:
 
-[Library Member Functions and Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/2fdae398c0b446d6b61b991a9e1d8c3f.html "Library member functions and variables can be used directly in SQL or expressions in SQLScript.") :arrow_upper_right:
+[Library Member Functions and Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/2fdae398c0b446d6b61b991a9e1d8c3f.html "Library member functions and variables can be used directly in SQL or expressions in SQLScript.") :arrow_upper_right:
 

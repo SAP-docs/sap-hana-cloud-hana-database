@@ -59,6 +59,9 @@ SAP Business Application Studio supports the creation of virtual tables using ei
 
     The creation Wizard starts the *Virtual Table Editor*.
 
+    > ### Tip:  
+    > SAP Business Application Studio opens the new virtual table by default in the graphical editor. You can open the file in the code editor or change the default setting. You can also toggle between code and graphical editor. Changes made to the open artifact during the editing session are synchronized between both editors.
+
 5.  Grant the privileges required to locate and select objects on the remote source.
 
     The object owner and the application \(run-time\) user require the global object privilege `CREATE VIRTUAL TABLE` on the remote source to be able to use the *Virtual Table Editor* to locate and select objects in the remote database.

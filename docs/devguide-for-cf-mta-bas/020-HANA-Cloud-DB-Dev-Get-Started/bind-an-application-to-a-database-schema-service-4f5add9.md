@@ -102,3 +102,5 @@ To bind an application to an alternative schema service, perform the following s
 
 [Bind an Application to a Service Managed by the Service Manager](bind-an-application-to-a-service-managed-by-the-service-manager-818a87c.md "You can bind an application's database module to a service managed by SAP Service manager.")
 
+[Permissions for Objects in HDI Containers](../040-HANA-Cloud-DB-Dev-Persistence-Model/permissions-for-objects-in-hdi-containers-79e8664.md "The owner of a container object needs additional privileges to the ones assigned by default.")
+

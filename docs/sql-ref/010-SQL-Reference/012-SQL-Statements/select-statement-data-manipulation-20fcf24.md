@@ -3124,11 +3124,11 @@ SELECT "PASSOC_1"('EN')."PASSOC_2"('P6')."PASSOC_3"(2)."ID",
 **Related Information**  
 
 
-[User-Defined Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/765815cd7d214ed38c190dc2f570fe39.html "") :arrow_upper_right:
+[User-Defined Functions](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/765815cd7d214ed38c190dc2f570fe39.html "") :arrow_upper_right:
 
-[Declarative SQLScript Logic](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/f0a6dceac8b94cca98dd2741ac6541b8.html "") :arrow_upper_right:
+[Declarative SQLScript Logic](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/f0a6dceac8b94cca98dd2741ac6541b8.html "") :arrow_upper_right:
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 
 [EXPRESSION\_MACRO Function \(Miscellaneous\)](../011-SQL-Functions/expression-macro-function-miscellaneous-a8d1145.md "Returns aggregated results from a query.")
 

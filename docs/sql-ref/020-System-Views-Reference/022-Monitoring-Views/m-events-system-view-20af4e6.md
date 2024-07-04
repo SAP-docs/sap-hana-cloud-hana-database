@@ -254,14 +254,22 @@ Displays the number of failed handle attempts.
 
 
 
+<a name="loio20af4e6e75191014ba7da5b7c4c5da60__section_b4d_1k3_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20af4e6e75191014ba7da5b7c4c5da60___m__e_v_e_n_t_s_1fulldesc_M_EVENTS"/>
 
 ## Additional Information
 
-Important events \(for example, DiskFull\) reported by the database are shown in this view. The state of an event can be either NEW or HANDLED. CREATE TIME shows the time the event was created \(and reported\) and HANDLE time shows the time the event was handled \(that is, cleared\). Handled events are removed periodically by the StatisticsServer
+Important events \(for example, DiskFull\) reported by the database are shown in this view. The state of an event can be either NEW or HANDLED. CREATE TIME shows the time the event was created \(and reported\) and HANDLE time shows the time the event was handled \(that is, cleared\). Handled events are removed periodically by the StatisticsServer.
 
 **Related Information**  
 
 
-[GLOBAL_INTERNAL_EVENTS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/449bb507ab944d5f8702e812e751bd28.html "Specifies global internal event information.") :arrow_upper_right:
+[GLOBAL_INTERNAL_EVENTS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_3_QRC/en-US/449bb507ab944d5f8702e812e751bd28.html "Specifies global internal event information.") :arrow_upper_right:
 

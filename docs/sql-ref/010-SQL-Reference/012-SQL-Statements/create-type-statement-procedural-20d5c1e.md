@@ -151,7 +151,7 @@ CREATE TYPE tt_publishers AS TABLE (
 **Related Information**  
 
 
-[Sorted Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/9f10ff55cedf4298b3fd7aebe6776a51.html "") :arrow_upper_right:
+[Sorted Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/9f10ff55cedf4298b3fd7aebe6776a51.html "") :arrow_upper_right:
 
 [CREATE PROCEDURE Statement \(Procedural\)](create-procedure-statement-procedural-20d4674.md "Creates a procedure that uses the specified programming language.")
 

@@ -420,6 +420,14 @@ Displays the sample size at build time, expressed as a percent of the data volum
 </tr>
 </table>
 
+
+
+<a name="loio4f74378472cb46a6bbff3582b1863bac__section_mfm_4bn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
@@ -435,5 +443,5 @@ Displays the sample size at build time, expressed as a percent of the data volum
 
 [DATA\_STATISTICS System View](../021-System-Views/data-statistics-system-view-20a1f10.md "Provides an overview of data statistics objects.")
 
-[Managing Statistics](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
+[Managing Statistics](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/0a9ae9e9ccc743f4a2808399da354657.html "Statistics assist the query optimizer in making better decisions and work for both virtual tables and linked database.") :arrow_upper_right:
 

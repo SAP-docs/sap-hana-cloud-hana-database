@@ -239,6 +239,18 @@ Start the *Support Mode Export Assistant* which guides you through the process o
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+SAP HANA: Welcome Page
+
+</td>
+<td valign="top">
+
+Display the start page for the *SAP HANA Native Extension for SAP Business Application Studio*, where you can find links to the tools and help you need to get started, including the Guided Development tool that takes you through the steps required to build a simple SAP HANA database application.
+
+</td>
+</tr>
 </table>
 
 **Related Information**  

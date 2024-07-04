@@ -98,9 +98,9 @@ Alters an analytic privilege. Analytic privileges provide fine-grained control o
 **Related Information**  
 
 
-[Analytic Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/db08ea0cbb571014a386f851122958b2.html "Analytic privileges grant different users access to different portions of data in the same view based on their business role. Within the definition of an analytic privilege, the conditions that control which data users see is defined using SQL.") :arrow_upper_right:
+[Analytic Privileges](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/db08ea0cbb571014a386f851122958b2.html "Analytic privileges grant different users access to different portions of data in the same view based on their business role. Within the definition of an analytic privilege, the conditions that control which data users see is defined using SQL.") :arrow_upper_right:
 
-[Structure of Analytic Privileges](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_1_QRC/en-US/349f423ce2154e3e9b39ed525d46aa94.html "An analytic privilege consists of a set of restrictions against which user access to a particular calculation view or SQL view is verified. These restrictions are specified as filter conditions that are fully SQL based.") :arrow_upper_right:
+[Structure of Analytic Privileges](https://help.sap.com/viewer/460112ecd20e42c0a647979434b32412/2024_3_QRC/en-US/349f423ce2154e3e9b39ed525d46aa94.html "An analytic privilege consists of a set of restrictions against which user access to a particular calculation view or SQL view is verified. These restrictions are specified as filter conditions that are fully SQL based.") :arrow_upper_right:
 
 [STRUCTURED\_PRIVILEGES System View](../../020-System-Views-Reference/021-System-Views/structured-privileges-system-view-20ffdc2.md "Provides information about available structured (analytic) privileges.")
 

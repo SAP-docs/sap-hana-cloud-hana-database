@@ -274,5 +274,5 @@ CREATE JWT PROVIDER prov_b WITH ISSUER 'http://xsuaa' CLAIM 'sub' AS EXTERNAL ID
 
 [JWT\_USER\_MAPPINGS System View](../../020-System-Views-Reference/021-System-Views/jwt-user-mappings-system-view-49f380b.md "Lists all of the user-JWT mappings configured in the SAP HANA database.")
 
-[Single Sign-On Using JSON Web Tokens](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/4b3dc4d4b5514dbd9d45cee7bc167c5a.html "SAP HANA supports JSON Web Tokens (JWT) for user authentication in single sign-on environments.") :arrow_upper_right:
+[Single Sign-On Using JSON Web Tokens](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/4b3dc4d4b5514dbd9d45cee7bc167c5a.html "SAP HANA supports JSON Web Tokens (JWT) for user authentication in single sign-on environments.") :arrow_upper_right:
 

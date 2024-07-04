@@ -280,7 +280,7 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the average allocated memory in bytes by this allocator and its suballocators, multiplied by the time since the start of measurement \(sample based rough estimate\). Deactivated by default this value should only be activated upon request by SAP support. UOM is 1 byte times 1 second.
+Displays the average allocated memory in bytes by this allocator and its suballocators, multiplied by the time since the start of measurement \(sample based rough estimate\). Deactivated by default, this value should only be activated upon request by SAP support. UOM is 1 byte times 1 second.
 
 </td>
 </tr>
@@ -450,7 +450,7 @@ BIGINT
 </td>
 <td valign="top">
 
-Displays the average allocated memory in bytes by this allocator, multiplied by time since start of measurement \(sample based rough estimate\). Deactivaetd by decault, this value should only be activated upon request by SAP support. UOM is 1 byte times 1 second.
+Displays the average allocated memory in bytes by this allocator, multiplied by time since start of measurement \(sample based rough estimate\). Deactivaetd by default, this value should only be activated upon request by SAP support. UOM is 1 byte times 1 second.
 
 </td>
 </tr>
@@ -489,6 +489,14 @@ Displays the name of SAP HANA component of this allocator.
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20b0956b7519101499bffea75d727aca__section_t23_znj_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
 
 
 

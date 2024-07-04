@@ -97,6 +97,14 @@ Displays the size of all files in bytes.
 </tr>
 </table>
 
+
+
+<a name="loioa2aac2ee72b341699fa8eb3988d8cecb__section_lzx_ffn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

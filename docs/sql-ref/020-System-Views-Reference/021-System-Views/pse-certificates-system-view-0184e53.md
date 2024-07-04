@@ -47,6 +47,23 @@ Displays the name of the PSE.
 <tr>
 <td valign="top">
 
+CERTIFICATE\_NAME
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the unique name of the certificate.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 CERTIFICATE\_ID
 
 </td>
@@ -149,17 +166,34 @@ Displays the certificate usage: OWN, CHAIN, or TRUST.
 <tr>
 <td valign="top">
 
-CERTIFICATE\_NAME
+ADD\_TIME
 
 </td>
 <td valign="top">
 
-NVARCHAR\(256\)
+TIMESTAMP
 
 </td>
 <td valign="top">
 
-Displays the unique name of the certificate.
+Displays the timestamp when the certificate was assigned to the PSE.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_ADDED\_BY\_MANAGER
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5\)
+
+</td>
+<td valign="top">
+
+Displays if the certificate was added automatically to the PSE. Valid values are TRUE and FALSE.
 
 </td>
 </tr>
@@ -182,9 +216,9 @@ For information on the permissions required to use this view, see *SQL Statement
 
 [PSE\_PURPOSE\_OBJECTS System View](pse-purpose-objects-system-view-437cd32.md "Provides information about all PSEs and their assigned providers or hosts, referred to as purpose objects.")
 
-[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
 
-[Certificate Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
 
-[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
+[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
 

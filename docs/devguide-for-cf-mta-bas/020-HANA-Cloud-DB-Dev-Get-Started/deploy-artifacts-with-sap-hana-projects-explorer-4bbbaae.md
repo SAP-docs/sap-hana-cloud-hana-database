@@ -59,7 +59,7 @@ If you are developing native SAP HANA applications in SAP Business Application S
     After synchronization completes, the *\(pending deployment\)* flag is only displayed alongside those artifacts whose design-time version in your application's database module is newer than the run-time version currently deployed to the database. Choose ![](images/BAS_icon_deploy_4423157.svg) \(*Deploy*\) to deploy the newer version.
 
     > ### Tip:  
-    > In the SAP HANA Native Application extension for SAP Business Application Studio, the HDI deployer does not stop immediately if it encounters an error during deployment. Instead, it tries to clean up and close gracefully. This is the default behaviour. If multiple artifacts are being deployed in parallel, multiple deployment errors could produce multiple error messages. Setting the `stop_on_error` parameter explicitly in the application's `package.json` file has no effect.
+    > In the SAP HANA Native Application dev space for SAP Business Application Studio, the HDI deployer does not stop immediately if it encounters an error during deployment. Instead, it tries to clean up and close gracefully. This is the default behaviour. If multiple artifacts are being deployed in parallel, multiple deployment errors could produce multiple error messages. Setting the `stop_on_error` parameter explicitly in the application's `package.json` file has no effect.
 
 4.  Display the run-time contents deployed to the HDI container that is bound to a database application.
 
@@ -189,6 +189,24 @@ If you are developing native SAP HANA applications in SAP Business Application S
 
         > ### Tip:  
         > To help prevent the undeployment of unmatched files during deployment, you can set the project preferences in SAP Business Application Studio to display warning messages, as described in *Bind Applications to Database Services with SAP HANA Projects Explorer* in *Related Information* below.
+
+    5.  Manage access to a database connection.
+
+        The SAP HANA Project Explorer provides context-sensitive options that enable you to allow other users and roles to use a selected database connection, for example, as part of development and testing activities. The options *User Management* or *Role Management* open the corresponding tools directly in SAP HANA Cockpit, where you can configure the details required to enable user access, as follows:
+
+        1.  In the SAP HANA Project Explorer, expand the *Database Connections* node to display all available connections.
+        2.  Right-click the database connection for which you want to provide additional access.
+        3.  Choose one of the following options:
+            1.  *Manage Roles*
+
+                Opens the *Role Management* tool in SAP HANA Cockpit.
+
+            2.  *Manage Users*
+
+                Opens the *User Management* tool in SAP HANA Cockpit.
+
+
+        4.  Configure the user or role that requires access to the selected database connection.
 
 
 

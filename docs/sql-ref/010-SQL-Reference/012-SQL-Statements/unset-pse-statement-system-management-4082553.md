@@ -2,7 +2,7 @@
 
 # UNSET PSE Statement \(System Management\)
 
-Removes the purpose for a PSE.
+Remove the assigned purpose for a PSE along with any assigned objects.
 
 
 
@@ -44,11 +44,11 @@ Specifies the purpose of the PSE.
 
 ```
 <purpose> ::= 
- JWT
- | SAML
- | LDAP
- | DATABASE REPLICATION
- | REMOTE SOURCE
+   { JWT
+   | SAML
+   | LDAP
+   | REMOTE SOURCE
+   | HTTPS }
 ```
 
 
@@ -58,17 +58,16 @@ Specifies the purpose of the PSE.
 
 
 
-## Description
-
-Removes the assigned purpose for a PSE along with any assigned remote sources or providers.
-
-
-
 <a name="loio408255391bd043209a957830f8e87b65__section_jtv_tj3_5rb"/>
 
 ## Permissions
 
-You must have the REFERENCES object privilege on the PSE or be the owner and the following purpose-specific privileges:
+Requires one of the following:
+
+-   You own the PSE object.
+-   REFERENCES object privilege on the PSE object.
+
+You also require one of the following purpose-specific privileges:
 
 
 <table>
@@ -120,16 +119,34 @@ ALTER object privilege on all assigned providers
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+HTTPS
+
+</td>
+<td valign="top">
+
+ALTER object privilege on all assigned Managed PSEs
+
+</td>
+</tr>
 </table>
 
 
 
 ## Examples
 
-Remove the REMOTE SOURCE purpose from the example\_pse PSE.
+Remove the REMOTE SOURCE purpose from pse1.
 
 ```
-UNSET PSE example_pse PURPOSE REMOTE SOURCE;
+UNSET PSE pse1 PURPOSE REMOTE SOURCE;
+```
+
+Remove the HTTPS purpose from pse1.
+
+```
+UNSET PSE pse1 PURPOSE HTTPS;
 ```
 
 **Related Information**  
@@ -137,9 +154,9 @@ UNSET PSE example_pse PURPOSE REMOTE SOURCE;
 
 [PSE\_PURPOSE\_OBJECTS System View](../../020-System-Views-Reference/021-System-Views/pse-purpose-objects-system-view-437cd32.md "Provides information about all PSEs and their assigned providers or hosts, referred to as purpose objects.")
 
-[SET PSE Statement \(System Management\)](set-pse-statement-system-management-10fe807.md "Sets the purpose of a PSE.")
+[SET PSE Statement \(System Management\)](set-pse-statement-system-management-10fe807.md "Sets the purpose of a PSE, which is the type of trust validation for the PSE to use.")
 
-[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
 
-[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
+[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
 

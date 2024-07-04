@@ -229,11 +229,11 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [DROP STATISTICS Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-statistics-statement-data-definition-20d7c59.md "Drops user-defined data statistic objects that the query optimizer uses to make decisions for query plans.")
 
-[Create Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/3992fa5a5f4f471a9f5f51d103beaa75.html "Create data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
+[Create Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/3992fa5a5f4f471a9f5f51d103beaa75.html "Create data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
 
-[Alter Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/518d7e0ff36b4b88adb555ac368df408.html "Alter the properties of a data statistic object for virtual tables or linked database.") :arrow_upper_right:
+[Alter Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/518d7e0ff36b4b88adb555ac368df408.html "Alter the properties of a data statistic object for virtual tables or linked database.") :arrow_upper_right:
 
-[Refresh Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/bf5f385dcb684adbb122fd7e474cd438.html "Refreshes data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
+[Refresh Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/bf5f385dcb684adbb122fd7e474cd438.html "Refreshes data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
 
-[Drop Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/7c432b9a34ec4f7bbf2a1624a6b2076c.html "Drop data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
+[Drop Statistics on a Virtual Table or Linked Database](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/7c432b9a34ec4f7bbf2a1624a6b2076c.html "Drop data statistic virtual objects that the query optimizer uses to make better decisions for query plans.") :arrow_upper_right:
 

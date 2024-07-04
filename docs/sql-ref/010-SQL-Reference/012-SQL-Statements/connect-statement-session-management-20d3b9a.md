@@ -107,5 +107,5 @@ CONNECT new_user PASSWORD Password1;
 **Related Information**  
 
 
-[Logon Checks](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/5992fc5aa48d43259e4f605be64760fe.html "Before a user can connect to an SAP HANA instance, the system performs several checks as part of the logon process.") :arrow_upper_right:
+[Logon Checks](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/5992fc5aa48d43259e4f605be64760fe.html "Before a user can connect to an SAP HANA instance, the system performs several checks as part of the logon process.") :arrow_upper_right:
 

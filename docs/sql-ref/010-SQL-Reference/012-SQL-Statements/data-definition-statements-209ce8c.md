@@ -16,7 +16,7 @@ Data definition statements define structures in the SAP HANA database.
 
 -   [ALTER STATISTICS Statement \(Data Definition\)](alter-statistics-statement-data-definition-c656476.md)
 
--   [ALTER STRUCUTRED FILTER Statement \(Data Definition\)](alter-strucutred-filter-statement-data-definition-07b14e0.md)
+-   [ALTER STRUCTURED FILTER Statement \(Data Definition\)](alter-structured-filter-statement-data-definition-07b14e0.md)
 
 -   [ALTER TABLE Statement \(Data Definition\)](alter-table-statement-data-definition-20d329a.md)
 

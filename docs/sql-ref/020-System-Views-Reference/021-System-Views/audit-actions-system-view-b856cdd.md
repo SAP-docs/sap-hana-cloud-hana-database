@@ -144,7 +144,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether this audit action can be used in an SAP-defined default audit policy: TRUE/FALSE
+Displays whether this audit action can be specified for specific schemas: TRUE/FALSE
 
 </td>
 </tr>
@@ -165,5 +165,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [AUDIT\_POLICIES System View](audit-policies-system-view-209e4d3.md "Provides information about audit policies.")
 
-[Auditing Activity in the SAP HANA Database](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/48fd6586304c4f859bf92d64d0cd8b08.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA database, providing you with visibility on who did what in the database (or tried to do what) and when.") :arrow_upper_right:
+[Auditing Activity in the SAP HANA Database](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/48fd6586304c4f859bf92d64d0cd8b08.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA database, providing you with visibility on who did what in the database (or tried to do what) and when.") :arrow_upper_right:
 

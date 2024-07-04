@@ -210,6 +210,14 @@ Displays the fill ratio.
 
 
 
+<a name="loio20adf779751910148b69cc65258b2f23__section_hnx_mdn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20adf779751910148b69cc65258b2f23___m__d_a_t_a__v_o_l_u_m_e__s_u_p_e_r_b_l_o_c_k__s_t_a_t_i_s_t_i_c_s_1fulldesc_M_DATA_VOLUME_SUPERBLOCK_STATISTICS"/>
 
 ## Additional Information
@@ -231,5 +239,5 @@ This view shows information about the number and distribution of superblocks ins
 
 [M\_DATA\_VOLUME\_PARTITION\_STATISTICS System View](m-data-volume-partition-statistics-system-view-7ff90b1.md "Provides data volume partition statistics.")
 
-[HOST_DATA_VOLUME_SUPERBLOCK_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/54c8f4e486514185862d01fbc805fecf.html "Data volume superblock information per host.") :arrow_upper_right:
+[HOST_DATA_VOLUME_SUPERBLOCK_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_3_QRC/en-US/54c8f4e486514185862d01fbc805fecf.html "Data volume superblock information per host.") :arrow_upper_right:
 

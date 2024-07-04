@@ -252,6 +252,14 @@ Displays the number of storage pages used for the file.
 </tr>
 </table>
 
+
+
+<a name="loiocacf365d31424043af7333a4ac15ddc0__section_nmb_hcw_rbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

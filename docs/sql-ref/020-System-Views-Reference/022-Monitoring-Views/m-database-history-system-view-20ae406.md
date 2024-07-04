@@ -65,6 +65,14 @@ Displays the version: major.minor.patch.build.
 </tr>
 </table>
 
+
+
+<a name="loio20ae4069751910148d2b8a083d8337b4__section_ygp_3zm_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

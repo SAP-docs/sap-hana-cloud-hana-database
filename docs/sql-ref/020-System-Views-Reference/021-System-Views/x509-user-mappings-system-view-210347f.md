@@ -59,7 +59,7 @@ NVARCHAR\(512\)
 </td>
 <td valign="top">
 
-Displays the subject of the X.509 certificate of the user.If the user is mapped with a wildcard \(ANY\) for this subject, this value is NULL. 
+Displays the subject name of the X.509 certificate of the user.If the user is mapped with a wildcard \(ANY\) for this subject, this value is NULL. 
 
 </td>
 </tr>
@@ -76,7 +76,7 @@ NVARCHAR\(512\)
 </td>
 <td valign="top">
 
-Displays the issuer of the X.509 certificate of the user.If the user is mapped using a provider, this column is NULL. 
+Displays the issuer name of the X.509 certificate of the user.If the user is mapped using a provider, this column is NULL. 
 
 </td>
 </tr>
@@ -128,5 +128,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [X509\_PROVIDER\_RULES System View](x509-provider-rules-system-view-2457e71.md "Lists all of the matching rules for X.509 providers.")
 
-[X.509 Certificate-Based User Authentication](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/2b335f7eec6a450095f110ea961d77cc.html "SAP HANA supports X.509 client certificates for user authentication in single sign-on environments. In particular, X.509 certificate-based authentication can be used for technical users to secure system-to-system integration.") :arrow_upper_right:
+[X.509 Certificate-Based User Authentication](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/2b335f7eec6a450095f110ea961d77cc.html "SAP HANA supports X.509 client certificates for user authentication in single sign-on environments. In particular, X.509 certificate-based authentication can be used for technical users to secure system-to-system integration.") :arrow_upper_right:
 

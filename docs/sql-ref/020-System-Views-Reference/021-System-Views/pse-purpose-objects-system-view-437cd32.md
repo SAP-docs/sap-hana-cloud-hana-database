@@ -80,6 +80,47 @@ For JWT or SAML purposes, displays the name of the assigned provider. For the SS
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+PURPOSE\_OBJECT\_TYPE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(32\)
+
+</td>
+<td valign="top">
+
+The type of purpose. Valid entries are:
+
+-   SAML PROVIDER
+-   REMOTE SOURCE
+-   HOST
+-   MANAGED PSE
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ADD\_TIME
+
+</td>
+<td valign="top">
+
+TIMESTAMP
+
+</td>
+<td valign="top">
+
+Displays the time the PSE purpose object was added to the PSE.
+
+</td>
+</tr>
 </table>
 
 
@@ -111,17 +152,17 @@ One PSE may have multiple lines, one line per assigned provider or host. All PSE
 
 [CREATE PSE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/create-pse-statement-system-management-4d80bf6.md "Creates a personal security environment (PSE).")
 
-[SET PSE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/set-pse-statement-system-management-10fe807.md "Sets the purpose of a PSE.")
+[SET PSE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/set-pse-statement-system-management-10fe807.md "Sets the purpose of a PSE, which is the type of trust validation for the PSE to use.")
 
-[UNSET PSE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/unset-pse-statement-system-management-4082553.md "Removes the purpose for a PSE.")
+[UNSET PSE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/unset-pse-statement-system-management-4082553.md "Remove the assigned purpose for a PSE along with any assigned objects.")
 
 [ALTER PSE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-pse-statement-system-management-9c22c6f.md "Modifies a PSE.")
 
 [DROP PSE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/drop-pse-statement-system-management-25d6795.md "Drops a PSE.")
 
-[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Collections](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/75d0cfec8e4f44c3a649d26e9cefa314.html "A certificate collection is a secure location where the public-key certificates of trusted communication partners or root certificates from trusted Certification Authorities are stored. Certificate collections are created and managed as database objects directly in the SAP HANA database.") :arrow_upper_right:
 
-[Certificate Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
 
-[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
+[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
 

@@ -10,7 +10,7 @@ Computes all cross-correlation coefficients between two given expressions.
 
 ```
 CROSS_CORR(<expression1>, <expression2>, <maxLag> 
-    { <series_orderby> | <order_by_clause> } ).{ POSITIVE_LAGS | NEGATIVE_LAGS | ZERO_LAG }
+				 [, <order_by_clause> ] ).{ POSITIVE_LAGS | NEGATIVE_LAGS | ZERO_LAG }
 ```
 
 
@@ -41,21 +41,6 @@ The *<maxLag\>* parameter must be a positive integer that defines the number of 
 
 ```
 <maxLag> ::= INTEGER
-```
-
-
-
-</dd><dt><b>
-
-*<series\_orderby\>*
-
-</b></dt>
-<dd>
-
-The SERIES clause can only be used with an equidistant series. For more information about the SERIES clause, see the CREATE TABLE statement and the SERIES\_GENERATE function.
-
-```
-<series_orderby> ::= SERIES (<series_period> <series_equidistant_definition>)
 ```
 
 
@@ -104,9 +89,11 @@ This function output can be non-deterministic among tie values.
 
 
 
+<a name="loiob2197a4784044933ae7c9ed240939dff__section_k1l_td2_bbc"/>
+
 ## Example
 
-**Example 1 - Cross correlation**
+**Example: Cross correlation**
 
 Execute the cross correlation example below:
 
@@ -135,42 +122,6 @@ CROSS\_CORR\(NUMBER1,NUMBER2,10ORDERBYTS\_ID\)
 <td valign="top">
 
 1.0, -1.0, 1.0
-
-</td>
-</tr>
-</table>
-
-**Example 2 - Cross correlation using a series descriptor**
-
-Execute the example below:
-
-```
-CREATE COLUMN TABLE TSeries( key INTEGER, ts TIMESTAMP, val1 DOUBLE, val2 DOUBLE, PRIMARY KEY(key, ts) )
-    SERIES( SERIES KEY (key) EQUIDISTANT INCREMENT BY INTERVAL 1 DAY PERIOD FOR SERIES(ts) );
-
-INSERT INTO TSeries VALUES (1, '2014-1-1', 1, 3);
-INSERT INTO TSeries VALUES (2, '2014-1-3', 2, 4);
-INSERT INTO TSeries VALUES (3, '2014-1-4', 4, 2);
-INSERT INTO TSeries VALUES (4, '2014-1-5', 3, 1);
-
-SELECT CROSS_CORR(val1, val2, 10 ORDER BY ts) FROM TSeries;
-```
-
-The results are as follows:
-
-
-<table>
-<tr>
-<th valign="top">
-
-CROSS\_CORR\(VAL1,VAL2,10ORDERBYTS\)
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-\-1.0, -0.928571, -0.6, 0.5, -1.0
 
 </td>
 </tr>

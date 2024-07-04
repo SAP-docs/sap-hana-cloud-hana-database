@@ -400,17 +400,17 @@ $> cf bind-service my-app my-hdi-container -c {"roles": "sap.myapp.roles::read_a
 **Related Information**  
 
 
-[The SAP HDI Deployer](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/1b567b05e53c4cb9b130026cb2e7302d.html "SAP HDI provides dedicated tools to enable the deployment of design-time database artifacts to the SAP HANA database.") :arrow_upper_right:
+[The SAP HDI Deployer](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_3_QRC/en-US/1b567b05e53c4cb9b130026cb2e7302d.html "SAP HDI provides dedicated tools to enable the deployment of design-time database artifacts to the SAP HANA database.") :arrow_upper_right:
 
 [Maintaining SAP HDI Containers](../15-HDI-Cloud-Admin-Maintain-Containers/maintaining-sap-hdi-containers-bcd6e27.md "An HDI container administrator configures and controls access to a SAP HDI container.")
 
 [SAP HDI Users](sap-hdi-users-40faae2.md "A list of the predefined users which SAP HDI relies on and a description of their respective role.")
 
-[SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications (SAP Business App Studio)](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2024_1_QRC/en-US/f8e431e3cdc14516b4ba8c9932afd1f4.html "Build applications on SAP HANA Cloud and deploy them to Cloud Foundry using SAP Business Application Studio.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications (SAP Business App Studio)](https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/2024_3_QRC/en-US/f8e431e3cdc14516b4ba8c9932afd1f4.html "Build applications on SAP HANA Cloud and deploy them to Cloud Foundry using SAP Business Application Studio.") :arrow_upper_right:
 
 [Best Practices and Recommendations for Developing Roles in SAP HANA](https://www.sap.com/documents/2018/04/fe086f0d-fa7c-0010-87a3-c30de2ffd8ff.html)
 
 [Roles \(.hdbrole and .hdbroleconfig\)](../../30-HDI-Cloud-Artifact-Types/roles-hdbrole-and-hdbroleconfig-625d773.md "Transform a design-time role resource (.hdbrole) into a run-time role object.")
 
-[Syntax Options in the hdbgrants File (SAP HANA Cloud Database Developer Guide for SAP Business App Studio)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/f49c1f5c72ee453788bf79f113d83bf9.html "Assign the privileges required by users to access objects in the target schema.") :arrow_upper_right:
+[Syntax Options in the hdbgrants File (SAP HANA Cloud Database Developer Guide for SAP Business App Studio)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_3_QRC/en-US/f49c1f5c72ee453788bf79f113d83bf9.html "Assign the privileges required by users to access objects in the target schema.") :arrow_upper_right:
 

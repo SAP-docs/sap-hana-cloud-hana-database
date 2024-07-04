@@ -258,7 +258,7 @@ ALTER AUDIT POLICY "priv_audit" RESET RETENTION;
 
 [CREATE AUDIT POLICY Statement \(Access Control\)](create-audit-policy-statement-access-control-20d3d56.md "Creates an audit policy.")
 
-[Auditing](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[Auditing](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 
 [M\_INIFILE\_CONTENTS System View](../../020-System-Views-Reference/022-Monitoring-Views/m-inifile-contents-system-view-20b16a7.md "Provides configuration information from INI files.")
 

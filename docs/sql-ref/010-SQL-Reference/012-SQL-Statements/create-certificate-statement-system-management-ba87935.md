@@ -119,5 +119,5 @@ zn2Q+T5Og6ozD1WgUYsegJl3W2gNznEj66Ku1SDDzR0POjCnfK5xLt1WE5KBAIav
 
 [CREATE PUBLIC KEY Statement \(System Management\)](create-public-key-statement-system-management-80bae7b.md "Creates a public key for JWT validation.")
 
-[Certificate Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
+[Certificate Management](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/1e6042c4402545f7a0574f7bc91fab25.html "SAP HANA uses public-key certificates as the basis for several user authentication mechanisms, and for securing internal and external communication channels. Certificates are stored and managed directly in the SAP HANA database.") :arrow_upper_right:
 

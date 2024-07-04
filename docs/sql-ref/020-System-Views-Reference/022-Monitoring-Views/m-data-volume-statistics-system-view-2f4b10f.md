@@ -167,6 +167,14 @@ Displays the fill ratio of the data volume.
 </tr>
 </table>
 
+
+
+<a name="loio2f4b10f44dc749ad80720a4afc6a7dcf__section_ntr_hdn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

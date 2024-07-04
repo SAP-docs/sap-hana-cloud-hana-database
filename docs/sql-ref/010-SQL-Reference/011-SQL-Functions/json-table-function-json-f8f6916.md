@@ -603,7 +603,7 @@ $
 </td>
 <td valign="top">
 
-The current context item.
+The context item \(the first argument of the function\).
 
 </td>
 <td valign="top">
@@ -632,29 +632,20 @@ The member of an object.
 <tr>
 <td valign="top">
 
-\[
+\[ \]
 
 </td>
 <td valign="top">
 
-The array index specifier \(open\).
+Bracket notation:
 
-</td>
-<td valign="top">
+-   Name selector: `"<string>"` or `'<string>'`
+-   Index selector: `<array-index> (, <array-index>)` 
+-   Array slice selector: `<start-index>:<end-index>` \(the element of the end index is not included in selection\)
+-   "to"-selector: `<start-index>` to `<end-index>` \(the element of the end index is included in selection\)
+-   Wildcard selector: \*
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-\]
-
-</td>
-<td valign="top">
-
-The array index specifier \(closed\).
 
 </td>
 <td valign="top">
@@ -663,24 +654,15 @@ The array index specifier \(closed\).
 
 `'$.item.list[1]'`
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+`'$["item"]'`
 
-to
+`'$[1:3]' = '$[1,2]'`
 
-</td>
-<td valign="top">
+`'$[1 to 3] = '$[1,2,3]'`
 
-The array index range.
+`'$[1:-1]'`
 
-</td>
-<td valign="top">
-
-`'$[3 to 5]'`
-
-`= '$[3,4,5]'`
+`'$.item[*]'`
 
 </td>
 </tr>

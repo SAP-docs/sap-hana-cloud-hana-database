@@ -256,7 +256,7 @@ A role can include references to other schema-local roles, which are roles creat
 
 -   `"names"`
 
-    A non-empty, comma-separated list with the names of the relevant roles created in the referenced schema. The `schema_reference` entry is optional. If omitted, the specified role names will refer to roles created in the schema of the object owner used in the deployment. The resolution of the schema references is based on configuration specified in a corresponding role-configuration file \(`.hdbroleconfig`\).
+    A non-empty, comma-separated list with the names of the relevant roles created in the referenced schema. The `schema_reference` entry is optional. If omitted, the specified role names will refer to roles created in the container. The resolution of the schema references is based on configuration specified in a corresponding role-configuration file \(`.hdbroleconfig`\).
 
 
 ```json
@@ -497,7 +497,7 @@ A valid entry for schema-local analytic privileges consists of: the following el
 
 
 > ### Note:  
-> The `schema_reference` entry is optional. If omitted, the specified privileges will refer to analytic privileges created in the schema of the object owner used in the deployment. The resolution of any schema reference is based on the configuration specified in a corresponding role-configuration file \(`.hdbroleconfig`\).
+> The `schema_reference` entry is optional. If omitted, the specified privileges will refer to analytic privileges created in the container. The resolution of any schema reference is based on the configuration specified in a corresponding role-configuration file \(`.hdbroleconfig`\).
 
 
 

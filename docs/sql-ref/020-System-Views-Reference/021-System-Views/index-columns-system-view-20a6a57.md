@@ -59,7 +59,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the table name.
+Displays the name of the table where the index is on.
 
 </td>
 </tr>

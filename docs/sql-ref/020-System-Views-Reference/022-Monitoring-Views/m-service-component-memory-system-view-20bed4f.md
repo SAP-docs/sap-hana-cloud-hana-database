@@ -106,5 +106,5 @@ Displays the amount of memory, in bytes, being used for the logical component.
 
 [M\_SERVICE\_MEMORY System View](m-service-memory-system-view-20bf33c.md "Displays detailed memory utilization information by services.")
 
-[Memory Allocator Statistics](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/546bac9a6f924210aabd34dc90c00e05.html "Detailed information about memory consumption can be found by looking into allocator statistics.") :arrow_upper_right:
+[Memory Allocator Statistics](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/546bac9a6f924210aabd34dc90c00e05.html "Detailed information about memory consumption can be found by looking into allocator statistics.") :arrow_upper_right:
 

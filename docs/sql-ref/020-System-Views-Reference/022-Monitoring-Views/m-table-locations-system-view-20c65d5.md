@@ -147,7 +147,7 @@ Displays the host and port where the table data is located.
 
 [ALTER TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/alter-table-statement-data-definition-20d329a.md "Alters a base or temporary table. See the ALTER VIRTUAL TABLE statement for altering virtual tables.")
 
-[Set an Explicit Table Location](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/d4a2e245a0f74edaa98e47599facf1a4.html "You can set an explicit table location with SQL commands.") :arrow_upper_right:
+[Set an Explicit Table Location](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/d4a2e245a0f74edaa98e47599facf1a4.html "You can set an explicit table location with SQL commands.") :arrow_upper_right:
 
 [M\_TABLE\_PERSISTENCE\_LOCATIONS System View](m-table-persistence-locations-system-view-20c67e7.md "Provides information about column store tables and their physical data locations.")
 

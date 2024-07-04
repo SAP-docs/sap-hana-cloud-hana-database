@@ -214,7 +214,7 @@ To configure Tomcat10 or higher, use the property *<JBP\_CONFIG\_TOMCAT\>* inste
 > 
 > ```
 > env:
->     JBP_CONFIG_TOMCAT: "{tomcat: {version: 10.+}}" 
+>     JBP_CONFIG_TOMCAT: '{"tomcat": {'version': '10.+"}}' 
 > ```
 
 To configure Tomee9 or higher, use the property *<JBP\_CONFIG\_TOMEE\>* instead, as shown in the following example:
@@ -224,7 +224,7 @@ To configure Tomee9 or higher, use the property *<JBP\_CONFIG\_TOMEE\>* instead,
 > 
 > ```
 > env:
->     JBP_CONFIG_TOMEE: "{tomee: {version: 9.+}}" 
+>     JBP_CONFIG_TOMEE: '{"tomee": {"version": "9.+"}}' 
 > ```
 
 > ### Note:  
@@ -237,7 +237,7 @@ To configure Tomee9 or higher, use the property *<JBP\_CONFIG\_TOMEE\>* instead,
 > env:
 >     JBP_CONFIG_COMPONENTS: '{ "jres": ["com.sap.xs.java.buildpack.jre.SAPMachineJRE"] }' 
 >     JBP_CONFIG_SAP_MACHINE_JDK: '{ "version": "17.+" }' 
->     JBP_CONFIG_TOMCAT: "{tomcat: {version: 10.+}}" 
+>     JBP_CONFIG_TOMCAT: '{"tomcat": {"version": "10.+"}}' 
 > ```
 
 <a name="task_nwz_fhw_3v"/>

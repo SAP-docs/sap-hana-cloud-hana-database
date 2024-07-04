@@ -54,7 +54,12 @@ The *SAP HANA PROJECTS* explorer includes tools that enable you to manage the bi
 
     -   *Generate hdbgrants file*
 
-        Use deployment target containerSelect this option if you want to create a grants file that can be used to assign privileges to the owner and consumer of database objects in the HDI container assigned to this database connection. The hdbgrants file is created with a basic template that you can use or adjust to suit your requirements.
+        Select this option if you want to create a grants file \(for example, `mygrants.hdbgrants`\) that can be used to assign privileges to the owner and consumer of database objects in the HDI container assigned to this database connection. The hdbgrants file is created with a basic template that you can use or adjust to suit your requirements.
+
+        > ### Tip:  
+        > SAP Business Application Studio displays the design-time `hdbgrants` artifact by default in a graphical editor that is designed to help reduce syntax errors. However, you can open the file in a code editor, too, or change the default setting. You can also choose ![](images/BAS_Codicon_go-to-file_b3beacd.svg) \(*Open Editor \(Code/UI\)\)* to toggle between the code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors, and any syntax problems are highlighted together with recommendations, where appropriate.
+        > 
+        > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application dev space in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts. For common scenarios, templates are provided, too.
 
 
 3.  Bind a database application to a user-provided service.
@@ -93,4 +98,6 @@ The *SAP HANA PROJECTS* explorer includes tools that enable you to manage the bi
 [Bind an Application to a Database Schema Service](bind-an-application-to-a-database-schema-service-4f5add9.md "")
 
 [Bind an Application to a Service Managed by the Service Manager](bind-an-application-to-a-service-managed-by-the-service-manager-818a87c.md "You can bind an application's database module to a service managed by SAP Service manager.")
+
+[Permissions for Objects in HDI Containers](../040-HANA-Cloud-DB-Dev-Persistence-Model/permissions-for-objects-in-hdi-containers-79e8664.md "The owner of a container object needs additional privileges to the ones assigned by default.")
 

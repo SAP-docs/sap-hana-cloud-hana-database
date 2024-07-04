@@ -191,6 +191,14 @@ Displays any additional information.
 </tr>
 </table>
 
+
+
+<a name="loio2726f4d07068416c8761b4da9cabfcf3__section_r3h_wl2_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

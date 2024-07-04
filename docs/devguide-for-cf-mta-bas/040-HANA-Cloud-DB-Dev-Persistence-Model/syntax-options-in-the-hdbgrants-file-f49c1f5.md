@@ -23,7 +23,7 @@ The `.hdbgrants` configuration file enables you to assign privileges to the owne
 >          "privileges" : [ "SYSTEM_PRIVILEGE_1" ],
 >          "privileges_with_admin_option" : [ "SYSTEM_PRIVILEGE_2", "SYSTEM_PRIVILEGE_3" ]
 >         }
->       ]
+>       ],
 >       "global_roles" : [
 >         {
 >           "roles" : [ "GLOBAL_ROLE_1", "GLOBAL_ROLE_2" ]
@@ -62,18 +62,23 @@ The `.hdbgrants` configuration file enables you to assign privileges to the owne
 >       ]
 >     },
 >     "application_user": {
->       "system_privileges": [{...}], 
->       "global_roles": [{...}],
->       "schema_privileges": [{...}],
->       "schema_roles": [{...}],
->       "object_privileges": [{...}],
->       "global_object_privileges": [{...}]
+>       "system_privileges": [{}], 
+>       "global_roles": [{}],
+>       "schema_privileges": [{}],
+>       "schema_roles": [{}],
+>       "object_privileges": [{}],
+>       "global_object_privileges": [{}]
 >     }
 >   }
 > }
 > ```
 
 In the code example above, the top-level key <code>“external-access”</code> defines the grantors: the names of the bound services which **grant** the privileges required by the various users. One level down, the keys <code>“object_owner”</code> and <code>“application_user”</code> define the grantees: the users to whom the privileges are granted. The <code>“object_owner”</code> key is used to specify the HDI container's object owner; the <code>“application_user”</code> key defines the application users who are bound to the application modules, for example, the Node.js module in a multitarget application. The keys at the third level define the set of roles and privileges to grant, using a structure that is similar to the format used in a `.hdbrole` role-definition file.
+
+> ### Tip:  
+> If you use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time `hdbgrants` artifact. the new artifact is displayed by default in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also choose ![](../020-HANA-Cloud-DB-Dev-Get-Started/images/BAS_Codicon_go-to-file_b3beacd.svg) \(*Open Editor \(Code/UI\)\)* to toggle between code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+> 
+> If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts. For common scenarios, templates are provided, too.
 
 
 
@@ -107,12 +112,12 @@ The name of the role differs according to whether the target object is in an app
 > {
 >   "external_access": {
 >     "object_owner": {
->       "system_privileges": [...], 
->       "global_roles": [{...}],
->       "schema_privileges": [{...}],
->       "schema_roles": [{...}],
->       "object_privileges": [{...}],
->       "global_object_privileges": [{...}]
+>       "system_privileges": [{}], 
+>       "global_roles": [{}],
+>       "schema_privileges": [{}],
+>       "schema_roles": [{}],
+>       "object_privileges": [{}],
+>       "global_object_privileges": [{}]
 >     }
 >   }
 > }
@@ -227,7 +232,6 @@ The `schema` defined in the `schema_privileges` property overrides the schema de
 >           "privileges_with_grant_option" : [ "SELECT" ]
 >         }
 >       ],
->       ...
 >     }
 >   }
 > }
@@ -388,12 +392,12 @@ Defines the roles and permissions to be assigned to the user of the multitarget 
 > 
 > ```json
 > "application_user": {
->   "system_privileges": [...], 
->   "global_roles": [{...}],
->   "schema_privileges": [{...}],
->   "schema_roles": [{...}],
->   "object_privileges": [{...}],
->   "global_object_privileges": [{...}]
+>   "system_privileges": [{}], 
+>   "global_roles": [{}],
+>   "schema_privileges": [{}],
+>   "schema_roles": [{}],
+>   "object_privileges": [{}],
+>   "global_object_privileges": [{}]
 > },
 > ```
 
@@ -404,9 +408,9 @@ Defines the roles and permissions to be assigned to the user of the multitarget 
 
 [Database Synonyms in SAP HANA Cloud](database-synonyms-in-sap-hana-cloud-556452c.md "You can use synonyms in SAP HANA Cloud to enable access to objects that are not in the same schema or application container.")
 
-[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
+[Roles (.hdbrole and .hdbroleconfig)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/625d7733c30b4666b4a522d7fa68a550.html "Transform a design-time role resource (.hdbrole) into a run-time role object.") :arrow_upper_right:
 
 [Permissions for Objects in HDI Containers](permissions-for-objects-in-hdi-containers-79e8664.md "The owner of a container object needs additional privileges to the ones assigned by default.")
 
-[SAP HDI Security in the Context of Cloud Foundry (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/4457f759107d4985bd80532c9e023227.html "An overview of the security considerations to bear in mind when enabling SAP HDI for use in the context of Cloud Foundry.") :arrow_upper_right:
+[SAP HDI Security in the Context of Cloud Foundry (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/4457f759107d4985bd80532c9e023227.html "An overview of the security considerations to bear in mind when enabling SAP HDI for use in the context of Cloud Foundry.") :arrow_upper_right:
 

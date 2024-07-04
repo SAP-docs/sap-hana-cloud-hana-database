@@ -460,9 +460,9 @@ INSERT INTO s VALUES(3, 1, NULL);
 
 [INDEX\_COLUMNS System View](../../020-System-Views-Reference/021-System-Views/index-columns-system-view-20a6a57.md "Provides information about index columns.")
 
-[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2024_1_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
+[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2024_3_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
 
 [M\_SYSTEM\_LIMITS System View](../../020-System-Views-Reference/022-Monitoring-Views/m-system-limits-system-view-20c6023.md "Provides system limit information.")
 
-[Managing Indexes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/713e65a10d55404b9ac503bb7b4c735a.html "For multi-column indexes in the column store you can set a default index type.") :arrow_upper_right:
+[Managing Indexes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/713e65a10d55404b9ac503bb7b4c735a.html "For multi-column indexes in the column store, you can set a default index type.") :arrow_upper_right:
 

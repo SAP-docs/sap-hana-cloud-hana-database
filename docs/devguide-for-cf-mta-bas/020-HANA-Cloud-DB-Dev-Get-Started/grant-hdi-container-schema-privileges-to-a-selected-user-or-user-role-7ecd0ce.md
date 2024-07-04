@@ -20,7 +20,7 @@ Configure access to the schema of an HDI container for selected users or user ro
 
 The SAP HANA Native Application extension's project explorer provides a Wizard that guides you through the process of granting a selected user or user role the privileges required to access an HDI container's schema. This is useful when, for example, you already have a dedicated database user with a set of privileges that you now want to use to check if a calculation view is being correctly executed in a particular HDI container. The dedicated database user needs privileges on the HDI container in order to be able access the calculation view, and these privileges can be granted by using the privilege-assignment Wizard.
 
-A user may also want to grant access to an HDI container to enable another developer to check some issues or to provided temporary access to the development container to check whether an object hierarchy will work in production.
+A user may also want to grant access to an HDI container to enable another developer to check some issues or to provide temporary access to the development container to check whether an object hierarchy will work in production.
 
 To grant HDI-container schema privileges to a specific user or user role, perform the following steps:
 

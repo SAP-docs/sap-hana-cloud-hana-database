@@ -110,7 +110,11 @@ In the tables below, **OK** means that data type conversions are allowed without
 <tr>
 <th valign="top">
 
-Target/ Source
+Source \(Rows\)
+
+/
+
+Target \(Columns\)
 
 </th>
 <th valign="top">
@@ -743,7 +747,11 @@ CHK
 <tr>
 <th valign="top">
 
-Target/ Source
+Source \(Rows\)
+
+/
+
+Target \(Columns\)
 
 </th>
 <th valign="top">
@@ -941,7 +949,11 @@ CHK
 <tr>
 <th valign="top">
 
-Target/ Source
+Source \(Rows\)
+
+/
+
+Target \(Columns\)
 
 </th>
 <th valign="top">
@@ -998,39 +1010,23 @@ OK
 <tr>
 <th valign="top">
 
-Target/ Source
+Source \(Rows\)
+
+/
+
+Target \(Columns\)
 
 </th>
 <th valign="top">
 
-NVARCHAR
-
-</th>
-<th valign="top">
-
-VARBINARY
-
-</th>
-<th valign="top">
-
-NCLOB
-
-</th>
-<th valign="top">
-
-BLOB
-
-</th>
-<th valign="top">
-
-ARRAY
+REAL\_VECTOR
 
 </th>
 </tr>
 <tr>
 <td valign="top">
 
-REAL\_VECTOR
+NVARCHAR
 
 </td>
 <td valign="top">
@@ -1038,9 +1034,11 @@ REAL\_VECTOR
 CHK
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
-CHK
+VARBINARY
 
 </td>
 <td valign="top">
@@ -1048,9 +1046,35 @@ CHK
 CHK
 
 </td>
+</tr>
+<tr>
+<td valign="top">
+
+NCLOB
+
+</td>
 <td valign="top">
 
 CHK
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+BLOB
+
+</td>
+<td valign="top">
+
+CHK
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ARRAY
 
 </td>
 <td valign="top">
@@ -1068,7 +1092,11 @@ CHK
 <tr>
 <th valign="top">
 
-Source/ Target
+Source \(Rows\)
+
+/
+
+Target \(Columns\)
 
 </th>
 <th valign="top">

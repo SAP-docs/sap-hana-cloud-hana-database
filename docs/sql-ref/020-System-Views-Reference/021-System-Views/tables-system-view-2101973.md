@@ -720,15 +720,15 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [DROP TABLE Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-table-statement-data-definition-20d7fd2.md "Removes a physical or virtual table from the database.")
 
-[Managing Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/68554490aee94885ba31611489a04992.html "The SAP HANA database stores data in memory in tables, organized in columns, and partitions, distributed among multiple servers.") :arrow_upper_right:
+[Managing Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/68554490aee94885ba31611489a04992.html "The SAP HANA database stores data in memory in tables, organized in columns, and partitions, distributed among multiple servers.") :arrow_upper_right:
 
-[Emptiness Check for Tables and Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/3905f921a16f41d6addcf8d7979560c2.html "") :arrow_upper_right:
+[Emptiness Check for Tables and Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/3905f921a16f41d6addcf8d7979560c2.html "") :arrow_upper_right:
 
-[Table Parameter](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/9bd0c03743164aa7a87a93f9afb253b1.html "") :arrow_upper_right:
+[Table Parameter](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/9bd0c03743164aa7a87a93f9afb253b1.html "") :arrow_upper_right:
 
-[Save Table](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/2bbdb7a5b2a04ae9b51291d1b9416bfb.html "") :arrow_upper_right:
+[Save Table](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/2bbdb7a5b2a04ae9b51291d1b9416bfb.html "") :arrow_upper_right:
 
-[Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/c8a483c3fcc94c0ca390bd1a8776d081.html "") :arrow_upper_right:
+[Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/c8a483c3fcc94c0ca390bd1a8776d081.html "") :arrow_upper_right:
 
-[Table Types](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/afb0aa424dea4ef0af372d99135a6a76.html "") :arrow_upper_right:
+[Table Types](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/afb0aa424dea4ef0af372d99135a6a76.html "") :arrow_upper_right:
 

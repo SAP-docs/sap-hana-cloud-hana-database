@@ -252,12 +252,20 @@ Displays the comment provided, if any, at the time of the configuration change.
 </tr>
 </table>
 
+
+
+<a name="loioa42a0b87344d463386ebbeb0651c3470__section_syn_nyz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
 [ALTER SYSTEM CLEAR INIFILE CONTENT HISTORY Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-clear-inifile-content-history-statement-system-management-fb097f2.md "Clears ini file content history from the catalog.")
 
-[Configuring SAP HANA System Properties (INI Files)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/3f1a6a7dc31049409e1a9f9108d73d51.html "An SAP HANA database has several configuration (*.ini) files that contain properties for configuring the database and services.") :arrow_upper_right:
+[Configuring SAP HANA System Properties (INI Files)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/3f1a6a7dc31049409e1a9f9108d73d51.html "An SAP HANA database has several configuration (*.ini) files that contain properties for configuring the database and services.") :arrow_upper_right:
 
 [M\_INIFILES System View](m-inifiles-system-view-20b18dc.md "Provides information about all configuration files.")
 

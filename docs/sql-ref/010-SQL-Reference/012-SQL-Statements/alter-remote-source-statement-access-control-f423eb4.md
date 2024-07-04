@@ -168,7 +168,7 @@ Specifies the credential configuration.
 Specifies a credential type and the credential.
 
 ```
-<credential_type> ::= TYPE [ 'KERBEROS' | 'PASSWORD' [ USING <credentials> ] ]
+<credential_type> ::= { 'KERBEROS' | 'PASSWORD' [ USING <credentials> ] }
 ```
 
 
@@ -218,7 +218,7 @@ Refreshes metadata for a single linked table or all linked objects using the rem
 ```
 <refresh_option> ::= REFRESH LINKED { OBJECTS | TABLE <table_name> }
 
-<table_name> ::= <database_name>.<schema_name>.<identifier>
+<table_name> ::= <remote_source_name>.<schema_name>.<identifier>
 ```
 
 *<database\_name\>* is the name of the remote source. *<identifier\>* is the name of the table on the remote source.
@@ -330,7 +330,7 @@ ALTER REMOTE SOURCE RS1 UNSET PROPERTY ALL;
 **Related Information**  
 
 
-[Creating Remote Sources (Smart Data Access)](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/e8274a1cf62b4aa5b58f261bc904a4af.html "Create a smart data access remote source using SQL syntax or the SAP HANA database explorer.") :arrow_upper_right:
+[Creating Remote Sources (Smart Data Access)](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/e8274a1cf62b4aa5b58f261bc904a4af.html "Create a smart data access remote source using SQL syntax or the SAP HANA database explorer.") :arrow_upper_right:
 
-[Configure Remote Source Capabilities](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/59e0ffd04ce04eb792331315c9e984fb.html "Customize the behavior of capabilities for your remote source.") :arrow_upper_right:
+[Configure Remote Source Capabilities](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/59e0ffd04ce04eb792331315c9e984fb.html "Customize the behavior of capabilities for your remote source.") :arrow_upper_right:
 

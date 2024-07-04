@@ -182,7 +182,7 @@ CREATE STRUCTURED FILTER SC1.MY_SF FOR SELECT ON SC1.MYVIEW WHERE "PARAMCOL" > 0
 **Related Information**  
 
 
-[ALTER STRUCUTRED FILTER Statement \(Data Definition\)](alter-strucutred-filter-statement-data-definition-07b14e0.md "Alter an existing a structured filter.")
+[ALTER STRUCTURED FILTER Statement \(Data Definition\)](alter-structured-filter-statement-data-definition-07b14e0.md "Alter an existing a structured filter.")
 
 [DROP STRUCUTRED FILTER Statement \(Data Definition\)](drop-strucutred-filter-statement-data-definition-897bc02.md "Drop an existing structured filter.")
 

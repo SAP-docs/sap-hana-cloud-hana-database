@@ -269,6 +269,14 @@ In the case of a log backup, this value displays the number of log segments cont
 </tr>
 </table>
 
+
+
+<a name="loio20a8100e75191014870ecf908b5d2abf__section_egs_hl2_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

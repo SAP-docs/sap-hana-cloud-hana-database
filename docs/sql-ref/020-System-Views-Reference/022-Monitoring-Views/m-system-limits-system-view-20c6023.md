@@ -138,5 +138,5 @@ Displays any additional comments for system limits.
 
 [System Limitations](../../010-SQL-Reference/system-limitations-20a7605.md "Limitations to take into consideration when administering an SAP HANA Cloud database.")
 
-[Analyzing System Performance](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/2f1b50583b214f8c8d64d5a8f65bd74b.html "You can use monitoring views to analyze how effectively your system is handling the current workload.") :arrow_upper_right:
+[Analyzing System Performance](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/2f1b50583b214f8c8d64d5a8f65bd74b.html "You can use monitoring views to analyze how effectively your system is handling the current workload.") :arrow_upper_right:
 

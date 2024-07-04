@@ -13,5 +13,5 @@ In addition to the members mentioned in M\_TABLE\_REPLICAS, this view also conta
 **Related Information**  
 
 
-[M\_TABLE\_REPLICAS System View](m-table-replicas-system-view-9f8f350.md "Provides detailed information on asynchronous/synchronous table replicas.")
+[M\_TABLE\_REPLICAS System View](m-table-replicas-system-view-9f8f350.md "This document provides detailed information on both synchronous and asynchronous table replicas. Remote table replication should be shown only in M_REMOTE_TABLE_REPLICAS.")
 

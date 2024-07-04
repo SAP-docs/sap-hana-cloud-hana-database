@@ -226,9 +226,9 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [DROP INDEX Statement \(Data Definition\)](../../010-SQL-Reference/012-SQL-Statements/drop-index-statement-data-definition-20d6f4e.md "Removes an index.")
 
-[Changing the Load Units for Indexes Using ALTER INDEX](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/02dc395617744584aa464f3e5e5ee509.html "") :arrow_upper_right:
+[Changing the Load Units for Indexes Using ALTER INDEX](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/02dc395617744584aa464f3e5e5ee509.html "") :arrow_upper_right:
 
-[Using Indexes in SAP HANA NSE](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/d3c257d0a4ca40a8af5778dcb1bfea48.html "Indexes are stored on individual columns in a column store in SAP HANA Native Storage Extension (NSE), and contain the same data that is stored in the column, but sorted differently.") :arrow_upper_right:
+[Using Indexes in SAP HANA NSE](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/d3c257d0a4ca40a8af5778dcb1bfea48.html "Indexes are stored in individual columns in a column store in SAP HANA Native Storage Extension (NSE). Indexes and contain the same data that is stored in the column, but sorted differently.") :arrow_upper_right:
 
-[Index-Based Cell Access to Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/a94ea1e47d734191be3df6c2ce5f32d6.html "") :arrow_upper_right:
+[Index-Based Cell Access to Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/a94ea1e47d734191be3df6c2ce5f32d6.html "") :arrow_upper_right:
 

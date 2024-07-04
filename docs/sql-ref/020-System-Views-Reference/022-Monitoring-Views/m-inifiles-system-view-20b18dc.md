@@ -118,6 +118,14 @@ Indicates whether or not the file has configuration on the host layer: TRUE/FALS
 
 
 
+<a name="loio20b18dc475191014831bcf1d714840d5__section_tw4_txz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20b18dc475191014831bcf1d714840d5___m__i_n_i_f_i_l_e_s_1fulldesc_M_INIFILES"/>
 
 ## Additional Information
@@ -127,7 +135,7 @@ You can update configuration file settings using the ALTER SYSTEM ALTER CONFIGUR
 **Related Information**  
 
 
-[Configuring SAP HANA System Properties (INI Files)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/3f1a6a7dc31049409e1a9f9108d73d51.html "An SAP HANA database has several configuration (*.ini) files that contain properties for configuring the database and services.") :arrow_upper_right:
+[Configuring SAP HANA System Properties (INI Files)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/3f1a6a7dc31049409e1a9f9108d73d51.html "An SAP HANA database has several configuration (*.ini) files that contain properties for configuring the database and services.") :arrow_upper_right:
 
 [M\_INIFILE\_CONTENTS System View](m-inifile-contents-system-view-20b16a7.md "Provides configuration information from INI files.")
 

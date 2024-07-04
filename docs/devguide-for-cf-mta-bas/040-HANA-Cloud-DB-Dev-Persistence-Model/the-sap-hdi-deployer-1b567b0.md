@@ -15,7 +15,7 @@ You can install the HDI Deployer by including the Node.js application “`@sap/h
 > {
 >   "name": "deploy",
 >   "dependencies": {
->     "@sap/hdi-deploy": "3.9.1"
+>     "@sap/hdi-deploy": "4.9.2"
 >   },
 >   "scripts": {
 >     "start": "node node_modules/@sap/hdi-deploy/"
@@ -48,7 +48,7 @@ Typically, `@sap/hdi-dynamic-deploy` is installed by including a dependency in t
 > {
 >   "name": "deploy",
 >   "dependencies": { 
->      "@sap/hdi-dynamic-deploy": "1.5.0" 
+>      "@sap/hdi-dynamic-deploy": "2.7.1" 
 >   }, 
 >   "scripts": { 
 >      "start": "node node_modules/@sap/hdi-dynamic-deploy/"
@@ -79,7 +79,7 @@ Similarly, the `sap-java-hdi` client library enables access to the SAP HANA Depl
 **Related Information**  
 
 
-[Standard SAP Node.js Packages (Developer Guide)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/54513272339246049bf438a03a8095e4.html "A collection of Node.js packages developed by SAP is provided to help you develop Node.js applications for Cloud Foundry and SAP HANA Cloud.") :arrow_upper_right:
+[Standard SAP Node.js Packages (Developer Guide)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_3_QRC/en-US/54513272339246049bf438a03a8095e4.html "A collection of Node.js packages developed by SAP is provided to help you develop Node.js applications for Cloud Foundry and SAP HANA Cloud.") :arrow_upper_right:
 
-[Standard SAP Java Packages (Developer Guide)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_1_QRC/en-US/6511bc054b0e48369a625a8019fefd53.html "A collection of Java client libraries developed by SAP is provided to help you develop Java applications for Cloud Foundry.") :arrow_upper_right:
+[Standard SAP Java Packages (Developer Guide)](https://help.sap.com/viewer/b9902c314aef4afb8f7a29bf8c5b37b3/2024_3_QRC/en-US/6511bc054b0e48369a625a8019fefd53.html "A collection of Java client libraries developed by SAP is provided to help you develop Java applications for Cloud Foundry.") :arrow_upper_right:
 

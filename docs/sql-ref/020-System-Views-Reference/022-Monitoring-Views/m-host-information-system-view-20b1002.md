@@ -239,6 +239,14 @@ Y
 </tr>
 </table>
 
+
+
+<a name="loio20b10028751910148c1c9de602d771de__section_zfh_5wz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
@@ -247,6 +255,8 @@ Y
 [M\_HOST\_NETWORK\_STATISTICS System View](m-host-network-statistics-system-view-b589470.md "Provides information about the network statistics of a host.")
 
 [https://launchpad.support.sap.com/\#/notes/2382421](https://launchpad.support.sap.com/#/notes/2382421)
+
+[https://launchpad.support.sap.com/\#/notes/3468710](https://launchpad.support.sap.com/#/notes/3468710)
 
 [https://www.kernel.org/doc/Documentation/networking/ip-sysctl.txt](https://www.kernel.org/doc/Documentation/networking/ip-sysctl.txt)
 

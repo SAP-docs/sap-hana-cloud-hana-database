@@ -146,3 +146,11 @@ Displays the scope of lock. Valid entries are SESSION and TRANSACTION.
 </tr>
 </table>
 
+
+
+<a name="loio952b9cc66b694f0f87f62c6ec8f20f2f__section_alk_yj2_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+

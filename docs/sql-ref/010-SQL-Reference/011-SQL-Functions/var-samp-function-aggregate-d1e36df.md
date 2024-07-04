@@ -30,7 +30,7 @@ INSERT INTO RTABLE VALUES (1);
 SELECT VAR_SAMP(A)"VARSAMP" FROM RTABLE;
 ```
 
-The following example returns ***0.3*** as the sample variance of the specified expression:
+The following example returns ***0.5*** as the sample variance of the specified expression:
 
 ```
 INSERT INTO RTABLE VALUES (2);

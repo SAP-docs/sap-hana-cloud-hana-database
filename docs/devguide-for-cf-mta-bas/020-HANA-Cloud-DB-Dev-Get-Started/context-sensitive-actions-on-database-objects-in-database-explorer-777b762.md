@@ -10,6 +10,9 @@ A list of available context-sensitive actions that can be performed on SAP HANA 
 
 The Database Explorer embedded in the SAP HANA Native Application extension enables you to perform actions on database objects. When you right-click a database object in the Database Explorer's *CATALOG BROWSER* pane, the context-sensitive menu displayed enables you to perform the following actions:
 
+> ### Tip:  
+> To display an object's metadata, first locate the database that contains the object in the database list, then select the object type \(for example, tables or views\) and in the list of artifacts displayed in the Database Explorer's *CATALOG BROWSER* pane click the object whose metadata you want to view.
+
 
 <table>
 <tr>
@@ -240,6 +243,8 @@ If the selected object does not have any dependencies, no graph is displayed, an
 
 > ### Tip:  
 > Choose :gear: to display information about any currently hidden objects and connections.
+> 
+> The Dependency Viewer also provides a link that displays an object's metadata.
 
 
 

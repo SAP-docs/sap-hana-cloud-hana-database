@@ -371,9 +371,9 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [M\_WORKLOAD System View](../022-Monitoring-Views/m-workload-system-view-20cb5a7.md "Provides information about the database workload collected every minute.")
 
-[Managing Workload with Workload Classes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5066181717df4110931271d1efd84cbc.html "You can manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session.") :arrow_upper_right:
+[Managing Workload with Workload Classes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/5066181717df4110931271d1efd84cbc.html "You can manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session.") :arrow_upper_right:
 
-[Workload Classes and Other Workload Management Features](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/dafe347e32dc4884a7b2b37909dabf94.html "Here we give examples to show how the workload management features interact together.") :arrow_upper_right:
+[Workload Classes and Other Workload Management Features](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/dafe347e32dc4884a7b2b37909dabf94.html "Here we give examples to show how the workload management features interact together.") :arrow_upper_right:
 
 [WORKLOAD\_MAPPINGS System View](workload-mappings-system-view-89a0660.md "Provides information about available workload mappings.")
 

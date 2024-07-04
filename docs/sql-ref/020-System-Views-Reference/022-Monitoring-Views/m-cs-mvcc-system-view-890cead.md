@@ -546,6 +546,14 @@ Displays the number of available sparse timestamp blocks for successive operatio
 </tr>
 </table>
 
+
+
+<a name="loio890cead73dd24116ab40041b05123365__section_alw_nbv_tbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
@@ -555,7 +563,7 @@ Displays the number of available sparse timestamp blocks for successive operatio
 
 [M\_MVCC\_OVERVIEW System View](m-mvcc-overview-system-view-f405b73.md "Provides an overview of the row-store Multiversion Concurrency Control (MVCC) manager.")
 
-[HOST_MVCC_OVERVIEW View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/4ea7cb57d6954278ab2eee175705d144.html "Specifies the MVCC overview per host.") :arrow_upper_right:
+[HOST_MVCC_OVERVIEW View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_3_QRC/en-US/4ea7cb57d6954278ab2eee175705d144.html "Specifies the MVCC overview per host.") :arrow_upper_right:
 
 [M\_MVCC\_TABLES System View](m-mvcc-tables-system-view-20b5e31.md "Provides statistics for the row-store Multiversion Concurrency Control (MVCC) manager.")
 

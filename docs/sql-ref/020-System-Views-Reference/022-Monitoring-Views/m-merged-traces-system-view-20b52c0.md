@@ -631,7 +631,7 @@ Displays the W3C trace context span ID, which is derived from the PASSPORT\_CONN
 
 [MERGE INTO Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/merge-into-statement-data-manipulation-3226201.md "Merges data into an existing column store table.")
 
-[The Delta Merge Operation](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bd9ac728bb57101482b2ebfe243dcd7a.html "Write operations are only performed on the delta storage. The delta merge operation optimizes the data and transfers it to the main storage.") :arrow_upper_right:
+[The Delta Merge Operation](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/bd9ac728bb57101482b2ebfe243dcd7a.html "Write operations are only performed on the delta storage. The delta merge operation optimizes the data and transfers it to the main storage.") :arrow_upper_right:
 
-[Traces](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/7e31247372fb4dd7b8c6bbac758b8c91.html "") :arrow_upper_right:
+[Traces](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/7e31247372fb4dd7b8c6bbac758b8c91.html "") :arrow_upper_right:
 

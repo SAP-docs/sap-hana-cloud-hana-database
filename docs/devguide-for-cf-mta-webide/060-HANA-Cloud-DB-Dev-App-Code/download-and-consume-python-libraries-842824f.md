@@ -39,9 +39,9 @@ A selection of SAP-specific and ready-to-use Python client libraries is availabl
 **Related Information**  
 
 
-[SAP Software Center](https://launchpad.support.sap.com/#/softwarecenter)
-
 [pip download](https://pip.pypa.io/en/stable/reference/pip_download/)
 
 [The Python Package Index \(PyPI\)](https://pypi.org/search/?q=sap_instance_manager)
+
+[Standard Python Packages for Cloud Foundry](standard-python-packages-for-cloud-foundry-8732609.md "A list of Python packages developed by SAP, which are available for download and use from the Python Package Index (PyPI).")
 

@@ -95,6 +95,14 @@ Displays the hint value. For example, USE\_OLAP\_PLAN.
 </tr>
 </table>
 
+
+
+<a name="loiob16d75aff9b04d8b8b491a04050b69d8__section_gdd_nzv_rbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

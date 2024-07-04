@@ -67,9 +67,9 @@ For more information about the `.hdbcollectionindex` artifact and the correspond
 
 [JSON Documents](json-documents-b79fda3.md "JSON documents are stored in the JSON Document Store (DocStore) and grouped into JSON collections.")
 
-[Document Store Collections (.hdbcollection) - HDI Cloud Reference Guide](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/fe16b635277c4aea825c72973f159359.html "Transforms a design-time document-collection resource into a collection database object.") :arrow_upper_right:
+[Document Store Collections (.hdbcollection) - HDI Cloud Reference Guide](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/fe16b635277c4aea825c72973f159359.html "Transforms a design-time document-collection resource into a collection database object.") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2024_1_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2024_3_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
 
-[Document Store Collection Index (.hdbcollectionindex) - HDI Cloud Reference Guide](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/b4b1b5c8714a4af7a53e906a85c633f1.html "Transforms a design-time resource for a document collection index into a collection-index database object.") :arrow_upper_right:
+[Document Store Collection Index (.hdbcollectionindex) - HDI Cloud Reference Guide](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/b4b1b5c8714a4af7a53e906a85c633f1.html "Transforms a design-time resource for a document collection index into a collection-index database object.") :arrow_upper_right:
 

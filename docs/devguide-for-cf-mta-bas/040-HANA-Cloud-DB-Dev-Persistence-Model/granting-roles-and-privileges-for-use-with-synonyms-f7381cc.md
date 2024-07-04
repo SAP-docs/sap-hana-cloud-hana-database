@@ -4,7 +4,12 @@
 
 Assigning roles and privileges to object owners for applications that use synonyms to access external objects.
 
-You can use the `.hdbgrants` configuration file to assign privileges to the owner of the synonym object and the application users \(consumers\) of the synonym's target objects in the same way as you would with the SQL `grant` statement. In the following example, <code>“EPM_XXX-table-grantor”</code> is a symbolic name for a user-defined service that executes the `GRANT` statement. The user-defined service must be specified in the `resources` section of the application project’s development-descriptor \(`mta.yaml`\).
+You can use the `.hdbgrants` configuration file to assign privileges to the owner of the synonym object and the application users \(consumers\) of the synonym's target objects in the same way as you would with the SQL `grant` statement.
+
+> ### Tip:  
+> If you use the artifact-creation Wizard in SAP Business Application Studio to create the new design-time `hdbgrants` artifact. the new artifact is displayed by default in the graphical editor. However, you can open the file in the code editor, too, or change the default setting. You can also choose ![](../020-HANA-Cloud-DB-Dev-Get-Started/images/BAS_Codicon_go-to-file_b3beacd.svg) \(*Open Editor \(Code/UI\)\)* to toggle between the code and graphical editors. Changes made to the open artifact during the editing session are synchronized between both editors.
+
+In the following example, <code>“EPM_XXX-table-grantor”</code> is a symbolic name for a user-defined service that executes the `GRANT` statement. The user-defined service must be specified in the `resources` section of the application project’s development-descriptor \(`mta.yaml`\).
 
 > ### Sample Code:  
 > `SNWD-table.hdbgrants`

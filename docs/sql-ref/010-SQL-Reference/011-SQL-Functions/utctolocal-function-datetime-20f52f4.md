@@ -60,8 +60,11 @@ Specifies a string parameter holding the timezone defining the local time. If th
 Specifies the dataset in which to search for the given timezone. If specified, this must be set to `platform`, which searches in the dataset provided by the operating system.
 
 ```
-<timezone_dataset> ::= platform
+<timezone_dataset> ::= { sap | platform }
 ```
+
+-   `sap` searches in the dataset in the timezone definition tables. To use this value, import a timezone dataset \(see SAP Note 1791342\). If you use this value without importing a dataset, the function returns an error.
+-   `platform` searches in the dataset provided by the operating system. This is the default value.
 
 
 
@@ -84,9 +87,15 @@ Use UTC times instead of local timestamps. The use of local times or conversion 
 
 ## Examples
 
-The following example returns the value ***Dec 31, 2011 8:00:00.0 PM*** as the local time equivalent \(in EST\) of the specified UTC time:
+The following example returns the value ***2011-12-31 20:00:00.000000000*** as the local time equivalent \(in EST\) of the specified UTC time:
 
 ```
 SELECT UTCTOLOCAL (TO_TIMESTAMP('2012-01-01 01:00:00', 'YYYY-MM-DD HH24:MI:SS'), 'EST') "utctolocal" FROM DUMMY;
+```
+
+The following example returns the value ***2011-12-31 20:00:00.000000000*** as the local time equivalent \(in EST\) of the specified UTC time:
+
+```
+SELECT UTCTOLOCAL (TO_TIMESTAMP('2012-01-01 01:00:00', 'YYYY-MM-DD HH24:MI:SS'), 'EST', 'sap') "utctolocal" FROM DUMMY;
 ```
 

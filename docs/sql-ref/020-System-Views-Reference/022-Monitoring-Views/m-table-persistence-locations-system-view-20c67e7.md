@@ -136,7 +136,7 @@ This view shows information on which node contains the persistence parts of a ta
 
 [M\_TABLE\_LOCATIONS System View](m-table-locations-system-view-20c65d5.md "Provides information about tables and their logical location. Physical locations are shown in M_TABLE_PERSISTENCE_LOCATIONS.")
 
-[Set an Explicit Table Location](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/d4a2e245a0f74edaa98e47599facf1a4.html "You can set an explicit table location with SQL commands.") :arrow_upper_right:
+[Set an Explicit Table Location](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/d4a2e245a0f74edaa98e47599facf1a4.html "You can set an explicit table location with SQL commands.") :arrow_upper_right:
 
 [M\_TABLE\_PERSISTENCE\_LOCATION\_STATISTICS System View](m-table-persistence-location-statistics-system-view-2d7c695.md "Provides persistence storage statistics for tables partitions and services.")
 

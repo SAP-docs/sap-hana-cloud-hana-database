@@ -81,7 +81,7 @@ ALTER SYSTEM CLEAR AUDIT LOG FOR AUDIT POLICY MY_POLICY ALL;
 **Related Information**  
 
 
-[Audit Trail](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/db560e7bbb57101490d4a1364440077f.html "When an audit policy is triggered, that is, when an action in the policy occurs under the conditions defined in the policy, an audit entry is created in the audit trail.") :arrow_upper_right:
+[Audit Trail](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/db560e7bbb57101490d4a1364440077f.html "When an audit policy is triggered, that is, when an action in the policy occurs under the conditions defined in the policy, an audit entry is created in the audit trail.") :arrow_upper_right:
 
 [AUDIT\_LOG System View](../../020-System-Views-Reference/021-System-Views/audit-log-system-view-d1fe124.md "Provides information about audit records, with the exception of XSA-auditing.")
 

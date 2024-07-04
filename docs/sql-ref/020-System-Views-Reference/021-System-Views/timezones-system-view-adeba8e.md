@@ -57,7 +57,7 @@ NVARCHAR\(8\)
 </td>
 <td valign="top">
 
-Displays the data set where the time zone's definition is located. It can take the values sap or platform as they are allowed for the dataset parameter to UTCTOLOCAL/LOCALTOUTC. The value of this column can thus be directly used as an input for the respective UTCTOLOCAL/LOCALTOUTC parameter.
+Displays the data set where the time zone's definition is located. Possible values include: SAP, PLATFORM. The value of this column can thus be directly used as an input for the respective UTCTOLOCAL/LOCALTOUTC parameter.
 
 </td>
 </tr>

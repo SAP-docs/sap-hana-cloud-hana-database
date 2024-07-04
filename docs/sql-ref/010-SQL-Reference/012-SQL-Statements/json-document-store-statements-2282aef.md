@@ -13,7 +13,7 @@ For more information, see the*SAP HANA Cloud, SAP HANA Database JSON Document St
 **Related Information**  
 
 
-[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2024_1_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database JSON Document Store Guide](https://help.sap.com/viewer/f2d68919a1ad437fac08cc7d1584ff56/2024_3_QRC/en-US/dca379e9c94940e998d9d4b5c656d1bd.html "This guide explains the SAP HANA JSON Document Store.") :arrow_upper_right:
 
 [M\_TABLES System View](../../020-System-Views-Reference/022-Monitoring-Views/m-tables-system-view-20c7689.md "Provides information on row and column tables.")
 

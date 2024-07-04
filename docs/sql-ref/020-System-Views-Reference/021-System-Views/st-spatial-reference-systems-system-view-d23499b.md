@@ -473,5 +473,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [Spatial Data Types](../../010-SQL-Reference/spatial-data-types-8efe5a4.md "Spatial data types are used to store values that contain spatial data, such as points, lines, or polygons.")
 
-[HANA Spatial Support](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/e4672cc39b584ea1a79a134ec0b7859b.html "") :arrow_upper_right:
+[HANA Spatial Support](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/e4672cc39b584ea1a79a134ec0b7859b.html "") :arrow_upper_right:
 

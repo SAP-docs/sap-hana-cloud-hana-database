@@ -303,6 +303,14 @@ Displays when the root key backup password was last changed.
 </tr>
 </table>
 
+
+
+<a name="loio20a8891d7519101492c2bcf835d1c119__section_dmy_4l2_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

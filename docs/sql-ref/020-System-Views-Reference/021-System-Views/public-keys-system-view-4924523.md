@@ -83,6 +83,23 @@ Displays the key size for RSA or the used curve for EC.
 <tr>
 <td valign="top">
 
+FINGERPRINT
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the SHA256 hash of the public key. \(of the PKCS8 DER representation\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 KEY
 
 </td>
@@ -163,7 +180,7 @@ For information on the permissions required to use this view, see *SQL Statement
 **Related Information**  
 
 
-[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
+[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
 
 [PSE\_PURPOSE\_OBJECTS System View](pse-purpose-objects-system-view-437cd32.md "Provides information about all PSEs and their assigned providers or hosts, referred to as purpose objects.")
 

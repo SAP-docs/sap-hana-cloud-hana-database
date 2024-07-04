@@ -199,6 +199,23 @@ Displays whether the parameter has a default value or not: TRUE/FALSE.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+DEFAULT\_VALUE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Displays the default value of the parameter.
+
+</td>
+</tr>
 </table>
 
 
@@ -222,5 +239,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [CS\_VIEW\_PARAMETERS System View](cs-view-parameters-system-view-3abb271.md "Provides a list of parameters of the objects in the SAP HANA database. Only calculation views are considered. The parameters of a view are parsed from the definition of the underlying scenario.")
 
-[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
+[Column View Parameter Binding](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/f1c17eb3a5b04f8b82d5908218e3fa68.html "") :arrow_upper_right:
 

@@ -113,6 +113,7 @@ Returns the table partition ID:
 -   For partitioned tables, the part ID is equal to the sequential number of the partition, starting at 1.
 -   For replicated tables, the part ID is 1 for the original table and subsequent part IDs are assigned to replica tables.
 -   The part ID is 0 for tables that are not partitioned.
+-   The part ID is NULL if the row describes the partitioning of a higher level node in multi-level heterogeneous partitioning that has child nodes.
 -   A part ID value of -1 indicates that a modification of the table schema is currently in progress.
 
 
@@ -132,7 +133,7 @@ INTEGER
 </td>
 <td valign="top">
 
-Displays the first level partition ID. Possible values are 1 through the number of first-level partitions. First-level partitions \(those used in ALTER TABLE...MOVE\) may have subpartitions. Displays the logical partition ID. Possible values are 1 through the number of partitions for partitioned tables. This is the ID shown in all monitoring views.
+Displays the first level partition ID. Possible values are 1 through the number of first-level partitions. First-level partitions \(those used in ALTER TABLE...MOVE\) may have subpartitions.
 
 </td>
 </tr>
@@ -149,7 +150,24 @@ INTEGER
 </td>
 <td valign="top">
 
-Displays the subpartition ID. Possible values are 0 for tables without multilevel partitioning and 1 through the number of subpartitions for partitioned tables with multilevel partitioning.
+Displays the second-level partition \(first-level subpartition\) ID. Possible values are 0 for tables without multilevel partitioning and 1 through the number of subpartitions for partitioned tables with multilevel partitioning.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LEVEL\_3\_PARTITION
+
+</td>
+<td valign="top">
+
+INTEGER
+
+</td>
+<td valign="top">
+
+Displays the third-level partition \(second-level subpartition\) ID. Possible values are 1 through the number of first-level partitions. Second-level partitions \(those used in ALTER TABLE...MOVE\) may have subpartitions.
 
 </td>
 </tr>
@@ -200,7 +218,7 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Displays the minimum value of the range partition at the second level for a range-partitioned table; empty otherwise.
+Displays the minimum value of the range partition at the second level partition \(first-level subpartition\) for a range-partitioned table; empty otherwise.
 
 </td>
 </tr>
@@ -217,7 +235,41 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Specifies the exclusive maximum value of the range partition at the second level for a range-partitioned table; empty otherwise. This value is not included in the range.
+Specifies the exclusive maximum value of the range partition at the second level \(first-level subpartition\) for a range-partitioned table; empty otherwise. This value is not included in the range.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LEVEL\_3\_RANGE\_MIN\_VALUE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Displays the minimum value of the range partition at the third level partition \(second-level subpartition\) for a range-partitioned table; empty otherwise.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+LEVEL\_3\_RANGE\_MAX\_VALUE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(5000\)
+
+</td>
+<td valign="top">
+
+Specifies the exclusive maximum value of the range partition at the third level \(second-level subpartition\) for a range-partitioned table; empty otherwise. This value is not included in the range.
 
 </td>
 </tr>
@@ -235,6 +287,23 @@ NVARCHAR\(5\)
 <td valign="top">
 
 Displays if unique constraints are checked for this partition or not: TRUE/FALSE.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DYNAMIC\_RANGE\_THRESHOLD
+
+</td>
+<td valign="top">
+
+BIGINT
+
+</td>
+<td valign="top">
+
+Displays the threshold after which a new partition will be created dynamically.
 
 </td>
 </tr>
@@ -377,6 +446,57 @@ Displays the interval value and type by which new partitions can be created dyna
 <tr>
 <td valign="top">
 
+DYNAMIC\_DISTANCE\_INTERVAL
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+</td>
+<td valign="top">
+
+Displays the dynamic aging distance interval.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DYNAMIC\_DISTANCE\_LOAD\_UNIT
+
+</td>
+<td valign="top">
+
+NVARCHAR\(7\)
+
+</td>
+<td valign="top">
+
+Displays the dynamic aging distance load unit.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IS\_MOVABLE
+
+</td>
+<td valign="top">
+
+NVARCHAR
+
+</td>
+<td valign="top">
+
+Displays whether a partition can be movable. Valid values are: MOVABLE, NOT MOVABLE, and DEFAULT.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 IS\_DYNAMIC
 
 </td>
@@ -387,7 +507,24 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether a partition is dynamic: \(TRUE/FALSE\).
+Displays whether a partition is dynamic: TRUE or FALSE.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+DYNAMIC\_RANGE\_DIRECTION
+
+</td>
+<td valign="top">
+
+NVARCHAR\(16\)
+
+</td>
+<td valign="top">
+
+Displays the direction of the dynamic range: INCREASING, DECREASING, or BIDIRECTIONAL.
 
 </td>
 </tr>
@@ -420,5 +557,5 @@ This view also requires the SELECT permission on the tables.
 
 [Non-Heterogeneous Alter Partition Clauses](../../010-SQL-Reference/012-SQL-Statements/non-heterogeneous-alter-partition-clauses-f7ae27c.md "Modifies the partitions of an existing table with a non-heterogeneous partitioning schema.")
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 

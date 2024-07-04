@@ -131,6 +131,14 @@ Displays the total bytes in the area.
 </tr>
 </table>
 
+
+
+<a name="loio48893b832d1b4767886764a89588a76b__section_fb4_2wz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

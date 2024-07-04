@@ -189,5 +189,5 @@ Displays the coordinator type: COORDINATOR if it is a transaction coordinator vo
 
 [M\_SYSTEM\_REPLICATION System View](m-system-replication-system-view-4b263e6.md "Monitors system replication information.")
 
-[Application-Time Period Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/2e37d6a82f7b48ccbfcc5a1a6ce490f5.html "Application-Time Period Tables allow you to manage and manipulate historical business data based on application-specific time periods which are independent of system time-stamps.") :arrow_upper_right:
+[Application-Time Period Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/2e37d6a82f7b48ccbfcc5a1a6ce490f5.html "Application-Time Period Tables allow you to manage and manipulate historical business data based on application-specific time periods which are independent of system timestamps.") :arrow_upper_right:
 

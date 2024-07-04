@@ -43,7 +43,7 @@ NO GRANT TO CREATOR
 </b></dt>
 <dd>
 
-Prevents the automatic granting of all object privileges of the usergroup to the user creating the usergroup. When you create a usergroup, you are not automatically granted the USERGROUP OPERATOR privilege on that user group if you use this clause. This clause makes the usergroup unmanageable. You would need to drop the usergroup and create it again without the NO GRANT TO CREATOR syntax.
+Prevents the automatic granting of all object privileges of the usergroup to the user creating the usergroup. When you create a usergroup, you are not automatically granted the OPERATOR privilege on that user group if you use this clause. This clause makes the usergroup unmanageable. You would need to drop the usergroup and create it again without the NO GRANT TO CREATOR syntax.
 
 
 
@@ -147,7 +147,7 @@ APPLICATION and APPLICATION ALLOW are equivalent. APPLICATION \[ALLOW\] and APPL
 
 ## Description
 
-You add users to a user group by using the CREATE USER and ALTER USER statements.
+To add users to a user group, use the CREATE USER and ALTER USER statements.
 
 To see the current password policy settings for a user, use the M\_EFFECTIVE\_PASSWORD\_POLICY system view.
 
@@ -202,11 +202,11 @@ ALTER USERGROUP "TechnicalUsers" ENABLE CONNECT RESTRICTION "internal_not_intera
 **Related Information**  
 
 
-[User Groups](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/b9174d035f274ce481387700c13b7d2c.html "User groups support a separation of user management tasks, allowing you to manage related users together.") :arrow_upper_right:
+[User Groups](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/b9174d035f274ce481387700c13b7d2c.html "User groups support a separation of user management tasks, allowing you to manage related users together.") :arrow_upper_right:
 
-[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
+[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
 
-[Password Exclude List](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/fe3ffb3d7ac24fddb80e3322c671299f.html "A password exclude list is a list of words that are not allowed as passwords or parts of passwords. A password exclude list can be managed for every database individually.") :arrow_upper_right:
+[Password Exclude List](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/fe3ffb3d7ac24fddb80e3322c671299f.html "A password exclude list is a list of words that are not allowed as passwords or parts of passwords. A password exclude list can be managed for every database individually.") :arrow_upper_right:
 
 [ALTER USERGROUP Statement \(Access Control\)](alter-usergroup-statement-access-control-aa94ca8.md "Alters a usergroup.")
 

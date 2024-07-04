@@ -252,6 +252,14 @@ Displays the mount details as stated in `/proc/mount`.
 </tr>
 </table>
 
+
+
+<a name="loio20aef7a275191014b37acbc35b4f20a4__section_rbx_1fn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

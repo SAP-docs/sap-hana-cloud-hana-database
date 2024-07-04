@@ -155,6 +155,7 @@ How to set up and maintain the Deployment Infrastructure \(DI\) for SAP HANA Clo
     -   [Sequences \(.hdbsequence\)](30-HDI-Cloud-Artifact-Types/sequences-hdbsequence-b295c2e.md)
     -   [SQL Views \(.hdbview\)](30-HDI-Cloud-Artifact-Types/sql-views-hdbview-2bf9a6f.md)
     -   [Statistics \(.hdbstatistics\)](30-HDI-Cloud-Artifact-Types/statistics-hdbstatistics-435423d.md)
+    -   [Structured Filters \(.hdbstructuredfilter\)](30-HDI-Cloud-Artifact-Types/structured-filters-hdbstructuredfilter-6671c48.md)
     -   [Structured Privileges \(.hdbstructuredprivilege\)](30-HDI-Cloud-Artifact-Types/structured-privileges-hdbstructuredprivilege-c3827df.md)
     -   [Synonyms \(.hdbsynonym and .hdbsynonymconfig\)](30-HDI-Cloud-Artifact-Types/synonyms-hdbsynonym-and-hdbsynonymconfig-aad1653.md)
     -   [System Versioning Tables \(.hdbsystemversioning\)](30-HDI-Cloud-Artifact-Types/system-versioning-tables-hdbsystemversioning-5794b34.md)

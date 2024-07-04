@@ -238,5 +238,5 @@ Displays the size of the file in bytes.
 
 [ALTER SYSTEM \{START | STOP | SAVE | CLEAR\} KERNEL PROFILER Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-start-stop-save-clear-kernel-profiler-statement-system-manageme-864e9b9.md "Manages the operation of the Kernel Profiler.")
 
-[Kernel Profiler](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bdd27500bb571014b7f7e61e7c4cda04.html "The kernel profiler is a sampling profiler built into the SAP HANA database. It can be used to analyze performance issues and it collects, for example, information about frequent and/or expensive execution paths during query processing.") :arrow_upper_right:
+[Kernel Profiler](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/bdd27500bb571014b7f7e61e7c4cda04.html "The kernel profiler is a sampling profiler built into the SAP HANA database. It can be used to analyze performance issues and it collects, for example, information about frequent and/or expensive execution paths during query processing.") :arrow_upper_right:
 

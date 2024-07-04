@@ -739,6 +739,14 @@ Displays the description of the last error that occurred during the merge. A fai
 
 
 
+<a name="loio20aed3e475191014aae191f316692093__section_hll_x2n_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20aed3e475191014aae191f316692093___m__d_e_l_t_a__m_e_r_g_e__s_t_a_t_i_s_t_i_c_s_1fulldesc_M_DELTA_MERGE_STATISTICS"/>
 
 ## Additional Information
@@ -752,5 +760,5 @@ Table delta merges, optimize compression runs, and application merge hints are l
 
 [MERGE INTO Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/merge-into-statement-data-manipulation-3226201.md "Merges data into an existing column store table.")
 
-[HOST_DELTA_MERGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/b1a754a52a484a85922a87a269592cfa.html "Specifies the table delta merge statistics per host.") :arrow_upper_right:
+[HOST_DELTA_MERGE_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_3_QRC/en-US/b1a754a52a484a85922a87a269592cfa.html "Specifies the table delta merge statistics per host.") :arrow_upper_right:
 

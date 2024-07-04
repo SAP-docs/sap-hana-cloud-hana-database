@@ -108,7 +108,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the session variable APPLICATIONUSER.
+Displays the name of the user logged in to the application.
 
 </td>
 </tr>
@@ -142,7 +142,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the session variable APPLICATION.
+Displays the name of the application..
 
 </td>
 </tr>
@@ -227,7 +227,7 @@ NVARCHAR\(1\)
 </td>
 <td valign="top">
 
-Displays the wildcard character that is used in APPLICATION\_COMPONENT\_NAME.
+Displays the wildcard that can be used in APPLICATION\_COMPONENT\_NAME.
 
 </td>
 </tr>
@@ -454,5 +454,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [WORKLOAD\_CLASSES System View](workload-classes-system-view-d520e47.md "Provides information about available workload classes.")
 
-[Managing Workload with Workload Classes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5066181717df4110931271d1efd84cbc.html "You can manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session.") :arrow_upper_right:
+[Managing Workload with Workload Classes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/5066181717df4110931271d1efd84cbc.html "You can manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session.") :arrow_upper_right:
 

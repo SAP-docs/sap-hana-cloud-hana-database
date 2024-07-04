@@ -116,12 +116,20 @@ Displays the last time that the encryption control was changed.
 </tr>
 </table>
 
+
+
+<a name="loioee1a50a49a684124ba3cc4815ecc7189__section_dvg_cj3_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
 [ALTER SYSTEM APPLICATION ENCRYPTION Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-application-encryption-statement-system-management-f425959.md "Manages encryption keys for applications that use the internal data encryption service.")
 
-[Data Storage Security](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/b30fda1483b34628802a8d62bd5d39df.html "Several mechanisms are used to protect security-relevant data used by the SAP HANA Cloud, SAP HANA database from unauthorized access.") :arrow_upper_right:
+[Data Storage Security](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/b30fda1483b34628802a8d62bd5d39df.html "Several mechanisms are used to protect security-relevant data used by the SAP HANA Cloud, SAP HANA database from unauthorized access.") :arrow_upper_right:
 
-[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
+[SQLScript Encryption](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/afd729f2c11448a6a0cfb2b75fccc21b.html "") :arrow_upper_right:
 

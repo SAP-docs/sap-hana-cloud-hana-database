@@ -125,11 +125,20 @@ Audits specific system actions, optionally limited by *<principal\_list\>*.
    [ [ EXCEPT ] FOR <principal_list>
 ```
 
-For the complete list of possible values for *<audit\_action\_name\>*, see the table of audit actions provided in the **Description** section of this topic.
-
 
 <dl>
 <dt><b>
+
+*<audit\_action\_name\>*
+
+</b></dt>
+<dd>
+
+For the complete list of possible values for *<audit\_action\_name\>*, see the [Audit Actions](create-audit-policy-statement-access-control-20d3d56.md#loio20d3d56075191014af43d6487fcaa603__sql_create_audit_policy_1sql_create_audit_policy_audit_action_table) table in the **Description** section of this topic.
+
+
+
+</dd><dt><b>
 
 *<principal\_list\>*
 
@@ -429,12 +438,11 @@ An audit policy can contain only one of the following:
 
 For the last two alternatives listed, an optional restriction for user\(s\) is available.
 
-**Audit Actions** 
+**Audit Actions List** 
 
 One or more audit trail targets can be specified for an audit policy at the time of creation or after creation. The allowed audit trail targets are:
 
-SYSLOG: uses the system syslog.
-
+-   SYSLOG: uses the system syslog.
 -   TABLE: stores audit information in database table. The audit log is accessible using AUDIT\_LOG system view.
 
 
@@ -685,7 +693,7 @@ REVOKE STRUCTURED PRIVILEGE
 </td>
 <td valign="top">
 
-4 - User and Role Management
+2 - User and Role Management
 
 </td>
 <td valign="top">
@@ -1031,40 +1039,6 @@ DROP STRUCTURED PRIVILEGE
 <td valign="top">
 
 Audits the use of DROP STRUCTURED PRIVILEGE statement to drop an existing structured privilege
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SET SYSTEM LICENSE
-
-</td>
-<td valign="top">
-
-9 - License Deletion
-
-</td>
-<td valign="top">
-
-Audits the use of SET SYSTEM LICENSE statement to install a new license key in the current database \(SYSTEMDB or Tenant DB\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-UNSET SYSTEM LICENSE
-
-</td>
-<td valign="top">
-
-11 - Data Definition
-
-</td>
-<td valign="top">
-
-Audits the use of UNSET SYSTEM LICENSE statement to delete all existing license keys in the current database \(SYSTEMDB or Tenant DB\)
 
 </td>
 </tr>
@@ -2555,7 +2529,7 @@ DROP PUBLIC KEY
 </td>
 <td valign="top">
 
-20 - Authentication Provider Management
+19 - Certificates and PSE Store
 
 </td>
 <td valign="top">
@@ -2759,7 +2733,7 @@ DROP X509 PROVIDER
 </td>
 <td valign="top">
 
-Authentication Provider Management
+20 - Authentication Provider Management
 
 </td>
 <td valign="top">
@@ -3029,7 +3003,7 @@ CREATE AUDIT POLICY MY_AUDIT_POLICY AUDITING ALL CREATE TABLE ON SCHEMA TEST_SCH
 
 [ALTER AUDIT POLICY Statement \(Access Control\)](alter-audit-policy-statement-access-control-20cfb7b.md "Enables or disables an audit policy, changes audit trail target types for an audit policy, and configures the retention period of the policy.")
 
-[Auditing](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[Auditing](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/ddcb6ed2bb5710148183db80e4aca49b.html "Auditing allows you to monitor and record selected actions performed in the SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 
 [AUDIT\_ACTIONS System View](../../020-System-Views-Reference/021-System-Views/audit-actions-system-view-b856cdd.md "Provides information about all available audit actions.")
 

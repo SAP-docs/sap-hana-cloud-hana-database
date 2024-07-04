@@ -303,6 +303,14 @@ Displays the memory size, in bytes, used by the join data statistics object.
 
 
 
+<a name="loio528de2912b514a26bd99c89c8921a942__section_rzd_fzz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio528de2912b514a26bd99c89c8921a942__section_vrv_5cq_cdb"/>
 
 ## Additional Information

@@ -10,8 +10,18 @@ Evaluates the execution plan that the database follows when executing an SQL sta
 
 ## Syntax
 
+**Syntax 1:**
+
 ```
-EXPLAIN [ RECOMPILED ] PLAN [ SET STATEMENT_NAME = <statement_name> ] FOR <explain_plan_entry>
+EXPLAIN RECOMPILED PLAN [ SET STATEMENT_NAME = <statement_name> ] 
+   FOR <subquery>
+```
+
+**Syntax 2:**
+
+```
+EXPLAIN PLAN [ SET STATEMENT_NAME = <statement_name> ] 
+   FOR SQL PLAN CACHE ENTRY <plan_id> [ VARIANT <variant_id> ]
 ```
 
 
@@ -29,9 +39,9 @@ RECOMPILED
 </b></dt>
 <dd>
 
-If the target query is a parameterized query, this shows the recompiled plan of the query. Simple queries are not recompiled. Without this keyword, EXPLAIN PLAN shows the plan from the SQL plan cache if it exists, or the precompiled plan of the query if it does not.
+If the target query is a parameterized query, this shows the recompiled plan of the query. Simple queries are not recompiled. Without this keyword, EXPLAIN PLAN shows the plan from the SQL plan cache if it exists, or the precompiled plan of the query if it does not. For other types of queries, this keyword has no effect.
 
-For other types of queries, this keyword has no effect.
+SQL PLAN CACHE ENTRY...VARIANT is not supported with RECOMPILED.
 
 
 
@@ -52,27 +62,6 @@ Specifies the name of a specific execution plan in the output table for a given 
 
 </dd><dt><b>
 
-*<explain\_plan\_entry\>*
-
-</b></dt>
-<dd>
-
-Specifies the entry to explain.
-
-```
-<explain_plan_entry> ::= 
- <subquery> 
- | SQL PLAN CACHE ENTRY <plan_id>
-
-<plan_id> ::= <integer_literal>
-```
-
-The *<plan\_id\>* specifies the identifier of an entry to be explained, which is already in the SQL plan cache. Refer to the M\_SQL\_PLAN\_CACHE monitoring view to find the *<plan\_id\>* for the desired cache entry.
-
-
-<dl>
-<dt><b>
-
 *<subquery\>*
 
 </b></dt>
@@ -82,8 +71,33 @@ Specifies the subquery to explain the plan for. For more information about subqu
 
 
 
-</dd>
-</dl>
+</dd><dt><b>
+
+*<plan\_id\>*
+
+</b></dt>
+<dd>
+
+Specifies the identifier of a plan entry to be explained, which is already in the SQL plan cache.
+
+```
+<plan_id> ::= <integer_literal>
+```
+
+
+
+</dd><dt><b>
+
+*<variant\_id\>*
+
+</b></dt>
+<dd>
+
+Specifies the identifier of a variant entry to be explained, which is already in the SQL plan cache. SQL PLAN CACHE ENTRY...VARIANT is not supported with RECOMPILED.
+
+```
+<variant_id> ::= <integer_literal>
+```
 
 
 
@@ -106,7 +120,9 @@ You must have the OPTIMIZER ADMIN system privilege.
 
 Using this command, a user can see the execution plan of a subquery, or that of an entry already in the SQL plan cache. The result of the evaluation is stored in the EXPLAIN\_PLAN\_TABLE view for examination.
 
-The SQL *<subquery\>* must be one of the following type of statements. INSERT, UPDATE, DELETE, REPLACE, UPSERT, MERGE INTO and SELECT. All other type of statements cannot be used with EXPLAIN PLAN. The same rule is applied to the plan cache entry. That is, the cache entry a user specified using *<plan\_id\>* should be a one of the statements listed above.
+The SQL *<subquery\>* must be one of the following type of statements: INSERT, UPDATE, DELETE, REPLACE, UPSERT, MERGE INTO and SELECT. All other type of statements cannot be used with EXPLAIN PLAN. The same rule is applied to the plan cache entry. That is, the cache entry a user specified using *<plan\_id\>* should be a one of the statements listed above.
+
+When plan variant is enabled using a hint or configuration, hex is used by default. This is equivalent to using the use\_hex\_plan hint.
 
 
 

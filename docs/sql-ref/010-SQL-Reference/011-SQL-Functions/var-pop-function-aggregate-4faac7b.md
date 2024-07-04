@@ -22,7 +22,7 @@ Returns the population variance of the expression as the sum of squares of the d
 
 ## Examples
 
-The following example returns ***0.2*** as the population variance for the specified expression:
+The following example returns ***0*** as the population variance for the specified expression:
 
 ```
 CREATE ROW TABLE RTABLE (A INT);

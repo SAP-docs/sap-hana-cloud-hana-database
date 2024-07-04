@@ -334,11 +334,11 @@ NVARCHAR\(20\)
 </td>
 <td valign="top">
 
-For the "`providers`" variant, indicates the type of the dependency:
+For the "`providers`
 
 -   PROVIDE\_RT
 
-    Provides an object with the name `DEPENDENCY_NAME` 
+    Provides an object with the name " variant, indicates the type of the dependency:`DEPENDENCY_NAME` 
 
 -   REQUIRE\_DEPLOY
 
@@ -362,7 +362,7 @@ NVARCHAR\(100\)
 </td>
 <td valign="top">
 
-For the "`providers`" variant, returns the line and column location of the dependency in the object. The type of location returned depends on the object type
+For the "`providers`" variant, indicates" variant, returns the line and column location of the dependency in the object. The type of location returned depends on the object type
 
 </td>
 </tr>
@@ -556,7 +556,7 @@ In this variant, the command returns, for the given objects, the files they dire
 
 ### Variant Parameter: Impacted
 
-In this variant, the command returns, for the given objects, the files they directly depend on. The paths of the design-time files are passed into the procedure, which then returns the paths of the design-time files that have a dependency to them. Here, `t.hdbtable` has a dependent \(impacted\) object in `v.hdbview`, and `v.hdbview` has a dependent object in `p.hdbprocedure`.
+In this variant, the command returns, for the given objects, the files that directly depend on them. The paths of the design-time files are passed into the procedure, which then returns the paths of the design-time files that have a dependency to them. Here, `t.hdbtable` has a dependent \(impacted\) object in `v.hdbview`, and `v.hdbview` has a dependent object in `p.hdbprocedure`.
 
 > ### Sample Code:  
 > Call `#DI.GET_DEPENDENCIES` \(`impacted`\)

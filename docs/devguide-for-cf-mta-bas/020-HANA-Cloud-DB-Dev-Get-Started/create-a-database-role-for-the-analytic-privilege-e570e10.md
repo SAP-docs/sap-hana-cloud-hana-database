@@ -76,7 +76,7 @@ In this tutorial, you define the `development_debug_role` role required by the t
 3.  Define the contents of the SQL DDL role `development_debug_role.hdbrole`.
 
     > ### Tip:  
-    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
+    > If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application dev space provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts, for example: `hdbrole` and `hdbroleconfig`, `hdbgrants`, `hdbsynonym` and `hdbsynonymconfig`. For common scenarios, templates are provided, too.
 
     Locate and right-click the role-definition file that you created in the previous step, for example, `development_debug_role.hdbrole`, choose *Open with* \> *Code Editor*, and add the following SQL DDL code that defines the role scope:
 
@@ -101,7 +101,7 @@ In this tutorial, you define the `development_debug_role` role required by the t
     By default, *SAP Business Application Studio* opens a role-definition artifact in the *Role Editor*, which displays a graphical representation of the role. In the *Role Editor*, the privileges `AP1` and `APX` are listed in the *Analytic Privileges* tab.
 
     > ### Tip:  
-    > To switch between the *Role Editor* and the text-based *Code Editor*, right-click the role-definition artifact that you want to open, and choose *Open with* \> *\[Code Editor | Role Editor\]*. Changes to the open artifact are synchronized between both editors. Note that the *Role Editor* is not able to open an incorrectly formatted file.
+    > To switch between the *Role Editor* and the text-based *Code Editor*, you can either choose the toggle-editor button in the tool bar next to the help icon or simply right-click the role-definition artifact that you want to open, and choose *Open with* \> *\[Code Editor | Role Editor\]*. Changes made to the open artifact during the editing session are synchronized between both editors. Note that the *Role Editor* is not able to open an incorrectly formatted file.
 
 4.  Save the configuration changes.
 

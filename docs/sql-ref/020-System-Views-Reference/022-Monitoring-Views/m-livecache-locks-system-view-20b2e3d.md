@@ -220,6 +220,14 @@ Displays remaining timeout, if a timeout is specified.
 
 
 
+<a name="loio20b2e3d575191014a7c893bbb84c15fa__section_nhl_kc1_ybc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20b2e3d575191014a7c893bbb84c15fa___m__l_i_v_e_c_a_c_h_e__l_o_c_k_s_1fulldesc_M_LIVECACHE_LOCKS"/>
 
 ## Additional Information

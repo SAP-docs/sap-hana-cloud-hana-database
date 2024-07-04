@@ -68,6 +68,8 @@ The schema for the user to whom the artifacts in the base container “C” belo
 **Related Information**  
 
 
+[SAP HDI Containers](../../20-HDI-Cloud-Content-Development/sap-hdi-containers-e28abca.md "An SAP HANA HDI container consists of a design-time container and a corresponding run-time container.")
+
 [Maintaining SAP HDI Containers](maintaining-sap-hdi-containers-bcd6e27.md "An HDI container administrator configures and controls access to a SAP HDI container.")
 
 [Configure SAP HDI Parameters](../13-HDI-Cloud-Admin-Maintain-HDI/configure-sap-hdi-parameters-7c989fa.md "The SAP HANA Deployment Infrastructure (HDI) administrator can configure some general aspects of the HDI with parameters, for example, how long an HDI operation waits for a locking conflict to clear or the default behavior of HDI containers.")

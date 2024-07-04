@@ -246,5 +246,5 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [SQL Functions](../../010-SQL-Reference/011-SQL-Functions/sql-functions-20a61f2.md "Documents the built-in SQL functions that are provided with SAP HANA.")
 
-[Virtualizing Table User-Defined Functions](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_1_QRC/en-US/2f6c8c47650b4acebe359598b6737e6c.html "In the SAP HANA Cloud, SAP HANA database, you can create virtual table user-defined functions (TUDFs) that point to remote table user-defined functions in another SAP HANA Cloud, SAP HANA database or in an SAP HANA on-premise system.") :arrow_upper_right:
+[Virtualizing Table User-Defined Functions](https://help.sap.com/viewer/477aa413a36c4a95878460696fcc8896/2024_3_QRC/en-US/2f6c8c47650b4acebe359598b6737e6c.html "In the SAP HANA Cloud, SAP HANA database, you can create virtual table user-defined functions (TUDFs) that point to remote table user-defined functions in another SAP HANA Cloud, SAP HANA database or in an SAP HANA on-premise system.") :arrow_upper_right:
 

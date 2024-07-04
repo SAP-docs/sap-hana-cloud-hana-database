@@ -191,6 +191,14 @@ Displays the maximum size of the data volume in bytes.
 </tr>
 </table>
 
+
+
+<a name="loio20ae1b2875191014815ce801d2843a02__section_wqg_sbn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

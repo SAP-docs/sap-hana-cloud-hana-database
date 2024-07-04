@@ -4,7 +4,9 @@
 
 Assigning roles and privileges to object owners for applications that use synonyms to access external objects.
 
-You can use the `.hdbgrants` configuration file to assign privileges to the owner of the synonym object and the application users \(consumers\) of the synonym's target objects in the same way as you would with the SQL `grant` statement. In the following example, <code>“EPM_XXX-table-grantor”</code> is a symbolic name for a user-defined service that executes the `GRANT` statement. The user-defined service must be specified in the `resources` section of the application project’s development-descriptor \(`mta.yaml`\).
+You can use the `.hdbgrants` configuration file to assign privileges to the owner of the synonym object and the application users \(consumers\) of the synonym's target objects in the same way as you would with the SQL `grant` statement.
+
+In the following example, <code>“EPM_XXX-table-grantor”</code> is a symbolic name for a user-defined service that executes the `GRANT` statement. The user-defined service must be specified in the `resources` section of the application project’s development-descriptor \(`mta.yaml`\).
 
 > ### Sample Code:  
 > `SNWD-table.hdbgrants`

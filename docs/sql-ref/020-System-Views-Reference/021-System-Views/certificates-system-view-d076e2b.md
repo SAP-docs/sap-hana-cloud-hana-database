@@ -74,7 +74,7 @@ NVARCHAR\(5000\)
 </td>
 <td valign="top">
 
-Displays the distinguished name of the X.509 certificate subject.
+Displays the common name of the X.509 certificate subject.
 
 </td>
 </tr>
@@ -346,24 +346,24 @@ NCLOB
 </td>
 <td valign="top">
 
-Displays the certificate as given during SQL.
+Displays the certificate as given during SQL create.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-CERTIFICATE\_NAME
+IMPORT\_TIME
 
 </td>
 <td valign="top">
 
-NVARCHAR\(256\)
+TIMESTAMP
 
 </td>
 <td valign="top">
 
-Displays the unique name of the certificate.
+Displays the creation timestamp of the certificate in the database.
 
 </td>
 </tr>
@@ -384,5 +384,5 @@ For information on the permissions required to use this view, see *SQL Statement
 
 [PSE\_CERTIFICATES System View](pse-certificates-system-view-0184e53.md "Provides information about certificates used in PSEs.")
 
-[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
+[SQL Statements and Authorization for Certificate Management (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/f32bcc9c4b734f24bedaf6253e7981d6.html "All administration tasks related to the management of public-key certificates (and public keys) can be performed using SQL.") :arrow_upper_right:
 

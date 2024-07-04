@@ -161,7 +161,7 @@ NVARCHAR\(256\)
 </td>
 <td valign="top">
 
-Displays the name of the column referenced by this column.
+Displays the name of the column referenced by this constraint.
 
 </td>
 </tr>
@@ -288,7 +288,7 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [CS\_JOIN\_CONSTRAINTS System View](cs-join-constraints-system-view-20a06e5.md "Provides join constraints for column store join views.")
 
-[SQL DML Statements on Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/226f2125b7ed4f4aabe731cfed029d7b.html "") :arrow_upper_right:
+[SQL DML Statements on Table Variables](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/226f2125b7ed4f4aabe731cfed029d7b.html "") :arrow_upper_right:
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 

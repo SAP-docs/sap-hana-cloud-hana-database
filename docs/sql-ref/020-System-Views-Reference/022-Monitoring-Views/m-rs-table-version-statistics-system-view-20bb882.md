@@ -584,5 +584,5 @@ Returns TRUE if the table's schema is SYS, or if the table schema or name starts
 
 [M\_RS\_TABLES System View](m-rs-tables-system-view-20bbc60.md "Provides information about row tables, including detailed table sizes and record count.")
 
-[System-Versioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/91302b26f62c4433bbc58e0a951cdc1d.html "System-versioned tables are part of the SQL standard. They support the tracking of changes on column store tables by capturing the validity period of each record.") :arrow_upper_right:
+[System-Versioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/91302b26f62c4433bbc58e0a951cdc1d.html "System-versioned tables are part of the SQL standard. They support the tracking of changes on column store tables by capturing the validity period of each record.") :arrow_upper_right:
 

@@ -175,6 +175,40 @@ Displays the fuzzy index search mode.
 <tr>
 <td valign="top">
 
+MIME\_TYPE
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the MIME type of the fuzzy search index \(with search mode TEXT only\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+TOKEN\_SEPARATORS
+
+</td>
+<td valign="top">
+
+NVARCHAR\(256\)
+
+</td>
+<td valign="top">
+
+Displays the token separators of the fuzzy search index \(with search mode TEXT only\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 MEMORY\_SIZE\_IN\_TOTAL
 
 </td>
@@ -241,6 +275,14 @@ Displays a flag to indicate that tge column is loaded into memory: TRUE/FALSE.
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio20b027ca75191014a424a892c83e9c8f__section_ljz_zkj_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
 
 
 

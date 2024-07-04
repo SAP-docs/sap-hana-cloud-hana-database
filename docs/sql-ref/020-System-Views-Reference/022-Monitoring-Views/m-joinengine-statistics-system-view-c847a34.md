@@ -114,6 +114,14 @@ Displays the number of translation table unloads.
 </tr>
 </table>
 
+
+
+<a name="loioc847a34e30cc43bca23ae4b297a667f6__section_xfq_dzz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

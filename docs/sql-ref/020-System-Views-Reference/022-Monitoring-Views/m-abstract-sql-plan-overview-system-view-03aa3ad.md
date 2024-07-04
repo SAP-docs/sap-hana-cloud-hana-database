@@ -310,6 +310,14 @@ Displays the allocated memory size of the table, in bytes, being used for plans.
 </tr>
 </table>
 
+
+
+<a name="loio03aa3adec2ba48ee9e2e25ba26df6cb7__section_nw3_zfh_4bc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

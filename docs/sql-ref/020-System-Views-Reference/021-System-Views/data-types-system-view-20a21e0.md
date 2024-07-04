@@ -369,7 +369,7 @@ Unless otherwise specified, system views are available to all users granted the 
 
 [Data Type Conversion Functions](../../010-SQL-Reference/011-SQL-Functions/data-type-conversion-functions-209ddef.md "Data type conversion functions convert data from one data type to another data type.")
 
-[Data Type Extension](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/1923f363c0ad4c778dc0e63812b751cd.html "") :arrow_upper_right:
+[Data Type Extension](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/1923f363c0ad4c778dc0e63812b751cd.html "") :arrow_upper_right:
 
-[Scalar Data Types](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/712f01427fac46b586cb08b4c02c4900.html "") :arrow_upper_right:
+[Scalar Data Types](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/712f01427fac46b586cb08b4c02c4900.html "") :arrow_upper_right:
 

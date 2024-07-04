@@ -564,6 +564,14 @@ Displays the application user name.
 </tr>
 </table>
 
+
+
+<a name="loio729e472b1fed465883b9b603886c4927__section_f4w_tfn_vbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

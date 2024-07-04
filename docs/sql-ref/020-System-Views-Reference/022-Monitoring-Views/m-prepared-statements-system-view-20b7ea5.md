@@ -826,5 +826,5 @@ Setting the value of the APPLICATION\_SOURCE is only available via internal APIs
 
 [SAP Note 2873396](https://me.sap.com/notes/2873396)
 
-[Reduce the Complexity of SQL Statements](https://help.sap.com/viewer/4466fb5b5e3f4388a00b44aad5a4bffa/2024_1_QRC/en-US/aea3021952d8419493993e68b491fee1.html "Variables in SQLScript enable you to arbitrarily break up a complex SQL statement into many simpler ones. This makes a SQLScript procedure easier to comprehend.") :arrow_upper_right:
+[Reduce the Complexity of SQL Statements](https://help.sap.com/viewer/4466fb5b5e3f4388a00b44aad5a4bffa/2024_3_QRC/en-US/aea3021952d8419493993e68b491fee1.html "Variables in SQLScript enable you to arbitrarily break up a complex SQL statement into many simpler ones. This makes a SQLScript procedure easier to comprehend.") :arrow_upper_right:
 

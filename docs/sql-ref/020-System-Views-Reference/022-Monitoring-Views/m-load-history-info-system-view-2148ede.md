@@ -250,6 +250,14 @@ Indicates that the KPIs with the same value should be shown with the same Y scal
 </tr>
 </table>
 
+
+
+<a name="loio2148ede574c742d49fa99a6b77ba9d59__section_a35_221_ybc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 

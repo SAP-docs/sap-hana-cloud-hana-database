@@ -490,10 +490,18 @@ For internal use only.
 </tr>
 </table>
 
+
+
+<a name="loio20b12419751910148afa9303eec370a0__section_wnx_3xz_xbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
-[HOST_RESOURCE_UTILIZATION_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_1_QRC/en-US/fbd82f0303c44e35a6bbb12cb803f94c.html "Returns the host resource utilization for all processes (including non-SAP HANA processes).") :arrow_upper_right:
+[HOST_RESOURCE_UTILIZATION_STATISTICS View (Embedded Statistics Service)](https://help.sap.com/viewer/323c57a017234d47a0e7da3e22345822/2024_3_QRC/en-US/fbd82f0303c44e35a6bbb12cb803f94c.html "Returns the host resource utilization for all processes (including non-SAP HANA processes).") :arrow_upper_right:
 
 [M\_HOST\_INFORMATION System View](m-host-information-system-view-20b1002.md "Provides host information such as machine and OS configuration.")
 

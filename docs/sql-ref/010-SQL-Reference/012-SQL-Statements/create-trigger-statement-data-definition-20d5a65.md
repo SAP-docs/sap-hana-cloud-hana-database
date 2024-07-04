@@ -1534,7 +1534,7 @@ SELECT FROM V1 ORDER BY A, B, C, D;
 
 [TRIGGERS System View](../../020-System-Views-Reference/021-System-Views/triggers-system-view-2101f6d.md "Provides information about triggers that are defined for tables.")
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 
 [Introduction to SQL](../introduction-to-sql-209f502.md "This chapter describes the SAP HANA database implementation of Structured Query Language (SQL).")
 

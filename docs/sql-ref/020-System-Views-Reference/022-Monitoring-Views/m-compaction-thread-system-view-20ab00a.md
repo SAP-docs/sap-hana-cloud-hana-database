@@ -458,6 +458,14 @@ Displays the average compaction result in bytes. This is the difference of alloc
 
 
 
+<a name="loio20ab00a275191014a1c7a1c04a7547e6__section_zjk_tcw_rbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20ab00a275191014a1c7a1c04a7547e6___m__c_o_m_p_a_c_t_i_o_n__t_h_r_e_a_d_1fulldesc_M_COMPACTION_THREAD"/>
 
 ## Additional Information

@@ -178,11 +178,11 @@ Unless otherwise specified, system views are available to all users granted the 
 **Related Information**  
 
 
-[Temporal Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/cf3523ab01834f5e84a32164c1fd597a.html "Temporal tables is a general term for tables which provide functionality to manage historical data: that is, to maintain a set of current values which are valid for a predefined period and also maintain an auditable continuous history of changes.") :arrow_upper_right:
+[Temporal Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/cf3523ab01834f5e84a32164c1fd597a.html "Temporal tables is a general term for tables which provide functionality to manage historical data: that is, to maintain a set of current values which are valid for a predefined period and also maintain an auditable continuous history of changes.") :arrow_upper_right:
 
-[System-Versioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/91302b26f62c4433bbc58e0a951cdc1d.html "System-versioned tables are part of the SQL standard. They support the tracking of changes on column store tables by capturing the validity period of each record.") :arrow_upper_right:
+[System-Versioned Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/91302b26f62c4433bbc58e0a951cdc1d.html "System-versioned tables are part of the SQL standard. They support the tracking of changes on column store tables by capturing the validity period of each record.") :arrow_upper_right:
 
-[Application-Time Period Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/2e37d6a82f7b48ccbfcc5a1a6ce490f5.html "Application-Time Period Tables allow you to manage and manipulate historical business data based on application-specific time periods which are independent of system time-stamps.") :arrow_upper_right:
+[Application-Time Period Tables](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/2e37d6a82f7b48ccbfcc5a1a6ce490f5.html "Application-Time Period Tables allow you to manage and manipulate historical business data based on application-specific time periods which are independent of system timestamps.") :arrow_upper_right:
 
 [TABLES System View](tables-system-view-2101973.md "Provides information about tables in the database.")
 

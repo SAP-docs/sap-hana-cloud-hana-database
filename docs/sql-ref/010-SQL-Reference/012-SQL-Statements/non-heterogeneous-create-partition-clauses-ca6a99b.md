@@ -465,18 +465,14 @@ Specifies the properties for the partition.
 <range_prop_list> ::= <range_prop> [ <range_prop> ...] ]
 
 <range_prop> ::= 
-   INSERT {OFF | ON}
+   { INSERT {OFF | ON}
    | AT [ LOCATION ] ( <location> )
    | <load_unit> 
    | <group_list>
    | <persistent_memory_spec_clause>
    | <numa_node_preference_clause>
+   | <set_movable> }
 ```
-
-
-
-</dd>
-</dl>
 
 
 <dl>
@@ -611,7 +607,7 @@ Enables or disables persistent memory storage preference at the table, range par
 Sets the NUMA node preferences. This clause can be set in various locations such as range partition definitions \(not hash or round-robin\) and column definitions.
 
 ```
-<numa_node_preference_clause> ::= NUMA NODE { ( <numa_node_index_spec> )
+<numa_node_preference_clause> ::= NUMA NODE ( <numa_node_index_spec> )
 
 <numa_node_index_spec> :: = <numa_node_spec> [, <numa_node_spec> [,…] 
 
@@ -641,6 +637,28 @@ NUMA node indexes should be specified in the range of 0 to one less than max\_nu
 <dd>
 
 *<integer\_const\>* is an integer that cannot be a negative number.
+
+
+
+</dd>
+</dl>
+
+
+
+</dd><dt><b>
+
+*<set\_movable\>*
+
+</b></dt>
+<dd>
+
+Specifies whether a partition is movable.
+
+```
+<set_movable> ::= [ NOT ] MOVABLE
+```
+
+If not specified, then the value is inherited from its parent partitions \(from near to far\). If none of the parents have the move property explicitly set, then the table-level moveable property value is used. If none of these apply, then the partition is moveable by default.
 
 
 
@@ -718,14 +736,15 @@ Create a non-heterogeneous range-range partitioned table named P5. The OTHERS pa
 ```
 CREATE COLUMN TABLE P5 (A INT, B INT) PARTITION BY RANGE (A) 
    (PARTITION 10 <= VALUES < 20 PERSISTENT MEMORY ON NUMA NODE ('3'), PARTITION OTHERS PERSISTENT MEMORY ON)
-   SUBPARTITION BY RANGE (B) (PARTITION VALUES=100 PERSISTENT MEMORY ON);
+      SUBPARTITION BY RANGE (B) (PARTITION VALUES=100 PERSISTENT MEMORY ON);
 ```
 
-Create a non-heterogeneous range-range partitioned table named 65 with dynamic range partitioning enabled.
+Create a non-heterogeneous partitioned table with movable partitions.
 
 ```
-CREATE COLUMN TABLE P6 (A INT, B INT NOT NULL) PARTITION BY RANGE (A) (PARTITION VALUES = 10) 
-   SUBPARTITION BY RANGE (B) (PARTITION VALUES = 20, PARTITION OTHERS DYNAMIC THRESHOLD 2);
+CREATE COLUMN TABLE P6 (C1 INT, C2 INT) PARTITION BY RANGE (C1)
+   (PARTITION VALUE = 1) 
+   SUBPARTITION BY RANGE (C2) (PARTITION VALUE = 1, PARTITION VALUE = 2 MOVABLE, PARTITION VALUE = 3 NOT MOVABLE);
 ```
 
 
@@ -736,13 +755,13 @@ CREATE COLUMN TABLE P6 (A INT, B INT NOT NULL) PARTITION BY RANGE (A) (PARTITION
 **Related Information**  
 
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
 [CREATE TABLE Statement \(Data Definition\)](create-table-statement-data-definition-20d58a5.md "Creates a base or temporary table. See the CREATE VIRTUAL TABLE statement for creating virtual tables.")
 
 [Heterogeneous Create Partition Clauses](heterogeneous-create-partition-clauses-d496e58.md "Defines the various partitioning clauses available for heterogeneous partitions when creating a new table.")
 
-[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "Dynamic Range Partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
+[Dynamic Range Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/6ebea7782b9e4758baeed923e388ee32.html "For heterogeneous partitioning schemas dynamic range partitioning is available to support the automatic maintenance of the OTHERS partition.") :arrow_upper_right:
 
 [TABLE\_PARTITIONS System View](../../020-System-Views-Reference/021-System-Views/table-partitions-system-view-c81d9be.md "Partition-specific information for partitioned tables.")
 

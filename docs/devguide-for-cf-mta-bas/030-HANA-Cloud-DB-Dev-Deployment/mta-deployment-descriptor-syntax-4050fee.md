@@ -3325,7 +3325,7 @@ resources
 </td>
 <td valign="top">
 
-Generate a unique schema name by appending a numeric identifier to the schema name, for example: MY\_SCHEMA\_1, MY\_SCHEMA\_2, etc. In SAP Business Application Studio, this parameter is set to "true" by default.
+Generate a unique schema name by appending a numeric identifier to the schema name, for example: `MY_SCHEMA_1`, `MY_SCHEMA_2`, etc. In SAP Business Application Studio, this parameter is set to "true" by default. 
 
 </td>
 <td valign="top">

@@ -248,3 +248,11 @@ Displays the position within the queue, when waiting; otherwise the value is 0.
 </tr>
 </table>
 
+
+
+<a name="loiode4f805158a84e349504f1f9bc2348cf__section_ywd_fcv_tbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+

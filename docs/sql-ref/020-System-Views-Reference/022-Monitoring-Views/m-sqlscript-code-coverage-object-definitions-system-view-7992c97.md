@@ -70,9 +70,9 @@ Displays the definition of the object.
 
 [M\_SQLSCRIPT\_CODE\_COVERAGE\_RESULTS System View](m-sqlscript-code-coverage-results-system-view-9628091.md "Provides per-session SQLScript code coverage results.")
 
-[SQLScript Code Coverage](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/d00c173403154434affc3ace52efd611.html "") :arrow_upper_right:
+[SQLScript Code Coverage](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/d00c173403154434affc3ace52efd611.html "") :arrow_upper_right:
 
-[Object Dependencies View Examples](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/38608b6773a6423986785de97d0d1ea8.html "") :arrow_upper_right:
+[Object Dependencies View Examples](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/38608b6773a6423986785de97d0d1ea8.html "") :arrow_upper_right:
 
 [ALTER SYSTEM \{START | STOP\} SQLSCRIPT CODE COVERAGE Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-start-stop-sqlscript-code-coverage-statement-system-management-1a40f07.md "Starts and stops a SQLScript code coverage session for functions and procedures.")
 

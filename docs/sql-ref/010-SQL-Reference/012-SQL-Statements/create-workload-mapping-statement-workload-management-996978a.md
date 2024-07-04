@@ -219,7 +219,7 @@ CREATE WORKLOAD MAPPING "MyWorkloadMapping1" WORKLOAD CLASS "MyClass1" SET 'APPL
 
 [ALTER WORKLOAD MAPPING Statement \(Workload Management\)](alter-workload-mapping-statement-workload-management-81fc16b.md "Changes workload mappings.")
 
-[Managing Workload with Workload Classes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/5066181717df4110931271d1efd84cbc.html "You can manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session.") :arrow_upper_right:
+[Managing Workload with Workload Classes](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/5066181717df4110931271d1efd84cbc.html "You can manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session.") :arrow_upper_right:
 
 [Session Variables](../session-variables-a16678c.md " 		 		 		 		 		 		 	")
 

@@ -399,5 +399,5 @@ Displays if a column is preloaded: TRUE/FALSE.
 
 [TRUNCATE TABLE Statement \(Data Manipulation\)](../../010-SQL-Reference/012-SQL-Statements/truncate-table-statement-data-manipulation-20fe29f.md "Deletes all rows from a table or projection view.")
 
-[Handling Temporary Data](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/cffa9243511a4858882de2aa398a4899.html "") :arrow_upper_right:
+[Handling Temporary Data](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/cffa9243511a4858882de2aa398a4899.html "") :arrow_upper_right:
 

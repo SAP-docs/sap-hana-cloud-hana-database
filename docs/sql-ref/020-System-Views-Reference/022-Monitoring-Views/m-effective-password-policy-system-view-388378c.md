@@ -82,6 +82,14 @@ Displays the value of the password policy parameter.
 
 
 
+<a name="loio388378c0aa6b49dd88e9ee2187705f07__section_rcc_333_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio388378c0aa6b49dd88e9ee2187705f07__section_u2w_qdk_h2b"/>
 
 ## Additional Information
@@ -93,7 +101,7 @@ This view requires an equal predicate on USER\_NAME.
 
 [M\_PASSWORD\_POLICY System View](m-password-policy-system-view-20b6e99.md "Defines effective password policy settings.")
 
-[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
+[Password Policy Configuration Options](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/61662e3032ad4f8dbdb5063a21a7d706.html "The password policy of the database is defined by parameters in the password policy section of the indexserver.ini configuration file. The initial password policy of a user group is a copy of the database password policy.") :arrow_upper_right:
 
 [CREATE USERGROUP Statement \(Access Control\)](../../010-SQL-Reference/012-SQL-Statements/create-usergroup-statement-access-control-9869125.md "Creates a usergroup.")
 

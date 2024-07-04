@@ -163,7 +163,7 @@ Users see different values in this view depending on their privileges, as follow
 -   Users with one of the following privileges can see everything for all users:
 
     -   CATALOG READ system privilege
-    -   USERGROUP OPERATOR object privilege on any user group
+    -   OPERATOR object privilege on any user group
 
 -   All other users see only information specific to their user group.
 
@@ -185,5 +185,5 @@ Users see different values in this view depending on their privileges, as follow
 
 [DROP USERGROUP Statement \(Access Control\)](../../010-SQL-Reference/012-SQL-Statements/drop-usergroup-statement-access-control-6dc0ada.md "Removes a user group from the database.")
 
-[SQL Statements and Authorization for User Group Administration (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/bdc34546fcdf4d24b58b1235dda68ec8.html "Creating and configuring user groups requires different combinations of privileges.") :arrow_upper_right:
+[SQL Statements and Authorization for User Group Administration (Reference)](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/bdc34546fcdf4d24b58b1235dda68ec8.html "Creating and configuring user groups requires different combinations of privileges.") :arrow_upper_right:
 

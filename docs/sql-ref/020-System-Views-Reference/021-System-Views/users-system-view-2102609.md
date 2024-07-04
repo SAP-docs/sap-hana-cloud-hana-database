@@ -246,7 +246,7 @@ NVARCHAR\(5\)
 </td>
 <td valign="top">
 
-Displays whether the password was provided by the administrator or by the user: TRUE/FALSE.
+Displays whether the password was provided by the administrator to the user: TRUE/FALSE.
 
 </td>
 </tr>
@@ -331,7 +331,7 @@ TIMESTAMP
 </td>
 <td valign="top">
 
-Displays the time given with an explicit deactivation command for the specified user.
+Displays the time the account was deactivated.
 
 </td>
 </tr>
@@ -586,9 +586,9 @@ Users see different values in this view depending on their privileges, as follow
 
 [USERGROUPS System View](usergroups-system-view-ac342d0.md "Provides details on all user groups.")
 
-[Managing SAP HANA Users](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/ed7af17e5ae14de694d9bee5f35098f4.html "Every user who wants to work with the SAP HANA database must have a database user who can log on and is authorized to perform their individual tasks.") :arrow_upper_right:
+[Managing SAP HANA Users](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/ed7af17e5ae14de694d9bee5f35098f4.html "Every user who wants to work with the SAP HANA database must have a database user who can log on and is authorized to perform their individual tasks.") :arrow_upper_right:
 
-[User Provisioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bebc1c98bb571014a119aa7e6763c7e1.html "Depending on your organization and its user provisioning strategy, people with different job functions may be involved in the process of provisioning users. If you use an LDAP-compliant directory server to manage users and their access to resources, you can leverage this infrastructure for user provisioning.") :arrow_upper_right:
+[User Provisioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/bebc1c98bb571014a119aa7e6763c7e1.html "Depending on your organization and its user provisioning strategy, people with different job functions may be involved in the process of provisioning users. If you use an LDAP-compliant directory server to manage users and their access to resources, you can leverage this infrastructure for user provisioning.") :arrow_upper_right:
 
-[User Authorization](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/bd592d78bb57101499eabd0e17606802.html "After successful logon, the user's authorization to perform the requested operations on the requested objects is verified.") :arrow_upper_right:
+[User Authorization](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/bd592d78bb57101499eabd0e17606802.html "After successful logon, the user's authorization to perform the requested operations on the requested objects is verified.") :arrow_upper_right:
 

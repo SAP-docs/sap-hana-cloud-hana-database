@@ -492,6 +492,14 @@ Displays the number of savepoints with an empty queue.
 
 
 
+<a name="loio20b04b8f7519101499c39b3f35659a7f__section_km4_tmj_wbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
+
+
 <a name="loio20b04b8f7519101499c39b3f35659a7f___m__g_a_r_b_a_g_e__c_o_l_l_e_c_t_i_o_n__s_t_a_t_i_s_t_i_c_s_1fulldesc_M_GARBAGE_COLLECTION_STATISTICS"/>
 
 ## Additional Information
@@ -513,5 +521,5 @@ This view has a resettable counterpart; you can see the values since the last re
 
 [ALTER SYSTEM RESET MONITORING VIEW Statement \(System Management\)](../../010-SQL-Reference/012-SQL-Statements/alter-system-reset-monitoring-view-statement-system-management-20d27aa.md "Resets statistics data for the specified monitoring view.")
 
-[Deterministic Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/dae6fae315c546ba9dc8665c0ca51cb9.html "") :arrow_upper_right:
+[Deterministic Procedures](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/dae6fae315c546ba9dc8665c0ca51cb9.html "") :arrow_upper_right:
 

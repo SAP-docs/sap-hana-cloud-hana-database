@@ -144,7 +144,7 @@ Unless otherwise specified, system views are available to all users granted the 
 **Related Information**  
 
 
-[SQLScript Code Analyzer](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/f7e1c7fbce6f4db49e29d7cc58b78384.html "The SQLScript Code Analyzer consists of two built-in procedures that scan CREATE FUNCTION and CREATE PROCEDURE statements and search for patterns indicating problems in code quality, security or performance.") :arrow_upper_right:
+[SQLScript Code Analyzer](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/f7e1c7fbce6f4db49e29d7cc58b78384.html "The SQLScript Code Analyzer consists of two built-in procedures that scan CREATE FUNCTION and CREATE PROCEDURE statements and search for patterns indicating problems in code quality, security or performance.") :arrow_upper_right:
 
-[Limitations in the SQLScript Code Analyzer](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/2c230ed67be44187907ddd38dcb61240.html "") :arrow_upper_right:
+[Limitations in the SQLScript Code Analyzer](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/2c230ed67be44187907ddd38dcb61240.html "") :arrow_upper_right:
 

@@ -131,11 +131,19 @@ NCLOB
 </td>
 <td valign="top">
 
-Displays the parameters specified during the last REFRESH VIEW command on the view, in JSON format
+Displays the parameters specified during the last REFRESH VIEW command on the view, in JSON format.
 
 </td>
 </tr>
 </table>
+
+
+
+<a name="loio6a44772e5dad4457b8285202f8f776ed__section_ckk_p32_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
 
 **Related Information**  
 

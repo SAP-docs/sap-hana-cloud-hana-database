@@ -320,6 +320,14 @@ Displays the lock mode: SHARED, EXCLUSIVE, or INTENTIONAL EXCLUSIVE.
 </tr>
 </table>
 
+
+
+<a name="loio20a8c51d75191014b6c0e177ae946724__section_xth_vm2_qbc"/>
+
+## Permissions
+
+Unless otherwise specified, monitoring views are available to all users granted the PUBLIC role. The data returned for each view is filtered according to the granted privileges of the user accessing a view. Users granted the CATALOG READ system privilege have unfiltered access to all monitoring views and their data regardless of the PUBLIC role and privilege grants.
+
 **Related Information**  
 
 
@@ -327,5 +335,5 @@ Displays the lock mode: SHARED, EXCLUSIVE, or INTENTIONAL EXCLUSIVE.
 
 [SET TRANSACTION AUTOCOMMIT DDL Statement \(Transaction Management\)](../../010-SQL-Reference/012-SQL-Statements/set-transaction-autocommit-ddl-statement-transaction-management-d538d11.md "Specifies the auto commit property for DDL statements specific to the session.")
 
-[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
+[Autonomous Transaction](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/4ad70daee8b64b90ab162565ed6f73ef.html "") :arrow_upper_right:
 

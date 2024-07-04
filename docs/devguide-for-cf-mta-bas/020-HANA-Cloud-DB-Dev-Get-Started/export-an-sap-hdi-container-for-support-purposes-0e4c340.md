@@ -19,7 +19,7 @@ You can use the *Support Mode Export Assistant* to export selected objects \(and
 
 ## Context
 
-If a support team requires a copy of an HDI container \(or selected database obects in an HDI container\) to investigate a problem, you can use the *Support Mode Export Assistant* provided by SAP HANA Native Application extension for SAP Business Application Studio to export selected objects \(along with any relevant dependencies\) from the specified HDI container to a table or file. The exported package can then be forwarded to the support team for analysis. You can also have the option of including additional components in the export package, for example:
+If a support team requires a copy of an HDI container \(or selected database obects in an HDI container\) to investigate a problem, you can use the *Support Mode Export Assistant* provided by SAP HANA Native Application dev space for SAP Business Application Studio to export selected objects \(along with any relevant dependencies\) from the specified HDI container to a table or file. The exported package can then be forwarded to the support team for analysis. You can also have the option of including additional components in the export package, for example:
 
 -   External-dependency object definitions
 -   HDI metadata \(for example, of calculation views in the `_SYS_BI` schema\)
@@ -180,7 +180,7 @@ To export an HDI container \(or selected database objects\) to a table or file f
 **Related Information**  
 
 
-[Export an SAP HDI Container for Copy Purposes (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_1_QRC/en-US/c25ee286cee5496cb96fdf5875f444a2.html "An HDI container administrator can export an HDI container to a table, which can then be used to import the container into a database.") :arrow_upper_right:
+[Export an SAP HDI Container for Copy Purposes (SAP HANA Cloud, HDI Reference)](https://help.sap.com/viewer/c2cc2e43458d4abda6788049c58143dc/2024_3_QRC/en-US/c25ee286cee5496cb96fdf5875f444a2.html "An HDI container administrator can export an HDI container to a table, which can then be used to import the container into a database.") :arrow_upper_right:
 
 [Analyzing SQL Execution with the Plan Visualizer \(SAP HANA Cloud, SAP HANA Database Administration Guide\)](https://help.sap.com/docs/HANA_CLOUD_DATABASE/f9c5015e72e04fffa14d7d4f7267d897/f0c2cd381a39460aab7c20d9bb11f74d.html)
 

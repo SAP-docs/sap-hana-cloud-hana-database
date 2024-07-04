@@ -11,7 +11,7 @@ Creates a base or temporary table. See the CREATE VIRTUAL TABLE statement for cr
 ## Syntax
 
 ```
-CREATE [ <table_type> ] { <table_name> | <replica_name> }
+CREATE [ <table_type><table_name> | <replica_name> }
    <table_contents_source>
    [<system_versioning_spec>]
    [<application_time_period_configuration>]
@@ -31,9 +31,10 @@ CREATE [ <table_type> ] { <table_name> | <replica_name> }
    [<global_temporary_option>] 
    [<unused_retention_period_option>] 
    [<record_commit_timestamp_clause>]            
-   [COMMENT <comment_string>]
+   [<table_comment_string>]
    [<numa_node_preference_clause>]
    [<load_unit>]
+   [<primary_key_update_clause>]
 ```
 
 
@@ -56,7 +57,7 @@ Defines the type of table to create.
 ```
 <table_type> ::= 
  { ROW | [ COLUMN ] } TABLE
- | <temporary_table_type>
+ |  ] { <temporary_table_type>
  | VIRTUAL TABLE
 
 <temporary_table_type> ::= 
@@ -458,7 +459,7 @@ Defines a table column.
    [ <fuzzy_search_index> ]
    [ <fuzzy_search_mode> ] 
    [ <persistent_memory_spec_clause> ]
-   [ COMMENT <comment_string> ]
+   [ <column_comment_string> ]
    [ <load_unit> ]
    [ <numa_node_preference_clause> ]
 ```
@@ -751,6 +752,7 @@ Specifies the expression that replaces the column at query compilation time.
 
 -   Dropping or altering the base columns of a calculated field is not possible.
 
+-   A calculated field column without a declared data type cannot be hidden.
 
 
 
@@ -797,10 +799,10 @@ If NULL is specified, then the fuzzy search mode is reset.
 Specifies a descriptive comment for the column.
 
 ```
-<comment_string> ::= <string_literal>
+<column_comment_string> ::= COMMENT <string_literal>
 ```
 
-Specifying COMMENT *<comment\_string\>* saves you from having to execute a separate COMMENT ON statement later.
+Specifying *<column\_comment\_string\>* saves you from having to execute a separate COMMENT ON statement later.
 
 
 
@@ -1596,7 +1598,7 @@ Creates a table and fills it with the data computed by the subquery. For more in
 <identity_column> ::=  ( <column_name> INT GENERATED ALWAYS AS IDENTITY( START WITH <integer> INCREMENT BY <integer> ) )
 ```
 
-While both the AS *<subquery\>* syntax and the *<with\_clause\>* syntax create a table with data in it, the AS *<subquery\>* syntax *copies* data from the columns derived from *<subquery\>*, whereas the *<with\_clause\>* syntax allows you to *define* the data to insert into the columns.
+While both the AS *<subquery\>* syntax and the *<with\_clause\>* syntax create a table with data in it, the AS *<subquery\>* syntax *copies**<subquery\>*, whereas the *<with\_clause\>* syntax allows you to *define* the data to insert into the columns.
 
 If the *<as\_subquery\>* clause follows a *<column\_names\>* clause, then the column names specified in *<column\_names\>* override the column names defined in *<as\_subquery\>*.
 
@@ -2442,7 +2444,7 @@ CREATE TABLE ROWCTS_RS LIKE ROWCTS_CS;
 
 </dd><dt><b>
 
-*<comment\_string\>*
+*<table\_comment\_string\>*
 
 </b></dt>
 <dd>
@@ -2450,10 +2452,10 @@ CREATE TABLE ROWCTS_RS LIKE ROWCTS_CS;
 Specifies a descriptive comment for the table.
 
 ```
-<comment_string> ::= <string_literal>
+<table_comment_string> ::= COMMENT <string_literal>
 ```
 
-Specifying COMMENT *<comment\_string\>* saves you from having to execute a separate COMMENT ON statement later.
+Specifying *<table\_comment\_string\>* saves you from having to execute a separate COMMENT ON statement later.
 
 
 
@@ -2467,7 +2469,7 @@ Specifying COMMENT *<comment\_string\>* saves you from having to execute a separ
 Sets the NUMA node preferences. This clause can be set in various locations such as range partition definitions \(not hash or round-robin\) and column definitions.
 
 ```
-<numa_node_preference_clause> ::= NUMA NODE { ( <numa_node_index_spec> )
+<numa_node_preference_clause> ::= NUMA NODE ( <numa_node_index_spec> )
 
 <numa_node_index_spec> :: = <numa_node_spec> [, <numa_node_spec> [,…] 
 
@@ -2502,6 +2504,21 @@ NUMA node indexes should be specified in the range of 0 to one less than max\_nu
 
 </dd>
 </dl>
+
+
+
+</dd><dt><b>
+
+*<primary\_key\_update\_clause\>*
+
+</b></dt>
+<dd>
+
+Specifies if UPDATE statements are allowed on primary key columns. This clause is only supported on tables with heterogeneous partitioning.
+
+```
+<primary_key_update_clause> ::= PRIMARY KEY UPDATE {ON | OFF};
+```
 
 
 
@@ -2739,14 +2756,15 @@ Create a non-heterogeneous range-range partitioned table named P5. The OTHERS pa
 ```
 CREATE COLUMN TABLE P5 (A INT, B INT) PARTITION BY RANGE (A) 
    (PARTITION 10 <= VALUES < 20 PERSISTENT MEMORY ON NUMA NODE ('3'), PARTITION OTHERS PERSISTENT MEMORY ON)
-   SUBPARTITION BY RANGE (B) (PARTITION VALUES=100 PERSISTENT MEMORY ON);
+      SUBPARTITION BY RANGE (B) (PARTITION VALUES=100 PERSISTENT MEMORY ON);
 ```
 
-Create a non-heterogeneous range-range partitioned table named 65 with dynamic range partitioning enabled.
+Create a non-heterogeneous partitioned table with movable partitions.
 
 ```
-CREATE COLUMN TABLE P6 (A INT, B INT NOT NULL) PARTITION BY RANGE (A) (PARTITION VALUES = 10) 
-   SUBPARTITION BY RANGE (B) (PARTITION VALUES = 20, PARTITION OTHERS DYNAMIC THRESHOLD 2);
+CREATE COLUMN TABLE P6 (C1 INT, C2 INT) PARTITION BY RANGE (C1)
+   (PARTITION VALUE = 1) 
+   SUBPARTITION BY RANGE (C2) (PARTITION VALUE = 1, PARTITION VALUE = 2 MOVABLE, PARTITION VALUE = 3 NOT MOVABLE);
 ```
 
 
@@ -2802,6 +2820,64 @@ CREATE COLUMN TABLE A5 (A DATE, B INT, C INT) PARTITION BY RANGE (B)
        SUBPARTITION BY HASH (YEAR(a), c) PARTITIONS 4,
     (PARTITION 40 <= VALUES < 50 PAGE LOADABLE GROUP NAME 'HR') 
        SUBPARTITION BY HASH (YEAR(a), c) PARTITIONS 4);
+```
+
+Create a multilevel heterogeneous partitioned table and then applies the *<load\_unit\>* attribute first by partition number \(1\) and then to partition range \(10 to 20\).
+
+```
+CREATE COLUMN TABLE T6 (a INT, b INT) PARTITION BY RANGE(a) 
+   ((PARTITION 10 <= VALUES < 20) SUBPARTITION BY RANGE (b) (PARTITION VALUES=100));
+
+ALTER TABLE T4 ALTER PARTITION 1 COLUMN LOADABLE;
+ALTER TABLE T4 ALTER PARTITION RANGE (a) ((PARTITION 10 <= VALUES < 20) 
+   SUBPARTITION BY RANGE (b) (PARTITION VALUES = 100)) PAGE LOADABLE;
+```
+
+Creates a heterogeneous partitioned table with a dynamic distance interval of 200.
+
+```
+CREATE TABLE A7 (A int NOT NULL, B int) PARTITION BY RANGE (A) (
+  PARTITION 1 <= VALUES < 100,
+  PARTITION 100 <= VALUES < 200,
+  PARTITION OTHERS DYNAMIC DISTANCE 200 PAGE LOADABLE);
+```
+
+Creates a table with decreasing numbered dynamic ranges.
+
+```
+CREATE TABLE A8 (C1 INT NOT NULL) PARTITION BY RANGE (C1) (
+  PARTITION OTHERS DYNAMIC DECREASING THRESHOLD 2);
+```
+
+Creates a table with dynamic range numbers that both increase and decrease.
+
+```
+CREATE TABLE A9 (C1 INT NOT NULL) PARTITION BY RANGE (C1) (
+  PARTITION OTHERS DYNAMIC BIDIRECTIONAL INTERVAL 2);
+```
+
+Create a dynamic range table with a check interval of 20 minutes:
+
+```
+CREATE TABLE A10 (C1 INT NOT NULL) PARTITION BY RANGE (C1) (
+  (PARTITION 1 <= VALUES < 100, PARTITION OTHERS DYNAMIC INTERVAL 10)) DYNAMIC RANGE CHECK INTERVAL 20;
+```
+
+Created a partitioned table with some partitions movable and some not.
+
+```
+CREATE COLUMN TABLE A11 (C1 INT, C2 INT) PARTITION BY RANGE (C1) (
+  (PARTITION VALUE = 1) SUBPARTITION BY RANGE (C2) (PARTITION VALUE = 1, PARTITION VALUE = 2 MOVABLE, PARTITION VALUE = 3 NOT MOVABLE),
+  (PARTITION VALUE = 2 MOVABLE) SUBPARTITION BY RANGE (C2) (PARTITION VALUE = 1, PARTITION VALUE = 2 MOVABLE, PARTITION VALUE = 3 NOT MOVABLE),
+  (PARTITION VALUE = 3 NOT MOVABLE) SUBPARTITION BY RANGE (C2) (PARTITION VALUE = 1, PARTITION VALUE = 2 MOVABLE, PARTITION VALUE = 3 NOT MOVABLE)
+  );
+```
+
+Create a heterogeneous partitioned table with a distance of 200.
+
+```
+CREATE TABLE A6 (C1 INT NOT NULL, C2 INT) PARTITION BY RANGE (C1) 
+   ((PARTITION 1 <= VALUES < 100, PARTITION 100 <= VALUES < 200, PARTITION OTHERS DYNAMIC DISTANCE 200 PAGE LOADABLE ));
 ```
 
 
@@ -3177,17 +3253,17 @@ Executing ***SELECT a\[y1\>1\].x1 FROM t2;*** returns the following values:
 
 [CREATE VIRTUAL TABLE Statement \(Data Definition\)](create-virtual-table-statement-data-definition-d2a0406.md "Creates a virtual table at a remote source.")
 
-[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
+[SAP HANA Native Storage Extension](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/4efaa94f8057425c8c7021da6fc2ddf5.html "SAP HANA native storage extension is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio.") :arrow_upper_right:
 
-[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
+[Table Partitioning](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/c2ea130bbb571014b024ffeda5090764.html "The partitioning feature of the SAP HANA database splits column-store tables horizontally into disjunctive sub-tables or partitions. In this way, large tables can be broken down into smaller, more manageable parts. Partitioning is typically used in multiple-host systems, but it may also be beneficial in single-host systems.") :arrow_upper_right:
 
-[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
+[Table Placement](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/22888f9344954f258284d2dd936d0d0a.html "Table classification and table placement configuration, enhanced by partitioning, build the foundation for controlling the data distribution in a SAP HANA scale-out environment.") :arrow_upper_right:
 
 [Introduction to SQL](../introduction-to-sql-209f502.md "This chapter describes the SAP HANA database implementation of Structured Query Language (SQL).")
 
 [Predicates](../predicates-20a2ab2.md "")
 
-[Hybrid LOBs (Large Objects)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_1_QRC/en-US/61ab21a1972846e0aa0b9a989ce4867a.html "To save memory you can store LOB data on disk, in this case the data is only loaded into memory when it is needed. Alternatively, you can use the configurable Hybrid LOB feature which is flexible and stores LOBs either on disk or in memory depending on their size.") :arrow_upper_right:
+[Hybrid LOBs (Large Objects)](https://help.sap.com/viewer/f9c5015e72e04fffa14d7d4f7267d897/2024_3_QRC/en-US/61ab21a1972846e0aa0b9a989ce4867a.html "To save memory you can store LOB data on disk, in this case the data is only loaded into memory when it is needed. Alternatively, you can use the configurable Hybrid LOB feature which is flexible and stores LOBs either on disk or in memory depending on their size.") :arrow_upper_right:
 
 [CREATE REMOTE SOURCE Statement \(Access Control\)](create-remote-source-statement-access-control-20d4834.md "Defines an external data source that can connect to the SAP HANA database.")
 
@@ -3197,7 +3273,7 @@ Executing ***SELECT a\[y1\>1\].x1 FROM t2;*** returns the following values:
 
 [TABLE\_COLUMNS System View](../../020-System-Views-Reference/021-System-Views/table-columns-system-view-2100d33.md "Provides information about available table columns.")
 
-[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2024_1_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
+[SAP HANA Cloud Configuration Parameter Reference](https://help.sap.com/viewer/138dcf7d779543608917a2307a6115f2/2024_3_QRC/en-US/4b4d88980622427ab2d6ca8c05448166.html "Reference documentation for public configuration parameters in SAP HANA Cloud.") :arrow_upper_right:
 
-[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_1_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
+[SAP HANA Cloud, SAP HANA Database Security Guide](https://help.sap.com/viewer/a1317de16a1e41a6b0ff81849d80713c/2024_3_QRC/en-US/c3d9889e3c9843bdb834e9eb56f1b041.html#loioc3d9889e3c9843bdb834e9eb56f1b041 "The SAP HANA Cloud, SAP HANA Database Security Guide is the entry point for all information relating to the secure operation and configuration of SAP HANA Cloud, SAP HANA database.") :arrow_upper_right:
 

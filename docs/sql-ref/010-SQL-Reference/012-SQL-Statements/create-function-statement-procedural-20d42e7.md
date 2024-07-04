@@ -564,7 +564,7 @@ When you specify HEADER ONLY, only the properties of the function are created al
 
 -   You must explicitly set all parameters where the desired setting is different from the default \(for example, settings for procedure language, default schema, whether the procedure is deterministic or encrypted, sequential execution options, and so on\). Everything not specified in a CREATE OR REPLACE FUNCTION statement is reset to its default.
 
--   If you specify the security mode or route options, then the behavior depends on the existence of a pre-defined function: If there is no existing function, then the operation succeeds \(the function is created\). If the function exists and the security mode is different, then an error is returned.
+-   If you specify the security mode, then the behavior depends on the existence of a pre-defined function: If there is no existing function, then the operation succeeds \(the function is created\). If the function exists and the security mode is different, then an error is returned.
 
 -   CREATE OR REPLACE does not change any DDL settings for the function, such as grant privileges, dependent objects, and so on.
 
@@ -743,11 +743,11 @@ WITH CACHE RETENTION 10;
 
 [CREATE PROCEDURE Statement \(Procedural\)](create-procedure-statement-procedural-20d4674.md "Creates a procedure that uses the specified programming language.")
 
-[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
+[ALTER FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/906c179f2d62418b957c801aa2c99e62.html "") :arrow_upper_right:
 
-[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
+[CREATE FUNCTION](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/2fc6d7beebd14c579457092e91519082.html "This SQL statement creates read-only user-defined functions that are free of side effects. This means that neither DDL, nor DML statements (INSERT, UPDATE, and DELETE) are allowed in the function body. All functions or procedures selected or called from the body of the function must be read-only.") :arrow_upper_right:
 
-[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_1_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
+[Table Variable Type Definition](https://help.sap.com/viewer/d1cb63c8dd8e4c35a0f18aef632687f0/2024_3_QRC/en-US/ea5065d06d14426799d879234d8e3e7b.html "") :arrow_upper_right:
 
 [M\_SQLSCRIPT\_VARIABLE\_CACHE System view](../../020-System-Views-Reference/022-Monitoring-Views/m-sqlscript-variable-cache-system-view-9fb8ca5.md "Provides runtime information about procedures and functions that have variable caches defined.")
 

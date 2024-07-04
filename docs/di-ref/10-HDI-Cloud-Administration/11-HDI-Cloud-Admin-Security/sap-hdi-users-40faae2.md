@@ -157,6 +157,21 @@ These technical database users are used internally by HDI only. As a general rul
 
 For more information, see *Maintaining HDI Containers* in the *Related Information*.
 
+
+
+### HDI Container Users
+
+During service binding, the SAP HANA service broker adds the name of the underlying HDI container as a prefix to the name of the container's corresponding HDI users. These users provide access to the HDI container's design-time and run-time file systems, as follows:
+
+-   Design-time access
+
+    HDI User Name: <code><i class="varname">&lt;HDI_Container_Name&gt;</i>_<i class="varname">&lt;GUID&gt;</i>_DT</code>
+
+-   Run-time access
+
+    HDI User Name: <code><i class="varname">&lt;HDI_Container_Name&gt;</i>_<i class="varname">&lt;GUID&gt;</i>_RT</code>
+
+
 **Related Information**  
 
 
