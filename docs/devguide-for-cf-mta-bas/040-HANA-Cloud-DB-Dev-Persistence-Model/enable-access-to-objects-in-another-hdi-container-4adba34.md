@@ -105,8 +105,9 @@ You can use a synonym in one application to enable access to database objects in
 
         If the auto-complete feature is enabled in the text \(code\) editor, the SAP HANA Native Application extension in SAP Business Application Studio provides context-sensitive descriptions of tags and properties in JSON-based HDI artifacts. For common scenarios, templates are provided, too.
 
+3.  Once the container roles (`Role_R1` & `Role_R1#` ) are created go to `SAP HANA Cokcpit`, choose `role assignmant` provide granter service `user` and assign the roles to the `user`. the granter servcie `user` must have these roles, so that the user can grant roles to anither container runtime users(.._RT).         
 
-3.  Grant access to the schema containing the synonym's target object \(for example, `Table_T1`\).
+4.  Grant access to the schema containing the synonym's target object \(for example, `Table_T1`\).
 
     The owner of the schema containing the synonym requires `SELECT` privileges on the target object to which the synonym points. Access for the schema owner can be enabled in user roles which are then referenced with the <code>“container_roles”</code> property in an `.hdbgrants` file, as illustrated in the following example:
 
