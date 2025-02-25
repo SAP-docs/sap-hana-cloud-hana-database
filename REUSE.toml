@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "sap-hana-cloud-hana-database"
+SPDX-PackageSupplier = "Aaron Patkau (aaron.patkau@sap.com)"
+SPDX-PackageDownloadLocation = "https://github.com/sap-docs/sap-hana-cloud-hana-database"
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022-2023 SAP SE or an SAP affiliate company and sap-hana-cloud-hana-database contributors"
+SPDX-License-Identifier = "CC-BY-4.0"
